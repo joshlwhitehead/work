@@ -1,0 +1,5 @@
+Experiment: 25Mar2021 MS2 Taqman +-RT  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	255	1	+ RT	23.14		0	
+True	65280	2	- RT			0	
+True	255	3	- Heat	25.16		0	

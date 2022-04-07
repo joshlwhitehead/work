@@ -1,0 +1,1061 @@
+DATAQ:  | outside = 28.01 | inside = 28.95 |
+DATAQ:  | outside = 28.09 | inside = 28.99 |
+DATAQ:  | outside = 28.05 | inside = 28.99 |
+DATAQ:  | outside = 28.11 | inside = 28.96 |
+DATAQ:  | outside = 28.13 | inside = 28.8 |
+DATAQ:  | outside = 28.21 | inside = 28.81 |
+DATAQ:  | outside = 28.17 | inside = 28.88 |
+DATAQ:  | outside = 28.06 | inside = 28.86 |
+DATAQ:  | outside = 28.0 | inside = 28.96 |
+DATAQ:  | outside = 27.9 | inside = 28.83 |
+DATAQ:  | outside = 27.94 | inside = 28.8 |
+DATAQ:  | outside = 28.03 | inside = 28.76 |
+DATAQ:  | outside = 28.17 | inside = 28.76 |
+DATAQ:  | outside = 28.11 | inside = 28.66 |
+DATAQ:  | outside = 27.6 | inside = 28.27 |
+[0;32mI (6749561) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;32mI (6749908) isInsideDark: Color Read:[0m
+[0;32mI (6749908) isInsideDark: CH 415: 5[0m
+[0;32mI (6749909) isInsideDark: CH 445: 0[0m
+[0;32mI (6749910) isInsideDark: CH 480: 0[0m
+[0;32mI (6749914) isInsideDark: CH 515: 0[0m
+[0;32mI (6749918) isInsideDark: CH 555: 6[0m
+[0;32mI (6749922) isInsideDark: CH 590: 0[0m
+[0;32mI (6749926) isInsideDark: CH 630: 0[0m
+[0;32mI (6749930) isInsideDark: CH 680: 0[0m
+[0;32mI (6749935) isInsideDark: CH NIR: 0[0m
+[0;32mI (6749939) isInsideDark: CH CLR: 0[0m
+DATAQ:  | outside = 27.59 | inside = 28.3 |
+[0;33mW (6750637) isCupPresent: Cup Not Detected...
+CH 445 reads: 3100   needs to be over 10000
+CH 415 reads: 86   needs to be over 200
+[0m
+DATAQ:  | outside = 27.55 | inside = 28.37 |
+[0;33mW (6751239) systemTasksMonitorStack: Stack Watermark(System): 2216[0m
+DATAQ:  | outside = 27.52 | inside = 28.2 |
+DATAQ:  | outside = 27.59 | inside = 28.28 |
+[0;32mI (6753102) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6753104) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6753157) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6753158) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6753160) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6753167) BLE_PERIPH: Sending Response Packet: [34, true, 88, ["2022-01-04T17:57:35.451Z","e6436815-18b1-419e-a49f-693529d3a336",2062795,29.64,28.47,0,0,0,0.00], 0][0m
+[0;32mI (6753180) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 88, ["2022-01-04T17:57:35.451Z", "e6436815-18b1-419e-a49f-693529d3a336", 2062795, 29.64, 28.47, 0, 0, 0, 0.00], 0]
+[0;32mI (6753213) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 88, ["2022-01-04T17:57:35.451Z","e6436815-18b1-419e-a49f-693529d3a336",2062795,29.64,28.47,0,0,0,0.00], 0][0m
+[0;32mI (6753293) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (6753295) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (6753315) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.66 | inside = 28.28 |
+[0;32mI (6754125) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+DATAQ:  | outside = 27.79 | inside = 28.22 |
+[0;32mI (6755340) BLE_PERIPH: App to Instrument Transaction Write 0/285[0m
+[0;32mI (6755342) BLE_PERIPH: App to Instrument Transaction Notify 0/285[0m
+[0;32mI (6755387) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6755388) BLE_PERIPH: Received 285/285[0m
+[0;32mI (6755392) BLE_PERIPH: App to Instrument Transaction Notify 285/285[0m
+[0;32mI (6755400) ExperimentParam: Parsing experiment parameters:
+[{
+		"pcrSkip":	true,
+		"meltSkip":	true,
+		"pcrCycleCount":	40,
+		"samplePrepSkip":	false,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	200
+			}, {
+				"tempC":	90,
+				"holdSeconds":	900
+			}],
+		"samplePrepPtcSealTimeMs":	15000
+	}][0m
+[0;32mI (6755433) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (6755440) ExperimentParam: Could not find parameter doContinuousAcquisition, using default value: 0[0m
+[0;32mI (6755450) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (6755457) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (6755467) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 1[0m
+[0;32mI (6755477) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (6755487) ExperimentParam: Found parameter samplePrepSkip: 0[0m
+[0;32mI (6755494) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (6755500) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (6755507) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6755515) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6755525) ExperimentParam: Found parameter tempC: 90.00[0m
+[0;32mI (6755531) ExperimentParam: Found parameter holdSeconds: 900.00[0m
+[0;32mI (6755537) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6755546) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6755555) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,200.00s,0.00C/s (?capture=0)},{90.00C,900.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6755568) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (6755575) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 15000[0m
+[0;32mI (6755583) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (6755590) ExperimentParam: Could not find parameter samplePrepPcrChamberPreheatTempC, using default value: 55.00[0m
+[0;32mI (6755601) ExperimentParam: Found parameter pcrSkip: 1[0m
+[0;32mI (6755607) ExperimentParam: Could not find parameter pcrPreheatTempSteps, using default value: {95.00C,30.00s,0.00C/s (?capture=0)},{65.00C,15.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6755623) ExperimentParam: Could not find parameter pcrCyclingTempSteps, using default value: {100.00C,0.00s,0.00C/s (?capture=0)},{95.00C,4.00s,0.00C/s (?capture=0)},{66.00C,0.00s,0.00C/s (?capture=0)},{68.00C,8.00s,0.00C/s (?capture=1)},[0m
+[0;32mI (6755645) ExperimentParam: Found parameter pcrCycleCount: 40[0m
+[0;32mI (6755651) ExperimentParam: Found parameter meltSkip: 1[0m
+[0;32mI (6755657) ExperimentParam: Could not find parameter meltStartTemp, using default value: 50.00[0m
+[0;32mI (6755667) ExperimentParam: Could not find parameter meltFinishTemp, using default value: 100.00[0m
+[0;32mI (6755676) ExperimentParam: Could not find parameter meltRampRateDegCPerSecond, using default value: 0.25[0m
+[0;32mI (6755687) ExperimentParam: Could not find parameter meltAcquistitionDelaySeconds, using default value: 0.50[0m
+[0;32mI (6755697) ExperimentParam: Could not find parameter meltStartHoldTimeSeconds, using default value: 30[0m
+[0;32mI (6755708) BLE_PERIPH: Sending Response Packet: [32, true, 89, [], 0][0m
+[32, true, 89, [], 0]
+[0;32mI (6755715) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (6755756) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [32, true, 89, [], 0][0m
+[0;33mW (6755766) systemTasksMonitorStack: Stack Watermark(Comm): 7692[0m
+[0;32mI (6755835) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (6755837) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (6755858) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6755936) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6755938) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6756026) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6756027) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6756029) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6756069) BLE_PERIPH: Sending Response Packet: [34, true, 90, ["","",2065697,29.62,28.44,0,0,0,0.00], 0][0m
+[0;32mI (6756071) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 90, ["", "", 2065697, 29.62, 28.44, 0, 0, 0, 0.00], 0]
+[0;32mI (6756094) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 90, ["","",2065697,29.62,28.44,0,0,0,0.00], 0][0m
+DATAQ:  | outside = 27.68 | inside = 28.09 |
+[0;32mI (6756150) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (6756152) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (6756173) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6756251) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6756253) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6756341) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6756342) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6756344) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6756388) BLE_PERIPH: Sending Response Packet: [33, true, 91, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6756486) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1173[0m
+[33, true, 91, [{
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	1,
+		"excitationOutputPercentage":	100.00,
+		"samplePrepSkip":	false,
+		"samplePrepTempSteps":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	200.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	90.00,
+				"holdSeconds":	900.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	15000,
+		"samplePrepDoPlunge":	false,
+		"samplePrepPcrChamberPreheatTempC":	55.00,
+		"pcrSkip":	true,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	65.00,
+				"holdSeconds":	15.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"pcrCyclingTempSteps":	[{
+				"tempC":	100.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	4.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	66.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	68.00,
+				"holdSeconds":	8.00,
+				"rampRate":	0.00,
+				"performCapture":	1
+			}],
+		"pcrCycleCount":	40,
+		"meltSkip":	true,
+		"meltStartTemp":	50.00,
+		"meltFinishTemp":	100.00,
+		"meltRampRateDegCPerSecond":	0.25,
+		"meltAcquistitionDelaySeconds":	0.50,
+		"meltStartHoldTimeSeconds":	30.00
+	}], 0]
+[0;32mI (6756521) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1173, currentIndex=0): [33, true, 91, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":t[0m
+[0;32mI (6756735) BLE_PERIPH: Instrument to App Transaction Write 510/1173[0m
+[0;32mI (6756737) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1173[0m
+[0;32mI (6756757) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1173, currentIndex=510): rue,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,[0m
+[0;32mI (6756847) BLE_PERIPH: Instrument to App Transaction Write 1020/1173[0m
+[0;32mI (6756849) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1173[0m
+[0;32mI (6756870) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=153 mtu=510, totalSize=1173, currentIndex=1020): "meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6756949) BLE_PERIPH: Instrument to App Transaction Write 1173/1173[0m
+[0;32mI (6756951) BLE_PERIPH: Instrument to App Transaction Read/Notify 1173/1173[0m
+[0;32mI (6756971) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.68 | inside = 28.11 |
+[0;32mI (6757489) BLE_PERIPH: App to Instrument Transaction Write 0/83[0m
+[0;32mI (6757491) BLE_PERIPH: App to Instrument Transaction Notify 0/83[0m
+[0;32mI (6757590) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6757591) BLE_PERIPH: Received 83/83[0m
+[0;32mI (6757594) BLE_PERIPH: App to Instrument Transaction Notify 83/83[0m
+[0;31mE (6757662) _experimentStart: Insert Cup to start test![0m
+[0;32mI (6757663) BLE_PERIPH: Sending Response Packet: [35, true, 92, [], 0][0m
+[35, true, 92, [], 0]
+[0;32mI (6757665) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (6757725) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [35, true, 92, [], 0][0m
+[0;32mI (6757792) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (6757794) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (6757815) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6757838) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6757840) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6757893) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6757894) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6757896) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6757918) BLE_PERIPH: Sending Response Packet: [34, true, 93, ["","",2067546,29.62,28.44,0,0,0,0.00], 0][0m
+[0;32mI (6757919) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 93, ["", "", 2067546, 29.62, 28.44, 0, 0, 0, 0.00], 0]
+[0;32mI (6757961) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 93, ["","",2067546,29.62,28.44,0,0,0,0.00], 0][0m
+[0;32mI (6758029) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (6758031) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (6758085) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.57 | inside = 28.09 |
+DATAQ:  | outside = 27.45 | inside = 28.13 |
+DATAQ:  | outside = 27.57 | inside = 28.21 |
+DATAQ:  | outside = 27.48 | inside = 28.14 |
+DATAQ:  | outside = 27.46 | inside = 28.11 |
+[0;32mI (6762551) BLE_PERIPH: App to Instrument Transaction Write 0/285[0m
+[0;32mI (6762553) BLE_PERIPH: App to Instrument Transaction Notify 0/285[0m
+[0;32mI (6762587) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6762588) BLE_PERIPH: Received 285/285[0m
+[0;32mI (6762592) BLE_PERIPH: App to Instrument Transaction Notify 285/285[0m
+[0;32mI (6762636) ExperimentParam: Parsing experiment parameters:
+[{
+		"pcrSkip":	true,
+		"meltSkip":	true,
+		"pcrCycleCount":	40,
+		"samplePrepSkip":	false,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	200
+			}, {
+				"tempC":	90,
+				"holdSeconds":	900
+			}],
+		"samplePrepPtcSealTimeMs":	15000
+	}][0m
+[0;32mI (6762664) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (6762672) ExperimentParam: Could not find parameter doContinuousAcquisition, using default value: 0[0m
+[0;32mI (6762682) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (6762688) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (6762699) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 1[0m
+[0;32mI (6762709) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (6762719) ExperimentParam: Found parameter samplePrepSkip: 0[0m
+[0;32mI (6762725) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (6762732) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (6762738) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6762747) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6762756) ExperimentParam: Found parameter tempC: 90.00[0m
+[0;32mI (6762762) ExperimentParam: Found parameter holdSeconds: 900.00[0m
+[0;32mI (6762769) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6762778) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6762788) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,200.00s,0.00C/s (?capture=0)},{90.00C,900.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6762800) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (6762807) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 15000[0m
+[0;32mI (6762815) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (6762822) ExperimentParam: Could not find parameter samplePrepPcrChamberPreheatTempC, using default value: 55.00[0m
+[0;32mI (6762833) ExperimentParam: Found parameter pcrSkip: 1[0m
+[0;32mI (6762839) ExperimentParam: Could not find parameter pcrPreheatTempSteps, using default value: {95.00C,30.00s,0.00C/s (?capture=0)},{65.00C,15.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6762855) ExperimentParam: Could not find parameter pcrCyclingTempSteps, using default value: {100.00C,0.00s,0.00C/s (?capture=0)},{95.00C,4.00s,0.00C/s (?capture=0)},{66.00C,0.00s,0.00C/s (?capture=0)},{68.00C,8.00s,0.00C/s (?capture=1)},[0m
+[0;32mI (6762876) ExperimentParam: Found parameter pcrCycleCount: 40[0m
+[0;32mI (6762883) ExperimentParam: Found parameter meltSkip: 1[0m
+[0;32mI (6762889) ExperimentParam: Could not find parameter meltStartTemp, using default value: 50.00[0m
+[0;32mI (6762899) ExperimentParam: Could not find parameter meltFinishTemp, using default value: 100.00[0m
+[0;32mI (6762908) ExperimentParam: Could not find parameter meltRampRateDegCPerSecond, using default value: 0.25[0m
+[0;32mI (6762918) ExperimentParam: Could not find parameter meltAcquistitionDelaySeconds, using default value: 0.50[0m
+[0;32mI (6762929) ExperimentParam: Could not find parameter meltStartHoldTimeSeconds, using default value: 30[0m
+[0;32mI (6762939) BLE_PERIPH: Sending Response Packet: [32, true, 94, [], 0][0m
+[32, true, 94, [], 0]
+[0;32mI (6762947) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (6762989) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [32, true, 94, [], 0][0m
+[0;32mI (6763080) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (6763082) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (6763102) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6763181) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6763183) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+DATAQ:  | outside = 27.43 | inside = 28.01 |
+[0;32mI (6763248) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6763249) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6763251) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6763301) BLE_PERIPH: Sending Response Packet: [34, true, 95, ["","",2072929,29.57,28.43,0,0,0,0.00], 0][0m
+[0;32mI (6763303) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 95, ["", "", 2072929, 29.57, 28.43, 0, 0, 0, 0.00], 0]
+[0;32mI (6763328) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 95, ["","",2072929,29.57,28.43,0,0,0,0.00], 0][0m
+[0;32mI (6763361) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (6763363) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (6763406) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6763451) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6763453) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6763518) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6763519) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6763522) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6763570) BLE_PERIPH: Sending Response Packet: [34, true, 96, ["","",2073195,29.58,28.43,0,0,0,0.00], 0][0m
+[34, true, 96, ["", "", 2073195, 29.58, 28.43, 0, 0, 0, 0.00], 0]
+[0;32mI (6763571) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[0;32mI (6763653) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 96, ["","",2073195,29.58,28.43,0,0,0,0.00], 0][0m
+[0;32mI (6763721) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (6763723) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (6763744) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6763822) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6763825) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6763957) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6763958) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6763960) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+DATAQ:  | outside = 27.53 | inside = 27.94 |
+[0;32mI (6763984) BLE_PERIPH: Sending Response Packet: [33, true, 97, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6764082) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1173[0m
+[33, true, 97, [{
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	1,
+		"excitationOutputPercentage":	100.00,
+		"samplePrepSkip":	false,
+		"samplePrepTempSteps":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	200.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	90.00,
+				"holdSeconds":	900.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	15000,
+		"samplePrepDoPlunge":	false,
+		"samplePrepPcrChamberPreheatTempC":	55.00,
+		"pcrSkip":	true,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	65.00,
+				"holdSeconds":	15.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"pcrCyclingTempSteps":	[{
+				"tempC":	100.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	4.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	66.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	68.00,
+				"holdSeconds":	8.00,
+				"rampRate":	0.00,
+				"performCapture":	1
+			}],
+		"pcrCycleCount":	40,
+		"meltSkip":	true,
+		"meltStartTemp":	50.00,
+		"meltFinishTemp":	100.00,
+		"meltRampRateDegCPerSecond":	0.25,
+		"meltAcquistitionDelaySeconds":	0.50,
+		"meltStartHoldTimeSeconds":	30.00
+	}], 0]
+[0;32mI (6764126) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1173, currentIndex=0): [33, true, 97, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":t[0m
+[0;32mI (6764317) BLE_PERIPH: Instrument to App Transaction Write 510/1173[0m
+[0;32mI (6764319) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1173[0m
+[0;32mI (6764351) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1173, currentIndex=510): rue,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,[0m
+[0;32mI (6764441) BLE_PERIPH: Instrument to App Transaction Write 1020/1173[0m
+[0;32mI (6764443) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1173[0m
+[0;32mI (6764463) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=153 mtu=510, totalSize=1173, currentIndex=1020): "meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6764554) BLE_PERIPH: Instrument to App Transaction Write 1173/1173[0m
+[0;32mI (6764556) BLE_PERIPH: Instrument to App Transaction Read/Notify 1173/1173[0m
+[0;32mI (6764587) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6764914) BLE_PERIPH: App to Instrument Transaction Write 0/83[0m
+[0;32mI (6764916) BLE_PERIPH: App to Instrument Transaction Notify 0/83[0m
+[0;32mI (6764993) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6764994) BLE_PERIPH: Received 83/83[0m
+[0;32mI (6764996) BLE_PERIPH: App to Instrument Transaction Notify 83/83[0m
+[0;31mE (6765058) _experimentStart: Insert Cup to start test![0m
+[0;32mI (6765060) BLE_PERIPH: Sending Response Packet: [35, true, 98, [], 0][0m
+[0;32mI (6765061) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[35, true, 98, [], 0]
+[0;32mI (6765127) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [35, true, 98, [], 0][0m
+[0;32mI (6765195) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (6765197) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (6765218) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.52 | inside = 27.98 |
+[0;32mI (6765285) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (6765287) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (6765352) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6765353) BLE_PERIPH: Received 18/18[0m
+[0;32mI (6765355) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (6765372) BLE_PERIPH: Sending Response Packet: [34, true, 99, ["","",2075000,29.58,28.42,0,0,0,0.00], 0][0m
+[0;32mI (6765374) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 99, ["", "", 2075000, 29.58, 28.42, 0, 0, 0, 0.00], 0]
+[0;32mI (6765442) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 99, ["","",2075000,29.58,28.42,0,0,0,0.00], 0][0m
+[0;32mI (6765510) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (6765512) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (6765532) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.65 | inside = 28.02 |
+DATAQ:  | outside = 27.59 | inside = 27.94 |
+DATAQ:  | outside = 27.58 | inside = 27.99 |
+DATAQ:  | outside = 27.54 | inside = 28.0 |
+DATAQ:  | outside = 27.43 | inside = 27.96 |
+DATAQ:  | outside = 27.36 | inside = 27.99 |
+DATAQ:  | outside = 27.38 | inside = 28.01 |
+[0;32mI (6773092) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6773094) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6773148) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6773149) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6773151) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6773187) BLE_PERIPH: Sending Response Packet: [34, true, 100, ["","",2082815,29.52,28.42,0,0,0,0.00], 0][0m
+[0;32mI (6773189) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/58[0m
+[34, true, 100, ["", "", 2082815, 29.52, 28.42, 0, 0, 0, 0.00], 0]
+[0;32mI (6773283) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=58 mtu=510, totalSize=58, currentIndex=0): [34, true, 100, ["","",2082815,29.52,28.42,0,0,0,0.00], 0][0m
+DATAQ:  | outside = 27.36 | inside = 27.9 |
+[0;32mI (6773340) BLE_PERIPH: Instrument to App Transaction Write 58/58[0m
+[0;32mI (6773342) BLE_PERIPH: Instrument to App Transaction Read/Notify 58/58[0m
+[0;32mI (6773374) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6774112) _handleFrontButtonPress: Pressed[0m
+DATAQ:  | outside = 27.47 | inside = 27.94 |
+[0;32mI (6774458) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (6774521) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (6774582) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (6774648) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (6774709) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (6774771) Latch-Info: Curr: 189, LSENS: 0[0m
+[0;32mI (6774832) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (6774898) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (6774959) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (6775021) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (6775083) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (6775151) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (6775183) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (6775217) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (6775249) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (6775279) Latch-Info: Curr: 197, LSENS: 0[0m
+DATAQ:  | outside = 27.52 | inside = 27.86 |
+[0;32mI (6775816) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (6775848) Latch-Info: Curr: 971, LSENS: 0[0m
+[0;32mI (6775880) Latch-Info: Curr: 476, LSENS: 0[0m
+[0;32mI (6775918) Latch-Info: Curr: 201, LSENS: 0[0m
+[0;32mI (6775950) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (6775981) Latch-Info: Curr: 161, LSENS: 0[0m
+[0;32mI (6776017) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (6776049) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (6776079) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (6776112) Latch-Info: Curr: 143, LSENS: 0[0m
+[0;32mI (6776143) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (6776175) Latch-Info: Curr: 153, LSENS: 0[0m
+[0;32mI (6776207) Latch-Info: Curr: 161, LSENS: 0[0m
+[0;32mI (6776239) Latch-Info: Curr: 151, LSENS: 0[0m
+[0;32mI (6776271) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (6776302) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (6776333) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (6776367) Latch-Info: Curr: 161, LSENS: 0[0m
+DATAQ:  | outside = 27.49 | inside = 27.83 |
+[0;32mI (6776399) Latch-Info: Curr: 159, LSENS: 0[0m
+[0;32mI (6776429) Latch-Info: Curr: 157, LSENS: 0[0m
+[0;32mI (6776461) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (6776492) Latch-Info: Curr: 165, LSENS: 0[0m
+[0;32mI (6776522) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (6776553) Latch-Info: Curr: 155, LSENS: 0[0m
+[0;32mI (6776584) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (6776617) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (6776648) Latch-Info: Curr: 157, LSENS: 0[0m
+[0;32mI (6776679) Latch-Info: Curr: 153, LSENS: 0[0m
+[0;32mI (6776711) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (6776742) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (6776772) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (6776803) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (6776834) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (6776868) Latch-Info: Curr: 141, LSENS: 0[0m
+[0;32mI (6776899) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (6776930) Latch-Info: Curr: 127, LSENS: 0[0m
+[0;32mI (6776966) Latch-Info: Curr: 113, LSENS: 0[0m
+[0;32mI (6776998) Latch-Info: Curr: 123, LSENS: 0[0m
+[0;32mI (6777028) Latch-Info: Curr: 116, LSENS: 0[0m
+[0;32mI (6777059) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (6777264) Latch-Info: Curr: 116, LSENS: 0[0m
+[0;32mI (6777297) Latch-Info: Curr: 936, LSENS: 0[0m
+[0;32mI (6777328) Latch-Info: Curr: 419, LSENS: 0[0m
+[0;32mI (6777360) Latch-Info: Curr: 187, LSENS: 0[0m
+DATAQ:  | outside = 27.4 | inside = 27.78 |
+[0;32mI (6777391) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | outside = 27.46 | inside = 27.83 |
+DATAQ:  | outside = 27.31 | inside = 27.93 |
+DATAQ:  | outside = 27.3 | inside = 27.98 |
+DATAQ:  | outside = 27.26 | inside = 28.01 |
+[0;32mI (6781448) isInsideDark: Color Read:[0m
+[0;32mI (6781448) isInsideDark: CH 415: 5[0m
+[0;32mI (6781449) isInsideDark: CH 445: 0[0m
+[0;32mI (6781450) isInsideDark: CH 480: 0[0m
+[0;32mI (6781454) isInsideDark: CH 515: 0[0m
+[0;32mI (6781461) isInsideDark: CH 555: 6[0m
+[0;32mI (6781462) isInsideDark: CH 590: 0[0m
+[0;32mI (6781467) isInsideDark: CH 630: 0[0m
+[0;32mI (6781471) isInsideDark: CH 680: 0[0m
+[0;32mI (6781475) isInsideDark: CH NIR: 0[0m
+[0;32mI (6781479) isInsideDark: CH CLR: 0[0m
+[0;32mI (6782177) isCupPresent: Cup Detected![0m
+[0;32mI (6782177) systemRequestStateChange: System State Transition IDLE -> READY[0m
+DATAQ:  | outside = 27.3 | inside = 28.06 |
+[0;32mI (6782599) BLE_PERIPH: App to Instrument Transaction Write 0/286[0m
+[0;32mI (6782601) BLE_PERIPH: App to Instrument Transaction Notify 0/286[0m
+[0;32mI (6782635) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6782636) BLE_PERIPH: Received 286/286[0m
+[0;32mI (6782639) BLE_PERIPH: App to Instrument Transaction Notify 286/286[0m
+[0;32mI (6782657) ExperimentParam: Parsing experiment parameters:
+[{
+		"pcrSkip":	true,
+		"meltSkip":	true,
+		"pcrCycleCount":	40,
+		"samplePrepSkip":	false,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	200
+			}, {
+				"tempC":	90,
+				"holdSeconds":	900
+			}],
+		"samplePrepPtcSealTimeMs":	15000
+	}][0m
+[0;32mI (6782685) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (6782693) ExperimentParam: Could not find parameter doContinuousAcquisition, using default value: 0[0m
+[0;32mI (6782703) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (6782709) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (6782720) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 1[0m
+[0;32mI (6782730) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (6782740) ExperimentParam: Found parameter samplePrepSkip: 0[0m
+[0;32mI (6782747) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (6782753) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (6782759) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6782768) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6782777) ExperimentParam: Found parameter tempC: 90.00[0m
+[0;32mI (6782783) ExperimentParam: Found parameter holdSeconds: 900.00[0m
+[0;32mI (6782790) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (6782799) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (6782808) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,200.00s,0.00C/s (?capture=0)},{90.00C,900.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6782821) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (6782828) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 15000[0m
+[0;32mI (6782836) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (6782843) ExperimentParam: Could not find parameter samplePrepPcrChamberPreheatTempC, using default value: 55.00[0m
+[0;32mI (6782854) ExperimentParam: Found parameter pcrSkip: 1[0m
+[0;32mI (6782860) ExperimentParam: Could not find parameter pcrPreheatTempSteps, using default value: {95.00C,30.00s,0.00C/s (?capture=0)},{65.00C,15.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (6782876) ExperimentParam: Could not find parameter pcrCyclingTempSteps, using default value: {100.00C,0.00s,0.00C/s (?capture=0)},{95.00C,4.00s,0.00C/s (?capture=0)},{66.00C,0.00s,0.00C/s (?capture=0)},{68.00C,8.00s,0.00C/s (?capture=1)},[0m
+[0;32mI (6782898) ExperimentParam: Found parameter pcrCycleCount: 40[0m
+[0;32mI (6782904) ExperimentParam: Found parameter meltSkip: 1[0m
+[0;32mI (6782910) ExperimentParam: Could not find parameter meltStartTemp, using default value: 50.00[0m
+[0;32mI (6782920) ExperimentParam: Could not find parameter meltFinishTemp, using default value: 100.00[0m
+[0;32mI (6782929) ExperimentParam: Could not find parameter meltRampRateDegCPerSecond, using default value: 0.25[0m
+[0;32mI (6782939) ExperimentParam: Could not find parameter meltAcquistitionDelaySeconds, using default value: 0.50[0m
+[0;32mI (6782950) ExperimentParam: Could not find parameter meltStartHoldTimeSeconds, using default value: 30[0m
+[0;32mI (6782960) BLE_PERIPH: Sending Response Packet: [32, true, 101, [], 0][0m
+[32, true, 101, [], 0]
+[0;32mI (6782968) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[0;32mI (6783003) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [32, true, 101, [], 0][0m
+[0;32mI (6783071) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (6783073) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (6783093) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6783150) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6783152) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6783206) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6783207) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6783209) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6783226) BLE_PERIPH: Sending Response Packet: [34, true, 102, ["","",2092850,29.44,28.35,2,0,0,0.00], 0][0m
+[34, true, 102, ["", "", 2092850, 29.44, 28.35, 2, 0, 0, 0.00], 0]
+[0;32mI (6783227) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/58[0m
+[0;32mI (6783273) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=58 mtu=510, totalSize=58, currentIndex=0): [34, true, 102, ["","",2092850,29.44,28.35,2,0,0,0.00], 0][0m
+[0;32mI (6783307) BLE_PERIPH: Instrument to App Transaction Write 58/58[0m
+[0;32mI (6783309) BLE_PERIPH: Instrument to App Transaction Read/Notify 58/58[0m
+[0;32mI (6783341) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6783420) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6783422) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | outside = 27.38 | inside = 28.07 |
+[0;32mI (6783487) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6783488) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6783490) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6783533) BLE_PERIPH: Sending Response Packet: [34, true, 103, ["","",2093161,29.45,28.35,2,0,0,0.00], 0][0m
+[0;32mI (6783535) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/58[0m
+[34, true, 103, ["", "", 2093161, 29.45, 28.35, 2, 0, 0, 0.00], 0]
+[0;32mI (6783566) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=58 mtu=510, totalSize=58, currentIndex=0): [34, true, 103, ["","",2093161,29.45,28.35,2,0,0,0.00], 0][0m
+[0;32mI (6783611) BLE_PERIPH: Instrument to App Transaction Write 58/58[0m
+[0;32mI (6783613) BLE_PERIPH: Instrument to App Transaction Read/Notify 58/58[0m
+[0;32mI (6783634) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6783690) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6783692) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6783734) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6783736) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6783738) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6783753) BLE_PERIPH: Sending Response Packet: [33, true, 104, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6783851) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1174[0m
+[33, true, 104, [{
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	1,
+		"excitationOutputPercentage":	100.00,
+		"samplePrepSkip":	false,
+		"samplePrepTempSteps":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	200.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	90.00,
+				"holdSeconds":	900.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	15000,
+		"samplePrepDoPlunge":	false,
+		"samplePrepPcrChamberPreheatTempC":	55.00,
+		"pcrSkip":	true,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	65.00,
+				"holdSeconds":	15.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"pcrCyclingTempSteps":	[{
+				"tempC":	100.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	4.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	66.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	68.00,
+				"holdSeconds":	8.00,
+				"rampRate":	0.00,
+				"performCapture":	1
+			}],
+		"pcrCycleCount":	40,
+		"meltSkip":	true,
+		"meltStartTemp":	50.00,
+		"meltFinishTemp":	100.00,
+		"meltRampRateDegCPerSecond":	0.25,
+		"meltAcquistitionDelaySeconds":	0.50,
+		"meltStartHoldTimeSeconds":	30.00
+	}], 0]
+[0;32mI (6783881) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1174, currentIndex=0): [33, true, 104, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":200.00,"rampRate":0.00,"performCapture":0},{"tempC":90.00,"holdSeconds":900.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":[0m
+[0;32mI (6784095) BLE_PERIPH: Instrument to App Transaction Write 510/1174[0m
+[0;32mI (6784097) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1174[0m
+[0;32mI (6784117) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1174, currentIndex=510): true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true[0m
+[0;32mI (6784207) BLE_PERIPH: Instrument to App Transaction Write 1020/1174[0m
+[0;32mI (6784209) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1174[0m
+[0;32mI (6784229) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=154 mtu=510, totalSize=1174, currentIndex=1020): ,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (6784297) BLE_PERIPH: Instrument to App Transaction Write 1174/1174[0m
+[0;32mI (6784299) BLE_PERIPH: Instrument to App Transaction Read/Notify 1174/1174[0m
+[0;32mI (6784320) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.45 | inside = 28.08 |
+[0;32mI (6784815) BLE_PERIPH: App to Instrument Transaction Write 0/84[0m
+[0;32mI (6784817) BLE_PERIPH: App to Instrument Transaction Notify 0/84[0m
+[0;32mI (6784905) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6784906) BLE_PERIPH: Received 84/84[0m
+[0;32mI (6784908) BLE_PERIPH: App to Instrument Transaction Notify 84/84[0m
+[0;32mI (6784945) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (6784947) experimentStateStartEnter: Experiment starting[0m
+[0;32mI (6784957) experimentStateStartEnter: Writing {"timestamp":"2022-01-04T18:32:29.959Z","consumableId":"e6436815-18b1-419e-a49f-693529d3a336", to results.txt[0m
+[0;32mI (6784975) BLE_PERIPH: Sending Response Packet: [35, true, 105, [], 0][0m
+[35, true, 105, [], 0]
+[0;32mI (6784976) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[0;32mI (6784985) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (6785003) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;32mI (6785003) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;32mI (6785006) thermalControlSetEnable: Enabling Peltier 1[0m
+[0;32mI (6785024) thermalControlTask: thermalControl-1 = 28.35, filtered = 28.35, target = 55.00, rampSet = 28.45, output = 43.67, p=0.27, i=7.56, d=-0.00, ff=35.84[0m
+[0;32mI (6785040) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [35, true, 105, [], 0][0m
+[0;32mI (6785069) thermalControlTask: thermalControl-0 = 29.41, filtered = 29.44, target = 30.00, rampSet = 29.83, output = 35.69, p=0.99, i=-1.98, d=-0.00, ff=36.67[0m
+[0;32mI (6785107) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (6785110) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (6785125) thermalControlTask: thermalControl-1 = 28.32, filtered = 28.35, target = 55.00, rampSet = 29.06, output = 45.59, p=1.79, i=7.64, d=-0.00, ff=36.16[0m
+[0;32mI (6785131) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6785170) thermalControlTask: thermalControl-0 = 29.44, filtered = 29.44, target = 30.00, rampSet = 30.00, output = 6.12, p=1.41, i=-1.90, d=-0.00, ff=6.61[0m
+[0;32mI (6785209) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6785211) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6785225) thermalControlTask: thermalControl-1 = 28.41, filtered = 28.34, target = 55.00, rampSet = 29.66, output = 47.69, p=3.29, i=7.82, d=-0.00, ff=36.58[0m
+[0;32mI (6785269) thermalControlTask: thermalControl-0 = 29.51, filtered = 29.44, target = 30.00, rampSet = 30.00, output = 6.20, p=1.41, i=-1.81, d=0.00, ff=6.61[0m
+[0;32mI (6785276) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6785280) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6785285) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6785324) thermalControlTask: thermalControl-1 = 28.60, filtered = 28.35, target = 55.00, rampSet = 30.25, output = 49.91, p=4.75, i=8.10, d=0.00, ff=37.06[0m
+[0;32mI (6785333) BLE_PERIPH: Sending Response Packet: [34, true, 106, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",381,29.44,28.35,3,2,34,2.00], 0][0m
+[0;32mI (6785345) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 106, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 381, 29.44, 28.35, 3, 2, 34, 2.00], 0]
+[0;32mI (6785370) thermalControlTask: thermalControl-0 = 29.57, filtered = 29.44, target = 30.00, rampSet = 30.00, output = 6.27, p=1.39, i=-1.73, d=0.00, ff=6.61[0m
+[0;32mI (6785411) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 106, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",381,29.44,28.35,3,2,34,2.00], 0][0m
+[0;32mI (6785433) thermalControlTask: thermalControl-1 = 28.96, filtered = 28.39, target = 55.00, rampSet = 30.91, output = 52.17, p=6.29, i=8.45, d=0.00, ff=37.43[0m
+DATAQ:  | outside = 27.42 | inside = 28.11 |
+[0;32mI (6785479) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (6785481) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (6785485) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.46, target = 30.00, rampSet = 30.00, output = 6.31, p=1.35, i=-1.65, d=0.00, ff=6.61[0m
+[0;32mI (6785501) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6785535) thermalControlTask: thermalControl-1 = 29.34, filtered = 28.48, target = 55.00, rampSet = 31.51, output = 54.44, p=7.58, i=8.90, d=0.00, ff=37.95[0m
+[0;32mI (6785578) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.49, target = 30.00, rampSet = 30.00, output = 6.32, p=1.28, i=-1.57, d=0.00, ff=6.61[0m
+[0;32mI (6785633) thermalControlTask: thermalControl-1 = 29.77, filtered = 28.63, target = 55.00, rampSet = 32.11, output = 56.39, p=8.69, i=9.41, d=0.00, ff=38.29[0m
+[0;32mI (6785678) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.52, target = 30.00, rampSet = 30.00, output = 6.31, p=1.20, i=-1.50, d=0.00, ff=6.61[0m
+[0;32mI (6785733) thermalControlTask: thermalControl-1 = 30.29, filtered = 28.85, target = 55.00, rampSet = 32.71, output = 58.33, p=9.64, i=9.98, d=0.00, ff=38.71[0m
+[0;32mI (6785778) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.55, target = 30.00, rampSet = 30.00, output = 6.30, p=1.12, i=-1.43, d=0.00, ff=6.61[0m
+[0;32mI (6785833) thermalControlTask: thermalControl-1 = 30.84, filtered = 29.14, target = 55.00, rampSet = 33.31, output = 60.14, p=10.42, i=10.59, d=0.00, ff=39.13[0m
+[0;32mI (6785878) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.58, target = 30.00, rampSet = 30.00, output = 6.29, p=1.05, i=-1.36, d=0.00, ff=6.61[0m
+[0;32mI (6785933) thermalControlTask: thermalControl-1 = 31.47, filtered = 29.50, target = 55.00, rampSet = 33.91, output = 61.81, p=11.01, i=11.25, d=0.00, ff=39.55[0m
+[0;32mI (6785978) thermalControlTask: thermalControl-0 = 29.70, filtered = 29.61, target = 30.00, rampSet = 30.00, output = 6.28, p=0.98, i=-1.30, d=0.00, ff=6.61[0m
+[0;32mI (6786033) thermalControlTask: thermalControl-1 = 32.10, filtered = 29.93, target = 55.00, rampSet = 34.51, output = 63.34, p=11.44, i=11.93, d=0.00, ff=39.97[0m
+[0;32mI (6786078) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 6.28, p=0.93, i=-1.25, d=0.00, ff=6.61[0m
+[0;32mI (6786133) thermalControlTask: thermalControl-1 = 32.77, filtered = 30.43, target = 55.00, rampSet = 35.11, output = 64.73, p=11.70, i=12.63, d=0.00, ff=40.40[0m
+[0;32mI (6786178) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.65, target = 30.00, rampSet = 30.00, output = 6.30, p=0.89, i=-1.19, d=0.00, ff=6.61[0m
+[0;32mI (6786233) thermalControlTask: thermalControl-1 = 33.47, filtered = 30.98, target = 55.00, rampSet = 35.71, output = 65.98, p=11.82, i=13.34, d=0.00, ff=40.81[0m
+[0;32mI (6786279) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.66, target = 30.00, rampSet = 30.00, output = 6.32, p=0.86, i=-1.14, d=0.00, ff=6.61[0m
+[0;32mI (6786333) thermalControlTask: thermalControl-1 = 34.19, filtered = 31.58, target = 55.00, rampSet = 36.31, output = 67.11, p=11.82, i=14.06, d=0.00, ff=41.23[0m
+[0;32mI (6786379) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.66, target = 30.00, rampSet = 30.00, output = 6.35, p=0.84, i=-1.09, d=0.00, ff=6.61[0m
+[0;32mI (6786433) thermalControlTask: thermalControl-1 = 34.91, filtered = 32.22, target = 55.00, rampSet = 36.91, output = 68.13, p=11.72, i=14.76, d=0.00, ff=41.66[0m
+DATAQ:  | outside = 27.45 | inside = 28.22 |
+[0;32mI (6786479) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.67, target = 30.00, rampSet = 30.00, output = 6.39, p=0.83, i=-1.04, d=0.00, ff=6.61[0m
+[0;32mI (6786533) thermalControlTask: thermalControl-1 = 35.67, filtered = 32.90, target = 55.00, rampSet = 37.51, output = 69.06, p=11.52, i=15.46, d=0.00, ff=42.07[0m
+[0;32mI (6786578) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.67, target = 30.00, rampSet = 30.00, output = 6.44, p=0.83, i=-0.99, d=-0.00, ff=6.61[0m
+[0;32mI (6786633) thermalControlTask: thermalControl-1 = 36.44, filtered = 33.60, target = 55.00, rampSet = 38.11, output = 69.89, p=11.26, i=16.14, d=0.00, ff=42.49[0m
+[0;32mI (6786678) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.67, target = 30.00, rampSet = 30.00, output = 6.50, p=0.83, i=-0.94, d=-0.00, ff=6.61[0m
+[0;32mI (6786733) thermalControlTask: thermalControl-1 = 37.22, filtered = 34.33, target = 55.00, rampSet = 38.71, output = 70.65, p=10.94, i=16.81, d=0.00, ff=42.91[0m
+[0;32mI (6786778) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.66, target = 30.00, rampSet = 30.00, output = 6.56, p=0.84, i=-0.89, d=-0.00, ff=6.61[0m
+[0;32mI (6786833) thermalControlTask: thermalControl-1 = 38.01, filtered = 35.08, target = 55.00, rampSet = 39.31, output = 71.34, p=10.56, i=17.45, d=0.00, ff=43.33[0m
+[0;32mI (6786878) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.66, target = 30.00, rampSet = 30.00, output = 6.62, p=0.86, i=-0.84, d=-0.00, ff=6.61[0m
+[0;32mI (6786933) thermalControlTask: thermalControl-1 = 38.80, filtered = 35.85, target = 55.00, rampSet = 39.91, output = 71.97, p=10.15, i=18.07, d=0.00, ff=43.75[0m
+[0;32mI (6786979) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.65, target = 30.00, rampSet = 30.00, output = 6.69, p=0.87, i=-0.79, d=-0.00, ff=6.61[0m
+[0;32mI (6787033) thermalControlTask: thermalControl-1 = 39.61, filtered = 36.63, target = 55.00, rampSet = 40.51, output = 72.54, p=9.71, i=18.66, d=0.00, ff=44.18[0m
+[0;32mI (6787078) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.65, target = 30.00, rampSet = 30.00, output = 6.75, p=0.88, i=-0.74, d=-0.00, ff=6.61[0m
+[0;32mI (6787133) thermalControlTask: thermalControl-1 = 40.43, filtered = 37.42, target = 55.00, rampSet = 41.11, output = 73.05, p=9.23, i=19.22, d=0.00, ff=44.59[0m
+[0;32mI (6787179) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 6.81, p=0.89, i=-0.68, d=-0.00, ff=6.61[0m
+[0;32mI (6787233) thermalControlTask: thermalControl-1 = 41.26, filtered = 38.22, target = 55.00, rampSet = 41.71, output = 73.50, p=8.73, i=19.76, d=0.00, ff=45.01[0m
+[0;32mI (6787278) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 6.88, p=0.90, i=-0.63, d=-0.00, ff=6.61[0m
+[0;32mI (6787333) thermalControlTask: thermalControl-1 = 42.06, filtered = 39.02, target = 55.00, rampSet = 42.31, output = 73.91, p=8.21, i=20.26, d=0.00, ff=45.44[0m
+[0;32mI (6787379) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 6.94, p=0.90, i=-0.57, d=-0.00, ff=6.61[0m
+[0;32mI (6787433) thermalControlTask: thermalControl-1 = 42.87, filtered = 39.84, target = 55.00, rampSet = 42.91, output = 74.26, p=7.68, i=20.73, d=0.00, ff=45.85[0m
+[0;32mI (6787478) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 6.99, p=0.90, i=-0.52, d=0.00, ff=6.61[0m
+DATAQ:  | outside = 27.25 | inside = 28.29 |
+[0;32mI (6787534) thermalControlTask: thermalControl-1 = 43.73, filtered = 40.65, target = 55.00, rampSet = 43.51, output = 74.60, p=7.15, i=21.17, d=0.00, ff=46.27[0m
+[0;32mI (6787578) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 7.04, p=0.90, i=-0.47, d=-0.00, ff=6.61[0m
+[0;32mI (6787633) thermalControlTask: thermalControl-1 = 44.53, filtered = 41.47, target = 55.00, rampSet = 44.11, output = 74.86, p=6.59, i=21.58, d=0.00, ff=46.69[0m
+[0;32mI (6787678) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 7.10, p=0.91, i=-0.41, d=-0.00, ff=6.61[0m
+[0;32mI (6787732) thermalControlTask: thermalControl-1 = 45.33, filtered = 42.29, target = 55.00, rampSet = 44.70, output = 75.08, p=6.02, i=21.95, d=0.00, ff=47.11[0m
+[0;32mI (6787778) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 7.15, p=0.91, i=-0.36, d=-0.00, ff=6.61[0m
+[0;32mI (6787833) thermalControlTask: thermalControl-1 = 46.15, filtered = 43.11, target = 55.00, rampSet = 45.31, output = 75.31, p=5.49, i=22.29, d=0.00, ff=47.53[0m
+[0;32mI (6787878) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 7.21, p=0.91, i=-0.30, d=-0.00, ff=6.61[0m
+[0;32mI (6787933) thermalControlTask: thermalControl-1 = 46.90, filtered = 43.93, target = 55.00, rampSet = 45.91, output = 75.50, p=4.95, i=22.60, d=0.00, ff=47.95[0m
+[0;32mI (6787979) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 7.27, p=0.91, i=-0.25, d=-0.00, ff=6.61[0m
+[0;32mI (6788033) thermalControlTask: thermalControl-1 = 47.75, filtered = 44.74, target = 55.00, rampSet = 46.51, output = 75.67, p=4.42, i=22.88, d=0.00, ff=48.38[0m
+[0;32mI (6788079) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.33, p=0.91, i=-0.19, d=-0.00, ff=6.61[0m
+[0;32mI (6788134) thermalControlTask: thermalControl-1 = 48.56, filtered = 45.55, target = 55.00, rampSet = 47.11, output = 75.80, p=3.89, i=23.12, d=0.00, ff=48.80[0m
+[0;32mI (6788179) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.38, p=0.92, i=-0.14, d=-0.00, ff=6.61[0m
+[0;32mI (6788235) thermalControlTask: thermalControl-1 = 49.35, filtered = 46.36, target = 55.00, rampSet = 47.71, output = 75.93, p=3.38, i=23.33, d=0.00, ff=49.22[0m
+[0;32mI (6788278) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.44, p=0.92, i=-0.08, d=-0.00, ff=6.61[0m
+[0;32mI (6788333) thermalControlTask: thermalControl-1 = 50.10, filtered = 47.17, target = 55.00, rampSet = 48.31, output = 76.00, p=2.85, i=23.51, d=0.00, ff=49.63[0m
+[0;32mI (6788378) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.49, p=0.92, i=-0.03, d=0.00, ff=6.61[0m
+[0;32mI (6788433) thermalControlTask: thermalControl-1 = 50.91, filtered = 47.97, target = 55.00, rampSet = 48.91, output = 76.07, p=2.35, i=23.67, d=0.00, ff=50.05[0m
+[0;32mI (6788478) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.55, p=0.92, i=0.03, d=-0.00, ff=6.61[0m
+DATAQ:  | outside = 27.17 | inside = 28.31 |
+[0;32mI (6788534) thermalControlTask: thermalControl-1 = 51.69, filtered = 48.77, target = 55.00, rampSet = 49.51, output = 76.12, p=1.87, i=23.79, d=0.00, ff=50.47[0m
+[0;32mI (6788578) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.60, p=0.92, i=0.08, d=-0.00, ff=6.61[0m
+[0;32mI (6788633) thermalControlTask: thermalControl-1 = 52.48, filtered = 49.56, target = 55.00, rampSet = 50.11, output = 76.13, p=1.36, i=23.88, d=0.00, ff=50.89[0m
+[0;32mI (6788678) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.66, p=0.92, i=0.14, d=-0.00, ff=6.61[0m
+[0;32mI (6788737) thermalControlTask: thermalControl-1 = 53.23, filtered = 50.35, target = 55.00, rampSet = 50.73, output = 76.20, p=0.95, i=23.94, d=0.00, ff=51.31[0m
+[0;32mI (6788778) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.72, p=0.92, i=0.19, d=-0.00, ff=6.61[0m
+[0;32mI (6788833) thermalControlTask: thermalControl-1 = 54.00, filtered = 51.14, target = 55.00, rampSet = 51.31, output = 76.14, p=0.43, i=23.98, d=0.00, ff=51.73[0m
+[0;32mI (6788878) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.78, p=0.93, i=0.25, d=-0.00, ff=6.61[0m
+[0;32mI (6788933) thermalControlTask: thermalControl-1 = 54.73, filtered = 51.91, target = 55.00, rampSet = 51.91, output = 76.13, p=-0.01, i=23.99, d=0.00, ff=52.15[0m
+[0;32mI (6788979) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 7.85, p=0.94, i=0.30, d=-0.00, ff=6.61[0m
+[0;32mI (6789033) thermalControlTask: thermalControl-1 = 55.47, filtered = 52.68, target = 55.00, rampSet = 52.51, output = 76.11, p=-0.43, i=23.97, d=0.00, ff=52.58[0m
+[0;32mI (6789079) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 7.91, p=0.94, i=0.36, d=-0.00, ff=6.61[0m
+[0;32mI (6789231) printColors: CH415: 315[0m
+[0;32mI (6789232) printColors: CH445: 13104[0m
+[0;32mI (6789232) printColors: CH480: 3767[0m
+[0;32mI (6789233) printColors: CH515: 172[0m
+[0;32mI (6789237) printColors: CH555: 382[0m
+[0;32mI (6789242) printColors: CH590: 244[0m
+[0;32mI (6789247) printColors: CH630: 476[0m
+[0;32mI (6789250) printColors: CH680: 436[0m
+[0;32mI (6789254) printColors:   NIR: 242[0m
+[0;32mI (6789258) printColors:   CLR: 6606[0m
+[0;32mI (6789262) printColors:   DRK: 0
+
+[0m
+[0;32mI (6789277) thermalControlTask: thermalControl-1 = 57.20, filtered = 53.45, target = 55.00, rampSet = 53.97, output = 78.29, p=1.30, i=23.99, d=0.00, ff=53.00[0m
+[0;32mI (6789322) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 7.97, p=0.95, i=0.42, d=-0.00, ff=6.61[0m
+[0;32mI (6789377) thermalControlTask: thermalControl-1 = 57.93, filtered = 54.29, target = 55.00, rampSet = 54.57, output = 78.78, p=0.71, i=24.05, d=0.00, ff=54.02[0m
+[0;32mI (6789422) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 8.03, p=0.95, i=0.47, d=0.00, ff=6.61[0m
+[0;32mI (6789477) thermalControlTask: thermalControl-1 = 58.68, filtered = 55.18, target = 55.00, rampSet = 55.00, output = 48.22, p=-0.46, i=24.05, d=0.00, ff=24.63[0m
+DATAQ:  | outside = 27.25 | inside = 28.32 |
+[0;32mI (6789522) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 8.08, p=0.95, i=0.53, d=0.00, ff=6.61[0m
+[0;32mI (6789577) thermalControlTask: thermalControl-1 = 59.33, filtered = 56.09, target = 55.00, rampSet = 55.00, output = 45.82, p=-2.73, i=23.92, d=0.00, ff=24.63[0m
+[0;32mI (6789622) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 8.14, p=0.94, i=0.59, d=0.00, ff=6.61[0m
+[0;32mI (6789677) thermalControlTask: thermalControl-1 = 59.98, filtered = 56.99, target = 55.00, rampSet = 55.00, output = 43.32, p=-4.97, i=23.65, d=0.00, ff=24.63[0m
+[0;32mI (6789722) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 8.19, p=0.94, i=0.64, d=0.00, ff=6.61[0m
+[0;32mI (6789777) thermalControlTask: thermalControl-1 = 60.54, filtered = 57.84, target = 55.00, rampSet = 55.00, output = 40.78, p=-7.11, i=23.26, d=0.00, ff=24.63[0m
+[0;32mI (6789823) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.62, target = 30.00, rampSet = 30.00, output = 8.24, p=0.94, i=0.70, d=0.00, ff=6.61[0m
+[0;32mI (6789877) thermalControlTask: thermalControl-1 = 60.88, filtered = 58.64, target = 55.00, rampSet = 55.00, output = 38.26, p=-9.11, i=22.74, d=0.00, ff=24.63[0m
+[0;32mI (6789923) thermalControlTask: thermalControl-0 = 29.67, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.29, p=0.93, i=0.76, d=0.00, ff=6.61[0m
+[0;32mI (6789977) thermalControlTask: thermalControl-1 = 61.10, filtered = 59.36, target = 55.00, rampSet = 55.00, output = 35.85, p=-10.90, i=22.11, d=0.00, ff=24.63[0m
+[0;32mI (6790023) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.34, p=0.92, i=0.81, d=0.00, ff=6.61[0m
+[0;32mI (6790077) thermalControlTask: thermalControl-1 = 61.33, filtered = 59.97, target = 55.00, rampSet = 55.00, output = 33.59, p=-12.42, i=21.39, d=0.00, ff=24.63[0m
+[0;32mI (6790122) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.39, p=0.92, i=0.87, d=0.00, ff=6.61[0m
+[0;32mI (6790177) thermalControlTask: thermalControl-1 = 61.39, filtered = 60.47, target = 55.00, rampSet = 55.00, output = 31.53, p=-13.68, i=20.59, d=0.00, ff=24.63[0m
+[0;32mI (6790222) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 8.44, p=0.91, i=0.92, d=0.00, ff=6.61[0m
+[0;32mI (6790276) thermalControlTask: thermalControl-1 = 61.39, filtered = 60.87, target = 55.00, rampSet = 55.00, output = 29.69, p=-14.66, i=19.72, d=0.00, ff=24.63[0m
+[0;32mI (6790322) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 8.49, p=0.91, i=0.98, d=0.00, ff=6.61[0m
+[0;32mI (6790377) thermalControlTask: thermalControl-1 = 61.33, filtered = 61.15, target = 55.00, rampSet = 55.00, output = 28.06, p=-15.37, i=18.81, d=0.00, ff=24.63[0m
+[0;32mI (6790423) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 8.54, p=0.90, i=1.03, d=0.00, ff=6.61[0m
+[0;32mI (6790477) thermalControlTask: thermalControl-1 = 61.21, filtered = 61.33, target = 55.00, rampSet = 55.00, output = 26.67, p=-15.83, i=17.87, d=0.00, ff=24.63[0m
+[0;32mI (6790522) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 8.59, p=0.91, i=1.08, d=-0.00, ff=6.61[0m
+DATAQ:  | outside = 27.16 | inside = 28.26 |
+[0;32mI (6790577) thermalControlTask: thermalControl-1 = 61.10, filtered = 61.42, target = 55.00, rampSet = 55.00, output = 25.47, p=-16.06, i=16.90, d=0.00, ff=24.63[0m
+[0;32mI (6790622) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.64, target = 30.00, rampSet = 30.00, output = 8.65, p=0.91, i=1.14, d=-0.00, ff=6.61[0m
+[0;32mI (6790677) thermalControlTask: thermalControl-1 = 60.88, filtered = 61.44, target = 55.00, rampSet = 55.00, output = 24.47, p=-16.10, i=15.94, d=-0.00, ff=24.63[0m
+[0;32mI (6790723) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.71, p=0.91, i=1.19, d=-0.00, ff=6.61[0m
+[0;32mI (6790779) thermalControlTask: thermalControl-1 = 60.76, filtered = 61.39, target = 55.00, rampSet = 55.00, output = 23.63, p=-15.97, i=14.98, d=-0.00, ff=24.63[0m
+[0;32mI (6790823) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.77, p=0.92, i=1.25, d=-0.00, ff=6.61[0m
+[0;32mI (6790877) thermalControlTask: thermalControl-1 = 60.54, filtered = 61.29, target = 55.00, rampSet = 55.00, output = 22.94, p=-15.72, i=14.03, d=-0.00, ff=24.63[0m
+[0;32mI (6790923) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.82, p=0.92, i=1.30, d=0.00, ff=6.61[0m
+[0;32mI (6790977) thermalControlTask: thermalControl-1 = 60.37, filtered = 61.15, target = 55.00, rampSet = 55.00, output = 22.37, p=-15.36, i=13.10, d=-0.00, ff=24.63[0m
+[0;32mI (6791022) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.88, p=0.91, i=1.36, d=0.00, ff=6.61[0m
+[0;32mI (6791077) thermalControlTask: thermalControl-1 = 60.15, filtered = 60.97, target = 55.00, rampSet = 55.00, output = 21.89, p=-14.93, i=12.20, d=-0.00, ff=24.63[0m
+[0;32mI (6791122) thermalControlTask: thermalControl-0 = 29.60, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.93, p=0.91, i=1.41, d=-0.00, ff=6.61[0m
+[0;32mI (6791177) thermalControlTask: thermalControl-1 = 59.87, filtered = 60.78, target = 55.00, rampSet = 55.00, output = 21.51, p=-14.44, i=11.33, d=-0.00, ff=24.63[0m
+[0;32mI (6791222) thermalControlTask: thermalControl-0 = 29.64, filtered = 29.63, target = 30.00, rampSet = 30.00, output = 8.99, p=0.92, i=1.47, d=-0.00, ff=6.61[0m
+[0;32mI (6791273) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6791275) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6791288) thermalControlTask: thermalControl-1 = 59.65, filtered = 60.56, target = 55.00, rampSet = 55.00, output = 21.20, p=-13.91, i=10.48, d=-0.00, ff=24.63[0m
+[0;32mI (6791296) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6791299) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6791305) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6791317) experimentRequestStateChange: Experiment State Transition SAMPLE_PREP -> PCR[0m
+[0;32mI (6791328) BLE_PERIPH: Sending Response Packet: [38, true, 107, [], 0][0m
+[0;32mI (6791330) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[38, true, 107, [], 0]
+[0;32mI (6791351) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [38, true, 107, [], 0][0m
+[0;32mI (6791364) experimentTask: Experiment State Transition PCR -> MELT[0m
+[0;32mI (6791374) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (6791376) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (6791387) thermalControlTask: thermalControl-1 = 59.43, filtered = 60.34, target = 55.00, rampSet = 55.00, output = 20.96, p=-13.34, i=9.67, d=-0.00, ff=24.63[0m
+[0;32mI (6791396) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6791430) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6791432) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6791463) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6791464) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6791466) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6791481) thermalControlTask: thermalControl-1 = 59.22, filtered = 60.11, target = 55.00, rampSet = 55.00, output = 20.76, p=-12.77, i=8.90, d=-0.00, ff=24.63[0m
+[0;32mI (6791494) experimentTask: Experiment State Transition MELT -> FINISH[0m
+DATAQ:  | outside = 27.36 | inside = 28.38 |
+[0;32mI (6791606) BLE_PERIPH: Sending Response Packet: [34, true, 108, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",6536,29.63,60.11,3,5,80,0.00], 0][0m
+[0;32mI (6791612) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116[0m
+[34, true, 108, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 6536, 29.63, 60.11, 3, 5, 80, 0.00], 0]
+[0;32mI (6791633) systemRequestStateChange: System State Transition RUNNING -> IDLE[0m
+[0;32mI (6791654) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34, true, 108, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",6536,29.63,60.11,3,5,80,0.00], 0][0m
+[0;32mI (6791706) experimentTask: Experiment State Transition FINISH -> IDLE[0m
+[0;32mI (6791711) BLE_PERIPH: Instrument to App Transaction Write 116/116[0m
+[0;32mI (6791713) BLE_PERIPH: Instrument to App Transaction Read/Notify 116/116[0m
+[0;32mI (6791745) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6791818) systemRequestStateChange: System State Transition IDLE -> PENDING UPLOAD[0m
+[0;32mI (6791837) Latch-Info: Curr: 1006, LSENS: 0[0m
+[0;32mI (6791899) Latch-Info: Curr: 418, LSENS: 0[0m
+[0;32mI (6791962) Latch-Info: Curr: 193, LSENS: 0[0m
+[0;32mI (6792023) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (6792085) Latch-Info: Curr: 187, LSENS: 0[0m
+[0;32mI (6792147) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (6792214) Latch-Info: Curr: 173, LSENS: 0[0m
+[0;32mI (6792275) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (6792336) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (6792398) Latch-Info: Curr: 177, LSENS: 0[0m
+[0;32mI (6792465) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (6792526) Latch-Info: Curr: 182, LSENS: 0[0m
+DATAQ:  | outside = 27.41 | inside = 28.28 |
+[0;32mI (6792587) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (6792652) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (6792687) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (6792718) Latch-Info: Curr: 173, LSENS: 0[0m
+[0;32mI (6792749) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (6792782) Latch-Info: Curr: 175, LSENS: 0[0m
+[0;32mI (6793106) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6793108) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6793184) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6793185) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6793188) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6793233) BLE_PERIPH: Sending Response Packet: [34, true, 109, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",8281,29.54,55.88,4,0,0,0.00], 0][0m
+[0;32mI (6793239) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 109, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 8281, 29.54, 55.88, 4, 0, 0, 0.00], 0]
+[0;32mI (6793308) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 109, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",8281,29.54,55.88,4,0,0,0.00], 0][0m
+[0;32mI (6793324) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (6793356) Latch-Info: Curr: 970, LSENS: 0[0m
+[0;32mI (6793387) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (6793390) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (6793393) Latch-Info: Curr: 538, LSENS: 0[0m
+[0;32mI (6793410) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6793434) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (6793466) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (6793498) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (6793500) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6793502) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6793532) Latch-Info: Curr: 151, LSENS: 0[0m
+DATAQ:  | outside = 27.37 | inside = 28.28 |
+[0;32mI (6793565) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (6793567) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6793568) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6793570) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6793596) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (6793609) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/147[0m
+[0;32mI (6793629) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (6793635) instrumentToAppDataCharAccessCb: Writing all pre params[0m
+[0;32mI (6793639) instrumentToAppDataCharAccessCb: Writing 125 bytes of file[0m
+[0;32mI (6793640) instrumentToAppDataCharAccessCb: Writing 5 bytes of post params[0m
+[0;32mI (6793647) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=147 mtu=510, totalSize=147, currentIndex=0): [36, true, 110, [{"timestamp":"2022-01-04T18:32:29.959Z","consumableId":"e6436815-18b1-419e-a49f-693529d3a336","pcrData_0":[],"meltData_0":[]}], 0][0m
+[0;32mI (6793685) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (6793702) BLE_PERIPH: Instrument to App Transaction Write 147/147[0m
+[0;32mI (6793704) BLE_PERIPH: Instrument to App Transaction Read/Notify 147/147[0m
+[0;32mI (6793717) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (6793736) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6793748) Latch-Info: Curr: 153, LSENS: 0[0m
+[0;32mI (6793781) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (6793803) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6793805) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6793816) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (6793848) Latch-Info: Curr: 161, LSENS: 0[0m
+[0;32mI (6793871) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6793872) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6793874) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6793892) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (6793898) BLE_PERIPH: Sending Response Packet: [34, true, 111, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",8930,29.52,54.40,4,0,0,0.00], 0][0m
+[0;32mI (6793906) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 111, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 8930, 29.52, 54.40, 4, 0, 0, 0.00], 0]
+[0;32mI (6793929) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (6793949) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 111, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",8930,29.52,54.40,4,0,0,0.00], 0][0m
+[0;32mI (6793967) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (6793998) Latch-Info: Curr: 169, LSENS: 0[0m
+[0;32mI (6794006) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (6794008) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (6794029) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6794033) Latch-Info: Curr: 176, LSENS: 0[0m
+[0;32mI (6794065) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (6794096) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (6794127) Latch-Info: Curr: 144, LSENS: 0[0m
+[0;32mI (6794159) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (6794192) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (6794223) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (6794254) Latch-Info: Curr: 151, LSENS: 0[0m
+[0;32mI (6794286) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (6794299) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6794301) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6794318) Latch-Info: Curr: 134, LSENS: 0[0m
+[0;32mI (6794350) Latch-Info: Curr: 121, LSENS: 0[0m
+[0;32mI (6794366) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6794367) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6794369) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6794379) BLE_PERIPH: Sending Response Packet: [37, true, 112, [], 0][0m
+[0;32mI (6794381) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[37, true, 112, [], 0]
+[0;32mI (6794393) Latch-Info: Curr: 122, LSENS: 0[0m
+[0;32mI (6794397) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE[0m
+[0;32mI (6794428) Latch-Info: Curr: 121, LSENS: 0[0m
+[0;32mI (6794433) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [37, true, 112, [], 0][0m
+[0;32mI (6794459) Latch-Info: Curr: 114, LSENS: 0[0m
+[0;32mI (6794493) Latch-Info: Curr: 121, LSENS: 0[0m
+[0;32mI (6794501) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (6794503) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (6794523) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6794528) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (6794557) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6794559) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | outside = 27.3 | inside = 28.32 |
+[0;32mI (6794591) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6794592) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6794594) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6794641) BLE_PERIPH: Sending Response Packet: [37, true, 113, [], 0][0m
+[0;32mI (6794643) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[37, true, 113, [], 0]
+[0;32mI (6794670) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [37, true, 113, [], 0][0m
+[0;32mI (6794732) Latch-Info: Curr: 116, LSENS: 0[0m
+[0;32mI (6794737) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (6794739) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (6794764) Latch-Info: Curr: 944, LSENS: 0[0m
+[0;32mI (6794771) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6794796) Latch-Info: Curr: 405, LSENS: 0[0m
+[0;32mI (6794827) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6794829) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6794836) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (6794866) _readLatchSwitches: New Latch-Home Value: 0[0m
+[0;32mI (6794895) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6794895) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6794898) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6794904) BLE_PERIPH: Sending Response Packet: [34, true, 114, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",9952,29.49,52.39,0,0,0,0.00], 0][0m
+[0;32mI (6794917) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 114, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 9952, 29.49, 52.39, 0, 0, 0, 0.00], 0]
+[0;32mI (6794951) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 114, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",9952,29.49,52.39,0,0,0,0.00], 0][0m
+[0;32mI (6795007) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (6795009) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (6795097) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (6795165) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (6795167) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (6795232) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (6795233) BLE_PERIPH: Received 19/19[0m
+[0;32mI (6795235) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (6795253) BLE_PERIPH: Sending Response Packet: [34, true, 115, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",10289,29.48,51.76,0,0,0,0.00], 0][0m
+[0;32mI (6795258) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116[0m
+[34, true, 115, ["2022-01-04T18:32:29.959Z", "e6436815-18b1-419e-a49f-693529d3a336", 10289, 29.48, 51.76, 0, 0, 0, 0.00], 0]
+[0;32mI (6795322) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34, true, 115, ["2022-01-04T18:32:29.959Z","e6436815-18b1-419e-a49f-693529d3a336",10289,29.48,51.76,0,0,0,0.00], 0][0m
+[0;32mI (6795390) BLE_PERIPH: Instrument to App Transaction Write 116/116[0m
+[0;32mI (6795392) BLE_PERIPH: Instrument to App Transaction Read/Notify 116/116[0m
+[0;32mI (6795412) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | outside = 27.2 | inside = 28.35 |
+DATAQ:  | outside = 27.19 | inside = 28.36 |
+DATAQ:  | outside = 27.14 | inside = 28.27 |
+DATAQ:  | outside = 27.23 | inside = 28.1 |
+DATAQ:  | outside = 27.36 | inside = 28.12 |
+DATAQ:  | outside = 27.39 | inside = 28.01 |

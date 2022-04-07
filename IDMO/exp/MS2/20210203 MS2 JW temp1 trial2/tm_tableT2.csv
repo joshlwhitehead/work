@@ -1,0 +1,11 @@
+﻿Experiment: 20210203 MS2 JW temp2 trial2  Selected Filter: 530 (470-530),,,,,,,,,,,
+Include,Color,Pos,Name,Call,Group,Std,Score,DeltaTM,Tm1,Tm2,Status
+TRUE,255,1,Assay1: 0.2uM,Pos,B,S,1,18.61,68.96,87.57,
+TRUE,255,2,Assay1: 0.1uM,Pos,B,,0.84,18.35,69,87.35,
+TRUE,151,3,Assay1: neg,Neg,Negative,,1,,,,
+TRUE,7237230,4,Assay2: 0.2uM,Pos,A,,0.71,14.6,69.01,83.61,
+TRUE,7237230,5,Assay2: 0.1uM,Pos,A,S,1,14.74,68.68,83.41,
+TRUE,151,6,Assay2: neg,Neg,Negative,,1,,,,
+TRUE,7237230,7,Assay3: 0.2uM,Pos,A,,0.77,14.21,68.88,83.09,
+TRUE,16744448,8,Assay3: 0.1uM,Pos,C,S,1,14.6,68.28,82.88,
+TRUE,151,9,Assay3: neg,Neg,Negative,,1,,,,

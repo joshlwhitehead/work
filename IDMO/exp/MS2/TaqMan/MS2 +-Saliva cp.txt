@@ -1,0 +1,6 @@
+Experiment: 25Mar2021 MS2 Taqman +-Saliva2  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	65280	1	+Heat then Salliva			0	
+True	255	2	-Heat then Saliva	33.13		0	
+True	255	3	+ Control	29.47		0	
+True	65280	4	- RT			0	

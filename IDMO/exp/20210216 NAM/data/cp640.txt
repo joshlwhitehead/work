@@ -1,0 +1,5 @@
+Experiment: 20210216 NAM.18S  Selected Filter: 640 (470-640)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	255	1	Positive Control	26.00		0	
+True	255	2	Negative Control	37.29		0	
+True	255	3	NAM. 18S	20.40		0	

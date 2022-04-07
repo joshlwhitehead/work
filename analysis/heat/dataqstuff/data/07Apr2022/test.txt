@@ -1,0 +1,665 @@
+[0;32mI (151442) _stage1Calculate: Heating    thermTempC:24.253342.2   ModelTempC: 21.505777.2[0m
+[0;32mI (153942) _stage1Calculate: Heating    thermTempC:24.253342.2   ModelTempC: 21.509777.2[0m
+[0;33mW (154604) heapMonitor_checkFreeHeapSize: New heap low water mark 121176[0m
+DATAQ:  | liquid = 24.15 |
+DATAQ:  | liquid = 24.16 |
+[0;32mI (1221286) _stage1Calculate: Heating    thermTempC:44.526981.2   ModelTempC: 57.181313.2[0m
+[0;32mI (1223784) _stage1Calculate: Heating    thermTempC:43.968533.2   ModelTempC: 55.715107.2[0m
+DATAQ:  | liquid = 61.64 |
+[0;32mI (1226284) _stage1Calculate: Heating    thermTempC:43.415569.2   ModelTempC: 54.335823.2[0m
+DATAQ:  | liquid = 61.12 |
+DATAQ:  | liquid = 61.54 |
+DATAQ:  | liquid = 61.59 |
+[0;32mI (1228785) _stage1Calculate: Heating    thermTempC:42.945827.2   ModelTempC: 53.039043.2[0m
+DATAQ:  | liquid = 45.89 |
+DATAQ:  | liquid = 30.1 |
+[0;32mI (1231285) _stage1Calculate: Heating    thermTempC:42.557278.2   ModelTempC: 51.821194.2[0m
+DATAQ:  | liquid = 33.26 |
+DATAQ:  | liquid = 41.52 |
+DATAQ:  | liquid = 53.08 |
+[0;32mI (1233784) _stage1Calculate: Heating    thermTempC:42.094402.2   ModelTempC: 50.679367.2[0m
+DATAQ:  | liquid = 46.96 |
+DATAQ:  | liquid = 52.92 |
+[0;32mI (1236285) _stage1Calculate: Heating    thermTempC:41.787823.2   ModelTempC: 49.611622.2[0m
+DATAQ:  | liquid = 51.26 |
+DATAQ:  | liquid = 51.74 |
+DATAQ:  | liquid = 51.12 |
+[0;32mI (1238785) _stage1Calculate: Heating    thermTempC:41.406803.2   ModelTempC: 48.613068.2[0m
+DATAQ:  | liquid = 50.94 |
+DATAQ:  | liquid = 51.16 |
+[0;32mI (1241284) _stage1Calculate: Heating    thermTempC:41.103710.2   ModelTempC: 47.682247.2[0m
+DATAQ:  | liquid = 51.31 |
+DATAQ:  | liquid = 51.57 |
+DATAQ:  | liquid = 51.41 |
+[0;32mI (1243785) _stage1Calculate: Heating    thermTempC:40.877380.2   ModelTempC: 46.813160.2[0m
+DATAQ:  | liquid = 51.27 |
+DATAQ:  | liquid = 51.23 |
+[0;32mI (1246284) _stage1Calculate: Heating    thermTempC:40.651886.2   ModelTempC: 46.003357.2[0m
+DATAQ:  | liquid = 51.23 |
+DATAQ:  | liquid = 51.22 |
+DATAQ:  | liquid = 51.05 |
+[0;32mI (1248786) _stage1Calculate: Heating    thermTempC:40.502014.2   ModelTempC: 45.249390.2[0m
+DATAQ:  | liquid = 50.98 |
+DATAQ:  | liquid = 50.99 |
+[0;32mI (1251286) _stage1Calculate: Heating    thermTempC:40.277885.2   ModelTempC: 44.548035.2[0m
+DATAQ:  | liquid = 50.92 |
+DATAQ:  | liquid = 50.72 |
+[0;32mI (1253786) _stage1Calculate: Heating    thermTempC:40.054558.2   ModelTempC: 43.896130.2[0m
+DATAQ:  | liquid = 50.61 |
+DATAQ:  | liquid = 50.51 |
+DATAQ:  | liquid = 50.43 |
+[0;32mI (1256286) _stage1Calculate: Heating    thermTempC:39.906116.2   ModelTempC: 43.290283.2[0m
+DATAQ:  | liquid = 50.48 |
+DATAQ:  | liquid = 50.38 |
+[0;32mI (1258785) _stage1Calculate: Heating    thermTempC:39.758026.2   ModelTempC: 42.727364.2[0m
+DATAQ:  | liquid = 50.31 |
+DATAQ:  | liquid = 50.09 |
+DATAQ:  | liquid = 50.2 |
+[0;32mI (1261286) _stage1Calculate: Heating    thermTempC:39.684109.2   ModelTempC: 42.204632.2[0m
+DATAQ:  | liquid = 50.0 |
+DATAQ:  | liquid = 49.79 |
+[0;32mI (1263786) _stage1Calculate: Heating    thermTempC:39.536533.2   ModelTempC: 41.717812.2[0m
+DATAQ:  | liquid = 49.79 |
+DATAQ:  | liquid = 49.67 |
+DATAQ:  | liquid = 49.56 |
+[0;32mI (1266286) _stage1Calculate: Heating    thermTempC:39.389294.2   ModelTempC: 41.265945.2[0m
+DATAQ:  | liquid = 49.52 |
+DATAQ:  | liquid = 49.41 |
+[0;32mI (1268786) _stage1Calculate: Heating    thermTempC:39.315807.2   ModelTempC: 40.846527.2[0m
+DATAQ:  | liquid = 49.38 |
+DATAQ:  | liquid = 49.45 |
+DATAQ:  | liquid = 49.29 |
+[0;32mI (1271286) _stage1Calculate: Heating    thermTempC:39.169075.2   ModelTempC: 40.456135.2[0m
+DATAQ:  | liquid = 49.22 |
+DATAQ:  | liquid = 49.13 |
+[0;32mI (1273786) _stage1Calculate: Heating    thermTempC:39.095837.2   ModelTempC: 40.092091.2[0m
+DATAQ:  | liquid = 49.12 |
+DATAQ:  | liquid = 48.79 |
+DATAQ:  | liquid = 48.72 |
+[0;32mI (1276286) _stage1Calculate: Heating    thermTempC:38.949604.2   ModelTempC: 39.754639.2[0m
+DATAQ:  | liquid = 48.69 |
+DATAQ:  | liquid = 48.71 |
+[0;32mI (1278786) _stage1Calculate: Heating    thermTempC:38.876614.2   ModelTempC: 39.439739.2[0m
+DATAQ:  | liquid = 48.54 |
+DATAQ:  | liquid = 48.58 |
+DATAQ:  | liquid = 48.38 |
+[0;32mI (1281284) _stage1Calculate: Heating    thermTempC:38.730873.2   ModelTempC: 39.145527.2[0m
+DATAQ:  | liquid = 48.3 |
+DATAQ:  | liquid = 48.17 |
+[0;32mI (1283785) _stage1Calculate: Heating    thermTempC:38.730873.2   ModelTempC: 38.872120.2[0m
+DATAQ:  | liquid = 48.23 |
+DATAQ:  | liquid = 48.13 |
+DATAQ:  | liquid = 47.9 |
+[0;32mI (1286286) _stage1Calculate: Heating    thermTempC:38.585457.2   ModelTempC: 38.616905.2[0m
+DATAQ:  | liquid = 47.97 |
+DATAQ:  | liquid = 47.98 |
+[0;32mI (1288786) _stage1Calculate: Heating    thermTempC:38.512871.2   ModelTempC: 38.377632.2[0m
+DATAQ:  | liquid = 47.85 |
+DATAQ:  | liquid = 47.6 |
+DATAQ:  | liquid = 47.52 |
+[0;32mI (1291286) _stage1Calculate: Heating    thermTempC:38.440361.2   ModelTempC: 38.152752.2[0m
+DATAQ:  | liquid = 47.57 |
+DATAQ:  | liquid = 47.35 |
+[0;32mI (1293786) _stage1Calculate: Heating    thermTempC:38.367931.2   ModelTempC: 37.942623.2[0m
+DATAQ:  | liquid = 47.25 |
+DATAQ:  | liquid = 47.3 |
+DATAQ:  | liquid = 47.3 |
+[0;32mI (1296285) _stage1Calculate: Heating    thermTempC:38.295582.2   ModelTempC: 37.743969.2[0m
+DATAQ:  | liquid = 47.23 |
+DATAQ:  | liquid = 47.12 |
+[0;32mI (1298785) _stage1Calculate: Heating    thermTempC:38.223312.2   ModelTempC: 37.557888.2[0m
+DATAQ:  | liquid = 47.04 |
+DATAQ:  | liquid = 46.91 |
+DATAQ:  | liquid = 46.79 |
+[0;32mI (1301286) _stage1Calculate: Heating    thermTempC:38.151123.2   ModelTempC: 37.382080.2[0m
+DATAQ:  | liquid = 46.82 |
+DATAQ:  | liquid = 46.64 |
+[0;32mI (1303786) _stage1Calculate: Heating    thermTempC:38.079010.2   ModelTempC: 37.216560.2[0m
+DATAQ:  | liquid = 46.66 |
+DATAQ:  | liquid = 46.53 |
+[0;32mI (1306286) _stage1Calculate: Heating    thermTempC:38.006969.2   ModelTempC: 37.060188.2[0m
+DATAQ:  | liquid = 46.49 |
+DATAQ:  | liquid = 46.53 |
+DATAQ:  | liquid = 46.45 |
+[0;32mI (1308786) _stage1Calculate: Heating    thermTempC:37.935013.2   ModelTempC: 36.911850.2[0m
+DATAQ:  | liquid = 46.38 |
+DATAQ:  | liquid = 46.12 |
+[0;32mI (1311284) _stage1Calculate: Heating    thermTempC:37.935013.2   ModelTempC: 36.770756.2[0m
+DATAQ:  | liquid = 46.03 |
+DATAQ:  | liquid = 46.13 |
+DATAQ:  | liquid = 46.1 |
+[0;32mI (1313786) _stage1Calculate: Heating    thermTempC:37.791325.2   ModelTempC: 36.637077.2[0m
+DATAQ:  | liquid = 45.95 |
+DATAQ:  | liquid = 45.96 |
+[0;32mI (1316286) _stage1Calculate: Heating    thermTempC:37.791325.2   ModelTempC: 36.510494.2[0m
+DATAQ:  | liquid = 45.74 |
+DATAQ:  | liquid = 45.81 |
+DATAQ:  | liquid = 45.62 |
+[0;32mI (1318786) _stage1Calculate: Heating    thermTempC:37.719597.2   ModelTempC: 36.390209.2[0m
+DATAQ:  | liquid = 45.6 |
+DATAQ:  | liquid = 45.56 |
+[0;32mI (1321286) _stage1Calculate: Heating    thermTempC:37.647942.2   ModelTempC: 36.274826.2[0m
+DATAQ:  | liquid = 45.51 |
+DATAQ:  | liquid = 45.43 |
+DATAQ:  | liquid = 45.33 |
+[0;32mI (1323785) _stage1Calculate: Heating    thermTempC:37.504860.2   ModelTempC: 36.164951.2[0m
+DATAQ:  | liquid = 45.14 |
+DATAQ:  | liquid = 45.13 |
+[0;32mI (1326286) _stage1Calculate: Heating    thermTempC:37.504860.2   ModelTempC: 36.058571.2[0m
+DATAQ:  | liquid = 45.02 |
+DATAQ:  | liquid = 44.97 |
+DATAQ:  | liquid = 44.93 |
+[0;32mI (1328786) _stage1Calculate: Heating    thermTempC:37.433430.2   ModelTempC: 35.956932.2[0m
+DATAQ:  | liquid = 44.96 |
+DATAQ:  | liquid = 44.87 |
+[0;32mI (1331286) _stage1Calculate: Heating    thermTempC:37.362080.2   ModelTempC: 35.858936.2[0m
+DATAQ:  | liquid = 44.74 |
+DATAQ:  | liquid = 44.76 |
+DATAQ:  | liquid = 44.61 |
+[0;32mI (1333786) _stage1Calculate: Heating    thermTempC:37.362080.2   ModelTempC: 35.764771.2[0m
+DATAQ:  | liquid = 44.49 |
+DATAQ:  | liquid = 44.41 |
+[0;32mI (1336286) _stage1Calculate: Heating    thermTempC:37.290798.2   ModelTempC: 35.674393.2[0m
+DATAQ:  | liquid = 44.37 |
+DATAQ:  | liquid = 44.4 |
+DATAQ:  | liquid = 44.3 |
+[0;32mI (1338786) _stage1Calculate: Heating    thermTempC:37.219593.2   ModelTempC: 35.587582.2[0m
+DATAQ:  | liquid = 44.2 |
+DATAQ:  | liquid = 44.15 |
+[0;32mI (1341286) _stage1Calculate: Heating    thermTempC:37.148460.2   ModelTempC: 35.502747.2[0m
+DATAQ:  | liquid = 44.14 |
+DATAQ:  | liquid = 44.16 |
+DATAQ:  | liquid = 43.97 |
+[0;32mI (1343785) _stage1Calculate: Heating    thermTempC:37.148460.2   ModelTempC: 35.420715.2[0m
+DATAQ:  | liquid = 43.92 |
+DATAQ:  | liquid = 43.83 |
+[0;32mI (1346286) _stage1Calculate: Heating    thermTempC:37.077400.2   ModelTempC: 35.341244.2[0m
+DATAQ:  | liquid = 43.71 |
+DATAQ:  | liquid = 43.73 |
+DATAQ:  | liquid = 43.59 |
+[0;32mI (1348786) _stage1Calculate: Heating    thermTempC:37.006413.2   ModelTempC: 35.264786.2[0m
+DATAQ:  | liquid = 43.67 |
+DATAQ:  | liquid = 43.61 |
+[0;32mI (1351286) _stage1Calculate: Heating    thermTempC:36.935501.2   ModelTempC: 35.190216.2[0m
+DATAQ:  | liquid = 43.6 |
+DATAQ:  | liquid = 43.54 |
+[0;32mI (1353784) _stage1Calculate: Heating    thermTempC:36.935501.2   ModelTempC: 35.116901.2[0m
+DATAQ:  | liquid = 43.27 |
+DATAQ:  | liquid = 43.29 |
+DATAQ:  | liquid = 43.31 |
+[0;32mI (1356285) _stage1Calculate: Heating    thermTempC:36.793884.2   ModelTempC: 35.044235.2[0m
+DATAQ:  | liquid = 43.19 |
+DATAQ:  | liquid = 43.31 |
+[0;32mI (1358786) _stage1Calculate: Heating    thermTempC:36.723186.2   ModelTempC: 34.973022.2[0m
+DATAQ:  | liquid = 42.99 |
+DATAQ:  | liquid = 43.14 |
+DATAQ:  | liquid = 42.96 |
+[0;32mI (1361286) _stage1Calculate: Heating    thermTempC:36.652557.2   ModelTempC: 34.902386.2[0m
+DATAQ:  | liquid = 42.83 |
+DATAQ:  | liquid = 42.82 |
+[0;32mI (1363786) _stage1Calculate: Heating    thermTempC:36.652557.2   ModelTempC: 34.833702.2[0m
+DATAQ:  | liquid = 42.92 |
+DATAQ:  | liquid = 42.74 |
+DATAQ:  | liquid = 42.77 |
+[0;32mI (1366286) _stage1Calculate: Heating    thermTempC:36.581997.2   ModelTempC: 34.766273.2[0m
+DATAQ:  | liquid = 42.71 |
+DATAQ:  | liquid = 42.46 |
+[0;32mI (1368786) _stage1Calculate: Heating    thermTempC:36.511513.2   ModelTempC: 34.701088.2[0m
+DATAQ:  | liquid = 42.62 |
+DATAQ:  | liquid = 42.4 |
+DATAQ:  | liquid = 42.52 |
+[0;32mI (1371286) _stage1Calculate: Heating    thermTempC:36.511513.2   ModelTempC: 34.636917.2[0m
+DATAQ:  | liquid = 42.48 |
+DATAQ:  | liquid = 42.31 |
+[0;32mI (1373786) _stage1Calculate: Heating    thermTempC:36.441093.2   ModelTempC: 34.574635.2[0m
+DATAQ:  | liquid = 42.27 |
+DATAQ:  | liquid = 42.2 |
+DATAQ:  | liquid = 42.15 |
+[0;32mI (1376286) _stage1Calculate: Heating    thermTempC:36.370747.2   ModelTempC: 34.512516.2[0m
+DATAQ:  | liquid = 42.1 |
+DATAQ:  | liquid = 42.02 |
+[0;32mI (1378786) _stage1Calculate: Heating    thermTempC:36.370747.2   ModelTempC: 34.451714.2[0m
+DATAQ:  | liquid = 42.06 |
+DATAQ:  | liquid = 41.95 |
+DATAQ:  | liquid = 41.99 |
+[0;32mI (1381284) _stage1Calculate: Heating    thermTempC:36.230255.2   ModelTempC: 34.391819.2[0m
+DATAQ:  | liquid = 41.95 |
+DATAQ:  | liquid = 41.89 |
+[0;32mI (1383786) _stage1Calculate: Heating    thermTempC:36.230255.2   ModelTempC: 34.331821.2[0m
+DATAQ:  | liquid = 41.65 |
+DATAQ:  | liquid = 41.77 |
+DATAQ:  | liquid = 41.67 |
+[0;32mI (1386286) _stage1Calculate: Heating    thermTempC:36.230255.2   ModelTempC: 34.273464.2[0m
+DATAQ:  | liquid = 41.71 |
+DATAQ:  | liquid = 41.64 |
+[0;32mI (1388785) _stage1Calculate: Heating    thermTempC:36.160114.2   ModelTempC: 34.216080.2[0m
+DATAQ:  | liquid = 41.58 |
+DATAQ:  | liquid = 41.47 |
+DATAQ:  | liquid = 41.35 |
+[0;32mI (1391286) _stage1Calculate: Heating    thermTempC:36.090042.2   ModelTempC: 34.159798.2[0m
+DATAQ:  | liquid = 41.45 |
+DATAQ:  | liquid = 41.16 |
+[0;32mI (1393784) _stage1Calculate: Heating    thermTempC:36.090042.2   ModelTempC: 34.103443.2[0m
+DATAQ:  | liquid = 41.2 |
+DATAQ:  | liquid = 41.14 |
+DATAQ:  | liquid = 41.11 |
+[0;32mI (1396286) _stage1Calculate: Heating    thermTempC:35.950100.2   ModelTempC: 34.046112.2[0m
+DATAQ:  | liquid = 40.99 |
+DATAQ:  | liquid = 40.98 |
+[0;32mI (1398786) _stage1Calculate: Heating    thermTempC:35.950100.2   ModelTempC: 33.990406.2[0m
+DATAQ:  | liquid = 41.02 |
+DATAQ:  | liquid = 40.92 |
+DATAQ:  | liquid = 40.79 |
+[0;32mI (1401284) _stage1Calculate: Heating    thermTempC:35.950100.2   ModelTempC: 33.935917.2[0m
+DATAQ:  | liquid = 40.89 |
+DATAQ:  | liquid = 40.86 |
+[0;32mI (1403786) _stage1Calculate: Heating    thermTempC:35.810432.2   ModelTempC: 33.881741.2[0m
+DATAQ:  | liquid = 40.78 |
+DATAQ:  | liquid = 40.68 |
+DATAQ:  | liquid = 40.57 |
+[0;32mI (1406286) _stage1Calculate: Heating    thermTempC:35.740696.2   ModelTempC: 33.828663.2[0m
+DATAQ:  | liquid = 40.53 |
+DATAQ:  | liquid = 40.42 |
+[0;32mI (1408786) _stage1Calculate: Heating    thermTempC:35.740696.2   ModelTempC: 33.775761.2[0m
+DATAQ:  | liquid = 40.66 |
+DATAQ:  | liquid = 40.55 |
+[0;32mI (1411285) _stage1Calculate: Heating    thermTempC:35.740696.2   ModelTempC: 33.723770.2[0m
+DATAQ:  | liquid = 40.53 |
+DATAQ:  | liquid = 40.28 |
+DATAQ:  | liquid = 40.25 |
+[0;32mI (1413785) _stage1Calculate: Heating    thermTempC:35.601421.2   ModelTempC: 33.673157.2[0m
+DATAQ:  | liquid = 40.18 |
+DATAQ:  | liquid = 40.33 |
+[0;32mI (1416286) _stage1Calculate: Heating    thermTempC:35.601421.2   ModelTempC: 33.621956.2[0m
+DATAQ:  | liquid = 40.26 |
+DATAQ:  | liquid = 39.98 |
+DATAQ:  | liquid = 39.96 |
+[0;32mI (1418786) _stage1Calculate: Heating    thermTempC:35.531883.2   ModelTempC: 33.571415.2[0m
+DATAQ:  | liquid = 39.95 |
+DATAQ:  | liquid = 39.93 |
+[0;32mI (1421286) _stage1Calculate: Heating    thermTempC:35.531883.2   ModelTempC: 33.521832.2[0m
+DATAQ:  | liquid = 40.07 |
+DATAQ:  | liquid = 40.01 |
+DATAQ:  | liquid = 39.8 |
+[0;32mI (1423786) _stage1Calculate: Heating    thermTempC:35.462414.2   ModelTempC: 33.473675.2[0m
+DATAQ:  | liquid = 39.71 |
+DATAQ:  | liquid = 39.73 |
+[0;32mI (1426284) _stage1Calculate: Heating    thermTempC:35.393009.2   ModelTempC: 33.426392.2[0m
+DATAQ:  | liquid = 39.76 |
+DATAQ:  | liquid = 39.71 |
+DATAQ:  | liquid = 39.71 |
+[0;32mI (1428785) _stage1Calculate: Heating    thermTempC:35.393009.2   ModelTempC: 33.379002.2[0m
+DATAQ:  | liquid = 39.62 |
+DATAQ:  | liquid = 39.56 |
+[0;32mI (1431286) _stage1Calculate: Heating    thermTempC:35.323666.2   ModelTempC: 33.331509.2[0m
+DATAQ:  | liquid = 39.59 |
+DATAQ:  | liquid = 39.46 |
+DATAQ:  | liquid = 39.48 |
+[0;32mI (1433785) _stage1Calculate: Heating    thermTempC:35.254387.2   ModelTempC: 33.284252.2[0m
+DATAQ:  | liquid = 39.38 |
+DATAQ:  | liquid = 39.44 |
+[0;32mI (1436286) _stage1Calculate: Heating    thermTempC:35.254387.2   ModelTempC: 33.238094.2[0m
+DATAQ:  | liquid = 39.22 |
+DATAQ:  | liquid = 39.38 |
+DATAQ:  | liquid = 50.64 |
+DATAQ:  | liquid = 50.64 |
+DATAQ:  | liquid = 50.55 |
+DATAQ:  | liquid = 50.31 |
+DATAQ:  | liquid = 50.26 |
+DATAQ:  | liquid = 50.22 |
+DATAQ:  | liquid = 49.29 |
+DATAQ:  | liquid = 47.4 |
+DATAQ:  | liquid = 47.28 |
+[0;32mI (111378) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (111381) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (111401) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (111402) BLE_PERIPH: Received 19/19[0m
+[0;32mI (111405) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (111412) FILE: Failed to delete file[0m
+[0;33mW (111419) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (111424) BLE_PERIPH: Sending Response Packet: [37,true,234,[],0][0m
+[0;32mI (111434) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[37, true, 234, [], 0]
+[0;32mI (111457) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [37,true,234,[],0][0m
+[0;32mI (111459) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE[0m
+[0;32mI (111480) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (111482) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (111502) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (111528) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (111528) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (111529) BLE_PERIPH: Notifying[0m
+[0;33mW (111533) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (111539) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (111546) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (111551) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;33mW (111557) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (111592) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (111593) BLE_PERIPH: Received 18/18[0m
+[0;32mI (111596) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (111617) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (111624) BLE_PERIPH: Sending Response Packet: [34,true,235,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61596,43.88,30.41,0,0,0,0.00],0][0m
+[0;32mI (111632) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 235, ["2022-04-07T16:48:28.328Z", "044bfb04-9fdf-4263-a657-c2512c275c25", 61596, 43.88, 30.41, 0, 0, 0, 0.00], 0]
+[0;32mI (111659) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,235,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61596,43.88,30.41,0,0,0,0.00],0][0m
+[0;32mI (111693) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (111695) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (111716) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 48.04 |
+[0;32mI (111749) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (111751) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (111772) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (111773) BLE_PERIPH: Received 19/19[0m
+[0;32mI (111776) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (111808) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (111810) BLE_PERIPH: Sending Response Packet: [34,true,237,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61787,43.84,30.41,0,0,0,0.00],0][0m
+[0;32mI (111822) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 237, ["2022-04-07T16:48:28.328Z", "044bfb04-9fdf-4263-a657-c2512c275c25", 61787, 43.84, 30.41, 0, 0, 0, 0.00], 0]
+[0;32mI (111851) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,237,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61787,43.84,30.41,0,0,0,0.00],0][0m
+[0;32mI (111885) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (111887) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (111907) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (111930) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (111932) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (111963) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (111964) BLE_PERIPH: Received 19/19[0m
+[0;32mI (111967) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (111998) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (112000) BLE_PERIPH: Sending Response Packet: [34,true,239,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61977,43.81,30.41,0,0,0,0.00],0][0m
+[0;32mI (112013) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 239, ["2022-04-07T16:48:28.328Z", "044bfb04-9fdf-4263-a657-c2512c275c25", 61977, 43.81, 30.41, 0, 0, 0, 0.00], 0]
+[0;32mI (112042) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,239,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",61977,43.81,30.41,0,0,0,0.00],0][0m
+[0;32mI (112087) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (112089) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (112110) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (112154) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (112156) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (112188) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (112189) BLE_PERIPH: Received 19/19[0m
+[0;32mI (112192) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (112232) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (112234) BLE_PERIPH: Sending Response Packet: [34,true,238,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",62211,43.77,30.41,0,0,0,0.00],0][0m
+[0;32mI (112247) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 238, ["2022-04-07T16:48:28.328Z", "044bfb04-9fdf-4263-a657-c2512c275c25", 62211, 43.77, 30.41, 0, 0, 0, 0.00], 0]
+[0;32mI (112289) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,238,["2022-04-07T16:48:28.328Z","044bfb04-9fdf-4263-a657-c2512c275c25",62211,43.77,30.41,0,0,0,0.00],0][0m
+[0;32mI (112334) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (112336) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (112368) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 48.7 |
+DATAQ:  | liquid = 32.67 |
+DATAQ:  | liquid = 25.61 |
+DATAQ:  | liquid = 25.2 |
+DATAQ:  | liquid = 37.44 |
+DATAQ:  | liquid = 44.18 |
+DATAQ:  | liquid = 44.09 |
+DATAQ:  | liquid = 42.86 |
+DATAQ:  | liquid = 42.5 |
+DATAQ:  | liquid = 41.06 |
+DATAQ:  | liquid = 39.17 |
+DATAQ:  | liquid = 39.24 |
+DATAQ:  | liquid = 39.66 |
+DATAQ:  | liquid = 39.8 |
+DATAQ:  | liquid = 39.93 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.22 |
+DATAQ:  | liquid = 40.31 |
+DATAQ:  | liquid = 40.33 |
+DATAQ:  | liquid = 40.3 |
+DATAQ:  | liquid = 40.46 |
+DATAQ:  | liquid = 40.3 |
+DATAQ:  | liquid = 40.47 |
+DATAQ:  | liquid = 40.24 |
+DATAQ:  | liquid = 40.25 |
+DATAQ:  | liquid = 40.39 |
+DATAQ:  | liquid = 40.36 |
+DATAQ:  | liquid = 40.37 |
+DATAQ:  | liquid = 40.23 |
+DATAQ:  | liquid = 40.22 |
+DATAQ:  | liquid = 40.36 |
+DATAQ:  | liquid = 40.19 |
+DATAQ:  | liquid = 40.02 |
+DATAQ:  | liquid = 40.01 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.15 |
+DATAQ:  | liquid = 40.03 |
+DATAQ:  | liquid = 40.03 |
+DATAQ:  | liquid = 39.96 |
+DATAQ:  | liquid = 39.87 |
+DATAQ:  | liquid = 39.86 |
+DATAQ:  | liquid = 39.85 |
+DATAQ:  | liquid = 39.82 |
+DATAQ:  | liquid = 39.76 |
+DATAQ:  | liquid = 39.69 |
+DATAQ:  | liquid = 39.61 |
+DATAQ:  | liquid = 39.6 |
+DATAQ:  | liquid = 39.51 |
+DATAQ:  | liquid = 39.56 |
+DATAQ:  | liquid = 39.49 |
+DATAQ:  | liquid = 39.31 |
+DATAQ:  | liquid = 39.36 |
+DATAQ:  | liquid = 39.19 |
+DATAQ:  | liquid = 39.3 |
+DATAQ:  | liquid = 39.16 |
+DATAQ:  | liquid = 39.23 |
+DATAQ:  | liquid = 39.19 |
+DATAQ:  | liquid = 39.19 |
+DATAQ:  | liquid = 39.0 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 38.85 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 38.75 |
+DATAQ:  | liquid = 38.7 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.58 |
+DATAQ:  | liquid = 38.8 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.27 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.35 |
+DATAQ:  | liquid = 38.31 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.35 |
+DATAQ:  | liquid = 38.17 |
+DATAQ:  | liquid = 38.06 |
+DATAQ:  | liquid = 38.14 |
+DATAQ:  | liquid = 37.95 |
+DATAQ:  | liquid = 38.03 |
+DATAQ:  | liquid = 37.88 |
+DATAQ:  | liquid = 37.97 |
+DATAQ:  | liquid = 37.93 |
+DATAQ:  | liquid = 37.9 |
+DATAQ:  | liquid = 37.86 |
+DATAQ:  | liquid = 37.86 |
+DATAQ:  | liquid = 37.63 |
+DATAQ:  | liquid = 37.65 |
+DATAQ:  | liquid = 37.55 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.6 |
+DATAQ:  | liquid = 37.67 |
+DATAQ:  | liquid = 37.29 |
+DATAQ:  | liquid = 37.52 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.21 |
+DATAQ:  | liquid = 37.18 |
+DATAQ:  | liquid = 37.17 |
+DATAQ:  | liquid = 37.1 |
+DATAQ:  | liquid = 37.22 |
+DATAQ:  | liquid = 37.08 |
+DATAQ:  | liquid = 36.94 |
+DATAQ:  | liquid = 37.21 |
+DATAQ:  | liquid = 36.84 |
+DATAQ:  | liquid = 36.8 |
+DATAQ:  | liquid = 37.05 |
+DATAQ:  | liquid = 36.93 |
+DATAQ:  | liquid = 36.68 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.59 |
+DATAQ:  | liquid = 36.8 |
+DATAQ:  | liquid = 36.82 |
+DATAQ:  | liquid = 36.44 |
+DATAQ:  | liquid = 36.4 |
+DATAQ:  | liquid = 36.58 |
+DATAQ:  | liquid = 36.31 |
+DATAQ:  | liquid = 36.55 |
+DATAQ:  | liquid = 36.52 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.18 |
+DATAQ:  | liquid = 36.14 |
+DATAQ:  | liquid = 36.16 |
+DATAQ:  | liquid = 36.25 |
+DATAQ:  | liquid = 36.18 |
+DATAQ:  | liquid = 36.12 |
+DATAQ:  | liquid = 35.94 |
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 35.88 |
+DATAQ:  | liquid = 35.8 |
+DATAQ:  | liquid = 36.06 |
+DATAQ:  | liquid = 35.63 |
+DATAQ:  | liquid = 35.92 |
+DATAQ:  | liquid = 35.66 |
+DATAQ:  | liquid = 35.59 |
+DATAQ:  | liquid = 35.81 |
+DATAQ:  | liquid = 35.74 |
+DATAQ:  | liquid = 35.59 |
+DATAQ:  | liquid = 35.72 |
+DATAQ:  | liquid = 35.5 |
+DATAQ:  | liquid = 35.47 |
+DATAQ:  | liquid = 35.45 |
+DATAQ:  | liquid = 35.46 |
+DATAQ:  | liquid = 35.5 |
+DATAQ:  | liquid = 35.48 |
+DATAQ:  | liquid = 35.17 |
+DATAQ:  | liquid = 35.16 |
+DATAQ:  | liquid = 35.1 |
+DATAQ:  | liquid = 35.1 |
+DATAQ:  | liquid = 35.08 |
+DATAQ:  | liquid = 35.08 |
+DATAQ:  | liquid = 34.98 |
+DATAQ:  | liquid = 35.23 |
+DATAQ:  | liquid = 35.1 |
+DATAQ:  | liquid = 34.99 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.81 |
+DATAQ:  | liquid = 34.8 |
+DATAQ:  | liquid = 34.74 |
+DATAQ:  | liquid = 34.89 |
+DATAQ:  | liquid = 34.86 |
+DATAQ:  | liquid = 34.84 |
+DATAQ:  | liquid = 34.56 |
+DATAQ:  | liquid = 34.49 |
+DATAQ:  | liquid = 34.66 |
+DATAQ:  | liquid = 34.71 |
+DATAQ:  | liquid = 34.47 |
+DATAQ:  | liquid = 34.65 |
+DATAQ:  | liquid = 34.42 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.48 |
+DATAQ:  | liquid = 34.36 |
+DATAQ:  | liquid = 34.45 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.18 |
+DATAQ:  | liquid = 34.29 |
+DATAQ:  | liquid = 34.25 |
+DATAQ:  | liquid = 34.35 |
+DATAQ:  | liquid = 34.29 |
+DATAQ:  | liquid = 34.3 |
+DATAQ:  | liquid = 34.24 |
+DATAQ:  | liquid = 34.23 |
+DATAQ:  | liquid = 33.87 |
+DATAQ:  | liquid = 34.08 |
+DATAQ:  | liquid = 33.72 |
+DATAQ:  | liquid = 33.8 |
+DATAQ:  | liquid = 34.04 |
+DATAQ:  | liquid = 33.82 |
+DATAQ:  | liquid = 33.75 |
+DATAQ:  | liquid = 33.73 |
+DATAQ:  | liquid = 33.83 |
+DATAQ:  | liquid = 33.78 |
+DATAQ:  | liquid = 33.79 |
+DATAQ:  | liquid = 33.75 |
+DATAQ:  | liquid = 33.7 |
+DATAQ:  | liquid = 33.69 |
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.61 |
+DATAQ:  | liquid = 33.58 |
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.49 |
+DATAQ:  | liquid = 33.39 |
+DATAQ:  | liquid = 33.38 |
+DATAQ:  | liquid = 33.64 |
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.48 |
+DATAQ:  | liquid = 33.46 |
+DATAQ:  | liquid = 33.17 |
+DATAQ:  | liquid = 33.37 |
+DATAQ:  | liquid = 33.39 |
+DATAQ:  | liquid = 33.32 |
+DATAQ:  | liquid = 33.16 |
+DATAQ:  | liquid = 33.15 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 33.09 |
+DATAQ:  | liquid = 33.12 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 33.03 |
+DATAQ:  | liquid = 33.07 |
+DATAQ:  | liquid = 33.05 |
+DATAQ:  | liquid = 32.82 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 32.8 |
+DATAQ:  | liquid = 32.77 |
+DATAQ:  | liquid = 32.97 |
+DATAQ:  | liquid = 33.0 |
+DATAQ:  | liquid = 32.95 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 32.84 |
+DATAQ:  | liquid = 32.78 |
+DATAQ:  | liquid = 32.68 |
+DATAQ:  | liquid = 32.82 |
+DATAQ:  | liquid = 32.8 |
+DATAQ:  | liquid = 32.75 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 32.61 |
+DATAQ:  | liquid = 32.65 |
+DATAQ:  | liquid = 32.61 |
+DATAQ:  | liquid = 32.59 |
+DATAQ:  | liquid = 32.41 |
+DATAQ:  | liquid = 32.36 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.44 |
+DATAQ:  | liquid = 32.42 |
+DATAQ:  | liquid = 32.34 |
+DATAQ:  | liquid = 32.29 |
+DATAQ:  | liquid = 32.23 |
+DATAQ:  | liquid = 32.25 |
+DATAQ:  | liquid = 32.4 |
+DATAQ:  | liquid = 32.36 |
+DATAQ:  | liquid = 32.3 |
+DATAQ:  | liquid = 32.07 |
+DATAQ:  | liquid = 32.04 |
+DATAQ:  | liquid = 32.06 |
+DATAQ:  | liquid = 32.25 |
+DATAQ:  | liquid = 32.23 |
+DATAQ:  | liquid = 32.08 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 31.87 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 32.15 |
+DATAQ:  | liquid = 31.84 |
+DATAQ:  | liquid = 32.07 |
+DATAQ:  | liquid = 32.04 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.76 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.95 |
+DATAQ:  | liquid = 31.63 |
+DATAQ:  | liquid = 31.9 |
+[0;33mW (31628) heapMonitor_checkFreeHeapSize: New heap low water mark 118976[0m
+DATAQ:  | liquid = 32.85 |
+DATAQ:  | liquid = 32.84 |
+DATAQ:  | liquid = 32.88 |

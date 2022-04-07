@@ -1,0 +1,90 @@
+DATAQ:  | liquid = 65.28 | stg1htsnk = 65.36 |
+DATAQ:  | liquid = 65.08 | stg1htsnk = 65.21 |
+DATAQ:  | liquid = 64.83 | stg1htsnk = 64.92 |
+DATAQ:  | liquid = 64.69 | stg1htsnk = 64.75 |
+DATAQ:  | liquid = 64.41 | stg1htsnk = 64.53 |
+DATAQ:  | liquid = 64.14 | stg1htsnk = 64.33 |
+DATAQ:  | liquid = 63.87 | stg1htsnk = 64.1 |
+[0;32mI (2175391) Latch-Info: Curr: 189, LSENS: 0[0m
+[0;32mI (2175454) Latch-Info: Curr: 179, LSENS: 0[0m
+[0;32mI (2175522) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (2175585) Latch-Info: Curr: 180, LSENS: 0[0m
+[0;32mI (2175650) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (2175721) Latch-Info: Curr: 201, LSENS: 0[0m
+[0;32mI (2175782) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (2175845) Latch-Info: Curr: 181, LSENS: 0[0m
+[0;32mI (2175909) Latch-Info: Curr: 205, LSENS: 0[0m
+[0;32mI (2175972) Latch-Info: Curr: 177, LSENS: 0[0m
+[0;32mI (2176035) Latch-Info: Curr: 174, LSENS: 0[0m
+DATAQ:  | liquid = 63.7 | stg1htsnk = 63.87 |
+[0;32mI (2176099) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (2176141) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (2176172) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (2176202) Latch-Info: Curr: 169, LSENS: 0[0m
+[0;32mI (2176241) Latch-Info: Curr: 179, LSENS: 0[0m
+[0;32mI (2176774) Latch-Info: Curr: 185, LSENS: 0[0m
+[0;32mI (2176807) Latch-Info: Curr: 972, LSENS: 0[0m
+[0;32mI (2176841) Latch-Info: Curr: 487, LSENS: 0[0m
+[0;32mI (2176872) Latch-Info: Curr: 187, LSENS: 0[0m
+[0;32mI (2176903) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (2176941) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (2176971) Latch-Info: Curr: 167, LSENS: 0[0m
+[0;32mI (2177003) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (2177041) Latch-Info: Curr: 147, LSENS: 0[0m
+DATAQ:  | liquid = 63.64 | stg1htsnk = 63.89 |
+[0;32mI (2177072) Latch-Info: Curr: 142, LSENS: 0[0m
+[0;32mI (2177102) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (2177141) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (2177172) Latch-Info: Curr: 157, LSENS: 0[0m
+[0;32mI (2177204) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (2177241) Latch-Info: Curr: 139, LSENS: 0[0m
+[0;32mI (2177273) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (2177304) Latch-Info: Curr: 155, LSENS: 0[0m
+[0;32mI (2177341) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (2177372) Latch-Info: Curr: 179, LSENS: 0[0m
+[0;32mI (2177402) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (2177441) Latch-Info: Curr: 159, LSENS: 0[0m
+[0;32mI (2177472) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (2177503) Latch-Info: Curr: 167, LSENS: 0[0m
+[0;32mI (2177541) Latch-Info: Curr: 159, LSENS: 0[0m
+[0;32mI (2177572) Latch-Info: Curr: 146, LSENS: 0[0m
+[0;32mI (2177603) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (2177641) Latch-Info: Curr: 146, LSENS: 0[0m
+[0;32mI (2177672) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (2177702) Latch-Info: Curr: 169, LSENS: 0[0m
+[0;32mI (2177741) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (2177772) Latch-Info: Curr: 144, LSENS: 0[0m
+[0;32mI (2177803) Latch-Info: Curr: 132, LSENS: 0[0m
+[0;32mI (2177841) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (2177872) Latch-Info: Curr: 131, LSENS: 0[0m
+[0;32mI (2177904) Latch-Info: Curr: 122, LSENS: 0[0m
+[0;32mI (2177941) Latch-Info: Curr: 127, LSENS: 0[0m
+[0;32mI (2177972) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (2178004) _readLatchSwitches: New Latch-Home Value: 1[0m
+DATAQ:  | liquid = 63.66 | stg1htsnk = 63.95 |
+[0;32mI (2178207) Latch-Info: Curr: 112, LSENS: 0[0m
+[0;32mI (2178241) Latch-Info: Curr: 944, LSENS: 0[0m
+[0;32mI (2178272) Latch-Info: Curr: 449, LSENS: 0[0m
+[0;32mI (2178303) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (2178341) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 63.43 | stg1htsnk = 63.82 |
+DATAQ:  | liquid = 63.33 | stg1htsnk = 63.79 |
+DATAQ:  | liquid = 63.16 | stg1htsnk = 63.7 |
+[0;32mI (2181190) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (2181192) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (2181211) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (2181212) BLE_PERIPH: Received 19/19[0m
+[0;32mI (2181214) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (2181247) BLE_PERIPH: Sending Response Packet: [34, true, 234, ["2022-01-06T21:05:44.147Z","e6436815-18b1-419e-a49f-693529d3a336",381132,48.96,32.87,0,0,0,0.00], 0][0m
+[0;32mI (2181252) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 234, ["2022-01-06T21:05:44.147Z", "e6436815-18b1-419e-a49f-693529d3a336", 381132, 48.96, 32.87, 0, 0, 0, 0.00], 0]
+[0;32mI (2181279) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 234, ["2022-01-06T21:05:44.147Z","e6436815-18b1-419e-a49f-693529d3a336",381132,48.96,32.87,0,0,0,0.00], 0][0m
+[0;32mI (2181313) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (2181315) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (2181336) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 63.02 | stg1htsnk = 63.73 |
+DATAQ:  | liquid = 61.35 | stg1htsnk = 62.88 |
+DATAQ:  | liquid = 60.66 | stg1htsnk = 62.63 |
+DATAQ:  | liquid = 56.25 | stg1htsnk = 59.86 |
+DATAQ:  | liquid = 61.83 | stg1htsnk = 61.75 |
+DATAQ:  | liquid = 61.09 | stg1htsnk = 61.04 |

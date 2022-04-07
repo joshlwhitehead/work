@@ -1,0 +1,34 @@
+DATAQ:  | liquid = 22.02 | stg1htsnk = 21.5 |
+DATAQ:  | liquid = 21.93 | stg1htsnk = 21.52 |
+DATAQ:  | liquid = 23.8 | stg1htsnk = 24.85 |
+DATAQ:  | liquid = 23.65 | stg1htsnk = 24.86 |
+DATAQ:  | liquid = 25.68 | stg1htsnk = 26.42 |
+DATAQ:  | liquid = 25.41 | stg1htsnk = 27.95 |
+DATAQ:  | liquid = 26.87 | stg1htsnk = 29.91 |
+DATAQ:  | liquid = 28.23 | stg1htsnk = 29.15 |
+[0;32mI (1972280) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (1972282) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (1972313) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1972314) BLE_PERIPH: Received 19/19[0m
+[0;32mI (1972316) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (1972362) BLE_PERIPH: Sending Response Packet: [34, true, 344, ["2022-01-21T20:16:42.926Z","e6436815-18b1-419e-a49f-693529d3a336",797645,35.76,29.88,0,0,0,0.00], 0][0m
+[34, true, 344, ["2022-01-21T20:16:42.926Z", "e6436815-18b1-419e-a49f-693529d3a336", 797645, 35.76, 29.88, 0, 0, 0, 0.00], 0]
+[0;32mI (1972368) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[0;32mI (1972425) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 344, ["2022-01-21T20:16:42.926Z","e6436815-18b1-419e-a49f-693529d3a336",797645,35.76,29.88,0,0,0,0.00], 0][0m
+[0;32mI (1972482) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (1972484) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (1972527) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 28.7 | stg1htsnk = 29.15 |
+DATAQ:  | liquid = 28.52 | stg1htsnk = 28.82 |
+DATAQ:  | liquid = 28.56 | stg1htsnk = 29.08 |
+DATAQ:  | liquid = 28.07 | stg1htsnk = 28.68 |
+DATAQ:  | liquid = 28.2 | stg1htsnk = 28.88 |
+DATAQ:  | liquid = 27.84 | stg1htsnk = 29.01 |
+DATAQ:  | liquid = 27.91 | stg1htsnk = 29.06 |
+DATAQ:  | liquid = 27.95 | stg1htsnk = 29.04 |
+DATAQ:  | liquid = 27.98 | stg1htsnk = 29.08 |
+DATAQ:  | liquid = 28.13 | stg1htsnk = 29.13 |
+DATAQ:  | liquid = 28.47 | stg1htsnk = 29.23 |
+DATAQ:  | liquid = 28.86 | stg1htsnk = 29.35 |
+DATAQ:  | liquid = 28.99 | stg1htsnk = 29.36 |
+DATAQ:  | liquid = 29.19 | stg1htsnk = 29.33 |

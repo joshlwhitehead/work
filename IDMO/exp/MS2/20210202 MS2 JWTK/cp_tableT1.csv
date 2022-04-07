@@ -1,0 +1,9 @@
+﻿Experiment: 20210202 JWTK MS2 temp1  Selected Filter: 530 (470-530),,,,,,,
+Include,Color,Pos,Name,Cp,Concentration,Standard,Status
+TRUE,16744448,1,Sample 1,13.48,,0,
+TRUE,16777088,2,Sample 2,15.18,,0,
+TRUE,16384,3,Sample 3,20.61,,0,
+TRUE,8454016,4,Sample 4,8.46,,0,
+TRUE,11053311,5,Sample 5,23.8,,0,
+TRUE,255,6,Sample 6,27.66,,0,
+FALSE,-1,7,Sample 7,,,0,

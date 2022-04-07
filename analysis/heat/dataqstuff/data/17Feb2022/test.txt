@@ -1,0 +1,79 @@
+DATAQ:  | liquid = 50.42 |
+DATAQ:  | liquid = 50.23 |
+DATAQ:  | liquid = 50.32 |
+DATAQ:  | liquid = 50.22 |
+DATAQ:  | liquid = 50.14 |
+[0;32mI (1089457) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (1089459) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (1089502) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1089503) BLE_PERIPH: Received 18/18[0m
+[0;32mI (1089505) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (1089522) BLE_PERIPH: Sending Response Packet: [34, true, 29, ["2022-02-17T16:33:46.707Z","1a974438-7527-4bdb-90c6-4230798088b6",992412,34.95,29.34,0,0,0,0.00], 0][0m
+[0;32mI (1089528) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116[0m
+[34, true, 29, ["2022-02-17T16:33:46.707Z", "1a974438-7527-4bdb-90c6-4230798088b6", 992412, 34.95, 29.34, 0, 0, 0, 0.00], 0]
+[0;32mI (1089580) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34, true, 29, ["2022-02-17T16:33:46.707Z","1a974438-7527-4bdb-90c6-4230798088b6",992412,34.95,29.34,0,0,0,0.00], 0][0m
+[0;32mI (1089615) BLE_PERIPH: Instrument to App Transaction Write 116/116[0m
+[0;32mI (1089617) BLE_PERIPH: Instrument to App Transaction Read/Notify 116/116[0m
+[0;32mI (1089637) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 50.09 |
+DATAQ:  | liquid = 49.76 |
+DATAQ:  | liquid = 49.32 |
+DATAQ:  | liquid = 45.83 |
+DATAQ:  | liquid = 41.77 |
+DATAQ:  | liquid = 37.76 |
+DATAQ:  | liquid = 37.2 |
+DATAQ:  | liquid = 35.83 |
+DATAQ:  | liquid = 34.76 |
+DATAQ:  | liquid = 33.16 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 31.95 |
+DATAQ:  | liquid = 31.66 |
+DATAQ:  | liquid = 30.77 |
+DATAQ:  | liquid = 30.23 |
+DATAQ:  | liquid = 29.46 |
+DATAQ:  | liquid = 28.71 |
+DATAQ:  | liquid = 27.91 |
+DATAQ:  | liquid = 27.09 |
+DATAQ:  | liquid = 26.64 |
+DATAQ:  | liquid = 25.5 |
+DATAQ:  | liquid = 25.45 |
+DATAQ:  | liquid = 25.15 |
+DATAQ:  | liquid = 24.05 |
+DATAQ:  | liquid = 23.78 |
+DATAQ:  | liquid = 23.76 |
+DATAQ:  | liquid = 24.1 |
+DATAQ:  | liquid = 23.52 |
+DATAQ:  | liquid = 22.73 |
+DATAQ:  | liquid = 22.31 |
+DATAQ:  | liquid = 21.96 |
+DATAQ:  | liquid = 21.33 |
+DATAQ:  | liquid = 21.32 |
+DATAQ:  | liquid = 20.96 |
+DATAQ:  | liquid = 20.9 |
+DATAQ:  | liquid = 20.36 |
+DATAQ:  | liquid = 19.75 |
+DATAQ:  | liquid = 19.77 |
+DATAQ:  | liquid = 19.93 |
+DATAQ:  | liquid = 19.6 |
+DATAQ:  | liquid = 19.26 |
+DATAQ:  | liquid = 19.13 |
+DATAQ:  | liquid = 18.59 |
+[0;32mI (1133028) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (1133030) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (1133073) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1133074) BLE_PERIPH: Received 18/18[0m
+[0;32mI (1133076) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (1133097) BLE_PERIPH: Sending Response Packet: [34, true, 30, ["2022-02-17T16:33:46.707Z","1a974438-7527-4bdb-90c6-4230798088b6",1035987,34.15,29.22,0,0,0,0.00], 0][0m
+[0;32mI (1133103) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 30, ["2022-02-17T16:33:46.707Z", "1a974438-7527-4bdb-90c6-4230798088b6", 1035987, 34.15, 29.22, 0, 0, 0, 0.00], 0]
+[0;32mI (1133140) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 30, ["2022-02-17T16:33:46.707Z","1a974438-7527-4bdb-90c6-4230798088b6",1035987,34.15,29.22,0,0,0,0.00], 0][0m
+[0;32mI (1133197) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (1133199) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (1133242) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 18.54 |
+DATAQ:  | liquid = 35.18 |
+DATAQ:  | liquid = 35.22 |
+DATAQ:  | liquid = 35.25 |
+DATAQ:  | liquid = 35.22 |
+DATAQ:  | liquid = 35.27 |
+DATAQ:  | liquid = 35.23 |

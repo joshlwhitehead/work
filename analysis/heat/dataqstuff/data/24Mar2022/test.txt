@@ -1,0 +1,1902 @@
+DATAQ:  | liquid = 40.88 |
+DATAQ:  | liquid = 40.21 |
+DATAQ:  | liquid = 39.51 |
+DATAQ:  | liquid = 39.07 |
+DATAQ:  | liquid = 38.74 |
+DATAQ:  | liquid = 38.21 |
+DATAQ:  | liquid = 38.15 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.34 |
+DATAQ:  | liquid = 38.26 |
+DATAQ:  | liquid = 37.94 |
+DATAQ:  | liquid = 38.26 |
+DATAQ:  | liquid = 37.88 |
+DATAQ:  | liquid = 37.75 |
+DATAQ:  | liquid = 38.17 |
+DATAQ:  | liquid = 37.73 |
+DATAQ:  | liquid = 37.69 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.93 |
+DATAQ:  | liquid = 37.56 |
+DATAQ:  | liquid = 37.84 |
+DATAQ:  | liquid = 37.54 |
+DATAQ:  | liquid = 37.46 |
+DATAQ:  | liquid = 37.76 |
+DATAQ:  | liquid = 37.31 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.16 |
+DATAQ:  | liquid = 37.18 |
+DATAQ:  | liquid = 37.55 |
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.44 |
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.05 |
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 36.93 |
+DATAQ:  | liquid = 37.29 |
+DATAQ:  | liquid = 36.88 |
+DATAQ:  | liquid = 36.92 |
+DATAQ:  | liquid = 37.16 |
+DATAQ:  | liquid = 36.82 |
+DATAQ:  | liquid = 37.04 |
+DATAQ:  | liquid = 36.99 |
+DATAQ:  | liquid = 36.67 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.94 |
+DATAQ:  | liquid = 36.54 |
+DATAQ:  | liquid = 36.93 |
+DATAQ:  | liquid = 36.91 |
+DATAQ:  | liquid = 36.85 |
+DATAQ:  | liquid = 36.47 |
+DATAQ:  | liquid = 36.45 |
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.67 |
+DATAQ:  | liquid = 36.73 |
+DATAQ:  | liquid = 36.67 |
+DATAQ:  | liquid = 36.57 |
+DATAQ:  | liquid = 36.64 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.45 |
+DATAQ:  | liquid = 36.43 |
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.42 |
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 36.09 |
+DATAQ:  | liquid = 36.13 |
+DATAQ:  | liquid = 36.37 |
+DATAQ:  | liquid = 36.33 |
+DATAQ:  | liquid = 35.96 |
+DATAQ:  | liquid = 35.91 |
+DATAQ:  | liquid = 35.9 |
+DATAQ:  | liquid = 36.09 |
+DATAQ:  | liquid = 36.05 |
+DATAQ:  | liquid = 36.07 |
+DATAQ:  | liquid = 36.04 |
+DATAQ:  | liquid = 35.93 |
+DATAQ:  | liquid = 35.81 |
+DATAQ:  | liquid = 35.81 |
+DATAQ:  | liquid = 35.7 |
+DATAQ:  | liquid = 35.7 |
+DATAQ:  | liquid = 35.92 |
+DATAQ:  | liquid = 35.84 |
+DATAQ:  | liquid = 35.79 |
+DATAQ:  | liquid = 35.42 |
+DATAQ:  | liquid = 35.69 |
+DATAQ:  | liquid = 35.48 |
+DATAQ:  | liquid = 35.44 |
+DATAQ:  | liquid = 35.56 |
+DATAQ:  | liquid = 35.44 |
+DATAQ:  | liquid = 35.42 |
+DATAQ:  | liquid = 35.41 |
+DATAQ:  | liquid = 35.68 |
+DATAQ:  | liquid = 35.61 |
+DATAQ:  | liquid = 35.21 |
+DATAQ:  | liquid = 35.52 |
+DATAQ:  | liquid = 35.48 |
+DATAQ:  | liquid = 35.47 |
+DATAQ:  | liquid = 35.05 |
+DATAQ:  | liquid = 35.45 |
+DATAQ:  | liquid = 35.4 |
+DATAQ:  | liquid = 35.07 |
+DATAQ:  | liquid = 35.02 |
+DATAQ:  | liquid = 35.04 |
+DATAQ:  | liquid = 35.05 |
+DATAQ:  | liquid = 34.98 |
+DATAQ:  | liquid = 35.15 |
+DATAQ:  | liquid = 35.21 |
+DATAQ:  | liquid = 35.18 |
+DATAQ:  | liquid = 35.16 |
+DATAQ:  | liquid = 35.19 |
+DATAQ:  | liquid = 35.1 |
+DATAQ:  | liquid = 34.88 |
+DATAQ:  | liquid = 34.77 |
+DATAQ:  | liquid = 34.86 |
+DATAQ:  | liquid = 34.79 |
+DATAQ:  | liquid = 34.84 |
+DATAQ:  | liquid = 34.83 |
+DATAQ:  | liquid = 34.8 |
+DATAQ:  | liquid = 34.85 |
+DATAQ:  | liquid = 34.7 |
+DATAQ:  | liquid = 34.61 |
+DATAQ:  | liquid = 34.71 |
+DATAQ:  | liquid = 34.58 |
+DATAQ:  | liquid = 34.57 |
+DATAQ:  | liquid = 34.57 |
+DATAQ:  | liquid = 34.59 |
+DATAQ:  | liquid = 34.56 |
+DATAQ:  | liquid = 34.51 |
+DATAQ:  | liquid = 34.61 |
+DATAQ:  | liquid = 34.52 |
+DATAQ:  | liquid = 34.33 |
+DATAQ:  | liquid = 34.64 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.57 |
+DATAQ:  | liquid = 34.21 |
+DATAQ:  | liquid = 52.54 |
+DATAQ:  | liquid = 52.31 |
+DATAQ:  | liquid = 52.67 |
+DATAQ:  | liquid = 52.24 |
+DATAQ:  | liquid = 52.02 |
+DATAQ:  | liquid = 52.41 |
+DATAQ:  | liquid = 51.3 |
+DATAQ:  | liquid = 35.16 |
+DATAQ:  | liquid = 30.38 |
+DATAQ:  | liquid = 27.32 |
+DATAQ:  | liquid = 36.76 |
+DATAQ:  | liquid = 42.47 |
+DATAQ:  | liquid = 48.15 |
+DATAQ:  | liquid = 48.86 |
+DATAQ:  | liquid = 47.77 |
+DATAQ:  | liquid = 45.98 |
+DATAQ:  | liquid = 45.67 |
+DATAQ:  | liquid = 46.53 |
+DATAQ:  | liquid = 46.68 |
+DATAQ:  | liquid = 46.66 |
+DATAQ:  | liquid = 46.26 |
+DATAQ:  | liquid = 46.6 |
+DATAQ:  | liquid = 46.46 |
+DATAQ:  | liquid = 46.64 |
+DATAQ:  | liquid = 46.45 |
+DATAQ:  | liquid = 46.68 |
+DATAQ:  | liquid = 46.75 |
+DATAQ:  | liquid = 46.71 |
+DATAQ:  | liquid = 46.71 |
+DATAQ:  | liquid = 46.9 |
+DATAQ:  | liquid = 46.83 |
+DATAQ:  | liquid = 46.86 |
+DATAQ:  | liquid = 46.75 |
+DATAQ:  | liquid = 46.83 |
+DATAQ:  | liquid = 46.9 |
+DATAQ:  | liquid = 47.03 |
+DATAQ:  | liquid = 46.97 |
+DATAQ:  | liquid = 46.98 |
+DATAQ:  | liquid = 46.74 |
+DATAQ:  | liquid = 46.61 |
+DATAQ:  | liquid = 46.92 |
+DATAQ:  | liquid = 46.65 |
+DATAQ:  | liquid = 46.62 |
+DATAQ:  | liquid = 46.69 |
+DATAQ:  | liquid = 46.82 |
+DATAQ:  | liquid = 46.87 |
+DATAQ:  | liquid = 46.64 |
+DATAQ:  | liquid = 46.61 |
+DATAQ:  | liquid = 46.75 |
+DATAQ:  | liquid = 46.7 |
+DATAQ:  | liquid = 46.48 |
+DATAQ:  | liquid = 46.4 |
+DATAQ:  | liquid = 46.5 |
+DATAQ:  | liquid = 46.49 |
+DATAQ:  | liquid = 46.39 |
+DATAQ:  | liquid = 46.34 |
+DATAQ:  | liquid = 46.32 |
+DATAQ:  | liquid = 46.26 |
+DATAQ:  | liquid = 46.12 |
+DATAQ:  | liquid = 46.4 |
+DATAQ:  | liquid = 46.34 |
+DATAQ:  | liquid = 46.35 |
+DATAQ:  | liquid = 46.32 |
+DATAQ:  | liquid = 46.29 |
+DATAQ:  | liquid = 46.08 |
+DATAQ:  | liquid = 46.08 |
+DATAQ:  | liquid = 46.12 |
+DATAQ:  | liquid = 45.98 |
+DATAQ:  | liquid = 46.04 |
+DATAQ:  | liquid = 45.95 |
+DATAQ:  | liquid = 45.8 |
+DATAQ:  | liquid = 45.95 |
+DATAQ:  | liquid = 45.88 |
+DATAQ:  | liquid = 46.02 |
+DATAQ:  | liquid = 45.88 |
+DATAQ:  | liquid = 45.53 |
+DATAQ:  | liquid = 45.84 |
+DATAQ:  | liquid = 45.78 |
+DATAQ:  | liquid = 45.41 |
+DATAQ:  | liquid = 45.8 |
+DATAQ:  | liquid = 45.43 |
+DATAQ:  | liquid = 45.4 |
+DATAQ:  | liquid = 45.4 |
+DATAQ:  | liquid = 45.35 |
+DATAQ:  | liquid = 45.36 |
+DATAQ:  | liquid = 45.47 |
+DATAQ:  | liquid = 45.16 |
+DATAQ:  | liquid = 45.41 |
+DATAQ:  | liquid = 45.41 |
+DATAQ:  | liquid = 45.11 |
+DATAQ:  | liquid = 45.08 |
+DATAQ:  | liquid = 45.29 |
+DATAQ:  | liquid = 45.24 |
+DATAQ:  | liquid = 45.23 |
+DATAQ:  | liquid = 45.04 |
+DATAQ:  | liquid = 45.01 |
+DATAQ:  | liquid = 45.12 |
+DATAQ:  | liquid = 44.93 |
+DATAQ:  | liquid = 44.91 |
+DATAQ:  | liquid = 44.81 |
+DATAQ:  | liquid = 44.76 |
+DATAQ:  | liquid = 44.89 |
+DATAQ:  | liquid = 44.85 |
+DATAQ:  | liquid = 44.69 |
+DATAQ:  | liquid = 44.68 |
+DATAQ:  | liquid = 44.8 |
+DATAQ:  | liquid = 44.61 |
+DATAQ:  | liquid = 44.85 |
+DATAQ:  | liquid = 44.54 |
+DATAQ:  | liquid = 44.67 |
+DATAQ:  | liquid = 44.63 |
+DATAQ:  | liquid = 44.38 |
+DATAQ:  | liquid = 44.41 |
+DATAQ:  | liquid = 44.29 |
+DATAQ:  | liquid = 44.3 |
+DATAQ:  | liquid = 44.33 |
+DATAQ:  | liquid = 44.36 |
+DATAQ:  | liquid = 44.28 |
+DATAQ:  | liquid = 44.25 |
+DATAQ:  | liquid = 44.31 |
+DATAQ:  | liquid = 44.21 |
+DATAQ:  | liquid = 44.24 |
+DATAQ:  | liquid = 44.16 |
+DATAQ:  | liquid = 43.93 |
+DATAQ:  | liquid = 43.82 |
+DATAQ:  | liquid = 43.86 |
+DATAQ:  | liquid = 43.84 |
+DATAQ:  | liquid = 44.08 |
+DATAQ:  | liquid = 43.99 |
+DATAQ:  | liquid = 43.67 |
+DATAQ:  | liquid = 43.7 |
+DATAQ:  | liquid = 43.61 |
+DATAQ:  | liquid = 43.93 |
+DATAQ:  | liquid = 43.63 |
+DATAQ:  | liquid = 43.84 |
+DATAQ:  | liquid = 43.8 |
+DATAQ:  | liquid = 43.57 |
+DATAQ:  | liquid = 43.76 |
+DATAQ:  | liquid = 43.7 |
+DATAQ:  | liquid = 43.63 |
+DATAQ:  | liquid = 43.5 |
+DATAQ:  | liquid = 43.47 |
+DATAQ:  | liquid = 43.61 |
+DATAQ:  | liquid = 43.38 |
+DATAQ:  | liquid = 43.47 |
+DATAQ:  | liquid = 43.5 |
+DATAQ:  | liquid = 43.51 |
+DATAQ:  | liquid = 43.39 |
+DATAQ:  | liquid = 43.31 |
+DATAQ:  | liquid = 43.14 |
+DATAQ:  | liquid = 43.24 |
+DATAQ:  | liquid = 43.07 |
+DATAQ:  | liquid = 43.28 |
+DATAQ:  | liquid = 43.38 |
+DATAQ:  | liquid = 42.96 |
+DATAQ:  | liquid = 43.21 |
+DATAQ:  | liquid = 42.9 |
+DATAQ:  | liquid = 43.15 |
+DATAQ:  | liquid = 43.1 |
+DATAQ:  | liquid = 43.13 |
+DATAQ:  | liquid = 42.76 |
+DATAQ:  | liquid = 42.71 |
+DATAQ:  | liquid = 42.93 |
+DATAQ:  | liquid = 42.76 |
+DATAQ:  | liquid = 42.59 |
+DATAQ:  | liquid = 42.84 |
+DATAQ:  | liquid = 42.64 |
+DATAQ:  | liquid = 42.66 |
+DATAQ:  | liquid = 42.51 |
+DATAQ:  | liquid = 42.52 |
+DATAQ:  | liquid = 42.52 |
+DATAQ:  | liquid = 42.47 |
+DATAQ:  | liquid = 42.53 |
+DATAQ:  | liquid = 42.16 |
+DATAQ:  | liquid = 42.11 |
+DATAQ:  | liquid = 42.21 |
+DATAQ:  | liquid = 42.12 |
+DATAQ:  | liquid = 42.02 |
+DATAQ:  | liquid = 41.99 |
+DATAQ:  | liquid = 41.55 |
+DATAQ:  | liquid = 41.5 |
+DATAQ:  | liquid = 41.77 |
+DATAQ:  | liquid = 41.31 |
+DATAQ:  | liquid = 41.28 |
+DATAQ:  | liquid = 41.57 |
+DATAQ:  | liquid = 41.13 |
+DATAQ:  | liquid = 41.4 |
+DATAQ:  | liquid = 41.33 |
+DATAQ:  | liquid = 41.18 |
+DATAQ:  | liquid = 41.01 |
+DATAQ:  | liquid = 41.17 |
+DATAQ:  | liquid = 40.97 |
+DATAQ:  | liquid = 40.85 |
+DATAQ:  | liquid = 40.9 |
+DATAQ:  | liquid = 40.75 |
+DATAQ:  | liquid = 40.52 |
+DATAQ:  | liquid = 40.49 |
+DATAQ:  | liquid = 40.33 |
+DATAQ:  | liquid = 40.79 |
+DATAQ:  | liquid = 40.75 |
+DATAQ:  | liquid = 40.63 |
+DATAQ:  | liquid = 40.16 |
+DATAQ:  | liquid = 40.48 |
+DATAQ:  | liquid = 40.52 |
+DATAQ:  | liquid = 40.2 |
+DATAQ:  | liquid = 40.09 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.19 |
+DATAQ:  | liquid = 39.96 |
+DATAQ:  | liquid = 40.02 |
+DATAQ:  | liquid = 39.82 |
+DATAQ:  | liquid = 39.83 |
+DATAQ:  | liquid = 39.69 |
+DATAQ:  | liquid = 39.65 |
+DATAQ:  | liquid = 40.02 |
+DATAQ:  | liquid = 39.6 |
+DATAQ:  | liquid = 39.89 |
+DATAQ:  | liquid = 39.85 |
+DATAQ:  | liquid = 39.43 |
+DATAQ:  | liquid = 39.39 |
+DATAQ:  | liquid = 39.32 |
+DATAQ:  | liquid = 39.69 |
+DATAQ:  | liquid = 39.21 |
+DATAQ:  | liquid = 39.13 |
+DATAQ:  | liquid = 39.3 |
+DATAQ:  | liquid = 39.23 |
+DATAQ:  | liquid = 39.52 |
+DATAQ:  | liquid = 39.4 |
+DATAQ:  | liquid = 39.15 |
+DATAQ:  | liquid = 39.0 |
+DATAQ:  | liquid = 39.13 |
+DATAQ:  | liquid = 38.8 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 38.75 |
+DATAQ:  | liquid = 38.98 |
+DATAQ:  | liquid = 38.89 |
+DATAQ:  | liquid = 39.04 |
+DATAQ:  | liquid = 38.96 |
+DATAQ:  | liquid = 38.71 |
+DATAQ:  | liquid = 38.64 |
+DATAQ:  | liquid = 38.58 |
+DATAQ:  | liquid = 38.54 |
+DATAQ:  | liquid = 38.82 |
+DATAQ:  | liquid = 38.66 |
+DATAQ:  | liquid = 38.6 |
+DATAQ:  | liquid = 38.55 |
+DATAQ:  | liquid = 38.62 |
+DATAQ:  | liquid = 38.5 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.31 |
+DATAQ:  | liquid = 38.19 |
+DATAQ:  | liquid = 38.22 |
+DATAQ:  | liquid = 38.17 |
+DATAQ:  | liquid = 38.39 |
+DATAQ:  | liquid = 38.39 |
+DATAQ:  | liquid = 37.94 |
+DATAQ:  | liquid = 38.28 |
+DATAQ:  | liquid = 38.29 |
+DATAQ:  | liquid = 38.3 |
+DATAQ:  | liquid = 37.75 |
+DATAQ:  | liquid = 38.19 |
+DATAQ:  | liquid = 37.66 |
+DATAQ:  | liquid = 37.73 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.89 |
+DATAQ:  | liquid = 37.84 |
+DATAQ:  | liquid = 37.75 |
+DATAQ:  | liquid = 37.78 |
+DATAQ:  | liquid = 37.73 |
+DATAQ:  | liquid = 37.71 |
+DATAQ:  | liquid = 37.42 |
+DATAQ:  | liquid = 37.62 |
+DATAQ:  | liquid = 37.5 |
+DATAQ:  | liquid = 37.31 |
+DATAQ:  | liquid = 37.51 |
+DATAQ:  | liquid = 37.23 |
+DATAQ:  | liquid = 37.14 |
+DATAQ:  | liquid = 37.51 |
+DATAQ:  | liquid = 37.6 |
+DATAQ:  | liquid = 37.5 |
+DATAQ:  | liquid = 37.09 |
+DATAQ:  | liquid = 37.09 |
+DATAQ:  | liquid = 37.03 |
+DATAQ:  | liquid = 37.45 |
+DATAQ:  | liquid = 37.38 |
+DATAQ:  | liquid = 36.98 |
+DATAQ:  | liquid = 36.97 |
+DATAQ:  | liquid = 36.96 |
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 36.93 |
+DATAQ:  | liquid = 36.81 |
+DATAQ:  | liquid = 37.07 |
+DATAQ:  | liquid = 36.67 |
+DATAQ:  | liquid = 37.01 |
+DATAQ:  | liquid = 37.06 |
+DATAQ:  | liquid = 36.98 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.89 |
+DATAQ:  | liquid = 36.5 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.44 |
+DATAQ:  | liquid = 36.54 |
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.41 |
+DATAQ:  | liquid = 36.46 |
+DATAQ:  | liquid = 36.47 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.4 |
+DATAQ:  | liquid = 36.43 |
+DATAQ:  | liquid = 36.38 |
+DATAQ:  | liquid = 36.26 |
+DATAQ:  | liquid = 36.05 |
+DATAQ:  | liquid = 36.12 |
+DATAQ:  | liquid = 36.21 |
+DATAQ:  | liquid = 36.03 |
+DATAQ:  | liquid = 36.04 |
+DATAQ:  | liquid = 36.37 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 35.78 |
+DATAQ:  | liquid = 36.07 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 35.79 |
+DATAQ:  | liquid = 36.1 |
+DATAQ:  | liquid = 35.75 |
+DATAQ:  | liquid = 35.72 |
+DATAQ:  | liquid = 35.76 |
+DATAQ:  | liquid = 35.97 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 35.47 |
+DATAQ:  | liquid = 35.88 |
+DATAQ:  | liquid = 35.79 |
+DATAQ:  | liquid = 35.51 |
+DATAQ:  | liquid = 35.48 |
+DATAQ:  | liquid = 35.79 |
+DATAQ:  | liquid = 35.66 |
+DATAQ:  | liquid = 35.71 |
+DATAQ:  | liquid = 35.69 |
+DATAQ:  | liquid = 35.32 |
+DATAQ:  | liquid = 35.64 |
+DATAQ:  | liquid = 35.68 |
+DATAQ:  | liquid = 35.56 |
+DATAQ:  | liquid = 35.2 |
+DATAQ:  | liquid = 35.51 |
+DATAQ:  | liquid = 35.55 |
+DATAQ:  | liquid = 35.48 |
+DATAQ:  | liquid = 35.05 |
+DATAQ:  | liquid = 35.06 |
+DATAQ:  | liquid = 35.39 |
+DATAQ:  | liquid = 35.44 |
+DATAQ:  | liquid = 35.33 |
+DATAQ:  | liquid = 35.36 |
+DATAQ:  | liquid = 35.0 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 35.27 |
+DATAQ:  | liquid = 34.93 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.88 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.92 |
+DATAQ:  | liquid = 34.83 |
+DATAQ:  | liquid = 35.12 |
+DATAQ:  | liquid = 34.83 |
+DATAQ:  | liquid = 34.99 |
+DATAQ:  | liquid = 34.56 |
+DATAQ:  | liquid = 35.02 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.87 |
+DATAQ:  | liquid = 34.83 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.73 |
+DATAQ:  | liquid = 34.36 |
+DATAQ:  | liquid = 34.78 |
+DATAQ:  | liquid = 34.35 |
+DATAQ:  | liquid = 34.37 |
+DATAQ:  | liquid = 34.72 |
+DATAQ:  | liquid = 34.65 |
+DATAQ:  | liquid = 34.64 |
+DATAQ:  | liquid = 34.34 |
+DATAQ:  | liquid = 34.44 |
+DATAQ:  | liquid = 34.18 |
+DATAQ:  | liquid = 34.56 |
+DATAQ:  | liquid = 34.11 |
+DATAQ:  | liquid = 34.49 |
+DATAQ:  | liquid = 34.45 |
+DATAQ:  | liquid = 34.18 |
+DATAQ:  | liquid = 34.51 |
+DATAQ:  | liquid = 34.51 |
+DATAQ:  | liquid = 34.47 |
+DATAQ:  | liquid = 33.97 |
+DATAQ:  | liquid = 34.0 |
+DATAQ:  | liquid = 34.31 |
+DATAQ:  | liquid = 33.93 |
+DATAQ:  | liquid = 33.93 |
+DATAQ:  | liquid = 33.89 |
+DATAQ:  | liquid = 34.27 |
+DATAQ:  | liquid = 33.97 |
+DATAQ:  | liquid = 34.25 |
+DATAQ:  | liquid = 34.08 |
+DATAQ:  | liquid = 33.8 |
+DATAQ:  | liquid = 34.09 |
+DATAQ:  | liquid = 33.72 |
+DATAQ:  | liquid = 33.73 |
+DATAQ:  | liquid = 33.98 |
+DATAQ:  | liquid = 33.98 |
+DATAQ:  | liquid = 33.96 |
+DATAQ:  | liquid = 33.72 |
+DATAQ:  | liquid = 33.97 |
+DATAQ:  | liquid = 33.53 |
+DATAQ:  | liquid = 33.99 |
+DATAQ:  | liquid = 33.45 |
+DATAQ:  | liquid = 33.77 |
+DATAQ:  | liquid = 33.87 |
+DATAQ:  | liquid = 33.86 |
+DATAQ:  | liquid = 33.39 |
+DATAQ:  | liquid = 33.77 |
+DATAQ:  | liquid = 33.79 |
+DATAQ:  | liquid = 33.27 |
+DATAQ:  | liquid = 33.78 |
+DATAQ:  | liquid = 33.25 |
+DATAQ:  | liquid = 33.31 |
+DATAQ:  | liquid = 33.74 |
+DATAQ:  | liquid = 33.19 |
+DATAQ:  | liquid = 33.67 |
+DATAQ:  | liquid = 33.64 |
+DATAQ:  | liquid = 33.56 |
+DATAQ:  | liquid = 33.53 |
+DATAQ:  | liquid = 33.19 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 33.4 |
+DATAQ:  | liquid = 33.06 |
+DATAQ:  | liquid = 33.37 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 32.99 |
+DATAQ:  | liquid = 33.22 |
+DATAQ:  | liquid = 33.07 |
+DATAQ:  | liquid = 33.12 |
+DATAQ:  | liquid = 33.25 |
+DATAQ:  | liquid = 33.2 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 33.17 |
+DATAQ:  | liquid = 33.02 |
+DATAQ:  | liquid = 32.86 |
+DATAQ:  | liquid = 32.75 |
+DATAQ:  | liquid = 33.22 |
+DATAQ:  | liquid = 32.73 |
+DATAQ:  | liquid = 32.71 |
+DATAQ:  | liquid = 32.69 |
+DATAQ:  | liquid = 32.77 |
+DATAQ:  | liquid = 32.74 |
+DATAQ:  | liquid = 33.08 |
+DATAQ:  | liquid = 32.64 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 33.05 |
+DATAQ:  | liquid = 33.05 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 32.96 |
+DATAQ:  | liquid = 32.6 |
+DATAQ:  | liquid = 32.84 |
+DATAQ:  | liquid = 32.56 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.49 |
+DATAQ:  | liquid = 32.67 |
+DATAQ:  | liquid = 32.77 |
+DATAQ:  | liquid = 32.63 |
+DATAQ:  | liquid = 32.53 |
+DATAQ:  | liquid = 32.72 |
+DATAQ:  | liquid = 32.67 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.41 |
+DATAQ:  | liquid = 32.34 |
+DATAQ:  | liquid = 32.42 |
+DATAQ:  | liquid = 32.42 |
+DATAQ:  | liquid = 32.56 |
+DATAQ:  | liquid = 32.62 |
+DATAQ:  | liquid = 32.55 |
+DATAQ:  | liquid = 32.62 |
+DATAQ:  | liquid = 32.49 |
+DATAQ:  | liquid = 32.14 |
+DATAQ:  | liquid = 32.13 |
+DATAQ:  | liquid = 32.1 |
+DATAQ:  | liquid = 32.03 |
+DATAQ:  | liquid = 32.2 |
+DATAQ:  | liquid = 32.36 |
+DATAQ:  | liquid = 32.16 |
+DATAQ:  | liquid = 32.2 |
+DATAQ:  | liquid = 32.14 |
+DATAQ:  | liquid = 32.18 |
+DATAQ:  | liquid = 32.04 |
+DATAQ:  | liquid = 32.13 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 32.09 |
+DATAQ:  | liquid = 32.1 |
+DATAQ:  | liquid = 32.24 |
+DATAQ:  | liquid = 32.29 |
+DATAQ:  | liquid = 32.27 |
+DATAQ:  | liquid = 32.24 |
+DATAQ:  | liquid = 32.24 |
+DATAQ:  | liquid = 32.23 |
+DATAQ:  | liquid = 32.23 |
+DATAQ:  | liquid = 31.8 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.69 |
+DATAQ:  | liquid = 32.11 |
+DATAQ:  | liquid = 32.13 |
+DATAQ:  | liquid = 32.1 |
+DATAQ:  | liquid = 32.1 |
+DATAQ:  | liquid = 31.76 |
+DATAQ:  | liquid = 32.06 |
+DATAQ:  | liquid = 31.68 |
+DATAQ:  | liquid = 31.57 |
+DATAQ:  | liquid = 31.64 |
+DATAQ:  | liquid = 31.59 |
+DATAQ:  | liquid = 31.84 |
+DATAQ:  | liquid = 31.55 |
+DATAQ:  | liquid = 31.78 |
+DATAQ:  | liquid = 31.8 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.68 |
+DATAQ:  | liquid = 31.63 |
+DATAQ:  | liquid = 31.84 |
+DATAQ:  | liquid = 31.57 |
+DATAQ:  | liquid = 31.57 |
+DATAQ:  | liquid = 31.46 |
+DATAQ:  | liquid = 31.58 |
+DATAQ:  | liquid = 31.46 |
+DATAQ:  | liquid = 31.58 |
+DATAQ:  | liquid = 31.61 |
+DATAQ:  | liquid = 31.61 |
+DATAQ:  | liquid = 31.48 |
+DATAQ:  | liquid = 31.48 |
+DATAQ:  | liquid = 31.48 |
+DATAQ:  | liquid = 31.36 |
+DATAQ:  | liquid = 31.43 |
+DATAQ:  | liquid = 31.34 |
+DATAQ:  | liquid = 31.32 |
+DATAQ:  | liquid = 31.36 |
+DATAQ:  | liquid = 31.39 |
+DATAQ:  | liquid = 31.33 |
+DATAQ:  | liquid = 31.19 |
+DATAQ:  | liquid = 31.26 |
+DATAQ:  | liquid = 31.2 |
+DATAQ:  | liquid = 31.26 |
+DATAQ:  | liquid = 31.26 |
+DATAQ:  | liquid = 31.2 |
+ ÿets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x16 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7388
+ho 0 tail 12 room 4
+load:0x40078000,len:14912
+load:0x40080400,len:3688
+entry 0x4008067c
+[0;32mI (29) boot: ESP-IDF v4.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 09:02:27[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (32) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00010000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 00019000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (107) boot:  5 storage          Unknown data     01 82 00320000 00100000[0m
+[0;32mI (114) boot: End of partition table[0m
+[0;32mI (119) boot: Defaulting to factory image[0m
+[0;32mI (123) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (131) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=16f08h ( 93960) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00036f30 vaddr=3ffbdb60 size=04aach ( 19116) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=0003b9e4 vaddr=40080000 size=04634h ( 17972) load[0m
+[0;32mI (189) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=77034h (487476) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000b705c vaddr=40084634 size=14a14h ( 84500) load[0m
+[0;32mI (400) esp_image: segment 5: paddr=000cba78 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Pro cpu up.[0m
+[0;32mI (425) cpu_start: Starting app cpu, entry point is 0x400813c8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (441) cpu_start: Pro cpu start user code[0m
+[0;32mI (441) cpu_start: cpu freq: 240000000[0m
+[0;32mI (441) cpu_start: Application information:[0m
+[0;32mI (445) cpu_start: Project name:     youtest-firmware[0m
+[0;32mI (451) cpu_start: App version:      NewProtocolNewDataShape-79-g66b[0m
+[0;32mI (458) cpu_start: Compile time:     Mar 24 2022 10:26:01[0m
+[0;32mI (464) cpu_start: ELF file SHA256:  78cebf0f331ddc40...[0m
+[0;32mI (470) cpu_start: ESP-IDF:          v4.3.2-dirty[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFDBE00 len 00004200 (16 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 40099048 len 00006FB8 (27 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: gd[0m
+[0;32mI (531) spi_flash: flash io: dio[0m
+[0;33mW (535) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (549) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (766) printInfo: 
+
+**************************************************
+
+YouTest Device:
+
+   Firmware Version: 0.3.818
+   MAC Address:      7c:9e:bd:e1:41:44
+   Hardware ID:      593a8f0f-2267-5d03-b895-ebdb4f8b0064
+   Git commit:       66bd55bed4b5e1fbb5474613beb919cfc4e859c2-dirty
+   Build Datetime:   2022-03-24T16:26:27Z
+
+**************************************************
+[0m
+[0;32mI (915) configInit: Applying Some Config Defaults[0m
+[0;32mI (916) configInit: ***** Configuration *****[0m
+[0;32mI (916) configInit: configVersion: 00.00.02[0m
+[0;32mI (920) configInit: modelName: YouTest[0m
+[0;32mI (924) configInit: Config Valid: 1[0m
+[0;32mI (928) configInit: Stage1 kP: 6.00000[0m
+[0;32mI (933) configInit: Stage1 kI: 0.80000[0m
+[0;32mI (937) configInit: Stage1 kD: 3.00000[0m
+[0;32mI (942) configInit: PCR kP: 5.51000[0m
+[0;32mI (946) configInit: PCR kI: 0.61000[0m
+[0;32mI (950) configInit: PCR kD: 3.01000[0m
+[0;32mI (954) configInit: Decel Up PCR kP: 5.52000[0m
+[0;32mI (959) configInit: Decel Up PCR kI: 0.62000[0m
+[0;32mI (964) configInit: Decel Up PCR kD: 3.02000[0m
+[0;32mI (969) configInit: Decel Down PCR kP: 5.53000[0m
+[0;32mI (974) configInit: Decel Down PCR kI: 0.63000[0m
+[0;32mI (979) configInit: Decel Down PCR kD: 3.03000[0m
+[0;32mI (984) configInit: Hold PCR kP: 5.54000[0m
+[0;32mI (989) configInit: Hold PCR kI: 0.64000[0m
+[0;32mI (994) configInit: Hold PCR kD: 3.04000[0m
+[0;32mI (998) configInit: Ramp PCR kP: 5.55000[0m
+[0;32mI (1003) configInit: Ramp PCR kI: 0.65000[0m
+[0;32mI (1007) configInit: Ramp PCR kD: 3.05000[0m
+[0;32mI (1012) configInit: Melt FF A: -0.00733[0m
+[0;32mI (1017) configInit: Melt FF B: 1.75000[0m
+[0;32mI (1021) configInit: Melt FF C: -42.00000[0m
+[0;32mI (1026) configInit: Solenoid Installed: 0[0m
+[0;32mI (1031) configInit: Glued Thermistor: 0[0m
+[0;32mI (1035) configInit: Banger Flourimeter: 0[0m
+[0;32mI (1040) configInit: Bluetooth Always On: 0[0m
+[0;32mI (1045) configInit: **********[0m
+[0;32mI (1059) BTDM_INIT: BT controller compile version [6a07b06][0m
+[0;32mI (1060) system_api: Base MAC address is not set[0m
+[0;32mI (1060) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (1069) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+DATAQ:  | liquid = 31.3 |
+[0;32mI (1323) ESP32_BLE_PERIPH: registered service 0x1800 with handle=1[0m
+[0;32mI (1324) ESP32_BLE_PERIPH: registering characteristic 0x2a00 with def_handle=2 val_handle=3[0m
+[0;32mI (1329) ESP32_BLE_PERIPH: registering characteristic 0x2a01 with def_handle=4 val_handle=5[0m
+[0;32mI (1338) ESP32_BLE_PERIPH: registered service 0x1801 with handle=6[0m
+[0;32mI (1345) ESP32_BLE_PERIPH: registering characteristic 0x2a05 with def_handle=7 val_handle=8[0m
+[0;32mI (1354) ESP32_BLE_PERIPH: registered service e6af95e1-b7d7-4f55-b152-72f4b72cf6ff with handle=10[0m
+[0;32mI (1363) ESP32_BLE_PERIPH: registering characteristic e6af95e2-b7d7-4f55-b152-72f4b72cf6ff with def_handle=11 val_handle=12[0m
+[0;32mI (1375) ESP32_BLE_PERIPH: registering characteristic e6af95e3-b7d7-4f55-b152-72f4b72cf6ff with def_handle=14 val_handle=15[0m
+[0;32mI (1387) ESP32_BLE_PERIPH: registering characteristic e6af95e4-b7d7-4f55-b152-72f4b72cf6ff with def_handle=16 val_handle=17[0m
+[0;32mI (1399) ESP32_BLE_PERIPH: registering characteristic e6af95e5-b7d7-4f55-b152-72f4b72cf6ff with def_handle=19 val_handle=20[0m
+[0;32mI (1410) ESP32_BLE_PERIPH: registering characteristic e6af95e6-b7d7-4f55-b152-72f4b72cf6ff with def_handle=21 val_handle=22[0m
+[0;32mI (1422) ESP32_BLE_PERIPH: registering characteristic e6af95e7-b7d7-4f55-b152-72f4b72cf6ff with def_handle=24 val_handle=25[0m
+[0;32mI (1448) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1449) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1456) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1467) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;33mW (1475) thermalControlSelectControlSource: BYPASSING model STAGE1 MODEL version 1[0m
+[0;33mW (1483) thermalControlSelectControlSource: USING model PCR MODEL 2/1/2022[0m
+[0;33mW (1493) tecCurvePredictorInit: Tec calibration values LOADED[0m
+[0;33mW (1498) systemTasksMonitorStack: Stack Watermark(Task Monitor): 3576[0m
+[0;33mW (1504) systemTasksMonitorStack: Stack Watermark(Thermal Control): 3604[0m
+[0;33mW (1511) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 3576[0m
+[0;33mW (1519) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 3804[0m
+[0;33mW (1526) systemTasksMonitorStack: Stack Watermark(Motor Control): 3792[0m
+[0;33mW (1533) systemTasksMonitorStack: Stack Watermark(Experiment): 3796[0m
+[0;32mI (1540) runInitSelfTest: Starting Init Self Test...[0m
+[0;33mW (1546) systemTasksMonitorStack: Stack Watermark(Comm): 9948[0m
+[0;33mW (1552) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2132[0m
+[0;33mW (1560) systemTasksMonitorStack: Stack Watermark(Serial Rx): 2808[0m
+[0;33mW (1567) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 2360[0m
+[0;33mW (1574) systemTasksMonitorStack: Stack Watermark(Button Control): 1748[0m
+[0;33mW (1581) systemTasksMonitorStack: Stack Watermark(LED Control): 1744[0m
+[0;33mW (1588) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 3712[0m
+[0;33mW (1596) systemTasksMonitorStack: Stack Watermark(LED Control): 304[0m
+[0;33mW (1603) systemTasksMonitorStack: Stack Watermark(Comm): 8508[0m
+[0;33mW (1609) systemTasksMonitorStack: Stack Watermark(Task Monitor): 2360[0m
+[0;33mW (1616) systemTasksMonitorStack: Stack Watermark(Button Control): 308[0m
+[0;33mW (1624) heapMonitor_checkFreeHeapSize: New heap low water mark 107860[0m
+[0;33mW (1631) systemTasksMonitorStack: Stack Watermark(File Writer): 3580[0m
+[0;33mW (1640) systemTasksMonitorStack: Stack Watermark(Experiment): 2356[0m
+[0;33mW (1700) systemTasksMonitorStack: Stack Watermark(File Writer): 2364[0m
+[0;33mW (1749) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 2364[0m
+[0;33mW (1902) systemTasksMonitorStack: Stack Watermark(I2C Reader): 2956[0m
+[0;33mW (2034) systemTasksMonitorStack: Stack Watermark(Motor Control): 2352[0m
+[0;33mW (2096) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 2352[0m
+DATAQ:  | liquid = 31.22 |
+[0;33mW (2306) systemTasksMonitorStack: Stack Watermark(I2C Reader): 2412[0m
+DATAQ:  | liquid = 31.25 |
+[0;32mI (3152) motorSystemCheck: No Current: -38[0m
+[0;32mI (3152) motorSystemCheck: Latch Current: 830[0m
+[0;32mI (3153) motorSystemCheck: Plunge Current: 452[0m
+[0;32mI (3156) motorSystemCheck: Motor Self Test Passed![0m
+DATAQ:  | liquid = 31.26 |
+[0;33mW (4633) heapMonitor_checkFreeHeapSize: New heap low water mark 107640[0m
+DATAQ:  | liquid = 31.17 |
+DATAQ:  | liquid = 31.11 |
+DATAQ:  | liquid = 31.13 |
+[0;33mW (7633) heapMonitor_checkFreeHeapSize: New heap low water mark 107548[0m
+[0;32mI (7842) peltierSystemCheck: TEC's are configured correctly![0m
+[0;32mI (7843) peltierSystemCheck: Initial TEC! PCR: 31.866295    Stage1: 32.065712 [0m
+[0;32mI (7847) peltierSystemCheck: TEC Check1! PCR: 26.190029    Stage1: 32.065712 [0m
+[0;32mI (7854) peltierSystemCheck: TEC Check2! PCR: 34.702454    Stage1: 29.247892 [0m
+[0;32mI (7862) peltierSystemCheck: Delta1 PCR: -5.676266    Stage1: 0.000000[0m
+[0;32mI (7869) peltierSystemCheck: Delta2 PCR: 8.512424    Stage1: -2.817820[0m
+[0;32mI (8036) PTC Max Read: 610[0m
+[0;32mI (8036) PTC Average Read: 591[0m
+[0;32mI (8037) ptcSystemCheck: PTC system check PASSED[0m
+[0;32mI (8037) systemStateSelfTestEnter: Inital Self Test PASSED![0m
+[0;32mI (8044) INIT PLUNGE STATE!: Cur Plunge State: Homed (4)[0m
+[0;32mI (8050) INIT LATCH STATE!: Cur Latch State: Homed (4)[0m
+[0;32mI (8056) systemStateSelfTestExit: Self Test Complete[0m
+[0;32mI (8061) systemRequestStateChange: System State Transition SELFTEST -> IDLE[0m
+DATAQ:  | liquid = 31.09 |
+[0;33mW (8364) isCupPresent: Cup Not Detected...
+CH 445 reads: 1150   needs to be over 2500
+CH 415 reads: 34   needs to be over 70
+[0m
+[0;31mE (8366) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (8371) systemRequestStateChange: Notify exit state change[0m
+[0;33mW (8377) systemTasksMonitorStack: Stack Watermark(System): 2312[0m
+DATAQ:  | liquid = 31.12 |
+DATAQ:  | liquid = 31.06 |
+[0;33mW (10633) heapMonitor_checkFreeHeapSize: New heap low water mark 107348[0m
+DATAQ:  | liquid = 31.27 |
+DATAQ:  | liquid = 31.06 |
+DATAQ:  | liquid = 31.18 |
+[0;33mW (13633) heapMonitor_checkFreeHeapSize: New heap low water mark 107256[0m
+DATAQ:  | liquid = 31.19 |
+DATAQ:  | liquid = 31.08 |
+DATAQ:  | liquid = 31.16 |
+DATAQ:  | liquid = 30.82 |
+DATAQ:  | liquid = 30.88 |
+DATAQ:  | liquid = 31.21 |
+DATAQ:  | liquid = 30.85 |
+DATAQ:  | liquid = 30.81 |
+DATAQ:  | liquid = 31.16 |
+DATAQ:  | liquid = 30.76 |
+DATAQ:  | liquid = 30.69 |
+DATAQ:  | liquid = 30.7 |
+DATAQ:  | liquid = 31.11 |
+DATAQ:  | liquid = 31.1 |
+DATAQ:  | liquid = 30.63 |
+DATAQ:  | liquid = 30.61 |
+DATAQ:  | liquid = 30.61 |
+DATAQ:  | liquid = 31.05 |
+DATAQ:  | liquid = 30.68 |
+DATAQ:  | liquid = 30.64 |
+DATAQ:  | liquid = 30.95 |
+DATAQ:  | liquid = 30.64 |
+DATAQ:  | liquid = 30.98 |
+DATAQ:  | liquid = 30.71 |
+DATAQ:  | liquid = 30.57 |
+DATAQ:  | liquid = 30.93 |
+DATAQ:  | liquid = 30.5 |
+DATAQ:  | liquid = 30.59 |
+DATAQ:  | liquid = 30.54 |
+DATAQ:  | liquid = 30.73 |
+DATAQ:  | liquid = 30.55 |
+DATAQ:  | liquid = 30.66 |
+DATAQ:  | liquid = 30.68 |
+DATAQ:  | liquid = 30.73 |
+DATAQ:  | liquid = 30.7 |
+DATAQ:  | liquid = 30.71 |
+DATAQ:  | liquid = 30.38 |
+DATAQ:  | liquid = 30.55 |
+DATAQ:  | liquid = 30.48 |
+DATAQ:  | liquid = 30.45 |
+DATAQ:  | liquid = 30.57 |
+DATAQ:  | liquid = 30.47 |
+DATAQ:  | liquid = 30.51 |
+DATAQ:  | liquid = 30.43 |
+DATAQ:  | liquid = 30.61 |
+DATAQ:  | liquid = 30.47 |
+DATAQ:  | liquid = 30.55 |
+DATAQ:  | liquid = 30.53 |
+[0;33mW (62202) systemTasksMonitorStack: Stack Watermark(Serial Rx): 1336[0m
+DATAQ:  | liquid = 30.46 |
+DATAQ:  | liquid = 30.35 |
+DATAQ:  | liquid = 30.35 |
+DATAQ:  | liquid = 30.28 |
+DATAQ:  | liquid = 30.35 |
+DATAQ:  | liquid = 30.37 |
+DATAQ:  | liquid = 30.25 |
+DATAQ:  | liquid = 30.38 |
+DATAQ:  | liquid = 30.39 |
+DATAQ:  | liquid = 30.39 |
+DATAQ:  | liquid = 30.33 |
+DATAQ:  | liquid = 30.33 |
+DATAQ:  | liquid = 30.29 |
+DATAQ:  | liquid = 30.46 |
+DATAQ:  | liquid = 30.21 |
+DATAQ:  | liquid = 30.28 |
+DATAQ:  | liquid = 30.15 |
+DATAQ:  | liquid = 30.29 |
+DATAQ:  | liquid = 30.31 |
+DATAQ:  | liquid = 30.06 |
+DATAQ:  | liquid = 30.21 |
+DATAQ:  | liquid = 30.37 |
+DATAQ:  | liquid = 30.38 |
+DATAQ:  | liquid = 30.37 |
+DATAQ:  | liquid = 30.06 |
+DATAQ:  | liquid = 30.27 |
+DATAQ:  | liquid = 30.02 |
+DATAQ:  | liquid = 29.94 |
+DATAQ:  | liquid = 30.22 |
+DATAQ:  | liquid = 29.94 |
+DATAQ:  | liquid = 30.26 |
+DATAQ:  | liquid = 30.28 |
+DATAQ:  | liquid = 29.9 |
+DATAQ:  | liquid = 30.19 |
+DATAQ:  | liquid = 30.3 |
+DATAQ:  | liquid = 29.89 |
+DATAQ:  | liquid = 29.87 |
+DATAQ:  | liquid = 30.13 |
+DATAQ:  | liquid = 29.8 |
+DATAQ:  | liquid = 30.04 |
+DATAQ:  | liquid = 30.16 |
+DATAQ:  | liquid = 30.17 |
+DATAQ:  | liquid = 30.17 |
+DATAQ:  | liquid = 29.74 |
+DATAQ:  | liquid = 29.76 |
+DATAQ:  | liquid = 29.68 |
+DATAQ:  | liquid = 29.74 |
+DATAQ:  | liquid = 29.98 |
+DATAQ:  | liquid = 30.04 |
+DATAQ:  | liquid = 30.07 |
+DATAQ:  | liquid = 30.07 |
+DATAQ:  | liquid = 30.05 |
+DATAQ:  | liquid = 30.07 |
+DATAQ:  | liquid = 29.57 |
+DATAQ:  | liquid = 29.98 |
+DATAQ:  | liquid = 29.63 |
+DATAQ:  | liquid = 30.01 |
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.6 |
+DATAQ:  | liquid = 29.99 |
+DATAQ:  | liquid = 29.57 |
+DATAQ:  | liquid = 29.84 |
+DATAQ:  | liquid = 29.48 |
+DATAQ:  | liquid = 29.8 |
+DATAQ:  | liquid = 29.59 |
+DATAQ:  | liquid = 29.61 |
+DATAQ:  | liquid = 29.86 |
+DATAQ:  | liquid = 29.63 |
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.82 |
+DATAQ:  | liquid = 29.69 |
+DATAQ:  | liquid = 29.45 |
+DATAQ:  | liquid = 29.68 |
+DATAQ:  | liquid = 29.53 |
+DATAQ:  | liquid = 29.56 |
+DATAQ:  | liquid = 29.63 |
+DATAQ:  | liquid = 29.73 |
+DATAQ:  | liquid = 29.7 |
+DATAQ:  | liquid = 29.65 |
+DATAQ:  | liquid = 29.6 |
+DATAQ:  | liquid = 29.52 |
+DATAQ:  | liquid = 29.53 |
+DATAQ:  | liquid = 29.51 |
+DATAQ:  | liquid = 29.59 |
+DATAQ:  | liquid = 29.6 |
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.61 |
+DATAQ:  | liquid = 29.5 |
+DATAQ:  | liquid = 29.42 |
+DATAQ:  | liquid = 29.48 |
+DATAQ:  | liquid = 29.4 |
+DATAQ:  | liquid = 29.23 |
+DATAQ:  | liquid = 29.54 |
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.24 |
+DATAQ:  | liquid = 29.35 |
+DATAQ:  | liquid = 29.6 |
+DATAQ:  | liquid = 29.58 |
+[0;33mW (160634) heapMonitor_checkFreeHeapSize: New heap low water mark 107208[0m
+DATAQ:  | liquid = 29.26 |
+DATAQ:  | liquid = 29.48 |
+DATAQ:  | liquid = 29.16 |
+DATAQ:  | liquid = 29.19 |
+DATAQ:  | liquid = 29.48 |
+DATAQ:  | liquid = 29.18 |
+DATAQ:  | liquid = 29.43 |
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.46 |
+DATAQ:  | liquid = 29.13 |
+DATAQ:  | liquid = 29.09 |
+DATAQ:  | liquid = 29.12 |
+DATAQ:  | liquid = 29.36 |
+DATAQ:  | liquid = 28.97 |
+DATAQ:  | liquid = 29.12 |
+DATAQ:  | liquid = 29.09 |
+DATAQ:  | liquid = 29.15 |
+DATAQ:  | liquid = 29.41 |
+DATAQ:  | liquid = 29.38 |
+[0;32mI (179642) _handleFrontButtonPress: Pressed[0m
+[0;33mW (179716) taskMonitor_task: Task Button Control Task hasn't checked in for 200 ms[0m
+[0;32mI (180064) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (180122) Latch-Info: Curr: 176, LSENS: 0[0m
+[0;32mI (180177) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (180232) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (180287) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (180342) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (180397) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (180452) Latch-Info: Curr: 188, LSENS: 0[0m
+DATAQ:  | liquid = 29.35 |
+[0;32mI (180507) Latch-Info: Curr: 202, LSENS: 0[0m
+[0;32mI (180562) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (180617) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (180674) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (180702) Latch-Info: Curr: 216, LSENS: 0[0m
+[0;32mI (180728) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (180753) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (180779) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (181305) Latch-Info: Curr: 198, LSENS: 0[0m
+[0;32mI (181331) Latch-Info: Curr: 994, LSENS: 0[0m
+[0;32mI (181356) Latch-Info: Curr: 964, LSENS: 0[0m
+[0;32mI (181381) Latch-Info: Curr: 344, LSENS: 0[0m
+[0;32mI (181406) Latch-Info: Curr: 304, LSENS: 0[0m
+[0;32mI (181431) Latch-Info: Curr: 218, LSENS: 0[0m
+[0;32mI (181456) Latch-Info: Curr: 138, LSENS: 0[0m
+DATAQ:  | liquid = 29.29 |
+[0;32mI (181482) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (181507) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (181532) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (181557) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (181583) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (181608) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (181633) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (181658) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (181684) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (181709) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (181734) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (181759) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (181785) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (181810) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (181835) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (181860) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (181886) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (181911) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (181936) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (181961) Latch-Info: Curr: 144, LSENS: 0[0m
+[0;32mI (181987) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (182012) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (182037) Latch-Info: Curr: 176, LSENS: 0[0m
+[0;32mI (182062) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (182088) Latch-Info: Curr: 134, LSENS: 0[0m
+[0;32mI (182113) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (182138) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (182163) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (182189) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (182214) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (182239) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (182264) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (182290) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (182315) Latch-Info: Curr: 126, LSENS: 0[0m
+[0;32mI (182340) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (182365) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (182391) Latch-Info: Curr: 120, LSENS: 0[0m
+[0;32mI (182416) Latch-Info: Curr: 126, LSENS: 0[0m
+[0;32mI (182441) Latch-Info: Curr: 104, LSENS: 0[0m
+[0;32mI (182466) Latch-Info: Curr: 106, LSENS: 0[0m
+DATAQ:  | liquid = 29.36 |
+[0;32mI (182492) Latch-Info: Curr: 112, LSENS: 0[0m
+[0;32mI (182517) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (182719) Latch-Info: Curr: 104, LSENS: 0[0m
+[0;32mI (182745) Latch-Info: Curr: 990, LSENS: 0[0m
+[0;32mI (182771) Latch-Info: Curr: 824, LSENS: 0[0m
+[0;32mI (182796) Latch-Info: Curr: 518, LSENS: 0[0m
+[0;32mI (182821) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 28.92 |
+DATAQ:  | liquid = 29.24 |
+DATAQ:  | liquid = 29.04 |
+DATAQ:  | liquid = 29.19 |
+DATAQ:  | liquid = 29.36 |
+DATAQ:  | liquid = 29.34 |
+DATAQ:  | liquid = 29.47 |
+DATAQ:  | liquid = 29.29 |
+DATAQ:  | liquid = 29.46 |
+DATAQ:  | liquid = 29.51 |
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.42 |
+DATAQ:  | liquid = 29.47 |
+DATAQ:  | liquid = 29.73 |
+DATAQ:  | liquid = 29.46 |
+DATAQ:  | liquid = 29.58 |
+DATAQ:  | liquid = 29.79 |
+DATAQ:  | liquid = 29.56 |
+DATAQ:  | liquid = 29.49 |
+DATAQ:  | liquid = 29.61 |
+DATAQ:  | liquid = 29.87 |
+DATAQ:  | liquid = 29.91 |
+DATAQ:  | liquid = 29.89 |
+DATAQ:  | liquid = 29.8 |
+DATAQ:  | liquid = 29.93 |
+DATAQ:  | liquid = 29.63 |
+DATAQ:  | liquid = 29.83 |
+DATAQ:  | liquid = 29.69 |
+DATAQ:  | liquid = 29.6 |
+DATAQ:  | liquid = 29.74 |
+DATAQ:  | liquid = 29.78 |
+DATAQ:  | liquid = 29.74 |
+DATAQ:  | liquid = 56.35 |
+DATAQ:  | liquid = 56.25 |
+DATAQ:  | liquid = 56.29 |
+DATAQ:  | liquid = 55.82 |
+DATAQ:  | liquid = 55.36 |
+DATAQ:  | liquid = 52.23 |
+DATAQ:  | liquid = 55.96 |
+DATAQ:  | liquid = 37.84 |
+DATAQ:  | liquid = 31.62 |
+DATAQ:  | liquid = 27.87 |
+DATAQ:  | liquid = 46.32 |
+DATAQ:  | liquid = 51.96 |
+DATAQ:  | liquid = 50.97 |
+DATAQ:  | liquid = 51.54 |
+DATAQ:  | liquid = 49.73 |
+DATAQ:  | liquid = 49.31 |
+DATAQ:  | liquid = 48.67 |
+DATAQ:  | liquid = 48.5 |
+DATAQ:  | liquid = 48.48 |
+DATAQ:  | liquid = 48.32 |
+DATAQ:  | liquid = 48.24 |
+DATAQ:  | liquid = 48.19 |
+DATAQ:  | liquid = 48.04 |
+DATAQ:  | liquid = 48.1 |
+DATAQ:  | liquid = 48.09 |
+DATAQ:  | liquid = 48.08 |
+DATAQ:  | liquid = 48.02 |
+DATAQ:  | liquid = 47.88 |
+DATAQ:  | liquid = 48.02 |
+DATAQ:  | liquid = 47.77 |
+DATAQ:  | liquid = 47.72 |
+DATAQ:  | liquid = 47.99 |
+DATAQ:  | liquid = 47.83 |
+DATAQ:  | liquid = 47.68 |
+DATAQ:  | liquid = 47.71 |
+DATAQ:  | liquid = 47.67 |
+DATAQ:  | liquid = 47.56 |
+DATAQ:  | liquid = 47.51 |
+DATAQ:  | liquid = 47.38 |
+DATAQ:  | liquid = 47.62 |
+DATAQ:  | liquid = 47.5 |
+DATAQ:  | liquid = 47.28 |
+DATAQ:  | liquid = 47.44 |
+DATAQ:  | liquid = 47.18 |
+DATAQ:  | liquid = 47.11 |
+DATAQ:  | liquid = 47.03 |
+DATAQ:  | liquid = 47.19 |
+DATAQ:  | liquid = 47.03 |
+DATAQ:  | liquid = 47.08 |
+DATAQ:  | liquid = 47.01 |
+DATAQ:  | liquid = 46.97 |
+DATAQ:  | liquid = 46.95 |
+DATAQ:  | liquid = 46.8 |
+DATAQ:  | liquid = 46.82 |
+DATAQ:  | liquid = 46.64 |
+DATAQ:  | liquid = 46.62 |
+DATAQ:  | liquid = 46.5 |
+DATAQ:  | liquid = 46.69 |
+DATAQ:  | liquid = 46.57 |
+DATAQ:  | liquid = 46.53 |
+DATAQ:  | liquid = 46.48 |
+DATAQ:  | liquid = 46.42 |
+DATAQ:  | liquid = 46.35 |
+DATAQ:  | liquid = 46.36 |
+DATAQ:  | liquid = 46.21 |
+DATAQ:  | liquid = 46.08 |
+DATAQ:  | liquid = 46.05 |
+DATAQ:  | liquid = 46.1 |
+DATAQ:  | liquid = 46.05 |
+DATAQ:  | liquid = 45.97 |
+DATAQ:  | liquid = 45.98 |
+DATAQ:  | liquid = 45.95 |
+DATAQ:  | liquid = 45.96 |
+DATAQ:  | liquid = 45.76 |
+DATAQ:  | liquid = 45.84 |
+DATAQ:  | liquid = 45.82 |
+DATAQ:  | liquid = 45.61 |
+DATAQ:  | liquid = 45.71 |
+DATAQ:  | liquid = 45.77 |
+DATAQ:  | liquid = 45.65 |
+DATAQ:  | liquid = 45.47 |
+DATAQ:  | liquid = 45.49 |
+DATAQ:  | liquid = 45.5 |
+DATAQ:  | liquid = 45.43 |
+DATAQ:  | liquid = 45.28 |
+DATAQ:  | liquid = 45.28 |
+DATAQ:  | liquid = 45.23 |
+DATAQ:  | liquid = 45.18 |
+DATAQ:  | liquid = 45.25 |
+DATAQ:  | liquid = 45.01 |
+DATAQ:  | liquid = 45.11 |
+DATAQ:  | liquid = 45.12 |
+DATAQ:  | liquid = 45.03 |
+DATAQ:  | liquid = 44.84 |
+DATAQ:  | liquid = 44.82 |
+DATAQ:  | liquid = 44.77 |
+DATAQ:  | liquid = 44.99 |
+DATAQ:  | liquid = 44.7 |
+DATAQ:  | liquid = 44.72 |
+DATAQ:  | liquid = 44.74 |
+DATAQ:  | liquid = 44.72 |
+DATAQ:  | liquid = 44.63 |
+DATAQ:  | liquid = 44.65 |
+DATAQ:  | liquid = 44.62 |
+DATAQ:  | liquid = 44.46 |
+DATAQ:  | liquid = 44.34 |
+DATAQ:  | liquid = 44.5 |
+DATAQ:  | liquid = 44.53 |
+DATAQ:  | liquid = 44.47 |
+DATAQ:  | liquid = 44.47 |
+DATAQ:  | liquid = 44.19 |
+DATAQ:  | liquid = 44.26 |
+DATAQ:  | liquid = 44.24 |
+DATAQ:  | liquid = 44.15 |
+DATAQ:  | liquid = 44.15 |
+DATAQ:  | liquid = 44.08 |
+DATAQ:  | liquid = 44.17 |
+DATAQ:  | liquid = 44.13 |
+DATAQ:  | liquid = 44.08 |
+DATAQ:  | liquid = 43.78 |
+DATAQ:  | liquid = 43.8 |
+DATAQ:  | liquid = 43.72 |
+DATAQ:  | liquid = 43.67 |
+DATAQ:  | liquid = 43.92 |
+DATAQ:  | liquid = 43.79 |
+DATAQ:  | liquid = 43.72 |
+DATAQ:  | liquid = 43.77 |
+DATAQ:  | liquid = 43.6 |
+DATAQ:  | liquid = 43.54 |
+DATAQ:  | liquid = 43.45 |
+DATAQ:  | liquid = 43.39 |
+DATAQ:  | liquid = 43.52 |
+DATAQ:  | liquid = 43.46 |
+DATAQ:  | liquid = 43.43 |
+DATAQ:  | liquid = 43.23 |
+DATAQ:  | liquid = 43.15 |
+DATAQ:  | liquid = 43.14 |
+DATAQ:  | liquid = 43.15 |
+DATAQ:  | liquid = 43.06 |
+DATAQ:  | liquid = 43.29 |
+DATAQ:  | liquid = 43.18 |
+DATAQ:  | liquid = 43.04 |
+DATAQ:  | liquid = 43.12 |
+DATAQ:  | liquid = 42.98 |
+DATAQ:  | liquid = 43.02 |
+DATAQ:  | liquid = 42.91 |
+DATAQ:  | liquid = 42.81 |
+DATAQ:  | liquid = 42.79 |
+DATAQ:  | liquid = 42.98 |
+DATAQ:  | liquid = 42.76 |
+DATAQ:  | liquid = 42.85 |
+DATAQ:  | liquid = 42.72 |
+DATAQ:  | liquid = 42.61 |
+DATAQ:  | liquid = 42.65 |
+DATAQ:  | liquid = 42.67 |
+DATAQ:  | liquid = 42.62 |
+DATAQ:  | liquid = 42.54 |
+DATAQ:  | liquid = 42.51 |
+DATAQ:  | liquid = 42.62 |
+DATAQ:  | liquid = 42.61 |
+DATAQ:  | liquid = 42.38 |
+DATAQ:  | liquid = 42.51 |
+DATAQ:  | liquid = 42.26 |
+DATAQ:  | liquid = 42.31 |
+DATAQ:  | liquid = 42.22 |
+DATAQ:  | liquid = 42.17 |
+DATAQ:  | liquid = 42.19 |
+DATAQ:  | liquid = 42.37 |
+DATAQ:  | liquid = 42.21 |
+DATAQ:  | liquid = 42.07 |
+DATAQ:  | liquid = 42.08 |
+DATAQ:  | liquid = 41.95 |
+DATAQ:  | liquid = 42.08 |
+DATAQ:  | liquid = 42.03 |
+DATAQ:  | liquid = 41.91 |
+DATAQ:  | liquid = 41.98 |
+DATAQ:  | liquid = 42.0 |
+DATAQ:  | liquid = 41.98 |
+DATAQ:  | liquid = 41.69 |
+DATAQ:  | liquid = 41.92 |
+DATAQ:  | liquid = 41.81 |
+DATAQ:  | liquid = 41.86 |
+DATAQ:  | liquid = 41.81 |
+DATAQ:  | liquid = 41.72 |
+DATAQ:  | liquid = 41.67 |
+DATAQ:  | liquid = 41.55 |
+DATAQ:  | liquid = 41.5 |
+DATAQ:  | liquid = 41.5 |
+DATAQ:  | liquid = 41.4 |
+DATAQ:  | liquid = 41.55 |
+DATAQ:  | liquid = 41.31 |
+DATAQ:  | liquid = 41.48 |
+DATAQ:  | liquid = 41.29 |
+DATAQ:  | liquid = 41.33 |
+DATAQ:  | liquid = 41.38 |
+DATAQ:  | liquid = 41.3 |
+DATAQ:  | liquid = 41.24 |
+DATAQ:  | liquid = 41.32 |
+DATAQ:  | liquid = 41.35 |
+DATAQ:  | liquid = 41.08 |
+DATAQ:  | liquid = 41.28 |
+DATAQ:  | liquid = 41.2 |
+DATAQ:  | liquid = 41.07 |
+DATAQ:  | liquid = 40.99 |
+DATAQ:  | liquid = 41.0 |
+DATAQ:  | liquid = 41.14 |
+DATAQ:  | liquid = 41.01 |
+DATAQ:  | liquid = 41.05 |
+DATAQ:  | liquid = 41.06 |
+DATAQ:  | liquid = 40.95 |
+DATAQ:  | liquid = 40.95 |
+DATAQ:  | liquid = 40.76 |
+DATAQ:  | liquid = 40.79 |
+DATAQ:  | liquid = 40.73 |
+DATAQ:  | liquid = 40.64 |
+DATAQ:  | liquid = 40.73 |
+DATAQ:  | liquid = 40.65 |
+DATAQ:  | liquid = 40.74 |
+DATAQ:  | liquid = 40.74 |
+DATAQ:  | liquid = 40.71 |
+DATAQ:  | liquid = 40.49 |
+DATAQ:  | liquid = 40.41 |
+DATAQ:  | liquid = 40.63 |
+DATAQ:  | liquid = 40.58 |
+DATAQ:  | liquid = 40.49 |
+DATAQ:  | liquid = 40.36 |
+DATAQ:  | liquid = 40.46 |
+DATAQ:  | liquid = 40.36 |
+DATAQ:  | liquid = 40.46 |
+DATAQ:  | liquid = 40.48 |
+DATAQ:  | liquid = 40.45 |
+DATAQ:  | liquid = 40.13 |
+DATAQ:  | liquid = 40.31 |
+DATAQ:  | liquid = 40.27 |
+DATAQ:  | liquid = 40.24 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.25 |
+DATAQ:  | liquid = 40.03 |
+DATAQ:  | liquid = 40.25 |
+DATAQ:  | liquid = 40.0 |
+DATAQ:  | liquid = 40.08 |
+DATAQ:  | liquid = 40.02 |
+DATAQ:  | liquid = 40.02 |
+DATAQ:  | liquid = 40.09 |
+DATAQ:  | liquid = 39.92 |
+DATAQ:  | liquid = 40.04 |
+DATAQ:  | liquid = 40.03 |
+DATAQ:  | liquid = 39.82 |
+DATAQ:  | liquid = 39.77 |
+DATAQ:  | liquid = 39.79 |
+DATAQ:  | liquid = 39.74 |
+DATAQ:  | liquid = 39.71 |
+DATAQ:  | liquid = 39.87 |
+DATAQ:  | liquid = 39.6 |
+DATAQ:  | liquid = 39.84 |
+DATAQ:  | liquid = 39.77 |
+DATAQ:  | liquid = 39.77 |
+DATAQ:  | liquid = 39.66 |
+DATAQ:  | liquid = 39.45 |
+DATAQ:  | liquid = 39.54 |
+DATAQ:  | liquid = 39.48 |
+DATAQ:  | liquid = 39.55 |
+DATAQ:  | liquid = 39.51 |
+DATAQ:  | liquid = 39.38 |
+DATAQ:  | liquid = 39.5 |
+DATAQ:  | liquid = 39.54 |
+DATAQ:  | liquid = 39.29 |
+DATAQ:  | liquid = 39.46 |
+DATAQ:  | liquid = 39.29 |
+DATAQ:  | liquid = 39.38 |
+DATAQ:  | liquid = 39.34 |
+DATAQ:  | liquid = 39.28 |
+DATAQ:  | liquid = 39.34 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 39.29 |
+DATAQ:  | liquid = 39.1 |
+DATAQ:  | liquid = 39.22 |
+DATAQ:  | liquid = 39.21 |
+DATAQ:  | liquid = 39.11 |
+DATAQ:  | liquid = 39.15 |
+DATAQ:  | liquid = 39.09 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 39.03 |
+DATAQ:  | liquid = 39.04 |
+DATAQ:  | liquid = 39.03 |
+DATAQ:  | liquid = 38.78 |
+DATAQ:  | liquid = 38.83 |
+DATAQ:  | liquid = 38.98 |
+DATAQ:  | liquid = 38.85 |
+DATAQ:  | liquid = 38.79 |
+DATAQ:  | liquid = 38.76 |
+DATAQ:  | liquid = 38.74 |
+DATAQ:  | liquid = 38.73 |
+DATAQ:  | liquid = 38.79 |
+DATAQ:  | liquid = 38.72 |
+DATAQ:  | liquid = 38.66 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.62 |
+DATAQ:  | liquid = 38.67 |
+DATAQ:  | liquid = 38.74 |
+DATAQ:  | liquid = 38.67 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.62 |
+DATAQ:  | liquid = 38.49 |
+DATAQ:  | liquid = 38.49 |
+DATAQ:  | liquid = 38.47 |
+DATAQ:  | liquid = 38.44 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.61 |
+DATAQ:  | liquid = 38.29 |
+DATAQ:  | liquid = 38.32 |
+DATAQ:  | liquid = 38.44 |
+DATAQ:  | liquid = 38.39 |
+DATAQ:  | liquid = 38.43 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.39 |
+DATAQ:  | liquid = 38.24 |
+DATAQ:  | liquid = 38.23 |
+DATAQ:  | liquid = 38.11 |
+DATAQ:  | liquid = 38.08 |
+DATAQ:  | liquid = 38.13 |
+DATAQ:  | liquid = 38.31 |
+DATAQ:  | liquid = 38.28 |
+DATAQ:  | liquid = 38.2 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.07 |
+DATAQ:  | liquid = 38.03 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.08 |
+DATAQ:  | liquid = 38.06 |
+DATAQ:  | liquid = 38.15 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 37.93 |
+DATAQ:  | liquid = 38.01 |
+DATAQ:  | liquid = 38.06 |
+DATAQ:  | liquid = 38.02 |
+DATAQ:  | liquid = 37.91 |
+DATAQ:  | liquid = 37.82 |
+DATAQ:  | liquid = 37.87 |
+DATAQ:  | liquid = 37.88 |
+DATAQ:  | liquid = 37.78 |
+DATAQ:  | liquid = 37.86 |
+DATAQ:  | liquid = 37.75 |
+DATAQ:  | liquid = 37.63 |
+DATAQ:  | liquid = 37.65 |
+DATAQ:  | liquid = 37.77 |
+DATAQ:  | liquid = 37.83 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.55 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.58 |
+DATAQ:  | liquid = 37.62 |
+DATAQ:  | liquid = 37.64 |
+DATAQ:  | liquid = 37.57 |
+DATAQ:  | liquid = 37.67 |
+DATAQ:  | liquid = 37.67 |
+DATAQ:  | liquid = 37.42 |
+DATAQ:  | liquid = 37.65 |
+DATAQ:  | liquid = 37.4 |
+DATAQ:  | liquid = 37.4 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.51 |
+DATAQ:  | liquid = 37.43 |
+DATAQ:  | liquid = 37.43 |
+DATAQ:  | liquid = 37.37 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.27 |
+DATAQ:  | liquid = 37.27 |
+DATAQ:  | liquid = 37.37 |
+DATAQ:  | liquid = 37.23 |
+DATAQ:  | liquid = 37.29 |
+DATAQ:  | liquid = 37.29 |
+DATAQ:  | liquid = 37.09 |
+DATAQ:  | liquid = 37.28 |
+DATAQ:  | liquid = 37.31 |
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.09 |
+DATAQ:  | liquid = 37.03 |
+DATAQ:  | liquid = 37.23 |
+DATAQ:  | liquid = 37.16 |
+DATAQ:  | liquid = 37.09 |
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.07 |
+DATAQ:  | liquid = 37.04 |
+DATAQ:  | liquid = 37.04 |
+DATAQ:  | liquid = 37.15 |
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 36.97 |
+DATAQ:  | liquid = 37.08 |
+DATAQ:  | liquid = 37.08 |
+DATAQ:  | liquid = 36.81 |
+DATAQ:  | liquid = 36.79 |
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 36.87 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.81 |
+DATAQ:  | liquid = 36.8 |
+DATAQ:  | liquid = 36.82 |
+DATAQ:  | liquid = 36.75 |
+DATAQ:  | liquid = 36.63 |
+DATAQ:  | liquid = 36.83 |
+DATAQ:  | liquid = 36.89 |
+DATAQ:  | liquid = 36.6 |
+DATAQ:  | liquid = 36.68 |
+DATAQ:  | liquid = 36.69 |
+DATAQ:  | liquid = 36.61 |
+DATAQ:  | liquid = 36.61 |
+DATAQ:  | liquid = 36.67 |
+DATAQ:  | liquid = 36.8 |
+DATAQ:  | liquid = 36.76 |
+DATAQ:  | liquid = 36.7 |
+DATAQ:  | liquid = 36.52 |
+DATAQ:  | liquid = 36.5 |
+DATAQ:  | liquid = 36.57 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.56 |
+DATAQ:  | liquid = 36.41 |
+DATAQ:  | liquid = 36.32 |
+DATAQ:  | liquid = 36.47 |
+DATAQ:  | liquid = 36.29 |
+DATAQ:  | liquid = 36.52 |
+DATAQ:  | liquid = 36.5 |
+DATAQ:  | liquid = 36.44 |
+DATAQ:  | liquid = 36.53 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.27 |
+DATAQ:  | liquid = 36.25 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.26 |
+DATAQ:  | liquid = 36.37 |
+DATAQ:  | liquid = 36.41 |
+DATAQ:  | liquid = 36.36 |
+DATAQ:  | liquid = 36.08 |
+DATAQ:  | liquid = 36.16 |
+DATAQ:  | liquid = 36.15 |
+DATAQ:  | liquid = 36.07 |
+DATAQ:  | liquid = 36.12 |
+DATAQ:  | liquid = 36.19 |
+DATAQ:  | liquid = 36.14 |
+DATAQ:  | liquid = 36.2 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 36.03 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 36.01 |
+DATAQ:  | liquid = 36.43 |
+DATAQ:  | liquid = 36.29 |
+DATAQ:  | liquid = 36.44 |
+DATAQ:  | liquid = 36.36 |
+DATAQ:  | liquid = 36.23 |
+DATAQ:  | liquid = 36.3 |
+DATAQ:  | liquid = 36.27 |
+DATAQ:  | liquid = 36.25 |
+DATAQ:  | liquid = 36.33 |
+DATAQ:  | liquid = 36.32 |
+DATAQ:  | liquid = 36.11 |
+DATAQ:  | liquid = 36.12 |
+DATAQ:  | liquid = 36.12 |
+DATAQ:  | liquid = 36.18 |
+DATAQ:  | liquid = 36.19 |
+DATAQ:  | liquid = 36.28 |
+DATAQ:  | liquid = 36.26 |
+DATAQ:  | liquid = 36.03 |
+DATAQ:  | liquid = 35.97 |
+DATAQ:  | liquid = 35.94 |
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 35.99 |
+DATAQ:  | liquid = 36.2 |
+DATAQ:  | liquid = 36.16 |
+DATAQ:  | liquid = 36.05 |
+DATAQ:  | liquid = 35.86 |
+DATAQ:  | liquid = 35.75 |
+DATAQ:  | liquid = 35.82 |
+DATAQ:  | liquid = 35.75 |
+DATAQ:  | liquid = 35.8 |
+DATAQ:  | liquid = 35.73 |
+DATAQ:  | liquid = 35.7 |
+DATAQ:  | liquid = 35.68 |
+DATAQ:  | liquid = 35.64 |
+DATAQ:  | liquid = 35.61 |
+DATAQ:  | liquid = 35.62 |
+DATAQ:  | liquid = 35.47 |
+DATAQ:  | liquid = 35.41 |
+DATAQ:  | liquid = 35.07 |
+DATAQ:  | liquid = 34.62 |
+DATAQ:  | liquid = 34.35 |
+DATAQ:  | liquid = 34.1 |
+DATAQ:  | liquid = 42.74 |
+DATAQ:  | liquid = 42.76 |
+DATAQ:  | liquid = 42.74 |
+DATAQ:  | liquid = 42.7 |
+DATAQ:  | liquid = 42.65 |
+DATAQ:  | liquid = 42.49 |
+DATAQ:  | liquid = 42.48 |
+DATAQ:  | liquid = 42.44 |
+DATAQ:  | liquid = 42.31 |
+DATAQ:  | liquid = 42.44 |
+DATAQ:  | liquid = 42.21 |
+DATAQ:  | liquid = 42.21 |
+DATAQ:  | liquid = 42.31 |
+DATAQ:  | liquid = 42.31 |
+DATAQ:  | liquid = 42.08 |
+DATAQ:  | liquid = 42.12 |
+DATAQ:  | liquid = 42.05 |
+DATAQ:  | liquid = 42.04 |
+DATAQ:  | liquid = 41.95 |
+DATAQ:  | liquid = 42.03 |
+DATAQ:  | liquid = 41.66 |
+DATAQ:  | liquid = 41.7 |
+DATAQ:  | liquid = 41.87 |
+DATAQ:  | liquid = 41.65 |
+DATAQ:  | liquid = 41.52 |
+DATAQ:  | liquid = 41.7 |
+DATAQ:  | liquid = 41.43 |
+DATAQ:  | liquid = 41.55 |
+DATAQ:  | liquid = 41.34 |
+DATAQ:  | liquid = 41.53 |
+DATAQ:  | liquid = 41.41 |
+DATAQ:  | liquid = 41.4 |
+DATAQ:  | liquid = 41.31 |
+DATAQ:  | liquid = 41.12 |
+DATAQ:  | liquid = 41.11 |
+DATAQ:  | liquid = 41.11 |
+DATAQ:  | liquid = 41.02 |
+DATAQ:  | liquid = 41.17 |
+DATAQ:  | liquid = 41.21 |
+DATAQ:  | liquid = 41.04 |
+DATAQ:  | liquid = 40.81 |
+DATAQ:  | liquid = 40.97 |
+DATAQ:  | liquid = 40.74 |
+DATAQ:  | liquid = 40.75 |
+DATAQ:  | liquid = 40.99 |
+DATAQ:  | liquid = 40.85 |
+DATAQ:  | liquid = 40.65 |
+DATAQ:  | liquid = 40.69 |
+DATAQ:  | liquid = 40.7 |
+DATAQ:  | liquid = 40.56 |
+DATAQ:  | liquid = 40.68 |
+DATAQ:  | liquid = 40.48 |
+DATAQ:  | liquid = 40.43 |
+DATAQ:  | liquid = 40.49 |
+DATAQ:  | liquid = 40.41 |
+DATAQ:  | liquid = 40.44 |
+DATAQ:  | liquid = 40.3 |
+DATAQ:  | liquid = 40.29 |
+DATAQ:  | liquid = 40.14 |
+DATAQ:  | liquid = 40.19 |
+DATAQ:  | liquid = 40.18 |
+DATAQ:  | liquid = 40.1 |
+DATAQ:  | liquid = 40.17 |
+DATAQ:  | liquid = 40.23 |
+DATAQ:  | liquid = 39.93 |
+DATAQ:  | liquid = 39.91 |
+DATAQ:  | liquid = 39.86 |
+DATAQ:  | liquid = 39.86 |
+DATAQ:  | liquid = 39.99 |
+DATAQ:  | liquid = 40.0 |
+DATAQ:  | liquid = 39.74 |
+DATAQ:  | liquid = 39.72 |
+DATAQ:  | liquid = 39.61 |
+DATAQ:  | liquid = 39.69 |
+DATAQ:  | liquid = 39.65 |
+DATAQ:  | liquid = 39.76 |
+DATAQ:  | liquid = 39.6 |
+DATAQ:  | liquid = 39.52 |
+DATAQ:  | liquid = 39.58 |
+DATAQ:  | liquid = 39.58 |
+DATAQ:  | liquid = 39.49 |
+DATAQ:  | liquid = 39.3 |
+DATAQ:  | liquid = 39.49 |
+DATAQ:  | liquid = 39.43 |
+DATAQ:  | liquid = 39.12 |
+DATAQ:  | liquid = 39.39 |
+DATAQ:  | liquid = 39.25 |
+DATAQ:  | liquid = 39.11 |
+DATAQ:  | liquid = 39.17 |
+DATAQ:  | liquid = 39.22 |
+DATAQ:  | liquid = 39.05 |
+DATAQ:  | liquid = 39.0 |
+DATAQ:  | liquid = 38.99 |
+DATAQ:  | liquid = 39.14 |
+DATAQ:  | liquid = 39.09 |
+DATAQ:  | liquid = 38.97 |
+DATAQ:  | liquid = 38.7 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.86 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.79 |
+DATAQ:  | liquid = 38.71 |
+DATAQ:  | liquid = 38.55 |
+DATAQ:  | liquid = 38.6 |
+DATAQ:  | liquid = 38.5 |
+DATAQ:  | liquid = 38.68 |
+DATAQ:  | liquid = 38.45 |
+DATAQ:  | liquid = 38.6 |
+DATAQ:  | liquid = 38.28 |
+DATAQ:  | liquid = 38.5 |
+DATAQ:  | liquid = 38.27 |
+DATAQ:  | liquid = 38.32 |
+DATAQ:  | liquid = 38.19 |
+DATAQ:  | liquid = 38.17 |
+DATAQ:  | liquid = 38.26 |
+DATAQ:  | liquid = 38.11 |
+DATAQ:  | liquid = 38.15 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.03 |
+DATAQ:  | liquid = 38.06 |
+DATAQ:  | liquid = 38.1 |
+DATAQ:  | liquid = 38.13 |
+DATAQ:  | liquid = 38.05 |
+DATAQ:  | liquid = 38.04 |
+DATAQ:  | liquid = 37.83 |
+DATAQ:  | liquid = 37.9 |
+DATAQ:  | liquid = 37.9 |
+DATAQ:  | liquid = 37.96 |
+DATAQ:  | liquid = 37.89 |
+DATAQ:  | liquid = 37.82 |
+DATAQ:  | liquid = 37.74 |
+DATAQ:  | liquid = 37.74 |
+DATAQ:  | liquid = 37.61 |
+DATAQ:  | liquid = 37.76 |
+DATAQ:  | liquid = 37.6 |
+DATAQ:  | liquid = 37.53 |
+DATAQ:  | liquid = 37.51 |
+DATAQ:  | liquid = 37.43 |
+DATAQ:  | liquid = 37.47 |
+DATAQ:  | liquid = 37.39 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.53 |
+DATAQ:  | liquid = 37.46 |
+DATAQ:  | liquid = 37.46 |
+DATAQ:  | liquid = 37.47 |
+DATAQ:  | liquid = 37.41 |
+DATAQ:  | liquid = 37.36 |
+DATAQ:  | liquid = 37.23 |
+DATAQ:  | liquid = 37.35 |
+DATAQ:  | liquid = 37.37 |
+DATAQ:  | liquid = 37.04 |
+DATAQ:  | liquid = 37.07 |
+DATAQ:  | liquid = 36.98 |
+DATAQ:  | liquid = 37.04 |
+DATAQ:  | liquid = 37.22 |
+DATAQ:  | liquid = 37.14 |
+DATAQ:  | liquid = 37.21 |
+DATAQ:  | liquid = 37.16 |
+DATAQ:  | liquid = 36.89 |
+DATAQ:  | liquid = 37.14 |
+DATAQ:  | liquid = 36.83 |
+DATAQ:  | liquid = 36.84 |
+DATAQ:  | liquid = 36.86 |
+DATAQ:  | liquid = 36.76 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.9 |
+DATAQ:  | liquid = 36.72 |
+DATAQ:  | liquid = 36.87 |
+DATAQ:  | liquid = 36.74 |
+DATAQ:  | liquid = 36.59 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.69 |
+DATAQ:  | liquid = 36.68 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.48 |
+DATAQ:  | liquid = 36.57 |
+DATAQ:  | liquid = 36.41 |
+DATAQ:  | liquid = 36.46 |
+DATAQ:  | liquid = 36.42 |
+DATAQ:  | liquid = 36.4 |
+DATAQ:  | liquid = 36.51 |
+DATAQ:  | liquid = 36.43 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.28 |
+DATAQ:  | liquid = 36.13 |
+DATAQ:  | liquid = 36.17 |
+DATAQ:  | liquid = 36.32 |
+DATAQ:  | liquid = 36.17 |
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.09 |
+DATAQ:  | liquid = 36.24 |
+DATAQ:  | liquid = 36.16 |
+DATAQ:  | liquid = 36.05 |
+DATAQ:  | liquid = 35.92 |
+DATAQ:  | liquid = 35.95 |
+DATAQ:  | liquid = 36.08 |
+DATAQ:  | liquid = 36.17 |
+DATAQ:  | liquid = 36.21 |
+DATAQ:  | liquid = 36.21 |
+DATAQ:  | liquid = 35.88 |
+DATAQ:  | liquid = 30.59 |
+DATAQ:  | liquid = 26.66 |
+DATAQ:  | liquid = 30.42 |
+DATAQ:  | liquid = 35.0 |
+DATAQ:  | liquid = 35.4 |
+DATAQ:  | liquid = 35.51 |
+DATAQ:  | liquid = 35.21 |
+DATAQ:  | liquid = 35.16 |
+DATAQ:  | liquid = 34.83 |
+DATAQ:  | liquid = 34.78 |
+DATAQ:  | liquid = 34.93 |
+DATAQ:  | liquid = 34.68 |
+DATAQ:  | liquid = 39.3 |
+DATAQ:  | liquid = 39.1 |
+DATAQ:  | liquid = 39.17 |
+DATAQ:  | liquid = 38.89 |
+DATAQ:  | liquid = 39.01 |
+DATAQ:  | liquid = 38.97 |
+DATAQ:  | liquid = 38.94 |
+DATAQ:  | liquid = 39.01 |
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.55 |
+DATAQ:  | liquid = 38.56 |
+DATAQ:  | liquid = 38.65 |
+DATAQ:  | liquid = 38.7 |
+DATAQ:  | liquid = 38.55 |
+DATAQ:  | liquid = 38.6 |
+DATAQ:  | liquid = 38.58 |
+DATAQ:  | liquid = 38.29 |
+DATAQ:  | liquid = 38.55 |
+DATAQ:  | liquid = 38.23 |
+DATAQ:  | liquid = 38.19 |
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.11 |
+DATAQ:  | liquid = 38.08 |
+DATAQ:  | liquid = 38.34 |
+DATAQ:  | liquid = 38.58 |
+DATAQ:  | liquid = 32.29 |
+DATAQ:  | liquid = 27.63 |
+DATAQ:  | liquid = 24.66 |
+DATAQ:  | liquid = 23.48 |
+DATAQ:  | liquid = 22.68 |
+DATAQ:  | liquid = 32.76 |
+DATAQ:  | liquid = 37.48 |
+DATAQ:  | liquid = 37.7 |
+DATAQ:  | liquid = 37.49 |
+DATAQ:  | liquid = 37.21 |
+DATAQ:  | liquid = 37.05 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.5 |
+DATAQ:  | liquid = 36.57 |
+DATAQ:  | liquid = 36.53 |
+DATAQ:  | liquid = 36.42 |

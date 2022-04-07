@@ -1,0 +1,8 @@
+DATAQ:  | liquid = 37.97 |
+DATAQ:  | liquid = 38.04 |
+DATAQ:  | liquid = 38.18 |
+DATAQ:  | liquid = 38.28 |
+DATAQ:  | liquid = 38.28 |
+DATAQ:  | liquid = 38.3 |
+DATAQ:  | liquid = 38.16 |
+DATAQ:  | liquid = 38.22 |

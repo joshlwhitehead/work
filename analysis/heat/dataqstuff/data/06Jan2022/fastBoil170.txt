@@ -1,0 +1,998 @@
+[0;32mI (7968728) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7968730) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7968750) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7968751) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7968753) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7968767) BLE_PERIPH: Sending Response Packet: [34, true, 135, ["2022-01-06T20:29:19.129Z","e6436815-18b1-419e-a49f-693529d3a336",294912,39.17,30.02,0,0,0,0.00], 0][0m
+[0;32mI (7968775) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 135, ["2022-01-06T20:29:19.129Z", "e6436815-18b1-419e-a49f-693529d3a336", 294912, 39.17, 30.02, 0, 0, 0, 0.00], 0]
+[0;32mI (7968806) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 135, ["2022-01-06T20:29:19.129Z","e6436815-18b1-419e-a49f-693529d3a336",294912,39.17,30.02,0,0,0,0.00], 0][0m
+[0;32mI (7968840) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (7968842) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (7968874) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 47.89 | stg1htsnk = 48.25 |
+DATAQ:  | liquid = 47.72 | stg1htsnk = 48.34 |
+DATAQ:  | liquid = 47.79 | stg1htsnk = 48.28 |
+DATAQ:  | liquid = 47.67 | stg1htsnk = 48.28 |
+DATAQ:  | liquid = 47.6 | stg1htsnk = 48.19 |
+DATAQ:  | liquid = 47.51 | stg1htsnk = 48.11 |
+DATAQ:  | liquid = 47.5 | stg1htsnk = 48.06 |
+DATAQ:  | liquid = 47.49 | stg1htsnk = 48.01 |
+[0;32mI (7978740) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7978742) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7978807) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7978808) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7978811) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+DATAQ:  | liquid = 47.31 | stg1htsnk = 47.94 |
+[0;32mI (7978863) BLE_PERIPH: Sending Response Packet: [34, true, 136, ["2022-01-06T20:29:19.129Z","e6436815-18b1-419e-a49f-693529d3a336",305011,38.68,29.99,0,0,0,0.00], 0][0m
+[0;32mI (7978869) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 136, ["2022-01-06T20:29:19.129Z", "e6436815-18b1-419e-a49f-693529d3a336", 305011, 38.68, 29.99, 0, 0, 0, 0.00], 0]
+[0;32mI (7978898) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 136, ["2022-01-06T20:29:19.129Z","e6436815-18b1-419e-a49f-693529d3a336",305011,38.68,29.99,0,0,0,0.00], 0][0m
+[0;32mI (7978988) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (7978990) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (7979033) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 47.29 | stg1htsnk = 47.95 |
+DATAQ:  | liquid = 47.19 | stg1htsnk = 47.78 |
+DATAQ:  | liquid = 47.31 | stg1htsnk = 47.69 |
+DATAQ:  | liquid = 47.18 | stg1htsnk = 47.61 |
+DATAQ:  | liquid = 46.91 | stg1htsnk = 47.35 |
+DATAQ:  | liquid = 46.77 | stg1htsnk = 47.22 |
+DATAQ:  | liquid = 46.75 | stg1htsnk = 47.18 |
+[0;32mI (7986525) isInsideDark: Color Read:[0m
+[0;32mI (7986525) isInsideDark: CH 415: 6[0m
+[0;32mI (7986526) isInsideDark: CH 445: 0[0m
+[0;32mI (7986527) isInsideDark: CH 480: 0[0m
+[0;32mI (7986531) isInsideDark: CH 515: 0[0m
+[0;32mI (7986535) isInsideDark: CH 555: 6[0m
+[0;32mI (7986539) isInsideDark: CH 590: 0[0m
+[0;32mI (7986543) isInsideDark: CH 630: 0[0m
+[0;32mI (7986548) isInsideDark: CH 680: 0[0m
+[0;32mI (7986552) isInsideDark: CH NIR: 0[0m
+[0;32mI (7986556) isInsideDark: CH CLR: 0[0m
+[0;32mI (7986930) BLE_PERIPH: App to Instrument Transaction Write 0/287[0m
+[0;32mI (7986932) BLE_PERIPH: App to Instrument Transaction Notify 0/287[0m
+DATAQ:  | liquid = 46.34 | stg1htsnk = 46.77 |
+[0;32mI (7987019) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7987020) BLE_PERIPH: Received 287/287[0m
+[0;32mI (7987024) BLE_PERIPH: App to Instrument Transaction Notify 287/287[0m
+[0;32mI (7987068) ExperimentParam: Parsing experiment parameters:
+[{
+		"pcrSkip":	true,
+		"meltSkip":	true,
+		"pcrCycleCount":	40,
+		"samplePrepSkip":	false,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	100
+			}, {
+				"tempC":	170,
+				"holdSeconds":	400
+			}],
+		"samplePrepPtcSealTimeMs":	15000
+	}][0m
+[0;32mI (7987096) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (7987104) ExperimentParam: Could not find parameter doContinuousAcquisition, using default value: 0[0m
+[0;32mI (7987114) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (7987121) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (7987131) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 1[0m
+[0;32mI (7987141) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (7987151) ExperimentParam: Found parameter samplePrepSkip: 0[0m
+[0;32mI (7987158) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (7987164) ExperimentParam: Found parameter holdSeconds: 100.00[0m
+[0;32mI (7987171) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (7987179) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (7987188) ExperimentParam: Found parameter tempC: 170.00[0m
+[0;32mI (7987195) ExperimentParam: Found parameter holdSeconds: 400.00[0m
+[0;32mI (7987201) ExperimentParam: Could not find parameter rampRate, using default value: 0.00[0m
+[0;32mI (7987210) ExperimentParam: Could not find parameter performCapture, using default value: 0[0m
+[0;32mI (7987220) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,100.00s,0.00C/s (?capture=0)},{170.00C,400.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (7987233) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (7987240) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 15000[0m
+[0;32mI (7987247) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (7987254) isCupPresent: Cup Detected![0m
+[0;32mI (7987258) ExperimentParam: Could not find parameter samplePrepPcrChamberPreheatTempC, using default value: 55.00[0m
+[0;32mI (7987270) ExperimentParam: Found parameter pcrSkip: 1[0m
+[0;32mI (7987275) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (7987283) ExperimentParam: Could not find parameter pcrPreheatTempSteps, using default value: {95.00C,30.00s,0.00C/s (?capture=0)},{65.00C,15.00s,0.00C/s (?capture=0)},[0m
+[0;32mI (7987299) ExperimentParam: Could not find parameter pcrCyclingTempSteps, using default value: {100.00C,0.00s,0.00C/s (?capture=0)},{95.00C,4.00s,0.00C/s (?capture=0)},{66.00C,0.00s,0.00C/s (?capture=0)},{68.00C,8.00s,0.00C/s (?capture=1)},[0m
+[0;32mI (7987321) ExperimentParam: Found parameter pcrCycleCount: 40[0m
+[0;32mI (7987328) ExperimentParam: Found parameter meltSkip: 1[0m
+[0;32mI (7987334) ExperimentParam: Could not find parameter meltStartTemp, using default value: 50.00[0m
+[0;32mI (7987343) ExperimentParam: Could not find parameter meltFinishTemp, using default value: 100.00[0m
+[0;32mI (7987353) ExperimentParam: Could not find parameter meltRampRateDegCPerSecond, using default value: 0.25[0m
+[0;32mI (7987363) ExperimentParam: Could not find parameter meltAcquistitionDelaySeconds, using default value: 0.50[0m
+[0;32mI (7987374) ExperimentParam: Could not find parameter meltStartHoldTimeSeconds, using default value: 30[0m
+[0;32mI (7987384) BLE_PERIPH: Sending Response Packet: [32, true, 137, [], 0][0m
+[32, true, 137, [], 0]
+[0;32mI (7987391) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[0;32mI (7987436) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [32, true, 137, [], 0][0m
+[0;32mI (7987493) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (7987495) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (7987515) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7987594) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7987596) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7987638) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7987639) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7987642) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7987650) BLE_PERIPH: Sending Response Packet: [34, true, 138, ["","",313804,38.65,29.94,2,0,0,0.00], 0][0m
+[0;32mI (7987656) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 138, ["", "", 313804, 38.65, 29.94, 2, 0, 0, 0.00], 0]
+[0;32mI (7987706) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 138, ["","",313804,38.65,29.94,2,0,0,0.00], 0][0m
+[0;32mI (7987762) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;32mI (7987764) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (7987808) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7987897) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7987899) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | liquid = 45.96 | stg1htsnk = 46.44 |
+[0;32mI (7987965) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7987966) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7987968) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7987978) BLE_PERIPH: Sending Response Packet: [33, true, 139, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":100.00,"rampRate":0.00,"performCapture":0},{"tempC":170.00,"holdSeconds":400.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip":true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":true,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (7988079) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1175[0m
+[33, true, 139, [{
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	1,
+		"excitationOutputPercentage":	100.00,
+		"samplePrepSkip":	false,
+		"samplePrepTempSteps":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	100.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	170.00,
+				"holdSeconds":	400.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	15000,
+		"samplePrepDoPlunge":	false,
+		"samplePrepPcrChamberPreheatTempC":	55.00,
+		"pcrSkip":	true,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	65.00,
+				"holdSeconds":	15.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"pcrCyclingTempSteps":	[{
+				"tempC":	100.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	4.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	66.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	68.00,
+				"holdSeconds":	8.00,
+				"rampRate":	0.00,
+				"performCapture":	1
+			}],
+		"pcrCycleCount":	40,
+		"meltSkip":	true,
+		"meltStartTemp":	50.00,
+		"meltFinishTemp":	100.00,
+		"meltRampRateDegCPerSecond":	0.25,
+		"meltAcquistitionDelaySeconds":	0.50,
+		"meltStartHoldTimeSeconds":	30.00
+	}], 0]
+[0;32mI (7988122) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1175, currentIndex=0): [33, true, 139, [{"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"samplePrepSkip":false,"samplePrepTempSteps":false,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":100.00,"rampRate":0.00,"performCapture":0},{"tempC":170.00,"holdSeconds":400.00,"rampRate":0.00,"performCapture":0}],"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":15000,"samplePrepDoPlunge":false,"samplePrepPcrChamberPreheatTempC":55.00,"pcrSkip"[0m
+[0;32mI (7988325) BLE_PERIPH: Instrument to App Transaction Write 510/1175[0m
+[0;32mI (7988327) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1175[0m
+[0;32mI (7988347) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1175, currentIndex=510): :true,"pcrPreheatTempSteps":[{"tempC":95.00,"holdSeconds":30.00,"rampRate":0.00,"performCapture":0},{"tempC":65.00,"holdSeconds":15.00,"rampRate":0.00,"performCapture":0}],"pcrCyclingTempSteps":[{"tempC":100.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":95.00,"holdSeconds":4.00,"rampRate":0.00,"performCapture":0},{"tempC":66.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":68.00,"holdSeconds":8.00,"rampRate":0.00,"performCapture":1}],"pcrCycleCount":40,"meltSkip":tru[0m
+[0;32mI (7988437) BLE_PERIPH: Instrument to App Transaction Write 1020/1175[0m
+[0;32mI (7988440) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1175[0m
+[0;32mI (7988460) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=155 mtu=510, totalSize=1175, currentIndex=1020): e,"meltStartTemp":50.00,"meltFinishTemp":100.00,"meltRampRateDegCPerSecond":0.25,"meltAcquistitionDelaySeconds":0.50,"meltStartHoldTimeSeconds":30.00}], 0][0m
+[0;32mI (7988527) BLE_PERIPH: Instrument to App Transaction Write 1175/1175[0m
+[0;32mI (7988529) BLE_PERIPH: Instrument to App Transaction Read/Notify 1175/1175[0m
+[0;32mI (7988550) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7988719) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7988721) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7988786) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7988787) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7988789) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7988828) BLE_PERIPH: Sending Response Packet: [34, true, 140, ["","",314983,38.73,29.97,2,0,0,0.00], 0][0m
+[34, true, 140, ["", "", 314983, 38.73, 29.97, 2, 0, 0, 0.00], 0]
+[0;32mI (7988830) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[0;32mI (7988910) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 140, ["","",314983,38.73,29.97,2,0,0,0.00], 0][0m
+[0;32mI (7988977) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+DATAQ:  | liquid = 45.75 | stg1htsnk = 46.21 |
+[0;32mI (7988980) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (7989023) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7989450) BLE_PERIPH: App to Instrument Transaction Write 0/84[0m
+[0;32mI (7989452) BLE_PERIPH: App to Instrument Transaction Notify 0/84[0m
+[0;32mI (7989542) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7989543) BLE_PERIPH: Received 84/84[0m
+[0;32mI (7989545) BLE_PERIPH: App to Instrument Transaction Notify 84/84[0m
+[0;32mI (7989548) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (7989556) experimentStateStartEnter: Experiment starting[0m
+[0;32mI (7989568) experimentStateStartEnter: Writing {"timestamp":"2022-01-06T20:34:34.280Z","consumableId":"e6436815-18b1-419e-a49f-693529d3a336", to results.txt[0m
+[0;32mI (7989583) BLE_PERIPH: Sending Response Packet: [35, true, 141, [], 0][0m
+[35, true, 141, [], 0]
+[0;32mI (7989585) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[0;32mI (7989606) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (7989634) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;32mI (7989635) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;32mI (7989637) thermalControlSetEnable: Enabling Peltier 1[0m
+[0;32mI (7989643) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [35, true, 141, [], 0][0m
+[0;32mI (7989662) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.77, target = 30.00, rampSet = 38.60, output = 96.70, p=-0.43, i=69.99, d=-0.00, ff=27.14[0m
+[0;32mI (7989698) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (7989700) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (7989716) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 30.43, output = 100.00, p=1.19, i=70.00, d=-0.00, ff=37.14[0m
+[0;32mI (7989722) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7989761) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.78, target = 30.00, rampSet = 38.01, output = 94.79, p=-1.93, i=69.89, d=0.00, ff=26.82[0m
+[0;32mI (7989799) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7989801) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7989822) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 31.07, output = 100.00, p=2.78, i=70.00, d=-0.00, ff=37.54[0m
+[0;32mI (7989861) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.79, target = 30.00, rampSet = 37.41, output = 92.66, p=-3.44, i=69.71, d=0.00, ff=26.39[0m
+[0;32mI (7989867) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7989872) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7989879) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7989894) BLE_PERIPH: Sending Response Packet: [34, true, 142, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",330,38.79,29.96,3,2,33,1.00], 0][0m
+[0;32mI (7989901) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 142, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 330, 38.79, 29.96, 3, 2, 33, 1.00], 0]
+[0;32mI (7989919) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.96, target = 55.00, rampSet = 31.65, output = 100.00, p=4.24, i=70.00, d=-0.00, ff=38.02[0m
+[0;32mI (7989945) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 142, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",330,38.79,29.96,3,2,33,1.00], 0][0m
+[0;32mI (7989964) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.79, target = 30.00, rampSet = 36.79, output = 90.40, p=-5.00, i=69.43, d=0.00, ff=25.96[0m
+DATAQ:  | liquid = 45.44 | stg1htsnk = 45.94 |
+[0;32mI (7990001) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (7990003) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (7990020) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 32.26, output = 100.00, p=5.75, i=70.00, d=-0.00, ff=38.40[0m
+[0;32mI (7990035) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7990064) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.79, target = 30.00, rampSet = 36.19, output = 88.10, p=-6.50, i=69.06, d=0.00, ff=25.54[0m
+[0;32mI (7990119) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 32.85, output = 100.00, p=7.24, i=70.00, d=-0.00, ff=38.82[0m
+[0;32mI (7990164) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 35.59, output = 85.72, p=-8.01, i=68.61, d=0.00, ff=25.12[0m
+[0;32mI (7990219) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 33.45, output = 100.00, p=8.74, i=70.00, d=0.00, ff=39.23[0m
+[0;32mI (7990264) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 34.99, output = 83.24, p=-9.52, i=68.06, d=0.00, ff=24.70[0m
+[0;32mI (7990320) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 34.05, output = 100.00, p=10.24, i=70.00, d=0.00, ff=39.65[0m
+[0;32mI (7990364) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 34.39, output = 80.68, p=-11.02, i=67.42, d=0.00, ff=24.28[0m
+[0;32mI (7990418) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 34.64, output = 100.00, p=11.70, i=70.00, d=0.00, ff=40.07[0m
+[0;32mI (7990464) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 33.79, output = 78.03, p=-12.53, i=66.69, d=0.00, ff=23.87[0m
+[0;32mI (7990520) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 35.25, output = 100.00, p=13.22, i=70.00, d=0.00, ff=40.49[0m
+[0;32mI (7990565) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 33.19, output = 75.28, p=-14.03, i=65.87, d=0.00, ff=23.44[0m
+[0;32mI (7990619) thermalControlTask: thermalControl-1 = 29.99, filtered = 29.96, target = 55.00, rampSet = 35.85, output = 100.00, p=14.72, i=70.00, d=0.00, ff=40.91[0m
+[0;32mI (7990665) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 32.59, output = 72.45, p=-15.53, i=64.96, d=0.00, ff=23.02[0m
+[0;32mI (7990719) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 36.45, output = 100.00, p=16.21, i=70.00, d=0.00, ff=41.33[0m
+[0;32mI (7990764) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 31.99, output = 69.53, p=-17.03, i=63.96, d=0.00, ff=22.60[0m
+[0;32mI (7990819) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 37.05, output = 100.00, p=17.71, i=70.00, d=0.00, ff=41.75[0m
+[0;32mI (7990864) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.80, target = 30.00, rampSet = 31.39, output = 66.52, p=-18.53, i=62.87, d=0.00, ff=22.18[0m
+[0;32mI (7990919) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 37.65, output = 100.00, p=19.21, i=70.00, d=0.00, ff=42.17[0m
+[0;32mI (7990964) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.79, output = 63.42, p=-20.04, i=61.69, d=0.00, ff=21.76[0m
+DATAQ:  | liquid = 45.38 | stg1htsnk = 45.88 |
+[0;32mI (7991019) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 38.25, output = 100.00, p=20.71, i=70.00, d=-0.00, ff=42.59[0m
+[0;32mI (7991064) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.19, output = 60.22, p=-21.54, i=60.42, d=0.00, ff=21.34[0m
+[0;32mI (7991119) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 38.85, output = 100.00, p=22.21, i=70.00, d=-0.00, ff=43.01[0m
+[0;32mI (7991164) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = 50.24, p=-22.02, i=59.10, d=0.00, ff=13.17[0m
+[0;32mI (7991219) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 39.45, output = 100.00, p=23.71, i=70.00, d=-0.00, ff=43.43[0m
+[0;32mI (7991264) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.81, target = 30.00, rampSet = 30.00, output = 48.92, p=-22.03, i=57.78, d=0.00, ff=13.17[0m
+[0;32mI (7991319) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 40.05, output = 100.00, p=25.21, i=70.00, d=-0.00, ff=43.85[0m
+[0;32mI (7991364) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.82, target = 30.00, rampSet = 30.00, output = 47.59, p=-22.04, i=56.46, d=0.00, ff=13.17[0m
+[0;32mI (7991419) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 40.65, output = 100.00, p=26.71, i=70.00, d=-0.00, ff=44.27[0m
+[0;32mI (7991465) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.82, target = 30.00, rampSet = 30.00, output = 46.25, p=-22.05, i=55.13, d=0.00, ff=13.17[0m
+[0;32mI (7991519) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 41.25, output = 100.00, p=28.21, i=70.00, d=-0.00, ff=44.69[0m
+[0;32mI (7991565) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.82, target = 30.00, rampSet = 30.00, output = 44.92, p=-22.05, i=53.81, d=0.00, ff=13.17[0m
+[0;32mI (7991619) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 41.85, output = 100.00, p=29.71, i=70.00, d=-0.00, ff=45.11[0m
+[0;32mI (7991664) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.82, target = 30.00, rampSet = 30.00, output = 43.59, p=-22.06, i=52.49, d=0.00, ff=13.17[0m
+[0;32mI (7991719) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 42.45, output = 100.00, p=31.21, i=70.00, d=-0.00, ff=45.53[0m
+[0;32mI (7991764) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.83, target = 30.00, rampSet = 30.00, output = 42.26, p=-22.07, i=51.16, d=0.00, ff=13.17[0m
+[0;32mI (7991819) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 43.05, output = 100.00, p=32.71, i=70.00, d=-0.00, ff=45.95[0m
+[0;32mI (7991864) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.84, target = 30.00, rampSet = 30.00, output = 40.92, p=-22.09, i=49.84, d=0.00, ff=13.17[0m
+[0;32mI (7991919) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 43.65, output = 100.00, p=34.21, i=70.00, d=-0.00, ff=46.37[0m
+[0;32mI (7991965) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.84, target = 30.00, rampSet = 30.00, output = 39.57, p=-22.10, i=48.51, d=0.00, ff=13.17[0m
+DATAQ:  | liquid = 45.22 | stg1htsnk = 45.69 |
+[0;32mI (7992019) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 44.25, output = 100.00, p=35.71, i=70.00, d=-0.00, ff=46.79[0m
+[0;32mI (7992064) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.85, target = 30.00, rampSet = 30.00, output = 38.24, p=-22.12, i=47.19, d=0.00, ff=13.17[0m
+[0;32mI (7992119) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 44.85, output = 100.00, p=37.21, i=70.00, d=-0.00, ff=47.21[0m
+[0;32mI (7992164) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.85, target = 30.00, rampSet = 30.00, output = 36.89, p=-22.13, i=45.86, d=0.00, ff=13.17[0m
+[0;32mI (7992219) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 45.45, output = 100.00, p=38.71, i=70.00, d=0.00, ff=47.63[0m
+[0;32mI (7992264) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 35.55, p=-22.15, i=44.53, d=0.00, ff=13.17[0m
+[0;32mI (7992319) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 46.05, output = 100.00, p=40.21, i=70.00, d=0.00, ff=48.05[0m
+[0;32mI (7992364) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 34.21, p=-22.16, i=43.20, d=0.00, ff=13.17[0m
+[0;32mI (7992419) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 46.65, output = 100.00, p=41.71, i=70.00, d=0.00, ff=48.46[0m
+[0;32mI (7992465) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 32.87, p=-22.17, i=41.87, d=0.00, ff=13.17[0m
+[0;32mI (7992519) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 47.25, output = 100.00, p=43.21, i=70.00, d=0.00, ff=48.89[0m
+[0;32mI (7992564) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 31.54, p=-22.17, i=40.54, d=-0.00, ff=13.17[0m
+[0;32mI (7992619) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 47.85, output = 100.00, p=44.71, i=70.00, d=0.00, ff=49.31[0m
+[0;32mI (7992664) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 30.21, p=-22.16, i=39.21, d=-0.00, ff=13.17[0m
+[0;32mI (7992719) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 48.45, output = 100.00, p=46.21, i=70.00, d=0.00, ff=49.73[0m
+[0;32mI (7992764) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 28.89, p=-22.15, i=37.88, d=-0.00, ff=13.17[0m
+[0;32mI (7992819) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 49.05, output = 100.00, p=47.71, i=70.00, d=0.00, ff=50.15[0m
+[0;32mI (7992864) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 27.57, p=-22.15, i=36.55, d=-0.00, ff=13.17[0m
+[0;32mI (7992919) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 49.65, output = 100.00, p=49.21, i=70.00, d=0.00, ff=50.57[0m
+[0;32mI (7992965) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 26.24, p=-22.15, i=35.22, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 45.06 | stg1htsnk = 45.54 |
+[0;32mI (7993019) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 50.25, output = 100.00, p=50.71, i=70.00, d=0.00, ff=50.99[0m
+[0;32mI (7993064) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 24.91, p=-22.15, i=33.89, d=0.00, ff=13.17[0m
+[0;32mI (7993119) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 50.85, output = 100.00, p=52.21, i=70.00, d=0.00, ff=51.41[0m
+[0;32mI (7993164) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 23.58, p=-22.15, i=32.57, d=0.00, ff=13.17[0m
+[0;32mI (7993219) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 51.45, output = 100.00, p=53.71, i=70.00, d=0.00, ff=51.83[0m
+[0;32mI (7993265) thermalControlTask: thermalControl-0 = 38.91, filtered = 38.86, target = 30.00, rampSet = 30.00, output = 22.24, p=-22.16, i=31.24, d=0.00, ff=13.17[0m
+[0;32mI (7993319) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 52.05, output = 100.00, p=55.21, i=70.00, d=0.00, ff=52.25[0m
+[0;32mI (7993370) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 20.90, p=-22.17, i=29.91, d=0.00, ff=13.17[0m
+[0;32mI (7993420) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.96, target = 55.00, rampSet = 52.65, output = 100.00, p=56.73, i=70.00, d=-0.00, ff=52.69[0m
+[0;32mI (7993466) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 19.57, p=-22.17, i=28.58, d=0.00, ff=13.17[0m
+[0;32mI (7993521) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 53.26, output = 100.00, p=58.25, i=70.00, d=-0.00, ff=53.09[0m
+[0;32mI (7993565) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 18.23, p=-22.18, i=27.24, d=0.00, ff=13.17[0m
+[0;32mI (7993620) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 53.85, output = 100.00, p=59.73, i=70.00, d=-0.00, ff=53.51[0m
+[0;32mI (7993665) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 16.90, p=-22.18, i=25.91, d=0.00, ff=13.17[0m
+[0;32mI (7993720) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.96, target = 55.00, rampSet = 54.45, output = 100.00, p=61.23, i=70.00, d=-0.00, ff=53.93[0m
+[0;32mI (7993765) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = 15.56, p=-22.19, i=24.58, d=0.00, ff=13.17[0m
+[0;32mI (7993820) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.96, target = 55.00, rampSet = 55.00, output = 100.00, p=62.60, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7993866) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = 14.23, p=-22.19, i=23.25, d=0.00, ff=13.17[0m
+[0;32mI (7993920) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.96, target = 55.00, rampSet = 55.00, output = 100.00, p=62.61, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7993966) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = 12.90, p=-22.19, i=21.92, d=-0.00, ff=13.17[0m
+[0;32mI (7994020) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 45.0 | stg1htsnk = 45.41 |
+[0;32mI (7994065) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 11.57, p=-22.19, i=20.59, d=-0.00, ff=13.17[0m
+[0;32mI (7994120) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994166) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 10.24, p=-22.19, i=19.26, d=-0.00, ff=13.17[0m
+[0;32mI (7994220) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994266) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 8.91, p=-22.18, i=17.93, d=-0.00, ff=13.17[0m
+[0;32mI (7994320) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994366) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 7.58, p=-22.18, i=16.60, d=-0.00, ff=13.17[0m
+[0;32mI (7994420) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7994465) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 6.25, p=-22.18, i=15.26, d=0.00, ff=13.17[0m
+[0;32mI (7994520) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7994565) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 4.92, p=-22.18, i=13.93, d=0.00, ff=13.17[0m
+[0;32mI (7994620) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994665) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 3.59, p=-22.18, i=12.60, d=0.00, ff=13.17[0m
+[0;32mI (7994720) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994765) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = 2.25, p=-22.19, i=11.27, d=0.00, ff=13.17[0m
+[0;32mI (7994820) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7994865) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = 0.91, p=-22.19, i=9.94, d=0.00, ff=13.17[0m
+[0;32mI (7994920) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7994966) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = -0.42, p=-22.20, i=8.61, d=0.00, ff=13.17[0m
+[0;32mI (7995020) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=0.00, ff=6.97[0m
+DATAQ:  | liquid = 44.9 | stg1htsnk = 45.33 |
+[0;32mI (7995066) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.88, target = 30.00, rampSet = 30.00, output = -1.75, p=-22.20, i=7.28, d=-0.00, ff=13.17[0m
+[0;32mI (7995120) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.62, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995166) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.88, target = 30.00, rampSet = 30.00, output = -3.08, p=-22.19, i=5.95, d=-0.00, ff=13.17[0m
+[0;32mI (7995220) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995266) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.88, target = 30.00, rampSet = 30.00, output = -4.41, p=-22.19, i=4.61, d=-0.00, ff=13.17[0m
+[0;32mI (7995320) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.95, target = 55.00, rampSet = 55.00, output = 100.00, p=62.63, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995365) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -5.73, p=-22.18, i=3.28, d=-0.00, ff=13.17[0m
+[0;32mI (7995420) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.94, target = 55.00, rampSet = 55.00, output = 100.00, p=62.64, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995465) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -7.06, p=-22.18, i=1.95, d=-0.00, ff=13.17[0m
+[0;32mI (7995521) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.94, target = 55.00, rampSet = 55.00, output = 100.00, p=62.65, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995565) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -8.38, p=-22.17, i=0.62, d=-0.00, ff=13.17[0m
+[0;32mI (7995620) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.94, target = 55.00, rampSet = 55.00, output = 100.00, p=62.66, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995665) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -9.71, p=-22.17, i=-0.71, d=-0.00, ff=13.17[0m
+[0;32mI (7995720) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.93, target = 55.00, rampSet = 55.00, output = 100.00, p=62.67, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995765) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -11.04, p=-22.17, i=-2.04, d=-0.00, ff=13.17[0m
+[0;32mI (7995820) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.93, target = 55.00, rampSet = 55.00, output = 100.00, p=62.67, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995865) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.87, target = 30.00, rampSet = 30.00, output = -12.37, p=-22.16, i=-3.37, d=-0.00, ff=13.17[0m
+[0;32mI (7995920) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.93, target = 55.00, rampSet = 55.00, output = 100.00, p=62.68, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7995966) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.86, target = 30.00, rampSet = 30.00, output = -13.69, p=-22.16, i=-4.70, d=-0.00, ff=13.17[0m
+[0;32mI (7996020) thermalControlTask: thermalControl-1 = 29.96, filtered = 29.93, target = 55.00, rampSet = 55.00, output = 100.00, p=62.68, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 44.7 | stg1htsnk = 45.16 |
+[0;32mI (7996066) thermalControlTask: thermalControl-0 = 38.88, filtered = 38.86, target = 30.00, rampSet = 30.00, output = -15.01, p=-22.15, i=-6.03, d=-0.00, ff=13.17[0m
+[0;32mI (7996120) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.92, target = 55.00, rampSet = 55.00, output = 100.00, p=62.69, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996166) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.86, target = 30.00, rampSet = 30.00, output = -16.33, p=-22.14, i=-7.36, d=-0.00, ff=13.17[0m
+[0;32mI (7996220) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.92, target = 55.00, rampSet = 55.00, output = 100.00, p=62.69, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996265) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.85, target = 30.00, rampSet = 30.00, output = -17.65, p=-22.13, i=-8.68, d=-0.00, ff=13.17[0m
+[0;32mI (7996320) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.92, target = 55.00, rampSet = 55.00, output = 100.00, p=62.70, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996365) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.85, target = 30.00, rampSet = 30.00, output = -18.97, p=-22.13, i=-10.01, d=-0.00, ff=13.17[0m
+[0;32mI (7996419) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.92, target = 55.00, rampSet = 55.00, output = 100.00, p=62.70, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996465) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.85, target = 30.00, rampSet = 30.00, output = -20.29, p=-22.12, i=-11.34, d=-0.00, ff=13.17[0m
+[0;32mI (7996521) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.72, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996565) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.84, target = 30.00, rampSet = 30.00, output = -21.60, p=-22.10, i=-12.67, d=-0.00, ff=13.17[0m
+[0;32mI (7996620) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996665) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.83, target = 30.00, rampSet = 30.00, output = -22.91, p=-22.09, i=-13.99, d=-0.00, ff=13.17[0m
+[0;32mI (7996720) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996765) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.83, target = 30.00, rampSet = 30.00, output = -24.22, p=-22.07, i=-15.32, d=-0.00, ff=13.17[0m
+[0;32mI (7996820) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996865) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.82, target = 30.00, rampSet = 30.00, output = -25.53, p=-22.06, i=-16.64, d=-0.00, ff=13.17[0m
+[0;32mI (7996923) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7996969) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.82, target = 30.00, rampSet = 30.00, output = -26.84, p=-22.05, i=-17.96, d=-0.00, ff=13.17[0m
+[0;32mI (7997023) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 44.65 | stg1htsnk = 45.17 |
+[0;32mI (7997068) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.82, target = 30.00, rampSet = 30.00, output = -28.16, p=-22.04, i=-19.28, d=-0.00, ff=13.17[0m
+[0;32mI (7997123) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7997169) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -29.47, p=-22.03, i=-20.61, d=-0.00, ff=13.17[0m
+[0;32mI (7997223) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7997269) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -30.80, p=-22.03, i=-21.93, d=0.00, ff=13.17[0m
+[0;32mI (7997323) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7997368) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -32.12, p=-22.03, i=-23.25, d=0.00, ff=13.17[0m
+[0;32mI (7997427) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7997469) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -33.44, p=-22.03, i=-24.57, d=-0.00, ff=13.17[0m
+[0;32mI (7997525) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7997569) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -34.77, p=-22.04, i=-25.89, d=0.00, ff=13.17[0m
+[0;32mI (7997624) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7997669) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.82, target = 30.00, rampSet = 30.00, output = -36.09, p=-22.04, i=-27.22, d=0.00, ff=13.17[0m
+[0;32mI (7997724) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7997769) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -37.41, p=-22.04, i=-28.54, d=-0.00, ff=13.17[0m
+[0;32mI (7997824) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7997869) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -38.73, p=-22.03, i=-29.86, d=-0.00, ff=13.17[0m
+[0;32mI (7997929) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.73, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7997970) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -40.04, p=-22.03, i=-31.18, d=-0.00, ff=13.17[0m
+[0;32mI (7998024) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.91, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 44.53 | stg1htsnk = 45.02 |
+[0;32mI (7998069) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -41.36, p=-22.02, i=-32.50, d=-0.00, ff=13.17[0m
+[0;32mI (7998124) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998170) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -42.68, p=-22.02, i=-33.83, d=-0.00, ff=13.17[0m
+[0;32mI (7998224) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.74, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998269) thermalControlTask: thermalControl-0 = 38.84, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -44.00, p=-22.02, i=-35.15, d=-0.00, ff=13.17[0m
+[0;32mI (7998324) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998369) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -45.32, p=-22.02, i=-36.47, d=0.00, ff=13.17[0m
+[0;32mI (7998423) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998469) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -46.64, p=-22.02, i=-37.79, d=0.00, ff=13.17[0m
+[0;32mI (7998524) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7998569) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -47.96, p=-22.02, i=-39.11, d=-0.00, ff=13.17[0m
+[0;32mI (7998624) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7998669) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -49.28, p=-22.02, i=-40.43, d=0.00, ff=13.17[0m
+[0;32mI (7998724) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998754) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (7998756) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (7998770) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -50.61, p=-22.02, i=-41.75, d=0.00, ff=13.17[0m
+[0;32mI (7998821) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (7998822) BLE_PERIPH: Received 19/19[0m
+[0;32mI (7998824) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (7998831) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998843) BLE_PERIPH: Sending Response Packet: [34, true, 143, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",9264,38.81,29.90,3,2,33,1.00], 0][0m
+[0;32mI (7998859) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116[0m
+[34, true, 143, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 9264, 38.81, 29.90, 3, 2, 33, 1.00], 0]
+[0;32mI (7998873) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.81, target = 30.00, rampSet = 30.00, output = -51.93, p=-22.02, i=-43.07, d=-0.00, ff=13.17[0m
+[0;32mI (7998892) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34, true, 143, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",9264,38.81,29.90,3,2,33,1.00], 0][0m
+[0;32mI (7998931) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7998946) BLE_PERIPH: Instrument to App Transaction Write 116/116[0m
+[0;32mI (7998948) BLE_PERIPH: Instrument to App Transaction Read/Notify 116/116[0m
+[0;32mI (7998967) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (7998974) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 30.00, output = -53.24, p=-22.01, i=-44.39, d=-0.00, ff=13.17[0m
+[0;32mI (7999029) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999074) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 30.00, output = -54.55, p=-22.00, i=-45.71, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 44.4 | stg1htsnk = 44.92 |
+[0;32mI (7999129) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999174) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.80, target = 30.00, rampSet = 30.00, output = -55.86, p=-21.99, i=-47.03, d=-0.00, ff=13.17[0m
+[0;32mI (7999229) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999274) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.80, target = 30.00, rampSet = 30.00, output = -57.17, p=-21.99, i=-48.35, d=-0.00, ff=13.17[0m
+[0;32mI (7999328) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999374) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.79, target = 30.00, rampSet = 30.00, output = -58.48, p=-21.98, i=-49.67, d=-0.00, ff=13.17[0m
+[0;32mI (7999430) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7999475) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.79, target = 30.00, rampSet = 30.00, output = -59.80, p=-21.97, i=-50.99, d=-0.00, ff=13.17[0m
+[0;32mI (7999529) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7999575) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.79, target = 30.00, rampSet = 30.00, output = -61.11, p=-21.97, i=-52.31, d=-0.00, ff=13.17[0m
+[0;32mI (7999629) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7999674) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.78, target = 30.00, rampSet = 30.00, output = -62.42, p=-21.96, i=-53.63, d=-0.00, ff=13.17[0m
+[0;32mI (7999729) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (7999774) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.78, target = 30.00, rampSet = 30.00, output = -63.72, p=-21.95, i=-54.94, d=-0.00, ff=13.17[0m
+[0;32mI (7999829) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999874) thermalControlTask: thermalControl-0 = 38.80, filtered = 38.78, target = 30.00, rampSet = 30.00, output = -65.03, p=-21.94, i=-56.26, d=-0.00, ff=13.17[0m
+[0;32mI (7999929) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (7999974) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.78, target = 30.00, rampSet = 30.00, output = -66.35, p=-21.94, i=-57.58, d=-0.00, ff=13.17[0m
+[0;32mI (8000029) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000074) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.77, target = 30.00, rampSet = 30.00, output = -67.66, p=-21.93, i=-58.89, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 44.25 | stg1htsnk = 44.87 |
+[0;32mI (8000129) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000174) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.77, target = 30.00, rampSet = 30.00, output = -68.96, p=-21.92, i=-60.21, d=-0.00, ff=13.17[0m
+[0;32mI (8000229) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000274) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.76, target = 30.00, rampSet = 30.00, output = -70.26, p=-21.91, i=-61.52, d=-0.00, ff=13.17[0m
+[0;32mI (8000329) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000375) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.76, target = 30.00, rampSet = 30.00, output = -71.56, p=-21.89, i=-62.84, d=-0.00, ff=13.17[0m
+[0;32mI (8000429) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8000474) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.75, target = 30.00, rampSet = 30.00, output = -72.86, p=-21.88, i=-64.15, d=-0.00, ff=13.17[0m
+[0;32mI (8000529) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8000574) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.74, target = 30.00, rampSet = 30.00, output = -74.16, p=-21.86, i=-65.46, d=-0.00, ff=13.17[0m
+[0;32mI (8000629) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8000674) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.74, target = 30.00, rampSet = 30.00, output = -75.45, p=-21.85, i=-66.77, d=-0.00, ff=13.17[0m
+[0;32mI (8000729) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000774) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.74, target = 30.00, rampSet = 30.00, output = -76.76, p=-21.84, i=-68.08, d=-0.00, ff=13.17[0m
+[0;32mI (8000829) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000875) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.06, p=-21.84, i=-69.39, d=-0.00, ff=13.17[0m
+[0;32mI (8000929) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8000974) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001029) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001074) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 44.17 | stg1htsnk = 44.74 |
+[0;32mI (8001129) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001174) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.66, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001229) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001275) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.66, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001329) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001375) thermalControlTask: thermalControl-0 = 38.77, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.66, p=-21.83, i=-70.00, d=0.00, ff=13.17[0m
+[0;32mI (8001429) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001474) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=0.00, ff=13.17[0m
+[0;32mI (8001529) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001574) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=0.00, ff=13.17[0m
+[0;32mI (8001629) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001674) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001729) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001774) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001829) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8001875) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.67, p=-21.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8001929) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8001979) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.66, p=-21.82, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002030) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002075) thermalControlTask: thermalControl-0 = 38.73, filtered = 38.73, target = 30.00, rampSet = 30.00, output = -78.65, p=-21.81, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 44.12 | stg1htsnk = 44.67 |
+[0;32mI (8002130) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002176) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.72, target = 30.00, rampSet = 30.00, output = -78.64, p=-21.81, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002230) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002276) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.72, target = 30.00, rampSet = 30.00, output = -78.63, p=-21.80, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002330) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002376) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.71, target = 30.00, rampSet = 30.00, output = -78.62, p=-21.79, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002432) thermalControlTask: thermalControl-1 = 29.93, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002476) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.71, target = 30.00, rampSet = 30.00, output = -78.60, p=-21.77, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002530) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002575) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.70, target = 30.00, rampSet = 30.00, output = -78.59, p=-21.75, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002630) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.75, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8002675) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.69, target = 30.00, rampSet = 30.00, output = -78.57, p=-21.74, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002730) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8002775) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.69, target = 30.00, rampSet = 30.00, output = -78.55, p=-21.72, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002830) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8002877) thermalControlTask: thermalControl-0 = 38.69, filtered = 38.68, target = 30.00, rampSet = 30.00, output = -78.54, p=-21.70, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8002930) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.90, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8002975) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.68, target = 30.00, rampSet = 30.00, output = -78.53, p=-21.69, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003030) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003076) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.67, target = 30.00, rampSet = 30.00, output = -78.51, p=-21.68, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003130) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 44.04 | stg1htsnk = 44.59 |
+[0;32mI (8003176) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.67, target = 30.00, rampSet = 30.00, output = -78.50, p=-21.67, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003230) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.76, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003276) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.67, target = 30.00, rampSet = 30.00, output = -78.50, p=-21.66, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003330) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.77, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003375) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.49, p=-21.66, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003430) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.77, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003475) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.49, p=-21.66, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003530) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.77, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8003575) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.49, p=-21.65, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003630) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.77, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003675) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.48, p=-21.65, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003730) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.78, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003775) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.48, p=-21.65, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003830) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.89, target = 55.00, rampSet = 55.00, output = 100.00, p=62.79, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003875) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.48, p=-21.64, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8003930) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.80, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8003976) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.66, target = 30.00, rampSet = 30.00, output = -78.47, p=-21.64, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004030) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8004076) thermalControlTask: thermalControl-0 = 38.62, filtered = 38.65, target = 30.00, rampSet = 30.00, output = -78.47, p=-21.64, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004130) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 43.99 | stg1htsnk = 44.49 |
+[0;32mI (8004176) thermalControlTask: thermalControl-0 = 38.66, filtered = 38.65, target = 30.00, rampSet = 30.00, output = -78.46, p=-21.63, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004230) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8004275) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.65, target = 30.00, rampSet = 30.00, output = -78.46, p=-21.62, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004332) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8004375) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.64, target = 30.00, rampSet = 30.00, output = -78.44, p=-21.61, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004430) thermalControlTask: thermalControl-1 = 29.90, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.80, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8004475) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.64, target = 30.00, rampSet = 30.00, output = -78.42, p=-21.59, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004530) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.80, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8004575) thermalControlTask: thermalControl-0 = 38.62, filtered = 38.63, target = 30.00, rampSet = 30.00, output = -78.41, p=-21.57, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004630) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.88, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8004675) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.63, target = 30.00, rampSet = 30.00, output = -78.40, p=-21.56, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004730) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.87, target = 55.00, rampSet = 55.00, output = 100.00, p=62.81, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8004777) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.62, target = 30.00, rampSet = 30.00, output = -78.38, p=-21.55, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004830) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.87, target = 55.00, rampSet = 55.00, output = 100.00, p=62.82, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8004876) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.61, target = 30.00, rampSet = 30.00, output = -78.36, p=-21.53, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8004930) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.87, target = 55.00, rampSet = 55.00, output = 100.00, p=62.83, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8004976) thermalControlTask: thermalControl-0 = 38.62, filtered = 38.61, target = 30.00, rampSet = 30.00, output = -78.35, p=-21.51, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005030) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.84, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005076) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.60, target = 30.00, rampSet = 30.00, output = -78.34, p=-21.50, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005130) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.85, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 43.84 | stg1htsnk = 44.38 |
+[0;32mI (8005175) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.60, target = 30.00, rampSet = 30.00, output = -78.33, p=-21.49, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005230) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.86, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005275) thermalControlTask: thermalControl-0 = 38.62, filtered = 38.59, target = 30.00, rampSet = 30.00, output = -78.32, p=-21.48, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005331) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.87, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005375) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.59, target = 30.00, rampSet = 30.00, output = -78.31, p=-21.48, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005430) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.87, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005475) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.59, target = 30.00, rampSet = 30.00, output = -78.31, p=-21.48, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005533) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.88, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005575) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.59, target = 30.00, rampSet = 30.00, output = -78.31, p=-21.47, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005630) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.87, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8005675) thermalControlTask: thermalControl-0 = 38.55, filtered = 38.59, target = 30.00, rampSet = 30.00, output = -78.30, p=-21.47, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005730) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.87, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8005777) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.58, target = 30.00, rampSet = 30.00, output = -78.29, p=-21.46, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005830) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.86, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8005876) thermalControlTask: thermalControl-0 = 38.59, filtered = 38.58, target = 30.00, rampSet = 30.00, output = -78.28, p=-21.45, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8005930) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.86, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8005976) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.58, target = 30.00, rampSet = 30.00, output = -78.27, p=-21.44, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006034) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.86, target = 55.00, rampSet = 55.00, output = 100.00, p=62.86, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006075) thermalControlTask: thermalControl-0 = 38.55, filtered = 38.57, target = 30.00, rampSet = 30.00, output = -78.26, p=-21.42, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006130) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.86, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 43.81 | stg1htsnk = 44.35 |
+[0;32mI (8006175) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.56, target = 30.00, rampSet = 30.00, output = -78.24, p=-21.40, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006231) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.87, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006275) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.55, target = 30.00, rampSet = 30.00, output = -78.21, p=-21.38, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006330) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.85, target = 55.00, rampSet = 55.00, output = 100.00, p=62.88, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006375) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.54, target = 30.00, rampSet = 30.00, output = -78.19, p=-21.35, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006430) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.84, target = 55.00, rampSet = 55.00, output = 100.00, p=62.89, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006475) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.53, target = 30.00, rampSet = 30.00, output = -78.17, p=-21.33, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006530) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.84, target = 55.00, rampSet = 55.00, output = 100.00, p=62.90, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006575) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.53, target = 30.00, rampSet = 30.00, output = -78.15, p=-21.31, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006630) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.84, target = 55.00, rampSet = 55.00, output = 100.00, p=62.91, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006675) thermalControlTask: thermalControl-0 = 38.55, filtered = 38.52, target = 30.00, rampSet = 30.00, output = -78.13, p=-21.30, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006730) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.91, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006776) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.52, target = 30.00, rampSet = 30.00, output = -78.13, p=-21.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006830) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006876) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.52, target = 30.00, rampSet = 30.00, output = -78.12, p=-21.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8006930) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8006975) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.12, p=-21.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007030) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8007075) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.12, p=-21.28, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007129) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=-0.00, ff=6.97[0m
+DATAQ:  | liquid = 43.73 | stg1htsnk = 44.23 |
+[0;32mI (8007175) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.12, p=-21.28, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007231) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8007275) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.11, p=-21.28, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007330) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007375) thermalControlTask: thermalControl-0 = 38.51, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.11, p=-21.28, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007430) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007475) thermalControlTask: thermalControl-0 = 38.48, filtered = 38.51, target = 30.00, rampSet = 30.00, output = -78.10, p=-21.27, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007530) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007575) thermalControlTask: thermalControl-0 = 38.48, filtered = 38.50, target = 30.00, rampSet = 30.00, output = -78.09, p=-21.26, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007630) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007677) thermalControlTask: thermalControl-0 = 38.48, filtered = 38.50, target = 30.00, rampSet = 30.00, output = -78.08, p=-21.24, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007730) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007776) thermalControlTask: thermalControl-0 = 38.48, filtered = 38.49, target = 30.00, rampSet = 30.00, output = -78.06, p=-21.23, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007830) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007875) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.49, target = 30.00, rampSet = 30.00, output = -78.05, p=-21.22, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8007930) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8007975) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.48, target = 30.00, rampSet = 30.00, output = -78.03, p=-21.20, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008030) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008075) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.47, target = 30.00, rampSet = 30.00, output = -78.01, p=-21.18, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008129) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008175) thermalControlTask: thermalControl-0 = 38.48, filtered = 38.46, target = 30.00, rampSet = 30.00, output = -77.99, p=-21.16, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.66 | stg1htsnk = 44.15 |
+[0;32mI (8008230) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008275) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.46, target = 30.00, rampSet = 30.00, output = -77.98, p=-21.15, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008330) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008375) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.46, target = 30.00, rampSet = 30.00, output = -77.97, p=-21.14, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008430) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008475) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.45, target = 30.00, rampSet = 30.00, output = -77.96, p=-21.13, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008530) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8008575) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.45, target = 30.00, rampSet = 30.00, output = -77.95, p=-21.12, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008630) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8008677) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.94, p=-21.11, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008730) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8008736) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (8008743) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (8008775) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.94, p=-21.11, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008800) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (8008801) BLE_PERIPH: Received 19/19[0m
+[0;32mI (8008803) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (8008830) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8008836) BLE_PERIPH: Sending Response Packet: [34, true, 144, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",19269,38.44,29.83,3,2,33,1.00], 0][0m
+[0;32mI (8008852) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 144, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 19269, 38.44, 29.83, 3, 2, 33, 1.00], 0]
+[0;32mI (8008875) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.94, p=-21.10, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8008912) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 144, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",19269,38.44,29.83,3,2,33,1.00], 0][0m
+[0;32mI (8008935) thermalControlTask: thermalControl-1 = 29.86, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8008957) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (8008960) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (8008980) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.93, p=-21.10, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009014) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (8009034) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8009079) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.93, p=-21.10, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009134) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8009179) thermalControlTask: thermalControl-0 = 38.44, filtered = 38.44, target = 30.00, rampSet = 30.00, output = -77.93, p=-21.10, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.58 | stg1htsnk = 44.04 |
+[0;32mI (8009234) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8009279) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.43, target = 30.00, rampSet = 30.00, output = -77.92, p=-21.09, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009334) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009379) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.43, target = 30.00, rampSet = 30.00, output = -77.90, p=-21.06, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009434) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009479) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.42, target = 30.00, rampSet = 30.00, output = -77.87, p=-21.04, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009534) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009579) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.40, target = 30.00, rampSet = 30.00, output = -77.84, p=-21.01, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009634) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009679) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.39, target = 30.00, rampSet = 30.00, output = -77.82, p=-20.98, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009734) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009780) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.38, target = 30.00, rampSet = 30.00, output = -77.80, p=-20.96, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009834) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009880) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.38, target = 30.00, rampSet = 30.00, output = -77.78, p=-20.94, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8009934) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8009979) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.37, target = 30.00, rampSet = 30.00, output = -77.76, p=-20.93, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010034) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8010085) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.37, target = 30.00, rampSet = 30.00, output = -77.76, p=-20.92, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010135) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8010180) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.37, target = 30.00, rampSet = 30.00, output = -77.75, p=-20.92, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.51 | stg1htsnk = 44.01 |
+[0;32mI (8010236) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8010280) thermalControlTask: thermalControl-0 = 38.37, filtered = 38.36, target = 30.00, rampSet = 30.00, output = -77.74, p=-20.91, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010335) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8010380) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.36, target = 30.00, rampSet = 30.00, output = -77.74, p=-20.90, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010435) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010480) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.36, target = 30.00, rampSet = 30.00, output = -77.73, p=-20.89, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010535) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010581) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.35, target = 30.00, rampSet = 30.00, output = -77.71, p=-20.88, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010635) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010681) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.35, target = 30.00, rampSet = 30.00, output = -77.70, p=-20.87, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010735) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010781) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.34, target = 30.00, rampSet = 30.00, output = -77.69, p=-20.86, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010835) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010881) thermalControlTask: thermalControl-0 = 38.33, filtered = 38.34, target = 30.00, rampSet = 30.00, output = -77.68, p=-20.85, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8010935) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8010980) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.33, target = 30.00, rampSet = 30.00, output = -77.67, p=-20.83, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011035) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8011080) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.33, target = 30.00, rampSet = 30.00, output = -77.66, p=-20.82, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011134) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.92, i=70.00, d=0.00, ff=6.97[0m
+[0;32mI (8011180) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.32, target = 30.00, rampSet = 30.00, output = -77.64, p=-20.81, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.39 | stg1htsnk = 43.82 |
+[0;32mI (8011235) thermalControlTask: thermalControl-1 = 29.80, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8011280) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.32, target = 30.00, rampSet = 30.00, output = -77.63, p=-20.80, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011335) thermalControlTask: thermalControl-1 = 29.77, filtered = 29.83, target = 55.00, rampSet = 55.00, output = 100.00, p=62.93, i=70.00, d=-0.00, ff=6.97[0m
+[0;32mI (8011380) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.31, target = 30.00, rampSet = 30.00, output = -77.62, p=-20.79, i=-70.00, d=-0.00, ff=13.17[0m
+[0;31mE (8011435) stashException: Exception Stashed (0x0740)[0m
+[0;32mI (8011436) thermalControlTask: thermalControl-1 = 29.83, filtered = 29.82, target = 55.00, rampSet = 55.00, output = 100.00, p=62.95, i=70.00, d=-0.00, ff=6.97[0m
+[0;31mE (8011451) printException: ************[0m
+[0;31mE (8011451) printException: Error Code:  (0x0740)[0m
+[0;31mE (8011456) printException: Originator:   (0x07)  Peltier[0m
+[0;31mE (8011462) printException: Error Type:  (0x04)  Temperature Timeout[0m
+[0;31mE (8011469) printException: Priority:       (0x00)  none[0m
+[0;31mE (8011476) printException: Time:       (8010879) ms[0m
+[0;32mI (8011481) thermalControlTask: thermalControl-0 = 38.30, filtered = 38.31, target = 30.00, rampSet = 30.00, output = -77.61, p=-20.77, i=-70.00, d=-0.00, ff=13.17[0m
+[0;31mE (8011497) peltierErrorHandler: Peltiers Disabled[0m
+[0;31mE (8011502) handleException: ************
+[0m
+[0;32mI (8011506) systemRequestStateChange: System State Transition RUNNING -> ERROR[0m
+[0;32mI (8011580) thermalControlTask: thermalControl-0 = 38.26, filtered = 38.30, target = 30.00, rampSet = 30.00, output = -77.59, p=-20.76, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011680) thermalControlTask: thermalControl-0 = 38.26, filtered = 38.30, target = 30.00, rampSet = 30.00, output = -77.57, p=-20.74, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011780) thermalControlTask: thermalControl-0 = 38.26, filtered = 38.29, target = 30.00, rampSet = 30.00, output = -77.55, p=-20.72, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011880) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.28, target = 30.00, rampSet = 30.00, output = -77.53, p=-20.70, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8011980) thermalControlTask: thermalControl-0 = 38.26, filtered = 38.27, target = 30.00, rampSet = 30.00, output = -77.50, p=-20.67, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012080) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.26, target = 30.00, rampSet = 30.00, output = -77.48, p=-20.65, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012180) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.25, target = 30.00, rampSet = 30.00, output = -77.47, p=-20.63, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.27 | stg1htsnk = 43.81 |
+[0;32mI (8012280) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.25, target = 30.00, rampSet = 30.00, output = -77.45, p=-20.61, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012380) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.24, target = 30.00, rampSet = 30.00, output = -77.43, p=-20.59, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012480) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.23, target = 30.00, rampSet = 30.00, output = -77.41, p=-20.58, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012580) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.22, target = 30.00, rampSet = 30.00, output = -77.40, p=-20.56, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012680) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.22, target = 30.00, rampSet = 30.00, output = -77.39, p=-20.55, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012780) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.22, target = 30.00, rampSet = 30.00, output = -77.38, p=-20.54, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012880) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.21, target = 30.00, rampSet = 30.00, output = -77.36, p=-20.53, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8012980) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.21, target = 30.00, rampSet = 30.00, output = -77.35, p=-20.52, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013080) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.20, target = 30.00, rampSet = 30.00, output = -77.34, p=-20.51, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013180) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.20, target = 30.00, rampSet = 30.00, output = -77.33, p=-20.50, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.22 | stg1htsnk = 43.72 |
+[0;32mI (8013280) thermalControlTask: thermalControl-0 = 38.22, filtered = 38.19, target = 30.00, rampSet = 30.00, output = -77.32, p=-20.49, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013380) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.19, target = 30.00, rampSet = 30.00, output = -77.31, p=-20.48, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013480) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.18, target = 30.00, rampSet = 30.00, output = -77.30, p=-20.46, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013580) thermalControlTask: thermalControl-0 = 38.19, filtered = 38.18, target = 30.00, rampSet = 30.00, output = -77.28, p=-20.45, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013681) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.17, target = 30.00, rampSet = 30.00, output = -77.27, p=-20.43, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013781) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.17, target = 30.00, rampSet = 30.00, output = -77.25, p=-20.42, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013881) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.16, target = 30.00, rampSet = 30.00, output = -77.23, p=-20.40, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8013981) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.15, target = 30.00, rampSet = 30.00, output = -77.22, p=-20.38, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014081) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.15, target = 30.00, rampSet = 30.00, output = -77.21, p=-20.37, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014181) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.15, target = 30.00, rampSet = 30.00, output = -77.20, p=-20.36, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.19 | stg1htsnk = 43.7 |
+[0;32mI (8014281) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.14, target = 30.00, rampSet = 30.00, output = -77.19, p=-20.36, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014381) thermalControlTask: thermalControl-0 = 38.15, filtered = 38.14, target = 30.00, rampSet = 30.00, output = -77.19, p=-20.35, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014481) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.14, target = 30.00, rampSet = 30.00, output = -77.18, p=-20.35, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014581) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.14, target = 30.00, rampSet = 30.00, output = -77.18, p=-20.34, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014681) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.13, target = 30.00, rampSet = 30.00, output = -77.17, p=-20.33, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014781) thermalControlTask: thermalControl-0 = 38.12, filtered = 38.13, target = 30.00, rampSet = 30.00, output = -77.15, p=-20.32, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014881) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.12, target = 30.00, rampSet = 30.00, output = -77.14, p=-20.31, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8014981) thermalControlTask: thermalControl-0 = 38.04, filtered = 38.12, target = 30.00, rampSet = 30.00, output = -77.12, p=-20.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015081) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.11, target = 30.00, rampSet = 30.00, output = -77.10, p=-20.27, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015181) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.10, target = 30.00, rampSet = 30.00, output = -77.08, p=-20.24, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 43.07 | stg1htsnk = 43.59 |
+[0;32mI (8015281) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.09, target = 30.00, rampSet = 30.00, output = -77.06, p=-20.23, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015381) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.08, target = 30.00, rampSet = 30.00, output = -77.05, p=-20.21, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015481) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.08, target = 30.00, rampSet = 30.00, output = -77.03, p=-20.20, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015581) thermalControlTask: thermalControl-0 = 38.08, filtered = 38.08, target = 30.00, rampSet = 30.00, output = -77.02, p=-20.19, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015681) thermalControlTask: thermalControl-0 = 38.04, filtered = 38.07, target = 30.00, rampSet = 30.00, output = -77.01, p=-20.18, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015781) thermalControlTask: thermalControl-0 = 38.04, filtered = 38.06, target = 30.00, rampSet = 30.00, output = -77.00, p=-20.16, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015881) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.06, target = 30.00, rampSet = 30.00, output = -76.98, p=-20.15, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8015981) thermalControlTask: thermalControl-0 = 38.04, filtered = 38.05, target = 30.00, rampSet = 30.00, output = -76.96, p=-20.13, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016081) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.05, target = 30.00, rampSet = 30.00, output = -76.95, p=-20.12, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016181) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.04, target = 30.00, rampSet = 30.00, output = -76.93, p=-20.10, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.97 | stg1htsnk = 43.57 |
+[0;32mI (8016281) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.03, target = 30.00, rampSet = 30.00, output = -76.92, p=-20.08, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016381) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.03, target = 30.00, rampSet = 30.00, output = -76.90, p=-20.06, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016481) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.02, target = 30.00, rampSet = 30.00, output = -76.88, p=-20.05, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016581) thermalControlTask: thermalControl-0 = 37.97, filtered = 38.01, target = 30.00, rampSet = 30.00, output = -76.87, p=-20.03, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016681) thermalControlTask: thermalControl-0 = 38.01, filtered = 38.01, target = 30.00, rampSet = 30.00, output = -76.85, p=-20.02, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016781) thermalControlTask: thermalControl-0 = 37.94, filtered = 38.00, target = 30.00, rampSet = 30.00, output = -76.84, p=-20.00, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016881) thermalControlTask: thermalControl-0 = 37.97, filtered = 38.00, target = 30.00, rampSet = 30.00, output = -76.82, p=-19.99, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8016981) thermalControlTask: thermalControl-0 = 37.97, filtered = 37.99, target = 30.00, rampSet = 30.00, output = -76.80, p=-19.97, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017081) thermalControlTask: thermalControl-0 = 38.01, filtered = 37.98, target = 30.00, rampSet = 30.00, output = -76.79, p=-19.96, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017181) thermalControlTask: thermalControl-0 = 37.97, filtered = 37.98, target = 30.00, rampSet = 30.00, output = -76.79, p=-19.95, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.94 | stg1htsnk = 43.44 |
+[0;32mI (8017281) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.98, target = 30.00, rampSet = 30.00, output = -76.78, p=-19.94, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017381) thermalControlTask: thermalControl-0 = 37.97, filtered = 37.97, target = 30.00, rampSet = 30.00, output = -76.77, p=-19.93, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017481) thermalControlTask: thermalControl-0 = 37.97, filtered = 37.97, target = 30.00, rampSet = 30.00, output = -76.76, p=-19.92, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017581) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.96, target = 30.00, rampSet = 30.00, output = -76.75, p=-19.91, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017682) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.96, target = 30.00, rampSet = 30.00, output = -76.73, p=-19.90, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017781) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.95, target = 30.00, rampSet = 30.00, output = -76.72, p=-19.88, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017881) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.95, target = 30.00, rampSet = 30.00, output = -76.70, p=-19.87, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8017981) thermalControlTask: thermalControl-0 = 37.90, filtered = 37.94, target = 30.00, rampSet = 30.00, output = -76.69, p=-19.86, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018081) thermalControlTask: thermalControl-0 = 37.90, filtered = 37.94, target = 30.00, rampSet = 30.00, output = -76.67, p=-19.84, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018182) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.93, target = 30.00, rampSet = 30.00, output = -76.65, p=-19.82, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.82 | stg1htsnk = 43.31 |
+[0;32mI (8018283) thermalControlTask: thermalControl-0 = 37.94, filtered = 37.92, target = 30.00, rampSet = 30.00, output = -76.63, p=-19.80, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018383) thermalControlTask: thermalControl-0 = 37.90, filtered = 37.92, target = 30.00, rampSet = 30.00, output = -76.62, p=-19.79, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018483) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.91, target = 30.00, rampSet = 30.00, output = -76.61, p=-19.77, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018583) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.90, target = 30.00, rampSet = 30.00, output = -76.59, p=-19.76, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018687) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.89, target = 30.00, rampSet = 30.00, output = -76.57, p=-19.74, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018783) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.89, target = 30.00, rampSet = 30.00, output = -76.55, p=-19.72, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018883) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.88, target = 30.00, rampSet = 30.00, output = -76.54, p=-19.71, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8018983) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.88, target = 30.00, rampSet = 30.00, output = -76.52, p=-19.69, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019083) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.87, target = 30.00, rampSet = 30.00, output = -76.51, p=-19.68, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019184) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.86, target = 30.00, rampSet = 30.00, output = -76.49, p=-19.66, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019283) thermalControlTask: thermalControl-0 = 37.83, filtered = 37.86, target = 30.00, rampSet = 30.00, output = -76.48, p=-19.65, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.71 | stg1htsnk = 43.26 |
+[0;32mI (8019383) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.85, target = 30.00, rampSet = 30.00, output = -76.46, p=-19.63, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019483) thermalControlTask: thermalControl-0 = 37.83, filtered = 37.85, target = 30.00, rampSet = 30.00, output = -76.45, p=-19.62, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019583) thermalControlTask: thermalControl-0 = 37.86, filtered = 37.84, target = 30.00, rampSet = 30.00, output = -76.45, p=-19.61, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019683) thermalControlTask: thermalControl-0 = 37.83, filtered = 37.84, target = 30.00, rampSet = 30.00, output = -76.44, p=-19.61, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019783) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.84, target = 30.00, rampSet = 30.00, output = -76.44, p=-19.60, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019883) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.84, target = 30.00, rampSet = 30.00, output = -76.42, p=-19.59, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8019983) thermalControlTask: thermalControl-0 = 37.83, filtered = 37.83, target = 30.00, rampSet = 30.00, output = -76.41, p=-19.57, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020083) thermalControlTask: thermalControl-0 = 37.83, filtered = 37.82, target = 30.00, rampSet = 30.00, output = -76.39, p=-19.55, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020183) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.82, target = 30.00, rampSet = 30.00, output = -76.37, p=-19.54, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020283) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.81, target = 30.00, rampSet = 30.00, output = -76.36, p=-19.53, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.68 | stg1htsnk = 43.2 |
+[0;32mI (8020383) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.80, target = 30.00, rampSet = 30.00, output = -76.35, p=-19.51, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020483) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.80, target = 30.00, rampSet = 30.00, output = -76.33, p=-19.50, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020583) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.80, target = 30.00, rampSet = 30.00, output = -76.32, p=-19.49, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020684) thermalControlTask: thermalControl-0 = 37.79, filtered = 37.79, target = 30.00, rampSet = 30.00, output = -76.31, p=-19.48, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020783) thermalControlTask: thermalControl-0 = 37.76, filtered = 37.79, target = 30.00, rampSet = 30.00, output = -76.31, p=-19.47, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020883) thermalControlTask: thermalControl-0 = 37.76, filtered = 37.79, target = 30.00, rampSet = 30.00, output = -76.30, p=-19.46, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8020983) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.78, target = 30.00, rampSet = 30.00, output = -76.29, p=-19.45, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021063) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (8021065) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (8021083) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.77, target = 30.00, rampSet = 30.00, output = -76.27, p=-19.44, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021130) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (8021131) BLE_PERIPH: Received 19/19[0m
+[0;32mI (8021133) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (8021170) BLE_PERIPH: Sending Response Packet: [34, true, 145, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",31607,37.77,29.70,5,2,33,1.00], 0][0m
+[0;32mI (8021176) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 145, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 31607, 37.77, 29.70, 5, 2, 33, 1.00], 0]
+[0;32mI (8021189) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.76, target = 30.00, rampSet = 30.00, output = -76.25, p=-19.41, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021253) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 145, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",31607,37.77,29.70,5,2,33,1.00], 0][0m
+[0;32mI (8021288) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (8021290) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (8021296) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.75, target = 30.00, rampSet = 30.00, output = -76.22, p=-19.38, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021310) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 42.51 | stg1htsnk = 43.14 |
+[0;32mI (8021389) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.74, target = 30.00, rampSet = 30.00, output = -76.19, p=-19.36, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021489) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.74, target = 30.00, rampSet = 30.00, output = -76.17, p=-19.34, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021589) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.73, target = 30.00, rampSet = 30.00, output = -76.15, p=-19.32, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021688) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.72, target = 30.00, rampSet = 30.00, output = -76.14, p=-19.31, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021789) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.72, target = 30.00, rampSet = 30.00, output = -76.13, p=-19.30, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021889) thermalControlTask: thermalControl-0 = 37.68, filtered = 37.72, target = 30.00, rampSet = 30.00, output = -76.13, p=-19.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8021989) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.71, target = 30.00, rampSet = 30.00, output = -76.12, p=-19.29, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022089) thermalControlTask: thermalControl-0 = 37.72, filtered = 37.71, target = 30.00, rampSet = 30.00, output = -76.11, p=-19.28, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022189) thermalControlTask: thermalControl-0 = 37.68, filtered = 37.71, target = 30.00, rampSet = 30.00, output = -76.10, p=-19.27, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022289) thermalControlTask: thermalControl-0 = 37.68, filtered = 37.71, target = 30.00, rampSet = 30.00, output = -76.10, p=-19.26, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.46 | stg1htsnk = 43.05 |
+[0;32mI (8022389) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.70, target = 30.00, rampSet = 30.00, output = -76.09, p=-19.25, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022489) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.69, target = 30.00, rampSet = 30.00, output = -76.07, p=-19.24, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022589) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.69, target = 30.00, rampSet = 30.00, output = -76.05, p=-19.22, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022689) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.68, target = 30.00, rampSet = 30.00, output = -76.03, p=-19.19, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022789) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.67, target = 30.00, rampSet = 30.00, output = -76.01, p=-19.17, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022889) thermalControlTask: thermalControl-0 = 37.65, filtered = 37.66, target = 30.00, rampSet = 30.00, output = -75.99, p=-19.16, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8022989) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.66, target = 30.00, rampSet = 30.00, output = -75.97, p=-19.14, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023089) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.65, target = 30.00, rampSet = 30.00, output = -75.96, p=-19.12, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023189) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.64, target = 30.00, rampSet = 30.00, output = -75.94, p=-19.10, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023289) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.64, target = 30.00, rampSet = 30.00, output = -75.92, p=-19.09, i=-70.00, d=-0.00, ff=13.17[0m
+DATAQ:  | liquid = 42.44 | stg1htsnk = 42.99 |
+[0;32mI (8023389) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.63, target = 30.00, rampSet = 30.00, output = -75.91, p=-19.08, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023489) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.62, target = 30.00, rampSet = 30.00, output = -75.89, p=-19.06, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023504) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (8023506) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (8023582) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (8023583) BLE_PERIPH: Received 19/19[0m
+[0;32mI (8023585) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (8023595) thermalControlTask: thermalControl-0 = 37.61, filtered = 37.62, target = 30.00, rampSet = 30.00, output = -75.88, p=-19.04, i=-70.00, d=-0.00, ff=13.17[0m
+[0;32mI (8023628) experimentRequestStateChange: Experiment State Transition SAMPLE_PREP -> PCR[0m
+[0;32mI (8023636) BLE_PERIPH: Sending Response Packet: [38, true, 146, [], 0][0m
+[38, true, 146, [], 0]
+[0;32mI (8023638) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/22[0m
+[0;32mI (8023706) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=22 mtu=510, totalSize=22, currentIndex=0): [38, true, 146, [], 0][0m
+[0;32mI (8023735) experimentTask: Experiment State Transition PCR -> MELT[0m
+[0;32mI (8023768) BLE_PERIPH: Instrument to App Transaction Write 22/22[0m
+[0;32mI (8023787) BLE_PERIPH: Instrument to App Transaction Read/Notify 22/22[0m
+[0;32mI (8023839) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (8023864) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (8023866) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (8023931) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (8023932) BLE_PERIPH: Received 19/19[0m
+[0;32mI (8023934) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (8023949) experimentTask: Experiment State Transition MELT -> FINISH[0m
+[0;32mI (8024080) BLE_PERIPH: Sending Response Packet: [34, true, 147, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",34388,37.60,29.66,5,5,80,0.00], 0][0m
+[0;32mI (8024086) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/117[0m
+[34, true, 147, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 34388, 37.60, 29.66, 5, 5, 80, 0.00], 0]
+[0;32mI (8024156) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=117 mtu=510, totalSize=117, currentIndex=0): [34, true, 147, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",34388,37.60,29.66,5,5,80,0.00], 0][0m
+[0;32mI (8024180) experimentTask: Experiment State Transition FINISH -> IDLE[0m
+[0;32mI (8024224) BLE_PERIPH: Instrument to App Transaction Write 117/117[0m
+[0;32mI (8024226) BLE_PERIPH: Instrument to App Transaction Read/Notify 117/117[0m
+[0;32mI (8024258) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (8024361) Latch-Info: Curr: 1003, LSENS: 0[0m
+DATAQ:  | liquid = 42.32 | stg1htsnk = 42.85 |
+[0;32mI (8024423) Latch-Info: Curr: 480, LSENS: 0[0m
+[0;32mI (8024485) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (8024550) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (8024611) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (8024673) Latch-Info: Curr: 185, LSENS: 0[0m
+[0;32mI (8024734) Latch-Info: Curr: 181, LSENS: 0[0m
+[0;32mI (8024797) Latch-Info: Curr: 189, LSENS: 0[0m
+[0;32mI (8024858) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (8024920) Latch-Info: Curr: 179, LSENS: 0[0m
+[0;32mI (8024982) Latch-Info: Curr: 185, LSENS: 0[0m
+[0;32mI (8025048) Latch-Info: Curr: 205, LSENS: 0[0m
+[0;32mI (8025109) Latch-Info: Curr: 169, LSENS: 0[0m
+[0;32mI (8025172) Latch-Info: Curr: 165, LSENS: 0[0m
+[0;32mI (8025205) Latch-Info: Curr: 181, LSENS: 0[0m
+[0;32mI (8025237) Latch-Info: Curr: 153, LSENS: 0[0m
+[0;32mI (8025272) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (8025303) Latch-Info: Curr: 178, LSENS: 0[0m
+DATAQ:  | liquid = 42.27 | stg1htsnk = 42.89 |
+[0;32mI (8025836) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (8025872) Latch-Info: Curr: 963, LSENS: 0[0m
+[0;32mI (8025903) Latch-Info: Curr: 378, LSENS: 0[0m
+[0;32mI (8025934) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (8025968) Latch-Info: Curr: 143, LSENS: 0[0m
+[0;32mI (8026000) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (8026031) Latch-Info: Curr: 171, LSENS: 0[0m
+[0;32mI (8026068) Latch-Info: Curr: 134, LSENS: 0[0m
+[0;32mI (8026099) Latch-Info: Curr: 180, LSENS: 0[0m
+[0;32mI (8026129) Latch-Info: Curr: 139, LSENS: 0[0m
+[0;32mI (8026161) Latch-Info: Curr: 143, LSENS: 0[0m
+[0;32mI (8026192) Latch-Info: Curr: 180, LSENS: 0[0m
+[0;32mI (8026222) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (8026253) Latch-Info: Curr: 137, LSENS: 0[0m
+[0;32mI (8026285) Latch-Info: Curr: 142, LSENS: 0[0m
+[0;32mI (8026319) Latch-Info: Curr: 161, LSENS: 0[0m
+[0;32mI (8026350) Latch-Info: Curr: 190, LSENS: 0[0m
+DATAQ:  | liquid = 42.48 | stg1htsnk = 42.97 |
+[0;32mI (8026381) Latch-Info: Curr: 163, LSENS: 0[0m
+[0;32mI (8026411) Latch-Info: Curr: 151, LSENS: 0[0m
+[0;32mI (8026443) Latch-Info: Curr: 144, LSENS: 0[0m
+[0;32mI (8026473) Latch-Info: Curr: 155, LSENS: 0[0m
+[0;32mI (8026505) Latch-Info: Curr: 161, LSENS: 0[0m
+[0;32mI (8026537) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (8026568) Latch-Info: Curr: 185, LSENS: 0[0m
+[0;32mI (8026600) Latch-Info: Curr: 133, LSENS: 0[0m
+[0;32mI (8026631) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (8026662) Latch-Info: Curr: 149, LSENS: 0[0m
+[0;32mI (8026692) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (8026724) Latch-Info: Curr: 132, LSENS: 0[0m
+[0;32mI (8026755) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (8026786) Latch-Info: Curr: 121, LSENS: 0[0m
+[0;32mI (8026818) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (8026851) Latch-Info: Curr: 126, LSENS: 0[0m
+[0;32mI (8026882) Latch-Info: Curr: 122, LSENS: 0[0m
+[0;32mI (8026913) Latch-Info: Curr: 130, LSENS: 0[0m
+[0;32mI (8026944) Latch-Info: Curr: 101, LSENS: 0[0m
+[0;32mI (8026974) Latch-Info: Curr: 129, LSENS: 0[0m
+[0;32mI (8027006) Latch-Info: Curr: 107, LSENS: 0[0m
+[0;32mI (8027037) Latch-Info: Curr: 108, LSENS: 0[0m
+[0;32mI (8027070) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (8027274) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (8027306) Latch-Info: Curr: 950, LSENS: 0[0m
+[0;32mI (8027336) Latch-Info: Curr: 561, LSENS: 0[0m
+[0;32mI (8027369) Latch-Info: Curr: 92, LSENS: 0[0m
+DATAQ:  | liquid = 42.51 | stg1htsnk = 43.07 |
+[0;32mI (8027401) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 42.56 | stg1htsnk = 43.2 |
+DATAQ:  | liquid = 42.65 | stg1htsnk = 43.15 |
+DATAQ:  | liquid = 42.66 | stg1htsnk = 43.24 |
+[0;32mI (8031064) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (8031066) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (8031131) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (8031132) BLE_PERIPH: Received 19/19[0m
+[0;32mI (8031134) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (8031172) BLE_PERIPH: Sending Response Packet: [34, true, 148, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",41600,37.01,29.58,5,0,0,0.00], 0][0m
+[0;32mI (8031178) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116[0m
+[34, true, 148, ["2022-01-06T20:34:34.280Z", "e6436815-18b1-419e-a49f-693529d3a336", 41600, 37.01, 29.58, 5, 0, 0, 0.00], 0]
+[0;32mI (8031254) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34, true, 148, ["2022-01-06T20:34:34.280Z","e6436815-18b1-419e-a49f-693529d3a336",41600,37.01,29.58,5,0,0,0.00], 0][0m

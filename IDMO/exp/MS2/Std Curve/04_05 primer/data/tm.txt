@@ -1,0 +1,17 @@
+Experiment: 20210218 MS2 04_05 JW  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Call	Group	Std	Score	DeltaTM	Tm1	Tm2	Status
+True	16777088	4	1000x	Pos	C	S	1	11.83	65.42	77.24	
+True	65280	9	1000x_2	Pos	F	S	1				
+True	11655934	14	1000x_3	Pos	I	S	1				
+True	16776960	3	100x	Pos	B	S	1		67.76		
+True	65408	8	100x_2	Pos	E	S	1	14.55	68.85	83.40	
+True	4828405	13	100x_3	Pos	H	S	1	7.58	75.77	83.35	
+True	16744448	2	10x	Pos	Unknown		0.66	14.06	69.08	83.14	
+True	32768	7	10x_2	Pos	D	S	1	15.42	67.02	82.44	
+True	33023	12	10x_3	Pos	G	S	1				
+True	10485760	1	1x	Pos	Unknown		0.08	12.62	70.04	82.67	
+True	16384	6	1x_2	Pos	A	S	1	13.56	68.82	82.38	
+True	16512	11	1x_3	Pos	A		0.88	13.17	69.07	82.24	
+True	-1	5	Neg	Neg	Negative		1				
+True	7237230	10	Neg_2	Neg	Negative		1				
+True	4194368	15	Neg_3	Neg	Negative		1				

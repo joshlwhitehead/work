@@ -1,0 +1,120 @@
+DATAQ:  | liquid = 20.09 | stg1htsnk = 30.56 |
+DATAQ:  | liquid = 20.05 | stg1htsnk = 30.48 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 30.52 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 30.53 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 30.36 |
+DATAQ:  | liquid = 20.15 | stg1htsnk = 30.5 |
+DATAQ:  | liquid = 20.03 | stg1htsnk = 30.46 |
+DATAQ:  | liquid = 20.19 | stg1htsnk = 30.4 |
+DATAQ:  | liquid = 20.12 | stg1htsnk = 30.4 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 30.44 |
+DATAQ:  | liquid = 20.16 | stg1htsnk = 30.39 |
+DATAQ:  | liquid = 20.25 | stg1htsnk = 30.37 |
+DATAQ:  | liquid = 20.19 | stg1htsnk = 30.35 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 30.37 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 30.25 |
+DATAQ:  | liquid = 20.12 | stg1htsnk = 30.22 |
+DATAQ:  | liquid = 20.11 | stg1htsnk = 30.2 |
+DATAQ:  | liquid = 20.19 | stg1htsnk = 30.3 |
+DATAQ:  | liquid = 20.18 | stg1htsnk = 30.24 |
+DATAQ:  | liquid = 20.13 | stg1htsnk = 30.26 |
+DATAQ:  | liquid = 20.14 | stg1htsnk = 30.22 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 30.22 |
+DATAQ:  | liquid = 20.16 | stg1htsnk = 30.23 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 30.22 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 30.18 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 30.19 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 30.16 |
+DATAQ:  | liquid = 20.2 | stg1htsnk = 30.12 |
+DATAQ:  | liquid = 20.15 | stg1htsnk = 30.09 |
+DATAQ:  | liquid = 20.08 | stg1htsnk = 30.07 |
+DATAQ:  | liquid = 20.08 | stg1htsnk = 30.09 |
+DATAQ:  | liquid = 20.07 | stg1htsnk = 30.06 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 30.05 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 30.01 |
+DATAQ:  | liquid = 20.05 | stg1htsnk = 30.02 |
+DATAQ:  | liquid = 19.93 | stg1htsnk = 29.96 |
+DATAQ:  | liquid = 20.01 | stg1htsnk = 30.0 |
+DATAQ:  | liquid = 20.0 | stg1htsnk = 29.96 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 29.99 |
+DATAQ:  | liquid = 20.04 | stg1htsnk = 29.82 |
+DATAQ:  | liquid = 20.11 | stg1htsnk = 29.95 |
+DATAQ:  | liquid = 20.03 | stg1htsnk = 29.92 |
+DATAQ:  | liquid = 20.07 | stg1htsnk = 29.81 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 29.9 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 29.84 |
+DATAQ:  | liquid = 20.01 | stg1htsnk = 29.83 |
+DATAQ:  | liquid = 20.14 | stg1htsnk = 29.82 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 29.91 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 29.85 |
+DATAQ:  | liquid = 20.06 | stg1htsnk = 29.75 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 29.75 |
+DATAQ:  | liquid = 20.1 | stg1htsnk = 29.72 |
+DATAQ:  | liquid = 20.03 | stg1htsnk = 29.72 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 29.67 |
+DATAQ:  | liquid = 20.11 | stg1htsnk = 29.79 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 29.68 |
+DATAQ:  | liquid = 20.18 | stg1htsnk = 29.69 |
+DATAQ:  | liquid = 20.12 | stg1htsnk = 29.64 |
+DATAQ:  | liquid = 20.14 | stg1htsnk = 29.7 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 29.66 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 29.65 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 29.66 |
+DATAQ:  | liquid = 20.14 | stg1htsnk = 29.51 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 29.62 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 29.65 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 29.62 |
+DATAQ:  | liquid = 20.18 | stg1htsnk = 29.5 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 29.51 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 29.54 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 29.52 |
+DATAQ:  | liquid = 20.14 | stg1htsnk = 29.41 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 29.51 |
+DATAQ:  | liquid = 20.19 | stg1htsnk = 29.47 |
+DATAQ:  | liquid = 20.2 | stg1htsnk = 29.44 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 29.47 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 29.41 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 29.28 |
+DATAQ:  | liquid = 20.22 | stg1htsnk = 29.17 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 29.1 |
+DATAQ:  | liquid = 20.26 | stg1htsnk = 29.04 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 29.02 |
+DATAQ:  | liquid = 20.11 | stg1htsnk = 28.96 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 28.98 |
+DATAQ:  | liquid = 20.15 | stg1htsnk = 28.93 |
+DATAQ:  | liquid = 20.2 | stg1htsnk = 28.86 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 28.85 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 28.85 |
+DATAQ:  | liquid = 20.16 | stg1htsnk = 28.83 |
+DATAQ:  | liquid = 20.11 | stg1htsnk = 28.81 |
+DATAQ:  | liquid = 20.19 | stg1htsnk = 28.78 |
+DATAQ:  | liquid = 20.08 | stg1htsnk = 28.68 |
+DATAQ:  | liquid = 20.09 | stg1htsnk = 28.64 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 28.8 |
+DATAQ:  | liquid = 20.13 | stg1htsnk = 28.68 |
+DATAQ:  | liquid = 20.18 | stg1htsnk = 28.66 |
+DATAQ:  | liquid = 20.17 | stg1htsnk = 28.66 |
+[0;32mI (15042578) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (15042580) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (15042612) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (15042613) BLE_PERIPH: Received 19/19[0m
+[0;32mI (15042615) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (15042626) BLE_PERIPH: Sending Response Packet: [34, true, 256, ["2022-01-03T19:42:24.018Z","e6436815-18b1-419e-a49f-693529d3a336",1835547,30.19,28.36,0,0,0,0.00], 0][0m
+[0;32mI (15042635) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/118[0m
+[34, true, 256, ["2022-01-03T19:42:24.018Z", "e6436815-18b1-419e-a49f-693529d3a336", 1835547, 30.19, 28.36, 0, 0, 0, 0.00], 0]
+[0;32mI (15042668) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=118 mtu=510, totalSize=118, currentIndex=0): [34, true, 256, ["2022-01-03T19:42:24.018Z","e6436815-18b1-419e-a49f-693529d3a336",1835547,30.19,28.36,0,0,0,0.00], 0][0m
+[0;32mI (15042713) BLE_PERIPH: Instrument to App Transaction Write 118/118[0m
+[0;32mI (15042715) BLE_PERIPH: Instrument to App Transaction Read/Notify 118/118[0m
+[0;32mI (15042747) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 20.16 | stg1htsnk = 28.54 |
+DATAQ:  | liquid = 20.23 | stg1htsnk = 28.5 |
+DATAQ:  | liquid = 20.3 | stg1htsnk = 28.56 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 28.55 |
+DATAQ:  | liquid = 20.24 | stg1htsnk = 28.51 |
+DATAQ:  | liquid = 20.32 | stg1htsnk = 28.55 |
+DATAQ:  | liquid = 20.36 | stg1htsnk = 28.55 |
+DATAQ:  | liquid = 20.21 | stg1htsnk = 28.41 |
+DATAQ:  | liquid = 20.36 | stg1htsnk = 28.55 |
+DATAQ:  | liquid = 20.32 | stg1htsnk = -11.37 |
+DATAQ:  | liquid = 20.3 | stg1htsnk = 8.24 |
+DATAQ:  | liquid = 20.39 | stg1htsnk = 26.22 |

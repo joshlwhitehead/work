@@ -1,0 +1,10 @@
+Experiment: 20210226 lambda JW temp2 trial2  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Call	Group	Std	Score	DeltaTM	Tm1	Tm2	Status
+True	7237230	1	12-13 0.5uM+	Pos	A	S	1	17.47	70.67	88.14	
+True	255	2	12-13 0.2uM+	Pos	B	S	1	19.33	69.26	88.60	
+True	16744448	3	14-15 0.5uM+	Pos	C	S	1		82.33		
+True	16711935	4	14-15 0.2uM+	Pos	D	S	1	14.88	68.60	83.48	
+True	2540728	5	12-13 0.5uM-	Pos	E	S	1	18.88	68.97	87.84	
+True	16776975	6	12-13 0.2uM-	Pos	F	S	1	21.55	66.44	87.98	
+True	4210688	7	14-15 0.5uM-	Pos	G	S	1	14.14	68.13	82.28	
+True	4227327	8	14-15 0.2uM-	Pos	H	S	1		84.38		

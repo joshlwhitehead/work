@@ -1,0 +1,10 @@
+[0;32mI (273927) _stage1Calculate: Cooling    thermTempC:28.219482.2   ModelTempC: 29.526712.2[0m
+[0;32mI (283929) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.564709.2[0m
+[0;32mI (286427) _stage1Calculate: Cooling    thermTempC:28.219482.2   ModelTempC: 29.573370.2[0m
+[0;32mI (288928) _stage1Calculate: Cooling    thermTempC:28.219482.2   ModelTempC: 29.581879.2[0m
+[0;32mI (291429) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.589947.2[0m
+[0;32mI (293929) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.597742.2[0m
+[0;32mI (301429) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.619425.2[0m
+[0;32mI (303929) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.625988.2[0m
+[0;32mI (318929) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.660343.2[0m
+[0;32mI (348929) _stage1Calculate: Cooling    thermTempC:28.155529.2   ModelTempC: 29.706669.2[0m

@@ -1,0 +1,6 @@
+Experiment: 22Mar2021 MS2 Taqman  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	16776975	1	10^5	29.56	1.17E4	10000	
+True	16776975	2	10^4	26.07	9.24E4	100000	
+True	16776975	3	10^3	33.84	9.24E2	1000	
+True	65280	4	NTC			0	

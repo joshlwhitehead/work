@@ -1,0 +1,76 @@
+[0;32mI (637837) Latch-Info: Curr: 220, LSENS: 0[0m
+[0;32mI (637901) Latch-Info: Curr: 173, LSENS: 0[0m
+[0;32mI (637966) Latch-Info: Curr: 175, LSENS: 0[0m
+[0;32mI (638027) Latch-Info: Curr: 157, LSENS: 0[0m
+[0;32mI (638096) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (638159) Latch-Info: Curr: 219, LSENS: 0[0m
+[0;33mW (638185) systemTasksMonitorStack: Stack Watermark(Motor Control): 2192[0m
+[0;32mI (638222) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (638285) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (638346) Latch-Info: Curr: 164, LSENS: 0[0m
+[0;32mI (638407) Latch-Info: Curr: 183, LSENS: 0[0m
+[0;32mI (638469) Latch-Info: Curr: 187, LSENS: 0[0m
+[0;32mI (638531) Latch-Info: Curr: 167, LSENS: 0[0m
+[0;32mI (638598) Latch-Info: Curr: 165, LSENS: 0[0m
+[0;32mI (638630) Latch-Info: Curr: 156, LSENS: 0[0m
+[0;32mI (638666) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (638697) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (638728) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (639269) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (639302) Latch-Info: Curr: 974, LSENS: 0[0m
+[0;32mI (639333) Latch-Info: Curr: 500, LSENS: 0[0m
+[0;32mI (639366) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (639397) Latch-Info: Curr: 137, LSENS: 0[0m
+[0;32mI (639428) Latch-Info: Curr: 151, LSENS: 0[0m
+[0;32mI (639466) Latch-Info: Curr: 129, LSENS: 0[0m
+[0;32mI (639497) Latch-Info: Curr: 153, LSENS: 0[0m
+[0;32mI (639528) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (639566) Latch-Info: Curr: 141, LSENS: 0[0m
+[0;32mI (639597) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (639628) Latch-Info: Curr: 145, LSENS: 0[0m
+[0;32mI (639665) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (639697) Latch-Info: Curr: 141, LSENS: 0[0m
+[0;32mI (639728) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (639766) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (639797) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (639828) Latch-Info: Curr: 125, LSENS: 0[0m
+[0;32mI (639866) Latch-Info: Curr: 132, LSENS: 0[0m
+[0;32mI (639897) Latch-Info: Curr: 145, LSENS: 0[0m
+[0;32mI (639928) Latch-Info: Curr: 154, LSENS: 0[0m
+[0;32mI (639966) Latch-Info: Curr: 120, LSENS: 0[0m
+[0;32mI (639996) Latch-Info: Curr: 113, LSENS: 0[0m
+[0;32mI (640027) Latch-Info: Curr: 137, LSENS: 0[0m
+[0;32mI (640066) Latch-Info: Curr: 131, LSENS: 0[0m
+[0;32mI (640097) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (640127) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (640166) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (640198) Latch-Info: Curr: 134, LSENS: 0[0m
+[0;32mI (640229) Latch-Info: Curr: 147, LSENS: 0[0m
+[0;32mI (640266) Latch-Info: Curr: 139, LSENS: 0[0m
+[0;32mI (640297) Latch-Info: Curr: 165, LSENS: 0[0m
+[0;32mI (640328) Latch-Info: Curr: 151, LSENS: 0[0m
+[0;32mI (640366) Latch-Info: Curr: 102, LSENS: 0[0m
+[0;32mI (640397) Latch-Info: Curr: 109, LSENS: 0[0m
+[0;32mI (640427) Latch-Info: Curr: 112, LSENS: 0[0m
+[0;32mI (640466) Latch-Info: Curr: 125, LSENS: 0[0m
+[0;32mI (640498) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (640702) Latch-Info: Curr: 92, LSENS: 0[0m
+[0;32mI (640738) Latch-Info: Curr: 928, LSENS: 0[0m
+[0;32mI (640769) Latch-Info: Curr: 385, LSENS: 0[0m
+[0;32mI (640801) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 57.85 | stg1htsnk = 58.19 |
+DATAQ:  | liquid = 57.83 | stg1htsnk = 58.23 |
+DATAQ:  | liquid = 57.8 | stg1htsnk = 58.14 |
+DATAQ:  | liquid = 57.75 | stg1htsnk = 58.06 |
+DATAQ:  | liquid = 57.71 | stg1htsnk = 57.95 |
+DATAQ:  | liquid = 58.27 | stg1htsnk = 58.41 |
+DATAQ:  | liquid = 57.76 | stg1htsnk = 57.89 |
+DATAQ:  | liquid = 57.8 | stg1htsnk = 57.81 |
+DATAQ:  | liquid = 56.61 | stg1htsnk = 55.68 |
+DATAQ:  | liquid = 55.42 | stg1htsnk = 56.44 |
+DATAQ:  | liquid = 57.2 | stg1htsnk = 57.5 |
+DATAQ:  | liquid = 56.61 | stg1htsnk = 57.7 |
+DATAQ:  | liquid = 57.37 | stg1htsnk = 57.75 |
+DATAQ:  | liquid = 57.18 | stg1htsnk = 57.23 |
+DATAQ:  | liquid = 38.04 | stg1htsnk = 42.6 |
+DATAQ:  | liquid = 39.19 | stg1htsnk = 39.39 |

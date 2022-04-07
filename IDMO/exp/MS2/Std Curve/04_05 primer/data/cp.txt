@@ -1,0 +1,17 @@
+Experiment: 20210218 MS2 04_05 JW  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	255	1	1x	32.33		0	
+True	255	2	10x	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	65280	3	100x			0	
+True	65280	4	1000x			0	
+True	255	5	Neg	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	255	6	1x_2	32.86		0	
+True	255	7	10x_2	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	255	8	100x_2	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	65280	9	1000x_2			0	
+True	65280	10	Neg_2			0	
+True	255	11	1x_3	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	65280	12	10x_3			0	
+True	65280	13	100x_3			0	
+True	65280	14	1000x_3			0	
+True	65280	15	Neg_3			0	

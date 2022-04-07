@@ -1,0 +1,7 @@
+Experiment: 20210217 MS2 JW  Selected Filter: 530 (470-530)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	16744448	1	1x	25.97		0	
+True	255	2	10x	29.79		0	
+True	3200768	3	100x	32.82		0	
+True	16711935	4	1000x	35.00		0	> - Late Cp call (last five cycles) has higher uncertainty
+True	7237230	5	Neg			0	

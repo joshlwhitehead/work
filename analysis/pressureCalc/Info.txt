@@ -1,0 +1,3 @@
+Folder contains methods for calculating pressure changes within chamber 1 of consumable for Alpha
+
+created 07 Oct 2021

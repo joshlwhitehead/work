@@ -1,0 +1,11 @@
+﻿Experiment: 20210203 MS2 JW temp2 trial2  Selected Filter: 530 (470-530),,,,,,,
+Include,Color,Pos,Name,Cp,Concentration,Standard,Status
+TRUE,255,1,Sample 1,21.64,,0,
+TRUE,255,2,Sample 2,21.59,,0,
+TRUE,255,3,Sample 3,29.59,,0,
+TRUE,255,4,Sample 4,23.25,,0,
+TRUE,255,5,Sample 5,23.11,,0,
+TRUE,65280,6,Sample 6,,,0,
+TRUE,255,7,Sample 7,27.74,,0,
+TRUE,255,8,Sample 8,29.53,,0,
+TRUE,65280,9,Sample 9,,,0,

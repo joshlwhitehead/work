@@ -1,0 +1,12 @@
+[0;32mI (12361008) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (12361010) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (12361041) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (12361042) BLE_PERIPH: Received 19/19[0m
+[0;32mI (12361045) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (12361075) BLE_PERIPH: Sending Response Packet: [34, true, 195, ["2022-01-03T18:57:39.897Z","e6436815-18b1-419e-a49f-693529d3a336",1838132,29.32,28.02,0,0,0,0.00], 0][0m
+[0;32mI (12361081) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/118[0m
+[34, true, 195, ["2022-01-03T18:57:39.897Z", "e6436815-18b1-419e-a49f-693529d3a336", 1838132, 29.32, 28.02, 0, 0, 0, 0.00], 0]
+[0;32mI (12361120) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=118 mtu=510, totalSize=118, currentIndex=0): [34, true, 195, ["2022-01-03T18:57:39.897Z","e6436815-18b1-419e-a49f-693529d3a336",1838132,29.32,28.02,0,0,0,0.00], 0][0m
+[0;32mI (12361165) BLE_PERIPH: Instrument to App Transaction Write 118/118[0m
+[0;32mI (12361167) BLE_PERIPH: Instrument to App Transaction Read/Notify 118/118[0m
+[0;32mI (12361199) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m

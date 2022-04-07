@@ -1,0 +1,5 @@
+DATAQ:  | liquid = 27.55 | stg1htsnk = 28.22 |
+DATAQ:  | liquid = 27.4 | stg1htsnk = 28.25 |
+DATAQ:  | liquid = 27.42 | stg1htsnk = 28.22 |
+DATAQ:  | liquid = 27.5 | stg1htsnk = 28.33 |
+DATAQ:  | liquid = 27.57 | stg1htsnk = 28.18 |

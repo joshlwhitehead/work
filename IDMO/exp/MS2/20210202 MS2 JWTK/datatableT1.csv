@@ -1,0 +1,9 @@
+﻿Experiment: 20210202 JWTK MS2 temp1  Selected Filter: 530 (470-530),,,,,,,,,,,
+Include,Color,Pos,Name,Call,Group,Std,Score,DeltaTM,Tm1,Tm2,Status
+TRUE,16744448,1,Sample 1,Pos,B,S,1,17.64,68.94,86.58,
+TRUE,16777088,2,Sample 2,Pos,B,,0.89,18.38,68.53,86.91,
+TRUE,16384,3,Sample 3,Pos,A,,0.83,13.81,68.92,82.73,
+TRUE,8454016,4,Sample 4,Pos,C,S,1,15.04,68.15,83.2,
+TRUE,11053311,5,Sample 5,Pos,A,,0.9,14.62,68.27,82.89,
+TRUE,255,6,Sample 6,Pos,A,S,1,13.43,69.54,82.97,
+TRUE,-1,7,Sample 7,Neg,Negative,,1,,,,

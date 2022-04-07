@@ -1,0 +1,5 @@
+Experiment: 20210216 NAM.18S  Selected Filter: 705 (470-705)
+Include	Color	Pos	Name	Cp	Concentration	Standard	Status
+True	229631	1	Positive Control	25.74		0	? - Detector Call uncertain
+True	65280	2	Negative Control			0	
+True	229631	3	NAM. 18S	20.11		0	? - Detector Call uncertain

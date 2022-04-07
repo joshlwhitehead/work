@@ -1,0 +1,1401 @@
+[0;33mW (72051) exec  : last(1164) Min(1119) Max(3134) Ave(1117) [0m
+[0;33mW (72054) Period: last(4047) Min(4030) Max(4066) Ave(4030) [0m
+DATAQ:  | liquid = 41.33 |
+DATAQ:  | liquid = 41.34 |
+DATAQ:  | liquid = 41.22 |
+DATAQ:  | liquid = 41.13 |
+DATAQ:  | liquid = 41.14 |
+DATAQ:  | liquid = 41.02 |
+DATAQ:  | liquid = 40.98 |
+[0;33mW (82132) exec  : last(1166) Min(1121) Max(3136) Ave(1117) [0m
+[0;33mW (82135) Period: last(4046) Min(4030) Max(4065) Ave(4030) [0m
+DATAQ:  | liquid = 40.92 |
+DATAQ:  | liquid = 40.83 |
+DATAQ:  | liquid = 40.81 |
+DATAQ:  | liquid = 40.69 |
+DATAQ:  | liquid = 40.67 |
+DATAQ:  | liquid = 40.55 |
+DATAQ:  | liquid = 40.51 |
+[0;32mI (89193) _handleBluetoothButtonPress: Pressed[0m
+[0;32mI (89193) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING[0m
+DATAQ:  | liquid = 40.44 |
+DATAQ:  | liquid = 40.41 |
+DATAQ:  | liquid = 40.39 |
+[0;33mW (92213) exec  : last(1139) Min(1117) Max(3381) Ave(1117) [0m
+[0;33mW (92216) Period: last(4051) Min(4027) Max(4133) Ave(4027) [0m
+DATAQ:  | liquid = 40.3 |
+DATAQ:  | liquid = 40.22 |
+[0;32mI (94246) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONNECT[0m
+[0;31mE (94248) connectCb: Connected CB[0m
+[0;32mI (94249) bluetoothRequestStateChange: Bluetooth State Transition PAIRING -> CONNECTED[0m
+[0;32mI (94885) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 40.2 |
+[0;32mI (94979) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (94980) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (94985) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (95080) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+[0;32mI (95330) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (95331) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (95336) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (95347) mtuCb: MTU updated to 512[0m
+[0;32mI (95350) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_MTU[0m
+[0;32mI (95427) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 40.07 |
+[0;32mI (96497) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (96699) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (96700) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (96702) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (96709) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (96766) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (96767) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (96768) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (96774) BLE_PERIPH: Received 18/18[0m
+[0;33mW (96778) commProcessCommandPacket: cmdid is 1073625076[0m
+[0;33mW (96785) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (96789) commProcessCommandPacket: JSON is: [16, false, 97, [], 0][0m
+[0;32mI (96797) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (96810) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (96813) BLE_PERIPH: Sending Response Packet: [16, true, 97, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (96838) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (96844) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (96850) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/230[0m
+[16, true, 97, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (96901) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=230 mtu=510, totalSize=230, currentIndex=0): [16, true, 97, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (96930) systemTasksMonitorStack: Stack Watermark(Comm): 3236[0m
+DATAQ:  | liquid = 40.04 |
+[0;32mI (96958) BLE_PERIPH: Instrument to App Transaction Write 230/230[0m
+[0;33mW (96959) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (96961) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (96968) BLE_PERIPH: Instrument to App Transaction Read/Notify 230/230[0m
+[0;32mI (96992) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (97025) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (97026) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97028) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97035) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (97059) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (97060) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97060) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97066) BLE_PERIPH: Received 18/18[0m
+[0;33mW (97071) commProcessCommandPacket: cmdid is 1073625076[0m
+[0;33mW (97077) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (97082) commProcessCommandPacket: JSON is: [16, false, 98, [], 0][0m
+[0;32mI (97090) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (97131) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (97132) BLE_PERIPH: Sending Response Packet: [16, true, 98, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (97156) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (97162) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (97168) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/230[0m
+[16, true, 98, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (97194) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=230 mtu=510, totalSize=230, currentIndex=0): [16, true, 98, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;32mI (97262) BLE_PERIPH: Instrument to App Transaction Write 230/230[0m
+[0;33mW (97263) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (97264) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (97271) BLE_PERIPH: Instrument to App Transaction Read/Notify 230/230[0m
+[0;32mI (97419) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (97464) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (97465) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97467) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97474) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (97509) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (97510) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97510) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97516) BLE_PERIPH: Received 18/18[0m
+[0;33mW (97521) commProcessCommandPacket: cmdid is 1073625076[0m
+[0;33mW (97527) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (97532) commProcessCommandPacket: JSON is: [16, false, 99, [], 0][0m
+[0;32mI (97540) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (97550) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (97555) BLE_PERIPH: Sending Response Packet: [16, true, 99, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (97580) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (97586) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (97593) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/230[0m
+[16, true, 99, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;33mW (97609) heapMonitor_checkFreeHeapSize: New heap low water mark 113708[0m
+[0;32mI (97633) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=230 mtu=510, totalSize=230, currentIndex=0): [16, true, 99, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;32mI (97700) BLE_PERIPH: Instrument to App Transaction Write 230/230[0m
+[0;33mW (97701) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (97703) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (97710) BLE_PERIPH: Instrument to App Transaction Read/Notify 230/230[0m
+[0;32mI (97847) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (97881) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;33mW (97882) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97883) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97890) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | liquid = 39.98 |
+[0;32mI (97925) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (97926) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (97926) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (97932) BLE_PERIPH: Received 19/19[0m
+[0;33mW (97937) commProcessCommandPacket: cmdid is 1073625076[0m
+[0;33mW (97944) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (97948) commProcessCommandPacket: JSON is: [16, false, 100, [], 0][0m
+[0;32mI (97956) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (97972) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (97973) BLE_PERIPH: Sending Response Packet: [16, true, 100, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (98000) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (98005) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (98011) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/231[0m
+[16, true, 100, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (98049) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=231 mtu=510, totalSize=231, currentIndex=0): [16, true, 100, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;32mI (98105) BLE_PERIPH: Instrument to App Transaction Write 231/231[0m
+[0;33mW (98106) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (98108) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (98115) BLE_PERIPH: Instrument to App Transaction Read/Notify 231/231[0m
+[0;32mI (98150) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (98612) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (98613) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (98614) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (98621) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (98656) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (98657) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (98658) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (98664) BLE_PERIPH: Received 18/18[0m
+[0;33mW (98668) commProcessCommandPacket: cmdid is 1073625076[0m
+[0;33mW (98675) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (98679) commProcessCommandPacket: JSON is: [34, true, 101, [], 0][0m
+[0;32mI (98687) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (98693) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (98704) BLE_PERIPH: Sending Response Packet: [34, true, 101, ["","",98033,28.35,27.39,0,0,0,0.00], 0][0m
+[0;33mW (98712) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (98719) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (98725) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/56[0m
+[34, true, 101, ["", "", 98033, 28.35, 27.39, 0, 0, 0, 0.00], 0]
+[0;33mW (98788) systemTasksMonitorStack: Stack Watermark(Comm): 3216[0m
+[0;32mI (98791) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=56 mtu=510, totalSize=56, currentIndex=0): [34, true, 101, ["","",98033,28.35,27.39,0,0,0,0.00], 0][0m
+[0;32mI (98826) BLE_PERIPH: Instrument to App Transaction Write 56/56[0m
+[0;33mW (98827) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (98828) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (98835) BLE_PERIPH: Instrument to App Transaction Read/Notify 56/56[0m
+[0;32mI (98938) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (98961) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (98961) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (98963) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (98970) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+DATAQ:  | liquid = 39.86 |
+[0;32mI (99005) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (99006) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (99006) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (99012) BLE_PERIPH: Received 18/18[0m
+[0;33mW (99017) commProcessCommandPacket: cmdid is 1073624884[0m
+[0;33mW (99024) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (99028) commProcessCommandPacket: JSON is: [34, true, 102, [], 0][0m
+[0;32mI (99036) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (99042) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (99052) BLE_PERIPH: Sending Response Packet: [34, true, 102, ["","",98380,28.35,27.52,0,0,0,0.00], 0][0m
+[0;33mW (99061) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (99068) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (99074) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/56[0m
+[34, true, 102, ["", "", 98380, 28.35, 27.52, 0, 0, 0, 0.00], 0]
+[0;32mI (99117) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=56 mtu=510, totalSize=56, currentIndex=0): [34, true, 102, ["","",98380,28.35,27.52,0,0,0,0.00], 0][0m
+[0;33mW (99137) systemTasksMonitorStack: Stack Watermark(Comm): 3188[0m
+[0;32mI (99152) BLE_PERIPH: Instrument to App Transaction Write 56/56[0m
+[0;33mW (99153) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (99154) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (99161) BLE_PERIPH: Instrument to App Transaction Read/Notify 56/56[0m
+[0;32mI (99208) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 39.75 |
+DATAQ:  | liquid = 39.71 |
+DATAQ:  | liquid = 39.69 |
+[0;33mW (102934) exec  : last(1224) Min(1118) Max(39564) Ave(1125) [0m
+[0;33mW (102937) Period: last(4046) Min(4024) Max(41946) Ave(4031) [0m
+DATAQ:  | liquid = 39.59 |
+DATAQ:  | liquid = 39.51 |
+DATAQ:  | liquid = 39.48 |
+DATAQ:  | liquid = 39.43 |
+DATAQ:  | liquid = 39.35 |
+DATAQ:  | liquid = 39.28 |
+DATAQ:  | liquid = 39.25 |
+DATAQ:  | liquid = 39.16 |
+DATAQ:  | liquid = 39.06 |
+DATAQ:  | liquid = 39.05 |
+[0;33mW (113019) exec  : last(1128) Min(1116) Max(3205) Ave(1116) [0m
+[0;33mW (113022) Period: last(4047) Min(4026) Max(4181) Ave(4029) [0m
+DATAQ:  | liquid = 38.97 |
+DATAQ:  | liquid = 38.96 |
+DATAQ:  | liquid = 38.85 |
+DATAQ:  | liquid = 38.76 |
+DATAQ:  | liquid = 38.73 |
+DATAQ:  | liquid = 38.69 |
+DATAQ:  | liquid = 38.67 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.52 |
+DATAQ:  | liquid = 38.42 |
+[0;33mW (123104) exec  : last(1217) Min(1116) Max(3417) Ave(1116) [0m
+[0;33mW (123107) Period: last(4051) Min(4025) Max(4193) Ave(4027) [0m
+DATAQ:  | liquid = 38.41 |
+DATAQ:  | liquid = 38.38 |
+DATAQ:  | liquid = 38.26 |
+DATAQ:  | liquid = 38.26 |
+DATAQ:  | liquid = 38.18 |
+DATAQ:  | liquid = 38.11 |
+DATAQ:  | liquid = 38.09 |
+DATAQ:  | liquid = 38.0 |
+DATAQ:  | liquid = 37.99 |
+DATAQ:  | liquid = 37.92 |
+[0;33mW (133187) exec  : last(1145) Min(1115) Max(3206) Ave(1115) [0m
+[0;33mW (133190) Period: last(4047) Min(4023) Max(4187) Ave(4026) [0m
+DATAQ:  | liquid = 37.91 |
+DATAQ:  | liquid = 37.82 |
+DATAQ:  | liquid = 37.76 |
+DATAQ:  | liquid = 37.68 |
+DATAQ:  | liquid = 37.69 |
+DATAQ:  | liquid = 37.58 |
+DATAQ:  | liquid = 37.55 |
+DATAQ:  | liquid = 37.5 |
+DATAQ:  | liquid = 37.43 |
+DATAQ:  | liquid = 37.32 |
+[0;33mW (143274) exec  : last(1219) Min(1116) Max(4294) Ave(1116) [0m
+[0;33mW (143277) Period: last(4047) Min(4027) Max(4931) Ave(4026) [0m
+DATAQ:  | liquid = 37.38 |
+DATAQ:  | liquid = 37.31 |
+DATAQ:  | liquid = 37.23 |
+DATAQ:  | liquid = 37.22 |
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.08 |
+DATAQ:  | liquid = 37.02 |
+DATAQ:  | liquid = 37.01 |
+DATAQ:  | liquid = 36.92 |
+DATAQ:  | liquid = 36.9 |
+[0;33mW (153358) exec  : last(1138) Min(1116) Max(3376) Ave(1116) [0m
+[0;33mW (153361) Period: last(4046) Min(4028) Max(4200) Ave(4026) [0m
+DATAQ:  | liquid = 36.89 |
+DATAQ:  | liquid = 36.78 |
+DATAQ:  | liquid = 36.83 |
+DATAQ:  | liquid = 36.7 |
+DATAQ:  | liquid = 36.66 |
+DATAQ:  | liquid = 36.65 |
+DATAQ:  | liquid = 36.6 |
+DATAQ:  | liquid = 36.58 |
+DATAQ:  | liquid = 36.4 |
+DATAQ:  | liquid = 36.46 |
+[0;33mW (163442) exec  : last(1194) Min(1116) Max(3254) Ave(1116) [0m
+[0;33mW (163444) Period: last(4046) Min(4022) Max(4187) Ave(4025) [0m
+DATAQ:  | liquid = 36.39 |
+DATAQ:  | liquid = 36.4 |
+DATAQ:  | liquid = 36.32 |
+DATAQ:  | liquid = 36.23 |
+DATAQ:  | liquid = 36.25 |
+DATAQ:  | liquid = 36.19 |
+DATAQ:  | liquid = 36.15 |
+DATAQ:  | liquid = 36.11 |
+DATAQ:  | liquid = 36.13 |
+DATAQ:  | liquid = 35.99 |
+[0;33mW (173526) exec  : last(1302) Min(1116) Max(3257) Ave(1116) [0m
+[0;33mW (173529) Period: last(4047) Min(4030) Max(4189) Ave(4025) [0m
+DATAQ:  | liquid = 35.97 |
+DATAQ:  | liquid = 35.92 |
+DATAQ:  | liquid = 35.93 |
+DATAQ:  | liquid = 35.92 |
+DATAQ:  | liquid = 35.86 |
+DATAQ:  | liquid = 35.81 |
+DATAQ:  | liquid = 35.66 |
+DATAQ:  | liquid = 35.68 |
+DATAQ:  | liquid = 35.64 |
+DATAQ:  | liquid = 35.62 |
+[0;33mW (183609) exec  : last(1156) Min(1116) Max(3261) Ave(1116) [0m
+[0;33mW (183612) Period: last(4047) Min(3951) Max(4187) Ave(4024) [0m
+DATAQ:  | liquid = 35.58 |
+DATAQ:  | liquid = 35.55 |
+DATAQ:  | liquid = 35.49 |
+DATAQ:  | liquid = 35.44 |
+DATAQ:  | liquid = 35.41 |
+DATAQ:  | liquid = 35.42 |
+DATAQ:  | liquid = 35.36 |
+DATAQ:  | liquid = 35.34 |
+DATAQ:  | liquid = 35.31 |
+DATAQ:  | liquid = 35.18 |
+[0;33mW (193695) exec  : last(1378) Min(1113) Max(3224) Ave(1115) [0m
+[0;33mW (193697) Period: last(4046) Min(4027) Max(4177) Ave(4024) [0m
+DATAQ:  | liquid = 35.21 |
+DATAQ:  | liquid = 35.16 |
+DATAQ:  | liquid = 35.15 |
+DATAQ:  | liquid = 35.09 |
+DATAQ:  | liquid = 35.07 |
+DATAQ:  | liquid = 34.99 |
+DATAQ:  | liquid = 35.0 |
+DATAQ:  | liquid = 34.96 |
+DATAQ:  | liquid = 34.94 |
+DATAQ:  | liquid = 34.83 |
+[0;33mW (203778) exec  : last(1138) Min(1117) Max(3250) Ave(1115) [0m
+[0;33mW (203781) Period: last(4098) Min(4030) Max(4180) Ave(4024) [0m
+DATAQ:  | liquid = 34.79 |
+DATAQ:  | liquid = 34.74 |
+DATAQ:  | liquid = 34.77 |
+DATAQ:  | liquid = 34.73 |
+DATAQ:  | liquid = 34.74 |
+DATAQ:  | liquid = 34.69 |
+DATAQ:  | liquid = 34.7 |
+DATAQ:  | liquid = 34.58 |
+DATAQ:  | liquid = 34.54 |
+DATAQ:  | liquid = 34.52 |
+[0;33mW (213863) exec  : last(1355) Min(1116) Max(3140) Ave(1115) [0m
+[0;33mW (213866) Period: last(4047) Min(3874) Max(4206) Ave(4023) [0m
+DATAQ:  | liquid = 34.52 |
+DATAQ:  | liquid = 34.43 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.4 |
+DATAQ:  | liquid = 34.34 |
+DATAQ:  | liquid = 34.31 |
+DATAQ:  | liquid = 34.25 |
+DATAQ:  | liquid = 34.22 |
+DATAQ:  | liquid = 34.18 |
+[0;33mW (223949) exec  : last(1141) Min(1116) Max(4708) Ave(1116) [0m
+[0;33mW (223952) Period: last(4048) Min(4030) Max(5345) Ave(4023) [0m
+DATAQ:  | liquid = 34.14 |
+DATAQ:  | liquid = 34.18 |
+DATAQ:  | liquid = 34.13 |
+DATAQ:  | liquid = 34.11 |
+DATAQ:  | liquid = 34.0 |
+DATAQ:  | liquid = 33.97 |
+DATAQ:  | liquid = 34.02 |
+DATAQ:  | liquid = 33.94 |
+DATAQ:  | liquid = 33.86 |
+DATAQ:  | liquid = 33.83 |
+[0;33mW (234032) exec  : last(1139) Min(1116) Max(3218) Ave(1116) [0m
+[0;33mW (234035) Period: last(4047) Min(4023) Max(4165) Ave(4023) [0m
+DATAQ:  | liquid = 33.86 |
+DATAQ:  | liquid = 33.79 |
+DATAQ:  | liquid = 33.79 |
+DATAQ:  | liquid = 33.79 |
+DATAQ:  | liquid = 33.75 |
+DATAQ:  | liquid = 33.74 |
+DATAQ:  | liquid = 33.71 |
+DATAQ:  | liquid = 33.59 |
+DATAQ:  | liquid = 33.58 |
+DATAQ:  | liquid = 33.63 |
+[0;33mW (244116) exec  : last(1203) Min(1117) Max(3198) Ave(1116) [0m
+[0;33mW (244119) Period: last(4046) Min(4025) Max(4183) Ave(4023) [0m
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.48 |
+DATAQ:  | liquid = 33.49 |
+DATAQ:  | liquid = 33.41 |
+DATAQ:  | liquid = 33.42 |
+DATAQ:  | liquid = 33.44 |
+DATAQ:  | liquid = 33.4 |
+DATAQ:  | liquid = 33.31 |
+DATAQ:  | liquid = 33.32 |
+[0;33mW (254201) exec  : last(1159) Min(1115) Max(4165) Ave(1115) [0m
+[0;33mW (254204) Period: last(4050) Min(4023) Max(4802) Ave(4023) [0m
+DATAQ:  | liquid = 33.23 |
+DATAQ:  | liquid = 33.23 |
+DATAQ:  | liquid = 33.22 |
+DATAQ:  | liquid = 33.21 |
+DATAQ:  | liquid = 33.17 |
+DATAQ:  | liquid = 33.21 |
+DATAQ:  | liquid = 33.15 |
+DATAQ:  | liquid = 33.1 |
+DATAQ:  | liquid = 33.11 |
+DATAQ:  | liquid = 33.04 |
+[0;33mW (264288) exec  : last(1132) Min(1116) Max(4882) Ave(1116) [0m
+[0;33mW (264291) Period: last(4047) Min(4030) Max(5520) Ave(4023) [0m
+DATAQ:  | liquid = 33.02 |
+DATAQ:  | liquid = 32.98 |
+DATAQ:  | liquid = 32.99 |
+DATAQ:  | liquid = 32.96 |
+DATAQ:  | liquid = 32.96 |
+DATAQ:  | liquid = 32.88 |
+DATAQ:  | liquid = 32.92 |
+DATAQ:  | liquid = 32.85 |
+DATAQ:  | liquid = 32.86 |
+DATAQ:  | liquid = 32.8 |
+[0;33mW (274373) exec  : last(1246) Min(1117) Max(3731) Ave(1117) [0m
+[0;33mW (274376) Period: last(4046) Min(4030) Max(4368) Ave(4023) [0m
+DATAQ:  | liquid = 32.77 |
+DATAQ:  | liquid = 32.77 |
+DATAQ:  | liquid = 32.7 |
+DATAQ:  | liquid = 32.71 |
+DATAQ:  | liquid = 32.66 |
+DATAQ:  | liquid = 32.7 |
+DATAQ:  | liquid = 32.59 |
+DATAQ:  | liquid = 32.58 |
+DATAQ:  | liquid = 32.65 |
+DATAQ:  | liquid = 32.55 |
+[0;33mW (284458) exec  : last(1201) Min(1116) Max(3282) Ave(1116) [0m
+[0;33mW (284461) Period: last(4046) Min(4031) Max(4176) Ave(4023) [0m
+DATAQ:  | liquid = 32.55 |
+DATAQ:  | liquid = 32.48 |
+DATAQ:  | liquid = 32.52 |
+DATAQ:  | liquid = 32.46 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.42 |
+DATAQ:  | liquid = 32.45 |
+DATAQ:  | liquid = 32.38 |
+DATAQ:  | liquid = 32.38 |
+DATAQ:  | liquid = 32.36 |
+[0;33mW (294541) exec  : last(1130) Min(1116) Max(3176) Ave(1116) [0m
+[0;33mW (294544) Period: last(4046) Min(4030) Max(4181) Ave(4023) [0m
+DATAQ:  | liquid = 32.33 |
+DATAQ:  | liquid = 32.34 |
+DATAQ:  | liquid = 32.25 |
+DATAQ:  | liquid = 32.28 |
+DATAQ:  | liquid = 32.27 |
+DATAQ:  | liquid = 32.21 |
+DATAQ:  | liquid = 32.14 |
+DATAQ:  | liquid = 32.2 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 32.14 |
+[0;33mW (304626) exec  : last(1434) Min(1116) Max(3271) Ave(1116) [0m
+[0;33mW (304629) Period: last(4048) Min(4023) Max(4197) Ave(4023) [0m
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 32.11 |
+DATAQ:  | liquid = 32.12 |
+DATAQ:  | liquid = 32.05 |
+DATAQ:  | liquid = 32.03 |
+DATAQ:  | liquid = 32.0 |
+DATAQ:  | liquid = 32.04 |
+DATAQ:  | liquid = 31.99 |
+DATAQ:  | liquid = 31.97 |
+DATAQ:  | liquid = 31.96 |
+[0;33mW (314708) exec  : last(1222) Min(1118) Max(3320) Ave(1116) [0m
+[0;33mW (314711) Period: last(4050) Min(4030) Max(4174) Ave(4023) [0m
+DATAQ:  | liquid = 31.91 |
+DATAQ:  | liquid = 31.87 |
+DATAQ:  | liquid = 31.88 |
+DATAQ:  | liquid = 31.88 |
+DATAQ:  | liquid = 31.84 |
+DATAQ:  | liquid = 31.77 |
+DATAQ:  | liquid = 31.82 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.77 |
+DATAQ:  | liquid = 31.82 |
+[0;33mW (324792) exec  : last(1135) Min(1116) Max(3179) Ave(1116) [0m
+[0;33mW (324795) Period: last(4047) Min(4023) Max(4171) Ave(4023) [0m
+DATAQ:  | liquid = 31.71 |
+DATAQ:  | liquid = 31.73 |
+DATAQ:  | liquid = 31.72 |
+DATAQ:  | liquid = 31.61 |
+DATAQ:  | liquid = 31.63 |
+DATAQ:  | liquid = 31.65 |
+DATAQ:  | liquid = 31.57 |
+DATAQ:  | liquid = 31.6 |
+DATAQ:  | liquid = 31.57 |
+DATAQ:  | liquid = 31.6 |
+[0;33mW (334876) exec  : last(1455) Min(1116) Max(3159) Ave(1116) [0m
+[0;33mW (334878) Period: last(4046) Min(4029) Max(4174) Ave(4023) [0m
+DATAQ:  | liquid = 31.55 |
+DATAQ:  | liquid = 31.51 |
+DATAQ:  | liquid = 31.54 |
+DATAQ:  | liquid = 31.51 |
+DATAQ:  | liquid = 31.44 |
+DATAQ:  | liquid = 31.47 |
+DATAQ:  | liquid = 31.45 |
+DATAQ:  | liquid = 31.39 |
+DATAQ:  | liquid = 31.41 |
+DATAQ:  | liquid = 31.42 |
+[0;33mW (344959) exec  : last(1152) Min(1116) Max(3281) Ave(1116) [0m
+[0;33mW (344962) Period: last(4052) Min(4024) Max(4174) Ave(4023) [0m
+DATAQ:  | liquid = 31.39 |
+DATAQ:  | liquid = 31.33 |
+DATAQ:  | liquid = 31.31 |
+DATAQ:  | liquid = 31.32 |
+DATAQ:  | liquid = 31.3 |
+DATAQ:  | liquid = 31.3 |
+DATAQ:  | liquid = 31.27 |
+DATAQ:  | liquid = 31.25 |
+DATAQ:  | liquid = 31.28 |
+DATAQ:  | liquid = 31.21 |
+[0;33mW (355043) exec  : last(1138) Min(1116) Max(3323) Ave(1116) [0m
+[0;33mW (355046) Period: last(4046) Min(4030) Max(4198) Ave(4023) [0m
+DATAQ:  | liquid = 31.17 |
+DATAQ:  | liquid = 31.14 |
+DATAQ:  | liquid = 31.17 |
+DATAQ:  | liquid = 31.22 |
+DATAQ:  | liquid = 31.15 |
+DATAQ:  | liquid = 31.14 |
+DATAQ:  | liquid = 31.16 |
+DATAQ:  | liquid = 31.12 |
+DATAQ:  | liquid = 31.09 |
+DATAQ:  | liquid = 31.05 |
+[0;33mW (365129) exec  : last(1210) Min(1116) Max(4483) Ave(1116) [0m
+[0;33mW (365132) Period: last(4046) Min(4027) Max(5121) Ave(4023) [0m
+DATAQ:  | liquid = 31.04 |
+DATAQ:  | liquid = 31.04 |
+DATAQ:  | liquid = 30.97 |
+DATAQ:  | liquid = 31.03 |
+DATAQ:  | liquid = 30.93 |
+DATAQ:  | liquid = 30.96 |
+DATAQ:  | liquid = 30.9 |
+DATAQ:  | liquid = 31.0 |
+DATAQ:  | liquid = 30.9 |
+DATAQ:  | liquid = 30.93 |
+[0;33mW (375195) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (375215) exec  : last(1662) Min(1116) Max(3824) Ave(1117) [0m
+[0;33mW (375218) Period: last(4068) Min(4019) Max(4460) Ave(4022) [0m
+[0;32mI (375270) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;33mW (375295) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (375343) isCupPresent: Cup Not Detected...
+CH 445 reads: 4017   needs to be over 2500
+CH 415 reads: 53   needs to be over 70
+[0m
+DATAQ:  | liquid = 30.82 |
+DATAQ:  | liquid = 30.81 |
+DATAQ:  | liquid = 30.75 |
+DATAQ:  | liquid = 30.71 |
+[0;32mI (378874) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (378875) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (378877) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (378884) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (378930) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (378931) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (378931) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (378937) BLE_PERIPH: Received 18/18[0m
+[0;33mW (378942) commProcessCommandPacket: cmdid is 1073625368[0m
+[0;33mW (378949) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (378953) commProcessCommandPacket: JSON is: [34, true, 103, [], 0][0m
+[0;32mI (378961) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (378982) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (378984) BLE_PERIPH: Sending Response Packet: [34, true, 103, ["","",378323,28.41,27.14,0,0,0,0.00], 0][0m
+[0;33mW (378991) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (378998) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (379004) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 103, ["", "", 378323, 28.41, 27.14, 0, 0, 0, 0.00], 0]
+[0;32mI (379031) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 103, ["","",378323,28.41,27.14,0,0,0,0.00], 0][0m
+[0;32mI (379065) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;33mW (379066) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (379068) systemTasksMonitorStack: Stack Watermark(Comm): 2996[0m
+[0;33mW (379074) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (379082) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (379110) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 30.53 |
+DATAQ:  | liquid = 30.53 |
+DATAQ:  | liquid = 30.5 |
+DATAQ:  | liquid = 30.41 |
+DATAQ:  | liquid = 30.45 |
+DATAQ:  | liquid = 30.36 |
+[0;33mW (385381) exec  : last(1179) Min(1112) Max(40208) Ave(1119) [0m
+[0;33mW (385384) Period: last(4051) Min(4029) Max(40913) Ave(4030) [0m
+DATAQ:  | liquid = 30.3 |
+DATAQ:  | liquid = 30.29 |
+DATAQ:  | liquid = 30.25 |
+[0;32mI (388245) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (388246) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (388247) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (388255) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (388278) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (388279) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (388280) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (388286) BLE_PERIPH: Received 18/18[0m
+[0;33mW (388291) commProcessCommandPacket: cmdid is 1073625368[0m
+[0;33mW (388297) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (388302) commProcessCommandPacket: JSON is: [34, true, 104, [], 0][0m
+[0;32mI (388310) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (388332) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (388333) BLE_PERIPH: Sending Response Packet: [34, true, 104, ["","",387673,28.48,27.14,0,0,0,0.00], 0][0m
+[0;33mW (388341) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (388348) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (388354) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 104, ["", "", 387673, 28.48, 27.14, 0, 0, 0, 0.00], 0]
+[0;32mI (388380) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 104, ["","",387673,28.48,27.14,0,0,0,0.00], 0][0m
+[0;32mI (388402) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;33mW (388403) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (388405) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (388413) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (388436) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 30.09 |
+DATAQ:  | liquid = 30.1 |
+[0;32mI (390522) _handleFrontButtonPress: Pressed[0m
+[0;33mW (390595) taskMonitor_task: Task Button Control Task hasn't checked in for 200 ms[0m
+[0;32mI (390859) Latch-Info: Curr: 236, LSENS: 0[0m
+[0;32mI (390916) Latch-Info: Curr: 242, LSENS: 0[0m
+[0;32mI (390973) Latch-Info: Curr: 202, LSENS: 0[0m
+DATAQ:  | liquid = 30.14 |
+[0;32mI (391034) Latch-Info: Curr: 242, LSENS: 0[0m
+[0;32mI (391095) Latch-Info: Curr: 228, LSENS: 0[0m
+[0;32mI (391152) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (391178) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+[0;32mI (391211) Latch-Info: Curr: 134, LSENS: 0[0m
+[0;32mI (391239) Latch-Info: Curr: 214, LSENS: 0[0m
+[0;32mI (391267) Latch-Info: Curr: 238, LSENS: 0[0m
+[0;32mI (391293) Latch-Info: Curr: 218, LSENS: 0[0m
+[0;32mI (391321) Latch-Info: Curr: 232, LSENS: 0[0m
+[0;32mI (391850) Latch-Info: Curr: 202, LSENS: 0[0m
+[0;32mI (391878) Latch-Info: Curr: 370, LSENS: 0[0m
+[0;32mI (391905) Latch-Info: Curr: 348, LSENS: 0[0m
+[0;32mI (391932) Latch-Info: Curr: 264, LSENS: 0[0m
+[0;32mI (391959) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (391987) Latch-Info: Curr: 218, LSENS: 0[0m
+DATAQ:  | liquid = 30.11 |
+[0;32mI (392014) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (392041) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (392067) Latch-Info: Curr: 204, LSENS: 0[0m
+[0;32mI (392096) Latch-Info: Curr: 216, LSENS: 0[0m
+[0;32mI (392123) Latch-Info: Curr: 204, LSENS: 0[0m
+[0;32mI (392150) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (392176) Latch-Info: Curr: 222, LSENS: 0[0m
+[0;32mI (392205) Latch-Info: Curr: 228, LSENS: 0[0m
+[0;32mI (392232) Latch-Info: Curr: 228, LSENS: 0[0m
+[0;32mI (392258) Latch-Info: Curr: 204, LSENS: 0[0m
+[0;32mI (392285) Latch-Info: Curr: 202, LSENS: 0[0m
+[0;32mI (392313) Latch-Info: Curr: 244, LSENS: 0[0m
+[0;32mI (392341) Latch-Info: Curr: 246, LSENS: 0[0m
+[0;32mI (392368) Latch-Info: Curr: 252, LSENS: 0[0m
+[0;32mI (392394) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (392422) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (392450) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (392477) Latch-Info: Curr: 130, LSENS: 0[0m
+[0;32mI (392503) Latch-Info: Curr: 114, LSENS: 0[0m
+[0;32mI (392532) Latch-Info: Curr: 70, LSENS: 0[0m
+[0;32mI (392559) Latch-Info: Curr: 50, LSENS: 0[0m
+[0;32mI (392586) Latch-Info: Curr: 50, LSENS: 0[0m
+[0;32mI (392614) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (392817) Latch-Info: Curr: 44, LSENS: 0[0m
+[0;32mI (392845) Latch-Info: Curr: 372, LSENS: 0[0m
+[0;32mI (392872) Latch-Info: Curr: 334, LSENS: 0[0m
+[0;32mI (392898) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 30.08 |
+DATAQ:  | liquid = 30.15 |
+DATAQ:  | liquid = 30.09 |
+[0;33mW (395555) exec  : last(1177) Min(1112) Max(40600) Ave(1126) [0m
+[0;33mW (395558) Period: last(4058) Min(4029) Max(41342) Ave(4031) [0m
+DATAQ:  | liquid = 30.14 |
+DATAQ:  | liquid = 30.18 |
+DATAQ:  | liquid = 30.07 |
+DATAQ:  | liquid = 30.07 |
+DATAQ:  | liquid = 30.11 |
+DATAQ:  | liquid = 30.1 |
+DATAQ:  | liquid = 30.15 |
+DATAQ:  | liquid = 30.16 |
+DATAQ:  | liquid = 30.2 |
+[0;33mW (404496) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (404592) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;33mW (404596) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (404619) isCupPresent: Cup Not Detected...
+CH 445 reads: 3787   needs to be over 2500
+CH 415 reads: 50   needs to be over 70
+[0m
+DATAQ:  | liquid = 30.13 |
+[0;33mW (405640) exec  : last(1158) Min(1113) Max(3537) Ave(1120) [0m
+[0;33mW (405643) Period: last(4046) Min(4030) Max(4201) Ave(4030) [0m
+DATAQ:  | liquid = 30.1 |
+DATAQ:  | liquid = 30.11 |
+[0;32mI (407167) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;33mW (407168) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (407169) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (407177) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (407211) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (407212) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (407213) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (407219) BLE_PERIPH: Received 18/18[0m
+[0;33mW (407224) commProcessCommandPacket: cmdid is 1073624884[0m
+[0;33mW (407230) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (407235) commProcessCommandPacket: JSON is: [34, true, 105, [], 0][0m
+[0;32mI (407243) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (407273) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (407274) BLE_PERIPH: Sending Response Packet: [34, true, 105, ["","",406614,28.35,27.20,0,0,0,0.00], 0][0m
+[0;33mW (407282) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (407289) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (407295) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/57[0m
+[34, true, 105, ["", "", 406614, 28.35, 27.20, 0, 0, 0, 0.00], 0]
+[0;32mI (407324) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=57 mtu=510, totalSize=57, currentIndex=0): [34, true, 105, ["","",406614,28.35,27.20,0,0,0,0.00], 0][0m
+[0;32mI (407358) BLE_PERIPH: Instrument to App Transaction Write 57/57[0m
+[0;33mW (407359) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (407361) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (407368) BLE_PERIPH: Instrument to App Transaction Read/Notify 57/57[0m
+[0;32mI (407403) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 30.06 |
+DATAQ:  | liquid = 29.99 |
+DATAQ:  | liquid = 29.87 |
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.81 |
+DATAQ:  | liquid = 29.81 |
+DATAQ:  | liquid = 29.81 |
+[0;32mI (414398) _handleFrontButtonPress: Pressed[0m
+[0;33mW (414496) taskMonitor_task: Task Button Control Task hasn't checked in for 200 ms[0m
+[0;32mI (414659) Latch-Info: Curr: 244, LSENS: 0[0m
+[0;32mI (414716) Latch-Info: Curr: 246, LSENS: 0[0m
+[0;32mI (414774) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (414831) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (414888) Latch-Info: Curr: 234, LSENS: 0[0m
+[0;32mI (414947) Latch-Info: Curr: 236, LSENS: 0[0m
+[0;32mI (415005) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (415030) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+[0;32mI (415064) Latch-Info: Curr: 228, LSENS: 0[0m
+[0;32mI (415092) Latch-Info: Curr: 226, LSENS: 0[0m
+[0;32mI (415119) Latch-Info: Curr: 234, LSENS: 0[0m
+[0;32mI (415147) Latch-Info: Curr: 218, LSENS: 0[0m
+[0;32mI (415173) Latch-Info: Curr: 242, LSENS: 0[0m
+DATAQ:  | liquid = 29.82 |
+[0;32mI (415705) Latch-Info: Curr: 226, LSENS: 0[0m
+[0;32mI (415732) Latch-Info: Curr: 378, LSENS: 0[0m
+[0;32mI (415760) Latch-Info: Curr: 306, LSENS: 0[0m
+[0;32mI (415787) Latch-Info: Curr: 270, LSENS: 0[0m
+[0;33mW (415808) exec  : last(1235) Min(1116) Max(9751) Ave(1119) [0m
+[0;33mW (415810) Period: last(4061) Min(4027) Max(41630) Ave(4030) [0m
+[0;32mI (415814) Latch-Info: Curr: 232, LSENS: 0[0m
+[0;32mI (415842) Latch-Info: Curr: 222, LSENS: 0[0m
+[0;32mI (415869) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (415895) Latch-Info: Curr: 218, LSENS: 0[0m
+[0;32mI (415923) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (415950) Latch-Info: Curr: 202, LSENS: 0[0m
+[0;32mI (415977) Latch-Info: Curr: 202, LSENS: 0[0m
+[0;32mI (416003) Latch-Info: Curr: 216, LSENS: 0[0m
+[0;32mI (416032) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (416059) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (416086) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (416112) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (416140) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (416169) Latch-Info: Curr: 240, LSENS: 0[0m
+[0;32mI (416196) Latch-Info: Curr: 248, LSENS: 0[0m
+[0;32mI (416223) Latch-Info: Curr: 236, LSENS: 0[0m
+[0;32mI (416249) Latch-Info: Curr: 228, LSENS: 0[0m
+DATAQ:  | liquid = 29.78 |
+[0;32mI (416278) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (416305) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (416331) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (416358) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (416386) Latch-Info: Curr: 102, LSENS: 0[0m
+[0;32mI (416414) Latch-Info: Curr: 52, LSENS: 0[0m
+[0;32mI (416442) Latch-Info: Curr: 60, LSENS: 0[0m
+[0;32mI (416469) Latch-Info: Curr: 42, LSENS: 0[0m
+[0;32mI (416495) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (416698) Latch-Info: Curr: 64, LSENS: 0[0m
+[0;32mI (416725) Latch-Info: Curr: 356, LSENS: 0[0m
+[0;32mI (416753) Latch-Info: Curr: 316, LSENS: 0[0m
+[0;32mI (416780) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 29.74 |
+[0;32mI (418023) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_DISCONNECT[0m
+[0;31mE (418024) disconnectCb: Disconnected CB[0m
+[0;32mI (418024) bluetoothRequestStateChange: Bluetooth State Transition CONNECTED -> IDLE[0m
+DATAQ:  | liquid = 29.73 |
+DATAQ:  | liquid = 29.68 |
+DATAQ:  | liquid = 29.8 |
+DATAQ:  | liquid = 29.75 |
+ ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x16 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7388
+ho 0 tail 12 room 4
+load:0x40078000,len:14912
+load:0x40080400,len:3688
+entry 0x4008067c
+[0;32mI (29) boot: ESP-IDF v4.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 07:57:32[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (32) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00010000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 00019000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (107) boot:  5 storage          Unknown data     01 82 00320000 00100000[0m
+[0;32mI (114) boot: End of partition table[0m
+[0;32mI (119) boot: Defaulting to factory image[0m
+[0;32mI (123) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (131) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=16938h ( 92472) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00036960 vaddr=3ffbdb60 size=04a44h ( 19012) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=0003b3ac vaddr=40080000 size=04c6ch ( 19564) load[0m
+[0;32mI (189) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=76938h (485688) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000b6960 vaddr=40084c6c size=143dch ( 82908) load[0m
+[0;32mI (399) esp_image: segment 5: paddr=000cad44 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) cpu_start: Pro cpu up.[0m
+[0;32mI (424) cpu_start: Starting app cpu, entry point is 0x400813c8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+DATAQ:  | liquid = 29.84 |
+[0;32mI (440) cpu_start: cpu freq: 240000000[0m
+[0;32mI (440) cpu_start: Application information:[0m
+[0;32mI (444) cpu_start: Project name:     youtest-firmware[0m
+[0;32mI (450) cpu_start: App version:      PreModel-115-gb3432c7[0m
+[0;32mI (456) cpu_start: Compile time:     Mar  1 2022 07:57:25[0m
+[0;32mI (462) cpu_start: ELF file SHA256:  4a5334cce905c592...[0m
+[0;32mI (468) cpu_start: ESP-IDF:          v4.3.2-dirty[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFDA188 len 00005E78 (23 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 40099048 len 00006FB8 (27 KiB): IRAM[0m
+[0;32mI (525) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (547) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (764) printInfo: 
+
+**************************************************
+
+YouTest Device:
+
+   Firmware Version: 0.3.790
+   MAC Address:      3c:61:05:4b:cf:30
+   Hardware ID:      d3de29ad-d775-50a0-87f3-e414102e5834
+   Git commit:       b3432c75777ecfba76f8e932a6a3949219f09c78
+   Build Datetime:   2022-03-01T14:57:23Z
+
+**************************************************
+[0m
+[0;32mI (877) configInit: Applying Some Config Defaults[0m
+[0;32mI (878) configInit: ***** Configuration *****[0m
+[0;32mI (878) configInit: configVersion: 00.00.02[0m
+[0;32mI (882) configInit: modelName: YouTest[0m
+[0;32mI (886) configInit: Config Valid: 1[0m
+[0;32mI (891) configInit: Stage1 kP: 6.00000[0m
+[0;32mI (895) configInit: Stage1 kI: 0.80000[0m
+[0;32mI (900) configInit: Stage1 kD: 3.00000[0m
+[0;32mI (904) configInit: PCR kP: 5.51000[0m
+[0;32mI (908) configInit: PCR kI: 0.61000[0m
+[0;32mI (912) configInit: PCR kD: 3.01000[0m
+[0;32mI (916) configInit: Decel Up PCR kP: 5.52000[0m
+[0;32mI (921) configInit: Decel Up PCR kI: 0.62000[0m
+[0;32mI (926) configInit: Decel Up PCR kD: 3.02000[0m
+[0;32mI (931) configInit: Decel Down PCR kP: 5.53000[0m
+[0;32mI (936) configInit: Decel Down PCR kI: 0.63000[0m
+[0;32mI (942) configInit: Decel Down PCR kD: 3.03000[0m
+[0;32mI (947) configInit: Hold PCR kP: 5.54000[0m
+[0;32mI (951) configInit: Hold PCR kI: 0.64000[0m
+[0;32mI (956) configInit: Hold PCR kD: 3.04000[0m
+[0;32mI (960) configInit: Ramp PCR kP: 5.55000[0m
+[0;32mI (965) configInit: Ramp PCR kI: 0.65000[0m
+[0;32mI (970) configInit: Ramp PCR kD: 3.05000[0m
+[0;32mI (974) configInit: Melt FF A: -0.00733[0m
+[0;32mI (979) configInit: Melt FF B: 1.75000[0m
+[0;32mI (983) configInit: Melt FF C: -42.00000[0m
+[0;32mI (988) configInit: Solenoid Installed: 0[0m
+[0;32mI (992) configInit: Glued Thermistor: 0[0m
+[0;32mI (997) configInit: Banger Flourimeter: 0[0m
+[0;32mI (1002) configInit: **********[0m
+[0;32mI (1016) BTDM_INIT: BT controller compile version [6a07b06][0m
+[0;32mI (1017) system_api: Base MAC address is not set[0m
+[0;32mI (1017) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (1026) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1293) ESP32_BLE_PERIPH: registered service 0x1800 with handle=1[0m
+[0;32mI (1294) ESP32_BLE_PERIPH: registering characteristic 0x2a00 with def_handle=2 val_handle=3[0m
+[0;32mI (1298) ESP32_BLE_PERIPH: registering characteristic 0x2a01 with def_handle=4 val_handle=5[0m
+[0;32mI (1307) ESP32_BLE_PERIPH: registered service 0x1801 with handle=6[0m
+[0;32mI (1314) ESP32_BLE_PERIPH: registering characteristic 0x2a05 with def_handle=7 val_handle=8[0m
+[0;32mI (1323) ESP32_BLE_PERIPH: registered service e6af95e1-b7d7-4f55-b152-72f4b72cf6ff with handle=10[0m
+[0;32mI (1333) ESP32_BLE_PERIPH: registering characteristic e6af95e2-b7d7-4f55-b152-72f4b72cf6ff with def_handle=11 val_handle=12[0m
+[0;32mI (1345) ESP32_BLE_PERIPH: registering characteristic e6af95e3-b7d7-4f55-b152-72f4b72cf6ff with def_handle=14 val_handle=15[0m
+[0;32mI (1356) ESP32_BLE_PERIPH: registering characteristic e6af95e4-b7d7-4f55-b152-72f4b72cf6ff with def_handle=16 val_handle=17[0m
+[0;32mI (1368) ESP32_BLE_PERIPH: registering characteristic e6af95e5-b7d7-4f55-b152-72f4b72cf6ff with def_handle=19 val_handle=20[0m
+[0;32mI (1380) ESP32_BLE_PERIPH: registering characteristic e6af95e6-b7d7-4f55-b152-72f4b72cf6ff with def_handle=21 val_handle=22[0m
+[0;32mI (1392) ESP32_BLE_PERIPH: registering characteristic e6af95e7-b7d7-4f55-b152-72f4b72cf6ff with def_handle=24 val_handle=25[0m
+[0;32mI (1414) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1415) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1422) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1434) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;33mW (1464) thermalControlSelectControlSource: BYPASSING model STAGE1 MODEL version 1[0m
+[0;33mW (1465) thermalControlSelectControlSource: USING model PCR MODEL 2/1/2022[0m
+[0;33mW (1471) tecCurvePredictorInit: Tec calibration values LOADED[0m
+[0;33mW (1476) systemTasksMonitorStack: Stack Watermark(Task Monitor): 3792[0m
+[0;33mW (1483) systemTasksMonitorStack: Stack Watermark(Thermal Control): 3612[0m
+[0;33mW (1490) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 3568[0m
+[0;33mW (1497) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 3796[0m
+[0;33mW (1505) systemTasksMonitorStack: Stack Watermark(Motor Control): 1752[0m
+[0;33mW (1512) systemTasksMonitorStack: Stack Watermark(Experiment): 3580[0m
+[0;32mI (1519) runInitSelfTest: Starting Init Self Test...[0m
+[0;33mW (1524) systemTasksMonitorStack: Stack Watermark(Comm): 4612[0m
+[0;33mW (1531) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2140[0m
+[0;33mW (1538) systemTasksMonitorStack: Stack Watermark(Serial Rx): 2800[0m
+[0;33mW (1545) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 2352[0m
+[0;33mW (1553) systemTasksMonitorStack: Stack Watermark(Button Control): 1756[0m
+[0;33mW (1560) systemTasksMonitorStack: Stack Watermark(LED Control): 1752[0m
+[0;33mW (1567) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 3720[0m
+[0;33mW (1574) systemTasksMonitorStack: Stack Watermark(LED Control): 312[0m
+[0;33mW (1582) systemTasksMonitorStack: Stack Watermark(Comm): 3380[0m
+[0;33mW (1588) systemTasksMonitorStack: Stack Watermark(Task Monitor): 2352[0m
+[0;33mW (1595) systemTasksMonitorStack: Stack Watermark(Button Control): 316[0m
+[0;33mW (1602) heapMonitor_checkFreeHeapSize: New heap low water mark 115272[0m
+[0;33mW (1610) systemTasksMonitorStack: Stack Watermark(File Writer): 3796[0m
+[0;33mW (1616) systemTasksMonitorStack: Stack Watermark(File Writer): 2356[0m
+[0;33mW (1623) systemTasksMonitorStack: Stack Watermark(Experiment): 2364[0m
+DATAQ:  | liquid = 29.8 |
+[0;33mW (1730) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 2356[0m
+[0;33mW (2014) systemTasksMonitorStack: Stack Watermark(Motor Control): 312[0m
+[0;33mW (2075) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 2360[0m
+[0;32mI (2624) motorSystemCheck: No Current: 14[0m
+[0;32mI (2624) motorSystemCheck: Latch Current: 397[0m
+[0;32mI (2625) motorSystemCheck: Plunge Current: 208[0m
+[0;32mI (2630) motorSystemCheck: Motor Self Test Passed![0m
+DATAQ:  | liquid = 29.87 |
+DATAQ:  | liquid = 29.8 |
+[0;33mW (4611) heapMonitor_checkFreeHeapSize: New heap low water mark 115052[0m
+DATAQ:  | liquid = 29.77 |
+DATAQ:  | liquid = 29.88 |
+[0;32mI (6293) _handleBluetoothButtonPress: Pressed[0m
+[0;32mI (6293) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING[0m
+DATAQ:  | liquid = 29.87 |
+[0;32mI (7238) peltierSystemCheck: TEC's are configured correctly![0m
+[0;32mI (7239) peltierSystemCheck: Initial TEC! PCR: 27.137094    Stage1: 28.219482 [0m
+[0;32mI (7243) peltierSystemCheck: TEC Check1! PCR: 22.523849    Stage1: 28.219482 [0m
+[0;32mI (7250) peltierSystemCheck: TEC Check2! PCR: 29.441843    Stage1: 25.687725 [0m
+[0;32mI (7258) peltierSystemCheck: Delta1 PCR: -4.613245    Stage1: 0.000000[0m
+[0;32mI (7265) peltierSystemCheck: Delta2 PCR: 6.917994    Stage1: -2.531757[0m
+[0;32mI (7431) PTC Max Read: 658[0m
+[0;32mI (7431) PTC Average Read: 636[0m
+[0;32mI (7431) ptcSystemCheck: PTC system check PASSED[0m
+[0;32mI (7432) systemStateSelfTestEnter: Inital Self Test PASSED![0m
+[0;32mI (7439) INIT PLUNGE STATE!: Cur Plunge State: Homed (4)[0m
+[0;32mI (7445) INIT LATCH STATE!: Cur Latch State: Homed (4)[0m
+[0;32mI (7451) systemStateSelfTestExit: Self Test Complete[0m
+[0;32mI (7456) systemRequestStateChange: System State Transition SELFTEST -> IDLE[0m
+[0;31mE (7525) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (7525) blePeriphInterfaceNotifyCharValue: Notifying Value[0m
+[0;33mW (7526) blePeriphInterfaceNotifyCharValue: Notify Complete[0m
+[0;33mW (7534) systemRequestStateChange: Notify exit state change[0m
+[0;33mW (7538) systemTasksMonitorStack: Stack Watermark(System): 2304[0m
+[0;33mW (7611) heapMonitor_checkFreeHeapSize: New heap low water mark 114668[0m
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.84 |
+DATAQ:  | liquid = 29.82 |
+DATAQ:  | liquid = 29.89 |
+[0;32mI (11083) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONNECT[0m
+[0;31mE (11085) connectCb: Connected CB[0m
+[0;32mI (11085) bluetoothRequestStateChange: Bluetooth State Transition PAIRING -> CONNECTED[0m
+[0;32mI (11299) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (11300) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (11305) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;33mW (11589) exec  : last(1141) Min(1122) Max(4571) Ave(1128) [0m
+[0;33mW (11592) Period: last(4054) Min(4027) Max(19588) Ave(4031) [0m
+[0;32mI (11738) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 29.77 |
+[0;32mI (11824) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (11825) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (11830) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (11925) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+[0;32mI (12169) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (12170) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (12175) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (12214) mtuCb: MTU updated to 512[0m
+[0;32mI (12215) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_MTU[0m
+[0;32mI (12251) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 29.83 |
+[0;32mI (13355) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (13534) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (13535) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (13537) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (13544) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (13635) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (13636) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (13637) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (13643) BLE_PERIPH: Received 17/17[0m
+[0;33mW (13647) commProcessCommandPacket: cmdid is 1073625036[0m
+[0;33mW (13654) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (13658) commProcessCommandPacket: JSON is: [16, false, 2, [], 0][0m
+[0;32mI (13666) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (13693) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (13694) BLE_PERIPH: Sending Response Packet: [16, true, 2, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (13717) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (13723) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (13729) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/229[0m
+[16, true, 2, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (13770) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=229 mtu=510, totalSize=229, currentIndex=0): [16, true, 2, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (13809) systemTasksMonitorStack: Stack Watermark(Comm): 3236[0m
+DATAQ:  | liquid = 29.85 |
+[0;32mI (13827) BLE_PERIPH: Instrument to App Transaction Write 229/229[0m
+[0;33mW (13828) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (13830) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (13837) BLE_PERIPH: Instrument to App Transaction Read/Notify 229/229[0m
+[0;32mI (13872) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (13906) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (13907) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (13908) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (13915) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (13950) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (13951) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (13952) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (13958) BLE_PERIPH: Received 17/17[0m
+[0;33mW (13962) commProcessCommandPacket: cmdid is 1073625036[0m
+[0;33mW (13969) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (13973) commProcessCommandPacket: JSON is: [16, false, 3, [], 0][0m
+[0;32mI (13981) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (14011) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (14011) BLE_PERIPH: Sending Response Packet: [16, true, 3, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (14035) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14041) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14047) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/229[0m
+[16, true, 3, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (14085) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=229 mtu=510, totalSize=229, currentIndex=0): [16, true, 3, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;32mI (14277) BLE_PERIPH: Instrument to App Transaction Write 229/229[0m
+[0;33mW (14278) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14280) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14287) BLE_PERIPH: Instrument to App Transaction Read/Notify 229/229[0m
+[0;32mI (14333) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (14356) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (14357) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (14358) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (14365) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (14389) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (14390) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (14391) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (14397) BLE_PERIPH: Received 17/17[0m
+[0;33mW (14401) commProcessCommandPacket: cmdid is 1073625140[0m
+[0;33mW (14408) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (14412) commProcessCommandPacket: JSON is: [16, false, 4, [], 0][0m
+[0;32mI (14420) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (14428) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (14436) BLE_PERIPH: Sending Response Packet: [16, true, 4, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (14460) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14467) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14473) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/229[0m
+[16, true, 4, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (14513) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=229 mtu=510, totalSize=229, currentIndex=0): [16, true, 4, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;32mI (14569) BLE_PERIPH: Instrument to App Transaction Write 229/229[0m
+[0;33mW (14570) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14572) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14579) BLE_PERIPH: Instrument to App Transaction Read/Notify 229/229[0m
+[0;32mI (14614) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (14648) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (14649) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (14651) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (14658) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+DATAQ:  | liquid = 29.87 |
+[0;32mI (14704) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (14705) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (14705) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (14711) BLE_PERIPH: Received 17/17[0m
+[0;33mW (14716) commProcessCommandPacket: cmdid is 1073625036[0m
+[0;33mW (14722) commProcessCommandPacket: Subscribe is 0[0m
+[0;33mW (14727) commProcessCommandPacket: JSON is: [16, false, 5, [], 0][0m
+[0;32mI (14735) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (14754) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (14755) BLE_PERIPH: Sending Response Packet: [16, true, 5, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (14778) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14785) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14791) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/229[0m
+[16, true, 5, [{
+		"firmwareVersion":	"0.3.790",
+		"gitCommit":	"b3432c75777ecfba76f8e932a6a3949219f09c78",
+		"buildTimeStamp":	"2022-03-01T14:57:23Z",
+		"macAddress":	"3c:61:05:4b:cf:30",
+		"hardwareId":	"d3de29ad-d775-50a0-87f3-e414102e5834"
+	}], 0]
+[0;32mI (14817) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=229 mtu=510, totalSize=229, currentIndex=0): [16, true, 5, [{"firmwareVersion":"0.3.790","gitCommit":"b3432c75777ecfba76f8e932a6a3949219f09c78","buildTimeStamp":"2022-03-01T14:57:23Z","macAddress":"3c:61:05:4b:cf:30","hardwareId":"d3de29ad-d775-50a0-87f3-e414102e5834"}], 0][0m
+[0;33mW (14871) systemTasksMonitorStack: Stack Watermark(Comm): 3188[0m
+[0;32mI (14885) BLE_PERIPH: Instrument to App Transaction Write 229/229[0m
+[0;33mW (14886) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (14888) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (14895) BLE_PERIPH: Instrument to App Transaction Read/Notify 229/229[0m
+[0;32mI (14986) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (15469) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;33mW (15470) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (15472) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (15479) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (15559) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (15560) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (15560) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (15566) BLE_PERIPH: Received 16/16[0m
+[0;33mW (15571) commProcessCommandPacket: cmdid is 1073625036[0m
+[0;33mW (15577) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (15582) commProcessCommandPacket: JSON is: [34, true, 6, [], 0][0m
+[0;32mI (15590) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+[0;33mW (15622) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (15624) BLE_PERIPH: Sending Response Packet: [34, true, 6, ["","",14963,26.63,29.31,0,0,0,0.00], 0][0m
+[0;33mW (15631) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (15637) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (15644) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54[0m
+[34, true, 6, ["", "", 14963, 26.63, 29.31, 0, 0, 0, 0.00], 0]
+[0;32mI (15683) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34, true, 6, ["","",14963,26.63,29.31,0,0,0,0.00], 0][0m
+[0;32mI (15739) BLE_PERIPH: Instrument to App Transaction Write 54/54[0m
+[0;33mW (15740) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (15742) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (15749) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54[0m
+[0;32mI (15784) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 29.85 |
+[0;32mI (15841) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;33mW (15841) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (15843) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (15850) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (15874) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (15875) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (15875) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (15881) BLE_PERIPH: Received 16/16[0m
+[0;33mW (15886) commProcessCommandPacket: cmdid is 1073624728[0m
+[0;33mW (15893) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (15897) commProcessCommandPacket: JSON is: [34, true, 7, [], 0][0m
+[0;32mI (15905) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+[0;33mW (15910) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (15921) BLE_PERIPH: Sending Response Packet: [34, true, 7, ["","",15249,26.76,29.31,0,0,0,0.00], 0][0m
+[0;33mW (15930) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (15936) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (15942) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54[0m
+[34, true, 7, ["", "", 15249, 26.76, 29.31, 0, 0, 0, 0.00], 0]
+[0;32mI (16009) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34, true, 7, ["","",15249,26.76,29.31,0,0,0,0.00], 0][0m
+[0;32mI (16043) BLE_PERIPH: Instrument to App Transaction Write 54/54[0m
+[0;33mW (16044) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (16046) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (16053) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54[0m
+[0;32mI (16099) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;33mW (16613) heapMonitor_checkFreeHeapSize: New heap low water mark 114216[0m
+DATAQ:  | liquid = 29.83 |
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.83 |
+DATAQ:  | liquid = 29.82 |
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.85 |
+[0;33mW (22290) exec  : last(1174) Min(1111) Max(39631) Ave(1119) [0m
+[0;33mW (22293) Period: last(4047) Min(3904) Max(41563) Ave(4029) [0m
+[0;33mW (22613) heapMonitor_checkFreeHeapSize: New heap low water mark 114108[0m
+DATAQ:  | liquid = 29.76 |
+DATAQ:  | liquid = 29.85 |
+DATAQ:  | liquid = 29.77 |
+DATAQ:  | liquid = 29.76 |
+DATAQ:  | liquid = 29.82 |
+DATAQ:  | liquid = 29.83 |
+DATAQ:  | liquid = 29.76 |
+DATAQ:  | liquid = 29.79 |
+[0;32mI (30628) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;33mW (30796) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (30896) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (30900) isCupPresent: Cup Not Detected...
+CH 445 reads: 3417   needs to be over 2500
+CH 415 reads: 45   needs to be over 70
+[0m
+DATAQ:  | liquid = 29.79 |
+DATAQ:  | liquid = 29.79 |
+[0;33mW (32374) exec  : last(1133) Min(1110) Max(3429) Ave(1112) [0m
+[0;33mW (32377) Period: last(4047) Min(3952) Max(4184) Ave(4026) [0m
+DATAQ:  | liquid = 29.76 |
+DATAQ:  | liquid = 29.58 |
+DATAQ:  | liquid = 29.61 |
+DATAQ:  | liquid = 29.56 |
+DATAQ:  | liquid = 29.54 |
+DATAQ:  | liquid = 29.52 |
+DATAQ:  | liquid = 29.48 |
+DATAQ:  | liquid = 29.41 |
+DATAQ:  | liquid = 29.38 |
+[0;32mI (41996) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;33mW (41997) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (41999) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (42006) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (42041) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (42042) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (42042) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (42048) BLE_PERIPH: Received 16/16[0m
+[0;33mW (42053) commProcessCommandPacket: cmdid is 1073624728[0m
+[0;33mW (42059) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (42064) commProcessCommandPacket: JSON is: [34, true, 8, [], 0][0m
+[0;32mI (42071) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+DATAQ:  | liquid = 29.31 |
+[0;33mW (42110) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (42111) BLE_PERIPH: Sending Response Packet: [34, true, 8, ["","",41451,28.48,28.35,0,0,0,0.00], 0][0m
+[0;33mW (42119) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (42125) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (42131) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54[0m
+[34, true, 8, ["", "", 41451, 28.48, 28.35, 0, 0, 0, 0.00], 0]
+[0;32mI (42165) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34, true, 8, ["","",41451,28.48,28.35,0,0,0,0.00], 0][0m
+[0;32mI (42188) BLE_PERIPH: Instrument to App Transaction Write 54/54[0m
+[0;33mW (42189) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (42190) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (42197) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54[0m
+[0;32mI (42221) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;33mW (42543) exec  : last(1125) Min(1111) Max(10262) Ave(1113) [0m
+[0;33mW (42545) Period: last(4047) Min(3909) Max(41409) Ave(4031) [0m
+[0;32mI (43125) _handleFrontButtonPress: Pressed[0m
+DATAQ:  | liquid = 29.29 |
+[0;33mW (43196) taskMonitor_task: Task Button Control Task hasn't checked in for 200 ms[0m
+[0;32mI (43295) Latch-Info: Curr: 12, LSENS: 0[0m
+[0;32mI (43352) Latch-Info: Curr: 276, LSENS: 0[0m
+[0;32mI (43409) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (43467) Latch-Info: Curr: 234, LSENS: 0[0m
+[0;32mI (43524) Latch-Info: Curr: 234, LSENS: 0[0m
+[0;32mI (43585) Latch-Info: Curr: 252, LSENS: 0[0m
+[0;32mI (43642) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (43699) Latch-Info: Curr: 250, LSENS: 0[0m
+[0;32mI (43756) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (43787) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+[0;32mI (43821) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (43848) Latch-Info: Curr: 252, LSENS: 0[0m
+[0;32mI (43876) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (43904) Latch-Info: Curr: 246, LSENS: 0[0m
+[0;32mI (43932) Latch-Info: Curr: 240, LSENS: 0[0m
+DATAQ:  | liquid = 29.3 |
+[0;32mI (44465) Latch-Info: Curr: 240, LSENS: 0[0m
+[0;32mI (44493) Latch-Info: Curr: 372, LSENS: 0[0m
+[0;32mI (44521) Latch-Info: Curr: 328, LSENS: 0[0m
+[0;32mI (44549) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (44575) Latch-Info: Curr: 214, LSENS: 0[0m
+[0;32mI (44602) Latch-Info: Curr: 210, LSENS: 0[0m
+[0;32mI (44631) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (44664) Latch-Info: Curr: 220, LSENS: 0[0m
+[0;32mI (44691) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (44718) Latch-Info: Curr: 204, LSENS: 0[0m
+[0;32mI (44745) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (44771) Latch-Info: Curr: 214, LSENS: 0[0m
+[0;32mI (44799) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (44825) Latch-Info: Curr: 246, LSENS: 0[0m
+[0;32mI (44852) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;32mI (44853) Latch-Info: Curr: 222, LSENS: 0[0m
+[0;32mI (44885) Latch-Info: Curr: 236, LSENS: 0[0m
+[0;32mI (44913) Latch-Info: Curr: 238, LSENS: 0[0m
+[0;32mI (44940) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (44966) Latch-Info: Curr: 232, LSENS: 0[0m
+[0;32mI (44994) Latch-Info: Curr: 264, LSENS: 0[0m
+[0;32mI (45021) Latch-Info: Curr: 220, LSENS: 0[0m
+[0;32mI (45048) Latch-Info: Curr: 214, LSENS: 0[0m
+[0;32mI (45074) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (45102) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (45130) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (45157) Latch-Info: Curr: 92, LSENS: 0[0m
+DATAQ:  | liquid = 29.35 |
+[0;32mI (45188) Latch-Info: Curr: 52, LSENS: 0[0m
+[0;32mI (45215) Latch-Info: Curr: 60, LSENS: 0[0m
+[0;32mI (45242) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (45445) Latch-Info: Curr: 58, LSENS: 0[0m
+[0;32mI (45473) Latch-Info: Curr: 388, LSENS: 0[0m
+[0;32mI (45499) Latch-Info: Curr: 314, LSENS: 0[0m
+[0;32mI (45527) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 29.54 |
+DATAQ:  | liquid = 29.37 |
+DATAQ:  | liquid = 29.57 |
+DATAQ:  | liquid = 29.65 |
+[0;32mI (50193) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+DATAQ:  | liquid = 29.71 |
+[0;32mI (50695) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+[0;33mW (50796) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (50896) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (50937) isCupPresent: Cup Not Detected...
+CH 445 reads: 4126   needs to be over 2500
+CH 415 reads: 55   needs to be over 70
+[0m
+DATAQ:  | liquid = 29.55 |
+DATAQ:  | liquid = 29.54 |
+[0;32mI (52346) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;33mW (52347) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (52349) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (52356) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (52379) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (52380) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (52381) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (52387) BLE_PERIPH: Received 16/16[0m
+[0;33mW (52391) commProcessCommandPacket: cmdid is 1073624728[0m
+[0;33mW (52398) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (52402) commProcessCommandPacket: JSON is: [34, true, 9, [], 0][0m
+[0;32mI (52410) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+[0;33mW (52453) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (52454) BLE_PERIPH: Sending Response Packet: [34, true, 9, ["","",51794,28.60,28.22,0,0,0,0.00], 0][0m
+[0;33mW (52462) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (52468) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (52474) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54[0m
+[34, true, 9, ["", "", 51794, 28.60, 28.22, 0, 0, 0, 0.00], 0]
+[0;32mI (52514) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34, true, 9, ["","",51794,28.60,28.22,0,0,0,0.00], 0][0m
+[0;32mI (52559) BLE_PERIPH: Instrument to App Transaction Write 54/54[0m
+[0;33mW (52560) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (52562) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (52569) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54[0m
+[0;32mI (52593) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;33mW (52717) exec  : last(1233) Min(1111) Max(6046) Ave(1114) [0m
+[0;33mW (52720) Period: last(4048) Min(4026) Max(41933) Ave(4031) [0m
+DATAQ:  | liquid = 29.31 |
+[0;32mI (53662) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (53663) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (53664) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (53671) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (53707) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (53708) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (53708) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (53714) BLE_PERIPH: Received 17/17[0m
+[0;33mW (53719) commProcessCommandPacket: cmdid is 1073624728[0m
+[0;33mW (53725) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (53730) commProcessCommandPacket: JSON is: [34, true, 10, [], 0][0m
+[0;32mI (53738) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (53743) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (53754) BLE_PERIPH: Sending Response Packet: [34, true, 10, ["","",53082,28.60,28.28,0,0,0,0.00], 0][0m
+[0;33mW (53763) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (53769) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (53775) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[34, true, 10, ["", "", 53082, 28.60, 28.28, 0, 0, 0, 0.00], 0]
+[0;32mI (53808) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 10, ["","",53082,28.60,28.28,0,0,0,0.00], 0][0m
+[0;32mI (53853) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;33mW (53854) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (53856) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (53863) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (53887) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 29.33 |
+[0;32mI (54562) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;33mW (54563) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (54564) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (54571) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (54595) BLE_PERIPH: App to Instrument Data[0m
+[0;33mW (54596) blePeriphInterfaceNotifyCharValue: app->inst start[0m
+[0;33mW (54597) blePeriphInterfaceNotifyCharValue: app->inst finish[0m
+[0;32mI (54603) BLE_PERIPH: Received 17/17[0m
+[0;33mW (54607) commProcessCommandPacket: cmdid is 1073625080[0m
+[0;33mW (54614) commProcessCommandPacket: Subscribe is 1[0m
+[0;33mW (54618) commProcessCommandPacket: JSON is: [34, true, 11, [], 0][0m
+[0;32mI (54626) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (54639) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (54642) BLE_PERIPH: Sending Response Packet: [34, true, 11, ["","",53980,28.60,28.16,0,0,0,0.00], 0][0m
+[0;33mW (54651) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (54658) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (54664) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[34, true, 11, ["", "", 53980, 28.60, 28.16, 0, 0, 0, 0.00], 0]
+[0;32mI (54697) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 11, ["","",53980,28.60,28.16,0,0,0,0.00], 0][0m
+[0;32mI (54731) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;33mW (54732) blePeriphInterfaceNotifyCharValue: Inst->APP start[0m
+[0;33mW (54733) blePeriphInterfaceNotifyCharValue: Inst->APP finish[0m
+[0;32mI (54740) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (54764) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 29.31 |
+DATAQ:  | liquid = 29.26 |
+DATAQ:  | liquid = 29.28 |
+DATAQ:  | liquid = 29.2 |
+DATAQ:  | liquid = 29.13 |
+DATAQ:  | liquid = 29.18 |
+DATAQ:  | liquid = 29.2 |
+DATAQ:  | liquid = 29.17 |
+[0;33mW (62967) exec  : last(1201) Min(1107) Max(40004) Ave(1117) [0m
+[0;33mW (62970) Period: last(4051) Min(3940) Max(40709) Ave(4029) [0m
+[0;33mW (63233) systemTasksMonitorStack: Stack Watermark(Serial Rx): 1328[0m
+DATAQ:  | liquid = 29.1 |
+DATAQ:  | liquid = 29.14 |
+[0;33mW (64613) heapMonitor_checkFreeHeapSize: New heap low water mark 114012[0m
+DATAQ:  | liquid = 29.1 |
+DATAQ:  | liquid = 29.13 |

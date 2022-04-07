@@ -1,0 +1,1341 @@
+[0;32mI (203955) _stage1Calculate: Cooling[0m
+[0;32mI (206455) _stage1Calculate: Cooling[0m
+[0;32mI (208955) _stage1Calculate: Cooling[0m
+[0;32mI (211455) _stage1Calculate: Cooling[0m
+[0;32mI (213955) _stage1Calculate: Cooling[0m
+[0;32mI (221455) _stage1Calculate: Cooling[0m
+[0;32mI (223955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.33 |
+[0;32mI (226455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.2 |
+DATAQ:  | liquid = 21.29 |
+DATAQ:  | liquid = 21.36 |
+[0;32mI (228955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.26 |
+DATAQ:  | liquid = 21.33 |
+[0;32mI (231455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.03 |
+DATAQ:  | liquid = 21.25 |
+DATAQ:  | liquid = 21.34 |
+[0;32mI (233955) _stage1Calculate: Cooling[0m
+[0;33mW (234021) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (234107) isCupPresent: Cup Detected![0m
+[0;32mI (234108) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;31mE (234109) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (234115) systemRequestStateChange: Notify exit state change[0m
+[0;33mW (234121) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+DATAQ:  | liquid = 21.24 |
+DATAQ:  | liquid = 21.3 |
+[0;32mI (236455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.26 |
+DATAQ:  | liquid = 21.21 |
+DATAQ:  | liquid = 21.23 |
+[0;32mI (238953) _stage1Calculate: Cooling[0m
+[0;32mI (239157) _handleFrontButtonPress: Pressed[0m
+[0;33mW (239229) taskMonitor_task: Task Button Control Task hasn't checked in for 200 ms[0m
+[0;32mI (239290) systemRequestStateChange: System State Transition READY -> IDLE[0m
+[0;32mI (239320) Latch-Info: Curr: 26, LSENS: 0[0m
+[0;31mE (239320) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (239321) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (239375) Latch-Info: Curr: 808, LSENS: 0[0m
+[0;32mI (239430) Latch-Info: Curr: 254, LSENS: 0[0m
+[0;32mI (239487) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (239542) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (239597) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (239652) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (239707) Latch-Info: Curr: 176, LSENS: 0[0m
+[0;32mI (239762) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (239817) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (239872) Latch-Info: Curr: 220, LSENS: 0[0m
+DATAQ:  | liquid = 21.4 |
+[0;32mI (239927) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (239982) Latch-Info: Curr: 262, LSENS: 0[0m
+[0;32mI (240038) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (240064) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (240089) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (240114) Latch-Info: Curr: 222, LSENS: 0[0m
+[0;32mI (240139) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (240665) Latch-Info: Curr: 238, LSENS: 0[0m
+[0;32mI (240691) Latch-Info: Curr: 996, LSENS: 0[0m
+[0;32mI (240717) Latch-Info: Curr: 960, LSENS: 0[0m
+[0;32mI (240742) Latch-Info: Curr: 274, LSENS: 0[0m
+[0;32mI (240767) Latch-Info: Curr: 276, LSENS: 0[0m
+[0;32mI (240792) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (240817) Latch-Info: Curr: 190, LSENS: 0[0m
+[0;32mI (240842) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (240867) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (240892) Latch-Info: Curr: 162, LSENS: 0[0m
+DATAQ:  | liquid = 21.25 |
+[0;32mI (240917) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (240942) Latch-Info: Curr: 198, LSENS: 0[0m
+[0;32mI (240968) Latch-Info: Curr: 214, LSENS: 0[0m
+[0;32mI (240993) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (241018) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (241043) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (241068) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (241093) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (241118) Latch-Info: Curr: 206, LSENS: 0[0m
+[0;32mI (241143) Latch-Info: Curr: 168, LSENS: 0[0m
+[0;32mI (241168) Latch-Info: Curr: 198, LSENS: 0[0m
+[0;32mI (241193) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (241219) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (241244) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (241269) Latch-Info: Curr: 142, LSENS: 0[0m
+[0;32mI (241294) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (241320) Latch-Info: Curr: 178, LSENS: 0[0m
+[0;32mI (241345) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (241370) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (241395) Latch-Info: Curr: 192, LSENS: 0[0m
+[0;32mI (241420) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (241445) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (241455) _stage1Calculate: Cooling[0m
+[0;32mI (241470) Latch-Info: Curr: 132, LSENS: 0[0m
+[0;32mI (241495) Latch-Info: Curr: 152, LSENS: 0[0m
+[0;32mI (241520) Latch-Info: Curr: 150, LSENS: 0[0m
+[0;32mI (241545) Latch-Info: Curr: 130, LSENS: 0[0m
+[0;32mI (241571) Latch-Info: Curr: 146, LSENS: 0[0m
+[0;32mI (241596) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (241621) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (241646) Latch-Info: Curr: 104, LSENS: 0[0m
+[0;32mI (241671) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (241874) Latch-Info: Curr: 114, LSENS: 0[0m
+[0;32mI (241899) Latch-Info: Curr: 1000, LSENS: 0[0m
+DATAQ:  | liquid = 21.22 |
+[0;32mI (241924) Latch-Info: Curr: 910, LSENS: 0[0m
+[0;32mI (241949) _readLatchSwitches: New Latch-Home Value: 0[0m
+DATAQ:  | liquid = 21.51 |
+[0;32mI (243336) _handleBluetoothButtonPress: Pressed[0m
+[0;32mI (243336) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING[0m
+DATAQ:  | liquid = 21.19 |
+[0;32mI (243955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.2 |
+DATAQ:  | liquid = 21.28 |
+[0;32mI (246455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.34 |
+DATAQ:  | liquid = 21.35 |
+[0;32mI (248955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.26 |
+DATAQ:  | liquid = 21.33 |
+DATAQ:  | liquid = 21.31 |
+[0;32mI (250973) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONNECT[0m
+[0;31mE (250975) connectCb: Connected CB[0m
+[0;32mI (250975) bluetoothRequestStateChange: Bluetooth State Transition PAIRING -> CONNECTED[0m
+[0;32mI (251156) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (251157) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (251162) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (251455) _stage1Calculate: Cooling[0m
+[0;32mI (251497) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+[0;32mI (251591) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (251592) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (251597) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (251681) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+[0;32mI (251887) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (251888) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (251893) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (251925) mtuCb: MTU updated to 512[0m
+[0;32mI (251926) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_MTU[0m
+[0;32mI (251954) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 21.22 |
+DATAQ:  | liquid = 21.29 |
+[0;32mI (253009) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (253155) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (253157) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (253189) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (253189) BLE_PERIPH: Received 17/17[0m
+[0;32mI (253193) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (253240) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (253242) BLE_PERIPH: Sending Response Packet: [16, true, 2, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[16, true, 2, [{
+		"firmwareVersion":	"0.3.818",
+		"gitCommit":	"e18a5573e840acc8d29670a32074574db2b4c35c-dirty",
+		"buildTimeStamp":	"2022-03-31T22:26:24Z",
+		"macAddress":	"7c:9e:bd:e1:41:44",
+		"hardwareId":	"593a8f0f-2267-5d03-b895-ebdb4f8b0064"
+	}], 0]
+[0;32mI (253265) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/235[0m
+[0;32mI (253312) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=235 mtu=510, totalSize=235, currentIndex=0): [16, true, 2, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[0;33mW (253337) systemTasksMonitorStack: Stack Watermark(Comm): 8396[0m
+[0;32mI (253369) BLE_PERIPH: Instrument to App Transaction Write 235/235[0m
+[0;32mI (253371) BLE_PERIPH: Instrument to App Transaction Read/Notify 235/235[0m
+[0;32mI (253391) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (253425) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (253427) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (253470) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (253471) BLE_PERIPH: Received 17/17[0m
+[0;32mI (253474) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (253491) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (253492) BLE_PERIPH: Sending Response Packet: [16, true, 3, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[16, true, 3, [{
+		"firmwareVersion":	"0.3.818",
+		"gitCommit":	"e18a5573e840acc8d29670a32074574db2b4c35c-dirty",
+		"buildTimeStamp":	"2022-03-31T22:26:24Z",
+		"macAddress":	"7c:9e:bd:e1:41:44",
+		"hardwareId":	"593a8f0f-2267-5d03-b895-ebdb4f8b0064"
+	}], 0]
+[0;32mI (253516) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/235[0m
+[0;32mI (253571) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=235 mtu=510, totalSize=235, currentIndex=0): [16, true, 3, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[0;32mI (253628) BLE_PERIPH: Instrument to App Transaction Write 235/235[0m
+[0;32mI (253629) BLE_PERIPH: Instrument to App Transaction Read/Notify 235/235[0m
+[0;33mW (253640) heapMonitor_checkFreeHeapSize: New heap low water mark 106928[0m
+[0;32mI (253650) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (253684) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (253686) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (253706) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (253707) BLE_PERIPH: Received 17/17[0m
+[0;32mI (253710) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (253740) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (253741) BLE_PERIPH: Sending Response Packet: [16, true, 4, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[16, true, 4, [{
+		"firmwareVersion":	"0.3.818",
+		"gitCommit":	"e18a5573e840acc8d29670a32074574db2b4c35c-dirty",
+		"buildTimeStamp":	"2022-03-31T22:26:24Z",
+		"macAddress":	"7c:9e:bd:e1:41:44",
+		"hardwareId":	"593a8f0f-2267-5d03-b895-ebdb4f8b0064"
+	}], 0]
+[0;32mI (253765) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/235[0m
+[0;32mI (253819) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=235 mtu=510, totalSize=235, currentIndex=0): [16, true, 4, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[0;32mI (253875) BLE_PERIPH: Instrument to App Transaction Write 235/235[0m
+[0;32mI (253877) BLE_PERIPH: Instrument to App Transaction Read/Notify 235/235[0m
+[0;32mI (253920) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (253954) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (253955) _stage1Calculate: Cooling[0m
+[0;32mI (253956) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+DATAQ:  | liquid = 21.27 |
+[0;32mI (253987) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (253988) BLE_PERIPH: Received 17/17[0m
+[0;32mI (253991) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (254038) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (254039) BLE_PERIPH: Sending Response Packet: [16, true, 5, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[16, true, 5, [{
+		"firmwareVersion":	"0.3.818",
+		"gitCommit":	"e18a5573e840acc8d29670a32074574db2b4c35c-dirty",
+		"buildTimeStamp":	"2022-03-31T22:26:24Z",
+		"macAddress":	"7c:9e:bd:e1:41:44",
+		"hardwareId":	"593a8f0f-2267-5d03-b895-ebdb4f8b0064"
+	}], 0]
+[0;32mI (254063) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/235[0m
+[0;32mI (254145) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=235 mtu=510, totalSize=235, currentIndex=0): [16, true, 5, [{"firmwareVersion":"0.3.818","gitCommit":"e18a5573e840acc8d29670a32074574db2b4c35c-dirty","buildTimeStamp":"2022-03-31T22:26:24Z","macAddress":"7c:9e:bd:e1:41:44","hardwareId":"593a8f0f-2267-5d03-b895-ebdb4f8b0064"}], 0][0m
+[0;32mI (254201) BLE_PERIPH: Instrument to App Transaction Write 235/235[0m
+[0;32mI (254203) BLE_PERIPH: Instrument to App Transaction Read/Notify 235/235[0m
+[0;32mI (254235) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 21.26 |
+[0;32mI (255090) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;32mI (255092) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (255112) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (255113) BLE_PERIPH: Received 16/16[0m
+[0;32mI (255116) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+[0;33mW (255138) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (255140) BLE_PERIPH: Sending Response Packet: [34, true, 6, ["","",254477,21.97,22.52,0,0,0,0.00], 0][0m
+[34, true, 6, ["", "", 254477, 21.97, 22.52, 0, 0, 0, 0.00], 0]
+[0;32mI (255148) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[0;32mI (255191) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 6, ["","",254477,21.97,22.52,0,0,0,0.00], 0][0m
+[0;33mW (255208) systemTasksMonitorStack: Stack Watermark(Comm): 8124[0m
+[0;32mI (255225) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;32mI (255227) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (255248) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (255270) BLE_PERIPH: App to Instrument Transaction Write 0/16[0m
+[0;32mI (255272) BLE_PERIPH: App to Instrument Transaction Notify 0/16[0m
+[0;32mI (255303) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (255304) BLE_PERIPH: Received 16/16[0m
+[0;32mI (255307) BLE_PERIPH: App to Instrument Transaction Notify 16/16[0m
+[0;33mW (255310) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (255320) BLE_PERIPH: Sending Response Packet: [34, true, 7, ["","",254649,21.97,22.52,0,0,0,0.00], 0][0m
+[34, true, 7, ["", "", 254649, 21.97, 22.52, 0, 0, 0, 0.00], 0]
+[0;32mI (255329) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[0;32mI (255360) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 7, ["","",254649,21.97,22.52,0,0,0,0.00], 0][0m
+[0;32mI (255383) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;32mI (255385) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (255405) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 21.23 |
+[0;32mI (256455) _stage1Calculate: Cooling[0m
+[0;33mW (256641) heapMonitor_checkFreeHeapSize: New heap low water mark 106812[0m
+DATAQ:  | liquid = 21.34 |
+DATAQ:  | liquid = 21.36 |
+[0;32mI (258954) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.33 |
+[0;33mW (259642) heapMonitor_checkFreeHeapSize: New heap low water mark 106720[0m
+DATAQ:  | liquid = 21.2 |
+DATAQ:  | liquid = 21.21 |
+[0;32mI (261455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.26 |
+DATAQ:  | liquid = 21.29 |
+[0;32mI (263955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.29 |
+DATAQ:  | liquid = 21.33 |
+DATAQ:  | liquid = 21.29 |
+[0;32mI (266455) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.24 |
+DATAQ:  | liquid = 21.29 |
+[0;32mI (268955) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.35 |
+DATAQ:  | liquid = 21.29 |
+DATAQ:  | liquid = 21.23 |
+[0;32mI (271455) _stage1Calculate: Cooling[0m
+[0;33mW (271629) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (271729) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (271763) isCupPresent: Cup Detected![0m
+[0;32mI (271763) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;31mE (271764) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (271770) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (271776) BLE_PERIPH: Notifying[0m
+[0;33mW (271780) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (271786) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (271841) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (271842) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (271885) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (271886) BLE_PERIPH: Received 17/17[0m
+[0;32mI (271889) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (271936) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (271938) BLE_PERIPH: Sending Response Packet: [34, true, 9, ["","",271275,22.03,22.52,2,0,0,0.00], 0][0m
+[0;32mI (271946) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[34, true, 9, ["", "", 271275, 22.03, 22.52, 2, 0, 0, 0.00], 0]
+[0;32mI (271976) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 9, ["","",271275,22.03,22.52,2,0,0,0.00], 0][0m
+[0;32mI (272021) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;32mI (272022) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (272043) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (272088) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (272090) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+DATAQ:  | liquid = 21.35 |
+[0;32mI (272144) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (272145) BLE_PERIPH: Received 17/17[0m
+[0;32mI (272148) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (272159) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (272161) BLE_PERIPH: Sending Response Packet: [34, true, 8, ["","",271498,21.97,22.59,2,0,0,0.00], 0][0m
+[0;32mI (272170) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/55[0m
+[34, true, 8, ["", "", 271498, 21.97, 22.59, 2, 0, 0, 0.00], 0]
+[0;32mI (272201) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=55 mtu=510, totalSize=55, currentIndex=0): [34, true, 8, ["","",271498,21.97,22.59,2,0,0,0.00], 0][0m
+[0;32mI (272257) BLE_PERIPH: Instrument to App Transaction Write 55/55[0m
+[0;32mI (272259) BLE_PERIPH: Instrument to App Transaction Read/Notify 55/55[0m
+[0;32mI (272280) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 21.32 |
+[0;32mI (273528) BLE_PERIPH: App to Instrument Transaction Write 0/360[0m
+[0;32mI (273530) BLE_PERIPH: App to Instrument Transaction Notify 0/360[0m
+[0;32mI (273574) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (273575) BLE_PERIPH: Received 360/360[0m
+[0;32mI (273580) BLE_PERIPH: App to Instrument Transaction Notify 360/360[0m
+[0;32mI (273585) ExperimentParam: Parsing experiment parameters:
+[{
+		"doPcr":	false,
+		"doMelt":	false,
+		"doRtSteps":	false,
+		"doSamplePrep":	true,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	90,
+				"holdSeconds":	400
+			}],
+		"doContinuousAcquisition":	false,
+		"samplePrepPtcSealTimeMs":	30000,
+		"samplePrepPcrChamberPreheatTempC":	45,
+		"continuousAcquisitionSampleDelayMs":	1000
+	}][0m
+[0;32mI (273624) ExperimentParam: Found parameter doContinuousAcquisition: 0[0m
+[0;32mI (273630) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000[0m
+[0;32mI (273639) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (273647) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (273657) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (273664) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 1[0m
+[0;32mI (273674) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (273684) ExperimentParam: Could not find parameter temperaturecaptureDelayMs, using default value: 1500[0m
+[0;32mI (273694) ExperimentParam: Found parameter doSamplePrep: 1[0m
+[0;32mI (273701) ExperimentParam: Found parameter tempC: 90.00[0m
+[0;32mI (273708) ExperimentParam: Found parameter holdSeconds: 400.00[0m
+[0;32mI (273713) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (273723) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (273733) ProtocolParam: Found parameter samplePrepTempSteps: {90.00C,400.00s,1000.00C/s (?capture=0)},[0m
+[0;32mI (273743) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 45.00[0m
+[0;32mI (273751) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (273758) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (273765) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000[0m
+[0;32mI (273772) ExperimentParam: Found parameter doRtSteps: 0[0m
+[0;32mI (273778) ExperimentParam: Found parameter doPcr: 0[0m
+[0;32mI (273784) ExperimentParam: Found parameter doMelt: 0[0m
+[0;33mW (273790) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (273800) BLE_PERIPH: Sending Response Packet: [32, true, 10, [], 0][0m
+[32, true, 10, [], 0]
+[0;32mI (273808) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (273832) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [32, true, 10, [], 0][0m
+[0;32mI (273855) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (273856) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;33mW (273858) systemTasksMonitorStack: Stack Watermark(Comm): 6988[0m
+[0;32mI (273877) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (273911) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (273913) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (273933) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (273934) BLE_PERIPH: Received 17/17[0m
+[0;32mI (273937) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;32mI (273953) _stage1Calculate: Cooling[0m
+[0;33mW (273966) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (273968) BLE_PERIPH: Sending Response Packet: [34, true, 11, ["","",273305,21.97,22.59,2,0,0,0.00], 0][0m
+[0;32mI (273976) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/56[0m
+[34, true, 11, ["", "", 273305, 21.97, 22.59, 2, 0, 0, 0.00], 0]
+[0;32mI (274000) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=56 mtu=510, totalSize=56, currentIndex=0): [34, true, 11, ["","",273305,21.97,22.59,2,0,0,0.00], 0][0m
+[0;32mI (274023) BLE_PERIPH: Instrument to App Transaction Write 56/56[0m
+[0;32mI (274025) BLE_PERIPH: Instrument to App Transaction Read/Notify 56/56[0m
+[0;32mI (274046) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (274079) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (274081) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+DATAQ:  | liquid = 21.18 |
+[0;32mI (274124) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (274125) BLE_PERIPH: Received 18/18[0m
+[0;32mI (274128) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (274142) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (274145) BLE_PERIPH: Sending Response Packet: [33, true, 12, [{"doContinuousAcquisition":false,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":90.00,"holdSeconds":400.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquistitionDelayMs":800.00,"meltAcquistitionsPerC":5,"meltRampRateDegCPerSecond":0.25}], 0][0m
+[0;32mI (274258) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1226[0m
+[33, true, 12, [{
+		"doContinuousAcquisition":	false,
+		"continuousAcquisitionSampleDelayMs":	1000,
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	1,
+		"excitationOutputPercentage":	100.00,
+		"doSamplePrep":	true,
+		"samplePrepTempSteps":	[{
+				"tempC":	90.00,
+				"holdSeconds":	400.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"samplePrepPcrChamberPreheatTempC":	45.00,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	30000,
+		"doRtSteps":	false,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	45.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"doPcr":	false,
+		"pcrCycleCount":	45,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	60.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	1
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"doMelt":	false,
+		"meltStartHoldTimeSeconds":	15.00,
+		"meltStartTemp":	55.00,
+		"meltStartCaptureTemp":	60.00,
+		"meltFinishTemp":	100.00,
+		"meltAcquistitionDelayMs":	800.00,
+		"meltAcquistitionsPerC":	5,
+		"meltRampRateDegCPerSecond":	0.25
+	}], 0]
+[0;32mI (274282) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1226, currentIndex=0): [33, true, 12, [{"doContinuousAcquisition":false,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":1,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":90.00,"holdSeconds":400.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempStep[0m
+[0;32mI (274507) BLE_PERIPH: Instrument to App Transaction Write 510/1226[0m
+[0;32mI (274509) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1226[0m
+[0;32mI (274540) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1226, currentIndex=510): s":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false[0m
+[0;32mI (274631) BLE_PERIPH: Instrument to App Transaction Write 1020/1226[0m
+[0;32mI (274632) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1226[0m
+[0;32mI (274664) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=206 mtu=510, totalSize=1226, currentIndex=1020): ,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquistitionDelayMs":800.00,"meltAcquistitionsPerC":5,"meltRampRateDegCPerSecond":0.25}], 0][0m
+[0;32mI (274732) BLE_PERIPH: Instrument to App Transaction Write 1226/1226[0m
+[0;32mI (274734) BLE_PERIPH: Instrument to App Transaction Read/Notify 1226/1226[0m
+[0;32mI (274754) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 21.32 |
+[0;32mI (275227) BLE_PERIPH: App to Instrument Transaction Write 0/83[0m
+[0;32mI (275229) BLE_PERIPH: App to Instrument Transaction Notify 0/83[0m
+[0;32mI (275272) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (275273) BLE_PERIPH: Received 83/83[0m
+[0;32mI (275276) BLE_PERIPH: App to Instrument Transaction Notify 83/83[0m
+[0;32mI (275303) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (275304) experimentStateStartEnter: Experiment starting[0m
+[0;33mW (275307) FILE: Failed to delete file[0m
+[0;32mI (275312) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (275318) _sendFileWriterDirective: Messages in Queue: 2[0m
+[0;33mW (275325) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (275333) BLE_PERIPH: Sending Response Packet: [35, true, 13, [], 0][0m
+[35, true, 13, [], 0]
+[0;32mI (275341) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (275384) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [35, true, 13, [], 0][0m
+[0;32mI (275403) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;32mI (275403) _resetThermalControlState: RESET Peltier 0 control state[0m
+[0;32mI (275407) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 90.0[0m
+[0;32mI (275414) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;31mE (275419) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (275425) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (275433) BLE_PERIPH: Notifying[0m
+[0;33mW (275437) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (275443) BLE_PERIPH: Notify Command Id = 34[0m
+[0;31mE (275448) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (275453) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;33mW (275461) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (275466) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (275475) BLE_PERIPH: Notifying[0m
+[0;33mW (275478) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (275484) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (275500) TC: thermalControl-0 = 21.9, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 50, target = 90.0, expectedTempC = 0.0, actualTecRampRate = -0.2, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=69.6, i=0.5, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (275521) systemTasksMonitorStack: Stack Watermark(Experiment): 2244[0m
+[0;32mI (275542) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (275579) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (275583) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (275592) fileWriterProcessDirective: Overwriting Results File. Writing: {"timestamp":"2022-04-01T17:28:40.831Z","consumableId":"086165b2-f0d3-42af-8dbf-e80478b8a0f8"[0m
+[0;32mI (275601) TC: thermalControl-0 = 22.0, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = -0.0, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=68.5, i=1.4, d=10.1, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (275628) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (275632) BLE_PERIPH: Received 18/18[0m
+[0;32mI (275640) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (275643) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (275655) BLE_PERIPH: Sending Response Packet: [34, true, 15, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",335,22.03,22.52,3,2,33,0.00], 0][0m
+[0;32mI (275669) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114[0m
+[34, true, 15, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 335, 22.03, 22.52, 3, 2, 33, 0.00], 0]
+[0;32mI (275700) TC: thermalControl-0 = 22.3, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.1, targetTecRampRate = 11.4, output = 45.9, priorTargetTecRampRate = 11.4, p=43.8, i=2.1, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (275718) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34, true, 15, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",335,22.03,22.52,3,2,33,0.00], 0][0m
+[0;32mI (275738) fileWriterProcessDirective: begin Comma: 1  Opened Header: "experimentData":[[0m
+[0;32mI (275767) BLE_PERIPH: Instrument to App Transaction Write 114/114[0m
+[0;32mI (275769) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114[0m
+[0;32mI (275799) TC: thermalControl-0 = 22.7, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.4, targetTecRampRate = 11.4, output = 93.5, priorTargetTecRampRate = 11.4, p=35.8, i=2.6, d=44.8, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (275817) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (275857) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (275859) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (275890) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (275891) BLE_PERIPH: Received 18/18[0m
+[0;32mI (275894) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (275900) TC: thermalControl-0 = 23.4, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.6, targetTecRampRate = 11.4, output = 53.4, priorTargetTecRampRate = 11.4, p=29.0, i=3.0, d=78.6, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (275937) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (275939) BLE_PERIPH: Sending Response Packet: [34, true, 14, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",629,23.57,22.52,3,2,33,0.00], 0][0m
+[0;32mI (275954) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114[0m
+[34, true, 14, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 629, 23.57, 22.52, 3, 2, 33, 0.00], 0]
+[0;32mI (275980) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34, true, 14, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",629,23.57,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276001) TC: thermalControl-0 = 24.1, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.3, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=18.4, i=3.3, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276025) BLE_PERIPH: Instrument to App Transaction Write 114/114[0m
+[0;32mI (276027) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114[0m
+[0;32mI (276059) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (276100) TC: thermalControl-0 = 24.9, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.2, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=25.4, i=3.6, d=-89.1, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276138) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (276140) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+DATAQ:  | liquid = 21.31 |
+[0;32mI (276183) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (276184) BLE_PERIPH: Received 18/18[0m
+[0;32mI (276187) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (276200) TC: thermalControl-0 = 25.8, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.8, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=15.7, i=3.9, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (276223) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (276229) BLE_PERIPH: Sending Response Packet: [34, true, 17, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",915,25.88,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276243) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114[0m
+[34, true, 17, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 915, 25.88, 22.52, 3, 2, 33, 0.00], 0]
+[0;32mI (276284) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34, true, 17, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",915,25.88,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276310) TC: thermalControl-0 = 26.6, State = 1, modeled = 7.2, controlledRampTarget = 22.0, timeout = 850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.5, targetTecRampRate = 11.4, output = 94.7, priorTargetTecRampRate = 11.4, p=17.4, i=4.2, d=26.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276329) BLE_PERIPH: Instrument to App Transaction Write 114/114[0m
+[0;32mI (276335) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114[0m
+[0;32mI (276374) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (276410) TC: thermalControl-0 = 27.6, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 10.3, targetTecRampRate = 11.4, output = 94.7, priorTargetTecRampRate = 11.4, p=6.7, i=4.2, d=-15.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276442) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (276444) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (276475) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (276476) BLE_PERIPH: Received 18/18[0m
+[0;32mI (276479) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (276482) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (276492) BLE_PERIPH: Sending Response Packet: [34, true, 16, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",1174,28.09,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276506) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 16, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 1174, 28.09, 22.52, 3, 2, 33, 0.00], 0]
+[0;32mI (276513) TC: thermalControl-0 = 28.3, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.0, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=20.5, i=4.5, d=-30.8, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276552) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 16, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",1174,28.09,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276575) _stage1Calculate: Cooling[0m
+[0;32mI (276599) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (276601) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (276625) TC: thermalControl-0 = 29.4, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 9.6, targetTecRampRate = 11.4, output = 83.2, priorTargetTecRampRate = 11.4, p=10.6, i=4.6, d=32.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276667) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (276725) TC: thermalControl-0 = 30.5, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 10.6, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=4.6, i=4.8, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276743) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (276750) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (276779) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (276780) BLE_PERIPH: Received 17/17[0m
+[0;32mI (276783) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (276803) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (276805) BLE_PERIPH: Sending Response Packet: [34, true, 18, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",1495,31.07,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276818) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 18, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 1495, 31.07, 22.52, 3, 2, 33, 0.00], 0]
+[0;32mI (276836) TC: thermalControl-0 = 31.4, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.5, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=23.4, i=5.0, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276863) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 18, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",1495,31.07,22.52,3,2,33,0.00], 0][0m
+[0;32mI (276886) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (276915) _writeInnerJsonString: begin comma: 0   Writing: [0,1579,31.73] [0m
+[0;32mI (276916) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (276920) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (276936) TC: thermalControl-0 = 32.3, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.3, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=18.8, i=5.2, d=-84.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (276959) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (277035) TC: thermalControl-0 = 33.2, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 9.7, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=10.5, i=5.3, d=12.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (277108) systemTasksMonitorStack: Stack Watermark(File Writer): 2300[0m
+[0;32mI (277135) TC: thermalControl-0 = 34.0, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 9.8, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=9.7, i=5.6, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 21.34 |
+[0;32mI (277235) TC: thermalControl-0 = 34.8, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.1, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=26.0, i=5.9, d=-81.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277335) TC: thermalControl-0 = 35.7, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.5, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=17.3, i=6.1, d=-86.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277435) TC: thermalControl-0 = 36.6, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 1950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.7, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=16.4, i=6.3, d=1.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277535) TC: thermalControl-0 = 37.4, State = 1, modeled = 7.3, controlledRampTarget = 22.0, timeout = 2050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.8, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=15.8, i=6.6, d=90.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277635) TC: thermalControl-0 = 38.2, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.9, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=15.0, i=6.8, d=4.1, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (277653) heapMonitor_checkFreeHeapSize: New heap low water mark 106028[0m
+[0;32mI (277735) TC: thermalControl-0 = 39.0, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.9, targetTecRampRate = 11.4, output = 50.0, priorTargetTecRampRate = 11.4, p=14.7, i=7.0, d=89.8, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277835) TC: thermalControl-0 = 39.8, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.6, targetTecRampRate = 11.4, output = 100.0, priorTargetTecRampRate = 11.4, p=22.8, i=7.3, d=-89.6, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (277935) TC: thermalControl-0 = 40.8, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.7, targetTecRampRate = 11.3, output = 100.0, priorTargetTecRampRate = 11.3, p=21.8, i=7.4, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278035) TC: thermalControl-0 = 41.6, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 9.4, targetTecRampRate = 11.1, output = 50.0, priorTargetTecRampRate = 11.2, p=11.0, i=7.6, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278135) TC: thermalControl-0 = 42.4, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.8, targetTecRampRate = 11.0, output = 100.0, priorTargetTecRampRate = 11.1, p=19.5, i=7.9, d=1.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 21.36 |
+[0;32mI (278235) TC: thermalControl-0 = 43.1, State = 1, modeled = 7.4, controlledRampTarget = 22.0, timeout = 2750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.0, targetTecRampRate = 10.9, output = 50.0, priorTargetTecRampRate = 11.0, p=17.7, i=8.2, d=99.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278335) TC: thermalControl-0 = 44.0, State = 1, modeled = 7.5, controlledRampTarget = 22.0, timeout = 2850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.2, targetTecRampRate = 10.8, output = 65.8, priorTargetTecRampRate = 10.8, p=16.0, i=8.4, d=-84.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278364) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (278435) TC: thermalControl-0 = 44.6, State = 1, modeled = 7.5, controlledRampTarget = 22.0, timeout = 2950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.6, targetTecRampRate = 10.7, output = 100.0, priorTargetTecRampRate = 10.7, p=24.7, i=8.7, d=5.7, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278514) _writeInnerJsonString: begin comma: 1   Writing: [0,3057,43.97] [0m
+[0;32mI (278536) TC: thermalControl-0 = 45.3, State = 1, modeled = 7.5, controlledRampTarget = 22.0, timeout = 3050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.0, targetTecRampRate = 10.5, output = 100.0, priorTargetTecRampRate = 10.6, p=33.9, i=9.1, d=-95.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278635) TC: thermalControl-0 = 46.0, State = 1, modeled = 7.5, controlledRampTarget = 22.0, timeout = 3150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.8, targetTecRampRate = 10.4, output = 100.0, priorTargetTecRampRate = 10.5, p=22.5, i=9.4, d=4.6, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278735) TC: thermalControl-0 = 46.7, State = 1, modeled = 7.5, controlledRampTarget = 22.0, timeout = 3250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.8, targetTecRampRate = 10.3, output = 100.0, priorTargetTecRampRate = 10.4, p=21.3, i=9.7, d=6.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278835) TC: thermalControl-0 = 47.4, State = 1, modeled = 7.6, controlledRampTarget = 22.0, timeout = 3350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.6, targetTecRampRate = 10.2, output = 50.0, priorTargetTecRampRate = 10.3, p=10.1, i=9.9, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (278935) TC: thermalControl-0 = 48.1, State = 1, modeled = 7.6, controlledRampTarget = 22.0, timeout = 3450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.0, targetTecRampRate = 10.1, output = 100.0, priorTargetTecRampRate = 10.2, p=18.8, i=10.1, d=4.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279035) TC: thermalControl-0 = 48.8, State = 1, modeled = 7.6, controlledRampTarget = 22.0, timeout = 3550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.1, targetTecRampRate = 10.0, output = 100.0, priorTargetTecRampRate = 10.1, p=17.5, i=10.4, d=9.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279085) _stage1Calculate: Cooling[0m
+[0;32mI (279135) TC: thermalControl-0 = 49.7, State = 1, modeled = 7.6, controlledRampTarget = 22.0, timeout = 3650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.3, targetTecRampRate = 9.9, output = 100.0, priorTargetTecRampRate = 9.9, p=15.9, i=10.6, d=10.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 21.21 |
+[0;32mI (279235) TC: thermalControl-0 = 50.5, State = 1, modeled = 7.6, controlledRampTarget = 22.0, timeout = 3750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.5, targetTecRampRate = 9.7, output = 100.0, priorTargetTecRampRate = 9.8, p=25.8, i=10.7, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279335) TC: thermalControl-0 = 51.4, State = 1, modeled = 7.7, controlledRampTarget = 22.0, timeout = 3850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.5, targetTecRampRate = 9.6, output = 100.0, priorTargetTecRampRate = 9.7, p=12.8, i=10.7, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279435) TC: thermalControl-0 = 52.0, State = 1, modeled = 7.7, controlledRampTarget = 22.0, timeout = 3950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.6, targetTecRampRate = 9.5, output = 50.0, priorTargetTecRampRate = 9.6, p=11.6, i=11.0, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279535) TC: thermalControl-0 = 52.6, State = 1, modeled = 7.7, controlledRampTarget = 22.0, timeout = 4050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.9, targetTecRampRate = 9.5, output = 100.0, priorTargetTecRampRate = 9.5, p=33.7, i=11.3, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279635) TC: thermalControl-0 = 53.3, State = 1, modeled = 7.7, controlledRampTarget = 22.0, timeout = 4150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.8, targetTecRampRate = 9.4, output = 100.0, priorTargetTecRampRate = 9.4, p=9.5, i=11.4, d=6.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279735) TC: thermalControl-0 = 54.1, State = 1, modeled = 7.8, controlledRampTarget = 22.0, timeout = 4250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.9, targetTecRampRate = 9.3, output = 100.0, priorTargetTecRampRate = 9.3, p=8.2, i=11.5, d=0.6, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279835) TC: thermalControl-0 = 54.7, State = 1, modeled = 7.8, controlledRampTarget = 22.0, timeout = 4350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.0, targetTecRampRate = 9.2, output = 50.0, priorTargetTecRampRate = 9.2, p=7.2, i=11.8, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (279864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (279936) TC: thermalControl-0 = 55.3, State = 1, modeled = 7.8, controlledRampTarget = 22.0, timeout = 4450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.4, targetTecRampRate = 9.1, output = 100.0, priorTargetTecRampRate = 9.1, p=34.6, i=12.1, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280023) _writeInnerJsonString: begin comma: 1   Writing: [0,4557,54.68] [0m
+[0;32mI (280067) TC: thermalControl-0 = 56.1, State = 1, modeled = 7.9, controlledRampTarget = 22.0, timeout = 4550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.3, targetTecRampRate = 9.0, output = 100.0, priorTargetTecRampRate = 9.1, p=16.9, i=12.3, d=-41.8, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (280108) systemTasksMonitorStack: Stack Watermark(File Writer): 2268[0m
+[0;32mI (280166) TC: thermalControl-0 = 56.8, State = 1, modeled = 7.9, controlledRampTarget = 22.0, timeout = 4650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.4, targetTecRampRate = 8.9, output = 50.0, priorTargetTecRampRate = 9.0, p=3.5, i=12.4, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 21.44 |
+[0;32mI (280266) TC: thermalControl-0 = 57.5, State = 1, modeled = 7.9, controlledRampTarget = 22.0, timeout = 4750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.4, targetTecRampRate = 8.8, output = 100.0, priorTargetTecRampRate = 8.9, p=14.8, i=12.5, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280366) TC: thermalControl-0 = 58.0, State = 1, modeled = 8.0, controlledRampTarget = 22.0, timeout = 4850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.3, targetTecRampRate = 8.8, output = 100.0, priorTargetTecRampRate = 8.8, p=26.6, i=12.8, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280466) TC: thermalControl-0 = 58.7, State = 1, modeled = 8.0, controlledRampTarget = 22.0, timeout = 4950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.6, targetTecRampRate = 8.7, output = 100.0, priorTargetTecRampRate = 8.7, p=12.7, i=12.9, d=5.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280566) TC: thermalControl-0 = 59.4, State = 1, modeled = 8.0, controlledRampTarget = 22.0, timeout = 5050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.7, targetTecRampRate = 8.6, output = 100.0, priorTargetTecRampRate = 8.6, p=11.5, i=13.0, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280666) TC: thermalControl-0 = 60.0, State = 1, modeled = 8.1, controlledRampTarget = 22.0, timeout = 5150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.8, targetTecRampRate = 8.5, output = 50.0, priorTargetTecRampRate = 8.5, p=10.5, i=13.2, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280766) TC: thermalControl-0 = 60.5, State = 1, modeled = 8.1, controlledRampTarget = 22.0, timeout = 5250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.9, targetTecRampRate = 8.4, output = 50.0, priorTargetTecRampRate = 8.5, p=9.7, i=13.5, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280866) TC: thermalControl-0 = 61.1, State = 1, modeled = 8.1, controlledRampTarget = 22.0, timeout = 5350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.6, targetTecRampRate = 8.4, output = 100.0, priorTargetTecRampRate = 8.4, p=22.7, i=13.8, d=3.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (280966) TC: thermalControl-0 = 61.6, State = 1, modeled = 8.2, controlledRampTarget = 22.0, timeout = 5450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.7, targetTecRampRate = 8.3, output = 100.0, priorTargetTecRampRate = 8.4, p=22.2, i=14.1, d=1.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281066) TC: thermalControl-0 = 62.0, State = 1, modeled = 8.2, controlledRampTarget = 22.0, timeout = 5550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.8, targetTecRampRate = 8.3, output = 100.0, priorTargetTecRampRate = 8.3, p=21.3, i=14.4, d=4.6, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281166) TC: thermalControl-0 = 62.7, State = 1, modeled = 8.2, controlledRampTarget = 22.0, timeout = 5650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.2, targetTecRampRate = 8.2, output = 100.0, priorTargetTecRampRate = 8.3, p=6.2, i=14.4, d=8.7, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 21.65 |
+[0;32mI (281266) TC: thermalControl-0 = 63.3, State = 1, modeled = 8.3, controlledRampTarget = 22.0, timeout = 5750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.3, targetTecRampRate = 8.2, output = 50.0, priorTargetTecRampRate = 8.2, p=5.3, i=14.6, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281364) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (281366) TC: thermalControl-0 = 63.8, State = 1, modeled = 8.3, controlledRampTarget = 22.0, timeout = 5850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.9, targetTecRampRate = 8.1, output = 100.0, priorTargetTecRampRate = 8.1, p=19.4, i=14.9, d=0.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281466) TC: thermalControl-0 = 64.5, State = 1, modeled = 8.3, controlledRampTarget = 22.0, timeout = 5950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.6, targetTecRampRate = 8.0, output = 50.0, priorTargetTecRampRate = 8.1, p=3.2, i=15.0, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281518) _writeInnerJsonString: begin comma: 1   Writing: [0,6057,63.55] [0m
+[0;32mI (281566) TC: thermalControl-0 = 65.1, State = 1, modeled = 8.4, controlledRampTarget = 22.0, timeout = 6050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.7, targetTecRampRate = 8.0, output = 50.0, priorTargetTecRampRate = 8.0, p=1.8, i=15.2, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281616) _stage1Calculate: Cooling[0m
+[0;32mI (281666) TC: thermalControl-0 = 65.5, State = 1, modeled = 8.4, controlledRampTarget = 22.0, timeout = 6150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.9, targetTecRampRate = 7.9, output = 100.0, priorTargetTecRampRate = 8.0, p=24.5, i=15.4, d=-74.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (281708) systemTasksMonitorStack: Stack Watermark(File Writer): 2220[0m
+[0;32mI (281766) TC: thermalControl-0 = 66.0, State = 1, modeled = 8.5, controlledRampTarget = 22.0, timeout = 6250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.2, targetTecRampRate = 7.9, output = 100.0, priorTargetTecRampRate = 7.9, p=16.4, i=15.6, d=0.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281866) TC: thermalControl-0 = 66.5, State = 1, modeled = 8.5, controlledRampTarget = 22.0, timeout = 6350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.3, targetTecRampRate = 7.8, output = 100.0, priorTargetTecRampRate = 7.9, p=15.6, i=15.9, d=2.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (281967) TC: thermalControl-0 = 66.9, State = 1, modeled = 8.5, controlledRampTarget = 22.0, timeout = 6450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.0, targetTecRampRate = 7.8, output = 100.0, priorTargetTecRampRate = 7.8, p=22.8, i=16.1, d=-76.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282066) TC: thermalControl-0 = 67.4, State = 1, modeled = 8.6, controlledRampTarget = 22.0, timeout = 6550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.4, targetTecRampRate = 7.8, output = 50.0, priorTargetTecRampRate = 7.8, p=14.3, i=16.4, d=85.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282166) TC: thermalControl-0 = 68.1, State = 1, modeled = 8.6, controlledRampTarget = 22.0, timeout = 6650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.5, targetTecRampRate = 7.7, output = 63.8, priorTargetTecRampRate = 7.7, p=13.0, i=16.4, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 22.52 |
+[0;32mI (282266) TC: thermalControl-0 = 68.5, State = 1, modeled = 8.7, controlledRampTarget = 22.0, timeout = 6750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.2, targetTecRampRate = 7.6, output = 100.0, priorTargetTecRampRate = 7.7, p=21.1, i=16.7, d=-81.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282366) TC: thermalControl-0 = 68.9, State = 1, modeled = 8.7, controlledRampTarget = 22.0, timeout = 6850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.2, targetTecRampRate = 7.6, output = 100.0, priorTargetTecRampRate = 7.6, p=20.4, i=16.9, d=-82.7, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282466) TC: thermalControl-0 = 69.5, State = 1, modeled = 8.8, controlledRampTarget = 22.0, timeout = 6950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.5, targetTecRampRate = 7.6, output = 50.0, priorTargetTecRampRate = 7.6, p=-5.6, i=17.0, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282567) TC: thermalControl-0 = 69.7, State = 1, modeled = 8.8, controlledRampTarget = 22.0, timeout = 7050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.5, targetTecRampRate = 7.5, output = 100.0, priorTargetTecRampRate = 7.5, p=6.4, i=17.1, d=3.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282666) TC: thermalControl-0 = 70.2, State = 1, modeled = 8.9, controlledRampTarget = 22.0, timeout = 7150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.4, targetTecRampRate = 7.5, output = 100.0, priorTargetTecRampRate = 7.5, p=18.8, i=17.2, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282766) TC: thermalControl-0 = 70.6, State = 1, modeled = 8.9, controlledRampTarget = 22.0, timeout = 7250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.8, targetTecRampRate = 7.4, output = 85.9, priorTargetTecRampRate = 7.5, p=9.8, i=17.3, d=41.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (282866) TC: thermalControl-0 = 71.0, State = 1, modeled = 8.9, controlledRampTarget = 22.0, timeout = 7350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.8, targetTecRampRate = 7.4, output = 50.0, priorTargetTecRampRate = 7.4, p=-8.5, i=17.5, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (282916) _writeInnerJsonString: begin comma: 1   Writing: [0,7557,70.59] [0m
+[0;32mI (282966) TC: thermalControl-0 = 71.5, State = 1, modeled = 9.0, controlledRampTarget = 22.0, timeout = 7450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.7, targetTecRampRate = 7.3, output = 77.2, priorTargetTecRampRate = 7.4, p=4.0, i=17.5, d=44.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283066) TC: thermalControl-0 = 71.7, State = 1, modeled = 9.0, controlledRampTarget = 22.0, timeout = 7550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.8, targetTecRampRate = 7.3, output = 50.0, priorTargetTecRampRate = 7.3, p=3.4, i=17.7, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283167) TC: thermalControl-0 = 72.0, State = 1, modeled = 9.1, controlledRampTarget = 22.0, timeout = 7650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.0, targetTecRampRate = 7.3, output = 100.0, priorTargetTecRampRate = 7.3, p=25.6, i=17.9, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 26.99 |
+[0;32mI (283266) TC: thermalControl-0 = 72.6, State = 1, modeled = 9.1, controlledRampTarget = 22.0, timeout = 7750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.2, targetTecRampRate = 7.2, output = 100.0, priorTargetTecRampRate = 7.2, p=6.5, i=18.0, d=5.4, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283366) TC: thermalControl-0 = 73.1, State = 1, modeled = 9.2, controlledRampTarget = 22.0, timeout = 7850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.1, targetTecRampRate = 7.2, output = 50.0, priorTargetTecRampRate = 7.2, p=6.3, i=18.1, d=92.8, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283466) TC: thermalControl-0 = 73.4, State = 1, modeled = 9.2, controlledRampTarget = 22.0, timeout = 7950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.7, targetTecRampRate = 7.1, output = 100.0, priorTargetTecRampRate = 7.1, p=14.5, i=18.3, d=9.3, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283566) TC: thermalControl-0 = 73.7, State = 1, modeled = 9.3, controlledRampTarget = 22.0, timeout = 8050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.7, targetTecRampRate = 7.1, output = 100.0, priorTargetTecRampRate = 7.1, p=8.7, i=18.4, d=-84.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;33mW (283660) heapMonitor_checkFreeHeapSize: New heap low water mark 105932[0m
+[0;32mI (283666) TC: thermalControl-0 = 74.2, State = 1, modeled = 9.3, controlledRampTarget = 22.0, timeout = 8150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.4, targetTecRampRate = 7.0, output = 50.0, priorTargetTecRampRate = 7.1, p=3.8, i=18.5, d=100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283766) TC: thermalControl-0 = 74.5, State = 1, modeled = 9.4, controlledRampTarget = 22.0, timeout = 8250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.9, targetTecRampRate = 7.0, output = 100.0, priorTargetTecRampRate = 7.0, p=18.9, i=18.8, d=-55.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283867) TC: thermalControl-0 = 74.9, State = 1, modeled = 9.4, controlledRampTarget = 22.0, timeout = 8350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.5, targetTecRampRate = 7.0, output = 78.7, priorTargetTecRampRate = 7.0, p=2.9, i=18.8, d=43.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (283966) TC: thermalControl-0 = 75.3, State = 1, modeled = 9.5, controlledRampTarget = 22.0, timeout = 8450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.9, targetTecRampRate = 6.9, output = 100.0, priorTargetTecRampRate = 6.9, p=12.4, i=19.0, d=-0.1, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284066) TC: thermalControl-0 = 75.4, State = 1, modeled = 9.5, controlledRampTarget = 22.0, timeout = 8550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.9, targetTecRampRate = 6.9, output = 68.1, priorTargetTecRampRate = 6.9, p=18.0, i=19.3, d=69.2, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284116) _stage1Calculate: Cooling[0m
+[0;32mI (284166) TC: thermalControl-0 = 75.9, State = 1, modeled = 9.6, controlledRampTarget = 22.0, timeout = 8650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.0, targetTecRampRate = 6.8, output = 70.9, priorTargetTecRampRate = 6.9, p=11.2, i=19.4, d=-95.5, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 30.16 |
+[0;32mI (284267) TC: thermalControl-0 = 76.2, State = 1, modeled = 9.6, controlledRampTarget = 22.0, timeout = 8750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.0, targetTecRampRate = 6.8, output = 100.0, priorTargetTecRampRate = 6.8, p=10.8, i=19.5, d=-2.7, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284364) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (284366) TC: thermalControl-0 = 76.6, State = 1, modeled = 9.7, controlledRampTarget = 22.0, timeout = 8850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.0, targetTecRampRate = 6.8, output = 100.0, priorTargetTecRampRate = 6.8, p=16.5, i=19.6, d=-100.0, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284467) TC: thermalControl-0 = 76.7, State = 1, modeled = 9.7, controlledRampTarget = 22.0, timeout = 8950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.6, targetTecRampRate = 6.8, output = 100.0, priorTargetTecRampRate = 6.8, p=25.2, i=19.9, d=-90.9, ff=100.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284515) _writeInnerJsonString: begin comma: 1   Writing: [0,9057,76.57] [0m
+[0;32mI (284567) TC: thermalControl-0 = 77.1, State = 1, modeled = 9.8, controlledRampTarget = 22.0, timeout = 9050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.6, targetTecRampRate = 6.6, output = 98.6, priorTargetTecRampRate = 6.7, p=19.0, i=20.2, d=39.5, ff=98.9, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284666) TC: thermalControl-0 = 77.6, State = 1, modeled = 9.9, controlledRampTarget = 22.0, timeout = 9150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.2, targetTecRampRate = 6.4, output = 98.6, priorTargetTecRampRate = 6.4, p=7.3, i=20.2, d=-94.9, ff=97.8, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284766) TC: thermalControl-0 = 77.9, State = 1, modeled = 9.9, controlledRampTarget = 22.0, timeout = 9250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.2, targetTecRampRate = 6.2, output = 100.0, priorTargetTecRampRate = 6.3, p=12.5, i=20.4, d=8.6, ff=96.7, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284866) TC: thermalControl-0 = 78.6, State = 1, modeled = 10.0, controlledRampTarget = 22.0, timeout = 9350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 10.7, targetTecRampRate = 5.9, output = 50.0, priorTargetTecRampRate = 6.1, p=-27.5, i=20.3, d=100.0, ff=94.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (284966) TC: thermalControl-0 = 79.0, State = 1, modeled = 10.0, controlledRampTarget = 22.0, timeout = 9450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.4, targetTecRampRate = 5.7, output = 100.0, priorTargetTecRampRate = 5.7, p=2.1, i=20.3, d=-95.4, ff=93.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285066) TC: thermalControl-0 = 79.3, State = 1, modeled = 10.1, controlledRampTarget = 22.0, timeout = 9550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.6, targetTecRampRate = 5.6, output = 50.0, priorTargetTecRampRate = 5.6, p=-6.0, i=20.3, d=100.0, ff=92.3, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285166) TC: thermalControl-0 = 79.8, State = 1, modeled = 10.1, controlledRampTarget = 22.0, timeout = 9650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.6, targetTecRampRate = 5.2, output = 100.0, priorTargetTecRampRate = 5.4, p=-7.4, i=20.2, d=-29.8, ff=90.1, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 27.56 |
+[0;32mI (285266) TC: thermalControl-0 = 80.2, State = 1, modeled = 10.2, controlledRampTarget = 22.0, timeout = 9750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.6, targetTecRampRate = 5.0, output = 50.0, priorTargetTecRampRate = 5.2, p=-2.1, i=20.2, d=67.1, ff=89.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285367) TC: thermalControl-0 = 80.4, State = 1, modeled = 10.2, controlledRampTarget = 22.0, timeout = 9850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.8, targetTecRampRate = 5.0, output = 100.0, priorTargetTecRampRate = 5.0, p=13.3, i=20.3, d=-97.9, ff=89.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285466) TC: thermalControl-0 = 80.9, State = 1, modeled = 10.3, controlledRampTarget = 22.0, timeout = 9950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 11.3, targetTecRampRate = 4.7, output = 0.0, priorTargetTecRampRate = 4.8, p=-38.7, i=20.0, d=100.0, ff=86.8, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285567) TC: thermalControl-0 = 81.1, State = 1, modeled = 10.4, controlledRampTarget = 22.0, timeout = 10050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.2, targetTecRampRate = 4.6, output = 100.0, priorTargetTecRampRate = 4.6, p=8.4, i=20.0, d=-100.0, ff=86.8, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285666) TC: thermalControl-0 = 81.5, State = 1, modeled = 10.4, controlledRampTarget = 22.0, timeout = 10150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.6, targetTecRampRate = 4.5, output = 50.0, priorTargetTecRampRate = 4.5, p=-0.7, i=20.0, d=100.0, ff=85.6, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285766) TC: thermalControl-0 = 81.7, State = 1, modeled = 10.5, controlledRampTarget = 22.0, timeout = 10250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 7.7, targetTecRampRate = 4.3, output = 50.0, priorTargetTecRampRate = 4.5, p=-19.3, i=20.0, d=100.0, ff=84.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (285867) TC: thermalControl-0 = 81.7, State = 1, modeled = 10.5, controlledRampTarget = 22.0, timeout = 10350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.6, targetTecRampRate = 4.3, output = 100.0, priorTargetTecRampRate = 4.3, p=10.3, i=20.1, d=-77.5, ff=84.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (285915) _writeInnerJsonString: begin comma: 1   Writing: [0,10557,81.68] [0m
+[0;32mI (285967) TC: thermalControl-0 = 81.7, State = 1, modeled = 10.6, controlledRampTarget = 22.0, timeout = 10450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 1.6, targetTecRampRate = 4.3, output = 100.0, priorTargetTecRampRate = 4.3, p=16.1, i=20.2, d=-100.0, ff=84.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286067) TC: thermalControl-0 = 82.1, State = 1, modeled = 10.7, controlledRampTarget = 22.0, timeout = 10550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.6, targetTecRampRate = 4.1, output = 24.5, priorTargetTecRampRate = 4.3, p=-2.3, i=20.2, d=76.8, ff=83.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286167) TC: thermalControl-0 = 82.2, State = 1, modeled = 10.7, controlledRampTarget = 22.0, timeout = 10650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.9, targetTecRampRate = 4.1, output = 89.8, priorTargetTecRampRate = 4.1, p=7.0, i=20.3, d=20.9, ff=83.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286266) TC: thermalControl-0 = 82.4, State = 1, modeled = 10.8, controlledRampTarget = 22.0, timeout = 10750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.6, targetTecRampRate = 3.9, output = 50.0, priorTargetTecRampRate = 4.1, p=-3.2, i=20.4, d=100.0, ff=82.3, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 27.7 |
+[0;32mI (286367) TC: thermalControl-0 = 82.4, State = 1, modeled = 10.8, controlledRampTarget = 22.0, timeout = 10850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.1, targetTecRampRate = 3.9, output = 100.0, priorTargetTecRampRate = 3.9, p=11.0, i=20.5, d=-47.3, ff=82.3, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286467) TC: thermalControl-0 = 82.6, State = 1, modeled = 10.9, controlledRampTarget = 22.0, timeout = 10950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 3.0, targetTecRampRate = 3.9, output = 100.0, priorTargetTecRampRate = 3.9, p=5.5, i=20.5, d=-100.0, ff=82.3, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286566) TC: thermalControl-0 = 82.8, State = 1, modeled = 11.0, controlledRampTarget = 22.0, timeout = 11050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.0, targetTecRampRate = 3.7, output = 50.0, priorTargetTecRampRate = 3.7, p=-13.6, i=20.5, d=100.0, ff=81.2, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286616) _stage1Calculate: Cooling[0m
+[0;32mI (286666) TC: thermalControl-0 = 83.2, State = 1, modeled = 11.0, controlledRampTarget = 22.0, timeout = 11150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 8.1, targetTecRampRate = 3.5, output = 50.0, priorTargetTecRampRate = 3.7, p=-26.4, i=20.2, d=100.0, ff=80.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286767) TC: thermalControl-0 = 83.4, State = 1, modeled = 11.1, controlledRampTarget = 22.0, timeout = 11250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.9, targetTecRampRate = 3.5, output = 91.3, priorTargetTecRampRate = 3.5, p=-8.0, i=20.1, d=0.9, ff=80.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286867) TC: thermalControl-0 = 83.4, State = 1, modeled = 11.1, controlledRampTarget = 22.0, timeout = 11350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.2, targetTecRampRate = 3.5, output = 100.0, priorTargetTecRampRate = 3.5, p=7.6, i=20.2, d=-50.1, ff=80.0, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (286967) TC: thermalControl-0 = 83.6, State = 1, modeled = 11.2, controlledRampTarget = 22.0, timeout = 11450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.2, targetTecRampRate = 3.3, output = 78.8, priorTargetTecRampRate = 3.5, p=7.6, i=20.3, d=28.1, ff=78.9, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287066) TC: thermalControl-0 = 84.0, State = 1, modeled = 11.3, controlledRampTarget = 22.0, timeout = 11550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 4.9, targetTecRampRate = 3.1, output = 35.4, priorTargetTecRampRate = 3.3, p=-9.8, i=20.2, d=52.8, ff=77.8, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287166) TC: thermalControl-0 = 84.4, State = 1, modeled = 11.3, controlledRampTarget = 22.0, timeout = 11650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.2, targetTecRampRate = 2.9, output = 35.4, priorTargetTecRampRate = 3.1, p=-18.6, i=20.0, d=100.0, ff=76.7, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287267) TC: thermalControl-0 = 84.4, State = 1, modeled = 11.4, controlledRampTarget = 22.0, timeout = 11750, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.2, targetTecRampRate = 2.9, output = 100.0, priorTargetTecRampRate = 2.9, p=4.1, i=20.0, d=-77.5, ff=76.7, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 31.04 |
+[0;32mI (287364) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (287367) TC: thermalControl-0 = 84.6, State = 1, modeled = 11.4, controlledRampTarget = 22.0, timeout = 11850, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 1.8, targetTecRampRate = 2.9, output = 100.0, priorTargetTecRampRate = 2.9, p=6.7, i=20.1, d=-27.2, ff=76.7, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287467) TC: thermalControl-0 = 84.8, State = 1, modeled = 11.5, controlledRampTarget = 22.0, timeout = 11950, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.1, targetTecRampRate = 2.7, output = 100.0, priorTargetTecRampRate = 2.7, p=3.8, i=20.1, d=-31.8, ff=75.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287515) _writeInnerJsonString: begin comma: 1   Writing: [0,12057,84.61] [0m
+[0;32mI (287566) TC: thermalControl-0 = 85.2, State = 1, modeled = 11.6, controlledRampTarget = 22.0, timeout = 12050, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.3, targetTecRampRate = 2.5, output = 0.0, priorTargetTecRampRate = 2.7, p=-21.4, i=20.0, d=100.0, ff=74.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287667) TC: thermalControl-0 = 85.4, State = 1, modeled = 11.6, controlledRampTarget = 22.0, timeout = 12150, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.1, targetTecRampRate = 2.5, output = 100.0, priorTargetTecRampRate = 2.5, p=-15.6, i=19.7, d=-72.4, ff=74.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287767) TC: thermalControl-0 = 85.4, State = 1, modeled = 11.7, controlledRampTarget = 22.0, timeout = 12250, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.3, targetTecRampRate = 2.5, output = 100.0, priorTargetTecRampRate = 2.5, p=1.1, i=19.7, d=-52.4, ff=74.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287867) TC: thermalControl-0 = 85.4, State = 1, modeled = 11.8, controlledRampTarget = 22.0, timeout = 12350, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 1.4, targetTecRampRate = 2.5, output = 100.0, priorTargetTecRampRate = 2.5, p=6.5, i=19.8, d=-24.2, ff=74.4, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (287966) TC: thermalControl-0 = 85.8, State = 1, modeled = 11.8, controlledRampTarget = 22.0, timeout = 12450, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 5.2, targetTecRampRate = 2.3, output = 0.0, priorTargetTecRampRate = 2.3, p=-17.1, i=19.6, d=100.0, ff=73.2, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288066) TC: thermalControl-0 = 86.1, State = 1, modeled = 11.9, controlledRampTarget = 22.0, timeout = 12550, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 6.5, targetTecRampRate = 2.1, output = 0.0, priorTargetTecRampRate = 2.3, p=-25.4, i=19.4, d=80.5, ff=72.1, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288166) thermalControlTask: MAX RAMP: SWITCH to STEADY STATE - Target Within range[0m
+[0;32mI (288167) TC: thermalControl-0 = 86.1, State = 1, modeled = 11.9, controlledRampTarget = 22.0, timeout = 12650, target = 90.0, expectedTempC = 0.0, actualTecRampRate = 2.6, targetTecRampRate = 2.1, output = 100.0, priorTargetTecRampRate = 2.1, p=-3.0, i=19.3, d=-67.2, ff=72.1, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288267) TC: thermalControl-0 = 85.8, State = 3, modeled = 12.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.3, targetTecRampRate = 2.1, output = 100.0, priorTargetTecRampRate = 2.1, p=27.2, i=0.2, d=-100.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 36.32 |
+[0;32mI (288367) TC: thermalControl-0 = 85.8, State = 3, modeled = 12.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.0, targetTecRampRate = 2.1, output = 100.0, priorTargetTecRampRate = 2.1, p=27.2, i=0.5, d=-12.6, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288467) TC: thermalControl-0 = 86.1, State = 3, modeled = 12.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.9, targetTecRampRate = 2.1, output = 87.3, priorTargetTecRampRate = 2.1, p=25.9, i=0.9, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288566) TC: thermalControl-0 = 86.3, State = 3, modeled = 12.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.4, targetTecRampRate = 2.1, output = 73.7, priorTargetTecRampRate = 2.1, p=24.6, i=1.2, d=12.7, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288666) TC: thermalControl-0 = 86.5, State = 3, modeled = 12.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.7, targetTecRampRate = 2.1, output = 72.7, priorTargetTecRampRate = 2.1, p=23.4, i=1.5, d=12.7, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288766) TC: thermalControl-0 = 86.5, State = 3, modeled = 12.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.0, targetTecRampRate = 2.1, output = 85.7, priorTargetTecRampRate = 2.1, p=23.4, i=1.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (288866) TC: thermalControl-0 = 86.9, State = 3, modeled = 12.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.4, targetTecRampRate = 2.1, output = 70.5, priorTargetTecRampRate = 2.1, p=20.8, i=2.1, d=12.9, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (288918) _writeInnerJsonString: begin comma: 1   Writing: [0,13557,86.69] [0m
+[0;32mI (288966) TC: thermalControl-0 = 87.1, State = 3, modeled = 12.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.8, targetTecRampRate = 2.1, output = 69.4, priorTargetTecRampRate = 2.1, p=19.5, i=2.4, d=13.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289066) TC: thermalControl-0 = 87.3, State = 3, modeled = 12.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 5.3, targetTecRampRate = 2.1, output = 68.3, priorTargetTecRampRate = 2.1, p=18.2, i=2.7, d=13.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289116) _stage1Calculate: Cooling[0m
+[0;32mI (289166) TC: thermalControl-0 = 87.6, State = 3, modeled = 12.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.0, targetTecRampRate = 2.1, output = 80.3, priorTargetTecRampRate = 2.1, p=16.9, i=2.9, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289266) TC: thermalControl-0 = 87.6, State = 3, modeled = 12.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.8, targetTecRampRate = 2.1, output = 93.7, priorTargetTecRampRate = 2.1, p=16.9, i=3.1, d=-13.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 38.3 |
+[0;32mI (289367) TC: thermalControl-0 = 87.8, State = 3, modeled = 12.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.7, targetTecRampRate = 2.1, output = 79.4, priorTargetTecRampRate = 2.1, p=15.6, i=3.3, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289466) TC: thermalControl-0 = 88.0, State = 3, modeled = 12.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.5, targetTecRampRate = 2.1, output = 78.2, priorTargetTecRampRate = 2.1, p=14.2, i=3.5, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289566) TC: thermalControl-0 = 88.2, State = 3, modeled = 12.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 5.5, targetTecRampRate = 2.1, output = 63.8, priorTargetTecRampRate = 2.1, p=12.9, i=3.7, d=13.3, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289666) TC: thermalControl-0 = 88.4, State = 3, modeled = 12.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.5, targetTecRampRate = 2.1, output = 62.5, priorTargetTecRampRate = 2.1, p=11.6, i=3.8, d=13.4, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289766) TC: thermalControl-0 = 88.4, State = 3, modeled = 13.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.0, targetTecRampRate = 2.1, output = 76.1, priorTargetTecRampRate = 2.1, p=11.6, i=4.0, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289866) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 10.4, targetTecRampRate = 2.1, output = 59.9, priorTargetTecRampRate = 2.1, p=8.9, i=4.1, d=13.6, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (289966) TC: thermalControl-0 = 88.7, State = 3, modeled = 13.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.8, targetTecRampRate = 2.1, output = 75.0, priorTargetTecRampRate = 2.1, p=10.2, i=4.3, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290066) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 5.6, targetTecRampRate = 2.1, output = 60.2, priorTargetTecRampRate = 2.1, p=8.9, i=4.4, d=13.6, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290166) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.6, targetTecRampRate = 2.1, output = 73.9, priorTargetTecRampRate = 2.1, p=8.9, i=4.5, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290266) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.3, targetTecRampRate = 2.1, output = 74.0, priorTargetTecRampRate = 2.1, p=8.9, i=4.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 34.91 |
+[0;32mI (290364) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (290367) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.5, targetTecRampRate = 2.1, output = 74.1, priorTargetTecRampRate = 2.1, p=8.9, i=4.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290467) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.1, targetTecRampRate = 2.1, output = 74.2, priorTargetTecRampRate = 2.1, p=8.9, i=4.9, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290567) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.9, targetTecRampRate = 2.1, output = 74.3, priorTargetTecRampRate = 2.1, p=8.9, i=5.0, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290639) _writeInnerJsonString: begin comma: 1   Writing: [0,15057,88.90] [0m
+[0;32mI (290681) TC: thermalControl-0 = 88.9, State = 3, modeled = 13.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 74.5, priorTargetTecRampRate = 2.1, p=8.9, i=5.1, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290780) TC: thermalControl-0 = 89.4, State = 3, modeled = 13.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.7, targetTecRampRate = 2.1, output = 58.1, priorTargetTecRampRate = 2.1, p=6.1, i=5.2, d=13.7, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290880) TC: thermalControl-0 = 89.4, State = 3, modeled = 13.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.4, targetTecRampRate = 2.1, output = 58.2, priorTargetTecRampRate = 2.1, p=6.1, i=5.3, d=13.7, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (290930) thermalControlTask: Set Temp Reached[0m
+[0;32mI (290980) TC: thermalControl-0 = 89.1, State = 3, modeled = 13.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.3, targetTecRampRate = 2.1, output = 100.0, priorTargetTecRampRate = 2.1, p=7.5, i=5.4, d=-27.5, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291081) TC: thermalControl-0 = 89.4, State = 3, modeled = 13.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.2, targetTecRampRate = 2.1, output = 85.9, priorTargetTecRampRate = 2.1, p=6.1, i=5.4, d=-13.8, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291181) TC: thermalControl-0 = 89.4, State = 3, modeled = 13.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.9, targetTecRampRate = 2.1, output = 85.9, priorTargetTecRampRate = 2.1, p=6.1, i=5.5, d=-13.8, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291281) TC: thermalControl-0 = 89.4, State = 3, modeled = 14.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 72.2, priorTargetTecRampRate = 2.1, p=6.1, i=5.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 36.76 |
+[0;32mI (291381) TC: thermalControl-0 = 89.4, State = 3, modeled = 14.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.7, targetTecRampRate = 2.1, output = 72.3, priorTargetTecRampRate = 2.1, p=6.1, i=5.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291482) TC: thermalControl-0 = 89.4, State = 3, modeled = 14.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 72.4, priorTargetTecRampRate = 2.1, p=6.1, i=5.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291581) TC: thermalControl-0 = 89.6, State = 3, modeled = 14.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 71.1, priorTargetTecRampRate = 2.1, p=4.7, i=5.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291631) _stage1Calculate: Cooling[0m
+[0;32mI (291682) TC: thermalControl-0 = 89.6, State = 3, modeled = 14.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 71.1, priorTargetTecRampRate = 2.1, p=4.7, i=5.9, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291782) TC: thermalControl-0 = 89.4, State = 3, modeled = 14.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 86.4, priorTargetTecRampRate = 2.1, p=6.1, i=5.9, d=-13.8, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (291880) TC: thermalControl-0 = 89.8, State = 3, modeled = 14.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.8, targetTecRampRate = 2.1, output = 69.8, priorTargetTecRampRate = 2.1, p=3.3, i=6.0, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (291914) _writeInnerJsonString: begin comma: 1   Writing: [0,16557,89.81] [0m
+[0;32mI (291980) TC: thermalControl-0 = 89.8, State = 3, modeled = 14.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.4, targetTecRampRate = 2.1, output = 69.9, priorTargetTecRampRate = 2.1, p=3.3, i=6.0, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292080) TC: thermalControl-0 = 90.0, State = 3, modeled = 14.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 7.2, targetTecRampRate = 2.1, output = 54.6, priorTargetTecRampRate = 2.1, p=2.0, i=6.1, d=14.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292180) TC: thermalControl-0 = 89.6, State = 3, modeled = 14.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -4.0, targetTecRampRate = 2.1, output = 85.3, priorTargetTecRampRate = 2.1, p=4.7, i=6.1, d=-13.9, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292281) TC: thermalControl-0 = 89.8, State = 3, modeled = 14.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.0, targetTecRampRate = 2.1, output = 84.0, priorTargetTecRampRate = 2.1, p=3.3, i=6.2, d=-14.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 36.78 |
+[0;32mI (292380) TC: thermalControl-0 = 90.0, State = 3, modeled = 14.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 9.6, targetTecRampRate = 2.1, output = 40.8, priorTargetTecRampRate = 2.1, p=2.0, i=6.2, d=27.9, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292480) TC: thermalControl-0 = 89.6, State = 3, modeled = 14.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.4, targetTecRampRate = 2.1, output = 99.3, priorTargetTecRampRate = 2.1, p=4.7, i=6.2, d=-27.9, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292582) TC: thermalControl-0 = 89.8, State = 3, modeled = 14.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 70.1, priorTargetTecRampRate = 2.1, p=3.3, i=6.3, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292682) TC: thermalControl-0 = 89.8, State = 3, modeled = 14.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 70.2, priorTargetTecRampRate = 2.1, p=3.3, i=6.3, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292780) TC: thermalControl-0 = 89.6, State = 3, modeled = 15.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.6, targetTecRampRate = 2.1, output = 85.5, priorTargetTecRampRate = 2.1, p=4.7, i=6.4, d=-13.9, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292880) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.8, targetTecRampRate = 2.1, output = 54.9, priorTargetTecRampRate = 2.1, p=2.0, i=6.4, d=14.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (292980) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.4, targetTecRampRate = 2.1, output = 68.9, priorTargetTecRampRate = 2.1, p=2.0, i=6.4, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293081) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.6, targetTecRampRate = 2.1, output = 68.9, priorTargetTecRampRate = 2.1, p=2.0, i=6.5, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293181) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.2, targetTecRampRate = 2.1, output = 69.0, priorTargetTecRampRate = 2.1, p=2.0, i=6.5, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293281) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.9, targetTecRampRate = 2.1, output = 69.0, priorTargetTecRampRate = 2.1, p=2.0, i=6.5, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293364) _sendFileWriterDirective: Messages in Queue: 1[0m
+DATAQ:  | liquid = 37.88 |
+[0;32mI (293381) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 55.1, priorTargetTecRampRate = 2.1, p=2.0, i=6.6, d=14.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293481) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 69.1, priorTargetTecRampRate = 2.1, p=2.0, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293516) _writeInnerJsonString: begin comma: 1   Writing: [0,18057,89.81] [0m
+[0;32mI (293580) TC: thermalControl-0 = 90.3, State = 3, modeled = 15.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 7.2, targetTecRampRate = 2.1, output = 67.7, priorTargetTecRampRate = 2.1, p=0.5, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293682) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 83.1, priorTargetTecRampRate = 2.1, p=2.0, i=6.6, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293782) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 83.1, priorTargetTecRampRate = 2.1, p=2.0, i=6.6, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293880) TC: thermalControl-0 = 89.8, State = 3, modeled = 15.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.4, targetTecRampRate = 2.1, output = 98.5, priorTargetTecRampRate = 2.1, p=3.3, i=6.7, d=-28.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (293980) TC: thermalControl-0 = 90.3, State = 3, modeled = 15.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.1, targetTecRampRate = 2.1, output = 67.7, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294080) TC: thermalControl-0 = 90.3, State = 3, modeled = 15.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.2, targetTecRampRate = 2.1, output = 67.7, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294130) _stage1Calculate: Cooling[0m
+[0;32mI (294180) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -7.2, targetTecRampRate = 2.1, output = 83.2, priorTargetTecRampRate = 2.1, p=2.0, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294280) TC: thermalControl-0 = 90.0, State = 3, modeled = 15.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.5, targetTecRampRate = 2.1, output = 88.1, priorTargetTecRampRate = 2.1, p=2.0, i=6.7, d=-28.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 38.53 |
+[0;32mI (294381) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.0, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294480) TC: thermalControl-0 = 90.0, State = 3, modeled = 16.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -2.2, targetTecRampRate = 2.1, output = 83.2, priorTargetTecRampRate = 2.1, p=2.0, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294581) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.7, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294680) TC: thermalControl-0 = 90.0, State = 3, modeled = 16.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -3.6, targetTecRampRate = 2.1, output = 83.3, priorTargetTecRampRate = 2.1, p=2.0, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294782) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294864) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (294882) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (294915) _writeInnerJsonString: begin comma: 1   Writing: [0,19557,90.28] [0m
+[0;32mI (294981) TC: thermalControl-0 = 90.0, State = 3, modeled = 16.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.5, targetTecRampRate = 2.1, output = 69.2, priorTargetTecRampRate = 2.1, p=2.0, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295080) TC: thermalControl-0 = 89.8, State = 3, modeled = 16.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -7.2, targetTecRampRate = 2.1, output = 84.6, priorTargetTecRampRate = 2.1, p=3.3, i=6.8, d=-14.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295180) TC: thermalControl-0 = 90.5, State = 3, modeled = 16.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 9.8, targetTecRampRate = 2.1, output = 38.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=28.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295280) TC: thermalControl-0 = 90.0, State = 3, modeled = 16.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.6, targetTecRampRate = 2.1, output = 97.5, priorTargetTecRampRate = 2.1, p=2.0, i=6.8, d=-28.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 39.19 |
+[0;32mI (295381) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.5, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295480) TC: thermalControl-0 = 90.5, State = 3, modeled = 16.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.6, targetTecRampRate = 2.1, output = 66.5, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295581) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.9, targetTecRampRate = 2.1, output = 67.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295681) TC: thermalControl-0 = 90.3, State = 3, modeled = 16.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 67.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295781) TC: thermalControl-0 = 90.5, State = 3, modeled = 16.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.0, targetTecRampRate = 2.1, output = 66.5, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295881) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.8, targetTecRampRate = 2.1, output = 66.5, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (295981) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.7, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296082) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296180) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -9.8, targetTecRampRate = 2.1, output = 86.6, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-28.4, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296280) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -2.9, targetTecRampRate = 2.1, output = 67.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296365) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (296381) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.8, targetTecRampRate = 2.1, output = 67.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 40.57 |
+[0;32mI (296481) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.3, targetTecRampRate = 2.1, output = 67.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296514) _writeInnerJsonString: begin comma: 1   Writing: [0,21058,90.28] [0m
+[0;32mI (296582) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296632) _stage1Calculate: Cooling[0m
+[0;32mI (296681) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.8, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296780) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.7, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296880) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 4.8, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (296982) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.5, targetTecRampRate = 2.1, output = 53.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297082) TC: thermalControl-0 = 90.3, State = 3, modeled = 17.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.5, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297181) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.9, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297281) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.4, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297380) TC: thermalControl-0 = 90.5, State = 3, modeled = 17.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.7, targetTecRampRate = 2.1, output = 80.7, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=-14.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 40.28 |
+[0;32mI (297480) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.0, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297581) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.8, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297681) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.3, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297781) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -1.0, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297865) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (297881) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.8, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (297915) _writeInnerJsonString: begin comma: 1   Writing: [0,22558,90.52] [0m
+[0;32mI (297981) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.7, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298080) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 2.6, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298182) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.5, targetTecRampRate = 2.1, output = 82.0, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298281) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.3, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298381) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 1.0, targetTecRampRate = 2.1, output = 52.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 40.42 |
+[0;32mI (298482) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.2, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298582) TC: thermalControl-0 = 90.3, State = 3, modeled = 18.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298682) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.6, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.8, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298780) TC: thermalControl-0 = 90.8, State = 3, modeled = 18.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 5.9, targetTecRampRate = 2.1, output = 50.7, priorTargetTecRampRate = 2.1, p=-2.3, i=6.8, d=14.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298882) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.5, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (298982) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299082) TC: thermalControl-0 = 90.5, State = 3, modeled = 18.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 52.2, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299132) _stage1Calculate: Cooling[0m
+[0;32mI (299182) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 66.4, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299282) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299365) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (299381) TC: thermalControl-0 = 90.3, State = 3, modeled = 19.1, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.8, targetTecRampRate = 2.1, output = 81.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 42.8 |
+[0;32mI (299480) TC: thermalControl-0 = 90.3, State = 3, modeled = 19.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -5.9, targetTecRampRate = 2.1, output = 67.8, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299514) _writeInnerJsonString: begin comma: 1   Writing: [0,24058,90.52] [0m
+[0;32mI (299580) TC: thermalControl-0 = 90.3, State = 3, modeled = 19.2, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -2.7, targetTecRampRate = 2.1, output = 81.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299682) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.3, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.2, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299780) TC: thermalControl-0 = 90.8, State = 3, modeled = 19.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 3.7, targetTecRampRate = 2.1, output = 50.7, priorTargetTecRampRate = 2.1, p=-2.3, i=6.7, d=14.2, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299882) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.4, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.7, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (299980) TC: thermalControl-0 = 90.3, State = 3, modeled = 19.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -2.4, targetTecRampRate = 2.1, output = 81.9, priorTargetTecRampRate = 2.1, p=0.5, i=6.7, d=-14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300082) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.5, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300182) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.6, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.0, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300282) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 52.1, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=14.1, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300382) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.7, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+DATAQ:  | liquid = 41.02 |
+[0;32mI (300482) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 66.3, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300582) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.8, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.2, targetTecRampRate = 2.1, output = 66.2, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300682) TC: thermalControl-0 = 90.5, State = 3, modeled = 19.9, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 66.2, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300782) TC: thermalControl-0 = 90.5, State = 3, modeled = 20.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = -0.2, targetTecRampRate = 2.1, output = 66.2, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (300865) _sendFileWriterDirective: Messages in Queue: 1[0m
+[0;32mI (300882) TC: thermalControl-0 = 90.5, State = 3, modeled = 20.0, controlledRampTarget = 90.0, timeout = 0, target = 90.0, expectedTempC = 90.4, actualTecRampRate = 0.0, targetTecRampRate = 2.1, output = 66.2, priorTargetTecRampRate = 2.1, p=-0.9, i=6.6, d=0.0, ff=60.5, kP=6.0, kI=0.0, kD=60.0[0m
+[0;32mI (308244) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (308245) BLE_PERIPH: Received 18/18[0m
+[0;32mI (308248) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (308269) FILE: Failed to delete file[0m
+[0;33mW (308270) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (308273) BLE_PERIPH: Sending Response Packet: [37, true, 31, [], 0][0m
+[37, true, 31, [], 0]
+[0;32mI (308280) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/21[0m
+[0;32mI (308301) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE[0m
+[0;32mI (308312) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=21 mtu=510, totalSize=21, currentIndex=0): [37, true, 31, [], 0][0m
+[0;32mI (308346) BLE_PERIPH: Instrument to App Transaction Write 21/21[0m
+[0;32mI (308347) BLE_PERIPH: Instrument to App Transaction Read/Notify 21/21[0m
+[0;32mI (308368) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (308413) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (308415) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;33mW (308430) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (308436) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (308436) BLE_PERIPH: Received 17/17[0m
+[0;32mI (308439) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;33mW (308484) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (308485) BLE_PERIPH: Sending Response Packet: [34, true, 32, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33174,73.54,22.52,0,0,0,0.00], 0][0m
+[34, true, 32, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 33174, 73.54, 22.52, 0, 0, 0, 0.00], 0]
+[0;32mI (308499) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[0;33mW (308530) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (308537) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 32, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33174,73.54,22.52,0,0,0,0.00], 0][0m
+[0;32mI (308582) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (308584) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (308595) isCupPresent: Cup Detected![0m
+[0;32mI (308596) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;31mE (308598) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (308603) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (308610) BLE_PERIPH: Notifying[0m
+[0;33mW (308614) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (308620) BLE_PERIPH: Notify Command Id = 34[0m
+[0;31mE (308625) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (308630) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;31mE (308637) taskMonitor_task: Task System Control Task hasn't checked in for 400 ms... Resetting[0m
+[0;33mW (308647) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (308653) BLE_PERIPH: Notifying[0m
+[0;33mW (308657) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (308663) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (308669) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (308675) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (308705) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (308706) BLE_PERIPH: Received 18/18[0m
+[0;32mI (308709) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (308711) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (308722) BLE_PERIPH: Sending Response Packet: [34, true, 34, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33403,72.79,22.52,2,0,0,0.00], 0][0m
+[0;32mI (308737) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 34, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 33403, 72.79, 22.52, 2, 0, 0, 0.00], 0]
+[0;32mI (308773) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 34, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33403,72.79,22.52,2,0,0,0.00], 0][0m
+[0;32mI (308818) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (308820) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (308852) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (308875) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (308876) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (308908) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (308909) BLE_PERIPH: Received 18/18[0m
+[0;32mI (308912) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (308955) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (308957) BLE_PERIPH: Sending Response Packet: [34, true, 33, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33647,71.75,22.52,2,0,0,0.00], 0][0m
+[0;32mI (308970) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 33, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 33647, 71.75, 22.52, 2, 0, 0, 0.00], 0]
+[0;32mI (309009) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 33, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33647,71.75,22.52,2,0,0,0.00], 0][0m
+[0;32mI (309054) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (309056) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (309088) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (309156) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (309157) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (309165) _stage1Calculate: Cooling[0m
+[0;32mI (309212) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (309212) BLE_PERIPH: Received 18/18[0m
+[0;32mI (309216) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (309239) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (309240) BLE_PERIPH: Sending Response Packet: [34, true, 36, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33931,70.74,22.52,2,0,0,0.00], 0][0m
+[34, true, 36, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 33931, 70.74, 22.52, 2, 0, 0, 0.00], 0]
+[0;32mI (309254) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[0;32mI (309313) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 36, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",33931,70.74,22.52,2,0,0,0.00], 0][0m
+[0;32mI (309369) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (309371) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (309392) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (309437) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (309439) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (309482) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (309482) BLE_PERIPH: Received 18/18[0m
+[0;32mI (309485) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (309518) _bleResponseHandler: Entered bluteooth response: should not be seen on serial commands[0m
+[0;32mI (309519) BLE_PERIPH: Sending Response Packet: [34, true, 35, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",34207,70.03,22.52,2,0,0,0.00], 0][0m
+[0;32mI (309533) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 35, ["2022-04-01T17:28:40.831Z", "086165b2-f0d3-42af-8dbf-e80478b8a0f8", 34207, 70.03, 22.52, 2, 0, 0, 0.00], 0]
+[0;32mI (309560) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34, true, 35, ["2022-04-01T17:28:40.831Z","086165b2-f0d3-42af-8dbf-e80478b8a0f8",34207,70.03,22.52,2,0,0,0.00], 0][0m
+[0;32mI (309617) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (309619) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (309651) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (311665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 48.88 |
+[0;32mI (314165) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 49.38 |
+DATAQ:  | liquid = 48.06 |
+DATAQ:  | liquid = 48.05 |
+[0;32mI (316665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 48.39 |
+DATAQ:  | liquid = 48.06 |
+[0;32mI (318687) Latch-Info: Curr: 988, LSENS: 0[0m
+[0;32mI (318742) Latch-Info: Curr: 532, LSENS: 0[0m
+[0;32mI (318797) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (318852) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (318907) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (318962) Latch-Info: Curr: 194, LSENS: 0[0m
+[0;32mI (319017) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (319072) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (319127) Latch-Info: Curr: 224, LSENS: 0[0m
+[0;32mI (319165) _stage1Calculate: Cooling[0m
+[0;32mI (319182) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (319237) Latch-Info: Curr: 204, LSENS: 0[0m
+DATAQ:  | liquid = 47.79 |
+[0;32mI (319292) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (319349) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (319374) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (319399) Latch-Info: Curr: 212, LSENS: 0[0m
+[0;32mI (319424) Latch-Info: Curr: 222, LSENS: 0[0m
+[0;32mI (319449) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (319976) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (320001) Latch-Info: Curr: 1006, LSENS: 0[0m
+[0;32mI (320026) Latch-Info: Curr: 936, LSENS: 0[0m
+[0;32mI (320051) Latch-Info: Curr: 448, LSENS: 0[0m
+[0;32mI (320076) Latch-Info: Curr: 242, LSENS: 0[0m
+[0;32mI (320101) Latch-Info: Curr: 230, LSENS: 0[0m
+[0;32mI (320126) Latch-Info: Curr: 240, LSENS: 0[0m
+[0;32mI (320152) Latch-Info: Curr: 208, LSENS: 0[0m
+[0;32mI (320177) Latch-Info: Curr: 218, LSENS: 0[0m
+[0;32mI (320202) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (320227) Latch-Info: Curr: 260, LSENS: 0[0m
+DATAQ:  | liquid = 47.69 |
+[0;32mI (320253) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (320278) Latch-Info: Curr: 200, LSENS: 0[0m
+[0;32mI (320303) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (320328) Latch-Info: Curr: 160, LSENS: 0[0m
+[0;32mI (320353) Latch-Info: Curr: 174, LSENS: 0[0m
+[0;32mI (320378) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (320403) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (320428) Latch-Info: Curr: 162, LSENS: 0[0m
+[0;32mI (320453) Latch-Info: Curr: 196, LSENS: 0[0m
+[0;32mI (320478) Latch-Info: Curr: 142, LSENS: 0[0m
+[0;32mI (320504) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (320529) Latch-Info: Curr: 126, LSENS: 0[0m
+[0;32mI (320554) Latch-Info: Curr: 138, LSENS: 0[0m
+[0;32mI (320579) Latch-Info: Curr: 158, LSENS: 0[0m
+[0;32mI (320604) Latch-Info: Curr: 136, LSENS: 0[0m
+[0;32mI (320629) Latch-Info: Curr: 176, LSENS: 0[0m
+[0;32mI (320654) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (320679) Latch-Info: Curr: 184, LSENS: 0[0m
+[0;32mI (320704) Latch-Info: Curr: 142, LSENS: 0[0m
+[0;32mI (320729) Latch-Info: Curr: 166, LSENS: 0[0m
+[0;32mI (320755) Latch-Info: Curr: 188, LSENS: 0[0m
+[0;32mI (320780) Latch-Info: Curr: 182, LSENS: 0[0m
+[0;32mI (320805) Latch-Info: Curr: 126, LSENS: 0[0m
+[0;32mI (320830) Latch-Info: Curr: 148, LSENS: 0[0m
+[0;32mI (320855) Latch-Info: Curr: 170, LSENS: 0[0m
+[0;32mI (320880) Latch-Info: Curr: 172, LSENS: 0[0m
+[0;32mI (320905) Latch-Info: Curr: 140, LSENS: 0[0m
+[0;32mI (320930) Latch-Info: Curr: 90, LSENS: 0[0m
+[0;32mI (320955) Latch-Info: Curr: 106, LSENS: 0[0m
+[0;32mI (320980) Latch-Info: Curr: 100, LSENS: 0[0m
+[0;32mI (321005) _readLatchSwitches: New Latch-Home Value: 1[0m
+[0;32mI (321207) Latch-Info: Curr: 92, LSENS: 0[0m
+[0;32mI (321232) Latch-Info: Curr: 980, LSENS: 0[0m
+DATAQ:  | liquid = 47.18 |
+[0;32mI (321257) Latch-Info: Curr: 818, LSENS: 0[0m
+[0;32mI (321282) Latch-Info: Curr: 398, LSENS: 0[0m
+[0;32mI (321307) Latch-Info: Curr: 186, LSENS: 0[0m
+[0;32mI (321332) _readLatchSwitches: New Latch-Home Value: 0[0m
+[0;32mI (321665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 46.82 |
+DATAQ:  | liquid = 46.53 |
+[0;32mI (324165) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 46.09 |
+DATAQ:  | liquid = 46.08 |
+DATAQ:  | liquid = 45.99 |
+[0;32mI (326665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 46.04 |
+DATAQ:  | liquid = 45.95 |
+[0;32mI (329165) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 44.85 |
+DATAQ:  | liquid = 44.32 |
+DATAQ:  | liquid = 37.19 |
+[0;32mI (331665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 23.53 |
+DATAQ:  | liquid = 22.22 |
+[0;32mI (334165) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.57 |
+DATAQ:  | liquid = 20.64 |
+DATAQ:  | liquid = 19.79 |
+[0;32mI (336665) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 19.4 |
+DATAQ:  | liquid = 18.86 |
+[0;32mI (339166) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 20.99 |
+DATAQ:  | liquid = 27.37 |
+DATAQ:  | liquid = 27.31 |
+[0;32mI (341666) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.08 |
+DATAQ:  | liquid = 35.81 |
+[0;32mI (344167) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.06 |
+DATAQ:  | liquid = 33.21 |
+DATAQ:  | liquid = 33.48 |
+[0;32mI (346667) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.25 |
+DATAQ:  | liquid = 34.6 |
+[0;32mI (349168) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.74 |
+DATAQ:  | liquid = 34.68 |
+DATAQ:  | liquid = 34.66 |
+[0;32mI (351667) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.78 |
+DATAQ:  | liquid = 34.88 |
+[0;32mI (354167) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.72 |
+DATAQ:  | liquid = 34.41 |
+DATAQ:  | liquid = 34.18 |
+[0;32mI (356668) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.18 |
+DATAQ:  | liquid = 34.08 |
+[0;32mI (359168) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.96 |
+DATAQ:  | liquid = 33.84 |
+DATAQ:  | liquid = 33.88 |
+[0;32mI (361669) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.9 |
+DATAQ:  | liquid = 33.69 |
+[0;32mI (364169) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.71 |
+DATAQ:  | liquid = 33.63 |
+[0;32mI (366669) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.61 |
+DATAQ:  | liquid = 33.48 |
+DATAQ:  | liquid = 33.53 |
+[0;32mI (369169) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.52 |
+DATAQ:  | liquid = 33.42 |
+[0;32mI (371669) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 33.26 |
+DATAQ:  | liquid = 33.29 |
+[0;32mI (1082180) _stage1Calculate: Cooling[0m
+[0;32mI (1084680) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 50.69 |
+DATAQ:  | liquid = 50.59 |
+[0;32mI (1087181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 50.47 |
+DATAQ:  | liquid = 50.43 |
+DATAQ:  | liquid = 50.37 |
+[0;32mI (1089679) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 49.32 |
+DATAQ:  | liquid = 41.36 |
+[0;32mI (1092180) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 27.4 |
+DATAQ:  | liquid = 24.75 |
+DATAQ:  | liquid = 23.13 |
+[0;32mI (1094681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 21.95 |
+DATAQ:  | liquid = 21.21 |
+[0;32mI (1097181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 20.56 |
+DATAQ:  | liquid = 25.41 |
+DATAQ:  | liquid = 38.65 |
+[0;32mI (1099679) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.8 |
+DATAQ:  | liquid = 43.39 |
+[0;32mI (1102181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 42.47 |
+DATAQ:  | liquid = 41.8 |
+DATAQ:  | liquid = 40.47 |
+[0;32mI (1104681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.49 |
+DATAQ:  | liquid = 40.72 |
+[0;32mI (1107181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.93 |
+DATAQ:  | liquid = 41.15 |
+[0;32mI (1109681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 41.19 |
+DATAQ:  | liquid = 41.02 |
+DATAQ:  | liquid = 41.0 |
+[0;32mI (1112181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 41.01 |
+DATAQ:  | liquid = 40.91 |
+[0;32mI (1114681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.91 |
+DATAQ:  | liquid = 40.79 |
+DATAQ:  | liquid = 40.79 |
+[0;32mI (1117181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.76 |
+DATAQ:  | liquid = 40.69 |
+[0;32mI (1119681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.56 |
+DATAQ:  | liquid = 40.62 |
+DATAQ:  | liquid = 40.56 |
+[0;32mI (1122181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.47 |
+DATAQ:  | liquid = 40.39 |
+[0;32mI (1124680) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.41 |
+DATAQ:  | liquid = 40.32 |
+DATAQ:  | liquid = 40.11 |
+[0;32mI (1127181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 40.19 |
+DATAQ:  | liquid = 40.08 |
+[0;32mI (1129679) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.99 |
+DATAQ:  | liquid = 39.9 |
+DATAQ:  | liquid = 39.96 |
+[0;32mI (1132181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.82 |
+DATAQ:  | liquid = 39.75 |
+[0;32mI (1134681) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.71 |
+DATAQ:  | liquid = 39.61 |
+DATAQ:  | liquid = 39.63 |
+[0;32mI (1137182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.57 |
+DATAQ:  | liquid = 39.52 |
+[0;32mI (1139682) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.39 |
+DATAQ:  | liquid = 39.41 |
+DATAQ:  | liquid = 39.32 |
+[0;32mI (1142182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.16 |
+DATAQ:  | liquid = 39.29 |
+[0;32mI (1144682) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 39.17 |
+DATAQ:  | liquid = 39.04 |
+DATAQ:  | liquid = 39.02 |
+[0;32mI (1147182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.98 |
+DATAQ:  | liquid = 38.82 |
+[0;32mI (1149682) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.84 |
+DATAQ:  | liquid = 38.79 |
+[0;32mI (1152180) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.64 |
+DATAQ:  | liquid = 38.59 |
+DATAQ:  | liquid = 38.56 |
+[0;32mI (1154682) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.57 |
+DATAQ:  | liquid = 38.47 |
+[0;32mI (1157182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.44 |
+DATAQ:  | liquid = 38.33 |
+DATAQ:  | liquid = 38.24 |
+[0;32mI (1159682) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.14 |
+DATAQ:  | liquid = 38.15 |
+[0;32mI (1162182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 38.08 |
+DATAQ:  | liquid = 38.1 |
+DATAQ:  | liquid = 38.08 |
+[0;32mI (1164683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.99 |
+DATAQ:  | liquid = 37.87 |
+[0;32mI (1167183) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.83 |
+DATAQ:  | liquid = 37.76 |
+DATAQ:  | liquid = 37.71 |
+[0;32mI (1169683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.72 |
+DATAQ:  | liquid = 37.73 |
+[0;32mI (1172183) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.52 |
+DATAQ:  | liquid = 37.45 |
+DATAQ:  | liquid = 37.44 |
+[0;32mI (1174683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.43 |
+DATAQ:  | liquid = 37.4 |
+[0;32mI (1177181) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.35 |
+DATAQ:  | liquid = 37.31 |
+DATAQ:  | liquid = 37.23 |
+[0;32mI (1179683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.11 |
+DATAQ:  | liquid = 37.22 |
+[0;32mI (1182183) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.07 |
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 37.03 |
+[0;32mI (1184683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 37.0 |
+DATAQ:  | liquid = 36.88 |
+[0;32mI (1187183) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.83 |
+DATAQ:  | liquid = 36.78 |
+DATAQ:  | liquid = 36.72 |
+[0;32mI (1189683) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.6 |
+DATAQ:  | liquid = 36.67 |
+[0;32mI (1192182) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.58 |
+DATAQ:  | liquid = 36.51 |
+[0;32mI (1194684) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.5 |
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.32 |
+[0;32mI (1197184) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.35 |
+DATAQ:  | liquid = 36.35 |
+[0;32mI (1199686) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.29 |
+DATAQ:  | liquid = 36.14 |
+DATAQ:  | liquid = 36.09 |
+[0;32mI (1202186) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.17 |
+DATAQ:  | liquid = 36.05 |
+[0;32mI (1204686) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 36.02 |
+DATAQ:  | liquid = 35.96 |
+DATAQ:  | liquid = 35.92 |
+[0;32mI (1207186) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.86 |
+DATAQ:  | liquid = 35.89 |
+[0;32mI (1209686) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.79 |
+DATAQ:  | liquid = 35.77 |
+DATAQ:  | liquid = 35.73 |
+[0;32mI (1212187) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.7 |
+DATAQ:  | liquid = 35.67 |
+[0;32mI (1214688) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.59 |
+DATAQ:  | liquid = 35.49 |
+DATAQ:  | liquid = 35.48 |
+[0;32mI (1217186) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.46 |
+DATAQ:  | liquid = 35.31 |
+[0;32mI (1219687) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.29 |
+DATAQ:  | liquid = 35.28 |
+DATAQ:  | liquid = 35.3 |
+[0;32mI (1222187) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.28 |
+DATAQ:  | liquid = 35.25 |
+[0;32mI (1224688) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.09 |
+DATAQ:  | liquid = 35.19 |
+DATAQ:  | liquid = 35.05 |
+[0;32mI (1227188) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.04 |
+DATAQ:  | liquid = 35.03 |
+[0;32mI (1229688) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 35.01 |
+DATAQ:  | liquid = 34.94 |
+[0;32mI (1232188) _stage1Calculate: Cooling[0m
+DATAQ:  | liquid = 34.9 |
+DATAQ:  | liquid = 34.83 |
