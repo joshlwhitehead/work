@@ -29,6 +29,11 @@ testb = gd.getData('lid0Cons0_fullRunb.csv','01Apr2022')
 testa = gd.getData('lidc_fullRun_115for20_100for180.csv','05Apr2022')
 
 
+#######################                                 MOD                                                             ############################
+a = gd.getData('lid0Cons1_v001_63_90_50_for200.csv','07Apr2022')
+b = gd.getData('a15Lid0Cons1_v001_63_90_50_for200.csv','08Apr2022')
+
+
 
 # import matplotlib.pyplot as plt
 # plt.plot(testa[1])
