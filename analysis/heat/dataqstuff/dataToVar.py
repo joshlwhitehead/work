@@ -33,6 +33,9 @@ testa = gd.getData('lidc_fullRun_115for20_100for180.csv','05Apr2022')
 
 b = gd.getData('lid0Cons1_v001_63_50_90_for200.csv','08Apr2022')
 
+oil = gd.getData('lidC_mOil_peepshow.csv','14Apr2022')
+wat = gd.getData('lidCCons2Peepshow_fullRun.csv','14Apr2022')
+
 
 
 # import matplotlib.pyplot as plt
