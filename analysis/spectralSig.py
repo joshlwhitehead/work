@@ -9,8 +9,8 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 
-consumableId = '0d8304ed-68a2-4518-95ef-08009b9dd539'
-refChan = 7
+consumableId = '404629da-ce1d-4f55-ac89-63fc628da800'
+refChan = 3
 api = auth.getApiClient()
 
 where = {
@@ -76,7 +76,7 @@ def pcrplot():
     plt.ylabel("Fluorescence")
     plt.xticks((415,445,480,515,555,590,630,680),('415','445','480','515','555','590','630','680'))
     plt.grid()
-    plt.savefig(''.join(['specSigAli/',consumableId[:6]]))
+    plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
     plt.show()
 
 
@@ -114,6 +114,6 @@ def melt_deriv():
     plt.grid()
     
     
-    plt.savefig(''.join(['specSigAli/',consumableId[:6]]))
+    plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
     plt.show()
 melt_deriv()
