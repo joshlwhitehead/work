@@ -59,3 +59,5 @@ break105 = gd.getData('lid0_break_contAcq_105.csv','05Apr2022')
 #######################         THERMO 001                              ###################
 test1 = gd.getData('lid001Cons2.csv','05May2022')
 test2 = gd.getData('lid001Cons2_2.csv','05May2022')
+uL700 = gd.getData('lid001_700uL_2.csv','05May2022')
+uL800 = gd.getData('lid001_800uL.csv','05May2022')
