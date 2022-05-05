@@ -51,3 +51,11 @@ wat = gd.getData('lidCCons2Peepshow_fullRun.csv','14Apr2022')
 ########################            BREAK                       ########################
 break115 = gd.getData('lid0_break_contAcq.csv','05Apr2022')
 break105 = gd.getData('lid0_break_contAcq_105.csv','05Apr2022')
+
+
+
+
+
+#######################         THERMO 001                              ###################
+test1 = gd.getData('lid001Cons2.csv','05May2022')
+test2 = gd.getData('lid001Cons2_2.csv','05May2022')

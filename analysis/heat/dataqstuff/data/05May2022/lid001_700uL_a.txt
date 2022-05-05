@@ -1,0 +1,962 @@
+DATAQ:  | liquid = 24.07 |
+DATAQ:  | liquid = 24.09 |
+DATAQ:  | liquid = 24.13 |
+DATAQ:  | liquid = 24.07 |
+DATAQ:  | liquid = 24.07 |
+DATAQ:  | liquid = 24.1 |
+DATAQ:  | liquid = 24.4 |
+DATAQ:  | liquid = 23.73 |
+DATAQ:  | liquid = 23.78 |
+DATAQ:  | liquid = 24.14 |
+DATAQ:  | liquid = 24.21 |
+DATAQ:  | liquid = 24.18 |
+DATAQ:  | liquid = 24.06 |
+DATAQ:  | liquid = 24.11 |
+DATAQ:  | liquid = 24.15 |
+DATAQ:  | liquid = 24.14 |
+DATAQ:  | liquid = 24.21 |
+DATAQ:  | liquid = 24.27 |
+DATAQ:  | liquid = 24.34 |
+DATAQ:  | liquid = 24.34 |
+DATAQ:  | liquid = 24.48 |
+DATAQ:  | liquid = 24.57 |
+DATAQ:  | liquid = 24.6 |
+DATAQ:  | liquid = 24.65 |
+DATAQ:  | liquid = 24.71 |
+DATAQ:  | liquid = 24.8 |
+DATAQ:  | liquid = 24.86 |
+DATAQ:  | liquid = 24.87 |
+DATAQ:  | liquid = 24.86 |
+[0;32mI (4549023) _handleBluetoothButtonPress: Pressed[0m
+[0;32mI (4549023) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING[0m
+[0;33mW (4549030) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2308[0m
+[0;33mW (4549033) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2148[0m
+[0;33mW (4549080) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2148[0m
+[0;33mW (4549115) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2148[0m
+DATAQ:  | liquid = 24.98 |
+DATAQ:  | liquid = 25.07 |
+DATAQ:  | liquid = 25.09 |
+DATAQ:  | liquid = 24.98 |
+DATAQ:  | liquid = 25.1 |
+DATAQ:  | liquid = 25.14 |
+DATAQ:  | liquid = 25.21 |
+DATAQ:  | liquid = 25.2 |
+DATAQ:  | liquid = 25.21 |
+DATAQ:  | liquid = 25.27 |
+DATAQ:  | liquid = 25.27 |
+DATAQ:  | liquid = 25.29 |
+[0;32mI (4560550) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONNECT[0m
+[0;32mI (4560551) connectCb: Connected CB[0m
+[0;32mI (4560552) bluetoothRequestStateChange: Bluetooth State Transition PAIRING -> CONNECTED[0m
+[0;32mI (4561141) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+[0;32mI (4561232) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (4561233) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (4561239) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:6 imin6 lat:0 maxl:0 minl:0 st:500[0m
+[0;32mI (4561333) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 25.29 |
+[0;32mI (4561582) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE_REQ[0m
+[0;32mI (4561583) BLE_PERIPH_INTERFACE: Peer Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (4561588) BLE_PERIPH_INTERFACE: Self Connection Parameters: imax:9 imin9 lat:0 maxl:0 minl:0 st:400[0m
+[0;32mI (4561599) mtuCb: MTU updated to 512[0m
+[0;32mI (4561603) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_MTU[0m
+[0;32mI (4561665) BLE_PERIPH_INTERFACE: BLE_GAP_EVENT_CONN_UPDATE 0[0m
+DATAQ:  | liquid = 25.35 |
+[0;32mI (4562771) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4563098) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4563100) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4563199) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4563200) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4563203) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4563231) BLE_PERIPH: Sending Response Packet: [16,true,914,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[16, true, 914, [{
+		"firmwareVersion":	"0.4.888",
+		"gitCommit":	"189bd8267d086c129eefb0363e77b0efe63377af-dirty",
+		"buildTimeStamp":	"2022-04-25T17:34:54Z",
+		"macAddress":	"c4:5b:be:2d:36:88",
+		"hardwareId":	"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"
+	}], 0]
+[0;32mI (4563247) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/233[0m
+[0;32mI (4563311) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=233 mtu=510, totalSize=233, currentIndex=0): [16,true,914,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[0;33mW (4563332) systemTasksMonitorStack: Stack Watermark(Comm): 8376[0m
+[0;32mI (4563368) BLE_PERIPH: Instrument to App Transaction Write 233/233[0m
+[0;32mI (4563370) BLE_PERIPH: Instrument to App Transaction Read/Notify 233/233[0m
+[0;32mI (4563390) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4563435) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4563437) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4563491) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4563492) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4563495) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+DATAQ:  | liquid = 25.28 |
+[0;32mI (4563540) BLE_PERIPH: Sending Response Packet: [16,true,915,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[16, true, 915, [{
+		"firmwareVersion":	"0.4.888",
+		"gitCommit":	"189bd8267d086c129eefb0363e77b0efe63377af-dirty",
+		"buildTimeStamp":	"2022-04-25T17:34:54Z",
+		"macAddress":	"c4:5b:be:2d:36:88",
+		"hardwareId":	"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"
+	}], 0]
+[0;32mI (4563556) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/233[0m
+[0;32mI (4563604) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=233 mtu=510, totalSize=233, currentIndex=0): [16,true,915,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[0;32mI (4563694) BLE_PERIPH: Instrument to App Transaction Write 233/233[0m
+[0;32mI (4563696) BLE_PERIPH: Instrument to App Transaction Read/Notify 233/233[0m
+[0;32mI (4563795) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4563829) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4563831) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4563862) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4563863) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4563866) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4563880) BLE_PERIPH: Sending Response Packet: [16,true,916,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[16, true, 916, [{
+		"firmwareVersion":	"0.4.888",
+		"gitCommit":	"189bd8267d086c129eefb0363e77b0efe63377af-dirty",
+		"buildTimeStamp":	"2022-04-25T17:34:54Z",
+		"macAddress":	"c4:5b:be:2d:36:88",
+		"hardwareId":	"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"
+	}], 0]
+[0;32mI (4563897) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/233[0m
+[0;32mI (4563963) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=233 mtu=510, totalSize=233, currentIndex=0): [16,true,916,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[0;32mI (4564020) BLE_PERIPH: Instrument to App Transaction Write 233/233[0m
+[0;32mI (4564022) BLE_PERIPH: Instrument to App Transaction Read/Notify 233/233[0m
+[0;32mI (4564042) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4564110) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4564112) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4564166) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4564167) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4564171) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4564220) BLE_PERIPH: Sending Response Packet: [16,true,917,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[16, true, 917, [{
+		"firmwareVersion":	"0.4.888",
+		"gitCommit":	"189bd8267d086c129eefb0363e77b0efe63377af-dirty",
+		"buildTimeStamp":	"2022-04-25T17:34:54Z",
+		"macAddress":	"c4:5b:be:2d:36:88",
+		"hardwareId":	"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"
+	}], 0]
+[0;32mI (4564236) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/233[0m
+[0;32mI (4564290) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=233 mtu=510, totalSize=233, currentIndex=0): [16,true,917,[{"firmwareVersion":"0.4.888","gitCommit":"189bd8267d086c129eefb0363e77b0efe63377af-dirty","buildTimeStamp":"2022-04-25T17:34:54Z","macAddress":"c4:5b:be:2d:36:88","hardwareId":"0cf4c2b4-90e8-5c4e-87e4-c39e11c512ef"}],0][0m
+[0;32mI (4564369) BLE_PERIPH: Instrument to App Transaction Write 233/233[0m
+[0;32mI (4564371) BLE_PERIPH: Instrument to App Transaction Read/Notify 233/233[0m
+[0;32mI (4564391) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.38 |
+[0;33mW (4564669) heapMonitor_checkFreeHeapSize: New heap low water mark 114104[0m
+[0;32mI (4564898) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4564900) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4565010) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4565011) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4565014) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4565062) BLE_PERIPH: Sending Response Packet: [34,true,918,["","",269415,26.03,27.19,4,0,0,0.00],0][0m
+[0;32mI (4565069) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 918, ["", "", 269415, 26.03, 27.19, 4, 0, 0, 0.00], 0]
+[0;33mW (4565135) systemTasksMonitorStack: Stack Watermark(Comm): 8120[0m
+[0;32mI (4565145) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,918,["","",269415,26.03,27.19,4,0,0,0.00],0][0m
+[0;32mI (4565235) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4565237) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4565258) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4565314) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4565316) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4565381) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4565382) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4565385) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4565398) BLE_PERIPH: Sending Response Packet: [34,true,919,["","",269751,26.02,27.18,4,0,0,0.00],0][0m
+[0;32mI (4565399) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 919, ["", "", 269751, 26.02, 27.18, 4, 0, 0, 0.00], 0]
+[0;32mI (4565448) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,919,["","",269751,26.02,27.18,4,0,0,0.00],0][0m
+DATAQ:  | liquid = 25.37 |
+[0;32mI (4565516) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4565518) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4565539) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4565606) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4565608) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4565696) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4565697) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4565700) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4565723) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/6313[0m
+[0;32mI (4565808) instrumentToAppDataCharAccessCb: Writing all pre params[0m
+[0;32mI (4565818) instrumentToAppDataCharAccessCb: Writing 496 bytes of file[0m
+[0;32mI (4565819) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=0): [36,true,920,[{"timestamp":"2022-05-05T18:34:57.619Z","consumableId":"74c2a038-5bd0-4ab8-970a-8260ef17e329","experimentData":[[0,534,31.35],[0,2072,31.74],[0,3585,33.00],[0,5088,34.96],[0,6588,37.43],[0,8104,40.28],[0,9605,43.37],[0,11105,46.62],[0,12605,49.97],[0,14105,53.36],[0,15611,56.67],[0,17111,58.96],[0,18630,60.14],[0,20130,60.48],[0,21630,60.33],[0,23130,60.05],[0,24630,59.91],[0,26130,59.90],[0,27630,59.94],[0,29141,59.96],[0,30641,59.97],[0,32141,59.97],[0,33642,59.97],[0,35142,59.96],[0,36642[0m
+[0;32mI (4565910) BLE_PERIPH: Instrument to App Transaction Write 510/6313[0m
+[0;32mI (4565912) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/6313[0m
+[0;32mI (4565963) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4565965) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=510): ,59.97],[0,38142,59.97],[0,39645,59.97],[0,41146,59.97],[0,42646,59.97],[0,44148,59.97],[0,45648,59.98],[0,47148,59.98],[0,48648,59.98],[0,50150,59.98],[0,51662,59.98],[0,53162,59.98],[0,54662,59.98],[0,56162,59.98],[0,57662,59.98],[0,59162,59.98],[0,60662,59.98],[0,62166,59.99],[0,63667,59.99],[0,65167,59.99],[0,66667,59.99],[0,68167,59.99],[0,69667,59.99],[0,71167,59.99],[0,72680,59.99],[0,74181,59.99],[0,75681,59.99],[0,77181,59.99],[0,78688,59.99],[0,80188,59.99],[0,81688,59.99],[0,83188,60.00],[0,847[0m
+[0;32mI (4566056) BLE_PERIPH: Instrument to App Transaction Write 1020/6313[0m
+[0;32mI (4566058) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/6313[0m
+[0;32mI (4566098) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566100) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=1020): 43,59.99],[0,86243,59.99],[0,87743,60.00],[0,89243,60.00],[0,90743,60.00],[0,92243,60.00],[0,93750,60.00],[0,95311,60.00],[0,96811,60.00],[0,98311,60.00],[0,99811,60.00],[0,101311,60.00],[0,102811,60.00],[0,104311,60.00],[0,105824,60.00],[0,107325,60.00],[0,108825,60.00],[0,110325,60.00],[0,111826,60.00],[0,113332,60.00],[0,114832,60.00],[0,116332,60.00],[0,117833,60.00],[0,119333,60.00],[0,120833,60.00],[0,122333,60.00],[0,123833,60.00],[0,125333,60.00],[0,126834,60.00],[0,128356,60.00],[0,129856,60.00],[0m
+[0;32mI (4566191) BLE_PERIPH: Instrument to App Transaction Write 1530/6313[0m
+[0;32mI (4566193) BLE_PERIPH: Instrument to App Transaction Read/Notify 1530/6313[0m
+[0;32mI (4566234) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566235) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=1530): [0,131357,60.00],[0,132857,60.00],[0,134357,60.00],[0,135857,60.00],[0,137357,60.00],[0,138878,60.00],[0,140378,60.00],[0,141879,60.00],[0,143379,60.00],[0,144879,60.00],[0,146379,60.00],[0,147886,60.00],[0,149391,60.00],[0,150891,60.00],[0,152391,60.00],[0,153891,60.00],[0,155391,60.00],[0,156891,60.00],[0,158391,60.00],[0,159917,60.00],[0,161417,60.00],[0,162917,60.00],[0,164417,60.00],[0,165917,60.00],[0,167417,60.00],[0,168917,60.00],[0,170417,60.00],[0,171939,60.00],[0,173440,60.00],[0,174940,60.00],[0m
+[0;32mI (4566326) BLE_PERIPH: Instrument to App Transaction Write 2040/6313[0m
+[0;32mI (4566328) BLE_PERIPH: Instrument to App Transaction Read/Notify 2040/6313[0m
+[0;32mI (4566368) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566370) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=2040): [0,176447,60.00],[0,177947,60.00],[0,179447,60.00],[0,180947,60.00],[0,182470,60.00],[0,183971,60.00],[0,185471,60.00],[0,186971,60.00],[0,188479,60.00],[0,189979,60.00],[0,191479,60.00],[0,193038,60.00],[0,194538,60.00],[0,196039,60.00],[0,197539,60.00],[0,199039,60.00],[0,200539,60.00],[0,202045,60.00],[0,203606,60.00],[0,205106,60.00],[0,206606,60.00],[0,208106,60.00],[0,209606,60.00],[0,211113,60.00],[0,212614,60.00],[0,214115,60.00],[0,215627,60.00],[0,217127,60.00],[0,218627,60.00],[0,220127,60.00],[0m
+[0;32mI (4566461) BLE_PERIPH: Instrument to App Transaction Write 2550/6313[0m
+[0;32mI (4566463) BLE_PERIPH: Instrument to App Transaction Read/Notify 2550/6313[0m
+DATAQ:  | liquid = 25.43 |
+[0;32mI (4566537) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566539) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=2550): [0,221627,60.08],[0,223127,60.77],[0,224627,62.08],[0,226140,63.85],[0,227640,65.96],[0,229140,68.30],[0,230641,70.78],[0,232141,73.21],[0,233641,75.53],[0,235141,77.72],[0,236698,79.86],[0,238198,81.82],[0,239699,83.67],[0,241206,85.42],[0,242706,87.07],[0,244206,88.63],[0,245706,89.98],[0,247238,90.40],[0,248738,90.30],[0,250238,90.08],[0,251738,89.93],[0,253238,89.91],[0,254738,89.94],[0,256238,89.96],[0,257738,89.97],[0,259299,89.97],[0,260799,89.97],[0,262299,89.97],[0,263799,89.98],[0,265305,89.98],[0m
+[0;32mI (4566653) BLE_PERIPH: Instrument to App Transaction Write 3060/6313[0m
+[0;32mI (4566655) BLE_PERIPH: Instrument to App Transaction Read/Notify 3060/6313[0m
+[0;32mI (4566684) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566685) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=3060): [0,266805,89.98],[0,268305,89.98],[0,269814,89.98],[0,271314,89.98],[0,272814,89.99],[0,274314,89.99],[0,275814,89.99],[0,277321,89.99],[0,278821,89.99],[0,280337,89.99],[0,281848,89.99],[0,283348,89.99],[0,284848,89.99],[0,286348,89.99],[0,287848,89.99],[0,289348,90.00],[0,290865,90.00],[0,292365,90.00],[0,293872,90.00],[0,295375,90.00],[0,296875,90.00],[0,298375,90.00],[0,299875,90.00],[0,301376,90.00],[0,302928,90.00],[0,304428,90.00],[0,305929,90.00],[0,307429,90.00],[0,308929,90.00],[0,310429,90.00],[0m
+[0;32mI (4566776) BLE_PERIPH: Instrument to App Transaction Write 3570/6313[0m
+[0;32mI (4566778) BLE_PERIPH: Instrument to App Transaction Read/Notify 3570/6313[0m
+[0;32mI (4566807) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566809) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=3570): [0,311930,90.00],[0,313430,90.00],[0,314930,90.00],[0,316430,90.00],[0,317930,90.00],[0,319430,90.00],[0,320930,90.00],[0,322430,90.00],[0,323933,90.00],[0,325436,90.00],[0,326936,90.00],[0,328436,90.00],[0,329936,90.00],[0,331436,90.00],[0,332936,90.00],[0,334436,90.00],[0,335936,90.00],[0,337436,90.00],[0,338936,90.00],[0,340436,90.00],[0,341936,90.00],[0,343436,90.00],[0,344936,90.00],[0,346448,90.00],[0,347948,90.00],[0,349450,90.00],[0,350950,90.00],[0,352450,90.00],[0,353950,90.00],[0,355450,90.00],[0m
+[0;32mI (4566900) BLE_PERIPH: Instrument to App Transaction Write 4080/6313[0m
+[0;32mI (4566902) BLE_PERIPH: Instrument to App Transaction Read/Notify 4080/6313[0m
+[0;32mI (4566954) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4566955) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=4080): [0,356971,90.00],[0,358471,90.00],[0,359971,90.00],[0,361471,90.00],[0,362971,90.00],[0,364471,90.00],[0,365971,90.00],[0,367496,90.00],[0,369004,90.00],[0,370504,90.00],[0,372005,90.00],[0,373505,90.00],[0,375005,90.00],[0,376505,90.00],[0,378062,90.00],[0,379562,90.00],[0,381062,90.00],[0,382563,90.00],[0,384063,90.00],[0,385563,90.00],[0,387063,90.00],[0,388563,90.00],[0,390117,90.00],[0,391619,90.00],[0,393119,90.00],[0,394619,90.00],[0,396119,90.00],[0,397619,90.00],[0,399120,90.00],[0,400632,90.00],[0m
+[0;32mI (4567046) BLE_PERIPH: Instrument to App Transaction Write 4590/6313[0m
+[0;32mI (4567048) BLE_PERIPH: Instrument to App Transaction Read/Notify 4590/6313[0m
+[0;32mI (4567100) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4567101) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=4590): [0,402134,90.00],[0,403634,90.00],[0,405134,90.00],[0,406634,90.00],[0,408134,90.00],[0,409634,90.00],[0,411153,90.00],[0,412653,90.00],[0,414153,90.00],[0,415653,90.00],[0,417153,90.00],[0,418653,90.00],[0,420153,90.00],[0,421695,90.00],[0,423196,90.00],[0,424698,90.00],[0,426198,90.00],[0,427703,90.00],[0,429203,90.00],[0,430703,90.00],[0,432203,90.00],[0,433723,90.00],[0,435223,90.00],[0,436723,90.00],[0,438223,90.00],[0,439723,90.00],[0,441223,90.00],[0,442723,90.00],[0,444278,90.00],[0,445780,90.00],[0m
+[0;32mI (4567193) BLE_PERIPH: Instrument to App Transaction Write 5100/6313[0m
+[0;32mI (4567195) BLE_PERIPH: Instrument to App Transaction Read/Notify 5100/6313[0m
+[0;32mI (4567235) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4567236) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=5100): [0,447280,90.00],[0,448780,89.92],[0,450281,89.23],[0,451781,87.96],[0,453281,86.26],[0,454790,84.25],[0,456290,82.02],[0,457790,79.63],[0,459297,77.14],[0,460797,74.59],[0,462297,72.03],[0,463797,69.46],[0,465313,66.92],[0,466813,64.42],[0,468313,61.99],[0,469821,59.61],[0,471321,57.32],[0,472821,55.10],[0,474321,52.97],[0,475826,50.93],[0,477330,49.65],[0,478830,49.57],[0,480330,49.82],[0,481830,49.99],[0,483330,50.04],[0,484830,50.02],[0,486330,50.00],[0,487888,49.98],[0,489388,49.98],[0,490888,49.99],[0m
+[0;32mI (4567328) BLE_PERIPH: Instrument to App Transaction Write 5610/6313[0m
+[0;32mI (4567330) BLE_PERIPH: Instrument to App Transaction Read/Notify 5610/6313[0m
+[0;32mI (4567358) instrumentToAppDataCharAccessCb: Writing 510 bytes of file[0m
+[0;32mI (4567360) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=6313, currentIndex=5610): [0,492388,49.99],[0,493888,49.99],[0,495388,49.99],[0,496888,49.99],[0,498402,50.00],[0,499902,50.00],[0,501402,50.00],[0,502903,50.00],[0,504403,50.00],[0,505903,50.00],[0,507403,50.00],[0,508903,50.00],[0,510404,50.00],[0,511904,50.00],[0,513404,50.00],[0,514904,50.00],[0,516404,50.00],[0,517904,50.00],[0,519431,50.00],[0,520952,50.01],[0,522452,50.01],[0,523952,50.01],[0,525452,50.01],[0,526960,50.01],[0,528460,50.01],[0,529960,50.01],[0,531461,50.01],[0,532961,50.01],[0,534461,50.01],[0,535961,50.01],[0m
+[0;32mI (4567463) BLE_PERIPH: Instrument to App Transaction Write 6120/6313[0m
+[0;32mI (4567465) BLE_PERIPH: Instrument to App Transaction Read/Notify 6120/6313[0m
+[0;32mI (4567511) instrumentToAppDataCharAccessCb: Writing 188 bytes of file[0m
+[0;32mI (4567512) instrumentToAppDataCharAccessCb: Writing 5 bytes of post params[0m
+[0;32mI (4567516) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=193 mtu=510, totalSize=6313, currentIndex=6120): [0,537461,50.01],[0,538961,50.02],[0,540461,50.02],[0,541970,50.02],[0,543470,50.02],[0,544970,50.02],[0,546470,50.02],[0,547970,50.02],[0,549470,50.02],[0,550970,50.02],[0,552470,50.02]]}],0] [0m
+DATAQ:  | liquid = 25.41 |
+[0;32mI (4567575) BLE_PERIPH: Instrument to App Transaction Write 6313/6313[0m
+[0;32mI (4567577) BLE_PERIPH: Instrument to App Transaction Read/Notify 6313/6313[0m
+[0;32mI (4567598) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;33mW (4567671) heapMonitor_checkFreeHeapSize: New heap low water mark 113796[0m
+[0;32mI (4567676) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4567678) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4567755) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4567756) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4567759) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4567804) BLE_PERIPH: Sending Response Packet: [34,true,921,["","",272152,26.01,27.18,4,0,0,0.00],0][0m
+[0;32mI (4567806) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 921, ["", "", 272152, 26.01, 27.18, 4, 0, 0, 0.00], 0]
+[0;32mI (4567867) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,921,["","",272152,26.01,27.18,4,0,0,0.00],0][0m
+[0;32mI (4567946) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4567948) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4567969) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.44 |
+DATAQ:  | liquid = 25.43 |
+DATAQ:  | liquid = 25.43 |
+[0;32mI (4570601) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4570603) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4570680) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4570681) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4570684) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (4570731) FILE: Failed to delete file[0m
+[0;32mI (4570732) BLE_PERIPH: Sending Response Packet: [37,true,922,[],0][0m
+[0;32mI (4570739) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[37, true, 922, [], 0]
+[0;32mI (4570747) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE[0m
+[0;32mI (4570789) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (4570790) BLE_PERIPH: Notifying[0m
+[0;33mW (4570791) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (4570794) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (4570801) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (4570806) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [37,true,922,[],0][0m
+[0;33mW (4570844) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (4570882) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (4570884) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (4570905) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4571040) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4571042) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4571152) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4571153) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4571156) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4571183) BLE_PERIPH: Sending Response Packet: [34,true,924,["","",275537,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4571185) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 924, ["", "", 275537, 26.02, 27.18, 0, 0, 0, 0.00], 0]
+[0;32mI (4571242) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,924,["","",275537,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4571299) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4571301) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4571321) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4571400) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4571402) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4571467) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4571468) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4571471) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4571509) BLE_PERIPH: Sending Response Packet: [34,true,926,["","",275863,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4571510) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 926, ["", "", 275863, 26.02, 27.18, 0, 0, 0, 0.00], 0]
+[0;32mI (4571568) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,926,["","",275863,26.02,27.18,0,0,0,0.00],0][0m
+DATAQ:  | liquid = 25.48 |
+[0;32mI (4571625) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4571627) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4571647) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4571670) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4571672) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4571793) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4571794) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4571798) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4571840) BLE_PERIPH: Sending Response Packet: [34,true,928,["","",276194,26.01,27.18,0,0,0,0.00],0][0m
+[0;32mI (4571841) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 928, ["", "", 276194, 26.01, 27.18, 0, 0, 0, 0.00], 0]
+[0;32mI (4571883) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,928,["","",276194,26.01,27.18,0,0,0,0.00],0][0m
+[0;32mI (4572019) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4572021) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4572041) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4572120) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4572122) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4572266) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4572267) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4572271) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4572315) BLE_PERIPH: Sending Response Packet: [34,true,930,["","",276668,26.02,27.19,0,0,0,0.00],0][0m
+[0;32mI (4572322) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 930, ["", "", 276668, 26.02, 27.19, 0, 0, 0, 0.00], 0]
+[0;32mI (4572412) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,930,["","",276668,26.02,27.19,0,0,0,0.00],0][0m
+[0;32mI (4572491) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4572493) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4572525) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.45 |
+[0;32mI (4572637) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4572639) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4572705) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4572706) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4572709) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4572747) BLE_PERIPH: Sending Response Packet: [34,true,932,["","",277100,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4572748) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 932, ["", "", 277100, 26.02, 27.18, 0, 0, 0, 0.00], 0]
+[0;32mI (4572783) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,932,["","",277100,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4572817) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4572819) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4572840) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4572885) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4572887) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4572918) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4572919) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4572922) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4572961) BLE_PERIPH: Sending Response Packet: [34,true,931,["","",277315,26.02,27.19,0,0,0,0.00],0][0m
+[0;32mI (4572969) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 931, ["", "", 277315, 26.02, 27.19, 0, 0, 0, 0.00], 0]
+[0;32mI (4572997) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,931,["","",277315,26.02,27.19,0,0,0,0.00],0][0m
+[0;32mI (4573031) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4573033) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4573065) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4573099) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4573101) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4573143) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4573144) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4573147) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4573194) BLE_PERIPH: Sending Response Packet: [34,true,933,["","",277547,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4573195) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 933, ["", "", 277547, 26.02, 27.18, 0, 0, 0, 0.00], 0]
+[0;32mI (4573222) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,933,["","",277547,26.02,27.18,0,0,0,0.00],0][0m
+[0;32mI (4573245) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4573247) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4573267) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4573335) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4573337) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4573380) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4573381) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4573384) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (4573409) FILE: Failed to delete file[0m
+[0;32mI (4573411) BLE_PERIPH: Sending Response Packet: [37,true,934,[],0][0m
+[0;32mI (4573412) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[37, true, 934, [], 0]
+[0;32mI (4573436) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [37,true,934,[],0][0m
+[0;32mI (4573492) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (4573494) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (4573515) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.45 |
+[0;32mI (4573605) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4573607) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4573661) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4573662) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4573665) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4573679) BLE_PERIPH: Sending Response Packet: [34,true,935,["","",278026,26.01,27.19,0,0,0,0.00],0][0m
+[0;32mI (4573681) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 935, ["", "", 278026, 26.01, 27.19, 0, 0, 0, 0.00], 0]
+[0;32mI (4573717) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,935,["","",278026,26.01,27.19,0,0,0,0.00],0][0m
+[0;32mI (4573762) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4573764) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4573785) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.46 |
+DATAQ:  | liquid = 25.55 |
+DATAQ:  | liquid = 25.49 |
+DATAQ:  | liquid = 25.57 |
+DATAQ:  | liquid = 25.52 |
+DATAQ:  | liquid = 25.51 |
+DATAQ:  | liquid = 25.52 |
+DATAQ:  | liquid = 25.54 |
+DATAQ:  | liquid = 25.53 |
+DATAQ:  | liquid = 25.55 |
+DATAQ:  | liquid = 25.52 |
+DATAQ:  | liquid = 25.57 |
+DATAQ:  | liquid = 25.59 |
+DATAQ:  | liquid = 25.61 |
+DATAQ:  | liquid = 25.59 |
+[0;31mE (4589393) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (4589394) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (4589457) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;31mE (4589522) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (4589523) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (4589558) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+DATAQ:  | liquid = 25.69 |
+[0;32mI (4589654) customUtil_isCupPresent: Cup Detected![0m
+[0;32mI (4589655) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (4589657) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;31mE (4589662) taskMonitor_task: Task System Control Task hasn't checked in for 400 ms...[0m
+[0;32mI (4589671) BLE_PERIPH: Notifying[0m
+[0;33mW (4589675) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (4589681) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (4589687) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (4589715) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4589717) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;33mW (4589794) systemTasksMonitorStack: Stack Watermark(System): 2036[0m
+[0;32mI (4589827) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4589828) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4589831) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4589857) BLE_PERIPH: Sending Response Packet: [34,true,937,["","",294210,26.00,27.19,2,0,0,0.00],0][0m
+[0;32mI (4589859) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 937, ["", "", 294210, 26.00, 27.19, 2, 0, 0, 0.00], 0]
+[0;32mI (4589883) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,937,["","",294210,26.00,27.19,2,0,0,0.00],0][0m
+[0;32mI (4589951) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4589953) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4589973) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4590063) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4590065) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4590108) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4590109) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4590112) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4590129) BLE_PERIPH: Sending Response Packet: [34,true,939,["","",294482,25.99,27.19,2,0,0,0.00],0][0m
+[0;32mI (4590132) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 939, ["", "", 294482, 25.99, 27.19, 2, 0, 0, 0.00], 0]
+[0;32mI (4590187) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,939,["","",294482,25.99,27.19,2,0,0,0.00],0][0m
+[0;32mI (4590243) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4590245) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4590266) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4590333) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4590335) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4590389) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4590390) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4590393) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4590408) BLE_PERIPH: Sending Response Packet: [34,true,941,["","",294755,25.98,27.20,2,0,0,0.00],0][0m
+[0;32mI (4590410) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 941, ["", "", 294755, 25.98, 27.20, 2, 0, 0, 0.00], 0]
+[0;32mI (4590457) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,941,["","",294755,25.98,27.20,2,0,0,0.00],0][0m
+[0;32mI (4590502) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4590504) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4590525) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4590547) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4590549) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4590637) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4590638) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4590641) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+DATAQ:  | liquid = 25.73 |
+[0;32mI (4590674) BLE_PERIPH: Sending Response Packet: [34,true,943,["","",295027,25.97,27.20,2,0,0,0.00],0][0m
+[0;32mI (4590675) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 943, ["", "", 295027, 25.97, 27.20, 2, 0, 0, 0.00], 0]
+[0;32mI (4590738) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,943,["","",295027,25.97,27.20,2,0,0,0.00],0][0m
+[0;32mI (4590783) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4590785) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4590806) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4590862) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4590864) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4590907) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4590908) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4590911) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4590948) BLE_PERIPH: Sending Response Packet: [34,true,945,["","",295301,25.97,27.20,2,0,0,0.00],0][0m
+[0;32mI (4590955) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 945, ["", "", 295301, 25.97, 27.20, 2, 0, 0, 0.00], 0]
+[0;32mI (4591019) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,945,["","",295301,25.97,27.20,2,0,0,0.00],0][0m
+[0;32mI (4591087) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4591089) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4591110) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4591200) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4591202) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4591278) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4591279) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4591282) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4591328) BLE_PERIPH: Sending Response Packet: [34,true,944,["","",295675,25.97,27.19,2,0,0,0.00],0][0m
+[0;32mI (4591329) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 944, ["", "", 295675, 25.97, 27.19, 2, 0, 0, 0.00], 0]
+[0;32mI (4591368) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,944,["","",295675,25.97,27.19,2,0,0,0.00],0][0m
+[0;32mI (4591436) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4591438) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4591458) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.73 |
+DATAQ:  | liquid = 25.75 |
+[0;32mI (4592910) BLE_PERIPH: App to Instrument Transaction Write 0/422[0m
+[0;32mI (4592912) BLE_PERIPH: App to Instrument Transaction Notify 0/422[0m
+[0;32mI (4592947) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4592948) BLE_PERIPH: Received 422/422[0m
+[0;32mI (4592954) BLE_PERIPH: App to Instrument Transaction Notify 422/422[0m
+[0;32mI (4592994) ExperimentParam: Parsing experiment parameters:
+[{
+		"doPcr":	false,
+		"doMelt":	false,
+		"doRtSteps":	false,
+		"doSamplePrep":	true,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	60,
+				"holdSeconds":	200
+			}, {
+				"tempC":	90,
+				"holdSeconds":	200
+			}, {
+				"tempC":	50,
+				"holdSeconds":	200
+			}],
+		"doContinuousAcquisition":	true,
+		"samplePrepPtcSealTimeMs":	30000,
+		"samplePrepPcrChamberPreheatTempC":	45,
+		"continuousAcquisitionSampleDelayMs":	1000
+	}][0m
+[0;32mI (4593039) ExperimentParam: Found parameter doContinuousAcquisition: 1[0m
+[0;32mI (4593044) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000[0m
+[0;32mI (4593053) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (4593060) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (4593068) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (4593078) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 5[0m
+[0;32mI (4593087) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (4593099) ExperimentParam: Could not find parameter temperaturecaptureDelayMs, using default value: 1500[0m
+[0;32mI (4593113) ExperimentParam: Found parameter doSamplePrep: 1[0m
+[0;32mI (4593114) ExperimentParam: Found parameter tempC: 60.00[0m
+[0;32mI (4593121) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (4593129) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (4593137) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (4593147) ExperimentParam: Found parameter tempC: 90.00[0m
+[0;32mI (4593159) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (4593160) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (4593175) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (4593179) ExperimentParam: Found parameter tempC: 50.00[0m
+[0;32mI (4593191) ExperimentParam: Found parameter holdSeconds: 200.00[0m
+[0;32mI (4593192) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (4593207) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (4593212) ProtocolParam: Found parameter samplePrepTempSteps: {60.00C,200.00s,1000.00C/s (?capture=0)},{90.00C,200.00s,1000.00C/s (?capture=0)},{50.00C,200.00s,1000.00C/s (?capture=0)},[0m
+[0;32mI (4593229) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 45.00[0m
+[0;32mI (4593238) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (4593245) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (4593252) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000[0m
+[0;32mI (4593259) ExperimentParam: Found parameter doRtSteps: 0[0m
+[0;32mI (4593267) ExperimentParam: Found parameter doPcr: 0[0m
+[0;32mI (4593271) ExperimentParam: Found parameter doMelt: 0[0m
+[0;32mI (4593283) BLE_PERIPH: Sending Response Packet: [32,true,946,[],0][0m
+[0;32mI (4593284) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[32, true, 946, [], 0]
+[0;32mI (4593314) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [32,true,946,[],0][0m
+[0;33mW (4593343) systemTasksMonitorStack: Stack Watermark(Comm): 7288[0m
+[0;32mI (4593348) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (4593350) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (4593371) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4593427) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4593429) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4593472) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4593473) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4593476) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4593499) BLE_PERIPH: Sending Response Packet: [34,true,947,["","",297852,25.94,27.19,2,0,0,0.00],0][0m
+[0;32mI (4593500) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[34, true, 947, ["", "", 297852, 25.94, 27.19, 2, 0, 0, 0.00], 0]
+[0;32mI (4593550) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,947,["","",297852,25.94,27.19,2,0,0,0.00],0][0m
+[0;32mI (4593607) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (4593609) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (4593630) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.75 |
+[0;32mI (4593731) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4593733) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4593753) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4593754) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4593757) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4593776) BLE_PERIPH: Sending Response Packet: [33,true,948,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":5,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":60.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0},{"tempC":90.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0},{"tempC":50.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (4593896) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1370[0m
+[33, true, 948, [{
+		"doContinuousAcquisition":	true,
+		"continuousAcquisitionSampleDelayMs":	1000,
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	5,
+		"excitationOutputPercentage":	100.00,
+		"doSamplePrep":	true,
+		"samplePrepTempSteps":	[{
+				"tempC":	60.00,
+				"holdSeconds":	200.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	90.00,
+				"holdSeconds":	200.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	50.00,
+				"holdSeconds":	200.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"samplePrepPcrChamberPreheatTempC":	45.00,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	30000,
+		"doRtSteps":	false,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	45.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"doPcr":	false,
+		"pcrCycleCount":	45,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	60.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	1
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"doMelt":	false,
+		"meltStartHoldTimeSeconds":	15.00,
+		"meltStartTemp":	55.00,
+		"meltStartCaptureTemp":	60.00,
+		"meltFinishTemp":	100.00,
+		"meltAcquisitionDelayMs":	800.00,
+		"meltAcquisitionsPerC":	5,
+		"meltRampRateDegCPerSecond":	0.25
+	}], 0]
+[0;32mI (4593944) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1370, currentIndex=0): [33,true,948,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":5,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":60.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0},{"tempC":90.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0},{"tempC":50.00,"holdSeconds":200.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrCham[0m
+[0;32mI (4594169) BLE_PERIPH: Instrument to App Transaction Write 510/1370[0m
+[0;32mI (4594171) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1370[0m
+[0;32mI (4594214) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1370, currentIndex=510): berPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"temp[0m
+[0;32mI (4594304) BLE_PERIPH: Instrument to App Transaction Write 1020/1370[0m
+[0;32mI (4594306) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1370[0m
+[0;32mI (4594327) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=350 mtu=510, totalSize=1370, currentIndex=1020): C":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (4594394) BLE_PERIPH: Instrument to App Transaction Write 1370/1370[0m
+[0;32mI (4594396) BLE_PERIPH: Instrument to App Transaction Read/Notify 1370/1370[0m
+[0;32mI (4594417) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 25.79 |
+[0;32mI (4594709) BLE_PERIPH: App to Instrument Transaction Write 0/84[0m
+[0;32mI (4594711) BLE_PERIPH: App to Instrument Transaction Notify 0/84[0m
+[0;32mI (4594811) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4594812) BLE_PERIPH: Received 84/84[0m
+[0;32mI (4594815) BLE_PERIPH: App to Instrument Transaction Notify 84/84[0m
+[0;32mI (4594819) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (4594829) experimentStateStartEnter: Experiment starting[0m
+[0;33mW (4594832) FILE: Failed to delete file[0m
+[0;32mI (4594836) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4594845) _sendFileWriterQueue: Messages in Queue: 2[0m
+[0;31mE (4594848) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (4594860) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;32mI (4594863) BLE_PERIPH: Sending Response Packet: [35,true,949,[],0][0m
+[0;32mI (4594869) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (4594878) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[35, true, 949, [], 0]
+[0;32mI (4594885) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (4594895) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;32mI (4594900) BLE_PERIPH: Notifying[0m
+[0;33mW (4594904) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (4594910) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (4594915) _resetThermalControlState: RESET Peltier 0 control state[0m
+[0;32mI (4594922) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [35,true,949,[],0][0m
+[0;32mI (4594934) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 60.0[0m
+[0;33mW (4594941) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (4594948) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;32mI (4594954) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (4594960) BLE_PERIPH: Notifying[0m
+[0;33mW (4594963) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (4594969) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (4594976) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (4594982) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;33mW (4594990) systemTasksMonitorStack: Stack Watermark(Experiment): 2224[0m
+[0;32mI (4595002) _performCapture: [169,0,27.16,1292,18000,225,119,425,858,560,426,35,18000,0][0m
+[0;33mW (4595005) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 2216[0m
+[0;32mI (4595034) TC: thermalControl-0 = 25.92, modeled = 23.42, target = 60.00, HeatSinkTemp = 26.21, HSrate = 0.15, output = 100.0, timeout = 100, expectedTempC = 0.00, actualTecRampRate = -0.18, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4595064) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4595109) fileWriterProcessDirective: Overwriting Results File. Writing: {"timestamp":"2022-05-05T20:05:27.882Z","consumableId":"74c2a038-5bd0-4ab8-970a-8260ef17e329"[0m
+[0;32mI (4595126) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4595128) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4595183) TC: thermalControl-0 = 25.94, modeled = 23.43, target = 60.00, HeatSinkTemp = 26.21, HSrate = -0.09, output = 100.0, timeout = 250, expectedTempC = 0.00, actualTecRampRate = 0.64, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4595200) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4595205) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4595212) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4595220) BLE_PERIPH: Sending Response Packet: [34,true,951,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",386,25.96,27.19,3,2,33,0.00],0][0m
+[0;32mI (4595232) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 951, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 386, 25.96, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4595262) fileWriterProcessDirective: begin Comma: 1  Opened Header: "experimentData":[[0m
+[0;32mI (4595283) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,951,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",386,25.96,27.19,3,2,33,0.00],0][0m
+[0;32mI (4595333) TC: thermalControl-0 = 26.14, modeled = 23.45, target = 60.00, HeatSinkTemp = 26.19, HSrate = -0.25, output = 100.0, timeout = 400, expectedTempC = 0.00, actualTecRampRate = 2.40, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4595351) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (4595357) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (4595385) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4595483) TC: thermalControl-0 = 26.91, modeled = 23.47, target = 60.00, HeatSinkTemp = 26.14, HSrate = -0.46, output = 100.0, timeout = 550, expectedTempC = 0.00, actualTecRampRate = 6.30, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4595499) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4595507) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4595598) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4595599) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4595602) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4595627) BLE_PERIPH: Sending Response Packet: [34,true,953,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",792,27.99,27.20,3,2,33,0.00],0][0m
+[0;32mI (4595632) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[0;32mI (4595639) TC: thermalControl-0 = 27.99, modeled = 23.49, target = 60.00, HeatSinkTemp = 26.08, HSrate = -0.40, output = 100.0, timeout = 700, expectedTempC = 0.00, actualTecRampRate = 7.42, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[34, true, 953, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 792, 27.99, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4595699) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,953,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",792,27.99,27.20,3,2,33,0.00],0][0m
+DATAQ:  | liquid = 25.89 |
+[0;32mI (4595744) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (4595746) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (4595767) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4595783) TC: thermalControl-0 = 29.30, modeled = 23.52, target = 60.00, HeatSinkTemp = 26.00, HSrate = -0.68, output = 100.0, timeout = 850, expectedTempC = 0.00, actualTecRampRate = 9.39, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4595800) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4595807) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4595845) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4595846) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4595849) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4595892) BLE_PERIPH: Sending Response Packet: [34,true,955,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1057,30.47,27.20,3,2,33,0.00],0][0m
+[0;32mI (4595897) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 955, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 1057, 30.47, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4595933) TC: thermalControl-0 = 30.90, modeled = 23.56, target = 60.00, HeatSinkTemp = 25.91, HSrate = -0.70, output = 100.0, timeout = 1000, expectedTempC = 0.00, actualTecRampRate = 12.09, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596003) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,955,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1057,30.47,27.20,3,2,33,0.00],0][0m
+[0;32mI (4596071) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4596073) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4596083) TC: thermalControl-0 = 32.50, modeled = 23.61, target = 60.00, HeatSinkTemp = 25.83, HSrate = -0.80, output = 100.0, timeout = 1150, expectedTempC = 0.00, actualTecRampRate = 11.19, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596101) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4596172) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4596174) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4596228) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4596229) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4596232) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4596234) TC: thermalControl-0 = 34.19, modeled = 23.67, target = 60.00, HeatSinkTemp = 25.74, HSrate = -0.75, output = 100.0, timeout = 1300, expectedTempC = 0.00, actualTecRampRate = 10.98, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596268) BLE_PERIPH: Sending Response Packet: [34,true,957,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1433,34.56,27.19,3,2,33,0.00],0][0m
+[0;32mI (4596278) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 957, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 1433, 34.56, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4596302) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4596352) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,957,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1433,34.56,27.19,3,2,33,0.00],0][0m
+[0;32mI (4596383) TC: thermalControl-0 = 35.64, modeled = 23.74, target = 60.00, HeatSinkTemp = 25.67, HSrate = -0.51, output = 100.0, timeout = 1450, expectedTempC = 0.00, actualTecRampRate = 10.42, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596400) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4596408) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4596431) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4596485) _performCapture: [1653,0,27.16,1294,18000,224,118,433,853,564,429,35,18000,0][0m
+[0;32mI (4596494) _writeInnerJsonString: begin comma: 0   Writing: [0,1470,23.69] [0m
+[0;32mI (4596498) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4596500) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4596534) TC: thermalControl-0 = 37.34, modeled = 23.82, target = 60.00, HeatSinkTemp = 25.58, HSrate = -0.45, output = 100.0, timeout = 1600, expectedTempC = 0.00, actualTecRampRate = 10.61, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596551) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4596556) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4596563) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4596573) BLE_PERIPH: Sending Response Packet: [34,true,959,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1738,37.72,27.19,3,2,33,0.00],0][0m
+[0;32mI (4596587) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 959, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 1738, 37.72, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4596644) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,959,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",1738,37.72,27.19,3,2,33,0.00],0][0m
+[0;32mI (4596683) TC: thermalControl-0 = 38.96, modeled = 23.90, target = 60.00, HeatSinkTemp = 25.50, HSrate = -0.38, output = 100.0, timeout = 1750, expectedTempC = 0.00, actualTecRampRate = 9.93, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596701) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4596707) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4596735) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | liquid = 26.7 |
+[0;32mI (4596802) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4596804) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4596833) TC: thermalControl-0 = 40.57, modeled = 24.00, target = 60.00, HeatSinkTemp = 25.43, HSrate = -0.46, output = 100.0, timeout = 1900, expectedTempC = 0.00, actualTecRampRate = 10.60, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4596858) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4596859) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4596862) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4596876) BLE_PERIPH: Sending Response Packet: [34,true,958,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2041,41.08,27.20,3,2,33,0.00],0][0m
+[0;32mI (4596881) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 958, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 2041, 41.08, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4596925) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,958,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2041,41.08,27.20,3,2,33,0.00],0][0m
+[0;32mI (4596983) TC: thermalControl-0 = 42.12, modeled = 24.10, target = 60.00, HeatSinkTemp = 25.35, HSrate = -0.66, output = 100.0, timeout = 2050, expectedTempC = 0.00, actualTecRampRate = 14.53, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597038) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4597040) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4597060) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4597128) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4597130) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4597133) TC: thermalControl-0 = 43.85, modeled = 24.22, target = 60.00, HeatSinkTemp = 25.29, HSrate = -0.36, output = 100.0, timeout = 2200, expectedTempC = 0.00, actualTecRampRate = 10.36, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597240) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4597242) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4597245) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4597263) BLE_PERIPH: Sending Response Packet: [34,true,961,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2427,45.14,27.20,3,2,33,0.00],0][0m
+[0;32mI (4597268) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 961, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 2427, 45.14, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4597283) TC: thermalControl-0 = 45.14, modeled = 24.34, target = 60.00, HeatSinkTemp = 25.24, HSrate = -0.50, output = 100.0, timeout = 2350, expectedTempC = 0.00, actualTecRampRate = 9.64, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597342) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,961,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2427,45.14,27.20,3,2,33,0.00],0][0m
+[0;32mI (4597409) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4597411) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4597432) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4597433) TC: thermalControl-0 = 46.72, modeled = 24.47, target = 60.00, HeatSinkTemp = 25.14, HSrate = -0.57, output = 100.0, timeout = 2500, expectedTempC = 0.00, actualTecRampRate = 10.40, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597499) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4597501) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4597555) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4597556) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4597559) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4597583) TC: thermalControl-0 = 48.22, modeled = 24.61, target = 60.00, HeatSinkTemp = 25.06, HSrate = -0.73, output = 100.0, timeout = 2650, expectedTempC = 0.00, actualTecRampRate = 9.29, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597603) BLE_PERIPH: Sending Response Packet: [34,true,963,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2758,48.40,27.20,3,2,33,0.00],0][0m
+[0;32mI (4597620) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 963, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 2758, 48.40, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4597657) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,963,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",2758,48.40,27.20,3,2,33,0.00],0][0m
+DATAQ:  | liquid = 28.21 |
+[0;33mW (4597696) heapMonitor_checkFreeHeapSize: New heap low water mark 112708[0m
+[0;32mI (4597702) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4597704) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4597724) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4597733) TC: thermalControl-0 = 49.69, modeled = 24.75, target = 60.00, HeatSinkTemp = 24.98, HSrate = -0.47, output = 100.0, timeout = 2800, expectedTempC = 0.00, actualTecRampRate = 9.05, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597816) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4597826) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4597828) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4597884) TC: thermalControl-0 = 51.11, modeled = 24.91, target = 60.00, HeatSinkTemp = 24.90, HSrate = -0.41, output = 100.0, timeout = 2950, expectedTempC = 0.00, actualTecRampRate = 9.53, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4597927) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4597928) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4597931) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4597938) _performCapture: [3105,0,27.17,1292,18000,225,117,435,846,562,428,35,18000,0][0m
+[0;32mI (4597944) _writeInnerJsonString: begin comma: 1   Writing: [0,2983,24.80] [0m
+[0;32mI (4597954) BLE_PERIPH: Sending Response Packet: [34,true,965,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3110,51.57,27.19,3,2,33,0.00],0][0m
+[0;32mI (4597970) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 965, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 3110, 51.57, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4598028) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,965,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3110,51.57,27.19,3,2,33,0.00],0][0m
+[0;32mI (4598039) TC: thermalControl-0 = 52.45, modeled = 25.07, target = 60.00, HeatSinkTemp = 24.84, HSrate = -0.45, output = 100.0, timeout = 3100, expectedTempC = 0.00, actualTecRampRate = 12.53, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598096) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4598098) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4598118) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4598174) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4598176) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4598183) TC: thermalControl-0 = 53.86, modeled = 25.23, target = 60.00, HeatSinkTemp = 24.79, HSrate = -0.39, output = 100.0, timeout = 3250, expectedTempC = 0.00, actualTecRampRate = 9.70, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598242) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4598243) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4598246) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4598258) BLE_PERIPH: Sending Response Packet: [34,true,967,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3423,54.60,27.19,3,2,33,0.00],0][0m
+[0;32mI (4598264) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 967, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 3423, 54.60, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4598309) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,967,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3423,54.60,27.19,3,2,33,0.00],0][0m
+[0;32mI (4598333) TC: thermalControl-0 = 55.07, modeled = 25.41, target = 60.00, HeatSinkTemp = 24.75, HSrate = -0.29, output = 100.0, timeout = 3400, expectedTempC = 0.00, actualTecRampRate = 8.97, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598377) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4598379) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4598399) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4598483) TC: thermalControl-0 = 56.61, modeled = 25.59, target = 60.00, HeatSinkTemp = 24.70, HSrate = -0.45, output = 100.0, timeout = 3550, expectedTempC = 0.00, actualTecRampRate = 9.44, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598500) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4598507) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4598591) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4598592) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4598595) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4598633) TC: thermalControl-0 = 57.75, modeled = 25.78, target = 60.00, HeatSinkTemp = 24.65, HSrate = -0.32, output = 100.0, timeout = 3700, expectedTempC = 0.00, actualTecRampRate = 7.66, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598650) BLE_PERIPH: Sending Response Packet: [34,true,969,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3803,57.89,27.20,3,2,33,0.00],0][0m
+[0;32mI (4598666) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 969, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 3803, 57.89, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4598692) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,969,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",3803,57.89,27.20,3,2,33,0.00],0][0m
+DATAQ:  | liquid = 29.95 |
+[0;32mI (4598759) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4598761) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4598782) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4598783) TC: thermalControl-0 = 59.11, modeled = 25.97, target = 60.00, HeatSinkTemp = 24.60, HSrate = -0.40, output = 100.0, timeout = 3850, expectedTempC = 0.00, actualTecRampRate = 9.56, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598872) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (4598874) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (4598933) TC: thermalControl-0 = 60.34, modeled = 26.18, target = 60.00, HeatSinkTemp = 24.56, HSrate = -0.20, output = 100.0, timeout = 4000, expectedTempC = 0.00, actualTecRampRate = 8.56, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4598950) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4598955) BLE_PERIPH: Received 19/19[0m
+[0;32mI (4598961) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (4598990) BLE_PERIPH: Sending Response Packet: [34,true,968,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",4155,60.73,27.20,3,2,33,0.00],0][0m
+[0;32mI (4598995) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 968, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 4155, 60.73, 27.20, 3, 2, 33, 0.00], 0]
+[0;32mI (4599018) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,968,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",4155,60.73,27.20,3,2,33,0.00],0][0m
+[0;32mI (4599083) TC: thermalControl-0 = 61.49, modeled = 26.38, target = 60.00, HeatSinkTemp = 24.51, HSrate = -0.35, output = 100.0, timeout = 4150, expectedTempC = 0.00, actualTecRampRate = 9.65, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4599099) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4599107) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4599164) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4599233) TC: thermalControl-0 = 62.77, modeled = 26.60, target = 60.00, HeatSinkTemp = 24.46, HSrate = -0.15, output = 100.0, timeout = 4300, expectedTempC = 0.00, actualTecRampRate = 8.02, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4599254) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (4599257) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (4599310) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (4599311) BLE_PERIPH: Received 18/18[0m
+[0;32mI (4599314) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (4599316) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4599324) BLE_PERIPH: Sending Response Packet: [34,true,970,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",4488,63.41,27.19,3,2,33,0.00],0][0m
+[0;32mI (4599339) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 970, ["2022-05-05T20:05:27.882Z", "74c2a038-5bd0-4ab8-970a-8260ef17e329", 4488, 63.41, 27.19, 3, 2, 33, 0.00], 0]
+[0;32mI (4599390) TC: thermalControl-0 = 63.71, modeled = 26.81, target = 60.00, HeatSinkTemp = 24.43, HSrate = -0.24, output = 100.0, timeout = 4450, expectedTempC = 0.00, actualTecRampRate = 8.38, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4599408) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,970,["2022-05-05T20:05:27.882Z","74c2a038-5bd0-4ab8-970a-8260ef17e329",4488,63.41,27.19,3,2,33,0.00],0][0m
+[0;32mI (4599458) _writeInnerJsonString: begin comma: 1   Writing: [0,4483,26.67] [0m
+[0;32mI (4599466) _performCapture: [4576,0,27.17,1299,18000,225,117,439,836,562,427,35,18000,0][0m
+[0;32mI (4599491) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (4599493) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (4599547) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (4599563) TC: thermalControl-0 = 65.29, modeled = 27.04, target = 60.00, HeatSinkTemp = 24.37, HSrate = -0.17, output = 100.0, timeout = 4600, expectedTempC = 0.00, actualTecRampRate = 7.65, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4599713) TC: thermalControl-0 = 66.45, modeled = 27.27, target = 60.00, HeatSinkTemp = 24.34, HSrate = -0.29, output = 100.0, timeout = 4750, expectedTempC = 0.00, actualTecRampRate = 7.22, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 31.26 |
+[0;32mI (4599863) TC: thermalControl-0 = 67.56, modeled = 27.51, target = 60.00, HeatSinkTemp = 24.30, HSrate = -0.52, output = 100.0, timeout = 4900, expectedTempC = 0.00, actualTecRampRate = 6.81, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600013) TC: thermalControl-0 = 68.60, modeled = 27.75, target = 60.00, HeatSinkTemp = 24.27, HSrate = -0.34, output = 100.0, timeout = 5050, expectedTempC = 0.00, actualTecRampRate = 6.88, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600163) TC: thermalControl-0 = 69.63, modeled = 27.99, target = 60.00, HeatSinkTemp = 24.23, HSrate = -0.39, output = 100.0, timeout = 5200, expectedTempC = 0.00, actualTecRampRate = 6.58, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600313) TC: thermalControl-0 = 70.66, modeled = 28.24, target = 60.00, HeatSinkTemp = 24.22, HSrate = -0.06, output = 100.0, timeout = 5350, expectedTempC = 0.00, actualTecRampRate = 6.51, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600463) TC: thermalControl-0 = 71.66, modeled = 28.50, target = 60.00, HeatSinkTemp = 24.19, HSrate = -0.18, output = 100.0, timeout = 5500, expectedTempC = 0.00, actualTecRampRate = 6.80, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600613) TC: thermalControl-0 = 72.62, modeled = 28.76, target = 60.00, HeatSinkTemp = 24.16, HSrate = -0.13, output = 100.0, timeout = 5650, expectedTempC = 0.00, actualTecRampRate = 6.27, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 32.15 |
+[0;32mI (4600766) TC: thermalControl-0 = 73.56, modeled = 29.02, target = 60.00, HeatSinkTemp = 24.13, HSrate = -0.08, output = 100.0, timeout = 5800, expectedTempC = 0.00, actualTecRampRate = 6.16, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600849) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4600874) _performCapture: [6042,0,27.17,1297,18000,225,116,439,832,562,427,35,18000,0][0m
+[0;32mI (4600914) TC: thermalControl-0 = 74.42, modeled = 29.29, target = 60.00, HeatSinkTemp = 24.10, HSrate = 0.16, output = 100.0, timeout = 5950, expectedTempC = 0.00, actualTecRampRate = 6.36, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4600973) _writeInnerJsonString: begin comma: 1   Writing: [0,6017,29.11] [0m
+[0;32mI (4601063) TC: thermalControl-0 = 75.35, modeled = 29.56, target = 60.00, HeatSinkTemp = 24.08, HSrate = -0.14, output = 100.0, timeout = 6100, expectedTempC = 0.00, actualTecRampRate = 6.32, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4601213) TC: thermalControl-0 = 76.23, modeled = 29.84, target = 60.00, HeatSinkTemp = 24.06, HSrate = -0.13, output = 100.0, timeout = 6250, expectedTempC = 0.00, actualTecRampRate = 5.84, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4601363) TC: thermalControl-0 = 77.08, modeled = 30.11, target = 60.00, HeatSinkTemp = 24.04, HSrate = -0.29, output = 100.0, timeout = 6400, expectedTempC = 0.00, actualTecRampRate = 5.40, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4601513) TC: thermalControl-0 = 77.94, modeled = 30.40, target = 60.00, HeatSinkTemp = 24.02, HSrate = -0.08, output = 100.0, timeout = 6550, expectedTempC = 0.00, actualTecRampRate = 5.31, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4601663) TC: thermalControl-0 = 78.78, modeled = 30.68, target = 60.00, HeatSinkTemp = 24.00, HSrate = -0.21, output = 100.0, timeout = 6700, expectedTempC = 0.00, actualTecRampRate = 5.49, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 36.54 |
+[0;32mI (4601813) TC: thermalControl-0 = 79.58, modeled = 30.97, target = 60.00, HeatSinkTemp = 23.97, HSrate = -0.08, output = 100.0, timeout = 6850, expectedTempC = 0.00, actualTecRampRate = 5.23, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4601963) TC: thermalControl-0 = 80.41, modeled = 31.26, target = 60.00, HeatSinkTemp = 23.96, HSrate = -0.08, output = 100.0, timeout = 7000, expectedTempC = 0.00, actualTecRampRate = 5.57, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4602113) TC: thermalControl-0 = 81.21, modeled = 31.56, target = 60.00, HeatSinkTemp = 23.95, HSrate = 0.06, output = 100.0, timeout = 7150, expectedTempC = 0.00, actualTecRampRate = 5.54, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4602267) TC: thermalControl-0 = 81.98, modeled = 31.85, target = 60.00, HeatSinkTemp = 23.93, HSrate = -0.11, output = 100.0, timeout = 7300, expectedTempC = 0.00, actualTecRampRate = 4.57, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4602316) _performCapture: [7483,0,27.17,1304,18000,225,116,431,841,556,428,35,18000,0][0m
+[0;32mI (4602349) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4602394) _writeInnerJsonString: begin comma: 1   Writing: [0,7517,31.95] [0m
+[0;32mI (4602414) TC: thermalControl-0 = 82.78, modeled = 32.15, target = 60.00, HeatSinkTemp = 23.92, HSrate = -0.17, output = 100.0, timeout = 7450, expectedTempC = 0.00, actualTecRampRate = 5.05, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4602563) TC: thermalControl-0 = 83.53, modeled = 32.46, target = 60.00, HeatSinkTemp = 23.90, HSrate = -0.29, output = 100.0, timeout = 7600, expectedTempC = 0.00, actualTecRampRate = 4.96, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4602713) TC: thermalControl-0 = 84.29, modeled = 32.76, target = 60.00, HeatSinkTemp = 23.89, HSrate = -0.16, output = 100.0, timeout = 7750, expectedTempC = 0.00, actualTecRampRate = 4.89, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 40.21 |
+[0;32mI (4602863) TC: thermalControl-0 = 84.99, modeled = 33.07, target = 60.00, HeatSinkTemp = 23.88, HSrate = -0.07, output = 100.0, timeout = 7900, expectedTempC = 0.00, actualTecRampRate = 4.64, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603013) TC: thermalControl-0 = 85.71, modeled = 33.38, target = 60.00, HeatSinkTemp = 23.87, HSrate = -0.15, output = 100.0, timeout = 8050, expectedTempC = 0.00, actualTecRampRate = 4.63, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603163) TC: thermalControl-0 = 86.44, modeled = 33.69, target = 60.00, HeatSinkTemp = 23.86, HSrate = -0.34, output = 100.0, timeout = 8200, expectedTempC = 0.00, actualTecRampRate = 4.72, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603313) TC: thermalControl-0 = 87.13, modeled = 34.01, target = 60.00, HeatSinkTemp = 23.85, HSrate = -0.21, output = 100.0, timeout = 8350, expectedTempC = 0.00, actualTecRampRate = 4.36, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603463) TC: thermalControl-0 = 87.77, modeled = 34.33, target = 60.00, HeatSinkTemp = 23.84, HSrate = -0.29, output = 100.0, timeout = 8500, expectedTempC = 0.00, actualTecRampRate = 4.53, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603615) TC: thermalControl-0 = 88.47, modeled = 34.65, target = 60.00, HeatSinkTemp = 23.83, HSrate = -0.10, output = 100.0, timeout = 8650, expectedTempC = 0.00, actualTecRampRate = 4.61, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4603723) _performCapture: [8891,0,27.17,1305,18000,225,115,425,842,552,429,35,18000,0][0m
+[0;32mI (4603764) TC: thermalControl-0 = 89.12, modeled = 34.97, target = 60.00, HeatSinkTemp = 23.83, HSrate = -0.04, output = 100.0, timeout = 8800, expectedTempC = 0.00, actualTecRampRate = 4.40, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 40.17 |
+[0;32mI (4603849) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4603913) TC: thermalControl-0 = 89.78, modeled = 35.29, target = 60.00, HeatSinkTemp = 23.82, HSrate = 0.13, output = 100.0, timeout = 8950, expectedTempC = 0.00, actualTecRampRate = 4.04, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604046) _writeInnerJsonString: begin comma: 1   Writing: [0,9017,35.08] [0m
+[0;32mI (4604064) TC: thermalControl-0 = 90.35, modeled = 35.62, target = 60.00, HeatSinkTemp = 23.82, HSrate = -0.10, output = 100.0, timeout = 9100, expectedTempC = 0.00, actualTecRampRate = 3.75, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604213) TC: thermalControl-0 = 90.96, modeled = 35.94, target = 60.00, HeatSinkTemp = 23.81, HSrate = -0.18, output = 100.0, timeout = 9250, expectedTempC = 0.00, actualTecRampRate = 4.31, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604363) TC: thermalControl-0 = 91.61, modeled = 36.27, target = 60.00, HeatSinkTemp = 23.81, HSrate = -0.12, output = 100.0, timeout = 9400, expectedTempC = 0.00, actualTecRampRate = 4.08, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604513) TC: thermalControl-0 = 92.21, modeled = 36.60, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.18, output = 100.0, timeout = 9550, expectedTempC = 0.00, actualTecRampRate = 4.35, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604663) TC: thermalControl-0 = 92.79, modeled = 36.94, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.10, output = 100.0, timeout = 9700, expectedTempC = 0.00, actualTecRampRate = 4.20, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 46.97 |
+[0;32mI (4604813) TC: thermalControl-0 = 93.35, modeled = 37.27, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.17, output = 100.0, timeout = 9850, expectedTempC = 0.00, actualTecRampRate = 4.16, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4604963) TC: thermalControl-0 = 93.92, modeled = 37.60, target = 60.00, HeatSinkTemp = 23.80, HSrate = 0.15, output = 100.0, timeout = 10000, expectedTempC = 0.00, actualTecRampRate = 4.11, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4605113) TC: thermalControl-0 = 94.50, modeled = 37.94, target = 60.00, HeatSinkTemp = 23.80, HSrate = -0.05, output = 100.0, timeout = 10150, expectedTempC = 0.00, actualTecRampRate = 3.23, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4605165) _performCapture: [10333,0,27.17,1311,18000,227,115,420,851,540,428,35,18000,0][0m
+[0;32mI (4605263) TC: thermalControl-0 = 95.06, modeled = 38.28, target = 60.00, HeatSinkTemp = 23.80, HSrate = -0.04, output = 100.0, timeout = 10300, expectedTempC = 0.00, actualTecRampRate = 3.78, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4605349) _sendFileWriterQueue: Messages in Queue: 1[0m
+[0;32mI (4605413) TC: thermalControl-0 = 95.58, modeled = 38.62, target = 60.00, HeatSinkTemp = 23.80, HSrate = 0.13, output = 100.0, timeout = 10450, expectedTempC = 0.00, actualTecRampRate = 3.50, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4605482) _writeInnerJsonString: begin comma: 1   Writing: [0,10517,38.39] [0m
+[0;32mI (4605563) TC: thermalControl-0 = 96.16, modeled = 38.96, target = 60.00, HeatSinkTemp = 23.80, HSrate = -0.08, output = 100.0, timeout = 10600, expectedTempC = 0.00, actualTecRampRate = 3.90, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4605713) TC: thermalControl-0 = 96.63, modeled = 39.30, target = 60.00, HeatSinkTemp = 23.80, HSrate = 0.08, output = 100.0, timeout = 10750, expectedTempC = 0.00, actualTecRampRate = 3.14, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 45.19 |
+[0;32mI (4605863) TC: thermalControl-0 = 97.16, modeled = 39.64, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.39, output = 100.0, timeout = 10900, expectedTempC = 0.00, actualTecRampRate = 3.53, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606013) TC: thermalControl-0 = 97.65, modeled = 39.98, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.10, output = 100.0, timeout = 11050, expectedTempC = 0.00, actualTecRampRate = 4.41, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606163) TC: thermalControl-0 = 98.12, modeled = 40.33, target = 60.00, HeatSinkTemp = 23.80, HSrate = -0.10, output = 100.0, timeout = 11200, expectedTempC = 0.00, actualTecRampRate = 3.13, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606313) TC: thermalControl-0 = 98.59, modeled = 40.67, target = 60.00, HeatSinkTemp = 23.81, HSrate = 0.02, output = 100.0, timeout = 11350, expectedTempC = 0.00, actualTecRampRate = 3.42, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606463) TC: thermalControl-0 = 99.05, modeled = 41.01, target = 60.00, HeatSinkTemp = 23.81, HSrate = -0.08, output = 100.0, timeout = 11500, expectedTempC = 0.00, actualTecRampRate = 2.97, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606603) _performCapture: [11771,0,27.16,1311,18000,228,115,429,861,568,439,36,18000,0][0m
+[0;32mI (4606614) TC: thermalControl-0 = 99.55, modeled = 41.36, target = 60.00, HeatSinkTemp = 23.82, HSrate = -0.09, output = 100.0, timeout = 11650, expectedTempC = 0.00, actualTecRampRate = 3.14, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+[0;32mI (4606763) TC: thermalControl-0 = 100.01, modeled = 41.71, target = 60.00, HeatSinkTemp = 23.83, HSrate = 0.16, output = 100.0, timeout = 11800, expectedTempC = 0.00, actualTecRampRate = 3.05, priorTargetTecRampRate = 0.00, targetTecRampRate = 0.00, p=0.0000, i=0.0000, d=0.0000, ff=0.0[0m
+DATAQ:  | liquid = 46.11 |
+[0;32mI (4606849) _sendFileWriterQueue: Messages in Queue: 1[0m

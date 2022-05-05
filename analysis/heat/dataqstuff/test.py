@@ -1,2 +1,3 @@
 import matplotlib
 
+import scipy
