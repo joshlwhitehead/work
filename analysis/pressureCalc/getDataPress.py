@@ -3,8 +3,8 @@ import numpy as np
 import scipy.interpolate as interp
 
 
-def getData(filename,date):
-    fullSheet = pd.read_csv(''.join(['data/',date,'/',filename]))
+def getData(filename):
+    fullSheet = pd.read_csv(''.join([filename]))
 
     time = np.array(fullSheet['timeSinceBootSeconds']) - fullSheet['timeSinceBootSeconds'][0]
     thermRaw = fullSheet['stage1TempC'].tolist()
