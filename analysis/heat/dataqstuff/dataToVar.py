@@ -62,4 +62,7 @@ uL700 = gd.getData('lidB700uL_sealed_c.csv','06May2022')
 uL800 = gd.getData('lidB800uL_sealed_c.csv','06May2022')
 uL900 = gd.getData('lidB900uL_sealed_b.csv','06May2022')
 
+modRetrainData = gd.getData('N27_Stg1_High1.csv','16May2022')
+
+
 

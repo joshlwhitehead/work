@@ -3,7 +3,7 @@ from antoine import antoine
 import matplotlib.pyplot as plt
 a = 8.07131
 b = 1730.63
-V1 = .116
+V1 = .114
 
 c = 233.426
 def vPlunge(r,l):
