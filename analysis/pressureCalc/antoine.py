@@ -13,10 +13,10 @@ b = 1730.63
 c = 233.426
 
 
-# plt.plot(temp,antoine(a,b,c,temp))
-# plt.xlabel('temp c')
-# plt.ylabel('psig')
-# plt.grid()
-# plt.yticks(np.arange(0,31,1))
-# plt.xticks(np.arange(20,121,5))
-# plt.show()
+plt.plot(temp,antoine(a,b,c,temp))
+plt.xlabel('temp c')
+plt.ylabel('psig')
+plt.grid()
+plt.yticks(np.arange(0,31,1))
+plt.xticks(np.arange(20,121,5))
+plt.show()
