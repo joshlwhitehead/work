@@ -68,3 +68,5 @@ modRetrainCool = gd.getData('Stage1_Model_Train_Final.csv','17May2022')
 
 
 
+tight = gd.getData('tightTest.csv','18May2022')
+loose = gd.getData('looseTest.csv','18May2022')

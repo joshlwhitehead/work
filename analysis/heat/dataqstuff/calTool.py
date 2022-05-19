@@ -4,7 +4,7 @@ import serial
 from threading import Thread
 import time
 import os
-date = '17May2022'
+date = '18May2022'
 directory = ''.join(['data/',date])
 folder = os.path.isdir(directory)
 if folder == True:
@@ -46,7 +46,7 @@ def dataQThread(dataq, file):
 dataq = DataQ([(1,'t')])#,(2,'t')])#,(3,'t'),(4,'t'),(5,'t')])
 t = Thread(target=dataQThread, args=(dataq,f))
 t.start()
-ser = serial.Serial('COM6', 115200)
+ser = serial.Serial('COM9', 115200)
 
 
 while (True):

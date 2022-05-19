@@ -13,7 +13,7 @@ import csv
 import numpy as np
 
 from . import version
-date = '17May2022'
+date = '18May2022'
 fileName = input('fileName: ')
 
 root = tk.Tk()
@@ -247,7 +247,7 @@ def dataQFunc2(line):
 #DATAQ:  | liquid = 26.41 | liquid2 = 24.57 | laser = 29.8 | pcrhtsnk = 31.61 | stg1htsnk = 23.3 |
 def dataQLiquid(line):
     try:
-        return float(line.split("DATAQ:")[1].split("| dataQStg1Slug = ")[1].split("|")[0])
+        return float(line.split("DATAQ:")[1].split("| liquid = ")[1].split("|")[0])
     except:
         return None
 

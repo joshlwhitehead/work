@@ -10,8 +10,9 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.uL900[2],label='900')
 # plt.plot(dat.uL700[1],'--')
 
-plt.plot(dat.modRetrainCool[0][:len(dat.modRetrainCool[1])],dat.modRetrainCool[1])
-plt.plot(dat.modRetrainCool[0][:len(dat.modRetrainCool[2])],dat.modRetrainCool[2])
+plt.plot(dat.tight[2],label= 'tight')
+plt.plot(dat.loose[2],label='saggy')
+plt.plot(dat.loose[1])
 plt.legend()
 plt.grid()
 
