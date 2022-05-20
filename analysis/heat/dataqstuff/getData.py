@@ -4,10 +4,10 @@ import scipy.interpolate as interp
 
 
 def getData(filename,date):
-    fullSheet = pd.read_csv(''.join(['data/',date,'/',filename]))
+    fullSheet = pd.read_csv(''.join(['dave_local_test_data/',date,'/',filename]))
 
-    time = np.array(fullSheet['timeSinceBootSeconds']) - fullSheet['timeSinceBootSeconds'][0]
-    thermRaw = fullSheet['stage1TempC'].tolist()
+    time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
+    thermRaw = fullSheet['Stage1 TempC'].tolist()
     sampRaw = fullSheet['dataQLiquidStg1'].tolist()
     # setRaw = fullSheet['stage1SetTempC'].tolist()
    

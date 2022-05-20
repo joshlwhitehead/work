@@ -10,9 +10,26 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.uL900[2],label='900')
 # plt.plot(dat.uL700[1],'--')
 
-plt.plot(dat.tight[2],label= 'tight')
-plt.plot(dat.loose[2],label='saggy')
-plt.plot(dat.loose[1])
+# plt.plot(dat.tight[2],label= 'tight')
+# plt.plot(dat.loose[2],label='saggy')
+# plt.plot(dat.loose[1])
+# plt.plot(dat.uL600_b[2],label='600')
+
+# # plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
+# plt.plot(dat.uL700_b[2],label='700')
+# # plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
+# plt.plot(dat.uL800_b[2],label='800')
+plt.plot(dat.uL600_d[1],label='600')
+plt.plot(dat.uL700_d[1],label='700')
+
+plt.plot(dat.uL800_d[1],label='800')
+
+# plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
+# plt.plot(dat.uL700_b[1],label='700')
+# plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
+
+
+
 plt.legend()
 plt.grid()
 

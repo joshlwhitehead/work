@@ -1,7 +1,7 @@
-from dave.dave import Dave
+from dave import daveApp
 
 if __name__ == '__main__':
-    app = Dave()
+    app = daveApp()
     app.run()
     
 

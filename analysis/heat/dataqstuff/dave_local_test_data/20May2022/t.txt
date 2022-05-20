@@ -1,0 +1,327 @@
+DATAQ:  | dataQLiquidStg1 = 34.17 |
+DATAQ:  | dataQLiquidStg1 = 34.07 |
+DATAQ:  | dataQLiquidStg1 = 34.01 |
+DATAQ:  | dataQLiquidStg1 = 34.17 |
+DATAQ:  | dataQLiquidStg1 = 34.08 |
+DATAQ:  | dataQLiquidStg1 = 34.17 |
+DATAQ:  | dataQLiquidStg1 = 34.05 |
+DATAQ:  | dataQLiquidStg1 = 34.09 |
+DATAQ:  | dataQLiquidStg1 = 34.03 |
+DATAQ:  | dataQLiquidStg1 = 34.02 |
+DATAQ:  | dataQLiquidStg1 = 34.03 |
+DATAQ:  | dataQLiquidStg1 = 33.97 |
+DATAQ:  | dataQLiquidStg1 = 33.95 |
+DATAQ:  | dataQLiquidStg1 = 34.04 |
+DATAQ:  | dataQLiquidStg1 = 34.05 |
+DATAQ:  | dataQLiquidStg1 = 33.91 |
+DATAQ:  | dataQLiquidStg1 = 33.93 |
+DATAQ:  | dataQLiquidStg1 = 33.99 |
+DATAQ:  | dataQLiquidStg1 = 33.93 |
+DATAQ:  | dataQLiquidStg1 = 33.96 |
+DATAQ:  | dataQLiquidStg1 = 33.95 |
+DATAQ:  | dataQLiquidStg1 = 33.85 |
+DATAQ:  | dataQLiquidStg1 = 33.84 |
+DATAQ:  | dataQLiquidStg1 = 33.86 |
+DATAQ:  | dataQLiquidStg1 = 33.91 |
+DATAQ:  | dataQLiquidStg1 = 33.79 |
+DATAQ:  | dataQLiquidStg1 = 33.84 |
+DATAQ:  | dataQLiquidStg1 = 33.84 |
+DATAQ:  | dataQLiquidStg1 = 33.76 |
+DATAQ:  | dataQLiquidStg1 = 33.77 |
+DATAQ:  | dataQLiquidStg1 = 33.75 |
+DATAQ:  | dataQLiquidStg1 = 33.83 |
+DATAQ:  | dataQLiquidStg1 = 33.79 |
+DATAQ:  | dataQLiquidStg1 = 33.83 |
+DATAQ:  | dataQLiquidStg1 = 33.7 |
+DATAQ:  | dataQLiquidStg1 = 33.81 |
+DATAQ:  | dataQLiquidStg1 = 33.69 |
+DATAQ:  | dataQLiquidStg1 = 33.66 |
+DATAQ:  | dataQLiquidStg1 = 33.63 |
+DATAQ:  | dataQLiquidStg1 = 33.7 |
+DATAQ:  | dataQLiquidStg1 = 33.64 |
+DATAQ:  | dataQLiquidStg1 = 33.59 |
+DATAQ:  | dataQLiquidStg1 = 33.68 |
+DATAQ:  | dataQLiquidStg1 = 33.61 |
+DATAQ:  | dataQLiquidStg1 = 33.6 |
+DATAQ:  | dataQLiquidStg1 = 33.57 |
+DATAQ:  | dataQLiquidStg1 = 33.64 |
+DATAQ:  | dataQLiquidStg1 = 33.55 |
+DATAQ:  | dataQLiquidStg1 = 33.6 |
+DATAQ:  | dataQLiquidStg1 = 33.52 |
+DATAQ:  | dataQLiquidStg1 = 33.56 |
+DATAQ:  | dataQLiquidStg1 = 33.58 |
+DATAQ:  | dataQLiquidStg1 = 33.53 |
+DATAQ:  | dataQLiquidStg1 = 33.52 |
+DATAQ:  | dataQLiquidStg1 = 33.44 |
+DATAQ:  | dataQLiquidStg1 = 33.57 |
+DATAQ:  | dataQLiquidStg1 = 33.55 |
+DATAQ:  | dataQLiquidStg1 = 33.5 |
+DATAQ:  | dataQLiquidStg1 = 33.52 |
+DATAQ:  | dataQLiquidStg1 = 33.53 |
+DATAQ:  | dataQLiquidStg1 = 33.5 |
+DATAQ:  | dataQLiquidStg1 = 33.43 |
+DATAQ:  | dataQLiquidStg1 = 33.35 |
+DATAQ:  | dataQLiquidStg1 = 33.42 |
+DATAQ:  | dataQLiquidStg1 = 33.39 |
+DATAQ:  | dataQLiquidStg1 = 33.41 |
+DATAQ:  | dataQLiquidStg1 = 33.37 |
+DATAQ:  | dataQLiquidStg1 = 33.31 |
+DATAQ:  | dataQLiquidStg1 = 33.37 |
+DATAQ:  | dataQLiquidStg1 = 33.33 |
+[0;32mI (1601265) _handleFrontButtonPress: Pressed[0m
+[0;33mW (1601295) _openDoorIfSafe: OPENING DOOR[0m
+[0;32mI (1601295) systemRequestStateChange: System State Transition READY -> IDLE[0m
+[0;33mW (1601326) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;31mE (1601356) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (1601357) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (1601417) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;33mW (1601428) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;31mE (1601479) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (1601480) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (1601518) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;31mE (1601528) taskMonitor_task: Task Button Task hasn't checked in for 400 ms...[0m
+[0;33mW (1601598) taskMonitor_task: Task File Writer Task hasn't checked in for 400 ms[0m
+[0;32mI (1601601) customUtil_isCupPresent: Cup Detected![0m
+[0;32mI (1601601) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (1601608) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (1601614) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (1601620) BLE_PERIPH: Notifying[0m
+[0;31mE (1601625) taskMonitor_task: Task LED Task hasn't checked in for 400 ms...[0m
+[0;33mW (1601632) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (1601638) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (1601644) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (1601649) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (1601656) BLE_PERIPH: Notifying[0m
+[0;31mE (1601660) taskMonitor_task: Task Button Task hasn't checked in for 400 ms...[0m
+[0;33mW (1601667) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (1601674) BLE_PERIPH: Notify Command Id = 34[0m
+[0;31mE (1601679) thermalControlTask: thermal control sleep.[0m
+[0;32mI (1601684) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1601692) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1601773) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1601774) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1601777) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1601803) BLE_PERIPH: Sending Response Packet: [34,true,1040,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1031785,32.09,28.40,2,0,0,0.00],0][0m
+[0;32mI (1601809) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1040, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1031785, 32.09, 28.40, 2, 0, 0, 0.00], 0]
+[0;32mI (1601841) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1040,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1031785,32.09,28.40,2,0,0,0.00],0][0m
+[0;32mI (1601909) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1601911) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1601942) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1601987) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1601989) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1602021) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1602022) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1602025) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1602039) BLE_PERIPH: Sending Response Packet: [34,true,1042,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032018,32.08,28.40,2,0,0,0.00],0][0m
+[0;32mI (1602046) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1042, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1032018, 32.08, 28.40, 2, 0, 0, 0.00], 0]
+[0;32mI (1602077) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1042,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032018,32.08,28.40,2,0,0,0.00],0][0m
+[0;32mI (1602123) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1602125) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1602145) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1602190) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1602192) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1602235) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1602236) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1602239) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+DATAQ:  | dataQLiquidStg1 = 33.44 |
+[0;32mI (1602271) BLE_PERIPH: Sending Response Packet: [34,true,1044,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032254,32.09,28.41,2,0,0,0.00],0][0m
+[0;32mI (1602277) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1044, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1032254, 32.09, 28.41, 2, 0, 0, 0.00], 0]
+[0;32mI (1602313) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1044,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032254,32.09,28.41,2,0,0,0.00],0][0m
+[0;32mI (1602370) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1602372) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1602404) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1602471) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1602473) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1602516) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1602517) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1602520) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1602553) BLE_PERIPH: Sending Response Packet: [34,true,1046,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032535,32.08,28.40,2,0,0,0.00],0][0m
+[0;32mI (1602558) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1046, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1032535, 32.08, 28.40, 2, 0, 0, 0.00], 0]
+[0;32mI (1602606) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1046,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032535,32.08,28.40,2,0,0,0.00],0][0m
+[0;32mI (1602652) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1602653) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1602674) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1602707) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1602709) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1602741) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1602742) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1602745) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1602788) BLE_PERIPH: Sending Response Packet: [34,true,1048,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032771,32.06,28.39,2,0,0,0.00],0][0m
+[0;32mI (1602794) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1048, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1032771, 32.06, 28.39, 2, 0, 0, 0.00], 0]
+[0;32mI (1602831) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1048,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1032771,32.06,28.39,2,0,0,0.00],0][0m
+[0;32mI (1602876) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1602878) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1602910) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1602955) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1602957) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1602977) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1602978) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1602981) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1603024) BLE_PERIPH: Sending Response Packet: [34,true,1047,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033006,32.06,28.40,2,0,0,0.00],0][0m
+[0;32mI (1603029) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1047, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1033006, 32.06, 28.40, 2, 0, 0, 0.00], 0]
+[0;32mI (1603056) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1047,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033006,32.06,28.40,2,0,0,0.00],0][0m
+[0;32mI (1603112) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1603114) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1603135) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1603169) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1603170) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1603213) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1603214) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1603217) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1603251) BLE_PERIPH: Sending Response Packet: [34,true,1050,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033233,32.06,28.39,2,0,0,0.00],0][0m
+DATAQ:  | dataQLiquidStg1 = 33.4 |
+[0;32mI (1603256) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1050, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1033233, 32.06, 28.39, 2, 0, 0, 0.00], 0]
+[0;32mI (1603303) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1050,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033233,32.06,28.39,2,0,0,0.00],0][0m
+[0;32mI (1603349) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1603350) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1603382) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1603427) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1603429) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1603461) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1603462) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1603465) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1603482) BLE_PERIPH: Sending Response Packet: [34,true,1052,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033464,32.06,28.41,2,0,0,0.00],0][0m
+[0;32mI (1603489) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1052, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1033464, 32.06, 28.41, 2, 0, 0, 0.00], 0]
+[0;32mI (1603528) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1052,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033464,32.06,28.41,2,0,0,0.00],0][0m
+[0;32mI (1603563) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1603565) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1603596) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1603630) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1603632) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1603663) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1603664) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1603667) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1603674) BLE_PERIPH: Sending Response Packet: [34,true,1054,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033656,32.06,28.40,2,0,0,0.00],0][0m
+[0;32mI (1603686) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1054, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1033656, 32.06, 28.40, 2, 0, 0, 0.00], 0]
+[0;32mI (1603719) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1054,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033656,32.06,28.40,2,0,0,0.00],0][0m
+[0;32mI (1603765) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1603767) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1603787) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1603855) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1603857) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1603888) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1603889) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1603892) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1603918) BLE_PERIPH: Sending Response Packet: [34,true,1056,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033894,32.06,28.39,2,0,0,0.00],0][0m
+[0;32mI (1603924) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1056, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1033894, 32.06, 28.39, 2, 0, 0, 0.00], 0]
+[0;32mI (1603967) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1056,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1033894,32.06,28.39,2,0,0,0.00],0][0m
+[0;32mI (1604012) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1604014) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1604046) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (1604091) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1604093) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1604125) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1604126) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1604129) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1604157) BLE_PERIPH: Sending Response Packet: [34,true,1058,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1034139,32.05,28.39,2,0,0,0.00],0][0m
+[0;32mI (1604162) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1058, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1034139, 32.05, 28.39, 2, 0, 0, 0.00], 0]
+[0;32mI (1604192) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1058,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1034139,32.05,28.39,2,0,0,0.00],0][0m
+[0;32mI (1604226) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1604228) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1604249) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 33.42 |
+[0;32mI (1604294) BLE_PERIPH: App to Instrument Transaction Write 0/20[0m
+[0;32mI (1604296) BLE_PERIPH: App to Instrument Transaction Notify 0/20[0m
+[0;32mI (1604327) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (1604328) BLE_PERIPH: Received 20/20[0m
+[0;32mI (1604331) BLE_PERIPH: App to Instrument Transaction Notify 20/20[0m
+[0;32mI (1604337) BLE_PERIPH: Sending Response Packet: [34,true,1057,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1034320,32.04,28.39,2,0,0,0.00],0][0m
+[0;32mI (1604351) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115[0m
+[34, true, 1057, ["2022-05-20T20:20:30.529Z", "dc3497db-3b47-496c-9562-77428d166408", 1034320, 32.04, 28.39, 2, 0, 0, 0.00], 0]
+[0;32mI (1604383) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,1057,["2022-05-20T20:20:30.529Z","dc3497db-3b47-496c-9562-77428d166408",1034320,32.04,28.39,2,0,0,0.00],0][0m
+[0;32mI (1604451) BLE_PERIPH: Instrument to App Transaction Write 115/115[0m
+[0;32mI (1604453) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115[0m
+[0;32mI (1604474) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 33.39 |
+DATAQ:  | dataQLiquidStg1 = 33.31 |
+DATAQ:  | dataQLiquidStg1 = 33.36 |
+DATAQ:  | dataQLiquidStg1 = 33.29 |
+DATAQ:  | dataQLiquidStg1 = 33.31 |
+DATAQ:  | dataQLiquidStg1 = 33.26 |
+DATAQ:  | dataQLiquidStg1 = 33.27 |
+DATAQ:  | dataQLiquidStg1 = 33.22 |
+DATAQ:  | dataQLiquidStg1 = 33.24 |
+DATAQ:  | dataQLiquidStg1 = 33.19 |
+DATAQ:  | dataQLiquidStg1 = 33.1 |
+DATAQ:  | dataQLiquidStg1 = 33.21 |
+DATAQ:  | dataQLiquidStg1 = 33.21 |
+DATAQ:  | dataQLiquidStg1 = 33.16 |
+DATAQ:  | dataQLiquidStg1 = 33.11 |
+DATAQ:  | dataQLiquidStg1 = 33.03 |
+DATAQ:  | dataQLiquidStg1 = 33.1 |
+DATAQ:  | dataQLiquidStg1 = 33.12 |
+DATAQ:  | dataQLiquidStg1 = 33.11 |
+DATAQ:  | dataQLiquidStg1 = 33.07 |
+DATAQ:  | dataQLiquidStg1 = 33.01 |
+DATAQ:  | dataQLiquidStg1 = 33.08 |
+DATAQ:  | dataQLiquidStg1 = 33.06 |
+DATAQ:  | dataQLiquidStg1 = 33.04 |
+DATAQ:  | dataQLiquidStg1 = 32.92 |
+DATAQ:  | dataQLiquidStg1 = 33.08 |
+DATAQ:  | dataQLiquidStg1 = 32.93 |
+DATAQ:  | dataQLiquidStg1 = 32.93 |
+DATAQ:  | dataQLiquidStg1 = 32.93 |
+DATAQ:  | dataQLiquidStg1 = 32.99 |
+DATAQ:  | dataQLiquidStg1 = 32.97 |
+DATAQ:  | dataQLiquidStg1 = 32.95 |
+DATAQ:  | dataQLiquidStg1 = 32.91 |
+DATAQ:  | dataQLiquidStg1 = 32.8 |
+DATAQ:  | dataQLiquidStg1 = 32.84 |
+DATAQ:  | dataQLiquidStg1 = 32.86 |
+DATAQ:  | dataQLiquidStg1 = 32.78 |
+DATAQ:  | dataQLiquidStg1 = 32.71 |
+DATAQ:  | dataQLiquidStg1 = 32.78 |
+DATAQ:  | dataQLiquidStg1 = 32.74 |
+DATAQ:  | dataQLiquidStg1 = 32.7 |
+DATAQ:  | dataQLiquidStg1 = 32.66 |
+DATAQ:  | dataQLiquidStg1 = 32.66 |
+DATAQ:  | dataQLiquidStg1 = 32.61 |
+DATAQ:  | dataQLiquidStg1 = 32.6 |
+DATAQ:  | dataQLiquidStg1 = 32.64 |
+DATAQ:  | dataQLiquidStg1 = 32.62 |
+DATAQ:  | dataQLiquidStg1 = 32.6 |
+DATAQ:  | dataQLiquidStg1 = 32.6 |
+DATAQ:  | dataQLiquidStg1 = 32.53 |
+DATAQ:  | dataQLiquidStg1 = 32.51 |
+DATAQ:  | dataQLiquidStg1 = 32.53 |
+DATAQ:  | dataQLiquidStg1 = 32.53 |
+DATAQ:  | dataQLiquidStg1 = 32.47 |
+DATAQ:  | dataQLiquidStg1 = 32.51 |
+DATAQ:  | dataQLiquidStg1 = 32.45 |
+DATAQ:  | dataQLiquidStg1 = 32.45 |
+DATAQ:  | dataQLiquidStg1 = 32.44 |
+DATAQ:  | dataQLiquidStg1 = 32.35 |
+DATAQ:  | dataQLiquidStg1 = 32.31 |
+DATAQ:  | dataQLiquidStg1 = 32.3 |
+DATAQ:  | dataQLiquidStg1 = 32.34 |
+DATAQ:  | dataQLiquidStg1 = 32.31 |
+DATAQ:  | dataQLiquidStg1 = 32.32 |
+DATAQ:  | dataQLiquidStg1 = 32.45 |
+DATAQ:  | dataQLiquidStg1 = 32.51 |
+DATAQ:  | dataQLiquidStg1 = 32.5 |
+DATAQ:  | dataQLiquidStg1 = 32.46 |
+DATAQ:  | dataQLiquidStg1 = 32.4 |
+DATAQ:  | dataQLiquidStg1 = 32.38 |
+DATAQ:  | dataQLiquidStg1 = 32.39 |
+DATAQ:  | dataQLiquidStg1 = 32.36 |
+DATAQ:  | dataQLiquidStg1 = 32.34 |
+DATAQ:  | dataQLiquidStg1 = 32.34 |
+DATAQ:  | dataQLiquidStg1 = 32.3 |
+DATAQ:  | dataQLiquidStg1 = 32.24 |
+DATAQ:  | dataQLiquidStg1 = 32.2 |
+DATAQ:  | dataQLiquidStg1 = 32.16 |
+DATAQ:  | dataQLiquidStg1 = 32.12 |
+DATAQ:  | dataQLiquidStg1 = 32.05 |
+DATAQ:  | dataQLiquidStg1 = 32.01 |
+DATAQ:  | dataQLiquidStg1 = 31.96 |

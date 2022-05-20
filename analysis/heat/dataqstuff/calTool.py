@@ -4,8 +4,8 @@ import serial
 from threading import Thread
 import time
 import os
-date = '19May2022'
-directory = ''.join(['data/',date])
+date = '20May2022'
+directory = ''.join(['dave_local_test_data/',date])
 folder = os.path.isdir(directory)
 if folder == True:
     pass
@@ -27,7 +27,7 @@ def dataQThread(dataq, file):
 
         # liquidAvg = (liquid1 + liquid2) / 2
         line = "DATAQ: " + \
-                    " | liquid = "   + str(round(liquid1, 2)) + \
+                    " | dataQLiquidStg1 = "   + str(round(liquid1, 2)) + \
                     " |"
 
                     # " | stg1htsnk = " + str(round(stg1htsnk, 2)) + \
