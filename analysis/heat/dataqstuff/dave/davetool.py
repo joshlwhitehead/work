@@ -18,7 +18,7 @@ from PyQt5.QtWidgets import QDialog
 from dave_widget import Ui_dave_window
 
 
-date = '19May2022'
+date = '26May2022'
 directory = ''.join(['dave_local_test_data/',date])
 folder = os.path.isdir(directory)
 if folder == True:
@@ -516,6 +516,8 @@ class Dave:
             ParsedValue("dataQStage1PeltierBottom", color='tab:olive', parseValueFunc=ParsFuncs.dataQC1B))
         self.stage1Plot.addParsedValue(
             ParsedValue("dataQLiquidStg1", color='tab:purple', parseValueFunc=ParsFuncs.dataQLiquid))
+        self.stage1Plot.addParsedValue(
+            ParsedValue("liquid2", color='tab:purple', parseValueFunc=ParsFuncs.dataQLiquid2))
         self.stage1Plot.addParsedValue(
             ParsedValue("dataQStg1Slug", color='tab:blue', parseValueFunc=ParsFuncs.dataQStg1Slug))
 

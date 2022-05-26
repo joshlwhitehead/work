@@ -18,6 +18,10 @@ def getData(filename,date):
             if str(nm515[i]) !='nan':
                 wav3.append(nm515[i])
                 wavTime.append(time[i])
+    if 'liquid2' in fullSheet.columns:
+        samp2Raw = fullSheet['liquid2'].tolist()
+    else:
+        samp2Raw = np.ones(len(sampRaw))
     # setRaw = fullSheet['stage1SetTempC'].tolist()
    
     thermMod = []
@@ -38,16 +42,20 @@ def getData(filename,date):
 
     sampMod = []
     timeMod = []
+    samp2Mod = []
     for i in range(len(sampRaw)):
         if str(sampRaw[i]) != 'nan':
             sampMod.append(sampRaw[i])
             timeMod.append(time[i])
+            samp2Mod.append(samp2Raw[i])
     # print(sampMod[:5])
     if len(sampMod) != 0:
         sampInterp = interp.interp1d(timeMod,sampMod)
         sampMod = sampInterp(time[:-4])
+        samp2Interp = interp.interp1d(timeMod,samp2Mod)
+        samp2Mod = samp2Interp(time[:-4])
     
-    return time,thermMod,sampMod,wav3,wavTime
+    return time,thermMod,sampMod,samp2Mod,wav3,wavTime
    
 
 

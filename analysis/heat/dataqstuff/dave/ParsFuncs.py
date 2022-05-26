@@ -224,6 +224,11 @@ def dataQLiquid(line):
         return float(line.split("DATAQ:")[1].split("| dataQLiquidStg1 = ")[1].split("|")[0])
     except:
         return None
+def dataQLiquid2(line):
+    try:
+        return float(line.split("DATAQ:")[1].split("| liquid2 = ")[1].split("|")[0])
+    except:
+        return None
 
 def dataQLaser(line):
     try:

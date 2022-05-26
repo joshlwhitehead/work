@@ -16,10 +16,10 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.uL600_b[2],label='600')
 
 # # plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
-plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700')
-# # plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
-plt.plot(dat.uL800[0][:len(dat.uL800[1])],dat.uL800[1],label='800')
-plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600')
+# plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700')
+# # # plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
+# plt.plot(dat.uL800[0][:len(dat.uL800[1])],dat.uL800[1],label='800')
+# plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600')
 # plt.plot(dat.uL700_d[1],label='700')
 
 # plt.plot(dat.uL800_d[1],label='800')
@@ -33,6 +33,20 @@ plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600')
 # plt.plot(dat.f3[0],dat.f3[1])
 # plt.plot(dat.f4[0],dat.f4[1])
 
+
+
+# plt.plot(dat.h90_top[0][:len(dat.h90_top[2])],dat.h90_top[2])
+# plt.plot(dat.h90_top[0][:len(dat.h90_top[2])],dat.h90_top[3])
+# plt.plot(dat.h90_top[0][:len(dat.h90_top[1])],dat.h90_top[1])
+# plt.plot(dat.h90[0][:len(dat.h90[2])],dat.h90[2])
+# plt.plot(dat.h90[0][:len(dat.h90[2])],dat.h90[3])
+plt.plot(dat.h90_c[0][:len(dat.h90_c[2])],dat.h90_c[2])
+plt.plot(dat.h90_c[0][:len(dat.h90_c[2])],dat.h90_c[3])
+plt.plot(dat.h90_c[0][:len(dat.h90_c[1])],dat.h90_c[1])
+
+plt.plot(dat.h90_top_b[0][:len(dat.h90_top_b[2])],dat.h90_top_b[2])
+plt.plot(dat.h90_top_b[0][:len(dat.h90_top_b[2])],dat.h90_top_b[3])
+plt.plot(dat.h90_top_b[0][:len(dat.h90_top_b[1])],dat.h90_top_b[1])
 plt.legend()
 plt.grid()
 
