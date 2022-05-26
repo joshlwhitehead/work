@@ -8,5 +8,5 @@ ro = 997
 cp = 4.2
 dx = .006
 
-def dTdt():
+def dTdt(T1,T2):
     return (T2*(-k1/l1-k2/l2)+k1/l1*T1+k2/l2*Tinf)/ro/cp/dx
