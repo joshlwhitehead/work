@@ -25,12 +25,13 @@ def dataQThread(dataq, file):
         
         liquid1 = dataq.getThermocouple(0)
         # stg1htsnk = dataq.getThermocouple(1)
-        liquid2 = dataq.getThermocouple(1)
+        # liquid2 = dataq.getThermocouple(1)
         # liquidAvg = (liquid1 + liquid2) / 2
         line = "DATAQ: " + \
                     " | dataQLiquidStg1 = "   + str(round(liquid1, 2)) + \
-                    " | liquid2 = "  + str(round(liquid2, 2)) + \
                     " | "
+                    # " | liquid2 = "  + str(round(liquid2, 2)) + \
+                    # " | "
                                         # " | stg1htsnk = " + str(round(stg1htsnk, 2)) + \
                     # " | liquidAvg = "  + str(round(liquidAvg, 2)) + \
                         
@@ -44,10 +45,10 @@ def dataQThread(dataq, file):
         file.flush()
         sleep(1)
 
-dataq = DataQ([(1,'t'),(2,'t')])#,(3,'t'),(4,'t'),(5,'t')])
+dataq = DataQ([(1,'t')])#,(2,'t')])#,(3,'t'),(4,'t'),(5,'t')])
 t = Thread(target=dataQThread, args=(dataq,f))
 t.start()
-ser = serial.Serial('COM9', 115200)
+ser = serial.Serial('COM3', 115200)
 
 
 while (True):
