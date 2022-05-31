@@ -1,7 +1,7 @@
 """This is a space to organize data. getData function parses out csv produced by dave"""
 import getData as gd
 
-# lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
+lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
 # lid0Cons0_70 = gd.getData('lid0Cons0_70.csv','31Mar2022')
 # lid0Cons0_50 = gd.getData('lid0Cons0_50.csv','31Mar2022')
 # lid0Cons0_100 = gd.getData('lid0Cons0_100.csv','31Mar2022')
@@ -20,6 +20,7 @@ import getData as gd
 # cool100_80 = gd.getData('lid0Cons0Cool_100_80.csv','31Mar2022')
 # cool100_60 = gd.getData('lid0Cons0Cool_100_60.csv','31Mar2022')
 # cool100_40 = gd.getData('lid0Cons0Cool_100_40.csv','31Mar2022')
+
 
 
 
@@ -121,3 +122,11 @@ h90_d = gd.getData('hold90_d.csv','26May2022')
 
 h90_top = gd.getData('hold90_top.csv','26May2022')
 h90_top_b = gd.getData('hold90_top_b.csv','26May2022')
+
+
+
+h90_inf = gd.getData('Tinf.csv','31May2022')
+
+h70 = gd.getData('h70.csv','31May2022')
+h50 = gd.getData('h50_b.csv','31May2022')
+h100 = gd.getData('h100.csv','31May2022')

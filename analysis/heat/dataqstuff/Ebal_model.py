@@ -2,14 +2,15 @@ import numpy as np
 import dataToVar as dat
 import matplotlib.pyplot as plt
 
-tempSlug = dat.h90_c[3]
-tempSamp = dat.h90_c[2]
-time = dat.h90_c[0][:len(tempSlug)]
+Tinf = dat.h90_inf[2]
+tempSlug = dat.h90_c[3][:len(Tinf)]
+tempSamp = dat.h90_c[2][:len(Tinf)]
+time = dat.h90_c[0][:len(Tinf)]
 k1 = .2
 k2 = .2
 l1 = .00013
 l2 = .0006
-Tinf = 40
+
 ro = 997
 cp = 4.2
 dx = .006
@@ -22,9 +23,10 @@ plt.plot(dTdt(tempSlug,tempSamp))
 plt.grid()
 plt.show()
 
-# plt.figure()
+plt.figure()
 # plt.plot(time,tempSlug)
-# plt.plot(time,tempSamp)
-# plt.grid()
-# plt.show()
+plt.plot(time,-tempSamp)
+# plt.plot(time,Tinf)
+plt.grid()
+plt.show()
 

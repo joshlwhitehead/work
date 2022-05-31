@@ -22,6 +22,12 @@ def getData(filename,date):
         samp2Raw = fullSheet['liquid2'].tolist()
     else:
         samp2Raw = np.ones(len(sampRaw))
+
+    timeSec = []
+    for i in range(len(thermRaw)):
+        if str(thermRaw[i]) == 'nan':
+            timeSec.append(time[i])
+    timeSec = np.array(timeSec)
     # setRaw = fullSheet['stage1SetTempC'].tolist()
    
     thermMod = []
@@ -55,7 +61,7 @@ def getData(filename,date):
         samp2Interp = interp.interp1d(timeMod,samp2Mod)
         samp2Mod = samp2Interp(time[:-4])
     
-    return time,thermMod,sampMod,samp2Mod,wav3,wavTime
+    return time,thermMod,sampMod,samp2Mod,wav3,wavTime,timeSec
    
 
 

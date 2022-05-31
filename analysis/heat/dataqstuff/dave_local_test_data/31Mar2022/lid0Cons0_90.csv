@@ -1,4 +1,4 @@
-timeSinceBootSeconds,stage1TempC,stage1FilteredTempC,stage1SetTempC,dataQStage1Heatsink,dataQStage1PeltierTop,dataQStage1PeltierBottom,dataQLiquidStg1,pcrTempC,pcrFilteredTempC,pcrModeledTempC,pcrExpectedTempC,pcrSetTempC,dataQPcrPeltierTop,dataQPcrPeltierBottom,dataQPcrHeatsink,pcrPTerm,pcrITerm,pcrDTerm,pcrFFTerm,pidOutput,415nm,445nm,480nm,515nm,555nm,590nm,630nm,680nm,Clear,Nir,QDotRatio,FluorTemp,qDotPredictedTempC
+timeSinceBoot,stage1TempC,stage1FilteredTempC,stage1SetTempC,dataQStage1Heatsink,dataQStage1PeltierTop,dataQStage1PeltierBottom,dataQLiquidStg1,pcrTempC,pcrFilteredTempC,pcrModeledTempC,pcrExpectedTempC,pcrSetTempC,dataQPcrPeltierTop,dataQPcrPeltierBottom,dataQPcrHeatsink,pcrPTerm,pcrITerm,pcrDTerm,pcrFFTerm,pidOutput,415nm,445nm,480nm,515nm,555nm,590nm,630nm,680nm,Clear,Nir,QDotRatio,FluorTemp,qDotPredictedTempC
 54949.638,,,,,,,24.22,,,,,,,,,,,,,,,,,,,,,,,,,,
 54950.209,25.3,,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 54950.322,25.3,,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
