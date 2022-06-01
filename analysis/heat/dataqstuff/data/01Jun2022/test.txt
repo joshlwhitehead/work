@@ -1,0 +1,17 @@
+DATAQ:  | dataQLiquidStg1 = 20.33 | liquid2 = 20.42 | 
+DATAQ:  | dataQLiquidStg1 = 20.31 | liquid2 = 20.43 | 
+DATAQ:  | dataQLiquidStg1 = 20.42 | liquid2 = 20.5 | 
+DATAQ:  | dataQLiquidStg1 = 20.47 | liquid2 = 20.5 | 
+DATAQ:  | dataQLiquidStg1 = 20.45 | liquid2 = 20.5 | 
+DATAQ:  | dataQLiquidStg1 = 20.41 | liquid2 = 20.32 | 
+DATAQ:  | dataQLiquidStg1 = 20.42 | liquid2 = 20.46 | 
+DATAQ:  | dataQLiquidStg1 = 20.41 | liquid2 = 20.42 | 
+DATAQ:  | dataQLiquidStg1 = 20.34 | liquid2 = 20.36 | 
+DATAQ:  | dataQLiquidStg1 = 20.31 | liquid2 = 20.42 | 
+DATAQ:  | dataQLiquidStg1 = 20.33 | liquid2 = 20.37 | 
+DATAQ:  | dataQLiquidStg1 = 20.39 | liquid2 = 20.53 | 
+DATAQ:  | dataQLiquidStg1 = 20.39 | liquid2 = 20.47 | 
+DATAQ:  | dataQLiquidStg1 = 20.31 | liquid2 = 20.51 | 
+DATAQ:  | dataQLiquidStg1 = 20.36 | liquid2 = 20.44 | 
+DATAQ:  | dataQLiquidStg1 = 20.24 | liquid2 = 20.35 | 
+DATAQ:  | dataQLiquidStg1 = 20.35 | liquid2 = 20.3 | 

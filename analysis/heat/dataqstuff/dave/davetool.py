@@ -18,8 +18,8 @@ from PyQt5.QtWidgets import QDialog
 from dave_widget import Ui_dave_window
 
 
-date = '31May2022'
-directory = ''.join(['dave_local_test_data/',date])
+date = '01Jun2022'
+directory = ''.join(['data/',date])
 folder = os.path.isdir(directory)
 if folder == True:
     pass
@@ -31,7 +31,7 @@ timestamps = []
 # from PyQt5.QtWidgets import QMessageBox, QTreeWidgetItem
 
 TEMP_CONSOLE_FILE_NAME = "console_output.txt"
-LOCAL_TEST_DATA_FOLDER_NAME = "dave_local_test_data"
+LOCAL_TEST_DATA_FOLDER_NAME = "data"
 AUTO_DAVE_OUTPUT_FOLDER_NAME = "auto_dave_output_files"
 
 
