@@ -4,7 +4,7 @@ import scipy.interpolate as interp
 
 
 def getData(filename,date):
-    fullSheet = pd.read_csv(''.join(['dave_local_test_data/',date,'/',filename]))
+    fullSheet = pd.read_csv(''.join(['data/',date,'/',filename]))
 
     time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
     thermRaw = fullSheet['Stage1 TempC'].tolist()
@@ -23,11 +23,7 @@ def getData(filename,date):
     else:
         samp2Raw = np.ones(len(sampRaw))
 
-    timeSec = []
-    for i in range(len(thermRaw)):
-        if str(thermRaw[i]) == 'nan':
-            timeSec.append(time[i])
-    timeSec = np.array(timeSec)
+   
     # setRaw = fullSheet['stage1SetTempC'].tolist()
    
     thermMod = []
@@ -61,7 +57,7 @@ def getData(filename,date):
         samp2Interp = interp.interp1d(timeMod,samp2Mod)
         samp2Mod = samp2Interp(time[:-4])
     
-    return time,thermMod,sampMod,samp2Mod,wav3,wavTime,timeSec
+    return time,thermMod,sampMod,samp2Mod,wav3,wavTime
    
 
 

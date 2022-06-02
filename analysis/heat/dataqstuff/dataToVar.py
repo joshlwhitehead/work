@@ -1,4 +1,5 @@
 """This is a space to organize data. getData function parses out csv produced by dave"""
+from gc import get_debug
 import getData as gd
 
 lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
@@ -115,18 +116,36 @@ uL800_d = gd.getData('uL800_d.csv','20May2022')
 
 
 ###########################                         TWO THERMOCOUPLE                                    #########################################
-h90 = gd.getData('hold90_noMod_twoThermo.csv','26May2022')
-h90_b = gd.getData('hold90_noMod_twoThermo_b.csv','26May2022')
-h90_c = gd.getData('hold90_c.csv','26May2022')
-h90_d = gd.getData('hold90_d.csv','26May2022')
+# h90 = gd.getData('hold90_noMod_twoThermo.csv','26May2022')
+# h90_b = gd.getData('hold90_noMod_twoThermo_b.csv','26May2022')
+# h90_c = gd.getData('hold90_c.csv','26May2022')
+# h90_d = gd.getData('hold90_d.csv','26May2022')
 
-h90_top = gd.getData('hold90_top.csv','26May2022')
-h90_top_b = gd.getData('hold90_top_b.csv','26May2022')
+# h90_top = gd.getData('hold90_top.csv','26May2022')
+# h90_top_b = gd.getData('hold90_top_b.csv','26May2022')
 
 
 
-h90_inf = gd.getData('Tinf.csv','31May2022')
+# h90_inf = gd.getData('Tinf.csv','31May2022')
 
-h70 = gd.getData('h70.csv','31May2022')
-h50 = gd.getData('h50_b.csv','31May2022')
-h100 = gd.getData('h100.csv','31May2022')
+h70 = gd.getData('lidF_insertC_hold70.csv','01Jun2022')
+h50 = gd.getData('lidF_insertC_hold50.csv','01Jun2022')
+h100 = gd.getData('lidF_insertC_hold100_b.csv','01Jun2022')
+h90 = gd.getData('lidF_insertC_hold90.csv','01Jun2022')
+
+full_insertC = gd.getData('lidF_insertC_full.csv','01Jun2022')
+full_noInsert = gd.getData('lidF_noInsert_full.csv','01Jun2022')
+full_insertA = gd.getData('lidF_insertA_full.csv','01Jun2022')
+full_insertA2 = gd.getData('lidF_insertA2_full_b.csv','01Jun2022')
+full_insertB = gd.getData('lidF_insertB_full.csv','01Jun2022')
+full_insertB2 = gd.getData('lidF_insertB2_full.csv','01Jun2022')
+
+h50_noInsert = gd.getData('lidF_noInsert_hold50.csv','01Jun2022')
+h70_noInsert = gd.getData('lidF_noInsert_hold70.csv','01Jun2022')
+h90_noInsert = gd.getData('lidF_noInsert_hold90.csv','01Jun2022')
+h100_noInsert = gd.getData('lidF_noInsert_hold100.csv','01Jun2022')
+
+h50_insertA = gd.getData('lidF_insertA2_hold50.csv','01Jun2022')
+h70_insertA = gd.getData('lidF_insertA2_hold70.csv','01Jun2022')
+h90_insertA = gd.getData('lidF_insertA2_hold90.csv','01Jun2022')
+h100_insertA = gd.getData('lidF_insertA2_hold100.csv','01Jun2022')

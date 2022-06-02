@@ -9,10 +9,10 @@ import dataToVar as dat
 
 
 """data"""
-fif = dat.lid0Cons0_50              # this data is a list of three vectors [time, thermister, thermocouple(sample)]
-sev = dat.lid0Cons0_70              # the time vector is not relavent in this code
-nin = dat.lid0Cons0_90
-one = dat.lid0Cons0_100
+fif = dat.h50              # this data is a list of three vectors [time, thermister, thermocouple(sample)]
+sev = dat.h70              # the time vector is not relavent in this code
+nin = dat.h90
+one = dat.h100
 
 
 
@@ -41,10 +41,10 @@ def r2surf(zlist,zlistfit):
 
 
 """average steady state offset"""
-a = 50 - np.average(fif[2][-100:])
-b = 70 - np.average(sev[2][-100:])
-c = 90 - np.average(nin[2][-100:])
-d = 100 - np.average(one[2][-100:])
+a = 50 - np.average(fif[2][-50:])
+b = 70 - np.average(sev[2][-50:])
+c = 90 - np.average(nin[2][-50:])
+d = 100 - np.average(one[2][-50:])
 
 
 xx = np.array([50,70,90,100])
@@ -85,15 +85,15 @@ for i in trustVals:
     for j in range(len(ytot)):
         old = ytot[j][0]
        
-
+        count = 0
         for k in xtot[j]:
             if str(k) == 'nan':
-                print('fix csv')
-                break
+                xtot[j][count] = xtot[j][count-1]
             else:
                 offset = aa*k**2+bb*k+cc
                 old = old*i+(k-offset)*(1-i)
                 zlistfit.append(old)
+            count += 1
         
 
     r = r2surf(zlist,zlistfit)                          #look for reasonable r2 value

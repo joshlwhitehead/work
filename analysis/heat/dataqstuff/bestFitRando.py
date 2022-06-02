@@ -9,7 +9,7 @@ import dataToVar as dat
 
 
 
-data = dat.h100
+data = dat.h100_insertA
 
 
 
@@ -23,7 +23,7 @@ Tset = np.array(data[1][:len(samp)])
 for i in range(len(Tset)):
     if str(Tset[i]) == 'nan':
         Tset[i] = Tset[i-1]
-offset = 0.001783387081181648*Tset**2 -0.12568814551147026*Tset+ 4.697092470876816
+offset = 0.0004947486312725369*Tset**2+ 0.013852650591628062*Tset+ 1.6253000693004136
 
 # print(offset)
 
@@ -44,7 +44,7 @@ def decay(lam):
 def T(lam):
     return (-Tset+offset+30)*np.exp(-lam*time)+Tset-offset
 
-tries = np.arange(0,1,.001)
+tries = np.arange(0,.1,.0001)
 
 fits = {}
 fitsa = {}
@@ -55,6 +55,7 @@ for i in tries:
         fits[r] = i
     ra = r2(sampRaw,T(i))
     if ra >=.1 and ra <=1:
+        
         fitsa[ra] = i  
 lamb = fits[max(fits.keys())]
 lamba = fitsa[max(fitsa.keys())]
