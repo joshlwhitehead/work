@@ -1,4 +1,5 @@
 
+from wsgiref.headers import tspecials
 import matplotlib.pyplot as plt
 import numpy as np
 import dataToVar as dat
@@ -9,15 +10,15 @@ import dataToVar as dat
 
 
 
-data = dat.h100_insertD
+data = dat.c85_noInsert
 
 
 
 
 
 
-samp = -data[2]+max(data[2])
-sampRaw = data[2]
+# samp = -data[2]+max(data[2])
+samp = data[2][:20000]
 time = data[0][:len(samp)]
 Tset = np.array(data[1][:len(samp)])
 
@@ -25,7 +26,7 @@ for i in range(len(Tset)):
     if str(Tset[i]) == 'nan':
         Tset[i] = Tset[i-1]
 
-offset = 0.000758674251065299*Tset**2 -0.0220076645565754*Tset+ 1.8434506999679072
+offset = -0.0002018683646914052*Tset**2+ 0.11439167108239968*Tset -2.8145860529213786
 
 # print(offset)
 
@@ -44,7 +45,7 @@ def r2(y,fit):
 def decay(lam):
     return (max(data[2])-min(data[2]))*np.exp(-lam*time)
 def T(lam):
-    return (-Tset+offset+30)*np.exp(-lam*time)+Tset-offset
+    return (-Tset+offset+92.5)*np.exp(-lam*time)+Tset-offset
 
 tries = np.arange(0,.1,.0001)
 
@@ -53,21 +54,21 @@ fitsa = {}
 for i in tries:
    
     r = r2(samp,decay(i))
-    if r >=.9 and r <=1:
+    if r >=.1 and r <=1:
         fits[r] = i
-    ra = r2(sampRaw,T(i))
+    ra = r2(samp,T(i))
     if ra >=.1 and ra <=1:
         
         fitsa[ra] = i  
-lamb = fits[max(fits.keys())]
+# lamb = fits[max(fits.keys())]
 lamba = fitsa[max(fitsa.keys())]
-print(lamb)
+# print(lamb)
 print(lamba)
 print()
 
 
-plt.plot(-samp+max(data[2]),label='data')
-plt.plot(-decay(lamb)+max(data[2]),label='setTemp')
+plt.plot(samp,label='data')
+# plt.plot(-decay(lamb)+max(data[2]),label='setTemp')
 plt.plot(T(lamba),label='tempTherm')
 plt.grid()
 plt.legend()

@@ -18,7 +18,7 @@ from PyQt5.QtWidgets import QDialog
 from dave_widget import Ui_dave_window
 
 
-date = '01Jun2022'
+date = '02Jun2022'
 directory = ''.join(['data/',date])
 folder = os.path.isdir(directory)
 if folder == True:

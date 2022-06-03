@@ -41,16 +41,20 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.h90[0][:len(dat.h90[2])],dat.h90[2])
 # plt.plot(dat.h90[0][:len(dat.h90[2])],dat.h90[3])
 
-# plt.plot(dat.full_noInsert[1])
-# plt.plot(dat.full_noInsert[2],label='no insert')
-# plt.plot(dat.full_insertA2[1])
-# plt.plot(dat.full_insertA2[2],label='insert A')
-plt.plot(dat.full_insertB[1])
-plt.plot(dat.full_insertB[2],label='insert B')
-plt.plot(dat.full_insertB2[1])
-plt.plot(dat.full_insertB2[2],label='insert B')
+plt.plot(dat.full_noInsert[1])
+plt.plot(dat.full_noInsert[2],label='no insert')
+plt.plot(dat.full_insertD_b[1])
+plt.plot(dat.full_insertD_b[2],label='insert D')
+plt.plot(dat.full_insertF[1])
+plt.plot(dat.full_insertF[2],label='insert F')
+# plt.plot(dat.full_insertB[1])
+# plt.plot(dat.full_insertB[2],label='insert B')
+# plt.plot(dat.full_insertB2[1])
+# plt.plot(dat.full_insertB2[2],label='insert B')
 # plt.plot(dat.full_insertC[1])
 # plt.plot(dat.full_insertC[2],label='insert C')
+
+
 plt.legend()
 plt.grid()
 
