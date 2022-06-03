@@ -28,7 +28,7 @@ def dataQThread(dataq, file):
         liquid2 = dataq.getThermocouple(1)
         # liquidAvg = (liquid1 + liquid2) / 2
         line = "DATAQ: " + \
-                    " | dataQLiquidStg1 = "   + str(round(liquid1, 2)) + \
+                    " | Stg1ThermoTempC = "   + str(round(liquid1, 2)) + \
                     " | liquid2 = "  + str(round(liquid2, 2)) + \
                     " | "
                                         # " | stg1htsnk = " + str(round(stg1htsnk, 2)) + \

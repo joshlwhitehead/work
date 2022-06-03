@@ -326,7 +326,7 @@ def measuredStg1TempC(line):
         return float(line.split("CHUBE:")[1].split("| Stg1ThermoTempC = ")[1].split("|")[0])
     except:
         try:
-            return float(line.split("DATAQ:")[1].split("| Stg1ThermoTempC = ")[1].split("|")[0])
+            return float(line.split("DATAQ:")[1].split("| dataQLiquidStg1 = ")[1].split("|")[0])
         except:
             try:
                 return float(line.split("DATAQ:")[1].split("| dataQStg1Slug = ")[1].split("|")[0])
