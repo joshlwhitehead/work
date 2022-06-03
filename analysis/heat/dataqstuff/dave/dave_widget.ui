@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>390</width>
-    <height>800</height>
+    <width>419</width>
+    <height>866</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>371</width>
-     <height>791</height>
+     <x>7</x>
+     <y>1</y>
+     <width>400</width>
+     <height>861</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -383,12 +383,12 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <widget class="QCheckBox" name="dataqPcr_checkBox">
+             <widget class="QCheckBox" name="Pcr_checkBox">
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>dataqPCR</string>
+               <string>PCR</string>
               </property>
               <property name="checked">
                <bool>true</bool>
@@ -396,9 +396,9 @@
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="dataqStg1_checkBox">
+             <widget class="QCheckBox" name="Stg1_checkBox">
               <property name="text">
-               <string>dataqSTG1</string>
+               <string>STG1</string>
               </property>
              </widget>
             </item>

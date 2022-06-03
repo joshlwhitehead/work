@@ -118,7 +118,7 @@ uL800_d = gd.getData('uL800_d.csv','20May2022')
 ###########################                         TWO THERMOCOUPLE                                    #########################################
 # h90 = gd.getData('hold90_noMod_twoThermo.csv','26May2022')
 # h90_b = gd.getData('hold90_noMod_twoThermo_b.csv','26May2022')
-# h90_c = gd.getData('hold90_c.csv','26May2022')
+h90_c = gd.getData('hold90_c.csv','26May2022')
 # h90_d = gd.getData('hold90_d.csv','26May2022')
 
 # h90_top = gd.getData('hold90_top.csv','26May2022')
@@ -126,7 +126,7 @@ uL800_d = gd.getData('uL800_d.csv','20May2022')
 
 
 
-# h90_inf = gd.getData('Tinf.csv','31May2022')
+h90_inf = gd.getData('Tinf.csv','31May2022')
 
 h70 = gd.getData('lidF_insertC_hold70.csv','01Jun2022')
 h50 = gd.getData('lidF_insertC_hold50.csv','01Jun2022')
@@ -142,7 +142,10 @@ full_insertB2 = gd.getData('lidF_insertB2_full.csv','01Jun2022')
 full_insertD = gd.getData('lidF_insertD_full.csv','02Jun2022')
 full_insertD2 = gd.getData('lidF_insertD2_full.csv','02Jun2022')
 full_insertD_b = gd.getData('lidF_insertD_full_c.csv','02Jun2022')
+full_insertD2_b = gd.getData('lidF_insertD2_full_b.csv','03Jun2022')
 full_insertF = gd.getData('lidF_insertF_full.csv','02Jun2022')
+full_insertF_b = gd.getData('lidF_insertF_full_b.csv','03Jun2022')
+full_insertF_c = gd.getData('lidF_insertF_full_c.csv','03Jun2022')
 
 h50_noInsert = gd.getData('lidF_noInsert_hold50.csv','01Jun2022')
 h70_noInsert = gd.getData('lidF_noInsert_hold70.csv','01Jun2022')
@@ -161,7 +164,8 @@ h100_insertD = gd.getData('lidF_insertD_hold100.csv','02Jun2022')
 
 
 
-
+full_fat = gd.getData('lidF_insertF_fatBottom.csv','03Jun2022')
+full_flat = gd.getData('lidF_insertF_flatBottom.csv','03Jun2022')
 ##################################################          COOLING     ##########################################
 c85_noInsert = gd.getData('lidF_noInsert_cool85.csv','02Jun2022')
 c70_noInsert = gd.getData('lidF_noInsert_cool70.csv','02Jun2022')

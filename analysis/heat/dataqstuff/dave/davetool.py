@@ -1,43 +1,38 @@
-
-    
 import csv
 from datetime import datetime
-
 import matplotlib.pyplot as plt
 import os
 import shutil
 import pandas as pd
 import numpy as np
 import pathlib
-import ParsFuncs
-
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QDialog
 
-from dave_widget import Ui_dave_window
-
-
-date = '02Jun2022'
-directory = ''.join(['data/',date])
-folder = os.path.isdir(directory)
-if folder == True:
+try:
+    from Built_UI_Files.dave_window import Ui_dave_window
+    from custom_libraries import DaveParsFuncs
+except:
     pass
-else:
-    os.mkdir(directory)
 
-timestamps = []
-# from Built_UI_Files import dave_window
-# from PyQt5.QtWidgets import QMessageBox, QTreeWidgetItem
+try:
+    from dave_widget import Ui_dave_window
+    import DaveParsFuncs
+except:
+    pass
 
 TEMP_CONSOLE_FILE_NAME = "console_output.txt"
-LOCAL_TEST_DATA_FOLDER_NAME = "data"
+LOCAL_TEST_DATA_FOLDER_NAME = "dave_local_test_data"
 AUTO_DAVE_OUTPUT_FOLDER_NAME = "auto_dave_output_files"
+timestamps = []
 
+class Dave_Window(Ui_dave_window, QtWidgets.QWidget):
+    console_signal = QtCore.pyqtSignal()
+    console_read_signal = QtCore.pyqtSignal()
 
-class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
-    def __init__(self):
-        super(DaveWindow, self).__init__()
+    def __init__(self, connected: False):
+        super().__init__()
         self.setupUi(self)
 
         self.create_test_data_folder()
@@ -51,13 +46,18 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
         self.graph_selection_tree.clear()
         self.updateplots()
         self.setup_buttons()
+        self.console_button_frame.setEnabled(False)
+
+        if connected:
+            self.console_read_signal.connect(self.read_console_data)
 
         # if not connected to RCade
-        self.graph_from_console_button.setVisible(False)
-        self.graph_from_file_button.setVisible(False)
-        self.data_source_line1.setVisible(False)
-        self.console_button_frame.setVisible(False)
-        self.log_file_name_label.setVisible(False)
+        if not connected:
+            self.graph_from_console_button.setVisible(False)
+            self.graph_from_file_button.setVisible(False)
+            self.data_source_line1.setVisible(False)
+            self.console_button_frame.setVisible(False)
+            self.log_file_name_label.setVisible(False)
 
     def setup_buttons(self):
         self.log_sel_btn.clicked.connect(self.getfile)
@@ -66,7 +66,7 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
         self.graph_from_console_button.clicked.connect(self.graph_from_console_button_clicked)
         self.graph_from_file_button.clicked.connect(self.graph_from_file_button_clicked)
         self.write_log_to_file_button.clicked.connect(self.write_log_to_file_button_clicked)
-        self.read_console_data_button.clicked.connect(self.read_console_data_button_clicked)
+        self.read_console_data_button.clicked.connect(self.emit_to_rcade_read_console_data_button_clicked)
         self.write_clean_csv_button.clicked.connect(self.write_clean_csv_button_clicked)
         self.graph_selection_tree.clicked.connect(self.updateSelectionTree)
         self.autoDave_Button.clicked.connect(self.dave.autoProcessData)
@@ -153,7 +153,7 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
         file_name += self.file_num_box.text()
         file_name += ".txt"
 
-        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/"+date+"/" + file_name
+        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/" + file_name
 
         shutil.copy(TEMP_CONSOLE_FILE_NAME, file_path)
 
@@ -170,7 +170,7 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
         file_name += self.csv_file_name_box.text()
         file_name += ".csv"
 
-        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/"+date+"/" + file_name
+        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/" + file_name
 
         columns = ["timeSinceBoot"]
         dicts = []
@@ -219,14 +219,13 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
         self.console_button_frame.setEnabled(False)
         self.log_file_button_frame.setEnabled(True)
 
-    def read_console_data_button_clicked(self):
-        self.enable_graph_data_frame_section()
-        console_string = self.console_text.toPlainText()
+    # def read_console_data_button_clicked(self):
+    #     //self.console_signal.emit()
 
-        console_file = open(TEMP_CONSOLE_FILE_NAME, "w")
-        console_file.write(console_string)
-        console_file.close()
+    def emit_to_rcade_read_console_data_button_clicked(self):
+        self.console_signal.emit()
 
+    def read_console_data(self):
         self.log_file_out.setText(TEMP_CONSOLE_FILE_NAME)
         self.dave.filename = TEMP_CONSOLE_FILE_NAME
 
@@ -318,15 +317,13 @@ class DaveWindow(Ui_dave_window, QtWidgets.QMainWindow):
     # and values list.
     def update_graphs_values(self):
         for graph in self.dave.plots:
-            if graph.name in self.active_graphs:
-                graph.setActive(True)
-                for val in graph.parsedValues:
-                    if val.name in self.active_values:
-                        val.setActive(True)
-                    else:
-                        val.setActive(False)
-            else:
-                graph.setActive(False)
+            graph.setActive(False)
+            for val in graph.parsedValues:
+                if len(val.values) > 10 and val.name in self.active_values:  # is there actually data?
+                    graph.setActive(True)
+                    val.setActive(True)
+                else:
+                    val.setActive(False)
 
     def getfile(self):
         success = self.dave.pickFile()
@@ -350,7 +347,7 @@ class ParsedValue():
         self.mainY = mainY
         self.color = color
         self.step = step
-        self.linewidth = linewidth
+        self.line_width = linewidth
         self.filterValueFunc = filterValueFunc
         self.parseValueFunc = parseValueFunc
         self.values = {}
@@ -438,9 +435,9 @@ def NewSubplot(singlePlot, axs, index, parsedValue):
 
         if parsedValue.step:
             obj.step(x, y, where='post', color=parsedValue.color, label=parsedValue.name,
-                     linewidth=parsedValue.linewidth)
+                     linewidth=parsedValue.line_width)
         else:
-            obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.linewidth,
+            obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.line_width,
                      clip_on=False)
         obj.tick_params(axis='y', labelcolor=parsedValue.color)
 
@@ -460,9 +457,9 @@ def AddToSubplotWithNewY(singlePlot, axs, index, parsedValue, newYIndex):
         ax.set_ylabel(parsedValue.name, color=parsedValue.color)
         if parsedValue.step:
             ax.step(x, y, where='post', color=parsedValue.color, label=parsedValue.name,
-                    linewidth=parsedValue.linewidth, clip_on=False)
+                    linewidth=parsedValue.line_width, clip_on=False)
         else:
-            ax.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.linewidth,
+            ax.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.line_width,
                     clip_on=False)
 
         ax.spines['right'].set_position(('outward', 40 * newYIndex))
@@ -480,9 +477,9 @@ def AddToSubplot(singlePlot, axs, index, parsedValue):
         x, y = zip(*lists)
         if parsedValue.step:
             obj.step(x, y, where='post', color=parsedValue.color, label=parsedValue.name,
-                     linewidth=parsedValue.linewidth, clip_on=False)
+                     linewidth=parsedValue.line_width, clip_on=False)
         else:
-            obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.linewidth,
+            obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.line_width,
                      clip_on=False)
 
 
@@ -497,83 +494,64 @@ class Dave:
         self.totalData = pd.DataFrame()
         self.stage1Plot = PlotGroup("Stage1")
         self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 TempC", color='tab:cyan', parseValueFunc=ParsFuncs.stage1TempCFunc))
+            ParsedValue("Stage1 TempC", color='tab:cyan', parseValueFunc=DaveParsFuncs.stage1TempCFunc))
         self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Modeled TempC", color='tab:red', parseValueFunc=ParsFuncs.stage1ModeledTempCFunc))
+            ParsedValue("Stage1 Modeled TempC", color='tab:red', parseValueFunc=DaveParsFuncs.stage1ModeledTempCFunc))
         self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Expected TempC", color='tab:orange', parseValueFunc=ParsFuncs.stage1ExpectedTempCFunc))
+            ParsedValue("Stage1 Expected TempC", color='tab:orange',
+                        parseValueFunc=DaveParsFuncs.stage1ExpectedTempCFunc))
         self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Target TempC", color='tab:green', parseValueFunc=ParsFuncs.stage1TargetTempCFunc,
+            ParsedValue("Stage1 Target TempC", color='tab:green', parseValueFunc=DaveParsFuncs.stage1TargetTempCFunc,
                         step=True))
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Controlled Ramp Target", color='tab:blue',
-                        parseValueFunc=ParsFuncs.stage1ControlledRampTargetFunc, step=True))
+                        parseValueFunc=DaveParsFuncs.stage1ControlledRampTargetFunc, step=True))
         self.stage1Plot.addParsedValue(
-            ParsedValue("dataQStg1Heatsink", color='tab:gray', parseValueFunc=ParsFuncs.dataQStage1Heatsink))
+            ParsedValue("Stage1 Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
         self.stage1Plot.addParsedValue(
-            ParsedValue("dataQStg1PeltierTop", color='tab:pink', parseValueFunc=ParsFuncs.dataQC1T))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("dataQStage1PeltierBottom", color='tab:olive', parseValueFunc=ParsFuncs.dataQC1B))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("dataQLiquidStg1", color='tab:purple', parseValueFunc=ParsFuncs.dataQLiquid))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("liquid2", color='tab:purple', parseValueFunc=ParsFuncs.dataQLiquid2))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("dataQStg1Slug", color='tab:blue', parseValueFunc=ParsFuncs.dataQStg1Slug))
+            ParsedValue("dataQLiquidStg1",color='tab:black',parseValueFunc=DaveParsFuncs.dataQLiquid))
+            
+        # self.stage1Plot.addParsedValue(
+        #     ParsedValue("DataQ Stg1 Heatsink", color='tab:gray', parseValueFunc=ParsFuncs.dataQStage1Heatsink))
+        # self.stage1Plot.addParsedValue(
+        #     ParsedValue("dataQStg1PeltierTop", color='tab:pink', parseValueFunc=ParsFuncs.dataQC1T))
+        # self.stage1Plot.addParsedValue(
+        #     ParsedValue("dataQStage1PeltierBottom", color='tab:olive', parseValueFunc=ParsFuncs.dataQC1B))
 
-        self.stage1PidPlot = PlotGroup("Stage1Pid")
-        self.stage1PidPlot = PlotGroup("Stage1Pid")
-        self.stage1PidPlot.addParsedValue(
-            ParsedValue("Stage1 P Term", color='tab:red', parseValueFunc=ParsFuncs.stage1PTermFunc))
-        self.stage1PidPlot.addParsedValue(
-            ParsedValue("Stage1 I Term", color='tab:green', parseValueFunc=ParsFuncs.stage1ITermFunc))
-        self.stage1PidPlot.addParsedValue(
-            ParsedValue("Stage1 D Term", color='tab:blue', parseValueFunc=ParsFuncs.stage1DTermFunc))
-        self.stage1PidPlot.addParsedValue(
-            ParsedValue("Stage1 FF Term", color='tab:purple', parseValueFunc=ParsFuncs.stage1FFTermFunc, mainY=False))
-        self.stage1PidPlot.addParsedValue(
-            ParsedValue("Stage1 Output", color='tab:orange', parseValueFunc=ParsFuncs.stage1OutputFunc, mainY=False))
-        self.stage1PidPlot.addParsedValue(
+        self.stage1OutputPlot = PlotGroup("Stage1 Output")
+        self.stage1OutputPlot.addParsedValue(
+            ParsedValue("Stage1 Output", color='tab:orange', parseValueFunc=DaveParsFuncs.stage1OutputFunc,
+                        mainY=False))
+        self.stage1OutputPlot.addParsedValue(
             ParsedValue("Stage1 Actual TEC Temp Rate", color='tab:olive',
-                        parseValueFunc=ParsFuncs.stage1ActualTecRampRateFunc))
-        self.stage1PidPlot.addParsedValue(ParsedValue("Stage1 Prior Target TEC Ramp Rate", color='tab:pink',
-                                                      parseValueFunc=ParsFuncs.stage1PriorTargetTecRampRateFunc))
-
+                        parseValueFunc=DaveParsFuncs.stage1ActualTecRampRateFunc))
         self.pcrPlot = PlotGroup("Pcr")
-        self.pcrPlot.addParsedValue(ParsedValue("PCR Temp", color='tab:cyan', parseValueFunc=ParsFuncs.pcrTempCFunc))
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Modeled TempC", color='tab:orange', parseValueFunc=ParsFuncs.pcrModeledTempCFunc))
+            ParsedValue("PCR Temp", color='tab:cyan', parseValueFunc=DaveParsFuncs.pcrTempCFunc))
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Expected TempC", color='tab:green', parseValueFunc=ParsFuncs.pcrExpectedTempCFunc,
+            ParsedValue("PCR Modeled TempC", color='tab:orange', parseValueFunc=DaveParsFuncs.pcrModeledTempCFunc))
+        self.pcrPlot.addParsedValue(
+            ParsedValue("PCR Expected TempC", color='tab:green', parseValueFunc=DaveParsFuncs.pcrExpectedTempCFunc,
                         step=True))
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Target TempC", color='tab:blue', parseValueFunc=ParsFuncs.pcrTargetTempCFunc, step=True))
+            ParsedValue("PCR Target TempC", color='tab:pink', parseValueFunc=DaveParsFuncs.pcrTargetTempCFunc,
+                        step=True))
         self.pcrPlot.addParsedValue(
             ParsedValue("PCR Controlled Ramp Target", color='tab:red',
-                        parseValueFunc=ParsFuncs.pcrControlledRampTargetFunc))
+                        parseValueFunc=DaveParsFuncs.pcrControlledRampTargetFunc))
+        self.pcrPlot.addParsedValue(
+            ParsedValue("PCR Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredPcrTempC))
+        # self.pcrPlot.addParsedValue(
+        #     ParsedValue("DataQ Pcr Heatsink", color='tab:green', parseValueFunc=ParsFuncs.dataQPcrHeatsink))
+        # self.pcrPlot.addParsedValue(ParsedValue("Raw TEC Model", color='tab:blue', parseValueFunc=ParsFuncs.rawTECModel))
+        # self.pcrPlot.addParsedValue(
+        #     ParsedValue("DataQ Pcr Peltier Top", color='tab:pink', parseValueFunc=ParsFuncs.dataQPCRT))
+        # self.pcrPlot.addParsedValue(
+        #     ParsedValue("DataQ Pcr Peltier Bottom", color='tab:cyan', parseValueFunc=ParsFuncs.dataQPCRB))
 
-        # dataQ-PCR
-        self.pcrPlot.addParsedValue(
-            ParsedValue("dataQPcrPeltierTop", color='tab:pink', parseValueFunc=ParsFuncs.dataQPCRT))
-        self.pcrPlot.addParsedValue(
-            ParsedValue("dataQPcrPeltierBottom", color='tab:cyan', parseValueFunc=ParsFuncs.dataQPCRB))
-        self.pcrPlot.addParsedValue(
-            ParsedValue("dataQPcrHeatsink", color='tab:green', parseValueFunc=ParsFuncs.dataQPcrHeatsink))
-        self.pcrPlot.addParsedValue(
-            ParsedValue("dataQPcrSlug", color='tab:blue', parseValueFunc=ParsFuncs.dataQPcrSlug))
-        self.pcrPlot.addParsedValue(
-            ParsedValue("pcrModeledTempC", color='tab:orange', parseValueFunc=ParsFuncs.pcrModeledTempCFunc))
-        self.pcrPlot.addParsedValue(ParsedValue("rawTECModel", color='tab:blue', parseValueFunc=ParsFuncs.rawTECModel))
-
-        self.pcrPidPlot = PlotGroup("PcrPid")
-        self.pcrPidPlot.addParsedValue(ParsedValue("pcrPTerm", color='tab:red', parseValueFunc=ParsFuncs.pcrPTermFunc))
-        self.pcrPidPlot.addParsedValue(
-            ParsedValue("pcrITerm", color='tab:green', parseValueFunc=ParsFuncs.pcrITermFunc))
-        self.pcrPidPlot.addParsedValue(ParsedValue("pcrDTerm", color='tab:blue', parseValueFunc=ParsFuncs.pcrDTermFunc))
-        self.pcrPidPlot.addParsedValue(
-            ParsedValue("pcrFFTerm", color='tab:purple', parseValueFunc=ParsFuncs.pcrFFTermFunc, mainY=False))
-        self.pcrPidPlot.addParsedValue(
-            ParsedValue("pidOutput", color='tab:orange', parseValueFunc=ParsFuncs.pcrOutputFunc, mainY=False))
+        self.pcrOutputPlot = PlotGroup("Pcr Output")
+        self.pcrOutputPlot.addParsedValue(
+            ParsedValue("PCR Output", color='tab:orange', parseValueFunc=DaveParsFuncs.pcrOutputFunc, mainY=False))
 
         # self.motorsPlot = PlotGroup("Motors")
         # self.motorsPlot.addParsedValue(ParsedValue("Plunge Motor", color='tab:red', parseValueFunc=motorPlungeFunc))
@@ -581,58 +559,60 @@ class Dave:
 
         errorMsPlot = PlotGroup("ErrorMs")
         errorMsPlot.addParsedValue(
-            ParsedValue("Stage1 Error Time Ms", color='tab:red', parseValueFunc=ParsFuncs.stage1ErrorTimeMs))
+            ParsedValue("Stage1 Error Time Ms", color='tab:red', parseValueFunc=DaveParsFuncs.stage1ErrorTimeMs))
         errorMsPlot.addParsedValue(
-            ParsedValue("PCR Error Time Ms", color='tab:blue', parseValueFunc=ParsFuncs.pcrErrorTimeMs))
+            ParsedValue("PCR Error Time Ms", color='tab:blue', parseValueFunc=DaveParsFuncs.pcrErrorTimeMs))
 
         ratesPlot = PlotGroup("Rates")
         ratesPlot.addParsedValue(
-            ParsedValue("Stage1 Target Rate", color='tab:cyan', parseValueFunc=ParsFuncs.stage1TargetRate))
+            ParsedValue("Stage1 Target Rate", color='tab:cyan', parseValueFunc=DaveParsFuncs.stage1TargetRate))
         ratesPlot.addParsedValue(
-            ParsedValue("Stage1 TEC Rate", color='tab:red', parseValueFunc=ParsFuncs.stage1TecRate))
+            ParsedValue("Stage1 TEC Rate", color='tab:red', parseValueFunc=DaveParsFuncs.stage1TecRate))
         ratesPlot.addParsedValue(
-            ParsedValue("Stage1 Heatsink Rate", color='tab:orange', parseValueFunc=ParsFuncs.stage1HeatsinkRate))
+            ParsedValue("Stage1 Heatsink Rate", color='tab:orange', parseValueFunc=DaveParsFuncs.stage1HeatsinkRate))
 
         ratesPlot.addParsedValue(
-            ParsedValue("PCR Target Rate", color='tab:brown', parseValueFunc=ParsFuncs.pcrTargetRate))
-        ratesPlot.addParsedValue(ParsedValue("PCR TEC Rate", color='tab:purple', parseValueFunc=ParsFuncs.pcrTecRate))
+            ParsedValue("PCR Target Rate", color='tab:brown', parseValueFunc=DaveParsFuncs.pcrTargetRate))
         ratesPlot.addParsedValue(
-            ParsedValue("PCR Heatsink Rate", color='tab:pink', parseValueFunc=ParsFuncs.pcrHeatsinkRate))
+            ParsedValue("PCR TEC Rate", color='tab:purple', parseValueFunc=DaveParsFuncs.pcrTecRate))
+        ratesPlot.addParsedValue(
+            ParsedValue("PCR Heatsink Rate", color='tab:pink', parseValueFunc=DaveParsFuncs.pcrHeatsinkRate))
 
         self.fluorescencePlot = PlotGroup("Color Sensor")
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("415nm", color=wavelength_to_rgb(415), parseValueFunc=ParsFuncs.fluorescenceFunc0))
+            ParsedValue("415nm", color=wavelength_to_rgb(415), parseValueFunc=DaveParsFuncs.fluorescenceFunc0))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("445nm", color=wavelength_to_rgb(445), parseValueFunc=ParsFuncs.fluorescenceFunc1))
+            ParsedValue("445nm", color=wavelength_to_rgb(445), parseValueFunc=DaveParsFuncs.fluorescenceFunc1))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("480nm", color=wavelength_to_rgb(480), parseValueFunc=ParsFuncs.fluorescenceFunc2))
+            ParsedValue("480nm", color=wavelength_to_rgb(480), parseValueFunc=DaveParsFuncs.fluorescenceFunc2))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("515nm", color=wavelength_to_rgb(515), parseValueFunc=ParsFuncs.fluorescenceFunc3))
+            ParsedValue("515nm", color=wavelength_to_rgb(515), parseValueFunc=DaveParsFuncs.fluorescenceFunc3))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("555nm", color=wavelength_to_rgb(555), parseValueFunc=ParsFuncs.fluorescenceFunc4))
+            ParsedValue("555nm", color=wavelength_to_rgb(555), parseValueFunc=DaveParsFuncs.fluorescenceFunc4))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("590nm", color=wavelength_to_rgb(590), parseValueFunc=ParsFuncs.fluorescenceFunc5))
+            ParsedValue("590nm", color=wavelength_to_rgb(590), parseValueFunc=DaveParsFuncs.fluorescenceFunc5))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("630nm", color=wavelength_to_rgb(630), parseValueFunc=ParsFuncs.fluorescenceFunc6))
+            ParsedValue("630nm", color=wavelength_to_rgb(630), parseValueFunc=DaveParsFuncs.fluorescenceFunc6))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("680nm", color=wavelength_to_rgb(680), parseValueFunc=ParsFuncs.fluorescenceFunc7))
+            ParsedValue("680nm", color=wavelength_to_rgb(680), parseValueFunc=DaveParsFuncs.fluorescenceFunc7))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("Clear", color='tab:gray', parseValueFunc=ParsFuncs.fluorescenceFunc8))
+            ParsedValue("Clear", color='tab:gray', parseValueFunc=DaveParsFuncs.fluorescenceFunc8))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("Nir", color=wavelength_to_rgb(720), parseValueFunc=ParsFuncs.fluorescenceFunc9))
+            ParsedValue("Nir", color=wavelength_to_rgb(720), parseValueFunc=DaveParsFuncs.fluorescenceFunc9))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("QDotRatio", color='tab:brown', parseValueFunc=ParsFuncs.qDotRatioFunc))
+            ParsedValue("QDotRatio", color='tab:brown', parseValueFunc=DaveParsFuncs.qDotRatioFunc))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("FluorTemp", color='tab:brown', parseValueFunc=ParsFuncs.fluorescenceFuncTemp))
+            ParsedValue("FluorTemp", color='tab:brown', parseValueFunc=DaveParsFuncs.fluorescenceFuncTemp))
         self.fluorescencePlot.addParsedValue(
-            ParsedValue("qDotPredictedTempC", color='tab:pink', parseValueFunc=ParsFuncs.fluorescenceFuncTemp))
+            ParsedValue("qDotPredictedTempC", color='tab:pink', parseValueFunc=DaveParsFuncs.fluorescenceFuncTemp))
 
         self.graphs = []
         self.plots = []
+
         self.plots.append(self.stage1Plot)
-        self.plots.append(self.stage1PidPlot)
+        self.plots.append(self.stage1OutputPlot)
         self.plots.append(self.pcrPlot)
-        self.plots.append(self.pcrPidPlot)
+        self.plots.append(self.pcrOutputPlot)
         # self.plots.append(self.motorsPlot)
         self.plots.append(errorMsPlot)
         self.plots.append(ratesPlot)
@@ -730,9 +710,9 @@ class Dave:
 
             if parsedValue.step:
                 obj.step(x, y, where='post', color=parsedValue.color, label=parsedValue.name,
-                         linewidth=parsedValue.linewidth)
+                         linewidth=parsedValue.line_width)
             else:
-                obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.linewidth,
+                obj.plot(x, y, color=parsedValue.color, label=parsedValue.name, linewidth=parsedValue.line_width,
                          clip_on=False)
             obj.tick_params(axis='y', labelcolor=parsedValue.color)
 
@@ -819,8 +799,8 @@ class Dave:
         # progress_bar.grid(row=1, column=0, padx=10, pady=5)  # .pack(fill=tk.X, expand=1, side=tk.BOTTOM)
         # popup.pack_slaves()
 
-        i = 0
-        fileCount = len(os.listdir(directoryPath))
+        # i = 0
+        # fileCount = len(os.listdir(directoryPath))
         file = ""
         for file in os.listdir(directoryPath):
             # dicts = []
@@ -873,29 +853,32 @@ class Dave:
         self.totalData = pd.DataFrame()
         # messagebox.showinfo("AUTO DAVE","Files have been successfully daved")
 
-    def daveOutputToPaddedData(self, fullFilePath):  # , dataType):
+    def daveOutputToPaddedData(self, fullFilePath):
 
         df = pd.read_csv(fullFilePath)
 
         timestamp_Key = 'timeSinceBootSeconds'
         thermistor_temp_key1 = 'Stage1 TempC'
         thermistor_temp_key2 = 'PCR Temp'
-        measured_temp_key1 = 'dataQStg1Slug'
-        measured_temp_key2 = 'dataQPcrSlug'
-        modeled_tempC = 'pcrModeledTempC'
-        TEC_top = 'dataQPcrPeltierTop'
-        TEC_bot = 'dataQPcrPeltierBottom'
+        measured_temp_key1 = 'Stage1 Thermocouple TempC'
+        measured_temp_key2 = 'PCR Thermocouple TempC'
+        modeled_tempC = 'PCR Modeled TempC'
+        # TEC_top = 'dataQPcrPeltierTop'
+        # TEC_bot = 'dataQPcrPeltierBottom'
 
         paddedData = df[
-            [timestamp_Key, thermistor_temp_key1, thermistor_temp_key2, measured_temp_key1, measured_temp_key2, modeled_tempC,
-             TEC_top, TEC_bot]]
+            [timestamp_Key, thermistor_temp_key1, thermistor_temp_key2, measured_temp_key1, measured_temp_key2,
+             modeled_tempC]]
+        # TEC_top, TEC_bot]]
 
         # if data in file is not the specified type then ignore
         try:
             paddedData = paddedData[
-                paddedData[timestamp_Key] > paddedData[timestamp_Key][paddedData[thermistor_temp_key1].first_valid_index()]]
+                paddedData[timestamp_Key] > paddedData[timestamp_Key][
+                    paddedData[thermistor_temp_key1].first_valid_index()]]
             paddedData = paddedData[
-                paddedData[timestamp_Key] < paddedData[timestamp_Key][paddedData[thermistor_temp_key2].last_valid_index()]]
+                paddedData[timestamp_Key] < paddedData[timestamp_Key][
+                    paddedData[thermistor_temp_key2].last_valid_index()]]
         except:
             try:
                 paddedData = paddedData[
@@ -936,12 +919,13 @@ class Dave:
         paddedData[measured_temp_key1].interpolate(method='linear', limit_direction='both', inplace=True)
         paddedData[measured_temp_key2].interpolate(method='linear', limit_direction='both', inplace=True)
         paddedData[modeled_tempC].interpolate(method='linear', limit_direction='both', inplace=True)
-        paddedData[TEC_top].interpolate(method='linear', limit_direction='both', inplace=True)
-        paddedData[TEC_bot].interpolate(method='linear', limit_direction='both', inplace=True)
+        # paddedData[TEC_top].interpolate(method='linear', limit_direction='both', inplace=True)
+        # paddedData[TEC_bot].interpolate(method='linear', limit_direction='both', inplace=True)
         paddedData = paddedData[paddedData["padded"].notna()]
 
         try:
-            paddedData = paddedData[[thermistor_temp_key1, measured_temp_key1, thermistor_temp_key2, measured_temp_key2]]
+            paddedData = paddedData[
+                [thermistor_temp_key1, measured_temp_key1, thermistor_temp_key2, measured_temp_key2]]
         except:
             try:
                 paddedData = paddedData[[thermistor_temp_key1, measured_temp_key1]]
@@ -956,13 +940,12 @@ class Dave:
         fileArr = strFile.split("_")
 
         # one file with all selected checkbox data
-        x = self.parent.dataqStg1_checkBox.isChecked()
-        y = self.parent.dataqStg1_checkBox.isChecked()
-        if self.parent.dataqPcr_checkBox.isChecked() and self.parent.dataqStg1_checkBox.isChecked():
+        if self.parent.Pcr_checkBox.isChecked() and self.parent.Stg1_checkBox.isChecked():
             groupedData = paddedData[[measured_temp_key1, measured_temp_key2]].copy(deep=True)
             groupedData.rename(
-                columns={measured_temp_key1: "stg1_" + fileArr[-1], measured_temp_key2: "pcr_" + fileArr[-1]}, inplace=True)
-        elif self.parent.dataqStg1_checkBox.isChecked():
+                columns={measured_temp_key1: "stg1_" + fileArr[-1], measured_temp_key2: "pcr_" + fileArr[-1]},
+                inplace=True)
+        elif self.parent.Stg1_checkBox.isChecked():
             groupedData = paddedData[[measured_temp_key1]].copy(deep=True)
             groupedData.rename(columns={measured_temp_key1: "stg1_" + fileArr[-1]}, inplace=True)
         else:
