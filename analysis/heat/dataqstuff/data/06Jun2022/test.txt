@@ -1,0 +1,302 @@
+DATAQ:  | dataQLiquidStg1 = 23.46 | 
+DATAQ:  | dataQLiquidStg1 = 23.34 | 
+DATAQ:  | dataQLiquidStg1 = 23.37 | 
+DATAQ:  | dataQLiquidStg1 = 23.43 | 
+DATAQ:  | dataQLiquidStg1 = 23.44 | 
+DATAQ:  | dataQLiquidStg1 = 23.28 | 
+DATAQ:  | dataQLiquidStg1 = 23.25 | 
+DATAQ:  | dataQLiquidStg1 = 35.02 | 
+DATAQ:  | dataQLiquidStg1 = 35.05 | 
+DATAQ:  | dataQLiquidStg1 = 35.1 | 
+DATAQ:  | dataQLiquidStg1 = 35.13 | 
+DATAQ:  | dataQLiquidStg1 = 35.1 | 
+DATAQ:  | dataQLiquidStg1 = 36.32 | 
+DATAQ:  | dataQLiquidStg1 = 39.61 | 
+DATAQ:  | dataQLiquidStg1 = 40.36 | 
+DATAQ:  | dataQLiquidStg1 = 39.03 | 
+DATAQ:  | dataQLiquidStg1 = 38.83 | 
+DATAQ:  | dataQLiquidStg1 = 38.73 | 
+DATAQ:  | dataQLiquidStg1 = 38.52 | 
+DATAQ:  | dataQLiquidStg1 = 38.5 | 
+DATAQ:  | dataQLiquidStg1 = 38.56 | 
+DATAQ:  | dataQLiquidStg1 = 38.6 | 
+DATAQ:  | dataQLiquidStg1 = 38.5 | 
+DATAQ:  | dataQLiquidStg1 = 38.48 | 
+DATAQ:  | dataQLiquidStg1 = 38.39 | 
+DATAQ:  | dataQLiquidStg1 = 38.27 | 
+DATAQ:  | dataQLiquidStg1 = 38.23 | 
+DATAQ:  | dataQLiquidStg1 = 36.96 | 
+DATAQ:  | dataQLiquidStg1 = 36.96 | 
+DATAQ:  | dataQLiquidStg1 = 36.96 | 
+DATAQ:  | dataQLiquidStg1 = 36.87 | 
+DATAQ:  | dataQLiquidStg1 = 36.9 | 
+DATAQ:  | dataQLiquidStg1 = 36.9 | 
+DATAQ:  | dataQLiquidStg1 = 36.85 | 
+DATAQ:  | dataQLiquidStg1 = 36.93 | 
+DATAQ:  | dataQLiquidStg1 = 36.68 | 
+DATAQ:  | dataQLiquidStg1 = 37.35 | 
+DATAQ:  | dataQLiquidStg1 = 36.53 | 
+DATAQ:  | dataQLiquidStg1 = 35.35 | 
+DATAQ:  | dataQLiquidStg1 = 29.85 | 
+DATAQ:  | dataQLiquidStg1 = 26.11 | 
+DATAQ:  | dataQLiquidStg1 = 25.19 | 
+DATAQ:  | dataQLiquidStg1 = 24.97 | 
+DATAQ:  | dataQLiquidStg1 = 24.82 | 
+DATAQ:  | dataQLiquidStg1 = 26.04 | 
+DATAQ:  | dataQLiquidStg1 = 28.93 | 
+DATAQ:  | dataQLiquidStg1 = 28.11 | 
+DATAQ:  | dataQLiquidStg1 = 32.84 | 
+DATAQ:  | dataQLiquidStg1 = 34.02 | 
+DATAQ:  | dataQLiquidStg1 = 32.49 | 
+DATAQ:  | dataQLiquidStg1 = 31.8 | 
+DATAQ:  | dataQLiquidStg1 = 32.29 | 
+DATAQ:  | dataQLiquidStg1 = 34.33 | 
+DATAQ:  | dataQLiquidStg1 = 34.49 | 
+DATAQ:  | dataQLiquidStg1 = 34.29 | 
+DATAQ:  | dataQLiquidStg1 = 34.15 | 
+DATAQ:  | dataQLiquidStg1 = 34.18 | 
+DATAQ:  | dataQLiquidStg1 = 33.96 | 
+DATAQ:  | dataQLiquidStg1 = 33.89 | 
+DATAQ:  | dataQLiquidStg1 = 33.87 | 
+DATAQ:  | dataQLiquidStg1 = 33.96 | 
+DATAQ:  | dataQLiquidStg1 = 34.05 | 
+DATAQ:  | dataQLiquidStg1 = 34.12 | 
+DATAQ:  | dataQLiquidStg1 = 35.82 | 
+DATAQ:  | dataQLiquidStg1 = 35.83 | 
+DATAQ:  | dataQLiquidStg1 = 35.84 | 
+DATAQ:  | dataQLiquidStg1 = 35.92 | 
+DATAQ:  | dataQLiquidStg1 = 35.8 | 
+[0;32mI (247637) _handleFrontButtonPress: Pressed[0m
+[0;33mW (247640) _openDoorIfSafe: OPENING DOOR[0m
+[0;32mI (247640) systemRequestStateChange: System State Transition READY -> IDLE[0m
+[0;33mW (247705) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+DATAQ:  | dataQLiquidStg1 = 35.92 | 
+[0;33mW (247795) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (247800) colorSensorSetGain: Setting color sensor gain to 10[0m
+[0;32mI (247801) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (247805) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;33mW (247903) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;31mE (247913) taskMonitor_task: Task Button Task hasn't checked in for 400 ms...[0m
+[0;32mI (247921) colorSensorSetGain: Setting color sensor gain to 5[0m
+[0;32mI (247921) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (247973) taskMonitor_task: Task File Writer Task hasn't checked in for 400 ms[0m
+[0;31mE (248003) taskMonitor_task: Task LED Task hasn't checked in for 400 ms...[0m
+[0;31mE (248013) taskMonitor_task: Task Button Task hasn't checked in for 400 ms...[0m
+[0;32mI (248038) customUtil_isCupPresent: Cup Detected![0m
+[0;32mI (248038) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (248040) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (248046) BLE_PERIPH: Notifying[0m
+[0;33mW (248050) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (248056) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (248062) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (248067) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (248073) taskMonitor_task: Task File Writer Task hasn't checked in for 400 ms[0m
+[0;32mI (248081) BLE_PERIPH: Notifying[0m
+[0;33mW (248085) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (248091) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (248097) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (248105) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (248110) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (248172) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (248173) BLE_PERIPH: Received 18/18[0m
+[0;32mI (248176) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (248208) BLE_PERIPH: Sending Response Packet: [34,true,37,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117343,37.05,31.45,2,0,0,0.00],0][0m
+[0;32mI (248214) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 37, ["2022-06-06T17:24:02.734Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 117343, 37.05, 31.45, 2, 0, 0, 0.00], 0]
+[0;32mI (248240) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,37,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117343,37.05,31.45,2,0,0,0.00],0][0m
+[0;32mI (248274) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (248276) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (248297) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (248353) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (248354) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (248409) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (248410) BLE_PERIPH: Received 18/18[0m
+[0;32mI (248413) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (248439) BLE_PERIPH: Sending Response Packet: [34,true,36,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117568,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (248444) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 36, ["2022-06-06T17:24:02.734Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 117568, 37.07, 31.46, 2, 0, 0, 0.00], 0]
+[0;32mI (248476) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,36,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117568,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (248521) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (248523) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (248544) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (248567) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (248568) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (248634) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (248635) BLE_PERIPH: Received 18/18[0m
+[0;32mI (248638) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (248676) BLE_PERIPH: Sending Response Packet: [34,true,39,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117810,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (248682) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 39, ["2022-06-06T17:24:02.734Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 117810, 37.07, 31.46, 2, 0, 0, 0.00], 0]
+[0;32mI (248713) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,39,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",117810,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (248769) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (248771) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (248803) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 35.84 | 
+[0;32mI (248848) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (248850) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (248881) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (248882) BLE_PERIPH: Received 18/18[0m
+[0;32mI (248885) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (248906) BLE_PERIPH: Sending Response Packet: [34,true,38,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",118039,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (248916) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 38, ["2022-06-06T17:24:02.734Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 118039, 37.07, 31.46, 2, 0, 0, 0.00], 0]
+[0;32mI (248949) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,38,["2022-06-06T17:24:02.734Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",118039,37.07,31.46,2,0,0,0.00],0][0m
+[0;32mI (249005) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (249007) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (249084) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 35.79 | 
+DATAQ:  | dataQLiquidStg1 = 35.7 | 
+DATAQ:  | dataQLiquidStg1 = 35.71 | 
+DATAQ:  | dataQLiquidStg1 = 35.64 | 
+DATAQ:  | dataQLiquidStg1 = 35.64 | 
+DATAQ:  | dataQLiquidStg1 = 35.59 | 
+DATAQ:  | dataQLiquidStg1 = 35.57 | 
+DATAQ:  | dataQLiquidStg1 = 35.54 | 
+DATAQ:  | dataQLiquidStg1 = 35.55 | 
+DATAQ:  | dataQLiquidStg1 = 35.41 | 
+DATAQ:  | dataQLiquidStg1 = 35.4 | 
+DATAQ:  | dataQLiquidStg1 = 35.33 | 
+DATAQ:  | dataQLiquidStg1 = 35.29 | 
+DATAQ:  | dataQLiquidStg1 = 35.32 | 
+DATAQ:  | dataQLiquidStg1 = 35.28 | 
+DATAQ:  | dataQLiquidStg1 = 35.23 | 
+DATAQ:  | dataQLiquidStg1 = 37.61 | 
+DATAQ:  | dataQLiquidStg1 = 37.75 | 
+DATAQ:  | dataQLiquidStg1 = 37.73 | 
+DATAQ:  | dataQLiquidStg1 = 37.74 | 
+DATAQ:  | dataQLiquidStg1 = 37.9 | 
+DATAQ:  | dataQLiquidStg1 = 38.03 | 
+DATAQ:  | dataQLiquidStg1 = 38.02 | 
+DATAQ:  | dataQLiquidStg1 = 38.07 | 
+DATAQ:  | dataQLiquidStg1 = 38.3 | 
+DATAQ:  | dataQLiquidStg1 = 38.35 | 
+DATAQ:  | dataQLiquidStg1 = 38.34 | 
+DATAQ:  | dataQLiquidStg1 = 38.58 | 
+DATAQ:  | dataQLiquidStg1 = 38.59 | 
+DATAQ:  | dataQLiquidStg1 = 38.63 | 
+DATAQ:  | dataQLiquidStg1 = 38.74 | 
+DATAQ:  | dataQLiquidStg1 = 38.78 | 
+DATAQ:  | dataQLiquidStg1 = 38.8 | 
+DATAQ:  | dataQLiquidStg1 = 38.9 | 
+DATAQ:  | dataQLiquidStg1 = 38.95 | 
+DATAQ:  | dataQLiquidStg1 = 39.12 | 
+DATAQ:  | dataQLiquidStg1 = 39.1 | 
+DATAQ:  | dataQLiquidStg1 = 38.97 | 
+DATAQ:  | dataQLiquidStg1 = 39.02 | 
+DATAQ:  | dataQLiquidStg1 = 39.2 | 
+DATAQ:  | dataQLiquidStg1 = 39.23 | 
+DATAQ:  | dataQLiquidStg1 = 39.14 | 
+DATAQ:  | dataQLiquidStg1 = 39.1 | 
+DATAQ:  | dataQLiquidStg1 = 39.29 | 
+DATAQ:  | dataQLiquidStg1 = 39.45 | 
+DATAQ:  | dataQLiquidStg1 = 39.33 | 
+DATAQ:  | dataQLiquidStg1 = 39.39 | 
+DATAQ:  | dataQLiquidStg1 = 39.43 | 
+DATAQ:  | dataQLiquidStg1 = 39.48 | 
+DATAQ:  | dataQLiquidStg1 = 39.65 | 
+DATAQ:  | dataQLiquidStg1 = 39.6 | 
+DATAQ:  | dataQLiquidStg1 = 39.7 | 
+DATAQ:  | dataQLiquidStg1 = 39.67 | 
+DATAQ:  | dataQLiquidStg1 = 39.78 | 
+DATAQ:  | dataQLiquidStg1 = 39.83 | 
+DATAQ:  | dataQLiquidStg1 = 39.91 | 
+[0;33mW (2061582) _openDoorIfSafe: OPENING DOOR[0m
+DATAQ:  | dataQLiquidStg1 = 39.94 | 
+[0;32mI (2061662) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+[0;32mI (2061915) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+DATAQ:  | dataQLiquidStg1 = 40.03 | 
+DATAQ:  | dataQLiquidStg1 = 40.0 | 
+DATAQ:  | dataQLiquidStg1 = 40.0 | 
+DATAQ:  | dataQLiquidStg1 = 40.1 | 
+DATAQ:  | dataQLiquidStg1 = 39.98 | 
+DATAQ:  | dataQLiquidStg1 = 40.16 | 
+DATAQ:  | dataQLiquidStg1 = 40.18 | 
+DATAQ:  | dataQLiquidStg1 = 40.14 | 
+DATAQ:  | dataQLiquidStg1 = 40.03 | 
+DATAQ:  | dataQLiquidStg1 = 40.3 | 
+DATAQ:  | dataQLiquidStg1 = 40.03 | 
+DATAQ:  | dataQLiquidStg1 = 40.25 | 
+DATAQ:  | dataQLiquidStg1 = 39.94 | 
+DATAQ:  | dataQLiquidStg1 = 39.49 | 
+DATAQ:  | dataQLiquidStg1 = 39.74 | 
+DATAQ:  | dataQLiquidStg1 = 39.7 | 
+DATAQ:  | dataQLiquidStg1 = 39.65 | 
+DATAQ:  | dataQLiquidStg1 = 39.83 | 
+DATAQ:  | dataQLiquidStg1 = 39.66 | 
+DATAQ:  | dataQLiquidStg1 = 39.61 | 
+DATAQ:  | dataQLiquidStg1 = 49.79 | 
+DATAQ:  | dataQLiquidStg1 = 49.94 | 
+DATAQ:  | dataQLiquidStg1 = 49.91 | 
+DATAQ:  | dataQLiquidStg1 = 49.78 | 
+DATAQ:  | dataQLiquidStg1 = 49.7 | 
+DATAQ:  | dataQLiquidStg1 = 49.69 | 
+DATAQ:  | dataQLiquidStg1 = 49.66 | 
+DATAQ:  | dataQLiquidStg1 = 49.67 | 
+DATAQ:  | dataQLiquidStg1 = 49.66 | 
+DATAQ:  | dataQLiquidStg1 = 49.54 | 
+DATAQ:  | dataQLiquidStg1 = 49.4 | 
+DATAQ:  | dataQLiquidStg1 = 49.64 | 
+DATAQ:  | dataQLiquidStg1 = 49.61 | 
+DATAQ:  | dataQLiquidStg1 = 49.57 | 
+DATAQ:  | dataQLiquidStg1 = 49.31 | 
+DATAQ:  | dataQLiquidStg1 = 49.42 | 
+DATAQ:  | dataQLiquidStg1 = 49.46 | 
+DATAQ:  | dataQLiquidStg1 = 49.28 | 
+DATAQ:  | dataQLiquidStg1 = 49.38 | 
+DATAQ:  | dataQLiquidStg1 = 49.36 | 
+DATAQ:  | dataQLiquidStg1 = 49.22 | 
+DATAQ:  | dataQLiquidStg1 = 49.11 | 
+DATAQ:  | dataQLiquidStg1 = 49.06 | 
+DATAQ:  | dataQLiquidStg1 = 49.06 | 
+DATAQ:  | dataQLiquidStg1 = 49.09 | 
+DATAQ:  | dataQLiquidStg1 = 49.0 | 
+DATAQ:  | dataQLiquidStg1 = 49.0 | 
+DATAQ:  | dataQLiquidStg1 = 48.95 | 
+DATAQ:  | dataQLiquidStg1 = 48.97 | 
+[0;33mW (2710860) _openDoorIfSafe: OPENING DOOR[0m
+DATAQ:  | dataQLiquidStg1 = 48.81 | 
+[0;32mI (2710951) _readPlungeSwitches: New Plunge-Home Value: 0[0m
+[0;32mI (2711205) _readPlungeSwitches: New Plunge-Home Value: 1[0m
+DATAQ:  | dataQLiquidStg1 = 48.97 | 
+DATAQ:  | dataQLiquidStg1 = 48.74 | 
+DATAQ:  | dataQLiquidStg1 = 48.76 | 
+DATAQ:  | dataQLiquidStg1 = 48.68 | 
+DATAQ:  | dataQLiquidStg1 = 48.8 | 
+DATAQ:  | dataQLiquidStg1 = 48.66 | 
+DATAQ:  | dataQLiquidStg1 = 48.69 | 
+DATAQ:  | dataQLiquidStg1 = 48.51 | 
+DATAQ:  | dataQLiquidStg1 = 48.56 | 
+DATAQ:  | dataQLiquidStg1 = 48.11 | 
+DATAQ:  | dataQLiquidStg1 = 48.06 | 
+DATAQ:  | dataQLiquidStg1 = 48.34 | 
+DATAQ:  | dataQLiquidStg1 = 48.3 | 
+DATAQ:  | dataQLiquidStg1 = 48.24 | 
+DATAQ:  | dataQLiquidStg1 = 45.48 | 
+DATAQ:  | dataQLiquidStg1 = 32.58 | 
+DATAQ:  | dataQLiquidStg1 = 29.91 | 
+DATAQ:  | dataQLiquidStg1 = 26.85 | 
+DATAQ:  | dataQLiquidStg1 = 27.52 | 
+DATAQ:  | dataQLiquidStg1 = 27.21 | 
+DATAQ:  | dataQLiquidStg1 = 27.05 | 
+DATAQ:  | dataQLiquidStg1 = 26.65 | 
+DATAQ:  | dataQLiquidStg1 = 25.97 | 
+DATAQ:  | dataQLiquidStg1 = 25.69 | 
+DATAQ:  | dataQLiquidStg1 = 25.59 | 
+DATAQ:  | dataQLiquidStg1 = 24.86 | 
+DATAQ:  | dataQLiquidStg1 = 23.8 | 
+DATAQ:  | dataQLiquidStg1 = 22.93 | 
+DATAQ:  | dataQLiquidStg1 = 24.34 | 
+DATAQ:  | dataQLiquidStg1 = 26.19 | 
+DATAQ:  | dataQLiquidStg1 = 26.04 | 
+DATAQ:  | dataQLiquidStg1 = 26.01 | 
+DATAQ:  | dataQLiquidStg1 = 26.21 | 
+DATAQ:  | dataQLiquidStg1 = 26.24 | 
+DATAQ:  | dataQLiquidStg1 = 26.22 | 
+DATAQ:  | dataQLiquidStg1 = 26.21 | 
+DATAQ:  | dataQLiquidStg1 = 26.16 | 
+DATAQ:  | dataQLiquidStg1 = 26.18 | 
+DATAQ:  | dataQLiquidStg1 = 26.2 | 
+DATAQ:  | dataQLiquidStg1 = 26.07 | 
+DATAQ:  | dataQLiquidStg1 = 26.19 | 
+DATAQ:  | dataQLiquidStg1 = 26.21 | 
+DATAQ:  | dataQLiquidStg1 = 26.15 | 

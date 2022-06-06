@@ -333,7 +333,8 @@ def measuredStg1TempC(line):
             except:
                 return None
 
-
+def measuredStg1TempC2(line):
+    return float(line.split("DATAQ:")[1].split("| liquid2 = ")[1].split("|")[0])
 # I (891063) _performCapture: [881472,17,77.74,306,18000,2854,261,334,310,493,550,10814,211]
 
 def fluorescenceFuncTemp(line):

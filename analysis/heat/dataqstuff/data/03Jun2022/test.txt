@@ -7718,3 +7718,6 @@ DATAQ:  | LiquidStg1 = 30.49 | liquid2 = 23.51 |
 DATAQ:  | LiquidStg1 = 30.51 | liquid2 = 23.61 | 
 DATAQ:  | LiquidStg1 = 30.62 | liquid2 = 23.58 | 
 DATAQ:  | LiquidStg1 = 30.54 | liquid2 = 23.51 | 
+DATAQ:  | dataQLiquidStg1 = 23.23 | 
+DATAQ:  | dataQLiquidStg1 = 23.26 | 
+DATAQ:  | dataQLiquidStg1 = 23.18 | 

@@ -9,6 +9,8 @@ import pathlib
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QDialog
+date = '06Jun2022'
+
 
 try:
     from Built_UI_Files.dave_window import Ui_dave_window
@@ -23,7 +25,7 @@ except:
     pass
 
 TEMP_CONSOLE_FILE_NAME = "console_output.txt"
-LOCAL_TEST_DATA_FOLDER_NAME = "dave_local_test_data"
+LOCAL_TEST_DATA_FOLDER_NAME = "data"
 AUTO_DAVE_OUTPUT_FOLDER_NAME = "auto_dave_output_files"
 timestamps = []
 
@@ -170,7 +172,7 @@ class Dave_Window(Ui_dave_window, QtWidgets.QWidget):
         file_name += self.csv_file_name_box.text()
         file_name += ".csv"
 
-        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/" + file_name
+        file_path = "./" + LOCAL_TEST_DATA_FOLDER_NAME + "/" + date + "/" + file_name
 
         columns = ["timeSinceBoot"]
         dicts = []
@@ -508,6 +510,8 @@ class Dave:
                         parseValueFunc=DaveParsFuncs.stage1ControlledRampTargetFunc, step=True))
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Thermocouple TempC 2", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC2))
 
             
         # self.stage1Plot.addParsedValue(
