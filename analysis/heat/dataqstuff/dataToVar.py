@@ -172,3 +172,6 @@ c70_noInsert = gd.getData('lidF_noInsert_cool70.csv','02Jun2022')
 c50_noInsert = gd.getData('lidF_noInsert_cool50.csv','02Jun2022')
 c30_noInsert = gd.getData('lidF_noInsert_cool30.csv','02Jun2022')
 
+full_forward = gd.getData('lidG_insertForward_full_b.csv','06Jun2022')
+full_Backward = gd.getData('lidG_insertBackward_full_b.csv','06Jun2022')
+full_x = gd.getData('lidC_lumpCap_noInsert_fixKalman.csv','06Jun2022')

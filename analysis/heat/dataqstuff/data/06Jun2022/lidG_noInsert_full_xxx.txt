@@ -1,0 +1,5 @@
+DATAQ:  | dataQLiquidStg1 = 25.82 | 
+DATAQ:  | dataQLiquidStg1 = 25.88 | 
+DATAQ:  | dataQLiquidStg1 = 25.85 | 
+DATAQ:  | dataQLiquidStg1 = 26.17 | 
+DATAQ:  | dataQLiquidStg1 = 26.13 | 

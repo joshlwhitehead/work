@@ -58,10 +58,12 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.h90_inf[3])
 # plt.plot(dat.h90_c[3])
 
-plt.plot(dat.full_fat [1])
-plt.plot(dat.full_fat[2],label='overfill')
-plt.plot(dat.full_flat[1])
-plt.plot(dat.full_flat[2],label='normal fill')
+plt.plot(dat.full_forward [1])
+plt.plot(dat.full_forward[2],label='forward')
+plt.plot(dat.full_Backward[1])
+plt.plot(dat.full_Backward[2],label='backward')
+plt.plot(dat.full_x[1])
+plt.plot(dat.full_x[2],label='x')
 
 plt.legend()
 plt.grid()

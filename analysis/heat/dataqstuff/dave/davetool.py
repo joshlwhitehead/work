@@ -509,7 +509,7 @@ class Dave:
             ParsedValue("Stage1 Controlled Ramp Target", color='tab:blue',
                         parseValueFunc=DaveParsFuncs.stage1ControlledRampTargetFunc, step=True))
         self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
+            ParsedValue("dataQLiquidStg1", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Thermocouple TempC 2", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC2))
 
