@@ -1,0 +1,594 @@
+DATAQ: | Stg1ThermoTempC = 29.9  |
+DATAQ: | Stg1ThermoTempC = 29.93  |
+DATAQ: | Stg1ThermoTempC = 29.94  |
+DATAQ: | Stg1ThermoTempC = 29.89  |
+DATAQ: | Stg1ThermoTempC = 29.85  |
+***Stage1 ON***
+[-404]
+(147466) setStage1TecTempC: TEC Set Temp 30.000000
+(147467) _resetThermalControlState: RESET Peltier 0 control state
+(147470) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 30.0
+(147478) _setThermalControlState: thermalControl-0: changing state 3->1
+(147485) tecCurvePredictorSetHoldPower: Setting hold power to 7.122508 at temp 29.428772
+(147496) thermalControlSetEnable: Enabling Peltier 0
+(147547) TC: thermalControl-0 = 29.43, modeled = 29.43, target = 30.00, HeatSinkTemp = 28.83, output = 50.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.009193
+(147697) TC: thermalControl-0 = 29.42, modeled = 29.42, target = 30.00, HeatSinkTemp = 28.82, output = 100.0, timeout = 150, expectedTempC = 30.00, targetTecRampRate = 0.008965
+(147849) TC: thermalControl-0 = 29.68, modeled = 29.68, target = 30.00, HeatSinkTemp = 28.82, output = 50.0, timeout = 300, expectedTempC = 30.00, targetTecRampRate = 0.019379
+(147895) systemTasksMonitorStack: Stack Watermark(Thermal Control): 1828
+(147897) _updateInertiaCompensation: overshoot: -0.801559, updatedComp: -3.131750, atIndex: 30
+(147904) _thermalControlStateMachine: MAX RAMP: SWITCH to STEADY STATE - Target Within range
+(147944) _setThermalControlState: thermalControl-0: changing state 1->3
+DATAQ: | Stg1ThermoTempC = 29.9  |
+(147997) TC: thermalControl-0 = 30.57, modeled = 30.57, target = 30.00, HeatSinkTemp = 28.78, output = -31.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.054054
+(148146) TC: thermalControl-0 = 31.47, modeled = 31.47, target = 30.00, HeatSinkTemp = 28.75, output = -34.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.089302
+(148298) TC: thermalControl-0 = 32.01, modeled = 32.01, target = 30.00, HeatSinkTemp = 28.70, output = -28.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.110207
+(148447) TC: thermalControl-0 = 32.14, modeled = 32.14, target = 30.00, HeatSinkTemp = 28.69, output = -25.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.114861
+(148494) _setTempReachedCallback: Set Temp Reached
+DATAQ: | Stg1ThermoTempC = 29.87  |
+(148597) TC: thermalControl-0 = 32.08, modeled = 32.08, target = 30.00, HeatSinkTemp = 28.69, output = -23.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.111618
+(148747) TC: thermalControl-0 = 31.93, modeled = 31.93, target = 30.00, HeatSinkTemp = 28.71, output = -21.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.104942
+(148897) TC: thermalControl-0 = 31.75, modeled = 31.75, target = 30.00, HeatSinkTemp = 28.74, output = -15.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.097351
+(149047) TC: thermalControl-0 = 31.57, modeled = 31.57, target = 30.00, HeatSinkTemp = 28.76, output = -15.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.089645
+DATAQ: | Stg1ThermoTempC = 29.84  |
+(149197) TC: thermalControl-0 = 31.38, modeled = 31.38, target = 30.00, HeatSinkTemp = 28.78, output = -12.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.081825
+(149347) TC: thermalControl-0 = 31.27, modeled = 31.27, target = 30.00, HeatSinkTemp = 28.80, output = -13.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.076828
+(149498) TC: thermalControl-0 = 31.15, modeled = 31.15, target = 30.00, HeatSinkTemp = 28.81, output = -13.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.071754
+(149648) TC: thermalControl-0 = 31.06, modeled = 31.06, target = 30.00, HeatSinkTemp = 28.82, output = -12.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.067520
+DATAQ: | Stg1ThermoTempC = 29.89  |
+(149797) TC: thermalControl-0 = 30.98, modeled = 30.98, target = 30.00, HeatSinkTemp = 28.83, output = -11.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.063972
+(149948) TC: thermalControl-0 = 30.91, modeled = 30.91, target = 30.00, HeatSinkTemp = 28.85, output = -7.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.060806
+(150097) TC: thermalControl-0 = 30.85, modeled = 30.85, target = 30.00, HeatSinkTemp = 28.86, output = -8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.058136
+(150248) TC: thermalControl-0 = 30.80, modeled = 30.80, target = 30.00, HeatSinkTemp = 28.86, output = -8.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.055923
+DATAQ: | Stg1ThermoTempC = 29.86  |
+(150398) TC: thermalControl-0 = 30.76, modeled = 30.76, target = 30.00, HeatSinkTemp = 28.86, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.053940
+(150547) TC: thermalControl-0 = 30.73, modeled = 30.73, target = 30.00, HeatSinkTemp = 28.87, output = -6.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.052528
+(150699) TC: thermalControl-0 = 30.69, modeled = 30.69, target = 30.00, HeatSinkTemp = 28.86, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.050583
+(150849) TC: thermalControl-0 = 30.66, modeled = 30.66, target = 30.00, HeatSinkTemp = 28.87, output = -7.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.049248
+DATAQ: | Stg1ThermoTempC = 29.84  |
+(150998) TC: thermalControl-0 = 30.64, modeled = 30.64, target = 30.00, HeatSinkTemp = 28.87, output = -6.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.047913
+(151150) TC: thermalControl-0 = 30.60, modeled = 30.60, target = 30.00, HeatSinkTemp = 28.86, output = -6.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.046349
+(151299) TC: thermalControl-0 = 30.58, modeled = 30.58, target = 30.00, HeatSinkTemp = 28.85, output = -6.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.044975
+(151450) TC: thermalControl-0 = 30.55, modeled = 30.55, target = 30.00, HeatSinkTemp = 28.86, output = -5.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.043488
+DATAQ: | Stg1ThermoTempC = 29.82  |
+(151600) TC: thermalControl-0 = 30.52, modeled = 30.52, target = 30.00, HeatSinkTemp = 28.85, output = -6.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.042305
+(151750) TC: thermalControl-0 = 30.50, modeled = 30.50, target = 30.00, HeatSinkTemp = 28.86, output = -5.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.041199
+(151900) TC: thermalControl-0 = 30.49, modeled = 30.49, target = 30.00, HeatSinkTemp = 28.85, output = -6.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.040474
+(152051) TC: thermalControl-0 = 30.46, modeled = 30.46, target = 30.00, HeatSinkTemp = 28.85, output = -3.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.039215
+DATAQ: | Stg1ThermoTempC = 29.82  |
+(152202) TC: thermalControl-0 = 30.45, modeled = 30.45, target = 30.00, HeatSinkTemp = 28.85, output = -3.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.038528
+(152352) TC: thermalControl-0 = 30.44, modeled = 30.44, target = 30.00, HeatSinkTemp = 28.85, output = -6.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.037689
+(152501) TC: thermalControl-0 = 30.42, modeled = 30.42, target = 30.00, HeatSinkTemp = 28.84, output = -6.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.036736
+(152652) TC: thermalControl-0 = 30.40, modeled = 30.40, target = 30.00, HeatSinkTemp = 28.85, output = -4.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.035973
+DATAQ: | Stg1ThermoTempC = 29.92  |
+(152801) TC: thermalControl-0 = 30.39, modeled = 30.39, target = 30.00, HeatSinkTemp = 28.85, output = -3.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.035286
+(152951) TC: thermalControl-0 = 30.37, modeled = 30.37, target = 30.00, HeatSinkTemp = 28.84, output = -4.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.034256
+(153102) TC: thermalControl-0 = 30.35, modeled = 30.35, target = 30.00, HeatSinkTemp = 28.84, output = -2.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.033035
+(153252) TC: thermalControl-0 = 30.33, modeled = 30.33, target = 30.00, HeatSinkTemp = 28.83, output = -3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.032158
+DATAQ: | Stg1ThermoTempC = 29.82  |
+(153404) TC: thermalControl-0 = 30.32, modeled = 30.32, target = 30.00, HeatSinkTemp = 28.83, output = -2.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.031738
+(153554) TC: thermalControl-0 = 30.31, modeled = 30.31, target = 30.00, HeatSinkTemp = 28.83, output = -2.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.030975
+(153705) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 28.83, output = -2.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.030289
+(153855) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 28.83, output = -2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.029640
+DATAQ: | Stg1ThermoTempC = 29.81  |
+(154004) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 28.83, output = -2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.028992
+(154156) TC: thermalControl-0 = 30.26, modeled = 30.26, target = 30.00, HeatSinkTemp = 28.82, output = -0.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.028229
+(154304) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 28.82, output = -1.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.027962
+(154455) TC: thermalControl-0 = 30.23, modeled = 30.23, target = 30.00, HeatSinkTemp = 28.82, output = -0.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.027008
+DATAQ: | Stg1ThermoTempC = 29.82  |
+(154604) TC: thermalControl-0 = 30.23, modeled = 30.23, target = 30.00, HeatSinkTemp = 28.82, output = -0.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.026627
+(154755) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 28.81, output = -3.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.025978
+(154904) TC: thermalControl-0 = 30.20, modeled = 30.20, target = 30.00, HeatSinkTemp = 28.81, output = 0.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.025139
+(155055) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 28.80, output = 0.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.024300
+DATAQ: | Stg1ThermoTempC = 29.81  |
+(155205) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 28.81, output = -0.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.023994
+(155354) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 28.80, output = 0.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.023308
+(155504) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 28.80, output = 0.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.022697
+(155654) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 28.80, output = 0.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.022011
+DATAQ: | Stg1ThermoTempC = 29.79  |
+(155805) TC: thermalControl-0 = 30.12, modeled = 30.12, target = 30.00, HeatSinkTemp = 28.79, output = 0.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.021324
+(155954) TC: thermalControl-0 = 30.11, modeled = 30.11, target = 30.00, HeatSinkTemp = 28.79, output = 0.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.020599
+(156105) TC: thermalControl-0 = 30.10, modeled = 30.10, target = 30.00, HeatSinkTemp = 28.80, output = 1.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.020256
+(156255) TC: thermalControl-0 = 30.09, modeled = 30.09, target = 30.00, HeatSinkTemp = 28.79, output = 1.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.019760
+DATAQ: | Stg1ThermoTempC = 29.69  |
+(156405) TC: thermalControl-0 = 30.09, modeled = 30.09, target = 30.00, HeatSinkTemp = 28.79, output = 0.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.019455
+(156556) TC: thermalControl-0 = 30.08, modeled = 30.08, target = 30.00, HeatSinkTemp = 28.79, output = 1.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.018921
+(156705) TC: thermalControl-0 = 30.06, modeled = 30.06, target = 30.00, HeatSinkTemp = 28.78, output = 0.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.018196
+(156855) TC: thermalControl-0 = 30.06, modeled = 30.06, target = 30.00, HeatSinkTemp = 28.78, output = 0.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.017891
+DATAQ: | Stg1ThermoTempC = 29.64  |
+(157005) TC: thermalControl-0 = 30.04, modeled = 30.04, target = 30.00, HeatSinkTemp = 28.78, output = 0.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.017090
+(157155) TC: thermalControl-0 = 30.03, modeled = 30.03, target = 30.00, HeatSinkTemp = 28.78, output = 1.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.016556
+(157305) TC: thermalControl-0 = 30.03, modeled = 30.03, target = 30.00, HeatSinkTemp = 28.78, output = 0.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.016556
+(157455) TC: thermalControl-0 = 30.01, modeled = 30.01, target = 30.00, HeatSinkTemp = 28.77, output = 0.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.015602
+DATAQ: | Stg1ThermoTempC = 29.78  |
+(157605) TC: thermalControl-0 = 30.01, modeled = 30.01, target = 30.00, HeatSinkTemp = 28.77, output = 1.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.015488
+(157756) TC: thermalControl-0 = 30.00, modeled = 30.00, target = 30.00, HeatSinkTemp = 28.77, output = 1.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.015144
+(157905) TC: thermalControl-0 = 29.99, modeled = 29.99, target = 30.00, HeatSinkTemp = 28.77, output = 1.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.014572
+(158055) TC: thermalControl-0 = 29.98, modeled = 29.98, target = 30.00, HeatSinkTemp = 28.76, output = 2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.013962
+DATAQ: | Stg1ThermoTempC = 29.78  |
+(158206) TC: thermalControl-0 = 29.97, modeled = 29.97, target = 30.00, HeatSinkTemp = 28.76, output = 1.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.013618
+(158357) TC: thermalControl-0 = 29.96, modeled = 29.96, target = 30.00, HeatSinkTemp = 28.77, output = 1.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.013199
+(158507) TC: thermalControl-0 = 29.96, modeled = 29.96, target = 30.00, HeatSinkTemp = 28.76, output = 1.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.012970
+(158657) TC: thermalControl-0 = 29.94, modeled = 29.94, target = 30.00, HeatSinkTemp = 28.75, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.012245
+DATAQ: | Stg1ThermoTempC = 29.79  |
+(158807) TC: thermalControl-0 = 29.94, modeled = 29.94, target = 30.00, HeatSinkTemp = 28.76, output = 2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.011902
+(158957) TC: thermalControl-0 = 29.93, modeled = 29.93, target = 30.00, HeatSinkTemp = 28.75, output = 1.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.011520
+(159107) TC: thermalControl-0 = 29.92, modeled = 29.92, target = 30.00, HeatSinkTemp = 28.75, output = 2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.010986
+(159258) TC: thermalControl-0 = 29.91, modeled = 29.91, target = 30.00, HeatSinkTemp = 28.74, output = 2.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.010605
+DATAQ: | Stg1ThermoTempC = 29.78  |
+(159408) TC: thermalControl-0 = 29.90, modeled = 29.90, target = 30.00, HeatSinkTemp = 28.74, output = 2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.010300
+(159558) TC: thermalControl-0 = 29.89, modeled = 29.89, target = 30.00, HeatSinkTemp = 28.74, output = 1.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.009842
+(159709) TC: thermalControl-0 = 29.88, modeled = 29.88, target = 30.00, HeatSinkTemp = 28.73, output = 1.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.009232
+(159859) TC: thermalControl-0 = 29.88, modeled = 29.88, target = 30.00, HeatSinkTemp = 28.73, output = 1.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.009346
+DATAQ: | Stg1ThermoTempC = 29.67  |
+(160009) TC: thermalControl-0 = 29.88, modeled = 29.88, target = 30.00, HeatSinkTemp = 28.73, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.009117
+(160160) TC: thermalControl-0 = 29.86, modeled = 29.86, target = 30.00, HeatSinkTemp = 28.73, output = 2.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.008545
+(160310) TC: thermalControl-0 = 29.86, modeled = 29.86, target = 30.00, HeatSinkTemp = 28.73, output = 2.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.008240
+(160460) TC: thermalControl-0 = 29.85, modeled = 29.85, target = 30.00, HeatSinkTemp = 28.72, output = 2.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.007706
+DATAQ: | Stg1ThermoTempC = 29.73  |
+(160610) TC: thermalControl-0 = 29.85, modeled = 29.85, target = 30.00, HeatSinkTemp = 28.72, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.007629
+(160760) TC: thermalControl-0 = 29.84, modeled = 29.84, target = 30.00, HeatSinkTemp = 28.72, output = 2.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.007286
+(160910) TC: thermalControl-0 = 29.83, modeled = 29.83, target = 30.00, HeatSinkTemp = 28.71, output = 2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.007095
+(161060) TC: thermalControl-0 = 29.82, modeled = 29.82, target = 30.00, HeatSinkTemp = 28.72, output = 2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.006676
+DATAQ: | Stg1ThermoTempC = 29.7  |
+(161211) TC: thermalControl-0 = 29.81, modeled = 29.81, target = 30.00, HeatSinkTemp = 28.72, output = 2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.006065
+(161360) TC: thermalControl-0 = 29.80, modeled = 29.80, target = 30.00, HeatSinkTemp = 28.71, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.005569
+(161510) TC: thermalControl-0 = 29.80, modeled = 29.80, target = 30.00, HeatSinkTemp = 28.71, output = 2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.005417
+(161661) TC: thermalControl-0 = 29.78, modeled = 29.78, target = 30.00, HeatSinkTemp = 28.71, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.004959
+DATAQ: | Stg1ThermoTempC = 29.69  |
+(161811) TC: thermalControl-0 = 29.78, modeled = 29.78, target = 30.00, HeatSinkTemp = 28.70, output = 2.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.004768
+(161961) TC: thermalControl-0 = 29.76, modeled = 29.76, target = 30.00, HeatSinkTemp = 28.69, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.004158
+(162111) TC: thermalControl-0 = 29.76, modeled = 29.76, target = 30.00, HeatSinkTemp = 28.70, output = 2.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.004005
+(162261) TC: thermalControl-0 = 29.75, modeled = 29.75, target = 30.00, HeatSinkTemp = 28.69, output = 2.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.003624
+DATAQ: | Stg1ThermoTempC = 29.73  |
+(162411) TC: thermalControl-0 = 29.75, modeled = 29.75, target = 30.00, HeatSinkTemp = 28.69, output = 3.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.003662
+(162561) TC: thermalControl-0 = 29.74, modeled = 29.74, target = 30.00, HeatSinkTemp = 28.69, output = 2.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.003204
+(162711) TC: thermalControl-0 = 29.73, modeled = 29.73, target = 30.00, HeatSinkTemp = 28.69, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.002556
+(162862) TC: thermalControl-0 = 29.73, modeled = 29.73, target = 30.00, HeatSinkTemp = 28.68, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.002632
+DATAQ: | Stg1ThermoTempC = 29.8  |
+(163012) TC: thermalControl-0 = 29.73, modeled = 29.73, target = 30.00, HeatSinkTemp = 28.68, output = 3.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.002518
+(163162) TC: thermalControl-0 = 29.72, modeled = 29.72, target = 30.00, HeatSinkTemp = 28.68, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.002251
+(163313) TC: thermalControl-0 = 29.71, modeled = 29.71, target = 30.00, HeatSinkTemp = 28.67, output = 3.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.001717
+(163463) TC: thermalControl-0 = 29.70, modeled = 29.70, target = 30.00, HeatSinkTemp = 28.68, output = 3.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.001488
+DATAQ: | Stg1ThermoTempC = 29.57  |
+(163613) TC: thermalControl-0 = 29.70, modeled = 29.70, target = 30.00, HeatSinkTemp = 28.67, output = 3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.001450
+(163763) TC: thermalControl-0 = 29.70, modeled = 29.70, target = 30.00, HeatSinkTemp = 28.68, output = 3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.001488
+(163913) TC: thermalControl-0 = 29.69, modeled = 29.69, target = 30.00, HeatSinkTemp = 28.67, output = 3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000877
+(164063) TC: thermalControl-0 = 29.68, modeled = 29.68, target = 30.00, HeatSinkTemp = 28.67, output = 3.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000572
+DATAQ: | Stg1ThermoTempC = 29.65  |
+(164213) TC: thermalControl-0 = 29.68, modeled = 29.68, target = 30.00, HeatSinkTemp = 28.67, output = 3.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000534
+(164364) TC: thermalControl-0 = 29.67, modeled = 29.67, target = 30.00, HeatSinkTemp = 28.66, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000267
+(164513) TC: thermalControl-0 = 29.67, modeled = 29.67, target = 30.00, HeatSinkTemp = 28.66, output = 2.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000191
+(164663) TC: thermalControl-0 = 29.67, modeled = 29.67, target = 30.00, HeatSinkTemp = 28.66, output = 3.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = 0.000000
+(164813) TC: thermalControl-0 = 29.65, modeled = 29.65, target = 30.00, HeatSinkTemp = 28.66, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.000496
+DATAQ: | Stg1ThermoTempC = 29.85  |
+(164963) TC: thermalControl-0 = 29.66, modeled = 29.66, target = 30.00, HeatSinkTemp = 28.66, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.000420
+(165113) TC: thermalControl-0 = 29.64, modeled = 29.64, target = 30.00, HeatSinkTemp = 28.65, output = 3.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001030
+(165263) TC: thermalControl-0 = 29.64, modeled = 29.64, target = 30.00, HeatSinkTemp = 28.65, output = 4.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001183
+(165413) TC: thermalControl-0 = 29.63, modeled = 29.63, target = 30.00, HeatSinkTemp = 28.64, output = 4.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001259
+DATAQ: | Stg1ThermoTempC = 29.76  |
+(165563) TC: thermalControl-0 = 29.63, modeled = 29.63, target = 30.00, HeatSinkTemp = 28.64, output = 3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001411
+(165714) TC: thermalControl-0 = 29.62, modeled = 29.62, target = 30.00, HeatSinkTemp = 28.64, output = 4.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001640
+(165863) TC: thermalControl-0 = 29.62, modeled = 29.62, target = 30.00, HeatSinkTemp = 28.64, output = 3.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001717
+(166013) TC: thermalControl-0 = 29.62, modeled = 29.62, target = 30.00, HeatSinkTemp = 28.64, output = 3.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.001717
+DATAQ: | Stg1ThermoTempC = 29.52  |
+(166163) TC: thermalControl-0 = 29.61, modeled = 29.61, target = 30.00, HeatSinkTemp = 28.64, output = 3.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002060
+(166313) TC: thermalControl-0 = 29.60, modeled = 29.60, target = 30.00, HeatSinkTemp = 28.63, output = 4.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002518
+(166463) TC: thermalControl-0 = 29.60, modeled = 29.60, target = 30.00, HeatSinkTemp = 28.63, output = 5.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002594
+(166613) TC: thermalControl-0 = 29.60, modeled = 29.60, target = 30.00, HeatSinkTemp = 28.63, output = 4.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002403
+DATAQ: | Stg1ThermoTempC = 29.5  |
+(166763) TC: thermalControl-0 = 29.60, modeled = 29.60, target = 30.00, HeatSinkTemp = 28.64, output = 4.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002480
+(166914) TC: thermalControl-0 = 29.59, modeled = 29.59, target = 30.00, HeatSinkTemp = 28.63, output = 5.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002670
+(167064) TC: thermalControl-0 = 29.59, modeled = 29.59, target = 30.00, HeatSinkTemp = 28.63, output = 4.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.002708
+(167215) TC: thermalControl-0 = 29.58, modeled = 29.58, target = 30.00, HeatSinkTemp = 28.62, output = 4.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003242
+DATAQ: | Stg1ThermoTempC = 29.49  |
+(167365) TC: thermalControl-0 = 29.58, modeled = 29.58, target = 30.00, HeatSinkTemp = 28.62, output = 5.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003204
+(167515) TC: thermalControl-0 = 29.57, modeled = 29.57, target = 30.00, HeatSinkTemp = 28.62, output = 5.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003395
+(167666) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.61, output = 4.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003777
+(167816) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.60, output = 4.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003777
+DATAQ: | Stg1ThermoTempC = 29.72  |
+(167966) TC: thermalControl-0 = 29.57, modeled = 29.57, target = 30.00, HeatSinkTemp = 28.61, output = 3.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003548
+(168116) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.60, output = 4.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003853
+(168267) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.61, output = 5.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004044
+(168417) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.61, output = 4.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003777
+DATAQ: | Stg1ThermoTempC = 29.67  |
+(168567) TC: thermalControl-0 = 29.55, modeled = 29.55, target = 30.00, HeatSinkTemp = 28.60, output = 5.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004044
+(168717) TC: thermalControl-0 = 29.55, modeled = 29.55, target = 30.00, HeatSinkTemp = 28.60, output = 5.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004196
+(168867) TC: thermalControl-0 = 29.56, modeled = 29.56, target = 30.00, HeatSinkTemp = 28.60, output = 3.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.003929
+(169017) TC: thermalControl-0 = 29.55, modeled = 29.55, target = 30.00, HeatSinkTemp = 28.60, output = 5.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004311
+DATAQ: | Stg1ThermoTempC = 29.47  |
+(169167) TC: thermalControl-0 = 29.54, modeled = 29.54, target = 30.00, HeatSinkTemp = 28.59, output = 4.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004539
+(169317) TC: thermalControl-0 = 29.54, modeled = 29.54, target = 30.00, HeatSinkTemp = 28.59, output = 5.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004539
+(169467) TC: thermalControl-0 = 29.53, modeled = 29.53, target = 30.00, HeatSinkTemp = 28.59, output = 4.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004730
+(169618) TC: thermalControl-0 = 29.53, modeled = 29.53, target = 30.00, HeatSinkTemp = 28.58, output = 5.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004883
+DATAQ: | Stg1ThermoTempC = 29.63  |
+(169768) TC: thermalControl-0 = 29.53, modeled = 29.53, target = 30.00, HeatSinkTemp = 28.58, output = 5.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.004883
+(169919) TC: thermalControl-0 = 29.52, modeled = 29.52, target = 30.00, HeatSinkTemp = 28.58, output = 5.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005188
+(170069) TC: thermalControl-0 = 29.52, modeled = 29.52, target = 30.00, HeatSinkTemp = 28.58, output = 6.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005264
+(170219) TC: thermalControl-0 = 29.52, modeled = 29.52, target = 30.00, HeatSinkTemp = 28.58, output = 6.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005150
+DATAQ: | Stg1ThermoTempC = 29.49  |
+(170369) TC: thermalControl-0 = 29.52, modeled = 29.52, target = 30.00, HeatSinkTemp = 28.57, output = 6.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005035
+(170519) TC: thermalControl-0 = 29.51, modeled = 29.51, target = 30.00, HeatSinkTemp = 28.58, output = 5.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005341
+(170670) TC: thermalControl-0 = 29.51, modeled = 29.51, target = 30.00, HeatSinkTemp = 28.57, output = 5.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005569
+(170820) TC: thermalControl-0 = 29.51, modeled = 29.51, target = 30.00, HeatSinkTemp = 28.57, output = 6.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005531
+DATAQ: | Stg1ThermoTempC = 29.57  |
+(170970) TC: thermalControl-0 = 29.50, modeled = 29.50, target = 30.00, HeatSinkTemp = 28.57, output = 5.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005684
+(171120) TC: thermalControl-0 = 29.50, modeled = 29.50, target = 30.00, HeatSinkTemp = 28.56, output = 6.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005760
+(171270) TC: thermalControl-0 = 29.50, modeled = 29.50, target = 30.00, HeatSinkTemp = 28.56, output = 7.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005722
+(171421) TC: thermalControl-0 = 29.50, modeled = 29.50, target = 30.00, HeatSinkTemp = 28.56, output = 6.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005722
+DATAQ: | Stg1ThermoTempC = 29.54  |
+(171572) TC: thermalControl-0 = 29.49, modeled = 29.49, target = 30.00, HeatSinkTemp = 28.56, output = 5.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005951
+(171722) TC: thermalControl-0 = 29.49, modeled = 29.49, target = 30.00, HeatSinkTemp = 28.56, output = 6.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005836
+(171872) TC: thermalControl-0 = 29.48, modeled = 29.48, target = 30.00, HeatSinkTemp = 28.55, output = 6.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006180
+(172022) TC: thermalControl-0 = 29.49, modeled = 29.49, target = 30.00, HeatSinkTemp = 28.56, output = 6.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005951
+DATAQ: | Stg1ThermoTempC = 29.59  |
+(172172) TC: thermalControl-0 = 29.49, modeled = 29.49, target = 30.00, HeatSinkTemp = 28.55, output = 6.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005989
+(172323) TC: thermalControl-0 = 29.48, modeled = 29.48, target = 30.00, HeatSinkTemp = 28.55, output = 7.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006104
+(172473) TC: thermalControl-0 = 29.48, modeled = 29.48, target = 30.00, HeatSinkTemp = 28.54, output = 7.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006027
+(172624) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.54, output = 7.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006409
+DATAQ: | Stg1ThermoTempC = 29.55  |
+(172774) TC: thermalControl-0 = 29.48, modeled = 29.48, target = 30.00, HeatSinkTemp = 28.54, output = 5.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006027
+(172924) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.53, output = 6.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006332
+(173074) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.54, output = 8.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006409
+(173224) TC: thermalControl-0 = 29.48, modeled = 29.48, target = 30.00, HeatSinkTemp = 28.54, output = 7.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006142
+DATAQ: | Stg1ThermoTempC = 29.57  |
+(173374) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.53, output = 6.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006294
+(173524) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.52, output = 6.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006599
+(173674) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.53, output = 7.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006218
+(173824) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.53, output = 8.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006447
+DATAQ: | Stg1ThermoTempC = 29.48  |
+(173974) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.51, output = 7.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006599
+(174125) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.51, output = 8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006523
+(174275) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.50, output = 6.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006676
+(174425) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.51, output = 7.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006638
+DATAQ: | Stg1ThermoTempC = 29.55  |
+(174576) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.50, output = 8.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006638
+(174726) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.50, output = 8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006561
+(174876) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.49, output = 8.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006828
+(175027) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.49, output = 8.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006828
+DATAQ: | Stg1ThermoTempC = 29.57  |
+(175177) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.49, output = 9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006714
+(175329) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.49, output = 8.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006371
+(175478) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.47, output = 8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006523
+(175628) TC: thermalControl-0 = 29.44, modeled = 29.44, target = 30.00, HeatSinkTemp = 28.47, output = 9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006790
+DATAQ: | Stg1ThermoTempC = 29.52  |
+(175779) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.47, output = 10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006447
+(175929) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.47, output = 9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005989
+(176079) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.46, output = 8.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006256
+(176229) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.47, output = 9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006180
+DATAQ: | Stg1ThermoTempC = 29.53  |
+(176380) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.46, output = 9.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006218
+(176530) TC: thermalControl-0 = 29.45, modeled = 29.45, target = 30.00, HeatSinkTemp = 28.45, output = 9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006294
+(176679) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.46, output = 8.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005913
+DATAQ: | Stg1ThermoTempC = 29.63  |
+(176829) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.45, output = 9.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.006027
+(176980) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.45, output = 8.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005913
+(177129) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.45, output = 8.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005798
+(177279) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.45, output = 9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005722
+DATAQ: | Stg1ThermoTempC = 29.52  |
+(177429) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.45, output = 10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005646
+(177579) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 28.43, output = 10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005608
+(177730) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.43, output = 11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005455
+(177880) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.44, output = 9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005302
+DATAQ: | Stg1ThermoTempC = 29.48  |
+***Stage1 OFF***
+(178031) TC: thermalControl-0 = 29.47, modeled = 29.47, target = 30.00, HeatSinkTemp = 28.43, output = 10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.005188
+[-404]
+DATAQ: | Stg1ThermoTempC = 29.42  |
+DATAQ: | Stg1ThermoTempC = 29.46  |
+DATAQ: | Stg1ThermoTempC = 29.56  |
+DATAQ: | Stg1ThermoTempC = 29.47  |
+DATAQ: | Stg1ThermoTempC = 29.58  |
+DATAQ: | Stg1ThermoTempC = 29.47  |
+***Stage1 ON***
+[-404]
+(181560) setStage1TecTempC: TEC Set Temp 100.000000
+(181561) _resetThermalControlState: RESET Peltier 0 control state
+(181565) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 100.0
+(181572) _setThermalControlState: thermalControl-0: changing state 3->1
+(181579) tecCurvePredictorSetHoldPower: Setting hold power to 9.473059 at temp 29.333923
+(181590) thermalControlSetEnable: Enabling Peltier 0
+(181685) TC: thermalControl-0 = 29.34, modeled = 29.34, target = 100.00, HeatSinkTemp = 28.37, output = 100.0, timeout = 50, expectedTempC = 30.00, targetTecRampRate = -0.009384
+(181835) TC: thermalControl-0 = 29.37, modeled = 29.37, target = 100.00, HeatSinkTemp = 28.38, output = 100.0, timeout = 200, expectedTempC = 30.00, targetTecRampRate = -0.008163
+(181986) TC: thermalControl-0 = 29.86, modeled = 29.86, target = 100.00, HeatSinkTemp = 28.35, output = 100.0, timeout = 350, expectedTempC = 30.00, targetTecRampRate = 0.011292
+DATAQ: | Stg1ThermoTempC = 29.51  |
+(182136) TC: thermalControl-0 = 30.83, modeled = 30.83, target = 100.00, HeatSinkTemp = 28.33, output = 100.0, timeout = 500, expectedTempC = 30.00, targetTecRampRate = 0.049477
+(182287) TC: thermalControl-0 = 32.26, modeled = 32.26, target = 100.00, HeatSinkTemp = 28.25, output = 100.0, timeout = 650, expectedTempC = 30.00, targetTecRampRate = 0.105858
+(182437) TC: thermalControl-0 = 33.76, modeled = 33.76, target = 100.00, HeatSinkTemp = 28.19, output = 100.0, timeout = 800, expectedTempC = 30.00, targetTecRampRate = 0.164452
+(182587) TC: thermalControl-0 = 35.35, modeled = 35.35, target = 100.00, HeatSinkTemp = 28.12, output = 100.0, timeout = 950, expectedTempC = 30.00, targetTecRampRate = 0.226250
+DATAQ: | Stg1ThermoTempC = 29.38  |
+(182737) TC: thermalControl-0 = 37.15, modeled = 37.15, target = 100.00, HeatSinkTemp = 28.01, output = 100.0, timeout = 1100, expectedTempC = 30.00, targetTecRampRate = 0.296326
+(182887) TC: thermalControl-0 = 38.79, modeled = 38.79, target = 100.00, HeatSinkTemp = 27.95, output = 100.0, timeout = 1250, expectedTempC = 30.00, targetTecRampRate = 0.359268
+(183037) TC: thermalControl-0 = 40.42, modeled = 40.42, target = 100.00, HeatSinkTemp = 27.87, output = 100.0, timeout = 1400, expectedTempC = 30.00, targetTecRampRate = 0.421410
+(183188) TC: thermalControl-0 = 42.21, modeled = 42.21, target = 100.00, HeatSinkTemp = 27.80, output = 100.0, timeout = 1550, expectedTempC = 30.00, targetTecRampRate = 0.489807
+DATAQ: | Stg1ThermoTempC = 29.38  |
+(183338) TC: thermalControl-0 = 43.81, modeled = 43.81, target = 100.00, HeatSinkTemp = 27.72, output = 100.0, timeout = 1700, expectedTempC = 30.00, targetTecRampRate = 0.550041
+(183488) TC: thermalControl-0 = 45.56, modeled = 45.56, target = 100.00, HeatSinkTemp = 27.63, output = 100.0, timeout = 1850, expectedTempC = 30.00, targetTecRampRate = 0.616074
+(183638) TC: thermalControl-0 = 47.11, modeled = 47.11, target = 100.00, HeatSinkTemp = 27.57, output = 100.0, timeout = 2000, expectedTempC = 30.00, targetTecRampRate = 0.673714
+(183788) TC: thermalControl-0 = 48.61, modeled = 48.61, target = 100.00, HeatSinkTemp = 27.49, output = 100.0, timeout = 2150, expectedTempC = 30.00, targetTecRampRate = 0.728912
+DATAQ: | Stg1ThermoTempC = 29.47  |
+(183938) TC: thermalControl-0 = 50.26, modeled = 50.26, target = 100.00, HeatSinkTemp = 27.42, output = 100.0, timeout = 2300, expectedTempC = 30.00, targetTecRampRate = 0.789909
+(184088) TC: thermalControl-0 = 51.70, modeled = 51.70, target = 100.00, HeatSinkTemp = 27.36, output = 100.0, timeout = 2450, expectedTempC = 30.00, targetTecRampRate = 0.842133
+(184239) TC: thermalControl-0 = 53.30, modeled = 53.30, target = 100.00, HeatSinkTemp = 27.29, output = 100.0, timeout = 2600, expectedTempC = 30.00, targetTecRampRate = 0.900154
+(184389) TC: thermalControl-0 = 54.72, modeled = 54.72, target = 100.00, HeatSinkTemp = 27.23, output = 100.0, timeout = 2750, expectedTempC = 30.00, targetTecRampRate = 0.950890
+DATAQ: | Stg1ThermoTempC = 29.51  |
+(184539) TC: thermalControl-0 = 56.06, modeled = 56.06, target = 100.00, HeatSinkTemp = 27.18, output = 100.0, timeout = 2900, expectedTempC = 30.00, targetTecRampRate = 0.998459
+(184689) TC: thermalControl-0 = 57.58, modeled = 57.58, target = 100.00, HeatSinkTemp = 27.12, output = 100.0, timeout = 3050, expectedTempC = 30.00, targetTecRampRate = 1.052322
+(184839) TC: thermalControl-0 = 58.90, modeled = 58.90, target = 100.00, HeatSinkTemp = 27.07, output = 100.0, timeout = 3200, expectedTempC = 30.00, targetTecRampRate = 1.098289
+DATAQ: | Stg1ThermoTempC = 29.47  |
+(184989) TC: thermalControl-0 = 60.19, modeled = 60.19, target = 100.00, HeatSinkTemp = 27.01, output = 100.0, timeout = 3350, expectedTempC = 30.00, targetTecRampRate = 1.142693
+(185139) TC: thermalControl-0 = 61.60, modeled = 61.60, target = 100.00, HeatSinkTemp = 26.96, output = 100.0, timeout = 3500, expectedTempC = 30.00, targetTecRampRate = 1.191978
+(185289) TC: thermalControl-0 = 62.85, modeled = 62.85, target = 100.00, HeatSinkTemp = 26.92, output = 100.0, timeout = 3650, expectedTempC = 30.00, targetTecRampRate = 1.234207
+(185439) TC: thermalControl-0 = 64.20, modeled = 64.20, target = 100.00, HeatSinkTemp = 26.87, output = 100.0, timeout = 3800, expectedTempC = 30.00, targetTecRampRate = 1.280212
+DATAQ: | Stg1ThermoTempC = 29.53  |
+(185589) TC: thermalControl-0 = 65.43, modeled = 65.43, target = 100.00, HeatSinkTemp = 26.83, output = 100.0, timeout = 3950, expectedTempC = 30.00, targetTecRampRate = 1.321106
+(185739) TC: thermalControl-0 = 66.60, modeled = 66.60, target = 100.00, HeatSinkTemp = 26.78, output = 100.0, timeout = 4100, expectedTempC = 30.00, targetTecRampRate = 1.359711
+(185889) TC: thermalControl-0 = 67.87, modeled = 67.87, target = 100.00, HeatSinkTemp = 26.72, output = 100.0, timeout = 4250, expectedTempC = 30.00, targetTecRampRate = 1.401901
+(186039) TC: thermalControl-0 = 69.02, modeled = 69.02, target = 100.00, HeatSinkTemp = 26.70, output = 100.0, timeout = 4400, expectedTempC = 30.00, targetTecRampRate = 1.438751
+DATAQ: | Stg1ThermoTempC = 29.41  |
+(186189) TC: thermalControl-0 = 70.12, modeled = 70.12, target = 100.00, HeatSinkTemp = 26.66, output = 100.0, timeout = 4550, expectedTempC = 30.00, targetTecRampRate = 1.473999
+(186340) TC: thermalControl-0 = 71.34, modeled = 71.34, target = 100.00, HeatSinkTemp = 26.62, output = 100.0, timeout = 4700, expectedTempC = 30.00, targetTecRampRate = 1.513290
+(186490) TC: thermalControl-0 = 72.43, modeled = 72.43, target = 100.00, HeatSinkTemp = 26.59, output = 100.0, timeout = 4850, expectedTempC = 30.00, targetTecRampRate = 1.547623
+(186640) TC: thermalControl-0 = 73.58, modeled = 73.58, target = 100.00, HeatSinkTemp = 26.55, output = 100.0, timeout = 5000, expectedTempC = 30.00, targetTecRampRate = 1.583939
+DATAQ: | Stg1ThermoTempC = 29.31  |
+(186791) TC: thermalControl-0 = 74.61, modeled = 74.61, target = 100.00, HeatSinkTemp = 26.52, output = 100.0, timeout = 5150, expectedTempC = 30.00, targetTecRampRate = 1.614838
+(186941) TC: thermalControl-0 = 75.61, modeled = 75.61, target = 100.00, HeatSinkTemp = 26.49, output = 100.0, timeout = 5300, expectedTempC = 30.00, targetTecRampRate = 1.645050
+(187091) TC: thermalControl-0 = 76.67, modeled = 76.67, target = 100.00, HeatSinkTemp = 26.45, output = 100.0, timeout = 5450, expectedTempC = 30.00, targetTecRampRate = 1.676941
+(187241) TC: thermalControl-0 = 77.64, modeled = 77.64, target = 100.00, HeatSinkTemp = 26.42, output = 100.0, timeout = 5600, expectedTempC = 30.00, targetTecRampRate = 1.705551
+(187391) TC: thermalControl-0 = 78.67, modeled = 78.67, target = 100.00, HeatSinkTemp = 26.38, output = 100.0, timeout = 5750, expectedTempC = 30.00, targetTecRampRate = 1.736221
+DATAQ: | Stg1ThermoTempC = 29.49  |
+(187542) TC: thermalControl-0 = 79.59, modeled = 79.59, target = 100.00, HeatSinkTemp = 26.36, output = 100.0, timeout = 5900, expectedTempC = 30.00, targetTecRampRate = 1.762085
+(187692) TC: thermalControl-0 = 80.53, modeled = 80.53, target = 100.00, HeatSinkTemp = 26.34, output = 100.0, timeout = 6050, expectedTempC = 30.00, targetTecRampRate = 1.788712
+(187843) TC: thermalControl-0 = 81.50, modeled = 81.50, target = 100.00, HeatSinkTemp = 26.31, output = 100.0, timeout = 6200, expectedTempC = 30.00, targetTecRampRate = 1.816559
+(187993) TC: thermalControl-0 = 82.33, modeled = 82.33, target = 100.00, HeatSinkTemp = 26.28, output = 100.0, timeout = 6350, expectedTempC = 30.00, targetTecRampRate = 1.838379
+DATAQ: | Stg1ThermoTempC = 29.31  |
+(188143) TC: thermalControl-0 = 83.29, modeled = 83.29, target = 100.00, HeatSinkTemp = 26.27, output = 100.0, timeout = 6500, expectedTempC = 30.00, targetTecRampRate = 1.865692
+(188293) TC: thermalControl-0 = 84.11, modeled = 84.11, target = 100.00, HeatSinkTemp = 26.25, output = 100.0, timeout = 6650, expectedTempC = 30.00, targetTecRampRate = 1.887207
+(188443) TC: thermalControl-0 = 84.89, modeled = 84.89, target = 100.00, HeatSinkTemp = 26.22, output = 100.0, timeout = 6800, expectedTempC = 30.00, targetTecRampRate = 1.906815
+(188593) TC: thermalControl-0 = 85.77, modeled = 85.77, target = 100.00, HeatSinkTemp = 26.21, output = 100.0, timeout = 6950, expectedTempC = 30.00, targetTecRampRate = 1.930161
+DATAQ: | Stg1ThermoTempC = 30.03  |
+(188743) TC: thermalControl-0 = 86.54, modeled = 86.54, target = 100.00, HeatSinkTemp = 26.18, output = 100.0, timeout = 7100, expectedTempC = 30.00, targetTecRampRate = 1.949158
+(188893) TC: thermalControl-0 = 87.31, modeled = 87.31, target = 100.00, HeatSinkTemp = 26.18, output = 100.0, timeout = 7250, expectedTempC = 30.00, targetTecRampRate = 1.968002
+(189043) TC: thermalControl-0 = 88.13, modeled = 88.13, target = 100.00, HeatSinkTemp = 26.15, output = 100.0, timeout = 7400, expectedTempC = 30.00, targetTecRampRate = 1.988831
+(189193) TC: thermalControl-0 = 88.85, modeled = 88.85, target = 100.00, HeatSinkTemp = 26.13, output = 100.0, timeout = 7550, expectedTempC = 30.00, targetTecRampRate = 2.005463
+DATAQ: | Stg1ThermoTempC = 32.01  |
+(189343) TC: thermalControl-0 = 89.66, modeled = 89.66, target = 100.00, HeatSinkTemp = 26.12, output = 100.0, timeout = 7700, expectedTempC = 30.00, targetTecRampRate = 2.025375
+(189493) TC: thermalControl-0 = 90.37, modeled = 90.37, target = 100.00, HeatSinkTemp = 26.11, output = 100.0, timeout = 7850, expectedTempC = 30.00, targetTecRampRate = 2.041626
+(189643) TC: thermalControl-0 = 91.06, modeled = 91.06, target = 100.00, HeatSinkTemp = 26.09, output = 100.0, timeout = 8000, expectedTempC = 30.00, targetTecRampRate = 2.056580
+(189793) TC: thermalControl-0 = 91.80, modeled = 91.80, target = 100.00, HeatSinkTemp = 26.08, output = 100.0, timeout = 8150, expectedTempC = 30.00, targetTecRampRate = 2.073822
+DATAQ: | Stg1ThermoTempC = 34.96  |
+(189943) TC: thermalControl-0 = 92.47, modeled = 92.47, target = 100.00, HeatSinkTemp = 26.07, output = 100.0, timeout = 8300, expectedTempC = 30.00, targetTecRampRate = 2.088013
+(190093) TC: thermalControl-0 = 93.09, modeled = 93.09, target = 100.00, HeatSinkTemp = 26.05, output = 100.0, timeout = 8450, expectedTempC = 30.00, targetTecRampRate = 2.100143
+(190243) TC: thermalControl-0 = 93.83, modeled = 93.83, target = 100.00, HeatSinkTemp = 26.05, output = 100.0, timeout = 8600, expectedTempC = 30.00, targetTecRampRate = 2.116928
+(190393) TC: thermalControl-0 = 94.45, modeled = 94.45, target = 100.00, HeatSinkTemp = 26.03, output = 100.0, timeout = 8750, expectedTempC = 30.00, targetTecRampRate = 2.128677
+DATAQ: | Stg1ThermoTempC = 35.3  |
+(190544) TC: thermalControl-0 = 95.12, modeled = 95.12, target = 100.00, HeatSinkTemp = 26.02, output = 100.0, timeout = 8900, expectedTempC = 30.00, targetTecRampRate = 2.142792
+(190693) TC: thermalControl-0 = 95.70, modeled = 95.70, target = 100.00, HeatSinkTemp = 26.02, output = 100.0, timeout = 9050, expectedTempC = 30.00, targetTecRampRate = 2.152863
+(190843) TC: thermalControl-0 = 96.32, modeled = 96.32, target = 100.00, HeatSinkTemp = 26.01, output = 100.0, timeout = 9200, expectedTempC = 30.00, targetTecRampRate = 2.164612
+(190993) TC: thermalControl-0 = 96.93, modeled = 96.93, target = 100.00, HeatSinkTemp = 26.00, output = 100.0, timeout = 9350, expectedTempC = 30.00, targetTecRampRate = 2.176208
+DATAQ: | Stg1ThermoTempC = 42.87  |
+(191143) TC: thermalControl-0 = 97.49, modeled = 97.49, target = 100.00, HeatSinkTemp = 25.99, output = 100.0, timeout = 9500, expectedTempC = 30.00, targetTecRampRate = 2.185287
+(191293) TC: thermalControl-0 = 98.03, modeled = 98.03, target = 100.00, HeatSinkTemp = 25.99, output = 100.0, timeout = 9650, expectedTempC = 30.00, targetTecRampRate = 2.193451
+(191444) TC: thermalControl-0 = 98.64, modeled = 98.64, target = 100.00, HeatSinkTemp = 25.98, output = 100.0, timeout = 9800, expectedTempC = 30.00, targetTecRampRate = 2.204666
+(191594) TC: thermalControl-0 = 99.17, modeled = 99.17, target = 100.00, HeatSinkTemp = 25.97, output = 100.0, timeout = 9950, expectedTempC = 30.00, targetTecRampRate = 2.212448
+DATAQ: | Stg1ThermoTempC = 42.62  |
+(191744) TC: thermalControl-0 = 99.74, modeled = 99.74, target = 100.00, HeatSinkTemp = 25.97, output = 74.4, timeout = 10100, expectedTempC = 30.00, targetTecRampRate = 2.221985
+(191895) TC: thermalControl-0 = 100.25, modeled = 100.25, target = 100.00, HeatSinkTemp = 25.97, output = 70.5, timeout = 10250, expectedTempC = 30.00, targetTecRampRate = 2.229004
+(192045) TC: thermalControl-0 = 100.57, modeled = 100.57, target = 100.00, HeatSinkTemp = 25.97, output = 77.0, timeout = 10400, expectedTempC = 30.00, targetTecRampRate = 2.228470
+(192195) TC: thermalControl-0 = 100.73, modeled = 100.73, target = 100.00, HeatSinkTemp = 25.97, output = 84.6, timeout = 10550, expectedTempC = 30.00, targetTecRampRate = 2.221451
+DATAQ: | Stg1ThermoTempC = 41.54  |
+(192345) TC: thermalControl-0 = 100.81, modeled = 100.81, target = 100.00, HeatSinkTemp = 25.98, output = 86.8, timeout = 10700, expectedTempC = 30.00, targetTecRampRate = 2.211685
+(192495) TC: thermalControl-0 = 100.91, modeled = 100.91, target = 100.00, HeatSinkTemp = 25.99, output = 86.5, timeout = 10850, expectedTempC = 30.00, targetTecRampRate = 2.202225
+(192646) TC: thermalControl-0 = 101.00, modeled = 101.00, target = 100.00, HeatSinkTemp = 26.00, output = 83.2, timeout = 11000, expectedTempC = 30.00, targetTecRampRate = 2.192917
+(192796) TC: thermalControl-0 = 101.16, modeled = 101.16, target = 100.00, HeatSinkTemp = 26.01, output = 78.9, timeout = 11150, expectedTempC = 30.00, targetTecRampRate = 2.186050
+DATAQ: | Stg1ThermoTempC = 43.1  |
+(192946) TC: thermalControl-0 = 101.33, modeled = 101.33, target = 100.00, HeatSinkTemp = 26.02, output = 82.9, timeout = 11300, expectedTempC = 30.00, targetTecRampRate = 2.180023
+(193096) TC: thermalControl-0 = 101.48, modeled = 101.48, target = 100.00, HeatSinkTemp = 26.04, output = 87.9, timeout = 11450, expectedTempC = 30.00, targetTecRampRate = 2.172928
+(193246) TC: thermalControl-0 = 101.56, modeled = 101.56, target = 100.00, HeatSinkTemp = 26.04, output = 83.8, timeout = 11600, expectedTempC = 30.00, targetTecRampRate = 2.163315
+(193396) TC: thermalControl-0 = 101.71, modeled = 101.71, target = 100.00, HeatSinkTemp = 26.04, output = 86.1, timeout = 11750, expectedTempC = 30.00, targetTecRampRate = 2.156525
+DATAQ: | Stg1ThermoTempC = 44.47  |
+(193546) TC: thermalControl-0 = 101.86, modeled = 101.86, target = 100.00, HeatSinkTemp = 26.06, output = 84.4, timeout = 11900, expectedTempC = 30.00, targetTecRampRate = 2.149506
+(193696) TC: thermalControl-0 = 101.99, modeled = 101.99, target = 100.00, HeatSinkTemp = 26.07, output = 84.0, timeout = 12050, expectedTempC = 30.00, targetTecRampRate = 2.141800
+(193846) TC: thermalControl-0 = 102.13, modeled = 102.13, target = 100.00, HeatSinkTemp = 26.08, output = 85.8, timeout = 12200, expectedTempC = 30.00, targetTecRampRate = 2.134705
+(193996) TC: thermalControl-0 = 102.26, modeled = 102.26, target = 100.00, HeatSinkTemp = 26.08, output = 88.6, timeout = 12350, expectedTempC = 30.00, targetTecRampRate = 2.127228
+DATAQ: | Stg1ThermoTempC = 44.68  |
+(194146) TC: thermalControl-0 = 102.40, modeled = 102.40, target = 100.00, HeatSinkTemp = 26.08, output = 87.2, timeout = 12500, expectedTempC = 30.00, targetTecRampRate = 2.120056
+(194296) TC: thermalControl-0 = 102.58, modeled = 102.58, target = 100.00, HeatSinkTemp = 26.10, output = 89.0, timeout = 12650, expectedTempC = 30.00, targetTecRampRate = 2.114792
+(194446) TC: thermalControl-0 = 102.72, modeled = 102.72, target = 100.00, HeatSinkTemp = 26.11, output = 90.6, timeout = 12800, expectedTempC = 30.00, targetTecRampRate = 2.107697
+(194597) TC: thermalControl-0 = 102.86, modeled = 102.86, target = 100.00, HeatSinkTemp = 26.11, output = 88.5, timeout = 12950, expectedTempC = 30.00, targetTecRampRate = 2.100754
+DATAQ: | Stg1ThermoTempC = 43.61  |
+(194747) TC: thermalControl-0 = 103.02, modeled = 103.02, target = 100.00, HeatSinkTemp = 26.11, output = 86.5, timeout = 13100, expectedTempC = 30.00, targetTecRampRate = 2.094727
+(194897) TC: thermalControl-0 = 103.20, modeled = 103.20, target = 100.00, HeatSinkTemp = 26.12, output = 87.6, timeout = 13250, expectedTempC = 30.00, targetTecRampRate = 2.089310
+(195048) TC: thermalControl-0 = 103.31, modeled = 103.31, target = 100.00, HeatSinkTemp = 26.12, output = 87.7, timeout = 13400, expectedTempC = 30.00, targetTecRampRate = 2.081223
+(195198) TC: thermalControl-0 = 103.49, modeled = 103.49, target = 100.00, HeatSinkTemp = 26.13, output = 90.2, timeout = 13550, expectedTempC = 30.00, targetTecRampRate = 2.075729
+DATAQ: | Stg1ThermoTempC = 44.15  |
+(195349) TC: thermalControl-0 = 103.66, modeled = 103.66, target = 100.00, HeatSinkTemp = 26.14, output = 87.3, timeout = 13700, expectedTempC = 30.00, targetTecRampRate = 2.070618
+(195499) TC: thermalControl-0 = 103.87, modeled = 103.87, target = 100.00, HeatSinkTemp = 26.15, output = 87.0, timeout = 13850, expectedTempC = 30.00, targetTecRampRate = 2.066269
+(195650) TC: thermalControl-0 = 104.10, modeled = 104.10, target = 100.00, HeatSinkTemp = 26.16, output = 91.4, timeout = 14000, expectedTempC = 30.00, targetTecRampRate = 2.063370
+(195799) TC: thermalControl-0 = 104.25, modeled = 104.25, target = 100.00, HeatSinkTemp = 26.17, output = 86.0, timeout = 14150, expectedTempC = 30.00, targetTecRampRate = 2.056808
+DATAQ: | Stg1ThermoTempC = 44.76  |
+(195949) TC: thermalControl-0 = 104.39, modeled = 104.39, target = 100.00, HeatSinkTemp = 26.18, output = 88.3, timeout = 14300, expectedTempC = 30.00, targetTecRampRate = 2.050171
+(196099) TC: thermalControl-0 = 104.63, modeled = 104.63, target = 100.00, HeatSinkTemp = 26.19, output = 79.3, timeout = 14450, expectedTempC = 30.00, targetTecRampRate = 2.047577
+(196249) TC: thermalControl-0 = 104.78, modeled = 104.78, target = 100.00, HeatSinkTemp = 26.20, output = 90.5, timeout = 14600, expectedTempC = 30.00, targetTecRampRate = 2.041397
+(196399) TC: thermalControl-0 = 104.90, modeled = 104.90, target = 100.00, HeatSinkTemp = 26.20, output = 89.4, timeout = 14750, expectedTempC = 30.00, targetTecRampRate = 2.034225
+DATAQ: | Stg1ThermoTempC = 45.77  |
+(196549) TC: thermalControl-0 = 105.11, modeled = 105.11, target = 100.00, HeatSinkTemp = 26.21, output = 82.3, timeout = 14900, expectedTempC = 30.00, targetTecRampRate = 2.030487
+(196699) TC: thermalControl-0 = 105.24, modeled = 105.24, target = 100.00, HeatSinkTemp = 26.22, output = 89.3, timeout = 15050, expectedTempC = 30.00, targetTecRampRate = 2.023468
+(196849) TC: thermalControl-0 = 105.39, modeled = 105.39, target = 100.00, HeatSinkTemp = 26.22, output = 90.0, timeout = 15200, expectedTempC = 30.00, targetTecRampRate = 2.017517
+(196999) TC: thermalControl-0 = 105.57, modeled = 105.57, target = 100.00, HeatSinkTemp = 26.23, output = 88.7, timeout = 15350, expectedTempC = 30.00, targetTecRampRate = 2.012405
+DATAQ: | Stg1ThermoTempC = 48.19  |
+(197149) TC: thermalControl-0 = 105.76, modeled = 105.76, target = 100.00, HeatSinkTemp = 26.24, output = 83.0, timeout = 15500, expectedTempC = 30.00, targetTecRampRate = 2.007904
+(197301) TC: thermalControl-0 = 106.03, modeled = 106.03, target = 100.00, HeatSinkTemp = 26.25, output = 86.8, timeout = 15650, expectedTempC = 30.00, targetTecRampRate = 2.006683
+(197451) TC: thermalControl-0 = 106.20, modeled = 106.20, target = 100.00, HeatSinkTemp = 26.26, output = 84.9, timeout = 15800, expectedTempC = 30.00, targetTecRampRate = 2.001877
+(197602) TC: thermalControl-0 = 106.39, modeled = 106.39, target = 100.00, HeatSinkTemp = 26.26, output = 90.2, timeout = 15950, expectedTempC = 30.00, targetTecRampRate = 1.997147
+DATAQ: | Stg1ThermoTempC = 48.8  |
+(197752) TC: thermalControl-0 = 106.54, modeled = 106.54, target = 100.00, HeatSinkTemp = 26.27, output = 87.2, timeout = 16100, expectedTempC = 30.00, targetTecRampRate = 1.991348
+(197902) TC: thermalControl-0 = 106.74, modeled = 106.74, target = 100.00, HeatSinkTemp = 26.28, output = 88.5, timeout = 16250, expectedTempC = 30.00, targetTecRampRate = 1.987457
+(198053) TC: thermalControl-0 = 106.93, modeled = 106.93, target = 100.00, HeatSinkTemp = 26.28, output = 84.6, timeout = 16400, expectedTempC = 30.00, targetTecRampRate = 1.983185
+(198203) TC: thermalControl-0 = 107.10, modeled = 107.10, target = 100.00, HeatSinkTemp = 26.29, output = 92.2, timeout = 16550, expectedTempC = 30.00, targetTecRampRate = 1.978073
+DATAQ: | Stg1ThermoTempC = 54.12  |
+(198353) TC: thermalControl-0 = 107.30, modeled = 107.30, target = 100.00, HeatSinkTemp = 26.31, output = 87.4, timeout = 16700, expectedTempC = 30.00, targetTecRampRate = 1.974487
+(198503) TC: thermalControl-0 = 107.45, modeled = 107.45, target = 100.00, HeatSinkTemp = 26.31, output = 93.3, timeout = 16850, expectedTempC = 30.00, targetTecRampRate = 1.968384
+(198653) TC: thermalControl-0 = 107.57, modeled = 107.57, target = 100.00, HeatSinkTemp = 26.32, output = 88.4, timeout = 17000, expectedTempC = 30.00, targetTecRampRate = 1.961670
+(198804) TC: thermalControl-0 = 107.82, modeled = 107.82, target = 100.00, HeatSinkTemp = 26.33, output = 89.4, timeout = 17150, expectedTempC = 30.00, targetTecRampRate = 1.960144
+DATAQ: | Stg1ThermoTempC = 52.99  |
+(198954) TC: thermalControl-0 = 108.01, modeled = 108.01, target = 100.00, HeatSinkTemp = 26.34, output = 92.1, timeout = 17300, expectedTempC = 30.00, targetTecRampRate = 1.955719
+(199105) TC: thermalControl-0 = 108.25, modeled = 108.25, target = 100.00, HeatSinkTemp = 26.35, output = 88.0, timeout = 17450, expectedTempC = 30.00, targetTecRampRate = 1.953888
+(199255) TC: thermalControl-0 = 108.36, modeled = 108.36, target = 100.00, HeatSinkTemp = 26.35, output = 91.4, timeout = 17600, expectedTempC = 30.00, targetTecRampRate = 1.946564
+(199405) TC: thermalControl-0 = 108.56, modeled = 108.56, target = 100.00, HeatSinkTemp = 26.37, output = 94.0, timeout = 17750, expectedTempC = 30.00, targetTecRampRate = 1.942825
+DATAQ: | Stg1ThermoTempC = 55.07  |
+(199555) TC: thermalControl-0 = 108.72, modeled = 108.72, target = 100.00, HeatSinkTemp = 26.38, output = 94.8, timeout = 17900, expectedTempC = 30.00, targetTecRampRate = 1.937714
+(199705) TC: thermalControl-0 = 108.92, modeled = 108.92, target = 100.00, HeatSinkTemp = 26.39, output = 93.5, timeout = 18050, expectedTempC = 30.00, targetTecRampRate = 1.934204
+(199855) TC: thermalControl-0 = 109.14, modeled = 109.14, target = 100.00, HeatSinkTemp = 26.40, output = 87.8, timeout = 18200, expectedTempC = 30.00, targetTecRampRate = 1.931381
+(200006) TC: thermalControl-0 = 109.43, modeled = 109.43, target = 100.00, HeatSinkTemp = 26.41, output = 87.1, timeout = 18350, expectedTempC = 30.00, targetTecRampRate = 1.931152
+DATAQ: | Stg1ThermoTempC = 54.75  |
+(200156) TC: thermalControl-0 = 109.57, modeled = 109.57, target = 100.00, HeatSinkTemp = 26.41, output = 90.3, timeout = 18500, expectedTempC = 30.00, targetTecRampRate = 1.925430
+(200306) TC: thermalControl-0 = 109.75, modeled = 109.75, target = 100.00, HeatSinkTemp = 26.43, output = 91.6, timeout = 18650, expectedTempC = 30.00, targetTecRampRate = 1.921005
+(200456) TC: thermalControl-0 = 109.94, modeled = 109.94, target = 100.00, HeatSinkTemp = 26.45, output = 94.2, timeout = 18800, expectedTempC = 30.00, targetTecRampRate = 1.917343
+(200606) TC: thermalControl-0 = 110.10, modeled = 110.10, target = 100.00, HeatSinkTemp = 26.45, output = 90.9, timeout = 18950, expectedTempC = 30.00, targetTecRampRate = 1.912079
+DATAQ: | Stg1ThermoTempC = 54.63  |
+(200756) TC: thermalControl-0 = 110.31, modeled = 110.31, target = 100.00, HeatSinkTemp = 26.46, output = 91.6, timeout = 19100, expectedTempC = 30.00, targetTecRampRate = 1.909027
+(200906) TC: thermalControl-0 = 110.53, modeled = 110.53, target = 100.00, HeatSinkTemp = 26.47, output = 90.6, timeout = 19250, expectedTempC = 30.00, targetTecRampRate = 1.906738
+(201056) TC: thermalControl-0 = 110.80, modeled = 110.80, target = 100.00, HeatSinkTemp = 26.49, output = 81.0, timeout = 19400, expectedTempC = 30.00, targetTecRampRate = 1.906052
+(201207) TC: thermalControl-0 = 110.98, modeled = 110.98, target = 100.00, HeatSinkTemp = 26.50, output = 95.3, timeout = 19550, expectedTempC = 30.00, targetTecRampRate = 1.901474
+DATAQ: | Stg1ThermoTempC = 55.18  |
+(201357) TC: thermalControl-0 = 111.21, modeled = 111.21, target = 100.00, HeatSinkTemp = 26.52, output = 93.4, timeout = 19700, expectedTempC = 30.00, targetTecRampRate = 1.899338
+(201507) TC: thermalControl-0 = 111.35, modeled = 111.35, target = 100.00, HeatSinkTemp = 26.52, output = 98.4, timeout = 19850, expectedTempC = 30.00, targetTecRampRate = 1.893768
+(201657) TC: thermalControl-0 = 111.51, modeled = 111.51, target = 100.00, HeatSinkTemp = 26.54, output = 97.2, timeout = 20000, expectedTempC = 30.00, targetTecRampRate = 1.888657
+(201807) TC: thermalControl-0 = 111.75, modeled = 111.75, target = 100.00, HeatSinkTemp = 26.54, output = 88.9, timeout = 20150, expectedTempC = 30.00, targetTecRampRate = 1.887054
+DATAQ: | Stg1ThermoTempC = 55.76  |
+(201957) TC: thermalControl-0 = 112.00, modeled = 112.00, target = 100.00, HeatSinkTemp = 26.56, output = 89.6, timeout = 20300, expectedTempC = 30.00, targetTecRampRate = 1.885681
+(202107) TC: thermalControl-0 = 112.17, modeled = 112.17, target = 100.00, HeatSinkTemp = 26.56, output = 97.0, timeout = 20450, expectedTempC = 30.00, targetTecRampRate = 1.881256
+(202257) TC: thermalControl-0 = 112.41, modeled = 112.41, target = 100.00, HeatSinkTemp = 26.58, output = 94.1, timeout = 20600, expectedTempC = 30.00, targetTecRampRate = 1.879730
+(202408) TC: thermalControl-0 = 112.58, modeled = 112.58, target = 100.00, HeatSinkTemp = 26.59, output = 99.7, timeout = 20750, expectedTempC = 30.00, targetTecRampRate = 1.875305
+DATAQ: | Stg1ThermoTempC = 56.43  |
+(202558) TC: thermalControl-0 = 112.80, modeled = 112.80, target = 100.00, HeatSinkTemp = 26.60, output = 92.5, timeout = 20900, expectedTempC = 30.00, targetTecRampRate = 1.873016
+(202708) TC: thermalControl-0 = 113.04, modeled = 113.04, target = 100.00, HeatSinkTemp = 26.62, output = 88.8, timeout = 21050, expectedTempC = 30.00, targetTecRampRate = 1.871185
+(202858) TC: thermalControl-0 = 113.20, modeled = 113.20, target = 100.00, HeatSinkTemp = 26.63, output = 98.9, timeout = 21200, expectedTempC = 30.00, targetTecRampRate = 1.866455
+(203008) TC: thermalControl-0 = 113.49, modeled = 113.49, target = 100.00, HeatSinkTemp = 26.65, output = 94.1, timeout = 21350, expectedTempC = 30.00, targetTecRampRate = 1.866760
+DATAQ: | Stg1ThermoTempC = 56.99  |
+(203159) TC: thermalControl-0 = 113.60, modeled = 113.60, target = 100.00, HeatSinkTemp = 26.64, output = 100.0, timeout = 21500, expectedTempC = 30.00, targetTecRampRate = 1.860352
+(203308) TC: thermalControl-0 = 113.84, modeled = 113.84, target = 100.00, HeatSinkTemp = 26.67, output = 95.6, timeout = 21650, expectedTempC = 30.00, targetTecRampRate = 1.858826
+(203458) TC: thermalControl-0 = 114.01, modeled = 114.01, target = 100.00, HeatSinkTemp = 26.67, output = 95.8, timeout = 21800, expectedTempC = 30.00, targetTecRampRate = 1.854095
+(203608) TC: thermalControl-0 = 114.22, modeled = 114.22, target = 100.00, HeatSinkTemp = 26.69, output = 95.0, timeout = 21950, expectedTempC = 30.00, targetTecRampRate = 1.851807
+DATAQ: | Stg1ThermoTempC = 57.75  |
+(203758) TC: thermalControl-0 = 114.42, modeled = 114.42, target = 100.00, HeatSinkTemp = 26.70, output = 97.3, timeout = 22100, expectedTempC = 30.00, targetTecRampRate = 1.848602
+(203908) TC: thermalControl-0 = 114.74, modeled = 114.74, target = 100.00, HeatSinkTemp = 26.73, output = 99.3, timeout = 22250, expectedTempC = 30.00, targetTecRampRate = 1.850281
+(204058) TC: thermalControl-0 = 114.93, modeled = 114.93, target = 100.00, HeatSinkTemp = 26.73, output = 94.2, timeout = 22400, expectedTempC = 30.00, targetTecRampRate = 1.846924
+(204209) TC: thermalControl-0 = 115.16, modeled = 115.16, target = 100.00, HeatSinkTemp = 26.75, output = 98.9, timeout = 22550, expectedTempC = 30.00, targetTecRampRate = 1.844940
+DATAQ: | Stg1ThermoTempC = 58.61  |
+(204358) TC: thermalControl-0 = 115.38, modeled = 115.38, target = 100.00, HeatSinkTemp = 26.76, output = 93.5, timeout = 22700, expectedTempC = 30.00, targetTecRampRate = 1.842804
+(204508) TC: thermalControl-0 = 115.62, modeled = 115.62, target = 100.00, HeatSinkTemp = 26.78, output = 98.8, timeout = 22850, expectedTempC = 30.00, targetTecRampRate = 1.841278
+(204658) TC: thermalControl-0 = 115.75, modeled = 115.75, target = 100.00, HeatSinkTemp = 26.78, output = 98.5, timeout = 23000, expectedTempC = 30.00, targetTecRampRate = 1.835632
+(204808) TC: thermalControl-0 = 115.95, modeled = 115.95, target = 100.00, HeatSinkTemp = 26.81, output = 96.9, timeout = 23150, expectedTempC = 30.00, targetTecRampRate = 1.832275
+DATAQ: | Stg1ThermoTempC = 59.46  |
+(204958) TC: thermalControl-0 = 116.22, modeled = 116.22, target = 100.00, HeatSinkTemp = 26.82, output = 97.8, timeout = 23300, expectedTempC = 30.00, targetTecRampRate = 1.832123
+(205109) TC: thermalControl-0 = 116.43, modeled = 116.43, target = 100.00, HeatSinkTemp = 26.83, output = 93.8, timeout = 23450, expectedTempC = 30.00, targetTecRampRate = 1.829681
+(205259) TC: thermalControl-0 = 116.71, modeled = 116.71, target = 100.00, HeatSinkTemp = 26.85, output = 93.5, timeout = 23600, expectedTempC = 30.00, targetTecRampRate = 1.829987
+(205409) TC: thermalControl-0 = 116.96, modeled = 116.96, target = 100.00, HeatSinkTemp = 26.86, output = 93.3, timeout = 23750, expectedTempC = 30.00, targetTecRampRate = 1.828918
+DATAQ: | Stg1ThermoTempC = 60.21  |
+(205560) TC: thermalControl-0 = 117.11, modeled = 117.11, target = 100.00, HeatSinkTemp = 26.88, output = 98.4, timeout = 23900, expectedTempC = 30.00, targetTecRampRate = 1.824036
+(205709) TC: thermalControl-0 = 117.33, modeled = 117.33, target = 100.00, HeatSinkTemp = 26.89, output = 96.7, timeout = 24050, expectedTempC = 30.00, targetTecRampRate = 1.821747
+(205861) TC: thermalControl-0 = 117.63, modeled = 117.63, target = 100.00, HeatSinkTemp = 26.91, output = 100.0, timeout = 24200, expectedTempC = 30.00, targetTecRampRate = 1.822815
+(206010) TC: thermalControl-0 = 117.78, modeled = 117.78, target = 100.00, HeatSinkTemp = 26.92, output = 100.0, timeout = 24350, expectedTempC = 30.00, targetTecRampRate = 1.818085
+DATAQ: | Stg1ThermoTempC = 61.02  |
+(206161) TC: thermalControl-0 = 118.03, modeled = 118.03, target = 100.00, HeatSinkTemp = 26.94, output = 98.0, timeout = 24500, expectedTempC = 30.00, targetTecRampRate = 1.817169
+(206311) TC: thermalControl-0 = 118.23, modeled = 118.23, target = 100.00, HeatSinkTemp = 26.95, output = 99.5, timeout = 24650, expectedTempC = 30.00, targetTecRampRate = 1.814270
+(206461) TC: thermalControl-0 = 118.45, modeled = 118.45, target = 100.00, HeatSinkTemp = 26.97, output = 94.6, timeout = 24800, expectedTempC = 30.00, targetTecRampRate = 1.812286
+(206611) TC: thermalControl-0 = 118.69, modeled = 118.69, target = 100.00, HeatSinkTemp = 26.98, output = 100.0, timeout = 24950, expectedTempC = 30.00, targetTecRampRate = 1.811066
+DATAQ: | Stg1ThermoTempC = 61.73  |
+(206761) TC: thermalControl-0 = 118.96, modeled = 118.96, target = 100.00, HeatSinkTemp = 27.00, output = 92.1, timeout = 25100, expectedTempC = 30.00, targetTecRampRate = 1.810913
+(206911) TC: thermalControl-0 = 119.21, modeled = 119.21, target = 100.00, HeatSinkTemp = 27.02, output = 99.0, timeout = 25250, expectedTempC = 30.00, targetTecRampRate = 1.809998
+(207061) TC: thermalControl-0 = 119.41, modeled = 119.41, target = 100.00, HeatSinkTemp = 27.03, output = 99.3, timeout = 25400, expectedTempC = 30.00, targetTecRampRate = 1.807404
+(207211) TC: thermalControl-0 = 119.62, modeled = 119.62, target = 100.00, HeatSinkTemp = 27.04, output = 96.5, timeout = 25550, expectedTempC = 30.00, targetTecRampRate = 1.804657
+DATAQ: | Stg1ThermoTempC = 62.55  |
+(207361) TC: thermalControl-0 = 119.86, modeled = 119.86, target = 100.00, HeatSinkTemp = 27.05, output = 95.5, timeout = 25700, expectedTempC = 30.00, targetTecRampRate = 1.803436
+(207511) TC: thermalControl-0 = 120.04, modeled = 120.04, target = 100.00, HeatSinkTemp = 27.07, output = 48.8, timeout = 25850, expectedTempC = 30.00, targetTecRampRate = 1.800079
+(207661) TC: thermalControl-0 = 120.26, modeled = 120.26, target = 100.00, HeatSinkTemp = 27.09, output = 0.0, timeout = 25900, expectedTempC = 30.00, targetTecRampRate = 1.797943
+(207811) TC: thermalControl-0 = 120.23, modeled = 120.23, target = 100.00, HeatSinkTemp = 27.11, output = 0.0, timeout = 25900, expectedTempC = 30.00, targetTecRampRate = 1.786499
+(207961) TC: thermalControl-0 = 119.90, modeled = 119.90, target = 100.00, HeatSinkTemp = 27.13, output = 50.0, timeout = 25900, expectedTempC = 30.00, targetTecRampRate = 1.762543
+DATAQ: | Stg1ThermoTempC = 63.39  |
+(208111) TC: thermalControl-0 = 119.27, modeled = 119.27, target = 100.00, HeatSinkTemp = 27.17, output = 100.0, timeout = 26050, expectedTempC = 30.00, targetTecRampRate = 1.727295
+(208262) TC: thermalControl-0 = 118.48, modeled = 118.48, target = 100.00, HeatSinkTemp = 27.24, output = 100.0, timeout = 26200, expectedTempC = 30.00, targetTecRampRate = 1.685638
+(208412) TC: thermalControl-0 = 118.05, modeled = 118.05, target = 100.00, HeatSinkTemp = 27.28, output = 100.0, timeout = 26350, expectedTempC = 30.00, targetTecRampRate = 1.658783
+(208563) TC: thermalControl-0 = 117.90, modeled = 117.90, target = 100.00, HeatSinkTemp = 27.33, output = 100.0, timeout = 26500, expectedTempC = 30.00, targetTecRampRate = 1.642914
+DATAQ: | Stg1ThermoTempC = 64.41  |
+(208713) TC: thermalControl-0 = 117.97, modeled = 117.97, target = 100.00, HeatSinkTemp = 27.37, output = 98.6, timeout = 26650, expectedTempC = 30.00, targetTecRampRate = 1.635895
+(208863) TC: thermalControl-0 = 118.11, modeled = 118.11, target = 100.00, HeatSinkTemp = 27.39, output = 99.7, timeout = 26800, expectedTempC = 30.00, targetTecRampRate = 1.632080
+(209014) TC: thermalControl-0 = 118.38, modeled = 118.38, target = 100.00, HeatSinkTemp = 27.42, output = 92.2, timeout = 26950, expectedTempC = 30.00, targetTecRampRate = 1.632996
+(209164) TC: thermalControl-0 = 118.65, modeled = 118.65, target = 100.00, HeatSinkTemp = 27.44, output = 97.5, timeout = 27100, expectedTempC = 30.00, targetTecRampRate = 1.633911
+DATAQ: | Stg1ThermoTempC = 65.19  |
+(209314) TC: thermalControl-0 = 118.92, modeled = 118.92, target = 100.00, HeatSinkTemp = 27.46, output = 93.3, timeout = 27250, expectedTempC = 30.00, targetTecRampRate = 1.634979
+(209464) TC: thermalControl-0 = 119.16, modeled = 119.16, target = 100.00, HeatSinkTemp = 27.47, output = 93.6, timeout = 27400, expectedTempC = 30.00, targetTecRampRate = 1.634674
+(209614) TC: thermalControl-0 = 119.37, modeled = 119.37, target = 100.00, HeatSinkTemp = 27.49, output = 99.5, timeout = 27550, expectedTempC = 30.00, targetTecRampRate = 1.633453
+(209765) TC: thermalControl-0 = 119.63, modeled = 119.63, target = 100.00, HeatSinkTemp = 27.50, output = 99.2, timeout = 27700, expectedTempC = 30.00, targetTecRampRate = 1.633911
+DATAQ: | Stg1ThermoTempC = 65.93  |
+(209914) TC: thermalControl-0 = 119.87, modeled = 119.87, target = 100.00, HeatSinkTemp = 27.52, output = 99.2, timeout = 27850, expectedTempC = 30.00, targetTecRampRate = 1.633911
+(210065) TC: thermalControl-0 = 120.15, modeled = 120.15, target = 100.00, HeatSinkTemp = 27.54, output = 0.0, timeout = 28000, expectedTempC = 30.00, targetTecRampRate = 1.634979
+(210215) TC: thermalControl-0 = 120.34, modeled = 120.34, target = 100.00, HeatSinkTemp = 27.56, output = 0.0, timeout = 28000, expectedTempC = 30.00, targetTecRampRate = 1.632690
+(210365) TC: thermalControl-0 = 120.27, modeled = 120.27, target = 100.00, HeatSinkTemp = 27.58, output = 0.0, timeout = 28000, expectedTempC = 30.00, targetTecRampRate = 1.620331
+DATAQ: | Stg1ThermoTempC = 66.56  |
+(210516) TC: thermalControl-0 = 119.79, modeled = 119.79, target = 100.00, HeatSinkTemp = 27.60, output = 100.0, timeout = 28050, expectedTempC = 30.00, targetTecRampRate = 1.591797
+(210666) TC: thermalControl-0 = 119.12, modeled = 119.12, target = 100.00, HeatSinkTemp = 27.66, output = 100.0, timeout = 28200, expectedTempC = 30.00, targetTecRampRate = 1.556091
+(210816) TC: thermalControl-0 = 118.41, modeled = 118.41, target = 100.00, HeatSinkTemp = 27.71, output = 100.0, timeout = 28350, expectedTempC = 30.00, targetTecRampRate = 1.518555
+(210966) TC: thermalControl-0 = 118.13, modeled = 118.13, target = 100.00, HeatSinkTemp = 27.75, output = 100.0, timeout = 28500, expectedTempC = 30.00, targetTecRampRate = 1.498718
+DATAQ: | Stg1ThermoTempC = 67.27  |
+(211116) TC: thermalControl-0 = 118.10, modeled = 118.10, target = 100.00, HeatSinkTemp = 27.79, output = 100.0, timeout = 28650, expectedTempC = 30.00, targetTecRampRate = 1.488647
+(211266) TC: thermalControl-0 = 118.21, modeled = 118.21, target = 100.00, HeatSinkTemp = 27.82, output = 96.9, timeout = 28800, expectedTempC = 30.00, targetTecRampRate = 1.484070
+(211416) TC: thermalControl-0 = 118.45, modeled = 118.45, target = 100.00, HeatSinkTemp = 27.85, output = 98.4, timeout = 28950, expectedTempC = 30.00, targetTecRampRate = 1.484833
+(211566) TC: thermalControl-0 = 118.66, modeled = 118.66, target = 100.00, HeatSinkTemp = 27.86, output = 94.0, timeout = 29100, expectedTempC = 30.00, targetTecRampRate = 1.484222
+DATAQ: | Stg1ThermoTempC = 68.03  |
+(211717) TC: thermalControl-0 = 119.05, modeled = 119.05, target = 100.00, HeatSinkTemp = 27.89, output = 99.0, timeout = 29250, expectedTempC = 30.00, targetTecRampRate = 1.490936
+(211867) TC: thermalControl-0 = 119.28, modeled = 119.28, target = 100.00, HeatSinkTemp = 27.90, output = 98.0, timeout = 29400, expectedTempC = 30.00, targetTecRampRate = 1.491241
+(212018) TC: thermalControl-0 = 119.60, modeled = 119.60, target = 100.00, HeatSinkTemp = 27.92, output = 96.5, timeout = 29550, expectedTempC = 30.00, targetTecRampRate = 1.495056
+(212168) TC: thermalControl-0 = 119.85, modeled = 119.85, target = 100.00, HeatSinkTemp = 27.94, output = 98.0, timeout = 29700, expectedTempC = 30.00, targetTecRampRate = 1.495972
+DATAQ: | Stg1ThermoTempC = 68.73  |
+(212319) TC: thermalControl-0 = 120.11, modeled = 120.11, target = 100.00, HeatSinkTemp = 27.95, output = 0.0, timeout = 29850, expectedTempC = 30.00, targetTecRampRate = 1.497345
+(212470) TC: thermalControl-0 = 120.32, modeled = 120.32, target = 100.00, HeatSinkTemp = 27.96, output = 0.0, timeout = 29850, expectedTempC = 30.00, targetTecRampRate = 1.496582
+(212620) TC: thermalControl-0 = 120.24, modeled = 120.24, target = 100.00, HeatSinkTemp = 27.97, output = 0.0, timeout = 29850, expectedTempC = 30.00, targetTecRampRate = 1.484833
+(212770) TC: thermalControl-0 = 119.75, modeled = 119.75, target = 100.00, HeatSinkTemp = 28.00, output = 100.0, timeout = 29900, expectedTempC = 30.00, targetTecRampRate = 1.456451
+DATAQ: | Stg1ThermoTempC = 69.31  |
+(212920) TC: thermalControl-0 = 119.13, modeled = 119.13, target = 100.00, HeatSinkTemp = 28.05, output = 100.0, timeout = 30050, expectedTempC = 30.00, targetTecRampRate = 1.423340
+(213070) TC: thermalControl-0 = 118.50, modeled = 118.50, target = 100.00, HeatSinkTemp = 28.10, output = 100.0, timeout = 30200, expectedTempC = 30.00, targetTecRampRate = 1.389923
+(213221) TC: thermalControl-0 = 118.25, modeled = 118.25, target = 100.00, HeatSinkTemp = 28.16, output = 100.0, timeout = 30350, expectedTempC = 30.00, targetTecRampRate = 1.372223
+(213371) TC: thermalControl-0 = 118.25, modeled = 118.25, target = 100.00, HeatSinkTemp = 28.20, output = 100.0, timeout = 30500, expectedTempC = 30.00, targetTecRampRate = 1.363678
+DATAQ: | Stg1ThermoTempC = 69.96  |
+(213521) TC: thermalControl-0 = 118.31, modeled = 118.31, target = 100.00, HeatSinkTemp = 28.22, output = 97.1, timeout = 30650, expectedTempC = 30.00, targetTecRampRate = 1.358032
+(213672) TC: thermalControl-0 = 118.61, modeled = 118.61, target = 100.00, HeatSinkTemp = 28.25, output = 99.0, timeout = 30800, expectedTempC = 30.00, targetTecRampRate = 1.362000
+(213822) TC: thermalControl-0 = 118.89, modeled = 118.89, target = 100.00, HeatSinkTemp = 28.27, output = 100.0, timeout = 30950, expectedTempC = 30.00, targetTecRampRate = 1.364746
+(213972) TC: thermalControl-0 = 119.20, modeled = 119.20, target = 100.00, HeatSinkTemp = 28.29, output = 93.4, timeout = 31100, expectedTempC = 30.00, targetTecRampRate = 1.369019
+DATAQ: | Stg1ThermoTempC = 70.69  |
+(214122) TC: thermalControl-0 = 119.39, modeled = 119.39, target = 100.00, HeatSinkTemp = 28.30, output = 97.9, timeout = 31250, expectedTempC = 30.00, targetTecRampRate = 1.368408
+(214272) TC: thermalControl-0 = 119.59, modeled = 119.59, target = 100.00, HeatSinkTemp = 28.31, output = 90.4, timeout = 31400, expectedTempC = 30.00, targetTecRampRate = 1.368561
+(214422) TC: thermalControl-0 = 119.88, modeled = 119.88, target = 100.00, HeatSinkTemp = 28.33, output = 98.5, timeout = 31550, expectedTempC = 30.00, targetTecRampRate = 1.371613
+(214572) TC: thermalControl-0 = 120.11, modeled = 120.11, target = 100.00, HeatSinkTemp = 28.35, output = 0.0, timeout = 31700, expectedTempC = 30.00, targetTecRampRate = 1.372528
+DATAQ: | Stg1ThermoTempC = 71.24  |
+(214722) TC: thermalControl-0 = 120.30, modeled = 120.30, target = 100.00, HeatSinkTemp = 28.36, output = 0.0, timeout = 31700, expectedTempC = 30.00, targetTecRampRate = 1.371918
+(214873) TC: thermalControl-0 = 120.16, modeled = 120.16, target = 100.00, HeatSinkTemp = 28.38, output = 0.0, timeout = 31700, expectedTempC = 30.00, targetTecRampRate = 1.358032
+(215023) TC: thermalControl-0 = 119.79, modeled = 119.79, target = 100.00, HeatSinkTemp = 28.42, output = 100.0, timeout = 31750, expectedTempC = 30.00, targetTecRampRate = 1.335449
+(215174) TC: thermalControl-0 = 119.05, modeled = 119.05, target = 100.00, HeatSinkTemp = 28.47, output = 100.0, timeout = 31900, expectedTempC = 30.00, targetTecRampRate = 1.298523
+DATAQ: | Stg1ThermoTempC = 71.83  |
+(215324) TC: thermalControl-0 = 118.53, modeled = 118.53, target = 100.00, HeatSinkTemp = 28.52, output = 100.0, timeout = 32050, expectedTempC = 30.00, targetTecRampRate = 1.270142
+(215474) TC: thermalControl-0 = 118.25, modeled = 118.25, target = 100.00, HeatSinkTemp = 28.56, output = 100.0, timeout = 32200, expectedTempC = 30.00, targetTecRampRate = 1.251678
+(215624) TC: thermalControl-0 = 118.25, modeled = 118.25, target = 100.00, HeatSinkTemp = 28.59, output = 97.1, timeout = 32350, expectedTempC = 30.00, targetTecRampRate = 1.244049
+(215774) TC: thermalControl-0 = 118.38, modeled = 118.38, target = 100.00, HeatSinkTemp = 28.62, output = 98.5, timeout = 32500, expectedTempC = 30.00, targetTecRampRate = 1.242065
+DATAQ: | Stg1ThermoTempC = 72.4  |
+(215925) TC: thermalControl-0 = 118.63, modeled = 118.63, target = 100.00, HeatSinkTemp = 28.64, output = 99.5, timeout = 32650, expectedTempC = 30.00, targetTecRampRate = 1.244659
+(216075) TC: thermalControl-0 = 118.85, modeled = 118.85, target = 100.00, HeatSinkTemp = 28.65, output = 97.1, timeout = 32800, expectedTempC = 30.00, targetTecRampRate = 1.245575
+(216225) TC: thermalControl-0 = 119.24, modeled = 119.24, target = 100.00, HeatSinkTemp = 28.67, output = 91.2, timeout = 32950, expectedTempC = 30.00, targetTecRampRate = 1.253662
+(216375) TC: thermalControl-0 = 119.49, modeled = 119.49, target = 100.00, HeatSinkTemp = 28.68, output = 98.7, timeout = 33100, expectedTempC = 30.00, targetTecRampRate = 1.256561
+DATAQ: | Stg1ThermoTempC = 73.05  |
+(216525) TC: thermalControl-0 = 119.81, modeled = 119.81, target = 100.00, HeatSinkTemp = 28.71, output = 97.1, timeout = 33250, expectedTempC = 30.00, targetTecRampRate = 1.261597
+(216676) TC: thermalControl-0 = 120.10, modeled = 120.10, target = 100.00, HeatSinkTemp = 28.72, output = 0.0, timeout = 33400, expectedTempC = 30.00, targetTecRampRate = 1.265564
+(216825) TC: thermalControl-0 = 120.29, modeled = 120.29, target = 100.00, HeatSinkTemp = 28.73, output = 0.0, timeout = 33400, expectedTempC = 30.00, targetTecRampRate = 1.265411
+(216975) TC: thermalControl-0 = 120.28, modeled = 120.28, target = 100.00, HeatSinkTemp = 28.74, output = 0.0, timeout = 33400, expectedTempC = 30.00, targetTecRampRate = 1.257324
+DATAQ: | Stg1ThermoTempC = 73.6  |
+(217125) TC: thermalControl-0 = 119.82, modeled = 119.82, target = 100.00, HeatSinkTemp = 28.77, output = 50.0, timeout = 33400, expectedTempC = 30.00, targetTecRampRate = 1.231995
+(217275) TC: thermalControl-0 = 119.18, modeled = 119.18, target = 100.00, HeatSinkTemp = 28.81, output = 100.0, timeout = 33550, expectedTempC = 30.00, targetTecRampRate = 1.199493
+(217425) TC: thermalControl-0 = 118.48, modeled = 118.48, target = 100.00, HeatSinkTemp = 28.87, output = 100.0, timeout = 33700, expectedTempC = 30.00, targetTecRampRate = 1.164551
+***Stage1 OFF***
+(217575) TC: thermalControl-0 = 118.09, modeled = 118.09, target = 100.00, HeatSinkTemp = 28.92, output = 100.0, timeout = 33850, expectedTempC = 30.00, targetTecRampRate = 1.142426
+DATAQ: | Stg1ThermoTempC = 74.16  |
+[-404]
+DATAQ: | Stg1ThermoTempC = 74.73  |
+DATAQ: | Stg1ThermoTempC = 75.25  |
+DATAQ: | Stg1ThermoTempC = 75.61  |

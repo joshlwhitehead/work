@@ -162,6 +162,11 @@ h70_insertD = gd.getData('lidF_insertD_hold70.csv','02Jun2022')
 h90_insertD = gd.getData('lidF_insertD_hold90.csv','02Jun2022')
 h100_insertD = gd.getData('lidF_insertD_hold100.csv','02Jun2022')
 
+h50_insert = gd.getData('lidG_insert_hold50_e.csv','07Jun2022')
+h70_insert = gd.getData('lidG_insert_hold70_h.csv','07Jun2022')
+h90_insert = gd.getData('lidG_insert_hold90_b.csv','07Jun2022')
+h100_insert = gd.getData('lidG_insert_hold100_b.csv','07Jun2022')
+
 
 
 full_fat = gd.getData('lidF_insertF_fatBottom.csv','03Jun2022')
@@ -175,3 +180,7 @@ c30_noInsert = gd.getData('lidF_noInsert_cool30.csv','02Jun2022')
 full_forward = gd.getData('lidG_insertForward_full_b.csv','06Jun2022')
 full_Backward = gd.getData('lidG_insertBackward_full_b.csv','06Jun2022')
 full_x = gd.getData('lidC_lumpCap_noInsert_fixKalman.csv','06Jun2022')
+
+first = gd.getData('lidG_lumpCap_firstRun.csv','07Jun2022')
+sec = gd.getData('lidG_lumpCap_secRun.csv','07Jun2022')
+third = gd.getData('lidG_lumpCap_thirdRun.csv','07Jun2022')

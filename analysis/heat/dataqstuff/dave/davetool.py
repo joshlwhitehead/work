@@ -9,7 +9,7 @@ import pathlib
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QDialog
-date = '06Jun2022'
+date = '07Jun2022'
 
 
 try:

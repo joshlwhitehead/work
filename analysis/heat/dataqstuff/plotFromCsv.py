@@ -58,12 +58,20 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.h90_inf[3])
 # plt.plot(dat.h90_c[3])
 
-plt.plot(dat.full_forward [1])
-plt.plot(dat.full_forward[2],label='forward')
-plt.plot(dat.full_Backward[1])
-plt.plot(dat.full_Backward[2],label='backward')
-plt.plot(dat.full_x[1])
-plt.plot(dat.full_x[2],label='x')
+# plt.plot(dat.full_forward [1])
+# plt.plot(dat.full_forward[2],label='forward')
+# plt.plot(dat.full_Backward[1])
+# plt.plot(dat.full_Backward[2],label='backward')
+# plt.plot(dat.full_x[1])
+# plt.plot(dat.full_x[2],label='x')
+
+plt.plot(dat.first[1])
+plt.plot(dat.first[2],label='first')
+plt.plot(dat.sec[1])
+plt.plot(dat.sec[2],label='sec')
+plt.plot(dat.third[1])
+plt.plot(dat.third[2],label='third')
+
 
 plt.legend()
 plt.grid()

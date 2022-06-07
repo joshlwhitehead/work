@@ -4,7 +4,8 @@ import serial
 from threading import Thread
 import time
 import os
-date = '06Jun2022'
+
+date = '07Jun2022'
 directory = ''.join(['data/',date])
 folder = os.path.isdir(directory)
 if folder == True:

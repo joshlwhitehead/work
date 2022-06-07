@@ -1,0 +1,1509 @@
+DATAQ:  | dataQLiquidStg1 = 25.16 | 
+DATAQ:  | dataQLiquidStg1 = 25.19 | 
+DATAQ:  | dataQLiquidStg1 = 25.21 | 
+DATAQ:  | dataQLiquidStg1 = 25.28 | 
+DATAQ:  | dataQLiquidStg1 = 25.31 | 
+[0;32mI (415996) BLE_PERIPH: App to Instrument Transaction Write 0/541[0m
+[0;32mI (415998) BLE_PERIPH: App to Instrument Transaction Notify 0/541[0m
+[0;32mI (416023) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (416024) BLE_PERIPH: Received 508/541[0m
+[0;32mI (416026) BLE_PERIPH: App to Instrument Transaction Notify 508/541[0m
+[0;32mI (416052) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (416053) BLE_PERIPH: Received 541/541[0m
+[0;32mI (416061) BLE_PERIPH: App to Instrument Transaction Notify 541/541[0m
+DATAQ:  | dataQLiquidStg1 = 25.43 | 
+[0;32mI (416092) ExperimentParam: Parsing experiment parameters:
+[{
+		"doPcr":	false,
+		"doMelt":	false,
+		"doRtSteps":	false,
+		"doSamplePrep":	true,
+		"pcrCycleCount":	3,
+		"colorSensorGain":	6,
+		"samplePrepDoPlunge":	false,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	90,
+				"holdSeconds":	1
+			}, {
+				"tempC":	56,
+				"holdSeconds":	1,
+				"performCapture":	true
+			}, {
+				"tempC":	72,
+				"holdSeconds":	0
+			}],
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	10
+			}, {
+				"tempC":	70,
+				"holdSeconds":	250
+			}],
+		"doContinuousAcquisition":	true,
+		"samplePrepPtcSealTimeMs":	30000,
+		"samplePrepPcrChamberPreheatTempC":	45,
+		"continuousAcquisitionSampleDelayMs":	1000
+	}][0m
+[0;32mI (416151) ExperimentParam: Found parameter doContinuousAcquisition: 1[0m
+[0;32mI (416156) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000[0m
+[0;32mI (416165) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;32mI (416173) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (416180) ExperimentParam: Could not find parameter colorSensorIntegrationTimeMs, using default value: 50[0m
+[0;32mI (416190) ExperimentParam: Could not find parameter excitationOnDelayTimeMs, using default value: 5[0m
+[0;32mI (416200) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100[0m
+[0;32mI (416210) ExperimentParam: Could not find parameter temperaturecaptureDelayMs, using default value: 3000[0m
+[0;32mI (416220) ExperimentParam: Found parameter doSamplePrep: 1[0m
+[0;32mI (416227) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (416235) ExperimentParam: Found parameter holdSeconds: 10.00[0m
+[0;32mI (416239) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (416249) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (416259) ExperimentParam: Found parameter tempC: 70.00[0m
+[0;33mW (416265) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (416272) ExperimentParam: Found parameter holdSeconds: 250.00[0m
+[0;33mW (416279) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (416286) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (416296) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (416306) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,10.00s,1000.00C/s (?capture=0)},{70.00C,250.00s,1000.00C/s (?capture=0)},[0m
+[0;32mI (416320) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 45.00[0m
+[0;32mI (416328) ExperimentParam: Found parameter samplePrepDoPlunge: 0[0m
+[0;32mI (416335) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0[0m
+[0;32mI (416341) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000[0m
+[0;32mI (416349) ExperimentParam: Found parameter doRtSteps: 0[0m
+[0;32mI (416355) ExperimentParam: Found parameter doPcr: 0[0m
+[0;33mW (416360) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms[0m
+[0;32mI (416369) ExperimentParam: Found parameter doMelt: 0[0m
+[0;32mI (416375) BLE_PERIPH: Sending Response Packet: [32,true,154,[],0][0m
+[32, true, 154, [], 0]
+[0;32mI (416382) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[0;31mE (416391) thermalControlTask: thermal control sleep.[0m
+[0;32mI (416412) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [32,true,154,[],0][0m
+[0;32mI (416435) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (416437) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (416457) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (416490) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (416493) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (416546) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (416547) BLE_PERIPH: Received 18/18[0m
+[0;32mI (416551) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (416588) BLE_PERIPH: Sending Response Packet: [34,true,155,["","",233034,31.90,27.40,2,0,0,0.00],0][0m
+[34, true, 155, ["", "", 233034, 31.90, 27.40, 2, 0, 0, 0.00], 0]
+[0;32mI (416590) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/53[0m
+[0;32mI (416625) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=53 mtu=510, totalSize=53, currentIndex=0): [34,true,155,["","",233034,31.90,27.40,2,0,0,0.00],0][0m
+[0;32mI (416659) BLE_PERIPH: Instrument to App Transaction Write 53/53[0m
+[0;32mI (416662) BLE_PERIPH: Instrument to App Transaction Read/Notify 53/53[0m
+[0;32mI (416682) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (416704) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (416707) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (416737) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (416739) BLE_PERIPH: Received 19/19[0m
+[0;32mI (416742) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (416754) BLE_PERIPH: Sending Response Packet: [33,true,156,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":5,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":70.00,"holdSeconds":250.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (416862) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1294[0m
+[33, true, 156, [{
+		"doContinuousAcquisition":	true,
+		"continuousAcquisitionSampleDelayMs":	1000,
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	50,
+		"excitationOnDelayTimeMs":	5,
+		"excitationOutputPercentage":	100.00,
+		"doSamplePrep":	true,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	70.00,
+				"holdSeconds":	250.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"samplePrepPcrChamberPreheatTempC":	45.00,
+		"samplePrepDoPlunge":	false,
+		"samplePrepDoPtcSeal":	false,
+		"samplePrepPtcSealTimeMs":	30000,
+		"doRtSteps":	false,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	45.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"doPcr":	false,
+		"pcrCycleCount":	45,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	60.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	1
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"doMelt":	false,
+		"meltStartHoldTimeSeconds":	15.00,
+		"meltStartTemp":	55.00,
+		"meltStartCaptureTemp":	60.00,
+		"meltFinishTemp":	100.00,
+		"meltAcquisitionDelayMs":	800.00,
+		"meltAcquisitionsPerC":	5,
+		"meltRampRateDegCPerSecond":	0.25
+	}], 0]
+[0;33mW (416910) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (417024) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1294, currentIndex=0): [33,true,156,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":50,"excitationOnDelayTimeMs":5,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":70.00,"holdSeconds":250.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":fals[0m
+[0;31mE (417079) thermalControlTask: thermal control sleep.[0m
+[0;32mI (417120) BLE_PERIPH: Instrument to App Transaction Write 510/1294[0m
+[0;32mI (417123) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1294[0m
+[0;32mI (417153) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1294, currentIndex=510): e,"samplePrepPtcSealTimeMs":30000,"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00[0m
+[0;32mI (417244) BLE_PERIPH: Instrument to App Transaction Write 1020/1294[0m
+[0;32mI (417247) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1294[0m
+[0;32mI (417266) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=274 mtu=510, totalSize=1294, currentIndex=1020): ,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (417334) BLE_PERIPH: Instrument to App Transaction Write 1294/1294[0m
+[0;32mI (417336) BLE_PERIPH: Instrument to App Transaction Read/Notify 1294/1294[0m
+[0;32mI (417357) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 25.32 | 
+[0;32mI (417593) BLE_PERIPH: App to Instrument Transaction Write 0/84[0m
+[0;32mI (417595) BLE_PERIPH: App to Instrument Transaction Notify 0/84[0m
+[0;32mI (417661) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (417662) BLE_PERIPH: Received 84/84[0m
+[0;32mI (417666) BLE_PERIPH: App to Instrument Transaction Notify 84/84[0m
+[0;32mI (417687) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (417688) experimentStateStartEnter: Experiment starting[0m
+[0;33mW (417735) FILE: Failed to delete file because erno 2[0m
+[0;31mE (417737) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (417738) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;32mI (417748) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;32mI (417752) BLE_PERIPH: Sending Response Packet: [35,true,157,[],0][0m
+[35, true, 157, [], 0]
+[0;32mI (417759) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (417767) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[0;32mI (417780) BLE_PERIPH: Notifying[0m
+[0;33mW (417782) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (417785) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (417794) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (417797) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (417809) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [35,true,157,[],0][0m
+[0;33mW (417815) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (417823) BLE_PERIPH: Notifying[0m
+[0;33mW (417828) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (417833) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (417843) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (417867) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (417875) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (417919) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (417924) _performCapture: [231,0,27.37,1830,18000,11117,3857,2421,1336,2210,1907,401,18000,0][0m
+[0;32mI (417942) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (417944) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (417986) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (417987) BLE_PERIPH: Received 19/19[0m
+[0;32mI (417991) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (418023) _resetThermalControlState: RESET Peltier 0 control state[0m
+[0;32mI (418024) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 30.0[0m
+[0;32mI (418027) _setThermalControlState: thermalControl-0: changing state 3->1[0m
+[0;33mW (418036) tecCurvePredictorSetHoldPower: Setting hold power to -30.228926 at temp 31.894140[0m
+[0;32mI (418044) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;32mI (418057) BLE_PERIPH: Sending Response Packet: [34,true,159,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",348,31.89,27.40,3,2,34,0.00],0][0m
+[0;32mI (418066) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 159, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 348, 31.89, 27.40, 3, 2, 34, 0.00], 0]
+[0;32mI (418099) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,159,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",348,31.89,27.40,3,2,34,0.00],0][0m
+[0;33mW (418124) systemTasksMonitorStack: Stack Watermark(Experiment): 1684[0m
+[0;32mI (418144) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (418147) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (418148) TC: thermalControl-0 = 31.89, modeled = 31.89, target = 30.00, HeatSinkTemp = 33.41, output = -100.0, timeout = 100, expectedTempC = 70.00, targetTecRampRate = -0.018463[0m
+[0;32mI (418167) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (418189) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (418192) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (418245) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (418246) BLE_PERIPH: Received 19/19[0m
+[0;32mI (418250) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (418285) BLE_PERIPH: Sending Response Packet: [34,true,161,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",591,31.85,27.41,3,2,34,0.00],0][0m
+[34, true, 161, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 591, 31.85, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (418290) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[0;32mI (418307) TC: thermalControl-0 = 31.82, modeled = 31.82, target = 30.00, HeatSinkTemp = 33.42, output = -100.0, timeout = 250, expectedTempC = 70.00, targetTecRampRate = -0.021133[0m
+[0;32mI (418325) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,161,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",591,31.85,27.41,3,2,34,0.00],0][0m
+[0;33mW (418344) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms[0m
+[0;31mE (418353) thermalControlTask: thermal control sleep.[0m
+[0;32mI (418380) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (418383) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+DATAQ:  | dataQLiquidStg1 = 25.44 | 
+[0;32mI (418414) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (418469) TC: thermalControl-0 = 31.39, modeled = 31.39, target = 30.00, HeatSinkTemp = 33.44, output = -100.0, timeout = 400, expectedTempC = 70.00, targetTecRampRate = -0.038376[0m
+[0;32mI (418482) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (418484) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (418515) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (418516) BLE_PERIPH: Received 19/19[0m
+[0;32mI (418520) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (418562) BLE_PERIPH: Sending Response Packet: [34,true,160,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",868,31.04,27.41,3,2,34,0.00],0][0m
+[0;32mI (418567) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 160, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 868, 31.04, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (418594) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,160,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",868,31.04,27.41,3,2,34,0.00],0][0m
+[0;32mI (418623) TC: thermalControl-0 = 30.85, modeled = 30.85, target = 30.00, HeatSinkTemp = 33.52, output = -50.0, timeout = 550, expectedTempC = 70.00, targetTecRampRate = -0.059204[0m
+[0;32mI (418639) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (418641) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (418662) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;31mE (418670) _updateInertiaCompensation: overshoot: 2.339729, updatedComp: 2.339729, atIndex: 30[0m
+[0;33mW (418674) _thermalControlStateMachine: MAX RAMP: SWITCH to STEADY STATE - Target Within range[0m
+[0;32mI (418707) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (418709) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (418719) _setThermalControlState: thermalControl-0: changing state 1->3[0m
+[0;32mI (418771) TC: thermalControl-0 = 30.10, modeled = 30.10, target = 30.00, HeatSinkTemp = 33.65, output = 15.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.088730[0m
+[0;32mI (418778) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (418783) BLE_PERIPH: Received 19/19[0m
+[0;32mI (418791) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (418837) BLE_PERIPH: Sending Response Packet: [34,true,163,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1143,29.83,27.41,3,2,34,0.00],0][0m
+[0;32mI (418842) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 163, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 1143, 29.83, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (418864) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,163,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1143,29.83,27.41,3,2,34,0.00],0][0m
+[0;32mI (418909) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (418911) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (418922) TC: thermalControl-0 = 29.59, modeled = 29.59, target = 30.00, HeatSinkTemp = 33.76, output = 20.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.108185[0m
+[0;32mI (418932) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (418977) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (418979) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (419021) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (419023) BLE_PERIPH: Received 19/19[0m
+[0;32mI (419026) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (419067) BLE_PERIPH: Sending Response Packet: [34,true,165,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1368,29.32,27.41,3,2,34,0.00],0][0m
+[0;32mI (419073) TC: thermalControl-0 = 29.30, modeled = 29.30, target = 30.00, HeatSinkTemp = 33.90, output = 6.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.119019[0m
+[34, true, 165, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 1368, 29.32, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (419089) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[0;32mI (419109) _performCapture: [1418,0,27.37,1857,18000,11180,3891,2443,1340,2232,1916,398,18000,0][0m
+[0;32mI (419123) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,165,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1368,29.32,27.41,3,2,34,0.00],0][0m
+[0;32mI (419179) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (419182) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (419202) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (419221) TC: thermalControl-0 = 29.26, modeled = 29.26, target = 30.00, HeatSinkTemp = 33.97, output = 3.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.120010[0m
+[0;32mI (419229) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (419237) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (419269) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (419270) BLE_PERIPH: Received 19/19[0m
+[0;32mI (419274) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (419302) BLE_PERIPH: Sending Response Packet: [34,true,164,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1608,29.27,27.41,3,2,34,0.00],0][0m
+[0;32mI (419308) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 164, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 1608, 29.27, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (419336) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,164,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1608,29.27,27.41,3,2,34,0.00],0][0m
+DATAQ:  | dataQLiquidStg1 = 25.56 | 
+[0;32mI (419378) TC: thermalControl-0 = 29.29, modeled = 29.29, target = 30.00, HeatSinkTemp = 34.03, output = 0.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.117874[0m
+[0;32mI (419404) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (419406) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (419427) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (419472) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (419474) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (419528) TC: thermalControl-0 = 29.35, modeled = 29.35, target = 30.00, HeatSinkTemp = 34.07, output = 0.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.114975[0m
+[0;32mI (419539) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (419540) BLE_PERIPH: Received 18/18[0m
+[0;32mI (419547) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (419591) BLE_PERIPH: Sending Response Packet: [34,true,166,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1897,29.37,27.41,3,2,34,0.00],0][0m
+[0;32mI (419596) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112[0m
+[34, true, 166, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 1897, 29.37, 27.41, 3, 2, 34, 0.00], 0]
+[0;32mI (419629) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=510, totalSize=112, currentIndex=0): [34,true,166,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",1897,29.37,27.41,3,2,34,0.00],0][0m
+[0;32mI (419677) TC: thermalControl-0 = 29.40, modeled = 29.40, target = 30.00, HeatSinkTemp = 34.08, output = -0.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.112076[0m
+[0;32mI (419686) BLE_PERIPH: Instrument to App Transaction Write 112/112[0m
+[0;32mI (419692) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112[0m
+[0;32mI (419730) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (419827) TC: thermalControl-0 = 29.46, modeled = 29.46, target = 30.00, HeatSinkTemp = 34.08, output = -1.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.109253[0m
+[0;32mI (419978) TC: thermalControl-0 = 29.52, modeled = 29.52, target = 30.00, HeatSinkTemp = 34.08, output = -5.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.106277[0m
+[0;32mI (420129) TC: thermalControl-0 = 29.55, modeled = 29.55, target = 30.00, HeatSinkTemp = 34.07, output = -2.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.104294[0m
+[0;32mI (420247) _performCapture: [2555,0,27.38,1811,18000,11274,3920,2459,1334,2275,1934,410,18000,0][0m
+[0;32mI (420278) TC: thermalControl-0 = 29.60, modeled = 29.60, target = 30.00, HeatSinkTemp = 34.06, output = -4.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.101700[0m
+DATAQ:  | dataQLiquidStg1 = 25.65 | 
+[0;32mI (420427) TC: thermalControl-0 = 29.64, modeled = 29.64, target = 30.00, HeatSinkTemp = 34.03, output = -4.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.099716[0m
+[0;32mI (420579) TC: thermalControl-0 = 29.69, modeled = 29.69, target = 30.00, HeatSinkTemp = 34.03, output = -4.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.097046[0m
+[0;32mI (420728) TC: thermalControl-0 = 29.73, modeled = 29.73, target = 30.00, HeatSinkTemp = 34.02, output = -6.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.094833[0m
+[0;32mI (420878) TC: thermalControl-0 = 29.77, modeled = 29.77, target = 30.00, HeatSinkTemp = 33.99, output = -6.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.092697[0m
+[0;32mI (421029) TC: thermalControl-0 = 29.82, modeled = 29.82, target = 30.00, HeatSinkTemp = 33.98, output = -5.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.090332[0m
+[0;32mI (421178) TC: thermalControl-0 = 29.84, modeled = 29.84, target = 30.00, HeatSinkTemp = 33.96, output = -6.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.088730[0m
+[0;32mI (421328) TC: thermalControl-0 = 29.88, modeled = 29.88, target = 30.00, HeatSinkTemp = 33.94, output = -8.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.086670[0m
+[0;32mI (421355) _performCapture: [3663,0,27.38,1811,18000,11381,3941,2469,1344,2284,1948,417,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 25.58 | 
+[0;32mI (421478) TC: thermalControl-0 = 29.91, modeled = 29.91, target = 30.00, HeatSinkTemp = 33.93, output = -8.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.084991[0m
+[0;32mI (421628) TC: thermalControl-0 = 29.94, modeled = 29.94, target = 30.00, HeatSinkTemp = 33.92, output = -7.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.083313[0m
+[0;32mI (421779) TC: thermalControl-0 = 29.97, modeled = 29.97, target = 30.00, HeatSinkTemp = 33.90, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.081635[0m
+[0;32mI (421928) TC: thermalControl-0 = 29.99, modeled = 29.99, target = 30.00, HeatSinkTemp = 33.89, output = -8.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.080261[0m
+[0;32mI (422078) TC: thermalControl-0 = 30.02, modeled = 30.02, target = 30.00, HeatSinkTemp = 33.88, output = -8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.078812[0m
+[0;32mI (422229) TC: thermalControl-0 = 30.05, modeled = 30.05, target = 30.00, HeatSinkTemp = 33.87, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.076981[0m
+[0;32mI (422379) TC: thermalControl-0 = 30.07, modeled = 30.07, target = 30.00, HeatSinkTemp = 33.85, output = -7.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.075836[0m
+DATAQ:  | dataQLiquidStg1 = 25.75 | 
+[0;32mI (422472) _performCapture: [4780,0,27.38,1853,18000,11470,3974,2482,1355,2279,1970,413,18000,0][0m
+[0;32mI (422528) TC: thermalControl-0 = 30.09, modeled = 30.09, target = 30.00, HeatSinkTemp = 33.83, output = -8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.074615[0m
+[0;32mI (422678) TC: thermalControl-0 = 30.11, modeled = 30.11, target = 30.00, HeatSinkTemp = 33.82, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.073318[0m
+[0;32mI (422829) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 33.82, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.071564[0m
+[0;32mI (422979) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.80, output = -10.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.070496[0m
+[0;32mI (423128) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.79, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.069656[0m
+[0;32mI (423280) TC: thermalControl-0 = 30.20, modeled = 30.20, target = 30.00, HeatSinkTemp = 33.77, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.068207[0m
+[0;32mI (423430) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.78, output = -11.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.067062[0m
+DATAQ:  | dataQLiquidStg1 = 25.71 | 
+[0;32mI (423579) TC: thermalControl-0 = 30.23, modeled = 30.23, target = 30.00, HeatSinkTemp = 33.75, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.066185[0m
+[0;32mI (423595) _performCapture: [5903,0,27.38,1858,18000,11491,3996,2506,1352,2308,1979,415,18000,0][0m
+[0;32mI (423730) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 33.75, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.065117[0m
+[0;32mI (423880) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 33.74, output = -11.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.064545[0m
+[0;32mI (424030) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 33.73, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.064011[0m
+[0;32mI (424180) TC: thermalControl-0 = 30.26, modeled = 30.26, target = 30.00, HeatSinkTemp = 33.72, output = -11.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.063400[0m
+[0;32mI (424331) TC: thermalControl-0 = 30.26, modeled = 30.26, target = 30.00, HeatSinkTemp = 33.71, output = -11.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.062943[0m
+DATAQ:  | dataQLiquidStg1 = 25.83 | 
+[0;32mI (424480) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 33.71, output = -10.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.062370[0m
+[0;32mI (424630) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 33.69, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.061913[0m
+[0;32mI (424707) _performCapture: [7015,0,27.39,1866,18000,11569,4015,2535,1364,2323,1994,417,18000,0][0m
+[0;32mI (424781) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.69, output = -11.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.061264[0m
+[0;32mI (424932) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.69, output = -11.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.060654[0m
+[0;32mI (425082) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.68, output = -12.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.059929[0m
+[0;32mI (425231) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.67, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.059547[0m
+[0;32mI (425382) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 33.67, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.058975[0m
+DATAQ:  | dataQLiquidStg1 = 25.8 | 
+[0;32mI (425532) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 33.66, output = -10.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.058746[0m
+[0;32mI (425682) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 33.64, output = -13.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.058403[0m
+[0;32mI (425832) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 33.64, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.057716[0m
+[0;32mI (425842) _performCapture: [8150,0,27.38,1864,18000,11622,4035,2556,1365,2336,1993,417,18000,0][0m
+[0;32mI (425982) TC: thermalControl-0 = 30.30, modeled = 30.30, target = 30.00, HeatSinkTemp = 33.62, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.057602[0m
+[0;32mI (426132) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.61, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.057449[0m
+[0;32mI (426281) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.61, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.057373[0m
+[0;32mI (426432) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.60, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.056992[0m
+DATAQ:  | dataQLiquidStg1 = 25.82 | 
+[0;32mI (426582) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.58, output = -11.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.056839[0m
+[0;32mI (426732) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.58, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.056229[0m
+[0;32mI (426882) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.57, output = -12.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.055771[0m
+[0;32mI (426960) _performCapture: [9268,0,27.38,1838,18000,11639,4049,2537,1364,2321,1979,422,18000,0][0m
+[0;32mI (427032) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.57, output = -13.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.055504[0m
+[0;32mI (427182) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.56, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.055351[0m
+[0;32mI (427332) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.55, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.055122[0m
+DATAQ:  | dataQLiquidStg1 = 25.81 | 
+[0;32mI (427481) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.54, output = -13.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.054855[0m
+[0;32mI (427632) TC: thermalControl-0 = 30.29, modeled = 30.29, target = 30.00, HeatSinkTemp = 33.54, output = -12.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.054359[0m
+[0;32mI (427782) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.52, output = -13.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.054283[0m
+[0;32mI (427931) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 30.00, HeatSinkTemp = 33.52, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.054169[0m
+[0;32mI (428085) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 33.51, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.054169[0m
+[0;32mI (428094) _performCapture: [10402,0,27.38,1828,18000,11715,4075,2528,1363,2355,1999,423,18000,0][0m
+[0;32mI (428231) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 33.50, output = -12.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053902[0m
+[0;32mI (428382) TC: thermalControl-0 = 30.27, modeled = 30.27, target = 30.00, HeatSinkTemp = 33.50, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053444[0m
+DATAQ:  | dataQLiquidStg1 = 25.83 | 
+[0;32mI (428531) TC: thermalControl-0 = 30.26, modeled = 30.26, target = 30.00, HeatSinkTemp = 33.50, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053558[0m
+[0;32mI (428682) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 33.49, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053596[0m
+[0;32mI (428832) TC: thermalControl-0 = 30.25, modeled = 30.25, target = 30.00, HeatSinkTemp = 33.48, output = -13.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053368[0m
+[0;32mI (428983) TC: thermalControl-0 = 30.23, modeled = 30.23, target = 30.00, HeatSinkTemp = 33.48, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053596[0m
+[0;32mI (429133) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.47, output = -9.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053864[0m
+[0;32mI (429209) _performCapture: [11517,0,27.38,1864,18000,11807,4099,2562,1374,2379,2008,426,18000,0][0m
+[0;32mI (429282) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.46, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053864[0m
+[0;32mI (429432) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.46, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053444[0m
+DATAQ:  | dataQLiquidStg1 = 25.83 | 
+[0;32mI (429583) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.46, output = -11.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.053139[0m
+[0;32mI (429733) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.46, output = -9.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.052567[0m
+[0;32mI (429884) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.45, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.052338[0m
+[0;32mI (430034) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.44, output = -12.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.052071[0m
+[0;32mI (430184) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.44, output = -11.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.051537[0m
+[0;32mI (430335) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.42, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.051460[0m
+[0;32mI (430344) _performCapture: [12653,0,27.39,1872,18000,11825,4115,2582,1391,2383,2007,428,18000,0][0m
+[0;32mI (430485) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.40, output = -11.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.051346[0m
+DATAQ:  | dataQLiquidStg1 = 25.85 | 
+[0;32mI (430635) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.40, output = -9.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.050926[0m
+[0;32mI (430785) TC: thermalControl-0 = 30.20, modeled = 30.20, target = 30.00, HeatSinkTemp = 33.39, output = -13.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.051079[0m
+[0;32mI (430935) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.40, output = -7.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.050430[0m
+[0;32mI (431086) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.39, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.050011[0m
+[0;32mI (431235) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.38, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.049820[0m
+[0;32mI (431411) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.37, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.049820[0m
+[0;32mI (431493) _performCapture: [13801,0,27.38,1854,18000,11873,4128,2576,1381,2381,1993,433,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 25.95 | 
+[0;32mI (431561) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.36, output = -11.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.049515[0m
+[0;32mI (431712) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.36, output = -11.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048828[0m
+[0;32mI (431861) TC: thermalControl-0 = 30.21, modeled = 30.21, target = 30.00, HeatSinkTemp = 33.35, output = -11.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048790[0m
+[0;32mI (432011) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.35, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048256[0m
+[0;32mI (432162) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.34, output = -13.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.047989[0m
+[0;32mI (432313) TC: thermalControl-0 = 30.22, modeled = 30.22, target = 30.00, HeatSinkTemp = 33.33, output = -13.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.047569[0m
+[0;32mI (432462) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 33.33, output = -8.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048409[0m
+DATAQ:  | dataQLiquidStg1 = 26.01 | 
+[0;32mI (432613) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.32, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.049019[0m
+[0;32mI (432621) _performCapture: [14918,0,27.38,1833,18000,11901,4149,2565,1394,2367,2019,430,18000,0][0m
+[0;32mI (432763) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.31, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.049171[0m
+[0;32mI (432912) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.31, output = -11.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048599[0m
+[0;32mI (433063) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.29, output = -9.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048332[0m
+[0;32mI (433213) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.28, output = -11.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.048141[0m
+[0;32mI (433364) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.28, output = -9.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.047646[0m
+[0;32mI (433515) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.27, output = -12.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.047493[0m
+DATAQ:  | dataQLiquidStg1 = 25.85 | 
+[0;32mI (433664) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.26, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.046997[0m
+[0;32mI (433740) _performCapture: [16048,0,27.38,1851,18000,11904,4161,2588,1395,2402,2032,428,18000,0][0m
+[0;32mI (433814) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.25, output = -10.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.046768[0m
+[0;32mI (433964) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.24, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.046806[0m
+[0;32mI (434115) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.24, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.046349[0m
+[0;32mI (434264) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.24, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.045929[0m
+[0;32mI (434415) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.23, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.045586[0m
+DATAQ:  | dataQLiquidStg1 = 25.87 | 
+[0;32mI (434565) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.24, output = -11.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.044670[0m
+[0;32mI (434715) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.21, output = -9.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.044785[0m
+[0;32mI (434860) _performCapture: [17169,0,27.38,1885,18000,11931,4178,2608,1402,2422,2041,430,18000,0][0m
+[0;32mI (434866) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.21, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.044136[0m
+[0;32mI (435016) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 33.21, output = -10.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.043716[0m
+[0;32mI (435165) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 33.20, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.043488[0m
+[0;32mI (435316) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.19, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.043526[0m
+[0;32mI (435465) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.18, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.043106[0m
+DATAQ:  | dataQLiquidStg1 = 25.94 | 
+[0;32mI (435617) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.17, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042877[0m
+[0;32mI (435765) TC: thermalControl-0 = 30.20, modeled = 30.20, target = 30.00, HeatSinkTemp = 33.17, output = -13.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042152[0m
+[0;32mI (435916) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.15, output = -10.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042572[0m
+[0;32mI (435991) _performCapture: [18299,0,27.38,1909,18000,12005,4192,2623,1393,2463,2045,436,18000,0][0m
+[0;32mI (436065) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.14, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042572[0m
+[0;32mI (436216) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.14, output = -8.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042419[0m
+[0;32mI (436365) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.13, output = -10.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.042305[0m
+[0;32mI (436516) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.12, output = -12.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.041885[0m
+DATAQ:  | dataQLiquidStg1 = 26.01 | 
+[0;32mI (436666) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.11, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.041580[0m
+[0;32mI (436815) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.11, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.041351[0m
+[0;32mI (436966) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.09, output = -12.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.041161[0m
+[0;32mI (437109) _performCapture: [19417,0,27.38,1900,18000,12025,4208,2619,1408,2447,2055,434,18000,0][0m
+[0;32mI (437116) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.08, output = -9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040817[0m
+[0;32mI (437265) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.07, output = -12.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040550[0m
+[0;32mI (437415) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.07, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040741[0m
+[0;32mI (437565) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 33.07, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040855[0m
+DATAQ:  | dataQLiquidStg1 = 25.99 | 
+[0;32mI (437716) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.07, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040283[0m
+[0;32mI (437865) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 33.06, output = -9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040436[0m
+[0;32mI (438016) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 33.05, output = -9.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.040321[0m
+[0;32mI (438166) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.05, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.039330[0m
+[0;32mI (438223) _performCapture: [20531,0,27.38,1902,18000,12071,4216,2639,1412,2420,2049,441,18000,0][0m
+[0;32mI (438315) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 33.04, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.039482[0m
+[0;32mI (438466) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.04, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.038757[0m
+DATAQ:  | dataQLiquidStg1 = 26.06 | 
+[0;32mI (438615) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.03, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.038338[0m
+[0;32mI (438766) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.02, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.038185[0m
+[0;32mI (438917) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.01, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.037994[0m
+[0;32mI (439067) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.01, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.037842[0m
+[0;32mI (439217) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 33.00, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.037460[0m
+[0;32mI (439337) _performCapture: [21645,0,27.37,1923,18000,12091,4230,2628,1420,2426,2049,437,18000,0][0m
+[0;32mI (439368) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 33.00, output = -12.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036888[0m
+[0;32mI (439518) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 32.99, output = -12.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036697[0m
+DATAQ:  | dataQLiquidStg1 = 26.05 | 
+[0;32mI (439668) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.98, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036926[0m
+[0;32mI (439818) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.97, output = -9.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036926[0m
+[0;32mI (439969) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.97, output = -7.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036736[0m
+[0;32mI (440119) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.95, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.036240[0m
+[0;32mI (440269) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 32.96, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035591[0m
+[0;32mI (440419) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.95, output = -13.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034981[0m
+[0;32mI (440443) _performCapture: [22751,0,27.37,1947,18000,12129,4239,2627,1436,2411,2069,439,18000,0][0m
+[0;32mI (440569) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.94, output = -9.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034752[0m
+DATAQ:  | dataQLiquidStg1 = 26.04 | 
+[0;32mI (440719) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.94, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034637[0m
+[0;32mI (440869) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.93, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035172[0m
+[0;32mI (441020) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.92, output = -9.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035095[0m
+[0;32mI (441170) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.91, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035019[0m
+[0;32mI (441321) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.90, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035133[0m
+[0;32mI (441471) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.90, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.035172[0m
+[0;32mI (441563) _performCapture: [23871,0,27.37,1971,18000,12157,4251,2631,1440,2429,2086,444,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 26.08 | 
+[0;32mI (441621) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.89, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034904[0m
+[0;32mI (441771) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.88, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034752[0m
+[0;32mI (441920) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.88, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034256[0m
+[0;32mI (442071) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.88, output = -9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.034065[0m
+[0;32mI (442220) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.87, output = -10.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.033722[0m
+[0;32mI (442371) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.86, output = -9.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.033493[0m
+[0;32mI (442521) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.84, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.033188[0m
+DATAQ:  | dataQLiquidStg1 = 26.05 | 
+[0;32mI (442675) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 32.84, output = -13.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.032387[0m
+[0;32mI (442684) _performCapture: [24993,0,27.37,1974,18000,12195,4261,2635,1429,2434,2077,445,18000,0][0m
+[0;32mI (442820) TC: thermalControl-0 = 30.20, modeled = 30.20, target = 30.00, HeatSinkTemp = 32.84, output = -12.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031662[0m
+[0;32mI (442971) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.82, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031700[0m
+[0;32mI (443120) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.83, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031548[0m
+[0;32mI (443271) TC: thermalControl-0 = 30.19, modeled = 30.19, target = 30.00, HeatSinkTemp = 32.82, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031471[0m
+[0;32mI (443421) TC: thermalControl-0 = 30.18, modeled = 30.18, target = 30.00, HeatSinkTemp = 32.81, output = -12.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031548[0m
+[0;32mI (443572) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.81, output = -8.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031815[0m
+DATAQ:  | dataQLiquidStg1 = 26.06 | 
+[0;32mI (443723) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.80, output = -13.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.032234[0m
+[0;32mI (443814) _performCapture: [26122,0,27.36,2010,18000,12157,4270,2644,1415,2454,2079,445,18000,0][0m
+[0;32mI (443873) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.80, output = -9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.032158[0m
+[0;32mI (444024) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.78, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.032463[0m
+[0;32mI (444173) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.79, output = -12.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031891[0m
+[0;32mI (444324) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.78, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.032349[0m
+[0;32mI (444473) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.78, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031776[0m
+[0;32mI (444624) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.77, output = -6.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031853[0m
+DATAQ:  | dataQLiquidStg1 = 26.14 | 
+[0;32mI (444774) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.77, output = -8.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031471[0m
+[0;32mI (444925) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.76, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031471[0m
+[0;32mI (444937) _performCapture: [27245,0,27.36,2053,18000,12207,4287,2654,1420,2480,2088,444,18000,0][0m
+[0;32mI (445074) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.75, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.031357[0m
+[0;32mI (445224) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.75, output = -9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030975[0m
+[0;32mI (445374) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.74, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030556[0m
+[0;32mI (445524) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.73, output = -9.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030746[0m
+DATAQ:  | dataQLiquidStg1 = 26.25 | 
+[0;32mI (445673) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.72, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030823[0m
+[0;32mI (445824) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.72, output = -11.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030251[0m
+[0;32mI (445974) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.71, output = -9.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030136[0m
+[0;32mI (446052) _performCapture: [28360,0,27.36,2026,18000,12267,4288,2670,1436,2484,2092,446,18000,0][0m
+[0;32mI (446124) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.69, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.030060[0m
+[0;32mI (446274) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.69, output = -12.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.029678[0m
+[0;32mI (446424) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.68, output = -12.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.029488[0m
+[0;32mI (446574) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.67, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.029030[0m
+DATAQ:  | dataQLiquidStg1 = 26.18 | 
+[0;32mI (446725) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.66, output = -8.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.029106[0m
+[0;32mI (446874) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.66, output = -9.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.028763[0m
+[0;32mI (447025) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.66, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.028687[0m
+[0;32mI (447171) _performCapture: [29479,0,27.36,2002,18000,12319,4295,2677,1434,2484,2082,457,18000,0][0m
+[0;32mI (447177) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.67, output = -12.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.027924[0m
+[0;32mI (447327) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.65, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.027847[0m
+[0;32mI (447477) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.64, output = -6.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.027847[0m
+[0;32mI (447627) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.63, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.028038[0m
+DATAQ:  | dataQLiquidStg1 = 26.24 | 
+[0;32mI (447777) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.62, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.028000[0m
+[0;32mI (447927) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.62, output = -9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.027733[0m
+[0;32mI (448077) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.61, output = -9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.027466[0m
+[0;32mI (448227) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.60, output = -13.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026970[0m
+[0;32mI (448306) _performCapture: [30614,0,27.35,1981,18000,12316,4301,2671,1435,2456,2092,454,18000,0][0m
+[0;32mI (448377) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.60, output = -9.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026779[0m
+[0;32mI (448527) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.60, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026741[0m
+[0;32mI (448676) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.59, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026894[0m
+DATAQ:  | dataQLiquidStg1 = 26.18 | 
+[0;32mI (448826) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.58, output = -10.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026817[0m
+[0;32mI (448976) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.57, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026817[0m
+[0;32mI (449128) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.57, output = -10.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026207[0m
+[0;32mI (449277) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.56, output = -9.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.026283[0m
+[0;32mI (449419) _performCapture: [31728,0,27.35,1978,18000,12329,4312,2678,1441,2443,2115,454,18000,0][0m
+[0;32mI (449428) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.55, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025978[0m
+[0;32mI (449578) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.55, output = -11.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025520[0m
+DATAQ:  | dataQLiquidStg1 = 26.32 | 
+[0;32mI (449728) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.54, output = -7.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025711[0m
+[0;32mI (449878) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.54, output = -9.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.024986[0m
+[0;32mI (450028) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.53, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025101[0m
+[0;32mI (450179) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.51, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025177[0m
+[0;32mI (450329) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.52, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025177[0m
+[0;32mI (450479) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.51, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.024872[0m
+[0;32mI (450533) _performCapture: [32842,0,27.35,1961,18000,12378,4317,2694,1443,2481,2116,459,18000,0][0m
+[0;32mI (450629) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.49, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.025024[0m
+DATAQ:  | dataQLiquidStg1 = 26.25 | 
+[0;32mI (450779) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.50, output = -7.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.024338[0m
+[0;32mI (450928) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.50, output = -11.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.024033[0m
+[0;32mI (451079) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.48, output = -11.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.024338[0m
+[0;32mI (451229) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.48, output = -8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023918[0m
+[0;33mW (451376) _setTempReachedCallback: Set Temp Reached[0m
+[0;32mI (451380) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.47, output = -12.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023537[0m
+[0;32mI (451529) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.47, output = -11.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023575[0m
+[0;32mI (451651) _performCapture: [33959,0,27.35,1978,18000,12408,4326,2696,1438,2501,2106,461,18000,0][0m
+[0;32mI (451679) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.46, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023384[0m
+DATAQ:  | dataQLiquidStg1 = 26.17 | 
+[0;32mI (451829) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.46, output = -11.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023193[0m
+[0;32mI (451980) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.46, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023499[0m
+[0;32mI (452129) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.45, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023460[0m
+[0;32mI (452281) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.44, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.022926[0m
+[0;32mI (452431) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.43, output = -11.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023232[0m
+[0;32mI (452581) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.43, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.023041[0m
+[0;32mI (452731) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.42, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.022507[0m
+DATAQ:  | dataQLiquidStg1 = 26.34 | 
+[0;32mI (452807) _performCapture: [35115,0,27.34,1973,18000,12424,4331,2693,1430,2494,2097,458,18000,0][0m
+[0;32mI (452880) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.41, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.022354[0m
+[0;32mI (453032) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.41, output = -9.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.022163[0m
+[0;32mI (453181) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.40, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021858[0m
+[0;32mI (453331) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.39, output = -12.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021553[0m
+[0;32mI (453481) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.39, output = -8.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021248[0m
+[0;32mI (453630) TC: thermalControl-0 = 30.17, modeled = 30.17, target = 30.00, HeatSinkTemp = 32.38, output = -12.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021057[0m
+DATAQ:  | dataQLiquidStg1 = 26.22 | 
+[0;32mI (453781) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.37, output = -10.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021095[0m
+[0;32mI (453923) _performCapture: [36231,0,27.34,1974,18000,12412,4330,2687,1433,2486,2106,453,18000,0][0m
+[0;32mI (453931) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.37, output = -7.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021591[0m
+[0;32mI (454081) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.37, output = -8.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021553[0m
+[0;32mI (454232) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.35, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.022087[0m
+[0;32mI (454383) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.34, output = -7.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021744[0m
+[0;32mI (454532) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.34, output = -9.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021553[0m
+[0;32mI (454684) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.34, output = -8.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021133[0m
+DATAQ:  | dataQLiquidStg1 = 26.47 | 
+[0;32mI (454834) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.33, output = -9.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.020905[0m
+[0;32mI (454984) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.33, output = -7.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021172[0m
+[0;32mI (455037) _performCapture: [37345,0,27.34,1985,18000,12434,4345,2698,1438,2497,2118,457,18000,0][0m
+[0;32mI (455134) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.32, output = -8.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021210[0m
+[0;32mI (455284) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.31, output = -9.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021172[0m
+[0;32mI (455433) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.30, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.021172[0m
+[0;32mI (455584) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.30, output = -11.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.020943[0m
+[0;32mI (455733) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.30, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.020714[0m
+DATAQ:  | dataQLiquidStg1 = 26.42 | 
+[0;32mI (455883) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.30, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.020294[0m
+[0;32mI (456035) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.29, output = -10.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.020103[0m
+[0;32mI (456158) _performCapture: [38466,0,27.33,1972,18000,12462,4354,2710,1437,2510,2123,457,18000,0][0m
+[0;32mI (456184) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.28, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019989[0m
+[0;32mI (456334) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.28, output = -8.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019417[0m
+[0;32mI (456484) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.26, output = -8.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019493[0m
+[0;32mI (456634) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.25, output = -12.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019112[0m
+DATAQ:  | dataQLiquidStg1 = 26.35 | 
+[0;32mI (456784) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.25, output = -12.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018692[0m
+[0;32mI (456934) TC: thermalControl-0 = 30.16, modeled = 30.16, target = 30.00, HeatSinkTemp = 32.25, output = -9.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018654[0m
+[0;32mI (457084) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.24, output = -7.5, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018959[0m
+[0;32mI (457234) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.22, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019073[0m
+[0;32mI (457275) _performCapture: [39583,0,27.33,1949,18000,12469,4364,2708,1434,2488,2120,459,18000,0][0m
+[0;32mI (457383) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.22, output = -8.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.019035[0m
+[0;32mI (457534) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.22, output = -7.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018997[0m
+[0;32mI (457684) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.21, output = -11.4, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018845[0m
+DATAQ:  | dataQLiquidStg1 = 26.46 | 
+[0;32mI (457835) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.20, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018845[0m
+[0;32mI (457985) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.19, output = -7.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018883[0m
+[0;32mI (458134) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.18, output = -12.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018425[0m
+[0;32mI (458285) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.19, output = -10.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018234[0m
+[0;32mI (458404) _performCapture: [40712,0,27.33,1935,18000,12487,4368,2707,1443,2498,2120,462,18000,0][0m
+[0;32mI (458435) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.18, output = -12.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018120[0m
+[0;32mI (458585) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.18, output = -6.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018349[0m
+[0;32mI (458736) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.17, output = -12.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018196[0m
+DATAQ:  | dataQLiquidStg1 = 26.55 | 
+[0;32mI (458885) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.17, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018425[0m
+[0;32mI (459035) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.17, output = -10.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018387[0m
+[0;32mI (459186) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.16, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018349[0m
+[0;32mI (459336) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.16, output = -8.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018158[0m
+[0;32mI (459486) TC: thermalControl-0 = 30.12, modeled = 30.12, target = 30.00, HeatSinkTemp = 32.15, output = -8.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018387[0m
+[0;32mI (459513) _performCapture: [41822,0,27.32,1950,18000,12503,4367,2717,1453,2508,2116,460,18000,0][0m
+[0;32mI (459635) TC: thermalControl-0 = 30.12, modeled = 30.12, target = 30.00, HeatSinkTemp = 32.15, output = -8.3, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018387[0m
+[0;32mI (459785) TC: thermalControl-0 = 30.11, modeled = 30.11, target = 30.00, HeatSinkTemp = 32.13, output = -6.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018616[0m
+DATAQ:  | dataQLiquidStg1 = 26.25 | 
+[0;32mI (459935) TC: thermalControl-0 = 30.11, modeled = 30.11, target = 30.00, HeatSinkTemp = 32.13, output = -10.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018272[0m
+[0;32mI (460085) TC: thermalControl-0 = 30.11, modeled = 30.11, target = 30.00, HeatSinkTemp = 32.12, output = -7.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.018082[0m
+[0;32mI (460236) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.12, output = -9.2, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.017509[0m
+[0;32mI (460387) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.11, output = -9.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.017395[0m
+[0;32mI (460537) TC: thermalControl-0 = 30.12, modeled = 30.12, target = 30.00, HeatSinkTemp = 32.09, output = -7.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.017433[0m
+[0;32mI (460629) _performCapture: [42937,0,27.31,1982,18000,12518,4380,2732,1461,2511,2122,458,18000,0][0m
+[0;32mI (460686) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.09, output = -8.8, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016937[0m
+DATAQ:  | dataQLiquidStg1 = 26.38 | 
+[0;32mI (460837) TC: thermalControl-0 = 30.13, modeled = 30.13, target = 30.00, HeatSinkTemp = 32.08, output = -10.1, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016937[0m
+[0;32mI (460986) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.07, output = -11.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016289[0m
+[0;32mI (461137) TC: thermalControl-0 = 30.15, modeled = 30.15, target = 30.00, HeatSinkTemp = 32.07, output = -10.9, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016136[0m
+[0;32mI (461289) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.05, output = -9.6, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016136[0m
+[0;32mI (461439) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 30.00, HeatSinkTemp = 32.05, output = -6.7, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016098[0m
+[0;32mI (461548) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 70.0[0m
+[0;32mI (461556) _setThermalControlState: thermalControl-0: changing state 3->1[0m
+[0;33mW (461559) tecCurvePredictorSetHoldPower: Setting hold power to -8.486918 at temp 30.000000[0m
+[0;32mI (461589) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 70.00, HeatSinkTemp = 32.04, output = 0.0, timeout = 0, expectedTempC = 30.00, targetTecRampRate = -0.016174[0m
+[0;32mI (461742) TC: thermalControl-0 = 30.14, modeled = 30.14, target = 70.00, HeatSinkTemp = 32.03, output = 100.0, timeout = 100, expectedTempC = 30.00, targetTecRampRate = -0.016212[0m
+[0;32mI (461753) _performCapture: [44062,0,27.31,1983,18000,12535,4384,2726,1461,2502,2128,462,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 26.41 | 
+[0;32mI (461889) TC: thermalControl-0 = 30.28, modeled = 30.28, target = 70.00, HeatSinkTemp = 32.04, output = 100.0, timeout = 250, expectedTempC = 30.00, targetTecRampRate = -0.010376[0m
+[0;32mI (462039) TC: thermalControl-0 = 30.91, modeled = 30.91, target = 70.00, HeatSinkTemp = 32.00, output = 100.0, timeout = 400, expectedTempC = 30.00, targetTecRampRate = 0.014458[0m
+[0;32mI (462189) TC: thermalControl-0 = 32.14, modeled = 32.14, target = 70.00, HeatSinkTemp = 31.95, output = 100.0, timeout = 550, expectedTempC = 30.00, targetTecRampRate = 0.063324[0m
+[0;32mI (462339) TC: thermalControl-0 = 33.55, modeled = 33.55, target = 70.00, HeatSinkTemp = 31.90, output = 100.0, timeout = 700, expectedTempC = 30.00, targetTecRampRate = 0.118599[0m
+[0;32mI (462489) TC: thermalControl-0 = 35.10, modeled = 35.10, target = 70.00, HeatSinkTemp = 31.83, output = 100.0, timeout = 850, expectedTempC = 30.00, targetTecRampRate = 0.179024[0m
+[0;32mI (462639) TC: thermalControl-0 = 36.92, modeled = 36.92, target = 70.00, HeatSinkTemp = 31.72, output = 100.0, timeout = 1000, expectedTempC = 30.00, targetTecRampRate = 0.249901[0m
+[0;32mI (462789) TC: thermalControl-0 = 38.60, modeled = 38.60, target = 70.00, HeatSinkTemp = 31.63, output = 100.0, timeout = 1150, expectedTempC = 30.00, targetTecRampRate = 0.314789[0m
+DATAQ:  | dataQLiquidStg1 = 26.43 | 
+[0;32mI (462881) _performCapture: [45189,0,27.30,1981,18000,12545,4385,2728,1461,2496,2133,464,18000,0][0m
+[0;32mI (462940) TC: thermalControl-0 = 40.33, modeled = 40.33, target = 70.00, HeatSinkTemp = 31.54, output = 100.0, timeout = 1300, expectedTempC = 30.00, targetTecRampRate = 0.381241[0m
+[0;32mI (463090) TC: thermalControl-0 = 42.00, modeled = 42.00, target = 70.00, HeatSinkTemp = 31.45, output = 100.0, timeout = 1450, expectedTempC = 30.00, targetTecRampRate = 0.444908[0m
+[0;32mI (463240) TC: thermalControl-0 = 43.66, modeled = 43.66, target = 70.00, HeatSinkTemp = 31.38, output = 100.0, timeout = 1600, expectedTempC = 30.00, targetTecRampRate = 0.507927[0m
+[0;32mI (463390) TC: thermalControl-0 = 45.44, modeled = 45.44, target = 70.00, HeatSinkTemp = 31.29, output = 100.0, timeout = 1750, expectedTempC = 30.00, targetTecRampRate = 0.575523[0m
+[0;32mI (463540) TC: thermalControl-0 = 47.04, modeled = 47.04, target = 70.00, HeatSinkTemp = 31.21, output = 100.0, timeout = 1900, expectedTempC = 30.00, targetTecRampRate = 0.635262[0m
+[0;32mI (463690) TC: thermalControl-0 = 48.60, modeled = 48.60, target = 70.00, HeatSinkTemp = 31.13, output = 100.0, timeout = 2050, expectedTempC = 30.00, targetTecRampRate = 0.693283[0m
+DATAQ:  | dataQLiquidStg1 = 26.37 | 
+[0;32mI (463840) TC: thermalControl-0 = 50.31, modeled = 50.31, target = 70.00, HeatSinkTemp = 31.06, output = 100.0, timeout = 2200, expectedTempC = 30.00, targetTecRampRate = 0.756683[0m
+[0;32mI (463990) TC: thermalControl-0 = 51.83, modeled = 51.83, target = 70.00, HeatSinkTemp = 30.99, output = 100.0, timeout = 2350, expectedTempC = 30.00, targetTecRampRate = 0.812111[0m
+[0;32mI (464007) _performCapture: [46316,0,27.30,2003,18000,12552,4390,2725,1461,2472,2138,463,18000,0][0m
+[0;32mI (464140) TC: thermalControl-0 = 53.33, modeled = 53.33, target = 70.00, HeatSinkTemp = 30.92, output = 100.0, timeout = 2500, expectedTempC = 30.00, targetTecRampRate = 0.866776[0m
+[0;32mI (464290) TC: thermalControl-0 = 54.80, modeled = 54.80, target = 70.00, HeatSinkTemp = 30.85, output = 100.0, timeout = 2650, expectedTempC = 30.00, targetTecRampRate = 0.919609[0m
+[0;32mI (464441) TC: thermalControl-0 = 56.37, modeled = 56.37, target = 70.00, HeatSinkTemp = 30.78, output = 100.0, timeout = 2800, expectedTempC = 30.00, targetTecRampRate = 0.976295[0m
+[0;32mI (464591) TC: thermalControl-0 = 57.76, modeled = 57.76, target = 70.00, HeatSinkTemp = 30.72, output = 100.0, timeout = 2950, expectedTempC = 30.00, targetTecRampRate = 1.025467[0m
+[0;32mI (464742) TC: thermalControl-0 = 59.13, modeled = 59.13, target = 70.00, HeatSinkTemp = 30.66, output = 100.0, timeout = 3100, expectedTempC = 30.00, targetTecRampRate = 1.073227[0m
+DATAQ:  | dataQLiquidStg1 = 26.46 | 
+[0;32mI (464891) TC: thermalControl-0 = 60.64, modeled = 60.64, target = 70.00, HeatSinkTemp = 30.60, output = 100.0, timeout = 3250, expectedTempC = 30.00, targetTecRampRate = 1.126556[0m
+[0;32mI (465041) TC: thermalControl-0 = 61.94, modeled = 61.94, target = 70.00, HeatSinkTemp = 30.53, output = 100.0, timeout = 3400, expectedTempC = 30.00, targetTecRampRate = 1.171494[0m
+[0;32mI (465117) _performCapture: [47425,0,27.30,2030,18000,12555,4393,2725,1457,2478,2153,464,18000,0][0m
+[0;32mI (465191) TC: thermalControl-0 = 63.27, modeled = 63.27, target = 70.00, HeatSinkTemp = 30.49, output = 100.0, timeout = 3550, expectedTempC = 30.00, targetTecRampRate = 1.216812[0m
+[0;32mI (465341) TC: thermalControl-0 = 64.54, modeled = 64.54, target = 70.00, HeatSinkTemp = 30.44, output = 100.0, timeout = 3700, expectedTempC = 30.00, targetTecRampRate = 1.259995[0m
+[0;32mI (465491) TC: thermalControl-0 = 65.92, modeled = 65.92, target = 70.00, HeatSinkTemp = 30.38, output = 100.0, timeout = 3850, expectedTempC = 30.00, targetTecRampRate = 1.307144[0m
+[0;32mI (465641) TC: thermalControl-0 = 67.13, modeled = 67.13, target = 70.00, HeatSinkTemp = 30.34, output = 100.0, timeout = 4000, expectedTempC = 30.00, targetTecRampRate = 1.347122[0m
+[0;32mI (465793) TC: thermalControl-0 = 68.31, modeled = 68.31, target = 70.00, HeatSinkTemp = 30.29, output = 50.0, timeout = 4150, expectedTempC = 30.00, targetTecRampRate = 1.385651[0m
+DATAQ:  | dataQLiquidStg1 = 26.5 | 
+[0;32mI (465943) TC: thermalControl-0 = 69.58, modeled = 69.58, target = 70.00, HeatSinkTemp = 30.24, output = -100.0, timeout = 4250, expectedTempC = 30.00, targetTecRampRate = 1.427612[0m
+[0;32mI (466093) TC: thermalControl-0 = 70.39, modeled = 70.39, target = 70.00, HeatSinkTemp = 30.20, output = -57.6, timeout = 4400, expectedTempC = 30.00, targetTecRampRate = 1.451340[0m
+[0;32mI (466244) TC: thermalControl-0 = 70.38, modeled = 70.38, target = 70.00, HeatSinkTemp = 30.19, output = 33.4, timeout = 4500, expectedTempC = 30.00, targetTecRampRate = 1.442413[0m
+[0;32mI (466253) _performCapture: [48562,0,27.30,2029,18000,12566,4396,2739,1453,2510,2157,467,18000,0][0m
+[0;32mI (466391) TC: thermalControl-0 = 69.89, modeled = 69.89, target = 70.00, HeatSinkTemp = 30.23, output = 37.0, timeout = 4650, expectedTempC = 30.00, targetTecRampRate = 1.414261[0m
+[0;32mI (466542) TC: thermalControl-0 = 69.39, modeled = 69.39, target = 70.00, HeatSinkTemp = 30.30, output = 35.0, timeout = 4800, expectedTempC = 30.00, targetTecRampRate = 1.386185[0m
+[0;32mI (466691) TC: thermalControl-0 = 68.96, modeled = 68.96, target = 70.00, HeatSinkTemp = 30.38, output = 33.7, timeout = 4950, expectedTempC = 30.00, targetTecRampRate = 1.361008[0m
+[0;32mI (466841) TC: thermalControl-0 = 68.60, modeled = 68.60, target = 70.00, HeatSinkTemp = 30.43, output = 33.1, timeout = 5100, expectedTempC = 30.00, targetTecRampRate = 1.338654[0m
+DATAQ:  | dataQLiquidStg1 = 26.63 | 
+[0;32mI (466991) TC: thermalControl-0 = 68.26, modeled = 68.26, target = 70.00, HeatSinkTemp = 30.48, output = 33.7, timeout = 5250, expectedTempC = 30.00, targetTecRampRate = 1.317596[0m
+[0;32mI (467142) TC: thermalControl-0 = 67.93, modeled = 67.93, target = 70.00, HeatSinkTemp = 30.52, output = 31.9, timeout = 5400, expectedTempC = 30.00, targetTecRampRate = 1.296539[0m
+[0;32mI (467292) TC: thermalControl-0 = 67.62, modeled = 67.62, target = 70.00, HeatSinkTemp = 30.55, output = 32.3, timeout = 5550, expectedTempC = 30.00, targetTecRampRate = 1.276627[0m
+[0;32mI (467375) _performCapture: [49683,0,27.29,2023,18000,12568,4393,2745,1448,2545,2142,466,18000,0][0m
+[0;32mI (467444) TC: thermalControl-0 = 67.28, modeled = 67.28, target = 70.00, HeatSinkTemp = 30.59, output = 32.2, timeout = 5700, expectedTempC = 30.00, targetTecRampRate = 1.255646[0m
+[0;32mI (467594) TC: thermalControl-0 = 66.94, modeled = 66.94, target = 70.00, HeatSinkTemp = 30.61, output = 32.2, timeout = 5850, expectedTempC = 30.00, targetTecRampRate = 1.234665[0m
+[0;32mI (467744) TC: thermalControl-0 = 66.61, modeled = 66.61, target = 70.00, HeatSinkTemp = 30.63, output = 31.3, timeout = 6000, expectedTempC = 30.00, targetTecRampRate = 1.214447[0m
+DATAQ:  | dataQLiquidStg1 = 30.58 | 
+[0;32mI (467893) TC: thermalControl-0 = 66.29, modeled = 66.29, target = 70.00, HeatSinkTemp = 30.66, output = 31.7, timeout = 6150, expectedTempC = 30.00, targetTecRampRate = 1.194458[0m
+[0;32mI (468043) TC: thermalControl-0 = 65.95, modeled = 65.95, target = 70.00, HeatSinkTemp = 30.68, output = 31.8, timeout = 6300, expectedTempC = 30.00, targetTecRampRate = 1.174011[0m
+[0;32mI (468194) TC: thermalControl-0 = 65.64, modeled = 65.64, target = 70.00, HeatSinkTemp = 30.69, output = 30.9, timeout = 6450, expectedTempC = 30.00, targetTecRampRate = 1.154556[0m
+[0;32mI (468344) TC: thermalControl-0 = 65.33, modeled = 65.33, target = 70.00, HeatSinkTemp = 30.70, output = 31.1, timeout = 6600, expectedTempC = 30.00, targetTecRampRate = 1.135864[0m
+[0;32mI (468496) TC: thermalControl-0 = 65.03, modeled = 65.03, target = 70.00, HeatSinkTemp = 30.72, output = 31.0, timeout = 6750, expectedTempC = 30.00, targetTecRampRate = 1.117020[0m
+[0;32mI (468505) _performCapture: [50814,0,27.29,2020,18000,12574,4395,2732,1446,2558,2133,462,18000,0][0m
+[0;32mI (468645) TC: thermalControl-0 = 64.72, modeled = 64.72, target = 70.00, HeatSinkTemp = 30.73, output = 31.1, timeout = 6900, expectedTempC = 30.00, targetTecRampRate = 1.097946[0m
+[0;32mI (468795) TC: thermalControl-0 = 64.39, modeled = 64.39, target = 70.00, HeatSinkTemp = 30.74, output = 30.2, timeout = 7050, expectedTempC = 30.00, targetTecRampRate = 1.078796[0m
+DATAQ:  | dataQLiquidStg1 = 30.03 | 
+[0;32mI (468945) TC: thermalControl-0 = 64.11, modeled = 64.11, target = 70.00, HeatSinkTemp = 30.75, output = 30.8, timeout = 7200, expectedTempC = 30.00, targetTecRampRate = 1.061020[0m
+[0;32mI (469095) TC: thermalControl-0 = 63.81, modeled = 63.81, target = 70.00, HeatSinkTemp = 30.76, output = 29.9, timeout = 7350, expectedTempC = 30.00, targetTecRampRate = 1.042862[0m
+[0;32mI (469245) TC: thermalControl-0 = 63.54, modeled = 63.54, target = 70.00, HeatSinkTemp = 30.77, output = 30.3, timeout = 7500, expectedTempC = 30.00, targetTecRampRate = 1.026077[0m
+[0;32mI (469395) TC: thermalControl-0 = 63.27, modeled = 63.27, target = 70.00, HeatSinkTemp = 30.78, output = 29.2, timeout = 7650, expectedTempC = 30.00, targetTecRampRate = 1.009293[0m
+[0;32mI (469545) TC: thermalControl-0 = 63.00, modeled = 63.00, target = 70.00, HeatSinkTemp = 30.80, output = 29.3, timeout = 7800, expectedTempC = 30.00, targetTecRampRate = 0.992813[0m
+[0;32mI (469621) _performCapture: [51929,0,27.29,1999,18000,12631,4403,2729,1453,2581,2135,462,18000,0][0m
+[0;32mI (469696) TC: thermalControl-0 = 62.72, modeled = 62.72, target = 70.00, HeatSinkTemp = 30.81, output = 29.1, timeout = 7950, expectedTempC = 30.00, targetTecRampRate = 0.975800[0m
+[0;32mI (469845) TC: thermalControl-0 = 62.46, modeled = 62.46, target = 70.00, HeatSinkTemp = 30.81, output = 29.0, timeout = 8100, expectedTempC = 30.00, targetTecRampRate = 0.959778[0m
+DATAQ:  | dataQLiquidStg1 = 30.38 | 
+[0;32mI (469996) TC: thermalControl-0 = 62.21, modeled = 62.21, target = 70.00, HeatSinkTemp = 30.82, output = 28.2, timeout = 8250, expectedTempC = 30.00, targetTecRampRate = 0.944138[0m
+[0;32mI (470145) TC: thermalControl-0 = 61.94, modeled = 61.94, target = 70.00, HeatSinkTemp = 30.83, output = 29.0, timeout = 8400, expectedTempC = 30.00, targetTecRampRate = 0.928040[0m
+[0;32mI (470295) TC: thermalControl-0 = 61.69, modeled = 61.69, target = 70.00, HeatSinkTemp = 30.84, output = 28.4, timeout = 8550, expectedTempC = 30.00, targetTecRampRate = 0.912399[0m
+[0;32mI (470445) TC: thermalControl-0 = 61.43, modeled = 61.43, target = 70.00, HeatSinkTemp = 30.85, output = 28.4, timeout = 8700, expectedTempC = 30.00, targetTecRampRate = 0.896912[0m
+[0;32mI (470595) TC: thermalControl-0 = 61.21, modeled = 61.21, target = 70.00, HeatSinkTemp = 30.86, output = 27.2, timeout = 8850, expectedTempC = 30.00, targetTecRampRate = 0.882721[0m
+[0;32mI (470747) TC: thermalControl-0 = 60.96, modeled = 60.96, target = 70.00, HeatSinkTemp = 30.87, output = 28.5, timeout = 9000, expectedTempC = 30.00, targetTecRampRate = 0.867615[0m
+[0;32mI (470756) _performCapture: [53065,0,27.28,1990,18000,12707,4417,2736,1467,2574,2145,465,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 31.11 | 
+[0;32mI (470896) TC: thermalControl-0 = 60.71, modeled = 60.71, target = 70.00, HeatSinkTemp = 30.88, output = 27.2, timeout = 9150, expectedTempC = 30.00, targetTecRampRate = 0.852814[0m
+[0;32mI (471046) TC: thermalControl-0 = 60.48, modeled = 60.48, target = 70.00, HeatSinkTemp = 30.89, output = 28.8, timeout = 9300, expectedTempC = 30.00, targetTecRampRate = 0.838470[0m
+[0;32mI (471196) TC: thermalControl-0 = 60.21, modeled = 60.21, target = 70.00, HeatSinkTemp = 30.89, output = 28.0, timeout = 9450, expectedTempC = 30.00, targetTecRampRate = 0.823059[0m
+[0;32mI (471346) TC: thermalControl-0 = 60.00, modeled = 60.00, target = 70.00, HeatSinkTemp = 30.90, output = 26.8, timeout = 9600, expectedTempC = 30.00, targetTecRampRate = 0.809937[0m
+[0;32mI (471497) TC: thermalControl-0 = 59.78, modeled = 59.78, target = 70.00, HeatSinkTemp = 30.91, output = 28.4, timeout = 9750, expectedTempC = 30.00, targetTecRampRate = 0.796280[0m
+[0;32mI (471646) TC: thermalControl-0 = 59.53, modeled = 59.53, target = 70.00, HeatSinkTemp = 30.91, output = 26.9, timeout = 9900, expectedTempC = 30.00, targetTecRampRate = 0.781708[0m
+[0;32mI (471796) TC: thermalControl-0 = 59.33, modeled = 59.33, target = 70.00, HeatSinkTemp = 30.93, output = 26.9, timeout = 10050, expectedTempC = 30.00, targetTecRampRate = 0.769119[0m
+[0;32mI (471876) _performCapture: [54184,0,27.28,1984,18000,12756,4432,2751,1470,2539,2152,467,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 32.12 | 
+[0;32mI (471946) TC: thermalControl-0 = 59.11, modeled = 59.11, target = 70.00, HeatSinkTemp = 30.93, output = 27.4, timeout = 10200, expectedTempC = 30.00, targetTecRampRate = 0.755920[0m
+[0;32mI (472096) TC: thermalControl-0 = 58.89, modeled = 58.89, target = 70.00, HeatSinkTemp = 30.93, output = 26.5, timeout = 10350, expectedTempC = 30.00, targetTecRampRate = 0.742569[0m
+[0;32mI (472247) TC: thermalControl-0 = 58.65, modeled = 58.65, target = 70.00, HeatSinkTemp = 30.94, output = 25.6, timeout = 10500, expectedTempC = 30.00, targetTecRampRate = 0.728912[0m
+[0;32mI (472397) TC: thermalControl-0 = 58.46, modeled = 58.46, target = 70.00, HeatSinkTemp = 30.94, output = 26.2, timeout = 10650, expectedTempC = 30.00, targetTecRampRate = 0.716782[0m
+[0;32mI (472547) TC: thermalControl-0 = 58.25, modeled = 58.25, target = 70.00, HeatSinkTemp = 30.95, output = 26.1, timeout = 10800, expectedTempC = 30.00, targetTecRampRate = 0.704498[0m
+[0;32mI (472698) TC: thermalControl-0 = 58.03, modeled = 58.03, target = 70.00, HeatSinkTemp = 30.95, output = 25.6, timeout = 10950, expectedTempC = 30.00, targetTecRampRate = 0.691528[0m
+[0;32mI (472848) TC: thermalControl-0 = 57.84, modeled = 57.84, target = 70.00, HeatSinkTemp = 30.96, output = 25.6, timeout = 11100, expectedTempC = 30.00, targetTecRampRate = 0.680084[0m
+DATAQ:  | dataQLiquidStg1 = 33.21 | 
+[0;32mI (472998) TC: thermalControl-0 = 57.63, modeled = 57.63, target = 70.00, HeatSinkTemp = 30.97, output = 27.0, timeout = 11250, expectedTempC = 30.00, targetTecRampRate = 0.667725[0m
+[0;32mI (473008) _performCapture: [55317,0,27.27,2003,18000,12747,4446,2773,1469,2531,2170,472,18000,0][0m
+[0;32mI (473148) TC: thermalControl-0 = 57.40, modeled = 57.40, target = 70.00, HeatSinkTemp = 30.97, output = 26.0, timeout = 11400, expectedTempC = 30.00, targetTecRampRate = 0.654755[0m
+[0;32mI (473298) TC: thermalControl-0 = 57.23, modeled = 57.23, target = 70.00, HeatSinkTemp = 30.98, output = 25.7, timeout = 11550, expectedTempC = 30.00, targetTecRampRate = 0.643692[0m
+[0;32mI (473448) TC: thermalControl-0 = 57.04, modeled = 57.04, target = 70.00, HeatSinkTemp = 30.99, output = 24.8, timeout = 11700, expectedTempC = 30.00, targetTecRampRate = 0.632477[0m
+[0;32mI (473598) TC: thermalControl-0 = 56.86, modeled = 56.86, target = 70.00, HeatSinkTemp = 30.99, output = 25.7, timeout = 11850, expectedTempC = 30.00, targetTecRampRate = 0.621567[0m
+[0;32mI (473748) TC: thermalControl-0 = 56.65, modeled = 56.65, target = 70.00, HeatSinkTemp = 31.01, output = 25.0, timeout = 12000, expectedTempC = 30.00, targetTecRampRate = 0.609589[0m
+[0;32mI (473898) TC: thermalControl-0 = 56.48, modeled = 56.48, target = 70.00, HeatSinkTemp = 31.00, output = 23.6, timeout = 12150, expectedTempC = 30.00, targetTecRampRate = 0.599594[0m
+DATAQ:  | dataQLiquidStg1 = 34.72 | 
+[0;32mI (474048) TC: thermalControl-0 = 56.30, modeled = 56.30, target = 70.00, HeatSinkTemp = 31.01, output = 25.2, timeout = 12300, expectedTempC = 30.00, targetTecRampRate = 0.588684[0m
+[0;32mI (474125) _performCapture: [56433,0,27.27,2017,18000,12734,4450,2799,1467,2552,2185,468,18000,0][0m
+[0;32mI (474199) TC: thermalControl-0 = 56.08, modeled = 56.08, target = 70.00, HeatSinkTemp = 31.02, output = 24.7, timeout = 12450, expectedTempC = 30.00, targetTecRampRate = 0.576477[0m
+[0;32mI (474348) TC: thermalControl-0 = 55.91, modeled = 55.91, target = 70.00, HeatSinkTemp = 31.02, output = 24.0, timeout = 12600, expectedTempC = 30.00, targetTecRampRate = 0.566559[0m
+[0;32mI (474498) TC: thermalControl-0 = 55.74, modeled = 55.74, target = 70.00, HeatSinkTemp = 31.03, output = 24.8, timeout = 12750, expectedTempC = 30.00, targetTecRampRate = 0.556564[0m
+[0;32mI (474648) TC: thermalControl-0 = 55.58, modeled = 55.58, target = 70.00, HeatSinkTemp = 31.03, output = 24.0, timeout = 12900, expectedTempC = 30.00, targetTecRampRate = 0.546646[0m
+[0;32mI (474799) TC: thermalControl-0 = 55.39, modeled = 55.39, target = 70.00, HeatSinkTemp = 31.04, output = 25.0, timeout = 13050, expectedTempC = 30.00, targetTecRampRate = 0.535812[0m
+DATAQ:  | dataQLiquidStg1 = 35.33 | 
+[0;32mI (474948) TC: thermalControl-0 = 55.23, modeled = 55.23, target = 70.00, HeatSinkTemp = 31.04, output = 23.9, timeout = 13200, expectedTempC = 30.00, targetTecRampRate = 0.526352[0m
+[0;32mI (475098) TC: thermalControl-0 = 55.06, modeled = 55.06, target = 70.00, HeatSinkTemp = 31.04, output = 24.0, timeout = 13350, expectedTempC = 30.00, targetTecRampRate = 0.516663[0m
+[0;32mI (475250) TC: thermalControl-0 = 54.89, modeled = 54.89, target = 70.00, HeatSinkTemp = 31.06, output = 23.9, timeout = 13500, expectedTempC = 30.00, targetTecRampRate = 0.506668[0m
+[0;32mI (475260) _performCapture: [57568,0,27.26,2043,18000,12792,4466,2799,1478,2597,2179,468,18000,0][0m
+[0;32mI (475399) TC: thermalControl-0 = 54.71, modeled = 54.71, target = 70.00, HeatSinkTemp = 31.06, output = 24.1, timeout = 13650, expectedTempC = 30.00, targetTecRampRate = 0.496750[0m
+[0;32mI (475549) TC: thermalControl-0 = 54.56, modeled = 54.56, target = 70.00, HeatSinkTemp = 31.06, output = 23.9, timeout = 13800, expectedTempC = 30.00, targetTecRampRate = 0.487976[0m
+[0;32mI (475699) TC: thermalControl-0 = 54.38, modeled = 54.38, target = 70.00, HeatSinkTemp = 31.07, output = 23.9, timeout = 13950, expectedTempC = 30.00, targetTecRampRate = 0.477982[0m
+[0;32mI (475849) TC: thermalControl-0 = 54.22, modeled = 54.22, target = 70.00, HeatSinkTemp = 31.07, output = 24.3, timeout = 14100, expectedTempC = 30.00, targetTecRampRate = 0.468826[0m
+DATAQ:  | dataQLiquidStg1 = 35.51 | 
+[0;32mI (475999) TC: thermalControl-0 = 54.06, modeled = 54.06, target = 70.00, HeatSinkTemp = 31.07, output = 23.3, timeout = 14250, expectedTempC = 30.00, targetTecRampRate = 0.459595[0m
+[0;32mI (476149) TC: thermalControl-0 = 53.91, modeled = 53.91, target = 70.00, HeatSinkTemp = 31.08, output = 23.4, timeout = 14400, expectedTempC = 30.00, targetTecRampRate = 0.450821[0m
+[0;32mI (476300) TC: thermalControl-0 = 53.74, modeled = 53.74, target = 70.00, HeatSinkTemp = 31.08, output = 24.0, timeout = 14550, expectedTempC = 30.00, targetTecRampRate = 0.441437[0m
+[0;32mI (476377) _performCapture: [58685,0,27.26,2063,18000,12787,4465,2765,1481,2613,2162,472,18000,0][0m
+[0;32mI (476450) TC: thermalControl-0 = 53.58, modeled = 53.58, target = 70.00, HeatSinkTemp = 31.09, output = 24.0, timeout = 14700, expectedTempC = 30.00, targetTecRampRate = 0.432663[0m
+[0;32mI (476600) TC: thermalControl-0 = 53.43, modeled = 53.43, target = 70.00, HeatSinkTemp = 31.08, output = 22.3, timeout = 14850, expectedTempC = 30.00, targetTecRampRate = 0.424194[0m
+[0;32mI (476750) TC: thermalControl-0 = 53.29, modeled = 53.29, target = 70.00, HeatSinkTemp = 31.08, output = 23.7, timeout = 15000, expectedTempC = 30.00, targetTecRampRate = 0.416107[0m
+[0;32mI (476915) TC: thermalControl-0 = 53.18, modeled = 53.18, target = 70.00, HeatSinkTemp = 31.09, output = 22.9, timeout = 15150, expectedTempC = 30.00, targetTecRampRate = 0.409241[0m
+DATAQ:  | dataQLiquidStg1 = 35.83 | 
+[0;32mI (477064) TC: thermalControl-0 = 52.98, modeled = 52.98, target = 70.00, HeatSinkTemp = 31.09, output = 23.2, timeout = 15300, expectedTempC = 30.00, targetTecRampRate = 0.398788[0m
+[0;32mI (477214) TC: thermalControl-0 = 52.83, modeled = 52.83, target = 70.00, HeatSinkTemp = 31.10, output = 22.5, timeout = 15450, expectedTempC = 30.00, targetTecRampRate = 0.390778[0m
+[0;32mI (477364) TC: thermalControl-0 = 52.70, modeled = 52.70, target = 70.00, HeatSinkTemp = 31.10, output = 23.1, timeout = 15600, expectedTempC = 30.00, targetTecRampRate = 0.383377[0m
+[0;32mI (477514) TC: thermalControl-0 = 52.57, modeled = 52.57, target = 70.00, HeatSinkTemp = 31.10, output = 21.8, timeout = 15750, expectedTempC = 30.00, targetTecRampRate = 0.375671[0m
+[0;32mI (477531) _performCapture: [59839,0,27.25,2070,18000,12757,4467,2748,1477,2619,2161,473,18000,0][0m
+[0;32mI (477665) TC: thermalControl-0 = 52.41, modeled = 52.41, target = 70.00, HeatSinkTemp = 31.11, output = 23.1, timeout = 15900, expectedTempC = 30.00, targetTecRampRate = 0.367355[0m
+[0;32mI (477815) TC: thermalControl-0 = 52.27, modeled = 52.27, target = 70.00, HeatSinkTemp = 31.11, output = 22.3, timeout = 16050, expectedTempC = 30.00, targetTecRampRate = 0.359344[0m
+DATAQ:  | dataQLiquidStg1 = 36.65 | 
+[0;32mI (477964) TC: thermalControl-0 = 52.14, modeled = 52.14, target = 70.00, HeatSinkTemp = 31.11, output = 22.5, timeout = 16200, expectedTempC = 30.00, targetTecRampRate = 0.352249[0m
+[0;32mI (478114) TC: thermalControl-0 = 52.02, modeled = 52.02, target = 70.00, HeatSinkTemp = 31.12, output = 23.0, timeout = 16350, expectedTempC = 30.00, targetTecRampRate = 0.345306[0m
+[0;32mI (478264) TC: thermalControl-0 = 51.88, modeled = 51.88, target = 70.00, HeatSinkTemp = 31.11, output = 21.9, timeout = 16500, expectedTempC = 30.00, targetTecRampRate = 0.337677[0m
+[0;32mI (478414) TC: thermalControl-0 = 51.75, modeled = 51.75, target = 70.00, HeatSinkTemp = 31.12, output = 22.0, timeout = 16650, expectedTempC = 30.00, targetTecRampRate = 0.330582[0m
+[0;32mI (478564) TC: thermalControl-0 = 51.61, modeled = 51.61, target = 70.00, HeatSinkTemp = 31.13, output = 22.0, timeout = 16800, expectedTempC = 30.00, targetTecRampRate = 0.323257[0m
+[0;32mI (478657) _performCapture: [60965,0,27.25,2014,18000,12734,4472,2783,1479,2545,2154,470,18000,0][0m
+[0;32mI (478714) TC: thermalControl-0 = 51.51, modeled = 51.51, target = 70.00, HeatSinkTemp = 31.13, output = 21.6, timeout = 16950, expectedTempC = 30.00, targetTecRampRate = 0.317230[0m
+[0;32mI (478864) TC: thermalControl-0 = 51.36, modeled = 51.36, target = 70.00, HeatSinkTemp = 31.13, output = 22.3, timeout = 17100, expectedTempC = 30.00, targetTecRampRate = 0.309372[0m
+DATAQ:  | dataQLiquidStg1 = 37.03 | 
+[0;32mI (479014) TC: thermalControl-0 = 51.22, modeled = 51.22, target = 70.00, HeatSinkTemp = 31.13, output = 22.1, timeout = 17250, expectedTempC = 30.00, targetTecRampRate = 0.302124[0m
+[0;32mI (479164) TC: thermalControl-0 = 51.09, modeled = 51.09, target = 70.00, HeatSinkTemp = 31.13, output = 21.5, timeout = 17400, expectedTempC = 30.00, targetTecRampRate = 0.295181[0m
+[0;32mI (479314) TC: thermalControl-0 = 50.98, modeled = 50.98, target = 70.00, HeatSinkTemp = 31.14, output = 21.4, timeout = 17550, expectedTempC = 30.00, targetTecRampRate = 0.289307[0m
+[0;32mI (479465) TC: thermalControl-0 = 50.86, modeled = 50.86, target = 70.00, HeatSinkTemp = 31.14, output = 21.6, timeout = 17700, expectedTempC = 30.00, targetTecRampRate = 0.282669[0m
+[0;32mI (479615) TC: thermalControl-0 = 50.74, modeled = 50.74, target = 70.00, HeatSinkTemp = 31.14, output = 22.3, timeout = 17850, expectedTempC = 30.00, targetTecRampRate = 0.276413[0m
+[0;32mI (479766) TC: thermalControl-0 = 50.62, modeled = 50.62, target = 70.00, HeatSinkTemp = 31.15, output = 21.1, timeout = 18000, expectedTempC = 30.00, targetTecRampRate = 0.269775[0m
+[0;32mI (479784) _performCapture: [62092,0,27.24,1979,18000,12770,4477,2777,1472,2585,2165,468,18000,0][0m
+[0;32mI (479916) TC: thermalControl-0 = 50.49, modeled = 50.49, target = 70.00, HeatSinkTemp = 31.14, output = 21.0, timeout = 18150, expectedTempC = 30.00, targetTecRampRate = 0.262985[0m
+DATAQ:  | dataQLiquidStg1 = 37.54 | 
+[0;32mI (480066) TC: thermalControl-0 = 50.38, modeled = 50.38, target = 70.00, HeatSinkTemp = 31.15, output = 20.8, timeout = 18300, expectedTempC = 30.00, targetTecRampRate = 0.257339[0m
+[0;32mI (480216) TC: thermalControl-0 = 50.27, modeled = 50.27, target = 70.00, HeatSinkTemp = 31.15, output = 21.2, timeout = 18450, expectedTempC = 30.00, targetTecRampRate = 0.251236[0m
+[0;32mI (480366) TC: thermalControl-0 = 50.13, modeled = 50.13, target = 70.00, HeatSinkTemp = 31.15, output = 21.3, timeout = 18600, expectedTempC = 30.00, targetTecRampRate = 0.244293[0m
+[0;32mI (480516) TC: thermalControl-0 = 50.03, modeled = 50.03, target = 70.00, HeatSinkTemp = 31.15, output = 21.1, timeout = 18750, expectedTempC = 30.00, targetTecRampRate = 0.238876[0m
+[0;32mI (480666) TC: thermalControl-0 = 49.91, modeled = 49.91, target = 70.00, HeatSinkTemp = 31.15, output = 21.2, timeout = 18900, expectedTempC = 30.00, targetTecRampRate = 0.232697[0m
+[0;32mI (480816) TC: thermalControl-0 = 49.80, modeled = 49.80, target = 70.00, HeatSinkTemp = 31.15, output = 20.4, timeout = 19050, expectedTempC = 30.00, targetTecRampRate = 0.227051[0m
+[0;32mI (480892) _performCapture: [63200,0,27.24,1988,18000,12749,4471,2756,1469,2501,2171,466,18000,0][0m
+[0;32mI (480967) TC: thermalControl-0 = 49.69, modeled = 49.69, target = 70.00, HeatSinkTemp = 31.15, output = 21.0, timeout = 19200, expectedTempC = 30.00, targetTecRampRate = 0.221176[0m
+DATAQ:  | dataQLiquidStg1 = 37.82 | 
+[0;32mI (481117) TC: thermalControl-0 = 49.58, modeled = 49.58, target = 70.00, HeatSinkTemp = 31.15, output = 20.5, timeout = 19350, expectedTempC = 30.00, targetTecRampRate = 0.215683[0m
+[0;32mI (481267) TC: thermalControl-0 = 49.46, modeled = 49.46, target = 70.00, HeatSinkTemp = 31.15, output = 20.5, timeout = 19500, expectedTempC = 30.00, targetTecRampRate = 0.209732[0m
+[0;32mI (481417) TC: thermalControl-0 = 49.37, modeled = 49.37, target = 70.00, HeatSinkTemp = 31.16, output = 20.5, timeout = 19650, expectedTempC = 30.00, targetTecRampRate = 0.204773[0m
+[0;32mI (481567) TC: thermalControl-0 = 49.27, modeled = 49.27, target = 70.00, HeatSinkTemp = 31.17, output = 21.2, timeout = 19800, expectedTempC = 30.00, targetTecRampRate = 0.199738[0m
+[0;32mI (481717) TC: thermalControl-0 = 49.17, modeled = 49.17, target = 70.00, HeatSinkTemp = 31.17, output = 20.4, timeout = 19950, expectedTempC = 30.00, targetTecRampRate = 0.194550[0m
+[0;32mI (481867) TC: thermalControl-0 = 49.05, modeled = 49.05, target = 70.00, HeatSinkTemp = 31.17, output = 20.5, timeout = 20100, expectedTempC = 30.00, targetTecRampRate = 0.188751[0m
+DATAQ:  | dataQLiquidStg1 = 37.87 | 
+[0;32mI (482019) TC: thermalControl-0 = 48.94, modeled = 48.94, target = 70.00, HeatSinkTemp = 31.16, output = 20.5, timeout = 20250, expectedTempC = 30.00, targetTecRampRate = 0.183105[0m
+[0;32mI (482029) _performCapture: [64337,0,27.24,1969,18000,12715,4473,2752,1478,2528,2181,470,18000,0][0m
+[0;32mI (482167) TC: thermalControl-0 = 48.83, modeled = 48.83, target = 70.00, HeatSinkTemp = 31.16, output = 20.2, timeout = 20400, expectedTempC = 30.00, targetTecRampRate = 0.177841[0m
+[0;32mI (482318) TC: thermalControl-0 = 48.73, modeled = 48.73, target = 70.00, HeatSinkTemp = 31.16, output = 20.2, timeout = 20550, expectedTempC = 30.00, targetTecRampRate = 0.172577[0m
+[0;32mI (482468) TC: thermalControl-0 = 48.64, modeled = 48.64, target = 70.00, HeatSinkTemp = 31.17, output = 18.0, timeout = 20700, expectedTempC = 30.00, targetTecRampRate = 0.168304[0m
+[0;32mI (482618) TC: thermalControl-0 = 48.55, modeled = 48.55, target = 70.00, HeatSinkTemp = 31.17, output = 20.1, timeout = 20850, expectedTempC = 30.00, targetTecRampRate = 0.163651[0m
+[0;32mI (482769) TC: thermalControl-0 = 48.44, modeled = 48.44, target = 70.00, HeatSinkTemp = 31.16, output = 20.4, timeout = 21000, expectedTempC = 30.00, targetTecRampRate = 0.158234[0m
+[0;32mI (482919) TC: thermalControl-0 = 48.34, modeled = 48.34, target = 70.00, HeatSinkTemp = 31.17, output = 17.1, timeout = 21150, expectedTempC = 30.00, targetTecRampRate = 0.153503[0m
+DATAQ:  | dataQLiquidStg1 = 37.78 | 
+[0;32mI (483069) TC: thermalControl-0 = 48.23, modeled = 48.23, target = 70.00, HeatSinkTemp = 31.17, output = 20.7, timeout = 21300, expectedTempC = 30.00, targetTecRampRate = 0.148315[0m
+[0;32mI (483145) _performCapture: [65453,0,27.23,2010,18000,12788,4470,2781,1478,2571,2188,471,18000,0][0m
+[0;32mI (483219) TC: thermalControl-0 = 48.14, modeled = 48.14, target = 70.00, HeatSinkTemp = 31.16, output = 18.4, timeout = 21450, expectedTempC = 30.00, targetTecRampRate = 0.143890[0m
+[0;32mI (483369) TC: thermalControl-0 = 48.04, modeled = 48.04, target = 70.00, HeatSinkTemp = 31.17, output = 20.1, timeout = 21600, expectedTempC = 30.00, targetTecRampRate = 0.138779[0m
+[0;32mI (483519) TC: thermalControl-0 = 47.94, modeled = 47.94, target = 70.00, HeatSinkTemp = 31.17, output = 20.4, timeout = 21750, expectedTempC = 30.00, targetTecRampRate = 0.134201[0m
+[0;32mI (483669) TC: thermalControl-0 = 47.86, modeled = 47.86, target = 70.00, HeatSinkTemp = 31.18, output = 19.4, timeout = 21900, expectedTempC = 30.00, targetTecRampRate = 0.130234[0m
+[0;32mI (483819) TC: thermalControl-0 = 47.76, modeled = 47.76, target = 70.00, HeatSinkTemp = 31.17, output = 18.1, timeout = 22050, expectedTempC = 30.00, targetTecRampRate = 0.125656[0m
+[0;32mI (483969) TC: thermalControl-0 = 47.67, modeled = 47.67, target = 70.00, HeatSinkTemp = 31.18, output = 20.4, timeout = 22200, expectedTempC = 30.00, targetTecRampRate = 0.121002[0m
+DATAQ:  | dataQLiquidStg1 = 38.08 | 
+[0;32mI (484119) TC: thermalControl-0 = 47.58, modeled = 47.58, target = 70.00, HeatSinkTemp = 31.18, output = 18.9, timeout = 22350, expectedTempC = 30.00, targetTecRampRate = 0.117035[0m
+[0;32mI (484269) TC: thermalControl-0 = 47.50, modeled = 47.50, target = 70.00, HeatSinkTemp = 31.18, output = 18.4, timeout = 22500, expectedTempC = 30.00, targetTecRampRate = 0.113144[0m
+[0;32mI (484278) _performCapture: [66574,0,27.23,2025,18000,12789,4471,2781,1478,2586,2185,473,18000,0][0m
+[0;32mI (484419) TC: thermalControl-0 = 47.39, modeled = 47.39, target = 70.00, HeatSinkTemp = 31.17, output = 19.2, timeout = 22650, expectedTempC = 30.00, targetTecRampRate = 0.107956[0m
+[0;32mI (484569) TC: thermalControl-0 = 47.30, modeled = 47.30, target = 70.00, HeatSinkTemp = 31.18, output = 19.9, timeout = 22800, expectedTempC = 30.00, targetTecRampRate = 0.103989[0m
+[0;31mE (484717) _updateInertiaCompensation: overshoot: -25.301678, updatedComp: -46.617649, atIndex: 70[0m
+[0;32mI (484721) TC: thermalControl-0 = 47.21, modeled = 47.21, target = 70.00, HeatSinkTemp = 31.17, output = 68.7, timeout = 22950, expectedTempC = 30.00, targetTecRampRate = 0.099640[0m
+[0;32mI (484870) TC: thermalControl-0 = 47.13, modeled = 47.13, target = 70.00, HeatSinkTemp = 31.18, output = 78.3, timeout = 23100, expectedTempC = 30.00, targetTecRampRate = 0.096054[0m
+[0;32mI (485020) TC: thermalControl-0 = 47.29, modeled = 47.29, target = 70.00, HeatSinkTemp = 31.18, output = 76.0, timeout = 23250, expectedTempC = 30.00, targetTecRampRate = 0.101776[0m
+DATAQ:  | dataQLiquidStg1 = 38.01 | 
+[0;32mI (485170) TC: thermalControl-0 = 47.77, modeled = 47.77, target = 70.00, HeatSinkTemp = 31.16, output = 73.5, timeout = 23400, expectedTempC = 30.00, targetTecRampRate = 0.120087[0m
+[0;32mI (485320) TC: thermalControl-0 = 48.59, modeled = 48.59, target = 70.00, HeatSinkTemp = 31.11, output = 70.9, timeout = 23550, expectedTempC = 30.00, targetTecRampRate = 0.151749[0m
+[0;32mI (485396) _performCapture: [67704,0,27.22,2009,18000,12774,4475,2780,1473,2559,2187,466,18000,0][0m
+[0;32mI (485470) TC: thermalControl-0 = 49.46, modeled = 49.46, target = 70.00, HeatSinkTemp = 31.08, output = 68.8, timeout = 23700, expectedTempC = 30.00, targetTecRampRate = 0.185089[0m
+[0;32mI (485620) TC: thermalControl-0 = 50.32, modeled = 50.32, target = 70.00, HeatSinkTemp = 31.02, output = 66.6, timeout = 23850, expectedTempC = 30.00, targetTecRampRate = 0.218277[0m
+[0;32mI (485770) TC: thermalControl-0 = 51.17, modeled = 51.17, target = 70.00, HeatSinkTemp = 30.97, output = 65.0, timeout = 24000, expectedTempC = 30.00, targetTecRampRate = 0.250397[0m
+[0;32mI (485921) TC: thermalControl-0 = 52.09, modeled = 52.09, target = 70.00, HeatSinkTemp = 30.91, output = 63.0, timeout = 24150, expectedTempC = 30.00, targetTecRampRate = 0.285339[0m
+DATAQ:  | dataQLiquidStg1 = 38.13 | 
+[0;32mI (486072) TC: thermalControl-0 = 52.86, modeled = 52.86, target = 70.00, HeatSinkTemp = 30.86, output = 62.0, timeout = 24300, expectedTempC = 30.00, targetTecRampRate = 0.313950[0m
+[0;32mI (486222) TC: thermalControl-0 = 53.57, modeled = 53.57, target = 70.00, HeatSinkTemp = 30.81, output = 60.4, timeout = 24450, expectedTempC = 30.00, targetTecRampRate = 0.340347[0m
+[0;32mI (486372) TC: thermalControl-0 = 54.33, modeled = 54.33, target = 70.00, HeatSinkTemp = 30.76, output = 59.0, timeout = 24600, expectedTempC = 30.00, targetTecRampRate = 0.368118[0m
+[0;32mI (486523) TC: thermalControl-0 = 54.95, modeled = 54.95, target = 70.00, HeatSinkTemp = 30.70, output = 58.0, timeout = 24750, expectedTempC = 30.00, targetTecRampRate = 0.390625[0m
+[0;32mI (486533) _performCapture: [68842,0,27.21,2008,18000,12801,4484,2779,1480,2563,2191,465,18000,0][0m
+[0;32mI (486672) TC: thermalControl-0 = 55.53, modeled = 55.53, target = 70.00, HeatSinkTemp = 30.66, output = 56.9, timeout = 24900, expectedTempC = 30.00, targetTecRampRate = 0.411377[0m
+[0;32mI (486823) TC: thermalControl-0 = 56.11, modeled = 56.11, target = 70.00, HeatSinkTemp = 30.62, output = 56.1, timeout = 25050, expectedTempC = 30.00, targetTecRampRate = 0.431595[0m
+[0;32mI (486972) TC: thermalControl-0 = 56.62, modeled = 56.62, target = 70.00, HeatSinkTemp = 30.58, output = 55.5, timeout = 25200, expectedTempC = 30.00, targetTecRampRate = 0.449371[0m
+DATAQ:  | dataQLiquidStg1 = 38.08 | 
+[0;32mI (487122) TC: thermalControl-0 = 57.08, modeled = 57.08, target = 70.00, HeatSinkTemp = 30.55, output = 54.5, timeout = 25350, expectedTempC = 30.00, targetTecRampRate = 0.464859[0m
+[0;32mI (487273) TC: thermalControl-0 = 57.56, modeled = 57.56, target = 70.00, HeatSinkTemp = 30.51, output = 53.6, timeout = 25500, expectedTempC = 30.00, targetTecRampRate = 0.481033[0m
+[0;32mI (487423) TC: thermalControl-0 = 57.94, modeled = 57.94, target = 70.00, HeatSinkTemp = 30.48, output = 52.9, timeout = 25650, expectedTempC = 30.00, targetTecRampRate = 0.493240[0m
+[0;32mI (487573) TC: thermalControl-0 = 58.32, modeled = 58.32, target = 70.00, HeatSinkTemp = 30.45, output = 52.3, timeout = 25800, expectedTempC = 30.00, targetTecRampRate = 0.505219[0m
+[0;32mI (487651) _performCapture: [69959,0,27.21,2007,18000,12771,4480,2763,1474,2556,2183,467,18000,0][0m
+[0;32mI (487723) TC: thermalControl-0 = 58.67, modeled = 58.67, target = 70.00, HeatSinkTemp = 30.42, output = 52.0, timeout = 25950, expectedTempC = 30.00, targetTecRampRate = 0.515900[0m
+[0;32mI (487873) TC: thermalControl-0 = 59.00, modeled = 59.00, target = 70.00, HeatSinkTemp = 30.39, output = 51.0, timeout = 26100, expectedTempC = 30.00, targetTecRampRate = 0.526047[0m
+[0;32mI (488023) TC: thermalControl-0 = 59.34, modeled = 59.34, target = 70.00, HeatSinkTemp = 30.37, output = 50.6, timeout = 26250, expectedTempC = 30.00, targetTecRampRate = 0.536423[0m
+DATAQ:  | dataQLiquidStg1 = 38.22 | 
+[0;32mI (488173) TC: thermalControl-0 = 59.62, modeled = 59.62, target = 70.00, HeatSinkTemp = 30.34, output = 50.0, timeout = 26400, expectedTempC = 30.00, targetTecRampRate = 0.544434[0m
+[0;32mI (488324) TC: thermalControl-0 = 59.90, modeled = 59.90, target = 70.00, HeatSinkTemp = 30.32, output = 49.7, timeout = 26550, expectedTempC = 30.00, targetTecRampRate = 0.552292[0m
+[0;32mI (488474) TC: thermalControl-0 = 60.14, modeled = 60.14, target = 70.00, HeatSinkTemp = 30.29, output = 49.1, timeout = 26700, expectedTempC = 30.00, targetTecRampRate = 0.558395[0m
+[0;32mI (488625) TC: thermalControl-0 = 60.36, modeled = 60.36, target = 70.00, HeatSinkTemp = 30.28, output = 48.5, timeout = 26850, expectedTempC = 30.00, targetTecRampRate = 0.563812[0m
+[0;32mI (488770) _performCapture: [71078,0,27.21,2033,18000,12746,4482,2775,1476,2526,2172,468,18000,0][0m
+[0;32mI (488775) TC: thermalControl-0 = 60.59, modeled = 60.59, target = 70.00, HeatSinkTemp = 30.26, output = 48.3, timeout = 27000, expectedTempC = 30.00, targetTecRampRate = 0.569611[0m
+[0;32mI (488925) TC: thermalControl-0 = 60.78, modeled = 60.78, target = 70.00, HeatSinkTemp = 30.24, output = 48.3, timeout = 27150, expectedTempC = 30.00, targetTecRampRate = 0.573578[0m
+[0;32mI (489075) TC: thermalControl-0 = 60.97, modeled = 60.97, target = 70.00, HeatSinkTemp = 30.22, output = 47.8, timeout = 27300, expectedTempC = 30.00, targetTecRampRate = 0.577545[0m
+DATAQ:  | dataQLiquidStg1 = 38.54 | 
+[0;32mI (489225) TC: thermalControl-0 = 61.13, modeled = 61.13, target = 70.00, HeatSinkTemp = 30.20, output = 47.6, timeout = 27450, expectedTempC = 30.00, targetTecRampRate = 0.580597[0m
+[0;32mI (489375) TC: thermalControl-0 = 61.33, modeled = 61.33, target = 70.00, HeatSinkTemp = 30.18, output = 47.2, timeout = 27600, expectedTempC = 30.00, targetTecRampRate = 0.584869[0m
+[0;32mI (489525) TC: thermalControl-0 = 61.46, modeled = 61.46, target = 70.00, HeatSinkTemp = 30.16, output = 47.0, timeout = 27750, expectedTempC = 30.00, targetTecRampRate = 0.586777[0m
+[0;32mI (489675) TC: thermalControl-0 = 61.60, modeled = 61.60, target = 70.00, HeatSinkTemp = 30.15, output = 46.9, timeout = 27900, expectedTempC = 30.00, targetTecRampRate = 0.588684[0m
+[0;32mI (489826) TC: thermalControl-0 = 61.73, modeled = 61.73, target = 70.00, HeatSinkTemp = 30.13, output = 46.6, timeout = 28050, expectedTempC = 30.00, targetTecRampRate = 0.590439[0m
+[0;32mI (489904) _performCapture: [72212,0,27.21,2060,18000,12759,4488,2782,1466,2527,2167,470,18000,0][0m
+[0;32mI (489976) TC: thermalControl-0 = 61.86, modeled = 61.86, target = 70.00, HeatSinkTemp = 30.12, output = 46.2, timeout = 28200, expectedTempC = 30.00, targetTecRampRate = 0.591965[0m
+DATAQ:  | dataQLiquidStg1 = 39.1 | 
+[0;32mI (490125) TC: thermalControl-0 = 62.00, modeled = 62.00, target = 70.00, HeatSinkTemp = 30.11, output = 45.8, timeout = 28350, expectedTempC = 30.00, targetTecRampRate = 0.593948[0m
+[0;32mI (490276) TC: thermalControl-0 = 62.09, modeled = 62.09, target = 70.00, HeatSinkTemp = 30.10, output = 45.9, timeout = 28500, expectedTempC = 30.00, targetTecRampRate = 0.594025[0m
+[0;32mI (490427) TC: thermalControl-0 = 62.20, modeled = 62.20, target = 70.00, HeatSinkTemp = 30.09, output = 45.6, timeout = 28650, expectedTempC = 30.00, targetTecRampRate = 0.594711[0m
+[0;32mI (490576) TC: thermalControl-0 = 62.29, modeled = 62.29, target = 70.00, HeatSinkTemp = 30.07, output = 45.2, timeout = 28800, expectedTempC = 30.00, targetTecRampRate = 0.594940[0m
+[0;32mI (490727) TC: thermalControl-0 = 62.37, modeled = 62.37, target = 70.00, HeatSinkTemp = 30.07, output = 45.4, timeout = 28950, expectedTempC = 30.00, targetTecRampRate = 0.594635[0m
+[0;32mI (490877) TC: thermalControl-0 = 62.47, modeled = 62.47, target = 70.00, HeatSinkTemp = 30.05, output = 45.3, timeout = 29100, expectedTempC = 30.00, targetTecRampRate = 0.594940[0m
+[0;32mI (491018) _performCapture: [73326,0,27.20,2056,18000,12783,4498,2793,1469,2539,2179,476,18000,0][0m
+[0;32mI (491027) TC: thermalControl-0 = 62.54, modeled = 62.54, target = 70.00, HeatSinkTemp = 30.04, output = 45.5, timeout = 29250, expectedTempC = 30.00, targetTecRampRate = 0.594406[0m
+DATAQ:  | dataQLiquidStg1 = 39.66 | 
+[0;32mI (491176) TC: thermalControl-0 = 62.64, modeled = 62.64, target = 70.00, HeatSinkTemp = 30.04, output = 44.9, timeout = 29400, expectedTempC = 30.00, targetTecRampRate = 0.594635[0m
+[0;32mI (491327) TC: thermalControl-0 = 62.71, modeled = 62.71, target = 70.00, HeatSinkTemp = 30.02, output = 44.7, timeout = 29550, expectedTempC = 30.00, targetTecRampRate = 0.593796[0m
+[0;32mI (491477) TC: thermalControl-0 = 62.78, modeled = 62.78, target = 70.00, HeatSinkTemp = 30.01, output = 44.5, timeout = 29700, expectedTempC = 30.00, targetTecRampRate = 0.593262[0m
+[0;32mI (491626) TC: thermalControl-0 = 62.84, modeled = 62.84, target = 70.00, HeatSinkTemp = 30.00, output = 44.6, timeout = 29850, expectedTempC = 30.00, targetTecRampRate = 0.592194[0m
+[0;32mI (491777) TC: thermalControl-0 = 62.91, modeled = 62.91, target = 70.00, HeatSinkTemp = 30.00, output = 44.4, timeout = 30000, expectedTempC = 30.00, targetTecRampRate = 0.591431[0m
+[0;32mI (491928) TC: thermalControl-0 = 62.95, modeled = 62.95, target = 70.00, HeatSinkTemp = 29.98, output = 44.2, timeout = 30150, expectedTempC = 30.00, targetTecRampRate = 0.589447[0m
+[0;32mI (492078) TC: thermalControl-0 = 63.01, modeled = 63.01, target = 70.00, HeatSinkTemp = 29.98, output = 44.4, timeout = 30300, expectedTempC = 30.00, targetTecRampRate = 0.588379[0m
+DATAQ:  | dataQLiquidStg1 = 40.14 | 
+[0;32mI (492158) _performCapture: [74466,0,27.20,2037,18000,12801,4499,2793,1479,2589,2183,476,18000,0][0m
+[0;32mI (492228) TC: thermalControl-0 = 63.05, modeled = 63.05, target = 70.00, HeatSinkTemp = 29.97, output = 43.9, timeout = 30450, expectedTempC = 30.00, targetTecRampRate = 0.586395[0m
+[0;32mI (492378) TC: thermalControl-0 = 63.11, modeled = 63.11, target = 70.00, HeatSinkTemp = 29.96, output = 44.2, timeout = 30600, expectedTempC = 30.00, targetTecRampRate = 0.585098[0m
+[0;32mI (492528) TC: thermalControl-0 = 63.16, modeled = 63.16, target = 70.00, HeatSinkTemp = 29.95, output = 44.2, timeout = 30750, expectedTempC = 30.00, targetTecRampRate = 0.583878[0m
+[0;32mI (492677) TC: thermalControl-0 = 63.21, modeled = 63.21, target = 70.00, HeatSinkTemp = 29.95, output = 43.7, timeout = 30900, expectedTempC = 30.00, targetTecRampRate = 0.582275[0m
+[0;32mI (492827) TC: thermalControl-0 = 63.25, modeled = 63.25, target = 70.00, HeatSinkTemp = 29.94, output = 43.6, timeout = 31050, expectedTempC = 30.00, targetTecRampRate = 0.580444[0m
+[0;32mI (492978) TC: thermalControl-0 = 63.29, modeled = 63.29, target = 70.00, HeatSinkTemp = 29.93, output = 44.1, timeout = 31200, expectedTempC = 30.00, targetTecRampRate = 0.578308[0m
+DATAQ:  | dataQLiquidStg1 = 40.63 | 
+[0;32mI (493128) TC: thermalControl-0 = 63.32, modeled = 63.32, target = 70.00, HeatSinkTemp = 29.91, output = 43.8, timeout = 31350, expectedTempC = 30.00, targetTecRampRate = 0.576019[0m
+[0;32mI (493272) _performCapture: [75580,0,27.19,2016,18000,12828,4497,2794,1488,2610,2208,474,18000,0][0m
+[0;32mI (493279) TC: thermalControl-0 = 63.35, modeled = 63.35, target = 70.00, HeatSinkTemp = 29.90, output = 43.7, timeout = 31500, expectedTempC = 30.00, targetTecRampRate = 0.574265[0m
+[0;32mI (493428) TC: thermalControl-0 = 63.39, modeled = 63.39, target = 70.00, HeatSinkTemp = 29.91, output = 43.7, timeout = 31650, expectedTempC = 30.00, targetTecRampRate = 0.572281[0m
+[0;32mI (493578) TC: thermalControl-0 = 63.42, modeled = 63.42, target = 70.00, HeatSinkTemp = 29.89, output = 43.5, timeout = 31800, expectedTempC = 30.00, targetTecRampRate = 0.570068[0m
+[0;32mI (493728) TC: thermalControl-0 = 63.45, modeled = 63.45, target = 70.00, HeatSinkTemp = 29.89, output = 43.5, timeout = 31950, expectedTempC = 30.00, targetTecRampRate = 0.567703[0m
+[0;32mI (493878) TC: thermalControl-0 = 63.48, modeled = 63.48, target = 70.00, HeatSinkTemp = 29.88, output = 43.3, timeout = 32100, expectedTempC = 30.00, targetTecRampRate = 0.565567[0m
+[0;32mI (494028) TC: thermalControl-0 = 63.51, modeled = 63.51, target = 70.00, HeatSinkTemp = 29.87, output = 43.5, timeout = 32250, expectedTempC = 30.00, targetTecRampRate = 0.563507[0m
+DATAQ:  | dataQLiquidStg1 = 40.93 | 
+[0;32mI (494178) TC: thermalControl-0 = 63.52, modeled = 63.52, target = 70.00, HeatSinkTemp = 29.87, output = 43.7, timeout = 32400, expectedTempC = 30.00, targetTecRampRate = 0.560684[0m
+[0;32mI (494329) TC: thermalControl-0 = 63.55, modeled = 63.55, target = 70.00, HeatSinkTemp = 29.86, output = 43.3, timeout = 32550, expectedTempC = 30.00, targetTecRampRate = 0.558548[0m
+[0;32mI (494406) _performCapture: [76714,0,27.19,2015,18000,12839,4500,2782,1483,2618,2202,476,18000,0][0m
+[0;32mI (494479) TC: thermalControl-0 = 63.58, modeled = 63.58, target = 70.00, HeatSinkTemp = 29.85, output = 43.1, timeout = 32700, expectedTempC = 30.00, targetTecRampRate = 0.556335[0m
+[0;32mI (494628) TC: thermalControl-0 = 63.58, modeled = 63.58, target = 70.00, HeatSinkTemp = 29.85, output = 43.4, timeout = 32850, expectedTempC = 30.00, targetTecRampRate = 0.553055[0m
+[0;32mI (494779) TC: thermalControl-0 = 63.61, modeled = 63.61, target = 70.00, HeatSinkTemp = 29.83, output = 43.1, timeout = 33000, expectedTempC = 30.00, targetTecRampRate = 0.550690[0m
+[0;32mI (494929) TC: thermalControl-0 = 63.63, modeled = 63.63, target = 70.00, HeatSinkTemp = 29.83, output = 43.2, timeout = 33150, expectedTempC = 30.00, targetTecRampRate = 0.548248[0m
+[0;32mI (495079) TC: thermalControl-0 = 63.65, modeled = 63.65, target = 70.00, HeatSinkTemp = 29.83, output = 43.3, timeout = 33300, expectedTempC = 30.00, targetTecRampRate = 0.545883[0m
+DATAQ:  | dataQLiquidStg1 = 41.18 | 
+[0;32mI (495228) TC: thermalControl-0 = 63.65, modeled = 63.65, target = 70.00, HeatSinkTemp = 29.81, output = 43.3, timeout = 33450, expectedTempC = 30.00, targetTecRampRate = 0.542755[0m
+[0;32mI (495379) TC: thermalControl-0 = 63.67, modeled = 63.67, target = 70.00, HeatSinkTemp = 29.80, output = 43.0, timeout = 33600, expectedTempC = 30.00, targetTecRampRate = 0.540161[0m
+[0;32mI (495529) TC: thermalControl-0 = 63.69, modeled = 63.69, target = 70.00, HeatSinkTemp = 29.81, output = 42.9, timeout = 33750, expectedTempC = 30.00, targetTecRampRate = 0.537872[0m
+[0;32mI (495538) _performCapture: [77833,0,27.18,2072,18000,12818,4500,2777,1476,2616,2172,473,18000,0][0m
+[0;32mI (495680) TC: thermalControl-0 = 63.69, modeled = 63.69, target = 70.00, HeatSinkTemp = 29.80, output = 43.3, timeout = 33900, expectedTempC = 30.00, targetTecRampRate = 0.534821[0m
+[0;32mI (495829) TC: thermalControl-0 = 63.72, modeled = 63.72, target = 70.00, HeatSinkTemp = 29.80, output = 43.0, timeout = 34050, expectedTempC = 30.00, targetTecRampRate = 0.532608[0m
+[0;32mI (495980) TC: thermalControl-0 = 63.71, modeled = 63.71, target = 70.00, HeatSinkTemp = 29.78, output = 43.3, timeout = 34200, expectedTempC = 30.00, targetTecRampRate = 0.529327[0m
+[0;32mI (496129) TC: thermalControl-0 = 63.73, modeled = 63.73, target = 70.00, HeatSinkTemp = 29.78, output = 43.2, timeout = 34350, expectedTempC = 30.00, targetTecRampRate = 0.526962[0m
+DATAQ:  | dataQLiquidStg1 = 41.77 | 
+[0;32mI (496279) TC: thermalControl-0 = 63.75, modeled = 63.75, target = 70.00, HeatSinkTemp = 29.78, output = 43.0, timeout = 34500, expectedTempC = 30.00, targetTecRampRate = 0.524445[0m
+[0;32mI (496429) TC: thermalControl-0 = 63.76, modeled = 63.76, target = 70.00, HeatSinkTemp = 29.77, output = 42.9, timeout = 34650, expectedTempC = 30.00, targetTecRampRate = 0.521851[0m
+[0;32mI (496580) TC: thermalControl-0 = 63.77, modeled = 63.77, target = 70.00, HeatSinkTemp = 29.77, output = 43.1, timeout = 34800, expectedTempC = 30.00, targetTecRampRate = 0.519180[0m
+[0;32mI (496657) _performCapture: [78965,0,27.18,2069,18000,12832,4498,2790,1473,2563,2183,474,18000,0][0m
+[0;32mI (496731) TC: thermalControl-0 = 63.78, modeled = 63.78, target = 70.00, HeatSinkTemp = 29.75, output = 42.8, timeout = 34950, expectedTempC = 30.00, targetTecRampRate = 0.516357[0m
+[0;32mI (496881) TC: thermalControl-0 = 63.78, modeled = 63.78, target = 70.00, HeatSinkTemp = 29.75, output = 42.9, timeout = 35100, expectedTempC = 30.00, targetTecRampRate = 0.513382[0m
+[0;32mI (497031) TC: thermalControl-0 = 63.79, modeled = 63.79, target = 70.00, HeatSinkTemp = 29.74, output = 42.9, timeout = 35250, expectedTempC = 30.00, targetTecRampRate = 0.510712[0m
+DATAQ:  | dataQLiquidStg1 = 42.22 | 
+[0;32mI (497181) TC: thermalControl-0 = 63.82, modeled = 63.82, target = 70.00, HeatSinkTemp = 29.75, output = 42.7, timeout = 35400, expectedTempC = 30.00, targetTecRampRate = 0.508652[0m
+[0;32mI (497330) TC: thermalControl-0 = 63.81, modeled = 63.81, target = 70.00, HeatSinkTemp = 29.73, output = 42.9, timeout = 35550, expectedTempC = 30.00, targetTecRampRate = 0.505524[0m
+[0;32mI (497481) TC: thermalControl-0 = 63.81, modeled = 63.81, target = 70.00, HeatSinkTemp = 29.73, output = 43.0, timeout = 35700, expectedTempC = 30.00, targetTecRampRate = 0.502319[0m
+[0;32mI (497631) TC: thermalControl-0 = 63.83, modeled = 63.83, target = 70.00, HeatSinkTemp = 29.72, output = 42.8, timeout = 35850, expectedTempC = 30.00, targetTecRampRate = 0.500259[0m
+[0;32mI (497785) TC: thermalControl-0 = 63.83, modeled = 63.83, target = 70.00, HeatSinkTemp = 29.72, output = 43.3, timeout = 36000, expectedTempC = 30.00, targetTecRampRate = 0.497437[0m
+[0;32mI (497794) _performCapture: [80103,0,27.17,2068,18000,12860,4500,2758,1476,2551,2189,478,18000,0][0m
+[0;32mI (497931) TC: thermalControl-0 = 63.84, modeled = 63.84, target = 70.00, HeatSinkTemp = 29.71, output = 43.1, timeout = 36150, expectedTempC = 30.00, targetTecRampRate = 0.494843[0m
+[0;32mI (498081) TC: thermalControl-0 = 63.85, modeled = 63.85, target = 70.00, HeatSinkTemp = 29.70, output = 42.7, timeout = 36300, expectedTempC = 30.00, targetTecRampRate = 0.492096[0m
+DATAQ:  | dataQLiquidStg1 = 42.64 | 
+[0;32mI (498231) TC: thermalControl-0 = 63.87, modeled = 63.87, target = 70.00, HeatSinkTemp = 29.71, output = 42.6, timeout = 36450, expectedTempC = 30.00, targetTecRampRate = 0.489883[0m
+[0;32mI (498380) TC: thermalControl-0 = 63.87, modeled = 63.87, target = 70.00, HeatSinkTemp = 29.70, output = 42.9, timeout = 36600, expectedTempC = 30.00, targetTecRampRate = 0.487213[0m
+[0;32mI (498532) TC: thermalControl-0 = 63.88, modeled = 63.88, target = 70.00, HeatSinkTemp = 29.70, output = 42.7, timeout = 36750, expectedTempC = 30.00, targetTecRampRate = 0.484619[0m
+[0;32mI (498682) TC: thermalControl-0 = 63.89, modeled = 63.89, target = 70.00, HeatSinkTemp = 29.69, output = 43.0, timeout = 36900, expectedTempC = 30.00, targetTecRampRate = 0.481949[0m
+[0;32mI (498831) TC: thermalControl-0 = 63.90, modeled = 63.90, target = 70.00, HeatSinkTemp = 29.68, output = 42.8, timeout = 37050, expectedTempC = 30.00, targetTecRampRate = 0.479736[0m
+[0;32mI (498937) _performCapture: [81245,0,27.17,2028,18000,12875,4505,2790,1485,2609,2179,473,18000,0][0m
+[0;32mI (498981) TC: thermalControl-0 = 63.90, modeled = 63.90, target = 70.00, HeatSinkTemp = 29.68, output = 43.0, timeout = 37200, expectedTempC = 30.00, targetTecRampRate = 0.476913[0m
+[0;32mI (499132) TC: thermalControl-0 = 63.90, modeled = 63.90, target = 70.00, HeatSinkTemp = 29.67, output = 42.8, timeout = 37350, expectedTempC = 30.00, targetTecRampRate = 0.474167[0m
+DATAQ:  | dataQLiquidStg1 = 43.04 | 
+[0;32mI (499283) TC: thermalControl-0 = 63.92, modeled = 63.92, target = 70.00, HeatSinkTemp = 29.66, output = 42.6, timeout = 37500, expectedTempC = 30.00, targetTecRampRate = 0.471802[0m
+[0;32mI (499433) TC: thermalControl-0 = 63.92, modeled = 63.92, target = 70.00, HeatSinkTemp = 29.66, output = 42.7, timeout = 37650, expectedTempC = 30.00, targetTecRampRate = 0.469208[0m
+[0;32mI (499583) TC: thermalControl-0 = 63.93, modeled = 63.93, target = 70.00, HeatSinkTemp = 29.65, output = 42.9, timeout = 37800, expectedTempC = 30.00, targetTecRampRate = 0.466919[0m
+[0;32mI (499733) TC: thermalControl-0 = 63.95, modeled = 63.95, target = 70.00, HeatSinkTemp = 29.65, output = 42.9, timeout = 37950, expectedTempC = 30.00, targetTecRampRate = 0.464935[0m
+[0;32mI (499884) TC: thermalControl-0 = 63.94, modeled = 63.94, target = 70.00, HeatSinkTemp = 29.65, output = 42.7, timeout = 38100, expectedTempC = 30.00, targetTecRampRate = 0.461731[0m
+[0;32mI (500035) TC: thermalControl-0 = 63.94, modeled = 63.94, target = 70.00, HeatSinkTemp = 29.64, output = 43.0, timeout = 38250, expectedTempC = 30.00, targetTecRampRate = 0.458832[0m
+[0;32mI (500051) _performCapture: [82360,0,27.16,2031,18000,12847,4513,2806,1491,2536,2176,469,18000,0][0m
+[0;32mI (500184) TC: thermalControl-0 = 63.95, modeled = 63.95, target = 70.00, HeatSinkTemp = 29.64, output = 42.5, timeout = 38400, expectedTempC = 30.00, targetTecRampRate = 0.456696[0m
+DATAQ:  | dataQLiquidStg1 = 43.41 | 
+[0;32mI (500335) TC: thermalControl-0 = 63.97, modeled = 63.97, target = 70.00, HeatSinkTemp = 29.64, output = 42.7, timeout = 38550, expectedTempC = 30.00, targetTecRampRate = 0.454941[0m
+[0;32mI (500486) TC: thermalControl-0 = 63.97, modeled = 63.97, target = 70.00, HeatSinkTemp = 29.63, output = 42.8, timeout = 38700, expectedTempC = 30.00, targetTecRampRate = 0.451965[0m
+[0;32mI (500636) TC: thermalControl-0 = 63.97, modeled = 63.97, target = 70.00, HeatSinkTemp = 29.63, output = 43.1, timeout = 38850, expectedTempC = 30.00, targetTecRampRate = 0.449219[0m
+[0;32mI (500786) TC: thermalControl-0 = 63.98, modeled = 63.98, target = 70.00, HeatSinkTemp = 29.62, output = 42.6, timeout = 39000, expectedTempC = 30.00, targetTecRampRate = 0.447006[0m
+[0;32mI (500935) TC: thermalControl-0 = 63.99, modeled = 63.99, target = 70.00, HeatSinkTemp = 29.62, output = 42.5, timeout = 39150, expectedTempC = 30.00, targetTecRampRate = 0.444870[0m
+[0;32mI (501086) TC: thermalControl-0 = 63.99, modeled = 63.99, target = 70.00, HeatSinkTemp = 29.62, output = 42.8, timeout = 39300, expectedTempC = 30.00, targetTecRampRate = 0.442276[0m
+[0;32mI (501163) _performCapture: [83471,0,27.16,2027,18000,12859,4512,2808,1500,2556,2195,471,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 43.68 | 
+[0;32mI (501235) TC: thermalControl-0 = 64.00, modeled = 64.00, target = 70.00, HeatSinkTemp = 29.61, output = 42.6, timeout = 39450, expectedTempC = 30.00, targetTecRampRate = 0.440063[0m
+[0;32mI (501386) TC: thermalControl-0 = 64.01, modeled = 64.01, target = 70.00, HeatSinkTemp = 29.61, output = 42.9, timeout = 39600, expectedTempC = 30.00, targetTecRampRate = 0.437775[0m
+[0;32mI (501535) TC: thermalControl-0 = 64.01, modeled = 64.01, target = 70.00, HeatSinkTemp = 29.61, output = 42.9, timeout = 39750, expectedTempC = 30.00, targetTecRampRate = 0.435104[0m
+[0;32mI (501686) TC: thermalControl-0 = 64.03, modeled = 64.03, target = 70.00, HeatSinkTemp = 29.60, output = 42.6, timeout = 39900, expectedTempC = 30.00, targetTecRampRate = 0.433197[0m
+[0;32mI (501836) TC: thermalControl-0 = 64.04, modeled = 64.04, target = 70.00, HeatSinkTemp = 29.60, output = 42.4, timeout = 40050, expectedTempC = 30.00, targetTecRampRate = 0.431290[0m
+[0;32mI (501987) TC: thermalControl-0 = 64.04, modeled = 64.04, target = 70.00, HeatSinkTemp = 29.59, output = 42.5, timeout = 40200, expectedTempC = 30.00, targetTecRampRate = 0.428467[0m
+[0;32mI (502137) TC: thermalControl-0 = 64.05, modeled = 64.05, target = 70.00, HeatSinkTemp = 29.59, output = 42.3, timeout = 40350, expectedTempC = 30.00, targetTecRampRate = 0.426636[0m
+DATAQ:  | dataQLiquidStg1 = 44.13 | 
+[0;32mI (502287) TC: thermalControl-0 = 64.05, modeled = 64.05, target = 70.00, HeatSinkTemp = 29.59, output = 42.6, timeout = 40500, expectedTempC = 30.00, targetTecRampRate = 0.424042[0m
+[0;32mI (502296) _performCapture: [84605,0,27.16,2022,18000,12833,4505,2787,1477,2589,2190,475,18000,0][0m
+[0;32mI (502437) TC: thermalControl-0 = 64.05, modeled = 64.05, target = 70.00, HeatSinkTemp = 29.59, output = 42.3, timeout = 40650, expectedTempC = 30.00, targetTecRampRate = 0.421448[0m
+[0;32mI (502586) TC: thermalControl-0 = 64.06, modeled = 64.06, target = 70.00, HeatSinkTemp = 29.58, output = 42.2, timeout = 40800, expectedTempC = 30.00, targetTecRampRate = 0.419464[0m
+[0;32mI (502737) TC: thermalControl-0 = 64.07, modeled = 64.07, target = 70.00, HeatSinkTemp = 29.57, output = 42.8, timeout = 40950, expectedTempC = 30.00, targetTecRampRate = 0.417175[0m
+[0;32mI (502887) TC: thermalControl-0 = 64.07, modeled = 64.07, target = 70.00, HeatSinkTemp = 29.58, output = 42.7, timeout = 41100, expectedTempC = 30.00, targetTecRampRate = 0.414886[0m
+[0;32mI (503037) TC: thermalControl-0 = 64.09, modeled = 64.09, target = 70.00, HeatSinkTemp = 29.57, output = 42.5, timeout = 41250, expectedTempC = 30.00, targetTecRampRate = 0.412979[0m
+[0;32mI (503187) TC: thermalControl-0 = 64.09, modeled = 64.09, target = 70.00, HeatSinkTemp = 29.56, output = 42.6, timeout = 41400, expectedTempC = 30.00, targetTecRampRate = 0.410538[0m
+DATAQ:  | dataQLiquidStg1 = 44.4 | 
+[0;32mI (503337) TC: thermalControl-0 = 64.10, modeled = 64.10, target = 70.00, HeatSinkTemp = 29.55, output = 42.7, timeout = 41550, expectedTempC = 30.00, targetTecRampRate = 0.408478[0m
+[0;32mI (503416) _performCapture: [85724,0,27.15,2015,18000,12868,4506,2781,1484,2561,2169,472,18000,0][0m
+[0;32mI (503487) TC: thermalControl-0 = 64.10, modeled = 64.10, target = 70.00, HeatSinkTemp = 29.56, output = 42.7, timeout = 41700, expectedTempC = 30.00, targetTecRampRate = 0.406036[0m
+[0;32mI (503637) TC: thermalControl-0 = 64.09, modeled = 64.09, target = 70.00, HeatSinkTemp = 29.54, output = 42.3, timeout = 41850, expectedTempC = 30.00, targetTecRampRate = 0.403442[0m
+[0;32mI (503788) TC: thermalControl-0 = 64.10, modeled = 64.10, target = 70.00, HeatSinkTemp = 29.54, output = 42.7, timeout = 42000, expectedTempC = 30.00, targetTecRampRate = 0.401535[0m
+[0;32mI (503938) TC: thermalControl-0 = 64.11, modeled = 64.11, target = 70.00, HeatSinkTemp = 29.54, output = 42.6, timeout = 42150, expectedTempC = 30.00, targetTecRampRate = 0.399475[0m
+[0;32mI (504088) TC: thermalControl-0 = 64.11, modeled = 64.11, target = 70.00, HeatSinkTemp = 29.53, output = 42.7, timeout = 42300, expectedTempC = 30.00, targetTecRampRate = 0.397110[0m
+DATAQ:  | dataQLiquidStg1 = 44.71 | 
+[0;32mI (504239) TC: thermalControl-0 = 64.13, modeled = 64.13, target = 70.00, HeatSinkTemp = 29.53, output = 42.1, timeout = 42450, expectedTempC = 30.00, targetTecRampRate = 0.395508[0m
+[0;32mI (504389) TC: thermalControl-0 = 64.13, modeled = 64.13, target = 70.00, HeatSinkTemp = 29.53, output = 42.0, timeout = 42600, expectedTempC = 30.00, targetTecRampRate = 0.393143[0m
+[0;32mI (504540) TC: thermalControl-0 = 64.14, modeled = 64.14, target = 70.00, HeatSinkTemp = 29.53, output = 42.4, timeout = 42750, expectedTempC = 30.00, targetTecRampRate = 0.391159[0m
+[0;32mI (504549) _performCapture: [86858,0,27.15,2039,18000,12852,4511,2817,1487,2607,2201,474,18000,0][0m
+[0;32mI (504689) TC: thermalControl-0 = 64.14, modeled = 64.14, target = 70.00, HeatSinkTemp = 29.52, output = 41.9, timeout = 42900, expectedTempC = 30.00, targetTecRampRate = 0.389023[0m
+[0;32mI (504839) TC: thermalControl-0 = 64.14, modeled = 64.14, target = 70.00, HeatSinkTemp = 29.52, output = 42.8, timeout = 43050, expectedTempC = 30.00, targetTecRampRate = 0.386581[0m
+[0;32mI (504989) TC: thermalControl-0 = 64.14, modeled = 64.14, target = 70.00, HeatSinkTemp = 29.51, output = 42.4, timeout = 43200, expectedTempC = 30.00, targetTecRampRate = 0.384369[0m
+[0;32mI (505140) TC: thermalControl-0 = 64.14, modeled = 64.14, target = 70.00, HeatSinkTemp = 29.51, output = 42.6, timeout = 43350, expectedTempC = 30.00, targetTecRampRate = 0.381927[0m
+DATAQ:  | dataQLiquidStg1 = 45.12 | 
+[0;32mI (505290) TC: thermalControl-0 = 64.15, modeled = 64.15, target = 70.00, HeatSinkTemp = 29.51, output = 42.5, timeout = 43500, expectedTempC = 30.00, targetTecRampRate = 0.380325[0m
+[0;32mI (505440) TC: thermalControl-0 = 64.15, modeled = 64.15, target = 70.00, HeatSinkTemp = 29.49, output = 42.4, timeout = 43650, expectedTempC = 30.00, targetTecRampRate = 0.377884[0m
+[0;32mI (505590) TC: thermalControl-0 = 64.16, modeled = 64.16, target = 70.00, HeatSinkTemp = 29.49, output = 42.8, timeout = 43800, expectedTempC = 30.00, targetTecRampRate = 0.375900[0m
+[0;32mI (505668) _performCapture: [87976,0,27.14,2066,18000,12845,4509,2804,1470,2608,2174,472,18000,0][0m
+[0;32mI (505740) TC: thermalControl-0 = 64.16, modeled = 64.16, target = 70.00, HeatSinkTemp = 29.49, output = 42.6, timeout = 43950, expectedTempC = 30.00, targetTecRampRate = 0.373611[0m
+[0;32mI (505889) TC: thermalControl-0 = 64.16, modeled = 64.16, target = 70.00, HeatSinkTemp = 29.48, output = 42.3, timeout = 44100, expectedTempC = 30.00, targetTecRampRate = 0.371475[0m
+[0;32mI (506041) TC: thermalControl-0 = 64.18, modeled = 64.18, target = 70.00, HeatSinkTemp = 29.49, output = 42.2, timeout = 44250, expectedTempC = 30.00, targetTecRampRate = 0.370102[0m
+[0;32mI (506191) TC: thermalControl-0 = 64.17, modeled = 64.17, target = 70.00, HeatSinkTemp = 29.48, output = 42.6, timeout = 44400, expectedTempC = 30.00, targetTecRampRate = 0.367813[0m
+DATAQ:  | dataQLiquidStg1 = 45.48 | 
+[0;32mI (506341) TC: thermalControl-0 = 64.19, modeled = 64.19, target = 70.00, HeatSinkTemp = 29.47, output = 42.6, timeout = 44550, expectedTempC = 30.00, targetTecRampRate = 0.366211[0m
+[0;32mI (506490) TC: thermalControl-0 = 64.20, modeled = 64.20, target = 70.00, HeatSinkTemp = 29.48, output = 42.4, timeout = 44700, expectedTempC = 30.00, targetTecRampRate = 0.364304[0m
+[0;32mI (506641) TC: thermalControl-0 = 64.21, modeled = 64.21, target = 70.00, HeatSinkTemp = 29.47, output = 42.0, timeout = 44850, expectedTempC = 30.00, targetTecRampRate = 0.362473[0m
+[0;32mI (506791) TC: thermalControl-0 = 64.20, modeled = 64.20, target = 70.00, HeatSinkTemp = 29.47, output = 42.6, timeout = 45000, expectedTempC = 30.00, targetTecRampRate = 0.360031[0m
+[0;32mI (506800) _performCapture: [89095,0,27.14,2050,18000,12837,4515,2788,1489,2586,2209,472,18000,0][0m
+[0;32mI (506941) TC: thermalControl-0 = 64.21, modeled = 64.21, target = 70.00, HeatSinkTemp = 29.47, output = 42.0, timeout = 45150, expectedTempC = 30.00, targetTecRampRate = 0.358429[0m
+[0;32mI (507090) TC: thermalControl-0 = 64.23, modeled = 64.23, target = 70.00, HeatSinkTemp = 29.47, output = 42.2, timeout = 45300, expectedTempC = 30.00, targetTecRampRate = 0.356903[0m
+[0;32mI (507241) TC: thermalControl-0 = 64.22, modeled = 64.22, target = 70.00, HeatSinkTemp = 29.45, output = 42.3, timeout = 45450, expectedTempC = 30.00, targetTecRampRate = 0.354385[0m
+DATAQ:  | dataQLiquidStg1 = 45.68 | 
+[0;32mI (507392) TC: thermalControl-0 = 64.22, modeled = 64.22, target = 70.00, HeatSinkTemp = 29.45, output = 42.4, timeout = 45600, expectedTempC = 30.00, targetTecRampRate = 0.352325[0m
+[0;32mI (507541) TC: thermalControl-0 = 64.23, modeled = 64.23, target = 70.00, HeatSinkTemp = 29.46, output = 42.2, timeout = 45750, expectedTempC = 30.00, targetTecRampRate = 0.350800[0m
+[0;32mI (507692) TC: thermalControl-0 = 64.23, modeled = 64.23, target = 70.00, HeatSinkTemp = 29.45, output = 41.9, timeout = 45900, expectedTempC = 30.00, targetTecRampRate = 0.348740[0m
+[0;32mI (507842) TC: thermalControl-0 = 64.23, modeled = 64.23, target = 70.00, HeatSinkTemp = 29.45, output = 42.5, timeout = 46050, expectedTempC = 30.00, targetTecRampRate = 0.346603[0m
+[0;32mI (507918) _performCapture: [90226,0,27.14,2078,18000,12853,4512,2802,1492,2608,2201,474,18000,0][0m
+[0;32mI (507993) TC: thermalControl-0 = 64.24, modeled = 64.24, target = 70.00, HeatSinkTemp = 29.44, output = 42.3, timeout = 46200, expectedTempC = 30.00, targetTecRampRate = 0.345001[0m
+[0;32mI (508142) TC: thermalControl-0 = 64.24, modeled = 64.24, target = 70.00, HeatSinkTemp = 29.44, output = 42.3, timeout = 46350, expectedTempC = 30.00, targetTecRampRate = 0.342789[0m
+DATAQ:  | dataQLiquidStg1 = 45.96 | 
+[0;32mI (508293) TC: thermalControl-0 = 64.24, modeled = 64.24, target = 70.00, HeatSinkTemp = 29.44, output = 42.4, timeout = 46500, expectedTempC = 30.00, targetTecRampRate = 0.340958[0m
+[0;32mI (508442) TC: thermalControl-0 = 64.24, modeled = 64.24, target = 70.00, HeatSinkTemp = 29.44, output = 42.3, timeout = 46650, expectedTempC = 30.00, targetTecRampRate = 0.338745[0m
+[0;32mI (508593) TC: thermalControl-0 = 64.25, modeled = 64.25, target = 70.00, HeatSinkTemp = 29.43, output = 42.1, timeout = 46800, expectedTempC = 30.00, targetTecRampRate = 0.337067[0m
+[0;32mI (508743) TC: thermalControl-0 = 64.25, modeled = 64.25, target = 70.00, HeatSinkTemp = 29.42, output = 42.3, timeout = 46950, expectedTempC = 30.00, targetTecRampRate = 0.335159[0m
+[0;32mI (508892) TC: thermalControl-0 = 64.26, modeled = 64.26, target = 70.00, HeatSinkTemp = 29.42, output = 42.2, timeout = 47100, expectedTempC = 30.00, targetTecRampRate = 0.333633[0m
+[0;32mI (509043) TC: thermalControl-0 = 64.25, modeled = 64.25, target = 70.00, HeatSinkTemp = 29.42, output = 42.0, timeout = 47250, expectedTempC = 30.00, targetTecRampRate = 0.331345[0m
+[0;32mI (509053) _performCapture: [91361,0,27.13,2043,18000,12867,4514,2782,1480,2631,2217,472,18000,0][0m
+[0;32mI (509193) TC: thermalControl-0 = 64.26, modeled = 64.26, target = 70.00, HeatSinkTemp = 29.42, output = 42.2, timeout = 47400, expectedTempC = 30.00, targetTecRampRate = 0.329666[0m
+DATAQ:  | dataQLiquidStg1 = 46.18 | 
+[0;32mI (509343) TC: thermalControl-0 = 64.27, modeled = 64.27, target = 70.00, HeatSinkTemp = 29.41, output = 42.2, timeout = 47550, expectedTempC = 30.00, targetTecRampRate = 0.327988[0m
+[0;32mI (509493) TC: thermalControl-0 = 64.27, modeled = 64.27, target = 70.00, HeatSinkTemp = 29.41, output = 41.9, timeout = 47700, expectedTempC = 30.00, targetTecRampRate = 0.326004[0m
+[0;32mI (509642) TC: thermalControl-0 = 64.26, modeled = 64.26, target = 70.00, HeatSinkTemp = 29.41, output = 42.2, timeout = 47850, expectedTempC = 30.00, targetTecRampRate = 0.324020[0m
+[0;32mI (509793) TC: thermalControl-0 = 64.28, modeled = 64.28, target = 70.00, HeatSinkTemp = 29.40, output = 41.9, timeout = 48000, expectedTempC = 30.00, targetTecRampRate = 0.322647[0m
+[0;32mI (509943) TC: thermalControl-0 = 64.28, modeled = 64.28, target = 70.00, HeatSinkTemp = 29.40, output = 42.2, timeout = 48150, expectedTempC = 30.00, targetTecRampRate = 0.320740[0m
+[0;32mI (510093) TC: thermalControl-0 = 64.27, modeled = 64.27, target = 70.00, HeatSinkTemp = 29.39, output = 42.4, timeout = 48300, expectedTempC = 30.00, targetTecRampRate = 0.318375[0m
+[0;32mI (510170) _performCapture: [92478,0,27.12,2030,18000,12810,4512,2780,1488,2615,2217,474,18000,0][0m
+[0;32mI (510242) TC: thermalControl-0 = 64.27, modeled = 64.27, target = 70.00, HeatSinkTemp = 29.39, output = 42.5, timeout = 48450, expectedTempC = 30.00, targetTecRampRate = 0.316696[0m
+DATAQ:  | dataQLiquidStg1 = 46.43 | 
+[0;32mI (510393) TC: thermalControl-0 = 64.27, modeled = 64.27, target = 70.00, HeatSinkTemp = 29.38, output = 42.0, timeout = 48600, expectedTempC = 30.00, targetTecRampRate = 0.314865[0m
+[0;32mI (510543) TC: thermalControl-0 = 64.29, modeled = 64.29, target = 70.00, HeatSinkTemp = 29.39, output = 42.1, timeout = 48750, expectedTempC = 30.00, targetTecRampRate = 0.313873[0m
+[0;32mI (510693) TC: thermalControl-0 = 64.29, modeled = 64.29, target = 70.00, HeatSinkTemp = 29.38, output = 41.9, timeout = 48900, expectedTempC = 30.00, targetTecRampRate = 0.311737[0m
+[0;32mI (510843) TC: thermalControl-0 = 64.31, modeled = 64.31, target = 70.00, HeatSinkTemp = 29.38, output = 42.3, timeout = 49050, expectedTempC = 30.00, targetTecRampRate = 0.310745[0m
+[0;32mI (510993) TC: thermalControl-0 = 64.31, modeled = 64.31, target = 70.00, HeatSinkTemp = 29.38, output = 42.1, timeout = 49200, expectedTempC = 30.00, targetTecRampRate = 0.308838[0m
+[0;32mI (511143) TC: thermalControl-0 = 64.31, modeled = 64.31, target = 70.00, HeatSinkTemp = 29.37, output = 41.8, timeout = 49350, expectedTempC = 30.00, targetTecRampRate = 0.307083[0m
+[0;32mI (511294) TC: thermalControl-0 = 64.32, modeled = 64.32, target = 70.00, HeatSinkTemp = 29.36, output = 42.0, timeout = 49500, expectedTempC = 30.00, targetTecRampRate = 0.305557[0m
+[0;32mI (511303) _performCapture: [93612,0,27.12,2048,18000,12864,4516,2803,1479,2623,2213,477,18000,0][0m
+DATAQ:  | dataQLiquidStg1 = 46.81 | 
+[0;32mI (511443) TC: thermalControl-0 = 64.33, modeled = 64.33, target = 70.00, HeatSinkTemp = 29.37, output = 41.8, timeout = 49650, expectedTempC = 30.00, targetTecRampRate = 0.304260[0m
+[0;32mI (511592) TC: thermalControl-0 = 64.32, modeled = 64.32, target = 70.00, HeatSinkTemp = 29.36, output = 41.8, timeout = 49800, expectedTempC = 30.00, targetTecRampRate = 0.302200[0m
+[0;32mI (511743) TC: thermalControl-0 = 64.32, modeled = 64.32, target = 70.00, HeatSinkTemp = 29.36, output = 41.9, timeout = 49950, expectedTempC = 30.00, targetTecRampRate = 0.300293[0m
+[0;32mI (511893) TC: thermalControl-0 = 64.33, modeled = 64.33, target = 70.00, HeatSinkTemp = 29.35, output = 41.6, timeout = 50100, expectedTempC = 30.00, targetTecRampRate = 0.298843[0m
+[0;32mI (512043) TC: thermalControl-0 = 64.34, modeled = 64.34, target = 70.00, HeatSinkTemp = 29.36, output = 41.8, timeout = 50250, expectedTempC = 30.00, targetTecRampRate = 0.297546[0m
+[0;32mI (512192) TC: thermalControl-0 = 64.34, modeled = 64.34, target = 70.00, HeatSinkTemp = 29.35, output = 41.9, timeout = 50400, expectedTempC = 30.00, targetTecRampRate = 0.295639[0m
+DATAQ:  | dataQLiquidStg1 = 47.03 | 
+[0;32mI (512343) TC: thermalControl-0 = 64.33, modeled = 64.33, target = 70.00, HeatSinkTemp = 29.35, output = 42.2, timeout = 50550, expectedTempC = 30.00, targetTecRampRate = 0.293427[0m
+[0;32mI (512433) _performCapture: [94741,0,27.11,2043,18000,12866,4508,2775,1474,2642,2226,475,18000,0][0m
+[0;32mI (512494) TC: thermalControl-0 = 64.35, modeled = 64.35, target = 70.00, HeatSinkTemp = 29.36, output = 42.0, timeout = 50700, expectedTempC = 30.00, targetTecRampRate = 0.292740[0m
+[0;32mI (512643) TC: thermalControl-0 = 64.35, modeled = 64.35, target = 70.00, HeatSinkTemp = 29.35, output = 41.8, timeout = 50850, expectedTempC = 30.00, targetTecRampRate = 0.290909[0m
+[0;32mI (512794) TC: thermalControl-0 = 64.35, modeled = 64.35, target = 70.00, HeatSinkTemp = 29.35, output = 41.9, timeout = 51000, expectedTempC = 30.00, targetTecRampRate = 0.289001[0m
+[0;32mI (512944) TC: thermalControl-0 = 64.36, modeled = 64.36, target = 70.00, HeatSinkTemp = 29.35, output = 42.2, timeout = 51150, expectedTempC = 30.00, targetTecRampRate = 0.287628[0m
+[0;32mI (513094) TC: thermalControl-0 = 64.35, modeled = 64.35, target = 70.00, HeatSinkTemp = 29.34, output = 42.2, timeout = 51300, expectedTempC = 30.00, targetTecRampRate = 0.285797[0m
+[0;32mI (513244) TC: thermalControl-0 = 64.36, modeled = 64.36, target = 70.00, HeatSinkTemp = 29.34, output = 42.4, timeout = 51450, expectedTempC = 30.00, targetTecRampRate = 0.284500[0m
+DATAQ:  | dataQLiquidStg1 = 47.21 | 
+[0;32mI (513395) TC: thermalControl-0 = 64.36, modeled = 64.36, target = 70.00, HeatSinkTemp = 29.33, output = 41.9, timeout = 51600, expectedTempC = 30.00, targetTecRampRate = 0.282745[0m
+[0;32mI (513547) TC: thermalControl-0 = 64.37, modeled = 64.37, target = 70.00, HeatSinkTemp = 29.33, output = 41.6, timeout = 51750, expectedTempC = 30.00, targetTecRampRate = 0.281448[0m
+[0;32mI (513557) _performCapture: [95866,0,27.11,2041,18000,12840,4509,2794,1482,2607,2216,476,18000,0][0m
+[0;32mI (513695) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.33, output = 41.7, timeout = 51900, expectedTempC = 30.00, targetTecRampRate = 0.279999[0m
+[0;32mI (513845) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.33, output = 41.8, timeout = 52050, expectedTempC = 30.00, targetTecRampRate = 0.278473[0m
+[0;32mI (513995) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.32, output = 42.2, timeout = 52200, expectedTempC = 30.00, targetTecRampRate = 0.276794[0m
+[0;32mI (514146) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.32, output = 41.6, timeout = 52350, expectedTempC = 30.00, targetTecRampRate = 0.275192[0m
+[0;32mI (514296) TC: thermalControl-0 = 64.39, modeled = 64.39, target = 70.00, HeatSinkTemp = 29.32, output = 42.0, timeout = 52500, expectedTempC = 30.00, targetTecRampRate = 0.274048[0m
+DATAQ:  | dataQLiquidStg1 = 47.61 | 
+[0;32mI (514447) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.32, output = 42.4, timeout = 52650, expectedTempC = 30.00, targetTecRampRate = 0.272064[0m
+[0;32mI (514597) TC: thermalControl-0 = 64.39, modeled = 64.39, target = 70.00, HeatSinkTemp = 29.31, output = 41.5, timeout = 52800, expectedTempC = 30.00, targetTecRampRate = 0.270844[0m
+[0;32mI (514674) _performCapture: [96982,0,27.11,2025,18000,12876,4506,2807,1494,2571,2214,472,18000,0][0m
+[0;32mI (514747) TC: thermalControl-0 = 64.39, modeled = 64.39, target = 70.00, HeatSinkTemp = 29.31, output = 41.6, timeout = 52950, expectedTempC = 30.00, targetTecRampRate = 0.269241[0m
+[0;32mI (514898) TC: thermalControl-0 = 64.40, modeled = 64.40, target = 70.00, HeatSinkTemp = 29.31, output = 42.3, timeout = 53100, expectedTempC = 30.00, targetTecRampRate = 0.267868[0m
+[0;32mI (515048) TC: thermalControl-0 = 64.38, modeled = 64.38, target = 70.00, HeatSinkTemp = 29.31, output = 42.2, timeout = 53250, expectedTempC = 30.00, targetTecRampRate = 0.265656[0m
+[0;32mI (515175) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (515178) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (515197) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (515198) TC: thermalControl-0 = 64.40, modeled = 64.40, target = 70.00, HeatSinkTemp = 29.32, output = 41.7, timeout = 53400, expectedTempC = 30.00, targetTecRampRate = 0.264893[0m
+[0;32mI (515210) BLE_PERIPH: Received 19/19[0m
+[0;32mI (515217) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (515220) experimentRequestStateChange: Experiment State Transition SAMPLE_PREP -> PCR[0m
+[0;32mI (515229) eventMarker: 97538, Start PCR[0m
+[0;32mI (515234) BLE_PERIPH: Sending Response Packet: [38,true,167,[],0][0m
+[38, true, 167, [], 0]
+[0;32mI (515242) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[0;32mI (515259) experimentTask: Experiment State Transition PCR -> MELT[0m
+[0;32mI (515260) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (515262) BLE_PERIPH: Notifying[0m
+[0;33mW (515266) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (515272) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (515279) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [38,true,167,[],0][0m
+[0;32mI (515310) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (515313) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (515333) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 47.73 | 
+[0;32mI (515360) experimentTask: Experiment State Transition MELT -> FINISH[0m
+[0;32mI (515366) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (515369) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (515389) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (515390) BLE_PERIPH: Received 19/19[0m
+[0;32mI (515393) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (515462) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (515470) BLE_PERIPH: Notifying[0m
+[0;33mW (515470) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (515474) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (515483) BLE_PERIPH: Sending Response Packet: [34,true,169,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",97751,64.38,27.12,3,6,96,0.00],0][0m
+[0;32mI (515497) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 169, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 97751, 64.38, 27.12, 3, 6, 96, 0.00], 0]
+[0;32mI (515534) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,169,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",97751,64.38,27.12,3,6,96,0.00],0][0m
+[0;32mI (515574) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (515582) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (515639) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (515659) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (515662) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (515681) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (515682) BLE_PERIPH: Received 19/19[0m
+[0;32mI (515686) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;33mW (515688) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (515701) BLE_PERIPH: Sending Response Packet: [34,true,171,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98007,64.12,27.12,3,6,96,0.00],0][0m
+[0;32mI (515711) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 171, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 98007, 64.12, 27.12, 3, 6, 96, 0.00], 0]
+[0;32mI (515759) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,171,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98007,64.12,27.12,3,6,96,0.00],0][0m
+[0;32mI (515805) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (515807) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (515828) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (515906) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (515909) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (515940) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (515941) BLE_PERIPH: Received 19/19[0m
+[0;32mI (515944) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (515981) BLE_PERIPH: Sending Response Packet: [34,true,170,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98287,63.48,27.12,3,6,96,0.00],0][0m
+[0;32mI (515986) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 170, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 98287, 63.48, 27.12, 3, 6, 96, 0.00], 0]
+[0;32mI (516030) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,170,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98287,63.48,27.12,3,6,96,0.00],0][0m
+[0;32mI (516075) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (516077) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (516109) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (516154) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (516157) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (516221) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (516222) BLE_PERIPH: Received 18/18[0m
+[0;32mI (516226) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (516259) BLE_PERIPH: Sending Response Packet: [34,true,172,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98565,62.80,27.12,3,6,96,0.00],0][0m
+[34, true, 172, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 98565, 62.80, 27.12, 3, 6, 96, 0.00], 0]
+[0;32mI (516264) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (516300) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,172,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98565,62.80,27.12,3,6,96,0.00],0][0m
+[0;32mI (516334) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (516336) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (516357) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 48.07 | 
+[0;32mI (516401) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (516404) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (516446) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (516447) BLE_PERIPH: Received 19/19[0m
+[0;32mI (516451) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (516477) BLE_PERIPH: Sending Response Packet: [34,true,174,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98783,62.25,27.11,3,6,96,0.00],0][0m
+[0;32mI (516483) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 174, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 98783, 62.25, 27.11, 3, 6, 96, 0.00], 0]
+[0;32mI (516524) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,174,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",98783,62.25,27.11,3,6,96,0.00],0][0m
+[0;32mI (516559) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (516561) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (516582) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (516626) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (516629) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (516671) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (516672) BLE_PERIPH: Received 19/19[0m
+[0;32mI (516676) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (516703) BLE_PERIPH: Sending Response Packet: [34,true,176,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",99009,61.72,27.11,3,6,96,0.00],0][0m
+[0;32mI (516709) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 176, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 99009, 61.72, 27.11, 3, 6, 96, 0.00], 0]
+[0;32mI (516783) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,176,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",99009,61.72,27.11,3,6,96,0.00],0][0m
+[0;32mI (516818) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (516820) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (516851) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (516930) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (516932) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (516963) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (516965) BLE_PERIPH: Received 19/19[0m
+[0;32mI (516968) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (516979) BLE_PERIPH: Sending Response Packet: [34,true,175,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",99285,61.09,27.11,3,6,96,0.00],0][0m
+[34, true, 175, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 99285, 61.09, 27.11, 3, 6, 96, 0.00], 0]
+[0;32mI (516986) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (517031) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,175,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",99285,61.09,27.11,3,6,96,0.00],0][0m
+[0;32mI (517076) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (517079) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (517099) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 48.42 | 
+[0;32mI (517756) experimentTask: Experiment State Transition FINISH -> IDLE[0m
+[0;32mI (517757) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (517759) BLE_PERIPH: Notifying[0m
+[0;33mW (517763) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (517769) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (517777) systemRequestStateChange: System State Transition RUNNING -> PENDING UPLOAD[0m
+[0;32mI (517789) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (517790) BLE_PERIPH: Notifying[0m
+[0;33mW (517792) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (517798) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (517805) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (517809) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (517818) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (517852) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (517853) BLE_PERIPH: Received 19/19[0m
+[0;32mI (517857) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (517900) BLE_PERIPH: Sending Response Packet: [34,true,178,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100206,59.06,27.11,4,0,0,0.00],0][0m
+[34, true, 178, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 100206, 59.06, 27.11, 4, 0, 0, 0.00], 0]
+[0;32mI (517906) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (517953) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,178,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100206,59.06,27.11,4,0,0,0.00],0][0m
+[0;33mW (517979) heapMonitor_checkFreeHeapSize: New heap low water mark 110240[0m
+[0;32mI (517988) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (517990) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (518010) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (518055) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (518057) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (518100) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (518101) BLE_PERIPH: Received 19/19[0m
+[0;32mI (518104) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (518121) BLE_PERIPH: Sending Response Packet: [34,true,180,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100427,58.58,27.11,4,0,0,0.00],0][0m
+[34, true, 180, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 100427, 58.58, 27.11, 4, 0, 0, 0.00], 0]
+[0;32mI (518127) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (518167) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,180,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100427,58.58,27.11,4,0,0,0.00],0][0m
+[0;32mI (518212) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (518215) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (518246) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (518280) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (518282) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (518313) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (518315) BLE_PERIPH: Received 19/19[0m
+DATAQ:  | dataQLiquidStg1 = 48.64 | 
+[0;32mI (518318) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (518339) BLE_PERIPH: Sending Response Packet: [34,true,179,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100645,58.12,27.10,4,0,0,0.00],0][0m
+[0;32mI (518345) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 179, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 100645, 58.12, 27.10, 4, 0, 0, 0.00], 0]
+[0;32mI (518381) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,179,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100645,58.12,27.10,4,0,0,0.00],0][0m
+[0;32mI (518415) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (518418) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (518449) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (518505) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (518507) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (518561) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (518562) BLE_PERIPH: Received 19/19[0m
+[0;32mI (518566) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (518617) BLE_PERIPH: Sending Response Packet: [34,true,182,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100921,57.57,27.10,4,0,0,0.00],0][0m
+[0;32mI (518622) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 182, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 100921, 57.57, 27.10, 4, 0, 0, 0.00], 0]
+[0;32mI (518651) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,182,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",100921,57.57,27.10,4,0,0,0.00],0][0m
+[0;32mI (518696) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (518698) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (518730) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (518764) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (518766) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (518808) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (518810) BLE_PERIPH: Received 19/19[0m
+[0;32mI (518813) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (518842) BLE_PERIPH: Sending Response Packet: [34,true,184,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",101148,57.15,27.10,4,0,0,0.00],0][0m
+[34, true, 184, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 101148, 57.15, 27.10, 4, 0, 0, 0.00], 0]
+[0;32mI (518847) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (518898) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,184,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",101148,57.15,27.10,4,0,0,0.00],0][0m
+[0;32mI (518955) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (518957) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (518978) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (519011) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (519013) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (519067) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (519069) BLE_PERIPH: Received 19/19[0m
+[0;32mI (519072) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (519110) BLE_PERIPH: Sending Response Packet: [34,true,183,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",101416,56.67,27.10,4,0,0,0.00],0][0m
+[34, true, 183, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 101416, 56.67, 27.10, 4, 0, 0, 0.00], 0]
+[0;32mI (519115) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (519157) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,183,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",101416,56.67,27.10,4,0,0,0.00],0][0m
+[0;32mI (519202) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (519205) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (519225) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (519281) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (519284) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (519326) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (519327) BLE_PERIPH: Received 19/19[0m
+[0;32mI (519331) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (519382) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/641[0m
+DATAQ:  | dataQLiquidStg1 = 48.75 | 
+[0;32mI (519405) instrumentToAppDataCharAccessCb: Writing all pre params[0m
+[0;32mI (519419) instrumentToAppDataCharAccessCb: Writing 496 bytes of file[0m
+[0;32mI (519420) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=641, currentIndex=0): [36,true,185,[{"timestamp":"2022-06-07T18:20:18.467Z","consumableId":"6fc10c22-4154-4a14-8dcb-9d5894b2d736","experimentData":[[0,1454,29.28],[0,4490,30.04],[0,7519,30.29],[0,10556,30.27],[0,13587,30.21],[0,16651,30.17],[0,19686,30.17],[0,22718,30.19],[0,25760,30.18],[0,28787,30.15],[0,31812,30.15],[0,34849,30.14],[0,37901,30.13],[0,40932,30.14],[0,43957,30.13],[0,46992,58.23],[0,50031,66.72],[0,53060,60.96],[0,56088,56.65],[0,59117,53.23],[0,62162,50.57],[0,65195,48.37],[0,68228,52.09],[0,71258,60.78],[0,[0m
+[0;32mI (519540) BLE_PERIPH: Instrument to App Transaction Write 510/641[0m
+[0;32mI (519542) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/641[0m
+[0;32mI (519566) instrumentToAppDataCharAccessCb: Writing 126 bytes of file[0m
+[0;32mI (519567) instrumentToAppDataCharAccessCb: Writing 5 bytes of post params[0m
+[0;32mI (519571) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=131 mtu=510, totalSize=641, currentIndex=510): 74287,62.98],[0,77321,63.64],[0,80348,63.85],[0,83423,63.99],[0,86461,64.12],[0,89488,64.22],[0,92510,64.27],[0,95543,64.37]]}],0] [0m
+[0;32mI (519619) BLE_PERIPH: Instrument to App Transaction Write 641/641[0m
+[0;32mI (519622) BLE_PERIPH: Instrument to App Transaction Read/Notify 641/641[0m
+[0;32mI (519641) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (519697) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (519700) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (519742) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (519743) BLE_PERIPH: Received 18/18[0m
+[0;32mI (519747) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (519785) BLE_PERIPH: Sending Response Packet: [34,true,186,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",102091,55.47,27.10,4,0,0,0.00],0][0m
+[0;32mI (519791) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 186, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 102091, 55.47, 27.10, 4, 0, 0, 0.00], 0]
+[0;32mI (519821) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,186,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",102091,55.47,27.10,4,0,0,0.00],0][0m
+[0;32mI (519866) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (519868) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (519889) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (520361) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (520364) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | dataQLiquidStg1 = 48.81 | 
+[0;32mI (520440) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (520441) BLE_PERIPH: Received 19/19[0m
+[0;32mI (520444) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (520466) BLE_PERIPH: Sending Response Packet: [37,true,187,[],0][0m
+[37, true, 187, [], 0]
+[0;32mI (520467) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18[0m
+[0;32mI (520514) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE[0m
+[0;32mI (520518) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=510, totalSize=18, currentIndex=0): [37,true,187,[],0][0m
+[0;32mI (520541) BLE_PERIPH: Instrument to App Transaction Write 18/18[0m
+[0;32mI (520544) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18[0m
+[0;32mI (520575) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;31mE (520579) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (520580) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;33mW (520606) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (520620) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (520622) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (520653) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (520655) BLE_PERIPH: Received 18/18[0m
+[0;32mI (520658) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (520671) BLE_PERIPH: Sending Response Packet: [34,true,188,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",102977,54.03,27.09,0,0,0,0.00],0][0m
+[0;32mI (520679) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 188, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 102977, 54.03, 27.09, 0, 0, 0, 0.00], 0]
+[0;33mW (520707) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;31mE (520711) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;31mE (520712) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;32mI (520721) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,188,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",102977,54.03,27.09,0,0,0,0.00],0][0m
+[0;32mI (520789) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (520791) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;31mE (520808) taskMonitor_task: Task System Control Task hasn't checked in for 400 ms...[0m
+[0;32mI (520834) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (520868) customUtil_isCupPresent: Cup Detected![0m
+[0;32mI (520869) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (520878) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (520879) BLE_PERIPH: Notifying[0m
+[0;33mW (520880) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (520886) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (520894) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (520905) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (520906) BLE_PERIPH: Notifying[0m
+[0;33mW (520907) comm_getNotifyId: Attempting to get notify id[0m
+[0;31mE (520913) taskMonitor_task: Task System Control Task hasn't checked in for 400 ms...[0m
+[0;32mI (520922) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (520933) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (520947) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (520949) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (520980) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (520981) BLE_PERIPH: Received 19/19[0m
+[0;32mI (520984) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (520998) BLE_PERIPH: Sending Response Packet: [34,true,190,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103304,53.50,27.10,2,0,0,0.00],0][0m
+[34, true, 190, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 103304, 53.50, 27.10, 2, 0, 0, 0.00], 0]
+[0;32mI (521004) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (521047) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,190,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103304,53.50,27.10,2,0,0,0.00],0][0m
+[0;32mI (521092) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (521095) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (521126) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (521160) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (521162) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (521204) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (521206) BLE_PERIPH: Received 19/19[0m
+[0;32mI (521209) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (521217) BLE_PERIPH: Sending Response Packet: [34,true,192,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103523,53.16,27.09,2,0,0,0.00],0][0m
+[0;32mI (521229) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[34, true, 192, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 103523, 53.16, 27.09, 2, 0, 0, 0.00], 0]
+[0;32mI (521272) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,192,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103523,53.16,27.09,2,0,0,0.00],0][0m
+[0;32mI (521317) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (521320) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (521351) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (521407) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (521410) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+DATAQ:  | dataQLiquidStg1 = 48.81 | 
+[0;32mI (521441) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (521442) BLE_PERIPH: Received 19/19[0m
+[0;32mI (521446) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (521497) BLE_PERIPH: Sending Response Packet: [34,true,191,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103803,52.75,27.09,2,0,0,0.00],0][0m
+[34, true, 191, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 103803, 52.75, 27.09, 2, 0, 0, 0.00], 0]
+[0;32mI (521502) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (521542) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,191,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",103803,52.75,27.09,2,0,0,0.00],0][0m
+[0;32mI (521610) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (521612) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (521633) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (521666) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (521668) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (521722) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (521723) BLE_PERIPH: Received 19/19[0m
+[0;32mI (521727) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (521765) BLE_PERIPH: Sending Response Packet: [34,true,194,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104071,52.38,27.09,2,0,0,0.00],0][0m
+[34, true, 194, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 104071, 52.38, 27.09, 2, 0, 0, 0.00], 0]
+[0;32mI (521771) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (521823) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,194,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104071,52.38,27.09,2,0,0,0.00],0][0m
+[0;32mI (521869) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (521871) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (521902) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (521970) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (521972) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (522026) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (522027) BLE_PERIPH: Received 19/19[0m
+[0;32mI (522031) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (522036) BLE_PERIPH: Sending Response Packet: [34,true,196,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104342,52.00,27.09,2,0,0,0.00],0][0m
+[34, true, 196, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 104342, 52.00, 27.09, 2, 0, 0, 0.00], 0]
+[0;32mI (522048) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (522104) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,196,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104342,52.00,27.09,2,0,0,0.00],0][0m
+[0;32mI (522139) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (522141) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (522172) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (522229) BLE_PERIPH: App to Instrument Transaction Write 0/19[0m
+[0;32mI (522231) BLE_PERIPH: App to Instrument Transaction Notify 0/19[0m
+[0;32mI (522285) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (522286) BLE_PERIPH: Received 19/19[0m
+[0;32mI (522289) BLE_PERIPH: App to Instrument Transaction Notify 19/19[0m
+[0;32mI (522311) BLE_PERIPH: Sending Response Packet: [34,true,195,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104617,51.62,27.09,2,0,0,0.00],0][0m
+[34, true, 195, ["2022-06-07T18:20:18.467Z", "6fc10c22-4154-4a14-8dcb-9d5894b2d736", 104617, 51.62, 27.09, 2, 0, 0, 0.00], 0]
+[0;32mI (522316) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113[0m
+[0;32mI (522386) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,195,["2022-06-07T18:20:18.467Z","6fc10c22-4154-4a14-8dcb-9d5894b2d736",104617,51.62,27.09,2,0,0,0.00],0][0m
+DATAQ:  | dataQLiquidStg1 = 48.83 | 
+[0;32mI (522431) BLE_PERIPH: Instrument to App Transaction Write 113/113[0m
+[0;32mI (522434) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113[0m
+[0;32mI (522465) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | dataQLiquidStg1 = 48.83 | 
+[0;33mW (523692) _openDoorIfSafe: OPENING DOOR[0m
+DATAQ:  | dataQLiquidStg1 = 48.79 | 
+DATAQ:  | dataQLiquidStg1 = 48.7 | 
+DATAQ:  | dataQLiquidStg1 = 48.84 | 
+DATAQ:  | dataQLiquidStg1 = 48.73 | 
+DATAQ:  | dataQLiquidStg1 = 48.73 | 
+DATAQ:  | dataQLiquidStg1 = 48.45 | 
+DATAQ:  | dataQLiquidStg1 = 48.41 | 
+DATAQ:  | dataQLiquidStg1 = 48.33 | 
+DATAQ:  | dataQLiquidStg1 = 48.22 | 
+DATAQ:  | dataQLiquidStg1 = 48.02 | 
+DATAQ:  | dataQLiquidStg1 = 47.99 | 
+DATAQ:  | dataQLiquidStg1 = 47.86 | 
+DATAQ:  | dataQLiquidStg1 = 47.89 | 
+DATAQ:  | dataQLiquidStg1 = 47.56 | 
+DATAQ:  | dataQLiquidStg1 = 47.38 | 
+DATAQ:  | dataQLiquidStg1 = 47.25 | 
+DATAQ:  | dataQLiquidStg1 = 46.99 | 
+DATAQ:  | dataQLiquidStg1 = 46.92 | 
