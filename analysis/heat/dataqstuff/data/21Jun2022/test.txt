@@ -1,0 +1,14 @@
+DATAQ:  | dataQLiquidStg1 = 24.86 | 
+DATAQ:  | dataQLiquidStg1 = 25.11 | 
+DATAQ:  | dataQLiquidStg1 = 25.07 | 
+DATAQ:  | dataQLiquidStg1 = 24.8 | 
+DATAQ:  | dataQLiquidStg1 = 25.01 | 
+DATAQ:  | dataQLiquidStg1 = 25.01 | 
+DATAQ:  | dataQLiquidStg1 = 24.6 | 
+DATAQ:  | dataQLiquidStg1 = 24.85 | 
+DATAQ:  | dataQLiquidStg1 = 24.82 | 
+DATAQ:  | dataQLiquidStg1 = 24.73 | 
+DATAQ:  | dataQLiquidStg1 = 24.66 | 
+DATAQ:  | dataQLiquidStg1 = 24.51 | 
+DATAQ:  | dataQLiquidStg1 = 24.57 | 
+DATAQ:  | dataQLiquidStg1 = 24.63 | 

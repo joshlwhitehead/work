@@ -337,12 +337,15 @@ def measuredStg1TempC(line):
         return float(line.split("CHUBE:")[1].split("| Stg1ThermoTempC = ")[1].split("|")[0])
     except:
         try:
-            return float(line.split("DATAQ:")[1].split("| Stg1ThermoTempC = ")[1].split("|")[0])
+            return float(line.split("DATAQ:")[1].split("| dataQLiquidStg1 = ")[1].split("|")[0])
         except:
             try:
                 return float(line.split("DATAQ:")[1].split("| dataQStg1Slug = ")[1].split("|")[0])
             except:
-                return None
+                try:
+                    return float(line.split("DATAQ:")[1].split("| Stg1ThermoTempC = ")[1].split("|")[0])
+                except:
+                    return None
 
 
 # I (891063) _performCapture: [881472,17,77.74,306,18000,2854,261,334,310,493,550,10814,211]
