@@ -9,8 +9,6 @@ import pathlib
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QDialog
-date = '07Jun2022'
-
 
 try:
     from Built_UI_Files.dave_window import Ui_dave_window
@@ -23,10 +21,22 @@ try:
     import DaveParsFuncs
 except:
     pass
+date = '21Jun2022'
+
+
+
+
 
 TEMP_CONSOLE_FILE_NAME = "console_output.txt"
 LOCAL_TEST_DATA_FOLDER_NAME = "data"
 AUTO_DAVE_OUTPUT_FOLDER_NAME = "auto_dave_output_files"
+
+directory = ''.join([LOCAL_TEST_DATA_FOLDER_NAME,'/',date])
+folder = os.path.isdir(directory)
+if folder == True:
+    pass
+else:
+    os.mkdir(directory)
 timestamps = []
 
 class Dave_Window(Ui_dave_window, QtWidgets.QWidget):
@@ -494,26 +504,29 @@ class Dave:
         self.dlFullPath = ""
         self.dlFilename = ""
         self.totalData = pd.DataFrame()
+
         self.stage1Plot = PlotGroup("Stage1")
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 TempC", color='tab:cyan', parseValueFunc=DaveParsFuncs.stage1TempCFunc))
+
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Modeled TempC", color='tab:red', parseValueFunc=DaveParsFuncs.stage1ModeledTempCFunc))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Expected TempC", color='tab:orange',
-                        parseValueFunc=DaveParsFuncs.stage1ExpectedTempCFunc))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Target TempC", color='tab:green', parseValueFunc=DaveParsFuncs.stage1TargetTempCFunc,
-                        step=True))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Controlled Ramp Target", color='tab:blue',
-                        parseValueFunc=DaveParsFuncs.stage1ControlledRampTargetFunc, step=True))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("dataQLiquidStg1", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
-        self.stage1Plot.addParsedValue(
-            ParsedValue("Stage1 Thermocouple TempC 2", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC2))
 
-            
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Expected TempC", color='tab:orange', parseValueFunc=DaveParsFuncs.stage1ExpectedTempCFunc))
+
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Target TempC", color='tab:green', parseValueFunc=DaveParsFuncs.stage1TargetTempCFunc, step=True))
+
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Controlled Ramp Target", color='tab:blue', parseValueFunc=DaveParsFuncs.stage1ControlledRampTargetFunc, step=True))
+
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
+
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Heatsink", color='tab:grey', parseValueFunc=DaveParsFuncs.stage1HeatSinkTempFunc))
+
         # self.stage1Plot.addParsedValue(
         #     ParsedValue("DataQ Stg1 Heatsink", color='tab:gray', parseValueFunc=ParsFuncs.dataQStage1Heatsink))
         # self.stage1Plot.addParsedValue(
@@ -522,28 +535,36 @@ class Dave:
         #     ParsedValue("dataQStage1PeltierBottom", color='tab:olive', parseValueFunc=ParsFuncs.dataQC1B))
 
         self.stage1OutputPlot = PlotGroup("Stage1 Output")
+
         self.stage1OutputPlot.addParsedValue(
-            ParsedValue("Stage1 Output", color='tab:orange', parseValueFunc=DaveParsFuncs.stage1OutputFunc,
-                        mainY=False))
+            ParsedValue("Stage1 Output", color='tab:orange', parseValueFunc=DaveParsFuncs.stage1OutputFunc, mainY=False))
+
         self.stage1OutputPlot.addParsedValue(
-            ParsedValue("Stage1 Actual TEC Temp Rate", color='tab:olive',
-                        parseValueFunc=DaveParsFuncs.stage1ActualTecRampRateFunc))
+            ParsedValue("Stage1 Actual TEC Temp Rate", color='tab:olive', parseValueFunc=DaveParsFuncs.stage1ActualTecRampRateFunc))
+
+
         self.pcrPlot = PlotGroup("Pcr")
+
         self.pcrPlot.addParsedValue(
             ParsedValue("PCR Temp", color='tab:cyan', parseValueFunc=DaveParsFuncs.pcrTempCFunc))
+
         self.pcrPlot.addParsedValue(
             ParsedValue("PCR Modeled TempC", color='tab:orange', parseValueFunc=DaveParsFuncs.pcrModeledTempCFunc))
+
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Expected TempC", color='tab:green', parseValueFunc=DaveParsFuncs.pcrExpectedTempCFunc,
-                        step=True))
+            ParsedValue("PCR Expected TempC", color='tab:green', parseValueFunc=DaveParsFuncs.pcrExpectedTempCFunc,step=True))
+
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Target TempC", color='tab:pink', parseValueFunc=DaveParsFuncs.pcrTargetTempCFunc,
-                        step=True))
+            ParsedValue("PCR Target TempC", color='tab:pink', parseValueFunc=DaveParsFuncs.pcrTargetTempCFunc,step=True))
+
         self.pcrPlot.addParsedValue(
-            ParsedValue("PCR Controlled Ramp Target", color='tab:red',
-                        parseValueFunc=DaveParsFuncs.pcrControlledRampTargetFunc))
+            ParsedValue("PCR Controlled Ramp Target", color='tab:red', parseValueFunc=DaveParsFuncs.pcrControlledRampTargetFunc))
+
         self.pcrPlot.addParsedValue(
             ParsedValue("PCR Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredPcrTempC))
+
+        self.pcrPlot.addParsedValue(
+            ParsedValue("PCR HeatSink TempC", color='tab:grey', parseValueFunc=DaveParsFuncs.pcrHeatSinkTempFunc))
         # self.pcrPlot.addParsedValue(
         #     ParsedValue("DataQ Pcr Heatsink", color='tab:green', parseValueFunc=ParsFuncs.dataQPcrHeatsink))
         # self.pcrPlot.addParsedValue(ParsedValue("Raw TEC Model", color='tab:blue', parseValueFunc=ParsFuncs.rawTECModel))
