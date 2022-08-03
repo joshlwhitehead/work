@@ -8,7 +8,7 @@ def getData(filename,date):
 
     time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
     thermRaw = fullSheet['Stage1 TempC'].tolist()
-    sampRaw = fullSheet['dataQLiquidStg1'].tolist()
+    sampRaw = fullSheet['Stage1 Thermocouple TempC'].tolist()
     wav3 = []
     wavTime = []
     if '515nm' in fullSheet.columns:
@@ -18,8 +18,8 @@ def getData(filename,date):
             if str(nm515[i]) !='nan':
                 wav3.append(nm515[i])
                 wavTime.append(time[i])
-    if 'liquid2' in fullSheet.columns:
-        samp2Raw = fullSheet['liquid2'].tolist()
+    if 'Stage1 Thermocouple TempC 2' in fullSheet.columns:
+        samp2Raw = fullSheet['Stage1 Thermocouple TempC 2'].tolist()
     else:
         samp2Raw = np.ones(len(sampRaw))
 

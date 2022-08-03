@@ -72,6 +72,6 @@ def derivSpec():
     plt.grid()
     
     
-    plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
+    plt.savefig(''.join(['specSigMadison/21Jul2022/',consumableId[:6]]))
     plt.show()
 derivSpec()

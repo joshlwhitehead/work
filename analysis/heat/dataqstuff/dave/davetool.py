@@ -21,7 +21,7 @@ try:
     import DaveParsFuncs
 except:
     pass
-date = '22Jun2022'
+date = '02Aug2022'
 
 
 
@@ -523,6 +523,8 @@ class Dave:
 
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Thermocouple TempC", color='tab:blue', parseValueFunc=DaveParsFuncs.measuredStg1TempC))
+        self.stage1Plot.addParsedValue(
+            ParsedValue("Stage1 Thermocouple TempC 2", color='tab:purple', parseValueFunc=DaveParsFuncs.measuredStg1TempC2))
 
         self.stage1Plot.addParsedValue(
             ParsedValue("Stage1 Heatsink", color='tab:grey', parseValueFunc=DaveParsFuncs.stage1HeatSinkTempFunc))

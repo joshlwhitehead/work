@@ -65,12 +65,10 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.full_x[1])
 # plt.plot(dat.full_x[2],label='x')
 
-plt.plot(dat.first[1])
-plt.plot(dat.first[2],label='first')
-plt.plot(dat.sec[1])
-plt.plot(dat.sec[2],label='sec')
-plt.plot(dat.third[1])
-plt.plot(dat.third[2],label='third')
+# plt.plot(dat.double[1])
+plt.plot(dat.double[2])
+plt.plot(dat.double[3])
+
 
 
 plt.legend()
