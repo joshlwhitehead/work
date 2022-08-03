@@ -4,11 +4,15 @@ import scipy.interpolate as interp
 
 
 def getData(filename,date):
-    fullSheet = pd.read_csv(''.join(['data/',date,'/',filename]))
+    fullSheet = pd.read_csv(''.join(['../data/',date,'/',filename]))
 
     time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
     thermRaw = fullSheet['Stage1 TempC'].tolist()
-    sampRaw = fullSheet['Stage1 Thermocouple TempC'].tolist()
+    if 'Stage1 Thermocouple TempC' in fullSheet:
+        sampRaw = fullSheet['Stage1 Thermocouple TempC'].tolist()
+    elif 'dataQLiquidStg1' in fullSheet:
+        sampRaw = fullSheet['dataQLiquidStg1'].tolist()
+      
     wav3 = []
     wavTime = []
     if '515nm' in fullSheet.columns:
@@ -58,7 +62,5 @@ def getData(filename,date):
         samp2Mod = samp2Interp(time[:-4])
     
     return time,thermMod,sampMod,samp2Mod,wav3,wavTime
-   
-
 
 

@@ -66,8 +66,12 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.full_x[2],label='x')
 
 # plt.plot(dat.double[1])
-plt.plot(dat.double[2])
-plt.plot(dat.double[3])
+plt.plot(dat.holdDown[2],label='Hold down')
+plt.plot(dat.noHoldDown[2],label='No hold down')
+plt.xlabel('time')
+plt.ylabel('temp (c)')
+# plt.plot(dat.holdDown[1])
+# plt.plot(dat.noHoldDown[1])
 
 
 

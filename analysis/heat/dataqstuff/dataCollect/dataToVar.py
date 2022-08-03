@@ -1,4 +1,5 @@
 """This is a space to organize data. getData function parses out csv produced by dave"""
+
 from gc import get_debug
 import getData as gd
 
@@ -133,7 +134,7 @@ import getData as gd
 # h100 = gd.getData('lidF_insertC_hold100_b.csv','01Jun2022')
 # h90 = gd.getData('lidF_insertC_hold90.csv','01Jun2022')
 
-# full_insertC = gd.getData('lidF_insertC_full.csv','01Jun2022')
+full_insertC = gd.getData('lidF_insertC_full.csv','01Jun2022')
 # full_noInsert = gd.getData('lidF_noInsert_full.csv','01Jun2022')
 # full_insertA = gd.getData('lidF_insertA_full.csv','01Jun2022')
 # full_insertA2 = gd.getData('lidF_insertA2_full_b.csv','01Jun2022')
@@ -162,20 +163,20 @@ import getData as gd
 # h90_insertD = gd.getData('lidF_insertD_hold90.csv','02Jun2022')
 # h100_insertD = gd.getData('lidF_insertD_hold100.csv','02Jun2022')
 
-# h50_insert = gd.getData('lidG_insert_hold50_e.csv','07Jun2022')
-# h70_insert = gd.getData('lidG_insert_hold70_h.csv','07Jun2022')
-# h90_insert = gd.getData('lidG_insert_hold90_d.csv','07Jun2022')
-# h100_insert = gd.getData('lidG_insert_hold100_b.csv','07Jun2022')
+h50_insert = gd.getData('lidG_insert_hold50_e.csv','07Jun2022')
+h70_insert = gd.getData('lidG_insert_hold70_h.csv','07Jun2022')
+h90_insert = gd.getData('lidG_insert_hold90_d.csv','07Jun2022')
+h100_insert = gd.getData('lidG_insert_hold100_b.csv','07Jun2022')
 
 
 
 # full_fat = gd.getData('lidF_insertF_fatBottom.csv','03Jun2022')
 # full_flat = gd.getData('lidF_insertF_flatBottom.csv','03Jun2022')
 # ##################################################          COOLING     ##########################################
-# c85_noInsert = gd.getData('lidF_noInsert_cool85.csv','02Jun2022')
-# c70_noInsert = gd.getData('lidF_noInsert_cool70.csv','02Jun2022')
-# c50_noInsert = gd.getData('lidF_noInsert_cool50.csv','02Jun2022')
-# c30_noInsert = gd.getData('lidF_noInsert_cool30.csv','02Jun2022')
+c85_noInsert = gd.getData('lidF_noInsert_cool85.csv','02Jun2022')
+c70_noInsert = gd.getData('lidF_noInsert_cool70.csv','02Jun2022')
+c50_noInsert = gd.getData('lidF_noInsert_cool50.csv','02Jun2022')
+c30_noInsert = gd.getData('lidF_noInsert_cool30.csv','02Jun2022')
 
 
 # # c85_noInsert = gd.getData('lidF_noInsert_cool85.csv','02Jun2022')
@@ -193,3 +194,5 @@ import getData as gd
 
 
 double = gd.getData('double1.csv','01Aug2022')
+holdDown = gd.getData('holdDown.csv','03Aug2022')
+noHoldDown = gd.getData('noHoldDown.csv','03Aug2022')

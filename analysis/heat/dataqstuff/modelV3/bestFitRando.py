@@ -1,7 +1,7 @@
-
+import SiblingDir
 import matplotlib.pyplot as plt
 import numpy as np
-import dataToVar as dat
+import dataCollect.dataToVar as dat
 
 
 
