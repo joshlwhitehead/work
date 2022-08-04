@@ -2,9 +2,10 @@
 Josh W's super duper awesome program for determining kalmann filter coeffs used to train the treatment stage model
 in the super duper awesome advanced alpha pcr instruments
 """
+import SiblingDir
 import matplotlib.pyplot as plt
 import numpy as np
-import dataToVar as dat
+import dataCollect.dataToVar as dat
 
 
 
