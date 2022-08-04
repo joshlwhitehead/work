@@ -196,3 +196,7 @@ c35_insert = gd.getData('lidG_insert_cool35.csv','07Jun2022')
 double = gd.getData('double1.csv','01Aug2022')
 holdDown = gd.getData('holdDown.csv','03Aug2022')
 noHoldDown = gd.getData('noHoldDown.csv','03Aug2022')
+
+ramp1Cool = gd.getData('longCoolRamp1.csv','04Aug2022')
+ramp2Cool = gd.getData('longCoolRamp2.csv','04Aug2022')
+ramp3Cool = gd.getData('longCoolRamp3.csv','04Aug2022')
