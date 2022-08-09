@@ -13,7 +13,7 @@ b = 1730.63
 c = 233.426
 
 
-plt.plot(temp,antoine(a,b,c,temp))
+plt.plot(temp,antoine(a,b,c,temp),label='water')
 plt.xlabel('temp c')
 plt.ylabel('psig')
 plt.grid()

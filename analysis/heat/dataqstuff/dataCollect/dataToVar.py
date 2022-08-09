@@ -200,3 +200,7 @@ noHoldDown = gd.getData('noHoldDown.csv','03Aug2022')
 ramp1Cool = gd.getData('longCoolRamp1.csv','04Aug2022')
 ramp2Cool = gd.getData('longCoolRamp2.csv','04Aug2022')
 ramp3Cool = gd.getData('longCoolRamp3.csv','04Aug2022')
+
+
+inflectNorm = gd.getData('inflectNormFill1.csv','08Aug2022')
+inflectLow = gd.getData('inflectLowFill2.csv','08Aug2022')

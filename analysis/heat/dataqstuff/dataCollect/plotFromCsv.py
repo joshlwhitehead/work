@@ -16,12 +16,12 @@ import matplotlib.pyplot as plt
 # plt.plot(dat.uL600_b[2],label='600')
 
 
-plt.plot(dat.uL700[0][:len(dat.uL700[2])],dat.uL700[2],label='700')
-plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
-plt.plot(dat.uL800[0][:len(dat.uL800[2])],dat.uL800[2],label='800')
-plt.plot(dat.uL800[0][:len(dat.uL800[1])],dat.uL800[1],label='800Thermister')
-plt.plot(dat.uL600[0][:len(dat.uL600[2])],dat.uL600[2],label='600')
-plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
+# plt.plot(dat.uL700[0][:len(dat.uL700[2])],dat.uL700[2],label='700')
+# plt.plot(dat.uL700[0][:len(dat.uL700[1])],dat.uL700[1],label='700Thermister')
+# plt.plot(dat.uL800[0][:len(dat.uL800[2])],dat.uL800[2],label='800')
+# plt.plot(dat.uL800[0][:len(dat.uL800[1])],dat.uL800[1],label='800Thermister')
+# plt.plot(dat.uL600[0][:len(dat.uL600[2])],dat.uL600[2],label='600')
+# plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
 # plt.plot(dat.uL700_d[1],label='700')
 
 # plt.plot(dat.uL800_d[1],label='800')
@@ -75,7 +75,8 @@ plt.plot(dat.uL600[0][:len(dat.uL600[1])],dat.uL600[1],label='600Thermister')
 # plt.ylabel('temp (c)')
 # plt.plot(dat.holdDown[1])
 # plt.plot(dat.noHoldDown[1])
-
+plt.plot(dat.inflectLow[2])
+plt.plot(dat.inflectNorm[2])
 
 
 plt.legend()
