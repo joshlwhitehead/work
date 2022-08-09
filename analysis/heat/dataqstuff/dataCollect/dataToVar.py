@@ -77,21 +77,21 @@ import getData as gd
 
 # ######################              V v T                           #########################
 
-# uL600 = gd.getData('uL600.csv','20May2022')
-# uL700 = gd.getData('uL700.csv','20May2022')
-# uL800 = gd.getData('uL800.csv','20May2022')
+uL600 = gd.getData('uL600.csv','20May2022')
+uL700 = gd.getData('uL700.csv','20May2022')
+uL800 = gd.getData('uL800.csv','20May2022')
 
-# uL600_b = gd.getData('uL600_b.csv','20May2022')
-# uL700_b = gd.getData('uL700_b.csv','20May2022')
-# uL800_b = gd.getData('uL800_b.csv','20May2022')
+uL600_b = gd.getData('uL600_b.csv','20May2022')
+uL700_b = gd.getData('uL700_b.csv','20May2022')
+uL800_b = gd.getData('uL800_b.csv','20May2022')
 
-# uL800_c = gd.getData('uL800_c.csv','20May2022')
-# uL700_c = gd.getData('uL700_c.csv','20May2022')
-# uL600_c = gd.getData('uL600_c.csv','20May2022')
+uL800_c = gd.getData('uL800_c.csv','20May2022')
+uL700_c = gd.getData('uL700_c.csv','20May2022')
+uL600_c = gd.getData('uL600_c.csv','20May2022')
 
-# uL600_d = gd.getData('uL600_d.csv','20May2022')
-# uL700_d = gd.getData('uL700_d.csv','20May2022')
-# uL800_d = gd.getData('uL800_d.csv','20May2022')
+uL600_d = gd.getData('uL600_d.csv','20May2022')
+uL700_d = gd.getData('uL700_d.csv','20May2022')
+uL800_d = gd.getData('uL800_d.csv','20May2022')
 
 # ###########################             break stuff                            #############################
 # # f1 = gd.getData('f1.csv','19May2022')

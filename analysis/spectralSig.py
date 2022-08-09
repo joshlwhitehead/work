@@ -9,7 +9,10 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 
-consumableId = '404629da-ce1d-4f55-ac89-63fc628da800'
+consumableId = '0183e630-6fcb-4714-9447-e384ce50ab57'
+
+note = 'SZB 525a'
+
 refChan = 3
 api = auth.getApiClient()
 
@@ -18,7 +21,12 @@ where = {
     '_eq': consumableId
 }
 }
-channels = [515,555,590,630,680]
+channels = [480,515,555,590,630,680]
+channelString = []
+
+
+for i in channels:
+    channelString.append(str(i))
 
 
 rep = 0
@@ -33,7 +41,6 @@ data_melt = np.array(meltData).T.tolist()
 if len(data_melt) > 0:
     tData = response ['data']['consumable'][0]['experiments'][rep]['experimentResult']['meltData']['temperature']
     mData = data_melt
-
 consumableName = 'lambda'
 configuration = getConfigMap(consumableName)
 meltAnalysis = MeltAnalysis(configuration)
@@ -47,7 +54,7 @@ if len(data) > 0:
 
 def pcrplot():
     delta = []
-    for i in [0,1,2,3,4,5,6,7]:
+    for i in [2,3,4,5,6,7]:
         delta.append(np.average(data[i][-5:])-np.average(data[i][:5]))
 
     # print(delta)
@@ -71,12 +78,13 @@ def pcrplot():
     # Plotting the Graph
     plt.figure()
     plt.plot(X_, Y_,'-',x,y,'o')
-    plt.title(''.join(['Spectral Signature ',consumableId[:6]]))
+    plt.title(''.join([note,' ',consumableId[:6]]))
     plt.xlabel("Channel (nm)")
     plt.ylabel("Fluorescence")
-    plt.xticks((415,445,480,515,555,590,630,680),('415','445','480','515','555','590','630','680'))
+    
+    plt.xticks(channels,channelString)
     plt.grid()
-    plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
+    plt.savefig(''.join(['specSigKristin/08Aug2022/',consumableId[:6]]))
     plt.show()
 
 
@@ -116,4 +124,4 @@ def melt_deriv():
     
     plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
     plt.show()
-melt_deriv()
+pcrplot()

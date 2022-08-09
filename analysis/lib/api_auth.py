@@ -2,7 +2,7 @@ from pathlib import Path
 from python_graphql_client import GraphqlClient
 import graphql_queries as qry
 
-endpoint = 'https://dev-graph.idmo.dev/v1/graphql'
+endpoint = 'https://api.co-dx.io/v1/graphql'
 unauthApi = GraphqlClient(endpoint=endpoint)
 
 # Get your refresh token at https://youtest.idmo.dev and click on account.

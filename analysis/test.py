@@ -1,6 +1,9 @@
-import numpy as np
+import tkinter as tk
+window = tk.Tk()
 
-x = ['second alpha','snp dry']
-if 'SNP' in x or 'snp' in x or 'Snp' in x:
-    if 'DRY' in x or 'Dry' in x or 'dry' in x:
-        print('ok')
+
+greeting = tk.Label(text='hi')
+greeting.pack()
+
+
+window.mainloop()
