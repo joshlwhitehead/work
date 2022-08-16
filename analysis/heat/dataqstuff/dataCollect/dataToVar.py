@@ -204,3 +204,22 @@ ramp3Cool = gd.getData('longCoolRamp3.csv','04Aug2022')
 
 inflectNorm = gd.getData('inflectNormFill1.csv','08Aug2022')
 inflectLow = gd.getData('inflectLowFill2.csv','08Aug2022')
+
+
+
+###################INSERTS#################################
+date = '16Aug2022'
+a57 = gd.getData('3483fb_57.csv',date)
+b57 = gd.getData('7791e4_57.csv',date)
+c57 = gd.getData('07813a_57.csv',date)
+
+a54 = gd.getData('54a.csv',date)
+b54 = gd.getData('54b.csv',date)
+c54 = gd.getData('54c.csv',date)
+d54 = gd.getData('54d.csv',date)
+
+a52 = gd.getData('3a0ee6_52.csv',date)
+b52 = gd.getData('04fd99_52.csv',date)
+c52 = gd.getData('5e924a_52.csv',date)
+d52 = gd.getData('9cfadc_52.csv',date)
+e52 = gd.getData('18c660_52.csv',date)

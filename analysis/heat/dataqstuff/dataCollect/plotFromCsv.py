@@ -75,10 +75,26 @@ import matplotlib.pyplot as plt
 # plt.ylabel('temp (c)')
 # plt.plot(dat.holdDown[1])
 # plt.plot(dat.noHoldDown[1])
-plt.plot(dat.inflectLow[2])
-plt.plot(dat.inflectNorm[2])
 
 
+# plt.plot(dat.a57[1],color='k')
+
+thick = 1.5
+plt.plot(dat.a52[2],lw=thick,color='green',label='5.2')
+plt.plot(dat.b52[2],lw=thick,color='green')
+plt.plot(dat.c52[2],lw=thick,color='green')
+plt.plot(dat.d52[2],lw=thick,color='green')
+plt.plot(dat.e52[2],lw=thick,color='green')
+plt.plot(dat.a54[2],lw=thick,color='red',label='5.4')
+plt.plot(dat.b54[2],lw=thick,color='red')
+plt.plot(dat.c54[2],lw=thick,color='red')
+plt.plot(dat.d54[2],lw=thick,color='red')
+plt.plot(dat.a57[2],lw=thick,color='blue',label='5.7')
+plt.plot(dat.b57[2],lw=thick,color='blue')
+plt.plot(dat.c57[2],lw=thick,color='blue')
+
+plt.ylabel('Temp (c)')
+plt.title('Non-recessed deck pedestal fill')
 plt.legend()
 plt.grid()
 
