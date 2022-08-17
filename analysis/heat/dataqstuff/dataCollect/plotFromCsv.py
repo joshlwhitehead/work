@@ -79,22 +79,29 @@ import matplotlib.pyplot as plt
 
 # plt.plot(dat.a57[1],color='k')
 
-thick = 1.5
-plt.plot(dat.a52[2],lw=thick,color='green',label='5.2')
-plt.plot(dat.b52[2],lw=thick,color='green')
-plt.plot(dat.c52[2],lw=thick,color='green')
-plt.plot(dat.d52[2],lw=thick,color='green')
-plt.plot(dat.e52[2],lw=thick,color='green')
-plt.plot(dat.a54[2],lw=thick,color='red',label='5.4')
-plt.plot(dat.b54[2],lw=thick,color='red')
-plt.plot(dat.c54[2],lw=thick,color='red')
-plt.plot(dat.d54[2],lw=thick,color='red')
-plt.plot(dat.a57[2],lw=thick,color='blue',label='5.7')
-plt.plot(dat.b57[2],lw=thick,color='blue')
-plt.plot(dat.c57[2],lw=thick,color='blue')
+# thick = 1.5
+# plt.plot(dat.a52[2],lw=thick,color='green',label='5.2')
+# plt.plot(dat.b52[2],lw=thick,color='green')
+# plt.plot(dat.c52[2],lw=thick,color='green')
+# plt.plot(dat.d52[2],lw=thick,color='green')
+# plt.plot(dat.e52[2],lw=thick,color='green')
+# plt.plot(dat.a54[2],lw=thick,color='red',label='5.4')
+# plt.plot(dat.b54[2],lw=thick,color='red')
+# plt.plot(dat.c54[2],lw=thick,color='red')
+# plt.plot(dat.d54[2],lw=thick,color='red')
+# plt.plot(dat.a57[2],lw=thick,color='blue',label='5.7')
+# plt.plot(dat.b57[2],lw=thick,color='blue')
+# plt.plot(dat.c57[2],lw=thick,color='blue')
 
-plt.ylabel('Temp (c)')
-plt.title('Non-recessed deck pedestal fill')
+# plt.ylabel('Temp (c)')
+# plt.title('Non-recessed deck pedestal fill')
+
+
+
+
+
+plt.plot(dat.toeDown[2],label='Hold Down')
+plt.plot(dat.toeUp[2],label='No Hold Down')
 plt.legend()
 plt.grid()
 

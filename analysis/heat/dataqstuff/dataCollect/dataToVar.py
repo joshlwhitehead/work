@@ -223,3 +223,7 @@ b52 = gd.getData('04fd99_52.csv',date)
 c52 = gd.getData('5e924a_52.csv',date)
 d52 = gd.getData('9cfadc_52.csv',date)
 e52 = gd.getData('18c660_52.csv',date)
+
+date = '17Aug2022'
+toeUp = gd.getData('toeUpV08.csv',date)
+toeDown = gd.getData('toeDownV08.csv',date)
