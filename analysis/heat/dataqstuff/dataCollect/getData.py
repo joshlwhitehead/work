@@ -12,6 +12,7 @@ def getData(filename,date):
         sampRaw = fullSheet['Stage1 Thermocouple TempC'].tolist()
     elif 'dataQLiquidStg1' in fullSheet:
         sampRaw = fullSheet['dataQLiquidStg1'].tolist()
+    modelRaw = fullSheet['Stage1 Modeled TempC'].tolist()
     wav3 = []
     wavTime = []
     if '515nm' in fullSheet.columns:
@@ -48,11 +49,13 @@ def getData(filename,date):
     sampMod = []
     timeMod = []
     samp2Mod = []
+    modelMod = []
     for i in range(len(sampRaw)):
         if str(sampRaw[i]) != 'nan':
             sampMod.append(sampRaw[i])
             timeMod.append(time[i])
             samp2Mod.append(samp2Raw[i])
+            modelMod.append(modelRaw[i])
     # print(sampMod[:5])
     if len(sampMod) != 0:
         sampInterp = interp.interp1d(timeMod,sampMod)
@@ -60,6 +63,6 @@ def getData(filename,date):
         samp2Interp = interp.interp1d(timeMod,samp2Mod)
         samp2Mod = samp2Interp(time[:-4])
     
-    return time,thermMod,sampMod,samp2Mod,wav3,wavTime
+    return time,thermMod,sampMod,samp2Mod,modelRaw,wav3,wavTime
 
 
