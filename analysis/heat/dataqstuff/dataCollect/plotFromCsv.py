@@ -120,14 +120,14 @@ plt.plot(dat.r46a[4],color='k')
 plt.grid()
 plt.title('Insert Height Comparison on Recessed Deck')
 plt.ylabel('Temperature (C)')
-
+plt.legend()
 
 plt.figure() 
 plt.plot(listAvg([dat.r46a[2][:len(dat.r46e[2])],dat.r46b[2][:len(dat.r46e[2])],dat.r46c[2][:len(dat.r46e[2])],dat.r46d[2][:len(dat.r46e[2])],dat.r46e[2]])[1],color='blue',label='4.6 Recessed')
 plt.plot(listAvg([dat.r52a[2],dat.r52b[2][:len(dat.r52a[2])],dat.r52c[2][:len(dat.r52a[2])],dat.r52d[2][:len(dat.r52a[2])],dat.r52e[2][:len(dat.r52a[2])]])[1],color='green',label='5.2 Recessed')
 plt.plot(listAvg([dat.r57a[2][:len(dat.r57e[2])],dat.r57b[2][:len(dat.r57e[2])],dat.r57c[2][:len(dat.r57e[2])],dat.r57d[2][:len(dat.r57e[2])],dat.r57e[2]])[1],color='orange',label='5.7 Recessed')
 # plt.plot(dat.r46a[4],color='k')
-plt.title('Average by Insert')
+plt.title('stdev by Insert')
 
 plt.legend()
 plt.grid()
