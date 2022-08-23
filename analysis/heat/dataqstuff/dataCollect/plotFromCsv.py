@@ -98,34 +98,75 @@ from thermalCompareQuant import listAvg
 # plt.title('Non-recessed deck pedestal fill')
 
 
-
+"""v04"""
 
 plt.figure()
-plt.plot(dat.r46a[2],color='blue',label='4.6 Recessed')
-plt.plot(dat.r46b[2],color='blue')
-plt.plot(dat.r46c[2],color='blue')
-plt.plot(dat.r46d[2],color='blue')
-plt.plot(dat.r46e[2],color='blue')
-plt.plot(dat.r52a[2],color='green',label='5.2 Recessed')
-plt.plot(dat.r52b[2],color='green')
-plt.plot(dat.r52c[2],color='green')
-plt.plot(dat.r52d[2],color='green')
-plt.plot(dat.r52e[2],color='green')
-plt.plot(dat.r57a[2],color='orange',label='5.7 Recessed')
-plt.plot(dat.r57b[2],color='orange')
-plt.plot(dat.r57c[2],color='orange')
-plt.plot(dat.r57d[2],color='orange')
-plt.plot(dat.r57e[2],color='orange')
-plt.plot(dat.r46a[4],color='k')
+plt.plot(dat.v04r46a[0][:len(dat.v04r46a[2])],dat.v04r46a[2],color='blue',label='4.6 Recessed')
+plt.plot(dat.v04r46b[0][:len(dat.v04r46b[2])],dat.v04r46b[2],color='blue')
+plt.plot(dat.v04r46c[0][:len(dat.v04r46c[2])],dat.v04r46c[2],color='blue')
+plt.plot(dat.v04r46d[0][:len(dat.v04r46d[2])],dat.v04r46d[2],color='blue')
+plt.plot(dat.v04r46e[0][:len(dat.v04r46e[2])],dat.v04r46e[2],color='blue')
+
+
+plt.plot(dat.v04r52a[0][:len(dat.v04r52a[2])],dat.v04r52a[2],color='green',label='5.2 Recessed')
+plt.plot(dat.v04r52b[0][:len(dat.v04r52b[2])],dat.v04r52b[2],color='green')
+plt.plot(dat.v04r52c[0][:len(dat.v04r52c[2])],dat.v04r52c[2],color='green')
+plt.plot(dat.v04r52d[0][:len(dat.v04r52d[2])],dat.v04r52d[2],color='green')
+plt.plot(dat.v04r52e[0][:len(dat.v04r52e[2])],dat.v04r52e[2],color='green')
+
+plt.plot(dat.v05r52a[0][:len(dat.v05r52a[2])],dat.v05r52a[2],color='green')
+plt.plot(dat.v05r52b[0][:len(dat.v05r52b[2])],dat.v05r52b[2],color='green')
+plt.plot(dat.v05r52c[0][:len(dat.v05r52c[2])],dat.v05r52c[2],color='green')
+plt.plot(dat.v05r52d[0][:len(dat.v05r52d[2])],dat.v05r52d[2],color='green')
+
+plt.plot(dat.v06r52a[0][:len(dat.v06r52a[2])],dat.v06r52a[2],color='green')
+plt.plot(dat.v06r52b[0][:len(dat.v06r52b[2])],dat.v06r52b[2],color='green')
+plt.plot(dat.v06r52c[0][:len(dat.v06r52c[2])],dat.v06r52c[2],color='green')
+plt.plot(dat.v06r52d[0][:len(dat.v06r52d[2])],dat.v06r52d[2],color='green')
+plt.plot(dat.v06r52e[0][:len(dat.v06r52e[2])],dat.v06r52e[2],color='green')
+
+
+plt.plot(dat.v04r57a[0][:len(dat.v04r57a[2])],dat.v04r57a[2],color='orange',label='5.7 Recessed')
+plt.plot(dat.v04r57b[0][:len(dat.v04r57b[2])],dat.v04r57b[2],color='orange')
+plt.plot(dat.v04r57c[0][:len(dat.v04r57c[2])],dat.v04r57c[2],color='orange')
+plt.plot(dat.v04r57d[0][:len(dat.v04r57d[2])],dat.v04r57d[2],color='orange')
+plt.plot(dat.v04r57e[0][:len(dat.v04r57e[2])],dat.v04r57e[2],color='orange')
+
+plt.plot(dat.v05r57a[0][:len(dat.v05r57a[2])],dat.v05r57a[2],color='orange')
+plt.plot(dat.v05r57b[0][:len(dat.v05r57b[2])],dat.v05r57b[2],color='orange')
+plt.plot(dat.v05r57c[0][:len(dat.v05r57c[2])],dat.v05r57c[2],color='orange')
+plt.plot(dat.v05r57d[0][:len(dat.v05r57d[2])],dat.v05r57d[2],color='orange')
+
+plt.plot(dat.v04r46a[0][:len(dat.v04r46a[4])],dat.v04r46a[4],color='k')
 plt.grid()
 plt.title('Insert Height Comparison on Recessed Deck')
 plt.ylabel('Temperature (C)')
 plt.legend()
 
+
 plt.figure() 
-plt.plot(listAvg([dat.r46a[2][:len(dat.r46e[2])],dat.r46b[2][:len(dat.r46e[2])],dat.r46c[2][:len(dat.r46e[2])],dat.r46d[2][:len(dat.r46e[2])],dat.r46e[2]])[1],color='blue',label='4.6 Recessed')
-plt.plot(listAvg([dat.r52a[2],dat.r52b[2][:len(dat.r52a[2])],dat.r52c[2][:len(dat.r52a[2])],dat.r52d[2][:len(dat.r52a[2])],dat.r52e[2][:len(dat.r52a[2])]])[1],color='green',label='5.2 Recessed')
-plt.plot(listAvg([dat.r57a[2][:len(dat.r57e[2])],dat.r57b[2][:len(dat.r57e[2])],dat.r57c[2][:len(dat.r57e[2])],dat.r57d[2][:len(dat.r57e[2])],dat.r57e[2]])[1],color='orange',label='5.7 Recessed')
+plt.plot(listAvg([dat.v04r46a[2][:len(dat.v04r46e[2])],
+    dat.v04r46b[2][:len(dat.v04r46e[2])],
+    dat.v04r46c[2][:len(dat.v04r46e[2])],
+    dat.v04r46d[2][:len(dat.v04r46e[2])],
+    dat.v04r46e[2]])[1],
+    color='blue',label='4.6 Recessed')
+plt.plot(listAvg([dat.v04r52a[2],
+    dat.v04r52b[2][:len(dat.v04r52a[2])],
+    dat.v04r52c[2][:len(dat.v04r52a[2])],
+    dat.v04r52d[2][:len(dat.v04r52a[2])],
+    dat.v04r52e[2][:len(dat.v04r52a[2])],
+    dat.v05r52a[2][:len(dat.v05r52b[2])],
+    dat.v05r52b[2][:len(dat.v05r52b[2])],
+    dat.v05r52c[2][:len(dat.v05r52b[2])],
+    dat.v05r52d[2][:len(dat.v05r52b[2])]])[1],
+    color='green',label='5.2 Recessed')
+plt.plot(listAvg([dat.v04r57a[2][:len(dat.v04r57e[2])],
+    dat.v04r57b[2][:len(dat.v04r57e[2])],
+    dat.v04r57c[2][:len(dat.v04r57e[2])],
+    dat.v04r57d[2][:len(dat.v04r57e[2])],
+    dat.v04r57e[2]])[1],
+    color='orange',label='5.7 Recessed')
 # plt.plot(dat.r46a[4],color='k')
 plt.title('stdev by Insert')
 
@@ -133,4 +174,55 @@ plt.legend()
 plt.grid()
 
 plt.show()
+
+
+
+
+# """v05"""
+
+# plt.figure()
+# # plt.plot(dat.r46a[2],color='blue',label='4.6 Recessed')
+# # plt.plot(dat.r46b[2],color='blue')
+# # plt.plot(dat.r46c[2],color='blue')
+# # plt.plot(dat.r46d[2],color='blue')
+# # plt.plot(dat.r46e[2],color='blue')
+# plt.plot(dat.r52a[2],color='green',label='5.2 Recessed')
+# plt.plot(dat.r52b[2],color='green')
+# plt.plot(dat.r52c[2],color='green')
+# plt.plot(dat.r52d[2],color='green')
+# # plt.plot(dat.r52e[2],color='green')
+# plt.plot(dat.r57a[2],color='orange',label='5.7 Recessed')
+# plt.plot(dat.r57b[2],color='orange')
+# plt.plot(dat.r57c[2],color='orange')
+# plt.plot(dat.r57d[2],color='orange')
+# # plt.plot(dat.r57e[2],color='orange')
+# plt.plot(dat.r52a[4],color='k')
+# plt.grid()
+# plt.title('Insert Height Comparison on Recessed Deck')
+# plt.ylabel('Temperature (C)')
+# plt.legend()
+
+# plt.figure() 
+# # plt.plot(listAvg([dat.r46a[2][:len(dat.r46e[2])],dat.r46b[2][:len(dat.r46e[2])],dat.r46c[2][:len(dat.r46e[2])],dat.r46d[2][:len(dat.r46e[2])],dat.r46e[2]])[1],color='blue',label='4.6 Recessed')
+# plt.plot(listAvg([dat.r52a[2],dat.r52b[2][:len(dat.r52a[2])],dat.r52c[2][:len(dat.r52a[2])],dat.r52d[2][:len(dat.r52a[2])]])[1],color='green',label='5.2 Recessed')
+# plt.plot(listAvg([dat.r57a[2][:len(dat.r57a[2])],dat.r57b[2][:len(dat.r57a[2])],dat.r57c[2][:len(dat.r57a[2])],dat.r57d[2][:len(dat.r57a[2])]])[1],color='orange',label='5.7 Recessed')
+# # plt.plot(dat.r46a[4],color='k')
+# plt.title('stdev by Insert')
+
+# plt.legend()
+# plt.grid()
+
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
 

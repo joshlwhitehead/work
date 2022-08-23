@@ -229,20 +229,46 @@ toeUp = gd.getData('toeUpV08.csv',date)
 toeDown = gd.getData('toeDownV08.csv',date)
 
 
-###########             RECESSED                        ###################
+###########             RECESSED       v04                 ###################
 date = '18Aug2022'
-r52a = gd.getData('17Aug2022_V04_251f37_p14_52_1.csv',date)
-r52b = gd.getData('17Aug2022_V04_aa9aef_p14_52_4.csv',date)
-r52c = gd.getData('17Aug2022_V04_2700e1e_p14_52_11.csv',date)
-r52d = gd.getData('17Aug2022_V04_dbccb5_p14_52_12.csv',date)
-r52e = gd.getData('17Aug2022_V04_03dc44_p14_52_13.csv',date)
-r57a = gd.getData('17Aug2022_V04_80cb5d_p14_57_5.csv',date)
-r57b = gd.getData('17Aug2022_V04_10e32b_p14_57_6.csv',date)
-r57c = gd.getData('17Aug2022_V04_345c60_p14_57_9.csv',date)
-r57d = gd.getData('17Aug2022_V04_b8675e_p14_57_10.csv',date)
-r57e = gd.getData('17Aug2022_V04_a9ddad_p14_57_15.csv',date)
-r46a = gd.getData('17Aug2022_V04_fbcb66_p14_46_2.csv',date)
-r46b = gd.getData('17Aug2022_V04_5098de_p14_46_3.csv',date)
-r46c = gd.getData('17Aug2022_V04_a6b508_p14_46_7.csv',date)
-r46d = gd.getData('17Aug2022_V04_7077b1_p14_46_8.csv',date)
-r46e = gd.getData('17Aug2022_V04_673ed5_p14_46_14.csv',date)
+v04r52a = gd.getData('17Aug2022_V04_251f37_p14_52_1.csv',date)
+v04r52b = gd.getData('17Aug2022_V04_aa9aef_p14_52_4.csv',date)
+v04r52c = gd.getData('17Aug2022_V04_2700e1e_p14_52_11.csv',date)
+v04r52d = gd.getData('17Aug2022_V04_dbccb5_p14_52_12.csv',date)
+v04r52e = gd.getData('17Aug2022_V04_03dc44_p14_52_13.csv',date)
+v04r57a = gd.getData('17Aug2022_V04_80cb5d_p14_57_5.csv',date)
+v04r57b = gd.getData('17Aug2022_V04_10e32b_p14_57_6.csv',date)
+v04r57c = gd.getData('17Aug2022_V04_345c60_p14_57_9.csv',date)
+v04r57d = gd.getData('17Aug2022_V04_b8675e_p14_57_10.csv',date)
+v04r57e = gd.getData('17Aug2022_V04_a9ddad_p14_57_15.csv',date)
+v04r46a = gd.getData('17Aug2022_V04_fbcb66_p14_46_2.csv',date)
+v04r46b = gd.getData('17Aug2022_V04_5098de_p14_46_3.csv',date)
+v04r46c = gd.getData('17Aug2022_V04_a6b508_p14_46_7.csv',date)
+v04r46d = gd.getData('17Aug2022_V04_7077b1_p14_46_8.csv',date)
+v04r46e = gd.getData('17Aug2022_V04_673ed5_p14_46_14.csv',date)
+
+
+
+######################              v05                                 ##########################
+
+
+date = '23Aug2022'
+v05r57a = gd.getData('23Aug2022_V05_f3a134_p14.csv',date)
+v05r57b = gd.getData('23Aug2022_V05_8b9de9_p14.csv',date)
+v05r57c = gd.getData('23Aug2022_V05_8e73a1_p16.csv',date)
+v05r57d = gd.getData('23Aug2022_V05_47a837_p16.csv',date)
+
+v05r52a = gd.getData('23Aug2022_V05_41334e_p16.csv',date)
+v05r52b = gd.getData('23Aug2022_V05_febd3e_p16.csv',date)
+v05r52c = gd.getData('23Aug2022_V05_303d56_p16.csv',date)
+v05r52d = gd.getData('23Aug2022_V05_21e174_p16.csv',date)
+
+
+
+##############################                          v06                                             ###################
+
+v06r52a = gd.getData('23Aug2022_V06_dc7ca8_p17.csv',date)
+v06r52b = gd.getData('23Aug2022_V06_7b3b16_p17.csv',date)
+v06r52c = gd.getData('23Aug2022_V06_104e83_p17.csv',date)
+v06r52d = gd.getData('23Aug2022_V06_618257_p17.csv',date)
+v06r52e = gd.getData('23Aug2022_V06_5aba63_p17.csv',date)
