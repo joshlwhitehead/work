@@ -272,3 +272,33 @@ v06r52b = gd.getData('23Aug2022_V06_7b3b16_p17.csv',date)
 v06r52c = gd.getData('23Aug2022_V06_104e83_p17.csv',date)
 v06r52d = gd.getData('23Aug2022_V06_618257_p17.csv',date)
 v06r52e = gd.getData('23Aug2022_V06_5aba63_p17.csv',date)
+date = '24Aug2022'
+v06r57a = gd.getData('23Aug2022_V06_49f0c0_p16.csv',date)
+v06r57b = gd.getData('23Aug2022_V06_98da1a_p16.csv',date)
+v06r57c = gd.getData('23Aug2022_V06_4589a5_p16.csv',date)
+v06r57d = gd.getData('23Aug2022_V06_e571b7_p16.csv',date)
+
+
+
+
+
+
+
+######################              BIG SLUG                #############################
+
+slugV04r52a = gd.getData('23Aug2022_V04_ea8794_p18.csv',date)
+slugV04r52b = gd.getData('23Aug2022_V04_70b0f6_p18.csv',date)
+slugV04r52c = gd.getData('23Aug2022_V04_08b421_p18.csv',date)
+slugV04r52d = gd.getData('23Aug2022_V04_ea0796_p18.csv',date)
+
+
+
+#############               3.5 spring                      #######################
+
+springV04r52a = gd.getData('23Aug2022_V04_919533_p183.csv',date)
+springV04r52b = gd.getData('23Aug2022_V04_84ef51_p185.csv',date)
+springV04r52c = gd.getData('23Aug2022_V04_f783fc_p184.csv',date)
+
+springV05r52a = gd.getData('23Aug2022_V05_ef491a_p16.csv',date)
+springV05r52b = gd.getData('23Aug2022_V05_03e30b_p16.csv',date)
+springV05r52c = gd.getData('23Aug2022_V05_9b9705_p16.csv',date)
