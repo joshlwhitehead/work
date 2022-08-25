@@ -9,9 +9,9 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 
-consumableId = '0183e630-6fcb-4714-9447-e384ce50ab57'
+consumableId = '7ff89494-acf3-4c01-a053-22b54ca99349'
 
-note = 'SZB 525a'
+note = ''
 
 refChan = 3
 api = auth.getApiClient()
@@ -55,7 +55,7 @@ if len(data) > 0:
 def pcrplot():
     delta = []
     for i in [2,3,4,5,6,7]:
-        delta.append(np.average(data[i][-5:])-np.average(data[i][:5]))
+        delta.append(np.average(data[i][-2:])-np.average(data[i][:2]))
 
     # print(delta)
     
@@ -84,7 +84,7 @@ def pcrplot():
     
     plt.xticks(channels,channelString)
     plt.grid()
-    plt.savefig(''.join(['specSigKristin/08Aug2022/',consumableId[:6]]))
+    plt.savefig(''.join(['specSigKristin/25Aug2022/',consumableId[:6]]))
     plt.show()
 
 
