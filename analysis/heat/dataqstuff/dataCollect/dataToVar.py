@@ -302,3 +302,18 @@ springV04r52c = gd.getData('23Aug2022_V04_f783fc_p184.csv',date)
 springV05r52a = gd.getData('23Aug2022_V05_ef491a_p16.csv',date)
 springV05r52b = gd.getData('23Aug2022_V05_03e30b_p16.csv',date)
 springV05r52c = gd.getData('23Aug2022_V05_9b9705_p16.csv',date)
+
+
+date = '25Aug2022'
+
+###############             seal vs no seal             #################
+
+f06FlatFilla = gd.getData('25Aug2022_V06_c3a27d_p16_52.csv',date)
+f06FlatFillb = gd.getData('25Aug2022_V06_b618e1_p16_52.csv',date)
+f06FlatFillc = gd.getData('25Aug2022_V06_485641_p16_52.csv',date)
+f06FlatFilld = gd.getData('25Aug2022_V06_499bcc_p16_52.csv',date)
+f06FlatFille = gd.getData('25Aug2022_V06_2fc6e5_p16_52.csv',date)
+
+f06FlatFillSeala = gd.getData('25Aug2022_V06_e7455a_p16_sealed.csv',date)
+f06FlatFillSealb = gd.getData('25Aug2022_V06_e96707_p16_sealed.csv',date)
+f06FlatFillSealc = gd.getData('25Aug2022_V06_425567_p16_sealed.csv',date)
