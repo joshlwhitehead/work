@@ -1,0 +1,1722 @@
+(44208) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(44211) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(44242) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(44287) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(44289) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(44343) BLE_PERIPH: App to Instrument Data
+(44344) BLE_PERIPH: Received 21/21
+(44347) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(44393) BLE_PERIPH: Sending Response Packet: [34,true,11378,["","",44384,42.56,46.50,2,0,0,0.00],0]
+(44394) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(44466) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11378,["","",44384,42.56,46.50,2,0,0,0.00],0]
+(44523) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(44525) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(44568) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(44636) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(44638) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(44692) BLE_PERIPH: App to Instrument Data
+(44693) BLE_PERIPH: Received 21/21
+(44696) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(44707) BLE_PERIPH: Sending Response Packet: [34,true,11380,["","",44705,42.54,46.49,2,0,0,0.00],0]
+(44709) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(44770) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11380,["","",44705,42.54,46.49,2,0,0,0.00],0]
+(44804) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(44806) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(44838) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(44883) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(44885) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(44917) BLE_PERIPH: App to Instrument Data
+(44918) BLE_PERIPH: Received 21/21
+(44921) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(44930) BLE_PERIPH: Sending Response Packet: [34,true,11382,["","",44928,42.53,46.50,2,0,0,0.00],0]
+(44933) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(44984) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11382,["","",44928,42.53,46.50,2,0,0,0.00],0]
+(45007) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(45009) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(45040) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(45074) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(45076) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(45119) BLE_PERIPH: App to Instrument Data
+(45120) BLE_PERIPH: Received 21/21
+(45123) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(45157) BLE_PERIPH: Sending Response Packet: [34,true,11384,["","",45154,42.51,46.49,2,0,0,0.00],0]
+(45158) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(45198) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11384,["","",45154,42.51,46.49,2,0,0,0.00],0]
+(45232) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(45234) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(45277) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(45333) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(45335) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(45389) BLE_PERIPH: App to Instrument Data
+(45390) BLE_PERIPH: Received 21/21
+(45393) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(45422) BLE_PERIPH: Sending Response Packet: [34,true,11386,["","",45419,42.50,46.48,2,0,0,0.00],0]
+(45424) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(45468) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11386,["","",45419,42.50,46.48,2,0,0,0.00],0]
+(45513) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(45515) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(45547) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(45592) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(45594) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(45659) BLE_PERIPH: App to Instrument Data
+(45660) BLE_PERIPH: Received 21/21
+(45664) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(45688) BLE_PERIPH: Sending Response Packet: [34,true,11388,["","",45685,42.48,46.47,2,0,0,0.00],0]
+(45689) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(45726) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11388,["","",45685,42.48,46.47,2,0,0,0.00],0]
+(45761) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(45763) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(45817) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(45851) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(45853) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(45918) BLE_PERIPH: App to Instrument Data
+(45919) BLE_PERIPH: Received 21/21
+(45922) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(45958) BLE_PERIPH: Sending Response Packet: [34,true,11390,["","",45955,42.46,46.46,2,0,0,0.00],0]
+(45959) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(46019) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11390,["","",45955,42.46,46.46,2,0,0,0.00],0]
+(46076) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(46078) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(46120) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(46166) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(46168) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(46222) BLE_PERIPH: App to Instrument Data
+(46223) BLE_PERIPH: Received 21/21
+(46226) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(46240) BLE_PERIPH: Sending Response Packet: [34,true,11392,["","",46230,42.45,46.46,2,0,0,0.00],0]
+(46241) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(46267) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11392,["","",46230,42.45,46.46,2,0,0,0.00],0]
+(46301) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(46303) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(46334) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(46357) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(46359) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(46402) BLE_PERIPH: App to Instrument Data
+(46403) BLE_PERIPH: Received 21/21
+(46406) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(46415) BLE_PERIPH: Sending Response Packet: [34,true,11394,["","",46411,42.45,46.46,2,0,0,0.00],0]
+(46418) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(46469) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11394,["","",46411,42.45,46.46,2,0,0,0.00],0]
+(46525) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(46528) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(46571) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(46616) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(46618) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(46683) BLE_PERIPH: App to Instrument Data
+(46684) BLE_PERIPH: Received 21/21
+(46687) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(46733) BLE_PERIPH: Sending Response Packet: [34,true,11396,["","",46730,42.43,46.45,2,0,0,0.00],0]
+(46734) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(46773) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11396,["","",46730,42.43,46.45,2,0,0,0.00],0]
+(46830) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(46832) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(46874) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(46953) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(46955) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(46998) BLE_PERIPH: App to Instrument Data
+(46999) BLE_PERIPH: Received 21/21
+(47002) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(47007) BLE_PERIPH: Sending Response Packet: [34,true,11398,["","",47005,42.41,46.44,2,0,0,0.00],0]
+(47014) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(47065) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11398,["","",47005,42.41,46.44,2,0,0,0.00],0]
+(47080) heapMonitor_checkFreeHeapSize: New heap low water mark 114228
+(47099) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(47101) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(47133) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(47178) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(47180) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(47223) BLE_PERIPH: App to Instrument Data
+(47224) BLE_PERIPH: Received 21/21
+(47227) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(47239) BLE_PERIPH: Sending Response Packet: [34,true,11400,["","",47236,42.40,46.43,2,0,0,0.00],0]
+(47240) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(47279) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11400,["","",47236,42.40,46.43,2,0,0,0.00],0]
+(47313) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(47315) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(47347) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(47414) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(47416) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(47448) BLE_PERIPH: App to Instrument Data
+(47449) BLE_PERIPH: Received 21/21
+(47452) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(47457) BLE_PERIPH: Sending Response Packet: [34,true,11402,["","",47455,42.39,46.42,2,0,0,0.00],0]
+(47464) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(47504) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11402,["","",47455,42.39,46.42,2,0,0,0.00],0]
+(47539) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(47541) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(47572) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(47606) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(47608) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(47639) BLE_PERIPH: App to Instrument Data
+(47640) BLE_PERIPH: Received 21/21
+(47643) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(47679) BLE_PERIPH: Sending Response Packet: [34,true,11404,["","",47676,42.38,46.42,2,0,0,0.00],0]
+(47680) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(47718) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11404,["","",47676,42.38,46.42,2,0,0,0.00],0]
+(47752) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(47754) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(47797) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(47853) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(47855) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(47898) BLE_PERIPH: App to Instrument Data
+(47899) BLE_PERIPH: Received 21/21
+(47902) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(47907) BLE_PERIPH: Sending Response Packet: [34,true,11406,["","",47905,42.36,46.42,2,0,0,0.00],0]
+(47914) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(47954) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11406,["","",47905,42.36,46.42,2,0,0,0.00],0]
+(47977) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(47979) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(48022) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(48067) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(48069) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(48111) BLE_PERIPH: App to Instrument Data
+(48113) BLE_PERIPH: Received 21/21
+(48116) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(48135) BLE_PERIPH: Sending Response Packet: [34,true,11408,["","",48132,42.35,46.42,2,0,0,0.00],0]
+(48136) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(48168) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11408,["","",48132,42.35,46.42,2,0,0,0.00],0]
+(48191) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(48192) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(48213) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(48247) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(48249) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(48291) BLE_PERIPH: App to Instrument Data
+(48292) BLE_PERIPH: Received 21/21
+(48296) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(48308) BLE_PERIPH: Sending Response Packet: [34,true,11410,["","",48305,42.34,46.41,2,0,0,0.00],0]
+(48309) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(48359) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11410,["","",48305,42.34,46.41,2,0,0,0.00],0]
+(48382) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(48384) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(48416) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(48460) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(48462) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(48517) BLE_PERIPH: App to Instrument Data
+(48518) BLE_PERIPH: Received 21/21
+(48521) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(48526) BLE_PERIPH: Sending Response Packet: [34,true,11412,["","",48524,42.33,46.40,2,0,0,0.00],0]
+(48533) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(48573) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11412,["","",48524,42.33,46.40,2,0,0,0.00],0]
+(48596) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(48598) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(48629) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(48697) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(48699) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(48741) BLE_PERIPH: App to Instrument Data
+(48742) BLE_PERIPH: Received 21/21
+(48746) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(48755) BLE_PERIPH: Sending Response Packet: [34,true,11411,["","",48751,42.32,46.40,2,0,0,0.00],0]
+(48757) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(48798) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11411,["","",48751,42.32,46.40,2,0,0,0.00],0]
+(48843) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(48845) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(48888) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(49574) BLE_PERIPH: App to Instrument Transaction Write 0/802
+(49576) BLE_PERIPH: App to Instrument Transaction Notify 0/802
+(49613) BLE_PERIPH: App to Instrument Data
+(49614) BLE_PERIPH: Received 508/802
+(49615) BLE_PERIPH: App to Instrument Transaction Notify 508/802
+(49644) BLE_PERIPH: App to Instrument Data
+(49645) BLE_PERIPH: Received 802/802
+(49655) BLE_PERIPH: App to Instrument Transaction Notify 802/802
+(49683) ExperimentParam: Parsing experiment parameters:
+[{
+"doPcr":	false,
+"doMelt":	false,
+"doRtSteps":	false,
+"rtTempSteps":	[{
+"tempC":	95,
+"holdSeconds":	10
+}],
+"doSamplePrep":	true,
+"meltStartTemp":	55,
+"pcrCycleCount":	45,
+"doCupVibration":	false,
+"meltFinishTemp":	95,
+"colorSensorGain":	6,
+"samplePrepDoPlunge":	true,
+"pcrCyclingTempSteps":	[{
+"tempC":	90,
+"holdSeconds":	10
+}, {
+"tempC":	63,
+"holdSeconds":	10,
+"performCapture":	true
+}],
+"samplePrepDoPtcSeal":	true,
+"samplePrepTempSteps":	[{
+"tempC":	45,
+"holdSeconds":	30
+}],
+"meltAcquisitionsPerC":	5,
+"meltStartCaptureTemp":	60,
+"doContinuousAcquisition":	true,
+"excitationOnDelayTimeMs":	3,
+"samplePrepPtcSealTimeMs":	30000,
+"meltStartHoldTimeSeconds":	15,
+"meltRampRateDegCPerSecond":	0.35,
+"temperatureCaptureDelayMs":	90000,
+"colorSensorIntegrationTimeMs":	25,
+"samplePrepPcrChamberPreheatTempC":	60,
+"continuousAcquisitionSampleDelayMs":	1000
+}]
+(49768) ExperimentParam: Found parameter doContinuousAcquisition: 1
+(49773) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000
+(49781) ExperimentParam: Could not find parameter isMocked, using default value: 0
+(49790) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(49802) ExperimentParam: Found parameter colorSensorGain: 6
+(49803) ExperimentParam: Found parameter colorSensorIntegrationTimeMs: 25
+(49811) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(49818) ExperimentParam: Found parameter excitationOnDelayTimeMs: 3
+(49826) ExperimentParam: Could not find parameter excitationOutputPercentage, using default value: 100
+(49836) ExperimentParam: Found parameter temperaturecaptureDelayMs: 24464
+(49844) ExperimentParam: Could not find parameter continualRun, using default value: 0
+(49852) ExperimentParam: Found parameter doSamplePrep: 1
+(49858) ExperimentParam: Found parameter tempC: 45.00
+(49865) ExperimentParam: Found parameter holdSeconds: 30.00
+(49871) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00
+(49880) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0
+(49890) ProtocolParam: Found parameter samplePrepTempSteps: {45.00C,30.00s,1000.00C/s (?capture=0)},
+(49900) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 60.00
+(49908) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(49915) ExperimentParam: Found parameter samplePrepDoPlunge: 1
+(49922) ExperimentParam: Found parameter samplePrepDoPtcSeal: 1
+(49929) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(49936) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000
+(49944) ExperimentParam: Found parameter doCupVibration: 0
+(49950) ExperimentParam: Found parameter doRtSteps: 0
+(49956) ExperimentParam: Found parameter doPcr: 0
+(49962) ExperimentParam: Found parameter doMelt: 0
+(49967) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(49975) BLE_PERIPH: Sending Response Packet: [32,true,11413,[],0]
+(49983) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/20
+(50024) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=20 mtu=510, totalSize=20, currentIndex=0): [32,true,11413,[],0]
+(50047) BLE_PERIPH: Instrument to App Transaction Write 20/20
+(50049) BLE_PERIPH: Instrument to App Transaction Read/Notify 20/20
+(50052) systemTasksMonitorStack: Stack Watermark(Comm): 7292
+(50080) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(50082) heapMonitor_checkFreeHeapSize: New heap low water mark 114044
+(50103) BLE_PERIPH: App to Instrument Transaction Write 0/20
+(50105) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(50136) BLE_PERIPH: App to Instrument Data
+(50137) BLE_PERIPH: Received 20/20
+(50140) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(50161) BLE_PERIPH: Sending Response Packet: [34,true,11414,["","",50158,42.25,46.37,2,0,0,0.00],0]
+(50163) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/54
+(50204) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=54 mtu=510, totalSize=54, currentIndex=0): [34,true,11414,["","",50158,42.25,46.37,2,0,0,0.00],0]
+(50238) BLE_PERIPH: Instrument to App Transaction Write 54/54
+(50240) BLE_PERIPH: Instrument to App Transaction Read/Notify 54/54
+(50272) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(50306) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(50308) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(50361) BLE_PERIPH: App to Instrument Data
+(50363) BLE_PERIPH: Received 21/21
+(50366) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(50382) BLE_PERIPH: Sending Response Packet: [33,true,11415,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":3,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":60.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00
+,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0]
+(50489) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1289
+[33, true, 11415, [{
+"doContinuousAcquisition":	true,
+"continuousAcquisitionSampleDelayMs":	1000,
+"isMocked":	false,
+"colorSensorGain":	6,
+"colorSensorIntegrationTimeMs":	25,
+"excitationOnDelayTimeMs":	3,
+"excitationOutputPercentage":	100.00,
+"doSamplePrep":	true,
+"samplePrepTempSteps":	[{
+"tempC":	45.00,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}],
+"samplePrepPcrChamberPreheatTempC":	60.00,
+"samplePrepDoPlunge":	true,
+"samplePrepDoPtcSeal":	true,
+"samplePrepPtcSealTimeMs":	30000,
+"doCupVibration":	false,
+"thumperCycleCount":	0,
+"thumperCyclingSteps":	[],
+"doRtSteps":	false,
+"pcrPreheatTempSteps":	[{
+"tempC":	45.00,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	95.00,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}],
+"doPcr":	false,
+"pcrCycleCount":	45,
+"pcrCyclingTempSteps":	[{
+"tempC":	95.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	60.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	1
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}],
+"doMelt":	false,
+"meltStartHoldTimeSeconds":	15.00,
+"meltStartTemp":	55.00,
+"meltStartCaptureTemp":	60.00,
+"meltFinishTemp":	100.00,
+"meltAcquisitionDelayMs":	800.00,
+"meltAcquisitionsPerC":	5,
+"meltRampRateDegCPerSecond":	0.25
+}], 0]
+(50515) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(50648) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1289, currentIndex=0): [33,true,11415,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":3,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":60.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount
+(50704) thermalControlTask: thermal control sleep.
+(50714) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(50755) BLE_PERIPH: Instrument to App Transaction Write 510/1289
+(50757) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1289
+(50800) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1289, currentIndex=510): ":0,"thumperCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"hol
+(50890) BLE_PERIPH: Instrument to App Transaction Write 1020/1289
+(50892) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1289
+(50935) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=269 mtu=510, totalSize=1289, currentIndex=1020): dSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0]
+(51026) BLE_PERIPH: Instrument to App Transaction Write 1289/1289
+(51028) BLE_PERIPH: Instrument to App Transaction Read/Notify 1289/1289
+(51059) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(51363) BLE_PERIPH: App to Instrument Transaction Write 0/86
+(51365) BLE_PERIPH: App to Instrument Transaction Notify 0/86
+(51431) BLE_PERIPH: App to Instrument Data
+(51432) BLE_PERIPH: Received 86/86
+(51435) BLE_PERIPH: App to Instrument Transaction Notify 86/86
+(51467) experimentRequestStateChange: Experiment State Transition IDLE -> START
+(51469) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 0 seconds
+(51473) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds
+(51481) DEVICE USAGE: Printing device usage logs
+(51486) DEVICE USAGE: Lifter Up Times:                         103
+(51499) DEVICE USAGE: Lifter Down Times:                       148
+(51500) DEVICE USAGE: Thumper Vibrated Times:                  6
+(51507) DEVICE USAGE: Thumper Stalled Times:                   37
+(51514) DEVICE USAGE: Solenoid Times:                          270
+(51521) DEVICE USAGE: Plunge Times:                            31
+(51528) DEVICE USAGE: Laser Activation Times:                  21951
+(51535) DEVICE USAGE: Fluorimiter Reads:                       64843
+(51544) DEVICE USAGE: Front Button Presses:                    21
+(51549) DEVICE USAGE: Back Button Presses:                     42
+(51556) DEVICE USAGE: Total Completed Runs:                    127
+(51563) DEVICE USAGE: PTC On Time (Seconds):                   966
+(51570) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(51578) DEVICE USAGE: Treatment Chamber TEC On Time (Seconds): 16487
+(51585) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(51593) DEVICE USAGE: PCR Chamber TEC On Time (Seconds):       9456
+(51600) DEVICE USAGE: Fan On Time (Seconds):                   32430
+(51607) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(51614) _airboatStateEnter: Lifter Down
+(51619) thermalControlTask: thermal control sleep.
+(51625) experimentStateStartEnter: Experiment starting
+(51644) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(51667) _fileInterfaceDelete: Failed to delete file because erno 2
+(51668) colorSensorSetGain: Setting color sensor gain to 6
+(51670) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+(51679) experimentTask: Experiment State Transition START -> SAMPLE_PREP
+(51685) BLE_PERIPH: Sending Response Packet: [35,true,11416,[],0]
+(51692) blePeriphNotifySubscription: ENTER NOTIFY
+(51697) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/20
+(51707) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(51715) BLE_PERIPH: Notifying
+(51719) comm_getNotifyId: Attempting to get notify id
+(51725) BLE_PERIPH: Notify Command Id = 34
+(51731) systemRequestStateChange: System State Transition READY -> RUNNING
+(51737) blePeriphNotifySubscription: ENTER NOTIFY
+(51746) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=20 mtu=510, totalSize=20, currentIndex=0): [35,true,11416,[],0]
+(51759) BLE_PERIPH: Notifying
+(51760) comm_getNotifyId: Attempting to get notify id
+(51765) BLE_PERIPH: Notify Command Id = 34
+(51771) systemRequestStateChange: Notify exit state change
+(51796) _performCapture: [174,0,46.19,898,9000,1172,261,587,293,615,458,202,9000,1]
+(51802) BLE_PERIPH: Instrument to App Transaction Write 20/20
+(51804) BLE_PERIPH: Instrument to App Transaction Read/Notify 20/20
+(51814) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 2140
+(51840) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(51847) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(51870) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(51872) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(51901) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(51902) taskMonitor_task: Task File Writer Task hasn't checked in for 400 ms
+(51914) BLE_PERIPH: App to Instrument Data
+(51915) BLE_PERIPH: Received 21/21
+(51918) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(51932) eventMarker: 313, Plunge Check Read 1
+(51933) BLE_PERIPH: Sending Response Packet: [34,true,11418,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",311,42.17,46.34,3,2,33,0.00],0]
+(51943) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113
+(51949) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(51981) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,11418,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",311,42.17,46.34,3,2,33,0.00],0]
+(52004) printColors: CH415: 924
+(52005) printColors: CH445: 9000
+(52005) printColors: CH480: 1154
+(52006) printColors: CH515: 256
+(52010) printColors: CH555: 602
+(52014) printColors: CH590: 292
+(52018) BLE_PERIPH: Instrument to App Transaction Write 113/113
+(52025) printColors: CH630: 608
+(52029) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113
+(52036) printColors: CH680: 440
+(52040) printColors:   NIR: 208
+(52044) printColors:   CLR: 9000
+(52048) printColors:   DRK: 1
+
+
+(52052) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(52060) _resetThermalControlState: RESET Peltier 0 control state
+(52067) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 45.0
+(52074) _setThermalControlState: thermalControl-0: changing state 3->1
+(52081) tecCurvePredictorSetHoldPower: Not setting hold Power for ST1
+(52089) thermalControlSetEnable: Enabling Peltier 0
+(52094) thermalControlTask: thermal control sleep.
+(52100) systemTasksMonitorStack: Stack Watermark(Experiment): 2196
+(52107) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(52114) _st1ModelCalculate: St1 Using Heating Equations
+(52162) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(52164) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(52206) BLE_PERIPH: App to Instrument Data
+(52207) BLE_PERIPH: Received 21/21
+(52211) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(52215) TC: TC-0 = 42.16, modeled = 24.00, target = 45.00, heatSink = 43.89, output = 100.0, timeout = 100, exptTempC = 0.00, TecRate = -0.000
+(52226) BLE_PERIPH: Sending Response Packet: [34,true,11420,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",599,42.16,46.33,3,2,34,0.00],0]
+(52241) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113
+(52274) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,11420,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",599,42.16,46.33,3,2,34,0.00],0]
+(52308) BLE_PERIPH: Instrument to App Transaction Write 113/113
+(52310) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113
+(52342) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(52365) TC: TC-0 = 42.16, modeled = 24.00, target = 45.00, heatSink = 43.89, output = 100.0, timeout = 250, exptTempC = 0.00, TecRate = 0.000
+(52375) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(52377) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(52420) BLE_PERIPH: App to Instrument Data
+(52421) BLE_PERIPH: Received 21/21
+(52424) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(52466) BLE_PERIPH: Sending Response Packet: [34,true,11422,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",844,42.18,46.33,3,2,34,0.00],0]
+(52471) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/113
+(52510) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=113 mtu=510, totalSize=113, currentIndex=0): [34,true,11422,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",844,42.18,46.33,3,2,34,0.00],0]
+(52521) TC: TC-0 = 42.23, modeled = 24.00, target = 45.00, heatSink = 43.88, output = 100.0, timeout = 400, exptTempC = 0.00, TecRate = 0.000
+(52555) BLE_PERIPH: Instrument to App Transaction Write 113/113
+(52557) BLE_PERIPH: Instrument to App Transaction Read/Notify 113/113
+(52589) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(52623) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(52625) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(52666) TC: TC-0 = 42.54, modeled = 24.00, target = 45.00, heatSink = 43.85, output = 100.0, timeout = 550, exptTempC = 0.00, TecRate = 0.000
+(52679) BLE_PERIPH: App to Instrument Data
+(52680) BLE_PERIPH: Received 21/21
+(52683) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(52693) BLE_PERIPH: Sending Response Packet: [34,true,11424,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1072,42.54,46.32,3,2,34,0.00],0]
+(52702) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(52735) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11424,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1072,42.54,46.32,3,2,34,0.00],0]
+(52770) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(52772) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(52814) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(52816) TC: TC-0 = 42.96, modeled = 24.00, target = 45.00, heatSink = 43.82, output = 100.0, timeout = 700, exptTempC = 0.00, TecRate = 0.000
+(52848) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(52850) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(52893) BLE_PERIPH: App to Instrument Data
+(52894) BLE_PERIPH: Received 21/21
+(52897) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(52927) BLE_PERIPH: Sending Response Packet: [34,true,11426,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1305,43.53,46.32,3,2,34,0.00],0]
+(52932) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(52958) _performCapture: [1339,0,46.18,1012,9000,1166,246,674,313,606,402,233,9000,1]
+(52967) TC: TC-0 = 43.53, modeled = 24.00, target = 45.00, heatSink = 43.78, output = 100.0, timeout = 850, exptTempC = 0.00, TecRate = 0.000
+(52983) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11426,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1305,43.53,46.32,3,2,34,0.00],0]
+(53017) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(53019) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(53050) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(53084) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(53086) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(53089) heapMonitor_checkFreeHeapSize: New heap low water mark 113148
+(53105) _readLifterSwitches: New Lifter Up Value: 0
+(53116) TC: TC-0 = 44.67, modeled = 24.00, target = 45.00, heatSink = 43.71, output = 100.0, timeout = 1000, exptTempC = 0.00, TecRate = -0.000
+(53129) BLE_PERIPH: App to Instrument Data
+(53130) BLE_PERIPH: Received 21/21
+(53133) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(53154) BLE_PERIPH: Sending Response Packet: [34,true,11428,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1533,45.11,46.31,3,2,34,0.00],0]
+(53160) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(53207) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11428,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1533,45.11,46.31,3,2,34,0.00],0]
+(53242) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(53244) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(53266) TC: TC-0 = 45.57, modeled = 24.00, target = 45.00, heatSink = 43.66, output = 100.0, timeout = 1150, exptTempC = 0.00, TecRate = 0.000
+(53275) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(53309) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(53311) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(53365) BLE_PERIPH: App to Instrument Data
+(53366) BLE_PERIPH: Received 21/21
+(53369) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(53381) BLE_PERIPH: Sending Response Packet: [34,true,11430,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1759,47.05,46.31,3,2,34,0.00],0]
+(53386) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(53416) TC: TC-0 = 47.05, modeled = 24.00, target = 45.00, heatSink = 43.57, output = 100.0, timeout = 1300, exptTempC = 0.00, TecRate = 0.000
+(53433) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11430,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1759,47.05,46.31,3,2,34,0.00],0]
+(53467) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(53469) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(53500) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(53534) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(53536) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(53566) TC: TC-0 = 48.56, modeled = 24.00, target = 45.00, heatSink = 43.48, output = 100.0, timeout = 1450, exptTempC = 0.00, TecRate = -0.000
+(53579) BLE_PERIPH: App to Instrument Data
+(53580) BLE_PERIPH: Received 21/21
+(53583) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(53607) BLE_PERIPH: Sending Response Packet: [34,true,11432,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1985,49.09,46.30,3,2,34,0.00],0]
+(53612) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(53646) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11432,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",1985,49.09,46.30,3,2,34,0.00],0]
+(53692) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(53694) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(53716) TC: TC-0 = 49.66, modeled = 24.00, target = 45.00, heatSink = 43.42, output = 100.0, timeout = 1600, exptTempC = 0.00, TecRate = 0.000
+(53725) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(53759) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(53761) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(53838) BLE_PERIPH: App to Instrument Data
+(53839) BLE_PERIPH: Received 21/21
+(53842) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(53866) TC: TC-0 = 51.71, modeled = 24.00, target = 45.00, heatSink = 43.30, output = 100.0, timeout = 1750, exptTempC = 0.00, TecRate = -0.000
+(53882) BLE_PERIPH: Sending Response Packet: [34,true,11434,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2260,51.71,46.29,3,2,34,0.00],0]
+(53888) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(53927) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11434,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2260,51.71,46.29,3,2,34,0.00],0]
+(53973) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(53975) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(54007) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(54016) TC: TC-0 = 52.75, modeled = 24.00, target = 45.00, heatSink = 43.24, output = 100.0, timeout = 1900, exptTempC = 0.00, TecRate = -0.000
+(54052) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(54054) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(54069) _performCapture: [2450,0,46.16,2819,9000,1870,612,1366,1001,1363,1067,401,9000,1]
+(54085) BLE_PERIPH: App to Instrument Data
+(54086) BLE_PERIPH: Received 21/21
+(54089) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(54108) BLE_PERIPH: Sending Response Packet: [34,true,11436,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2486,53.84,46.28,3,2,34,0.00],0]
+(54113) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(54152) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11436,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2486,53.84,46.28,3,2,34,0.00],0]
+(54166) TC: TC-0 = 53.84, modeled = 24.00, target = 45.00, heatSink = 43.18, output = 100.0, timeout = 2050, exptTempC = 0.00, TecRate = 0.000
+(54198) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(54200) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(54232) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(54299) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(54301) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(54316) TC: TC-0 = 56.02, modeled = 24.00, target = 45.00, heatSink = 43.05, output = 100.0, timeout = 2200, exptTempC = 0.00, TecRate = 0.000
+(54367) BLE_PERIPH: App to Instrument Data
+(54368) BLE_PERIPH: Received 21/21
+(54371) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(54386) BLE_PERIPH: Sending Response Packet: [34,true,11438,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2765,56.50,46.28,3,2,34,0.00],0]
+(54392) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(54434) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11438,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",2765,56.50,46.28,3,2,34,0.00],0]
+(54466) TC: TC-0 = 57.01, modeled = 24.00, target = 45.00, heatSink = 43.00, output = 100.0, timeout = 2350, exptTempC = 0.00, TecRate = -0.000
+(54470) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(54478) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(54513) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(54580) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(54582) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(54616) TC: TC-0 = 58.72, modeled = 24.00, target = 45.00, heatSink = 42.90, output = 100.0, timeout = 2500, exptTempC = 0.00, TecRate = -0.000
+(54636) BLE_PERIPH: App to Instrument Data
+(54637) BLE_PERIPH: Received 21/21
+(54641) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(54662) BLE_PERIPH: Sending Response Packet: [34,true,11440,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3040,59.22,46.27,3,2,34,0.00],0]
+(54667) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(54704) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11440,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3040,59.22,46.27,3,2,34,0.00],0]
+(54749) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(54751) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(54766) TC: TC-0 = 59.72, modeled = 24.00, target = 45.00, heatSink = 42.84, output = 100.0, timeout = 2650, exptTempC = 0.00, TecRate = 0.000
+(54828) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(54851) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(54853) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(54884) BLE_PERIPH: App to Instrument Data
+(54885) BLE_PERIPH: Received 21/21
+(54888) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(54893) BLE_PERIPH: Sending Response Packet: [34,true,11442,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3272,61.33,46.27,3,2,34,0.00],0]
+(54905) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(54916) TC: TC-0 = 61.33, modeled = 24.00, target = 45.00, heatSink = 42.74, output = 100.0, timeout = 2800, exptTempC = 0.00, TecRate = -0.000
+(54937) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11442,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3272,61.33,46.27,3,2,34,0.00],0]
+(54986) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(54987) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(55019) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(55064) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(55066) TC: TC-0 = 62.48, modeled = 24.00, target = 45.00, heatSink = 42.67, output = 100.0, timeout = 2950, exptTempC = 0.00, TecRate = 0.000
+(55074) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(55109) BLE_PERIPH: App to Instrument Data
+(55110) BLE_PERIPH: Received 21/21
+(55113) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(55126) BLE_PERIPH: Sending Response Packet: [34,true,11444,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3504,63.60,46.25,3,2,34,0.00],0]
+(55132) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(55165) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11444,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3504,63.60,46.25,3,2,34,0.00],0]
+(55209) _performCapture: [3589,0,46.15,4699,9000,1575,837,1733,1491,1890,1440,254,9000,1]
+(55211) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(55215) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(55221) TC: TC-0 = 64.12, modeled = 24.00, target = 45.00, heatSink = 42.57, output = 100.0, timeout = 3100, exptTempC = 0.00, TecRate = -0.000
+(55255) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(55323) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(55325) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(55366) TC: TC-0 = 65.71, modeled = 24.00, target = 45.00, heatSink = 42.47, output = 100.0, timeout = 3250, exptTempC = 0.00, TecRate = 0.000
+(55379) BLE_PERIPH: App to Instrument Data
+(55380) BLE_PERIPH: Received 21/21
+(55383) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(55403) BLE_PERIPH: Sending Response Packet: [34,true,11446,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3781,65.71,46.25,3,2,34,0.00],0]
+(55408) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(55446) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11446,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",3781,65.71,46.25,3,2,34,0.00],0]
+(55492) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(55494) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(55516) TC: TC-0 = 66.65, modeled = 24.00, target = 45.00, heatSink = 42.41, output = 100.0, timeout = 3400, exptTempC = 0.00, TecRate = 0.000
+(55537) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(55593) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(55595) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(55660) BLE_PERIPH: App to Instrument Data
+(55661) BLE_PERIPH: Received 21/21
+(55665) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(55666) TC: TC-0 = 68.13, modeled = 24.00, target = 45.00, heatSink = 42.33, output = 100.0, timeout = 3550, exptTempC = 0.00, TecRate = 0.000
+(55680) BLE_PERIPH: Sending Response Packet: [34,true,11448,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4057,68.13,46.25,3,2,34,0.00],0]
+(55695) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(55750) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11448,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4057,68.13,46.25,3,2,34,0.00],0]
+(55785) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(55787) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(55816) TC: TC-0 = 69.01, modeled = 24.00, target = 45.00, heatSink = 42.28, output = 100.0, timeout = 3700, exptTempC = 0.00, TecRate = 0.000
+(55820) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(55863) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(55865) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(55896) BLE_PERIPH: App to Instrument Data
+(55897) BLE_PERIPH: Received 21/21
+(55901) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(55920) BLE_PERIPH: Sending Response Packet: [34,true,11450,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4298,70.01,46.24,3,2,34,0.00],0]
+(55925) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(55966) TC: TC-0 = 70.54, modeled = 24.00, target = 45.00, heatSink = 42.19, output = 100.0, timeout = 3850, exptTempC = 0.00, TecRate = 0.000
+(55975) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11450,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4298,70.01,46.24,3,2,34,0.00],0]
+(56020) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(56022) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(56065) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(56116) TC: TC-0 = 72.09, modeled = 24.00, target = 45.00, heatSink = 42.10, output = 100.0, timeout = 4000, exptTempC = 0.00, TecRate = 0.000
+(56133) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(56135) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(56200) BLE_PERIPH: App to Instrument Data
+(56201) BLE_PERIPH: Received 21/21
+(56204) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(56246) BLE_PERIPH: Sending Response Packet: [34,true,11452,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4624,72.96,46.23,3,2,34,0.00],0]
+(56251) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(56266) TC: TC-0 = 72.96, modeled = 24.00, target = 45.00, heatSink = 42.05, output = 100.0, timeout = 4150, exptTempC = 0.00, TecRate = 0.000
+(56290) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11452,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4624,72.96,46.23,3,2,34,0.00],0]
+(56335) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(56338) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(56339) _performCapture: [4718,0,46.13,7635,9000,1870,935,1846,2110,2647,2009,207,9000,1]
+(56380) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(56416) TC: TC-0 = 74.25, modeled = 24.00, target = 45.00, heatSink = 41.96, output = 100.0, timeout = 4300, exptTempC = 0.00, TecRate = 0.000
+(56425) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(56427) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(56470) BLE_PERIPH: App to Instrument Data
+(56471) BLE_PERIPH: Received 21/21
+(56474) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(56522) BLE_PERIPH: Sending Response Packet: [34,true,11454,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4900,75.16,46.21,3,2,34,0.00],0]
+(56527) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(56549) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11454,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",4900,75.16,46.21,3,2,34,0.00],0]
+(56566) TC: TC-0 = 75.16, modeled = 24.00, target = 45.00, heatSink = 41.91, output = 100.0, timeout = 4450, exptTempC = 0.00, TecRate = 0.000
+(56594) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(56596) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(56628) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(56707) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(56709) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(56716) TC: TC-0 = 76.50, modeled = 24.00, target = 45.00, heatSink = 41.84, output = 100.0, timeout = 4600, exptTempC = 0.00, TecRate = 0.000
+(56740) BLE_PERIPH: App to Instrument Data
+(56741) BLE_PERIPH: Received 21/21
+(56744) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(56753) BLE_PERIPH: Sending Response Packet: [34,true,11456,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5130,76.93,46.21,3,2,34,0.00],0]
+(56761) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(56796) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11456,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5130,76.93,46.21,3,2,34,0.00],0]
+(56841) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(56843) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(56866) TC: TC-0 = 77.81, modeled = 24.00, target = 45.00, heatSink = 41.76, output = 100.0, timeout = 4750, exptTempC = 0.00, TecRate = 0.000
+(56875) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(56943) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(56945) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(56999) BLE_PERIPH: App to Instrument Data
+(57000) BLE_PERIPH: Received 21/21
+(57003) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(57016) TC: TC-0 = 79.04, modeled = 24.00, target = 45.00, heatSink = 41.69, output = 100.0, timeout = 4900, exptTempC = 0.00, TecRate = -0.000
+(57032) BLE_PERIPH: Sending Response Packet: [34,true,11458,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5410,79.04,46.20,3,2,34,0.00],0]
+(57038) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(57077) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11458,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5410,79.04,46.20,3,2,34,0.00],0]
+(57123) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(57125) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(57166) TC: TC-0 = 79.81, modeled = 24.05, target = 45.00, heatSink = 41.64, output = 100.0, timeout = 5050, exptTempC = 0.00, TecRate = 0.939
+(57179) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(57235) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(57237) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(57280) BLE_PERIPH: App to Instrument Data
+(57281) BLE_PERIPH: Received 21/21
+(57284) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(57308) BLE_PERIPH: Sending Response Packet: [34,true,11460,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5687,81.08,46.18,3,2,34,0.00],0]
+(57314) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(57320) TC: TC-0 = 81.08, modeled = 24.19, target = 45.00, heatSink = 41.56, output = 100.0, timeout = 5200, exptTempC = 0.00, TecRate = 0.984
+(57347) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11460,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5687,81.08,46.18,3,2,34,0.00],0]
+(57393) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(57395) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(57427) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(57466) TC: TC-0 = 82.28, modeled = 24.34, target = 45.00, heatSink = 41.50, output = 100.0, timeout = 5350, exptTempC = 0.00, TecRate = 1.076
+(57474) _performCapture: [5854,0,46.10,8833,9000,2067,1009,1936,2422,2819,2247,212,9000,1]
+(57483) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(57487) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(57528) BLE_PERIPH: App to Instrument Data
+(57529) BLE_PERIPH: Received 21/21
+(57532) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(57550) BLE_PERIPH: Sending Response Packet: [34,true,11462,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5928,82.71,46.18,3,2,34,0.00],0]
+(57555) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(57616) TC: TC-0 = 83.19, modeled = 24.50, target = 45.00, heatSink = 41.44, output = 100.0, timeout = 5500, exptTempC = 0.00, TecRate = 1.076
+(57620) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11462,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",5928,82.71,46.18,3,2,34,0.00],0]
+(57663) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(57665) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(57719) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(57766) TC: TC-0 = 84.39, modeled = 24.66, target = 45.00, heatSink = 41.38, output = 100.0, timeout = 5650, exptTempC = 0.00, TecRate = 1.103
+(57775) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(57777) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(57820) BLE_PERIPH: App to Instrument Data
+(57821) BLE_PERIPH: Received 21/21
+(57824) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(57845) BLE_PERIPH: Sending Response Packet: [34,true,11464,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6223,84.75,46.16,3,2,34,0.00],0]
+(57850) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(57887) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11464,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6223,84.75,46.16,3,2,34,0.00],0]
+(57916) TC: TC-0 = 85.17, modeled = 24.83, target = 45.00, heatSink = 41.34, output = 100.0, timeout = 5800, exptTempC = 0.00, TecRate = 1.145
+(57933) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(57935) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(57967) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(58045) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(58047) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(58066) TC: TC-0 = 86.35, modeled = 25.00, target = 45.00, heatSink = 41.27, output = 100.0, timeout = 5950, exptTempC = 0.00, TecRate = 1.176
+(58113) BLE_PERIPH: App to Instrument Data
+(58114) BLE_PERIPH: Received 21/21
+(58117) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(58122) BLE_PERIPH: Sending Response Packet: [34,true,11466,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6500,86.67,46.15,3,2,34,0.00],0]
+(58134) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(58169) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11466,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6500,86.67,46.15,3,2,34,0.00],0]
+(58214) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(58216) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(58218) TC: TC-0 = 86.97, modeled = 25.17, target = 45.00, heatSink = 41.23, output = 100.0, timeout = 6100, exptTempC = 0.00, TecRate = 1.174
+(58259) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(58327) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(58329) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(58366) TC: TC-0 = 88.10, modeled = 25.36, target = 45.00, heatSink = 41.17, output = 100.0, timeout = 6250, exptTempC = 0.00, TecRate = 1.248
+(58383) BLE_PERIPH: App to Instrument Data
+(58384) BLE_PERIPH: Received 21/21
+(58387) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(58404) BLE_PERIPH: Sending Response Packet: [34,true,11468,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6782,88.48,46.14,3,2,34,0.00],0]
+(58409) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(58461) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11468,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",6782,88.48,46.14,3,2,34,0.00],0]
+(58507) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(58509) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(58516) TC: TC-0 = 89.19, modeled = 25.54, target = 45.00, heatSink = 41.11, output = 100.0, timeout = 6400, exptTempC = 0.00, TecRate = 1.275
+(58552) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(58590) _performCapture: [6970,0,46.07,8999,9000,2337,1126,2031,3197,2982,2374,210,9000,1]
+(58630) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(58632) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(58666) TC: TC-0 = 90.20, modeled = 25.74, target = 45.00, heatSink = 41.05, output = 100.0, timeout = 6550, exptTempC = 0.00, TecRate = 1.277
+(58686) BLE_PERIPH: App to Instrument Data
+(58687) BLE_PERIPH: Received 21/21
+(58690) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(58730) BLE_PERIPH: Sending Response Packet: [34,true,11470,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7108,90.49,46.12,3,2,34,0.00],0]
+(58735) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(58765) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11470,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7108,90.49,46.12,3,2,34,0.00],0]
+(58810) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(58812) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(58816) TC: TC-0 = 90.80, modeled = 25.92, target = 45.00, heatSink = 41.01, output = 100.0, timeout = 6700, exptTempC = 0.00, TecRate = 1.310
+(58844) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(58900) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(58902) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(58956) BLE_PERIPH: App to Instrument Data
+(58957) BLE_PERIPH: Received 21/21
+(58960) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(58966) TC: TC-0 = 91.88, modeled = 26.13, target = 45.00, heatSink = 40.95, output = 100.0, timeout = 6850, exptTempC = 0.00, TecRate = 1.374
+(59007) BLE_PERIPH: Sending Response Packet: [34,true,11472,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7385,92.22,46.11,3,2,34,0.00],0]
+(59012) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(59046) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11472,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7385,92.22,46.11,3,2,34,0.00],0]
+(59092) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(59094) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(59097) heapMonitor_checkFreeHeapSize: New heap low water mark 113004
+(59116) TC: TC-0 = 92.90, modeled = 26.34, target = 45.00, heatSink = 40.90, output = 100.0, timeout = 7000, exptTempC = 0.00, TecRate = 1.407
+(59136) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(59170) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(59172) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(59238) BLE_PERIPH: App to Instrument Data
+(59239) BLE_PERIPH: Received 21/21
+(59242) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(59266) TC: TC-0 = 93.88, modeled = 26.55, target = 45.00, heatSink = 40.85, output = 100.0, timeout = 7150, exptTempC = 0.00, TecRate = 1.398
+(59282) BLE_PERIPH: Sending Response Packet: [34,true,11474,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7660,93.88,46.10,3,2,34,0.00],0]
+(59287) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(59361) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11474,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7660,93.88,46.10,3,2,34,0.00],0]
+(59406) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(59408) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(59416) TC: TC-0 = 94.52, modeled = 26.75, target = 45.00, heatSink = 40.81, output = 100.0, timeout = 7300, exptTempC = 0.00, TecRate = 1.443
+(59452) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(59519) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(59521) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(59566) TC: TC-0 = 95.45, modeled = 26.97, target = 45.00, heatSink = 40.77, output = 100.0, timeout = 7450, exptTempC = 0.00, TecRate = 1.431
+(59575) BLE_PERIPH: App to Instrument Data
+(59576) BLE_PERIPH: Received 21/21
+(59581) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(59608) BLE_PERIPH: Sending Response Packet: [34,true,11476,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7986,95.73,46.09,3,2,34,0.00],0]
+(59614) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(59676) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11476,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",7986,95.73,46.09,3,2,34,0.00],0]
+(59716) TC: TC-0 = 96.04, modeled = 27.18, target = 45.00, heatSink = 40.74, output = 100.0, timeout = 7600, exptTempC = 0.00, TecRate = 1.191
+(59722) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(59727) _performCapture: [8103,0,46.04,8875,9000,2370,1116,2133,3500,2966,2388,197,9000,1]
+(59736) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(59834) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(59866) TC: TC-0 = 97.03, modeled = 27.41, target = 45.00, heatSink = 40.68, output = 100.0, timeout = 7750, exptTempC = 0.00, TecRate = 1.546
+(59879) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(59881) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(59947) BLE_PERIPH: App to Instrument Data
+(59948) BLE_PERIPH: Received 21/21
+(59951) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(59998) BLE_PERIPH: Sending Response Packet: [34,true,11478,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",8376,97.78,46.07,3,2,34,0.00],0]
+(60003) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(60017) TC: TC-0 = 97.78, modeled = 27.63, target = 45.00, heatSink = 40.63, output = 100.0, timeout = 7900, exptTempC = 0.00, TecRate = 1.216
+(60059) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11478,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",8376,97.78,46.07,3,2,34,0.00],0]
+(60115) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(60117) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(60160) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(60167) TC: TC-0 = 98.57, modeled = 27.86, target = 45.00, heatSink = 40.58, output = 100.0, timeout = 8050, exptTempC = 0.00, TecRate = 1.551
+(60239) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(60241) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(60284) BLE_PERIPH: App to Instrument Data
+(60285) BLE_PERIPH: Received 21/21
+(60288) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(60318) TC: TC-0 = 99.39, modeled = 28.10, target = 45.00, heatSink = 40.54, output = 100.0, timeout = 8200, exptTempC = 0.00, TecRate = 1.563
+(60324) BLE_PERIPH: Sending Response Packet: [34,true,11477,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",8701,99.39,46.05,3,2,34,0.00],0]
+(60337) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/114
+(60385) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=114 mtu=510, totalSize=114, currentIndex=0): [34,true,11477,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",8701,99.39,46.05,3,2,34,0.00],0]
+(60430) BLE_PERIPH: Instrument to App Transaction Write 114/114
+(60432) BLE_PERIPH: Instrument to App Transaction Read/Notify 114/114
+(60468) TC: TC-0 = 99.97, modeled = 28.32, target = 45.00, heatSink = 40.51, output = 100.0, timeout = 8350, exptTempC = 0.00, TecRate = 1.653
+(60475) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(60554) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(60556) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(60610) BLE_PERIPH: App to Instrument Data
+(60611) BLE_PERIPH: Received 21/21
+(60614) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(60618) TC: TC-0 = 101.08, modeled = 28.58, target = 45.00, heatSink = 40.46, output = 100.0, timeout = 8500, exptTempC = 0.00, TecRate = 1.948
+(60661) BLE_PERIPH: Sending Response Packet: [34,true,11480,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9039,101.08,46.05,3,2,34,0.00],0]
+(60666) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115
+(60711) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,11480,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9039,101.08,46.05,3,2,34,0.00],0]
+(60757) BLE_PERIPH: Instrument to App Transaction Write 115/115
+(60758) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115
+(60768) TC: TC-0 = 101.60, modeled = 28.81, target = 45.00, heatSink = 40.44, output = 100.0, timeout = 8650, exptTempC = 0.00, TecRate = 1.663
+(60802) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(60858) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(60860) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(60861) _performCapture: [9241,0,46.01,8755,9000,2377,1101,2166,3363,2971,2335,184,9000,1]
+(60903) BLE_PERIPH: App to Instrument Data
+(60904) BLE_PERIPH: Received 21/21
+(60907) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(60918) TC: TC-0 = 102.44, modeled = 29.06, target = 45.00, heatSink = 40.39, output = 100.0, timeout = 8800, exptTempC = 0.00, TecRate = 1.662
+(60936) BLE_PERIPH: Sending Response Packet: [34,true,11482,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9314,102.44,46.03,3,2,34,0.00],0]
+(60942) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115
+(60981) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,11482,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9314,102.44,46.03,3,2,34,0.00],0]
+(61015) BLE_PERIPH: Instrument to App Transaction Write 115/115
+(61017) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115
+(61049) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(61068) TC: TC-0 = 102.95, modeled = 29.29, target = 45.00, heatSink = 40.37, output = 100.0, timeout = 8950, exptTempC = 0.00, TecRate = 1.714
+(61083) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(61085) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(61128) BLE_PERIPH: App to Instrument Data
+(61129) BLE_PERIPH: Received 21/21
+(61132) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(61163) BLE_PERIPH: Sending Response Packet: [34,true,11484,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9541,103.50,46.03,3,2,34,0.00],0]
+(61168) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115
+(61218) TC: TC-0 = 103.80, modeled = 29.55, target = 45.00, heatSink = 40.33, output = 100.0, timeout = 9100, exptTempC = 0.00, TecRate = 1.775
+(61229) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,11484,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9541,103.50,46.03,3,2,34,0.00],0]
+(61274) BLE_PERIPH: Instrument to App Transaction Write 115/115
+(61276) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115
+(61319) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(61368) TC: TC-0 = 104.58, modeled = 29.81, target = 45.00, heatSink = 40.29, output = 100.0, timeout = 9250, exptTempC = 0.00, TecRate = 1.750
+(61375) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(61379) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(61420) BLE_PERIPH: App to Instrument Data
+(61421) BLE_PERIPH: Received 21/21
+(61424) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(61446) BLE_PERIPH: Sending Response Packet: [34,true,11486,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9825,104.82,46.01,3,2,34,0.00],0]
+(61452) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/115
+(61487) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=115 mtu=510, totalSize=115, currentIndex=0): [34,true,11486,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",9825,104.82,46.01,3,2,34,0.00],0]
+(61518) TC: TC-0 = 105.07, modeled = 30.05, target = 45.00, heatSink = 40.26, output = 100.0, timeout = 9400, exptTempC = 0.00, TecRate = 1.748
+(61522) BLE_PERIPH: Instrument to App Transaction Write 115/115
+(61530) BLE_PERIPH: Instrument to App Transaction Read/Notify 115/115
+(61567) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(61634) BLE_PERIPH: App to Instrument Transaction Write 0/21
+(61636) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(61667) TC: TC-0 = 105.88, modeled = 30.32, target = 45.00, heatSink = 40.23, output = 99.6, timeout = 9550, exptTempC = 0.00, TecRate = 1.803
+(61690) BLE_PERIPH: App to Instrument Data
+(61691) BLE_PERIPH: Received 21/21
+(61694) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(61722) BLE_PERIPH: Sending Response Packet: [34,true,11488,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",10100,106.12,46.00,3,2,34,0.00],0]
+(61727) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/116
+(61768) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=116 mtu=510, totalSize=116, currentIndex=0): [34,true,11488,["2022-07-07T22:32:41.186Z","8e2f7318-cafa-4d7e-9dbe-c09203ca917f",10100,106.12,46.00,3,2,34,0.00],0]
+(61817) TC: TC-0 = 106.35, modeled = 30.56, target = 45.00, heatSink = 40.20, output = 97.9, timeout = 9700, exptTempC = 0.00, TecRate = 1.749
+(61825) BLE_PERIPH: Instrument to App Transaction Write 116/116
+(61829) BLE_PERIPH: Instrument to App Transaction Read/Notify 116/116
+(61870) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(61967) TC: TC-0 = 107.10, modeled = 30.83, target = 45.00, heatSink = 40.17, output = 94.2, timeout = 9850, exptTempC = 0.00, TecRate = 1.797
+(61975) _performCapture: [10356,0,45.97,8789,9000,2357,1085,2273,3183,2939,2343,175,9000,1]
+(62117) TC: TC-0 = 107.87, modeled = 31.11, target = 45.00, heatSink = 40.13, output = 90.6, timeout = 10000, exptTempC = 0.00, TecRate = 2.085
+(62267) TC: TC-0 = 108.43, modeled = 31.37, target = 45.00, heatSink = 40.11, output = 87.7, timeout = 10150, exptTempC = 0.00, TecRate = 1.724
+(62417) TC: TC-0 = 108.94, modeled = 31.63, target = 45.00, heatSink = 40.09, output = 85.6, timeout = 10300, exptTempC = 0.00, TecRate = 1.715
+(62567) TC: TC-0 = 109.56, modeled = 31.90, target = 45.00, heatSink = 40.06, output = 83.1, timeout = 10450, exptTempC = 0.00, TecRate = 2.032
+(62717) TC: TC-0 = 109.98, modeled = 32.15, target = 45.00, heatSink = 40.03, output = 81.5, timeout = 10600, exptTempC = 0.00, TecRate = 1.676
+(62867) TC: TC-0 = 110.35, modeled = 32.40, target = 45.00, heatSink = 40.01, output = 80.6, timeout = 10750, exptTempC = 0.00, TecRate = 1.640
+(62883) _readLifterSwitches: New Lifter Down Value: 1
+(62883) _airboatStateEnter: Reached Bottom
+(62984) _airboatStateEnter: ALL STOP
+(63017) TC: TC-0 = 110.84, modeled = 32.66, target = 45.00, heatSink = 40.00, output = 79.0, timeout = 10900, exptTempC = 0.00, TecRate = 1.984
+(63079) _performCapture: [11460,0,45.93,8944,9000,2385,1071,2288,3203,2968,2304,170,9000,1]
+(63167) TC: TC-0 = 111.14, modeled = 32.90, target = 45.00, heatSink = 39.99, output = 78.5, timeout = 11050, exptTempC = 0.00, TecRate = 1.564
+(63317) TC: TC-0 = 111.37, modeled = 33.14, target = 45.00, heatSink = 39.97, output = 77.8, timeout = 11200, exptTempC = 0.00, TecRate = 1.594
+(63467) TC: TC-0 = 111.66, modeled = 33.38, target = 45.00, heatSink = 39.95, output = 77.1, timeout = 11350, exptTempC = 0.00, TecRate = 1.722
+(63617) TC: TC-0 = 111.84, modeled = 33.61, target = 45.00, heatSink = 39.94, output = 76.6, timeout = 11500, exptTempC = 0.00, TecRate = 1.535
+(63767) TC: TC-0 = 112.00, modeled = 33.84, target = 45.00, heatSink = 39.92, output = 76.1, timeout = 11650, exptTempC = 0.00, TecRate = 1.524
+(63917) TC: TC-0 = 112.15, modeled = 34.07, target = 45.00, heatSink = 39.91, output = 76.1, timeout = 11800, exptTempC = 0.00, TecRate = 1.568
+(64067) TC: TC-0 = 112.23, modeled = 34.29, target = 45.00, heatSink = 39.90, output = 76.0, timeout = 11950, exptTempC = 0.00, TecRate = 1.457
+(64185) _performCapture: [12565,0,45.89,8884,9000,2359,1066,2293,3123,2987,2300,168,9000,1]
+(64218) TC: TC-0 = 112.32, modeled = 34.51, target = 45.00, heatSink = 39.89, output = 75.6, timeout = 12100, exptTempC = 0.00, TecRate = 1.463
+(64367) TC: TC-0 = 112.43, modeled = 34.73, target = 45.00, heatSink = 39.88, output = 75.2, timeout = 12250, exptTempC = 0.00, TecRate = 1.507
+(64517) TC: TC-0 = 112.46, modeled = 34.94, target = 45.00, heatSink = 39.87, output = 75.4, timeout = 12400, exptTempC = 0.00, TecRate = 1.424
+(64667) TC: TC-0 = 112.49, modeled = 35.15, target = 45.00, heatSink = 39.87, output = 75.3, timeout = 12550, exptTempC = 0.00, TecRate = 1.383
+(64817) TC: TC-0 = 112.54, modeled = 35.36, target = 45.00, heatSink = 39.86, output = 75.1, timeout = 12700, exptTempC = 0.00, TecRate = 1.435
+(64967) TC: TC-0 = 112.58, modeled = 35.57, target = 45.00, heatSink = 39.85, output = 74.9, timeout = 12850, exptTempC = 0.00, TecRate = 1.432
+(65117) TC: TC-0 = 112.63, modeled = 35.78, target = 45.00, heatSink = 39.85, output = 74.8, timeout = 13000, exptTempC = 0.00, TecRate = 1.423
+(65267) TC: TC-0 = 112.63, modeled = 35.98, target = 45.00, heatSink = 39.84, output = 74.9, timeout = 13150, exptTempC = 0.00, TecRate = 1.353
+(65290) _performCapture: [13670,0,45.85,8922,9000,2360,1062,2305,3096,3005,2303,168,9000,1]
+(65417) TC: TC-0 = 112.66, modeled = 36.19, target = 45.00, heatSink = 39.84, output = 74.9, timeout = 13300, exptTempC = 0.00, TecRate = 1.366
+(65567) TC: TC-0 = 112.67, modeled = 36.40, target = 45.00, heatSink = 39.84, output = 74.8, timeout = 13450, exptTempC = 0.00, TecRate = 1.347
+(65717) TC: TC-0 = 112.66, modeled = 36.59, target = 45.00, heatSink = 39.83, output = 75.2, timeout = 13600, exptTempC = 0.00, TecRate = 1.342
+(65867) TC: TC-0 = 112.68, modeled = 36.80, target = 45.00, heatSink = 39.83, output = 75.0, timeout = 13750, exptTempC = 0.00, TecRate = 1.364
+(66017) TC: TC-0 = 112.66, modeled = 37.00, target = 45.00, heatSink = 39.83, output = 75.3, timeout = 13900, exptTempC = 0.00, TecRate = 1.262
+(66167) TC: TC-0 = 112.67, modeled = 37.20, target = 45.00, heatSink = 39.82, output = 75.5, timeout = 14050, exptTempC = 0.00, TecRate = 1.330
+(66317) TC: TC-0 = 112.70, modeled = 37.42, target = 45.00, heatSink = 39.82, output = 74.8, timeout = 14200, exptTempC = 0.00, TecRate = 1.576
+(66409) _performCapture: [14790,0,45.81,8939,9000,2362,1065,2311,3058,3014,2309,168,9000,1]
+(66467) TC: TC-0 = 112.69, modeled = 37.66, target = 45.00, heatSink = 39.81, output = 75.3, timeout = 14350, exptTempC = 0.00, TecRate = 1.570
+(66617) TC: TC-0 = 112.70, modeled = 37.89, target = 45.00, heatSink = 39.81, output = 75.1, timeout = 14500, exptTempC = 0.00, TecRate = 1.565
+(66662) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2132
+(66767) TC: TC-0 = 112.70, modeled = 38.13, target = 45.00, heatSink = 39.81, output = 74.9, timeout = 14650, exptTempC = 0.00, TecRate = 1.559
+(66917) TC: TC-0 = 112.72, modeled = 38.36, target = 45.00, heatSink = 39.81, output = 74.7, timeout = 14800, exptTempC = 0.00, TecRate = 1.554
+(67067) TC: TC-0 = 112.73, modeled = 38.59, target = 45.00, heatSink = 39.81, output = 74.8, timeout = 14950, exptTempC = 0.00, TecRate = 1.548
+(67217) TC: TC-0 = 112.73, modeled = 38.83, target = 45.00, heatSink = 39.81, output = 74.7, timeout = 15100, exptTempC = 0.00, TecRate = 1.543
+(67367) TC: TC-0 = 112.72, modeled = 39.06, target = 45.00, heatSink = 39.80, output = 75.0, timeout = 15250, exptTempC = 0.00, TecRate = 1.537
+(67517) TC: TC-0 = 112.73, modeled = 39.29, target = 45.00, heatSink = 39.80, output = 74.9, timeout = 15400, exptTempC = 0.00, TecRate = 1.532
+(67524) _performCapture: [15905,0,45.76,8901,9000,2364,1063,2310,3047,3024,2308,168,9000,1]
+(67667) TC: TC-0 = 112.74, modeled = 39.52, target = 45.00, heatSink = 39.80, output = 74.8, timeout = 15550, exptTempC = 0.00, TecRate = 1.527
+(67817) TC: TC-0 = 112.77, modeled = 39.74, target = 45.00, heatSink = 39.80, output = 74.5, timeout = 15700, exptTempC = 0.00, TecRate = 1.522
+(67967) TC: TC-0 = 112.75, modeled = 39.97, target = 45.00, heatSink = 39.80, output = 74.8, timeout = 15850, exptTempC = 0.00, TecRate = 1.516
+(68117) TC: TC-0 = 112.75, modeled = 40.20, target = 45.00, heatSink = 39.80, output = 74.8, timeout = 16000, exptTempC = 0.00, TecRate = 1.510
+(68267) TC: TC-0 = 112.75, modeled = 40.43, target = 45.00, heatSink = 39.80, output = 74.7, timeout = 16150, exptTempC = 0.00, TecRate = 1.505
+(68417) TC: TC-0 = 112.79, modeled = 40.65, target = 45.00, heatSink = 39.81, output = 74.5, timeout = 16300, exptTempC = 0.00, TecRate = 1.501
+(68567) TC: TC-0 = 112.81, modeled = 40.88, target = 45.00, heatSink = 39.81, output = 74.3, timeout = 16450, exptTempC = 0.00, TecRate = 1.496
+(68629) _performCapture: [17009,0,45.72,8877,9000,2363,1060,2310,3036,3035,2310,168,9000,1]
+(68717) TC: TC-0 = 112.80, modeled = 41.10, target = 45.00, heatSink = 39.80, output = 74.6, timeout = 16600, exptTempC = 0.00, TecRate = 1.490
+(68864) _maxHeatingStateTransitions: HEAT fast->slow down
+(68868) TC: TC-0 = 112.79, modeled = 41.32, target = 45.00, heatSink = 39.80, output = 24.8, timeout = 16750, exptTempC = 0.00, TecRate = 1.485
+(69017) TC: TC-0 = 112.81, modeled = 41.54, target = 45.00, heatSink = 39.81, output = -100.0, timeout = 16850, exptTempC = 0.00, TecRate = 1.480
+(69167) TC: TC-0 = 112.78, modeled = 41.77, target = 45.00, heatSink = 39.80, output = -100.0, timeout = 17000, exptTempC = 0.00, TecRate = 1.474
+(69317) TC: TC-0 = 112.66, modeled = 41.99, target = 45.00, heatSink = 39.82, output = -100.0, timeout = 17150, exptTempC = 0.00, TecRate = 1.465
+(69467) TC: TC-0 = 112.33, modeled = 42.20, target = 45.00, heatSink = 39.85, output = -100.0, timeout = 17300, exptTempC = 0.00, TecRate = 1.452
+(69617) TC: TC-0 = 111.78, modeled = 42.42, target = 45.00, heatSink = 39.92, output = -100.0, timeout = 17450, exptTempC = 0.00, TecRate = 1.433
+(69734) _performCapture: [18114,0,45.67,8853,9000,2355,1058,2306,3035,3040,2309,167,9000,1]
+(69762) _switchToSteadyStateCheck: Switching to steady state DECLINE
+(69768) TC: TC-0 = 110.65, modeled = 42.63, target = 45.00, heatSink = 40.04, output = -100.0, timeout = 17600, exptTempC = 0.00, TecRate = 1.400
+(69917) TC: TC-0 = 109.61, modeled = 42.84, target = 45.00, heatSink = 40.16, output = -100.0, timeout = 17750, exptTempC = 0.00, TecRate = 1.369
+(70067) TC: TC-0 = 108.50, modeled = 43.04, target = 45.00, heatSink = 40.30, output = -100.0, timeout = 17900, exptTempC = 0.00, TecRate = 1.337
+(70217) TC: TC-0 = 106.88, modeled = 43.24, target = 45.00, heatSink = 40.50, output = -100.0, timeout = 18050, exptTempC = 0.00, TecRate = 1.292
+(70367) TC: TC-0 = 105.59, modeled = 43.43, target = 45.00, heatSink = 40.67, output = -100.0, timeout = 18200, exptTempC = 0.00, TecRate = 1.255
+(70517) TC: TC-0 = 104.33, modeled = 43.61, target = 45.00, heatSink = 40.86, output = -100.0, timeout = 18350, exptTempC = 0.00, TecRate = 1.220
+(70667) TC: TC-0 = 102.60, modeled = 43.79, target = 45.00, heatSink = 41.11, output = -100.0, timeout = 18500, exptTempC = 0.00, TecRate = 1.174
+(70817) TC: TC-0 = 101.28, modeled = 43.96, target = 45.00, heatSink = 41.30, output = -100.0, timeout = 18650, exptTempC = 0.00, TecRate = 1.138
+(70839) _performCapture: [19219,0,45.62,8849,9000,2354,1057,2305,3033,3045,2311,167,9000,1]
+(70967) TC: TC-0 = 99.98, modeled = 44.13, target = 45.00, heatSink = 41.50, output = -100.0, timeout = 18800, exptTempC = 0.00, TecRate = 1.102
+(71117) TC: TC-0 = 98.68, modeled = 44.29, target = 45.00, heatSink = 41.70, output = -100.0, timeout = 18950, exptTempC = 0.00, TecRate = 1.067
+(71267) TC: TC-0 = 97.04, modeled = 44.45, target = 45.00, heatSink = 41.98, output = -100.0, timeout = 19100, exptTempC = 0.00, TecRate = 1.024
+(71417) TC: TC-0 = 95.79, modeled = 44.60, target = 45.00, heatSink = 42.19, output = -100.0, timeout = 19250, exptTempC = 0.00, TecRate = 0.991
+(71567) TC: TC-0 = 94.56, modeled = 44.74, target = 45.00, heatSink = 42.39, output = -100.0, timeout = 19400, exptTempC = 0.00, TecRate = 0.958
+(71717) TC: TC-0 = 92.97, modeled = 44.88, target = 45.00, heatSink = 42.69, output = -100.0, timeout = 19550, exptTempC = 0.00, TecRate = 0.918
+(71867) TC: TC-0 = 91.80, modeled = 45.02, target = 45.00, heatSink = 42.90, output = -100.0, timeout = 19700, exptTempC = 0.00, TecRate = 0.887
+(71959) _performCapture: [20340,0,45.57,8855,9000,2354,1057,2307,3030,3049,2314,167,9000,1]
+(72017) TC: TC-0 = 90.61, modeled = 45.15, target = 45.00, heatSink = 43.12, output = -100.0, timeout = 19850, exptTempC = 0.00, TecRate = 0.856
+(72167) TC: TC-0 = 89.07, modeled = 45.27, target = 45.00, heatSink = 43.40, output = -100.0, timeout = 20000, exptTempC = 0.00, TecRate = 0.817
+(72317) TC: TC-0 = 87.97, modeled = 45.39, target = 45.00, heatSink = 43.63, output = -100.0, timeout = 20150, exptTempC = 0.00, TecRate = 0.789
+(72367) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 45.431095, threshold: 45.200001
+(72412) _setThermalControlState: thermalControl-0: changing state 1->3
+(72413) _setTempReachedCallback: Set Temp Reached
+(72466) TC: TC-0 = 86.86, modeled = 45.51, target = 45.00, heatSink = 43.85, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.761
+(72616) TC: TC-0 = 85.42, modeled = 45.62, target = 45.00, heatSink = 44.14, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.725
+(72766) TC: TC-0 = 84.38, modeled = 45.72, target = 45.00, heatSink = 44.36, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.699
+(72916) TC: TC-0 = 83.33, modeled = 45.83, target = 45.00, heatSink = 44.58, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.672
+(73066) TC: TC-0 = 81.98, modeled = 45.92, target = 45.00, heatSink = 44.89, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.639
+(73073) _performCapture: [21454,0,45.52,8861,9000,2354,1057,2307,3031,3055,2314,167,9000,1]
+(73216) TC: TC-0 = 80.99, modeled = 46.02, target = 45.00, heatSink = 45.11, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.615
+(73366) TC: TC-0 = 79.98, modeled = 46.11, target = 45.00, heatSink = 45.33, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.590
+(73516) TC: TC-0 = 78.69, modeled = 46.19, target = 45.00, heatSink = 45.62, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.559
+(73666) TC: TC-0 = 77.74, modeled = 46.27, target = 45.00, heatSink = 45.84, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.536
+(73816) TC: TC-0 = 76.81, modeled = 46.35, target = 45.00, heatSink = 46.06, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.513
+(73967) TC: TC-0 = 75.60, modeled = 46.42, target = 45.00, heatSink = 46.35, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.485
+(74117) TC: TC-0 = 74.70, modeled = 46.50, target = 45.00, heatSink = 46.55, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.463
+(74180) _performCapture: [22560,0,45.47,8857,9000,2353,1058,2310,3033,3059,2317,166,9000,1]
+(74267) TC: TC-0 = 73.81, modeled = 46.56, target = 45.00, heatSink = 46.77, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.442
+(74417) TC: TC-0 = 72.66, modeled = 46.63, target = 45.00, heatSink = 47.07, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.415
+(74567) TC: TC-0 = 71.78, modeled = 46.69, target = 45.00, heatSink = 47.28, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.395
+(74717) TC: TC-0 = 70.94, modeled = 46.74, target = 45.00, heatSink = 47.49, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.375
+(74867) TC: TC-0 = 69.85, modeled = 46.80, target = 45.00, heatSink = 47.77, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.350
+(75017) TC: TC-0 = 69.04, modeled = 46.85, target = 45.00, heatSink = 47.99, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.331
+(75167) TC: TC-0 = 68.25, modeled = 46.90, target = 45.00, heatSink = 48.20, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.313
+(75285) _performCapture: [23665,0,45.42,8850,9000,2352,1058,2311,3033,3059,2319,166,9000,1]
+(75317) TC: TC-0 = 67.21, modeled = 46.94, target = 45.00, heatSink = 48.48, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.290
+(75467) TC: TC-0 = 66.44, modeled = 46.98, target = 45.00, heatSink = 48.69, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.272
+(75617) TC: TC-0 = 65.70, modeled = 47.02, target = 45.00, heatSink = 48.90, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.256
+(75767) TC: TC-0 = 64.70, modeled = 47.06, target = 45.00, heatSink = 49.20, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.234
+(75917) TC: TC-0 = 63.98, modeled = 47.09, target = 45.00, heatSink = 49.40, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.217
+(76067) TC: TC-0 = 63.27, modeled = 47.12, target = 45.00, heatSink = 49.60, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.202
+(76173) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2184
+(76214) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2184
+(76215) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2184
+(76217) TC: TC-0 = 62.33, modeled = 47.15, target = 45.00, heatSink = 49.88, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.181
+(76367) TC: TC-0 = 61.64, modeled = 47.17, target = 45.00, heatSink = 50.08, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.166
+(76390) _performCapture: [24770,0,45.37,8841,9000,2350,1058,2313,3039,3059,2318,166,9000,1]
+(76517) TC: TC-0 = 60.97, modeled = 47.20, target = 45.00, heatSink = 50.29, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.152
+(76667) TC: TC-0 = 60.07, modeled = 47.22, target = 45.00, heatSink = 50.55, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.132
+(76817) TC: TC-0 = 59.42, modeled = 47.24, target = 45.00, heatSink = 50.75, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.118
+(76967) TC: TC-0 = 58.77, modeled = 47.25, target = 45.00, heatSink = 50.95, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.104
+(77106) heapMonitor_checkFreeHeapSize: New heap low water mark 112848
+(77117) TC: TC-0 = 57.91, modeled = 47.27, target = 45.00, heatSink = 51.20, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.086
+(77267) TC: TC-0 = 57.30, modeled = 47.28, target = 45.00, heatSink = 51.41, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.073
+(77417) TC: TC-0 = 56.69, modeled = 47.29, target = 45.00, heatSink = 51.61, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.061
+(77510) _performCapture: [25890,0,45.32,8838,9000,2352,1060,2317,3038,3057,2319,166,9000,1]
+(77567) TC: TC-0 = 55.88, modeled = 47.30, target = 45.00, heatSink = 51.86, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.044
+(77717) TC: TC-0 = 55.30, modeled = 47.30, target = 45.00, heatSink = 52.06, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.032
+(77867) TC: TC-0 = 54.71, modeled = 47.30, target = 45.00, heatSink = 52.23, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.020
+(78018) TC: TC-0 = 53.94, modeled = 47.31, target = 45.00, heatSink = 52.49, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.004
+(78168) TC: TC-0 = 53.38, modeled = 47.31, target = 45.00, heatSink = 52.68, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.008
+(78318) TC: TC-0 = 52.83, modeled = 47.30, target = 45.00, heatSink = 52.87, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.019
+(78468) TC: TC-0 = 52.10, modeled = 47.30, target = 45.00, heatSink = 53.12, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.033
+(78618) TC: TC-0 = 51.57, modeled = 47.29, target = 45.00, heatSink = 53.31, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.044
+(78625) _performCapture: [27006,0,45.27,8834,9000,2353,1061,2319,3041,3053,2318,166,9000,1]
+(78768) TC: TC-0 = 51.04, modeled = 47.28, target = 45.00, heatSink = 53.49, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.054
+(78919) TC: TC-0 = 50.36, modeled = 47.28, target = 45.00, heatSink = 53.74, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.068
+(79069) TC: TC-0 = 49.86, modeled = 47.26, target = 45.00, heatSink = 53.93, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.078
+(79219) TC: TC-0 = 49.36, modeled = 47.25, target = 45.00, heatSink = 54.12, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.087
+(79369) TC: TC-0 = 48.69, modeled = 47.24, target = 45.00, heatSink = 54.36, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.100
+(79519) TC: TC-0 = 48.21, modeled = 47.22, target = 45.00, heatSink = 54.54, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.109
+(79669) TC: TC-0 = 47.74, modeled = 47.20, target = 45.00, heatSink = 54.72, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.118
+(79731) _performCapture: [28111,0,45.22,8827,9000,2352,1060,2320,3046,3048,2316,166,9000,1]
+(79819) TC: TC-0 = 47.11, modeled = 47.18, target = 45.00, heatSink = 54.96, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.130
+(79969) TC: TC-0 = 46.65, modeled = 47.16, target = 45.00, heatSink = 55.14, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.139
+(80119) TC: TC-0 = 46.20, modeled = 47.14, target = 45.00, heatSink = 55.31, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.147
+(80269) TC: TC-0 = 45.61, modeled = 47.12, target = 45.00, heatSink = 55.54, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.158
+(80419) TC: TC-0 = 45.18, modeled = 47.09, target = 45.00, heatSink = 55.72, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.166
+(80569) TC: TC-0 = 44.74, modeled = 47.07, target = 45.00, heatSink = 55.89, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.174
+(80719) TC: TC-0 = 44.17, modeled = 47.04, target = 45.00, heatSink = 56.09, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.185
+(80838) _performCapture: [29218,0,45.17,8818,9000,2351,1060,2322,3047,3042,2315,166,9000,1]
+(80869) TC: TC-0 = 43.75, modeled = 47.01, target = 45.00, heatSink = 56.27, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.192
+(81019) TC: TC-0 = 43.35, modeled = 46.98, target = 45.00, heatSink = 56.46, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.200
+(81169) TC: TC-0 = 42.81, modeled = 46.95, target = 45.00, heatSink = 56.67, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.209
+(81319) TC: TC-0 = 42.41, modeled = 46.92, target = 45.00, heatSink = 56.83, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.216
+(81469) TC: TC-0 = 42.02, modeled = 46.89, target = 45.00, heatSink = 57.01, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.223
+(81619) TC: TC-0 = 41.52, modeled = 46.85, target = 45.00, heatSink = 57.22, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.232
+(81769) TC: TC-0 = 41.14, modeled = 46.82, target = 45.00, heatSink = 57.38, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.238
+(81919) TC: TC-0 = 40.76, modeled = 46.78, target = 45.00, heatSink = 57.55, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.245
+(81944) _performCapture: [30324,0,45.12,8813,9000,2349,1059,2324,3051,3038,2314,166,9000,1]
+(82069) TC: TC-0 = 40.27, modeled = 46.74, target = 45.00, heatSink = 57.77, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.253
+(82219) TC: TC-0 = 39.91, modeled = 46.70, target = 45.00, heatSink = 57.92, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.259
+(82369) TC: TC-0 = 39.56, modeled = 46.66, target = 45.00, heatSink = 58.07, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.265
+(82519) TC: TC-0 = 39.10, modeled = 46.62, target = 45.00, heatSink = 58.29, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.273
+(82669) TC: TC-0 = 38.76, modeled = 46.58, target = 45.00, heatSink = 58.45, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.278
+(82819) TC: TC-0 = 38.42, modeled = 46.54, target = 45.00, heatSink = 58.60, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.284
+(82969) TC: TC-0 = 37.99, modeled = 46.50, target = 45.00, heatSink = 58.81, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.291
+(83056) _performCapture: [31436,0,45.07,8802,9000,2348,1058,2325,3059,3034,2312,166,9000,1]
+(83119) TC: TC-0 = 37.66, modeled = 46.45, target = 45.00, heatSink = 58.97, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.296
+(83269) TC: TC-0 = 37.34, modeled = 46.41, target = 45.00, heatSink = 59.14, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.301
+(83419) TC: TC-0 = 36.91, modeled = 46.36, target = 45.00, heatSink = 59.34, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.308
+(83569) TC: TC-0 = 36.60, modeled = 46.32, target = 45.00, heatSink = 59.49, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.313
+(83719) TC: TC-0 = 36.29, modeled = 46.27, target = 45.00, heatSink = 59.64, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.318
+(83869) TC: TC-0 = 35.89, modeled = 46.22, target = 45.00, heatSink = 59.83, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.324
+(84019) TC: TC-0 = 35.60, modeled = 46.17, target = 45.00, heatSink = 59.98, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.329
+(84161) _performCapture: [32542,0,45.03,8795,9000,2347,1058,2326,3063,3029,2312,166,9000,1]
+(84169) TC: TC-0 = 35.31, modeled = 46.12, target = 45.00, heatSink = 60.13, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.333
+(84319) TC: TC-0 = 34.93, modeled = 46.07, target = 45.00, heatSink = 60.33, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.339
+(84469) TC: TC-0 = 34.65, modeled = 46.02, target = 45.00, heatSink = 60.48, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.343
+(84619) TC: TC-0 = 34.37, modeled = 45.97, target = 45.00, heatSink = 60.62, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.347
+(84769) TC: TC-0 = 34.00, modeled = 45.91, target = 45.00, heatSink = 60.81, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.353
+(84919) TC: TC-0 = 33.74, modeled = 45.86, target = 45.00, heatSink = 60.95, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.356
+(85069) TC: TC-0 = 33.48, modeled = 45.81, target = 45.00, heatSink = 61.10, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.360
+(85219) TC: TC-0 = 33.11, modeled = 45.75, target = 45.00, heatSink = 61.28, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.365
+(85272) _performCapture: [33652,0,44.98,8789,9000,2348,1057,2328,3067,3025,2311,165,9000,1]
+(85369) TC: TC-0 = 32.86, modeled = 45.70, target = 45.00, heatSink = 61.43, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = -0.369
+(85519) TC: TC-0 = 32.61, modeled = 45.64, target = 45.00, heatSink = 61.56, output = -80.0, timeout = 0, exptTempC = 45.00, TecRate = -0.372
+(85670) TC: TC-0 = 32.29, modeled = 45.59, target = 45.00, heatSink = 61.76, output = -5.8, timeout = 0, exptTempC = 45.00, TecRate = -0.377
+(85819) TC: TC-0 = 32.05, modeled = 45.53, target = 45.00, heatSink = 61.89, output = 9.9, timeout = 0, exptTempC = 45.00, TecRate = -0.380
+(85969) TC: TC-0 = 31.86, modeled = 45.47, target = 45.00, heatSink = 62.02, output = 17.6, timeout = 0, exptTempC = 45.00, TecRate = -0.382
+(86119) TC: TC-0 = 31.75, modeled = 45.41, target = 45.00, heatSink = 62.14, output = 21.7, timeout = 0, exptTempC = 45.00, TecRate = -0.383
+(86269) TC: TC-0 = 31.79, modeled = 45.36, target = 45.00, heatSink = 62.22, output = 24.5, timeout = 0, exptTempC = 45.00, TecRate = -0.381
+(86382) _performCapture: [34762,0,44.94,8803,9000,2351,1058,2332,3073,3027,2315,166,9000,1]
+(86419) TC: TC-0 = 31.93, modeled = 45.30, target = 45.00, heatSink = 62.29, output = 26.9, timeout = 0, exptTempC = 45.00, TecRate = -0.377
+(86569) TC: TC-0 = 32.26, modeled = 45.24, target = 45.00, heatSink = 62.33, output = 28.7, timeout = 0, exptTempC = 45.00, TecRate = -0.369
+(86719) TC: TC-0 = 32.60, modeled = 45.19, target = 45.00, heatSink = 62.36, output = 30.6, timeout = 0, exptTempC = 45.00, TecRate = -0.361
+(86869) TC: TC-0 = 33.00, modeled = 45.14, target = 45.00, heatSink = 62.36, output = 32.3, timeout = 0, exptTempC = 45.00, TecRate = -0.353
+(87019) TC: TC-0 = 33.62, modeled = 45.08, target = 45.00, heatSink = 62.35, output = 33.4, timeout = 0, exptTempC = 45.00, TecRate = -0.340
+(87169) TC: TC-0 = 34.13, modeled = 45.03, target = 45.00, heatSink = 62.33, output = 34.8, timeout = 0, exptTempC = 45.00, TecRate = -0.329
+(87319) TC: TC-0 = 34.66, modeled = 44.99, target = 45.00, heatSink = 62.30, output = 36.2, timeout = 0, exptTempC = 45.00, TecRate = -0.318
+(87469) TC: TC-0 = 35.42, modeled = 44.94, target = 45.00, heatSink = 62.27, output = 37.1, timeout = 0, exptTempC = 45.00, TecRate = -0.303
+(87487) _performCapture: [35867,0,44.89,8800,9000,2350,1057,2331,3079,3023,2314,166,9000,1]
+(87619) TC: TC-0 = 36.01, modeled = 44.90, target = 45.00, heatSink = 62.23, output = 38.1, timeout = 0, exptTempC = 45.00, TecRate = -0.290
+(87769) TC: TC-0 = 36.61, modeled = 44.85, target = 45.00, heatSink = 62.19, output = 39.1, timeout = 0, exptTempC = 45.00, TecRate = -0.278
+(87919) TC: TC-0 = 37.45, modeled = 44.81, target = 45.00, heatSink = 62.13, output = 39.5, timeout = 0, exptTempC = 45.00, TecRate = -0.261
+(88069) TC: TC-0 = 38.09, modeled = 44.78, target = 45.00, heatSink = 62.08, output = 40.3, timeout = 0, exptTempC = 45.00, TecRate = -0.248
+(88219) TC: TC-0 = 38.73, modeled = 44.74, target = 45.00, heatSink = 62.03, output = 40.9, timeout = 0, exptTempC = 45.00, TecRate = -0.235
+(88369) TC: TC-0 = 39.60, modeled = 44.71, target = 45.00, heatSink = 61.95, output = 41.1, timeout = 0, exptTempC = 45.00, TecRate = -0.217
+(88519) TC: TC-0 = 40.25, modeled = 44.68, target = 45.00, heatSink = 61.88, output = 41.5, timeout = 0, exptTempC = 45.00, TecRate = -0.204
+(88592) _performCapture: [36972,0,44.85,8800,9000,2350,1056,2331,3082,3020,2313,165,9000,1]
+(88669) TC: TC-0 = 40.91, modeled = 44.65, target = 45.00, heatSink = 61.81, output = 41.8, timeout = 0, exptTempC = 45.00, TecRate = -0.191
+(88819) TC: TC-0 = 41.79, modeled = 44.62, target = 45.00, heatSink = 61.71, output = 41.7, timeout = 0, exptTempC = 45.00, TecRate = -0.173
+(88969) TC: TC-0 = 42.45, modeled = 44.59, target = 45.00, heatSink = 61.64, output = 41.9, timeout = 0, exptTempC = 45.00, TecRate = -0.160
+(89119) TC: TC-0 = 43.09, modeled = 44.57, target = 45.00, heatSink = 61.57, output = 42.0, timeout = 0, exptTempC = 45.00, TecRate = -0.147
+(89269) TC: TC-0 = 43.95, modeled = 44.55, target = 45.00, heatSink = 61.48, output = 41.7, timeout = 0, exptTempC = 45.00, TecRate = -0.129
+(89419) TC: TC-0 = 44.59, modeled = 44.53, target = 45.00, heatSink = 61.41, output = 41.6, timeout = 0, exptTempC = 45.00, TecRate = -0.116
+(89569) TC: TC-0 = 45.23, modeled = 44.52, target = 45.00, heatSink = 61.34, output = 41.6, timeout = 0, exptTempC = 45.00, TecRate = -0.104
+(89706) _performCapture: [38086,0,44.81,8802,9000,2351,1056,2330,3087,3018,2313,165,9000,1]
+(89719) TC: TC-0 = 46.07, modeled = 44.50, target = 45.00, heatSink = 61.24, output = 40.9, timeout = 0, exptTempC = 45.00, TecRate = -0.087
+(89869) TC: TC-0 = 46.68, modeled = 44.49, target = 45.00, heatSink = 61.16, output = 40.7, timeout = 0, exptTempC = 45.00, TecRate = -0.074
+(90019) TC: TC-0 = 47.28, modeled = 44.48, target = 45.00, heatSink = 61.08, output = 40.4, timeout = 0, exptTempC = 45.00, TecRate = -0.062
+(90169) TC: TC-0 = 48.06, modeled = 44.47, target = 45.00, heatSink = 60.98, output = 39.7, timeout = 0, exptTempC = 45.00, TecRate = -0.046
+(90319) TC: TC-0 = 48.63, modeled = 44.47, target = 45.00, heatSink = 60.90, output = 39.2, timeout = 0, exptTempC = 45.00, TecRate = -0.035
+(90469) TC: TC-0 = 49.19, modeled = 44.46, target = 45.00, heatSink = 60.82, output = 38.6, timeout = 0, exptTempC = 45.00, TecRate = -0.024
+(90619) TC: TC-0 = 49.92, modeled = 44.46, target = 45.00, heatSink = 60.71, output = 37.6, timeout = 0, exptTempC = 45.00, TecRate = -0.009
+(90769) TC: TC-0 = 50.45, modeled = 44.46, target = 45.00, heatSink = 60.64, output = 37.0, timeout = 0, exptTempC = 45.00, TecRate = 0.002
+(90821) _performCapture: [39201,0,44.77,8803,9000,2351,1055,2330,3090,3016,2311,165,9000,1]
+(90919) TC: TC-0 = 50.96, modeled = 44.46, target = 45.00, heatSink = 60.57, output = 36.2, timeout = 0, exptTempC = 45.00, TecRate = 0.012
+(91069) TC: TC-0 = 51.62, modeled = 44.47, target = 45.00, heatSink = 60.47, output = 35.1, timeout = 0, exptTempC = 45.00, TecRate = 0.025
+(91219) TC: TC-0 = 52.09, modeled = 44.47, target = 45.00, heatSink = 60.39, output = 34.3, timeout = 0, exptTempC = 45.00, TecRate = 0.034
+(91369) TC: TC-0 = 52.56, modeled = 44.48, target = 45.00, heatSink = 60.31, output = 33.3, timeout = 0, exptTempC = 45.00, TecRate = 0.044
+(91519) TC: TC-0 = 53.13, modeled = 44.48, target = 45.00, heatSink = 60.20, output = 32.3, timeout = 0, exptTempC = 45.00, TecRate = 0.055
+(91669) TC: TC-0 = 53.54, modeled = 44.49, target = 45.00, heatSink = 60.13, output = 31.2, timeout = 0, exptTempC = 45.00, TecRate = 0.063
+(91819) TC: TC-0 = 53.96, modeled = 44.50, target = 45.00, heatSink = 60.06, output = 30.1, timeout = 0, exptTempC = 45.00, TecRate = 0.072
+(91923) _performCapture: [40303,0,44.74,8799,9000,2349,1053,2331,3090,3015,2313,165,9000,1]
+(91970) TC: TC-0 = 54.46, modeled = 44.52, target = 45.00, heatSink = 59.97, output = 28.9, timeout = 0, exptTempC = 45.00, TecRate = 0.081
+(92120) TC: TC-0 = 54.80, modeled = 44.53, target = 45.00, heatSink = 59.90, output = 27.6, timeout = 0, exptTempC = 45.00, TecRate = 0.088
+(92270) TC: TC-0 = 55.13, modeled = 44.54, target = 45.00, heatSink = 59.83, output = 26.3, timeout = 0, exptTempC = 45.00, TecRate = 0.095
+(92420) TC: TC-0 = 55.55, modeled = 44.56, target = 45.00, heatSink = 59.74, output = 24.9, timeout = 0, exptTempC = 45.00, TecRate = 0.103
+(92570) TC: TC-0 = 55.83, modeled = 44.57, target = 45.00, heatSink = 59.67, output = 23.6, timeout = 0, exptTempC = 45.00, TecRate = 0.108
+(92720) TC: TC-0 = 56.07, modeled = 44.59, target = 45.00, heatSink = 59.60, output = 22.4, timeout = 0, exptTempC = 45.00, TecRate = 0.113
+(92870) TC: TC-0 = 56.40, modeled = 44.61, target = 45.00, heatSink = 59.50, output = 20.8, timeout = 0, exptTempC = 45.00, TecRate = 0.119
+(93020) TC: TC-0 = 56.60, modeled = 44.63, target = 45.00, heatSink = 59.43, output = 19.4, timeout = 0, exptTempC = 45.00, TecRate = 0.123
+(93032) _performCapture: [41412,0,44.69,8803,9000,2352,1054,2330,3095,3014,2312,165,9000,1]
+(93170) TC: TC-0 = 56.79, modeled = 44.65, target = 45.00, heatSink = 59.38, output = 16.0, timeout = 0, exptTempC = 45.00, TecRate = 0.126
+(93320) TC: TC-0 = 57.02, modeled = 44.66, target = 45.00, heatSink = 59.30, output = 12.7, timeout = 0, exptTempC = 45.00, TecRate = 0.130
+(93470) TC: TC-0 = 57.16, modeled = 44.68, target = 45.00, heatSink = 59.25, output = 9.5, timeout = 0, exptTempC = 45.00, TecRate = 0.133
+(93620) TC: TC-0 = 57.29, modeled = 44.70, target = 45.00, heatSink = 59.20, output = 6.3, timeout = 0, exptTempC = 45.00, TecRate = 0.135
+(93770) TC: TC-0 = 57.41, modeled = 44.72, target = 45.00, heatSink = 59.12, output = 3.3, timeout = 0, exptTempC = 45.00, TecRate = 0.137
+(93920) TC: TC-0 = 57.46, modeled = 44.75, target = 45.00, heatSink = 59.06, output = 0.4, timeout = 0, exptTempC = 45.00, TecRate = 0.138
+(94070) TC: TC-0 = 57.51, modeled = 44.77, target = 45.00, heatSink = 59.01, output = -11.8, timeout = 0, exptTempC = 45.00, TecRate = 0.138
+(94138) _performCapture: [42518,0,44.66,8803,9000,2353,1054,2327,3101,3014,2313,165,9000,1]
+(94220) TC: TC-0 = 57.54, modeled = 44.79, target = 45.00, heatSink = 58.95, output = -50.5, timeout = 0, exptTempC = 45.00, TecRate = 0.138
+(94370) TC: TC-0 = 57.54, modeled = 44.81, target = 45.00, heatSink = 58.90, output = -81.0, timeout = 0, exptTempC = 45.00, TecRate = 0.138
+(94521) TC: TC-0 = 57.51, modeled = 44.83, target = 45.00, heatSink = 58.86, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.137
+(94671) TC: TC-0 = 57.37, modeled = 44.85, target = 45.00, heatSink = 58.80, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.133
+(94821) TC: TC-0 = 57.15, modeled = 44.87, target = 45.00, heatSink = 58.79, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.128
+(94971) TC: TC-0 = 56.83, modeled = 44.89, target = 45.00, heatSink = 58.81, output = -100.0, timeout = 0, exptTempC = 45.00, TecRate = 0.121
+(95120) TC: TC-0 = 56.25, modeled = 44.90, target = 45.00, heatSink = 58.85, output = -90.4, timeout = 0, exptTempC = 45.00, TecRate = 0.109
+(95243) _performCapture: [43623,0,44.62,8795,9000,2350,1052,2322,3107,3009,2310,165,9000,1]
+(95270) TC: TC-0 = 55.76, modeled = 44.92, target = 45.00, heatSink = 58.91, output = -81.1, timeout = 0, exptTempC = 45.00, TecRate = 0.098
+(95420) TC: TC-0 = 55.23, modeled = 44.93, target = 45.00, heatSink = 58.97, output = -64.4, timeout = 0, exptTempC = 45.00, TecRate = 0.087
+(95570) TC: TC-0 = 54.49, modeled = 44.94, target = 45.00, heatSink = 59.08, output = -42.2, timeout = 0, exptTempC = 45.00, TecRate = 0.072
+(95720) TC: TC-0 = 53.96, modeled = 44.95, target = 45.00, heatSink = 59.17, output = -34.1, timeout = 0, exptTempC = 45.00, TecRate = 0.061
+(95870) TC: TC-0 = 53.44, modeled = 44.96, target = 45.00, heatSink = 59.22, output = -27.4, timeout = 0, exptTempC = 45.00, TecRate = 0.050
+(96020) TC: TC-0 = 52.85, modeled = 44.97, target = 45.00, heatSink = 59.31, output = -18.9, timeout = 0, exptTempC = 45.00, TecRate = 0.038
+(96170) TC: TC-0 = 52.46, modeled = 44.97, target = 45.00, heatSink = 59.36, output = -15.0, timeout = 0, exptTempC = 45.00, TecRate = 0.030
+(96320) TC: TC-0 = 52.15, modeled = 44.98, target = 45.00, heatSink = 59.40, output = -15.5, timeout = 0, exptTempC = 45.00, TecRate = 0.024
+(96372) _performCapture: [44752,0,44.59,8803,9000,2355,1053,2320,3127,3010,2309,165,9000,1]
+(96470) TC: TC-0 = 51.82, modeled = 44.98, target = 45.00, heatSink = 59.43, output = -15.3, timeout = 0, exptTempC = 45.00, TecRate = 0.017
+(96620) TC: TC-0 = 51.64, modeled = 44.98, target = 45.00, heatSink = 59.45, output = -17.0, timeout = 0, exptTempC = 45.00, TecRate = 0.013
+(96770) TC: TC-0 = 51.51, modeled = 44.98, target = 45.00, heatSink = 59.46, output = -20.3, timeout = 0, exptTempC = 45.00, TecRate = 0.010
+(96920) TC: TC-0 = 51.38, modeled = 44.98, target = 45.00, heatSink = 59.47, output = -18.5, timeout = 0, exptTempC = 45.00, TecRate = 0.008
+(97070) TC: TC-0 = 51.29, modeled = 44.99, target = 45.00, heatSink = 59.46, output = -19.5, timeout = 0, exptTempC = 45.00, TecRate = 0.006
+(97220) TC: TC-0 = 51.23, modeled = 44.99, target = 45.00, heatSink = 59.46, output = -19.4, timeout = 0, exptTempC = 45.00, TecRate = 0.005
+(97370) TC: TC-0 = 51.16, modeled = 44.99, target = 45.00, heatSink = 59.44, output = -20.5, timeout = 0, exptTempC = 45.00, TecRate = 0.003
+(97473) _performCapture: [45853,0,44.55,8805,9000,2356,1052,2325,3107,3012,2316,165,9000,1]
+(97520) TC: TC-0 = 51.12, modeled = 44.99, target = 45.00, heatSink = 59.43, output = -19.1, timeout = 0, exptTempC = 45.00, TecRate = 0.002
+(97670) TC: TC-0 = 51.08, modeled = 44.99, target = 45.00, heatSink = 59.42, output = -17.5, timeout = 0, exptTempC = 45.00, TecRate = 0.002
+(97820) TC: TC-0 = 51.03, modeled = 44.99, target = 45.00, heatSink = 59.40, output = -15.9, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(97970) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 59.38, output = -15.2, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(98120) TC: TC-0 = 50.96, modeled = 44.99, target = 45.00, heatSink = 59.36, output = -12.9, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(98270) TC: TC-0 = 50.93, modeled = 44.99, target = 45.00, heatSink = 59.34, output = -12.1, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(98420) TC: TC-0 = 50.89, modeled = 44.99, target = 45.00, heatSink = 59.32, output = -10.2, timeout = 0, exptTempC = 45.00, TecRate = -0.002
+(98570) TC: TC-0 = 50.87, modeled = 44.99, target = 45.00, heatSink = 59.30, output = -9.5, timeout = 0, exptTempC = 45.00, TecRate = -0.003
+(98583) _performCapture: [46963,0,44.52,8808,9000,2357,1052,2325,3111,3012,2316,165,9000,1]
+(98720) TC: TC-0 = 50.86, modeled = 44.99, target = 45.00, heatSink = 59.26, output = -10.0, timeout = 0, exptTempC = 45.00, TecRate = -0.003
+(98870) TC: TC-0 = 50.87, modeled = 44.99, target = 45.00, heatSink = 59.25, output = -12.3, timeout = 0, exptTempC = 45.00, TecRate = -0.003
+(99020) TC: TC-0 = 50.89, modeled = 44.99, target = 45.00, heatSink = 59.22, output = -13.3, timeout = 0, exptTempC = 45.00, TecRate = -0.002
+(99170) TC: TC-0 = 50.91, modeled = 44.99, target = 45.00, heatSink = 59.19, output = -13.4, timeout = 0, exptTempC = 45.00, TecRate = -0.002
+(99320) TC: TC-0 = 50.93, modeled = 44.99, target = 45.00, heatSink = 59.15, output = -15.2, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(99470) TC: TC-0 = 50.95, modeled = 44.99, target = 45.00, heatSink = 59.11, output = -16.6, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(99620) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 59.07, output = -16.8, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(99689) _performCapture: [48069,0,44.49,8812,9000,2357,1052,2322,3119,3010,2316,165,9000,1]
+(99770) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 59.05, output = -16.7, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(99920) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 59.02, output = -17.0, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(100070) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 58.97, output = -14.9, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(100220) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 58.95, output = -13.1, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(100370) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 58.92, output = -13.1, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(100520) TC: TC-0 = 50.97, modeled = 44.99, target = 45.00, heatSink = 58.87, output = -11.9, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(100670) TC: TC-0 = 50.95, modeled = 44.99, target = 45.00, heatSink = 58.84, output = -10.2, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(100794) _performCapture: [49174,0,44.46,8817,9000,2357,1052,2319,3129,3009,2316,165,9000,1]
+(100820) TC: TC-0 = 50.94, modeled = 44.98, target = 45.00, heatSink = 58.81, output = -8.7, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(100970) TC: TC-0 = 50.93, modeled = 44.98, target = 45.00, heatSink = 58.77, output = -9.7, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(101120) TC: TC-0 = 50.93, modeled = 44.98, target = 45.00, heatSink = 58.73, output = -10.9, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(101270) TC: TC-0 = 50.94, modeled = 44.98, target = 45.00, heatSink = 58.70, output = -10.5, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(101420) TC: TC-0 = 50.97, modeled = 44.98, target = 45.00, heatSink = 58.67, output = -12.2, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(101570) TC: TC-0 = 50.99, modeled = 44.98, target = 45.00, heatSink = 58.63, output = -14.2, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(101720) TC: TC-0 = 51.01, modeled = 44.98, target = 45.00, heatSink = 58.60, output = -16.0, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(101871) TC: TC-0 = 51.05, modeled = 44.98, target = 45.00, heatSink = 58.56, output = -16.9, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(101907) _performCapture: [50287,0,44.43,8819,9000,2358,1052,2317,3142,3006,2315,164,9000,1]
+(102020) TC: TC-0 = 51.06, modeled = 44.98, target = 45.00, heatSink = 58.52, output = -17.2, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(102170) TC: TC-0 = 51.07, modeled = 44.98, target = 45.00, heatSink = 58.49, output = -17.1, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(102320) TC: TC-0 = 51.07, modeled = 44.99, target = 45.00, heatSink = 58.46, output = -16.6, timeout = 0, exptTempC = 45.00, TecRate = 0.002
+(102438) eventMarker: 50819, Start Heating PCR
+(102470) TC: TC-0 = 51.06, modeled = 44.99, target = 45.00, heatSink = 58.42, output = -14.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(102509) printColors: CH415: 8828
+(102509) printColors: CH445: 9000
+(102510) printColors: CH480: 2357
+(102511) printColors: CH515: 1051
+(102515) printColors: CH555: 2318
+(102519) printColors: CH590: 3131
+(102523) printColors: CH630: 3008
+(102527) printColors: CH680: 2319
+(102531) printColors:   NIR: 164
+(102535) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(102543) printColors:   CLR: 9000
+(102548) printColors:   DRK: 1
+
+
+(102552) _resetThermalControlState: RESET Peltier 1 control state
+(102559) thermalControlSetTargetTempC: [1] MAX RAMPING  goto 60.0
+(102566) _setThermalControlState: thermalControl-1: changing state 3->1
+(102573) tecCurvePredictorSetHoldPower: holdPower is NaN
+(102579) thermalControlSetEnable: Enabling Peltier 1
+(102585) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(102599) systemTasksMonitorStack: Stack Watermark(Experiment): 2132
+(102690) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 58.38, output = -13.5, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(102702) TC: TC-1 = 44.38, modeled = 44.41, target = 60.00, heatSink = 44.04, output = 100.0, timeout = 100, exptTempC = 0.00, TecRate = -0.028
+(102840) TC: TC-0 = 51.01, modeled = 44.99, target = 45.00, heatSink = 58.34, output = -11.2, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(102852) TC: TC-1 = 44.38, modeled = 44.40, target = 60.00, heatSink = 44.04, output = 100.0, timeout = 250, exptTempC = 0.00, TecRate = -0.025
+(102990) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 58.31, output = -9.9, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(103001) TC: TC-1 = 44.40, modeled = 44.40, target = 60.00, heatSink = 44.03, output = 100.0, timeout = 400, exptTempC = 0.00, TecRate = 0.030
+(103100) _performCapture: [51480,0,44.41,8833,9000,2360,1052,2326,3126,2987,2300,164,9000,1]
+(103140) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 58.28, output = -10.8, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(103152) TC: TC-1 = 44.60, modeled = 44.43, target = 60.00, heatSink = 44.00, output = 100.0, timeout = 550, exptTempC = 0.00, TecRate = 0.396
+(103290) TC: TC-0 = 50.96, modeled = 44.99, target = 45.00, heatSink = 58.22, output = -10.6, timeout = 0, exptTempC = 45.00, TecRate = -0.001
+(103302) TC: TC-1 = 44.94, modeled = 44.52, target = 60.00, heatSink = 43.96, output = 100.0, timeout = 700, exptTempC = 0.00, TecRate = 0.737
+(103440) TC: TC-0 = 50.97, modeled = 44.99, target = 45.00, heatSink = 58.20, output = -10.0, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(103452) TC: TC-1 = 45.47, modeled = 44.68, target = 60.00, heatSink = 43.92, output = 100.0, timeout = 850, exptTempC = 0.00, TecRate = 1.245
+(103590) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 58.17, output = -11.2, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(103602) TC: TC-1 = 46.45, modeled = 44.96, target = 60.00, heatSink = 43.86, output = 100.0, timeout = 1000, exptTempC = 0.00, TecRate = 2.455
+(103740) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 58.12, output = -12.6, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(103752) TC: TC-1 = 47.38, modeled = 45.34, target = 60.00, heatSink = 43.81, output = 100.0, timeout = 1150, exptTempC = 0.00, TecRate = 2.701
+(103890) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 58.09, output = -13.7, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(103901) TC: TC-1 = 48.45, modeled = 45.79, target = 60.00, heatSink = 43.76, output = 100.0, timeout = 1300, exptTempC = 0.00, TecRate = 3.180
+(104040) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 58.06, output = -13.5, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104052) TC: TC-1 = 50.06, modeled = 46.37, target = 60.00, heatSink = 43.69, output = 100.0, timeout = 1450, exptTempC = 0.00, TecRate = 4.655
+(104190) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 58.01, output = -16.1, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104202) TC: TC-1 = 51.35, modeled = 47.03, target = 60.00, heatSink = 43.64, output = 100.0, timeout = 1600, exptTempC = 0.00, TecRate = 4.450
+(104215) _performCapture: [52595,0,46.81,8640,9000,2328,1038,2279,3101,2976,2299,162,9000,1]
+(104340) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 57.98, output = -15.0, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104352) TC: TC-1 = 52.71, modeled = 47.71, target = 60.00, heatSink = 43.57, output = 100.0, timeout = 1750, exptTempC = 0.00, TecRate = 4.657
+(104490) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 57.96, output = -14.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104502) TC: TC-1 = 54.63, modeled = 48.50, target = 60.00, heatSink = 43.50, output = 100.0, timeout = 1900, exptTempC = 0.00, TecRate = 6.085
+(104640) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 57.91, output = -14.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104652) TC: TC-1 = 56.09, modeled = 49.33, target = 60.00, heatSink = 43.45, output = 100.0, timeout = 2050, exptTempC = 0.00, TecRate = 5.544
+(104790) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 57.88, output = -12.9, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104802) TC: TC-1 = 57.56, modeled = 50.16, target = 60.00, heatSink = 43.40, output = 100.0, timeout = 2200, exptTempC = 0.00, TecRate = 5.529
+(104940) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 57.85, output = -12.2, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(104952) TC: TC-1 = 59.56, modeled = 51.06, target = 60.00, heatSink = 43.33, output = 100.0, timeout = 2350, exptTempC = 0.00, TecRate = 6.775
+(105090) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 57.81, output = -11.0, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(105102) TC: TC-1 = 61.05, modeled = 51.98, target = 60.00, heatSink = 43.28, output = 100.0, timeout = 2500, exptTempC = 0.00, TecRate = 6.071
+(105240) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 57.78, output = -10.6, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(105252) TC: TC-1 = 62.54, modeled = 52.87, target = 60.00, heatSink = 43.23, output = 100.0, timeout = 2650, exptTempC = 0.00, TecRate = 5.922
+(105350) _performCapture: [53731,0,53.17,8267,9000,2238,987,2167,2909,2791,2174,154,9000,1]
+(105390) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 57.74, output = -10.3, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(105402) TC: TC-1 = 64.51, modeled = 53.82, target = 60.00, heatSink = 43.17, output = 100.0, timeout = 2800, exptTempC = 0.00, TecRate = 7.067
+(105540) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 57.70, output = -11.1, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(105552) TC: TC-1 = 66.01, modeled = 54.78, target = 60.00, heatSink = 43.12, output = 100.0, timeout = 2950, exptTempC = 0.00, TecRate = 6.339
+(105690) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 57.67, output = -10.1, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(105702) TC: TC-1 = 67.47, modeled = 55.71, target = 60.00, heatSink = 43.07, output = 100.0, timeout = 3100, exptTempC = 0.00, TecRate = 6.113
+(105840) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 57.64, output = -11.3, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(105852) TC: TC-1 = 69.38, modeled = 56.67, target = 60.00, heatSink = 43.02, output = 100.0, timeout = 3250, exptTempC = 0.00, TecRate = 7.149
+(105942) _maxHeatingStateTransitions: HEAT fast->slow down
+(105990) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 57.59, output = -14.4, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(106007) TC: TC-1 = 70.82, modeled = 57.64, target = 60.00, heatSink = 42.98, output = 0.0, timeout = 3400, exptTempC = 0.00, TecRate = 6.377
+(106140) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 57.56, output = -15.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106157) TC: TC-1 = 72.25, modeled = 58.58, target = 60.00, heatSink = 42.94, output = -100.0, timeout = 3500, exptTempC = 0.00, TecRate = 6.189
+(106290) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 57.52, output = -15.3, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106307) TC: TC-1 = 74.07, modeled = 59.54, target = 60.00, heatSink = 42.89, output = -100.0, timeout = 3650, exptTempC = 0.00, TecRate = 7.060
+(106440) TC: TC-0 = 51.06, modeled = 44.99, target = 45.00, heatSink = 57.48, output = -16.0, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106457) TC: TC-1 = 75.30, modeled = 60.48, target = 60.00, heatSink = 42.88, output = -100.0, timeout = 3800, exptTempC = 0.00, TecRate = 6.085
+(106556) _performCapture: [54936,0,60.77,7275,9000,1929,849,1887,2438,2481,1901,133,9000,1]
+(106590) TC: TC-0 = 51.07, modeled = 44.99, target = 45.00, heatSink = 57.45, output = -15.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106608) TC: TC-1 = 76.31, modeled = 61.33, target = 60.00, heatSink = 42.90, output = -100.0, timeout = 3950, exptTempC = 0.00, TecRate = 5.403
+(106703) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 61.831932, threshold: 60.200001
+(106740) TC: TC-0 = 51.06, modeled = 44.99, target = 45.00, heatSink = 57.41, output = -13.7, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106745) _setThermalControlState: thermalControl-1: changing state 1->3
+(106751) _setTempReachedCallback: Set Temp Reached
+(106764) TC: TC-1 = 77.19, modeled = 62.08, target = 60.00, heatSink = 42.96, output = -100.0, timeout = 4100, exptTempC = 60.00, TecRate = 5.006
+(106890) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 57.36, output = -12.8, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(106901) TC: TC-1 = 77.52, modeled = 62.70, target = 60.00, heatSink = 43.05, output = -100.0, timeout = 4250, exptTempC = 60.00, TecRate = 3.738
+(107040) TC: TC-0 = 51.03, modeled = 44.99, target = 45.00, heatSink = 57.35, output = -10.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(107052) TC: TC-1 = 77.60, modeled = 63.16, target = 60.00, heatSink = 43.17, output = -100.0, timeout = 4400, exptTempC = 60.00, TecRate = 2.745
+(107190) TC: TC-0 = 51.01, modeled = 44.99, target = 45.00, heatSink = 57.31, output = -10.5, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(107202) TC: TC-1 = 77.34, modeled = 63.46, target = 60.00, heatSink = 43.34, output = -100.0, timeout = 4550, exptTempC = 60.00, TecRate = 1.605
+(107340) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 57.27, output = -9.8, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(107350) TC: TC-1 = 76.93, modeled = 63.63, target = 60.00, heatSink = 43.49, output = -98.0, timeout = 4700, exptTempC = 60.00, TecRate = 0.867
+(107490) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 57.25, output = -9.3, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(107500) TC: TC-1 = 76.38, modeled = 63.69, target = 60.00, heatSink = 43.66, output = -92.3, timeout = 4850, exptTempC = 60.00, TecRate = 0.181
+(107641) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 57.21, output = -10.9, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(107652) TC: TC-1 = 75.46, modeled = 63.63, target = 60.00, heatSink = 43.87, output = -77.3, timeout = 5000, exptTempC = 60.00, TecRate = -0.979
+(107713) _performCapture: [56094,0,63.63,7139,9000,1911,838,1873,2422,2408,1877,131,9000,1]
+(107790) TC: TC-0 = 51.00, modeled = 44.99, target = 45.00, heatSink = 57.18, output = -11.5, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(107800) TC: TC-1 = 74.67, modeled = 63.48, target = 60.00, heatSink = 44.04, output = -64.9, timeout = 5150, exptTempC = 60.00, TecRate = -1.126
+(107940) TC: TC-0 = 51.01, modeled = 44.99, target = 45.00, heatSink = 57.14, output = -12.8, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(107950) TC: TC-1 = 73.80, modeled = 63.28, target = 60.00, heatSink = 44.20, output = -53.5, timeout = 5300, exptTempC = 60.00, TecRate = -1.466
+(108090) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 57.10, output = -13.0, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(108101) TC: TC-1 = 72.60, modeled = 63.00, target = 60.00, heatSink = 44.42, output = -38.1, timeout = 5450, exptTempC = 60.00, TecRate = -2.437
+(108240) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 57.06, output = -14.7, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(108251) TC: TC-1 = 71.67, modeled = 62.67, target = 60.00, heatSink = 44.58, output = -25.5, timeout = 5600, exptTempC = 60.00, TecRate = -2.206
+(108390) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 57.03, output = -14.4, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(108401) TC: TC-1 = 70.75, modeled = 62.34, target = 60.00, heatSink = 44.73, output = -12.6, timeout = 5750, exptTempC = 60.00, TecRate = -2.203
+(108540) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 56.99, output = -14.9, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(108553) TC: TC-1 = 69.56, modeled = 61.97, target = 60.00, heatSink = 44.90, output = 6.6, timeout = 5900, exptTempC = 60.00, TecRate = -2.891
+(108690) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 56.95, output = -14.1, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(108700) TC: TC-1 = 68.74, modeled = 61.61, target = 60.00, heatSink = 45.01, output = 9.3, timeout = 6050, exptTempC = 60.00, TecRate = -2.354
+(108840) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 56.92, output = -12.5, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(108850) TC: TC-1 = 67.97, modeled = 61.27, target = 60.00, heatSink = 45.09, output = 12.6, timeout = 6200, exptTempC = 60.00, TecRate = -2.148
+(108860) _performCapture: [57241,0,61.38,7093,9000,1904,842,1868,2420,2426,1913,131,9000,1]
+(108990) TC: TC-0 = 51.03, modeled = 44.99, target = 45.00, heatSink = 56.90, output = -10.3, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(109001) TC: TC-1 = 67.07, modeled = 60.95, target = 60.00, heatSink = 45.19, output = 15.3, timeout = 6350, exptTempC = 60.00, TecRate = -2.428
+(109140) TC: TC-0 = 51.01, modeled = 44.99, target = 45.00, heatSink = 56.85, output = -10.5, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(109150) TC: TC-1 = 66.47, modeled = 60.65, target = 60.00, heatSink = 45.23, output = 17.0, timeout = 0, exptTempC = 60.00, TecRate = -1.865
+(109290) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 56.82, output = -9.0, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(109300) TC: TC-1 = 65.96, modeled = 60.40, target = 60.00, heatSink = 45.28, output = 18.1, timeout = 0, exptTempC = 60.00, TecRate = -1.545
+(109440) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 56.79, output = -8.4, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(109451) TC: TC-1 = 65.36, modeled = 60.18, target = 60.00, heatSink = 45.33, output = 19.9, timeout = 0, exptTempC = 60.00, TecRate = -1.634
+(109590) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 56.75, output = -9.2, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(109600) TC: TC-1 = 64.97, modeled = 59.98, target = 60.00, heatSink = 45.35, output = 20.4, timeout = 0, exptTempC = 60.00, TecRate = -1.206
+(109740) TC: TC-0 = 50.98, modeled = 44.99, target = 45.00, heatSink = 56.71, output = -9.8, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(109750) TC: TC-1 = 64.63, modeled = 59.83, target = 60.00, heatSink = 45.36, output = 20.5, timeout = 0, exptTempC = 60.00, TecRate = -0.953
+(109890) TC: TC-0 = 50.99, modeled = 44.99, target = 45.00, heatSink = 56.68, output = -9.5, timeout = 0, exptTempC = 45.00, TecRate = -0.000
+(109900) TC: TC-1 = 64.28, modeled = 59.70, target = 60.00, heatSink = 45.38, output = 20.8, timeout = 0, exptTempC = 60.00, TecRate = -0.936
+(109971) _performCapture: [58351,0,59.70,7110,9000,1898,840,1870,2441,2407,1891,131,9000,1]
+(110040) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 56.65, output = -12.3, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(110050) TC: TC-1 = 64.06, modeled = 59.60, target = 60.00, heatSink = 45.40, output = 20.8, timeout = 0, exptTempC = 60.00, TecRate = -0.614
+(110190) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 56.61, output = -13.0, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110200) TC: TC-1 = 63.86, modeled = 59.52, target = 60.00, heatSink = 45.40, output = 20.9, timeout = 0, exptTempC = 60.00, TecRate = -0.456
+(110340) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 56.58, output = -13.4, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110350) TC: TC-1 = 63.63, modeled = 59.46, target = 60.00, heatSink = 45.40, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = -0.466
+(110490) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 56.53, output = -13.2, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110500) TC: TC-1 = 63.49, modeled = 59.41, target = 60.00, heatSink = 45.40, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = -0.271
+(110640) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 56.50, output = -12.6, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110650) TC: TC-1 = 63.36, modeled = 59.38, target = 60.00, heatSink = 45.39, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = -0.183
+(110790) TC: TC-0 = 51.05, modeled = 44.99, target = 45.00, heatSink = 56.47, output = -12.5, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110800) TC: TC-1 = 63.21, modeled = 59.35, target = 60.00, heatSink = 45.38, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = -0.192
+(110940) TC: TC-0 = 51.04, modeled = 44.99, target = 45.00, heatSink = 56.44, output = -10.4, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(110950) TC: TC-1 = 63.12, modeled = 59.34, target = 60.00, heatSink = 45.37, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = -0.081
+(111090) TC: TC-0 = 51.03, modeled = 44.99, target = 45.00, heatSink = 56.41, output = -11.0, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(111100) TC: TC-1 = 63.03, modeled = 59.33, target = 60.00, heatSink = 45.36, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = -0.021
+(111110) _performCapture: [59491,0,59.33,7169,9000,1904,842,1869,2402,2398,1894,131,9000,1]
+(111240) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 56.37, output = -10.2, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(111250) TC: TC-1 = 62.94, modeled = 59.33, target = 60.00, heatSink = 45.34, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = -0.023
+(111390) TC: TC-0 = 51.03, modeled = 44.99, target = 45.00, heatSink = 56.33, output = -11.7, timeout = 0, exptTempC = 45.00, TecRate = 0.001
+(111400) TC: TC-1 = 62.87, modeled = 59.34, target = 60.00, heatSink = 45.34, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.041
+(111540) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 56.28, output = -12.3, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(111550) TC: TC-1 = 62.81, modeled = 59.35, target = 60.00, heatSink = 45.33, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.063
+(111690) TC: TC-0 = 51.02, modeled = 44.99, target = 45.00, heatSink = 56.23, output = -13.6, timeout = 0, exptTempC = 45.00, TecRate = 0.000
+(111700) TC: TC-1 = 62.73, modeled = 59.35, target = 60.00, heatSink = 45.32, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.043
+(111817) experimentStateSamplePrepAction: PCR Settled
+(111817) _powerDownSt1: Turned Off Stage1
+(111818) _deviceLogsSetTC: Adding Time 59693
+(111843) TC: TC-1 = 62.67, modeled = 59.37, target = 60.00, heatSink = 45.31, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.072
+(111992) TC: TC-1 = 62.62, modeled = 59.38, target = 60.00, heatSink = 45.30, output = 21.0, timeout = 0, exptTempC = 60.00, TecRate = 0.095
+(112143) TC: TC-1 = 62.57, modeled = 59.39, target = 60.00, heatSink = 45.29, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.098
+(112215) _performCapture: [60595,0,59.39,7161,9000,1904,841,1860,2454,2389,1886,131,9000,1]
+(112293) TC: TC-1 = 62.50, modeled = 59.40, target = 60.00, heatSink = 45.28, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.079
+(112442) TC: TC-1 = 62.45, modeled = 59.42, target = 60.00, heatSink = 45.27, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.097
+(112592) TC: TC-1 = 62.41, modeled = 59.43, target = 60.00, heatSink = 45.26, output = 21.0, timeout = 0, exptTempC = 60.00, TecRate = 0.108
+(112617) experimentStateSamplePrepAction: Stage1 Power Down Time Elapsed
+(112617) _startPlunging: Plunge Start Declared! Plunge State: 5
+(112620) eventMarker: 61001, Plunge Starting
+(112626) eventMarker: 61007, Plunge Check Read 2
+(112706) printColors: CH415: 7160
+(112706) printColors: CH445: 9000
+(112707) printColors: CH480: 1907
+(112708) printColors: CH515: 842
+(112712) printColors: CH555: 1865
+(112716) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(112724) printColors: CH590: 2431
+(112728) printColors: CH630: 2390
+(112732) printColors: CH680: 1888
+(112736) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(112745) printColors:   NIR: 131
+(112749) printColors:   CLR: 9000
+(112753) printColors:   DRK: 1
+
+
+(112757) _changePlungeState: Plunge Motor State Change: Homed -> Plunging
+(112772) TC: TC-1 = 62.34, modeled = 59.44, target = 60.00, heatSink = 45.24, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.067
+(112835) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(112845) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(112879) Motor Plunge Current: 54
+(112901) systemTasksMonitorStack: Stack Watermark(Motor Control): 2240
+(112902) Motor Plunge Current: 222
+(112923) TC: TC-1 = 62.30, modeled = 59.46, target = 60.00, heatSink = 45.23, output = 21.0, timeout = 0, exptTempC = 60.00, TecRate = 0.086
+(112927) Motor Plunge Current: 222
+(112950) Motor Plunge Current: 98
+(112973) Motor Plunge Current: 98
+(112994) Motor Plunge Current: 92
+(113014) Motor Plunge Current: 92
+(113037) Motor Plunge Current: 92
+(113058) Motor Plunge Current: 92
+(113073) TC: TC-1 = 62.24, modeled = 59.47, target = 60.00, heatSink = 45.22, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.064
+(113078) Motor Plunge Current: 92
+(113100) Motor Plunge Current: 102
+(113127) Motor Plunge Current: 94
+(113148) Motor Plunge Current: 94
+(113173) Motor Plunge Current: 108
+(113194) Motor Plunge Current: 108
+(113223) TC: TC-1 = 62.19, modeled = 59.48, target = 60.00, heatSink = 45.20, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.057
+(113227) Motor Plunge Current: 100
+(113250) Motor Plunge Current: 100
+(113273) Motor Plunge Current: 92
+(113294) Motor Plunge Current: 92
+(113314) Motor Plunge Current: 102
+(113334) Motor Plunge Current: 102
+(113354) Motor Plunge Current: 92
+(113364) _performCapture: [61745,0,59.49,7160,9000,1913,845,1868,2431,2393,1887,131,9000,1]
+(113373) TC: TC-1 = 62.14, modeled = 59.49, target = 60.00, heatSink = 45.19, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.071
+(113379) Motor Plunge Current: 92
+(113403) Motor Plunge Current: 92
+(113423) Motor Plunge Current: 92
+(113444) Motor Plunge Current: 90
+(113464) Motor Plunge Current: 90
+(113484) Motor Plunge Current: 90
+(113504) Motor Plunge Current: 104
+(113523) TC: TC-1 = 62.10, modeled = 59.50, target = 60.00, heatSink = 45.18, output = 21.2, timeout = 0, exptTempC = 60.00, TecRate = 0.076
+(113527) Motor Plunge Current: 104
+(113550) Motor Plunge Current: 106
+(113573) Motor Plunge Current: 106
+(113594) Motor Plunge Current: 120
+(113614) Motor Plunge Current: 120
+(113634) Motor Plunge Current: 114
+(113654) Motor Plunge Current: 114
+(113673) TC: TC-1 = 62.05, modeled = 59.51, target = 60.00, heatSink = 45.17, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.066
+(113677) Motor Plunge Current: 124
+(113700) Motor Plunge Current: 124
+(113723) Motor Plunge Current: 134
+(113744) Motor Plunge Current: 134
+(113764) Motor Plunge Current: 142
+(113784) Motor Plunge Current: 142
+(113804) Motor Plunge Current: 144
+(113823) TC: TC-1 = 62.02, modeled = 59.53, target = 60.00, heatSink = 45.16, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.090
+(113827) Motor Plunge Current: 144
+(113850) Motor Plunge Current: 140
+(113873) Motor Plunge Current: 140
+(113895) Motor Plunge Current: 152
+(113915) Motor Plunge Current: 152
+(113935) Motor Plunge Current: 152
+(113955) Motor Plunge Current: 146
+(113973) TC: TC-1 = 61.99, modeled = 59.54, target = 60.00, heatSink = 45.16, output = 21.1, timeout = 0, exptTempC = 60.00, TecRate = 0.095
+(113977) Motor Plunge Current: 146
+(114000) Motor Plunge Current: 148
+(114023) Motor Plunge Current: 148
+(114044) Motor Plunge Current: 152
+(114064) Motor Plunge Current: 152
+(114084) Motor Plunge Current: 152
+(114104) Motor Plunge Current: 152
+(114123) TC: TC-1 = 61.92, modeled = 59.55, target = 60.00, heatSink = 45.15, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.030
+(114127) Motor Plunge Current: 162
+(114150) Motor Plunge Current: 162
+(114173) Motor Plunge Current: 158
+(114194) Motor Plunge Current: 158
+(114214) Motor Plunge Current: 162
+(114234) Motor Plunge Current: 162
+(114254) Motor Plunge Current: 128
+(114273) TC: TC-1 = 61.88, modeled = 59.56, target = 60.00, heatSink = 45.13, output = 21.3, timeout = 0, exptTempC = 60.00, TecRate = 0.050
+(114277) Motor Plunge Current: 128
+(114301) Motor Plunge Current: 112
+(114323) Motor Plunge Current: 112
+(114344) Motor Plunge Current: 122
+(114364) Motor Plunge Current: 122
+(114384) Motor Plunge Current: 122
+(114404) Motor Plunge Current: 118
+(114423) TC: TC-1 = 61.85, modeled = 59.57, target = 60.00, heatSink = 45.12, output = 21.3, timeout = 0, exptTempC = 60.00, TecRate = 0.063
+(114427) Motor Plunge Current: 118
+(114451) Motor Plunge Current: 136
+(114474) Motor Plunge Current: 136
+(114476) _performCapture: [62856,0,59.57,7187,9000,1918,845,1870,2478,2401,1875,131,9000,1]
+(114498) Motor Plunge Current: 130
+(114525) Motor Plunge Current: 140
+(114546) Motor Plunge Current: 140
+(114573) TC: TC-1 = 61.79, modeled = 59.58, target = 60.00, heatSink = 45.12, output = 21.3, timeout = 0, exptTempC = 60.00, TecRate = 0.016
+(114577) Motor Plunge Current: 136
+(114601) Motor Plunge Current: 136
+(114623) Motor Plunge Current: 128
+(114644) Motor Plunge Current: 128
+(114664) Motor Plunge Current: 136
+(114684) Motor Plunge Current: 136
+(114705) Motor Plunge Current: 130
+(114723) TC: TC-1 = 61.74, modeled = 59.58, target = 60.00, heatSink = 45.10, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.035
+(114727) Motor Plunge Current: 130
+(114750) Motor Plunge Current: 136
+(114773) Motor Plunge Current: 136
+(114795) Motor Plunge Current: 110
+(114823) Motor Plunge Current: 110
+(114844) Motor Plunge Current: 124
+(114864) Motor Plunge Current: 124
+(114873) TC: TC-1 = 61.71, modeled = 59.59, target = 60.00, heatSink = 45.10, output = 21.3, timeout = 0, exptTempC = 60.00, TecRate = 0.053
+(114885) Motor Plunge Current: 108
+(114905) Motor Plunge Current: 108
+(114925) Motor Plunge Current: 108
+(114945) Motor Plunge Current: 100
+(114965) Motor Plunge Current: 100
+(114985) Motor Plunge Current: 112
+(115005) Motor Plunge Current: 112
+(115023) TC: TC-1 = 61.67, modeled = 59.59, target = 60.00, heatSink = 45.10, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.038
+(115027) Motor Plunge Current: 110
+(115050) Motor Plunge Current: 110
+(115073) Motor Plunge Current: 114
+(115094) Motor Plunge Current: 114
+(115114) Motor Plunge Current: 108
+(115134) Motor Plunge Current: 108
+(115155) Motor Plunge Current: 122
+(115173) TC: TC-1 = 61.63, modeled = 59.60, target = 60.00, heatSink = 45.08, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.042
+(115177) Motor Plunge Current: 122
+(115200) Motor Plunge Current: 116
+(115223) Motor Plunge Current: 116
+(115245) Motor Plunge Current: 110
+(115273) Motor Plunge Current: 110
+(115294) Motor Plunge Current: 118
+(115314) Motor Plunge Current: 118
+(115323) TC: TC-1 = 61.59, modeled = 59.61, target = 60.00, heatSink = 45.07, output = 21.5, timeout = 0, exptTempC = 60.00, TecRate = 0.043
+(115335) Motor Plunge Current: 110
+(115355) Motor Plunge Current: 110
+(115375) Motor Plunge Current: 110
+(115395) Motor Plunge Current: 116
+(115415) Motor Plunge Current: 116
+(115435) Motor Plunge Current: 124
+(115455) Motor Plunge Current: 124
+(115473) TC: TC-1 = 61.55, modeled = 59.61, target = 60.00, heatSink = 45.06, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.016
+(115477) Motor Plunge Current: 124
+(115501) Motor Plunge Current: 124
+(115523) Motor Plunge Current: 112
+(115544) Motor Plunge Current: 112
+(115565) Motor Plunge Current: 118
+(115584) _performCapture: [63964,0,59.62,7206,9000,1909,845,1858,2405,2465,1859,131,9000,1]
+(115585) Motor Plunge Current: 118
+(115606) Motor Plunge Current: 114
+(115623) TC: TC-1 = 61.52, modeled = 59.62, target = 60.00, heatSink = 45.05, output = 21.4, timeout = 0, exptTempC = 60.00, TecRate = 0.052
+(115627) Motor Plunge Current: 114
+(115651) Motor Plunge Current: 120
+(115673) Motor Plunge Current: 120
+(115695) Motor Plunge Current: 114
+(115723) Motor Plunge Current: 114
+(115744) Motor Plunge Current: 126
+(115764) Motor Plunge Current: 126
+(115773) TC: TC-1 = 61.49, modeled = 59.63, target = 60.00, heatSink = 45.05, output = 21.6, timeout = 0, exptTempC = 60.00, TecRate = 0.049
+(115785) Motor Plunge Current: 126
+(115805) Motor Plunge Current: 126
+(115825) Motor Plunge Current: 126
+(115845) Motor Plunge Current: 112
+(115865) Motor Plunge Current: 112
+(115885) Motor Plunge Current: 114
+(115905) Motor Plunge Current: 114
+(115923) TC: TC-1 = 61.44, modeled = 59.63, target = 60.00, heatSink = 45.04, output = 21.7, timeout = 0, exptTempC = 60.00, TecRate = 0.017
+(115927) Motor Plunge Current: 112
+(115950) Motor Plunge Current: 112
+(115973) Motor Plunge Current: 116
+(115994) Motor Plunge Current: 116
+(116014) Motor Plunge Current: 108
+(116034) Motor Plunge Current: 108
+(116055) Motor Plunge Current: 122
+(116073) TC: TC-1 = 61.41, modeled = 59.64, target = 60.00, heatSink = 45.04, output = 21.7, timeout = 0, exptTempC = 60.00, TecRate = 0.026
+(116077) Motor Plunge Current: 122
+(116100) Motor Plunge Current: 126
+(116123) Motor Plunge Current: 126
+(116145) Motor Plunge Current: 118
+(116173) Motor Plunge Current: 118
+(116194) Motor Plunge Current: 124
+(116214) Motor Plunge Current: 124
+(116223) TC: TC-1 = 61.37, modeled = 59.64, target = 60.00, heatSink = 45.03, output = 21.7, timeout = 0, exptTempC = 60.00, TecRate = 0.025
+(116235) Motor Plunge Current: 106
+(116255) Motor Plunge Current: 106
+(116275) Motor Plunge Current: 106
+(116295) Motor Plunge Current: 122
+(116315) Motor Plunge Current: 122
+(116335) Motor Plunge Current: 108
+(116355) Motor Plunge Current: 108
+(116373) TC: TC-1 = 61.33, modeled = 59.64, target = 60.00, heatSink = 45.01, output = 21.7, timeout = 0, exptTempC = 60.00, TecRate = -0.002
+(116377) Motor Plunge Current: 122
+(116401) Motor Plunge Current: 122
+(116423) Motor Plunge Current: 108
+(116444) Motor Plunge Current: 108
+(116464) Motor Plunge Current: 104
+(116484) Motor Plunge Current: 104
+(116505) Motor Plunge Current: 110
+(116523) TC: TC-1 = 61.29, modeled = 59.64, target = 60.00, heatSink = 45.01, output = 21.9, timeout = 0, exptTempC = 60.00, TecRate = 0.017
+(116527) Motor Plunge Current: 110
+(116550) Motor Plunge Current: 106
+(116573) Motor Plunge Current: 106
+(116595) Motor Plunge Current: 110
+(116615) Motor Plunge Current: 110
+(116635) Motor Plunge Current: 110
+(116655) Motor Plunge Current: 102
+(116673) TC: TC-1 = 61.25, modeled = 59.65, target = 60.00, heatSink = 45.00, output = 22.2, timeout = 0, exptTempC = 60.00, TecRate = 0.005
+(116677) Motor Plunge Current: 102
+(116689) _performCapture: [65069,0,59.65,5101,9000,2813,4945,4815,3307,2834,2214,162,9000,1]
+(116701) Motor Plunge Current: 114
+(116723) Motor Plunge Current: 114
+(116744) Motor Plunge Current: 116
+(116764) Motor Plunge Current: 116
+(116784) Motor Plunge Current: 120
+(116804) Motor Plunge Current: 120
+(116823) TC: TC-1 = 61.17, modeled = 59.64, target = 60.00, heatSink = 44.99, output = 22.7, timeout = 0, exptTempC = 60.00, TecRate = -0.087
+(116827) Motor Plunge Current: 110
+(116851) Motor Plunge Current: 110
+(116873) Motor Plunge Current: 100
+(116894) Motor Plunge Current: 100
+(116914) Motor Plunge Current: 110
+(116934) Motor Plunge Current: 110
+(116955) Motor Plunge Current: 106
+(116973) TC: TC-1 = 61.10, modeled = 59.63, target = 60.00, heatSink = 44.98, output = 23.1, timeout = 0, exptTempC = 60.00, TecRate = -0.098
+(116977) Motor Plunge Current: 106
+(117001) Motor Plunge Current: 104
+(117023) Motor Plunge Current: 104
+(117045) Motor Plunge Current: 114
+(117073) Motor Plunge Current: 114
+(117094) Motor Plunge Current: 112
+(117114) Motor Plunge Current: 112
+(117123) TC: TC-1 = 61.02, modeled = 59.61, target = 60.00, heatSink = 44.98, output = 23.4, timeout = 0, exptTempC = 60.00, TecRate = -0.112
+(117135) Motor Plunge Current: 108
+(117155) Motor Plunge Current: 108
+(117175) Motor Plunge Current: 108
+(117195) Motor Plunge Current: 110
+(117215) Motor Plunge Current: 110
+(117235) Motor Plunge Current: 104
+(117255) Motor Plunge Current: 104
+(117273) TC: TC-1 = 60.91, modeled = 59.59, target = 60.00, heatSink = 44.97, output = 24.0, timeout = 0, exptTempC = 60.00, TecRate = -0.200
+(117277) Motor Plunge Current: 104
+(117301) Motor Plunge Current: 104
+(117323) Motor Plunge Current: 108
+(117344) Motor Plunge Current: 108
+(117364) Motor Plunge Current: 128
+(117384) Motor Plunge Current: 128
+(117405) Motor Plunge Current: 124
+(117423) TC: TC-1 = 60.83, modeled = 59.56, target = 60.00, heatSink = 44.96, output = 24.3, timeout = 0, exptTempC = 60.00, TecRate = -0.170
+(117427) Motor Plunge Current: 124
+(117450) Motor Plunge Current: 106
+(117473) Motor Plunge Current: 106
+(117495) Motor Plunge Current: 130
+(117523) Motor Plunge Current: 130
+(117544) Motor Plunge Current: 112
