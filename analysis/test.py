@@ -1,9 +1,8 @@
-import tkinter as tk
-window = tk.Tk()
-
-
-greeting = tk.Label(text='hi')
-greeting.pack()
-
-
-window.mainloop()
+from tkinter import *
+from tkinter import ttk
+root = Tk()
+frm = ttk.Frame(root, padding=10)
+frm.grid()
+ttk.Label(frm, text=input('x')).grid(column=0, row=0)
+ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
+root.mainloop()
