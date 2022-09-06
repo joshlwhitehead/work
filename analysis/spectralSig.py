@@ -9,7 +9,7 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 
-consumableId = '7ff89494-acf3-4c01-a053-22b54ca99349'
+consumableId = 'c37c2b73-193c-4ffc-8119-1a7bca36a03a'
 
 note = ''
 
@@ -98,7 +98,7 @@ def melt_deriv():
     tmIndx = list(meltAnalysis.results['smoothDerivatives'][refChan]).index(maxFluor)
     good_tm = meltAnalysis.results['smoothedT'][tmIndx]
     fluor = []
-    for i in [3,4,5,6,7]:
+    for i in [2,3,4,5,6,7]:
         fluor.append(meltAnalysis.results['smoothDerivatives'][i][tmIndx])
     y = np.array(fluor)
 
@@ -124,4 +124,4 @@ def melt_deriv():
     
     plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
     plt.show()
-pcrplot()
+melt_deriv()
