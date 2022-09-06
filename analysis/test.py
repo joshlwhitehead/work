@@ -128,7 +128,7 @@ inputtxt = Text(root, height = 10,width = 25)
 note = Text(root,height=5,width=25)
 
 quit = Button(text="Quit", command=root.destroy)
-run = Button(root,height=2,width=20,text='Analyze',command = lambda:analyze())
+run = Button(root,height=2,width=20,text='Analyze',command=analyze())
 
 # b.place(x=50,y=500)
 
