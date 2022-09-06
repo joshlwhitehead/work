@@ -1,4 +1,5 @@
 from cProfile import label
+from distutils.cmd import Command
 from tkinter import *
 import lib.add_lib_path
 import lib.api_auth as auth
@@ -13,7 +14,7 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 root = Tk()
-root.geometry("600x400")
+root.geometry("800x600")
 root.title("Josh's Super-Duper Cool Spectral Analysis Machine")
 
 def analyze():
@@ -30,12 +31,14 @@ def analyze():
         '_eq': consumableId
     }
     }
-    channels = [480,515,555,590,630,680]
+    
+    channels = drop.curselection()
+    print(channels)
+    channelTot = ['415','445','480','515','555','590','630','680']
+
     channelString = []
-
-
     for i in channels:
-        channelString.append(str(i))
+        channelString.append(channelTot[i])
 
 
     rep = 0
@@ -67,7 +70,7 @@ def analyze():
     # def pcrplot():
     if varPCR.get() == 1 and varMelt.get() == 0:
         delta = []
-        for i in [2,3,4,5,6,7]:
+        for i in channels:
             delta.append(np.average(data[i][-2:])-np.average(data[i][:2]))
 
         # print(delta)
@@ -112,7 +115,7 @@ def analyze():
         tmIndx = list(meltAnalysis.results['smoothDerivatives'][refChan]).index(maxFluor)
         good_tm = meltAnalysis.results['smoothedT'][tmIndx]
         fluor = []
-        for i in [2,3,4,5,6,7]:
+        for i in channels:
             fluor.append(meltAnalysis.results['smoothDerivatives'][i][tmIndx])
         y = np.array(fluor)
 
@@ -132,7 +135,7 @@ def analyze():
         plt.ylabel(''.join(["Melt Peak @ ",str(round(good_tm,1))]))
         plt.xlabel('Channel (nm)')
         # plt.ylim(-.15,2.2)
-        plt.xticks((480,515,555,590,630,680),('480','515','555','590','630','680'))
+        plt.xticks(channels,channelString)
         plt.grid()
         
         
@@ -152,8 +155,34 @@ def analyze():
 
 varPCR = IntVar()
 varMelt = IntVar()
+# var415 = IntVar()
+# var445 = IntVar()
+# var480 = IntVar()
+# var515 = IntVar()
+# var555 = IntVar()
+# var590 = IntVar()
+# var630 = IntVar()
+# var680 = IntVar()
+
+
 checkPCR = Checkbutton(root,text='PCR',variable=varPCR,onvalue=1,offvalue=0)
 checkMelt = Checkbutton(root,text='Melt',variable=varMelt,onvalue=1,offvalue=0)
+# check415 = Checkbutton(root,text='415',variable=var415,onvalue=1,offvalue=0)
+# check445 = Checkbutton(root,text='445',variable=var445,onvalue=1,offvalue=0)
+# check480 = Checkbutton(root,text='480',variable=var480,onvalue=1,offvalue=0)
+# check515 = Checkbutton(root,text='515',variable=var515,onvalue=1,offvalue=0)
+# check555 = Checkbutton(root,text='555',variable=var555,onvalue=1,offvalue=0)
+# check590 = Checkbutton(root,text='590',variable=var590,onvalue=1,offvalue=0)
+# check630 = Checkbutton(root,text='630',variable=var630,onvalue=1,offvalue=0)
+# check680 = Checkbutton(root,text='680',variable=var680,onvalue=1,offvalue=0)
+
+options = ['415','445','480','515','555','590','630','680']
+clicked =StringVar
+drop = Listbox(root,selectmode='multiple')
+
+for i in options:
+    drop.insert(END,i)
+# drop.event_generate(5)
 
 
 
@@ -162,39 +191,40 @@ checkMelt = Checkbutton(root,text='Melt',variable=varMelt,onvalue=1,offvalue=0)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-l = Label(text='Cup ID')
+lCup = Label(text='Cup ID')
+lRefChan = Label(text='Reference Channel')
+lChan = Label(text='Channels to Use')
 
 
 inputtxt = Text(root, height = 10,width = 25)
-l2 = Label(text='Reference Channel')
 refChanBox = Text(root,height=2,width=4)
+
 
 quit = Button(text="Quit", command=root.destroy)
 run = Button(root,height=2,width=20,text='Analyze',command=lambda:analyze())
 
 # b.place(x=50,y=500)
 
-l.pack()
+lCup.pack()
 
 inputtxt.pack()
-run.pack()
-l2.pack()
+
+lChan.pack()
+lRefChan.pack()
 refChanBox.pack()
 checkPCR.pack()
 checkMelt.pack()
 
+drop.pack()
+# check415.pack()
+# check445.pack()
+# check480.pack()
+# check515.pack()
+# check555.pack()
+# check590.pack()
+# check630.pack()
+# check680.pack()
+run.pack()
 quit.pack(side='bottom',pady=50)
 
 

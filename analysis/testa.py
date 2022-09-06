@@ -1,33 +1,32 @@
+# Python program demonstrating
+# Multiple selection in Listbox widget
+
+
 from tkinter import *
-import testb
 
-root = Tk()
-root.geometry("300x300")
-root.title(" Q&A ")
+window = Tk()
+window.geometry('100x150')
 
-def Take_input():
-	INPUT = inputtxt.get("1.0", "end-1c")
-	print(INPUT)
-	if(INPUT == "120"):
-		Output.insert(END, 'Correct')
-	else:
-		Output.insert(END, "Wrong answer")
+# Choosing selectmode as multiple
+# for selecting multiple options
+list = Listbox(window, selectmode = "multiple")
+
+# Widget expands horizontally and
+# vertically by assigning both to
+# fill option
+list.pack(expand = YES, fill = "both")
+
+# Taking a list 'x' with the items
+# as languages
+x = ["C", "C++", "Java", "Python", "R",
+	"Go", "Ruby", "JavaScript", "Swift"]
+
+for each_item in range(len(x)):
 	
-l = Label(text = "What is 24 * 5 ? ")
-inputtxt = Text(root, height = 10,
-				width = 25)
-
-Output = Text(root, height = 5,
-			width = 25)
-
-Display = Button(root, height = 2,
-				width = 20,
-				text ="Show",
-				command = lambda:Take_input())
-
-l.pack()
-inputtxt.pack()
-Display.pack()
-Output.pack()
-
-mainloop()
+	list.insert(END, x[each_item])
+	
+	# coloring alternative lines of listbox
+	list.itemconfig(each_item,
+			bg = "yellow" if each_item % 2 == 0 else "cyan")
+	
+window.mainloop()
