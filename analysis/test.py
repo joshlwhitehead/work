@@ -14,7 +14,7 @@ from melt.melt import MeltAnalysis
 from scipy.interpolate import make_interp_spline
 
 root = Tk()
-root.geometry("800x600")
+root.geometry("400x600")
 root.title("Josh's Super-Duper Cool Spectral Analysis Machine")
 
 def analyze():
@@ -23,7 +23,7 @@ def analyze():
 
     note = ''
 
-    refChan = int(refChanBox.get('1.0','end-1c'))
+    
     api = auth.getApiClient()
 
     where = {
@@ -34,6 +34,7 @@ def analyze():
     
     channels = drop.curselection()
     print(channels)
+    
     channelTot = ['415','445','480','515','555','590','630','680']
 
     channelString = []
@@ -107,6 +108,8 @@ def analyze():
 
 
     elif varMelt.get() == 1 and varPCR.get() == 0:
+        refChan = int(channelTot.index(str(refChanBox.get())))
+        print(refChan)
         x = np.array(channels)
 
     
@@ -177,12 +180,13 @@ checkMelt = Checkbutton(root,text='Melt',variable=varMelt,onvalue=1,offvalue=0)
 # check680 = Checkbutton(root,text='680',variable=var680,onvalue=1,offvalue=0)
 
 options = ['415','445','480','515','555','590','630','680']
-clicked =StringVar
+
 drop = Listbox(root,selectmode='multiple')
 
 for i in options:
     drop.insert(END,i)
 # drop.event_generate(5)
+drop.select_set(2,7)
 
 
 
@@ -197,7 +201,11 @@ lChan = Label(text='Channels to Use')
 
 
 inputtxt = Text(root, height = 10,width = 25)
-refChanBox = Text(root,height=2,width=4)
+# refChanBox = Text(root,height=2,width=4)
+# refChanBox.set('d')
+
+refChanBox = Entry(root)
+refChanBox.insert(0,'515')
 
 
 quit = Button(text="Quit", command=root.destroy)
@@ -209,12 +217,14 @@ lCup.pack()
 
 inputtxt.pack()
 
-lChan.pack()
-lRefChan.pack()
-refChanBox.pack()
+
+
+
 checkPCR.pack()
 checkMelt.pack()
-
+lRefChan.pack()
+refChanBox.pack()
+lChan.pack()
 drop.pack()
 # check415.pack()
 # check445.pack()
