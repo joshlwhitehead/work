@@ -329,3 +329,24 @@ h50 = gd.getData('h50.csv',date)
 h100 = gd.getData('h100.csv',date)
 h90 = gd.getData('h90.csv',date)
 h70 = gd.getData('h70.csv',date)
+
+
+
+
+#########################           ACCEPTANCE                          #####################
+date = '13Sep2022'
+adv01_1 = gd.getData('Adv01_P23_33425e_220908_Run1.csv',date)
+adv01_2 = gd.getData('Adv01_P16_5e621f_220908_Run2.csv',date)
+adv01_3 = gd.getData('Adv01_P16_a314fa_220908_Run3.csv',date)
+
+adv02_1 = gd.getData('Adv2_P23_21fef3_220907_Run1.csv',date)
+adv02_2 = gd.getData('Adv2_P23_ae5298_220907_Run2.csv',date)
+adv02_3 = gd.getData('Adv2_P23_9bd409_220907_Run3.csv',date)
+
+adv03_1 = gd.getData('Adv3_P20_220829_Run01.csv',date)
+adv03_2 = gd.getData('Adv3_P20_220829_Run021.csv',date)
+adv03_3 = gd.getData('Adv3_P20_220829_Run033.csv',date)
+
+adv04_1 = gd.getData('Adv4_P20_45275f_220829_Run01.csv',date)
+adv04_2 = gd.getData('Adv4_P21_220829_Run02.csv',date)
+adv04_3 = gd.getData('Adv4_P21_220829_Run03.csv',date)
