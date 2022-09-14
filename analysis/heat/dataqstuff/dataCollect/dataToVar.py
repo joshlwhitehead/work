@@ -1,6 +1,6 @@
 """This is a space to organize data. getData function parses out csv produced by dave"""
 
-from gc import get_debug
+
 import getData as gd
 
 # lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
@@ -335,18 +335,41 @@ h70 = gd.getData('h70.csv',date)
 
 #########################           ACCEPTANCE                          #####################
 date = '13Sep2022'
-adv01_1 = gd.getData('Adv01_P23_33425e_220908_Run1.csv',date)
-adv01_2 = gd.getData('Adv01_P16_5e621f_220908_Run2.csv',date)
-adv01_3 = gd.getData('Adv01_P16_a314fa_220908_Run3.csv',date)
+# adv01_1 = gd.getData('Adv01_P23_33425e_220908_Run1.csv',date)
+# adv01_2 = gd.getData('Adv01_P16_5e621f_220908_Run2.csv',date)
+# adv01_3 = gd.getData('Adv01_P16_a314fa_220908_Run3.csv',date)
 
-adv02_1 = gd.getData('Adv2_P23_21fef3_220907_Run1.csv',date)
-adv02_2 = gd.getData('Adv2_P23_ae5298_220907_Run2.csv',date)
-adv02_3 = gd.getData('Adv2_P23_9bd409_220907_Run3.csv',date)
+# adv02_1 = gd.getData('Adv2_P23_21fef3_220907_Run1.csv',date)
+# adv02_2 = gd.getData('Adv2_P23_ae5298_220907_Run2.csv',date)
+# adv02_3 = gd.getData('Adv2_P23_9bd409_220907_Run3.csv',date)
 
-adv03_1 = gd.getData('Adv3_P20_220829_Run01.csv',date)
-adv03_2 = gd.getData('Adv3_P20_220829_Run021.csv',date)
-adv03_3 = gd.getData('Adv3_P20_220829_Run033.csv',date)
+# adv03_1 = gd.getData('Adv3_P20_220829_Run01.csv',date)
+# adv03_2 = gd.getData('Adv3_P20_220829_Run021.csv',date)
+# adv03_3 = gd.getData('Adv3_P20_220829_Run033.csv',date)
 
-adv04_1 = gd.getData('Adv4_P20_45275f_220829_Run01.csv',date)
-adv04_2 = gd.getData('Adv4_P21_220829_Run02.csv',date)
-adv04_3 = gd.getData('Adv4_P21_220829_Run03.csv',date)
+# adv04_1 = gd.getData('Adv4_P20_45275f_220829_Run01.csv',date)
+# adv04_2 = gd.getData('Adv4_P21_220829_Run02.csv',date)
+# adv04_3 = gd.getData('Adv4_P21_220829_Run03.csv',date)
+
+
+
+
+
+
+
+date = '14Sep2022'
+adv01_1 = gd.getPcrData('Adv01_DV03_220907_Run1.csv',date)
+adv01_2 = gd.getPcrData('Adv01_DV03_220907_Run2.csv',date)
+adv01_3 = gd.getPcrData('Adv01_DV03_220907_Run3.csv',date)
+
+adv02_1 = gd.getPcrData('Adv02_DV03_220907_Run1.csv',date)
+adv02_2 = gd.getPcrData('Adv02_DV03_220907_Run2.csv',date)
+adv02_3 = gd.getPcrData('Adv02_DV03_220907_Run3.csv',date)
+
+adv03_1 = gd.getPcrData('Adv3_DV03_220829_Run01.csv',date)
+adv03_2 = gd.getPcrData('Adv3_DV03_220829_Run02.csv',date)
+adv03_3 = gd.getPcrData('Adv3_DV03_220829_Run03.csv',date)
+
+adv04_1 = gd.getPcrData('Adv4_DV09_220829_Run01.csv',date)
+adv04_2 = gd.getPcrData('Adv4_DV09_220829_Run02.csv',date)
+adv04_3 = gd.getPcrData('Adv4_DV09_220829_Run03.csv',date)

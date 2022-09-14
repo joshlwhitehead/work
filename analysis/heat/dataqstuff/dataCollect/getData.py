@@ -50,6 +50,7 @@ def getData(filename,date):
     timeMod = []
     samp2Mod = []
     modelMod = []
+    
     for i in range(len(sampRaw)):
         if str(sampRaw[i]) != 'nan':
             sampMod.append(sampRaw[i])
@@ -65,4 +66,26 @@ def getData(filename,date):
     
     return time,thermMod,sampMod,samp2Mod,modelRaw,wav3,wavTime
 
+
+def getPcrData(filename,date):
+    fullSheet = pd.read_csv(''.join(['../data/',date,'/',filename]))
+    modelRaw = fullSheet['PCR Modeled TempC'].tolist()
+    time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
+    if 'PCR Thermocouple TempC' in fullSheet:
+        sampRaw = fullSheet['PCR Thermocouple TempC'].tolist()
+
+    sampMod = []
+    modelMod = []
+    timeMod = []
+
+    for i in range(len(sampRaw)):
+        if str(sampRaw[i]) != 'nan':
+            sampMod.append(sampRaw[i])
+            modelMod.append(modelRaw[i])
+            timeMod.append(time[i])
+    
+    if len(sampMod) != 0:
+        sampInterp = interp.interp1d(timeMod,sampMod)
+        sampMod = sampInterp(time)
+    return time,1,sampMod,3,modelRaw
 
