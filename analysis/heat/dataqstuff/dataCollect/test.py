@@ -1,7 +1,8 @@
-import dataToVar as dat
+# import dataToVar as dat
 
 import matplotlib.pyplot as plt
 
 
-plt.plot(dat.test[0][:len(dat.test[2])],dat.test[2])
-plt.show()
+josh=[1,3,2]
+josh.append([3,4,5])
+print(josh)

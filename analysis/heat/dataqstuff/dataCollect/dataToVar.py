@@ -373,3 +373,19 @@ adv03_3 = gd.getPcrData('Adv3_DV03_220829_Run03.csv',date)
 adv04_1 = gd.getPcrData('Adv4_DV09_220829_Run01.csv',date)
 adv04_2 = gd.getPcrData('Adv4_DV09_220829_Run02.csv',date)
 adv04_3 = gd.getPcrData('Adv4_DV09_220829_Run03.csv',date)
+
+
+
+
+
+
+
+
+
+date = '15Sep2022'
+adv10_1 = gd.getPcrData('AdvB10_PCR_091422_Run1.csv',date)
+adv10_2 = gd.getPcrData('AdvB10_PCR_091522_Run2.csv',date)
+
+test = gd.test('test.csv',date)
+
+print(test[1][-10:])

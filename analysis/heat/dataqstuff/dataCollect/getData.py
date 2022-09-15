@@ -89,3 +89,18 @@ def getPcrData(filename,date):
         sampMod = sampInterp(time)
     return time,1,sampMod,3,modelRaw
 
+def test(filename,date):
+    fullSheet = pd.read_csv(''.join(['../data/',date,'/',filename]))
+    timeRaw = np.array(fullSheet['timeSinceBoot'])
+    if 'PCR Temp' in fullSheet:
+        thermRaw = fullSheet['PCR Temp'].tolist()
+    if 'PCR Thermocouple TempC' in fullSheet:
+        sampRaw = fullSheet['PCR Thermocouple TempC'].tolist()
+        samp = []
+        time = []
+        for i in sampRaw:
+            if str(i) != 'nan' and i not in samp:
+                samp.append(i)
+                time.append(timeRaw[sampRaw.index(i)])
+    return time,samp
+
