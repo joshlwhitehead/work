@@ -4,12 +4,12 @@ import serial
 from threading import Thread
 import time
 import os
-
+#hi
 date = '23Sep2022'
 directory = ''.join(['data/',date])
 folder = os.path.isdir(directory)
 if folder == True:
-    pass
+    pass 
 else:
     os.mkdir(directory)
 
