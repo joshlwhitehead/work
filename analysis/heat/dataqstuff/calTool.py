@@ -51,7 +51,7 @@ dataq = DataQ([(1,'t'),(2,'t'),(3,'t')])#,(4,'t'),(5,'t')])
 
 t = Thread(target=dataQThread, args=(dataq,f))
 t.start()
-ser = serial.Serial('COM9', 115200)
+ser = serial.Serial('COM4', 115200)
 
 
 while (True):

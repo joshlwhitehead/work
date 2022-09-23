@@ -389,3 +389,9 @@ adv10_2 = gd.getPcrData('AdvB10_PCR_091522_Run2.csv',date)
 test = gd.test('test.csv',date)
 
 print(test[1][-10:])
+
+
+
+date = '23Sep2022'
+
+trip = gd.getData('tripleTCa.csv',date)

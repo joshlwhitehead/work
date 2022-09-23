@@ -24,8 +24,15 @@ def getData(filename,date):
                 wavTime.append(time[i])
     if 'Stage1 Thermocouple TempC 2' in fullSheet.columns:
         samp2Raw = fullSheet['Stage1 Thermocouple TempC 2'].tolist()
+    elif 'liquid2' in fullSheet.columns:
+        samp2Raw = fullSheet['liquid2']
     else:
         samp2Raw = np.ones(len(sampRaw))
+    
+    if 'liquid3' in fullSheet.columns:
+        samp3Raw = fullSheet['liquid3']
+    else:
+        samp3Raw = np.ones(len(sampRaw))
 
    
     # setRaw = fullSheet['stage1SetTempC'].tolist()
@@ -49,6 +56,7 @@ def getData(filename,date):
     sampMod = []
     timeMod = []
     samp2Mod = []
+    samp3Mod = []
     modelMod = []
     
     for i in range(len(sampRaw)):
@@ -56,15 +64,18 @@ def getData(filename,date):
             sampMod.append(sampRaw[i])
             timeMod.append(time[i])
             samp2Mod.append(samp2Raw[i])
+            samp3Mod.append(samp3Raw[i])
             modelMod.append(modelRaw[i])
     # print(sampMod[:5])
     if len(sampMod) != 0:
         sampInterp = interp.interp1d(timeMod,sampMod)
         sampMod = sampInterp(time[:-4])
         samp2Interp = interp.interp1d(timeMod,samp2Mod)
+        samp3Interp = interp.interp1d(timeMod,samp3Mod)
         samp2Mod = samp2Interp(time[:-4])
+        samp3Mod = samp3Interp(time[:-4])
     
-    return time,thermMod,sampMod,samp2Mod,modelRaw,wav3,wavTime
+    return time,thermMod,sampMod,samp2Mod,modelRaw,samp3Mod,wav3,wavTime
 
 
 def getPcrData(filename,date):

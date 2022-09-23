@@ -1,0 +1,1078 @@
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.39 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.41 | liquid2 = 20.36 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.37 | liquid3 = 20.43 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.37 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.37 | liquid3 = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.38 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.42 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.4 | liquid2 = 20.38 | liquid3 = 20.43 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.5 | liquid3 = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.35 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.55 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | liquid2 = 20.48 | liquid3 = 20.35 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.5 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.45 | liquid3 = 20.39 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | liquid2 = 20.45 | liquid3 = 20.37 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.4 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.46 | liquid3 = 20.32 | 
+DATAQ:  | Stg1ThermoTempC = 20.38 | liquid2 = 20.45 | liquid3 = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.44 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.45 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.52 | liquid3 = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.52 | liquid3 = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.58 | liquid3 = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.52 | liquid3 = 20.71 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.45 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.38 | liquid2 = 20.46 | liquid3 = 20.7 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.49 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.45 | liquid3 = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.51 | liquid3 = 20.65 | 
+DATAQ:  | Stg1ThermoTempC = 20.35 | liquid2 = 20.42 | liquid3 = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.47 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.47 | liquid3 = 20.65 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.42 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.7 | liquid2 = 20.39 | liquid3 = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 21.0 | liquid2 = 20.45 | liquid3 = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 21.14 | liquid2 = 20.48 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.38 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.89 | liquid2 = 20.41 | liquid3 = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.79 | liquid2 = 20.39 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.87 | liquid2 = 20.42 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.96 | liquid2 = 20.49 | liquid3 = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.51 | liquid3 = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.47 | liquid3 = 20.6 | 
+DATAQ:  | Stg1ThermoTempC = 20.75 | liquid2 = 20.4 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.48 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.75 | liquid2 = 20.43 | liquid3 = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | liquid2 = 20.79 | liquid3 = 20.35 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | liquid2 = 20.82 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.78 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.86 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | liquid2 = 20.8 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.81 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.81 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.74 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.68 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.76 | liquid3 = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.83 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.81 | liquid3 = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.77 | liquid3 = 20.4 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.84 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.77 | liquid3 = 20.43 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.81 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.72 | liquid3 = 20.43 | 
+DATAQ:  | Stg1ThermoTempC = 20.59 | liquid2 = 20.81 | liquid3 = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.8 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.7 | liquid3 = 20.39 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.82 | liquid3 = 20.4 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | liquid2 = 20.82 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.79 | liquid3 = 20.42 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | liquid2 = 20.83 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.86 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | liquid2 = 20.77 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | liquid2 = 20.79 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.67 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | liquid2 = 20.68 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.7 | liquid3 = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.71 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.8 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.72 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.77 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | liquid2 = 20.75 | liquid3 = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.78 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.79 | liquid3 = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | liquid2 = 20.81 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.75 | liquid3 = 20.4 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.75 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.64 | liquid2 = 20.77 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | liquid2 = 20.77 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | liquid2 = 20.83 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | liquid2 = 20.83 | liquid3 = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.83 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.94 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | liquid2 = 20.78 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | liquid2 = 20.88 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | liquid2 = 20.76 | liquid3 = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.66 | liquid2 = 20.86 | liquid3 = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.82 | liquid3 = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | liquid2 = 20.77 | liquid3 = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.68 | liquid2 = 20.78 | liquid3 = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | liquid2 = 20.77 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | liquid2 = 20.75 | liquid3 = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.72 | liquid3 = 20.38 | 
+DATAQ:  | Stg1ThermoTempC = 20.64 | liquid2 = 20.81 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.58 | liquid3 = 20.82 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.62 | liquid3 = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.61 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.61 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.61 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.65 | liquid3 = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.63 | liquid3 = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.6 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.61 | liquid3 = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.64 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.65 | liquid3 = 20.9 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.61 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.64 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.41 | liquid2 = 20.63 | liquid3 = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.56 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.62 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.59 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.66 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.64 | liquid3 = 20.87 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.66 | liquid3 = 20.77 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.52 | liquid3 = 20.85 | 
+DATAQ:  | Stg1ThermoTempC = 20.41 | liquid2 = 20.59 | liquid3 = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.4 | liquid2 = 20.64 | liquid3 = 20.9 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.65 | liquid3 = 20.89 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.62 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.58 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.57 | liquid3 = 20.83 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.64 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.63 | liquid3 = 20.83 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.55 | liquid3 = 20.9 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.59 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.4 | liquid2 = 20.62 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.42 | liquid2 = 20.61 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.39 | liquid2 = 20.59 | liquid3 = 20.83 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.67 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | liquid2 = 20.62 | liquid3 = 20.8 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.62 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.4 | liquid2 = 20.59 | liquid3 = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.63 | liquid3 = 20.8 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.61 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.66 | liquid3 = 20.89 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.58 | liquid3 = 20.85 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.64 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.68 | liquid3 = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.4 | liquid2 = 20.59 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.63 | liquid3 = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | liquid2 = 20.59 | liquid3 = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.71 | liquid3 = 20.9 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.61 | liquid3 = 20.85 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | liquid2 = 20.62 | liquid3 = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | liquid2 = 20.61 | liquid3 = 20.77 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | liquid2 = 20.57 | liquid3 = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.43 | liquid2 = 20.63 | liquid3 = 20.82 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | liquid2 = 20.62 | liquid3 = 20.8 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.69 | liquid3 = 20.84 | 
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.49 | liquid3 = 20.6 | 
+DATAQ:  | Stg1ThermoTempC = 20.8 | liquid2 = 20.39 | liquid3 = 20.6 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.46 | liquid3 = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.8 | liquid2 = 20.38 | liquid3 = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 20.79 | liquid2 = 20.48 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.42 | liquid3 = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.43 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.43 | liquid3 = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.78 | liquid2 = 20.43 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.9 | liquid2 = 20.44 | liquid3 = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.44 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.87 | liquid2 = 20.53 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.51 | liquid3 = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.77 | liquid2 = 20.47 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.47 | liquid3 = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.42 | liquid3 = 20.63 | 
+[0;32mI (124885) Door Status: : Closed[0m
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.44 | liquid3 = 20.64 | 
+[0;33mW (124946) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (125046) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (125146) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;33mW (125246) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (125296) colorSensorSetGain: Setting color sensor gain to 10[0m
+[0;32mI (125303) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;31mE (125346) taskMonitor_task: Task System Control Task hasn't checked in for 600 ms...[0m
+[0;32mI (125421) colorSensorSetGain: Setting color sensor gain to 5[0m
+[0;32mI (125422) colorSensorSetIntegrationTimeMs: Setting integration time to 50[0m
+[0;31mE (125446) taskMonitor_task: Task System Control Task hasn't checked in for 600 ms...[0m
+[0;32mI (125541) customUtil_isCupPresent: Cup Detected![0m
+[0;32mI (125542) systemRequestStateChange: System State Transition IDLE -> READY[0m
+[0;32mI (125544) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;31mE (125549) taskMonitor_task: Task System Control Task hasn't checked in for 600 ms...[0m
+[0;32mI (125559) BLE_PERIPH: Notifying[0m
+[0;33mW (125562) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (125568) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (125574) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (125615) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (125617) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (125675) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (125676) BLE_PERIPH: Received 18/18[0m
+[0;32mI (125678) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (125710) BLE_PERIPH: Sending Response Packet: [34,true,46,["2022-09-23T20:59:36.951Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",84320,28.25,29.84,2,0,0,0.00],0][0m
+[0;32mI (125715) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 46, ["2022-09-23T20:59:36.951Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 84320, 28.25, 29.84, 2, 0, 0, 0.00], 0]
+[0;32mI (125765) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,46,["2022-09-23T20:59:36.951Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",84320,28.25,29.84,2,0,0,0.00],0][0m
+[0;32mI (125825) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (125827) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (125885) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.48 | liquid3 = 20.65 | 
+[0;32mI (125945) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (125947) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (126005) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (126006) BLE_PERIPH: Received 18/18[0m
+[0;32mI (126008) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (126036) BLE_PERIPH: Sending Response Packet: [34,true,45,["2022-09-23T20:59:36.951Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",84645,28.25,29.85,2,0,0,0.00],0][0m
+[0;32mI (126041) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 45, ["2022-09-23T20:59:36.951Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 84645, 28.25, 29.85, 2, 0, 0, 0.00], 0]
+[0;32mI (126094) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,45,["2022-09-23T20:59:36.951Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",84645,28.25,29.85,2,0,0,0.00],0][0m
+[0;32mI (126185) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (126187) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (126245) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.58 | liquid3 = 20.65 | 
+[0;32mI (126995) BLE_PERIPH: App to Instrument Transaction Write 0/1118[0m
+[0;32mI (126997) BLE_PERIPH: App to Instrument Transaction Notify 0/1118[0m
+[0;32mI (127145) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127146) BLE_PERIPH: Received 178/1118[0m
+[0;32mI (127147) BLE_PERIPH: App to Instrument Transaction Notify 178/1118[0m
+[0;32mI (127265) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127266) BLE_PERIPH: Received 356/1118[0m
+[0;32mI (127267) BLE_PERIPH: App to Instrument Transaction Notify 356/1118[0m
+[0;32mI (127328) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127329) BLE_PERIPH: Received 534/1118[0m
+[0;32mI (127331) BLE_PERIPH: App to Instrument Transaction Notify 534/1118[0m
+[0;32mI (127475) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127476) BLE_PERIPH: Received 712/1118[0m
+[0;32mI (127477) BLE_PERIPH: App to Instrument Transaction Notify 712/1118[0m
+[0;32mI (127538) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127539) BLE_PERIPH: Received 890/1118[0m
+[0;32mI (127541) BLE_PERIPH: App to Instrument Transaction Notify 890/1118[0m
+[0;32mI (127685) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127686) BLE_PERIPH: Received 1068/1118[0m
+[0;32mI (127687) BLE_PERIPH: App to Instrument Transaction Notify 1068/1118[0m
+[0;32mI (127776) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (127777) BLE_PERIPH: Received 1118/1118[0m
+[0;32mI (127789) BLE_PERIPH: App to Instrument Transaction Notify 1118/1118[0m
+DATAQ:  | Stg1ThermoTempC = 20.77 | liquid2 = 20.5 | liquid3 = 20.62 | 
+[0;32mI (127811) ExperimentParam: Parsing experiment parameters:
+[{
+		"doPcr":	false,
+		"doMelt":	false,
+		"doRtSteps":	false,
+		"rtTempSteps":	[{
+				"tempC":	60,
+				"holdSeconds":	10
+			}],
+		"doSamplePrep":	true,
+		"thumperSteps":	[{
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	100
+			}, {
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	100
+			}, {
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	100
+			}, {
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	75
+			}, {
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	75
+			}, {
+				"onMs":	100,
+				"offMs":	100,
+				"dutyCyclePercent":	75
+			}],
+		"meltStartTemp":	55,
+		"pcrCycleCount":	55,
+		"doCupVibration":	false,
+		"meltFinishTemp":	90,
+		"colorSensorGain":	6,
+		"thumperCycleCount":	6,
+		"samplePrepDoPlunge":	true,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	90,
+				"holdSeconds":	0
+			}, {
+				"tempC":	65,
+				"holdSeconds":	4,
+				"performCapture":	true
+			}],
+		"samplePrepDoPtcSeal":	true,
+		"samplePrepTempSteps":	[{
+				"tempC":	30,
+				"holdSeconds":	2
+			}],
+		"meltAcquisitionsPerC":	5,
+		"meltStartCaptureTemp":	60,
+		"doContinuousAcquisition":	true,
+		"excitationOnDelayTimeMs":	6,
+		"samplePrepPtcSealTimeMs":	30000,
+		"meltStartHoldTimeSeconds":	5,
+		"meltRampRateDegCPerSecond":	0.35,
+		"excitationOutputPercentage":	100,
+		"colorSensorIntegrationTimeMs":	25,
+		"samplePrepPcrChamberPreheatTempC":	60,
+		"continuousAcquisitionSampleDelayMs":	1000
+	}][0m
+[0;33mW (127936) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (127943) ExperimentParam: Found parameter doContinuousAcquisition: 1[0m
+[0;33mW (127950) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (127958) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000[0m
+[0;32mI (127967) ExperimentParam: Could not find parameter isMocked, using default value: 0[0m
+[0;33mW (127975) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (127983) ExperimentParam: Found parameter colorSensorGain: 6[0m
+[0;32mI (127990) ExperimentParam: Found parameter colorSensorIntegrationTimeMs: 25[0m
+[0;32mI (127997) ExperimentParam: Found parameter excitationOnDelayTimeMs: 6[0m
+[0;32mI (128004) ExperimentParam: Found parameter excitationOutputPercentage: 100[0m
+[0;32mI (128012) ExperimentParam: Could not find parameter temperaturecaptureDelayMs, using default value: 3000[0m
+[0;32mI (128022) ExperimentParam: Could not find parameter continualRun, using default value: 0[0m
+[0;32mI (128031) ExperimentParam: Found parameter doSamplePrep: 1[0m
+[0;32mI (128038) ExperimentParam: Found parameter tempC: 30.00[0m
+[0;32mI (128044) ExperimentParam: Found parameter holdSeconds: 2.00[0m
+[0;32mI (128050) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00[0m
+[0;32mI (128060) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0[0m
+[0;32mI (128070) ProtocolParam: Found parameter samplePrepTempSteps: {30.00C,2.00s,1000.00C/s (?capture=0)},[0m
+[0;33mW (128079) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (128087) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 60.00[0m
+[0;33mW (128095) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (128103) ExperimentParam: Found parameter samplePrepDoPlunge: 1[0m
+[0;32mI (128110) ExperimentParam: Found parameter samplePrepDoPtcSeal: 1[0m
+[0;33mW (128117) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (128124) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000[0m
+[0;32mI (128132) ExperimentParam: Could not find parameter samplePreDoImmediateSeal, using explicit default value: 0[0m
+[0;32mI (128143) ExperimentParam: Found parameter doCupVibration: 0[0m
+[0;32mI (128149) ExperimentParam: Found parameter doRtSteps: 0[0m
+[0;32mI (128155) ExperimentParam: Found parameter doPcr: 0[0m
+[0;32mI (128161) ExperimentParam: Found parameter doMelt: 0[0m
+[0;32mI (128167) BLE_PERIPH: Sending Response Packet: [32,true,47,[],0][0m
+[0;32mI (128174) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/17[0m
+[32, true, 47, [], 0]
+[0;32mI (128225) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=17 mtu=183, totalSize=17, currentIndex=0): [32,true,47,[],0][0m
+[0;32mI (128285) BLE_PERIPH: Instrument to App Transaction Write 17/17[0m
+[0;32mI (128287) BLE_PERIPH: Instrument to App Transaction Read/Notify 17/17[0m
+[0;32mI (128345) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (128405) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (128407) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (128465) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (128466) BLE_PERIPH: Received 17/17[0m
+[0;32mI (128468) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+[0;32mI (128485) BLE_PERIPH: Sending Response Packet: [34,true,48,["","",87095,28.21,29.81,2,0,0,0.00],0][0m
+[0;32mI (128486) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/51[0m
+[34, true, 48, ["", "", 87095, 28.21, 29.81, 2, 0, 0, 0.00], 0]
+[0;32mI (128554) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=51 mtu=183, totalSize=51, currentIndex=0): [34,true,48,["","",87095,28.21,29.81,2,0,0,0.00],0][0m
+[0;32mI (128645) BLE_PERIPH: Instrument to App Transaction Write 51/51[0m
+[0;32mI (128647) BLE_PERIPH: Instrument to App Transaction Read/Notify 51/51[0m
+[0;32mI (128705) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (128765) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (128767) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;32mI (128825) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (128826) BLE_PERIPH: Received 18/18[0m
+[0;32mI (128828) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+DATAQ:  | Stg1ThermoTempC = 20.77 | liquid2 = 20.53 | liquid3 = 20.62 | 
+[0;32mI (128859) BLE_PERIPH: Sending Response Packet: [33,true,49,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":6,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":2.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":60.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (128968) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1318[0m
+[33, true, 49, [{
+		"doContinuousAcquisition":	true,
+		"continuousAcquisitionSampleDelayMs":	1000,
+		"isMocked":	false,
+		"colorSensorGain":	6,
+		"colorSensorIntegrationTimeMs":	25,
+		"excitationOnDelayTimeMs":	6,
+		"excitationOutputPercentage":	100.00,
+		"doSamplePrep":	true,
+		"samplePrepTempSteps":	[{
+				"tempC":	30.00,
+				"holdSeconds":	2.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"samplePrepPcrChamberPreheatTempC":	60.00,
+		"samplePrepDoPlunge":	true,
+		"samplePrepDoPtcSeal":	true,
+		"samplePreDoImmediateSeal":	false,
+		"samplePrepPtcSealTimeMs":	30000,
+		"doCupVibration":	false,
+		"thumperCycleCount":	0,
+		"thumperCyclingSteps":	[],
+		"doRtSteps":	false,
+		"pcrPreheatTempSteps":	[{
+				"tempC":	45.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	95.00,
+				"holdSeconds":	30.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}],
+		"doPcr":	false,
+		"pcrCycleCount":	45,
+		"pcrCyclingTempSteps":	[{
+				"tempC":	95.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	0
+			}, {
+				"tempC":	60.00,
+				"holdSeconds":	10.00,
+				"rampRate":	1000.00,
+				"performCapture":	1
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}, {
+				"tempC":	0.00,
+				"holdSeconds":	0.00,
+				"rampRate":	0.00,
+				"performCapture":	0
+			}],
+		"doMelt":	false,
+		"meltStartHoldTimeSeconds":	15.00,
+		"meltStartTemp":	55.00,
+		"meltStartCaptureTemp":	60.00,
+		"meltFinishTemp":	100.00,
+		"meltAcquisitionDelayMs":	800.00,
+		"meltAcquisitionsPerC":	5,
+		"meltRampRateDegCPerSecond":	0.25
+	}], 0]
+[0;33mW (129005) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (129131) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=0): [33,true,49,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs"[0m
+[0;31mE (129158) thermalControlTask: thermal control sleep.[0m
+[0;33mW (129168) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;32mI (129275) BLE_PERIPH: Instrument to App Transaction Write 183/1318[0m
+[0;32mI (129277) BLE_PERIPH: Instrument to App Transaction Read/Notify 183/1318[0m
+[0;32mI (129335) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=183): :6,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":30.00,"holdSeconds":2.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPrehea[0m
+[0;32mI (129425) BLE_PERIPH: Instrument to App Transaction Write 366/1318[0m
+[0;32mI (129427) BLE_PERIPH: Instrument to App Transaction Read/Notify 366/1318[0m
+[0;32mI (129485) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=366): tTempC":60.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thump[0m
+[0;32mI (129575) BLE_PERIPH: Instrument to App Transaction Write 549/1318[0m
+[0;32mI (129577) BLE_PERIPH: Instrument to App Transaction Read/Notify 549/1318[0m
+[0;32mI (129665) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=549): erCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":100[0m
+[0;32mI (129785) BLE_PERIPH: Instrument to App Transaction Write 732/1318[0m
+[0;32mI (129787) BLE_PERIPH: Instrument to App Transaction Read/Notify 732/1318[0m
+[0;32mI (129844) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=732): 0.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds[0m
+[0;32mI (129935) BLE_PERIPH: Instrument to App Transaction Write 915/1318[0m
+[0;32mI (129937) BLE_PERIPH: Instrument to App Transaction Read/Notify 915/1318[0m
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.56 | liquid3 = 20.64 | 
+[0;32mI (129995) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=915): ":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0[0m
+[0;32mI (130115) BLE_PERIPH: Instrument to App Transaction Write 1098/1318[0m
+[0;32mI (130117) BLE_PERIPH: Instrument to App Transaction Read/Notify 1098/1318[0m
+[0;32mI (130175) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1318, currentIndex=1098): }],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,[0m
+[0;32mI (130265) BLE_PERIPH: Instrument to App Transaction Write 1281/1318[0m
+[0;32mI (130267) BLE_PERIPH: Instrument to App Transaction Read/Notify 1281/1318[0m
+[0;32mI (130355) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=37 mtu=183, totalSize=1318, currentIndex=1281): "meltRampRateDegCPerSecond":0.25}],0][0m
+[0;32mI (130445) BLE_PERIPH: Instrument to App Transaction Write 1318/1318[0m
+[0;32mI (130447) BLE_PERIPH: Instrument to App Transaction Read/Notify 1318/1318[0m
+[0;32mI (130505) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (130745) BLE_PERIPH: App to Instrument Transaction Write 0/83[0m
+[0;32mI (130747) BLE_PERIPH: App to Instrument Transaction Notify 0/83[0m
+[0;32mI (130865) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (130865) BLE_PERIPH: Received 83/83[0m
+[0;32mI (130868) BLE_PERIPH: App to Instrument Transaction Notify 83/83[0m
+DATAQ:  | Stg1ThermoTempC = 20.89 | liquid2 = 20.51 | liquid3 = 20.65 | 
+[0;32mI (130912) experimentRequestStateChange: Experiment State Transition IDLE -> START[0m
+[0;32mI (130913) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 15 seconds[0m
+[0;32mI (130917) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds[0m
+[0;32mI (130925) DEVICE USAGE: Printing device usage logs[0m
+[0;32mI (130930) DEVICE USAGE: Lifter Up Times:                         102[0m
+[0;32mI (130937) DEVICE USAGE: Lifter Down Times:                       137[0m
+[0;32mI (130944) DEVICE USAGE: Thumper Vibrated Times:                  276[0m
+[0;32mI (130952) DEVICE USAGE: Thumper Stalled Times:                   361[0m
+[0;32mI (130959) DEVICE USAGE: Solenoid Times:                          233[0m
+[0;32mI (130966) DEVICE USAGE: Plunge Times:                            48[0m
+[0;33mW (130973) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms[0m
+[0;32mI (130981) DEVICE USAGE: Laser Activation Times:                  68799[0m
+[0;32mI (130988) DEVICE USAGE: Fluorimiter Reads:                       207023[0m
+[0;32mI (130996) DEVICE USAGE: Front Button Presses:                    35[0m
+[0;32mI (131003) DEVICE USAGE: Back Button Presses:                     3342[0m
+[0;32mI (131010) DEVICE USAGE: Total Completed Runs:                    91[0m
+[0;32mI (131017) DEVICE USAGE: PTC On Time (Seconds):                   1325[0m
+[0;32mI (131024) DEVICE USAGE: Treatment Chamber TEC On Time (Seconds): 12991[0m
+[0;32mI (131032) DEVICE USAGE: PCR Chamber TEC On Time (Seconds):       59482[0m
+[0;32mI (131039) DEVICE USAGE: Fan On Time (Seconds):                   92121[0m
+[0;33mW (131046) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (131054) _airboatStateEnter: Lifter Down[0m
+[0;31mE (131058) thermalControlTask: thermal control sleep.[0m
+[0;32mI (131064) experimentStateStartEnter: Experiment starting[0m
+[0;33mW (131070) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;33mW (131106) _deleteFile: Failed to delete file because erno 2[0m
+[0;32mI (131107) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;32mI (131109) colorSensorSetIntegrationTimeMs: Setting integration time to 25[0m
+[0;32mI (131117) experimentTask: Experiment State Transition START -> SAMPLE_PREP[0m
+[0;33mW (131123) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms[0m
+[0;32mI (131132) BLE_PERIPH: Sending Response Packet: [35,true,50,[],0][0m
+[0;32mI (131138) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[35, true, 50, [], 0]
+[0;32mI (131144) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/17[0m
+[0;33mW (131153) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms[0m
+[0;32mI (131161) BLE_PERIPH: Notifying[0m
+[0;33mW (131165) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (131171) BLE_PERIPH: Notify Command Id = 34[0m
+[0;32mI (131178) systemRequestStateChange: System State Transition READY -> RUNNING[0m
+[0;32mI (131184) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;32mI (131190) BLE_PERIPH: Notifying[0m
+[0;33mW (131193) comm_getNotifyId: Attempting to get notify id[0m
+[0;32mI (131199) BLE_PERIPH: Notify Command Id = 34[0m
+[0;33mW (131206) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (131225) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=17 mtu=183, totalSize=17, currentIndex=0): [35,true,50,[],0][0m
+[0;32mI (131262) colorSensorSetGain: Setting color sensor gain to 7[0m
+[0;32mI (131266) colorSensorSetIntegrationTimeMs: Setting integration time to 100[0m
+[0;32mI (131285) BLE_PERIPH: Instrument to App Transaction Write 17/17[0m
+[0;32mI (131287) BLE_PERIPH: Instrument to App Transaction Read/Notify 17/17[0m
+[0;33mW (131312) heapMonitor_checkFreeHeapSize: New heap low water mark 112080[0m
+[0;33mW (131316) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;32mI (131375) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (131435) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (131437) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;33mW (131479) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (131495) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (131496) BLE_PERIPH: Received 18/18[0m
+[0;32mI (131498) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (131529) BLE_PERIPH: Sending Response Packet: [34,true,52,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",469,28.17,29.77,3,2,33,0.00],0][0m
+[0;32mI (131534) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/110[0m
+[34, true, 52, ["2022-09-23T21:01:06.769Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 469, 28.17, 29.77, 3, 2, 33, 0.00], 0]
+[0;33mW (131579) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (131585) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=110 mtu=183, totalSize=110, currentIndex=0): [34,true,52,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",469,28.17,29.77,3,2,33,0.00],0][0m
+[0;32mI (131645) BLE_PERIPH: Instrument to App Transaction Write 110/110[0m
+[0;32mI (131647) BLE_PERIPH: Instrument to App Transaction Read/Notify 110/110[0m
+[0;33mW (131679) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (131705) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (131765) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (131767) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;33mW (131772) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 1968[0m
+[0;32mI (131778) _readLifterSwitches: New Lifter Up Value: 0[0m
+[0;31mE (131781) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...[0m
+[0;32mI (131825) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (131826) BLE_PERIPH: Received 18/18[0m
+[0;32mI (131828) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (131854) BLE_PERIPH: Sending Response Packet: [34,true,51,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",794,28.17,29.78,3,2,33,0.00],0][0m
+[0;32mI (131859) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/110[0m
+[34, true, 51, ["2022-09-23T21:01:06.769Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 794, 28.17, 29.78, 3, 2, 33, 0.00], 0]
+[0;32mI (131945) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=110 mtu=183, totalSize=110, currentIndex=0): [34,true,51,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",794,28.17,29.78,3,2,33,0.00],0][0m
+[0;33mW (131990) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.55 | liquid3 = 20.63 | 
+[0;32mI (132065) BLE_PERIPH: Instrument to App Transaction Write 110/110[0m
+[0;32mI (132067) BLE_PERIPH: Instrument to App Transaction Read/Notify 110/110[0m
+[0;33mW (132090) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (132125) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (132185) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (132187) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;33mW (132190) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (132245) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (132246) BLE_PERIPH: Received 18/18[0m
+[0;32mI (132248) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;32mI (132279) BLE_PERIPH: Sending Response Packet: [34,true,54,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1219,28.16,29.76,3,2,33,0.00],0][0m
+[0;32mI (132284) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[0;32mI (132290) colorSensorSetGain: Setting color sensor gain to 6[0m
+[34, true, 54, ["2022-09-23T21:01:06.769Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 1219, 28.16, 29.76, 3, 2, 33, 0.00], 0]
+[0;31mE (132297) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...[0m
+[0;32mI (132316) colorSensorSetIntegrationTimeMs: Setting integration time to 25[0m
+[0;32mI (132324) colorSensorSetGain: Setting color sensor gain to 7[0m
+[0;32mI (132331) colorSensorSetIntegrationTimeMs: Setting integration time to 100[0m
+[0;32mI (132338) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,54,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1219,28.16,29.76,3,2,33,0.00],0][0m
+[0;32mI (132395) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (132397) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (132485) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (132545) BLE_PERIPH: App to Instrument Transaction Write 0/18[0m
+[0;32mI (132547) BLE_PERIPH: App to Instrument Transaction Notify 0/18[0m
+[0;33mW (132566) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (132635) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (132636) BLE_PERIPH: Received 18/18[0m
+[0;32mI (132638) BLE_PERIPH: App to Instrument Transaction Notify 18/18[0m
+[0;33mW (132666) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (132669) BLE_PERIPH: Sending Response Packet: [34,true,53,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1609,28.16,29.76,3,2,33,0.00],0][0m
+[0;32mI (132678) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[34, true, 53, ["2022-09-23T21:01:06.769Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 1609, 28.16, 29.76, 3, 2, 33, 0.00], 0]
+[0;32mI (132725) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,53,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1609,28.16,29.76,3,2,33,0.00],0][0m
+[0;33mW (132766) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (132785) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (132787) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;32mI (132845) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;32mI (132905) BLE_PERIPH: App to Instrument Transaction Write 0/17[0m
+[0;32mI (132907) BLE_PERIPH: App to Instrument Transaction Notify 0/17[0m
+[0;32mI (132965) BLE_PERIPH: App to Instrument Data[0m
+[0;32mI (132966) BLE_PERIPH: Received 17/17[0m
+[0;32mI (132968) BLE_PERIPH: App to Instrument Transaction Notify 17/17[0m
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.55 | liquid3 = 20.66 | 
+[0;32mI (132999) BLE_PERIPH: Sending Response Packet: [34,true,55,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1939,28.15,29.78,3,2,33,0.00],0][0m
+[0;32mI (133004) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111[0m
+[0;33mW (133010) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[34, true, 55, ["2022-09-23T21:01:06.769Z", "44ec4274-3606-482a-a3fb-37a72f4f6fa1", 1939, 28.15, 29.78, 3, 2, 33, 0.00], 0]
+[0;32mI (133055) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,55,["2022-09-23T21:01:06.769Z","44ec4274-3606-482a-a3fb-37a72f4f6fa1",1939,28.15,29.78,3,2,33,0.00],0][0m
+[0;33mW (133119) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (133145) BLE_PERIPH: Instrument to App Transaction Write 111/111[0m
+[0;32mI (133147) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111[0m
+[0;33mW (133219) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms[0m
+[0;32mI (133265) BLE_PERIPH: Instrument to App Transaction Write -1/-1[0m
+[0;31mE (133319) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...[0m
+[0;32mI (133319) colorSensorSetGain: Setting color sensor gain to 6[0m
+[0;32mI (133324) colorSensorSetIntegrationTimeMs: Setting integration time to 25[0m
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.47 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.64 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.55 | liquid3 = 20.65 | 
+[0;32mI (136185) eventMarker: 5127, Plunge Check Read 1[0m
+[0;32mI (136186) _resetThermalControlState: RESET Peltier 0 control state[0m
+[0;32mI (136187) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 30.0[0m
+[0;32mI (136195) _setThermalControlState: thermalControl-0: changing state 3->1[0m
+[0;33mW (136202) tecCurvePredictorSetHoldPower: Not setting hold Power for ST1[0m
+[0;32mI (136209) thermalControlSetEnable: Enabling Peltier 0[0m
+[0;32mI (136229) _st1ModelCalculate: St1 Using Heating Equations[0m
+[0;32mI (136235) TC: TC-0 = 28.11, modeled = 24.00, target = 30.00, heatSink = 27.95, output = 50.0, timeout = 0, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (136290) _performCapture: [5231,0,29.84,5,92,18,2,3,2,4,3,0,32,0][0m
+[0;32mI (136384) TC: TC-0 = 28.11, modeled = 24.00, target = 30.00, heatSink = 27.95, output = 100.0, timeout = 150, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (136553) TC: TC-0 = 28.16, modeled = 24.00, target = 30.00, heatSink = 27.94, output = 100.0, timeout = 300, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (136703) TC: TC-0 = 28.40, modeled = 24.00, target = 30.00, heatSink = 27.93, output = 100.0, timeout = 450, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (136853) TC: TC-0 = 29.10, modeled = 24.00, target = 30.00, heatSink = 27.89, output = 100.0, timeout = 600, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (137003) TC: TC-0 = 29.93, modeled = 24.00, target = 30.00, heatSink = 27.85, output = 100.0, timeout = 750, exptTempC = 0.00, TecRate = 0.000[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.58 | liquid3 = 20.62 | 
+[0;32mI (137153) TC: TC-0 = 30.91, modeled = 24.00, target = 30.00, heatSink = 27.78, output = 100.0, timeout = 900, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (137303) TC: TC-0 = 32.02, modeled = 24.00, target = 30.00, heatSink = 27.71, output = 100.0, timeout = 1050, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (137447) _performCapture: [6388,0,29.82,5,106,18,2,3,2,4,3,1,37,0][0m
+[0;32mI (137453) TC: TC-0 = 33.62, modeled = 24.00, target = 30.00, heatSink = 27.60, output = 100.0, timeout = 1200, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (137603) TC: TC-0 = 34.90, modeled = 24.00, target = 30.00, heatSink = 27.52, output = 100.0, timeout = 1350, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (137753) TC: TC-0 = 36.18, modeled = 24.00, target = 30.00, heatSink = 27.44, output = 100.0, timeout = 1500, exptTempC = 0.00, TecRate = -0.000[0m
+[0;32mI (137903) TC: TC-0 = 37.98, modeled = 24.00, target = 30.00, heatSink = 27.34, output = 100.0, timeout = 1650, exptTempC = 0.00, TecRate = -0.000[0m
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.59 | liquid3 = 20.61 | 
+[0;32mI (138053) TC: TC-0 = 39.30, modeled = 24.00, target = 30.00, heatSink = 27.25, output = 100.0, timeout = 1800, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138203) TC: TC-0 = 40.64, modeled = 24.00, target = 30.00, heatSink = 27.16, output = 100.0, timeout = 1950, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138353) TC: TC-0 = 42.40, modeled = 24.00, target = 30.00, heatSink = 27.06, output = 100.0, timeout = 2100, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138503) TC: TC-0 = 43.73, modeled = 24.00, target = 30.00, heatSink = 26.99, output = 100.0, timeout = 2250, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138556) _performCapture: [7497,0,29.81,5,106,22,2,3,3,4,4,2,87,0][0m
+[0;32mI (138653) TC: TC-0 = 45.06, modeled = 24.00, target = 30.00, heatSink = 26.92, output = 100.0, timeout = 2400, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138803) TC: TC-0 = 46.81, modeled = 24.00, target = 30.00, heatSink = 26.83, output = 100.0, timeout = 2550, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (138953) TC: TC-0 = 48.11, modeled = 24.00, target = 30.00, heatSink = 26.75, output = 100.0, timeout = 2700, exptTempC = 0.00, TecRate = 0.000[0m
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.55 | liquid3 = 20.65 | 
+[0;32mI (139103) TC: TC-0 = 49.40, modeled = 24.00, target = 30.00, heatSink = 26.68, output = 100.0, timeout = 2850, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (139253) TC: TC-0 = 50.65, modeled = 24.00, target = 30.00, heatSink = 26.61, output = 100.0, timeout = 3000, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (139403) TC: TC-0 = 52.29, modeled = 24.00, target = 30.00, heatSink = 26.53, output = 100.0, timeout = 3150, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (139553) TC: TC-0 = 53.50, modeled = 24.00, target = 30.00, heatSink = 26.46, output = 100.0, timeout = 3300, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (139666) _performCapture: [8607,0,29.79,6,111,30,2,3,3,5,4,3,157,0][0m
+[0;32mI (139703) TC: TC-0 = 54.72, modeled = 24.00, target = 30.00, heatSink = 26.40, output = 100.0, timeout = 3450, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (139853) TC: TC-0 = 56.30, modeled = 24.00, target = 30.00, heatSink = 26.33, output = 100.0, timeout = 3600, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (140003) TC: TC-0 = 57.50, modeled = 24.00, target = 30.00, heatSink = 26.27, output = 100.0, timeout = 3750, exptTempC = 0.00, TecRate = 0.000[0m
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.64 | liquid3 = 20.65 | 
+[0;32mI (140153) TC: TC-0 = 58.64, modeled = 24.00, target = 30.00, heatSink = 26.23, output = 100.0, timeout = 3900, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (140303) TC: TC-0 = 60.15, modeled = 24.00, target = 30.00, heatSink = 26.16, output = 100.0, timeout = 4050, exptTempC = 0.00, TecRate = -0.000[0m
+[0;32mI (140453) TC: TC-0 = 61.26, modeled = 24.00, target = 30.00, heatSink = 26.12, output = 100.0, timeout = 4200, exptTempC = 0.00, TecRate = -0.000[0m
+[0;32mI (140603) TC: TC-0 = 62.39, modeled = 24.00, target = 30.00, heatSink = 26.07, output = 100.0, timeout = 4350, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (140753) TC: TC-0 = 63.48, modeled = 24.00, target = 30.00, heatSink = 26.02, output = 100.0, timeout = 4500, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (140771) _performCapture: [9712,0,29.77,7,122,39,3,3,4,6,5,3,206,0][0m
+[0;32mI (140903) TC: TC-0 = 64.93, modeled = 24.00, target = 30.00, heatSink = 25.96, output = 100.0, timeout = 4650, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (141053) TC: TC-0 = 65.98, modeled = 24.00, target = 30.00, heatSink = 25.92, output = 100.0, timeout = 4800, exptTempC = 0.00, TecRate = 0.000[0m
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.64 | liquid3 = 20.63 | 
+[0;32mI (141155) _readLifterSwitches: New Lifter Down Value: 1[0m
+[0;32mI (141161) _airboatStateEnter: Reached Bottom[0m
+[0;32mI (141203) TC: TC-0 = 67.02, modeled = 24.00, target = 30.00, heatSink = 25.87, output = 100.0, timeout = 4950, exptTempC = 0.00, TecRate = 0.000[0m
+[0;32mI (141262) _airboatStateEnter: ALL STOP[0m
+[0;32mI (141353) TC: TC-0 = 68.37, modeled = 24.11, target = 30.00, heatSink = 25.82, output = 100.0, timeout = 5100, exptTempC = 0.00, TecRate = 0.954[0m
+[0;32mI (141503) TC: TC-0 = 69.38, modeled = 24.26, target = 30.00, heatSink = 25.78, output = 100.0, timeout = 5250, exptTempC = 0.00, TecRate = 0.997[0m
+[0;32mI (141652) TC: TC-0 = 70.36, modeled = 24.40, target = 30.00, heatSink = 25.75, output = 100.0, timeout = 5400, exptTempC = 0.00, TecRate = 0.911[0m
+[0;32mI (141802) TC: TC-0 = 71.68, modeled = 24.54, target = 30.00, heatSink = 25.70, output = 100.0, timeout = 5550, exptTempC = 0.00, TecRate = 0.937[0m
+[0;32mI (141876) _performCapture: [10817,0,29.75,8,130,47,3,3,5,7,5,3,242,0][0m
+[0;32mI (141952) TC: TC-0 = 72.65, modeled = 24.68, target = 30.00, heatSink = 25.67, output = 100.0, timeout = 5700, exptTempC = 0.00, TecRate = 0.955[0m
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.59 | liquid3 = 20.67 | 
+[0;32mI (142102) TC: TC-0 = 73.60, modeled = 24.83, target = 30.00, heatSink = 25.63, output = 100.0, timeout = 5850, exptTempC = 0.00, TecRate = 0.973[0m
+[0;32mI (142252) TC: TC-0 = 74.87, modeled = 24.98, target = 30.00, heatSink = 25.58, output = 100.0, timeout = 6000, exptTempC = 0.00, TecRate = 0.998[0m
+[0;32mI (142402) TC: TC-0 = 75.78, modeled = 25.13, target = 30.00, heatSink = 25.55, output = 100.0, timeout = 6150, exptTempC = 0.00, TecRate = 1.015[0m
+[0;32mI (142552) TC: TC-0 = 76.72, modeled = 25.28, target = 30.00, heatSink = 25.53, output = 100.0, timeout = 6300, exptTempC = 0.00, TecRate = 1.033[0m
+[0;32mI (142702) TC: TC-0 = 77.59, modeled = 25.44, target = 30.00, heatSink = 25.49, output = 100.0, timeout = 6450, exptTempC = 0.00, TecRate = 1.049[0m
+[0;32mI (142852) TC: TC-0 = 78.77, modeled = 25.60, target = 30.00, heatSink = 25.46, output = 100.0, timeout = 6600, exptTempC = 0.00, TecRate = 1.072[0m
+[0;32mI (142995) _performCapture: [11937,0,29.73,8,131,48,3,3,5,7,6,3,246,0][0m
+[0;32mI (143003) TC: TC-0 = 79.64, modeled = 25.76, target = 30.00, heatSink = 25.44, output = 100.0, timeout = 6750, exptTempC = 0.00, TecRate = 1.088[0m
+DATAQ:  | Stg1ThermoTempC = 20.89 | liquid2 = 20.64 | liquid3 = 20.7 | 
+[0;32mI (143152) TC: TC-0 = 80.51, modeled = 25.92, target = 30.00, heatSink = 25.41, output = 100.0, timeout = 6900, exptTempC = 0.00, TecRate = 1.104[0m
+[0;32mI (143302) TC: TC-0 = 81.65, modeled = 26.09, target = 30.00, heatSink = 25.39, output = 100.0, timeout = 7050, exptTempC = 0.00, TecRate = 1.126[0m
+[0;32mI (143452) TC: TC-0 = 82.47, modeled = 26.26, target = 30.00, heatSink = 25.37, output = 100.0, timeout = 7200, exptTempC = 0.00, TecRate = 1.141[0m
+[0;32mI (143602) TC: TC-0 = 83.32, modeled = 26.44, target = 30.00, heatSink = 25.36, output = 100.0, timeout = 7350, exptTempC = 0.00, TecRate = 1.156[0m
+[0;32mI (143752) TC: TC-0 = 84.40, modeled = 26.61, target = 30.00, heatSink = 25.33, output = 100.0, timeout = 7500, exptTempC = 0.00, TecRate = 1.177[0m
+[0;32mI (143902) TC: TC-0 = 85.19, modeled = 26.79, target = 30.00, heatSink = 25.32, output = 100.0, timeout = 7650, exptTempC = 0.00, TecRate = 1.191[0m
+[0;32mI (144053) TC: TC-0 = 85.96, modeled = 26.97, target = 30.00, heatSink = 25.31, output = 50.0, timeout = 7800, exptTempC = 0.00, TecRate = 1.205[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.62 | liquid3 = 20.66 | 
+[0;32mI (144106) _performCapture: [13047,0,29.71,8,131,49,3,3,6,7,5,3,247,1][0m
+[0;32mI (144202) TC: TC-0 = 86.76, modeled = 27.15, target = 30.00, heatSink = 25.29, output = -100.0, timeout = 7900, exptTempC = 0.00, TecRate = 1.219[0m
+[0;32mI (144352) TC: TC-0 = 87.78, modeled = 27.34, target = 30.00, heatSink = 25.29, output = -100.0, timeout = 8050, exptTempC = 0.00, TecRate = 1.238[0m
+[0;32mI (144502) TC: TC-0 = 88.28, modeled = 27.52, target = 30.00, heatSink = 25.28, output = -100.0, timeout = 8200, exptTempC = 0.00, TecRate = 1.245[0m
+[0;32mI (144652) TC: TC-0 = 88.40, modeled = 27.71, target = 30.00, heatSink = 25.30, output = -100.0, timeout = 8350, exptTempC = 0.00, TecRate = 1.244[0m
+[0;32mI (144802) TC: TC-0 = 87.90, modeled = 27.89, target = 30.00, heatSink = 25.40, output = -100.0, timeout = 8500, exptTempC = 0.00, TecRate = 1.228[0m
+[0;32mI (144952) TC: TC-0 = 87.23, modeled = 28.08, target = 30.00, heatSink = 25.54, output = -100.0, timeout = 8650, exptTempC = 0.00, TecRate = 1.208[0m
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.59 | liquid3 = 20.62 | 
+[0;31mE (145098) _switchToSteadyStateCheck: Switching to steady state DECLINE[0m
+[0;32mI (145103) TC: TC-0 = 86.37, modeled = 28.26, target = 30.00, heatSink = 25.74, output = -100.0, timeout = 8800, exptTempC = 0.00, TecRate = 1.183[0m
+[0;32mI (145218) _performCapture: [14159,0,29.69,8,131,49,3,3,6,7,5,3,248,1][0m
+[0;32mI (145253) TC: TC-0 = 85.01, modeled = 28.43, target = 30.00, heatSink = 26.05, output = -100.0, timeout = 8950, exptTempC = 0.00, TecRate = 1.147[0m
+[0;32mI (145402) TC: TC-0 = 83.94, modeled = 28.60, target = 30.00, heatSink = 26.31, output = -100.0, timeout = 9100, exptTempC = 0.00, TecRate = 1.118[0m
+[0;32mI (145552) TC: TC-0 = 82.79, modeled = 28.76, target = 30.00, heatSink = 26.60, output = -100.0, timeout = 9250, exptTempC = 0.00, TecRate = 1.088[0m
+[0;32mI (145702) TC: TC-0 = 81.25, modeled = 28.92, target = 30.00, heatSink = 27.02, output = -100.0, timeout = 9400, exptTempC = 0.00, TecRate = 1.049[0m
+[0;32mI (145852) TC: TC-0 = 80.04, modeled = 29.08, target = 30.00, heatSink = 27.32, output = -100.0, timeout = 9550, exptTempC = 0.00, TecRate = 1.017[0m
+[0;32mI (146002) TC: TC-0 = 78.86, modeled = 29.23, target = 30.00, heatSink = 27.63, output = -100.0, timeout = 9700, exptTempC = 0.00, TecRate = 0.987[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.57 | liquid3 = 20.67 | 
+[0;32mI (146152) TC: TC-0 = 77.67, modeled = 29.37, target = 30.00, heatSink = 27.93, output = -100.0, timeout = 9850, exptTempC = 0.00, TecRate = 0.956[0m
+[0;32mI (146303) TC: TC-0 = 76.14, modeled = 29.51, target = 30.00, heatSink = 28.35, output = -100.0, timeout = 10000, exptTempC = 0.00, TecRate = 0.918[0m
+[0;32mI (146323) _performCapture: [15264,0,29.68,8,131,49,3,3,5,7,6,3,248,0][0m
+[0;32mI (146452) TC: TC-0 = 74.99, modeled = 29.65, target = 30.00, heatSink = 28.65, output = -100.0, timeout = 10150, exptTempC = 0.00, TecRate = 0.889[0m
+[0;32mI (146602) TC: TC-0 = 73.89, modeled = 29.78, target = 30.00, heatSink = 28.95, output = -100.0, timeout = 10300, exptTempC = 0.00, TecRate = 0.861[0m
+[0;32mI (146752) TC: TC-0 = 72.43, modeled = 29.90, target = 30.00, heatSink = 29.35, output = -100.0, timeout = 10450, exptTempC = 0.00, TecRate = 0.825[0m
+[0;33mW (146797) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2136[0m
+[0;32mI (146902) TC: TC-0 = 71.32, modeled = 30.02, target = 30.00, heatSink = 29.64, output = -100.0, timeout = 10600, exptTempC = 0.00, TecRate = 0.797[0m
+[0;32mI (147052) TC: TC-0 = 70.27, modeled = 30.14, target = 30.00, heatSink = 29.94, output = -100.0, timeout = 10750, exptTempC = 0.00, TecRate = 0.771[0m
+DATAQ:  | Stg1ThermoTempC = 20.82 | liquid2 = 20.57 | liquid3 = 20.65 | 
+[0;32mI (147202) TC: TC-0 = 68.89, modeled = 30.25, target = 30.00, heatSink = 30.33, output = -100.0, timeout = 10900, exptTempC = 0.00, TecRate = 0.738[0m
+[0;32mI (147352) TC: TC-0 = 67.86, modeled = 30.36, target = 30.00, heatSink = 30.61, output = -100.0, timeout = 11050, exptTempC = 0.00, TecRate = 0.712[0m
+[0;33mW (147403) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 30.394796, threshold: 30.200001[0m
+[0;32mI (147428) _performCapture: [16369,0,29.66,8,131,49,3,3,5,7,6,3,249,0][0m
+[0;32mI (147448) _setThermalControlState: thermalControl-0: changing state 1->3[0m
+[0;33mW (147449) _setTempReachedCallback: Set Temp Reached[0m
+[0;32mI (147502) TC: TC-0 = 66.86, modeled = 30.46, target = 30.00, heatSink = 30.89, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.688[0m
+[0;32mI (147652) TC: TC-0 = 65.54, modeled = 30.56, target = 30.00, heatSink = 31.26, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.656[0m
+[0;32mI (147802) TC: TC-0 = 64.55, modeled = 30.66, target = 30.00, heatSink = 31.52, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.632[0m
+[0;32mI (147952) TC: TC-0 = 63.60, modeled = 30.75, target = 30.00, heatSink = 31.82, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.609[0m
+[0;32mI (148102) TC: TC-0 = 62.68, modeled = 30.84, target = 30.00, heatSink = 32.07, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.587[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.6 | liquid3 = 20.64 | 
+[0;32mI (148252) TC: TC-0 = 61.47, modeled = 30.93, target = 30.00, heatSink = 32.41, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.559[0m
+[0;32mI (148402) TC: TC-0 = 60.57, modeled = 31.01, target = 30.00, heatSink = 32.67, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.537[0m
+[0;32mI (148563) TC: TC-0 = 59.70, modeled = 31.09, target = 30.00, heatSink = 32.92, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.517[0m
+[0;32mI (148571) _performCapture: [17512,0,29.65,8,132,49,3,3,5,7,6,3,249,0][0m
+[0;32mI (148712) TC: TC-0 = 58.66, modeled = 31.16, target = 30.00, heatSink = 33.23, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.492[0m
+[0;32mI (148862) TC: TC-0 = 57.74, modeled = 31.23, target = 30.00, heatSink = 33.51, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.471[0m
+[0;32mI (149012) TC: TC-0 = 56.62, modeled = 31.30, target = 30.00, heatSink = 33.84, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.445[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.64 | liquid3 = 20.72 | 
+[0;32mI (149162) TC: TC-0 = 55.79, modeled = 31.37, target = 30.00, heatSink = 34.08, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.426[0m
+[0;32mI (149312) TC: TC-0 = 55.00, modeled = 31.43, target = 30.00, heatSink = 34.33, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.408[0m
+[0;32mI (149462) TC: TC-0 = 53.95, modeled = 31.49, target = 30.00, heatSink = 34.64, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.384[0m
+[0;32mI (149518) eventMarker: 18460, Start Heating PCR[0m
+[0;31mE (149518) _applyThermalBrakeUpdate: Worst Temp: 36.845802[0m
+[0;33mW (149519) _updateInertiaCompensation: overshoot: 1.845802, updatedComp: 1.845802, atIndex: 1 atTemp: 35.0[0m
+[0;32mI (149529) _resetThermalControlState: RESET Peltier 1 control state[0m
+[0;32mI (149536) thermalControlSetTargetTempC: [1] MAX RAMPING  goto 60.0[0m
+[0;32mI (149543) _setThermalControlState: thermalControl-1: changing state 3->1[0m
+[0;33mW (149550) tecCurvePredictorSetHoldPower: hold power: -97.616928 filtered: -11.785080 temp: 29.632929[0m
+[0;32mI (149566) thermalControlSetEnable: Enabling Peltier 1[0m
+[0;32mI (149612) TC: TC-0 = 53.17, modeled = 31.54, target = 30.00, heatSink = 34.87, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.366[0m
+[0;32mI (149624) TC: TC-1 = 29.56, modeled = 29.63, target = 60.00, heatSink = 29.29, output = 50.0, timeout = 0, exptTempC = 35.00, TecRate = -0.017[0m
+[0;33mW (149631) systemTasksMonitorStack: Stack Watermark(Experiment): 2136[0m
+[0;32mI (149642) _performCapture: [18584,0,29.63,8,132,49,3,3,5,7,6,3,248,0][0m
+[0;32mI (149762) TC: TC-0 = 52.39, modeled = 31.60, target = 30.00, heatSink = 35.12, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.348[0m
+[0;32mI (149774) TC: TC-1 = 29.57, modeled = 29.63, target = 60.00, heatSink = 29.30, output = 100.0, timeout = 150, exptTempC = 35.00, TecRate = -0.009[0m
+[0;32mI (149912) TC: TC-0 = 51.39, modeled = 31.65, target = 30.00, heatSink = 35.44, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.326[0m
+[0;32mI (149924) TC: TC-1 = 29.56, modeled = 29.63, target = 60.00, heatSink = 29.30, output = 100.0, timeout = 300, exptTempC = 35.00, TecRate = -0.013[0m
+[0;32mI (150062) TC: TC-0 = 50.67, modeled = 31.69, target = 30.00, heatSink = 35.66, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.310[0m
+[0;32mI (150074) TC: TC-1 = 29.61, modeled = 29.63, target = 60.00, heatSink = 29.28, output = 100.0, timeout = 450, exptTempC = 35.00, TecRate = 0.087[0m
+DATAQ:  | Stg1ThermoTempC = 20.78 | liquid2 = 20.55 | liquid3 = 20.64 | 
+[0;32mI (150212) TC: TC-0 = 49.95, modeled = 31.74, target = 30.00, heatSink = 35.89, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.294[0m
+[0;32mI (150224) TC: TC-1 = 29.80, modeled = 29.67, target = 60.00, heatSink = 29.24, output = 100.0, timeout = 600, exptTempC = 35.00, TecRate = 0.365[0m
+[0;32mI (150362) TC: TC-0 = 49.23, modeled = 31.78, target = 30.00, heatSink = 36.12, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.278[0m
+[0;32mI (150374) TC: TC-1 = 30.38, modeled = 29.79, target = 60.00, heatSink = 29.16, output = 100.0, timeout = 750, exptTempC = 35.00, TecRate = 1.273[0m
+[0;32mI (150512) TC: TC-0 = 48.28, modeled = 31.82, target = 30.00, heatSink = 36.42, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.257[0m
+[0;32mI (150524) TC: TC-1 = 31.06, modeled = 30.02, target = 60.00, heatSink = 29.09, output = 100.0, timeout = 900, exptTempC = 35.00, TecRate = 1.690[0m
+[0;32mI (150662) TC: TC-0 = 47.60, modeled = 31.86, target = 30.00, heatSink = 36.63, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.242[0m
+[0;32mI (150674) TC: TC-1 = 31.92, modeled = 30.33, target = 60.00, heatSink = 29.01, output = 100.0, timeout = 1050, exptTempC = 35.00, TecRate = 2.281[0m
+[0;32mI (150750) _performCapture: [19691,0,30.34,8,131,49,3,3,5,7,6,3,250,0][0m
+[0;32mI (150813) TC: TC-0 = 46.93, modeled = 31.89, target = 30.00, heatSink = 36.86, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.227[0m
+[0;32mI (150825) TC: TC-1 = 32.95, modeled = 30.74, target = 60.00, heatSink = 28.93, output = 100.0, timeout = 1200, exptTempC = 35.00, TecRate = 2.890[0m
+[0;32mI (150963) TC: TC-0 = 46.04, modeled = 31.92, target = 30.00, heatSink = 37.17, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.208[0m
+[0;32mI (150975) TC: TC-1 = 34.55, modeled = 31.30, target = 60.00, heatSink = 28.81, output = 100.0, timeout = 1350, exptTempC = 35.00, TecRate = 4.014[0m
+[0;32mI (151113) TC: TC-0 = 45.39, modeled = 31.95, target = 30.00, heatSink = 37.38, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.194[0m
+DATAQ:  | Stg1ThermoTempC = 20.79 | liquid2 = 20.58 | liquid3 = 20.68 | 
+[0;32mI (151125) TC: TC-1 = 35.87, modeled = 31.94, target = 60.00, heatSink = 28.74, output = 100.0, timeout = 1500, exptTempC = 35.00, TecRate = 4.313[0m
+[0;32mI (151263) TC: TC-0 = 44.75, modeled = 31.98, target = 30.00, heatSink = 37.58, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.180[0m
+[0;32mI (151275) TC: TC-1 = 37.26, modeled = 32.61, target = 60.00, heatSink = 28.66, output = 100.0, timeout = 1650, exptTempC = 35.00, TecRate = 4.619[0m
+[0;32mI (151413) TC: TC-0 = 43.92, modeled = 32.01, target = 30.00, heatSink = 37.86, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.162[0m
+[0;32mI (151425) TC: TC-1 = 39.20, modeled = 33.43, target = 60.00, heatSink = 28.57, output = 100.0, timeout = 1800, exptTempC = 35.00, TecRate = 5.543[0m
+[0;32mI (151563) TC: TC-0 = 43.30, modeled = 32.03, target = 30.00, heatSink = 38.07, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.149[0m
+[0;32mI (151575) TC: TC-1 = 40.72, modeled = 34.26, target = 60.00, heatSink = 28.50, output = 100.0, timeout = 1950, exptTempC = 35.00, TecRate = 5.567[0m
+[0;32mI (151713) TC: TC-0 = 42.69, modeled = 32.05, target = 30.00, heatSink = 38.27, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.136[0m
+[0;32mI (151725) TC: TC-1 = 42.28, modeled = 35.10, target = 60.00, heatSink = 28.42, output = 100.0, timeout = 2100, exptTempC = 35.00, TecRate = 5.661[0m
+[0;32mI (151863) TC: TC-0 = 42.08, modeled = 32.07, target = 30.00, heatSink = 38.46, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.123[0m
+[0;32mI (151875) TC: TC-1 = 44.41, modeled = 36.03, target = 60.00, heatSink = 28.32, output = 100.0, timeout = 2250, exptTempC = 35.00, TecRate = 7.078[0m
+[0;32mI (151883) _performCapture: [20825,0,35.71,8,132,50,3,3,5,7,6,3,252,0][0m
+[0;32mI (152013) TC: TC-0 = 41.28, modeled = 32.09, target = 30.00, heatSink = 38.75, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.107[0m
+[0;32mI (152025) TC: TC-1 = 46.03, modeled = 37.00, target = 60.00, heatSink = 28.27, output = 100.0, timeout = 2400, exptTempC = 35.00, TecRate = 6.414[0m
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.56 | liquid3 = 20.6 | 
+[0;32mI (152163) TC: TC-0 = 40.70, modeled = 32.10, target = 30.00, heatSink = 38.98, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.094[0m
+[0;32mI (152175) TC: TC-1 = 47.61, modeled = 37.94, target = 60.00, heatSink = 28.20, output = 100.0, timeout = 2550, exptTempC = 35.00, TecRate = 6.249[0m
+[0;32mI (152313) TC: TC-0 = 40.12, modeled = 32.12, target = 30.00, heatSink = 39.15, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.082[0m
+[0;32mI (152325) TC: TC-1 = 49.70, modeled = 38.93, target = 60.00, heatSink = 28.14, output = 100.0, timeout = 2700, exptTempC = 35.00, TecRate = 7.444[0m
+[0;32mI (152463) TC: TC-0 = 39.38, modeled = 32.13, target = 30.00, heatSink = 39.41, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.067[0m
+[0;32mI (152475) TC: TC-1 = 51.27, modeled = 39.95, target = 60.00, heatSink = 28.09, output = 100.0, timeout = 2850, exptTempC = 35.00, TecRate = 6.645[0m
+[0;32mI (152613) TC: TC-0 = 38.82, modeled = 32.14, target = 30.00, heatSink = 39.61, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.055[0m
+[0;32mI (152625) TC: TC-1 = 52.84, modeled = 40.92, target = 60.00, heatSink = 28.03, output = 100.0, timeout = 3000, exptTempC = 35.00, TecRate = 6.454[0m
+[0;32mI (152763) TC: TC-0 = 38.28, modeled = 32.14, target = 30.00, heatSink = 39.80, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.044[0m
+[0;32mI (152775) TC: TC-1 = 54.38, modeled = 41.88, target = 60.00, heatSink = 27.99, output = 100.0, timeout = 3150, exptTempC = 35.00, TecRate = 6.336[0m
+[0;32mI (152913) TC: TC-0 = 37.58, modeled = 32.15, target = 30.00, heatSink = 40.06, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.030[0m
+[0;32mI (152925) TC: TC-1 = 56.40, modeled = 42.92, target = 60.00, heatSink = 27.94, output = 100.0, timeout = 3300, exptTempC = 35.00, TecRate = 6.919[0m
+[0;32mI (152999) _performCapture: [21940,0,42.91,8,131,50,3,3,5,7,6,3,252,0][0m
+[0;32mI (153064) TC: TC-0 = 37.04, modeled = 32.15, target = 30.00, heatSink = 40.26, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.019[0m
+[0;32mI (153076) TC: TC-1 = 57.92, modeled = 43.93, target = 60.00, heatSink = 27.90, output = 100.0, timeout = 3450, exptTempC = 35.00, TecRate = 6.642[0m
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.59 | liquid3 = 20.64 | 
+[0;32mI (153214) TC: TC-0 = 36.51, modeled = 32.15, target = 30.00, heatSink = 40.44, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = 0.008[0m
+[0;32mI (153226) TC: TC-1 = 59.43, modeled = 44.91, target = 60.00, heatSink = 27.87, output = 100.0, timeout = 3600, exptTempC = 35.00, TecRate = 6.477[0m
+[0;32mI (153364) TC: TC-0 = 35.99, modeled = 32.15, target = 30.00, heatSink = 40.63, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.002[0m
+[0;32mI (153376) TC: TC-1 = 61.39, modeled = 45.92, target = 60.00, heatSink = 27.83, output = 100.0, timeout = 3750, exptTempC = 35.00, TecRate = 7.551[0m
+[0;32mI (153514) TC: TC-0 = 35.31, modeled = 32.15, target = 30.00, heatSink = 40.89, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.015[0m
+[0;32mI (153526) TC: TC-1 = 62.84, modeled = 46.95, target = 60.00, heatSink = 27.81, output = 100.0, timeout = 3900, exptTempC = 35.00, TecRate = 6.738[0m
+[0;32mI (153664) TC: TC-0 = 34.81, modeled = 32.15, target = 30.00, heatSink = 41.08, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.025[0m
+[0;32mI (153676) TC: TC-1 = 64.27, modeled = 47.94, target = 60.00, heatSink = 27.79, output = 100.0, timeout = 4050, exptTempC = 35.00, TecRate = 6.503[0m
+[0;32mI (153814) TC: TC-0 = 34.32, modeled = 32.14, target = 30.00, heatSink = 41.27, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.035[0m
+[0;32mI (153826) TC: TC-1 = 66.13, modeled = 48.95, target = 60.00, heatSink = 27.76, output = 100.0, timeout = 4200, exptTempC = 35.00, TecRate = 7.448[0m
+[0;32mI (153964) TC: TC-0 = 33.70, modeled = 32.14, target = 30.00, heatSink = 41.51, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.047[0m
+[0;32mI (153976) TC: TC-1 = 67.50, modeled = 49.96, target = 60.00, heatSink = 27.74, output = 100.0, timeout = 4350, exptTempC = 35.00, TecRate = 6.631[0m
+[0;32mI (154114) TC: TC-0 = 33.21, modeled = 32.13, target = 30.00, heatSink = 41.70, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.057[0m
+DATAQ:  | Stg1ThermoTempC = 20.96 | liquid2 = 20.61 | liquid3 = 20.65 | 
+[0;32mI (154126) TC: TC-1 = 68.84, modeled = 50.93, target = 60.00, heatSink = 27.72, output = 100.0, timeout = 4500, exptTempC = 35.00, TecRate = 6.377[0m
+[0;32mI (154134) _performCapture: [23076,0,50.61,8,131,50,3,3,5,7,6,3,252,0][0m
+[0;32mI (154264) TC: TC-0 = 32.74, modeled = 32.12, target = 30.00, heatSink = 41.88, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.066[0m
+[0;32mI (154276) TC: TC-1 = 70.16, modeled = 51.87, target = 60.00, heatSink = 27.70, output = 100.0, timeout = 4650, exptTempC = 35.00, TecRate = 6.222[0m
+[0;32mI (154414) TC: TC-0 = 32.13, modeled = 32.11, target = 30.00, heatSink = 42.11, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.078[0m
+[0;32mI (154426) TC: TC-1 = 71.90, modeled = 52.87, target = 60.00, heatSink = 27.68, output = 100.0, timeout = 4800, exptTempC = 35.00, TecRate = 6.689[0m
+[0;32mI (154602) TC: TC-0 = 31.69, modeled = 32.10, target = 30.00, heatSink = 42.28, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.086[0m
+[0;32mI (154615) TC: TC-1 = 73.19, modeled = 53.85, target = 60.00, heatSink = 27.66, output = 100.0, timeout = 4950, exptTempC = 35.00, TecRate = 6.381[0m
+[0;31mE (154621) thermalControlTask: thermal control sleep.[0m
+[0;32mI (154741) TC: TC-0 = 31.15, modeled = 32.08, target = 30.00, heatSink = 42.49, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.096[0m
+[0;32mI (154753) TC: TC-1 = 74.69, modeled = 54.83, target = 60.00, heatSink = 27.65, output = 100.0, timeout = 5100, exptTempC = 35.00, TecRate = 6.580[0m
+[0;32mI (154891) TC: TC-0 = 30.69, modeled = 32.07, target = 30.00, heatSink = 42.70, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.105[0m
+[0;32mI (154903) TC: TC-1 = 76.00, modeled = 55.80, target = 60.00, heatSink = 27.64, output = 100.0, timeout = 5250, exptTempC = 35.00, TecRate = 6.324[0m
+[0;32mI (155041) TC: TC-0 = 30.11, modeled = 32.05, target = 30.00, heatSink = 42.93, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.116[0m
+[0;32mI (155053) TC: TC-1 = 77.61, modeled = 56.80, target = 60.00, heatSink = 27.63, output = 100.0, timeout = 5400, exptTempC = 35.00, TecRate = 6.647[0m
+DATAQ:  | Stg1ThermoTempC = 20.9 | liquid2 = 20.62 | liquid3 = 20.66 | 
+[0;32mI (155191) TC: TC-0 = 29.68, modeled = 32.03, target = 30.00, heatSink = 43.09, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.124[0m
+[0;32mI (155208) TC: TC-1 = 78.80, modeled = 57.76, target = 60.00, heatSink = 27.62, output = 0.0, timeout = 5550, exptTempC = 35.00, TecRate = 6.285[0m
+[0;32mI (155341) TC: TC-0 = 29.27, modeled = 32.01, target = 30.00, heatSink = 43.26, output = -100.0, timeout = 0, exptTempC = 30.00, TecRate = -0.131[0m
+[0;32mI (155359) TC: TC-1 = 79.96, modeled = 58.68, target = 60.00, heatSink = 27.62, output = -100.0, timeout = 5650, exptTempC = 35.00, TecRate = 6.075[0m
+[0;32mI (155365) _performCapture: [24307,0,58.38,8,131,50,3,3,5,7,5,3,253,0][0m
+
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.61 | liquid3 = 20.75 | 
+ ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x16 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7356
+ho 0 tail 12 room 4
+load:0x40078000,len:14904
+ho 0 tail 12 room 4
+load:0x40080400,len:3688
+entry 0x4008067c
+[0;32mI (31) boot: ESP-IDF v4.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 11:52:01[0m
+[0;32mI (31) boot: chip revision: 3[0m
+[0;32mI (34) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00010000[0m
+[0;32mI (79) boot:  1 otadata          OTA data         01 00 00019000 00002000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot:  3 ota_0            OTA app          00 10 00120000 00100000[0m
+[0;32mI (101) boot:  4 ota_1            OTA app          00 11 00220000 00100000[0m
+[0;32mI (109) boot:  5 storage          Unknown data     01 82 00320000 00100000[0m
+[0;32mI (116) boot: End of partition table[0m
+[0;32mI (121) boot: Defaulting to factory image[0m
+[0;32mI (125) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (132) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=19328h (103208) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00039350 vaddr=3ffbdb60 size=051f4h ( 20980) load[0m
+[0;32mI (187) esp_image: segment 2: paddr=0003e54c vaddr=40080000 size=01acch (  6860) load[0m
+[0;32mI (190) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7f434h (521268) map[0m
+[0;32mI (381) esp_image: segment 4: paddr=000bf45c vaddr=40081acc size=17674h ( 95860) load[0m
+[0;32mI (421) esp_image: segment 5: paddr=000d6ad8 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Pro cpu up.[0m
+[0;32mI (446) cpu_start: Starting app cpu, entry point is 0x400813f8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (462) cpu_start: Pro cpu start user code[0m
+[0;32mI (462) cpu_start: cpu freq: 240000000[0m
+[0;32mI (462) cpu_start: Application information:[0m
+[0;32mI (466) cpu_start: Project name:     pcr-firmware[0m
+[0;32mI (472) cpu_start: App version:      v0.5.501-dirty[0m
+[0;32mI (477) cpu_start: Compile time:     Sep 22 2022 13:51:14[0m
+[0;32mI (483) cpu_start: ELF file SHA256:  ec7722366964eac3...[0m
+[0;32mI (489) cpu_start: ESP-IDF:          v4.3.2-dirty[0m
+[0;32mI (495) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (502) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFD6828 len 000097D8 (37 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (539) heap_init: At 40099140 len 00006EC0 (27 KiB): IRAM[0m
+[0;32mI (547) spi_flash: detected chip: generic[0m
+[0;32mI (550) spi_flash: flash io: dio[0m
+[0;33mW (554) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (569) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.57 | liquid3 = 20.64 | 
+[0;32mI (786) printInfo: 
+
+**************************************************
+
+PCR Device:
+
+   Firmware Version: 0.0.0
+   MAC Address:      c4:5b:be:2d:36:84
+   Hardware ID:      17f20595-99b5-515a-b100-2daf138abd21
+   Git commit:       a7cc2f62e961fe37eaa8c16b04cc4a4e579969e7-dirty
+   Build Datetime:   2022-09-22T19:57:54Z
+
+**************************************************
+[0m
+[0;32mI (915) _readLine: Finished reading file[0m
+[0;32mI (916) _loadConfig: Found 14/14 configs[0m
+[0;32mI (917) configInit: Applying PID Config Defaults[0m
+[0;32mI (919) configInit: ***** Configuration *****[0m
+[0;32mI (924) configInit: configVersion: 00.00.02[0m
+[0;32mI (929) configInit: modelName: PCR[0m
+[0;32mI (933) configInit: Config Valid: 1[0m
+[0;32mI (937) configInit: Stage1 kP: 6.00000[0m
+[0;32mI (942) configInit: Stage1 kI: 0.80000[0m
+[0;32mI (946) configInit: Stage1 kD: 3.00000[0m
+[0;32mI (951) configInit: PCR kP: 5.51000[0m
+[0;32mI (955) configInit: PCR kI: 0.61000[0m
+[0;32mI (959) configInit: PCR kD: 3.01000[0m
+[0;32mI (963) configInit: Broadcast On Start: 0[0m
+[0;32mI (968) configInit: Bluetooth Always On: 0[0m
+[0;32mI (973) configInit: Build Config: xxx[0m
+[0;32mI (977) configInit: Serial Number: xxx[0m
+[0;32mI (981) configInit: Cup Detect Val: 0.00000[0m
+[0;32mI (986) configInit: **********[0m
+[0;32mI (1005) BTDM_INIT: BT controller compile version [6a07b06][0m
+[0;32mI (1006) system_api: Base MAC address is not set[0m
+[0;32mI (1006) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (1014) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1273) ESP32_BLE_PERIPH: registered service 0x1800 with handle=1[0m
+[0;32mI (1274) ESP32_BLE_PERIPH: registering characteristic 0x2a00 with def_handle=2 val_handle=3[0m
+[0;32mI (1278) ESP32_BLE_PERIPH: registering characteristic 0x2a01 with def_handle=4 val_handle=5[0m
+[0;32mI (1287) ESP32_BLE_PERIPH: registered service 0x1801 with handle=6[0m
+[0;32mI (1294) ESP32_BLE_PERIPH: registering characteristic 0x2a05 with def_handle=7 val_handle=8[0m
+[0;32mI (1303) ESP32_BLE_PERIPH: registered service e6af95e1-b7d7-4f55-b152-72f4b72cf6ff with handle=10[0m
+[0;32mI (1313) ESP32_BLE_PERIPH: registering characteristic e6af95e2-b7d7-4f55-b152-72f4b72cf6ff with def_handle=11 val_handle=12[0m
+[0;32mI (1325) ESP32_BLE_PERIPH: registering characteristic e6af95e3-b7d7-4f55-b152-72f4b72cf6ff with def_handle=14 val_handle=15[0m
+[0;32mI (1337) ESP32_BLE_PERIPH: registering characteristic e6af95e4-b7d7-4f55-b152-72f4b72cf6ff with def_handle=16 val_handle=17[0m
+[0;32mI (1348) ESP32_BLE_PERIPH: registering characteristic e6af95e5-b7d7-4f55-b152-72f4b72cf6ff with def_handle=19 val_handle=20[0m
+[0;32mI (1360) ESP32_BLE_PERIPH: registering characteristic e6af95e6-b7d7-4f55-b152-72f4b72cf6ff with def_handle=21 val_handle=22[0m
+[0;32mI (1372) ESP32_BLE_PERIPH: registering characteristic e6af95e7-b7d7-4f55-b152-72f4b72cf6ff with def_handle=24 val_handle=25[0m
+[0;32mI (1389) disconnectCb: Disconnected CB[0m
+[0;32mI (1392) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;33mW (1398) _resetStm32: Resetting STM32[0m
+[0;32mI (1427) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1427) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1435) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1446) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (1453) _st1ModelCalculate: St1 Using Cooling Equations[0m
+[0;33mW (1460) thermalControlSelectControlSource: USING model STAGE1 MODEL version 1[0m
+[0;33mW (1467) thermalControlSelectControlSource: USING model Thumper Machine-cup-W52-1.19mm 5/26/2022[0m
+[0;33mW (1477) systemTasksMonitorStack: Stack Watermark(Task Monitor): 3792[0m
+[0;33mW (1484) systemTasksMonitorStack: Stack Watermark(Thermal Control): 3800[0m
+[0;33mW (1491) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 3804[0m
+[0;33mW (1499) systemTasksMonitorStack: Stack Watermark(Task Monitor): 2352[0m
+[0;32mI (1506) _st1ModelCalculate: St1 Using Cooling Equations[0m
+[0;33mW (1511) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 3792[0m
+[0;33mW (1519) systemTasksMonitorStack: Stack Watermark(Motor Control): 3796[0m
+[0;33mW (1526) systemTasksMonitorStack: Stack Watermark(Fluorimeter Con): 2352[0m
+[0;33mW (1533) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2232[0m
+[0;32mI (1541) _readLifterSwitches: New Lifter Down Value: 1[0m
+[0;33mW (1547) systemTasksMonitorStack: Stack Watermark(Hardware Watchd): 2364[0m
+[0;33mW (1554) systemTasksMonitorStack: Stack Watermark(Experiment): 3800[0m
+[0;32mI (1561) fileInterfaceParseResultInfo: file contains 253 characters[0m
+[0;33mW (1568) systemTasksMonitorStack: Stack Watermark(Comm): 3800[0m
+[0;33mW (1574) systemTasksMonitorStack: Stack Watermark(Serial Rx): 3580[0m
+[0;33mW (1582) systemTasksMonitorStack: Stack Watermark(LP Tasks): 3552[0m
+[0;33mW (1588) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 3688[0m
+[0;32mI (1595) deviceLogsInit: Initializing device logs[0m
+[0;33mW (1608) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2336[0m
+[0;33mW (1609) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2336[0m
+[0;33mW (1624) systemTasksMonitorStack: Stack Watermark(Comm): 2360[0m
+[0;33mW (1625) systemTasksMonitorStack: Stack Watermark(LP Tasks): 2336[0m
+[0;33mW (1647) systemTasksMonitorStack: Stack Watermark(Motor Control): 2356[0m
+[0;33mW (1661) systemTasksMonitorStack: Stack Watermark(Experiment): 2360[0m
+[0;33mW (1664) systemTasksMonitorStack: Stack Watermark(I2C Reader): 2916[0m
+DATAQ:  | Stg1ThermoTempC = 20.8 | liquid2 = 20.58 | liquid3 = 20.64 | 
+[0;33mW (1889) systemTasksMonitorStack: Stack Watermark(I2C Reader): 2340[0m
+[0;32mI (1971) retrieveIdAndTimestamp: Time Found: 2022-09-23T21:01:06.769Z, ID Found: 44ec4274-3606-482a-a3fb-37a72f4f6fa1[0m
+[0;32mI (1971) retrieveIdAndTimestamp: Copying Timestamp into experiment protocol[0m
+[0;32mI (1979) retrieveIdAndTimestamp: Copying UUID into experiment protocol[0m
+[0;31mE (1986) customUtil_examineResetReason: Reset Reason: Power On[0m
+[0;32mI (1996) fileWriterFixUnclosedFile: Sanity Check: ,23382,32.11],[1,23382,52.87][0m
+[0;32mI (2002) fileWriterFixUnclosedFile: Read Length: 253  Last Chars: 7] [0m
+[0;32mI (2008) fileWriterFixUnclosedFile: Case 2 Detected. Header Closed and Json Closed[0m
+[0;33mW (2028) heapMonitor_checkFreeHeapSize: New heap low water mark 114812[0m
+[0;33mW (2096) systemTasksMonitorStack: Stack Watermark(Bluetooth State): 2360[0m
+[0;32mI (2100) fileWriterFixUnclosedFile: Results File Repaired![0m
+[0;32mI (2105) fileWriterFixUnclosedFile: Sanity Check: ],[1,23382,52.87]]}          [0m
+[0;31mE (2109) stashException: Exception Stashed (0x0B073)[0m
+[0;31mE (2117) systemStateSelfTestEnter: Initilization FAILED![0m
+[0;33mW (2120) systemTasksMonitorStack: Stack Watermark(Serial Rx): 2364[0m
+[0;31mE (2127) systemStateSelfTestEnter: The Following are the areas that failed:[0m
+[0;31mE (2135) printException: ************[0m
+[0;31mE (2139) printException: Error Code:  (0x0000B073)[0m
+[0;31mE (2145) printException: Originator:   (0x0B)  System[0m
+[0;31mE (2150) printException: Error Type:  (0x07)  Reset Durring Run[0m
+[0;31mE (2157) printException: Priority:       (0x03)  Reset Recoverable[0m
+[0;31mE (2164) printException: Time Since Boot:       (1434) ms[0m
+[0;31mE (2170) printException: Time Since Expt:       (0) ms[0m
+[0;31mE (2176) handleException: ************
+[0m
+[0;31mE (2180) stashException: Exception Stashed (0x0B184)[0m
+[0;31mE (2186) runInitSelfTest: Initial Test Not run. Exceptions Pending[0m
+[0;31mE (2193) systemStateSelfTestEnter: Initial Self Test FAILED![0m
+[0;31mE (2199) systemStateSelfTestEnter: The Following are the areas that failed:[0m
+[0;31mE (2207) printException: ************[0m
+[0;31mE (2211) printException: Error Code:  (0x0000B184)[0m
+[0;31mE (2217) printException: Originator:   (0x0B)  System[0m
+[0;31mE (2223) printException: Error Type:  (0x18)  Self Test Skipped[0m
+[0;31mE (2229) printException: Priority:       (0x04)  Critical[0m
+[0;31mE (2235) printException: Time Since Boot:       (1506) ms[0m
+[0;31mE (2241) printException: Time Since Expt:       (0) ms[0m
+[0;31mE (2247) handleException: ************
+[0m
+[0;32mI (2252) systemStateSelfTestExit: Self Test Complete[0m
+[0;32mI (2257) systemRequestStateChange: System State Transition SELFTEST -> CRITICAL[0m
+[0;32mI (2265) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 0 seconds[0m
+[0;32mI (2272) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds[0m
+[0;32mI (2280) deviceLogsWriteLogs: Writing device logs[0m
+[0;32mI (2285) blePeriphNotifySubscription: ENTER NOTIFY[0m
+[0;33mW (2291) systemRequestStateChange: Notify exit state change[0m
+[0;32mI (2297) INIT PLUNGE STATE!: Cur Plunge State: Homed (5)[0m
+[0;32mI (2303) _airboatStateEnter: Lifter Up[0m
+[0;33mW (2307) systemTasksMonitorStack: Stack Watermark(System): 2108[0m
+[0;33mW (2344) _writeNewLogData: Writing new log data string 101,137,276,360,231,48,132599,1299167,5948253,68799,207023,9205524,91,35,3342 into file[0m
+[0;33mW (2443) taskMonitor_task: Task Button Task hasn't checked in for 200 ms[0m
+[0;33mW (2518) taskMonitor_task: Task LED Task hasn't checked in for 200 ms[0m
+[0;33mW (2528) _overwriteLogFile: file written[0m
+[0;33mW (2529) systemTasksMonitorStack: Stack Watermark(LP Tasks): 1744[0m
+[0;33mW (2529) systemTasksMonitorStack: Stack Watermark(LP Tasks): 1744[0m
+[0;33mW (2546) systemTasksMonitorStack: Stack Watermark(LP Tasks): 1744[0m
+[0;32mI (2595) _readLifterSwitches: New Lifter Down Value: 0[0m
+[0;33mW (2601) BT STATE: NON IDLE State, switching to pairing[0m
+[0;32mI (2601) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING[0m
+[0;32mI (2604) BLE_PERIPH_INTERFACE: Open Advertising[0m
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.6 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.56 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.82 | liquid2 = 20.59 | liquid3 = 20.66 | 
+DATAQ:  | Stg1ThermoTempC = 20.87 | liquid2 = 20.61 | liquid3 = 20.65 | 
+[0;32mI (6750) _handleFrontButtonPress: Pressed[0m
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.61 | liquid3 = 20.65 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.63 | liquid3 = 20.68 | 
+DATAQ:  | Stg1ThermoTempC = 20.9 | liquid2 = 20.59 | liquid3 = 20.64 | 
+[0;32mI (9518) _readLifterSwitches: New Lifter Up Value: 1[0m
+[0;32mI (9519) _airboatStateEnter: Holding At Top[0m
+DATAQ:  | Stg1ThermoTempC = 20.91 | liquid2 = 20.61 | liquid3 = 20.64 | 
+[0;32mI (10121) _airboatStateEnter: Reached Top[0m
+DATAQ:  | Stg1ThermoTempC = 20.89 | liquid2 = 20.59 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.64 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.87 | liquid2 = 20.61 | liquid3 = 20.68 | 
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.62 | liquid3 = 20.68 | 
+DATAQ:  | Stg1ThermoTempC = 20.81 | liquid2 = 20.61 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.63 | liquid3 = 20.7 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.56 | liquid3 = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 20.85 | liquid2 = 20.64 | liquid3 = 20.71 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.62 | liquid3 = 20.66 | 
+DATAQ:  | Stg1ThermoTempC = 20.91 | liquid2 = 20.59 | liquid3 = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.88 | liquid2 = 20.64 | liquid3 = 20.68 | 
+DATAQ:  | Stg1ThermoTempC = 20.91 | liquid2 = 20.67 | liquid3 = 20.6 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | liquid2 = 20.64 | liquid3 = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.84 | liquid2 = 20.65 | liquid3 = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.89 | liquid2 = 20.66 | liquid3 = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.7 | liquid3 = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | liquid2 = 20.64 | liquid3 = 20.64 | 

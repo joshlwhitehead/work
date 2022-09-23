@@ -1,0 +1,8 @@
+DATAQ:  | Stg1ThermoTempC = 21.58 | liquid2 = 21.95 | liquid3 = 21.92 | 
+DATAQ:  | Stg1ThermoTempC = 21.6 | liquid2 = 22.06 | liquid3 = 21.97 | 
+DATAQ:  | Stg1ThermoTempC = 21.61 | liquid2 = 22.04 | liquid3 = 21.94 | 
+DATAQ:  | Stg1ThermoTempC = 21.66 | liquid2 = 22.09 | liquid3 = 21.96 | 
+DATAQ:  | Stg1ThermoTempC = 21.62 | liquid2 = 22.07 | liquid3 = 21.96 | 
+DATAQ:  | Stg1ThermoTempC = 21.63 | liquid2 = 22.03 | liquid3 = 21.94 | 
+DATAQ:  | Stg1ThermoTempC = 21.63 | liquid2 = 22.09 | liquid3 = 21.95 | 
+DATAQ:  | Stg1ThermoTempC = 21.7 | liquid2 = 22.13 | liquid3 = 22.05 | 
