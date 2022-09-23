@@ -1,0 +1,192 @@
+DATAQ:  | Stg1ThermoTempC = 20.85 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.77 | 
+DATAQ:  | Stg1ThermoTempC = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.7 | 
+DATAQ:  | Stg1ThermoTempC = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.7 | 
+DATAQ:  | Stg1ThermoTempC = 20.71 | 
+DATAQ:  | Stg1ThermoTempC = 20.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.81 | 
+DATAQ:  | Stg1ThermoTempC = 20.66 | 
+DATAQ:  | Stg1ThermoTempC = 20.19 | 
+DATAQ:  | Stg1ThermoTempC = 18.26 | 
+DATAQ:  | Stg1ThermoTempC = 17.29 | 
+DATAQ:  | Stg1ThermoTempC = 28.22 | 
+DATAQ:  | Stg1ThermoTempC = 30.35 | 
+DATAQ:  | Stg1ThermoTempC = 22.02 | 
+DATAQ:  | Stg1ThermoTempC = 20.33 | 
+DATAQ:  | Stg1ThermoTempC = 29.56 | 
+DATAQ:  | Stg1ThermoTempC = 26.7 | 
+DATAQ:  | Stg1ThermoTempC = 25.02 | 
+DATAQ:  | Stg1ThermoTempC = 22.69 | 
+DATAQ:  | Stg1ThermoTempC = 28.93 | 
+DATAQ:  | Stg1ThermoTempC = 30.66 | 
+DATAQ:  | Stg1ThermoTempC = 31.0 | 
+DATAQ:  | Stg1ThermoTempC = 23.46 | 
+DATAQ:  | Stg1ThermoTempC = 22.62 | 
+DATAQ:  | Stg1ThermoTempC = 22.31 | 
+DATAQ:  | Stg1ThermoTempC = 22.07 | 
+DATAQ:  | Stg1ThermoTempC = 21.82 | 
+DATAQ:  | Stg1ThermoTempC = 21.69 | 
+DATAQ:  | Stg1ThermoTempC = 21.46 | 
+DATAQ:  | Stg1ThermoTempC = 21.45 | 
+DATAQ:  | Stg1ThermoTempC = 21.36 | 
+DATAQ:  | Stg1ThermoTempC = 21.27 | 
+DATAQ:  | Stg1ThermoTempC = 21.18 | 
+DATAQ:  | Stg1ThermoTempC = 21.22 | 
+DATAQ:  | Stg1ThermoTempC = 21.1 | 
+DATAQ:  | Stg1ThermoTempC = 21.12 | 
+DATAQ:  | Stg1ThermoTempC = 21.07 | 
+DATAQ:  | Stg1ThermoTempC = 21.01 | 
+DATAQ:  | Stg1ThermoTempC = 21.03 | 
+DATAQ:  | Stg1ThermoTempC = 20.89 | 
+DATAQ:  | Stg1ThermoTempC = 20.92 | 
+DATAQ:  | Stg1ThermoTempC = 20.88 | 
+DATAQ:  | Stg1ThermoTempC = 20.83 | 
+DATAQ:  | Stg1ThermoTempC = 20.86 | 
+DATAQ:  | Stg1ThermoTempC = 20.79 | 
+DATAQ:  | Stg1ThermoTempC = 20.76 | 
+DATAQ:  | Stg1ThermoTempC = 20.75 | 
+DATAQ:  | Stg1ThermoTempC = 20.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.74 | 
+DATAQ:  | Stg1ThermoTempC = 20.78 | 
+DATAQ:  | Stg1ThermoTempC = 20.66 | 
+DATAQ:  | Stg1ThermoTempC = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.7 | 
+DATAQ:  | Stg1ThermoTempC = 20.77 | 
+DATAQ:  | Stg1ThermoTempC = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.73 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.64 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 20.46 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.45 | 
+DATAQ:  | Stg1ThermoTempC = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 20.51 | liquid2 = 20.7 | liquid3 = 21.69 | 
+DATAQ:  | Stg1ThermoTempC = 20.63 | liquid2 = 20.86 | liquid3 = 21.72 | 
+DATAQ:  | Stg1ThermoTempC = 20.49 | liquid2 = 20.57 | liquid3 = 21.65 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.63 | liquid3 = 21.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.67 | liquid3 = 21.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.66 | liquid3 = 21.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.53 | liquid2 = 20.52 | liquid3 = 21.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.48 | liquid2 = 20.53 | liquid3 = 21.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.53 | liquid3 = 21.56 | 
+DATAQ:  | Stg1ThermoTempC = 20.61 | liquid2 = 20.55 | liquid3 = 21.67 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.31 | liquid3 = 21.63 | 
+DATAQ:  | Stg1ThermoTempC = 20.6 | liquid2 = 20.36 | liquid3 = 21.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.55 | liquid2 = 20.38 | liquid3 = 21.61 | 
+DATAQ:  | Stg1ThermoTempC = 20.56 | liquid2 = 20.31 | liquid3 = 21.52 | 
+DATAQ:  | Stg1ThermoTempC = 20.54 | liquid2 = 20.31 | liquid3 = 21.58 | 
+DATAQ:  | Stg1ThermoTempC = 21.54 | liquid2 = 20.6 | liquid3 = 20.29 | 
+DATAQ:  | Stg1ThermoTempC = 21.55 | liquid2 = 20.63 | liquid3 = 20.4 | 
+DATAQ:  | Stg1ThermoTempC = 21.61 | liquid2 = 20.53 | liquid3 = 20.5 | 
+DATAQ:  | Stg1ThermoTempC = 21.57 | liquid2 = 20.57 | liquid3 = 20.52 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.53 | liquid3 = 20.18 | 
+DATAQ:  | Stg1ThermoTempC = 21.54 | liquid2 = 20.54 | liquid3 = 20.26 | 
+DATAQ:  | Stg1ThermoTempC = 21.6 | liquid2 = 20.59 | liquid3 = 20.39 | 
+DATAQ:  | Stg1ThermoTempC = 21.56 | liquid2 = 20.59 | liquid3 = 20.31 | 
+DATAQ:  | Stg1ThermoTempC = 21.56 | liquid2 = 20.6 | liquid3 = 20.3 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.5 | liquid3 = 20.44 | 
+DATAQ:  | Stg1ThermoTempC = 21.53 | liquid2 = 20.53 | liquid3 = 20.47 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.58 | liquid3 = 20.55 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.6 | liquid3 = 20.38 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.66 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 21.55 | liquid2 = 20.63 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 21.51 | liquid2 = 20.63 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 21.47 | liquid2 = 20.63 | liquid3 = 20.58 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.56 | liquid3 = 20.51 | 
+DATAQ:  | Stg1ThermoTempC = 21.48 | liquid2 = 20.61 | liquid3 = 20.53 | 
+DATAQ:  | Stg1ThermoTempC = 21.47 | liquid2 = 20.56 | liquid3 = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 21.48 | liquid2 = 20.59 | liquid3 = 20.57 | 
+DATAQ:  | Stg1ThermoTempC = 21.47 | liquid2 = 20.58 | liquid3 = 20.56 | 
+DATAQ:  | Stg1ThermoTempC = 21.47 | liquid2 = 20.51 | liquid3 = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 21.58 | liquid2 = 20.58 | liquid3 = 20.49 | 
+DATAQ:  | Stg1ThermoTempC = 21.41 | liquid2 = 20.54 | liquid3 = 20.48 | 
+DATAQ:  | Stg1ThermoTempC = 21.53 | liquid2 = 20.62 | liquid3 = 20.65 | 
+DATAQ:  | Stg1ThermoTempC = 21.53 | liquid2 = 20.65 | liquid3 = 20.62 | 
+DATAQ:  | Stg1ThermoTempC = 21.47 | liquid2 = 20.55 | liquid3 = 20.72 | 
+DATAQ:  | Stg1ThermoTempC = 21.41 | liquid2 = 20.54 | liquid3 = 20.59 | 
+DATAQ:  | Stg1ThermoTempC = 21.48 | liquid2 = 20.54 | liquid3 = 20.65 | 
+DATAQ:  | Stg1ThermoTempC = 21.52 | liquid2 = 20.65 | liquid3 = 20.51 | 
