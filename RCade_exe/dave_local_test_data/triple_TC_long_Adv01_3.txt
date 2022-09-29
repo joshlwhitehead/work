@@ -8243,12 +8243,3 @@ DATAQ: | Stg1ThermoTempC = 60.67 | stg1AltThermoTempC1 = 53.34 | stg1AltThermoTe
 DATAQ: | Stg1ThermoTempC = 60.65 | stg1AltThermoTempC1 = 53.33 | stg1AltThermoTempC2 = 59.04  |
 DATAQ: | Stg1ThermoTempC = 60.62 | stg1AltThermoTempC1 = 53.48 | stg1AltThermoTempC2 = 59.03  |
 DATAQ: | Stg1ThermoTempC = 60.62 | stg1AltThermoTempC1 = 53.53 | stg1AltThermoTempC2 = 59.02  |
-DATAQ: | Stg1ThermoTempC = 60.68 | stg1AltThermoTempC1 = 53.73 | stg1AltThermoTempC2 = 58.98  |
-DATAQ: | Stg1ThermoTempC = 60.83 | stg1AltThermoTempC1 = 53.85 | stg1AltThermoTempC2 = 58.98  |
-DATAQ: | Stg1ThermoTempC = 60.78 | stg1AltThermoTempC1 = 53.94 | stg1AltThermoTempC2 = 58.96  |
-DATAQ: | Stg1ThermoTempC = 60.75 | stg1AltThermoTempC1 = 54.07 | stg1AltThermoTempC2 = 58.88  |
-DATAQ: | Stg1ThermoTempC = 60.84 | stg1AltThermoTempC1 = 54.18 | stg1AltThermoTempC2 = 58.9  |
-DATAQ: | Stg1ThermoTempC = 60.89 | stg1AltThermoTempC1 = 54.28 | stg1AltThermoTempC2 = 58.88  |
-DATAQ: | Stg1ThermoTempC = 60.95 | stg1AltThermoTempC1 = 54.44 | stg1AltThermoTempC2 = 58.89  |
-DATAQ: | Stg1ThermoTempC = 60.89 | stg1AltThermoTempC1 = 54.51 | stg1AltThermoTempC2 = 58.91  |
-DATAQ: | Stg1ThermoTempC = 60.97 | stg1AltThermoTempC1 = 54.55 | stg1AltThermoTempC2 = 58.91  |
