@@ -1,0 +1,670 @@
+DATAQ: | Stg1ThermoTempC = 21.11 | stg1AltThermoTempC2 = 22.17 | stg1AltThermoTempC3 = 21.22  |
+DATAQ: | Stg1ThermoTempC = 21.07 | stg1AltThermoTempC2 = 22.06 | stg1AltThermoTempC3 = 21.24  |
+DATAQ: | Stg1ThermoTempC = 21.12 | stg1AltThermoTempC2 = 22.17 | stg1AltThermoTempC3 = 21.24  |
+DATAQ: | Stg1ThermoTempC = 21.07 | stg1AltThermoTempC2 = 22.16 | stg1AltThermoTempC3 = 21.26  |
+DATAQ: | Stg1ThermoTempC = 21.13 | stg1AltThermoTempC2 = 22.19 | stg1AltThermoTempC3 = 21.19  |
+DATAQ: | Stg1ThermoTempC = 21.12 | stg1AltThermoTempC2 = 22.22 | stg1AltThermoTempC3 = 21.22  |
+DATAQ: | Stg1ThermoTempC = 21.11 | stg1AltThermoTempC2 = 22.24 | stg1AltThermoTempC3 = 21.22  |
+DATAQ: | Stg1ThermoTempC = 21.21 | stg1AltThermoTempC2 = 22.35 | stg1AltThermoTempC3 = 21.27  |
+DATAQ: | Stg1ThermoTempC = 21.11 | stg1AltThermoTempC2 = 22.4 | stg1AltThermoTempC23= 21.28  |
+DATAQ: | Stg1ThermoTempC = 21.18 | stg1AltThermoTempC2 = 22.38 | stg1AltThermoTempC3 = 21.28  |
+DATAQ: | Stg1ThermoTempC = 21.18 | stg1AltThermoTempC2 = 22.38 | stg1AltThermoTempC3 = 21.35  |
+DATAQ: | Stg1ThermoTempC = 21.17 | stg1AltThermoTempC2 = 22.35 | stg1AltThermoTempC3 = 21.31  |
+DATAQ: | Stg1ThermoTempC = 21.18 | stg1AltThermoTempC2 = 22.39 | stg1AltThermoTempC3 = 21.26  |
+DATAQ: | Stg1ThermoTempC = 21.21 | stg1AltThermoTempC2 = 22.42 | stg1AltThermoTempC3 = 21.25  |
+DATAQ: | Stg1ThermoTempC = 21.15 | stg1AltThermoTempC2 = 22.44 | stg1AltThermoTempC3 = 21.26  |
+DATAQ: | Stg1ThermoTempC = 21.21 | stg1AltThermoTempC2 = 22.51 | stg1AltThermoTempC3 = 21.35  |
+DATAQ: | Stg1ThermoTempC = 21.21 | stg1AltThermoTempC2 = 22.56 | stg1AltThermoTempC3 = 21.36  |
+DATAQ: | Stg1ThermoTempC = 21.19 | stg1AltThermoTempC2 = 22.53 | stg1AltThermoTempC3 = 21.26  |
+DATAQ: | Stg1ThermoTempC = 21.25 | stg1AltThermoTempC2 = 22.6 | stg1AltThermoTempC23= 21.35  |
+DATAQ: | Stg1ThermoTempC = 21.18 | stg1AltThermoTempC2 = 22.65 | stg1AltThermoTempC3 = 21.23  |
+DATAQ: | Stg1ThermoTempC = 21.24 | stg1AltThermoTempC2 = 22.81 | stg1AltThermoTempC3 = 21.32  |
+DATAQ: | Stg1ThermoTempC = 21.22 | stg1AltThermoTempC2 = 22.88 | stg1AltThermoTempC3 = 21.35  |
+DATAQ: | Stg1ThermoTempC = 21.34 | stg1AltThermoTempC2 = 22.97 | stg1AltThermoTempC3 = 21.3  |
+DATAQ: | Stg1ThermoTempC = 21.32 | stg1AltThermoTempC2 = 23.08 | stg1AltThermoTempC3 = 21.34  |
+DATAQ: | Stg1ThermoTempC = 21.32 | stg1AltThermoTempC2 = 23.17 | stg1AltThermoTempC3 = 21.42  |
+DATAQ: | Stg1ThermoTempC = 21.39 | stg1AltThermoTempC2 = 23.32 | stg1AltThermoTempC3 = 21.29  |
+DATAQ: | Stg1ThermoTempC = 21.94 | stg1AltThermoTempC2 = 23.41 | stg1AltThermoTempC3 = 21.33  |
+DATAQ: | Stg1ThermoTempC = 25.48 | stg1AltThermoTempC2 = 23.51 | stg1AltThermoTempC3 = 21.37  |
+DATAQ: | Stg1ThermoTempC = 26.7 | stg1AltThermoTempC2 = 23.57 | stg1AltThermoTempC23= 21.42  |
+DATAQ: | Stg1ThermoTempC = 26.9 | stg1AltThermoTempC2 = 23.72 | stg1AltThermoTempC23= 21.57  |
+DATAQ: | Stg1ThermoTempC = 27.79 | stg1AltThermoTempC2 = 23.82 | stg1AltThermoTempC3 = 21.88  |
+DATAQ: | Stg1ThermoTempC = 28.57 | stg1AltThermoTempC2 = 23.88 | stg1AltThermoTempC3 = 22.14  |
+DATAQ: | Stg1ThermoTempC = 29.84 | stg1AltThermoTempC2 = 24.04 | stg1AltThermoTempC3 = 22.71  |
+DATAQ: | Stg1ThermoTempC = 30.61 | stg1AltThermoTempC2 = 24.08 | stg1AltThermoTempC3 = 23.01  |
+DATAQ: | Stg1ThermoTempC = 31.92 | stg1AltThermoTempC2 = 24.24 | stg1AltThermoTempC3 = 23.97  |
+DATAQ: | Stg1ThermoTempC = 32.7 | stg1AltThermoTempC2 = 24.38 | stg1AltThermoTempC23= 24.32  |
+DATAQ: | Stg1ThermoTempC = 33.64 | stg1AltThermoTempC2 = 24.46 | stg1AltThermoTempC3 = 25.14  |
+DATAQ: | Stg1ThermoTempC = 34.37 | stg1AltThermoTempC2 = 24.46 | stg1AltThermoTempC3 = 25.51  |
+DATAQ: | Stg1ThermoTempC = 35.55 | stg1AltThermoTempC2 = 24.74 | stg1AltThermoTempC3 = 26.48  |
+DATAQ: | Stg1ThermoTempC = 36.15 | stg1AltThermoTempC2 = 24.8 | stg1AltThermoTempC23= 26.73  |
+DATAQ: | Stg1ThermoTempC = 37.32 | stg1AltThermoTempC2 = 25.1 | stg1AltThermoTempC23= 27.76  |
+DATAQ: | Stg1ThermoTempC = 38.06 | stg1AltThermoTempC2 = 25.31 | stg1AltThermoTempC3 = 28.01  |
+DATAQ: | Stg1ThermoTempC = 39.12 | stg1AltThermoTempC2 = 25.66 | stg1AltThermoTempC3 = 28.94  |
+DATAQ: | Stg1ThermoTempC = 39.85 | stg1AltThermoTempC2 = 25.94 | stg1AltThermoTempC3 = 29.28  |
+DATAQ: | Stg1ThermoTempC = 40.87 | stg1AltThermoTempC2 = 26.4 | stg1AltThermoTempC23= 30.19  |
+DATAQ: | Stg1ThermoTempC = 41.51 | stg1AltThermoTempC2 = 26.81 | stg1AltThermoTempC3 = 30.62  |
+DATAQ: | Stg1ThermoTempC = 42.95 | stg1AltThermoTempC2 = 27.41 | stg1AltThermoTempC3 = 32.05  |
+DATAQ: | Stg1ThermoTempC = 44.49 | stg1AltThermoTempC2 = 27.82 | stg1AltThermoTempC3 = 32.58  |
+DATAQ: | Stg1ThermoTempC = 47.29 | stg1AltThermoTempC2 = 28.61 | stg1AltThermoTempC3 = 34.13  |
+DATAQ: | Stg1ThermoTempC = 48.16 | stg1AltThermoTempC2 = 29.14 | stg1AltThermoTempC3 = 34.56  |
+DATAQ: | Stg1ThermoTempC = 48.4 | stg1AltThermoTempC2 = 29.91 | stg1AltThermoTempC23= 35.99  |
+DATAQ: | Stg1ThermoTempC = 48.64 | stg1AltThermoTempC2 = 30.44 | stg1AltThermoTempC3 = 36.44  |
+DATAQ: | Stg1ThermoTempC = 49.89 | stg1AltThermoTempC2 = 31.27 | stg1AltThermoTempC3 = 37.76  |
+DATAQ: | Stg1ThermoTempC = 51.31 | stg1AltThermoTempC2 = 31.82 | stg1AltThermoTempC3 = 38.22  |
+DATAQ: | Stg1ThermoTempC = 51.41 | stg1AltThermoTempC2 = 32.7 | stg1AltThermoTempC23= 39.36  |
+DATAQ: | Stg1ThermoTempC = 52.36 | stg1AltThermoTempC2 = 33.34 | stg1AltThermoTempC3 = 39.7  |
+DATAQ: | Stg1ThermoTempC = 54.03 | stg1AltThermoTempC2 = 34.22 | stg1AltThermoTempC3 = 40.93  |
+DATAQ: | Stg1ThermoTempC = 54.45 | stg1AltThermoTempC2 = 34.67 | stg1AltThermoTempC3 = 41.32  |
+DATAQ: | Stg1ThermoTempC = 55.28 | stg1AltThermoTempC2 = 35.59 | stg1AltThermoTempC3 = 42.46  |
+DATAQ: | Stg1ThermoTempC = 55.71 | stg1AltThermoTempC2 = 36.13 | stg1AltThermoTempC3 = 42.88  |
+DATAQ: | Stg1ThermoTempC = 56.54 | stg1AltThermoTempC2 = 37.05 | stg1AltThermoTempC3 = 43.81  |
+DATAQ: | Stg1ThermoTempC = 57.03 | stg1AltThermoTempC2 = 37.65 | stg1AltThermoTempC3 = 44.17  |
+DATAQ: | Stg1ThermoTempC = 57.88 | stg1AltThermoTempC2 = 38.6 | stg1AltThermoTempC23= 45.19  |
+DATAQ: | Stg1ThermoTempC = 58.24 | stg1AltThermoTempC2 = 39.14 | stg1AltThermoTempC3 = 45.45  |
+DATAQ: | Stg1ThermoTempC = 58.71 | stg1AltThermoTempC2 = 39.45 | stg1AltThermoTempC3 = 45.93  |
+DATAQ: | Stg1ThermoTempC = 59.25 | stg1AltThermoTempC2 = 40.61 | stg1AltThermoTempC3 = 46.75  |
+DATAQ: | Stg1ThermoTempC = 59.59 | stg1AltThermoTempC2 = 40.96 | stg1AltThermoTempC3 = 47.7  |
+DATAQ: | Stg1ThermoTempC = 59.84 | stg1AltThermoTempC2 = 41.98 | stg1AltThermoTempC3 = 47.91  |
+DATAQ: | Stg1ThermoTempC = 60.0 | stg1AltThermoTempC2 = 42.74 | stg1AltThermoTempC23= 48.64  |
+DATAQ: | Stg1ThermoTempC = 60.12 | stg1AltThermoTempC2 = 43.27 | stg1AltThermoTempC3 = 48.88  |
+DATAQ: | Stg1ThermoTempC = 60.15 | stg1AltThermoTempC2 = 44.01 | stg1AltThermoTempC3 = 49.35  |
+DATAQ: | Stg1ThermoTempC = 60.29 | stg1AltThermoTempC2 = 44.33 | stg1AltThermoTempC3 = 49.39  |
+DATAQ: | Stg1ThermoTempC = 60.25 | stg1AltThermoTempC2 = 44.89 | stg1AltThermoTempC3 = 49.82  |
+DATAQ: | Stg1ThermoTempC = 60.3 | stg1AltThermoTempC2 = 45.16 | stg1AltThermoTempC23= 49.95  |
+DATAQ: | Stg1ThermoTempC = 60.23 | stg1AltThermoTempC2 = 45.34 | stg1AltThermoTempC3 = 50.01  |
+DATAQ: | Stg1ThermoTempC = 60.1 | stg1AltThermoTempC2 = 45.96 | stg1AltThermoTempC23= 50.18  |
+DATAQ: | Stg1ThermoTempC = 60.08 | stg1AltThermoTempC2 = 46.1 | stg1AltThermoTempC23= 50.22  |
+DATAQ: | Stg1ThermoTempC = 59.98 | stg1AltThermoTempC2 = 46.56 | stg1AltThermoTempC3 = 50.32  |
+DATAQ: | Stg1ThermoTempC = 59.94 | stg1AltThermoTempC2 = 46.76 | stg1AltThermoTempC3 = 50.32  |
+DATAQ: | Stg1ThermoTempC = 59.86 | stg1AltThermoTempC2 = 47.13 | stg1AltThermoTempC3 = 50.46  |
+DATAQ: | Stg1ThermoTempC = 59.74 | stg1AltThermoTempC2 = 47.18 | stg1AltThermoTempC3 = 50.46  |
+DATAQ: | Stg1ThermoTempC = 59.63 | stg1AltThermoTempC2 = 47.58 | stg1AltThermoTempC3 = 50.48  |
+DATAQ: | Stg1ThermoTempC = 59.6 | stg1AltThermoTempC2 = 47.83 | stg1AltThermoTempC23= 50.6  |
+DATAQ: | Stg1ThermoTempC = 59.35 | stg1AltThermoTempC2 = 48.05 | stg1AltThermoTempC3 = 50.58  |
+DATAQ: | Stg1ThermoTempC = 59.34 | stg1AltThermoTempC2 = 48.31 | stg1AltThermoTempC3 = 50.7  |
+DATAQ: | Stg1ThermoTempC = 59.21 | stg1AltThermoTempC2 = 48.57 | stg1AltThermoTempC3 = 50.67  |
+DATAQ: | Stg1ThermoTempC = 58.99 | stg1AltThermoTempC2 = 48.88 | stg1AltThermoTempC3 = 50.76  |
+DATAQ: | Stg1ThermoTempC = 58.86 | stg1AltThermoTempC2 = 49.07 | stg1AltThermoTempC3 = 50.71  |
+DATAQ: | Stg1ThermoTempC = 58.83 | stg1AltThermoTempC2 = 49.24 | stg1AltThermoTempC3 = 50.68  |
+DATAQ: | Stg1ThermoTempC = 58.88 | stg1AltThermoTempC2 = 49.42 | stg1AltThermoTempC3 = 50.59  |
+DATAQ: | Stg1ThermoTempC = 58.94 | stg1AltThermoTempC2 = 49.64 | stg1AltThermoTempC3 = 50.69  |
+DATAQ: | Stg1ThermoTempC = 58.87 | stg1AltThermoTempC2 = 49.87 | stg1AltThermoTempC3 = 50.57  |
+DATAQ: | Stg1ThermoTempC = 58.9 | stg1AltThermoTempC2 = 49.9 | stg1AltThermoTempC2 3 50.5  |
+DATAQ: | Stg1ThermoTempC = 58.91 | stg1AltThermoTempC2 = 50.3 | stg1AltThermoTempC23= 50.53  |
+DATAQ: | Stg1ThermoTempC = 58.98 | stg1AltThermoTempC2 = 50.3 | stg1AltThermoTempC23= 50.57  |
+DATAQ: | Stg1ThermoTempC = 58.99 | stg1AltThermoTempC2 = 50.59 | stg1AltThermoTempC3 = 50.57  |
+DATAQ: | Stg1ThermoTempC = 59.12 | stg1AltThermoTempC2 = 50.89 | stg1AltThermoTempC3 = 50.71  |
+DATAQ: | Stg1ThermoTempC = 59.07 | stg1AltThermoTempC2 = 50.96 | stg1AltThermoTempC3 = 50.66  |
+DATAQ: | Stg1ThermoTempC = 59.14 | stg1AltThermoTempC2 = 51.22 | stg1AltThermoTempC3 = 50.85  |
+DATAQ: | Stg1ThermoTempC = 59.11 | stg1AltThermoTempC2 = 51.34 | stg1AltThermoTempC3 = 50.89  |
+DATAQ: | Stg1ThermoTempC = 59.11 | stg1AltThermoTempC2 = 51.39 | stg1AltThermoTempC3 = 50.97  |
+DATAQ: | Stg1ThermoTempC = 59.14 | stg1AltThermoTempC2 = 51.56 | stg1AltThermoTempC3 = 50.95  |
+DATAQ: | Stg1ThermoTempC = 59.17 | stg1AltThermoTempC2 = 51.78 | stg1AltThermoTempC3 = 51.13  |
+DATAQ: | Stg1ThermoTempC = 59.21 | stg1AltThermoTempC2 = 51.88 | stg1AltThermoTempC3 = 51.09  |
+DATAQ: | Stg1ThermoTempC = 59.19 | stg1AltThermoTempC2 = 52.01 | stg1AltThermoTempC3 = 51.15  |
+DATAQ: | Stg1ThermoTempC = 59.17 | stg1AltThermoTempC2 = 52.07 | stg1AltThermoTempC3 = 51.19  |
+DATAQ: | Stg1ThermoTempC = 59.3 | stg1AltThermoTempC2 = 52.21 | stg1AltThermoTempC23= 51.19  |
+DATAQ: | Stg1ThermoTempC = 59.28 | stg1AltThermoTempC2 = 52.34 | stg1AltThermoTempC3 = 51.3  |
+DATAQ: | Stg1ThermoTempC = 59.31 | stg1AltThermoTempC2 = 52.42 | stg1AltThermoTempC3 = 51.32  |
+DATAQ: | Stg1ThermoTempC = 59.33 | stg1AltThermoTempC2 = 52.56 | stg1AltThermoTempC3 = 51.34  |
+DATAQ: | Stg1ThermoTempC = 59.45 | stg1AltThermoTempC2 = 52.67 | stg1AltThermoTempC3 = 51.46  |
+DATAQ: | Stg1ThermoTempC = 59.48 | stg1AltThermoTempC2 = 52.78 | stg1AltThermoTempC3 = 51.46  |
+DATAQ: | Stg1ThermoTempC = 59.46 | stg1AltThermoTempC2 = 52.89 | stg1AltThermoTempC3 = 51.54  |
+DATAQ: | Stg1ThermoTempC = 59.56 | stg1AltThermoTempC2 = 52.98 | stg1AltThermoTempC3 = 51.63  |
+DATAQ: | Stg1ThermoTempC = 59.64 | stg1AltThermoTempC2 = 53.03 | stg1AltThermoTempC3 = 51.71  |
+DATAQ: | Stg1ThermoTempC = 59.61 | stg1AltThermoTempC2 = 53.09 | stg1AltThermoTempC3 = 51.75  |
+DATAQ: | Stg1ThermoTempC = 59.69 | stg1AltThermoTempC2 = 53.22 | stg1AltThermoTempC3 = 51.87  |
+DATAQ: | Stg1ThermoTempC = 59.73 | stg1AltThermoTempC2 = 53.33 | stg1AltThermoTempC3 = 51.9  |
+DATAQ: | Stg1ThermoTempC = 59.77 | stg1AltThermoTempC2 = 53.48 | stg1AltThermoTempC3 = 52.04  |
+DATAQ: | Stg1ThermoTempC = 59.83 | stg1AltThermoTempC2 = 53.47 | stg1AltThermoTempC3 = 51.98  |
+DATAQ: | Stg1ThermoTempC = 59.86 | stg1AltThermoTempC2 = 53.52 | stg1AltThermoTempC3 = 52.11  |
+DATAQ: | Stg1ThermoTempC = 59.91 | stg1AltThermoTempC2 = 53.57 | stg1AltThermoTempC3 = 52.17  |
+DATAQ: | Stg1ThermoTempC = 59.93 | stg1AltThermoTempC2 = 53.65 | stg1AltThermoTempC3 = 52.24  |
+DATAQ: | Stg1ThermoTempC = 59.95 | stg1AltThermoTempC2 = 53.79 | stg1AltThermoTempC3 = 52.23  |
+DATAQ: | Stg1ThermoTempC = 60.01 | stg1AltThermoTempC2 = 53.75 | stg1AltThermoTempC3 = 52.26  |
+DATAQ: | Stg1ThermoTempC = 60.02 | stg1AltThermoTempC2 = 53.91 | stg1AltThermoTempC3 = 52.33  |
+DATAQ: | Stg1ThermoTempC = 60.1 | stg1AltThermoTempC2 = 54.01 | stg1AltThermoTempC23= 52.44  |
+DATAQ: | Stg1ThermoTempC = 60.09 | stg1AltThermoTempC2 = 54.03 | stg1AltThermoTempC3 = 52.49  |
+DATAQ: | Stg1ThermoTempC = 60.15 | stg1AltThermoTempC2 = 54.09 | stg1AltThermoTempC3 = 52.58  |
+DATAQ: | Stg1ThermoTempC = 60.19 | stg1AltThermoTempC2 = 54.18 | stg1AltThermoTempC3 = 52.62  |
+DATAQ: | Stg1ThermoTempC = 60.23 | stg1AltThermoTempC2 = 54.23 | stg1AltThermoTempC3 = 52.63  |
+DATAQ: | Stg1ThermoTempC = 60.31 | stg1AltThermoTempC2 = 54.26 | stg1AltThermoTempC3 = 52.71  |
+DATAQ: | Stg1ThermoTempC = 60.36 | stg1AltThermoTempC2 = 54.36 | stg1AltThermoTempC3 = 52.71  |
+DATAQ: | Stg1ThermoTempC = 60.27 | stg1AltThermoTempC2 = 54.31 | stg1AltThermoTempC3 = 52.72  |
+DATAQ: | Stg1ThermoTempC = 60.35 | stg1AltThermoTempC2 = 54.51 | stg1AltThermoTempC3 = 52.88  |
+DATAQ: | Stg1ThermoTempC = 60.35 | stg1AltThermoTempC2 = 54.51 | stg1AltThermoTempC3 = 52.94  |
+DATAQ: | Stg1ThermoTempC = 60.48 | stg1AltThermoTempC2 = 54.68 | stg1AltThermoTempC3 = 53.05  |
+DATAQ: | Stg1ThermoTempC = 60.44 | stg1AltThermoTempC2 = 54.63 | stg1AltThermoTempC3 = 52.97  |
+DATAQ: | Stg1ThermoTempC = 60.49 | stg1AltThermoTempC2 = 54.72 | stg1AltThermoTempC3 = 53.04  |
+DATAQ: | Stg1ThermoTempC = 60.47 | stg1AltThermoTempC2 = 54.69 | stg1AltThermoTempC3 = 53.05  |
+DATAQ: | Stg1ThermoTempC = 60.62 | stg1AltThermoTempC2 = 54.88 | stg1AltThermoTempC3 = 53.15  |
+DATAQ: | Stg1ThermoTempC = 60.62 | stg1AltThermoTempC2 = 54.86 | stg1AltThermoTempC3 = 53.15  |
+DATAQ: | Stg1ThermoTempC = 60.6 | stg1AltThermoTempC2 = 54.94 | stg1AltThermoTempC23= 53.23  |
+DATAQ: | Stg1ThermoTempC = 60.69 | stg1AltThermoTempC2 = 54.97 | stg1AltThermoTempC3 = 53.27  |
+DATAQ: | Stg1ThermoTempC = 60.72 | stg1AltThermoTempC2 = 55.08 | stg1AltThermoTempC3 = 53.38  |
+DATAQ: | Stg1ThermoTempC = 60.71 | stg1AltThermoTempC2 = 55.16 | stg1AltThermoTempC3 = 53.32  |
+DATAQ: | Stg1ThermoTempC = 60.81 | stg1AltThermoTempC2 = 55.2 | stg1AltThermoTempC23= 53.47  |
+DATAQ: | Stg1ThermoTempC = 60.83 | stg1AltThermoTempC2 = 55.21 | stg1AltThermoTempC3 = 53.47  |
+DATAQ: | Stg1ThermoTempC = 60.91 | stg1AltThermoTempC2 = 55.36 | stg1AltThermoTempC3 = 53.57  |
+DATAQ: | Stg1ThermoTempC = 60.88 | stg1AltThermoTempC2 = 55.35 | stg1AltThermoTempC3 = 53.6  |
+DATAQ: | Stg1ThermoTempC = 60.92 | stg1AltThermoTempC2 = 55.42 | stg1AltThermoTempC3 = 53.54  |
+DATAQ: | Stg1ThermoTempC = 60.83 | stg1AltThermoTempC2 = 55.37 | stg1AltThermoTempC3 = 53.53  |
+DATAQ: | Stg1ThermoTempC = 60.97 | stg1AltThermoTempC2 = 55.53 | stg1AltThermoTempC3 = 53.67  |
+DATAQ: | Stg1ThermoTempC = 60.97 | stg1AltThermoTempC2 = 55.55 | stg1AltThermoTempC3 = 53.68  |
+DATAQ: | Stg1ThermoTempC = 61.03 | stg1AltThermoTempC2 = 55.6 | stg1AltThermoTempC23= 53.73  |
+DATAQ: | Stg1ThermoTempC = 61.1 | stg1AltThermoTempC2 = 55.62 | stg1AltThermoTempC23= 53.82  |
+DATAQ: | Stg1ThermoTempC = 61.11 | stg1AltThermoTempC2 = 55.75 | stg1AltThermoTempC3 = 53.84  |
+DATAQ: | Stg1ThermoTempC = 61.1 | stg1AltThermoTempC2 = 55.75 | stg1AltThermoTempC23= 53.87  |
+DATAQ: | Stg1ThermoTempC = 61.18 | stg1AltThermoTempC2 = 55.73 | stg1AltThermoTempC3 = 53.93  |
+DATAQ: | Stg1ThermoTempC = 61.16 | stg1AltThermoTempC2 = 55.76 | stg1AltThermoTempC3 = 53.95  |
+DATAQ: | Stg1ThermoTempC = 61.26 | stg1AltThermoTempC2 = 55.99 | stg1AltThermoTempC3 = 54.06  |
+DATAQ: | Stg1ThermoTempC = 61.22 | stg1AltThermoTempC2 = 55.98 | stg1AltThermoTempC3 = 54.05  |
+DATAQ: | Stg1ThermoTempC = 61.3 | stg1AltThermoTempC2 = 56.03 | stg1AltThermoTempC23= 54.16  |
+DATAQ: | Stg1ThermoTempC = 61.34 | stg1AltThermoTempC2 = 56.1 | stg1AltThermoTempC23= 54.16  |
+DATAQ: | Stg1ThermoTempC = 61.28 | stg1AltThermoTempC2 = 56.1 | stg1AltThermoTempC23= 54.14  |
+DATAQ: | Stg1ThermoTempC = 61.35 | stg1AltThermoTempC2 = 56.12 | stg1AltThermoTempC3 = 54.24  |
+DATAQ: | Stg1ThermoTempC = 61.43 | stg1AltThermoTempC2 = 56.19 | stg1AltThermoTempC3 = 54.29  |
+DATAQ: | Stg1ThermoTempC = 61.42 | stg1AltThermoTempC2 = 56.27 | stg1AltThermoTempC3 = 54.34  |
+DATAQ: | Stg1ThermoTempC = 61.48 | stg1AltThermoTempC2 = 56.28 | stg1AltThermoTempC3 = 54.33  |
+DATAQ: | Stg1ThermoTempC = 61.47 | stg1AltThermoTempC2 = 56.34 | stg1AltThermoTempC3 = 54.31  |
+DATAQ: | Stg1ThermoTempC = 61.6 | stg1AltThermoTempC2 = 56.46 | stg1AltThermoTempC23= 54.48  |
+DATAQ: | Stg1ThermoTempC = 61.52 | stg1AltThermoTempC2 = 56.39 | stg1AltThermoTempC3 = 54.42  |
+DATAQ: | Stg1ThermoTempC = 61.67 | stg1AltThermoTempC2 = 56.56 | stg1AltThermoTempC3 = 54.58  |
+DATAQ: | Stg1ThermoTempC = 61.76 | stg1AltThermoTempC2 = 56.64 | stg1AltThermoTempC3 = 54.59  |
+DATAQ: | Stg1ThermoTempC = 62.07 | stg1AltThermoTempC2 = 56.8 | stg1AltThermoTempC23= 54.68  |
+DATAQ: | Stg1ThermoTempC = 62.34 | stg1AltThermoTempC2 = 56.87 | stg1AltThermoTempC3 = 54.66  |
+DATAQ: | Stg1ThermoTempC = 62.76 | stg1AltThermoTempC2 = 56.92 | stg1AltThermoTempC3 = 54.88  |
+DATAQ: | Stg1ThermoTempC = 63.23 | stg1AltThermoTempC2 = 57.02 | stg1AltThermoTempC3 = 55.09  |
+DATAQ: | Stg1ThermoTempC = 64.14 | stg1AltThermoTempC2 = 57.17 | stg1AltThermoTempC3 = 55.63  |
+DATAQ: | Stg1ThermoTempC = 64.65 | stg1AltThermoTempC2 = 57.3 | stg1AltThermoTempC23= 55.89  |
+DATAQ: | Stg1ThermoTempC = 65.44 | stg1AltThermoTempC2 = 57.4 | stg1AltThermoTempC23= 56.59  |
+DATAQ: | Stg1ThermoTempC = 65.83 | stg1AltThermoTempC2 = 57.48 | stg1AltThermoTempC3 = 56.83  |
+DATAQ: | Stg1ThermoTempC = 66.68 | stg1AltThermoTempC2 = 57.76 | stg1AltThermoTempC3 = 57.76  |
+DATAQ: | Stg1ThermoTempC = 67.12 | stg1AltThermoTempC2 = 57.89 | stg1AltThermoTempC3 = 58.01  |
+DATAQ: | Stg1ThermoTempC = 68.2 | stg1AltThermoTempC2 = 58.13 | stg1AltThermoTempC23= 58.87  |
+DATAQ: | Stg1ThermoTempC = 69.03 | stg1AltThermoTempC2 = 58.27 | stg1AltThermoTempC3 = 59.13  |
+DATAQ: | Stg1ThermoTempC = 70.31 | stg1AltThermoTempC2 = 58.58 | stg1AltThermoTempC3 = 60.01  |
+DATAQ: | Stg1ThermoTempC = 70.66 | stg1AltThermoTempC2 = 58.68 | stg1AltThermoTempC3 = 60.37  |
+DATAQ: | Stg1ThermoTempC = 71.13 | stg1AltThermoTempC2 = 59.07 | stg1AltThermoTempC3 = 61.12  |
+DATAQ: | Stg1ThermoTempC = 71.31 | stg1AltThermoTempC2 = 59.26 | stg1AltThermoTempC3 = 61.42  |
+DATAQ: | Stg1ThermoTempC = 71.62 | stg1AltThermoTempC2 = 59.57 | stg1AltThermoTempC3 = 62.13  |
+DATAQ: | Stg1ThermoTempC = 71.83 | stg1AltThermoTempC2 = 59.85 | stg1AltThermoTempC3 = 62.42  |
+DATAQ: | Stg1ThermoTempC = 72.32 | stg1AltThermoTempC2 = 60.21 | stg1AltThermoTempC3 = 63.0  |
+DATAQ: | Stg1ThermoTempC = 72.54 | stg1AltThermoTempC2 = 60.44 | stg1AltThermoTempC3 = 63.18  |
+DATAQ: | Stg1ThermoTempC = 73.08 | stg1AltThermoTempC2 = 60.97 | stg1AltThermoTempC3 = 63.74  |
+DATAQ: | Stg1ThermoTempC = 73.28 | stg1AltThermoTempC2 = 61.17 | stg1AltThermoTempC3 = 64.18  |
+DATAQ: | Stg1ThermoTempC = 73.7 | stg1AltThermoTempC2 = 61.55 | stg1AltThermoTempC23= 64.43  |
+DATAQ: | Stg1ThermoTempC = 74.03 | stg1AltThermoTempC2 = 61.89 | stg1AltThermoTempC3 = 64.72  |
+DATAQ: | Stg1ThermoTempC = 74.53 | stg1AltThermoTempC2 = 62.28 | stg1AltThermoTempC3 = 65.17  |
+DATAQ: | Stg1ThermoTempC = 74.81 | stg1AltThermoTempC2 = 62.59 | stg1AltThermoTempC3 = 65.67  |
+DATAQ: | Stg1ThermoTempC = 75.21 | stg1AltThermoTempC2 = 62.96 | stg1AltThermoTempC3 = 65.87  |
+DATAQ: | Stg1ThermoTempC = 75.89 | stg1AltThermoTempC2 = 63.46 | stg1AltThermoTempC3 = 66.36  |
+DATAQ: | Stg1ThermoTempC = 76.07 | stg1AltThermoTempC2 = 63.73 | stg1AltThermoTempC3 = 66.63  |
+DATAQ: | Stg1ThermoTempC = 76.48 | stg1AltThermoTempC2 = 64.08 | stg1AltThermoTempC3 = 67.04  |
+DATAQ: | Stg1ThermoTempC = 76.76 | stg1AltThermoTempC2 = 64.7 | stg1AltThermoTempC23= 67.52  |
+DATAQ: | Stg1ThermoTempC = 77.22 | stg1AltThermoTempC2 = 64.85 | stg1AltThermoTempC3 = 67.78  |
+DATAQ: | Stg1ThermoTempC = 77.74 | stg1AltThermoTempC2 = 65.47 | stg1AltThermoTempC3 = 68.23  |
+DATAQ: | Stg1ThermoTempC = 77.98 | stg1AltThermoTempC2 = 65.6 | stg1AltThermoTempC23= 68.45  |
+DATAQ: | Stg1ThermoTempC = 78.34 | stg1AltThermoTempC2 = 66.1 | stg1AltThermoTempC23= 68.9  |
+DATAQ: | Stg1ThermoTempC = 78.63 | stg1AltThermoTempC2 = 66.27 | stg1AltThermoTempC3 = 69.14  |
+DATAQ: | Stg1ThermoTempC = 78.98 | stg1AltThermoTempC2 = 66.79 | stg1AltThermoTempC3 = 69.5  |
+DATAQ: | Stg1ThermoTempC = 79.26 | stg1AltThermoTempC2 = 66.97 | stg1AltThermoTempC3 = 69.83  |
+DATAQ: | Stg1ThermoTempC = 79.59 | stg1AltThermoTempC2 = 67.46 | stg1AltThermoTempC3 = 70.15  |
+DATAQ: | Stg1ThermoTempC = 79.84 | stg1AltThermoTempC2 = 67.57 | stg1AltThermoTempC3 = 70.43  |
+DATAQ: | Stg1ThermoTempC = 80.26 | stg1AltThermoTempC2 = 68.12 | stg1AltThermoTempC3 = 70.94  |
+DATAQ: | Stg1ThermoTempC = 80.57 | stg1AltThermoTempC2 = 68.44 | stg1AltThermoTempC3 = 71.29  |
+DATAQ: | Stg1ThermoTempC = 80.85 | stg1AltThermoTempC2 = 68.78 | stg1AltThermoTempC3 = 71.52  |
+DATAQ: | Stg1ThermoTempC = 81.26 | stg1AltThermoTempC2 = 69.24 | stg1AltThermoTempC3 = 72.06  |
+DATAQ: | Stg1ThermoTempC = 81.43 | stg1AltThermoTempC2 = 69.54 | stg1AltThermoTempC3 = 72.2  |
+DATAQ: | Stg1ThermoTempC = 82.11 | stg1AltThermoTempC2 = 69.86 | stg1AltThermoTempC3 = 72.64  |
+DATAQ: | Stg1ThermoTempC = 81.95 | stg1AltThermoTempC2 = 70.07 | stg1AltThermoTempC3 = 72.78  |
+DATAQ: | Stg1ThermoTempC = 82.5 | stg1AltThermoTempC2 = 70.45 | stg1AltThermoTempC23= 73.22  |
+DATAQ: | Stg1ThermoTempC = 82.81 | stg1AltThermoTempC2 = 70.7 | stg1AltThermoTempC23= 73.33  |
+DATAQ: | Stg1ThermoTempC = 83.09 | stg1AltThermoTempC2 = 71.04 | stg1AltThermoTempC3 = 73.7  |
+DATAQ: | Stg1ThermoTempC = 83.24 | stg1AltThermoTempC2 = 71.29 | stg1AltThermoTempC3 = 73.85  |
+DATAQ: | Stg1ThermoTempC = 83.56 | stg1AltThermoTempC2 = 71.67 | stg1AltThermoTempC3 = 74.19  |
+DATAQ: | Stg1ThermoTempC = 83.79 | stg1AltThermoTempC2 = 71.86 | stg1AltThermoTempC3 = 74.3  |
+DATAQ: | Stg1ThermoTempC = 84.04 | stg1AltThermoTempC2 = 72.27 | stg1AltThermoTempC3 = 74.6  |
+DATAQ: | Stg1ThermoTempC = 84.22 | stg1AltThermoTempC2 = 72.55 | stg1AltThermoTempC3 = 74.72  |
+DATAQ: | Stg1ThermoTempC = 84.36 | stg1AltThermoTempC2 = 72.89 | stg1AltThermoTempC3 = 75.12  |
+DATAQ: | Stg1ThermoTempC = 84.32 | stg1AltThermoTempC2 = 72.95 | stg1AltThermoTempC3 = 75.13  |
+DATAQ: | Stg1ThermoTempC = 84.33 | stg1AltThermoTempC2 = 73.34 | stg1AltThermoTempC3 = 75.39  |
+DATAQ: | Stg1ThermoTempC = 84.33 | stg1AltThermoTempC2 = 73.46 | stg1AltThermoTempC3 = 75.42  |
+DATAQ: | Stg1ThermoTempC = 84.31 | stg1AltThermoTempC2 = 73.79 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 84.21 | stg1AltThermoTempC2 = 73.87 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 84.31 | stg1AltThermoTempC2 = 74.19 | stg1AltThermoTempC3 = 75.86  |
+DATAQ: | Stg1ThermoTempC = 84.21 | stg1AltThermoTempC2 = 74.33 | stg1AltThermoTempC3 = 75.89  |
+DATAQ: | Stg1ThermoTempC = 84.12 | stg1AltThermoTempC2 = 74.36 | stg1AltThermoTempC3 = 75.89  |
+DATAQ: | Stg1ThermoTempC = 84.1 | stg1AltThermoTempC2 = 74.62 | stg1AltThermoTempC23= 75.9  |
+DATAQ: | Stg1ThermoTempC = 84.03 | stg1AltThermoTempC2 = 74.85 | stg1AltThermoTempC3 = 75.96  |
+DATAQ: | Stg1ThermoTempC = 84.0 | stg1AltThermoTempC2 = 74.95 | stg1AltThermoTempC23= 76.0  |
+DATAQ: | Stg1ThermoTempC = 83.92 | stg1AltThermoTempC2 = 75.17 | stg1AltThermoTempC3 = 76.0  |
+DATAQ: | Stg1ThermoTempC = 83.88 | stg1AltThermoTempC2 = 75.2 | stg1AltThermoTempC23= 75.89  |
+DATAQ: | Stg1ThermoTempC = 83.77 | stg1AltThermoTempC2 = 75.38 | stg1AltThermoTempC3 = 75.91  |
+DATAQ: | Stg1ThermoTempC = 83.69 | stg1AltThermoTempC2 = 75.46 | stg1AltThermoTempC3 = 75.87  |
+DATAQ: | Stg1ThermoTempC = 83.74 | stg1AltThermoTempC2 = 75.59 | stg1AltThermoTempC3 = 75.82  |
+DATAQ: | Stg1ThermoTempC = 83.78 | stg1AltThermoTempC2 = 75.79 | stg1AltThermoTempC3 = 75.8  |
+DATAQ: | Stg1ThermoTempC = 83.67 | stg1AltThermoTempC2 = 75.79 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 83.78 | stg1AltThermoTempC2 = 76.0 | stg1AltThermoTempC23= 75.71  |
+DATAQ: | Stg1ThermoTempC = 83.72 | stg1AltThermoTempC2 = 76.09 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 83.66 | stg1AltThermoTempC2 = 76.14 | stg1AltThermoTempC3 = 75.68  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 76.33 | stg1AltThermoTempC3 = 75.76  |
+DATAQ: | Stg1ThermoTempC = 83.73 | stg1AltThermoTempC2 = 76.38 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 83.68 | stg1AltThermoTempC2 = 76.45 | stg1AltThermoTempC3 = 75.63  |
+DATAQ: | Stg1ThermoTempC = 83.69 | stg1AltThermoTempC2 = 76.54 | stg1AltThermoTempC3 = 75.66  |
+DATAQ: | Stg1ThermoTempC = 83.67 | stg1AltThermoTempC2 = 76.61 | stg1AltThermoTempC3 = 75.57  |
+DATAQ: | Stg1ThermoTempC = 83.8 | stg1AltThermoTempC2 = 76.7 | stg1AltThermoTempC2 3 75.7  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 76.78 | stg1AltThermoTempC3 = 75.62  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 76.8 | stg1AltThermoTempC23= 75.67  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 76.88 | stg1AltThermoTempC3 = 75.75  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 76.97 | stg1AltThermoTempC3 = 75.69  |
+DATAQ: | Stg1ThermoTempC = 83.78 | stg1AltThermoTempC2 = 77.09 | stg1AltThermoTempC3 = 75.8  |
+DATAQ: | Stg1ThermoTempC = 83.76 | stg1AltThermoTempC2 = 77.11 | stg1AltThermoTempC3 = 75.78  |
+DATAQ: | Stg1ThermoTempC = 83.79 | stg1AltThermoTempC2 = 77.11 | stg1AltThermoTempC3 = 75.81  |
+DATAQ: | Stg1ThermoTempC = 83.81 | stg1AltThermoTempC2 = 77.24 | stg1AltThermoTempC3 = 75.8  |
+DATAQ: | Stg1ThermoTempC = 83.79 | stg1AltThermoTempC2 = 77.21 | stg1AltThermoTempC3 = 75.79  |
+DATAQ: | Stg1ThermoTempC = 83.85 | stg1AltThermoTempC2 = 77.29 | stg1AltThermoTempC3 = 75.84  |
+DATAQ: | Stg1ThermoTempC = 83.89 | stg1AltThermoTempC2 = 77.39 | stg1AltThermoTempC3 = 75.95  |
+DATAQ: | Stg1ThermoTempC = 83.91 | stg1AltThermoTempC2 = 77.47 | stg1AltThermoTempC3 = 75.86  |
+DATAQ: | Stg1ThermoTempC = 83.89 | stg1AltThermoTempC2 = 77.48 | stg1AltThermoTempC3 = 75.87  |
+DATAQ: | Stg1ThermoTempC = 83.88 | stg1AltThermoTempC2 = 77.52 | stg1AltThermoTempC3 = 75.97  |
+DATAQ: | Stg1ThermoTempC = 83.89 | stg1AltThermoTempC2 = 77.56 | stg1AltThermoTempC3 = 75.96  |
+DATAQ: | Stg1ThermoTempC = 83.91 | stg1AltThermoTempC2 = 77.65 | stg1AltThermoTempC3 = 76.0  |
+DATAQ: | Stg1ThermoTempC = 83.9 | stg1AltThermoTempC2 = 77.69 | stg1AltThermoTempC23= 76.05  |
+DATAQ: | Stg1ThermoTempC = 83.87 | stg1AltThermoTempC2 = 77.66 | stg1AltThermoTempC3 = 76.01  |
+DATAQ: | Stg1ThermoTempC = 84.02 | stg1AltThermoTempC2 = 77.83 | stg1AltThermoTempC3 = 76.11  |
+DATAQ: | Stg1ThermoTempC = 83.86 | stg1AltThermoTempC2 = 77.74 | stg1AltThermoTempC3 = 76.11  |
+DATAQ: | Stg1ThermoTempC = 83.99 | stg1AltThermoTempC2 = 77.88 | stg1AltThermoTempC3 = 76.13  |
+DATAQ: | Stg1ThermoTempC = 83.95 | stg1AltThermoTempC2 = 77.81 | stg1AltThermoTempC3 = 76.09  |
+DATAQ: | Stg1ThermoTempC = 84.0 | stg1AltThermoTempC2 = 77.92 | stg1AltThermoTempC23= 76.11  |
+DATAQ: | Stg1ThermoTempC = 84.02 | stg1AltThermoTempC2 = 77.94 | stg1AltThermoTempC3 = 76.15  |
+DATAQ: | Stg1ThermoTempC = 84.02 | stg1AltThermoTempC2 = 78.01 | stg1AltThermoTempC3 = 76.22  |
+DATAQ: | Stg1ThermoTempC = 84.04 | stg1AltThermoTempC2 = 78.03 | stg1AltThermoTempC3 = 76.17  |
+DATAQ: | Stg1ThermoTempC = 84.06 | stg1AltThermoTempC2 = 78.03 | stg1AltThermoTempC3 = 76.2  |
+DATAQ: | Stg1ThermoTempC = 84.05 | stg1AltThermoTempC2 = 78.09 | stg1AltThermoTempC3 = 76.12  |
+DATAQ: | Stg1ThermoTempC = 84.08 | stg1AltThermoTempC2 = 78.15 | stg1AltThermoTempC3 = 76.24  |
+DATAQ: | Stg1ThermoTempC = 84.08 | stg1AltThermoTempC2 = 78.17 | stg1AltThermoTempC3 = 76.21  |
+DATAQ: | Stg1ThermoTempC = 84.04 | stg1AltThermoTempC2 = 78.16 | stg1AltThermoTempC3 = 76.17  |
+DATAQ: | Stg1ThermoTempC = 84.08 | stg1AltThermoTempC2 = 78.26 | stg1AltThermoTempC3 = 76.33  |
+DATAQ: | Stg1ThermoTempC = 84.13 | stg1AltThermoTempC2 = 78.28 | stg1AltThermoTempC3 = 76.33  |
+DATAQ: | Stg1ThermoTempC = 84.14 | stg1AltThermoTempC2 = 78.31 | stg1AltThermoTempC3 = 76.4  |
+DATAQ: | Stg1ThermoTempC = 84.06 | stg1AltThermoTempC2 = 78.27 | stg1AltThermoTempC3 = 76.33  |
+DATAQ: | Stg1ThermoTempC = 84.15 | stg1AltThermoTempC2 = 78.34 | stg1AltThermoTempC3 = 76.24  |
+DATAQ: | Stg1ThermoTempC = 84.13 | stg1AltThermoTempC2 = 78.35 | stg1AltThermoTempC3 = 76.43  |
+DATAQ: | Stg1ThermoTempC = 84.22 | stg1AltThermoTempC2 = 78.4 | stg1AltThermoTempC23= 76.38  |
+DATAQ: | Stg1ThermoTempC = 84.17 | stg1AltThermoTempC2 = 78.47 | stg1AltThermoTempC3 = 76.45  |
+DATAQ: | Stg1ThermoTempC = 84.17 | stg1AltThermoTempC2 = 78.45 | stg1AltThermoTempC3 = 76.46  |
+DATAQ: | Stg1ThermoTempC = 84.19 | stg1AltThermoTempC2 = 78.43 | stg1AltThermoTempC3 = 76.43  |
+DATAQ: | Stg1ThermoTempC = 84.22 | stg1AltThermoTempC2 = 78.49 | stg1AltThermoTempC3 = 76.45  |
+DATAQ: | Stg1ThermoTempC = 84.23 | stg1AltThermoTempC2 = 78.56 | stg1AltThermoTempC3 = 76.52  |
+DATAQ: | Stg1ThermoTempC = 84.3 | stg1AltThermoTempC2 = 78.56 | stg1AltThermoTempC23= 76.56  |
+DATAQ: | Stg1ThermoTempC = 84.19 | stg1AltThermoTempC2 = 78.57 | stg1AltThermoTempC3 = 76.56  |
+DATAQ: | Stg1ThermoTempC = 84.34 | stg1AltThermoTempC2 = 78.65 | stg1AltThermoTempC3 = 76.54  |
+DATAQ: | Stg1ThermoTempC = 84.32 | stg1AltThermoTempC2 = 78.62 | stg1AltThermoTempC3 = 76.54  |
+DATAQ: | Stg1ThermoTempC = 84.24 | stg1AltThermoTempC2 = 78.61 | stg1AltThermoTempC3 = 76.49  |
+DATAQ: | Stg1ThermoTempC = 84.24 | stg1AltThermoTempC2 = 78.72 | stg1AltThermoTempC3 = 76.57  |
+DATAQ: | Stg1ThermoTempC = 84.33 | stg1AltThermoTempC2 = 78.69 | stg1AltThermoTempC3 = 76.54  |
+DATAQ: | Stg1ThermoTempC = 84.31 | stg1AltThermoTempC2 = 78.71 | stg1AltThermoTempC3 = 76.63  |
+DATAQ: | Stg1ThermoTempC = 84.31 | stg1AltThermoTempC2 = 78.73 | stg1AltThermoTempC3 = 76.65  |
+DATAQ: | Stg1ThermoTempC = 84.33 | stg1AltThermoTempC2 = 78.77 | stg1AltThermoTempC3 = 76.6  |
+DATAQ: | Stg1ThermoTempC = 84.34 | stg1AltThermoTempC2 = 78.8 | stg1AltThermoTempC23= 76.66  |
+DATAQ: | Stg1ThermoTempC = 84.35 | stg1AltThermoTempC2 = 78.84 | stg1AltThermoTempC3 = 76.68  |
+DATAQ: | Stg1ThermoTempC = 84.34 | stg1AltThermoTempC2 = 78.83 | stg1AltThermoTempC3 = 76.69  |
+DATAQ: | Stg1ThermoTempC = 84.43 | stg1AltThermoTempC2 = 78.87 | stg1AltThermoTempC3 = 76.69  |
+DATAQ: | Stg1ThermoTempC = 84.38 | stg1AltThermoTempC2 = 78.85 | stg1AltThermoTempC3 = 76.67  |
+DATAQ: | Stg1ThermoTempC = 84.44 | stg1AltThermoTempC2 = 78.86 | stg1AltThermoTempC3 = 76.7  |
+DATAQ: | Stg1ThermoTempC = 84.45 | stg1AltThermoTempC2 = 78.93 | stg1AltThermoTempC3 = 76.78  |
+DATAQ: | Stg1ThermoTempC = 84.42 | stg1AltThermoTempC2 = 78.93 | stg1AltThermoTempC3 = 76.75  |
+DATAQ: | Stg1ThermoTempC = 84.36 | stg1AltThermoTempC2 = 78.91 | stg1AltThermoTempC3 = 76.8  |
+DATAQ: | Stg1ThermoTempC = 84.44 | stg1AltThermoTempC2 = 78.99 | stg1AltThermoTempC3 = 76.79  |
+DATAQ: | Stg1ThermoTempC = 84.4 | stg1AltThermoTempC2 = 78.94 | stg1AltThermoTempC23= 76.74  |
+DATAQ: | Stg1ThermoTempC = 84.46 | stg1AltThermoTempC2 = 78.98 | stg1AltThermoTempC3 = 76.76  |
+DATAQ: | Stg1ThermoTempC = 84.48 | stg1AltThermoTempC2 = 78.96 | stg1AltThermoTempC3 = 76.8  |
+DATAQ: | Stg1ThermoTempC = 84.5 | stg1AltThermoTempC2 = 79.04 | stg1AltThermoTempC23= 76.83  |
+DATAQ: | Stg1ThermoTempC = 84.48 | stg1AltThermoTempC2 = 79.08 | stg1AltThermoTempC3 = 76.85  |
+DATAQ: | Stg1ThermoTempC = 84.44 | stg1AltThermoTempC2 = 79.02 | stg1AltThermoTempC3 = 76.83  |
+DATAQ: | Stg1ThermoTempC = 84.45 | stg1AltThermoTempC2 = 79.12 | stg1AltThermoTempC3 = 76.82  |
+DATAQ: | Stg1ThermoTempC = 84.53 | stg1AltThermoTempC2 = 79.13 | stg1AltThermoTempC3 = 76.89  |
+DATAQ: | Stg1ThermoTempC = 84.5 | stg1AltThermoTempC2 = 79.07 | stg1AltThermoTempC23= 76.87  |
+DATAQ: | Stg1ThermoTempC = 84.52 | stg1AltThermoTempC2 = 79.16 | stg1AltThermoTempC3 = 76.9  |
+DATAQ: | Stg1ThermoTempC = 84.52 | stg1AltThermoTempC2 = 79.15 | stg1AltThermoTempC3 = 76.88  |
+DATAQ: | Stg1ThermoTempC = 84.54 | stg1AltThermoTempC2 = 79.15 | stg1AltThermoTempC3 = 76.89  |
+DATAQ: | Stg1ThermoTempC = 84.57 | stg1AltThermoTempC2 = 79.21 | stg1AltThermoTempC3 = 77.01  |
+DATAQ: | Stg1ThermoTempC = 84.56 | stg1AltThermoTempC2 = 79.19 | stg1AltThermoTempC3 = 76.98  |
+DATAQ: | Stg1ThermoTempC = 84.59 | stg1AltThermoTempC2 = 79.27 | stg1AltThermoTempC3 = 76.95  |
+DATAQ: | Stg1ThermoTempC = 84.56 | stg1AltThermoTempC2 = 79.24 | stg1AltThermoTempC3 = 76.96  |
+DATAQ: | Stg1ThermoTempC = 84.59 | stg1AltThermoTempC2 = 79.25 | stg1AltThermoTempC3 = 77.03  |
+DATAQ: | Stg1ThermoTempC = 84.58 | stg1AltThermoTempC2 = 79.23 | stg1AltThermoTempC3 = 77.05  |
+DATAQ: | Stg1ThermoTempC = 84.63 | stg1AltThermoTempC2 = 79.29 | stg1AltThermoTempC3 = 76.97  |
+DATAQ: | Stg1ThermoTempC = 84.56 | stg1AltThermoTempC2 = 79.27 | stg1AltThermoTempC3 = 77.0  |
+DATAQ: | Stg1ThermoTempC = 84.61 | stg1AltThermoTempC2 = 79.34 | stg1AltThermoTempC3 = 77.03  |
+DATAQ: | Stg1ThermoTempC = 84.67 | stg1AltThermoTempC2 = 79.35 | stg1AltThermoTempC3 = 77.06  |
+DATAQ: | Stg1ThermoTempC = 84.62 | stg1AltThermoTempC2 = 79.36 | stg1AltThermoTempC3 = 77.06  |
+DATAQ: | Stg1ThermoTempC = 84.6 | stg1AltThermoTempC2 = 79.31 | stg1AltThermoTempC23= 77.07  |
+DATAQ: | Stg1ThermoTempC = 84.69 | stg1AltThermoTempC2 = 79.42 | stg1AltThermoTempC3 = 77.11  |
+DATAQ: | Stg1ThermoTempC = 84.68 | stg1AltThermoTempC2 = 79.41 | stg1AltThermoTempC3 = 77.09  |
+DATAQ: | Stg1ThermoTempC = 84.69 | stg1AltThermoTempC2 = 79.45 | stg1AltThermoTempC3 = 77.16  |
+DATAQ: | Stg1ThermoTempC = 84.7 | stg1AltThermoTempC2 = 79.44 | stg1AltThermoTempC23= 77.13  |
+DATAQ: | Stg1ThermoTempC = 84.62 | stg1AltThermoTempC2 = 79.43 | stg1AltThermoTempC3 = 77.09  |
+DATAQ: | Stg1ThermoTempC = 84.7 | stg1AltThermoTempC2 = 79.4 | stg1AltThermoTempC2 3 77.13  |
+DATAQ: | Stg1ThermoTempC = 84.71 | stg1AltThermoTempC2 = 79.44 | stg1AltThermoTempC3 = 77.16  |
+DATAQ: | Stg1ThermoTempC = 84.77 | stg1AltThermoTempC2 = 79.5 | stg1AltThermoTempC23= 77.19  |
+DATAQ: | Stg1ThermoTempC = 84.7 | stg1AltThermoTempC2 = 79.47 | stg1AltThermoTempC23= 77.15  |
+DATAQ: | Stg1ThermoTempC = 84.73 | stg1AltThermoTempC2 = 79.48 | stg1AltThermoTempC3 = 77.14  |
+DATAQ: | Stg1ThermoTempC = 84.75 | stg1AltThermoTempC2 = 79.49 | stg1AltThermoTempC3 = 77.16  |
+DATAQ: | Stg1ThermoTempC = 84.75 | stg1AltThermoTempC2 = 79.46 | stg1AltThermoTempC3 = 77.15  |
+DATAQ: | Stg1ThermoTempC = 84.72 | stg1AltThermoTempC2 = 79.51 | stg1AltThermoTempC3 = 77.14  |
+DATAQ: | Stg1ThermoTempC = 84.77 | stg1AltThermoTempC2 = 79.53 | stg1AltThermoTempC3 = 77.22  |
+DATAQ: | Stg1ThermoTempC = 84.74 | stg1AltThermoTempC2 = 79.58 | stg1AltThermoTempC3 = 77.23  |
+DATAQ: | Stg1ThermoTempC = 84.77 | stg1AltThermoTempC2 = 79.61 | stg1AltThermoTempC3 = 77.27  |
+DATAQ: | Stg1ThermoTempC = 84.84 | stg1AltThermoTempC2 = 79.64 | stg1AltThermoTempC3 = 77.27  |
+DATAQ: | Stg1ThermoTempC = 84.73 | stg1AltThermoTempC2 = 79.58 | stg1AltThermoTempC3 = 77.19  |
+DATAQ: | Stg1ThermoTempC = 84.79 | stg1AltThermoTempC2 = 79.66 | stg1AltThermoTempC3 = 77.25  |
+DATAQ: | Stg1ThermoTempC = 84.77 | stg1AltThermoTempC2 = 79.57 | stg1AltThermoTempC3 = 77.27  |
+DATAQ: | Stg1ThermoTempC = 84.82 | stg1AltThermoTempC2 = 79.6 | stg1AltThermoTempC23= 77.3  |
+DATAQ: | Stg1ThermoTempC = 84.78 | stg1AltThermoTempC2 = 79.6 | stg1AltThermoTempC23= 77.26  |
+DATAQ: | Stg1ThermoTempC = 84.8 | stg1AltThermoTempC2 = 79.65 | stg1AltThermoTempC23= 77.3  |
+DATAQ: | Stg1ThermoTempC = 84.84 | stg1AltThermoTempC2 = 79.69 | stg1AltThermoTempC3 = 77.28  |
+DATAQ: | Stg1ThermoTempC = 84.8 | stg1AltThermoTempC2 = 79.65 | stg1AltThermoTempC23= 77.28  |
+DATAQ: | Stg1ThermoTempC = 84.82 | stg1AltThermoTempC2 = 79.6 | stg1AltThermoTempC23= 77.3  |
+DATAQ: | Stg1ThermoTempC = 84.89 | stg1AltThermoTempC2 = 79.67 | stg1AltThermoTempC3 = 77.24  |
+DATAQ: | Stg1ThermoTempC = 84.85 | stg1AltThermoTempC2 = 79.68 | stg1AltThermoTempC3 = 77.34  |
+DATAQ: | Stg1ThermoTempC = 84.8 | stg1AltThermoTempC2 = 79.68 | stg1AltThermoTempC23= 77.3  |
+DATAQ: | Stg1ThermoTempC = 84.9 | stg1AltThermoTempC2 = 79.66 | stg1AltThermoTempC23= 77.31  |
+DATAQ: | Stg1ThermoTempC = 84.85 | stg1AltThermoTempC2 = 79.68 | stg1AltThermoTempC3 = 77.33  |
+DATAQ: | Stg1ThermoTempC = 84.79 | stg1AltThermoTempC2 = 79.72 | stg1AltThermoTempC3 = 77.34  |
+DATAQ: | Stg1ThermoTempC = 84.87 | stg1AltThermoTempC2 = 79.78 | stg1AltThermoTempC3 = 77.31  |
+DATAQ: | Stg1ThermoTempC = 84.88 | stg1AltThermoTempC2 = 79.73 | stg1AltThermoTempC3 = 77.37  |
+DATAQ: | Stg1ThermoTempC = 84.89 | stg1AltThermoTempC2 = 79.71 | stg1AltThermoTempC3 = 77.35  |
+DATAQ: | Stg1ThermoTempC = 84.87 | stg1AltThermoTempC2 = 79.76 | stg1AltThermoTempC3 = 77.38  |
+DATAQ: | Stg1ThermoTempC = 84.86 | stg1AltThermoTempC2 = 79.75 | stg1AltThermoTempC3 = 77.41  |
+DATAQ: | Stg1ThermoTempC = 84.87 | stg1AltThermoTempC2 = 79.78 | stg1AltThermoTempC3 = 77.4  |
+DATAQ: | Stg1ThermoTempC = 84.86 | stg1AltThermoTempC2 = 79.79 | stg1AltThermoTempC3 = 77.32  |
+DATAQ: | Stg1ThermoTempC = 84.9 | stg1AltThermoTempC2 = 79.76 | stg1AltThermoTempC23= 77.41  |
+DATAQ: | Stg1ThermoTempC = 84.87 | stg1AltThermoTempC2 = 79.79 | stg1AltThermoTempC3 = 77.41  |
+DATAQ: | Stg1ThermoTempC = 84.91 | stg1AltThermoTempC2 = 79.79 | stg1AltThermoTempC3 = 77.43  |
+DATAQ: | Stg1ThermoTempC = 84.91 | stg1AltThermoTempC2 = 79.79 | stg1AltThermoTempC3 = 77.41  |
+DATAQ: | Stg1ThermoTempC = 84.85 | stg1AltThermoTempC2 = 79.85 | stg1AltThermoTempC3 = 77.37  |
+DATAQ: | Stg1ThermoTempC = 84.89 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC23= 77.44  |
+DATAQ: | Stg1ThermoTempC = 84.89 | stg1AltThermoTempC2 = 79.89 | stg1AltThermoTempC3 = 77.48  |
+DATAQ: | Stg1ThermoTempC = 84.94 | stg1AltThermoTempC2 = 79.83 | stg1AltThermoTempC3 = 77.44  |
+DATAQ: | Stg1ThermoTempC = 85.0 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC2 3 77.46  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC23= 77.49  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC23= 77.48  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 79.86 | stg1AltThermoTempC3 = 77.42  |
+DATAQ: | Stg1ThermoTempC = 84.94 | stg1AltThermoTempC2 = 79.83 | stg1AltThermoTempC3 = 77.46  |
+DATAQ: | Stg1ThermoTempC = 85.04 | stg1AltThermoTempC2 = 79.93 | stg1AltThermoTempC3 = 77.49  |
+DATAQ: | Stg1ThermoTempC = 84.95 | stg1AltThermoTempC2 = 79.94 | stg1AltThermoTempC3 = 77.49  |
+DATAQ: | Stg1ThermoTempC = 84.94 | stg1AltThermoTempC2 = 79.88 | stg1AltThermoTempC3 = 77.51  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 79.94 | stg1AltThermoTempC3 = 77.52  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC23= 77.54  |
+DATAQ: | Stg1ThermoTempC = 85.05 | stg1AltThermoTempC2 = 80.02 | stg1AltThermoTempC3 = 77.55  |
+DATAQ: | Stg1ThermoTempC = 85.0 | stg1AltThermoTempC2 = 79.9 | stg1AltThermoTempC2 3 77.52  |
+DATAQ: | Stg1ThermoTempC = 85.06 | stg1AltThermoTempC2 = 79.98 | stg1AltThermoTempC3 = 77.57  |
+DATAQ: | Stg1ThermoTempC = 85.04 | stg1AltThermoTempC2 = 79.95 | stg1AltThermoTempC3 = 77.55  |
+DATAQ: | Stg1ThermoTempC = 85.01 | stg1AltThermoTempC2 = 80.01 | stg1AltThermoTempC3 = 77.52  |
+DATAQ: | Stg1ThermoTempC = 85.01 | stg1AltThermoTempC2 = 79.93 | stg1AltThermoTempC3 = 77.56  |
+DATAQ: | Stg1ThermoTempC = 85.01 | stg1AltThermoTempC2 = 79.97 | stg1AltThermoTempC3 = 77.56  |
+DATAQ: | Stg1ThermoTempC = 84.99 | stg1AltThermoTempC2 = 80.01 | stg1AltThermoTempC3 = 77.58  |
+DATAQ: | Stg1ThermoTempC = 85.0 | stg1AltThermoTempC2 = 79.96 | stg1AltThermoTempC23= 77.63  |
+DATAQ: | Stg1ThermoTempC = 85.04 | stg1AltThermoTempC2 = 79.95 | stg1AltThermoTempC3 = 77.54  |
+DATAQ: | Stg1ThermoTempC = 84.95 | stg1AltThermoTempC2 = 79.91 | stg1AltThermoTempC3 = 77.55  |
+DATAQ: | Stg1ThermoTempC = 85.01 | stg1AltThermoTempC2 = 80.02 | stg1AltThermoTempC3 = 77.62  |
+DATAQ: | Stg1ThermoTempC = 85.1 | stg1AltThermoTempC2 = 80.01 | stg1AltThermoTempC23= 77.63  |
+DATAQ: | Stg1ThermoTempC = 85.05 | stg1AltThermoTempC2 = 80.02 | stg1AltThermoTempC3 = 77.63  |
+DATAQ: | Stg1ThermoTempC = 85.04 | stg1AltThermoTempC2 = 80.0 | stg1AltThermoTempC23= 77.62  |
+DATAQ: | Stg1ThermoTempC = 85.03 | stg1AltThermoTempC2 = 80.02 | stg1AltThermoTempC3 = 77.62  |
+DATAQ: | Stg1ThermoTempC = 85.07 | stg1AltThermoTempC2 = 80.05 | stg1AltThermoTempC3 = 77.67  |
+DATAQ: | Stg1ThermoTempC = 85.06 | stg1AltThermoTempC2 = 80.05 | stg1AltThermoTempC3 = 77.69  |
+DATAQ: | Stg1ThermoTempC = 85.12 | stg1AltThermoTempC2 = 80.1 | stg1AltThermoTempC23= 77.72  |
+DATAQ: | Stg1ThermoTempC = 85.09 | stg1AltThermoTempC2 = 80.06 | stg1AltThermoTempC3 = 77.67  |
+DATAQ: | Stg1ThermoTempC = 85.1 | stg1AltThermoTempC2 = 80.0 | stg1AltThermoTempC2 3 77.7  |
+DATAQ: | Stg1ThermoTempC = 85.02 | stg1AltThermoTempC2 = 80.01 | stg1AltThermoTempC3 = 77.66  |
+DATAQ: | Stg1ThermoTempC = 85.12 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.69  |
+DATAQ: | Stg1ThermoTempC = 85.11 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.67  |
+DATAQ: | Stg1ThermoTempC = 85.12 | stg1AltThermoTempC2 = 80.09 | stg1AltThermoTempC3 = 77.71  |
+DATAQ: | Stg1ThermoTempC = 85.11 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.72  |
+DATAQ: | Stg1ThermoTempC = 85.13 | stg1AltThermoTempC2 = 80.08 | stg1AltThermoTempC3 = 77.69  |
+DATAQ: | Stg1ThermoTempC = 85.11 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.71  |
+DATAQ: | Stg1ThermoTempC = 85.14 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.72  |
+DATAQ: | Stg1ThermoTempC = 85.1 | stg1AltThermoTempC2 = 80.1 | stg1AltThermoTempC2 3 77.73  |
+DATAQ: | Stg1ThermoTempC = 85.1 | stg1AltThermoTempC2 = 80.1 | stg1AltThermoTempC2 3 77.76  |
+DATAQ: | Stg1ThermoTempC = 85.12 | stg1AltThermoTempC2 = 80.09 | stg1AltThermoTempC3 = 77.74  |
+DATAQ: | Stg1ThermoTempC = 85.09 | stg1AltThermoTempC2 = 80.06 | stg1AltThermoTempC3 = 77.76  |
+DATAQ: | Stg1ThermoTempC = 85.05 | stg1AltThermoTempC2 = 80.12 | stg1AltThermoTempC3 = 77.71  |
+DATAQ: | Stg1ThermoTempC = 85.09 | stg1AltThermoTempC2 = 80.16 | stg1AltThermoTempC3 = 77.74  |
+DATAQ: | Stg1ThermoTempC = 84.93 | stg1AltThermoTempC2 = 80.02 | stg1AltThermoTempC3 = 77.57  |
+DATAQ: | Stg1ThermoTempC = 84.89 | stg1AltThermoTempC2 = 79.99 | stg1AltThermoTempC3 = 77.52  |
+DATAQ: | Stg1ThermoTempC = 84.85 | stg1AltThermoTempC2 = 80.01 | stg1AltThermoTempC3 = 77.5  |
+DATAQ: | Stg1ThermoTempC = 84.75 | stg1AltThermoTempC2 = 79.85 | stg1AltThermoTempC3 = 77.36  |
+DATAQ: | Stg1ThermoTempC = 84.67 | stg1AltThermoTempC2 = 79.72 | stg1AltThermoTempC3 = 77.27  |
+DATAQ: | Stg1ThermoTempC = 84.59 | stg1AltThermoTempC2 = 79.58 | stg1AltThermoTempC3 = 77.2  |
+DATAQ: | Stg1ThermoTempC = 84.4 | stg1AltThermoTempC2 = 79.13 | stg1AltThermoTempC23= 77.09  |
+DATAQ: | Stg1ThermoTempC = 84.44 | stg1AltThermoTempC2 = 78.72 | stg1AltThermoTempC3 = 77.06  |
+DATAQ: | Stg1ThermoTempC = 84.24 | stg1AltThermoTempC2 = 77.97 | stg1AltThermoTempC3 = 76.86  |
+DATAQ: | Stg1ThermoTempC = 84.13 | stg1AltThermoTempC2 = 76.76 | stg1AltThermoTempC3 = 76.76  |
+DATAQ: | Stg1ThermoTempC = 84.02 | stg1AltThermoTempC2 = 76.29 | stg1AltThermoTempC3 = 76.7  |
+DATAQ: | Stg1ThermoTempC = 83.8 | stg1AltThermoTempC2 = 74.92 | stg1AltThermoTempC23= 76.61  |
+DATAQ: | Stg1ThermoTempC = 83.75 | stg1AltThermoTempC2 = 74.46 | stg1AltThermoTempC3 = 76.62  |
+DATAQ: | Stg1ThermoTempC = 83.73 | stg1AltThermoTempC2 = 73.74 | stg1AltThermoTempC3 = 76.48  |
+DATAQ: | Stg1ThermoTempC = 83.45 | stg1AltThermoTempC2 = 72.43 | stg1AltThermoTempC3 = 76.44  |
+DATAQ: | Stg1ThermoTempC = 83.39 | stg1AltThermoTempC2 = 70.97 | stg1AltThermoTempC3 = 76.33  |
+DATAQ: | Stg1ThermoTempC = 83.19 | stg1AltThermoTempC2 = 70.49 | stg1AltThermoTempC3 = 76.25  |
+DATAQ: | Stg1ThermoTempC = 83.05 | stg1AltThermoTempC2 = 69.03 | stg1AltThermoTempC3 = 76.07  |
+DATAQ: | Stg1ThermoTempC = 82.91 | stg1AltThermoTempC2 = 68.56 | stg1AltThermoTempC3 = 75.96  |
+DATAQ: | Stg1ThermoTempC = 82.74 | stg1AltThermoTempC2 = 67.13 | stg1AltThermoTempC3 = 75.91  |
+DATAQ: | Stg1ThermoTempC = 82.68 | stg1AltThermoTempC2 = 66.7 | stg1AltThermoTempC23= 75.8  |
+DATAQ: | Stg1ThermoTempC = 82.46 | stg1AltThermoTempC2 = 65.39 | stg1AltThermoTempC3 = 75.65  |
+DATAQ: | Stg1ThermoTempC = 82.34 | stg1AltThermoTempC2 = 64.95 | stg1AltThermoTempC3 = 75.59  |
+DATAQ: | Stg1ThermoTempC = 82.25 | stg1AltThermoTempC2 = 63.71 | stg1AltThermoTempC3 = 75.47  |
+DATAQ: | Stg1ThermoTempC = 82.15 | stg1AltThermoTempC2 = 63.25 | stg1AltThermoTempC3 = 75.35  |
+DATAQ: | Stg1ThermoTempC = 81.96 | stg1AltThermoTempC2 = 62.09 | stg1AltThermoTempC3 = 75.18  |
+DATAQ: | Stg1ThermoTempC = 81.87 | stg1AltThermoTempC2 = 61.79 | stg1AltThermoTempC3 = 75.15  |
+DATAQ: | Stg1ThermoTempC = 81.56 | stg1AltThermoTempC2 = 60.52 | stg1AltThermoTempC3 = 74.9  |
+DATAQ: | Stg1ThermoTempC = 81.53 | stg1AltThermoTempC2 = 60.2 | stg1AltThermoTempC23= 74.82  |
+DATAQ: | Stg1ThermoTempC = 81.3 | stg1AltThermoTempC2 = 59.05 | stg1AltThermoTempC23= 74.67  |
+DATAQ: | Stg1ThermoTempC = 81.21 | stg1AltThermoTempC2 = 58.72 | stg1AltThermoTempC3 = 74.66  |
+DATAQ: | Stg1ThermoTempC = 81.02 | stg1AltThermoTempC2 = 57.75 | stg1AltThermoTempC3 = 74.51  |
+DATAQ: | Stg1ThermoTempC = 80.89 | stg1AltThermoTempC2 = 57.4 | stg1AltThermoTempC23= 74.41  |
+DATAQ: | Stg1ThermoTempC = 80.75 | stg1AltThermoTempC2 = 56.48 | stg1AltThermoTempC3 = 74.3  |
+DATAQ: | Stg1ThermoTempC = 80.59 | stg1AltThermoTempC2 = 56.18 | stg1AltThermoTempC3 = 74.3  |
+DATAQ: | Stg1ThermoTempC = 80.33 | stg1AltThermoTempC2 = 55.19 | stg1AltThermoTempC3 = 74.05  |
+DATAQ: | Stg1ThermoTempC = 80.28 | stg1AltThermoTempC2 = 54.91 | stg1AltThermoTempC3 = 73.83  |
+DATAQ: | Stg1ThermoTempC = 80.05 | stg1AltThermoTempC2 = 54.06 | stg1AltThermoTempC3 = 73.47  |
+DATAQ: | Stg1ThermoTempC = 79.9 | stg1AltThermoTempC2 = 53.8 | stg1AltThermoTempC2 3 73.47  |
+DATAQ: | Stg1ThermoTempC = 79.67 | stg1AltThermoTempC2 = 52.97 | stg1AltThermoTempC3 = 73.4  |
+DATAQ: | Stg1ThermoTempC = 79.5 | stg1AltThermoTempC2 = 52.69 | stg1AltThermoTempC23= 73.47  |
+DATAQ: | Stg1ThermoTempC = 79.28 | stg1AltThermoTempC2 = 51.99 | stg1AltThermoTempC3 = 73.46  |
+DATAQ: | Stg1ThermoTempC = 79.24 | stg1AltThermoTempC2 = 51.62 | stg1AltThermoTempC3 = 73.37  |
+DATAQ: | Stg1ThermoTempC = 78.93 | stg1AltThermoTempC2 = 50.93 | stg1AltThermoTempC3 = 73.22  |
+DATAQ: | Stg1ThermoTempC = 78.82 | stg1AltThermoTempC2 = 50.63 | stg1AltThermoTempC3 = 73.16  |
+DATAQ: | Stg1ThermoTempC = 78.62 | stg1AltThermoTempC2 = 49.95 | stg1AltThermoTempC3 = 72.97  |
+DATAQ: | Stg1ThermoTempC = 78.47 | stg1AltThermoTempC2 = 49.77 | stg1AltThermoTempC3 = 72.75  |
+DATAQ: | Stg1ThermoTempC = 78.27 | stg1AltThermoTempC2 = 49.13 | stg1AltThermoTempC3 = 72.53  |
+DATAQ: | Stg1ThermoTempC = 78.13 | stg1AltThermoTempC2 = 48.92 | stg1AltThermoTempC3 = 72.4  |
+DATAQ: | Stg1ThermoTempC = 77.85 | stg1AltThermoTempC2 = 48.24 | stg1AltThermoTempC3 = 72.07  |
+DATAQ: | Stg1ThermoTempC = 77.72 | stg1AltThermoTempC2 = 48.11 | stg1AltThermoTempC3 = 72.06  |
+DATAQ: | Stg1ThermoTempC = 77.49 | stg1AltThermoTempC2 = 47.49 | stg1AltThermoTempC3 = 71.98  |
+DATAQ: | Stg1ThermoTempC = 77.36 | stg1AltThermoTempC2 = 47.21 | stg1AltThermoTempC3 = 71.92  |
+DATAQ: | Stg1ThermoTempC = 77.13 | stg1AltThermoTempC2 = 46.75 | stg1AltThermoTempC3 = 71.82  |
+DATAQ: | Stg1ThermoTempC = 76.99 | stg1AltThermoTempC2 = 46.63 | stg1AltThermoTempC3 = 71.72  |
+DATAQ: | Stg1ThermoTempC = 76.73 | stg1AltThermoTempC2 = 46.02 | stg1AltThermoTempC3 = 71.62  |
+DATAQ: | Stg1ThermoTempC = 76.56 | stg1AltThermoTempC2 = 45.92 | stg1AltThermoTempC3 = 71.51  |
+DATAQ: | Stg1ThermoTempC = 76.37 | stg1AltThermoTempC2 = 45.45 | stg1AltThermoTempC3 = 71.4  |
+DATAQ: | Stg1ThermoTempC = 76.22 | stg1AltThermoTempC2 = 45.17 | stg1AltThermoTempC3 = 71.2  |
+DATAQ: | Stg1ThermoTempC = 75.91 | stg1AltThermoTempC2 = 44.64 | stg1AltThermoTempC3 = 71.0  |
+DATAQ: | Stg1ThermoTempC = 75.85 | stg1AltThermoTempC2 = 44.57 | stg1AltThermoTempC3 = 70.97  |
+DATAQ: | Stg1ThermoTempC = 75.58 | stg1AltThermoTempC2 = 44.12 | stg1AltThermoTempC3 = 70.79  |
+DATAQ: | Stg1ThermoTempC = 75.39 | stg1AltThermoTempC2 = 43.93 | stg1AltThermoTempC3 = 70.66  |
+DATAQ: | Stg1ThermoTempC = 75.11 | stg1AltThermoTempC2 = 43.48 | stg1AltThermoTempC3 = 70.35  |
+DATAQ: | Stg1ThermoTempC = 74.95 | stg1AltThermoTempC2 = 43.3 | stg1AltThermoTempC23= 70.08  |
+DATAQ: | Stg1ThermoTempC = 74.73 | stg1AltThermoTempC2 = 42.97 | stg1AltThermoTempC3 = 69.86  |
+DATAQ: | Stg1ThermoTempC = 74.61 | stg1AltThermoTempC2 = 42.8 | stg1AltThermoTempC23= 69.66  |
+DATAQ: | Stg1ThermoTempC = 74.27 | stg1AltThermoTempC2 = 42.39 | stg1AltThermoTempC3 = 69.5  |
+DATAQ: | Stg1ThermoTempC = 74.1 | stg1AltThermoTempC2 = 42.33 | stg1AltThermoTempC23= 69.41  |
+DATAQ: | Stg1ThermoTempC = 73.79 | stg1AltThermoTempC2 = 41.89 | stg1AltThermoTempC3 = 69.34  |
+DATAQ: | Stg1ThermoTempC = 73.67 | stg1AltThermoTempC2 = 41.77 | stg1AltThermoTempC3 = 69.18  |
+DATAQ: | Stg1ThermoTempC = 73.44 | stg1AltThermoTempC2 = 41.46 | stg1AltThermoTempC3 = 69.08  |
+DATAQ: | Stg1ThermoTempC = 73.25 | stg1AltThermoTempC2 = 41.35 | stg1AltThermoTempC3 = 68.96  |
+DATAQ: | Stg1ThermoTempC = 72.99 | stg1AltThermoTempC2 = 40.91 | stg1AltThermoTempC3 = 68.83  |
+DATAQ: | Stg1ThermoTempC = 72.82 | stg1AltThermoTempC2 = 40.84 | stg1AltThermoTempC3 = 68.66  |
+DATAQ: | Stg1ThermoTempC = 72.58 | stg1AltThermoTempC2 = 40.55 | stg1AltThermoTempC3 = 68.51  |
+DATAQ: | Stg1ThermoTempC = 72.42 | stg1AltThermoTempC2 = 40.51 | stg1AltThermoTempC3 = 68.44  |
+DATAQ: | Stg1ThermoTempC = 72.12 | stg1AltThermoTempC2 = 40.14 | stg1AltThermoTempC3 = 68.25  |
+DATAQ: | Stg1ThermoTempC = 71.94 | stg1AltThermoTempC2 = 40.01 | stg1AltThermoTempC3 = 68.09  |
+DATAQ: | Stg1ThermoTempC = 71.67 | stg1AltThermoTempC2 = 39.66 | stg1AltThermoTempC3 = 67.91  |
+DATAQ: | Stg1ThermoTempC = 71.56 | stg1AltThermoTempC2 = 39.64 | stg1AltThermoTempC3 = 67.73  |
+DATAQ: | Stg1ThermoTempC = 71.31 | stg1AltThermoTempC2 = 39.38 | stg1AltThermoTempC3 = 67.6  |
+DATAQ: | Stg1ThermoTempC = 71.09 | stg1AltThermoTempC2 = 39.27 | stg1AltThermoTempC3 = 67.4  |
+DATAQ: | Stg1ThermoTempC = 70.86 | stg1AltThermoTempC2 = 39.06 | stg1AltThermoTempC3 = 67.22  |
+DATAQ: | Stg1ThermoTempC = 70.69 | stg1AltThermoTempC2 = 38.99 | stg1AltThermoTempC3 = 67.15  |
+DATAQ: | Stg1ThermoTempC = 70.37 | stg1AltThermoTempC2 = 38.62 | stg1AltThermoTempC3 = 66.87  |
+DATAQ: | Stg1ThermoTempC = 70.31 | stg1AltThermoTempC2 = 38.7 | stg1AltThermoTempC23= 66.77  |
+DATAQ: | Stg1ThermoTempC = 69.93 | stg1AltThermoTempC2 = 38.31 | stg1AltThermoTempC3 = 66.56  |
+DATAQ: | Stg1ThermoTempC = 69.85 | stg1AltThermoTempC2 = 38.31 | stg1AltThermoTempC3 = 66.31  |
+DATAQ: | Stg1ThermoTempC = 69.63 | stg1AltThermoTempC2 = 38.16 | stg1AltThermoTempC3 = 66.25  |
+DATAQ: | Stg1ThermoTempC = 69.37 | stg1AltThermoTempC2 = 37.97 | stg1AltThermoTempC3 = 65.93  |
+DATAQ: | Stg1ThermoTempC = 69.18 | stg1AltThermoTempC2 = 37.83 | stg1AltThermoTempC3 = 65.89  |
+DATAQ: | Stg1ThermoTempC = 68.98 | stg1AltThermoTempC2 = 37.79 | stg1AltThermoTempC3 = 65.65  |
+DATAQ: | Stg1ThermoTempC = 68.75 | stg1AltThermoTempC2 = 37.56 | stg1AltThermoTempC3 = 65.56  |
+DATAQ: | Stg1ThermoTempC = 68.51 | stg1AltThermoTempC2 = 37.43 | stg1AltThermoTempC3 = 65.43  |
+DATAQ: | Stg1ThermoTempC = 68.31 | stg1AltThermoTempC2 = 37.29 | stg1AltThermoTempC3 = 65.25  |
+DATAQ: | Stg1ThermoTempC = 68.07 | stg1AltThermoTempC2 = 37.14 | stg1AltThermoTempC3 = 65.06  |
+DATAQ: | Stg1ThermoTempC = 67.85 | stg1AltThermoTempC2 = 37.0 | stg1AltThermoTempC23= 64.89  |
+DATAQ: | Stg1ThermoTempC = 67.62 | stg1AltThermoTempC2 = 36.9 | stg1AltThermoTempC23= 64.72  |
+DATAQ: | Stg1ThermoTempC = 67.4 | stg1AltThermoTempC2 = 36.78 | stg1AltThermoTempC23= 64.59  |
+DATAQ: | Stg1ThermoTempC = 67.23 | stg1AltThermoTempC2 = 36.79 | stg1AltThermoTempC3 = 64.46  |
+DATAQ: | Stg1ThermoTempC = 67.01 | stg1AltThermoTempC2 = 36.57 | stg1AltThermoTempC3 = 64.28  |
+DATAQ: | Stg1ThermoTempC = 66.79 | stg1AltThermoTempC2 = 36.48 | stg1AltThermoTempC3 = 64.1  |
+DATAQ: | Stg1ThermoTempC = 66.56 | stg1AltThermoTempC2 = 36.32 | stg1AltThermoTempC3 = 63.95  |
+DATAQ: | Stg1ThermoTempC = 66.4 | stg1AltThermoTempC2 = 36.22 | stg1AltThermoTempC23= 63.79  |
+DATAQ: | Stg1ThermoTempC = 66.09 | stg1AltThermoTempC2 = 36.13 | stg1AltThermoTempC3 = 63.65  |
+DATAQ: | Stg1ThermoTempC = 65.83 | stg1AltThermoTempC2 = 35.99 | stg1AltThermoTempC3 = 63.46  |
+DATAQ: | Stg1ThermoTempC = 65.66 | stg1AltThermoTempC2 = 35.86 | stg1AltThermoTempC3 = 63.2  |
+DATAQ: | Stg1ThermoTempC = 65.48 | stg1AltThermoTempC2 = 35.86 | stg1AltThermoTempC3 = 63.12  |
+DATAQ: | Stg1ThermoTempC = 65.17 | stg1AltThermoTempC2 = 35.63 | stg1AltThermoTempC3 = 62.92  |
+DATAQ: | Stg1ThermoTempC = 65.06 | stg1AltThermoTempC2 = 35.64 | stg1AltThermoTempC3 = 62.82  |
+DATAQ: | Stg1ThermoTempC = 64.81 | stg1AltThermoTempC2 = 35.53 | stg1AltThermoTempC3 = 62.64  |
+DATAQ: | Stg1ThermoTempC = 64.58 | stg1AltThermoTempC2 = 35.46 | stg1AltThermoTempC3 = 62.48  |
+DATAQ: | Stg1ThermoTempC = 64.26 | stg1AltThermoTempC2 = 35.27 | stg1AltThermoTempC3 = 62.29  |
+DATAQ: | Stg1ThermoTempC = 64.2 | stg1AltThermoTempC2 = 35.37 | stg1AltThermoTempC23= 62.2  |
+DATAQ: | Stg1ThermoTempC = 64.0 | stg1AltThermoTempC2 = 35.24 | stg1AltThermoTempC23= 62.0  |
+DATAQ: | Stg1ThermoTempC = 63.82 | stg1AltThermoTempC2 = 35.15 | stg1AltThermoTempC3 = 61.88  |
+DATAQ: | Stg1ThermoTempC = 63.54 | stg1AltThermoTempC2 = 34.98 | stg1AltThermoTempC3 = 61.59  |
+DATAQ: | Stg1ThermoTempC = 63.46 | stg1AltThermoTempC2 = 35.05 | stg1AltThermoTempC3 = 61.58  |
+DATAQ: | Stg1ThermoTempC = 63.15 | stg1AltThermoTempC2 = 34.88 | stg1AltThermoTempC3 = 61.32  |
+DATAQ: | Stg1ThermoTempC = 63.0 | stg1AltThermoTempC2 = 34.83 | stg1AltThermoTempC23= 61.21  |
+DATAQ: | Stg1ThermoTempC = 62.67 | stg1AltThermoTempC2 = 34.75 | stg1AltThermoTempC3 = 60.97  |
+DATAQ: | Stg1ThermoTempC = 62.5 | stg1AltThermoTempC2 = 34.65 | stg1AltThermoTempC23= 60.83  |
+DATAQ: | Stg1ThermoTempC = 62.29 | stg1AltThermoTempC2 = 34.56 | stg1AltThermoTempC3 = 60.66  |
+DATAQ: | Stg1ThermoTempC = 62.13 | stg1AltThermoTempC2 = 34.56 | stg1AltThermoTempC3 = 60.54  |
+DATAQ: | Stg1ThermoTempC = 61.86 | stg1AltThermoTempC2 = 34.43 | stg1AltThermoTempC3 = 60.33  |
+DATAQ: | Stg1ThermoTempC = 61.81 | stg1AltThermoTempC2 = 34.45 | stg1AltThermoTempC3 = 60.25  |
+DATAQ: | Stg1ThermoTempC = 61.51 | stg1AltThermoTempC2 = 34.49 | stg1AltThermoTempC3 = 60.04  |
+DATAQ: | Stg1ThermoTempC = 61.34 | stg1AltThermoTempC2 = 34.49 | stg1AltThermoTempC3 = 59.92  |
+DATAQ: | Stg1ThermoTempC = 61.05 | stg1AltThermoTempC2 = 34.6 | stg1AltThermoTempC23= 59.76  |
+DATAQ: | Stg1ThermoTempC = 60.93 | stg1AltThermoTempC2 = 34.78 | stg1AltThermoTempC3 = 59.67  |
+DATAQ: | Stg1ThermoTempC = 60.83 | stg1AltThermoTempC2 = 35.01 | stg1AltThermoTempC3 = 59.46  |
+DATAQ: | Stg1ThermoTempC = 60.55 | stg1AltThermoTempC2 = 35.36 | stg1AltThermoTempC3 = 59.43  |
+DATAQ: | Stg1ThermoTempC = 60.46 | stg1AltThermoTempC2 = 35.61 | stg1AltThermoTempC3 = 59.22  |
+DATAQ: | Stg1ThermoTempC = 60.16 | stg1AltThermoTempC2 = 36.12 | stg1AltThermoTempC3 = 59.22  |
+DATAQ: | Stg1ThermoTempC = 59.97 | stg1AltThermoTempC2 = 36.35 | stg1AltThermoTempC3 = 59.02  |
+DATAQ: | Stg1ThermoTempC = 59.67 | stg1AltThermoTempC2 = 36.9 | stg1AltThermoTempC23= 58.91  |
+DATAQ: | Stg1ThermoTempC = 59.49 | stg1AltThermoTempC2 = 37.23 | stg1AltThermoTempC3 = 58.68  |
+DATAQ: | Stg1ThermoTempC = 59.15 | stg1AltThermoTempC2 = 37.76 | stg1AltThermoTempC3 = 58.59  |
+DATAQ: | Stg1ThermoTempC = 59.01 | stg1AltThermoTempC2 = 38.18 | stg1AltThermoTempC3 = 58.45  |
+DATAQ: | Stg1ThermoTempC = 58.72 | stg1AltThermoTempC2 = 38.62 | stg1AltThermoTempC3 = 58.23  |
+DATAQ: | Stg1ThermoTempC = 58.6 | stg1AltThermoTempC2 = 38.99 | stg1AltThermoTempC23= 58.05  |
+DATAQ: | Stg1ThermoTempC = 58.37 | stg1AltThermoTempC2 = 39.52 | stg1AltThermoTempC3 = 57.94  |
+DATAQ: | Stg1ThermoTempC = 58.26 | stg1AltThermoTempC2 = 39.83 | stg1AltThermoTempC3 = 57.68  |
+DATAQ: | Stg1ThermoTempC = 58.01 | stg1AltThermoTempC2 = 40.37 | stg1AltThermoTempC3 = 57.63  |
+DATAQ: | Stg1ThermoTempC = 57.99 | stg1AltThermoTempC2 = 40.58 | stg1AltThermoTempC3 = 57.43  |
+DATAQ: | Stg1ThermoTempC = 57.89 | stg1AltThermoTempC2 = 41.21 | stg1AltThermoTempC3 = 57.38  |
+DATAQ: | Stg1ThermoTempC = 57.84 | stg1AltThermoTempC2 = 41.43 | stg1AltThermoTempC3 = 57.24  |
+DATAQ: | Stg1ThermoTempC = 57.64 | stg1AltThermoTempC2 = 41.89 | stg1AltThermoTempC3 = 57.04  |
+DATAQ: | Stg1ThermoTempC = 57.65 | stg1AltThermoTempC2 = 42.2 | stg1AltThermoTempC23= 56.91  |
+DATAQ: | Stg1ThermoTempC = 57.44 | stg1AltThermoTempC2 = 42.61 | stg1AltThermoTempC3 = 56.72  |
+DATAQ: | Stg1ThermoTempC = 57.42 | stg1AltThermoTempC2 = 42.9 | stg1AltThermoTempC23= 56.57  |
+DATAQ: | Stg1ThermoTempC = 57.39 | stg1AltThermoTempC2 = 43.33 | stg1AltThermoTempC3 = 56.32  |
+DATAQ: | Stg1ThermoTempC = 57.42 | stg1AltThermoTempC2 = 43.58 | stg1AltThermoTempC3 = 56.37  |
+DATAQ: | Stg1ThermoTempC = 57.42 | stg1AltThermoTempC2 = 44.07 | stg1AltThermoTempC3 = 56.17  |
+DATAQ: | Stg1ThermoTempC = 57.47 | stg1AltThermoTempC2 = 44.28 | stg1AltThermoTempC3 = 56.09  |
+DATAQ: | Stg1ThermoTempC = 57.5 | stg1AltThermoTempC2 = 44.61 | stg1AltThermoTempC23= 55.82  |
+DATAQ: | Stg1ThermoTempC = 57.48 | stg1AltThermoTempC2 = 44.88 | stg1AltThermoTempC3 = 55.75  |
+DATAQ: | Stg1ThermoTempC = 57.56 | stg1AltThermoTempC2 = 45.21 | stg1AltThermoTempC3 = 55.59  |
+DATAQ: | Stg1ThermoTempC = 57.58 | stg1AltThermoTempC2 = 45.5 | stg1AltThermoTempC23= 55.54  |
+DATAQ: | Stg1ThermoTempC = 57.61 | stg1AltThermoTempC2 = 45.89 | stg1AltThermoTempC3 = 55.36  |
+DATAQ: | Stg1ThermoTempC = 57.7 | stg1AltThermoTempC2 = 46.1 | stg1AltThermoTempC2 3 55.31  |
+DATAQ: | Stg1ThermoTempC = 57.63 | stg1AltThermoTempC2 = 46.39 | stg1AltThermoTempC3 = 55.13  |
+DATAQ: | Stg1ThermoTempC = 57.73 | stg1AltThermoTempC2 = 46.65 | stg1AltThermoTempC3 = 55.09  |
+DATAQ: | Stg1ThermoTempC = 57.72 | stg1AltThermoTempC2 = 46.92 | stg1AltThermoTempC3 = 54.87  |
+DATAQ: | Stg1ThermoTempC = 57.76 | stg1AltThermoTempC2 = 47.12 | stg1AltThermoTempC3 = 54.77  |
+DATAQ: | Stg1ThermoTempC = 57.84 | stg1AltThermoTempC2 = 47.38 | stg1AltThermoTempC3 = 54.71  |
+DATAQ: | Stg1ThermoTempC = 57.84 | stg1AltThermoTempC2 = 47.62 | stg1AltThermoTempC3 = 54.69  |
+DATAQ: | Stg1ThermoTempC = 57.8 | stg1AltThermoTempC2 = 47.94 | stg1AltThermoTempC23= 54.58  |
+DATAQ: | Stg1ThermoTempC = 57.87 | stg1AltThermoTempC2 = 48.06 | stg1AltThermoTempC3 = 54.53  |
+DATAQ: | Stg1ThermoTempC = 57.94 | stg1AltThermoTempC2 = 48.31 | stg1AltThermoTempC3 = 54.44  |
+DATAQ: | Stg1ThermoTempC = 57.94 | stg1AltThermoTempC2 = 48.54 | stg1AltThermoTempC3 = 54.45  |
+DATAQ: | Stg1ThermoTempC = 57.99 | stg1AltThermoTempC2 = 48.82 | stg1AltThermoTempC3 = 54.41  |
+DATAQ: | Stg1ThermoTempC = 58.03 | stg1AltThermoTempC2 = 48.85 | stg1AltThermoTempC3 = 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.09 | stg1AltThermoTempC2 = 49.16 | stg1AltThermoTempC3 = 54.43  |
+DATAQ: | Stg1ThermoTempC = 58.1 | stg1AltThermoTempC2 = 49.39 | stg1AltThermoTempC23= 54.43  |
+DATAQ: | Stg1ThermoTempC = 58.12 | stg1AltThermoTempC2 = 49.57 | stg1AltThermoTempC3 = 54.32  |
+DATAQ: | Stg1ThermoTempC = 58.15 | stg1AltThermoTempC2 = 49.61 | stg1AltThermoTempC3 = 54.27  |
+DATAQ: | Stg1ThermoTempC = 58.26 | stg1AltThermoTempC2 = 49.9 | stg1AltThermoTempC23= 54.35  |
+DATAQ: | Stg1ThermoTempC = 58.24 | stg1AltThermoTempC2 = 50.03 | stg1AltThermoTempC3 = 54.28  |
+DATAQ: | Stg1ThermoTempC = 58.34 | stg1AltThermoTempC2 = 50.22 | stg1AltThermoTempC3 = 54.33  |
+DATAQ: | Stg1ThermoTempC = 58.29 | stg1AltThermoTempC2 = 50.31 | stg1AltThermoTempC3 = 54.23  |
+DATAQ: | Stg1ThermoTempC = 58.3 | stg1AltThermoTempC2 = 50.48 | stg1AltThermoTempC23= 54.2  |
+DATAQ: | Stg1ThermoTempC = 58.33 | stg1AltThermoTempC2 = 50.61 | stg1AltThermoTempC3 = 54.25  |
+DATAQ: | Stg1ThermoTempC = 58.38 | stg1AltThermoTempC2 = 50.86 | stg1AltThermoTempC3 = 54.33  |
+DATAQ: | Stg1ThermoTempC = 58.39 | stg1AltThermoTempC2 = 50.87 | stg1AltThermoTempC3 = 54.25  |
+DATAQ: | Stg1ThermoTempC = 58.5 | stg1AltThermoTempC2 = 51.06 | stg1AltThermoTempC23= 54.36  |
+DATAQ: | Stg1ThermoTempC = 58.43 | stg1AltThermoTempC2 = 51.2 | stg1AltThermoTempC23= 54.25  |
+DATAQ: | Stg1ThermoTempC = 58.55 | stg1AltThermoTempC2 = 51.33 | stg1AltThermoTempC3 = 54.19  |
+DATAQ: | Stg1ThermoTempC = 58.56 | stg1AltThermoTempC2 = 51.48 | stg1AltThermoTempC3 = 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.44 | stg1AltThermoTempC2 = 51.55 | stg1AltThermoTempC3 = 54.24  |
+DATAQ: | Stg1ThermoTempC = 58.57 | stg1AltThermoTempC2 = 51.65 | stg1AltThermoTempC3 = 54.23  |
+DATAQ: | Stg1ThermoTempC = 58.55 | stg1AltThermoTempC2 = 51.79 | stg1AltThermoTempC3 = 54.16  |
+DATAQ: | Stg1ThermoTempC = 58.61 | stg1AltThermoTempC2 = 51.89 | stg1AltThermoTempC3 = 54.28  |
+DATAQ: | Stg1ThermoTempC = 58.62 | stg1AltThermoTempC2 = 51.96 | stg1AltThermoTempC3 = 54.26  |
+DATAQ: | Stg1ThermoTempC = 58.65 | stg1AltThermoTempC2 = 52.06 | stg1AltThermoTempC3 = 54.21  |
+DATAQ: | Stg1ThermoTempC = 58.67 | stg1AltThermoTempC2 = 52.21 | stg1AltThermoTempC3 = 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.73 | stg1AltThermoTempC2 = 52.38 | stg1AltThermoTempC3 = 54.33  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 52.47 | stg1AltThermoTempC3 = 54.35  |
+DATAQ: | Stg1ThermoTempC = 58.78 | stg1AltThermoTempC2 = 52.5 | stg1AltThermoTempC23= 54.29  |
+DATAQ: | Stg1ThermoTempC = 58.71 | stg1AltThermoTempC2 = 52.6 | stg1AltThermoTempC23= 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 52.67 | stg1AltThermoTempC3 = 54.31  |
+DATAQ: | Stg1ThermoTempC = 58.82 | stg1AltThermoTempC2 = 52.77 | stg1AltThermoTempC3 = 54.34  |
+DATAQ: | Stg1ThermoTempC = 58.8 | stg1AltThermoTempC2 = 52.85 | stg1AltThermoTempC23= 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 52.88 | stg1AltThermoTempC3 = 54.33  |
+DATAQ: | Stg1ThermoTempC = 58.83 | stg1AltThermoTempC2 = 53.04 | stg1AltThermoTempC3 = 54.31  |
+DATAQ: | Stg1ThermoTempC = 58.8 | stg1AltThermoTempC2 = 53.13 | stg1AltThermoTempC23= 54.28  |
+DATAQ: | Stg1ThermoTempC = 58.78 | stg1AltThermoTempC2 = 53.11 | stg1AltThermoTempC3 = 54.19  |
+DATAQ: | Stg1ThermoTempC = 58.72 | stg1AltThermoTempC2 = 53.28 | stg1AltThermoTempC3 = 54.3  |
+DATAQ: | Stg1ThermoTempC = 58.88 | stg1AltThermoTempC2 = 53.32 | stg1AltThermoTempC3 = 54.29  |
+DATAQ: | Stg1ThermoTempC = 58.88 | stg1AltThermoTempC2 = 53.41 | stg1AltThermoTempC3 = 54.32  |
+DATAQ: | Stg1ThermoTempC = 58.88 | stg1AltThermoTempC2 = 53.53 | stg1AltThermoTempC3 = 54.25  |
+DATAQ: | Stg1ThermoTempC = 58.89 | stg1AltThermoTempC2 = 53.56 | stg1AltThermoTempC3 = 54.34  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 53.45 | stg1AltThermoTempC3 = 54.21  |
+DATAQ: | Stg1ThermoTempC = 58.85 | stg1AltThermoTempC2 = 53.62 | stg1AltThermoTempC3 = 54.22  |
+DATAQ: | Stg1ThermoTempC = 58.75 | stg1AltThermoTempC2 = 53.65 | stg1AltThermoTempC3 = 54.18  |
+DATAQ: | Stg1ThermoTempC = 58.91 | stg1AltThermoTempC2 = 53.8 | stg1AltThermoTempC23= 54.22  |
+DATAQ: | Stg1ThermoTempC = 58.88 | stg1AltThermoTempC2 = 53.84 | stg1AltThermoTempC3 = 54.25  |
+DATAQ: | Stg1ThermoTempC = 58.79 | stg1AltThermoTempC2 = 53.81 | stg1AltThermoTempC3 = 54.24  |
+DATAQ: | Stg1ThermoTempC = 58.79 | stg1AltThermoTempC2 = 53.94 | stg1AltThermoTempC3 = 54.28  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 53.95 | stg1AltThermoTempC3 = 54.15  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 53.95 | stg1AltThermoTempC3 = 54.15  |
+DATAQ: | Stg1ThermoTempC = 58.82 | stg1AltThermoTempC2 = 54.12 | stg1AltThermoTempC3 = 54.22  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 53.98 | stg1AltThermoTempC3 = 54.1  |
+DATAQ: | Stg1ThermoTempC = 58.75 | stg1AltThermoTempC2 = 54.12 | stg1AltThermoTempC3 = 54.15  |
+DATAQ: | Stg1ThermoTempC = 58.78 | stg1AltThermoTempC2 = 54.21 | stg1AltThermoTempC3 = 54.13  |
+DATAQ: | Stg1ThermoTempC = 58.76 | stg1AltThermoTempC2 = 54.23 | stg1AltThermoTempC3 = 54.13  |
+DATAQ: | Stg1ThermoTempC = 58.68 | stg1AltThermoTempC2 = 54.17 | stg1AltThermoTempC3 = 54.1  |
+DATAQ: | Stg1ThermoTempC = 58.75 | stg1AltThermoTempC2 = 54.28 | stg1AltThermoTempC3 = 54.09  |
+DATAQ: | Stg1ThermoTempC = 58.78 | stg1AltThermoTempC2 = 54.33 | stg1AltThermoTempC3 = 54.1  |
+DATAQ: | Stg1ThermoTempC = 58.73 | stg1AltThermoTempC2 = 54.36 | stg1AltThermoTempC3 = 54.04  |
+DATAQ: | Stg1ThermoTempC = 58.67 | stg1AltThermoTempC2 = 54.31 | stg1AltThermoTempC3 = 54.06  |
+DATAQ: | Stg1ThermoTempC = 58.73 | stg1AltThermoTempC2 = 54.47 | stg1AltThermoTempC3 = 54.15  |
+DATAQ: | Stg1ThermoTempC = 58.54 | stg1AltThermoTempC2 = 54.42 | stg1AltThermoTempC3 = 54.01  |

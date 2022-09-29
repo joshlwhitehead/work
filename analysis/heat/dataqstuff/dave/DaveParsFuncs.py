@@ -348,9 +348,9 @@ def measuredStg1TempC(line):
                 except:
                     return None
 def measuredStg1TempC2(line):
-    return float(line.split("DATAQ:")[1].split("| liquid2 = ")[1].split("|")[0])
+    return float(line.split("DATAQ:")[1].split("| stg1AltThermoTempC2 = ")[1].split("|")[0])
 def measuredStg1TempC3(line):
-    return float(line.split("DATAQ:")[1].split("| liquid3 = ")[1].split("|")[0])
+    return float(line.split("DATAQ:")[1].split("| stg1AltThermoTempC3 = ")[1].split("|")[0])
 
 
 
