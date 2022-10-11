@@ -26,6 +26,8 @@ def getData(filename,date):
         samp2Raw = fullSheet['Stage1 Thermocouple TempC 2'].tolist()
     elif 'liquid2' in fullSheet.columns:
         samp2Raw = fullSheet['liquid2']
+    elif 'Stage1 Alternate1 Thermocouple TempC' in fullSheet.columns:
+        samp2Raw = fullSheet['Stage1 Alternate1 Thermocouple TempC']
     else:
         samp2Raw = np.ones(len(sampRaw))
     
@@ -33,6 +35,8 @@ def getData(filename,date):
         samp3Raw = fullSheet['liquid3']
     else:
         samp3Raw = np.ones(len(sampRaw))
+
+ 
 
    
     # setRaw = fullSheet['stage1SetTempC'].tolist()

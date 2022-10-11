@@ -357,24 +357,22 @@ date = '13Sep2022'
 
 
 
-date = '14Sep2022'
-adv01_1 = gd.getPcrData('Adv01_DV03_220907_Run1.csv',date)
-adv01_2 = gd.getPcrData('Adv01_DV03_220907_Run2.csv',date)
-adv01_3 = gd.getPcrData('Adv01_DV03_220907_Run3.csv',date)
+# date = '14Sep2022'
+# adv01_1 = gd.getPcrData('Adv01_DV03_220907_Run1.csv',date)
+# adv01_2 = gd.getPcrData('Adv01_DV03_220907_Run2.csv',date)
+# adv01_3 = gd.getPcrData('Adv01_DV03_220907_Run3.csv',date)
 
-adv02_1 = gd.getPcrData('Adv02_DV03_220907_Run1.csv',date)
-adv02_2 = gd.getPcrData('Adv02_DV03_220907_Run2.csv',date)
-adv02_3 = gd.getPcrData('Adv02_DV03_220907_Run3.csv',date)
+# adv02_1 = gd.getPcrData('Adv02_DV03_220907_Run1.csv',date)
+# adv02_2 = gd.getPcrData('Adv02_DV03_220907_Run2.csv',date)
+# adv02_3 = gd.getPcrData('Adv02_DV03_220907_Run3.csv',date)
 
-adv03_1 = gd.getPcrData('Adv3_DV03_220829_Run01.csv',date)
-adv03_2 = gd.getPcrData('Adv3_DV03_220829_Run02.csv',date)
-adv03_3 = gd.getPcrData('Adv3_DV03_220829_Run03.csv',date)
+# adv03_1 = gd.getPcrData('Adv3_DV03_220829_Run01.csv',date)
+# adv03_2 = gd.getPcrData('Adv3_DV03_220829_Run02.csv',date)
+# adv03_3 = gd.getPcrData('Adv3_DV03_220829_Run03.csv',date)
 
-adv04_1 = gd.getPcrData('Adv4_DV09_220829_Run01.csv',date)
-adv04_2 = gd.getPcrData('Adv4_DV09_220829_Run02.csv',date)
-adv04_3 = gd.getPcrData('Adv4_DV09_220829_Run03.csv',date)
-
-
+# adv04_1 = gd.getPcrData('Adv4_DV09_220829_Run01.csv',date)
+# adv04_2 = gd.getPcrData('Adv4_DV09_220829_Run02.csv',date)
+# adv04_3 = gd.getPcrData('Adv4_DV09_220829_Run03.csv',date)
 
 
 
@@ -382,16 +380,29 @@ adv04_3 = gd.getPcrData('Adv4_DV09_220829_Run03.csv',date)
 
 
 
-date = '15Sep2022'
-adv10_1 = gd.getPcrData('AdvB10_PCR_091422_Run1.csv',date)
-adv10_2 = gd.getPcrData('AdvB10_PCR_091522_Run2.csv',date)
-
-test = gd.test('test.csv',date)
-
-print(test[1][-10:])
 
 
+# date = '15Sep2022'
+# adv10_1 = gd.getPcrData('AdvB10_PCR_091422_Run1.csv',date)
+# adv10_2 = gd.getPcrData('AdvB10_PCR_091522_Run2.csv',date)
 
-date = '23Sep2022'
+# test = gd.test('test.csv',date)
 
-trip = gd.getData('tripleTCa.csv',date)
+# print(test[1][-10:])
+
+
+
+# date = '23Sep2022'
+
+# trip = gd.getData('tripleTCa.csv',date)
+
+
+date = '11Oct2022'
+
+forward1 = gd.getData('forwardNew2.csv',date)
+forward2 = gd.getData('forwardNew3.csv',date)
+forward3 = gd.getData('forwardNew4.csv',date)
+backward1 = gd.getData('backwardNew2.csv',date)
+backward2 = gd.getData('backwardNew3.csv',date)
+backward3 = gd.getData('backwardsJustChan1.csv',date)
+backward4 = gd.getData('backwardsJustChan2.csv',date)
