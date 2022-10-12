@@ -15,57 +15,60 @@ from melt.melt import MeltAnalysis
 
 
 ################### ADJUST THIS SECTION ##########################
-consumableId = '4e9c4219-3a73-4099-a7cf-44f118f84aa8'
+consumableId = ['5f91ba43-fc83-4e24-ba3b-54cf2eae77fe']#,'5fe38c51-dc21-415d-938b-ffa3ea36c504']
 
-toPlot = 1                                                                       # which run to use
+toPlot = 0                                                                    # which run to use
 
 
 
 #########################   PULL DATA FROM BASE     #########################################
 api = auth.getApiClient()
+for i in consumableId:
+    where = {
+    'id': {
+        '_eq': i
+    }
+    }
 
-where = {
-'id': {
-    '_eq': consumableId
-}
-}
+    response = api.execute(query=qry.consumableWhere,variables={'where':where})
+    for u in range(len(response['data']['consumable'][0]['experiments'])-1):
+        meltData = response['data']['consumable'][0]['experiments'][u]['experimentResult']['meltData']['sensor']
+        mData = np.array(meltData).T.tolist()
 
-response = api.execute(query=qry.consumableWhere,variables={'where':where})
-
-meltData = response['data']['consumable'][0]['experiments'][toPlot]['experimentResult']['meltData']['sensor']
-mData = np.array(meltData).T.tolist()
-
-t = response['data']['consumable'][0]['experiments'][toPlot]['experimentResult']['meltData']['temperature']
-tData = np.array(t)
-
-
-
-#######################     CONFIGURE       #############################################################
-consumableName = 'lambda'
-configuration = getConfigMap(consumableName)
-
-meltAnalysis = MeltAnalysis(configuration)
-meltAnalysis.callMelt(tData, mData)
+        t = response['data']['consumable'][0]['experiments'][u]['experimentResult']['meltData']['temperature']
+        tData = np.array(t)
 
 
 
-########################    CALCULATE RATIO  ###################################
-ratio = np.divide(mData[5],mData[6])                                                            #take ratio of 590nm/630nm
+        #######################     CONFIGURE       #############################################################
+        consumableName = 'lambda'
+        configuration = getConfigMap(consumableName)
 
-a,b = np.polyfit(tData,ratio,1)                                                                 #fit line
-print('a',a,'\n','b',b)
+        meltAnalysis = MeltAnalysis(configuration)
+        meltAnalysis.callMelt(tData, mData)
 
 
 
-##########################      PLOT    ##############################
-plt.scatter(tData,ratio,s=.5,color='orange',lw=1.6,label= 'qdot')                               #plot scatterplot of ratio
-plt.plot(tData,a*tData+b,label='linear fit')                                                    #plot fit line
+        ########################    CALCULATE RATIO  ###################################
+        ratio = np.divide(mData[5],mData[6])                                                            #take ratio of 590nm/630nm
+
+        a,b = np.polyfit(tData,ratio,1)                                                                 #fit line
+        print('a',a,'\n','b',b)
+
+
+
+        ##########################      PLOT    ##############################
+        plt.scatter(tData,ratio,s=.5,color='orange',lw=1.6)#,label= 'qdot')                               #plot scatterplot of ratio
+        plt.plot(tData,a*tData+b)#,label='linear fit')                                                    #plot fit line
+    
+        plt.legend()
+        plt.title('Ratio of 590nm & 630nm ')#+i[:6])
+        plt.xlabel('Temperature (C)')
+        plt.ylabel('Ratio')
+
+    # plt.savefig('qdot_ratio.png')
 plt.grid()
-plt.legend()
-plt.title('Ratio of 590nm & 630nm '+consumableId[:6])
-plt.xlabel('Temperature (C)')
-plt.ylabel('Ratio')
-plt.savefig('qdot_ratio.png')
+plt.show()
 
 
 

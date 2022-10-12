@@ -406,3 +406,6 @@ backward1 = gd.getData('backwardNew2.csv',date)
 backward2 = gd.getData('backwardNew3.csv',date)
 backward3 = gd.getData('backwardsJustChan1.csv',date)
 backward4 = gd.getData('backwardsJustChan2.csv',date)
+
+noInsert1 = gd.getData('noInsertNoBall1.csv',date)
+noInsert2 = gd.getData('noInsertNoBall2.csv',date)
