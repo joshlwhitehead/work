@@ -409,3 +409,10 @@ backward4 = gd.getData('backwardsJustChan2.csv',date)
 
 noInsert1 = gd.getData('noInsertNoBall1.csv',date)
 noInsert2 = gd.getData('noInsertNoBall2.csv',date)
+
+
+date = '12Oct2022'
+
+small11 = gd.getData('ADV11SmallSlug1.csv',date)
+large11 = gd.getData('ADV11LargeSlug2.csv',date)
+large11_mp = gd.getData('ADV11LargeSlug4.csv',date)
