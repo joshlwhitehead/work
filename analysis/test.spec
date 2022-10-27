@@ -6,10 +6,10 @@ block_cipher = None
 
 a = Analysis(
     ['test.py'],
-    pathex=[],
+    pathex=['C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis','C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis\\lib'],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['lib','graphql_queries.py'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -20,6 +20,7 @@ a = Analysis(
     noarchive=False,
 )
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
+
 
 exe = EXE(
     pyz,
