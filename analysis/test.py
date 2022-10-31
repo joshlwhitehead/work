@@ -95,13 +95,13 @@ def analyze():
         # Plotting the Graph
         plt.figure()
         plt.plot(X_, Y_,'-',x,y,'o')
-        plt.title(''.join([note,' ',consumableId[:6]]))
+        plt.title(''.join([consumableId[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
         plt.xlabel("Channel (nm)")
-        plt.ylabel("Fluorescence")
+        plt.ylabel("Delta Fluorescence")
         
         plt.xticks(channels,channelString)
         plt.grid()
-        plt.savefig(''.join([consumableId[:6]]))
+        plt.savefig(''.join(['specSigLED/',consumableId[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
         plt.show()
 
 
@@ -134,7 +134,7 @@ def analyze():
         plt.figure()
         plt.plot(X_,Y_)
         plt.plot(np.array(channels),fluor,'o')
-        plt.title(''.join(['Spectral Signature ',consumableId[:6]]))
+        plt.title(''.join([consumableId[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
         plt.ylabel(''.join(["Melt Peak @ ",str(round(good_tm,1))]))
         plt.xlabel('Channel (nm)')
         # plt.ylim(-.15,2.2)
@@ -142,7 +142,7 @@ def analyze():
         plt.grid()
         
         
-        plt.savefig(''.join([consumableId[:6]]))
+        plt.savefig(''.join(['specSigLED/',consumableId[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
         plt.show()
 
 
@@ -156,7 +156,7 @@ def analyze():
 
 
 
-varPCR = IntVar()
+varPCR = IntVar(value=1)
 varMelt = IntVar()
 # var415 = IntVar()
 # var445 = IntVar()
@@ -196,11 +196,14 @@ drop.select_set(2,7)
 
 
 lCup = Label(text='Cup ID')
+lTitle = Label(text='Title')
 lRefChan = Label(text='Reference Channel')
 lChan = Label(text='Channels to Use')
 
 
-inputtxt = Text(root, height = 10,width = 25)
+inputtxt = Text(root, height = 8,width = 25)
+inputtxt2 = Text(root,height=5,width=25)
+
 # refChanBox = Text(root,height=2,width=4)
 # refChanBox.set('d')
 
@@ -215,9 +218,10 @@ run = Button(root,height=2,width=20,text='Analyze',command=lambda:analyze())
 
 lCup.pack()
 
+
 inputtxt.pack()
-
-
+lTitle.pack()
+inputtxt2.pack()
 
 
 checkPCR.pack()
