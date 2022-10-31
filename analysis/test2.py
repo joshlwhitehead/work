@@ -96,18 +96,21 @@ def analyze():
 
             # Plotting the Graph
             # plt.figure()
-            
-            plt.plot(X_, Y_,'-')
+            if consumableId.index(Id) == 0:
+                plt.plot(X_, Y_,'-',label=''.join([Id[:6],' ','LED']))
+            else:
+                plt.plot(X_, Y_,'-',label=''.join([Id[:6],' ','Laser']))
             plt.plot(x,y,'o')
-            plt.title(''.join([Id[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
+            plt.title(''.join([str(inputtxt2.get("1.0", "end-1c"))]))
             plt.xlabel("Channel (nm)")
             plt.ylabel("Delta Fluorescence")
             
             plt.xticks(channels,channelString)
-            plt.grid()
+            
             plt.legend()
-            plt.savefig(''.join([Id[:6],' ',str(inputtxt2.get("1.0", "end-1c"))]))
-            plt.show()
+    plt.grid()
+    plt.savefig(''.join(['specSigLEDlaserComp/',str(inputtxt2.get("1.0", "end-1c"))]))
+    plt.show()
 
 
 
