@@ -15,7 +15,7 @@ from melt.melt import MeltAnalysis
 
 
 ################### ADJUST THIS SECTION ##########################
-consumableId = ['5f91ba43-fc83-4e24-ba3b-54cf2eae77fe']#,'5fe38c51-dc21-415d-938b-ffa3ea36c504']
+consumableId = ['5fe38c51-dc21-415d-938b-ffa3ea36c504']#'5f91ba43-fc83-4e24-ba3b-54cf2eae77fe']#,]
 
 toPlot = 0                                                                    # which run to use
 
@@ -31,7 +31,7 @@ for i in consumableId:
     }
 
     response = api.execute(query=qry.consumableWhere,variables={'where':where})
-    for u in range(len(response['data']['consumable'][0]['experiments'])-1):
+    for u in range(len(response['data']['consumable'][0]['experiments'])):
         meltData = response['data']['consumable'][0]['experiments'][u]['experimentResult']['meltData']['sensor']
         mData = np.array(meltData).T.tolist()
 

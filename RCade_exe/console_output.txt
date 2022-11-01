@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 DATAQ: | Stg1ThermoTempC = 27.85 | stg1AltThermoTempC1 = 28.06  |
 DATAQ: | Stg1ThermoTempC = 27.86 | stg1AltThermoTempC1 = 28.01  |
 (1885425) BLE_PERIPH: App to Instrument Transaction Write 0/1182
@@ -4480,3 +4481,1516 @@ DATAQ: | Stg1ThermoTempC = 52.67 | stg1AltThermoTempC1 = 51.64  |
 DATAQ: | Stg1ThermoTempC = 52.67 | stg1AltThermoTempC1 = 51.63  |
 DATAQ: | Stg1ThermoTempC = 52.63 | stg1AltThermoTempC1 = 51.55  |
 DATAQ: | Stg1ThermoTempC = 52.63 | stg1AltThermoTempC1 = 51.55  |
+=======
+***Max Threads in Thread Pool: 8***
+***Getting Serial Ports...***
+***Serial Ports Refreshed!***
+***Error starting updater: [WinError 2] The system cannot find the file specified: 'C:\\Users\\JoshWhitehea_5801ztl\\work\\RCade_exe\\Misc(FW_Team_Only)\\updater.exe'***
+***Serial Port Connected!***
+[0]Firmware Version: 0.5.713
+[1]Got HW Device Configs: False, XXX, xxx
+[2]Updated Plunge Sen Values in GUI
+[3]Updated Latch Sen Values in GUI
+[4]Updated Lifter Sen Values in GUI
+***[1, 0, 0, 0, 0, 0]***
+***[1, 1, 0, 0, 0, 0]***
+***[1, 1, 0, 0, 0, 0]***
+***DataQ Connected!***
+***updating thermocouple values***
+DATAQ: | Stg1ThermoTempC = 24.28 | stg1AltThermoTempC1 = 25.26  |
+DATAQ: | Stg1ThermoTempC = 24.38 | stg1AltThermoTempC1 = 25.32  |
+DATAQ: | Stg1ThermoTempC = 24.41 | stg1AltThermoTempC1 = 25.41  |
+DATAQ: | Stg1ThermoTempC = 24.44 | stg1AltThermoTempC1 = 25.43  |
+DATAQ: | Stg1ThermoTempC = 24.53 | stg1AltThermoTempC1 = 25.31  |
+DATAQ: | Stg1ThermoTempC = 24.5 | stg1AltThermoTempC1 = 25.31  |
+DATAQ: | Stg1ThermoTempC = 24.55 | stg1AltThermoTempC1 = 25.39  |
+DATAQ: | Stg1ThermoTempC = 24.63 | stg1AltThermoTempC1 = 25.35  |
+DATAQ: | Stg1ThermoTempC = 24.68 | stg1AltThermoTempC1 = 25.47  |
+DATAQ: | Stg1ThermoTempC = 24.62 | stg1AltThermoTempC1 = 25.44  |
+DATAQ: | Stg1ThermoTempC = 24.67 | stg1AltThermoTempC1 = 25.47  |
+[0;34mD (708807) BLE_PERIPH: App to Instrument Transaction Write 0/1182
+[0;34mD (708809) BLE_PERIPH: App to Instrument Transaction Notify 0/1182
+[0;34mD (708872) BLE_PERIPH: App to Instrument Data
+[0;34mD (708873) BLE_PERIPH: Received 505/1182
+[0;34mD (708875) BLE_PERIPH: App to Instrument Transaction Notify 505/1182
+[0;34mD (708932) BLE_PERIPH: App to Instrument Data
+[0;34mD (708933) BLE_PERIPH: Received 1010/1182
+[0;34mD (708935) BLE_PERIPH: App to Instrument Transaction Notify 1010/1182
+DATAQ: | Stg1ThermoTempC = 24.76 | stg1AltThermoTempC1 = 25.44  |
+[0;34mD (708988) BLE_PERIPH: App to Instrument Data
+[0;34mD (708989) BLE_PERIPH: Received 1182/1182
+[0;34mD (708999) BLE_PERIPH: App to Instrument Transaction Notify 1182/1182
+(709013) ExperimentParam: Parsing experiment parameters:
+[{
+"doPcr":	false,
+"doMelt":	false,
+"doRtSteps":	false,
+"rtTempSteps":	[{
+"tempC":	60,
+"holdSeconds":	10
+}],
+"doSamplePrep":	true,
+"thumperSteps":	[{
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	100
+}, {
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	100
+}, {
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	100
+}, {
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	75
+}, {
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	75
+}, {
+"onMs":	100,
+"offMs":	100,
+"dutyCyclePercent":	75
+}],
+"meltStartTemp":	55,
+"pcrCycleCount":	45,
+"doCupVibration":	false,
+"meltFinishTemp":	90,
+"colorSensorGain":	6,
+"thumperCycleCount":	6,
+"samplePrepDoPlunge":	false,
+"pcrCyclingTempSteps":	[{
+"tempC":	90,
+"holdSeconds":	0
+}, {
+"tempC":	65,
+"holdSeconds":	4,
+"performCapture":	true
+}],
+"samplePrepDoPtcSeal":	false,
+"samplePrepTempSteps":	[{
+"tempC":	62,
+"holdSeconds":	60
+}, {
+"tempC":	85,
+"holdSeconds":	120
+}, {
+"tempC":	60,
+"holdSeconds":	15
+}],
+"meltAcquisitionsPerC":	5,
+"meltStartCaptureTemp":	60,
+"doContinuousAcquisition":	true,
+"excitationOnDelayTimeMs":	6,
+"samplePrepPtcSealTimeMs":	30000,
+"meltStartHoldTimeSeconds":	5,
+"meltRampRateDegCPerSecond":	0.35,
+"excitationOutputPercentage":	100,
+"colorSensorIntegrationTimeMs":	25,
+"samplePrepPcrChamberPreheatTempC":	60,
+"continuousAcquisitionSampleDelayMs":	1000
+}]
+(709146) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(709154) ExperimentParam: Found parameter doContinuousAcquisition: 1
+(709162) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000
+(709170) ExperimentParam: Could not find parameter isMocked, using default value: 0
+(709179) ExperimentParam: Found parameter colorSensorGain: 6
+(709185) ExperimentParam: Found parameter colorSensorIntegrationTimeMs: 25
+(709193) ExperimentParam: Found parameter excitationOnDelayTimeMs: 6
+(709200) ExperimentParam: Found parameter excitationOutputPercentage: 100
+(709208) ExperimentParam: Could not find parameter temperaturecaptureDelayMs, using default value: 3000
+(709218) ExperimentParam: Could not find parameter continualRun, using default value: 0
+(709227) ExperimentParam: Found parameter doSamplePrep: 1
+(709233) ExperimentParam: Found parameter tempC: 62.00
+(709239) ExperimentParam: Found parameter holdSeconds: 60.00
+(709245) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(709253) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00
+(709263) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0
+(709273) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(709281) ExperimentParam: Found parameter tempC: 85.00
+(709288) ExperimentParam: Found parameter holdSeconds: 120.00
+(709294) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00
+(709304) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0
+(709314) ExperimentParam: Found parameter tempC: 60.00
+(709320) ExperimentParam: Found parameter holdSeconds: 15.00
+(709326) ExperimentParam: Could not find parameter rampRate, using explicit default value: 1000.00
+(709336) ExperimentParam: Could not find parameter performCapture, using explicit default value: 0
+(709346) ProtocolParam: Found parameter samplePrepTempSteps: {62.00C,60.00s,1000.00C/s (?capture=0)},{85.00C,120.00s,1000.00C/s (?capture=0)},{60.00C,15.00s,1000.00C/s (?capture=0)},
+(709363) ExperimentParam: Found parameter samplePrepPcrChamberPreheatTempC: 60.00
+(709371) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(709379) ExperimentParam: Found parameter samplePrepDoPlunge: 0
+(709386) ExperimentParam: Found parameter samplePrepDoPtcSeal: 0
+(709393) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(709401) ExperimentParam: Found parameter samplePrepPtcSealTimeMs: 30000
+(709409) ExperimentParam: Could not find parameter samplePreDoImmediateSeal, using explicit default value: 0
+(709419) ExperimentParam: Found parameter doCupVibration: 0
+(709426) ExperimentParam: Found parameter doRtSteps: 0
+(709432) ExperimentParam: Found parameter doPcr: 0
+(709437) ExperimentParam: Found parameter doMelt: 0
+[0;34mD (709444) BLE_PERIPH: Sending Response Packet: [32,true,42,[],0]
+[0;34mD (709450) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/17
+[0;34mD (709497) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=17 mtu=510, totalSize=17, currentIndex=0): [32,true,42,[],0]
+[0;34mD (709557) BLE_PERIPH: Instrument to App Transaction Write 17/17
+[0;34mD (709559) BLE_PERIPH: Instrument to App Transaction Read/Notify 17/17
+[0;34mD (709617) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+DATAQ: | Stg1ThermoTempC = 24.77 | stg1AltThermoTempC1 = 25.42  |
+[0;34mD (709677) BLE_PERIPH: App to Instrument Transaction Write 0/17
+[0;34mD (709679) BLE_PERIPH: App to Instrument Transaction Notify 0/17
+[0;34mD (709737) BLE_PERIPH: App to Instrument Data
+[0;34mD (709738) BLE_PERIPH: Received 17/17
+[0;34mD (709740) BLE_PERIPH: App to Instrument Transaction Notify 17/17
+[0;34mD (709764) BLE_PERIPH: Sending Response Packet: [34,true,43,["","",647131,35.13,34.95,2,0,0,0.00],0]
+[0;34mD (709765) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/52
+[0;34mD (709827) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=52 mtu=510, totalSize=52, currentIndex=0): [34,true,43,["","",647131,35.13,34.95,2,0,0,0.00],0]
+[0;34mD (709888) BLE_PERIPH: Instrument to App Transaction Write 52/52
+[0;34mD (709889) BLE_PERIPH: Instrument to App Transaction Read/Notify 52/52
+[0;34mD (709947) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;34mD (710007) BLE_PERIPH: App to Instrument Transaction Write 0/18
+[0;34mD (710009) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+DATAQ: | Stg1ThermoTempC = 24.87 | stg1AltThermoTempC1 = 25.51  |
+[0;34mD (710067) BLE_PERIPH: App to Instrument Data
+[0;34mD (710068) BLE_PERIPH: Received 18/18
+[0;34mD (710070) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+[0;34mD (710084) BLE_PERIPH: Sending Response Packet: [33,true,44,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":6,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":62.00,"holdSeconds":60.00,"rampRate":1000.00,"performCapture":0},{"tempC":85.00,"holdSeconds":120.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":15.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":60.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"p
+crCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0]
+[0;34mD (710208) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1470
+(710215) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+[33, true, 44, [{
+"doContinuousAcquisition":	true,
+"continuousAcquisitionSampleDelayMs":	1000,
+"isMocked":	false,
+"colorSensorGain":	6,
+"colorSensorIntegrationTimeMs":	25,
+"excitationOnDelayTimeMs":	6,
+"excitationOutputPercentage":	100.00,
+"doSamplePrep":	true,
+"samplePrepTempSteps":	[{
+"tempC":	62.00,
+"holdSeconds":	60.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	85.00,
+"holdSeconds":	120.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	60.00,
+"holdSeconds":	15.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}],
+"samplePrepPcrChamberPreheatTempC":	60.00,
+"samplePrepDoPlunge":	false,
+"samplePrepDoPtcSeal":	false,
+"samplePreDoImmediateSeal":	false,
+"samplePrepPtcSealTimeMs":	30000,
+"doCupVibration":	false,
+"thumperCycleCount":	0,
+"thumperCyclingSteps":	[],
+"doRtSteps":	false,
+"pcrPreheatTempSteps":	[{
+"tempC":	45.00,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	95.00,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}],
+"doPcr":	false,
+"pcrCycleCount":	45,
+"pcrCyclingTempSteps":	[{
+"tempC":	95.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	60.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	1
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}],
+"doMelt":	false,
+"meltStartHoldTimeSeconds":	15.00,
+"meltStartTemp":	55.00,
+"meltStartCaptureTemp":	60.00,
+"meltFinishTemp":	100.00,
+"meltAcquisitionDelayMs":	800.00,
+"meltAcquisitionsPerC":	5,
+"meltRampRateDegCPerSecond":	0.25
+}], 0]
+(710263) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;34mD (710399) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1470, currentIndex=0): [33,true,44,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":6,"excitationOutputPercentage":100.00,"doSamplePrep":true,"samplePrepTempSteps":[{"tempC":62.00,"holdSeconds":60.00,"rampRate":1000.00,"performCapture":0},{"tempC":85.00,"holdSeconds":120.00,"rampRate":1000.00,"performCapture":0},{"tempC":60.00,"holdSeconds":15.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamber
+(710455) thermalControlTask: thermal control sleep.
+(710460) heapMonitor_checkFreeHeapSize: New heap low water mark 104456
+[0;34mD (710547) BLE_PERIPH: Instrument to App Transaction Write 510/1470
+[0;34mD (710549) BLE_PERIPH: Instrument to App Transaction Read/Notify 510/1470
+[0;34mD (710607) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=510 mtu=510, totalSize=1470, currentIndex=510): PreheatTempC":60.00,"samplePrepDoPlunge":false,"samplePrepDoPtcSeal":false,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":false,"pcrPreheatTempSteps":[{"tempC":45.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":false,"pcrCycleCount":45,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":10.00,"rampRate":1000.00,
+[0;34mD (710727) BLE_PERIPH: Instrument to App Transaction Write 1020/1470
+[0;34mD (710729) BLE_PERIPH: Instrument to App Transaction Read/Notify 1020/1470
+[0;34mD (710787) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=450 mtu=510, totalSize=1470, currentIndex=1020): "performCapture":0},{"tempC":60.00,"holdSeconds":10.00,"rampRate":1000.00,"performCapture":1},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0},{"tempC":0.00,"holdSeconds":0.00,"rampRate":0.00,"performCapture":0}],"doMelt":false,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":100.00,"meltAcquisitionDelayMs":800.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.25}],0]
+DATAQ: | Stg1ThermoTempC = 24.83 | stg1AltThermoTempC1 = 25.31  |
+[0;34mD (710907) BLE_PERIPH: Instrument to App Transaction Write 1470/1470
+[0;34mD (710909) BLE_PERIPH: Instrument to App Transaction Read/Notify 1470/1470
+[0;34mD (710967) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;34mD (711267) BLE_PERIPH: App to Instrument Transaction Write 0/83
+[0;34mD (711269) BLE_PERIPH: App to Instrument Transaction Notify 0/83
+DATAQ: | Stg1ThermoTempC = 24.87 | stg1AltThermoTempC1 = 25.34  |
+[0;34mD (711328) BLE_PERIPH: App to Instrument Data
+[0;34mD (711329) BLE_PERIPH: Received 83/83
+[0;34mD (711331) BLE_PERIPH: App to Instrument Transaction Notify 83/83
+(711334) experimentRequestStateChange: Experiment State Transition IDLE -> START
+[0;34mD (711342) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 18 seconds
+[0;34mD (711349) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds
+(711357) DEVICE USAGE: Printing device usage logs
+(711362) DEVICE USAGE: Lifter Up Times:                         79
+(711369) DEVICE USAGE: Lifter Down Times:                       97
+(711376) DEVICE USAGE: Thumper Vibrated Times:                  66
+(711383) DEVICE USAGE: Thumper Stalled Times:                   152
+(711390) DEVICE USAGE: Solenoid Times:                          265
+(711397) DEVICE USAGE: Plunge Times:                            67
+(711405) DEVICE USAGE: Laser Activation Times:                  45051
+(711412) DEVICE USAGE: Fluorimiter Reads:                       135276
+(711419) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(711428) DEVICE USAGE: Front Button Presses:                    27
+(711435) DEVICE USAGE: Back Button Presses:                     91
+(711442) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(711450) DEVICE USAGE: Total Completed Runs:                    86
+(711457) DEVICE USAGE: PTC On Time (Seconds):                   1993
+(711464) DEVICE USAGE: Treatment Chamber TEC On Time (Seconds): 45489
+(711471) DEVICE USAGE: PCR Chamber TEC On Time (Seconds):       16979
+(711479) DEVICE USAGE: Fan On Time (Seconds):                   84200
+(711486) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+[0;34mD (711494) _airboatStateEnter: Lifter Down
+(711499) thermalControlTask: thermal control sleep.
+[0;34mD (711504) experimentStateStartEnter: Experiment starting
+(711548) _deleteFile: Failed to delete file because erno 2
+[0;34mD (711549) colorSensorSetGain: Setting color sensor gain to 6
+[0;34mD (711550) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+(711563) experimentTask: Experiment State Transition START -> SAMPLE_PREP
+(711565) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+[0;34mD (711573) BLE_PERIPH: Sending Response Packet: [35,true,45,[],0]
+[0;34mD (711581) blePeriphNotifySubscription: ENTER NOTIFY
+[0;34mD (711586) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/17
+[0;34mD (711602) BLE_PERIPH: Notifying
+(711603) _applyThermalBrakeUpdate: Worst Temp: 59.653374
+(711605) comm_getNotifyId: Attempting to get notify id
+(711612) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+[0;34mD (711619) BLE_PERIPH: Notify Command Id = 34
+[0;34mD (711628) _resetThermalControlState: RESET Peltier 0 control state
+(711631) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 62.0
+(711638) _setThermalControlState: thermalControl-0: changing state 3->1
+(711645) tecCurvePredictorSetHoldPower: Not setting hold Power for ST1
+[0;34mD (711653) thermalControlSetEnable: Enabling Peltier 0
+[0;34mD (711659) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=17 mtu=510, totalSize=17, currentIndex=0): [35,true,45,[],0]
+[0;34mD (711675) _st1ModelCalculate: St1 Using Heating Equations
+(711677) systemRequestStateChange: System State Transition READY -> RUNNING
+(711690) thermalControlTask: thermal control sleep.
+(711691) systemTasksMonitorStack: Stack Watermark(Experiment): 2000
+(711698) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+[0;34mD (711706) blePeriphNotifySubscription: ENTER NOTIFY
+[0;34mD (711725) BLE_PERIPH: Instrument to App Transaction Write 17/17
+[0;34mD (711730) BLE_PERIPH: Instrument to App Transaction Read/Notify 17/17
+[0;34mD (711732) BLE_PERIPH: Notifying
+(711734) comm_getNotifyId: Attempting to get notify id
+[0;34mD (711740) BLE_PERIPH: Notify Command Id = 34
+(711747) systemRequestStateChange: Notify exit state change
+[0;36mV (711762) TC: TC-0 = 35.04, modeled = 24.00, target = 62.00, heatSink = 34.93, output = 100.0, timeout = 100, TecRate = 0.00
+[0;34mD (711782) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;34mD (711813) colorSensorSetGain: Setting color sensor gain to 7
+[0;34mD (711855) BLE_PERIPH: App to Instrument Transaction Write 0/18
+[0;34mD (711858) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+[0;34mD (711866) colorSensorSetIntegrationTimeMs: Setting integration time to 100
+[0;36mV (711911) TC: TC-0 = 35.04, modeled = 24.00, target = 62.00, heatSink = 34.92, output = 100.0, timeout = 250, TecRate = 0.00
+[0;34mD (711927) BLE_PERIPH: App to Instrument Data
+[0;34mD (711928) BLE_PERIPH: Received 18/18
+[0;34mD (711930) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+[0;34mD (711967) BLE_PERIPH: Sending Response Packet: [34,true,47,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",466,35.05,34.91,3,2,34,3.00],0]
+[0;34mD (711972) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/110
+[0;34mD (712017) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=110 mtu=510, totalSize=110, currentIndex=0): [34,true,47,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",466,35.05,34.91,3,2,34,3.00],0]
+DATAQ: | Stg1ThermoTempC = 24.89 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (712062) TC: TC-0 = 35.09, modeled = 24.00, target = 62.00, heatSink = 34.91, output = 100.0, timeout = 400, TecRate = 0.00
+[0;34mD (712077) BLE_PERIPH: Instrument to App Transaction Write 110/110
+[0;34mD (712079) BLE_PERIPH: Instrument to App Transaction Read/Notify 110/110
+(712081) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;34mD (712137) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(712189) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(712190) _readLifterSwitches: New Lifter Up Value: 0
+[0;34mD (712197) BLE_PERIPH: App to Instrument Transaction Write 0/18
+[0;34mD (712201) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+[0;36mV (712214) TC: TC-0 = 35.39, modeled = 24.00, target = 62.00, heatSink = 34.89, output = 100.0, timeout = 550, TecRate = 0.00
+[0;34mD (712257) BLE_PERIPH: App to Instrument Data
+[0;34mD (712259) BLE_PERIPH: Received 18/18
+[0;34mD (712261) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+[0;34mD (712291) BLE_PERIPH: Sending Response Packet: [34,true,46,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",790,35.77,34.91,3,2,34,3.00],0]
+[0;34mD (712296) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/110
+[0;34mD (712347) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=110 mtu=510, totalSize=110, currentIndex=0): [34,true,46,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",790,35.77,34.91,3,2,34,3.00],0]
+[0;36mV (712362) TC: TC-0 = 35.77, modeled = 24.00, target = 62.00, heatSink = 34.87, output = 100.0, timeout = 700, TecRate = 0.00
+[0;34mD (712407) BLE_PERIPH: Instrument to App Transaction Write 110/110
+[0;34mD (712410) BLE_PERIPH: Instrument to App Transaction Read/Notify 110/110
+[0;34mD (712467) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(712469) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;36mV (712513) TC: TC-0 = 36.73, modeled = 24.00, target = 62.00, heatSink = 34.82, output = 100.0, timeout = 850, TecRate = 0.00
+[0;34mD (712527) BLE_PERIPH: App to Instrument Transaction Write 0/18
+[0;34mD (712529) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+(712572) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;34mD (712587) BLE_PERIPH: App to Instrument Data
+[0;34mD (712588) BLE_PERIPH: Received 18/18
+[0;34mD (712590) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+DATAQ: | Stg1ThermoTempC = 24.95 | stg1AltThermoTempC1 = 25.51  |
+[0;34mD (712615) BLE_PERIPH: Sending Response Packet: [34,true,49,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1114,37.46,34.90,3,2,34,3.00],0]
+[0;34mD (712620) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111
+[0;36mV (712662) TC: TC-0 = 37.84, modeled = 24.00, target = 62.00, heatSink = 34.77, output = 100.0, timeout = 1000, TecRate = 0.00
+(712673) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;34mD (712677) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,49,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1114,37.46,34.90,3,2,34,3.00],0]
+[0;34mD (712737) BLE_PERIPH: Instrument to App Transaction Write 111/111
+[0;34mD (712739) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111
+(712773) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...
+[0;34mD (712783) colorSensorSetGain: Setting color sensor gain to 6
+[0;34mD (712785) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+[0;34mD (712797) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;36mV (712812) TC: TC-0 = 39.24, modeled = 24.00, target = 62.00, heatSink = 34.71, output = 100.0, timeout = 1150, TecRate = 0.00
+[0;34mD (712858) BLE_PERIPH: App to Instrument Transaction Write 0/18
+[0;34mD (712860) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+[0;34mD (712888) colorSensorSetGain: Setting color sensor gain to 7
+[0;34mD (712894) colorSensorSetIntegrationTimeMs: Setting integration time to 100
+[0;34mD (712917) BLE_PERIPH: App to Instrument Data
+[0;34mD (712918) BLE_PERIPH: Received 18/18
+[0;34mD (712920) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+[0;34mD (712947) BLE_PERIPH: Sending Response Packet: [34,true,48,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1445,40.62,34.89,3,2,34,3.00],0]
+[0;34mD (712952) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111
+[0;36mV (712962) TC: TC-0 = 40.62, modeled = 24.00, target = 62.00, heatSink = 34.65, output = 100.0, timeout = 1300, TecRate = 0.00
+[0;34mD (713007) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,48,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1445,40.62,34.89,3,2,34,3.00],0]
+[0;34mD (713067) BLE_PERIPH: Instrument to App Transaction Write 111/111
+[0;34mD (713069) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111
+(713104) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;36mV (713112) TC: TC-0 = 41.64, modeled = 24.00, target = 62.00, heatSink = 34.61, output = 100.0, timeout = 1450, TecRate = -0.00
+[0;34mD (713127) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;34mD (713187) BLE_PERIPH: App to Instrument Transaction Write 0/17
+[0;34mD (713189) BLE_PERIPH: App to Instrument Transaction Notify 0/17
+(713205) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+DATAQ: | Stg1ThermoTempC = 25.02 | stg1AltThermoTempC1 = 25.34  |
+[0;34mD (713247) BLE_PERIPH: App to Instrument Data
+[0;34mD (713248) BLE_PERIPH: Received 17/17
+[0;34mD (713250) BLE_PERIPH: App to Instrument Transaction Notify 17/17
+[0;36mV (713262) TC: TC-0 = 43.18, modeled = 24.00, target = 62.00, heatSink = 34.54, output = 100.0, timeout = 1600, TecRate = -0.00
+[0;34mD (713274) BLE_PERIPH: Sending Response Packet: [34,true,50,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1773,43.63,34.89,3,2,34,3.00],0]
+[0;34mD (713280) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111
+(713305) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;34mD (713337) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=510, totalSize=111, currentIndex=0): [34,true,50,["2022-10-24T17:09:39.323Z","e578818a-69a2-40e4-a4bf-1413a2066b85",1773,43.63,34.89,3,2,34,3.00],0]
+(713406) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...
+[0;36mV (713412) TC: TC-0 = 44.70, modeled = 24.00, target = 62.00, heatSink = 34.47, output = 100.0, timeout = 1750, TecRate = -0.00
+[0;34mD (713428) BLE_PERIPH: Instrument to App Transaction Write 111/111
+[0;34mD (713429) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111
+[0;34mD (713487) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+[0;36mV (713562) TC: TC-0 = 46.30, modeled = 24.00, target = 62.00, heatSink = 34.41, output = 100.0, timeout = 1900, TecRate = 0.00
+(713606) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(713707) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+[0;36mV (713712) TC: TC-0 = 47.66, modeled = 24.00, target = 62.00, heatSink = 34.36, output = 100.0, timeout = 2050, TecRate = 0.00
+(713808) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+DATAQ: | Stg1ThermoTempC = 24.97 | stg1AltThermoTempC1 = 25.29  |
+[0;36mV (713862) TC: TC-0 = 49.39, modeled = 24.00, target = 62.00, heatSink = 34.27, output = 100.0, timeout = 2200, TecRate = 0.00
+(713908) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...
+[0;34mD (713918) colorSensorSetGain: Setting color sensor gain to 6
+[0;34mD (713919) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+[0;36mV (714012) TC: TC-0 = 50.68, modeled = 24.00, target = 62.00, heatSink = 34.21, output = 100.0, timeout = 2350, TecRate = 0.00
+[0;36mV (714162) TC: TC-0 = 51.94, modeled = 24.00, target = 62.00, heatSink = 34.16, output = 100.0, timeout = 2500, TecRate = 0.00
+[0;36mV (714312) TC: TC-0 = 53.62, modeled = 24.00, target = 62.00, heatSink = 34.08, output = 100.0, timeout = 2650, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 25.01 | stg1AltThermoTempC1 = 25.19  |
+[0;36mV (714462) TC: TC-0 = 54.87, modeled = 24.00, target = 62.00, heatSink = 34.02, output = 100.0, timeout = 2800, TecRate = 0.00
+[0;36mV (714612) TC: TC-0 = 56.09, modeled = 24.00, target = 62.00, heatSink = 33.97, output = 100.0, timeout = 2950, TecRate = -0.00
+[0;36mV (714762) TC: TC-0 = 57.72, modeled = 24.00, target = 62.00, heatSink = 33.90, output = 100.0, timeout = 3100, TecRate = 0.00
+[0;36mV (714912) TC: TC-0 = 58.91, modeled = 24.00, target = 62.00, heatSink = 33.85, output = 100.0, timeout = 3250, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 25.06 | stg1AltThermoTempC1 = 25.31  |
+[0;36mV (715062) TC: TC-0 = 60.06, modeled = 24.00, target = 62.00, heatSink = 33.79, output = 100.0, timeout = 3400, TecRate = 0.00
+[0;36mV (715212) TC: TC-0 = 61.60, modeled = 24.00, target = 62.00, heatSink = 33.73, output = 100.0, timeout = 3550, TecRate = -0.00
+[0;36mV (715362) TC: TC-0 = 62.73, modeled = 24.00, target = 62.00, heatSink = 33.67, output = 100.0, timeout = 3700, TecRate = -0.00
+[0;36mV (715512) TC: TC-0 = 63.84, modeled = 24.00, target = 62.00, heatSink = 33.62, output = 100.0, timeout = 3850, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 25.07 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (715662) TC: TC-0 = 65.32, modeled = 24.00, target = 62.00, heatSink = 33.56, output = 100.0, timeout = 4000, TecRate = 0.00
+[0;36mV (715812) TC: TC-0 = 66.42, modeled = 24.00, target = 62.00, heatSink = 33.50, output = 100.0, timeout = 4150, TecRate = 0.00
+[0;36mV (715962) TC: TC-0 = 67.47, modeled = 24.00, target = 62.00, heatSink = 33.45, output = 100.0, timeout = 4300, TecRate = 0.00
+[0;36mV (716112) TC: TC-0 = 68.87, modeled = 24.00, target = 62.00, heatSink = 33.39, output = 100.0, timeout = 4450, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 25.1 | stg1AltThermoTempC1 = 25.35  |
+[0;36mV (716262) TC: TC-0 = 69.90, modeled = 24.00, target = 62.00, heatSink = 33.35, output = 100.0, timeout = 4600, TecRate = 0.00
+[0;36mV (716412) TC: TC-0 = 70.90, modeled = 24.00, target = 62.00, heatSink = 33.30, output = 100.0, timeout = 4750, TecRate = 0.00
+[0;36mV (716562) TC: TC-0 = 72.25, modeled = 24.00, target = 62.00, heatSink = 33.23, output = 100.0, timeout = 4900, TecRate = 0.00
+[0;36mV (716712) TC: TC-0 = 73.24, modeled = 24.03, target = 62.00, heatSink = 33.20, output = 100.0, timeout = 5050, TecRate = 0.70
+DATAQ: | Stg1ThermoTempC = 25.2 | stg1AltThermoTempC1 = 25.43  |
+[0;36mV (716862) TC: TC-0 = 74.20, modeled = 24.20, target = 62.00, heatSink = 33.15, output = 100.0, timeout = 5200, TecRate = 1.10
+[0;36mV (717012) TC: TC-0 = 75.45, modeled = 24.37, target = 62.00, heatSink = 33.09, output = 100.0, timeout = 5350, TecRate = 1.15
+[0;36mV (717162) TC: TC-0 = 76.38, modeled = 24.55, target = 62.00, heatSink = 33.05, output = 100.0, timeout = 5500, TecRate = 1.19
+[0;36mV (717312) TC: TC-0 = 77.29, modeled = 24.73, target = 62.00, heatSink = 33.01, output = 100.0, timeout = 5650, TecRate = 1.23
+DATAQ: | Stg1ThermoTempC = 25.15 | stg1AltThermoTempC1 = 25.31  |
+[0;36mV (717462) TC: TC-0 = 78.50, modeled = 24.92, target = 62.00, heatSink = 32.97, output = 100.0, timeout = 5800, TecRate = 1.27
+[0;36mV (717612) TC: TC-0 = 79.37, modeled = 25.12, target = 62.00, heatSink = 32.92, output = 100.0, timeout = 5950, TecRate = 1.31
+[0;36mV (717762) TC: TC-0 = 80.23, modeled = 25.32, target = 62.00, heatSink = 32.89, output = 100.0, timeout = 6100, TecRate = 1.35
+[0;36mV (717867) _performCapture: [6367,0,34.78,84,1317,417,20,47,32,49,57,17,2068,0,34.82]
+[0;36mV (717912) TC: TC-0 = 81.37, modeled = 25.53, target = 62.00, heatSink = 32.83, output = 100.0, timeout = 6250, TecRate = 1.54
+DATAQ: | Stg1ThermoTempC = 25.29 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (718062) TC: TC-0 = 82.21, modeled = 25.74, target = 62.00, heatSink = 32.80, output = 100.0, timeout = 6400, TecRate = 1.42
+[0;36mV (718213) TC: TC-0 = 83.05, modeled = 25.96, target = 62.00, heatSink = 32.77, output = 100.0, timeout = 6550, TecRate = 1.46
+[0;36mV (718362) TC: TC-0 = 84.13, modeled = 26.19, target = 62.00, heatSink = 32.72, output = 100.0, timeout = 6700, TecRate = 1.70
+[0;36mV (718512) TC: TC-0 = 84.89, modeled = 26.41, target = 62.00, heatSink = 32.70, output = 100.0, timeout = 6850, TecRate = 1.50
+DATAQ: | Stg1ThermoTempC = 25.36 | stg1AltThermoTempC1 = 25.34  |
+[0;36mV (718662) TC: TC-0 = 85.67, modeled = 26.64, target = 62.00, heatSink = 32.66, output = 100.0, timeout = 7000, TecRate = 1.55
+[0;36mV (718812) TC: TC-0 = 86.68, modeled = 26.89, target = 62.00, heatSink = 32.62, output = 100.0, timeout = 7150, TecRate = 1.83
+[0;36mV (718962) TC: TC-0 = 87.41, modeled = 27.13, target = 62.00, heatSink = 32.58, output = 100.0, timeout = 7300, TecRate = 1.60
+[0;36mV (718975) _performCapture: [7475,0,34.75,87,1361,404,22,53,33,58,58,29,4791,0,34.80]
+[0;36mV (719112) TC: TC-0 = 88.16, modeled = 27.37, target = 62.00, heatSink = 32.55, output = 100.0, timeout = 7450, TecRate = 1.64
+DATAQ: | Stg1ThermoTempC = 26.08 | stg1AltThermoTempC1 = 25.33  |
+[0;36mV (719262) TC: TC-0 = 89.10, modeled = 27.63, target = 62.00, heatSink = 32.51, output = 100.0, timeout = 7600, TecRate = 1.93
+[0;36mV (719412) TC: TC-0 = 89.83, modeled = 27.89, target = 62.00, heatSink = 32.49, output = 100.0, timeout = 7750, TecRate = 1.69
+[0;36mV (719562) TC: TC-0 = 90.53, modeled = 28.14, target = 62.00, heatSink = 32.46, output = 100.0, timeout = 7900, TecRate = 1.70
+[0;36mV (719712) TC: TC-0 = 91.49, modeled = 28.42, target = 62.00, heatSink = 32.43, output = 100.0, timeout = 8050, TecRate = 2.10
+DATAQ: | Stg1ThermoTempC = 26.96 | stg1AltThermoTempC1 = 25.29  |
+[0;36mV (719862) TC: TC-0 = 92.16, modeled = 28.68, target = 62.00, heatSink = 32.40, output = 100.0, timeout = 8200, TecRate = 1.75
+[0;36mV (720012) TC: TC-0 = 92.79, modeled = 28.94, target = 62.00, heatSink = 32.37, output = 100.0, timeout = 8350, TecRate = 1.76
+[0;36mV (720082) _performCapture: [8582,0,34.73,114,1420,419,31,69,41,78,65,53,7278,0,34.77]
+[0;36mV (720162) TC: TC-0 = 93.44, modeled = 29.21, target = 62.00, heatSink = 32.34, output = 100.0, timeout = 8500, TecRate = 1.79
+[0;36mV (720312) TC: TC-0 = 94.34, modeled = 29.51, target = 62.00, heatSink = 32.31, output = 100.0, timeout = 8650, TecRate = 1.85
+DATAQ: | Stg1ThermoTempC = 27.99 | stg1AltThermoTempC1 = 25.3  |
+[0;36mV (720462) TC: TC-0 = 94.97, modeled = 29.78, target = 62.00, heatSink = 32.29, output = 100.0, timeout = 8800, TecRate = 1.82
+[0;36mV (720612) TC: TC-0 = 95.58, modeled = 30.06, target = 62.00, heatSink = 32.27, output = 100.0, timeout = 8950, TecRate = 1.85
+(720625) _readLifterSwitches: New Lifter Down Value: 1
+[0;34mD (720625) _airboatStateEnter: Reached Bottom
+[0;34mD (720726) _airboatStateEnter: ALL STOP
+[0;36mV (720762) TC: TC-0 = 96.41, modeled = 30.36, target = 62.00, heatSink = 32.24, output = 100.0, timeout = 9100, TecRate = 1.88
+[0;36mV (720912) TC: TC-0 = 96.99, modeled = 30.64, target = 62.00, heatSink = 32.22, output = 100.0, timeout = 9250, TecRate = 1.87
+DATAQ: | Stg1ThermoTempC = 28.07 | stg1AltThermoTempC1 = 25.3  |
+[0;36mV (721062) TC: TC-0 = 97.57, modeled = 30.93, target = 62.00, heatSink = 32.20, output = 100.0, timeout = 9400, TecRate = 1.91
+[0;36mV (721188) _performCapture: [9688,0,34.71,140,1439,437,34,80,48,94,74,60,6410,0,34.75]
+[0;36mV (721212) TC: TC-0 = 98.34, modeled = 31.24, target = 62.00, heatSink = 32.17, output = 100.0, timeout = 9550, TecRate = 1.91
+[0;36mV (721362) TC: TC-0 = 98.92, modeled = 31.53, target = 62.00, heatSink = 32.15, output = 100.0, timeout = 9700, TecRate = 1.96
+[0;36mV (721512) TC: TC-0 = 99.51, modeled = 31.82, target = 62.00, heatSink = 32.14, output = 100.0, timeout = 9850, TecRate = 1.99
+DATAQ: | Stg1ThermoTempC = 28.44 | stg1AltThermoTempC1 = 25.3  |
+[0;36mV (721662) TC: TC-0 = 100.22, modeled = 32.14, target = 62.00, heatSink = 32.12, output = 100.0, timeout = 10000, TecRate = 1.94
+[0;36mV (721812) TC: TC-0 = 100.79, modeled = 32.44, target = 62.00, heatSink = 32.10, output = 100.0, timeout = 10150, TecRate = 2.01
+[0;36mV (721962) TC: TC-0 = 101.33, modeled = 32.74, target = 62.00, heatSink = 32.09, output = 100.0, timeout = 10300, TecRate = 2.03
+[0;36mV (722112) TC: TC-0 = 102.08, modeled = 33.07, target = 62.00, heatSink = 32.07, output = 100.0, timeout = 10450, TecRate = 2.01
+DATAQ: | Stg1ThermoTempC = 28.64 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (722262) TC: TC-0 = 102.60, modeled = 33.37, target = 62.00, heatSink = 32.06, output = 100.0, timeout = 10600, TecRate = 1.98
+[0;36mV (722293) _performCapture: [10794,0,34.69,137,1429,430,34,80,47,96,71,60,6055,0,34.73]
+[0;36mV (722412) TC: TC-0 = 103.08, modeled = 33.67, target = 62.00, heatSink = 32.04, output = 100.0, timeout = 10750, TecRate = 2.01
+[0;36mV (722562) TC: TC-0 = 103.80, modeled = 34.01, target = 62.00, heatSink = 32.02, output = 100.0, timeout = 10900, TecRate = 2.10
+[0;36mV (722713) TC: TC-0 = 104.32, modeled = 34.32, target = 62.00, heatSink = 32.02, output = 100.0, timeout = 11050, TecRate = 2.07
+DATAQ: | Stg1ThermoTempC = 28.93 | stg1AltThermoTempC1 = 25.26  |
+[0;36mV (722863) TC: TC-0 = 104.80, modeled = 34.63, target = 62.00, heatSink = 32.00, output = 100.0, timeout = 11200, TecRate = 2.07
+[0;36mV (723013) TC: TC-0 = 105.46, modeled = 34.97, target = 62.00, heatSink = 31.98, output = 100.0, timeout = 11350, TecRate = 2.13
+[0;36mV (723163) TC: TC-0 = 105.98, modeled = 35.29, target = 62.00, heatSink = 31.98, output = 100.0, timeout = 11500, TecRate = 2.17
+[0;36mV (723313) TC: TC-0 = 106.46, modeled = 35.61, target = 62.00, heatSink = 31.97, output = 100.0, timeout = 11650, TecRate = 2.09
+DATAQ: | Stg1ThermoTempC = 29.09 | stg1AltThermoTempC1 = 25.33  |
+[0;36mV (723406) _performCapture: [11901,0,34.67,138,1491,432,34,80,47,97,72,59,5944,0,34.71]
+[0;36mV (723463) TC: TC-0 = 107.09, modeled = 35.95, target = 62.00, heatSink = 31.95, output = 100.0, timeout = 11800, TecRate = 2.14
+[0;36mV (723613) TC: TC-0 = 107.53, modeled = 36.27, target = 62.00, heatSink = 31.94, output = 100.0, timeout = 11950, TecRate = 2.13
+[0;36mV (723763) TC: TC-0 = 107.98, modeled = 36.59, target = 62.00, heatSink = 31.94, output = 100.0, timeout = 12100, TecRate = 2.13
+[0;36mV (723913) TC: TC-0 = 108.59, modeled = 36.94, target = 62.00, heatSink = 31.93, output = 100.0, timeout = 12250, TecRate = 2.17
+DATAQ: | Stg1ThermoTempC = 29.73 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (724063) TC: TC-0 = 109.04, modeled = 37.26, target = 62.00, heatSink = 31.92, output = 100.0, timeout = 12400, TecRate = 2.19
+[0;36mV (724214) TC: TC-0 = 109.47, modeled = 37.59, target = 62.00, heatSink = 31.92, output = 100.0, timeout = 12550, TecRate = 2.17
+[0;36mV (724364) TC: TC-0 = 109.91, modeled = 37.91, target = 62.00, heatSink = 31.91, output = 100.0, timeout = 12700, TecRate = 2.24
+[0;36mV (724514) TC: TC-0 = 110.39, modeled = 38.25, target = 62.00, heatSink = 31.90, output = 100.0, timeout = 12850, TecRate = 2.20
+[0;36mV (724537) _performCapture: [13037,0,34.64,139,1511,430,34,80,47,96,73,59,6014,0,34.68]
+DATAQ: | Stg1ThermoTempC = 30.03 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (724662) TC: TC-0 = 111.00, modeled = 38.61, target = 62.00, heatSink = 31.90, output = 97.1, timeout = 13000, TecRate = 2.83
+[0;36mV (724812) TC: TC-0 = 111.41, modeled = 38.94, target = 62.00, heatSink = 31.89, output = 95.6, timeout = 13150, TecRate = 2.18
+[0;36mV (724962) TC: TC-0 = 111.83, modeled = 39.27, target = 62.00, heatSink = 31.89, output = 93.0, timeout = 13300, TecRate = 2.23
+[0;36mV (725112) TC: TC-0 = 112.34, modeled = 39.62, target = 62.00, heatSink = 31.88, output = 90.4, timeout = 13450, TecRate = 2.71
+DATAQ: | Stg1ThermoTempC = 30.5 | stg1AltThermoTempC1 = 25.35  |
+[0;36mV (725262) TC: TC-0 = 112.69, modeled = 39.94, target = 62.00, heatSink = 31.88, output = 88.8, timeout = 13600, TecRate = 2.14
+[0;36mV (725412) TC: TC-0 = 113.02, modeled = 40.26, target = 62.00, heatSink = 31.88, output = 87.7, timeout = 13750, TecRate = 2.08
+[0;36mV (725562) TC: TC-0 = 113.47, modeled = 40.61, target = 62.00, heatSink = 31.88, output = 84.1, timeout = 13900, TecRate = 2.55
+[0;36mV (725642) _performCapture: [14142,0,34.62,140,1499,430,34,79,48,95,73,59,6065,0,34.66]
+[0;36mV (725712) TC: TC-0 = 113.76, modeled = 40.92, target = 62.00, heatSink = 31.88, output = 82.7, timeout = 14050, TecRate = 2.13
+DATAQ: | Stg1ThermoTempC = 30.7 | stg1AltThermoTempC1 = 25.36  |
+[0;36mV (725862) TC: TC-0 = 113.98, modeled = 41.22, target = 62.00, heatSink = 31.88, output = 83.5, timeout = 14200, TecRate = 1.96
+[0;36mV (726012) TC: TC-0 = 114.27, modeled = 41.53, target = 62.00, heatSink = 31.89, output = 81.5, timeout = 14350, TecRate = 2.32
+[0;36mV (726162) TC: TC-0 = 114.39, modeled = 41.81, target = 62.00, heatSink = 31.89, output = 83.3, timeout = 14500, TecRate = 1.76
+[0;36mV (726312) TC: TC-0 = 114.49, modeled = 42.08, target = 62.00, heatSink = 31.89, output = 82.1, timeout = 14650, TecRate = 1.81
+DATAQ: | Stg1ThermoTempC = 31.07 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (726462) TC: TC-0 = 114.63, modeled = 42.36, target = 62.00, heatSink = 31.90, output = 80.9, timeout = 14800, TecRate = 1.99
+[0;36mV (726612) TC: TC-0 = 114.74, modeled = 42.63, target = 62.00, heatSink = 31.90, output = 81.0, timeout = 14950, TecRate = 1.76
+[0;36mV (726747) _performCapture: [15247,0,34.60,141,1481,431,34,79,49,94,73,59,6074,0,34.63]
+[0;36mV (726762) TC: TC-0 = 114.81, modeled = 42.89, target = 62.00, heatSink = 31.91, output = 80.7, timeout = 15100, TecRate = 1.76
+[0;36mV (726912) TC: TC-0 = 114.89, modeled = 43.16, target = 62.00, heatSink = 31.92, output = 80.7, timeout = 15250, TecRate = 1.77
+DATAQ: | Stg1ThermoTempC = 31.47 | stg1AltThermoTempC1 = 25.38  |
+[0;36mV (727062) TC: TC-0 = 114.93, modeled = 43.41, target = 62.00, heatSink = 31.93, output = 80.2, timeout = 15400, TecRate = 1.73
+[0;36mV (727212) TC: TC-0 = 114.97, modeled = 43.67, target = 62.00, heatSink = 31.94, output = 80.0, timeout = 15550, TecRate = 1.65
+[0;36mV (727362) TC: TC-0 = 114.96, modeled = 43.91, target = 62.00, heatSink = 31.95, output = 81.9, timeout = 15700, TecRate = 1.55
+[0;36mV (727512) TC: TC-0 = 114.95, modeled = 44.15, target = 62.00, heatSink = 31.96, output = 80.7, timeout = 15850, TecRate = 1.60
+DATAQ: | Stg1ThermoTempC = 32.59 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (727662) TC: TC-0 = 114.98, modeled = 44.40, target = 62.00, heatSink = 31.96, output = 80.0, timeout = 16000, TecRate = 1.62
+[0;36mV (727812) TC: TC-0 = 114.98, modeled = 44.64, target = 62.00, heatSink = 31.98, output = 80.3, timeout = 16150, TecRate = 1.66
+[0;36mV (727857) _performCapture: [16357,0,34.58,141,1466,432,34,78,49,93,73,59,6062,0,34.61]
+[0;36mV (727962) TC: TC-0 = 114.97, modeled = 44.88, target = 62.00, heatSink = 31.99, output = 81.2, timeout = 16300, TecRate = 1.58
+[0;36mV (728113) TC: TC-0 = 114.97, modeled = 45.12, target = 62.00, heatSink = 32.01, output = 80.7, timeout = 16450, TecRate = 1.63
+DATAQ: | Stg1ThermoTempC = 33.15 | stg1AltThermoTempC1 = 25.38  |
+[0;36mV (728262) TC: TC-0 = 114.98, modeled = 45.35, target = 62.00, heatSink = 32.02, output = 80.9, timeout = 16600, TecRate = 1.54
+[0;36mV (728412) TC: TC-0 = 114.99, modeled = 45.59, target = 62.00, heatSink = 32.03, output = 81.2, timeout = 16750, TecRate = 1.59
+[0;36mV (728562) TC: TC-0 = 114.99, modeled = 45.83, target = 62.00, heatSink = 32.04, output = 80.5, timeout = 16900, TecRate = 1.54
+[0;36mV (728712) TC: TC-0 = 115.01, modeled = 46.07, target = 62.00, heatSink = 32.06, output = 80.3, timeout = 17050, TecRate = 1.61
+DATAQ: | Stg1ThermoTempC = 34.29 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (728862) TC: TC-0 = 115.01, modeled = 46.30, target = 62.00, heatSink = 32.07, output = 80.4, timeout = 17200, TecRate = 1.54
+[0;36mV (728957) _performCapture: [17457,0,34.55,141,1459,433,34,78,49,93,73,59,6044,0,34.59]
+[0;36mV (729012) TC: TC-0 = 115.03, modeled = 46.54, target = 62.00, heatSink = 32.08, output = 79.9, timeout = 17350, TecRate = 1.62
+[0;36mV (729162) TC: TC-0 = 115.02, modeled = 46.77, target = 62.00, heatSink = 32.10, output = 81.1, timeout = 17500, TecRate = 1.47
+[0;36mV (729312) TC: TC-0 = 115.01, modeled = 47.00, target = 62.00, heatSink = 32.10, output = 81.1, timeout = 17650, TecRate = 1.47
+DATAQ: | Stg1ThermoTempC = 34.73 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (729462) TC: TC-0 = 114.99, modeled = 47.22, target = 62.00, heatSink = 32.11, output = 81.2, timeout = 17800, TecRate = 1.55
+[0;36mV (729612) TC: TC-0 = 115.02, modeled = 47.46, target = 62.00, heatSink = 32.12, output = 79.9, timeout = 17950, TecRate = 1.63
+[0;36mV (729762) TC: TC-0 = 115.03, modeled = 47.69, target = 62.00, heatSink = 32.14, output = 80.1, timeout = 18100, TecRate = 1.56
+[0;36mV (729912) TC: TC-0 = 115.05, modeled = 47.93, target = 62.00, heatSink = 32.15, output = 79.9, timeout = 18250, TecRate = 1.53
+DATAQ: | Stg1ThermoTempC = 35.48 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (730062) TC: TC-0 = 115.06, modeled = 48.16, target = 62.00, heatSink = 32.17, output = 79.9, timeout = 18400, TecRate = 1.56
+[0;36mV (730067) _performCapture: [18567,0,34.53,142,1457,433,34,78,49,93,73,59,6027,0,34.57]
+[0;36mV (730212) TC: TC-0 = 115.08, modeled = 48.39, target = 62.00, heatSink = 32.18, output = 79.8, timeout = 18550, TecRate = 1.57
+[0;36mV (730362) TC: TC-0 = 115.07, modeled = 48.61, target = 62.00, heatSink = 32.20, output = 81.2, timeout = 18700, TecRate = 1.36
+[0;36mV (730512) TC: TC-0 = 115.08, modeled = 48.84, target = 62.00, heatSink = 32.21, output = 79.5, timeout = 18850, TecRate = 1.51
+DATAQ: | Stg1ThermoTempC = 35.89 | stg1AltThermoTempC1 = 25.34  |
+[0;36mV (730662) TC: TC-0 = 115.10, modeled = 49.07, target = 62.00, heatSink = 32.23, output = 79.3, timeout = 19000, TecRate = 1.60
+[0;36mV (730812) TC: TC-0 = 115.08, modeled = 49.29, target = 62.00, heatSink = 32.24, output = 80.6, timeout = 19150, TecRate = 1.39
+[0;36mV (730962) TC: TC-0 = 115.12, modeled = 49.52, target = 62.00, heatSink = 32.26, output = 79.2, timeout = 19300, TecRate = 1.66
+[0;36mV (731112) TC: TC-0 = 115.12, modeled = 49.74, target = 62.00, heatSink = 32.27, output = 79.3, timeout = 19450, TecRate = 1.44
+DATAQ: | Stg1ThermoTempC = 36.3 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (731166) _performCapture: [19667,0,34.51,142,1464,433,34,78,49,93,73,59,6039,0,34.54]
+[0;36mV (731262) TC: TC-0 = 115.15, modeled = 49.97, target = 62.00, heatSink = 32.28, output = 79.4, timeout = 19600, TecRate = 1.49
+[0;36mV (731412) TC: TC-0 = 115.16, modeled = 50.19, target = 62.00, heatSink = 32.30, output = 79.1, timeout = 19750, TecRate = 1.54
+[0;36mV (731562) TC: TC-0 = 115.14, modeled = 50.41, target = 62.00, heatSink = 32.31, output = 79.6, timeout = 19900, TecRate = 1.44
+[0;36mV (731712) TC: TC-0 = 115.11, modeled = 50.62, target = 62.00, heatSink = 32.33, output = 80.1, timeout = 20050, TecRate = 1.39
+DATAQ: | Stg1ThermoTempC = 37.22 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (731862) TC: TC-0 = 115.11, modeled = 50.83, target = 62.00, heatSink = 32.34, output = 79.4, timeout = 20200, TecRate = 1.54
+[0;36mV (732012) TC: TC-0 = 115.18, modeled = 51.07, target = 62.00, heatSink = 32.35, output = 78.3, timeout = 20350, TecRate = 1.63
+[0;36mV (732162) TC: TC-0 = 115.18, modeled = 51.28, target = 62.00, heatSink = 32.37, output = 79.8, timeout = 20500, TecRate = 1.34
+[0;36mV (732273) _performCapture: [20774,0,34.49,142,1463,432,34,78,49,94,73,59,6023,0,34.52]
+[0;36mV (732312) TC: TC-0 = 115.15, modeled = 51.49, target = 62.00, heatSink = 32.38, output = 80.0, timeout = 20650, TecRate = 1.45
+DATAQ: | Stg1ThermoTempC = 37.54 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (732462) TC: TC-0 = 115.18, modeled = 51.72, target = 62.00, heatSink = 32.40, output = 78.9, timeout = 20800, TecRate = 1.44
+[0;36mV (732612) TC: TC-0 = 115.17, modeled = 51.92, target = 62.00, heatSink = 32.41, output = 80.0, timeout = 20950, TecRate = 1.34
+[0;36mV (732762) TC: TC-0 = 115.17, modeled = 52.14, target = 62.00, heatSink = 32.43, output = 79.0, timeout = 21100, TecRate = 1.49
+[0;36mV (732912) TC: TC-0 = 115.20, modeled = 52.36, target = 62.00, heatSink = 32.44, output = 78.9, timeout = 21250, TecRate = 1.43
+DATAQ: | Stg1ThermoTempC = 38.26 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (733062) TC: TC-0 = 115.18, modeled = 52.56, target = 62.00, heatSink = 32.46, output = 79.9, timeout = 21400, TecRate = 1.32
+[0;36mV (733212) TC: TC-0 = 115.22, modeled = 52.78, target = 62.00, heatSink = 32.47, output = 78.6, timeout = 21550, TecRate = 1.48
+[0;36mV (733398) TC: TC-0 = 115.23, modeled = 53.05, target = 62.00, heatSink = 32.49, output = 79.3, timeout = 21700, TecRate = 1.37
+[0;36mV (733406) _performCapture: [21906,0,34.47,143,1482,441,34,78,49,94,74,60,6081,0,34.50]
+DATAQ: | Stg1ThermoTempC = 38.63 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (733547) TC: TC-0 = 115.21, modeled = 53.25, target = 62.00, heatSink = 32.50, output = 79.6, timeout = 21850, TecRate = 1.34
+[0;36mV (733698) TC: TC-0 = 115.22, modeled = 53.46, target = 62.00, heatSink = 32.52, output = 79.2, timeout = 22000, TecRate = 1.40
+[0;36mV (733847) TC: TC-0 = 115.22, modeled = 53.66, target = 62.00, heatSink = 32.53, output = 78.9, timeout = 22150, TecRate = 1.37
+[0;36mV (733997) TC: TC-0 = 115.25, modeled = 53.88, target = 62.00, heatSink = 32.55, output = 78.4, timeout = 22300, TecRate = 1.39
+DATAQ: | Stg1ThermoTempC = 39.52 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (734147) TC: TC-0 = 115.27, modeled = 54.09, target = 62.00, heatSink = 32.56, output = 78.2, timeout = 22450, TecRate = 1.38
+[0;36mV (734297) TC: TC-0 = 115.25, modeled = 54.29, target = 62.00, heatSink = 32.58, output = 79.2, timeout = 22600, TecRate = 1.29
+[0;36mV (734447) TC: TC-0 = 115.27, modeled = 54.50, target = 62.00, heatSink = 32.60, output = 78.1, timeout = 22750, TecRate = 1.48
+[0;36mV (734491) _performCapture: [22992,0,34.45,143,1468,435,34,78,49,94,74,60,6027,0,34.48]
+[0;36mV (734597) TC: TC-0 = 115.29, modeled = 54.71, target = 62.00, heatSink = 32.61, output = 78.3, timeout = 22900, TecRate = 1.39
+DATAQ: | Stg1ThermoTempC = 39.94 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (734747) TC: TC-0 = 115.28, modeled = 54.91, target = 62.00, heatSink = 32.62, output = 78.8, timeout = 23050, TecRate = 1.25
+[0;36mV (734897) TC: TC-0 = 115.28, modeled = 55.11, target = 62.00, heatSink = 32.64, output = 78.9, timeout = 23200, TecRate = 1.38
+[0;36mV (735047) TC: TC-0 = 115.27, modeled = 55.30, target = 62.00, heatSink = 32.66, output = 79.3, timeout = 23350, TecRate = 1.35
+[0;36mV (735198) TC: TC-0 = 115.27, modeled = 55.51, target = 62.00, heatSink = 32.67, output = 78.8, timeout = 23500, TecRate = 1.35
+DATAQ: | Stg1ThermoTempC = 40.86 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (735348) TC: TC-0 = 115.27, modeled = 55.70, target = 62.00, heatSink = 32.68, output = 78.7, timeout = 23650, TecRate = 1.32
+[0;36mV (735497) TC: TC-0 = 115.26, modeled = 55.90, target = 62.00, heatSink = 32.70, output = 78.8, timeout = 23800, TecRate = 1.34
+[0;36mV (735604) _performCapture: [24099,0,34.43,143,1469,437,34,79,49,94,74,60,6024,0,34.47]
+[0;36mV (735647) TC: TC-0 = 115.26, modeled = 56.09, target = 62.00, heatSink = 32.71, output = 78.2, timeout = 23950, TecRate = 1.45
+[0;36mV (735797) TC: TC-0 = 115.28, modeled = 56.27, target = 62.00, heatSink = 32.73, output = 78.3, timeout = 24100, TecRate = 1.21
+DATAQ: | Stg1ThermoTempC = 41.33 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (735947) TC: TC-0 = 115.27, modeled = 56.46, target = 62.00, heatSink = 32.74, output = 78.9, timeout = 24250, TecRate = 1.21
+[0;36mV (736097) TC: TC-0 = 115.26, modeled = 56.64, target = 62.00, heatSink = 32.75, output = 78.9, timeout = 24400, TecRate = 1.20
+[0;36mV (736247) TC: TC-0 = 115.32, modeled = 56.82, target = 62.00, heatSink = 32.77, output = 77.7, timeout = 24550, TecRate = 1.20
+[0;36mV (736397) TC: TC-0 = 115.30, modeled = 57.00, target = 62.00, heatSink = 32.78, output = 79.1, timeout = 24700, TecRate = 1.19
+DATAQ: | Stg1ThermoTempC = 42.16 | stg1AltThermoTempC1 = 25.49  |
+[0;36mV (736547) TC: TC-0 = 115.31, modeled = 57.17, target = 62.00, heatSink = 32.80, output = 78.1, timeout = 24850, TecRate = 1.19
+[0;36mV (736697) TC: TC-0 = 115.34, modeled = 57.35, target = 62.00, heatSink = 32.82, output = 78.1, timeout = 25000, TecRate = 1.19
+[0;36mV (736702) _performCapture: [25202,0,34.40,143,1472,439,34,79,49,95,74,60,6021,0,34.45]
+[0;36mV (736847) TC: TC-0 = 115.32, modeled = 57.53, target = 62.00, heatSink = 32.83, output = 78.6, timeout = 25150, TecRate = 1.18
+[0;36mV (736997) TC: TC-0 = 115.31, modeled = 57.71, target = 62.00, heatSink = 32.84, output = 78.8, timeout = 25300, TecRate = 1.18
+DATAQ: | Stg1ThermoTempC = 42.47 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (737147) TC: TC-0 = 115.32, modeled = 57.88, target = 62.00, heatSink = 32.86, output = 78.4, timeout = 25450, TecRate = 1.17
+[0;36mV (737297) TC: TC-0 = 115.30, modeled = 58.06, target = 62.00, heatSink = 32.88, output = 78.2, timeout = 25600, TecRate = 1.17
+[0;36mV (737447) TC: TC-0 = 115.32, modeled = 58.23, target = 62.00, heatSink = 32.89, output = 77.6, timeout = 25750, TecRate = 1.17
+[0;36mV (737597) TC: TC-0 = 115.33, modeled = 58.41, target = 62.00, heatSink = 32.91, output = 78.4, timeout = 25900, TecRate = 1.16
+DATAQ: | Stg1ThermoTempC = 43.31 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (737747) TC: TC-0 = 115.35, modeled = 58.58, target = 62.00, heatSink = 32.92, output = 77.8, timeout = 26050, TecRate = 1.16
+[0;36mV (737808) _performCapture: [26309,0,34.38,143,1476,441,34,79,49,95,74,60,6011,0,34.42]
+[0;36mV (737897) TC: TC-0 = 115.36, modeled = 58.76, target = 62.00, heatSink = 32.94, output = 77.7, timeout = 26200, TecRate = 1.15
+[0;36mV (738047) TC: TC-0 = 115.37, modeled = 58.93, target = 62.00, heatSink = 32.96, output = 77.7, timeout = 26350, TecRate = 1.15
+[0;36mV (738197) TC: TC-0 = 115.36, modeled = 59.10, target = 62.00, heatSink = 32.97, output = 78.3, timeout = 26500, TecRate = 1.15
+DATAQ: | Stg1ThermoTempC = 43.77 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (738347) TC: TC-0 = 115.31, modeled = 59.27, target = 62.00, heatSink = 32.98, output = 79.1, timeout = 26650, TecRate = 1.14
+[0;36mV (738497) TC: TC-0 = 115.33, modeled = 59.44, target = 62.00, heatSink = 33.00, output = 77.9, timeout = 26800, TecRate = 1.14
+[0;36mV (738647) TC: TC-0 = 115.35, modeled = 59.61, target = 62.00, heatSink = 33.01, output = 77.3, timeout = 26950, TecRate = 1.13
+[0;36mV (738797) TC: TC-0 = 115.39, modeled = 59.78, target = 62.00, heatSink = 33.03, output = 77.5, timeout = 27100, TecRate = 1.13
+DATAQ: | Stg1ThermoTempC = 44.65 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (738916) _performCapture: [27416,0,34.36,143,1478,442,34,79,48,95,74,60,6014,0,34.41]
+[0;36mV (738947) TC: TC-0 = 115.37, modeled = 59.95, target = 62.00, heatSink = 33.05, output = 78.3, timeout = 27250, TecRate = 1.13
+[0;36mV (739097) TC: TC-0 = 115.35, modeled = 60.12, target = 62.00, heatSink = 33.06, output = 0.0, timeout = 27400, TecRate = 1.12
+[0;36mV (739247) TC: TC-0 = 115.32, modeled = 60.29, target = 62.00, heatSink = 33.07, output = -100.0, timeout = 27500, TecRate = 1.12
+[0;36mV (739397) TC: TC-0 = 115.31, modeled = 60.45, target = 62.00, heatSink = 33.08, output = -100.0, timeout = 27650, TecRate = 1.11
+DATAQ: | Stg1ThermoTempC = 45.03 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (739547) TC: TC-0 = 115.09, modeled = 60.62, target = 62.00, heatSink = 33.12, output = -100.0, timeout = 27800, TecRate = 1.10
+[0;36mV (739697) TC: TC-0 = 114.63, modeled = 60.78, target = 62.00, heatSink = 33.17, output = -100.0, timeout = 27950, TecRate = 1.09
+[0;36mV (739847) TC: TC-0 = 113.91, modeled = 60.95, target = 62.00, heatSink = 33.26, output = -100.0, timeout = 28100, TecRate = 1.07
+(739892) _switchToSteadyStateCheck: Switching to steady state DECLINE
+[0;36mV (739997) TC: TC-0 = 112.60, modeled = 61.10, target = 62.00, heatSink = 33.42, output = -100.0, timeout = 28250, TecRate = 1.03
+[0;36mV (740020) _performCapture: [28521,0,34.34,143,1479,442,34,80,48,95,74,60,6010,0,34.38]
+DATAQ: | Stg1ThermoTempC = 45.97 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (740147) TC: TC-0 = 111.44, modeled = 61.25, target = 62.00, heatSink = 33.56, output = -100.0, timeout = 28400, TecRate = 1.00
+[0;36mV (740297) TC: TC-0 = 110.20, modeled = 61.40, target = 62.00, heatSink = 33.71, output = -100.0, timeout = 28550, TecRate = 0.96
+[0;36mV (740447) TC: TC-0 = 108.46, modeled = 61.54, target = 62.00, heatSink = 33.94, output = -100.0, timeout = 28700, TecRate = 0.91
+[0;36mV (740597) TC: TC-0 = 107.12, modeled = 61.67, target = 62.00, heatSink = 34.12, output = -100.0, timeout = 28850, TecRate = 0.88
+DATAQ: | Stg1ThermoTempC = 46.37 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (740747) TC: TC-0 = 105.76, modeled = 61.80, target = 62.00, heatSink = 34.31, output = -100.0, timeout = 29000, TecRate = 0.84
+[0;36mV (740897) TC: TC-0 = 103.95, modeled = 61.92, target = 62.00, heatSink = 34.58, output = -100.0, timeout = 29150, TecRate = 0.79
+[0;36mV (741047) TC: TC-0 = 102.61, modeled = 62.04, target = 62.00, heatSink = 34.78, output = -100.0, timeout = 29300, TecRate = 0.76
+[0;36mV (741128) _performCapture: [29628,0,34.32,143,1481,442,34,80,48,95,74,59,5998,0,34.36]
+[0;36mV (741197) TC: TC-0 = 101.27, modeled = 62.15, target = 62.00, heatSink = 35.00, output = -100.0, timeout = 29450, TecRate = 0.72
+DATAQ: | Stg1ThermoTempC = 47.3 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (741347) TC: TC-0 = 99.52, modeled = 62.25, target = 62.00, heatSink = 35.29, output = -100.0, timeout = 29600, TecRate = 0.68
+[0;36mV (741497) TC: TC-0 = 98.25, modeled = 62.35, target = 62.00, heatSink = 35.51, output = -100.0, timeout = 29750, TecRate = 0.65
+(741547) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 62.380871, threshold: 62.200001
+(741593) _setThermalControlState: thermalControl-0: changing state 1->3
+(741593) _setTempReachedCallback: Set Temp Reached
+[0;36mV (741646) TC: TC-0 = 96.98, modeled = 62.44, target = 62.00, heatSink = 35.72, output = -100.0, timeout = 0, TecRate = 0.61
+[0;36mV (741796) TC: TC-0 = 95.32, modeled = 62.53, target = 62.00, heatSink = 36.02, output = -100.0, timeout = 0, TecRate = 0.57
+DATAQ: | Stg1ThermoTempC = 47.83 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (741946) TC: TC-0 = 94.08, modeled = 62.61, target = 62.00, heatSink = 36.25, output = -100.0, timeout = 0, TecRate = 0.54
+[0;36mV (742096) TC: TC-0 = 92.88, modeled = 62.69, target = 62.00, heatSink = 36.47, output = -100.0, timeout = 0, TecRate = 0.51
+[0;36mV (742241) _performCapture: [30741,0,34.30,143,1483,441,34,80,48,95,74,60,5979,0,34.34]
+[0;36mV (742246) TC: TC-0 = 91.29, modeled = 62.76, target = 62.00, heatSink = 36.77, output = -100.0, timeout = 0, TecRate = 0.47
+[0;36mV (742396) TC: TC-0 = 90.08, modeled = 62.83, target = 62.00, heatSink = 37.01, output = -100.0, timeout = 0, TecRate = 0.44
+DATAQ: | Stg1ThermoTempC = 48.75 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (742546) TC: TC-0 = 88.94, modeled = 62.89, target = 62.00, heatSink = 37.24, output = -100.0, timeout = 0, TecRate = 0.41
+[0;36mV (742696) TC: TC-0 = 87.45, modeled = 62.95, target = 62.00, heatSink = 37.54, output = -100.0, timeout = 0, TecRate = 0.37
+[0;36mV (742846) TC: TC-0 = 86.36, modeled = 63.01, target = 62.00, heatSink = 37.77, output = -100.0, timeout = 0, TecRate = 0.35
+[0;36mV (742996) TC: TC-0 = 85.28, modeled = 63.06, target = 62.00, heatSink = 37.99, output = -100.0, timeout = 0, TecRate = 0.32
+DATAQ: | Stg1ThermoTempC = 48.98 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (743146) TC: TC-0 = 83.89, modeled = 63.10, target = 62.00, heatSink = 38.29, output = -100.0, timeout = 0, TecRate = 0.29
+[0;36mV (743296) TC: TC-0 = 82.86, modeled = 63.14, target = 62.00, heatSink = 38.51, output = -100.0, timeout = 0, TecRate = 0.26
+[0;36mV (743348) _performCapture: [31848,0,34.28,143,1485,440,34,79,48,95,74,60,5965,0,34.32]
+[0;36mV (743446) TC: TC-0 = 81.84, modeled = 63.18, target = 62.00, heatSink = 38.75, output = -100.0, timeout = 0, TecRate = 0.24
+[0;36mV (743596) TC: TC-0 = 80.49, modeled = 63.21, target = 62.00, heatSink = 39.05, output = -100.0, timeout = 0, TecRate = 0.21
+DATAQ: | Stg1ThermoTempC = 49.58 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (743746) TC: TC-0 = 79.51, modeled = 63.24, target = 62.00, heatSink = 39.27, output = -100.0, timeout = 0, TecRate = 0.18
+[0;36mV (743896) TC: TC-0 = 78.57, modeled = 63.27, target = 62.00, heatSink = 39.50, output = -100.0, timeout = 0, TecRate = 0.16
+[0;36mV (744046) TC: TC-0 = 77.30, modeled = 63.29, target = 62.00, heatSink = 39.79, output = -100.0, timeout = 0, TecRate = 0.13
+[0;36mV (744196) TC: TC-0 = 76.37, modeled = 63.30, target = 62.00, heatSink = 40.01, output = -100.0, timeout = 0, TecRate = 0.11
+DATAQ: | Stg1ThermoTempC = 49.88 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (744346) TC: TC-0 = 75.47, modeled = 63.32, target = 62.00, heatSink = 40.23, output = -100.0, timeout = 0, TecRate = 0.09
+[0;36mV (744452) _performCapture: [32952,0,34.26,143,1486,438,34,79,48,95,74,60,5949,0,34.30]
+[0;36mV (744496) TC: TC-0 = 74.30, modeled = 63.33, target = 62.00, heatSink = 40.52, output = -100.0, timeout = 0, TecRate = 0.06
+[0;36mV (744646) TC: TC-0 = 73.43, modeled = 63.34, target = 62.00, heatSink = 40.75, output = -100.0, timeout = 0, TecRate = 0.04
+[0;36mV (744796) TC: TC-0 = 72.57, modeled = 63.34, target = 62.00, heatSink = 40.96, output = -100.0, timeout = 0, TecRate = 0.02
+DATAQ: | Stg1ThermoTempC = 50.27 | stg1AltThermoTempC1 = 25.36  |
+[0;36mV (744946) TC: TC-0 = 71.41, modeled = 63.34, target = 62.00, heatSink = 41.24, output = -100.0, timeout = 0, TecRate = -0.00
+[0;36mV (745096) TC: TC-0 = 70.59, modeled = 63.34, target = 62.00, heatSink = 41.46, output = -100.0, timeout = 0, TecRate = -0.02
+[0;36mV (745246) TC: TC-0 = 69.77, modeled = 63.34, target = 62.00, heatSink = 41.67, output = -100.0, timeout = 0, TecRate = -0.04
+[0;36mV (745397) TC: TC-0 = 68.96, modeled = 63.33, target = 62.00, heatSink = 41.89, output = -100.0, timeout = 0, TecRate = -0.06
+DATAQ: | Stg1ThermoTempC = 50.48 | stg1AltThermoTempC1 = 25.35  |
+[0;36mV (745546) TC: TC-0 = 67.98, modeled = 63.32, target = 62.00, heatSink = 42.15, output = -100.0, timeout = 0, TecRate = -0.08
+[0;36mV (745568) _performCapture: [34069,0,34.24,142,1481,436,34,79,48,95,74,60,5951,0,34.28]
+[0;36mV (745696) TC: TC-0 = 67.16, modeled = 63.31, target = 62.00, heatSink = 42.38, output = -100.0, timeout = 0, TecRate = -0.09
+[0;36mV (745846) TC: TC-0 = 66.14, modeled = 63.29, target = 62.00, heatSink = 42.65, output = -100.0, timeout = 0, TecRate = -0.12
+[0;36mV (745996) TC: TC-0 = 65.39, modeled = 63.27, target = 62.00, heatSink = 42.86, output = -100.0, timeout = 0, TecRate = -0.13
+DATAQ: | Stg1ThermoTempC = 50.7 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (746146) TC: TC-0 = 64.65, modeled = 63.25, target = 62.00, heatSink = 43.05, output = -100.0, timeout = 0, TecRate = -0.15
+[0;36mV (746296) TC: TC-0 = 63.69, modeled = 63.23, target = 62.00, heatSink = 43.33, output = -100.0, timeout = 0, TecRate = -0.17
+[0;36mV (746446) TC: TC-0 = 62.98, modeled = 63.20, target = 62.00, heatSink = 43.53, output = -100.0, timeout = 0, TecRate = -0.18
+[0;36mV (746596) TC: TC-0 = 62.29, modeled = 63.17, target = 62.00, heatSink = 43.73, output = -100.0, timeout = 0, TecRate = -0.20
+DATAQ: | Stg1ThermoTempC = 50.72 | stg1AltThermoTempC1 = 25.33  |
+[0;36mV (746673) _performCapture: [35174,0,34.23,143,1475,435,34,78,48,95,74,60,5969,0,34.27]
+[0;36mV (746746) TC: TC-0 = 61.60, modeled = 63.14, target = 62.00, heatSink = 43.93, output = -100.0, timeout = 0, TecRate = -0.21
+[0;36mV (746896) TC: TC-0 = 60.70, modeled = 63.10, target = 62.00, heatSink = 44.20, output = -100.0, timeout = 0, TecRate = -0.23
+[0;36mV (747046) TC: TC-0 = 60.04, modeled = 63.07, target = 62.00, heatSink = 44.39, output = -100.0, timeout = 0, TecRate = -0.24
+[0;36mV (747196) TC: TC-0 = 59.39, modeled = 63.03, target = 62.00, heatSink = 44.59, output = -100.0, timeout = 0, TecRate = -0.26
+DATAQ: | Stg1ThermoTempC = 51.0 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (747346) TC: TC-0 = 58.52, modeled = 62.99, target = 62.00, heatSink = 44.86, output = -100.0, timeout = 0, TecRate = -0.28
+[0;36mV (747496) TC: TC-0 = 57.90, modeled = 62.95, target = 62.00, heatSink = 45.06, output = -100.0, timeout = 0, TecRate = -0.29
+[0;36mV (747646) TC: TC-0 = 57.28, modeled = 62.90, target = 62.00, heatSink = 45.26, output = -100.0, timeout = 0, TecRate = -0.30
+[0;36mV (747784) _performCapture: [36284,0,34.21,142,1471,432,34,78,49,95,74,60,5933,0,34.26]
+[0;36mV (747796) TC: TC-0 = 56.45, modeled = 62.86, target = 62.00, heatSink = 45.51, output = -100.0, timeout = 0, TecRate = -0.32
+DATAQ: | Stg1ThermoTempC = 50.94 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (747947) TC: TC-0 = 55.86, modeled = 62.81, target = 62.00, heatSink = 45.71, output = -100.0, timeout = 0, TecRate = -0.33
+[0;36mV (748096) TC: TC-0 = 55.28, modeled = 62.76, target = 62.00, heatSink = 45.91, output = -64.9, timeout = 0, TecRate = -0.34
+[0;36mV (748246) TC: TC-0 = 54.50, modeled = 62.70, target = 62.00, heatSink = 46.15, output = -5.3, timeout = 0, TecRate = -0.35
+[0;36mV (748396) TC: TC-0 = 53.94, modeled = 62.65, target = 62.00, heatSink = 46.34, output = 17.9, timeout = 0, TecRate = -0.37
+DATAQ: | Stg1ThermoTempC = 51.04 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (748546) TC: TC-0 = 53.40, modeled = 62.59, target = 62.00, heatSink = 46.51, output = 26.1, timeout = 0, TecRate = -0.38
+[0;36mV (748696) TC: TC-0 = 52.92, modeled = 62.54, target = 62.00, heatSink = 46.70, output = 32.0, timeout = 0, TecRate = -0.38
+[0;36mV (748846) TC: TC-0 = 52.72, modeled = 62.48, target = 62.00, heatSink = 46.83, output = 36.6, timeout = 0, TecRate = -0.39
+[0;36mV (748884) _performCapture: [37384,0,34.20,143,1472,431,34,78,49,95,74,60,5930,0,34.24]
+[0;36mV (748996) TC: TC-0 = 52.64, modeled = 62.42, target = 62.00, heatSink = 46.93, output = 40.9, timeout = 0, TecRate = -0.39
+DATAQ: | Stg1ThermoTempC = 51.05 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (749146) TC: TC-0 = 52.70, modeled = 62.36, target = 62.00, heatSink = 47.03, output = 44.3, timeout = 0, TecRate = -0.38
+[0;36mV (749296) TC: TC-0 = 52.85, modeled = 62.31, target = 62.00, heatSink = 47.08, output = 47.7, timeout = 0, TecRate = -0.38
+[0;36mV (749446) TC: TC-0 = 53.08, modeled = 62.25, target = 62.00, heatSink = 47.13, output = 50.9, timeout = 0, TecRate = -0.37
+[0;36mV (749596) TC: TC-0 = 53.50, modeled = 62.19, target = 62.00, heatSink = 47.16, output = 53.4, timeout = 0, TecRate = -0.36
+DATAQ: | Stg1ThermoTempC = 51.05 | stg1AltThermoTempC1 = 25.3  |
+[0;36mV (749746) TC: TC-0 = 53.90, modeled = 62.14, target = 62.00, heatSink = 47.18, output = 56.0, timeout = 0, TecRate = -0.35
+[0;36mV (749896) TC: TC-0 = 54.33, modeled = 62.09, target = 62.00, heatSink = 47.19, output = 58.7, timeout = 0, TecRate = -0.34
+[0;36mV (749998) _performCapture: [38498,0,34.18,143,1470,430,34,78,49,95,74,60,5925,0,34.24]
+[0;36mV (750046) TC: TC-0 = 54.99, modeled = 62.04, target = 62.00, heatSink = 47.19, output = 60.1, timeout = 0, TecRate = -0.33
+[0;36mV (750196) TC: TC-0 = 55.53, modeled = 61.99, target = 62.00, heatSink = 47.18, output = 62.3, timeout = 0, TecRate = -0.32
+DATAQ: | Stg1ThermoTempC = 51.13 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (750346) TC: TC-0 = 56.09, modeled = 61.94, target = 62.00, heatSink = 47.17, output = 64.0, timeout = 0, TecRate = -0.30
+[0;36mV (750496) TC: TC-0 = 56.92, modeled = 61.90, target = 62.00, heatSink = 47.15, output = 65.2, timeout = 0, TecRate = -0.28
+[0;36mV (750646) TC: TC-0 = 57.56, modeled = 61.86, target = 62.00, heatSink = 47.13, output = 66.3, timeout = 0, TecRate = -0.27
+[0;36mV (750796) TC: TC-0 = 58.23, modeled = 61.82, target = 62.00, heatSink = 47.10, output = 67.5, timeout = 0, TecRate = -0.25
+DATAQ: | Stg1ThermoTempC = 51.02 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (750946) TC: TC-0 = 59.17, modeled = 61.79, target = 62.00, heatSink = 47.07, output = 67.3, timeout = 0, TecRate = -0.23
+[0;36mV (751096) TC: TC-0 = 59.88, modeled = 61.75, target = 62.00, heatSink = 47.03, output = 68.1, timeout = 0, TecRate = -0.22
+[0;36mV (751100) _performCapture: [39600,0,34.17,143,1470,430,34,79,49,95,73,60,5928,0,34.23]
+[0;36mV (751246) TC: TC-0 = 60.60, modeled = 61.72, target = 62.00, heatSink = 46.99, output = 68.5, timeout = 0, TecRate = -0.20
+[0;36mV (751396) TC: TC-0 = 61.58, modeled = 61.69, target = 62.00, heatSink = 46.95, output = 67.7, timeout = 0, TecRate = -0.18
+DATAQ: | Stg1ThermoTempC = 51.0 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (751546) TC: TC-0 = 62.33, modeled = 61.67, target = 62.00, heatSink = 46.90, output = 67.7, timeout = 0, TecRate = -0.16
+[0;36mV (751696) TC: TC-0 = 63.06, modeled = 61.65, target = 62.00, heatSink = 46.86, output = 67.6, timeout = 0, TecRate = -0.14
+[0;36mV (751846) TC: TC-0 = 64.05, modeled = 61.63, target = 62.00, heatSink = 46.80, output = 66.2, timeout = 0, TecRate = -0.12
+[0;36mV (751996) TC: TC-0 = 64.77, modeled = 61.61, target = 62.00, heatSink = 46.75, output = 65.5, timeout = 0, TecRate = -0.11
+DATAQ: | Stg1ThermoTempC = 50.96 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (752146) TC: TC-0 = 65.50, modeled = 61.60, target = 62.00, heatSink = 46.69, output = 64.7, timeout = 0, TecRate = -0.09
+[0;36mV (752204) _performCapture: [40704,0,34.16,143,1469,429,34,79,49,95,73,60,5934,0,34.21]
+[0;36mV (752296) TC: TC-0 = 66.44, modeled = 61.58, target = 62.00, heatSink = 46.63, output = 63.3, timeout = 0, TecRate = -0.07
+[0;36mV (752446) TC: TC-0 = 67.13, modeled = 61.57, target = 62.00, heatSink = 46.60, output = 62.3, timeout = 0, TecRate = -0.05
+[0;36mV (752596) TC: TC-0 = 67.79, modeled = 61.57, target = 62.00, heatSink = 46.56, output = 61.2, timeout = 0, TecRate = -0.04
+DATAQ: | Stg1ThermoTempC = 50.98 | stg1AltThermoTempC1 = 25.56  |
+[0;36mV (752746) TC: TC-0 = 68.63, modeled = 61.56, target = 62.00, heatSink = 46.50, output = 59.1, timeout = 0, TecRate = -0.02
+[0;36mV (752896) TC: TC-0 = 69.23, modeled = 61.56, target = 62.00, heatSink = 46.45, output = 57.9, timeout = 0, TecRate = -0.01
+[0;36mV (753046) TC: TC-0 = 69.81, modeled = 61.56, target = 62.00, heatSink = 46.41, output = 56.6, timeout = 0, TecRate = 0.01
+[0;36mV (753196) TC: TC-0 = 70.53, modeled = 61.56, target = 62.00, heatSink = 46.34, output = 54.4, timeout = 0, TecRate = 0.02
+DATAQ: | Stg1ThermoTempC = 50.85 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (753308) _performCapture: [41809,0,34.15,143,1470,431,34,79,49,95,73,60,5961,0,34.22]
+[0;36mV (753346) TC: TC-0 = 71.04, modeled = 61.57, target = 62.00, heatSink = 46.30, output = 53.0, timeout = 0, TecRate = 0.03
+[0;36mV (753496) TC: TC-0 = 71.52, modeled = 61.58, target = 62.00, heatSink = 46.25, output = 51.2, timeout = 0, TecRate = 0.04
+[0;36mV (753646) TC: TC-0 = 72.13, modeled = 61.58, target = 62.00, heatSink = 46.20, output = 49.3, timeout = 0, TecRate = 0.06
+[0;36mV (753796) TC: TC-0 = 72.53, modeled = 61.59, target = 62.00, heatSink = 46.15, output = 47.8, timeout = 0, TecRate = 0.07
+DATAQ: | Stg1ThermoTempC = 50.95 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (753946) TC: TC-0 = 72.91, modeled = 61.60, target = 62.00, heatSink = 46.12, output = 45.8, timeout = 0, TecRate = 0.07
+[0;36mV (754096) TC: TC-0 = 73.36, modeled = 61.61, target = 62.00, heatSink = 46.06, output = 43.9, timeout = 0, TecRate = 0.08
+[0;36mV (754246) TC: TC-0 = 73.65, modeled = 61.63, target = 62.00, heatSink = 46.02, output = 42.2, timeout = 0, TecRate = 0.09
+[0;36mV (754404) TC: TC-0 = 73.84, modeled = 61.64, target = 62.00, heatSink = 46.00, output = 40.6, timeout = 0, TecRate = 0.09
+DATAQ: | Stg1ThermoTempC = 50.86 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (754441) _performCapture: [42942,0,34.14,143,1476,436,34,79,49,96,74,60,6009,0,34.21]
+[0;36mV (754553) TC: TC-0 = 74.21, modeled = 61.66, target = 62.00, heatSink = 45.95, output = 38.5, timeout = 0, TecRate = 0.10
+[0;36mV (754703) TC: TC-0 = 74.41, modeled = 61.67, target = 62.00, heatSink = 45.91, output = 36.7, timeout = 0, TecRate = 0.11
+[0;36mV (754853) TC: TC-0 = 74.57, modeled = 61.69, target = 62.00, heatSink = 45.87, output = 35.0, timeout = 0, TecRate = 0.11
+[0;36mV (755003) TC: TC-0 = 74.73, modeled = 61.71, target = 62.00, heatSink = 45.84, output = 33.1, timeout = 0, TecRate = 0.11
+DATAQ: | Stg1ThermoTempC = 50.8 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (755153) TC: TC-0 = 74.83, modeled = 61.72, target = 62.00, heatSink = 45.81, output = 31.5, timeout = 0, TecRate = 0.11
+[0;36mV (755303) TC: TC-0 = 74.88, modeled = 61.74, target = 62.00, heatSink = 45.77, output = 29.7, timeout = 0, TecRate = 0.11
+[0;36mV (755453) TC: TC-0 = 74.90, modeled = 61.76, target = 62.00, heatSink = 45.73, output = 28.3, timeout = 0, TecRate = 0.11
+[0;36mV (755548) _performCapture: [44048,0,34.13,143,1476,430,34,79,49,96,73,60,5942,0,34.20]
+DATAQ: | Stg1ThermoTempC = 50.82 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (755603) TC: TC-0 = 74.89, modeled = 61.77, target = 62.00, heatSink = 45.71, output = 26.7, timeout = 0, TecRate = 0.11
+[0;36mV (755753) TC: TC-0 = 74.87, modeled = 61.79, target = 62.00, heatSink = 45.69, output = 25.2, timeout = 0, TecRate = 0.11
+[0;36mV (755903) TC: TC-0 = 74.80, modeled = 61.81, target = 62.00, heatSink = 45.65, output = 23.9, timeout = 0, TecRate = 0.11
+[0;36mV (756053) TC: TC-0 = 74.71, modeled = 61.82, target = 62.00, heatSink = 45.63, output = 22.7, timeout = 0, TecRate = 0.11
+DATAQ: | Stg1ThermoTempC = 50.82 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (756203) TC: TC-0 = 74.62, modeled = 61.84, target = 62.00, heatSink = 45.61, output = 21.3, timeout = 0, TecRate = 0.11
+[0;36mV (756353) TC: TC-0 = 74.49, modeled = 61.86, target = 62.00, heatSink = 45.59, output = 20.2, timeout = 0, TecRate = 0.10
+[0;36mV (756503) TC: TC-0 = 74.37, modeled = 61.87, target = 62.00, heatSink = 45.58, output = 18.1, timeout = 0, TecRate = 0.10
+[0;36mV (756653) TC: TC-0 = 74.24, modeled = 61.89, target = 62.00, heatSink = 45.56, output = 15.8, timeout = 0, TecRate = 0.10
+[0;36mV (756657) _performCapture: [45157,0,34.13,143,1477,429,34,79,49,96,73,60,5934,0,34.20]
+DATAQ: | Stg1ThermoTempC = 50.84 | stg1AltThermoTempC1 = 25.38  |
+[0;36mV (756803) TC: TC-0 = 74.05, modeled = 61.90, target = 62.00, heatSink = 45.54, output = 14.0, timeout = 0, TecRate = 0.09
+[0;36mV (756953) TC: TC-0 = 73.90, modeled = 61.91, target = 62.00, heatSink = 45.53, output = 12.7, timeout = 0, TecRate = 0.09
+[0;36mV (757103) TC: TC-0 = 73.73, modeled = 61.93, target = 62.00, heatSink = 45.52, output = 11.3, timeout = 0, TecRate = 0.08
+[0;36mV (757253) TC: TC-0 = 73.50, modeled = 61.94, target = 62.00, heatSink = 45.50, output = 10.5, timeout = 0, TecRate = 0.08
+DATAQ: | Stg1ThermoTempC = 50.99 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (757403) TC: TC-0 = 73.31, modeled = 61.95, target = 62.00, heatSink = 45.49, output = 9.6, timeout = 0, TecRate = 0.07
+[0;36mV (757553) TC: TC-0 = 73.10, modeled = 61.96, target = 62.00, heatSink = 45.48, output = 9.1, timeout = 0, TecRate = 0.07
+[0;36mV (757703) TC: TC-0 = 72.81, modeled = 61.97, target = 62.00, heatSink = 45.48, output = 10.2, timeout = 0, TecRate = 0.06
+[0;36mV (757765) _performCapture: [46265,0,34.12,143,1478,430,34,79,49,96,73,60,5937,0,34.20]
+[0;36mV (757853) TC: TC-0 = 72.59, modeled = 61.98, target = 62.00, heatSink = 45.47, output = 9.7, timeout = 0, TecRate = 0.06
+DATAQ: | Stg1ThermoTempC = 51.23 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (758003) TC: TC-0 = 72.38, modeled = 61.99, target = 62.00, heatSink = 45.46, output = 9.4, timeout = 0, TecRate = 0.05
+[0;36mV (758153) TC: TC-0 = 72.09, modeled = 62.00, target = 62.00, heatSink = 45.46, output = 10.2, timeout = 0, TecRate = 0.05
+[0;36mV (758303) TC: TC-0 = 71.84, modeled = 62.00, target = 62.00, heatSink = 45.46, output = 12.1, timeout = 0, TecRate = 0.04
+[0;36mV (758453) TC: TC-0 = 71.62, modeled = 62.01, target = 62.00, heatSink = 45.46, output = 11.8, timeout = 0, TecRate = 0.04
+DATAQ: | Stg1ThermoTempC = 51.29 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (758603) TC: TC-0 = 71.33, modeled = 62.01, target = 62.00, heatSink = 45.45, output = 13.0, timeout = 0, TecRate = 0.03
+[0;36mV (758753) TC: TC-0 = 71.12, modeled = 62.02, target = 62.00, heatSink = 45.44, output = 13.8, timeout = 0, TecRate = 0.02
+[0;36mV (758875) _performCapture: [47375,0,34.11,143,1478,430,34,79,49,96,73,60,5928,0,34.19]
+[0;36mV (758903) TC: TC-0 = 70.89, modeled = 62.02, target = 62.00, heatSink = 45.44, output = 15.5, timeout = 0, TecRate = 0.02
+[0;36mV (759053) TC: TC-0 = 70.63, modeled = 62.02, target = 62.00, heatSink = 45.43, output = 16.8, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 51.52 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (759203) TC: TC-0 = 70.42, modeled = 62.02, target = 62.00, heatSink = 45.42, output = 18.6, timeout = 0, TecRate = 0.01
+[0;36mV (759353) TC: TC-0 = 70.24, modeled = 62.02, target = 62.00, heatSink = 45.42, output = 19.7, timeout = 0, TecRate = 0.00
+[0;36mV (759503) TC: TC-0 = 70.01, modeled = 62.02, target = 62.00, heatSink = 45.41, output = 20.7, timeout = 0, TecRate = -0.00
+[0;36mV (759653) TC: TC-0 = 69.84, modeled = 62.02, target = 62.00, heatSink = 45.41, output = 21.3, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 51.71 | stg1AltThermoTempC1 = 25.56  |
+[0;36mV (759803) TC: TC-0 = 69.71, modeled = 62.02, target = 62.00, heatSink = 45.40, output = 21.8, timeout = 0, TecRate = -0.01
+[0;36mV (759953) TC: TC-0 = 69.57, modeled = 62.02, target = 62.00, heatSink = 45.39, output = 22.5, timeout = 0, TecRate = -0.01
+[0;36mV (759974) _performCapture: [48475,0,34.11,143,1479,430,34,79,49,96,73,60,5927,0,34.20]
+[0;36mV (760103) TC: TC-0 = 69.40, modeled = 62.02, target = 62.00, heatSink = 45.38, output = 23.4, timeout = 0, TecRate = -0.01
+[0;36mV (760253) TC: TC-0 = 69.28, modeled = 62.02, target = 62.00, heatSink = 45.36, output = 24.1, timeout = 0, TecRate = -0.02
+DATAQ: | Stg1ThermoTempC = 51.84 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (760403) TC: TC-0 = 69.17, modeled = 62.01, target = 62.00, heatSink = 45.35, output = 24.9, timeout = 0, TecRate = -0.02
+[0;36mV (760553) TC: TC-0 = 69.03, modeled = 62.01, target = 62.00, heatSink = 45.33, output = 25.8, timeout = 0, TecRate = -0.02
+[0;36mV (760703) TC: TC-0 = 68.94, modeled = 62.01, target = 62.00, heatSink = 45.32, output = 26.6, timeout = 0, TecRate = -0.02
+[0;36mV (760853) TC: TC-0 = 68.86, modeled = 62.00, target = 62.00, heatSink = 45.32, output = 27.2, timeout = 0, TecRate = -0.03
+DATAQ: | Stg1ThermoTempC = 51.93 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (761003) TC: TC-0 = 68.75, modeled = 62.00, target = 62.00, heatSink = 45.30, output = 28.0, timeout = 0, TecRate = -0.03
+[0;36mV (761087) _performCapture: [49587,0,34.10,143,1480,430,34,79,49,96,73,60,5927,0,34.19]
+[0;36mV (761153) TC: TC-0 = 68.68, modeled = 61.99, target = 62.00, heatSink = 45.28, output = 29.0, timeout = 0, TecRate = -0.03
+[0;36mV (761303) TC: TC-0 = 68.61, modeled = 61.99, target = 62.00, heatSink = 45.27, output = 29.8, timeout = 0, TecRate = -0.03
+[0;36mV (761453) TC: TC-0 = 68.55, modeled = 61.99, target = 62.00, heatSink = 45.25, output = 30.1, timeout = 0, TecRate = -0.03
+DATAQ: | Stg1ThermoTempC = 52.06 | stg1AltThermoTempC1 = 25.43  |
+[0;36mV (761603) TC: TC-0 = 68.51, modeled = 61.98, target = 62.00, heatSink = 45.23, output = 30.8, timeout = 0, TecRate = -0.03
+[0;36mV (761753) TC: TC-0 = 68.46, modeled = 61.97, target = 62.00, heatSink = 45.21, output = 31.6, timeout = 0, TecRate = -0.03
+[0;36mV (761903) TC: TC-0 = 68.43, modeled = 61.97, target = 62.00, heatSink = 45.20, output = 32.0, timeout = 0, TecRate = -0.03
+[0;36mV (762053) TC: TC-0 = 68.41, modeled = 61.96, target = 62.00, heatSink = 45.18, output = 32.6, timeout = 0, TecRate = -0.04
+DATAQ: | Stg1ThermoTempC = 52.15 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (762187) _performCapture: [50688,0,34.10,144,1478,431,34,79,49,96,73,60,5946,0,34.19]
+[0;36mV (762203) TC: TC-0 = 68.40, modeled = 61.96, target = 62.00, heatSink = 45.16, output = 33.1, timeout = 0, TecRate = -0.04
+[0;36mV (762353) TC: TC-0 = 68.38, modeled = 61.95, target = 62.00, heatSink = 45.13, output = 33.8, timeout = 0, TecRate = -0.04
+[0;36mV (762503) TC: TC-0 = 68.38, modeled = 61.95, target = 62.00, heatSink = 45.11, output = 34.2, timeout = 0, TecRate = -0.04
+[0;36mV (762653) TC: TC-0 = 68.40, modeled = 61.94, target = 62.00, heatSink = 45.09, output = 34.5, timeout = 0, TecRate = -0.03
+DATAQ: | Stg1ThermoTempC = 52.25 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (762803) TC: TC-0 = 68.43, modeled = 61.94, target = 62.00, heatSink = 45.06, output = 35.0, timeout = 0, TecRate = -0.03
+[0;36mV (762953) TC: TC-0 = 68.46, modeled = 61.93, target = 62.00, heatSink = 45.05, output = 35.4, timeout = 0, TecRate = -0.03
+[0;36mV (763103) TC: TC-0 = 68.49, modeled = 61.93, target = 62.00, heatSink = 45.02, output = 35.6, timeout = 0, TecRate = -0.03
+[0;36mV (763253) TC: TC-0 = 68.53, modeled = 61.92, target = 62.00, heatSink = 44.99, output = 36.1, timeout = 0, TecRate = -0.03
+[0;36mV (763293) _performCapture: [51793,0,34.10,144,1482,429,34,79,49,96,73,60,5924,0,34.19]
+DATAQ: | Stg1ThermoTempC = 52.28 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (763403) TC: TC-0 = 68.58, modeled = 61.92, target = 62.00, heatSink = 44.98, output = 36.2, timeout = 0, TecRate = -0.03
+[0;36mV (763553) TC: TC-0 = 68.64, modeled = 61.91, target = 62.00, heatSink = 44.95, output = 36.5, timeout = 0, TecRate = -0.03
+[0;36mV (763703) TC: TC-0 = 68.70, modeled = 61.91, target = 62.00, heatSink = 44.92, output = 36.7, timeout = 0, TecRate = -0.03
+[0;36mV (763853) TC: TC-0 = 68.77, modeled = 61.91, target = 62.00, heatSink = 44.89, output = 36.6, timeout = 0, TecRate = -0.03
+DATAQ: | Stg1ThermoTempC = 52.48 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (764003) TC: TC-0 = 68.84, modeled = 61.90, target = 62.00, heatSink = 44.87, output = 37.0, timeout = 0, TecRate = -0.02
+[0;36mV (764153) TC: TC-0 = 68.91, modeled = 61.90, target = 62.00, heatSink = 44.83, output = 36.9, timeout = 0, TecRate = -0.02
+[0;36mV (764303) TC: TC-0 = 68.99, modeled = 61.90, target = 62.00, heatSink = 44.80, output = 37.0, timeout = 0, TecRate = -0.02
+[0;36mV (764398) _performCapture: [52898,0,34.09,144,1480,431,34,79,49,96,73,60,5944,0,34.18]
+[0;36mV (764453) TC: TC-0 = 69.07, modeled = 61.89, target = 62.00, heatSink = 44.78, output = 37.0, timeout = 0, TecRate = -0.02
+DATAQ: | Stg1ThermoTempC = 52.42 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (764603) TC: TC-0 = 69.18, modeled = 61.89, target = 62.00, heatSink = 44.74, output = 37.0, timeout = 0, TecRate = -0.02
+[0;36mV (764753) TC: TC-0 = 69.26, modeled = 61.89, target = 62.00, heatSink = 44.72, output = 36.9, timeout = 0, TecRate = -0.01
+[0;36mV (764903) TC: TC-0 = 69.33, modeled = 61.89, target = 62.00, heatSink = 44.69, output = 36.8, timeout = 0, TecRate = -0.01
+[0;36mV (765053) TC: TC-0 = 69.43, modeled = 61.88, target = 62.00, heatSink = 44.65, output = 36.8, timeout = 0, TecRate = -0.01
+DATAQ: | Stg1ThermoTempC = 52.53 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (765203) TC: TC-0 = 69.51, modeled = 61.88, target = 62.00, heatSink = 44.62, output = 36.5, timeout = 0, TecRate = -0.01
+[0;36mV (765353) TC: TC-0 = 69.57, modeled = 61.88, target = 62.00, heatSink = 44.58, output = 36.6, timeout = 0, TecRate = -0.01
+[0;36mV (765503) TC: TC-0 = 69.67, modeled = 61.88, target = 62.00, heatSink = 44.55, output = 36.2, timeout = 0, TecRate = -0.01
+[0;36mV (765508) _performCapture: [54008,0,34.09,144,1482,430,34,80,49,96,73,60,5924,0,34.19]
+[0;36mV (765653) TC: TC-0 = 69.73, modeled = 61.88, target = 62.00, heatSink = 44.52, output = 36.3, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 52.57 | stg1AltThermoTempC1 = 25.54  |
+[0;36mV (765803) TC: TC-0 = 69.80, modeled = 61.88, target = 62.00, heatSink = 44.50, output = 36.0, timeout = 0, TecRate = -0.00
+[0;36mV (765953) TC: TC-0 = 69.89, modeled = 61.88, target = 62.00, heatSink = 44.47, output = 35.8, timeout = 0, TecRate = -0.00
+[0;36mV (766103) TC: TC-0 = 69.96, modeled = 61.88, target = 62.00, heatSink = 44.44, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (766253) TC: TC-0 = 70.02, modeled = 61.88, target = 62.00, heatSink = 44.42, output = 35.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 52.65 | stg1AltThermoTempC1 = 25.56  |
+[0;36mV (766404) TC: TC-0 = 70.08, modeled = 61.88, target = 62.00, heatSink = 44.39, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (766557) TC: TC-0 = 70.14, modeled = 61.88, target = 62.00, heatSink = 44.37, output = 35.2, timeout = 0, TecRate = 0.01
+[0;36mV (766635) _performCapture: [55135,0,34.09,144,1485,430,34,79,49,96,73,60,5924,0,34.20]
+[0;36mV (766707) TC: TC-0 = 70.19, modeled = 61.88, target = 62.00, heatSink = 44.34, output = 34.8, timeout = 0, TecRate = 0.01
+[0;36mV (766857) TC: TC-0 = 70.24, modeled = 61.88, target = 62.00, heatSink = 44.30, output = 34.6, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 52.75 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (767007) TC: TC-0 = 70.27, modeled = 61.88, target = 62.00, heatSink = 44.28, output = 34.4, timeout = 0, TecRate = 0.01
+[0;36mV (767157) TC: TC-0 = 70.30, modeled = 61.89, target = 62.00, heatSink = 44.26, output = 34.2, timeout = 0, TecRate = 0.01
+[0;36mV (767307) TC: TC-0 = 70.33, modeled = 61.89, target = 62.00, heatSink = 44.23, output = 34.0, timeout = 0, TecRate = 0.01
+[0;36mV (767457) TC: TC-0 = 70.36, modeled = 61.89, target = 62.00, heatSink = 44.20, output = 33.6, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 52.92 | stg1AltThermoTempC1 = 25.59  |
+[0;36mV (767607) TC: TC-0 = 70.38, modeled = 61.89, target = 62.00, heatSink = 44.18, output = 33.6, timeout = 0, TecRate = 0.01
+[0;36mV (767739) _performCapture: [56240,0,34.09,144,1484,430,34,80,49,96,73,60,5922,0,34.18]
+[0;36mV (767757) TC: TC-0 = 70.40, modeled = 61.89, target = 62.00, heatSink = 44.16, output = 33.4, timeout = 0, TecRate = 0.01
+[0;36mV (767907) TC: TC-0 = 70.42, modeled = 61.89, target = 62.00, heatSink = 44.14, output = 33.2, timeout = 0, TecRate = 0.01
+[0;36mV (768057) TC: TC-0 = 70.42, modeled = 61.90, target = 62.00, heatSink = 44.11, output = 33.1, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 52.95 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (768207) TC: TC-0 = 70.42, modeled = 61.90, target = 62.00, heatSink = 44.08, output = 33.1, timeout = 0, TecRate = 0.01
+[0;36mV (768357) TC: TC-0 = 70.42, modeled = 61.90, target = 62.00, heatSink = 44.06, output = 32.8, timeout = 0, TecRate = 0.01
+[0;36mV (768508) TC: TC-0 = 70.43, modeled = 61.90, target = 62.00, heatSink = 44.04, output = 32.8, timeout = 0, TecRate = 0.01
+[0;36mV (768657) TC: TC-0 = 70.43, modeled = 61.90, target = 62.00, heatSink = 44.02, output = 32.8, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 53.08 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (768807) TC: TC-0 = 70.42, modeled = 61.90, target = 62.00, heatSink = 44.00, output = 32.7, timeout = 0, TecRate = 0.01
+[0;36mV (768845) _performCapture: [57345,0,34.09,144,1486,430,34,80,49,96,73,60,5919,0,34.20]
+[0;36mV (768957) TC: TC-0 = 70.41, modeled = 61.91, target = 62.00, heatSink = 43.98, output = 32.5, timeout = 0, TecRate = 0.01
+[0;36mV (769107) TC: TC-0 = 70.40, modeled = 61.91, target = 62.00, heatSink = 43.95, output = 32.4, timeout = 0, TecRate = 0.01
+[0;36mV (769257) TC: TC-0 = 70.38, modeled = 61.91, target = 62.00, heatSink = 43.93, output = 32.5, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 53.1 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (769407) TC: TC-0 = 70.36, modeled = 61.91, target = 62.00, heatSink = 43.91, output = 32.3, timeout = 0, TecRate = 0.01
+[0;36mV (769557) TC: TC-0 = 70.34, modeled = 61.91, target = 62.00, heatSink = 43.89, output = 32.4, timeout = 0, TecRate = 0.01
+[0;36mV (769707) TC: TC-0 = 70.33, modeled = 61.91, target = 62.00, heatSink = 43.87, output = 32.3, timeout = 0, TecRate = 0.01
+[0;36mV (769857) TC: TC-0 = 70.32, modeled = 61.91, target = 62.00, heatSink = 43.85, output = 32.1, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 53.17 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (769950) _performCapture: [58450,0,34.09,144,1485,431,34,80,49,96,73,60,5930,0,34.19]
+[0;36mV (770007) TC: TC-0 = 70.30, modeled = 61.92, target = 62.00, heatSink = 43.83, output = 32.1, timeout = 0, TecRate = 0.01
+[0;36mV (770157) TC: TC-0 = 70.28, modeled = 61.92, target = 62.00, heatSink = 43.80, output = 32.3, timeout = 0, TecRate = 0.01
+[0;36mV (770307) TC: TC-0 = 70.26, modeled = 61.92, target = 62.00, heatSink = 43.78, output = 32.2, timeout = 0, TecRate = 0.01
+[0;36mV (770457) TC: TC-0 = 70.24, modeled = 61.92, target = 62.00, heatSink = 43.77, output = 32.2, timeout = 0, TecRate = 0.01
+DATAQ: | Stg1ThermoTempC = 53.31 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (770607) TC: TC-0 = 70.21, modeled = 61.92, target = 62.00, heatSink = 43.74, output = 32.2, timeout = 0, TecRate = 0.01
+[0;36mV (770757) TC: TC-0 = 70.19, modeled = 61.92, target = 62.00, heatSink = 43.72, output = 32.3, timeout = 0, TecRate = 0.01
+[0;36mV (770907) TC: TC-0 = 70.16, modeled = 61.92, target = 62.00, heatSink = 43.70, output = 32.4, timeout = 0, TecRate = 0.00
+[0;36mV (771057) TC: TC-0 = 70.13, modeled = 61.92, target = 62.00, heatSink = 43.68, output = 32.3, timeout = 0, TecRate = 0.00
+[0;36mV (771062) _performCapture: [59562,0,34.09,144,1487,430,34,80,49,96,73,60,5916,0,34.19]
+DATAQ: | Stg1ThermoTempC = 53.37 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (771207) TC: TC-0 = 70.11, modeled = 61.92, target = 62.00, heatSink = 43.66, output = 32.4, timeout = 0, TecRate = 0.00
+[0;36mV (771357) TC: TC-0 = 70.10, modeled = 61.92, target = 62.00, heatSink = 43.64, output = 32.4, timeout = 0, TecRate = 0.00
+[0;36mV (771507) TC: TC-0 = 70.07, modeled = 61.92, target = 62.00, heatSink = 43.61, output = 32.4, timeout = 0, TecRate = 0.00
+[0;36mV (771657) TC: TC-0 = 70.04, modeled = 61.92, target = 62.00, heatSink = 43.59, output = 32.7, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 53.55 | stg1AltThermoTempC1 = 25.35  |
+[0;36mV (771807) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 43.57, output = 32.7, timeout = 0, TecRate = 0.00
+[0;36mV (771957) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 43.55, output = 32.7, timeout = 0, TecRate = 0.00
+[0;36mV (772107) TC: TC-0 = 70.00, modeled = 61.92, target = 62.00, heatSink = 43.53, output = 32.8, timeout = 0, TecRate = 0.00
+[0;36mV (772160) _performCapture: [60660,0,34.09,144,1488,430,34,80,49,96,73,60,5917,0,34.20]
+[0;36mV (772257) TC: TC-0 = 69.97, modeled = 61.92, target = 62.00, heatSink = 43.51, output = 33.1, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 53.63 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (772407) TC: TC-0 = 69.95, modeled = 61.92, target = 62.00, heatSink = 43.48, output = 33.0, timeout = 0, TecRate = 0.00
+[0;36mV (772557) TC: TC-0 = 69.94, modeled = 61.92, target = 62.00, heatSink = 43.47, output = 33.1, timeout = 0, TecRate = -0.00
+[0;36mV (772707) TC: TC-0 = 69.91, modeled = 61.92, target = 62.00, heatSink = 43.44, output = 33.2, timeout = 0, TecRate = -0.00
+[0;36mV (772857) TC: TC-0 = 69.89, modeled = 61.92, target = 62.00, heatSink = 43.42, output = 33.5, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 53.82 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (773007) TC: TC-0 = 69.88, modeled = 61.92, target = 62.00, heatSink = 43.40, output = 33.3, timeout = 0, TecRate = -0.00
+[0;36mV (773157) TC: TC-0 = 69.88, modeled = 61.92, target = 62.00, heatSink = 43.38, output = 33.3, timeout = 0, TecRate = -0.00
+[0;36mV (773265) _performCapture: [61765,0,34.08,144,1489,430,34,80,49,96,73,60,5914,0,34.19]
+[0;36mV (773307) TC: TC-0 = 69.87, modeled = 61.92, target = 62.00, heatSink = 43.36, output = 33.5, timeout = 0, TecRate = -0.00
+[0;36mV (773457) TC: TC-0 = 69.87, modeled = 61.92, target = 62.00, heatSink = 43.34, output = 33.5, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 53.9 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (773607) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.33, output = 33.7, timeout = 0, TecRate = -0.00
+[0;36mV (773757) TC: TC-0 = 69.85, modeled = 61.92, target = 62.00, heatSink = 43.30, output = 33.8, timeout = 0, TecRate = -0.00
+[0;36mV (773907) TC: TC-0 = 69.85, modeled = 61.92, target = 62.00, heatSink = 43.27, output = 33.8, timeout = 0, TecRate = -0.00
+[0;36mV (774057) TC: TC-0 = 69.85, modeled = 61.92, target = 62.00, heatSink = 43.25, output = 33.9, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 54.0 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (774207) TC: TC-0 = 69.85, modeled = 61.92, target = 62.00, heatSink = 43.23, output = 33.8, timeout = 0, TecRate = -0.00
+[0;36mV (774357) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.22, output = 33.9, timeout = 0, TecRate = -0.00
+[0;36mV (774369) _performCapture: [62870,0,34.08,144,1489,430,34,80,49,96,73,60,5916,0,34.19]
+[0;36mV (774507) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.20, output = 33.9, timeout = 0, TecRate = -0.00
+[0;36mV (774657) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.18, output = 34.2, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 53.99 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (774807) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.16, output = 34.0, timeout = 0, TecRate = -0.00
+[0;36mV (774957) TC: TC-0 = 69.87, modeled = 61.92, target = 62.00, heatSink = 43.14, output = 34.2, timeout = 0, TecRate = -0.00
+[0;36mV (775107) TC: TC-0 = 69.87, modeled = 61.92, target = 62.00, heatSink = 43.11, output = 34.2, timeout = 0, TecRate = -0.00
+[0;36mV (775257) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.09, output = 34.1, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 54.17 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (775407) TC: TC-0 = 69.86, modeled = 61.92, target = 62.00, heatSink = 43.07, output = 34.4, timeout = 0, TecRate = -0.00
+[0;36mV (775475) _performCapture: [63975,0,34.08,144,1489,431,34,80,49,96,73,60,5915,0,34.20]
+[0;36mV (775557) TC: TC-0 = 69.88, modeled = 61.92, target = 62.00, heatSink = 43.05, output = 34.2, timeout = 0, TecRate = -0.00
+[0;36mV (775707) TC: TC-0 = 69.87, modeled = 61.92, target = 62.00, heatSink = 43.03, output = 34.3, timeout = 0, TecRate = -0.00
+[0;36mV (775857) TC: TC-0 = 69.89, modeled = 61.92, target = 62.00, heatSink = 43.01, output = 34.2, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 54.18 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (776007) TC: TC-0 = 69.89, modeled = 61.92, target = 62.00, heatSink = 42.98, output = 34.3, timeout = 0, TecRate = -0.00
+[0;36mV (776157) TC: TC-0 = 69.90, modeled = 61.92, target = 62.00, heatSink = 42.97, output = 34.3, timeout = 0, TecRate = -0.00
+[0;36mV (776307) TC: TC-0 = 69.90, modeled = 61.92, target = 62.00, heatSink = 42.95, output = 34.4, timeout = 0, TecRate = -0.00
+[0;36mV (776457) TC: TC-0 = 69.93, modeled = 61.92, target = 62.00, heatSink = 42.94, output = 34.2, timeout = 0, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 54.28 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (776579) _performCapture: [65080,0,34.09,144,1491,431,34,80,49,96,73,60,5916,0,34.20]
+[0;36mV (776607) TC: TC-0 = 69.93, modeled = 61.92, target = 62.00, heatSink = 42.92, output = 34.4, timeout = 0, TecRate = -0.00
+[0;36mV (776757) TC: TC-0 = 69.94, modeled = 61.92, target = 62.00, heatSink = 42.90, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (776907) TC: TC-0 = 69.94, modeled = 61.92, target = 62.00, heatSink = 42.88, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (777057) TC: TC-0 = 69.94, modeled = 61.92, target = 62.00, heatSink = 42.86, output = 34.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.35 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (777207) TC: TC-0 = 69.97, modeled = 61.92, target = 62.00, heatSink = 42.84, output = 34.0, timeout = 0, TecRate = 0.00
+[0;36mV (777357) TC: TC-0 = 69.97, modeled = 61.92, target = 62.00, heatSink = 42.82, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (777507) TC: TC-0 = 69.98, modeled = 61.92, target = 62.00, heatSink = 42.80, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (777657) TC: TC-0 = 69.99, modeled = 61.92, target = 62.00, heatSink = 42.78, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (777691) _performCapture: [66191,0,34.09,144,1491,431,34,80,49,96,73,60,5913,0,34.20]
+DATAQ: | Stg1ThermoTempC = 54.46 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (777807) TC: TC-0 = 69.97, modeled = 61.92, target = 62.00, heatSink = 42.75, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (777957) TC: TC-0 = 70.00, modeled = 61.92, target = 62.00, heatSink = 42.74, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (778107) TC: TC-0 = 69.99, modeled = 61.92, target = 62.00, heatSink = 42.72, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (778257) TC: TC-0 = 70.00, modeled = 61.92, target = 62.00, heatSink = 42.70, output = 34.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.49 | stg1AltThermoTempC1 = 25.43  |
+[0;36mV (778430) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.69, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (778579) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.66, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (778729) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.64, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (778811) _performCapture: [67312,0,34.09,144,1491,432,34,80,49,96,73,60,5919,0,34.19]
+[0;36mV (778879) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.61, output = 34.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.65 | stg1AltThermoTempC1 = 25.57  |
+[0;36mV (779029) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.59, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (779179) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.57, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (779329) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.55, output = 34.0, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.76 | stg1AltThermoTempC1 = 25.55  |
+[0;36mV (779479) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.53, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (779629) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.51, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (779779) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.49, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (779918) _performCapture: [68419,0,34.09,144,1491,432,33,80,49,96,73,60,5917,0,34.20]
+[0;36mV (779930) TC: TC-0 = 70.03, modeled = 61.92, target = 62.00, heatSink = 42.47, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (780079) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.46, output = 34.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.75 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (780229) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.44, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (780379) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.42, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (780529) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.40, output = 34.2, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.81 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (780679) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.38, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (780829) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.37, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (780979) TC: TC-0 = 70.03, modeled = 61.92, target = 62.00, heatSink = 42.35, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (781024) _performCapture: [69524,0,34.09,144,1492,432,34,80,49,97,73,60,5913,0,34.20]
+[0;36mV (781129) TC: TC-0 = 70.01, modeled = 61.92, target = 62.00, heatSink = 42.32, output = 34.1, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 54.98 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (781279) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.31, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (781429) TC: TC-0 = 70.03, modeled = 61.92, target = 62.00, heatSink = 42.29, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (781579) TC: TC-0 = 70.02, modeled = 61.92, target = 62.00, heatSink = 42.27, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (781729) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 42.25, output = 34.2, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.07 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (781879) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 42.23, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (782029) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.21, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (782132) _performCapture: [70632,0,34.09,144,1493,432,34,80,49,97,73,60,5915,0,34.20]
+[0;36mV (782179) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.20, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (782329) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 42.17, output = 34.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.12 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (782479) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 42.16, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (782629) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.15, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (782779) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 42.13, output = 34.1, timeout = 0, TecRate = 0.00
+[0;36mV (782929) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 42.11, output = 34.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.18 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (783079) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.09, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (783229) TC: TC-0 = 70.03, modeled = 61.93, target = 62.00, heatSink = 42.06, output = 34.2, timeout = 0, TecRate = 0.00
+[0;36mV (783237) _performCapture: [71737,0,34.09,144,1494,432,34,80,49,97,73,60,5912,0,34.20]
+[0;36mV (783379) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.04, output = 34.5, timeout = 0, TecRate = 0.00
+[0;36mV (783529) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 42.02, output = 34.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.31 | stg1AltThermoTempC1 = 25.57  |
+[0;36mV (783679) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 42.01, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (783829) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.99, output = 34.5, timeout = 0, TecRate = 0.00
+[0;36mV (783979) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.97, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (784129) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.96, output = 34.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.28 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (784279) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.94, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (784352) _performCapture: [72845,0,34.08,144,1494,432,33,80,49,97,73,60,5910,0,34.20]
+[0;36mV (784429) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.93, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (784579) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.91, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (784729) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.89, output = 34.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.46 | stg1AltThermoTempC1 = 25.43  |
+[0;36mV (784879) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.87, output = 34.5, timeout = 0, TecRate = 0.00
+[0;36mV (785029) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 41.86, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (785179) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.84, output = 34.6, timeout = 0, TecRate = 0.00
+[0;36mV (785329) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.82, output = 34.5, timeout = 0, TecRate = 0.00
+[0;36mV (785447) _performCapture: [73947,0,34.09,144,1495,433,33,80,48,97,73,60,5912,0,34.20]
+DATAQ: | Stg1ThermoTempC = 55.52 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (785479) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.79, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (785629) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.78, output = 34.6, timeout = 0, TecRate = 0.00
+[0;36mV (785779) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.77, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (785929) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.75, output = 34.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.63 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (786079) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.73, output = 34.6, timeout = 0, TecRate = 0.00
+[0;36mV (786229) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.72, output = 34.6, timeout = 0, TecRate = 0.00
+[0;36mV (786379) TC: TC-0 = 70.02, modeled = 61.93, target = 62.00, heatSink = 41.70, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (786529) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.68, output = 34.6, timeout = 0, TecRate = 0.00
+[0;36mV (786559) _performCapture: [75054,0,34.09,144,1496,433,34,80,49,97,73,60,5913,0,34.20]
+DATAQ: | Stg1ThermoTempC = 55.63 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (786679) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.66, output = 34.4, timeout = 0, TecRate = 0.00
+[0;36mV (786829) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.64, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (786979) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.63, output = 34.3, timeout = 0, TecRate = 0.00
+[0;36mV (787129) TC: TC-0 = 70.01, modeled = 61.93, target = 62.00, heatSink = 41.61, output = 34.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.74 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (787279) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.59, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (787465) TC: TC-0 = 70.00, modeled = 61.93, target = 62.00, heatSink = 41.58, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (787615) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.55, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (787699) _performCapture: [76199,0,34.09,144,1496,433,34,80,48,96,72,60,5910,0,34.20]
+[0;36mV (787765) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.53, output = 34.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.82 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (787915) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.52, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (788065) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.50, output = 34.5, timeout = 0, TecRate = 0.00
+[0;36mV (788215) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.49, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (788365) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.48, output = 34.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.94 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (788515) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.46, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (788665) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.44, output = 34.8, timeout = 0, TecRate = 0.00
+[0;36mV (788799) _performCapture: [77299,0,34.09,144,1495,433,33,80,48,97,73,60,5911,0,34.20]
+[0;36mV (788815) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.42, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (788965) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.40, output = 35.0, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 55.89 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (789115) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.39, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (789265) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.38, output = 34.8, timeout = 0, TecRate = 0.00
+[0;36mV (789415) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.35, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (789565) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.35, output = 34.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.01 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (789715) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.33, output = 34.7, timeout = 0, TecRate = 0.00
+[0;36mV (789865) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.31, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (789904) _performCapture: [78404,0,34.09,145,1497,433,33,80,48,97,72,60,5913,0,34.20]
+[0;36mV (790015) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.30, output = 34.8, timeout = 0, TecRate = 0.00
+[0;36mV (790165) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.28, output = 35.0, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.06 | stg1AltThermoTempC1 = 25.56  |
+[0;36mV (790315) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.26, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (790465) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.25, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (790615) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.24, output = 34.8, timeout = 0, TecRate = 0.00
+[0;36mV (790765) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.21, output = 35.2, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.18 | stg1AltThermoTempC1 = 25.5  |
+[0;36mV (790915) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.20, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (791009) _performCapture: [79509,0,34.09,144,1497,433,34,80,48,97,72,60,5910,0,34.20]
+[0;36mV (791065) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.19, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (791216) TC: TC-0 = 69.97, modeled = 61.93, target = 62.00, heatSink = 41.16, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (791365) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.15, output = 35.0, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.28 | stg1AltThermoTempC1 = 25.6  |
+[0;36mV (791515) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.14, output = 34.9, timeout = 0, TecRate = 0.00
+[0;36mV (791665) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.12, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (791815) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.11, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (791965) TC: TC-0 = 69.98, modeled = 61.93, target = 62.00, heatSink = 41.09, output = 35.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.38 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (792115) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.08, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (792120) _performCapture: [80620,0,34.09,145,1498,433,33,80,48,97,73,60,5908,0,34.20]
+[0;36mV (792265) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.07, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (792415) TC: TC-0 = 69.99, modeled = 61.93, target = 62.00, heatSink = 41.05, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (792565) TC: TC-0 = 69.98, modeled = 61.94, target = 62.00, heatSink = 41.02, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.41 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (792715) TC: TC-0 = 69.99, modeled = 61.94, target = 62.00, heatSink = 41.01, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (792865) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 41.00, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (793015) TC: TC-0 = 69.99, modeled = 61.94, target = 62.00, heatSink = 40.98, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (793165) TC: TC-0 = 69.99, modeled = 61.94, target = 62.00, heatSink = 40.96, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (793219) _performCapture: [81719,0,34.08,145,1496,435,33,80,48,97,72,60,5914,0,34.19]
+DATAQ: | Stg1ThermoTempC = 56.46 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (793315) TC: TC-0 = 69.99, modeled = 61.94, target = 62.00, heatSink = 40.95, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (793465) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.94, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (793615) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.93, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (793765) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.92, output = 35.1, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.55 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (793915) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.89, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (794065) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.88, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (794215) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.87, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (794324) _performCapture: [82825,0,34.09,145,1498,434,33,80,48,97,72,60,5908,0,34.19]
+[0;36mV (794365) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.85, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.55 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (794515) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.83, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (794665) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.82, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (794815) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.80, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (794965) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.78, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.71 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (795115) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.77, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (795265) TC: TC-0 = 70.03, modeled = 61.94, target = 62.00, heatSink = 40.77, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (795415) TC: TC-0 = 70.03, modeled = 61.94, target = 62.00, heatSink = 40.75, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (795429) _performCapture: [83930,0,34.09,145,1497,434,33,80,48,97,72,60,5908,0,34.20]
+[0;36mV (795565) TC: TC-0 = 70.03, modeled = 61.94, target = 62.00, heatSink = 40.73, output = 35.0, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.87 | stg1AltThermoTempC1 = 25.53  |
+[0;36mV (795715) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.71, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (795865) TC: TC-0 = 70.03, modeled = 61.94, target = 62.00, heatSink = 40.70, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (796015) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.69, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (796165) TC: TC-0 = 70.03, modeled = 61.94, target = 62.00, heatSink = 40.67, output = 34.9, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.85 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (796315) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.65, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (796465) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.64, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (796534) _performCapture: [85035,0,34.09,145,1499,434,33,80,48,97,72,60,5909,0,34.20]
+[0;36mV (796615) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.62, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (796765) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 40.60, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 56.96 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (796915) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.58, output = 35.0, timeout = 0, TecRate = 0.00
+[0;36mV (797065) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.56, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (797215) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 40.55, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (797365) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 40.53, output = 35.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.02 | stg1AltThermoTempC1 = 25.53  |
+[0;36mV (797515) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.52, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (797639) _performCapture: [86140,0,34.08,145,1497,434,33,80,48,97,72,60,5910,0,34.19]
+[0;36mV (797665) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 40.50, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (797815) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.49, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (797965) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.48, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.09 | stg1AltThermoTempC1 = 25.6  |
+[0;36mV (798115) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.47, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (798265) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.45, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (798415) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.44, output = 35.1, timeout = 0, TecRate = 0.00
+[0;36mV (798566) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.43, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.09 | stg1AltThermoTempC1 = 25.53  |
+[0;36mV (798715) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.42, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (798745) _performCapture: [87245,0,34.08,145,1500,433,33,80,48,97,72,60,5909,0,34.19]
+[0;36mV (798865) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.40, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (799015) TC: TC-0 = 70.00, modeled = 61.94, target = 62.00, heatSink = 40.38, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (799165) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.37, output = 35.4, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.18 | stg1AltThermoTempC1 = 25.51  |
+[0;36mV (799315) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.35, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (799495) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.34, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (799645) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.33, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (799795) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.31, output = 35.3, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.34 | stg1AltThermoTempC1 = 25.52  |
+[0;36mV (799874) _performCapture: [88374,0,34.08,145,1500,434,33,80,48,97,72,60,5907,0,34.19]
+[0;36mV (799945) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.30, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (800095) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.28, output = 35.2, timeout = 0, TecRate = 0.00
+[0;36mV (800245) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.27, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (800395) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.26, output = 35.5, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.33 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (800545) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.24, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (800695) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.22, output = 35.6, timeout = 0, TecRate = 0.00
+[0;36mV (800845) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.21, output = 35.3, timeout = 0, TecRate = 0.00
+[0;36mV (800979) _performCapture: [89479,0,34.08,145,1497,434,33,81,48,97,72,60,5907,0,34.19]
+[0;36mV (800995) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.20, output = 35.2, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.42 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (801145) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.18, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (801295) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.17, output = 35.5, timeout = 0, TecRate = 0.00
+[0;36mV (801445) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.16, output = 35.4, timeout = 0, TecRate = 0.00
+[0;36mV (801595) TC: TC-0 = 70.01, modeled = 61.94, target = 62.00, heatSink = 40.14, output = 35.6, timeout = 0, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.48 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (801745) TC: TC-0 = 70.02, modeled = 61.94, target = 62.00, heatSink = 40.14, output = 35.3, timeout = 0, TecRate = 0.00
+(801800) _applyThermalBrakeUpdate: Worst Temp: 63.344330
+(801801) thermalControlSetTargetTempC: [0] MAX RAMPING  goto 85.0
+(801803) _setThermalControlState: thermalControl-0: changing state 3->1
+(801810) tecCurvePredictorSetHoldPower: Not setting hold Power for ST1
+[0;34mD (801842) _st1ModelCalculate: St1 Using Heating Equations
+[0;36mV (801896) TC: TC-0 = 70.03, modeled = 61.94, target = 85.00, heatSink = 40.12, output = 100.0, timeout = 50, TecRate = 0.00
+[0;36mV (802047) TC: TC-0 = 70.03, modeled = 61.94, target = 85.00, heatSink = 40.11, output = 100.0, timeout = 200, TecRate = 0.00
+[0;36mV (802083) _performCapture: [90584,0,34.08,145,1498,433,33,80,48,97,72,60,5900,0,34.19]
+[0;36mV (802196) TC: TC-0 = 70.05, modeled = 61.94, target = 85.00, heatSink = 40.09, output = 100.0, timeout = 350, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.53 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (802346) TC: TC-0 = 70.21, modeled = 61.94, target = 85.00, heatSink = 40.06, output = 100.0, timeout = 500, TecRate = -0.00
+[0;36mV (802496) TC: TC-0 = 70.71, modeled = 61.94, target = 85.00, heatSink = 40.02, output = 100.0, timeout = 650, TecRate = 0.00
+[0;36mV (802646) TC: TC-0 = 71.30, modeled = 61.94, target = 85.00, heatSink = 39.99, output = 100.0, timeout = 800, TecRate = -0.00
+[0;36mV (802796) TC: TC-0 = 72.04, modeled = 61.94, target = 85.00, heatSink = 39.95, output = 100.0, timeout = 950, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.54 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (802946) TC: TC-0 = 73.18, modeled = 61.94, target = 85.00, heatSink = 39.90, output = 100.0, timeout = 1100, TecRate = 0.00
+[0;36mV (803096) TC: TC-0 = 74.09, modeled = 61.94, target = 85.00, heatSink = 39.86, output = 100.0, timeout = 1250, TecRate = -0.00
+[0;36mV (803190) _performCapture: [91691,0,34.08,145,1498,432,33,81,48,97,72,60,5907,0,34.19]
+[0;36mV (803246) TC: TC-0 = 75.03, modeled = 61.94, target = 85.00, heatSink = 39.81, output = 100.0, timeout = 1400, TecRate = 0.00
+[0;36mV (803396) TC: TC-0 = 76.36, modeled = 61.94, target = 85.00, heatSink = 39.75, output = 100.0, timeout = 1550, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.57 | stg1AltThermoTempC1 = 25.38  |
+[0;36mV (803546) TC: TC-0 = 77.35, modeled = 61.94, target = 85.00, heatSink = 39.71, output = 100.0, timeout = 1700, TecRate = 0.00
+[0;36mV (803696) TC: TC-0 = 78.36, modeled = 61.94, target = 85.00, heatSink = 39.67, output = 100.0, timeout = 1850, TecRate = -0.00
+[0;36mV (803846) TC: TC-0 = 79.69, modeled = 61.94, target = 85.00, heatSink = 39.61, output = 100.0, timeout = 2000, TecRate = 0.00
+[0;36mV (803996) TC: TC-0 = 80.69, modeled = 61.94, target = 85.00, heatSink = 39.56, output = 100.0, timeout = 2150, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.63 | stg1AltThermoTempC1 = 25.45  |
+[0;36mV (804146) TC: TC-0 = 81.67, modeled = 61.94, target = 85.00, heatSink = 39.51, output = 100.0, timeout = 2300, TecRate = -0.00
+[0;36mV (804296) TC: TC-0 = 82.97, modeled = 61.94, target = 85.00, heatSink = 39.45, output = 100.0, timeout = 2450, TecRate = 0.00
+[0;36mV (804301) _performCapture: [92801,0,34.07,146,1500,431,33,81,48,97,72,60,5911,0,34.18]
+[0;36mV (804446) TC: TC-0 = 83.92, modeled = 61.94, target = 85.00, heatSink = 39.41, output = 100.0, timeout = 2600, TecRate = 0.00
+[0;36mV (804596) TC: TC-0 = 84.85, modeled = 61.94, target = 85.00, heatSink = 39.37, output = 100.0, timeout = 2750, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.69 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (804746) TC: TC-0 = 86.10, modeled = 61.94, target = 85.00, heatSink = 39.31, output = 100.0, timeout = 2900, TecRate = 0.00
+[0;36mV (804896) TC: TC-0 = 87.02, modeled = 61.94, target = 85.00, heatSink = 39.27, output = 100.0, timeout = 3050, TecRate = 0.00
+[0;36mV (805046) TC: TC-0 = 87.92, modeled = 61.94, target = 85.00, heatSink = 39.25, output = 100.0, timeout = 3200, TecRate = 0.00
+[0;36mV (805196) TC: TC-0 = 89.10, modeled = 61.94, target = 85.00, heatSink = 39.18, output = 100.0, timeout = 3350, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 57.74 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (805347) TC: TC-0 = 89.96, modeled = 61.94, target = 85.00, heatSink = 39.14, output = 100.0, timeout = 3500, TecRate = 0.00
+[0;36mV (805406) _performCapture: [93906,0,34.07,146,1504,430,33,81,48,98,72,60,5934,0,34.18]
+[0;36mV (805498) TC: TC-0 = 90.82, modeled = 61.94, target = 85.00, heatSink = 39.10, output = 100.0, timeout = 3650, TecRate = 0.00
+[0;36mV (805647) TC: TC-0 = 91.98, modeled = 61.94, target = 85.00, heatSink = 39.06, output = 100.0, timeout = 3800, TecRate = 0.00
+[0;36mV (805797) TC: TC-0 = 92.79, modeled = 61.94, target = 85.00, heatSink = 39.02, output = 100.0, timeout = 3950, TecRate = -0.00
+DATAQ: | Stg1ThermoTempC = 57.96 | stg1AltThermoTempC1 = 25.46  |
+[0;36mV (805947) TC: TC-0 = 93.55, modeled = 61.94, target = 85.00, heatSink = 38.98, output = 100.0, timeout = 4100, TecRate = 0.00
+[0;36mV (806097) TC: TC-0 = 94.61, modeled = 61.94, target = 85.00, heatSink = 38.94, output = 100.0, timeout = 4250, TecRate = 0.00
+[0;36mV (806247) TC: TC-0 = 95.38, modeled = 61.94, target = 85.00, heatSink = 38.90, output = 100.0, timeout = 4400, TecRate = 0.00
+[0;36mV (806397) TC: TC-0 = 96.14, modeled = 61.94, target = 85.00, heatSink = 38.87, output = 100.0, timeout = 4550, TecRate = 0.00
+DATAQ: | Stg1ThermoTempC = 58.28 | stg1AltThermoTempC1 = 25.34  |
+[0;36mV (806511) _performCapture: [95011,0,34.07,147,1511,428,33,81,48,98,72,60,5967,0,34.17]
+[0;36mV (806547) TC: TC-0 = 97.12, modeled = 61.94, target = 85.00, heatSink = 38.81, output = 100.0, timeout = 4700, TecRate = 0.00
+[0;36mV (806697) TC: TC-0 = 97.83, modeled = 61.94, target = 85.00, heatSink = 38.78, output = 100.0, timeout = 4850, TecRate = 0.00
+[0;36mV (806846) TC: TC-0 = 98.51, modeled = 61.94, target = 85.00, heatSink = 38.74, output = 99.3, timeout = 5000, TecRate = -0.00
+[0;36mV (806996) TC: TC-0 = 99.44, modeled = 62.05, target = 85.00, heatSink = 38.69, output = 97.1, timeout = 5150, TecRate = 0.76
+DATAQ: | Stg1ThermoTempC = 58.56 | stg1AltThermoTempC1 = 25.28  |
+[0;36mV (807146) TC: TC-0 = 100.15, modeled = 62.17, target = 85.00, heatSink = 38.66, output = 94.4, timeout = 5300, TecRate = 0.78
+[0;36mV (807296) TC: TC-0 = 100.80, modeled = 62.29, target = 85.00, heatSink = 38.63, output = 92.4, timeout = 5450, TecRate = 0.81
+[0;36mV (807446) TC: TC-0 = 101.66, modeled = 62.42, target = 85.00, heatSink = 38.59, output = 89.1, timeout = 5600, TecRate = 0.90
+[0;36mV (807596) TC: TC-0 = 102.26, modeled = 62.55, target = 85.00, heatSink = 38.57, output = 86.9, timeout = 5750, TecRate = 0.87
+[0;36mV (807616) _performCapture: [96116,0,34.07,147,1520,425,33,81,48,99,72,60,6023,0,34.17]
+DATAQ: | Stg1ThermoTempC = 59.55 | stg1AltThermoTempC1 = 25.44  |
+[0;36mV (807746) TC: TC-0 = 102.84, modeled = 62.68, target = 85.00, heatSink = 38.54, output = 84.9, timeout = 5900, TecRate = 0.89
+[0;36mV (807896) TC: TC-0 = 103.56, modeled = 62.82, target = 85.00, heatSink = 38.51, output = 83.0, timeout = 6050, TecRate = 1.00
+[0;36mV (808046) TC: TC-0 = 104.04, modeled = 62.96, target = 85.00, heatSink = 38.48, output = 81.4, timeout = 6200, TecRate = 0.92
+[0;36mV (808196) TC: TC-0 = 104.47, modeled = 63.10, target = 85.00, heatSink = 38.46, output = 80.7, timeout = 6350, TecRate = 0.93
+DATAQ: | Stg1ThermoTempC = 59.89 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (808346) TC: TC-0 = 105.00, modeled = 63.24, target = 85.00, heatSink = 38.43, output = 80.8, timeout = 6500, TecRate = 1.05
+[0;36mV (808496) TC: TC-0 = 105.35, modeled = 63.39, target = 85.00, heatSink = 38.41, output = 81.4, timeout = 6650, TecRate = 0.93
+[0;36mV (808646) TC: TC-0 = 105.64, modeled = 63.53, target = 85.00, heatSink = 38.39, output = 77.7, timeout = 6800, TecRate = 0.95
+[0;36mV (808721) _performCapture: [97221,0,34.06,148,1525,421,34,80,48,99,72,60,6079,0,34.17]
+[0;36mV (808796) TC: TC-0 = 106.06, modeled = 63.68, target = 85.00, heatSink = 38.37, output = 78.6, timeout = 6950, TecRate = 1.06
+DATAQ: | Stg1ThermoTempC = 60.87 | stg1AltThermoTempC1 = 25.4  |
+[0;36mV (808948) TC: TC-0 = 106.29, modeled = 63.82, target = 85.00, heatSink = 38.35, output = 76.2, timeout = 7100, TecRate = 0.95
+[0;36mV (809096) TC: TC-0 = 106.54, modeled = 63.96, target = 85.00, heatSink = 38.33, output = 76.9, timeout = 7250, TecRate = 0.96
+[0;36mV (809246) TC: TC-0 = 106.81, modeled = 64.11, target = 85.00, heatSink = 38.31, output = 78.3, timeout = 7400, TecRate = 1.04
+[0;36mV (809396) TC: TC-0 = 107.01, modeled = 64.26, target = 85.00, heatSink = 38.30, output = 74.4, timeout = 7550, TecRate = 0.96
+DATAQ: | Stg1ThermoTempC = 61.33 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (809546) TC: TC-0 = 107.16, modeled = 64.40, target = 85.00, heatSink = 38.28, output = 74.2, timeout = 7700, TecRate = 0.95
+[0;36mV (809696) TC: TC-0 = 107.37, modeled = 64.54, target = 85.00, heatSink = 38.27, output = 74.4, timeout = 7850, TecRate = 1.02
+[0;36mV (809831) _performCapture: [98331,0,34.06,149,1523,419,34,80,48,99,72,60,6111,0,34.16]
+[0;36mV (809846) TC: TC-0 = 107.48, modeled = 64.68, target = 85.00, heatSink = 38.25, output = 75.0, timeout = 8000, TecRate = 0.92
+[0;36mV (809996) TC: TC-0 = 107.60, modeled = 64.82, target = 85.00, heatSink = 38.24, output = 76.3, timeout = 8150, TecRate = 0.94
+DATAQ: | Stg1ThermoTempC = 62.14 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (810146) TC: TC-0 = 107.73, modeled = 64.97, target = 85.00, heatSink = 38.23, output = 72.8, timeout = 8300, TecRate = 0.97
+[0;36mV (810296) TC: TC-0 = 107.80, modeled = 65.10, target = 85.00, heatSink = 38.21, output = 72.3, timeout = 8450, TecRate = 0.92
+[0;36mV (810446) TC: TC-0 = 107.87, modeled = 65.24, target = 85.00, heatSink = 38.20, output = 71.6, timeout = 8600, TecRate = 0.92
+[0;36mV (810596) TC: TC-0 = 107.99, modeled = 65.38, target = 85.00, heatSink = 38.19, output = 70.7, timeout = 8750, TecRate = 0.98
+DATAQ: | Stg1ThermoTempC = 62.51 | stg1AltThermoTempC1 = 25.48  |
+[0;36mV (810746) TC: TC-0 = 108.05, modeled = 65.52, target = 85.00, heatSink = 38.18, output = 69.0, timeout = 8900, TecRate = 0.94
+[0;36mV (810896) TC: TC-0 = 108.11, modeled = 65.66, target = 85.00, heatSink = 38.18, output = 72.3, timeout = 9050, TecRate = 0.90
+[0;36mV (810931) _performCapture: [99431,0,34.06,148,1517,417,34,80,48,100,72,60,6119,0,34.16]
+[0;36mV (811046) TC: TC-0 = 108.18, modeled = 65.80, target = 85.00, heatSink = 38.17, output = 72.3, timeout = 9200, TecRate = 0.97
+[0;36mV (811196) TC: TC-0 = 108.20, modeled = 65.93, target = 85.00, heatSink = 38.16, output = 72.2, timeout = 9350, TecRate = 0.90
+DATAQ: | Stg1ThermoTempC = 63.24 | stg1AltThermoTempC1 = 25.47  |
+[0;36mV (811347) TC: TC-0 = 108.21, modeled = 66.06, target = 85.00, heatSink = 38.16, output = 72.1, timeout = 9500, TecRate = 0.86
+[0;36mV (811525) TC: TC-0 = 108.23, modeled = 66.22, target = 85.00, heatSink = 38.15, output = 71.9, timeout = 9650, TecRate = 1.39
+[0;36mV (811676) TC: TC-0 = 108.28, modeled = 66.35, target = 85.00, heatSink = 38.14, output = 71.7, timeout = 9800, TecRate = 0.89
+DATAQ: | Stg1ThermoTempC = 63.36 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (811826) TC: TC-0 = 108.31, modeled = 66.48, target = 85.00, heatSink = 38.14, output = 71.2, timeout = 9950, TecRate = 0.89
+[0;36mV (811975) TC: TC-0 = 108.31, modeled = 66.61, target = 85.00, heatSink = 38.13, output = 70.2, timeout = 10100, TecRate = 0.84
+[0;36mV (812078) _performCapture: [100578,0,34.05,148,1510,418,34,80,48,100,72,60,6108,0,34.15]
+[0;36mV (812127) TC: TC-0 = 108.33, modeled = 66.74, target = 85.00, heatSink = 38.12, output = 72.7, timeout = 10250, TecRate = 0.82
+[0;36mV (812276) TC: TC-0 = 108.35, modeled = 66.87, target = 85.00, heatSink = 38.11, output = 73.4, timeout = 10400, TecRate = 0.89
+DATAQ: | Stg1ThermoTempC = 63.96 | stg1AltThermoTempC1 = 25.35  |
+[0;36mV (812425) TC: TC-0 = 108.37, modeled = 67.00, target = 85.00, heatSink = 38.12, output = 74.6, timeout = 10550, TecRate = 0.85
+[0;36mV (812577) TC: TC-0 = 108.40, modeled = 67.13, target = 85.00, heatSink = 38.11, output = 71.6, timeout = 10700, TecRate = 0.85
+[0;36mV (812725) TC: TC-0 = 108.40, modeled = 67.25, target = 85.00, heatSink = 38.10, output = 71.0, timeout = 10850, TecRate = 0.88
+[0;36mV (812875) TC: TC-0 = 108.45, modeled = 67.39, target = 85.00, heatSink = 38.10, output = 70.4, timeout = 11000, TecRate = 0.88
+DATAQ: | Stg1ThermoTempC = 65.61 | stg1AltThermoTempC1 = 25.24  |
+[0;36mV (813025) TC: TC-0 = 108.50, modeled = 67.52, target = 85.00, heatSink = 38.10, output = 69.6, timeout = 11150, TecRate = 0.87
+[0;36mV (813176) TC: TC-0 = 108.53, modeled = 67.65, target = 85.00, heatSink = 38.09, output = 68.6, timeout = 11300, TecRate = 0.87
+[0;36mV (813183) _performCapture: [101683,0,34.05,147,1503,419,34,80,48,101,73,60,6093,0,34.15]
+[0;36mV (813325) TC: TC-0 = 108.57, modeled = 67.78, target = 85.00, heatSink = 38.09, output = 67.7, timeout = 11450, TecRate = 0.88
+[0;36mV (813475) TC: TC-0 = 108.59, modeled = 67.91, target = 85.00, heatSink = 38.08, output = 71.4, timeout = 11600, TecRate = 0.85
+DATAQ: | Stg1ThermoTempC = 66.08 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (813626) TC: TC-0 = 108.59, modeled = 68.03, target = 85.00, heatSink = 38.08, output = 71.3, timeout = 11750, TecRate = 0.82
+[0;36mV (813775) TC: TC-0 = 108.61, modeled = 68.16, target = 85.00, heatSink = 38.08, output = 71.4, timeout = 11900, TecRate = 0.84
+[0;36mV (813925) TC: TC-0 = 108.61, modeled = 68.28, target = 85.00, heatSink = 38.07, output = 71.5, timeout = 12050, TecRate = 0.80
+[0;36mV (814076) TC: TC-0 = 108.61, modeled = 68.40, target = 85.00, heatSink = 38.07, output = 71.5, timeout = 12200, TecRate = 0.85
+DATAQ: | Stg1ThermoTempC = 66.18 | stg1AltThermoTempC1 = 25.42  |
+[0;36mV (814226) TC: TC-0 = 108.65, modeled = 68.53, target = 85.00, heatSink = 38.08, output = 71.9, timeout = 12350, TecRate = 0.84
+[0;36mV (814289) _performCapture: [102790,0,34.05,146,1495,421,34,80,48,101,73,60,6071,0,34.15]
+[0;36mV (814375) TC: TC-0 = 108.63, modeled = 68.65, target = 85.00, heatSink = 38.07, output = 72.4, timeout = 12500, TecRate = 0.75
+[0;36mV (814526) TC: TC-0 = 108.68, modeled = 68.78, target = 85.00, heatSink = 38.07, output = 72.9, timeout = 12650, TecRate = 0.88
+[0;36mV (814675) TC: TC-0 = 108.69, modeled = 68.90, target = 85.00, heatSink = 38.06, output = 73.6, timeout = 12800, TecRate = 0.85
+DATAQ: | Stg1ThermoTempC = 66.66 | stg1AltThermoTempC1 = 25.39  |
+[0;36mV (814825) TC: TC-0 = 108.75, modeled = 69.03, target = 85.00, heatSink = 38.06, output = 73.8, timeout = 12950, TecRate = 0.86
+[0;36mV (814976) TC: TC-0 = 108.76, modeled = 69.15, target = 85.00, heatSink = 38.06, output = 74.2, timeout = 13100, TecRate = 0.81
+[0;36mV (815125) TC: TC-0 = 108.81, modeled = 69.28, target = 85.00, heatSink = 38.06, output = 70.2, timeout = 13250, TecRate = 0.86
+[0;36mV (815275) TC: TC-0 = 108.85, modeled = 69.41, target = 85.00, heatSink = 38.05, output = 70.0, timeout = 13400, TecRate = 0.87
+[0;36mV (815397) _performCapture: [103898,0,34.04,146,1488,423,34,79,47,101,73,60,6046,0,34.14]
+DATAQ: | Stg1ThermoTempC = 67.21 | stg1AltThermoTempC1 = 25.41  |
+[0;36mV (815425) TC: TC-0 = 108.92, modeled = 69.54, target = 85.00, heatSink = 38.05, output = 69.9, timeout = 13550, TecRate = 0.84
+[0;36mV (815575) TC: TC-0 = 108.98, modeled = 69.67, target = 85.00, heatSink = 38.05, output = 69.7, timeout = 13700, TecRate = 0.87
+[0;36mV (815725) TC: TC-0 = 108.99, modeled = 69.79, target = 85.00, heatSink = 38.04, output = 69.7, timeout = 13850, TecRate = 0.83
+[0;36mV (815875) TC: TC-0 = 109.03, modeled = 69.92, target = 85.00, heatSink = 38.04, output = 69.7, timeout = 14000, TecRate = 0.83
+DATAQ: | Stg1ThermoTempC = 67.83 | stg1AltThermoTempC1 = 25.37  |
+[0;36mV (816025) TC: TC-0 = 109.08, modeled = 70.05, target = 85.00, heatSink = 38.04, output = 69.7, timeout = 14150, TecRate = 0.84
+[0;36mV (816176) TC: TC-0 = 109.10, modeled = 70.17, target = 85.00, heatSink = 38.04, output = 69.7, timeout = 14300, TecRate = 0.81
+[0;36mV (816325) TC: TC-0 = 109.10, modeled = 70.29, target = 85.00, heatSink = 38.04, output = 69.7, timeout = 14450, TecRate = 0.73
+[0;36mV (816475) TC: TC-0 = 109.14, modeled = 70.41, target = 85.00, heatSink = 38.04, output = 69.6, timeout = 14600, TecRate = 0.78
+[0;36mV (816505) _performCapture: [105005,0,34.04,145,1478,425,34,79,47,102,73,60,6015,0,34.14]
+DATAQ: | Stg1ThermoTempC = 68.26 | stg1AltThermoTempC1 = 47.14  |
+[0;36mV (816625) TC: TC-0 = 109.13, modeled = 70.53, target = 85.00, heatSink = 38.04, output = 69.6, timeout = 14750, TecRate = 0.78
+[0;36mV (816775) TC: TC-0 = 109.14, modeled = 70.64, target = 85.00, heatSink = 38.04, output = 69.6, timeout = 14900, TecRate = 0.77
+[0;36mV (816925) TC: TC-0 = 109.16, modeled = 70.76, target = 85.00, heatSink = 38.04, output = 69.6, timeout = 15050, TecRate = 0.79
+[0;36mV (817075) TC: TC-0 = 109.16, modeled = 70.88, target = 85.00, heatSink = 38.03, output = 69.5, timeout = 15200, TecRate = 0.83
+DATAQ: | Stg1ThermoTempC = 68.84 | stg1AltThermoTempC1 = 61.19  |
+[0;36mV (817225) TC: TC-0 = 109.19, modeled = 71.00, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 15350, TecRate = 0.78
+[0;36mV (817376) TC: TC-0 = 109.18, modeled = 71.11, target = 85.00, heatSink = 38.03, output = 69.4, timeout = 15500, TecRate = 0.65
+[0;36mV (817526) TC: TC-0 = 109.16, modeled = 71.22, target = 85.00, heatSink = 38.03, output = 69.3, timeout = 15650, TecRate = 0.78
+[0;36mV (817612) _performCapture: [106113,0,34.03,145,1471,427,34,79,47,102,73,60,5981,0,34.13]
+[0;36mV (817675) TC: TC-0 = 109.20, modeled = 71.34, target = 85.00, heatSink = 38.03, output = 69.3, timeout = 15800, TecRate = 0.87
+DATAQ: | Stg1ThermoTempC = 69.28 | stg1AltThermoTempC1 = 46.9  |
+[0;36mV (817825) TC: TC-0 = 109.21, modeled = 71.46, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 15950, TecRate = 0.80
+[0;36mV (817976) TC: TC-0 = 109.23, modeled = 71.57, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 16100, TecRate = 0.77
+[0;36mV (818126) TC: TC-0 = 109.24, modeled = 71.69, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 16250, TecRate = 0.75
+[0;36mV (818276) TC: TC-0 = 109.25, modeled = 71.80, target = 85.00, heatSink = 38.03, output = 69.3, timeout = 16400, TecRate = 0.77
+DATAQ: | Stg1ThermoTempC = 69.82 | stg1AltThermoTempC1 = 46.35  |
+[0;36mV (818425) TC: TC-0 = 109.24, modeled = 71.91, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 16550, TecRate = 0.76
+[0;36mV (818575) TC: TC-0 = 109.26, modeled = 72.03, target = 85.00, heatSink = 38.05, output = 69.3, timeout = 16700, TecRate = 0.83
+[0;36mV (818725) _performCapture: [107220,0,34.03,144,1462,429,34,79,47,102,73,60,5948,0,34.13]
+[0;36mV (818726) TC: TC-0 = 109.23, modeled = 72.13, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 16850, TecRate = 0.60
+[0;36mV (818876) TC: TC-0 = 109.26, modeled = 72.25, target = 85.00, heatSink = 38.04, output = 69.3, timeout = 17000, TecRate = 0.74
+DATAQ: | Stg1ThermoTempC = 70.25 | stg1AltThermoTempC1 = 27.41  |
+[0;36mV (819025) TC: TC-0 = 109.26, modeled = 72.36, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 17150, TecRate = 0.76
+[0;36mV (819176) TC: TC-0 = 109.26, modeled = 72.46, target = 85.00, heatSink = 38.05, output = 69.5, timeout = 17300, TecRate = 0.74
+[0;36mV (819325) TC: TC-0 = 109.25, modeled = 72.57, target = 85.00, heatSink = 38.04, output = 69.5, timeout = 17450, TecRate = 0.67
+[0;36mV (819476) TC: TC-0 = 109.25, modeled = 72.68, target = 85.00, heatSink = 38.04, output = 69.5, timeout = 17600, TecRate = 0.76
+DATAQ: | Stg1ThermoTempC = 70.97 | stg1AltThermoTempC1 = 47.07  |
+[0;36mV (819625) TC: TC-0 = 109.28, modeled = 72.79, target = 85.00, heatSink = 38.04, output = 69.5, timeout = 17750, TecRate = 0.83
+[0;36mV (819775) TC: TC-0 = 109.29, modeled = 72.91, target = 85.00, heatSink = 38.04, output = 69.4, timeout = 17900, TecRate = 0.64
+[0;36mV (819827) _performCapture: [108328,0,34.02,143,1451,430,34,79,47,102,73,60,5906,0,34.12]
+[0;36mV (819925) TC: TC-0 = 109.30, modeled = 73.01, target = 85.00, heatSink = 38.05, output = 69.3, timeout = 18050, TecRate = 0.73
+[0;36mV (820076) TC: TC-0 = 109.33, modeled = 73.13, target = 85.00, heatSink = 38.05, output = 69.2, timeout = 18200, TecRate = 0.78
+DATAQ: | Stg1ThermoTempC = 71.31 | stg1AltThermoTempC1 = 49.27  |
+[0;36mV (820225) TC: TC-0 = 109.34, modeled = 73.24, target = 85.00, heatSink = 38.05, output = 69.1, timeout = 18350, TecRate = 0.72
+[0;36mV (820375) TC: TC-0 = 109.36, modeled = 73.35, target = 85.00, heatSink = 38.05, output = 69.0, timeout = 18500, TecRate = 0.78
+[0;36mV (820526) TC: TC-0 = 109.39, modeled = 73.47, target = 85.00, heatSink = 38.06, output = 68.9, timeout = 18650, TecRate = 0.87
+[0;36mV (820689) TC: TC-0 = 109.41, modeled = 73.59, target = 85.00, heatSink = 38.06, output = 68.7, timeout = 18800, TecRate = 0.77
+DATAQ: | Stg1ThermoTempC = 71.94 | stg1AltThermoTempC1 = 60.88  |
+[0;36mV (820840) TC: TC-0 = 109.40, modeled = 73.69, target = 85.00, heatSink = 38.05, output = 68.8, timeout = 18950, TecRate = 0.74
+[0;36mV (820966) _performCapture: [109466,0,34.02,143,1443,430,34,79,47,102,73,60,5869,0,34.11]
+[0;36mV (820989) TC: TC-0 = 109.41, modeled = 73.80, target = 85.00, heatSink = 38.05, output = 68.8, timeout = 19100, TecRate = 0.71
+[0;36mV (821139) TC: TC-0 = 109.42, modeled = 73.90, target = 85.00, heatSink = 38.05, output = 68.8, timeout = 19250, TecRate = 0.66
+[0;36mV (821289) TC: TC-0 = 109.44, modeled = 74.01, target = 85.00, heatSink = 38.06, output = 68.7, timeout = 19400, TecRate = 0.72
+DATAQ: | Stg1ThermoTempC = 67.55 | stg1AltThermoTempC1 = 33.5  |
+[0;36mV (821440) TC: TC-0 = 109.44, modeled = 74.11, target = 85.00, heatSink = 38.06, output = 68.9, timeout = 19550, TecRate = 0.64
+[0;36mV (821589) TC: TC-0 = 109.46, modeled = 74.22, target = 85.00, heatSink = 38.06, output = 68.8, timeout = 19700, TecRate = 0.77
+[0;36mV (821740) TC: TC-0 = 109.47, modeled = 74.33, target = 85.00, heatSink = 38.06, output = 68.6, timeout = 19850, TecRate = 0.81
+[0;36mV (821889) TC: TC-0 = 109.47, modeled = 74.43, target = 85.00, heatSink = 38.06, output = 68.7, timeout = 20000, TecRate = 0.64
+DATAQ: | Stg1ThermoTempC = 72.86 | stg1AltThermoTempC1 = 64.95  |
+[0;36mV (822040) TC: TC-0 = 109.48, modeled = 74.54, target = 85.00, heatSink = 38.06, output = 68.6, timeout = 20150, TecRate = 0.67
+[0;36mV (822072) _performCapture: [110573,0,34.01,143,1439,430,34,79,47,102,73,60,5841,0,34.11]
+[0;36mV (822189) TC: TC-0 = 109.51, modeled = 74.65, target = 85.00, heatSink = 38.07, output = 68.6, timeout = 20300, TecRate = 0.74
+[0;36mV (822339) TC: TC-0 = 109.53, modeled = 74.76, target = 85.00, heatSink = 38.07, output = 68.3, timeout = 20450, TecRate = 0.62
+[0;36mV (822490) TC: TC-0 = 109.52, modeled = 74.86, target = 85.00, heatSink = 38.07, output = 68.6, timeout = 20600, TecRate = 0.67
+DATAQ: | Stg1ThermoTempC = 73.17 | stg1AltThermoTempC1 = 45.02  |
+[0;36mV (822639) TC: TC-0 = 109.54, modeled = 74.96, target = 85.00, heatSink = 38.07, output = 68.5, timeout = 20750, TecRate = 0.68
+[0;36mV (822789) TC: TC-0 = 109.56, modeled = 75.07, target = 85.00, heatSink = 38.08, output = 68.3, timeout = 20900, TecRate = 0.70
+[0;36mV (822940) TC: TC-0 = 109.55, modeled = 75.17, target = 85.00, heatSink = 38.08, output = 68.5, timeout = 21050, TecRate = 0.71
+[0;36mV (823089) TC: TC-0 = 109.58, modeled = 75.27, target = 85.00, heatSink = 38.08, output = 68.4, timeout = 21200, TecRate = 0.77
+[0;36mV (823179) _performCapture: [111680,0,34.01,143,1436,430,34,79,47,102,74,60,5819,0,34.11]
+DATAQ: | Stg1ThermoTempC = 73.78 | stg1AltThermoTempC1 = 27.44  |
+[0;36mV (823239) TC: TC-0 = 109.59, modeled = 75.38, target = 85.00, heatSink = 38.08, output = 68.3, timeout = 21350, TecRate = 0.66
+[0;36mV (823389) TC: TC-0 = 109.61, modeled = 75.48, target = 85.00, heatSink = 38.08, output = 68.2, timeout = 21500, TecRate = 0.76
+[0;36mV (823540) TC: TC-0 = 109.60, modeled = 75.58, target = 85.00, heatSink = 38.09, output = 68.3, timeout = 21650, TecRate = 0.62
+[0;36mV (823689) TC: TC-0 = 109.60, modeled = 75.67, target = 85.00, heatSink = 38.08, output = 68.3, timeout = 21800, TecRate = 0.57
+DATAQ: | Stg1ThermoTempC = 74.05 | stg1AltThermoTempC1 = 27.08  |
+[0;36mV (823839) TC: TC-0 = 109.59, modeled = 75.77, target = 85.00, heatSink = 38.08, output = 68.4, timeout = 21950, TecRate = 0.71
+[0;36mV (823989) TC: TC-0 = 109.61, modeled = 75.87, target = 85.00, heatSink = 38.09, output = 68.2, timeout = 22100, TecRate = 0.61
+[0;36mV (824139) TC: TC-0 = 109.60, modeled = 75.96, target = 85.00, heatSink = 38.09, output = 68.4, timeout = 22250, TecRate = 0.72
+[0;36mV (824289) TC: TC-0 = 109.61, modeled = 76.07, target = 85.00, heatSink = 38.10, output = 68.3, timeout = 22400, TecRate = 0.66
+[0;36mV (824294) _performCapture: [112794,0,34.01,143,1434,429,34,79,47,102,74,59,5798,0,34.10]
+DATAQ: | Stg1ThermoTempC = 74.68 | stg1AltThermoTempC1 = 27.22  |
+[0;36mV (824440) TC: TC-0 = 109.63, modeled = 76.17, target = 85.00, heatSink = 38.10, output = 68.1, timeout = 22550, TecRate = 0.60
+[0;36mV (824589) TC: TC-0 = 109.63, modeled = 76.26, target = 85.00, heatSink = 38.10, output = 68.1, timeout = 22700, TecRate = 0.70
+[0;36mV (824739) TC: TC-0 = 109.65, modeled = 76.37, target = 85.00, heatSink = 38.11, output = 68.0, timeout = 22850, TecRate = 0.66
+[0;36mV (824889) TC: TC-0 = 109.66, modeled = 76.47, target = 85.00, heatSink = 38.11, output = 68.0, timeout = 23000, TecRate = 0.64
+DATAQ: | Stg1ThermoTempC = 75.03 | stg1AltThermoTempC1 = 67.19  |
+[0;36mV (825040) TC: TC-0 = 109.67, modeled = 76.56, target = 85.00, heatSink = 38.11, output = 68.0, timeout = 23150, TecRate = 0.65
+[0;36mV (825190) TC: TC-0 = 109.67, modeled = 76.66, target = 85.00, heatSink = 38.12, output = 68.0, timeout = 23300, TecRate = 0.59
+[0;36mV (825339) TC: TC-0 = 109.67, modeled = 76.75, target = 85.00, heatSink = 38.11, output = 68.0, timeout = 23450, TecRate = 0.71
+[0;36mV (825399) _performCapture: [113894,0,34.00,143,1434,428,33,79,47,102,74,59,5780,0,34.09]
+[0;36mV (825489) TC: TC-0 = 109.68, modeled = 76.85, target = 85.00, heatSink = 38.12, output = 68.1, timeout = 23600, TecRate = 0.57
+DATAQ: | Stg1ThermoTempC = 75.52 | stg1AltThermoTempC1 = 67.71  |
+[0;36mV (825640) TC: TC-0 = 109.69, modeled = 76.95, target = 85.00, heatSink = 38.12, output = 68.1, timeout = 23750, TecRate = 0.65
+[0;36mV (825789) TC: TC-0 = 109.69, modeled = 77.04, target = 85.00, heatSink = 38.12, output = 68.1, timeout = 23900, TecRate = 0.62
+[0;36mV (825940) TC: TC-0 = 109.67, modeled = 77.12, target = 85.00, heatSink = 38.12, output = 68.2, timeout = 24050, TecRate = 0.63
+[0;36mV (826089) TC: TC-0 = 109.69, modeled = 77.22, target = 85.00, heatSink = 38.13, output = 68.0, timeout = 24200, TecRate = 0.63
+DATAQ: | Stg1ThermoTempC = 75.79 | stg1AltThermoTempC1 = 68.0  |
+[0;36mV (826239) TC: TC-0 = 109.68, modeled = 77.31, target = 85.00, heatSink = 38.13, output = 68.1, timeout = 24350, TecRate = 0.64
+[0;36mV (826389) TC: TC-0 = 109.69, modeled = 77.41, target = 85.00, heatSink = 38.14, output = 67.9, timeout = 24500, TecRate = 0.69
+[0;36mV (826499) _performCapture: [114999,0,34.00,143,1434,427,33,79,47,102,74,59,5773,0,34.09]
+[0;36mV (826539) TC: TC-0 = 109.74, modeled = 77.52, target = 85.00, heatSink = 38.14, output = 67.7, timeout = 24650, TecRate = 0.76
+[0;36mV (826689) TC: TC-0 = 109.75, modeled = 77.61, target = 85.00, heatSink = 38.14, output = 67.7, timeout = 24800, TecRate = 0.58
+DATAQ: | Stg1ThermoTempC = 76.37 | stg1AltThermoTempC1 = 58.19  |
+[0;36mV (826839) TC: TC-0 = 109.77, modeled = 77.71, target = 85.00, heatSink = 38.14, output = 67.6, timeout = 24950, TecRate = 0.79
+[0;36mV (826989) TC: TC-0 = 109.77, modeled = 77.80, target = 85.00, heatSink = 38.15, output = 67.6, timeout = 25100, TecRate = 0.57
+[0;36mV (827139) TC: TC-0 = 109.76, modeled = 77.89, target = 85.00, heatSink = 38.15, output = 67.9, timeout = 25250, TecRate = 0.62
+[0;36mV (827289) TC: TC-0 = 109.78, modeled = 77.98, target = 85.00, heatSink = 38.15, output = 67.7, timeout = 25400, TecRate = 0.72
+DATAQ: | Stg1ThermoTempC = 76.62 | stg1AltThermoTempC1 = 68.87  |
+[0;36mV (827439) TC: TC-0 = 109.78, modeled = 78.08, target = 85.00, heatSink = 38.15, output = 67.6, timeout = 25550, TecRate = 0.72
+[0;36mV (827589) TC: TC-0 = 109.79, modeled = 78.17, target = 85.00, heatSink = 38.16, output = 67.6, timeout = 25700, TecRate = 0.67
+[0;36mV (827607) _performCapture: [116107,0,33.99,143,1435,426,33,79,47,102,74,59,5766,0,34.08]
+[0;36mV (827739) TC: TC-0 = 109.79, modeled = 78.26, target = 85.00, heatSink = 38.16, output = 67.6, timeout = 25850, TecRate = 0.74
+[0;36mV (827889) TC: TC-0 = 109.81, modeled = 78.36, target = 85.00, heatSink = 38.17, output = 67.5, timeout = 26000, TecRate = 0.61
+DATAQ: | Stg1ThermoTempC = 77.14 | stg1AltThermoTempC1 = 69.41  |
+[0;36mV (828039) TC: TC-0 = 109.82, modeled = 78.45, target = 85.00, heatSink = 38.17, output = 67.4, timeout = 26150, TecRate = 0.60
+[0;36mV (828190) TC: TC-0 = 109.81, modeled = 78.53, target = 85.00, heatSink = 38.17, output = 67.5, timeout = 26300, TecRate = 0.53
+[0;36mV (828339) TC: TC-0 = 109.83, modeled = 78.63, target = 85.00, heatSink = 38.17, output = 67.4, timeout = 26450, TecRate = 0.67
+[0;36mV (828489) TC: TC-0 = 109.85, modeled = 78.72, target = 85.00, heatSink = 38.18, output = 67.4, timeout = 26600, TecRate = 0.62
+DATAQ: | Stg1ThermoTempC = 77.33 | stg1AltThermoTempC1 = 69.66  |
+[0;36mV (828640) TC: TC-0 = 109.86, modeled = 78.81, target = 85.00, heatSink = 38.18, output = 67.4, timeout = 26750, TecRate = 0.47
+[0;36mV (828710) _performCapture: [117211,0,33.99,144,1436,426,33,79,47,102,74,59,5764,0,34.08]
+[0;36mV (828789) TC: TC-0 = 109.87, modeled = 78.90, target = 85.00, heatSink = 38.19, output = 67.3, timeout = 26900, TecRate = 0.67
+[0;36mV (828939) TC: TC-0 = 109.87, modeled = 78.99, target = 85.00, heatSink = 38.19, output = 67.3, timeout = 27050, TecRate = 0.55
+[0;36mV (829089) TC: TC-0 = 109.87, modeled = 79.07, target = 85.00, heatSink = 38.19, output = 67.4, timeout = 27200, TecRate = 0.57
+DATAQ: | Stg1ThermoTempC = 77.62 | stg1AltThermoTempC1 = 69.99  |
+[0;36mV (829239) TC: TC-0 = 109.87, modeled = 79.16, target = 85.00, heatSink = 38.19, output = 67.4, timeout = 27350, TecRate = 0.56
+[0;36mV (829389) TC: TC-0 = 109.88, modeled = 79.25, target = 85.00, heatSink = 38.19, output = 67.3, timeout = 27500, TecRate = 0.70
+[0;36mV (829540) TC: TC-0 = 109.88, modeled = 79.33, target = 85.00, heatSink = 38.20, output = 67.4, timeout = 27650, TecRate = 0.59
+[0;36mV (829689) TC: TC-0 = 109.85, modeled = 79.40, target = 85.00, heatSink = 38.20, output = 67.6, timeout = 27800, TecRate = 0.44
+DATAQ: | Stg1ThermoTempC = 78.02 | stg1AltThermoTempC1 = 29.82  |
+[0;36mV (829821) _performCapture: [118321,0,33.98,144,1437,425,33,79,47,101,74,59,5757,0,34.08]
+[0;36mV (829839) TC: TC-0 = 109.88, modeled = 79.50, target = 85.00, heatSink = 38.20, output = 67.3, timeout = 27950, TecRate = 0.84
+[0;36mV (829989) TC: TC-0 = 109.90, modeled = 79.60, target = 85.00, heatSink = 38.21, output = 67.1, timeout = 28100, TecRate = 0.66
+[0;36mV (830140) TC: TC-0 = 109.90, modeled = 79.68, target = 85.00, heatSink = 38.21, output = 67.2, timeout = 28250, TecRate = 0.45
+[0;36mV (830289) TC: TC-0 = 109.90, modeled = 79.76, target = 85.00, heatSink = 38.22, output = 67.2, timeout = 28400, TecRate = 0.62
+DATAQ: | Stg1ThermoTempC = 78.28 | stg1AltThermoTempC1 = 27.83  |
+>>>>>>> 1436ad5c14c40fdb578aade1a89d7573df6085f1
