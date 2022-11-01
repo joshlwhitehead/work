@@ -86,8 +86,7 @@ for consumableId in Id:
         
         plt.xticks(channels,channelString)
         plt.grid()
-        plt.savefig(''.join(['specSigKristin/25Aug2022/',consumableId[:6]]))
-        plt.show()
+        
 
 
     def melt_deriv():
@@ -127,3 +126,6 @@ for consumableId in Id:
         plt.savefig(''.join(['specSigAli/28Apr2022/',consumableId[:6]]))
         plt.show()
     pcrplot()
+
+plt.savefig(''.join(['specSigKristin/25Aug2022/',consumableId[:6]]))
+plt.show()
