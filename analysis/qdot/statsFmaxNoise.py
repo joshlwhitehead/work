@@ -11,7 +11,7 @@ noisePcr = (data['pcr noise']).tolist()
 noiseMelt = (data['melt noise']).tolist()
 
 instSimp = [*set(inst)]
-
+print(instSimp)
 fmaxGood = []
 instGood = []
 pcrGood = []
@@ -23,9 +23,8 @@ for i in range(len(fmax)):
         pcrGood.append(fmax[i])
         meltGood.append(fmax[i])
 
-together = zip(instGood,fmaxGood,pcrGood,meltGood)
 
-togetherSort = sorted(together)
+
 
 
 
