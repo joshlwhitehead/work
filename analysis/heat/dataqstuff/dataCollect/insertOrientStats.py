@@ -1,6 +1,7 @@
 import numpy as np
 import dataToVar as dat
 import matplotlib.pyplot as plt
+from scipy import stats
 
 
 f1 = dat.forward1
@@ -41,7 +42,60 @@ for i in totalPlun:
 
 for i in totalFran:
     meanFran.append(np.mean(i))
-print(meanFran)
+
+
+meanFranF = np.mean(meanFran[:3])
+meanFranB = np.mean(meanFran[3:])
+meanPlunF = np.mean(meanPlun[:3])
+meanPlunB = np.mean(meanPlun[3:])
+
+
+stdFranF = np.std(meanFran[:3])
+stdFranB = np.std(meanFran[3:])
+stdPlunF = np.std(meanPlun[:3])
+stdPlunB = np.std(meanPlun[3:])
+
+
+meanDif = meanPlunF - meanPlunB
+nPlunF = 3
+nPlunB = 2
+dof = nPlunF+nPlunB-2
+sPool = np.sqrt(((nPlunF-1)*stdPlunF**2 + (nPlunB-1)*stdPlunB**2)/dof)
+
+SE = sPool*np.sqrt(1/nPlunF+1/nPlunB)
+
+alpha = 0.5
+
+tStar = stats.t.ppf(1-0.5*alpha,dof)
+moe = tStar*SE
+ci = (meanDif-moe,meanDif+moe)
+print(ci)
+
+
+
+# meanDif = meanFranF - meanFranB
+# nFranF = 3
+# nFranB = 4
+# dof = nFranF+nFranB-2
+# sPool = np.sqrt(((nFranF-1)*stdFranF**2 + (nFranB-1)*stdFranB**2)/dof)
+
+# SE = sPool*np.sqrt(1/nFranF+1/nFranB)
+
+# alpha = 0.5
+
+# tStar = stats.t.ppf(1-0.5*alpha,dof)
+# moe = tStar*SE
+
+# ci = (meanDif-moe,meanDif+moe)
+# print(ci)
+
+# tDif = meanDif/SE
+
+# pVal = 1*stats.t.cdf(tDif,dof)
+# print(pVal)
+
+
+
 
 
 
