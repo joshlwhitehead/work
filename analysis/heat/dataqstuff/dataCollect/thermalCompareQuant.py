@@ -29,7 +29,7 @@ def listAvg(dataInd,dataDep):                              #all data should be s
     for i in np.array(interppp(dataInd,dataDep)).transpose():
         avgData.append(np.average(i))
        
-    return avgData
+    return np.array(avgData)
 
 
 
@@ -38,7 +38,7 @@ def listStd(dataInd,dataDep):
     
     for i in np.array(interppp(dataInd,dataDep)).transpose():
         stdev.append(np.std(i))
-    return stdev
+    return np.array(stdev)
 
 
 

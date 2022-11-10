@@ -2,7 +2,7 @@
 
 
 import getData as gd
-
+"""
 # lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
 # # lid0Cons0_70 = gd.getData('lid0Cons0_70.csv','31Mar2022')
 # # lid0Cons0_50 = gd.getData('lid0Cons0_50.csv','31Mar2022')
@@ -395,7 +395,7 @@ date = '13Sep2022'
 # date = '23Sep2022'
 
 # trip = gd.getData('tripleTCa.csv',date)
-
+"""
 
 date = '11Oct2022'
 
@@ -411,8 +411,25 @@ noInsert1 = gd.getData('noInsertNoBall1.csv',date)
 noInsert2 = gd.getData('noInsertNoBall2.csv',date)
 
 
-date = '12Oct2022'
+# date = '12Oct2022'
 
-small11 = gd.getData('ADV11SmallSlug1.csv',date)
-large11 = gd.getData('ADV11LargeSlug2.csv',date)
-large11_mp = gd.getData('ADV11LargeSlug4.csv',date)
+# small11 = gd.getData('ADV11SmallSlug1.csv',date)
+# large11 = gd.getData('ADV11LargeSlug2.csv',date)
+# large11_mp = gd.getData('ADV11LargeSlug4.csv',date)
+
+
+
+
+
+
+
+
+
+date = '10Nov2022'
+
+smallA = gd.getData('Adv02_P26_DualNormal_221109_Run1.csv',date)
+smallB = gd.getData('Adv02_P26_DualNormal_221109_Run2.csv',date)
+largeA = gd.getData('Adv08_P26_NewModel_221108_Run1.csv',date)
+largeB = gd.getData('Adv08_P26_NewModel_221108_Run3.csv',date)
+obroundA = gd.getData('Adv11_P26_DualNormal_221108_Run2.csv',date)
+obroundB = gd.getData('Adv11_P26_DualNormal_221108_Run3.csv',date)

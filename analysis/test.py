@@ -74,7 +74,7 @@ def analyze():
             
             delta = []
             for i in channels:
-                delta.append(np.average(data[i][-2:])-np.average(data[i][:2]))
+                delta.append(np.average(max(data[i]))-np.average(min(data[i])))
 
             # print(delta)
             
