@@ -433,3 +433,8 @@ largeA = gd.getData('Adv08_P26_NewModel_221108_Run1.csv',date)
 largeB = gd.getData('Adv08_P26_NewModel_221108_Run3.csv',date)
 obroundA = gd.getData('Adv11_P26_DualNormal_221108_Run2.csv',date)
 obroundB = gd.getData('Adv11_P26_DualNormal_221108_Run3.csv',date)
+
+backLargeA = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run1.csv',date)
+backLargeB = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run2.csv',date)
+backObroundA = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run1.csv',date)
+backObroundB = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run2.csv',date)
