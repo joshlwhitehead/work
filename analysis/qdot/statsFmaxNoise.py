@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import importData
 
 data = pd.read_csv('f07Snp.csv')
 
@@ -43,20 +43,44 @@ for i in instSimp:
     pcrMean.append(np.mean(mean2))
     meltMean.append(np.mean(mean3))
 
+
+instQdot = [5,6,7,10,13,25,26,27]
+
+qdotfmax = []
+qdotpcr = []
+qdotmelt = []
+for i in range(len(instSimp)):
+    if instSimp[i] in instQdot:
+        qdotfmax.append(fmaxMean[i])
+        qdotpcr.append(pcrMean[i])
+        qdotmelt.append(meltMean[i])
 # plt.scatter(instSimp,fmaxMean)
+# plt.grid()
 # plt.show()
+
 # plt.plot(instSimp,pcrMean)
 # plt.plot(instSimp,meltMean)
 # plt.show()
-plt.scatter(instGood,fmaxGood)
+
+
+# plt.scatter(instGood,fmaxGood)
+# plt.xlabel('Instrument')
+# plt.ylabel('fmax')
+# plt.grid()
+# plt.show()
+
+
+# plt.scatter(instGood,pcrGood)
+# plt.scatter(instGood,meltGood)
+# plt.xlabel('Instrument')
+# plt.ylabel('noise')
+# plt.grid()
+# plt.show()
+
+
+plt.scatter(importData.avg,qdotmelt)
+plt.xlabel('qdot 515/480')
+plt.ylabel('snp pcr noise')
 plt.grid()
 plt.show()
-plt.scatter(instGood,pcrGood)
-plt.scatter(instGood,meltGood)
-
-plt.grid()
-plt.show()
-
-
-
 
