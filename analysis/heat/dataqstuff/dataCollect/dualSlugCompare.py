@@ -83,8 +83,9 @@ for i in difTot:
         namList.append(nam[count])
     count += 1
 
-dataFormat = pd.DataFrame({'slug':namList,'dif':difList})
 
+dataFormat = pd.DataFrame({'slug':namList,'dif':difList})
+print(dataFormat)
 formula = 'dif ~ slug'
 model = ols(formula,dataFormat).fit()
 
