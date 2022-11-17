@@ -6,7 +6,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-data = pd.read_csv('pmmvNoPk_16Nov2022.csv')
+data = pd.read_csv('snpAll_16Nov2022.csv')
 data.dropna()
 inst = (data['inst']).tolist()
 fmax = (data['fmax']).tolist()
@@ -15,7 +15,7 @@ noiseMelt = (data['melt noise']).tolist()
 cq = (data['cq']).tolist()
 tm = (data['tm']).tolist()
 
-instSimp = [*set(inst)]
+
 
 fmaxGood = []
 instGood = []
@@ -37,7 +37,7 @@ for i in range(len(inst)):
 dfAnova = pd.DataFrame({'inst':instGood,'fmax':fmaxGood})
 dfAnova = dfAnova.dropna()
 
-
+instSimp = [*set(instGood)]
 
 formula = 'fmax ~ inst' 
 model = ols(formula, dfAnova).fit()
@@ -50,8 +50,8 @@ print(m_comp)
 # print(dfAnova['inst'].value_counts())
 # instSimp.pop(2)
 # instSimp.pop(2)
-instSimp.pop(6)
-instSimp.pop(6)
+# instSimp.pop(6)
+# instSimp.pop(6)
 # instSimp.pop(9)
 # instSimp.pop(9)
 # instSimp.pop(10)
@@ -102,7 +102,8 @@ for i in range(len(importData.inst)):
 
 
 
-
+# print(fmaxGood)
+# print(instGood)
 
 
 
@@ -138,7 +139,7 @@ a,b = np.polyfit(qdotFmax,fmaxMean,1)
 # c,d = np.polyfit(qdotFmax,pcrMean,1)
 # e,f = np.polyfit(qdotFmax,meltMean,1)
 # g,h = np.polyfit(qdotFmax,cqMean,1)
-
+print(fmaxMean)
 
 qdotFmax = np.array(qdotFmax)
 
