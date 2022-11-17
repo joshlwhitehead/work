@@ -5,6 +5,7 @@ import numpy as np
 data5 = pd.read_excel('qDotJosh.xlsx','05 LED')
 data6 = pd.read_excel('qDotJosh.xlsx','06 LED')
 data7 = pd.read_excel('qDotJosh.xlsx','07 LED')
+data9 = pd.read_excel('qDotJosh.xlsx','09 LED')
 data10 = pd.read_excel('qDotJosh.xlsx','10 LED')
 data13 = pd.read_excel('qDotJosh.xlsx','13 LED')
 data25 = pd.read_excel('qDotJosh.xlsx','25 LED')
@@ -20,8 +21,8 @@ data15 = pd.read_excel('qDotJosh.xlsx','15 Laser')
 
 
 
-instData = [data1,data2,data5,data6,data7,data8,data10,data11,data12,data13,data15,data25,data26,data27]
-inst = [1,2,5,6,7,8,10,11,12,13,15,25,26,27]
+instData = [data1,data2,data5,data6,data7,data8,data9,data10,data11,data12,data13,data15,data25,data26,data27]
+inst = [1,2,5,6,7,8,9,10,11,12,13,15,25,26,27]
 
 
 avg = []

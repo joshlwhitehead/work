@@ -6,7 +6,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-data = pd.read_csv('snpAll_16Nov2022.csv')
+data = pd.read_csv('pmmvAll_16Nov2022.csv')
 data.dropna()
 inst = (data['inst']).tolist()
 fmax = (data['fmax']).tolist()
@@ -36,6 +36,8 @@ for i in range(len(inst)):
 
 dfAnova = pd.DataFrame({'inst':instGood,'fmax':fmaxGood})
 dfAnova = dfAnova.dropna()
+dfAnova.boxplot('fmax',by='inst')
+plt.show()
 
 instSimp = [*set(instGood)]
 
@@ -46,21 +48,26 @@ print(aov_table)
 
 m_comp = pairwise_tukeyhsd(endog=dfAnova['fmax'], groups=dfAnova['inst'], 
                            alpha=0.05)
-print(m_comp)
+print(m_comp.reject)
 # print(dfAnova['inst'].value_counts())
-# instSimp.pop(2)
-# instSimp.pop(2)
-# instSimp.pop(6)
-# instSimp.pop(6)
-# instSimp.pop(9)
-# instSimp.pop(9)
-# instSimp.pop(10)
-# instSimp.pop(11)
-# instSimp.pop(11)
-# instSimp.pop(11)
-# instSimp.pop(11)
-# instSimp.pop(11)
-# instSimp.pop(11)
+qdotInst = []
+qdotFmax = []
+for i in range(len(importData.inst)):
+    if importData.inst[i] in instSimp:
+        qdotInst.append(importData.inst[i])
+        qdotFmax.append(importData.avg[i])
+
+
+print(instSimp)
+count = 0
+while len(instSimp) != len(qdotInst):
+    if qdotInst[count] != instSimp[count]:
+        instSimp.pop(count)
+        count -= 1
+    count += 1
+        
+ 
+
 
 
 fmaxMean = []
@@ -90,28 +97,18 @@ for i in instSimp:
 
 
 
-qdotInst = []
-qdotFmax = []
-for i in range(len(importData.inst)):
-    if importData.inst[i] in instSimp:
-        qdotInst.append(importData.inst[i])
-        qdotFmax.append(importData.avg[i])
 
 
 
 
 
 
-# print(fmaxGood)
-# print(instGood)
 
-
-
-# pd.DataFrame(data).to_csv('help')                                  
-plt.plot(instGood,fmaxGood,'o')
-plt.plot(instSimp,fmaxMean,'o')
-plt.grid()
-plt.show()
+                                 
+# plt.plot(instGood,fmaxGood,'o')
+# plt.plot(instSimp,fmaxMean,'o')
+# plt.grid()
+# plt.show()
 
 # plt.plot(qdotFmax,fmaxMean,'o')
 # plt.plot(qdotFmax,fmaxMean,'o')
@@ -132,8 +129,6 @@ plt.show()
 # print(len(qdotFmax),len(fmaxMean))
 
 
-# qdotFmax.pop(9)
-# qdotFmax.pop(9)
 print(instSimp,'\n',qdotInst)
 a,b = np.polyfit(qdotFmax,fmaxMean,1)
 # c,d = np.polyfit(qdotFmax,pcrMean,1)
