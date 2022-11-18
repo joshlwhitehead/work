@@ -10,22 +10,22 @@ data = pd.read_csv('test.csv')
 data.dropna()
 inst = (data['inst']).tolist()
 fmax = (data['fmax']).tolist()
-if 'pcr noise' in data.columns():
+if 'pcr noise' in data.columns:
     noisePcr = (data['pcr noise']).tolist()
 else:
-    noisePcr = []
-if 'melt noise' in data.columns():
+    noisePcr = np.ones(len(inst))
+if 'melt noise' in data.columns:
     noiseMelt = (data['melt noise']).tolist()
 else:
-    noiseMelt = []
-if 'cq' in data.columns():
+    noiseMelt = np.ones(len(inst))
+if 'cq' in data.columns:
     cq = (data['cq']).tolist()
 else:
-    cq = []
-if 'tm' in data.columns():
+    cq = np.ones(len(inst))
+if 'tm' in data.columns:
     tm = (data['tm']).tolist()
 else:
-    tm = []
+    tm = np.ones(len(inst))
 
 
 
@@ -46,17 +46,17 @@ for i in range(len(inst)):
 
 dfAnova = pd.DataFrame({'inst':instGood,'fmax':fmaxGood,'cq':cqGood,'pcr noise':pcrGood,'melt noise':meltGood})
 dfAnova = dfAnova.dropna()
-dfAnova.boxplot('fmax',by='inst')
+dfAnova.boxplot('cq',by='inst')
 plt.show()
 
 instSimp = [*set(instGood)]
 
-formula = 'fmax ~ inst' 
+formula = 'cq ~ inst' 
 model = ols(formula, dfAnova).fit()
 aov_table = anova_lm(model, typ=2)
 print(aov_table)
 
-m_comp = pairwise_tukeyhsd(endog=dfAnova['fmax'], groups=dfAnova['inst'], 
+m_comp = pairwise_tukeyhsd(endog=dfAnova['cq'], groups=dfAnova['inst'], 
                            alpha=0.05)
 print(m_comp)
 

@@ -1,11 +1,11 @@
-﻿,inst,fmax
-AdvBuild,10,494
-AdvBuild,26,820
-AdvBuild,26,548
-AdvBuild,10,544
-AdvBuild,10,800
-AdvBuild,26,931
-AdvBuild,10,863
-AdvBuild,26,1323
-AdvBuild,10,1000
-AdvBuild,26,1320
+﻿,inst,fmax,pcr noise,melt noise,cq,tm
+AdvBuild,10,494,0.06,0.04,30,83
+AdvBuild,26,820,0.03,0.05,29,83
+AdvBuild,26,548,0.03,0.03,29,83
+AdvBuild,10,544,0.06,0.04,31,84
+AdvBuild,10,800,0.06,0.02,29,83
+AdvBuild,26,931,0.02,0.02,28,83
+AdvBuild,10,863,0.04,0.02,29,83
+AdvBuild,26,1323,0.02,0.03,29,83
+AdvBuild,10,1000,0.07,0.02,30,83
+AdvBuild,26,1320,0.02,0.03,28,83
