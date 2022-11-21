@@ -28,8 +28,13 @@ else:
     tm = np.ones(len(inst))
 if 'memo' in data.columns:
     memo = (data['memo']).tolist()
+    config = []
+    for i in memo:
+        if 'F.' in i:
+            config.append(i[i.index('F.')+2:i.index('F.')+4])
 else:
     memo = np.ones(len(inst))
+    config = np.ones(len(inst))
 if 'lot' in data.columns:
     lot = (data['lot']).tolist()
 else:
