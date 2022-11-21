@@ -6,7 +6,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-data = pd.read_csv('test.csv')
+data = pd.read_csv('pmmv_255.csv')
 data.dropna()
 inst = (data['inst']).tolist()
 fmax = (data['fmax']).tolist()
@@ -26,6 +26,14 @@ if 'tm' in data.columns:
     tm = (data['tm']).tolist()
 else:
     tm = np.ones(len(inst))
+if 'memo' in data.columns:
+    memo = (data['memo']).tolist()
+else:
+    memo = np.ones(len(inst))
+if 'lot' in data.columns:
+    lot = (data['lot']).tolist()
+else:
+    lot = np.ones(len(inst))
 
 
 
@@ -46,17 +54,17 @@ for i in range(len(inst)):
 
 dfAnova = pd.DataFrame({'inst':instGood,'fmax':fmaxGood,'cq':cqGood,'pcr noise':pcrGood,'melt noise':meltGood})
 dfAnova = dfAnova.dropna()
-dfAnova.boxplot('cq',by='inst')
+dfAnova.boxplot('fmax',by='inst')
 plt.show()
 
 instSimp = [*set(instGood)]
 
-formula = 'cq ~ inst' 
+formula = 'fmax ~ inst' 
 model = ols(formula, dfAnova).fit()
 aov_table = anova_lm(model, typ=2)
 print(aov_table)
 
-m_comp = pairwise_tukeyhsd(endog=dfAnova['cq'], groups=dfAnova['inst'], 
+m_comp = pairwise_tukeyhsd(endog=dfAnova['fmax'], groups=dfAnova['inst'], 
                            alpha=0.05)
 print(m_comp)
 
