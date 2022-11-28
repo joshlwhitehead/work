@@ -1,7 +1,6 @@
 import numpy as np
 from scipy import interpolate as interp
-import dataToVar as dat
-import matplotlib.pyplot as plt
+
 
 
 def interppp(dataInd,dataDep):
@@ -39,6 +38,26 @@ def listStd(dataInd,dataDep):
     for i in np.array(interppp(dataInd,dataDep)).transpose():
         stdev.append(np.std(i))
     return np.array(stdev)
+
+def listRms(dataInd,dataDep):
+    interpData = np.array(interppp(dataInd,dataDep)).transpose()
+
+    rmsData = np.sqrt(1/len(interpData)*sum(interpData**2))       
+    # print(interpData)
+    return rmsData
+
+def listGrad(dataInd,dataDep1,dataDep2):
+    interp1 = np.array(interppp(dataInd,dataDep1))
+    interp2 = np.array(interppp(dataInd,dataDep2))
+    final = []
+    grad = interp1-interp2
+    for i in range(len(grad)):
+        
+        mag = max(grad[i])-min(grad[i])
+        magNorm = mag/np.average(grad[i])
+        final.append(magNorm)
+        # print((len(grad)))
+    return final
 
 
 

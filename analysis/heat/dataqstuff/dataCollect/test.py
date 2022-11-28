@@ -1,8 +1,8 @@
 # import dataToVar as dat
 
 import matplotlib.pyplot as plt
+import numpy as np
 
-
-josh=[1,3,2]
-josh.append([3,4,5])
-print(josh)
+josh=[2,5,5]
+tess = [3,6]
+print(josh+tess)

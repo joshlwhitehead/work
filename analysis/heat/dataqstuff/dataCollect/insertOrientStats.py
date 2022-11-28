@@ -1,8 +1,11 @@
 import numpy as np
 import dataToVar as dat
 import matplotlib.pyplot as plt
-from scipy import stats
-from thermalCompareQuant import listAvg, listStd
+import pandas as pd
+from thermalCompareQuant import listAvg, listStd, listRms, listGrad
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 
 f1 = dat.forward1
@@ -34,6 +37,11 @@ b4 = dat.backward4
 # plt.show()
 
 
+"""                 GRADIENT                """
+
+# print(len(f1[0]),len(f1[2]))
+# print(len(f2[0]),len(f2[2]))
+# print(len(f3[0]),len(f3[2]))
 
 
 
@@ -41,6 +49,11 @@ fPlunAvg = listAvg([f1[0],f2[0],f3[0]],[f1[2],f2[2],f3[2]])
 bPlunAvg = listAvg([b1[0],b2[0]],[b1[2],b2[2]])
 fEdgeAvg = listAvg([f1[0],f2[0],f3[0]],[f1[3],f2[3],f3[3]])
 bEdgeAvg = listAvg([b1[0],b2[0],b3[0],b4[0]],[b1[3],b2[3],b3[3],b4[3]])
+
+fPlunRms = listRms([f1[0],f2[0],f3[0]],[f1[2],f2[2],f3[2]])
+bPlunRms = listRms([b1[0],b2[0]],[b1[2],b2[2]])
+fEdgeRms = listRms([f1[0],f2[0],f3[0]],[f1[3],f2[3],f3[3]])
+bEdgeRms = listRms([b1[0],b2[0],b3[0],b4[0]],[b1[3],b2[3],b3[3],b4[3]])
 
 fPlunStd = listStd([f1[0],f2[0],f3[0]],[f1[2],f2[2],f3[2]])
 bPlunStd = listStd([b1[0],b2[0]],[b1[2],b2[2]])
@@ -59,119 +72,21 @@ bEdgeStd = listStd([b1[0],b2[0],b3[0],b4[0]],[b1[3],b2[3],b3[3],b4[3]])
 # plt.show()
 
 
-fGrad = fPlunAvg - fEdgeAvg
-bGrad = bPlunAvg - bEdgeAvg
-fStd = fPlunStd - fEdgeStd
-bStd = bPlunStd - bEdgeStd
+fGrad = listGrad([f1[0],f2[0],f3[0]],[f1[2],f2[2],f3[2]],[f1[3],f2[3],f3[3]])
+bGrad = listGrad([b1[0],b2[0]],[b1[2],b2[2]],[b1[3],b2[3]])
+ff = np.ones(len(fGrad)).tolist()
+bb = (np.ones(len(bGrad))*2).tolist()
 
-meanDif = fGrad[:-2] - bGrad
-
-
-nFranF = 3
-nFranB = 4
-dof = nFranF+nFranB-2
-sPool = np.sqrt(((nFranF-1)*fStd[:-2]**2 + (nFranB-1)*bStd**2)/dof)
-
-SE = sPool*np.sqrt(1/nFranF+1/nFranB)
-
-alpha = 0.05
-
-tStar = stats.t.ppf(1-0.5*alpha,dof)
-moe = tStar*SE
-
-ci = (meanDif-moe,meanDif+moe)
-print(ci)
-
-tDif = meanDif/SE
-
-pVal = 1*stats.t.cdf(tDif,dof)
-print(pVal)
-# plt.plot(ci[0])
-# plt.plot(ci[1])
-plt.plot(pVal)
-plt.grid()
-plt.show()
+dfAnova = pd.DataFrame({'orientation':ff+bb,'quant':fGrad+bGrad})
 
 
+formula = 'quant ~ orientation' 
+model = ols(formula, dfAnova).fit()
+aov_table = anova_lm(model, typ=1)
+print(aov_table)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-totalPlun = [f1[2],f2[2],f3[2],b1[2],b2[2]]
-totalFran = [f1[3],f2[3],f3[3],b1[3],b2[3],b3[3],b4[3]]
-meanPlun = []
-meanFran = []
-for i in totalPlun:
-    meanPlun.append(np.mean(i))
-
-for i in totalFran:
-    meanFran.append(np.mean(i))
-
-
-meanFranF = np.mean(meanFran[:3])
-meanFranB = np.mean(meanFran[3:])
-meanPlunF = np.mean(meanPlun[:3])
-meanPlunB = np.mean(meanPlun[3:])
-
-
-stdFranF = np.std(meanFran[:3])
-stdFranB = np.std(meanFran[3:])
-stdPlunF = np.std(meanPlun[:3])
-stdPlunB = np.std(meanPlun[3:])
-
-
-# meanDifPlun = meanPlunF - meanPlunB
-# nPlunF = 3
-# nPlunB = 2
-# dof = nPlunF+nPlunB-2
-# sPool = np.sqrt(((nPlunF-1)*stdPlunF**2 + (nPlunB-1)*stdPlunB**2)/dof)
-
-# SE = sPool*np.sqrt(1/nPlunF+1/nPlunB)
-
-# alpha = 0.5
-
-# tStar = stats.t.ppf(1-0.5*alpha,dof)
-# moe = tStar*SE
-# ci = (meanDifPlun-moe,meanDifPlun+moe)
-# print(ci)
-
-
-
-meanDifFran = meanFranF - meanFranB
-nFranF = 3
-nFranB = 4
-dof = nFranF+nFranB-2
-sPool = np.sqrt(((nFranF-1)*stdFranF**2 + (nFranB-1)*stdFranB**2)/dof)
-
-SE = sPool*np.sqrt(1/nFranF+1/nFranB)
-
-alpha = 0.05
-
-tStar = stats.t.ppf(1-0.5*alpha,dof)
-moe = tStar*SE
-
-ci = (meanDifFran-moe,meanDifFran+moe)
-print(ci)
-
-tDif = meanDifFran/SE
-
-pVal = 1*stats.t.cdf(tDif,dof)
-print(pVal)
-
-
-
-
+m_comp = pairwise_tukeyhsd(endog=dfAnova['quant'], groups=dfAnova['orientation'], 
+                           alpha=0.05)
+print(m_comp)
 
