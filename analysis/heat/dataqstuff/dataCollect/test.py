@@ -1,8 +1,3 @@
-# import dataToVar as dat
+josh = [1,2,3,2,1,2]
+new = []
 
-import matplotlib.pyplot as plt
-import numpy as np
-
-josh=[2,5,5]
-
-print(josh*2)

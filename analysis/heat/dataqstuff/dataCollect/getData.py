@@ -8,11 +8,22 @@ def getData(filename,date):
 
     time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
     thermRaw = fullSheet['Stage1 TempC'].tolist()
+    
+
     if 'Stage1 Thermocouple TempC' in fullSheet:
         sampRaw = fullSheet['Stage1 Thermocouple TempC'].tolist()
     elif 'dataQLiquidStg1' in fullSheet:
         sampRaw = fullSheet['dataQLiquidStg1'].tolist()
     modelRaw = fullSheet['Stage1 Modeled TempC'].tolist()
+    if 'Stage1 Expected TempC' in fullSheet:
+        expectRaw = fullSheet['Stage1 Expected TempC'].tolist()
+    else:
+        expectRaw = np.ones(len(sampRaw))
+    if 'Stage1 Target TempC' in fullSheet:
+        targetRaw = fullSheet['Stage1 Target TempC'].tolist()
+    else:
+        targetRaw = np.ones(len(sampRaw))
+
     wav3 = []
     wavTime = []
     if '515nm' in fullSheet.columns:
@@ -36,86 +47,42 @@ def getData(filename,date):
     else:
         samp3Raw = np.ones(len(sampRaw))
 
- 
-
-   
-    # setRaw = fullSheet['stage1SetTempC'].tolist()
-   
     thermMod = []
-    for i in range(len(time)):
-        if i == 0:
-            if str(thermRaw[i]) == 'nan':
-                thermMod.append(thermRaw[i+1])
-            else:
-                thermMod.append(thermRaw[i])
-
+    modelMod = []
+    targetMod = []
+    expectMod = []
+    for i in range(len(thermRaw)):
+        if str(thermRaw[i]) == 'nan':
+            thermMod.append(thermMod[i-1])
+            modelMod.append(modelMod[i-1])
+            targetMod.append(targetMod[i-1])
+            expectMod.append(expectMod[i-1])
         else:
-            if str(thermRaw[i]) == 'nan':
-                thermMod.append(thermRaw[i-1])
-            else:
-                thermMod.append(thermRaw[i])
-
-    
+            thermMod.append(thermRaw[i])
+            modelMod.append(modelRaw[i])
+            targetMod.append(targetRaw[i])
+            expectMod.append(expectRaw[i])
 
     sampMod = []
-    timeMod = []
     samp2Mod = []
-    samp3Mod = []
-    modelMod = []
-    
+    thermModTrue = []
+    timeTrue = []
+    modelModTrue = []
+    targetModTrue = []
+    expectModTrue = []
     for i in range(len(sampRaw)):
-        if str(sampRaw[i]) != 'nan':
+        if str(sampRaw[i]) != 'nan' and thermMod[i] != thermMod[-1]:#and thermRaw[i:]*len(thermRaw[i:]) != thermRaw[i:] and str(thermRaw[i] != 'nan'):
+                                                                                                                                                            # and thermRaw[i] != 'nan' and thermRaw[i+1] != 'nan' and thermRaw[i+2] != 'nan' and thermRaw[i+3] != 'nan' and thermRaw[i+4] != 'nan' and thermRaw[i+5] != 'nan' and thermRaw[i+6] != 'nan' and thermRaw[i+7] != 'nan' and thermRaw[i+8] != 'nan' and thermRaw[i+9] != 'nan' and thermRaw[i+10] != 'nan' and thermRaw[i+11] != 'nan' and thermRaw[i+12] != 'nan' and thermRaw[i+13] != 'nan' and thermRaw[i+14] != 'nan' and thermRaw[i+15] != 'nan' and thermRaw[i+16] != 'nan' and thermRaw[i+17] != 'nan' and thermRaw[i+18] != 'nan' and thermRaw[i+19] != 'nan':
             sampMod.append(sampRaw[i])
-            timeMod.append(time[i])
-            samp2Mod.append(samp2Raw[i])
-            samp3Mod.append(samp3Raw[i])
-            modelMod.append(modelRaw[i])
-    # print(sampMod[:5])
-    if len(sampMod) != 0:
-        sampInterp = interp.interp1d(timeMod,sampMod)
-        sampMod = sampInterp(time[:-4])
-        samp2Interp = interp.interp1d(timeMod,samp2Mod)
-        samp3Interp = interp.interp1d(timeMod,samp3Mod)
-        samp2Mod = samp2Interp(time[:-4])
-        samp3Mod = samp3Interp(time[:-4])
+            thermModTrue.append(thermMod[i])
+            timeTrue.append(time[i])
+            modelModTrue.append(modelMod[i])
+            targetModTrue.append(targetMod[i])
+            expectModTrue.append(expectMod[i])
+
+
     
-    return time,thermMod,sampMod,samp2Mod,modelRaw,samp3Mod,wav3,wavTime
 
 
-def getPcrData(filename,date):
-    fullSheet = pd.read_csv(''.join(['../data/',date,'/',filename]))
-    modelRaw = fullSheet['PCR Modeled TempC'].tolist()
-    time = np.array(fullSheet['timeSinceBoot']) - fullSheet['timeSinceBoot'][0]
-    if 'PCR Thermocouple TempC' in fullSheet:
-        sampRaw = fullSheet['PCR Thermocouple TempC'].tolist()
-
-    sampMod = []
-    modelMod = []
-    timeMod = []
-
-    for i in range(len(sampRaw)):
-        if str(sampRaw[i]) != 'nan':
-            sampMod.append(sampRaw[i])
-            modelMod.append(modelRaw[i])
-            timeMod.append(time[i])
-    
-    if len(sampMod) != 0:
-        sampInterp = interp.interp1d(timeMod,sampMod)
-        sampMod = sampInterp(time)
-    return time,1,sampMod,3,modelRaw
-
-def test(filename,date):
-    fullSheet = pd.read_csv(''.join(['../data/',date,'/',filename]))
-    timeRaw = np.array(fullSheet['timeSinceBoot'])
-    if 'PCR Temp' in fullSheet:
-        thermRaw = fullSheet['PCR Temp'].tolist()
-    if 'PCR Thermocouple TempC' in fullSheet:
-        sampRaw = fullSheet['PCR Thermocouple TempC'].tolist()
-        samp = []
-        time = []
-        for i in sampRaw:
-            if str(i) != 'nan' and i not in samp:
-                samp.append(i)
-                time.append(timeRaw[sampRaw.index(i)])
-    return time,samp
+    return timeTrue,thermModTrue,sampMod,samp2Mod,modelModTrue,targetModTrue,expectModTrue#,samp3Mod,wav3,wavTime
 

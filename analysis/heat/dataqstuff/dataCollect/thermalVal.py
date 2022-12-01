@@ -2,71 +2,253 @@ import numpy as np
 import dataToVar as dat
 import matplotlib.pyplot as plt
 import pandas as pd
-from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp
+# from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
+from statsmodels.graphics.factorplots import interaction_plot
+# import statsmodels.api as sm
+
+
+# total = [dat.adv06c]
+total = [dat.adv06a,dat.adv06b,dat.adv06c,dat.adv07a,dat.adv07b,dat.adv07c,dat.adv10a,dat.adv10b,dat.adv10c,
+    dat.adv12a,dat.adv12b,dat.adv12c,dat.adv13a,dat.adv13b,dat.adv13c,dat.adv15a,dat.adv15b,dat.adv15c,
+    dat.adv17a,dat.adv17b,dat.adv17c,dat.adv25a,dat.adv25b,dat.adv25c,dat.adv26a,dat.adv26b,dat.adv26c,
+    dat.adv27a,dat.adv27b,dat.adv27c]
+instList = [6,7,10,12,13,15,17,25,26,27]*3
+instList.sort()
+cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,30,30,30]
+date = [1011,1011,1011,1012,1012,1012,1102,1102,1102,1003,1003,1003,1018,1018,1018,1017,1017,1017,1003,1003,1003,1020,1020,1020,1020,1021,1021,1021,1021,1021]
+
+colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
+
+        
+def hold(temp):
+    alpha = 0.05
+    rawSamp = []
+    magMeans = []
+    modelMagMeans = []
+    percPass = []
+    count2 = 0
+    n = 0
+    for i in total:
+        rawSamp.append(i[2])
+        indx = []
+        count = 0
+        
+        for u in range(len(i[4])):
+            if i[4][u] <temp+.1 and i[4][u] > temp-.1:
+                if i[5][u] == i[6][u] or i[5][u] == temp or i[6][u] == temp:
+                    indx.append(u)
+            if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
+                count+=1 
+        percPass.append(round(count/len(i[2]),2))
+        
+        magMean = np.mean(i[2][min(indx):max(indx)]) #(max(i[2][min(indx):max(indx)])-min(i[2][min(indx):max(indx)]))/np.mean(i[2][min(indx):max(indx)])
+        modelMagMean = np.mean(i[4][min(indx):max(indx)]) #(max(i[4][min(indx):max(indx)])-min(i[4][min(indx):max(indx)]))/np.mean(i[4][min(indx):max(indx)])
+
+        
+        magMeans.append(magMean)
+        modelMagMeans.append(modelMagMean)
+        
+        
+        plt.plot(i[0][min(indx):max(indx)],i[2][min(indx):max(indx)],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
+        plt.plot(i[0][min(indx):max(indx)],i[4][min(indx):max(indx)],'k')
+        count2+=1
+        if count2%3 == 0:
+            n += 1
+        
+
+    plt.legend()
+    plt.title(''.join(['Compare Sample to Model at ',str(temp)]))
+    plt.ylabel('Temp (c)')
+    plt.xlabel('Time (sec)')
+    plt.grid()
+    
+    
+    
+
+
+    dfAnova = pd.DataFrame({'Instrument':instList,'Cup':cupList,'Date':date,'Mean':magMeans,'PercentPass':percPass})
+    # dfAnova.hist('PercentPass')
+    
 
 
 
-data = dat.forward3
-samp = data[2]
-time = data[0][:len(samp)]
-mod = data[4][:len(samp)]
+
+    formula = 'Mean ~ Instrument' 
+    model = ols(formula, dfAnova).fit()
+    aov_table = anova_lm(model, typ=1)
+
+    formula2 = 'PercentPass ~ Instrument' 
+    model2 = ols(formula2, dfAnova).fit()
+    aov_table2 = anova_lm(model2, typ=1)
+    print(aov_table,'\n',aov_table2)
 
 
-count = 0
-flatMod = []
-flatSamp = []
-flatTime = []
-for i in range(len(mod)):
-    if count > 7:
-        dm = (mod[count] - mod[count-6])/(time[count] - time[count-6])
-        if dm <= 0.075 and dm >= -0.075 and mod[i] < 86 and mod[i] > 84:
-            flatMod.append(mod[i])
-            flatSamp.append(samp[i])
-            flatTime.append(time[i])
-    count += 1
 
-dataType = np.ones(len(flatMod)).tolist() + (np.ones(len(flatSamp))*2).tolist()
-# print(dataType)
-dfAnova = pd.DataFrame({'type':dataType,'temp':flatMod+flatSamp})
+    m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
+                            alpha=alpha)
+    print(m_comp)
+    # print(percPass)
+    # print(np.array(magMeans)-90)
 
-formula = 'temp ~ type' 
-model = ols(formula, dfAnova).fit()
-aov_table = anova_lm(model, typ=1)
-print(aov_table)
+    dfAnova.boxplot('Mean',by='Instrument')
+    plt.hlines(temp,1,10,'r')
+    plt.ylabel('Temp (c)')
+    dfAnova.boxplot('PercentPass',by='Instrument')
+    # plt.hlines(temp,0,10,'k')
+    # fig = interaction_plot(dfAnova.Instrument,dfAnova.Date,dfAnova.Mean,ms=10)
+    # plt.show()
 
-# plt.plot(data['timeSinceBoot'],data['Stage1 Thermocouple TempC'])
-# plt.plot(flatTime,flatMod,'o')
-# plt.plot(flatTime,flatSamp,'o')
-# plt.plot(time,samp)
-# plt.plot(time,mod)
+
+    
+    clumpMeans = [magMeans[i:i+3] for i in range(0,len(magMeans),3)]
+    clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
+    
+    limit = temp - 5
+    count = 0
+    for i in clumpMeans:
+        mean_er = np.mean(i) # sample mean
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ci = np.array([mean_er - moe, mean_er + moe])
+        t_limit = (limit - mean_er) / se
+        pr = stats.t.cdf(t_limit, dof)
+        # print('sample size = {:d}'.format(n))
+        # print('sample mean = {:.1f} kg/h'.format(mean_er))
+        # print('sample standard deviation = {:.2f} kg/h'.format(std_dev_er))
+        # print('standard error = {:.3f} kg/h'.format(se))
+        # print('t statistic = {:.3f}'.format(t_star))
+        # print('margin of error = {:.2f} kg/h'.format(moe))
+        print(clumpInst[count])
+        count+=1
+        print('95 % CI for mean = {:.1f}, {:.1f}, kg/h'.format(ci[0], ci[1]))
+        # print('emission limit = {:.2f} kg/h'.format(limit))
+        # print('t limit = {:.2f}'.format(t_limit))
+        print('probability sample drops below model-5c =  {:.3f}'.format(pr))
+     
+     
+
+     
+
+
+
+hold(62)
+
+ 
+
+
+
+
+
+
+
+def all():
+
+    magMeans = []
+    modelMagMeans = []
+    percPass = []
+    meanDif = []
+    for i in total:
+        count = 0
+        for u in range(len(i[4])):
+            if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
+                count+=1
+        
+        magMean = (max(i[2])-min(i[2]))/np.mean(i[2])
+        modelMagMean = (max(i[4])-min(i[4]))/np.mean(i[4])
+        percPass.append(round(count/len(i[2]),2))
+        # if magMean > modelMagMean:
+        magMeans.append(magMean)
+        modelMagMeans.append(modelMagMean)
+        meanDif.append(magMean-modelMagMean)
+
+
+    #     plt.plot(i[0],i[2])
+    #     plt.plot(i[0],i[4],'k')
+    #     # plt.plot(i[0][min(indx):max(indx)],i[1][min(indx):max(indx)],'g')
+    # plt.show()
+
+    dfAnova = pd.DataFrame({'inst':instList,'magMean':magMeans,'PercentPass':percPass})
+    # dfAnova.hist('magMean')
+    # plt.show()
+
+
+
+
+    formula = 'percPass ~ inst' 
+    model = ols(formula, dfAnova).fit()
+    aov_table = anova_lm(model, typ=1)
+    print(aov_table)
+
+
+    m_comp = pairwise_tukeyhsd(endog=dfAnova['PercentPass'], groups=dfAnova['inst'], 
+                            alpha=0.05)
+    print(m_comp)
+    print(percPass)
+    print(meanDif)
+
+
+    dfAnova.boxplot('PercentPass',by='inst')
+    dfAnova.boxplot('magMean',by='inst')
+    plt.show()
+
+
+    # x = np.linspace(min(magMeans),max(magMeans),100)
+    # pdf = stats.norm.pdf(x,loc=np.mean(magMeans),scale=np.std(magMeans))
+    # dfAnova.hist('magMean',density=True)
+    # plt.plot(x,pdf)
+    # plt.show()
+    # s = stats.probplot(magMeans)
+    # print(s[1])
+    # stats.probplot(magMeans,plot=plt)
+    # plt.show()
+
+    for i in range(10,20):
+        plt.plot(total[i][0],total[i][2],label=round(magMeans[i],2))
+        plt.plot(total[i][0],total[i][4],'k')
+    plt.legend()
+    plt.grid()
+    plt.show()
+# all()
+# hold(90)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+# for i in total:
+#     plt.plot(i[0],i[2])
+#     plt.plot(i[0],i[4],'k')
 # plt.show()
-
-m_comp = pairwise_tukeyhsd(endog=dfAnova['temp'], groups=dfAnova['type'], 
-                           alpha=0.05)
-print(m_comp)
-
-# dfAnova.boxplot('temp',by='type')
-# plt.show()
-
-
-def simple_stats1(sample, alpha):
-    mean_er = np.mean(sample) # sample mean
-    std_dev_er = np.std(sample, ddof=1) # sample standard devialtion
-    se = std_dev_er / np.sqrt(len(sample)) # standard error
-    z_star = stats.norm.ppf(1.0 - 0.5 * alpha) # using normal distribution
-    moe = z_star * se # margin of error
-    nci = np.array([mean_er - moe, mean_er + moe]) # normal confidence interval
-    print(nci)
-    return
-
-simple_stats1(flatSamp, 0.05)
-simple_stats1(flatMod, 0.05)
-print(len(flatSamp))
-plt.hist(flatSamp,bins=int(np.sqrt(len(flatSamp))))
-# plt.hist(flatMod,bins=int(np.sqrt(len(f   latMod))))
-
-plt.show()

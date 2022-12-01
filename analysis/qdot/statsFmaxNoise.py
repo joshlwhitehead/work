@@ -5,6 +5,7 @@ import importData
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
+from scipy import stats
 
 data = pd.read_csv('pmmv_255.csv')
 data.dropna()
@@ -41,6 +42,11 @@ else:
     lot = np.ones(len(inst))
 
 
+x = np.linspace(min(data['fmax']),max(data['fmax']),100)
+plt.hist(data['fmax'],density=True,bins=int(np.sqrt(len(data['fmax']))))
+pdf = stats.norm.pdf(x,loc=np.mean(data['fmax']),scale=np.std(data['fmax']))
+plt.plot(x,pdf)
+plt.show()
 
 fmaxGood = []
 instGood = []

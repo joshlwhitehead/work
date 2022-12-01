@@ -394,21 +394,21 @@ date = '13Sep2022'
 
 # date = '23Sep2022'
 
-# trip = gd.getData('tripleTCa.csv',date)
-"""
+# # trip = gd.getData('tripleTCa.csv',date)
+# """
 
-date = '11Oct2022'
+# date = '11Oct2022'
 
-forward1 = gd.getData('forwardNew2.csv',date)
-forward2 = gd.getData('forwardNew3.csv',date)
-forward3 = gd.getData('forwardNew4.csv',date)
-backward1 = gd.getData('backwardNew2.csv',date)
-backward2 = gd.getData('backwardNew3.csv',date)
-backward3 = gd.getData('backwardsJustChan1.csv',date)
-backward4 = gd.getData('backwardsJustChan2.csv',date)
+# forward1 = gd.getData('forwardNew2.csv',date)
+# forward2 = gd.getData('forwardNew3.csv',date)
+# forward3 = gd.getData('forwardNew4.csv',date)
+# backward1 = gd.getData('backwardNew2.csv',date)
+# backward2 = gd.getData('backwardNew3.csv',date)
+# backward3 = gd.getData('backwardsJustChan1.csv',date)
+# backward4 = gd.getData('backwardsJustChan2.csv',date)
 
-noInsert1 = gd.getData('noInsertNoBall1.csv',date)
-noInsert2 = gd.getData('noInsertNoBall2.csv',date)
+# noInsert1 = gd.getData('noInsertNoBall1.csv',date)
+# noInsert2 = gd.getData('noInsertNoBall2.csv',date)
 
 
 # date = '12Oct2022'
@@ -425,19 +425,63 @@ noInsert2 = gd.getData('noInsertNoBall2.csv',date)
 
 
 
-date = '10Nov2022'
+# date = '10Nov2022'
 
-smallA = gd.getData('Adv02_P26_DualNormal_221109_Run1.csv',date)
-smallB = gd.getData('Adv02_P26_DualNormal_221109_Run2.csv',date)
-largeA = gd.getData('Adv08_P26_NewModel_221108_Run1.csv',date)
-largeB = gd.getData('Adv08_P26_NewModel_221108_Run3.csv',date)
-obroundA = gd.getData('Adv11_P26_DualNormal_221108_Run2.csv',date)
-obroundB = gd.getData('Adv11_P26_DualNormal_221108_Run3.csv',date)
+# smallA = gd.getData('Adv02_P26_DualNormal_221109_Run1.csv',date)
+# smallB = gd.getData('Adv02_P26_DualNormal_221109_Run2.csv',date)
+# largeA = gd.getData('Adv08_P26_NewModel_221108_Run1.csv',date)
+# largeB = gd.getData('Adv08_P26_NewModel_221108_Run3.csv',date)
+# obroundA = gd.getData('Adv11_P26_DualNormal_221108_Run2.csv',date)
+# obroundB = gd.getData('Adv11_P26_DualNormal_221108_Run3.csv',date)
 
 
-backSmallA = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run1.csv',date)
-backSmallB = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run2.csv',date)
-backLargeA = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run1.csv',date)
-backLargeB = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run2.csv',date)
-backObroundA = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run1.csv',date)
-backObroundB = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run2.csv',date)
+# backSmallA = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run1.csv',date)
+# backSmallB = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run2.csv',date)
+# backLargeA = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run1.csv',date)
+# backLargeB = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run2.csv',date)
+# backObroundA = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run1.csv',date)
+# backObroundB = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run2.csv',date)
+
+
+
+date = '30Nov2022'
+
+adv06a = gd.getData('Adv06_P32_24a400_221011_Run1.csv',date)
+adv06b = gd.getData('Adv06_P32_cf3ef3_221011_Run2.csv',date)                        
+adv06c = gd.getData('Adv06_P32_421f33_221011_Run3.csv',date)
+
+adv07a = gd.getData('Adv07_P12_477041_221012_Run1.csv',date)
+adv07b = gd.getData('Adv07_P12_18ef14_221012_Run2.csv',date)
+adv07c = gd.getData('Adv07_P12_e29bd3_221012_Run3.csv',date)
+
+adv10a = gd.getData('Adv10_P30_cb2fa8_221102_Run1.csv',date)
+adv10b = gd.getData('Adv10_P30_c96e66_221102_Run2.csv',date)
+adv10c = gd.getData('Adv10_P30_f876db_221102_Run3.csv',date)
+
+adv12a = gd.getData('Adv12_P30_9bbb32_221003_Run1.csv',date)
+adv12b = gd.getData('Adv12_P30_9d3a83_221003_Run2.csv',date)
+adv12c = gd.getData('Adv12_P30_38c1c8_221003_Run3.csv',date)
+
+adv13a = gd.getData('Adv13_P30_838251_221018_Run1.csv',date)
+adv13b = gd.getData('Adv13_P30_dcc1e9_221018_Run2.csv',date)
+adv13c = gd.getData('Adv13_P30_25731e_221018_Run3.csv',date)
+
+adv15a = gd.getData('Adv15_P30_1d0616_221017_Run1.csv',date)
+adv15b = gd.getData('Adv15_P30_99db7f_221017_Run2.csv',date)
+adv15c = gd.getData('Adv15_P30_cf6317_221017_Run3.csv',date)
+
+adv17a = gd.getData('Adv17_P30_b0a25b_221003_Run1.csv',date)
+adv17b = gd.getData('Adv17_P30_953a23_221003_Run2.csv',date)
+adv17c = gd.getData('Adv17_P30_eb43b0_221003_Run3.csv',date)
+
+adv25a = gd.getData('Adv25_P30_f30b96_221020_Run1.csv',date)
+adv25b = gd.getData('Adv25_P30_c6ba11_221020_Run2.csv',date)
+adv25c = gd.getData('Adv25_P30_a2aab5_221020_Run3.csv',date)
+
+adv26a = gd.getData('Adv26_P30_5f7247_221020_Run1.csv',date)
+adv26b = gd.getData('Adv26_P30_8cfa6a_221021_Run2.csv',date)
+adv26c = gd.getData('Adv26_P31_303361_221021_Run3.csv',date)
+
+adv27a = gd.getData('Adv27_P30_820624_2210211_Run1.csv',date)
+adv27b = gd.getData('Adv27_P30_17f621_221021_Run2.csv',date)
+adv27c = gd.getData('Adv27_P30_381c2a_221021_Run3.csv',date)
