@@ -18,6 +18,7 @@ total = [dat.adv06a,dat.adv06b,dat.adv06c,dat.adv07a,dat.adv07b,dat.adv07c,dat.a
     dat.adv27a,dat.adv27b,dat.adv27c]
 instList = [6,7,10,12,13,15,17,25,26,27]*3
 instList.sort()
+instListShort = [6,7,10,12,13,15,17,25,26,27]
 cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,30,30,30]
 date = [1011,1011,1011,1012,1012,1012,1102,1102,1102,1003,1003,1003,1018,1018,1018,1017,1017,1017,1003,1003,1003,1020,1020,1020,1020,1021,1021,1021,1021,1021]
 
@@ -100,8 +101,8 @@ def hold(temp):
     dfAnova.boxplot('PercentPass',by='Instrument')
     # plt.hlines(temp,0,10,'k')
     # fig = interaction_plot(dfAnova.Instrument,dfAnova.Date,dfAnova.Mean,ms=10)
-    # plt.show()
-
+    plt.show()
+    
 
     
     clumpMeans = [magMeans[i:i+3] for i in range(0,len(magMeans),3)]
@@ -109,6 +110,7 @@ def hold(temp):
     
     limit = temp - 5
     count = 0
+    probs = []
     for i in clumpMeans:
         mean_er = np.mean(i) # sample mean
         std_dev_er = np.std(i, ddof=1) # sample standard devialtion
@@ -120,6 +122,7 @@ def hold(temp):
         ci = np.array([mean_er - moe, mean_er + moe])
         t_limit = (limit - mean_er) / se
         pr = stats.t.cdf(t_limit, dof)
+        probs.append(pr)
         # print('sample size = {:d}'.format(n))
         # print('sample mean = {:.1f} kg/h'.format(mean_er))
         # print('sample standard deviation = {:.2f} kg/h'.format(std_dev_er))
@@ -127,13 +130,29 @@ def hold(temp):
         # print('t statistic = {:.3f}'.format(t_star))
         # print('margin of error = {:.2f} kg/h'.format(moe))
         print(clumpInst[count])
-        count+=1
-        print('95 % CI for mean = {:.1f}, {:.1f}, kg/h'.format(ci[0], ci[1]))
+        
+        # print('95 % CI for mean = {:.1f}, {:.1f}, kg/h'.format(ci[0], ci[1]))
         # print('emission limit = {:.2f} kg/h'.format(limit))
         # print('t limit = {:.2f}'.format(t_limit))
         print('probability sample drops below model-5c =  {:.3f}'.format(pr))
-     
-     
+
+        plt.hlines(count,ci[0],ci[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+
+    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
+    
+
+    plt.plot(probs,'o')
+    plt.grid()
+    plt.xlabel('AdvB')
+    plt.ylabel('Prob Mean < Model-5c')
+    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.show()
 
      
 
@@ -142,7 +161,18 @@ def hold(temp):
 hold(62)
 
  
+def plotSpec(toPlot):
+    for i in toPlot:
+        plt.plot(total[i][0],total[i][2])
+        plt.plot(total[i][0],total[i][4],'k')
 
+    plt.grid()
+    plt.show()
+    
+
+# josh = [12,13,14,21,22,23]
+josh = [15,16,17,18,19,20]
+# plotSpec(josh)
 
 
 
