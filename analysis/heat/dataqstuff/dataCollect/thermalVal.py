@@ -20,7 +20,9 @@ instList = [6,7,10,12,13,15,17,25,26,27]*3
 instList.sort()
 instListShort = [6,7,10,12,13,15,17,25,26,27]
 cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,30,30,30]
+cupListClump = [32,12,30,30,30,30,30,30,30,30]
 date = [1011,1011,1011,1012,1012,1012,1102,1102,1102,1003,1003,1003,1018,1018,1018,1017,1017,1017,1003,1003,1003,1020,1020,1020,1020,1021,1021,1021,1021,1021]
+dateClump = [1011,1012,1102,1003,1018,1017,1003,1020,1021,1021]
 
 colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
 
@@ -96,9 +98,19 @@ def hold(temp):
     # print(np.array(magMeans)-90)
 
     dfAnova.boxplot('Mean',by='Instrument')
+    count = 1
+    for i in range(len(cupListClump)):
+        plt.text(count,85,''.join(['p',str(cupListClump[i])]))
+        plt.text(count,84.75,str(dateClump[i]))
+        count+=1
     plt.hlines(temp,1,10,'r')
     plt.ylabel('Temp (c)')
     dfAnova.boxplot('PercentPass',by='Instrument')
+    count = 1
+    for i in range(len(cupListClump)):
+        plt.text(count,0.55,''.join(['p',str(cupListClump[i])]))
+        plt.text(count,.54,str(dateClump[i]))
+        count+=1
     # plt.hlines(temp,0,10,'k')
     # fig = interaction_plot(dfAnova.Instrument,dfAnova.Date,dfAnova.Mean,ms=10)
     plt.show()
@@ -158,7 +170,7 @@ def hold(temp):
 
 
 
-hold(90)
+hold(62)
 
  
 def plotSpec(toPlot):
