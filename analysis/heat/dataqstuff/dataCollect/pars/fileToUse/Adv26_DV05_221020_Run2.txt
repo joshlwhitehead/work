@@ -1,0 +1,501 @@
+DATAQ: | PcrThermoTempC = 26.92  |
+(1841782) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1841842) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1841844) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1841902) BLE_PERIPH: App to Instrument Data
+(1841903) BLE_PERIPH: Received 19/19
+(1841905) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+malformed:  (1841923) BLE_PERIPH: Sending Response Packet: [33,true,255,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs":6,"excitationOutputPercentage":100.00,"doSamplePrep":false,"samplePrepTempSteps":[{"tempC":90.00,"holdSeconds":60.00,"rampRate":1000.00,"performCapture":0},{"tempC":75.00,"holdSeconds":120.00,"rampRate":1000.00,"performCapture":0},{"tempC":115.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":105.00,"holdSeconds":120.00,"rampRate":1000.00,"performCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCupVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":true,"pcrPreheatTempSteps":[{"tempC":55.00,"holdSeconds":300.00,"rampRate":1000.00,"performCapture":0},{"tempC":95.00,"holdSeconds":30.
+00,"rampRate":1000.00,"performCapture":0}],"doPcr":true,"pcrCycleCount":35,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":0.00,"rampRate":1000.00,"performCapture":0},{"tempC":55.00,"holdSeconds":2.00,"rampRate":1000.00,"performCapture":1}],"doMelt":true,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":60.00,"meltFinishTemp":95.00,"meltAcquisitionDelayMs":571.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.35}],0]
+(1842040) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+malformed: [33, true, 255, [{
+malformed: 		"doContinuousAcquisition":	true,
+malformed: 		"continuousAcquisitionSampleDelayMs":	1000,
+malformed: 		"isMocked":	false,
+malformed: 		"colorSensorGain":	6,
+malformed: 		"colorSensorIntegrationTimeMs":	25,
+malformed: 		"excitationOnDelayTimeMs":	6,
+malformed: 		"excitationOutputPercentage":	100.00,
+malformed: 		"doSamplePrep":	false,
+malformed: 		"samplePrepTempSteps":	[{
+malformed: 				"tempC":	90.00,
+malformed: 				"holdSeconds":	60.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}, {
+malformed: 				"tempC":	75.00,
+malformed: 				"holdSeconds":	120.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}, {
+malformed: 				"tempC":	115.00,
+malformed: 				"holdSeconds":	30.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}, {
+malformed: 				"tempC":	105.00,
+malformed: 				"holdSeconds":	120.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}],
+malformed: 		"samplePrepPcrChamberPreheatTempC":	45.00,
+malformed: 		"samplePrepDoPlunge":	true,
+malformed: 		"samplePrepDoPtcSeal":	true,
+malformed: 		"samplePreDoImmediateSeal":	false,
+malformed: 		"samplePrepPtcSealTimeMs":	30000,
+malformed: 		"doCupVibration":	false,
+malformed: 		"thumperCycleCount":	0,
+malformed: 		"thumperCyclingSteps":	[],
+malformed: 		"doRtSteps":	true,
+malformed: 		"pcrPreheatTempSteps":	[{
+malformed: 				"tempC":	55.00,
+malformed: 				"holdSeconds":	300.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}, {
+malformed: 				"tempC":	95.00,
+malformed: 				"holdSeconds":	30.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}],
+malformed: 		"doPcr":	true,
+malformed: 		"pcrCycleCount":	35,
+malformed: 		"pcrCyclingTempSteps":	[{
+malformed: 				"tempC":	95.00,
+malformed: 				"holdSeconds":	0.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	0
+malformed: 			}, {
+malformed: 				"tempC":	55.00,
+malformed: 				"holdSeconds":	2.00,
+malformed: 				"rampRate":	1000.00,
+malformed: 				"performCapture":	1
+malformed: 			}],
+malformed: 		"doMelt":	true,
+malformed: 		"meltStartHoldTimeSeconds":	15.00,
+malformed: 		"meltStartTemp":	55.00,
+malformed: 		"meltStartCaptureTemp":	60.00,
+malformed: 		"meltFinishTemp":	95.00,
+malformed: 		"meltAcquisitionDelayMs":	571.00,
+malformed: 		"meltAcquisitionsPerC":	5,
+malformed: 		"meltRampRateDegCPerSecond":	0.35
+malformed: 	}], 0]
+(1842049) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/1404
+(1842217) thermalControlTask: thermal control sleep.
+(1842262) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=0): [33,true,255,[{"doContinuousAcquisition":true,"continuousAcquisitionSampleDelayMs":1000,"isMocked":false,"colorSensorGain":6,"colorSensorIntegrationTimeMs":25,"excitationOnDelayTimeMs
+(1842352) BLE_PERIPH: Instrument to App Transaction Write 183/1404
+(1842354) BLE_PERIPH: Instrument to App Transaction Read/Notify 183/1404
+DATAQ: | PcrThermoTempC = 26.91  |
+(1842412) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=183): ":6,"excitationOutputPercentage":100.00,"doSamplePrep":false,"samplePrepTempSteps":[{"tempC":90.00,"holdSeconds":60.00,"rampRate":1000.00,"performCapture":0},{"tempC":75.00,"holdSecon
+(1842502) BLE_PERIPH: Instrument to App Transaction Write 366/1404
+(1842504) BLE_PERIPH: Instrument to App Transaction Read/Notify 366/1404
+(1842562) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=366): ds":120.00,"rampRate":1000.00,"performCapture":0},{"tempC":115.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0},{"tempC":105.00,"holdSeconds":120.00,"rampRate":1000.00,"p
+(1842652) BLE_PERIPH: Instrument to App Transaction Write 549/1404
+(1842654) BLE_PERIPH: Instrument to App Transaction Read/Notify 549/1404
+(1842711) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=549): erformCapture":0}],"samplePrepPcrChamberPreheatTempC":45.00,"samplePrepDoPlunge":true,"samplePrepDoPtcSeal":true,"samplePreDoImmediateSeal":false,"samplePrepPtcSealTimeMs":30000,"doCu
+(1842802) BLE_PERIPH: Instrument to App Transaction Write 732/1404
+(1842804) BLE_PERIPH: Instrument to App Transaction Read/Notify 732/1404
+(1842862) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=732): pVibration":false,"thumperCycleCount":0,"thumperCyclingSteps":[],"doRtSteps":true,"pcrPreheatTempSteps":[{"tempC":55.00,"holdSeconds":300.00,"rampRate":1000.00,"performCapture":0},{"t
+DATAQ: | PcrThermoTempC = 26.87  |
+(1842982) BLE_PERIPH: Instrument to App Transaction Write 915/1404
+(1842984) BLE_PERIPH: Instrument to App Transaction Read/Notify 915/1404
+(1843042) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=915): empC":95.00,"holdSeconds":30.00,"rampRate":1000.00,"performCapture":0}],"doPcr":true,"pcrCycleCount":35,"pcrCyclingTempSteps":[{"tempC":95.00,"holdSeconds":0.00,"rampRate":1000.00,"pe
+(1843132) BLE_PERIPH: Instrument to App Transaction Write 1098/1404
+(1843134) BLE_PERIPH: Instrument to App Transaction Read/Notify 1098/1404
+(1843192) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=183 mtu=183, totalSize=1404, currentIndex=1098): rformCapture":0},{"tempC":55.00,"holdSeconds":2.00,"rampRate":1000.00,"performCapture":1}],"doMelt":true,"meltStartHoldTimeSeconds":15.00,"meltStartTemp":55.00,"meltStartCaptureTemp":
+(1843282) BLE_PERIPH: Instrument to App Transaction Write 1281/1404
+(1843284) BLE_PERIPH: Instrument to App Transaction Read/Notify 1281/1404
+(1843341) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=123 mtu=183, totalSize=1404, currentIndex=1281): 60.00,"meltFinishTemp":95.00,"meltAcquisitionDelayMs":571.00,"meltAcquisitionsPerC":5,"meltRampRateDegCPerSecond":0.35}],0]
+(1843402) BLE_PERIPH: Instrument to App Transaction Write 1404/1404
+(1843404) BLE_PERIPH: Instrument to App Transaction Read/Notify 1404/1404
+(1843462) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+DATAQ: | PcrThermoTempC = 26.91  |
+(1844062) BLE_PERIPH: App to Instrument Transaction Write 0/84
+(1844064) BLE_PERIPH: App to Instrument Transaction Notify 0/84
+(1844123) BLE_PERIPH: App to Instrument Data
+(1844124) BLE_PERIPH: Received 84/84
+(1844127) BLE_PERIPH: App to Instrument Transaction Notify 84/84
+DATAQ: | PcrThermoTempC = 26.98  |
+(1844165) experimentRequestStateChange: Experiment State Transition IDLE -> START
+(1844165) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 16 seconds
+(1844170) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds
+(1844178) DEVICE USAGE: Printing device usage logs
+(1844183) DEVICE USAGE: Lifter Up Times:                         1
+(1844190) DEVICE USAGE: Lifter Down Times:                       2
+(1844197) DEVICE USAGE: Thumper Vibrated Times:                  0
+(1844204) DEVICE USAGE: Thumper Stalled Times:                   3
+(1844211) DEVICE USAGE: Solenoid Times:                          6
+(1844218) DEVICE USAGE: Plunge Times:                            0
+(1844225) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(1844234) DEVICE USAGE: Laser Activation Times:                  1856
+(1844241) DEVICE USAGE: Fluorimiter Reads:                       5568
+(1844249) DEVICE USAGE: Front Button Presses:                    4
+(1844256) DEVICE USAGE: Back Button Presses:                     13
+(1844263) DEVICE USAGE: Total Completed Runs:                    2
+(1844270) DEVICE USAGE: PTC On Time (Seconds):                   0
+(1844277) DEVICE USAGE: Treatment Chamber TEC On Time (Seconds): 652
+(1844284) DEVICE USAGE: PCR Chamber TEC On Time (Seconds):       1328
+(1844291) DEVICE USAGE: Fan On Time (Seconds):                   2684
+(1844299) _airboatStateEnter: Lifter Down
+(1844303) experimentStateStartEnter: Experiment starting
+(1844334) taskMonitor_task: Task Thermal Control Task hasn't checked in for 200 ms...
+(1844334) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(1844350) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(1844353) _deleteFile: Failed to delete file because erno 2
+(1844355) colorSensorSetGain: Setting color sensor gain to 6
+(1844362) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+(1844370) systemRequestStateChange: System State Transition READY -> RUNNING
+(1844377) BLE_PERIPH: Sending Response Packet: [35,true,256,[],0]
+(1844384) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/18
+(1844394) blePeriphNotifySubscription: ENTER NOTIFY
+(1844399) thermalControlTask: thermal control sleep.
+(1844404) BLE_PERIPH: Notifying
+(1844409) comm_getNotifyId: Attempting to get notify id
+(1844415) BLE_PERIPH: Notify Command Id = 34
+(1844421) systemRequestStateChange: Notify exit state change
+(1844426) colorSensorSetGain: Setting color sensor gain to 7
+(1844433) experimentTask: Experiment State Transition START -> SAMPLE_PREP
+(1844441) colorSensorSetIntegrationTimeMs: Setting integration time to 100
+(1844448) blePeriphNotifySubscription: ENTER NOTIFY
+(1844454) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=18 mtu=183, totalSize=18, currentIndex=0): [35,true,256,[],0]
+(1844466) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(1844474) ptcInterfaceSetEnable: PTC CHANGE STATE
+(1844480) BLE_PERIPH: Notifying
+(1844484) comm_getNotifyId: Attempting to get notify id
+(1844490) BLE_PERIPH: Notify Command Id = 34
+(1844512) BLE_PERIPH: Instrument to App Transaction Write 18/18
+(1844514) BLE_PERIPH: Instrument to App Transaction Read/Notify 18/18
+(1844572) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+DATAQ: | PcrThermoTempC = 26.96  |
+(1844596) taskMonitor_task: Task Experiment Task hasn't checked in for 400 ms...
+(1844597) experimentTask: Experiment State Transition SAMPLE_PREP -> RT STEPS
+(1844602) eventMarker: 299, Start RT
+(1844606) experimentStateRtEnter: Entering Experiment State RT
+(1844613) _applyThermalBrakeUpdate: Worst Temp: 34.529469
+(1844619) _updateInertiaCompensation: overshoot: -0.470531, updatedComp: -0.470531, atIndex: 1 atTemp: 35.0
+(1844630) _resetThermalControlState: RESET Peltier 1 control state
+(1844637) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1844643) thermalControlSetTargetTempC: [1] MAX RAMPING  goto 55.0
+(1844650) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1844657) _setThermalControlState: thermalControl-1: changing state 3->1
+(1844665) tecCurvePredictorSetHoldPower: hold power: 31.883076 old: 25.000000 temp: 30.080639   NOT SET
+(1844677) thermalControlSetEnable: Enabling Peltier 1
+(1844681) blePeriphNotifySubscription: ENTER NOTIFY
+(1844687) BLE_PERIPH: Notifying
+(1844690) comm_getNotifyId: Attempting to get notify id
+(1844697) BLE_PERIPH: Notify Command Id = 34
+(1844701) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1844710) BLE_PERIPH: App to Instrument Data
+(1844715) BLE_PERIPH: Received 19/19
+(1844720) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(1844727) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1844734) thermalControlTask: thermal control sleep.
+(1844744) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(1844748) BLE_PERIPH: Sending Response Packet: [34,true,258,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",443,28.51,30.10,3,3,49,0.00],0]
+(1844763) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111
+(1844782) TC: TC-1 = 30.10, modeled = 30.08, target = 55.00, heatSink = 30.06, output = 100.0, timeout = 50, TecRate = 0.00
+(1844837) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1844842) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,258,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",443,28.51,30.10,3,3,49,0.00],0]
+(1844902) BLE_PERIPH: Instrument to App Transaction Write 111/111
+(1844904) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111
+(1844931) TC: TC-1 = 30.10, modeled = 30.08, target = 55.00, heatSink = 30.07, output = 100.0, timeout = 200, TecRate = 0.00
+(1844962) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1845022) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1845024) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1845081) TC: TC-1 = 30.20, modeled = 30.09, target = 55.00, heatSink = 30.06, output = 100.0, timeout = 350, TecRate = 0.10
+(1845084) BLE_PERIPH: App to Instrument Data
+(1845089) BLE_PERIPH: Received 19/19
+(1845095) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1845118) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1845124) BLE_PERIPH: Sending Response Packet: [34,true,260,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",820,28.51,30.20,3,3,49,0.00],0]
+(1845131) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/111
+(1845202) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=111 mtu=183, totalSize=111, currentIndex=0): [34,true,260,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",820,28.51,30.20,3,3,49,0.00],0]
+(1845214) _readLifterSwitches: New Lifter Up Value: 0
+(1845218) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1845249) TC: TC-1 = 30.39, modeled = 30.12, target = 55.00, heatSink = 30.05, output = 100.0, timeout = 500, TecRate = 0.20
+(1845262) BLE_PERIPH: Instrument to App Transaction Write 111/111
+(1845264) BLE_PERIPH: Instrument to App Transaction Read/Notify 111/111
+(1845322) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1845326) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+DATAQ: | PcrThermoTempC = 27.01  |
+(1845382) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1845384) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1845399) TC: TC-1 = 31.29, modeled = 30.22, target = 55.00, heatSink = 29.99, output = 100.0, timeout = 650, TecRate = 1.05
+(1845427) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...
+(1845430) colorSensorSetGain: Setting color sensor gain to 6
+(1845432) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+(1845443) BLE_PERIPH: App to Instrument Data
+(1845444) BLE_PERIPH: Received 19/19
+(1845451) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1845492) BLE_PERIPH: Sending Response Packet: [34,true,259,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1188,28.51,31.59,3,3,49,0.00],0]
+(1845497) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1845517) colorSensorSetGain: Setting color sensor gain to 7
+(1845522) colorSensorSetIntegrationTimeMs: Setting integration time to 100
+(1845562) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,259,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1188,28.51,31.59,3,3,49,0.00],0]
+(1845572) TC: TC-1 = 32.33, modeled = 30.42, target = 55.00, heatSink = 29.93, output = 100.0, timeout = 800, TecRate = 1.60
+(1845622) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1845624) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1845682) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1845716) TC: TC-1 = 33.69, modeled = 30.73, target = 55.00, heatSink = 29.84, output = 100.0, timeout = 950, TecRate = 2.39
+(1845738) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1845742) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1845744) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1845802) BLE_PERIPH: App to Instrument Data
+(1845803) BLE_PERIPH: Received 19/19
+(1845805) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1845810) BLE_PERIPH: Sending Response Packet: [34,true,262,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1505,28.51,34.14,3,3,49,0.00],0]
+(1845823) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1845841) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1845892) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,262,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1505,28.51,34.14,3,3,49,0.00],0]
+(1845902) TC: TC-1 = 35.12, modeled = 31.15, target = 55.00, heatSink = 29.77, output = 100.0, timeout = 1100, TecRate = 3.06
+(1845949) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+DATAQ: | PcrThermoTempC = 28.26  |
+(1845982) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1845984) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1846042) TC: TC-1 = 36.80, modeled = 31.69, target = 55.00, heatSink = 29.69, output = 100.0, timeout = 1250, TecRate = 3.80
+(1846072) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1846132) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1846134) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1846192) BLE_PERIPH: App to Instrument Data
+(1846192) TC: TC-1 = 38.35, modeled = 32.30, target = 55.00, heatSink = 29.62, output = 100.0, timeout = 1400, TecRate = 4.27
+(1846199) BLE_PERIPH: Received 19/19
+(1846205) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1846229) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1846235) BLE_PERIPH: Sending Response Packet: [34,true,264,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1931,28.51,38.86,3,3,49,0.00],0]
+(1846242) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1846312) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,264,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",1931,28.51,38.86,3,3,49,0.00],0]
+(1846330) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1846360) TC: TC-1 = 39.98, modeled = 32.99, target = 55.00, heatSink = 29.55, output = 100.0, timeout = 1550, TecRate = 4.76
+(1846372) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1846374) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1846430) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 200 ms
+(1846432) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1846441) systemTasksMonitorStack: Stack Watermark(Task Monitor): 2216
+DATAQ: | PcrThermoTempC = 30.18  |
+(1846492) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1846494) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1846510) TC: TC-1 = 41.81, modeled = 33.76, target = 55.00, heatSink = 29.47, output = 100.0, timeout = 1700, TecRate = 5.31
+(1846532) taskMonitor_task: Task Fluorimeter Task hasn't checked in for 500 ms...
+(1846549) colorSensorSetGain: Setting color sensor gain to 6
+(1846549) colorSensorSetIntegrationTimeMs: Setting integration time to 25
+(1846552) BLE_PERIPH: App to Instrument Data
+(1846557) BLE_PERIPH: Received 19/19
+(1846564) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1846603) BLE_PERIPH: Sending Response Packet: [34,true,263,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2299,28.50,42.94,3,3,49,0.00],0]
+(1846608) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1846672) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,263,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2299,28.50,42.94,3,3,49,0.00],0]
+(1846682) TC: TC-1 = 43.51, modeled = 34.60, target = 55.00, heatSink = 29.39, output = 100.0, timeout = 1850, TecRate = 5.65
+(1846732) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1846734) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1846792) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1846827) TC: TC-1 = 45.35, modeled = 35.48, target = 55.00, heatSink = 29.32, output = 100.0, timeout = 2000, TecRate = 6.07
+(1846852) BLE_PERIPH: App to Instrument Transaction Write 0/18
+(1846854) BLE_PERIPH: App to Instrument Transaction Notify 0/18
+(1846912) BLE_PERIPH: App to Instrument Data
+(1846913) BLE_PERIPH: Received 18/18
+(1846915) BLE_PERIPH: App to Instrument Transaction Notify 18/18
+(1846921) BLE_PERIPH: Sending Response Packet: [34,true,265,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2616,28.51,46.51,3,3,49,0.00],0]
+(1846933) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1847002) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,265,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2616,28.51,46.51,3,3,49,0.00],0]
+(1847012) TC: TC-1 = 47.63, modeled = 36.47, target = 55.00, heatSink = 29.22, output = 100.0, timeout = 2150, TecRate = 6.70
+(1847062) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1847064) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1847122) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+DATAQ: | PcrThermoTempC = 29.92  |
+(1847152) TC: TC-1 = 49.34, modeled = 37.49, target = 55.00, heatSink = 29.15, output = 100.0, timeout = 2300, TecRate = 6.82
+(1847182) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1847184) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1847242) BLE_PERIPH: App to Instrument Data
+(1847243) BLE_PERIPH: Received 19/19
+(1847245) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1847295) BLE_PERIPH: Sending Response Packet: [34,true,267,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2991,28.50,50.90,3,3,49,0.00],0]
+(1847301) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1847320) TC: TC-1 = 50.90, modeled = 38.51, target = 55.00, heatSink = 29.09, output = 100.0, timeout = 2450, TecRate = 6.81
+(1847362) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,267,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",2991,28.50,50.90,3,3,49,0.00],0]
+(1847422) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1847424) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1847469) TC: TC-1 = 52.51, modeled = 39.54, target = 55.00, heatSink = 29.03, output = 100.0, timeout = 2600, TecRate = 6.88
+(1847482) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1847542) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1847544) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1847602) BLE_PERIPH: App to Instrument Data
+(1847603) BLE_PERIPH: Received 19/19
+(1847605) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1847612) BLE_PERIPH: Sending Response Packet: [34,true,269,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",3308,28.50,54.10,3,3,49,0.00],0]
+(1847623) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1847643) TC: TC-1 = 54.61, modeled = 40.61, target = 55.00, heatSink = 28.95, output = 100.0, timeout = 2750, TecRate = 7.50
+(1847721) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,269,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",3308,28.50,54.10,3,3,49,0.00],0]
+DATAQ: | PcrThermoTempC = 31.91  |
+(1847782) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1847784) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1847792) TC: TC-1 = 55.65, modeled = 41.63, target = 55.00, heatSink = 28.91, output = 100.0, timeout = 2900, TecRate = 6.89
+(1847842) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1847902) BLE_PERIPH: App to Instrument Transaction Write 0/19
+(1847904) BLE_PERIPH: App to Instrument Transaction Notify 0/19
+(1847942) TC: TC-1 = 57.23, modeled = 42.67, target = 55.00, heatSink = 28.85, output = 100.0, timeout = 3050, TecRate = 6.93
+(1847962) BLE_PERIPH: App to Instrument Data
+(1847963) BLE_PERIPH: Received 19/19
+(1847965) BLE_PERIPH: App to Instrument Transaction Notify 19/19
+(1847985) BLE_PERIPH: Sending Response Packet: [34,true,268,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",3681,28.50,57.75,3,3,49,0.00],0]
+(1847990) BLE_PERIPH: Instrument to App Transaction Read/Notify 0/112
+(1848052) instrumentToAppDataCharAccessCb: Sending Chunk(chunkSize=112 mtu=183, totalSize=112, currentIndex=0): [34,true,268,["2022-10-21T00:26:34.835Z","416ea15b-1c1d-4d86-aab3-452c99cb3296",3681,28.50,57.75,3,3,49,0.00],0]
+(1848108) TC: TC-1 = 59.30, modeled = 43.78, target = 55.00, heatSink = 28.79, output = 100.0, timeout = 3200, TecRate = 7.32
+(1848112) BLE_PERIPH: Instrument to App Transaction Write 112/112
+(1848119) BLE_PERIPH: Instrument to App Transaction Read/Notify 112/112
+(1848172) BLE_PERIPH: Instrument to App Transaction Write -1/-1
+(1848258) TC: TC-1 = 60.84, modeled = 44.84, target = 55.00, heatSink = 28.74, output = 100.0, timeout = 3350, TecRate = 7.53
+DATAQ: | PcrThermoTempC = 34.74  |
+(1848408) TC: TC-1 = 62.18, modeled = 45.91, target = 55.00, heatSink = 28.69, output = 100.0, timeout = 3500, TecRate = 7.11
+(1848558) TC: TC-1 = 63.45, modeled = 46.96, target = 55.00, heatSink = 28.66, output = 100.0, timeout = 3650, TecRate = 6.91
+(1848708) TC: TC-1 = 64.70, modeled = 47.98, target = 55.00, heatSink = 28.63, output = 100.0, timeout = 3800, TecRate = 6.75
+(1848858) TC: TC-1 = 66.34, modeled = 49.03, target = 55.00, heatSink = 28.58, output = 100.0, timeout = 3950, TecRate = 6.89
+DATAQ: | PcrThermoTempC = 41.06  |
+(1849008) TC: TC-1 = 67.54, modeled = 50.05, target = 55.00, heatSink = 28.54, output = 100.0, timeout = 4100, TecRate = 6.71
+(1849158) TC: TC-1 = 68.71, modeled = 51.04, target = 55.00, heatSink = 28.50, output = 100.0, timeout = 4250, TecRate = 6.55
+(1849313) TC: TC-1 = 70.24, modeled = 52.06, target = 55.00, heatSink = 28.46, output = -50.0, timeout = 4350, TecRate = 6.67
+(1849463) TC: TC-1 = 71.37, modeled = 53.04, target = 55.00, heatSink = 28.43, output = -100.0, timeout = 4500, TecRate = 6.50
+DATAQ: | PcrThermoTempC = 52.43  |
+(1849614) TC: TC-1 = 72.41, modeled = 54.00, target = 55.00, heatSink = 28.41, output = -100.0, timeout = 4650, TecRate = 6.29
+(1849764) TC: TC-1 = 73.33, modeled = 54.93, target = 55.00, heatSink = 28.41, output = -100.0, timeout = 4800, TecRate = 5.96
+(1849913) TC: TC-1 = 73.52, modeled = 55.74, target = 55.00, heatSink = 28.47, output = -100.0, timeout = 4950, TecRate = 5.17
+(1850063) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 56.427883, threshold: 55.200001
+(1850066) TC: TC-1 = 73.32, modeled = 56.43, target = 55.00, heatSink = 28.57, output = -100.0, timeout = 5100, TecRate = 4.25
+(1850101) _setThermalControlState: thermalControl-1: changing state 1->3
+(1850102) _setTempReachedCallback: Set Temp Reached
+DATAQ: | PcrThermoTempC = 64.43  |
+(1850207) TC: TC-1 = 72.58, modeled = 56.94, target = 55.00, heatSink = 28.75, output = -57.5, timeout = 5250, TecRate = 3.11
+(1850356) TC: TC-1 = 71.74, modeled = 57.31, target = 55.00, heatSink = 28.92, output = -46.6, timeout = 5400, TecRate = 2.11
+(1850507) TC: TC-1 = 70.80, modeled = 57.53, target = 55.00, heatSink = 29.11, output = -39.1, timeout = 5550, TecRate = 1.23
+(1850658) TC: TC-1 = 69.45, modeled = 57.60, target = 55.00, heatSink = 29.36, output = -25.4, timeout = 5700, TecRate = 0.24
+DATAQ: | PcrThermoTempC = 64.89  |
+(1850806) TC: TC-1 = 68.47, modeled = 57.57, target = 55.00, heatSink = 29.54, output = -16.4, timeout = 5850, TecRate = -0.32
+(1850958) TC: TC-1 = 67.51, modeled = 57.48, target = 55.00, heatSink = 29.70, output = -2.7, timeout = 6000, TecRate = -0.77
+(1851106) TC: TC-1 = 66.31, modeled = 57.29, target = 55.00, heatSink = 29.91, output = 14.2, timeout = 6150, TecRate = -1.29
+(1851135) _readLifterSwitches: New Lifter Down Value: 1
+(1851137) _airboatStateEnter: Reached Bottom
+(1851237) _airboatStateEnter: ALL STOP
+(1851256) TC: TC-1 = 65.49, modeled = 57.08, target = 55.00, heatSink = 30.03, output = 17.2, timeout = 6300, TecRate = -1.46
+DATAQ: | PcrThermoTempC = 60.94  |
+(1851408) TC: TC-1 = 64.74, modeled = 56.85, target = 55.00, heatSink = 30.14, output = 20.5, timeout = 6450, TecRate = -1.54
+(1851556) TC: TC-1 = 63.92, modeled = 56.60, target = 55.00, heatSink = 30.27, output = 21.6, timeout = 6600, TecRate = -1.67
+(1851682) _performCapture: [7378,0,56.43,381,9000,3569,170,217,355,589,596,62,4901,0,63.56]
+(1851706) TC: TC-1 = 63.39, modeled = 56.36, target = 55.00, heatSink = 30.32, output = 22.1, timeout = 6750, TecRate = -1.57
+(1851856) TC: TC-1 = 62.93, modeled = 56.13, target = 55.00, heatSink = 30.37, output = 22.5, timeout = 6900, TecRate = -1.44
+DATAQ: | PcrThermoTempC = 59.69  |
+(1852006) TC: TC-1 = 62.41, modeled = 55.92, target = 55.00, heatSink = 30.43, output = 23.5, timeout = 0, TecRate = -1.40
+(1852156) TC: TC-1 = 62.08, modeled = 55.72, target = 55.00, heatSink = 30.47, output = 23.7, timeout = 0, TecRate = -1.23
+(1852307) TC: TC-1 = 61.77, modeled = 55.56, target = 55.00, heatSink = 30.49, output = 24.3, timeout = 0, TecRate = -1.08
+(1852456) TC: TC-1 = 61.40, modeled = 55.40, target = 55.00, heatSink = 30.52, output = 25.0, timeout = 0, TecRate = -1.02
+DATAQ: | PcrThermoTempC = 58.24  |
+(1852606) TC: TC-1 = 61.14, modeled = 55.26, target = 55.00, heatSink = 30.54, output = 25.4, timeout = 0, TecRate = -0.88
+(1852757) TC: TC-1 = 60.90, modeled = 55.14, target = 55.00, heatSink = 30.56, output = 25.7, timeout = 0, TecRate = -0.77
+(1852788) _performCapture: [8484,0,55.14,381,9000,3569,170,217,356,589,596,62,4901,0,60.90]
+(1852906) TC: TC-1 = 60.60, modeled = 55.03, target = 55.00, heatSink = 30.58, output = 26.5, timeout = 0, TecRate = -0.72
+(1853056) TC: TC-1 = 60.39, modeled = 54.93, target = 55.00, heatSink = 30.59, output = 26.9, timeout = 0, TecRate = -0.63
+DATAQ: | PcrThermoTempC = 57.69  |
+(1853206) TC: TC-1 = 60.18, modeled = 54.84, target = 55.00, heatSink = 30.59, output = 27.4, timeout = 0, TecRate = -0.55
+(1853356) TC: TC-1 = 59.93, modeled = 54.76, target = 55.00, heatSink = 30.60, output = 27.9, timeout = 0, TecRate = -0.53
+(1853506) TC: TC-1 = 59.75, modeled = 54.69, target = 55.00, heatSink = 30.61, output = 28.2, timeout = 0, TecRate = -0.45
+(1853656) TC: TC-1 = 59.57, modeled = 54.62, target = 55.00, heatSink = 30.61, output = 28.9, timeout = 0, TecRate = -0.40
+DATAQ: | PcrThermoTempC = 56.68  |
+(1853806) TC: TC-1 = 59.35, modeled = 54.56, target = 55.00, heatSink = 30.62, output = 29.1, timeout = 0, TecRate = -0.39
+(1853893) _performCapture: [9589,0,54.54,382,9000,3575,171,217,357,590,596,62,4905,0,59.30]
+(1853956) TC: TC-1 = 59.20, modeled = 54.51, target = 55.00, heatSink = 30.61, output = 29.5, timeout = 0, TecRate = -0.34
+(1854106) TC: TC-1 = 59.05, modeled = 54.46, target = 55.00, heatSink = 30.61, output = 30.1, timeout = 0, TecRate = -0.30
+(1854256) TC: TC-1 = 58.85, modeled = 54.42, target = 55.00, heatSink = 30.61, output = 30.3, timeout = 0, TecRate = -0.30
+DATAQ: | PcrThermoTempC = 56.28  |
+(1854407) TC: TC-1 = 58.72, modeled = 54.38, target = 55.00, heatSink = 30.61, output = 30.5, timeout = 0, TecRate = -0.25
+(1854556) TC: TC-1 = 58.59, modeled = 54.34, target = 55.00, heatSink = 30.62, output = 31.0, timeout = 0, TecRate = -0.21
+(1854706) TC: TC-1 = 58.45, modeled = 54.31, target = 55.00, heatSink = 30.61, output = 30.9, timeout = 0, TecRate = -0.20
+(1854856) TC: TC-1 = 58.35, modeled = 54.29, target = 55.00, heatSink = 30.61, output = 31.4, timeout = 0, TecRate = -0.16
+DATAQ: | PcrThermoTempC = 55.77  |
+(1855007) TC: TC-1 = 58.26, modeled = 54.27, target = 55.00, heatSink = 30.60, output = 31.4, timeout = 0, TecRate = -0.12
+(1855016) _performCapture: [10706,0,54.27,382,9000,3580,171,218,358,591,598,62,4906,0,58.26]
+(1855156) TC: TC-1 = 58.13, modeled = 54.25, target = 55.00, heatSink = 30.60, output = 32.0, timeout = 0, TecRate = -0.12
+(1855306) TC: TC-1 = 58.05, modeled = 54.23, target = 55.00, heatSink = 30.60, output = 32.0, timeout = 0, TecRate = -0.09
+(1855456) TC: TC-1 = 57.98, modeled = 54.22, target = 55.00, heatSink = 30.59, output = 32.0, timeout = 0, TecRate = -0.06
+DATAQ: | PcrThermoTempC = 55.55  |
+(1855606) TC: TC-1 = 57.89, modeled = 54.22, target = 55.00, heatSink = 30.57, output = 32.1, timeout = 0, TecRate = -0.05
+(1855756) TC: TC-1 = 57.84, modeled = 54.21, target = 55.00, heatSink = 30.58, output = 32.4, timeout = 0, TecRate = -0.01
+(1855906) TC: TC-1 = 57.78, modeled = 54.22, target = 55.00, heatSink = 30.57, output = 32.5, timeout = 0, TecRate = 0.01
+(1856056) TC: TC-1 = 57.71, modeled = 54.22, target = 55.00, heatSink = 30.55, output = 32.5, timeout = 0, TecRate = 0.01
+DATAQ: | PcrThermoTempC = 55.2  |
+(1856108) _performCapture: [11804,0,54.22,382,9000,3583,171,218,358,591,598,62,4904,0,57.69]
+(1856206) TC: TC-1 = 57.65, modeled = 54.22, target = 55.00, heatSink = 30.56, output = 32.8, timeout = 0, TecRate = 0.04
+(1856356) TC: TC-1 = 57.61, modeled = 54.23, target = 55.00, heatSink = 30.55, output = 32.7, timeout = 0, TecRate = 0.05
+(1856506) TC: TC-1 = 57.56, modeled = 54.24, target = 55.00, heatSink = 30.54, output = 32.8, timeout = 0, TecRate = 0.06
+(1856656) TC: TC-1 = 57.53, modeled = 54.25, target = 55.00, heatSink = 30.54, output = 32.7, timeout = 0, TecRate = 0.09
+DATAQ: | PcrThermoTempC = 55.15  |
+(1856806) TC: TC-1 = 57.49, modeled = 54.26, target = 55.00, heatSink = 30.54, output = 32.8, timeout = 0, TecRate = 0.10
+(1856957) TC: TC-1 = 57.44, modeled = 54.28, target = 55.00, heatSink = 30.53, output = 33.1, timeout = 0, TecRate = 0.09
+(1857106) TC: TC-1 = 57.41, modeled = 54.29, target = 55.00, heatSink = 30.53, output = 33.1, timeout = 0, TecRate = 0.11
+(1857212) _performCapture: [12908,0,54.31,383,9000,3585,171,218,359,592,598,62,4902,0,57.40]
+(1857257) TC: TC-1 = 57.39, modeled = 54.31, target = 55.00, heatSink = 30.52, output = 33.0, timeout = 0, TecRate = 0.12
+DATAQ: | PcrThermoTempC = 56.95  |
+(1857407) TC: TC-1 = 57.36, modeled = 54.33, target = 55.00, heatSink = 30.51, output = 33.0, timeout = 0, TecRate = 0.12
+(1857556) TC: TC-1 = 57.35, modeled = 54.35, target = 55.00, heatSink = 30.50, output = 32.8, timeout = 0, TecRate = 0.14
+(1857706) TC: TC-1 = 57.33, modeled = 54.37, target = 55.00, heatSink = 30.50, output = 33.1, timeout = 0, TecRate = 0.15
+(1857857) TC: TC-1 = 57.30, modeled = 54.39, target = 55.00, heatSink = 30.49, output = 32.9, timeout = 0, TecRate = 0.14
+DATAQ: | PcrThermoTempC = 54.93  |
+(1858006) TC: TC-1 = 57.28, modeled = 54.41, target = 55.00, heatSink = 30.49, output = 33.1, timeout = 0, TecRate = 0.14
+(1858156) TC: TC-1 = 57.26, modeled = 54.44, target = 55.00, heatSink = 30.48, output = 33.0, timeout = 0, TecRate = 0.15
+(1858307) TC: TC-1 = 57.24, modeled = 54.46, target = 55.00, heatSink = 30.47, output = 32.8, timeout = 0, TecRate = 0.15
+(1858319) _performCapture: [14015,0,54.46,383,9000,3586,171,218,359,592,598,62,4902,0,57.24]
+(1858456) TC: TC-1 = 57.22, modeled = 54.48, target = 55.00, heatSink = 30.47, output = 32.7, timeout = 0, TecRate = 0.15
+DATAQ: | PcrThermoTempC = 56.42  |
+(1858606) TC: TC-1 = 57.20, modeled = 54.50, target = 55.00, heatSink = 30.46, output = 32.7, timeout = 0, TecRate = 0.15
+(1858757) TC: TC-1 = 57.18, modeled = 54.53, target = 55.00, heatSink = 30.46, output = 32.9, timeout = 0, TecRate = 0.15
+(1858907) TC: TC-1 = 57.17, modeled = 54.55, target = 55.00, heatSink = 30.46, output = 32.6, timeout = 0, TecRate = 0.15
+(1859057) TC: TC-1 = 57.15, modeled = 54.57, target = 55.00, heatSink = 30.45, output = 33.0, timeout = 0, TecRate = 0.15
+DATAQ: | PcrThermoTempC = 54.85  |
+(1859207) TC: TC-1 = 57.13, modeled = 54.59, target = 55.00, heatSink = 30.45, output = 32.8, timeout = 0, TecRate = 0.14
+(1859357) TC: TC-1 = 57.11, modeled = 54.61, target = 55.00, heatSink = 30.45, output = 32.6, timeout = 0, TecRate = 0.14
+(1859430) _performCapture: [15121,0,54.62,383,9000,3585,171,218,359,592,598,62,4901,0,57.10]
+(1859506) TC: TC-1 = 57.09, modeled = 54.63, target = 55.00, heatSink = 30.44, output = 32.7, timeout = 0, TecRate = 0.14
+(1859657) TC: TC-1 = 57.07, modeled = 54.65, target = 55.00, heatSink = 30.44, output = 32.4, timeout = 0, TecRate = 0.12
+DATAQ: | PcrThermoTempC = 55.31  |
+(1859807) TC: TC-1 = 57.06, modeled = 54.67, target = 55.00, heatSink = 30.43, output = 32.2, timeout = 0, TecRate = 0.14
+(1859956) TC: TC-1 = 57.04, modeled = 54.69, target = 55.00, heatSink = 30.43, output = 32.7, timeout = 0, TecRate = 0.13
+(1860107) TC: TC-1 = 57.03, modeled = 54.71, target = 55.00, heatSink = 30.43, output = 32.3, timeout = 0, TecRate = 0.13
+(1860256) TC: TC-1 = 57.01, modeled = 54.73, target = 55.00, heatSink = 30.42, output = 32.3, timeout = 0, TecRate = 0.12
+DATAQ: | PcrThermoTempC = 54.69  |
+(1860406) TC: TC-1 = 56.99, modeled = 54.75, target = 55.00, heatSink = 30.42, output = 32.5, timeout = 0, TecRate = 0.11
+(1860530) _performCapture: [16226,0,54.76,383,9000,3585,171,218,359,591,598,62,4900,0,56.98]
+(1860556) TC: TC-1 = 56.97, modeled = 54.77, target = 55.00, heatSink = 30.41, output = 32.0, timeout = 0, TecRate = 0.12
+(1860706) TC: TC-1 = 56.95, modeled = 54.78, target = 55.00, heatSink = 30.41, output = 32.4, timeout = 0, TecRate = 0.11
+(1860856) TC: TC-1 = 56.93, modeled = 54.80, target = 55.00, heatSink = 30.40, output = 32.2, timeout = 0, TecRate = 0.10
+DATAQ: | PcrThermoTempC = 54.93  |
+(1861007) TC: TC-1 = 56.91, modeled = 54.81, target = 55.00, heatSink = 30.40, output = 32.0, timeout = 0, TecRate = 0.10
+(1861157) TC: TC-1 = 56.89, modeled = 54.83, target = 55.00, heatSink = 30.40, output = 32.3, timeout = 0, TecRate = 0.09
+(1861306) TC: TC-1 = 56.86, modeled = 54.84, target = 55.00, heatSink = 30.40, output = 32.0, timeout = 0, TecRate = 0.08
+(1861457) TC: TC-1 = 56.85, modeled = 54.85, target = 55.00, heatSink = 30.39, output = 31.9, timeout = 0, TecRate = 0.08
+DATAQ: | PcrThermoTempC = 54.55  |
+(1861607) TC: TC-1 = 56.82, modeled = 54.86, target = 55.00, heatSink = 30.40, output = 31.9, timeout = 0, TecRate = 0.07
+(1861640) _performCapture: [17336,0,54.86,383,9000,3584,171,218,359,592,598,62,4899,0,56.82]
+(1861757) TC: TC-1 = 56.79, modeled = 54.87, target = 55.00, heatSink = 30.39, output = 32.1, timeout = 0, TecRate = 0.07
+(1861907) TC: TC-1 = 56.77, modeled = 54.88, target = 55.00, heatSink = 30.39, output = 32.2, timeout = 0, TecRate = 0.06
+(1862057) TC: TC-1 = 56.74, modeled = 54.89, target = 55.00, heatSink = 30.38, output = 32.0, timeout = 0, TecRate = 0.06
+DATAQ: | PcrThermoTempC = 54.61  |
+(1862206) TC: TC-1 = 56.72, modeled = 54.90, target = 55.00, heatSink = 30.39, output = 32.3, timeout = 0, TecRate = 0.06
+(1862356) TC: TC-1 = 56.70, modeled = 54.91, target = 55.00, heatSink = 30.39, output = 32.1, timeout = 0, TecRate = 0.05
+(1862507) TC: TC-1 = 56.67, modeled = 54.91, target = 55.00, heatSink = 30.38, output = 31.7, timeout = 0, TecRate = 0.05
+(1862656) TC: TC-1 = 56.65, modeled = 54.92, target = 55.00, heatSink = 30.38, output = 32.2, timeout = 0, TecRate = 0.05
+DATAQ: | PcrThermoTempC = 54.42  |
+(1862744) _performCapture: [18440,0,54.92,383,9000,3582,171,218,359,592,597,62,4894,0,56.64]
+(1862806) TC: TC-1 = 56.63, modeled = 54.93, target = 55.00, heatSink = 30.38, output = 32.0, timeout = 0, TecRate = 0.04
+(1862957) TC: TC-1 = 56.60, modeled = 54.93, target = 55.00, heatSink = 30.38, output = 32.3, timeout = 0, TecRate = 0.03
+(1863106) TC: TC-1 = 56.58, modeled = 54.94, target = 55.00, heatSink = 30.38, output = 32.0, timeout = 0, TecRate = 0.04
+(1863257) TC: TC-1 = 56.57, modeled = 54.94, target = 55.00, heatSink = 30.38, output = 31.9, timeout = 0, TecRate = 0.04
+DATAQ: | PcrThermoTempC = 54.41  |
+(1863407) TC: TC-1 = 56.54, modeled = 54.95, target = 55.00, heatSink = 30.37, output = 31.6, timeout = 0, TecRate = 0.04
+(1863557) TC: TC-1 = 56.53, modeled = 54.95, target = 55.00, heatSink = 30.37, output = 31.5, timeout = 0, TecRate = 0.04
+(1863706) TC: TC-1 = 56.51, modeled = 54.96, target = 55.00, heatSink = 30.37, output = 31.9, timeout = 0, TecRate = 0.04
+(1863849) _performCapture: [19545,0,54.96,383,9000,3582,171,218,359,591,597,62,4897,0,56.50]
+(1863856) TC: TC-1 = 56.49, modeled = 54.97, target = 55.00, heatSink = 30.37, output = 31.9, timeout = 0, TecRate = 0.03
+DATAQ: | PcrThermoTempC = 54.23  |
+(1864006) TC: TC-1 = 56.46, modeled = 54.97, target = 55.00, heatSink = 30.37, output = 31.7, timeout = 0, TecRate = 0.03
+(1864156) TC: TC-1 = 56.46, modeled = 54.97, target = 55.00, heatSink = 30.37, output = 31.5, timeout = 0, TecRate = 0.03
+(1864306) TC: TC-1 = 56.43, modeled = 54.98, target = 55.00, heatSink = 30.37, output = 32.3, timeout = 0, TecRate = 0.02
+(1864457) TC: TC-1 = 56.40, modeled = 54.98, target = 55.00, heatSink = 30.36, output = 32.2, timeout = 0, TecRate = 0.01
+DATAQ: | PcrThermoTempC = 54.19  |
+(1864606) TC: TC-1 = 56.37, modeled = 54.98, target = 55.00, heatSink = 30.36, output = 32.1, timeout = 0, TecRate = 0.00
