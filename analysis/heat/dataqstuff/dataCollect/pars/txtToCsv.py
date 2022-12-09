@@ -92,7 +92,7 @@ def mkCsv(txt,csv):
     # print(len(PCRThermocoupleTempC),len(timeSinceBoot))
     if len(PCRThermocoupleTempC) > len(timeSinceBoot):
         PCRThermocoupleTempC.pop(-1)
-    dF = pd.DataFrame({'timeSineBoot':timeSinceBoot,
+    dF = pd.DataFrame({'timeSinceBoot':timeSinceBoot,
         'PCR Temp':PCRTemp,
         'PCR Modeled TempC':PCRModeledTempC,
         'PCR Target TempC':PCRTargetTempC,
