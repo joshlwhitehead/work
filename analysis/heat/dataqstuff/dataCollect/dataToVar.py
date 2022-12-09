@@ -488,7 +488,9 @@ date = '13Sep2022'
 
 
 date = '08Dec2022'
-import os
-data = []
-for i in os.listdir(''.join(['data/',date])):
-    data.append(gd.getData(i,date))
+
+test = gd.getDataPCR('Adv01_W61_220919_Run1.csv',date)
+# import os
+# data = []
+# for i in os.listdir(''.join(['data/',date])):
+#     data.append(gd.getDataPCR(i,date))
