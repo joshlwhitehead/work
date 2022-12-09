@@ -12,6 +12,7 @@ import pandas as pd
 
 def mkCsv(txt,csv):
     full = []
+    use = []
 
     
     timeSinceBoot = []
@@ -24,13 +25,32 @@ def mkCsv(txt,csv):
     # try:
     f = open(''.join(['fileToUse/',txt]),'r')
     for i in f:
-        if '(' in i or 'DATAQ:' in i or 'TC:' in i:
-            full.append(i)
+        full.append(i)
+        if '(' in i or 'DATAQ:' in i:# or 'TC:' in i:
+            use.append(i)
     f.close()
+    basic = []
+    count = 0
+
+    for i in use:
+        if i[0] == '(':
+            basic.append(i)
+        else:
+            if count == 0:
+                if i[0] == 'D' and use[count+1][0] != 'D':
+                    basic.append(i)
+            else:
+                if i[0] == 'D' and use[count-1][0] != 'D':
+                    basic.append(i)
+        count +=1
+
+    
+        
+        
 
     count = 0
 
-    for i in full:
+    for i in basic:
         
         i = i.split()
         if 'TC:' in i:
@@ -39,41 +59,39 @@ def mkCsv(txt,csv):
             PCRModeledTempC.append(float(i[7][:-1]))
             PCRTargetTempC.append(float(i[10][:-1]))
             PCRHeatSinkTempC.append(float(i[13][:-1]))
-        elif 'DATAQ:' in i and count >0:
+
+        elif 'DATAQ:' in i:# and count > 0:
             PCRThermocoupleTempC.append(float(i[4]))
-            # if float(full[count-1].split()[0][1:-1]) == :
-            try:
-                if full[count-1].split()[0][1:-1] != 'ATAQ':
-                    timeSinceBootThermocouple.append(float(full[count-1].split()[0][1:-1])/1000)
-                else:
-                    timeSinceBootThermocouple.append(float(full[count-2].split()[0][1:-1])/1000)
-            except:
-                if full[count+1].split()[0][1:-1] != 'ATAQ':
-                    timeSinceBootThermocouple.append(float(full[count+1].split()[0][1:-1])/1000)
-                else:
-                    timeSinceBootThermocouple.append(float(full[count+2].split()[0][1:-1])/1000)
-               
-                
-        
+
+            if count == 0:
+                timeSinceBootThermocouple.append(float(basic[count+1].split()[0][1:-1])/1000)
+            else:
+                timeSinceBootThermocouple.append(float(basic[count-1].split()[0][1:-1])/1000)
+
             
         count += 1
+
+
+
     count = 0
     for i in timeSinceBootThermocouple:
         if i not in timeSinceBoot:
             timeSinceBoot.insert(count,i)
-            PCRTemp.insert(count,'nan')
-            PCRModeledTempC.insert(count,'nan')
-            PCRTargetTempC.insert(count,'nan')
-            PCRHeatSinkTempC.insert(count,'nan')
+            PCRTemp.insert(count,None)
+            PCRModeledTempC.insert(count,None)
+            PCRTargetTempC.insert(count,None)
+            PCRHeatSinkTempC.insert(count,None)
         count +=1
     count = 0
     for i in timeSinceBoot:
         if i not in timeSinceBootThermocouple:
-            PCRThermocoupleTempC.insert(count,'nan')
+            PCRThermocoupleTempC.insert(count,None)
         count +=1
     
-    print(len(timeSinceBoot),len(PCRThermocoupleTempC),len(PCRTemp))
 
+    # print(len(PCRThermocoupleTempC),len(timeSinceBoot))
+    if len(PCRThermocoupleTempC) > len(timeSinceBoot):
+        PCRThermocoupleTempC.pop(-1)
     dF = pd.DataFrame({'timeSineBoot':timeSinceBoot,
         'PCR Temp':PCRTemp,
         'PCR Modeled TempC':PCRModeledTempC,
@@ -84,12 +102,16 @@ def mkCsv(txt,csv):
     dF.to_csv(''.join(['fileMade/',str(csv),'.csv']))
     # except:
     #     print(txt)
-
+    
+    # import matplotlib.pyplot as plt
+    # plt.plot(timeSinceBoot,PCRModeledTempC)
+    # # plt.plot(timeSinceBoot,PCRThermocoupleTempC)
+    # plt.show()
 
 import os
 
-mkCsv('Adv01_DV03_220907_Run1.txt','d')
-# for i in os.listdir('fileToUse'):
-#     mkCsv(i,i[:-4])
+# mkCsv('Adv13_DV05_221018_Run 2.txt','d')
+for i in os.listdir('fileToUse'):
+    mkCsv(i,i[:-4])
 
 
