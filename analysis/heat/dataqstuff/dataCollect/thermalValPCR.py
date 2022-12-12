@@ -166,6 +166,8 @@ def wet():
     plt.show()
 
 
+def both():
+    return
 DV()
 
                 

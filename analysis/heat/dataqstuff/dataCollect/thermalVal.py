@@ -35,18 +35,33 @@ def hold(temp):
     percPass = []
     count2 = 0
     n = 0
+
+    # x = total[0]
+    # count = 0
+    # for i in range(len(x[4])):
+    #     if x[2][i] <= x[4][i]+5 and x[2][i] >= x[4][i]-5:
+    #         count +=1
+    #     else:
+    #         print(x[2][i])
+    # print(count/len(x[2]))
+    # plt.plot(x[2])
+    # plt.plot(x[4])
+    # plt.show()
+    
     for i in total:
         rawSamp.append(i[2])
         indx = []
         count = 0
         
         for u in range(len(i[4])):
-            if i[4][u] <temp+.1 and i[4][u] > temp-.1:
+            if i[4][u] < temp+.1 and i[4][u] > temp-.1:
                 if i[5][u] == i[6][u] or i[5][u] == temp or i[6][u] == temp:
                     indx.append(u)
+        
             if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
                 count+=1 
         percPass.append(round(count/len(i[2]),2))
+        # print(indx[0],indx[-1])
         
         magMean = np.mean(i[2][min(indx):max(indx)]) #(max(i[2][min(indx):max(indx)])-min(i[2][min(indx):max(indx)]))/np.mean(i[2][min(indx):max(indx)])
         modelMagMean = np.mean(i[4][min(indx):max(indx)]) #(max(i[4][min(indx):max(indx)])-min(i[4][min(indx):max(indx)]))/np.mean(i[4][min(indx):max(indx)])
@@ -54,10 +69,15 @@ def hold(temp):
         
         magMeans.append(magMean)
         modelMagMeans.append(modelMagMean)
-        
+        # count +=1
+        # for u in range(len(i[2][min(indx):max(indx)])):
+        #     if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
+        #         count+=1 
+        # percPass.append(round(count/len(i[2]),2))
         
         plt.plot(i[0][min(indx):max(indx)],i[2][min(indx):max(indx)],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
         plt.plot(i[0][min(indx):max(indx)],i[4][min(indx):max(indx)],'k')
+        plt.hlines(85,200,500,'k')
         count2+=1
         if count2%3 == 0:
             n += 1
@@ -170,7 +190,7 @@ def hold(temp):
 
 
 
-hold(62)
+hold(90)
 
  
 def plotSpec(toPlot):
