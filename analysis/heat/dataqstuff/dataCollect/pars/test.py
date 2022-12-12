@@ -1,12 +1,7 @@
-josh = [0,12,12,23,34,56,1,2,3,4,5,45]
-
-count = 0
-for i in josh:
-    if josh[count] != 3:
-        josh.remove(i)
-    print(i)
+import re
 
 
+josh = '324()34'
 
-
-print(josh)
+new = re.sub(r'[^0-9]','',josh)
+print(new)

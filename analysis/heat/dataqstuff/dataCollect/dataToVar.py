@@ -488,9 +488,11 @@ date = '13Sep2022'
 
 
 date = '08Dec2022'
-
-test = gd.getDataPCR('Adv01_W61_220919_Run1.csv',date)
-# import os
-# data = []
-# for i in os.listdir(''.join(['data/',date])):
-#     data.append(gd.getDataPCR(i,date))
+DV = []
+wet = []
+import os
+for i in os.listdir(''.join(['data/',date])):
+    if 'DV' in i:
+        DV.append(gd.getDataPCR(i,date))
+    elif 'W' in i:
+        wet.append(gd.getDataPCR(i,date))
