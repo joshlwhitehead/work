@@ -14,11 +14,11 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 def DV():
     total = dat.DV
-    instListShort = [1,2,3,4,26]
+    instListShort = [1,2,3,4]
     instList = instListShort*3
     instList.sort()
-    cupList = [3,3,3,3,3,3,3,3,3,9,9,9,8,8,8,8,8,8,10,10,10,5,5,5,5,5,5,8,8,8,5,5,5,8,8,8]
-    cupListClump = [3,3,3,9,8,8,10,5,5,8,5,8]
+    cupList = [3,3,3,3,3,3,3,3,3,9,9,9]
+    cupListClump = [3,3,3,9]
     
     colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive','peru','maroon']
 
@@ -65,19 +65,41 @@ def DV():
         sampleMax.append(maxes2)
     
 
+    count = 0
+    n = 0
     for i in range(len(modelMax)):
-        plt.plot(modelMax[i],'k')
-        plt.plot(sampleMax[i],'b')
+        if i == 0:
+            plt.plot(modelMax[i],'k',label='model')
+        else:
+            plt.plot(modelMax[i],'k')
+        if i == 0 or i ==3 or i == 6 or i == 9:
+            plt.plot(sampleMax[i],color=colors[n],label=''.join(['adv',str(instList[i])]))
+        else:
+            plt.plot(sampleMax[i],color=colors[n])
+        count += 1
+        if count%3 == 0:
+            n+=1
+
+    plt.grid()
+    plt.legend()
     plt.show()
+
+
+
+
+
+
+
+
 
 
 def wet():
     total = dat.wet
-    instListShort = [1,2,3,4,26]
+    instListShort = [1,4,5,8,11,14,16,18]
     instList = instListShort*3
     instList.sort()
-    cupList = [3,3,3,3,3,3,3,3,3,9,9,9,8,8,8,8,8,8,10,10,10,5,5,5,5,5,5,8,8,8,5,5,5,8,8,8]
-    cupListClump = [3,3,3,9,8,8,10,5,5,8,5,8]
+    cupList = [61,61,61,61,61,61,65,65,65,61,61,61,61,61,61,61,61,61,61,61,61,65,65,65]
+    cupListClump = [61,61,65,61,61,61,61,65]
     
     colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive','peru','maroon']
 
@@ -93,6 +115,7 @@ def wet():
         maxes2 = []
         indx = []
         count = 0
+
         for i in k[5]:
             if i == 90:
                 indx.append(count)
@@ -123,12 +146,27 @@ def wet():
         modelMax.append(maxes)
         sampleMax.append(maxes2)
     
-
+    count = 0
+    n = 0
     for i in range(len(modelMax)):
-        plt.plot(modelMax[i],'k')
-        plt.plot(sampleMax[i],'b')
+        if i == 0:
+            plt.plot(modelMax[i],'k',label='model')
+        else:
+            plt.plot(modelMax[i],'k')
+        if i == 0 or i ==3 or i == 6 or i == 9 or i == 12:
+            plt.plot(sampleMax[i],color=colors[n],label=''.join(['adv',str(instList[i])]))
+        else:
+            plt.plot(sampleMax[i],color=colors[n])
+        count += 1
+        if count%3 == 0:
+            n+=1
+
+    plt.grid()
+    plt.legend()
     plt.show()
-wet()
+
+
+DV()
 
                 
 
