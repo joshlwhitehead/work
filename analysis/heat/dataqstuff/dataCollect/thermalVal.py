@@ -12,10 +12,7 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 
 # total = [dat.adv06c]
-total = [dat.adv06a,dat.adv06b,dat.adv06c,dat.adv07a,dat.adv07b,dat.adv07c,dat.adv10a,dat.adv10b,dat.adv10c,
-    dat.adv12a,dat.adv12b,dat.adv12c,dat.adv13a,dat.adv13b,dat.adv13c,dat.adv15a,dat.adv15b,dat.adv15c,
-    dat.adv17a,dat.adv17b,dat.adv17c,dat.adv25a,dat.adv25b,dat.adv25c,dat.adv26a,dat.adv26b,dat.adv26c,
-    dat.adv27a,dat.adv27b,dat.adv27c]
+total = dat.TC
 instList = [6,7,10,12,13,15,17,25,26,27]*3
 instList.sort()
 instListShort = [6,7,10,12,13,15,17,25,26,27]
@@ -55,12 +52,12 @@ def hold(temp):
         
         for u in range(len(i[4])):
             if i[4][u] < temp+.1 and i[4][u] > temp-.1:
-                if i[5][u] == i[6][u] or i[5][u] == temp or i[6][u] == temp:
-                    indx.append(u)
+                
+                indx.append(u)
         
-            if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
-                count+=1 
-        percPass.append(round(count/len(i[2]),2))
+        #     if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
+        #         count+=1 
+        # percPass.append(round(count/len(i[2]),2))
         # print(indx[0],indx[-1])
         
         magMean = np.mean(i[2][min(indx):max(indx)]) #(max(i[2][min(indx):max(indx)])-min(i[2][min(indx):max(indx)]))/np.mean(i[2][min(indx):max(indx)])
@@ -69,12 +66,18 @@ def hold(temp):
         
         magMeans.append(magMean)
         modelMagMeans.append(modelMagMean)
-        # count +=1
-        # for u in range(len(i[2][min(indx):max(indx)])):
-        #     if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
-        #         count+=1 
-        # percPass.append(round(count/len(i[2]),2))
-        
+        count = 0
+        for u in indx:
+            if i[2][u] <= temp+5 and i[2][u] >= temp-5:
+                count+=1 
+            # else:
+            #     print(i[2][u])
+        if total.index(i) == 0:
+            for j in indx:
+                if i[2][j] >= temp+5 or i[2][j] <= temp-5:
+                    print(i[2][j])
+        percPass.append(round(count/len(i[2][min(indx):max(indx)]),5))
+        # print(percPass)
         plt.plot(i[0][min(indx):max(indx)],i[2][min(indx):max(indx)],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
         plt.plot(i[0][min(indx):max(indx)],i[4][min(indx):max(indx)],'k')
         plt.hlines(85,200,500,'k')
@@ -83,7 +86,7 @@ def hold(temp):
             n += 1
         
 
-    plt.legend()
+    # plt.legend()
     plt.title(''.join(['Compare Sample to Model at ',str(temp)]))
     plt.ylabel('Temp (c)')
     plt.xlabel('Time (sec)')
@@ -107,13 +110,13 @@ def hold(temp):
     formula2 = 'PercentPass ~ Instrument' 
     model2 = ols(formula2, dfAnova).fit()
     aov_table2 = anova_lm(model2, typ=1)
-    print(aov_table,'\n',aov_table2)
+    # print(aov_table,'\n',aov_table2)
 
 
 
     m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
                             alpha=alpha)
-    print(m_comp)
+    # print(m_comp)
     # print(percPass)
     # print(np.array(magMeans)-90)
 
@@ -187,7 +190,7 @@ def hold(temp):
     plt.show()
 
      
-
+    
 
 
 hold(90)
