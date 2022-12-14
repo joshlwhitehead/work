@@ -147,7 +147,7 @@ def mkCsvTC(txt,csv):
         i = i.split()
         
         if 'TC:' in i:
-            timeSinceBoot.append(float(i[0][1:-1]))
+            timeSinceBoot.append(float(i[0][1:-1])/1000)
             Stage1TempC.append(float(i[4][:-1]))
             Stage1ModeledTempC.append(float(i[7][:-1]))
             Stage1TargetTempC.append(float(i[10][:-1]))

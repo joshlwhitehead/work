@@ -49,19 +49,24 @@ def hold(temp):
         rawSamp.append(i[2])
         indx = []
         count = 0
-        
-        for u in range(len(i[4])):
-            if i[4][u] < temp+.1 and i[4][u] > temp-.1:
-                
-                indx.append(u)
-        
+        if temp == 90:
+            for u in range(len(i[4])):
+                if i[4][u] < temp+.1 and i[4][u] > temp-.1:
+                    
+                    indx.append(u)
+        elif temp == 62:
+            for u in range(len(i[4])):
+                if i[4][u] < temp+.1 and i[4][u] > temp-.1 and i[0][u] <200:
+                    
+                    indx.append(u)
+        # print(indx)
         #     if i[2][u] <= i[4][u]+5 and i[2][u] >= i[4][u]-5:
         #         count+=1 
         # percPass.append(round(count/len(i[2]),2))
         # print(indx[0],indx[-1])
         
-        magMean = np.mean(i[2][min(indx):max(indx)]) #(max(i[2][min(indx):max(indx)])-min(i[2][min(indx):max(indx)]))/np.mean(i[2][min(indx):max(indx)])
-        modelMagMean = np.mean(i[4][min(indx):max(indx)]) #(max(i[4][min(indx):max(indx)])-min(i[4][min(indx):max(indx)]))/np.mean(i[4][min(indx):max(indx)])
+        magMean = np.mean(i[2][indx[0]:indx[-1]]) #(max(i[2][indx[0]:indx[-1]])-min(i[2][indx[0]:indx[-1]]))/np.mean(i[2][indx[0]:indx[-1]])
+        modelMagMean = np.mean(i[4][indx[0]:indx[-1]]) #(max(i[4][indx[0]:indx[-1]])-min(i[4][indx[0]:indx[-1]]))/np.mean(i[4][indx[0]:indx[-1]])
 
         
         magMeans.append(magMean)
@@ -72,21 +77,21 @@ def hold(temp):
                 count+=1 
             # else:
             #     print(i[2][u])
-        if total.index(i) == 0:
-            for j in indx:
-                if i[2][j] >= temp+5 or i[2][j] <= temp-5:
-                    print(i[2][j])
-        percPass.append(round(count/len(i[2][min(indx):max(indx)]),5))
+        # if total.index(i) == 0:
+        #     for kk in indx:
+                # print(i[0][kk])
+        percPass.append(count/len(indx))
         # print(percPass)
-        plt.plot(i[0][min(indx):max(indx)],i[2][min(indx):max(indx)],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
-        plt.plot(i[0][min(indx):max(indx)],i[4][min(indx):max(indx)],'k')
-        plt.hlines(85,200,500,'k')
+        # print(i[0])
+        plt.plot(i[0][indx[0]:indx[-1]],i[2][indx[0]:indx[-1]],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
+        plt.plot(i[0][indx[0]:indx[-1]],i[4][indx[0]:indx[-1]],'k')
+        plt.hlines(temp-5,40,160,'k')
         count2+=1
         if count2%3 == 0:
             n += 1
         
 
-    # plt.legend()
+    plt.legend()
     plt.title(''.join(['Compare Sample to Model at ',str(temp)]))
     plt.ylabel('Temp (c)')
     plt.xlabel('Time (sec)')
@@ -131,8 +136,8 @@ def hold(temp):
     dfAnova.boxplot('PercentPass',by='Instrument')
     count = 1
     for i in range(len(cupListClump)):
-        plt.text(count,0.55,''.join(['p',str(cupListClump[i])]))
-        plt.text(count,.54,str(dateClump[i]))
+        plt.text(count,0.4,''.join(['p',str(cupListClump[i])]))
+        plt.text(count,.37,str(dateClump[i]))
         count+=1
     # plt.hlines(temp,0,10,'k')
     # fig = interaction_plot(dfAnova.Instrument,dfAnova.Date,dfAnova.Mean,ms=10)
@@ -193,7 +198,7 @@ def hold(temp):
     
 
 
-hold(90)
+hold(62)
 
  
 def plotSpec(toPlot):
@@ -237,7 +242,7 @@ def all():
 
     #     plt.plot(i[0],i[2])
     #     plt.plot(i[0],i[4],'k')
-    #     # plt.plot(i[0][min(indx):max(indx)],i[1][min(indx):max(indx)],'g')
+    #     # plt.plot(i[0][indx[0]:indx[-1]],i[1][indx[0]:indx[-1]],'g')
     # plt.show()
 
     dfAnova = pd.DataFrame({'inst':instList,'magMean':magMeans,'PercentPass':percPass})
