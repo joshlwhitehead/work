@@ -1,0 +1,301 @@
+[16]Set PCR TEC:  HEAT: True  POW: 100
+(96255) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = -0.0, output = 100.0
+(96306) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = -0.0, output = 100.0
+(96356) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = -0.0, output = 100.0
+(96406) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = -0.0, output = 100.0
+(96453) systemTasksMonitorStack: Stack Watermark(Thermal Control): 2160
+(96456) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = 0.0, output = 100.0
+(96506) RAW PELTIER: TC-1 = 21.8, HSTemp = 21.8, modeled = 22.0, rawRR C/s = 0.2, output = 100.0
+(96556) RAW PELTIER: TC-1 = 21.9, HSTemp = 21.8, modeled = 22.0, rawRR C/s = 0.6, output = 100.0
+(96605) RAW PELTIER: TC-1 = 21.9, HSTemp = 21.8, modeled = 22.0, rawRR C/s = 1.2, output = 100.0
+(96656) RAW PELTIER: TC-1 = 22.0, HSTemp = 21.7, modeled = 22.0, rawRR C/s = 2.0, output = 100.0
+(96707) RAW PELTIER: TC-1 = 22.2, HSTemp = 21.7, modeled = 22.0, rawRR C/s = 2.8, output = 100.0
+(96756) RAW PELTIER: TC-1 = 22.4, HSTemp = 21.7, modeled = 22.0, rawRR C/s = 3.7, output = 100.0
+(96807) RAW PELTIER: TC-1 = 22.6, HSTemp = 21.7, modeled = 22.1, rawRR C/s = 4.6, output = 100.0
+(96856) RAW PELTIER: TC-1 = 22.9, HSTemp = 21.7, modeled = 22.1, rawRR C/s = 5.4, output = 100.0
+(96910) RAW PELTIER: TC-1 = 23.2, HSTemp = 21.6, modeled = 22.2, rawRR C/s = 6.2, output = 100.0
+(96962) RAW PELTIER: TC-1 = 23.6, HSTemp = 21.6, modeled = 22.2, rawRR C/s = 6.9, output = 100.0
+(97014) RAW PELTIER: TC-1 = 24.0, HSTemp = 21.6, modeled = 22.3, rawRR C/s = 7.5, output = 100.0
+(97058) RAW PELTIER: TC-1 = 24.0, HSTemp = 21.6, modeled = 22.4, rawRR C/s = 7.5, output = 100.0
+(97109) RAW PELTIER: TC-1 = 24.4, HSTemp = 21.5, modeled = 22.5, rawRR C/s = 8.1, output = 100.0
+(97158) RAW PELTIER: TC-1 = 24.9, HSTemp = 21.5, modeled = 22.6, rawRR C/s = 8.6, output = 100.0
+(97209) RAW PELTIER: TC-1 = 25.3, HSTemp = 21.5, modeled = 22.7, rawRR C/s = 9.0, output = 100.0
+(97258) RAW PELTIER: TC-1 = 25.8, HSTemp = 21.4, modeled = 22.8, rawRR C/s = 9.5, output = 100.0
+(97309) RAW PELTIER: TC-1 = 26.4, HSTemp = 21.4, modeled = 22.9, rawRR C/s = 9.9, output = 100.0
+(97358) RAW PELTIER: TC-1 = 26.9, HSTemp = 21.4, modeled = 23.1, rawRR C/s = 10.3, output = 100.0
+(97409) RAW PELTIER: TC-1 = 27.5, HSTemp = 21.3, modeled = 23.3, rawRR C/s = 10.2, output = 100.0
+(97458) RAW PELTIER: TC-1 = 28.0, HSTemp = 21.3, modeled = 23.4, rawRR C/s = 10.3, output = 100.0
+(97509) RAW PELTIER: TC-1 = 28.6, HSTemp = 21.3, modeled = 23.6, rawRR C/s = 10.6, output = 100.0
+(97557) RAW PELTIER: TC-1 = 29.1, HSTemp = 21.2, modeled = 23.8, rawRR C/s = 10.8, output = 100.0
+(97609) RAW PELTIER: TC-1 = 29.7, HSTemp = 21.2, modeled = 24.0, rawRR C/s = 11.3, output = 100.0
+(97658) RAW PELTIER: TC-1 = 30.3, HSTemp = 21.2, modeled = 24.3, rawRR C/s = 11.0, output = 100.0
+(97709) RAW PELTIER: TC-1 = 30.9, HSTemp = 21.1, modeled = 24.5, rawRR C/s = 10.8, output = 100.0
+(97758) RAW PELTIER: TC-1 = 31.5, HSTemp = 21.1, modeled = 24.7, rawRR C/s = 10.8, output = 100.0
+(97812) RAW PELTIER: TC-1 = 32.0, HSTemp = 21.1, modeled = 25.0, rawRR C/s = 10.9, output = 100.0
+(97864) RAW PELTIER: TC-1 = 32.6, HSTemp = 21.0, modeled = 25.2, rawRR C/s = 11.4, output = 100.0
+(97916) RAW PELTIER: TC-1 = 33.3, HSTemp = 21.0, modeled = 25.5, rawRR C/s = 11.5, output = 100.0
+(97960) RAW PELTIER: TC-1 = 33.3, HSTemp = 21.0, modeled = 25.7, rawRR C/s = 11.5, output = 100.0
+(98011) RAW PELTIER: TC-1 = 33.9, HSTemp = 21.0, modeled = 26.0, rawRR C/s = 11.6, output = 100.0
+(98060) RAW PELTIER: TC-1 = 34.5, HSTemp = 21.0, modeled = 26.3, rawRR C/s = 11.6, output = 100.0
+(98111) RAW PELTIER: TC-1 = 35.1, HSTemp = 20.9, modeled = 26.5, rawRR C/s = 11.6, output = 100.0
+(98160) RAW PELTIER: TC-1 = 35.7, HSTemp = 20.9, modeled = 26.8, rawRR C/s = 11.6, output = 100.0
+(98211) RAW PELTIER: TC-1 = 36.3, HSTemp = 20.9, modeled = 27.1, rawRR C/s = 11.6, output = 100.0
+(98260) RAW PELTIER: TC-1 = 37.0, HSTemp = 20.8, modeled = 27.4, rawRR C/s = 11.7, output = 100.0
+(98312) RAW PELTIER: TC-1 = 37.6, HSTemp = 20.8, modeled = 27.7, rawRR C/s = 11.7, output = 100.0
+(98360) RAW PELTIER: TC-1 = 38.2, HSTemp = 20.8, modeled = 28.0, rawRR C/s = 11.6, output = 100.0
+(98378) heapMonitor_checkFreeHeapSize: New heap low water mark 114932
+(98411) RAW PELTIER: TC-1 = 38.8, HSTemp = 20.8, modeled = 28.3, rawRR C/s = 11.6, output = 100.0
+(98460) RAW PELTIER: TC-1 = 39.4, HSTemp = 20.7, modeled = 28.7, rawRR C/s = 11.6, output = 100.0
+(98511) RAW PELTIER: TC-1 = 40.0, HSTemp = 20.7, modeled = 29.0, rawRR C/s = 11.6, output = 100.0
+(98560) RAW PELTIER: TC-1 = 40.6, HSTemp = 20.7, modeled = 29.3, rawRR C/s = 11.6, output = 100.0
+(98611) RAW PELTIER: TC-1 = 41.3, HSTemp = 20.6, modeled = 29.7, rawRR C/s = 11.5, output = 100.0
+(98660) RAW PELTIER: TC-1 = 41.9, HSTemp = 20.6, modeled = 30.0, rawRR C/s = 11.5, output = 100.0
+(98714) RAW PELTIER: TC-1 = 42.5, HSTemp = 20.6, modeled = 30.3, rawRR C/s = 11.4, output = 100.0
+(98767) RAW PELTIER: TC-1 = 43.1, HSTemp = 20.6, modeled = 30.7, rawRR C/s = 11.4, output = 100.0
+(98814) RAW PELTIER: TC-1 = 43.7, HSTemp = 20.6, modeled = 31.0, rawRR C/s = 11.3, output = 100.0
+(98863) RAW PELTIER: TC-1 = 43.7, HSTemp = 20.6, modeled = 31.3, rawRR C/s = 11.3, output = 100.0
+(98912) RAW PELTIER: TC-1 = 44.3, HSTemp = 20.5, modeled = 31.7, rawRR C/s = 11.4, output = 100.0
+(98964) RAW PELTIER: TC-1 = 44.9, HSTemp = 20.5, modeled = 32.0, rawRR C/s = 11.6, output = 100.0
+(99012) RAW PELTIER: TC-1 = 45.5, HSTemp = 20.5, modeled = 32.4, rawRR C/s = 11.5, output = 100.0
+(99063) RAW PELTIER: TC-1 = 46.2, HSTemp = 20.5, modeled = 32.7, rawRR C/s = 11.5, output = 100.0
+(99112) RAW PELTIER: TC-1 = 46.8, HSTemp = 20.4, modeled = 33.1, rawRR C/s = 11.3, output = 100.0
+(99163) RAW PELTIER: TC-1 = 47.3, HSTemp = 20.4, modeled = 33.4, rawRR C/s = 11.0, output = 100.0
+(99213) RAW PELTIER: TC-1 = 47.9, HSTemp = 20.4, modeled = 33.8, rawRR C/s = 10.9, output = 100.0
+(99263) RAW PELTIER: TC-1 = 48.5, HSTemp = 20.4, modeled = 34.1, rawRR C/s = 10.6, output = 100.0
+(99312) RAW PELTIER: TC-1 = 49.0, HSTemp = 20.4, modeled = 34.5, rawRR C/s = 10.6, output = 100.0
+(99363) RAW PELTIER: TC-1 = 49.6, HSTemp = 20.3, modeled = 34.8, rawRR C/s = 10.5, output = 100.0
+(99412) RAW PELTIER: TC-1 = 50.1, HSTemp = 20.3, modeled = 35.2, rawRR C/s = 10.4, output = 100.0
+(99463) RAW PELTIER: TC-1 = 50.7, HSTemp = 20.3, modeled = 35.6, rawRR C/s = 10.6, output = 100.0
+(99512) RAW PELTIER: TC-1 = 51.3, HSTemp = 20.3, modeled = 35.9, rawRR C/s = 10.5, output = 100.0
+(99565) RAW PELTIER: TC-1 = 51.8, HSTemp = 20.3, modeled = 36.3, rawRR C/s = 10.5, output = 100.0
+(99619) RAW PELTIER: TC-1 = 52.4, HSTemp = 20.2, modeled = 36.7, rawRR C/s = 10.4, output = 100.0
+(99666) RAW PELTIER: TC-1 = 52.9, HSTemp = 20.2, modeled = 37.0, rawRR C/s = 10.4, output = 100.0
+(99715) RAW PELTIER: TC-1 = 52.9, HSTemp = 20.2, modeled = 37.4, rawRR C/s = 10.4, output = 100.0
+(99764) RAW PELTIER: TC-1 = 53.5, HSTemp = 20.2, modeled = 37.7, rawRR C/s = 10.4, output = 100.0
+(99815) RAW PELTIER: TC-1 = 54.0, HSTemp = 20.2, modeled = 38.1, rawRR C/s = 10.3, output = 100.0
+(99864) RAW PELTIER: TC-1 = 54.6, HSTemp = 20.2, modeled = 38.4, rawRR C/s = 10.3, output = 100.0
+(99915) RAW PELTIER: TC-1 = 55.2, HSTemp = 20.2, modeled = 38.8, rawRR C/s = 10.2, output = 100.0
+(99964) RAW PELTIER: TC-1 = 55.7, HSTemp = 20.1, modeled = 39.1, rawRR C/s = 10.1, output = 100.0
+(100015) RAW PELTIER: TC-1 = 56.2, HSTemp = 20.1, modeled = 39.5, rawRR C/s = 10.0, output = 100.0
+(100064) RAW PELTIER: TC-1 = 56.7, HSTemp = 20.1, modeled = 39.8, rawRR C/s = 9.9, output = 100.0
+(100115) RAW PELTIER: TC-1 = 57.3, HSTemp = 20.1, modeled = 40.2, rawRR C/s = 9.9, output = 100.0
+(100164) RAW PELTIER: TC-1 = 57.8, HSTemp = 20.1, modeled = 40.5, rawRR C/s = 9.8, output = 100.0
+(100215) RAW PELTIER: TC-1 = 58.3, HSTemp = 20.1, modeled = 40.9, rawRR C/s = 9.9, output = 100.0
+(100264) RAW PELTIER: TC-1 = 58.8, HSTemp = 20.1, modeled = 41.3, rawRR C/s = 10.1, output = 100.0
+(100314) RAW PELTIER: TC-1 = 59.4, HSTemp = 20.1, modeled = 41.6, rawRR C/s = 10.0, output = 100.0
+(100364) RAW PELTIER: TC-1 = 59.9, HSTemp = 20.0, modeled = 42.0, rawRR C/s = 10.0, output = 100.0
+(100417) RAW PELTIER: TC-1 = 60.4, HSTemp = 20.0, modeled = 42.4, rawRR C/s = 9.6, output = 100.0
+(100470) RAW PELTIER: TC-1 = 60.9, HSTemp = 20.0, modeled = 42.7, rawRR C/s = 9.3, output = 100.0
+(100517) RAW PELTIER: TC-1 = 60.9, HSTemp = 20.0, modeled = 43.1, rawRR C/s = 9.3, output = 100.0
+(100567) RAW PELTIER: TC-1 = 61.4, HSTemp = 20.0, modeled = 43.4, rawRR C/s = 9.4, output = 100.0
+(100616) RAW PELTIER: TC-1 = 61.9, HSTemp = 20.0, modeled = 43.7, rawRR C/s = 9.0, output = 100.0
+(100667) RAW PELTIER: TC-1 = 62.4, HSTemp = 20.0, modeled = 44.1, rawRR C/s = 9.2, output = 100.0
+(100716) RAW PELTIER: TC-1 = 62.9, HSTemp = 20.0, modeled = 44.4, rawRR C/s = 9.2, output = 100.0
+(100767) RAW PELTIER: TC-1 = 63.4, HSTemp = 20.0, modeled = 44.8, rawRR C/s = 8.8, output = 100.0
+(100816) RAW PELTIER: TC-1 = 63.8, HSTemp = 20.0, modeled = 45.1, rawRR C/s = 9.2, output = 100.0
+(100867) RAW PELTIER: TC-1 = 64.3, HSTemp = 19.9, modeled = 45.5, rawRR C/s = 9.1, output = 100.0
+(100916) RAW PELTIER: TC-1 = 64.8, HSTemp = 19.9, modeled = 45.8, rawRR C/s = 9.1, output = 100.0
+(100966) RAW PELTIER: TC-1 = 65.3, HSTemp = 19.9, modeled = 46.2, rawRR C/s = 9.0, output = 100.0
+(101016) RAW PELTIER: TC-1 = 65.8, HSTemp = 19.9, modeled = 46.5, rawRR C/s = 8.9, output = 100.0
+(101067) RAW PELTIER: TC-1 = 66.2, HSTemp = 19.9, modeled = 46.9, rawRR C/s = 8.9, output = 100.0
+(101116) RAW PELTIER: TC-1 = 66.7, HSTemp = 19.9, modeled = 47.2, rawRR C/s = 8.8, output = 100.0
+(101167) RAW PELTIER: TC-1 = 67.2, HSTemp = 19.9, modeled = 47.6, rawRR C/s = 8.7, output = 100.0
+(101217) RAW PELTIER: TC-1 = 67.6, HSTemp = 19.9, modeled = 47.9, rawRR C/s = 8.7, output = 100.0
+(101270) RAW PELTIER: TC-1 = 68.1, HSTemp = 19.9, modeled = 48.3, rawRR C/s = 8.5, output = 100.0
+(101323) RAW PELTIER: TC-1 = 68.5, HSTemp = 19.9, modeled = 48.6, rawRR C/s = 8.5, output = 100.0
+(101370) RAW PELTIER: TC-1 = 69.0, HSTemp = 19.9, modeled = 49.0, rawRR C/s = 8.4, output = 100.0
+(101419) RAW PELTIER: TC-1 = 69.0, HSTemp = 19.9, modeled = 49.3, rawRR C/s = 8.4, output = 100.0
+(101469) RAW PELTIER: TC-1 = 69.4, HSTemp = 19.9, modeled = 49.6, rawRR C/s = 8.4, output = 100.0
+(101519) RAW PELTIER: TC-1 = 69.9, HSTemp = 19.9, modeled = 49.9, rawRR C/s = 8.4, output = 100.0
+(101569) RAW PELTIER: TC-1 = 70.3, HSTemp = 19.9, modeled = 50.3, rawRR C/s = 8.3, output = 100.0
+(101620) RAW PELTIER: TC-1 = 70.8, HSTemp = 19.8, modeled = 50.6, rawRR C/s = 8.4, output = 100.0
+(101669) RAW PELTIER: TC-1 = 71.2, HSTemp = 19.8, modeled = 50.9, rawRR C/s = 8.5, output = 100.0
+(101720) RAW PELTIER: TC-1 = 71.7, HSTemp = 19.8, modeled = 51.3, rawRR C/s = 8.2, output = 100.0
+(101769) RAW PELTIER: TC-1 = 72.1, HSTemp = 19.8, modeled = 51.6, rawRR C/s = 8.2, output = 100.0
+(101820) RAW PELTIER: TC-1 = 72.5, HSTemp = 19.8, modeled = 51.9, rawRR C/s = 8.3, output = 100.0
+(101869) RAW PELTIER: TC-1 = 73.0, HSTemp = 19.8, modeled = 52.3, rawRR C/s = 8.0, output = 100.0
+(101920) RAW PELTIER: TC-1 = 73.4, HSTemp = 19.8, modeled = 52.6, rawRR C/s = 8.0, output = 100.0
+(101969) RAW PELTIER: TC-1 = 73.8, HSTemp = 19.8, modeled = 52.9, rawRR C/s = 7.9, output = 100.0
+(102019) RAW PELTIER: TC-1 = 74.2, HSTemp = 19.8, modeled = 53.3, rawRR C/s = 7.6, output = 100.0
+(102069) RAW PELTIER: TC-1 = 74.6, HSTemp = 19.8, modeled = 53.6, rawRR C/s = 7.5, output = 100.0
+(102123) RAW PELTIER: TC-1 = 75.0, HSTemp = 19.8, modeled = 53.9, rawRR C/s = 7.7, output = 100.0
+(102176) RAW PELTIER: TC-1 = 75.4, HSTemp = 19.8, modeled = 54.3, rawRR C/s = 7.6, output = 100.0
+(102224) RAW PELTIER: TC-1 = 75.8, HSTemp = 19.8, modeled = 54.6, rawRR C/s = 7.6, output = 100.0
+(102273) RAW PELTIER: TC-1 = 75.8, HSTemp = 19.8, modeled = 54.9, rawRR C/s = 7.6, output = 100.0
+(102323) RAW PELTIER: TC-1 = 76.2, HSTemp = 19.8, modeled = 55.2, rawRR C/s = 7.6, output = 100.0
+(102374) RAW PELTIER: TC-1 = 76.6, HSTemp = 19.8, modeled = 55.5, rawRR C/s = 7.5, output = 100.0
+(102423) RAW PELTIER: TC-1 = 77.0, HSTemp = 19.8, modeled = 55.8, rawRR C/s = 7.5, output = 100.0
+(102474) RAW PELTIER: TC-1 = 77.4, HSTemp = 19.8, modeled = 56.1, rawRR C/s = 7.4, output = 100.0
+(102524) RAW PELTIER: TC-1 = 77.8, HSTemp = 19.8, modeled = 56.5, rawRR C/s = 7.4, output = 100.0
+(102574) RAW PELTIER: TC-1 = 78.2, HSTemp = 19.8, modeled = 56.8, rawRR C/s = 7.4, output = 100.0
+(102626) RAW PELTIER: TC-1 = 78.6, HSTemp = 19.8, modeled = 57.1, rawRR C/s = 7.4, output = 100.0
+(102674) RAW PELTIER: TC-1 = 79.0, HSTemp = 19.8, modeled = 57.4, rawRR C/s = 7.3, output = 100.0
+(102725) RAW PELTIER: TC-1 = 79.4, HSTemp = 19.8, modeled = 57.7, rawRR C/s = 7.2, output = 100.0
+(102774) RAW PELTIER: TC-1 = 79.8, HSTemp = 19.8, modeled = 58.0, rawRR C/s = 7.2, output = 100.0
+(102825) RAW PELTIER: TC-1 = 80.1, HSTemp = 19.8, modeled = 58.4, rawRR C/s = 7.3, output = 100.0
+(102874) RAW PELTIER: TC-1 = 80.5, HSTemp = 19.8, modeled = 58.7, rawRR C/s = 7.2, output = 100.0
+(102925) RAW PELTIER: TC-1 = 80.9, HSTemp = 19.8, modeled = 59.0, rawRR C/s = 7.2, output = 100.0
+(102975) RAW PELTIER: TC-1 = 81.3, HSTemp = 19.8, modeled = 59.3, rawRR C/s = 7.0, output = 100.0
+(103028) RAW PELTIER: TC-1 = 81.6, HSTemp = 19.8, modeled = 59.6, rawRR C/s = 6.9, output = 100.0
+(103080) RAW PELTIER: TC-1 = 82.0, HSTemp = 19.8, modeled = 59.9, rawRR C/s = 6.9, output = 100.0
+(103127) RAW PELTIER: TC-1 = 82.0, HSTemp = 19.8, modeled = 60.2, rawRR C/s = 6.9, output = 100.0
+(103177) RAW PELTIER: TC-1 = 82.4, HSTemp = 19.8, modeled = 60.5, rawRR C/s = 7.0, output = 100.0
+(103226) RAW PELTIER: TC-1 = 82.8, HSTemp = 19.8, modeled = 60.8, rawRR C/s = 7.1, output = 100.0
+(103277) RAW PELTIER: TC-1 = 83.2, HSTemp = 19.8, modeled = 61.1, rawRR C/s = 7.1, output = 100.0
+(103326) RAW PELTIER: TC-1 = 83.5, HSTemp = 19.8, modeled = 61.4, rawRR C/s = 7.0, output = 100.0
+(103377) RAW PELTIER: TC-1 = 83.9, HSTemp = 19.8, modeled = 61.7, rawRR C/s = 6.8, output = 100.0
+(103426) RAW PELTIER: TC-1 = 84.2, HSTemp = 19.8, modeled = 62.0, rawRR C/s = 6.6, output = 100.0
+(103477) RAW PELTIER: TC-1 = 84.6, HSTemp = 19.8, modeled = 62.3, rawRR C/s = 6.4, output = 100.0
+(103526) RAW PELTIER: TC-1 = 84.9, HSTemp = 19.8, modeled = 62.6, rawRR C/s = 6.2, output = 100.0
+(103577) RAW PELTIER: TC-1 = 85.3, HSTemp = 19.8, modeled = 62.9, rawRR C/s = 6.3, output = 100.0
+(103627) RAW PELTIER: TC-1 = 85.6, HSTemp = 19.8, modeled = 63.2, rawRR C/s = 6.3, output = 100.0
+(103677) RAW PELTIER: TC-1 = 85.9, HSTemp = 19.8, modeled = 63.5, rawRR C/s = 6.5, output = 100.0
+(103726) RAW PELTIER: TC-1 = 86.3, HSTemp = 19.8, modeled = 63.8, rawRR C/s = 6.5, output = 100.0
+(103777) RAW PELTIER: TC-1 = 86.6, HSTemp = 19.8, modeled = 64.1, rawRR C/s = 6.3, output = 100.0
+(103827) RAW PELTIER: TC-1 = 86.9, HSTemp = 19.8, modeled = 64.4, rawRR C/s = 6.3, output = 100.0
+(103880) RAW PELTIER: TC-1 = 87.3, HSTemp = 19.8, modeled = 64.7, rawRR C/s = 6.2, output = 100.0
+(103933) RAW PELTIER: TC-1 = 87.6, HSTemp = 19.8, modeled = 65.0, rawRR C/s = 6.3, output = 100.0
+(103980) RAW PELTIER: TC-1 = 87.9, HSTemp = 19.8, modeled = 65.3, rawRR C/s = 6.3, output = 100.0
+(104029) RAW PELTIER: TC-1 = 87.9, HSTemp = 19.8, modeled = 65.6, rawRR C/s = 6.3, output = 100.0
+(104078) RAW PELTIER: TC-1 = 88.3, HSTemp = 19.8, modeled = 65.9, rawRR C/s = 6.2, output = 100.0
+(104130) RAW PELTIER: TC-1 = 88.6, HSTemp = 19.8, modeled = 66.1, rawRR C/s = 6.2, output = 100.0
+(104178) RAW PELTIER: TC-1 = 88.9, HSTemp = 19.8, modeled = 66.4, rawRR C/s = 6.1, output = 100.0
+(104229) RAW PELTIER: TC-1 = 89.3, HSTemp = 19.8, modeled = 66.7, rawRR C/s = 6.1, output = 100.0
+(104279) RAW PELTIER: TC-1 = 89.6, HSTemp = 19.8, modeled = 67.0, rawRR C/s = 6.0, output = 100.0
+(104329) RAW PELTIER: TC-1 = 89.9, HSTemp = 19.8, modeled = 67.3, rawRR C/s = 6.0, output = 100.0
+(104379) RAW PELTIER: TC-1 = 90.2, HSTemp = 19.8, modeled = 67.6, rawRR C/s = 6.0, output = 100.0
+(104430) RAW PELTIER: TC-1 = 90.5, HSTemp = 19.8, modeled = 67.8, rawRR C/s = 6.0, output = 100.0
+(104479) RAW PELTIER: TC-1 = 90.9, HSTemp = 19.8, modeled = 68.1, rawRR C/s = 6.2, output = 100.0
+(104530) RAW PELTIER: TC-1 = 91.2, HSTemp = 19.8, modeled = 68.4, rawRR C/s = 6.0, output = 100.0
+(104579) RAW PELTIER: TC-1 = 91.5, HSTemp = 19.8, modeled = 68.7, rawRR C/s = 6.0, output = 100.0
+(104630) RAW PELTIER: TC-1 = 91.8, HSTemp = 19.8, modeled = 69.0, rawRR C/s = 5.9, output = 100.0
+(104679) RAW PELTIER: TC-1 = 92.1, HSTemp = 19.8, modeled = 69.3, rawRR C/s = 5.9, output = 100.0
+(104731) RAW PELTIER: TC-1 = 92.4, HSTemp = 19.8, modeled = 69.5, rawRR C/s = 5.7, output = 100.0
+(104785) RAW PELTIER: TC-1 = 92.7, HSTemp = 19.8, modeled = 69.8, rawRR C/s = 5.6, output = 100.0
+(104833) RAW PELTIER: TC-1 = 93.0, HSTemp = 19.8, modeled = 70.1, rawRR C/s = 5.7, output = 100.0
+(104882) RAW PELTIER: TC-1 = 93.0, HSTemp = 19.8, modeled = 70.4, rawRR C/s = 5.7, output = 100.0
+(104934) RAW PELTIER: TC-1 = 93.3, HSTemp = 19.8, modeled = 70.6, rawRR C/s = 5.5, output = 100.0
+(104983) RAW PELTIER: TC-1 = 93.6, HSTemp = 19.8, modeled = 70.9, rawRR C/s = 5.7, output = 100.0
+(105034) RAW PELTIER: TC-1 = 94.0, HSTemp = 19.8, modeled = 71.2, rawRR C/s = 5.8, output = 100.0
+(105084) RAW PELTIER: TC-1 = 94.3, HSTemp = 19.8, modeled = 71.4, rawRR C/s = 5.8, output = 100.0
+(105133) RAW PELTIER: TC-1 = 94.6, HSTemp = 19.8, modeled = 71.7, rawRR C/s = 5.6, output = 100.0
+(105183) RAW PELTIER: TC-1 = 94.9, HSTemp = 19.8, modeled = 72.0, rawRR C/s = 5.4, output = 100.0
+(105232) RAW PELTIER: TC-1 = 95.1, HSTemp = 19.8, modeled = 72.2, rawRR C/s = 5.2, output = 100.0
+(105283) RAW PELTIER: TC-1 = 95.4, HSTemp = 19.8, modeled = 72.5, rawRR C/s = 5.1, output = 100.0
+(105333) RAW PELTIER: TC-1 = 95.7, HSTemp = 19.8, modeled = 72.8, rawRR C/s = 5.2, output = 100.0
+(105383) RAW PELTIER: TC-1 = 96.0, HSTemp = 19.8, modeled = 73.0, rawRR C/s = 5.4, output = 100.0
+(105434) RAW PELTIER: TC-1 = 96.2, HSTemp = 19.8, modeled = 73.3, rawRR C/s = 5.3, output = 100.0
+(105483) RAW PELTIER: TC-1 = 96.5, HSTemp = 19.8, modeled = 73.6, rawRR C/s = 5.2, output = 100.0
+(105534) RAW PELTIER: TC-1 = 96.8, HSTemp = 19.8, modeled = 73.8, rawRR C/s = 5.2, output = 100.0
+(105585) RAW PELTIER: TC-1 = 97.1, HSTemp = 19.9, modeled = 74.1, rawRR C/s = 5.0, output = 100.0
+(105637) RAW PELTIER: TC-1 = 97.3, HSTemp = 19.9, modeled = 74.4, rawRR C/s = 5.1, output = 100.0
+(105690) RAW PELTIER: TC-1 = 97.6, HSTemp = 19.9, modeled = 74.6, rawRR C/s = 5.1, output = 100.0
+(105741) RAW PELTIER: TC-1 = 97.9, HSTemp = 19.9, modeled = 74.9, rawRR C/s = 5.0, output = 100.0
+(105785) RAW PELTIER: TC-1 = 97.9, HSTemp = 19.9, modeled = 75.2, rawRR C/s = 5.0, output = 100.0
+(105836) RAW PELTIER: TC-1 = 98.1, HSTemp = 19.9, modeled = 75.4, rawRR C/s = 5.1, output = 100.0
+(105885) RAW PELTIER: TC-1 = 98.4, HSTemp = 19.9, modeled = 75.7, rawRR C/s = 5.0, output = 100.0
+(105936) RAW PELTIER: TC-1 = 98.7, HSTemp = 19.9, modeled = 75.9, rawRR C/s = 4.9, output = 100.0
+(105985) RAW PELTIER: TC-1 = 98.9, HSTemp = 19.9, modeled = 76.2, rawRR C/s = 4.9, output = 100.0
+(106036) RAW PELTIER: TC-1 = 99.2, HSTemp = 19.9, modeled = 76.4, rawRR C/s = 4.9, output = 100.0
+(106085) RAW PELTIER: TC-1 = 99.4, HSTemp = 19.9, modeled = 76.7, rawRR C/s = 5.0, output = 100.0
+(106136) RAW PELTIER: TC-1 = 99.7, HSTemp = 19.9, modeled = 76.9, rawRR C/s = 5.0, output = 100.0
+(106185) RAW PELTIER: TC-1 = 100.0, HSTemp = 19.9, modeled = 77.2, rawRR C/s = 5.0, output = 100.0
+(106236) RAW PELTIER: TC-1 = 100.2, HSTemp = 19.9, modeled = 77.4, rawRR C/s = 4.8, output = 100.0
+(106285) RAW PELTIER: TC-1 = 100.5, HSTemp = 19.9, modeled = 77.7, rawRR C/s = 4.7, output = 100.0
+(106336) RAW PELTIER: TC-1 = 100.7, HSTemp = 19.9, modeled = 77.9, rawRR C/s = 5.0, output = 100.0
+(106385) RAW PELTIER: TC-1 = 101.0, HSTemp = 19.9, modeled = 78.2, rawRR C/s = 4.9, output = 100.0
+(106436) RAW PELTIER: TC-1 = 101.3, HSTemp = 19.9, modeled = 78.4, rawRR C/s = 5.1, output = 100.0
+(106486) RAW PELTIER: TC-1 = 101.5, HSTemp = 19.9, modeled = 78.7, rawRR C/s = 5.1, output = 100.0
+(106538) RAW PELTIER: TC-1 = 101.8, HSTemp = 19.9, modeled = 78.9, rawRR C/s = 4.6, output = 100.0
+(106592) RAW PELTIER: TC-1 = 102.0, HSTemp = 19.9, modeled = 79.2, rawRR C/s = 4.7, output = 100.0
+(106639) RAW PELTIER: TC-1 = 102.3, HSTemp = 20.0, modeled = 79.4, rawRR C/s = 4.4, output = 100.0
+(106688) RAW PELTIER: TC-1 = 102.3, HSTemp = 20.0, modeled = 79.7, rawRR C/s = 4.4, output = 100.0
+(106738) RAW PELTIER: TC-1 = 102.5, HSTemp = 20.0, modeled = 79.9, rawRR C/s = 4.3, output = 100.0
+(106789) RAW PELTIER: TC-1 = 102.8, HSTemp = 20.0, modeled = 80.1, rawRR C/s = 4.6, output = 100.0
+(106838) RAW PELTIER: TC-1 = 103.0, HSTemp = 20.0, modeled = 80.4, rawRR C/s = 4.5, output = 100.0
+(106889) RAW PELTIER: TC-1 = 103.2, HSTemp = 20.0, modeled = 80.6, rawRR C/s = 4.5, output = 100.0
+(106939) RAW PELTIER: TC-1 = 103.5, HSTemp = 20.0, modeled = 80.9, rawRR C/s = 4.6, output = 100.0
+(106990) RAW PELTIER: TC-1 = 103.7, HSTemp = 20.0, modeled = 81.1, rawRR C/s = 4.5, output = 100.0
+(107038) RAW PELTIER: TC-1 = 104.0, HSTemp = 20.0, modeled = 81.3, rawRR C/s = 4.4, output = 100.0
+(107089) RAW PELTIER: TC-1 = 104.2, HSTemp = 20.0, modeled = 81.6, rawRR C/s = 4.5, output = 100.0
+(107138) RAW PELTIER: TC-1 = 104.4, HSTemp = 20.0, modeled = 81.8, rawRR C/s = 4.3, output = 100.0
+(107189) RAW PELTIER: TC-1 = 104.7, HSTemp = 20.0, modeled = 82.1, rawRR C/s = 4.4, output = 100.0
+(107238) RAW PELTIER: TC-1 = 104.9, HSTemp = 20.0, modeled = 82.3, rawRR C/s = 4.3, output = 100.0
+(107290) RAW PELTIER: TC-1 = 105.1, HSTemp = 20.0, modeled = 82.5, rawRR C/s = 4.2, output = 100.0
+(107338) RAW PELTIER: TC-1 = 105.3, HSTemp = 20.0, modeled = 82.8, rawRR C/s = 4.3, output = 100.0
+(107378) heapMonitor_checkFreeHeapSize: New heap low water mark 114776
+(107392) RAW PELTIER: TC-1 = 105.6, HSTemp = 20.0, modeled = 83.0, rawRR C/s = 4.4, output = 100.0
+(107445) RAW PELTIER: TC-1 = 105.8, HSTemp = 20.0, modeled = 83.2, rawRR C/s = 4.5, output = 100.0
+(107492) RAW PELTIER: TC-1 = 106.1, HSTemp = 20.1, modeled = 83.5, rawRR C/s = 4.6, output = 100.0
+(107542) RAW PELTIER: TC-1 = 106.1, HSTemp = 20.1, modeled = 83.7, rawRR C/s = 4.6, output = 100.0
+(107592) RAW PELTIER: TC-1 = 106.3, HSTemp = 20.1, modeled = 83.9, rawRR C/s = 4.5, output = 100.0
+(107643) RAW PELTIER: TC-1 = 106.5, HSTemp = 20.1, modeled = 84.1, rawRR C/s = 4.3, output = 100.0
+(107691) RAW PELTIER: TC-1 = 106.8, HSTemp = 20.1, modeled = 84.4, rawRR C/s = 4.2, output = 100.0
+(107742) RAW PELTIER: TC-1 = 107.0, HSTemp = 20.1, modeled = 84.6, rawRR C/s = 4.4, output = 100.0
+(107791) RAW PELTIER: TC-1 = 107.2, HSTemp = 20.1, modeled = 84.8, rawRR C/s = 4.1, output = 100.0
+(107842) RAW PELTIER: TC-1 = 107.4, HSTemp = 20.1, modeled = 85.1, rawRR C/s = 4.0, output = 100.0
+(107891) RAW PELTIER: TC-1 = 107.6, HSTemp = 20.1, modeled = 85.3, rawRR C/s = 4.1, output = 100.0
+(107941) RAW PELTIER: TC-1 = 107.8, HSTemp = 20.1, modeled = 85.5, rawRR C/s = 3.9, output = 100.0
+(107991) RAW PELTIER: TC-1 = 108.1, HSTemp = 20.1, modeled = 85.7, rawRR C/s = 4.4, output = 100.0
+(108042) RAW PELTIER: TC-1 = 108.3, HSTemp = 20.1, modeled = 86.0, rawRR C/s = 4.2, output = 100.0
+(108091) RAW PELTIER: TC-1 = 108.5, HSTemp = 20.1, modeled = 86.2, rawRR C/s = 4.1, output = 100.0
+(108142) RAW PELTIER: TC-1 = 108.7, HSTemp = 20.1, modeled = 86.4, rawRR C/s = 3.9, output = 100.0
+(108192) RAW PELTIER: TC-1 = 108.9, HSTemp = 20.1, modeled = 86.6, rawRR C/s = 3.8, output = 100.0
+(108245) RAW PELTIER: TC-1 = 109.1, HSTemp = 20.2, modeled = 86.9, rawRR C/s = 3.8, output = 100.0
+(108298) RAW PELTIER: TC-1 = 109.3, HSTemp = 20.2, modeled = 87.1, rawRR C/s = 3.7, output = 100.0
+(108345) RAW PELTIER: TC-1 = 109.5, HSTemp = 20.2, modeled = 87.3, rawRR C/s = 3.9, output = 100.0
+(108394) RAW PELTIER: TC-1 = 109.5, HSTemp = 20.2, modeled = 87.5, rawRR C/s = 3.9, output = 100.0
+(108443) RAW PELTIER: TC-1 = 109.7, HSTemp = 20.2, modeled = 87.7, rawRR C/s = 3.7, output = 100.0
+(108494) RAW PELTIER: TC-1 = 109.9, HSTemp = 20.2, modeled = 88.0, rawRR C/s = 3.7, output = 100.0
+(108543) RAW PELTIER: TC-1 = 110.1, HSTemp = 20.2, modeled = 88.2, rawRR C/s = 3.8, output = 100.0
+(108594) RAW PELTIER: TC-1 = 110.3, HSTemp = 20.2, modeled = 88.4, rawRR C/s = 3.8, output = 100.0
+(108643) RAW PELTIER: TC-1 = 110.5, HSTemp = 20.2, modeled = 88.6, rawRR C/s = 4.0, output = 100.0
+(108694) RAW PELTIER: TC-1 = 110.8, HSTemp = 20.2, modeled = 88.8, rawRR C/s = 4.1, output = 100.0
+(108743) RAW PELTIER: TC-1 = 111.0, HSTemp = 20.2, modeled = 89.0, rawRR C/s = 3.8, output = 100.0
+(108794) RAW PELTIER: TC-1 = 111.2, HSTemp = 20.2, modeled = 89.2, rawRR C/s = 3.8, output = 100.0
+(108843) RAW PELTIER: TC-1 = 111.4, HSTemp = 20.2, modeled = 89.5, rawRR C/s = 3.7, output = 100.0
+(108894) RAW PELTIER: TC-1 = 111.6, HSTemp = 20.2, modeled = 89.7, rawRR C/s = 3.6, output = 100.0
+(108943) RAW PELTIER: TC-1 = 111.8, HSTemp = 20.3, modeled = 89.9, rawRR C/s = 3.9, output = 100.0
+(108993) RAW PELTIER: TC-1 = 112.0, HSTemp = 20.3, modeled = 90.1, rawRR C/s = 3.8, output = 100.0
+(109043) RAW PELTIER: TC-1 = 112.2, HSTemp = 20.3, modeled = 90.3, rawRR C/s = 3.7, output = 100.0
+(109096) RAW PELTIER: TC-1 = 112.3, HSTemp = 20.3, modeled = 90.5, rawRR C/s = 3.6, output = 100.0
+(109149) RAW PELTIER: TC-1 = 112.5, HSTemp = 20.3, modeled = 90.7, rawRR C/s = 3.4, output = 100.0
+(109196) RAW PELTIER: TC-1 = 112.5, HSTemp = 20.3, modeled = 90.9, rawRR C/s = 3.4, output = 100.0
+(109246) RAW PELTIER: TC-1 = 112.7, HSTemp = 20.3, modeled = 91.1, rawRR C/s = 3.5, output = 100.0
+(109295) RAW PELTIER: TC-1 = 112.9, HSTemp = 20.3, modeled = 91.3, rawRR C/s = 3.6, output = 100.0
+(109346) RAW PELTIER: TC-1 = 113.1, HSTemp = 20.3, modeled = 91.5, rawRR C/s = 3.7, output = 100.0
+(109395) RAW PELTIER: TC-1 = 113.3, HSTemp = 20.3, modeled = 91.7, rawRR C/s = 3.8, output = 100.0
+(109446) RAW PELTIER: TC-1 = 113.5, HSTemp = 20.3, modeled = 92.0, rawRR C/s = 3.6, output = 100.0
+(109495) RAW PELTIER: TC-1 = 113.7, HSTemp = 20.3, modeled = 92.2, rawRR C/s = 3.6, output = 100.0
+(109546) RAW PELTIER: TC-1 = 113.9, HSTemp = 20.3, modeled = 92.4, rawRR C/s = 3.4, output = 100.0
+(109595) RAW PELTIER: TC-1 = 114.1, HSTemp = 20.4, modeled = 92.6, rawRR C/s = 3.3, output = 100.0
+(109646) RAW PELTIER: TC-1 = 114.2, HSTemp = 20.4, modeled = 92.8, rawRR C/s = 3.4, output = 100.0
+(109696) RAW PELTIER: TC-1 = 114.4, HSTemp = 20.4, modeled = 93.0, rawRR C/s = 3.3, output = 100.0
+(109746) RAW PELTIER: TC-1 = 114.6, HSTemp = 20.4, modeled = 93.2, rawRR C/s = 3.3, output = 100.0
+(109795) RAW PELTIER: TC-1 = 114.8, HSTemp = 20.4, modeled = 93.4, rawRR C/s = 3.4, output = 100.0
+(109846) RAW PELTIER: TC-1 = 114.9, HSTemp = 20.4, modeled = 93.6, rawRR C/s = 3.3, output = 100.0
+(109896) _deviceLogsSetPCR: Adding Time 13671
+(109897) _peltierRawTest: Peltier Raw Test Disabled. TEC was too hot!
+(109898) stashException: Exception Stashed (0x060C3)
+(109995) printException: ************
+(109995) printException: Error Code:  (0x000060C3)
+(109996) printException: Originator:   (0x06)  Peltier
+(110000) printException: Error Type:  (0x0C)  Peltier Too Hot
+(110007) printException: Priority:       (0x03)  Reset Recoverable
+(110014) printException: Time Since Boot:       (109224) ms
+(110020) printException: Time Since Expt:       (0) ms
+(110026) _disablePeltiers: Peltiers Disabled
+(110031) handleException: ************
+
+(110036) systemRequestStateChange: System State Transition CRITICAL -> ERROR
+(110044) _deviceLogsAddPcrChamberTECTimeOn: Adding PCR Time 13671 seconds
+(110052) _deviceLogsAddTreatmentChamberTECTimeOn: Adding TC Time 0 seconds
+(110059) deviceLogsWriteLogs: Writing device logs
+(110065) blePeriphNotifySubscription: ENTER NOTIFY
+(110071) systemRequestStateChange: Notify exit state change
+(110092) _writeNewLogData: Writing new log data string 0,0,0,0,0,0,0,0,2765,0,0,0,0,0,0 into file
+(110143) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(110149) thermalControlTask: thermal control sleep.
+(110213) taskMonitor_task: Task Button Task hasn't checked in for 200 ms
+(110250) _overwriteLogFile: file written
+(182378) heapMonitor_checkFreeHeapSize: New heap low water mark 114712
