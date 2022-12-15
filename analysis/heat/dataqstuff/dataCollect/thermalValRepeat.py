@@ -10,18 +10,23 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
 from statsmodels.graphics.factorplots import interaction_plot
+import os
 # import statsmodels.api as sm
 
 
 # total = [dat.adv06c]
-total = dat.TC
-instList = [6,7,10,12,13,15,17,25,26,27]*3
+total = [dat.TC[0],dat.TC[1],dat.TC[2],dat.TC[6],dat.TC[7],dat.TC[8],dat.TCRerun[0],dat.TCRerun[1],dat.TCRerun[2],dat.TC[21],dat.TC[22],dat.TC[23],dat.TCRerun[3],dat.TCRerun[4],dat.TCRerun[5]]
+
+
+instListShort = [6,6.1,10,10.1,25,25.1]
+
+instList = instListShort*3
 instList.sort()
-instListShort = [6,7,10,12,13,15,17,25,26,27]
-cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,30,30,30]
-cupListClump = [32,12,30,30,30,30,30,30,30,30]
-date = [1011,1011,1011,1012,1012,1012,1102,1102,1102,1003,1003,1003,1018,1018,1018,1017,1017,1017,1003,1003,1003,1020,1020,1020,1020,1021,1021,1021,1021,1021]
-dateClump = [1011,1012,1102,1003,1018,1017,1003,1020,1021,1021]
+
+cupList = [32,32,32,11,11,11,30,30,30,11,11,11,30,30,30,11,11,11]
+cupListClump = [32,11,30,11,30,11]
+date = [1011,1011,1011,1215,1215,1215,1102,1102,1102,1214,1214,1214,1020,1020,1020,1214,1214,1214]
+dateClump = [1011,1215,1102,1214,1020,1214]
 
 colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
 
@@ -87,7 +92,10 @@ def hold(temp):
         # print(i[0])
         plt.plot(i[0][indx[0]:indx[-1]],i[2][indx[0]:indx[-1]],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
         plt.plot(i[0][indx[0]:indx[-1]],i[4][indx[0]:indx[-1]],'k')
-        plt.hlines(temp-5,40,160,'k')
+        if temp == 62:
+            plt.hlines(temp-5,40,160,'k')
+        elif temp == 90:
+            plt.hlines(temp-5,200,500,'k')
         count2+=1
         if count2%3 == 0:
             n += 1
@@ -101,16 +109,13 @@ def hold(temp):
     
     
     
-
+    # print(len(total)))
 
     dfAnova = pd.DataFrame({'Instrument':instList,'Cup':cupList,'Date':date,'Mean':magMeans,'PercentPass':percPass})
     # dfAnova.hist('PercentPass')
     
 
-    if stats.anderson(dfAnova.Mean,dist='norm')[0] < stats.anderson(dfAnova.Mean,dist='norm')[1][2]:
-        print('data are normal')
-    else:
-        print('data are not normal')
+
 
 
     formula = 'Mean ~ Instrument' 
@@ -122,14 +127,7 @@ def hold(temp):
     aov_table2 = anova_lm(model2, typ=1)
     # print(aov_table,'\n',aov_table2)
 
-    tCurve = np.linspace(min(dfAnova.Mean),max(dfAnova.Mean))
-    
-    dfAnova.hist('Mean',density=True)
-    # plt.figure()
-    plt.plot(tCurve,stats.t.pdf(tCurve,df=len(dfAnova.Mean)-1,loc=np.mean(tCurve),scale=np.std(tCurve)))
-    plt.figure()
-    stats.probplot(dfAnova.Mean,plot=plt,dist='t',sparams=(len(dfAnova.Mean)-1,))
-    
+
 
     m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
                             alpha=alpha)
@@ -143,7 +141,7 @@ def hold(temp):
         plt.text(count,85,''.join(['p',str(cupListClump[i])]))
         plt.text(count,84.75,str(dateClump[i]))
         count+=1
-    plt.hlines(temp,1,10,'r')
+    plt.hlines(temp,1,len(instListShort),'r')
     plt.ylabel('Temp (c)')
     dfAnova.boxplot('PercentPass',by='Instrument')
     count = 1
@@ -206,37 +204,14 @@ def hold(temp):
     plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
 
-    
+    if stats.anderson(dfAnova.Mean,dist='norm')[0] < stats.anderson(dfAnova.Mean,dist='norm')[1][2]:
+        print('data are normal')
+    else:
+        print('data are not normal')
     
 
 
 hold(90)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  
 def plotSpec(toPlot):
@@ -251,28 +226,6 @@ def plotSpec(toPlot):
 # josh = [12,13,14,21,22,23]
 josh = [15,16,17,18,19,20]
 # plotSpec(josh)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

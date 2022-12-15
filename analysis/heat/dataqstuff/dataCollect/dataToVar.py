@@ -488,23 +488,29 @@ date = '13Sep2022'
 # adv27c = gd.getData('Adv27_P30_381c2a_221021_Run3.csv',date)
 
 
-# date = '08Dec2022'
-# DV = []
-# wet = []
-# both = []
+date = '15Dec2022b'
+DV = []
+wet = []
+both = []
 
-# for i in os.listdir(''.join(['data/',date])):
-#     if 'DV' in i:
-#         DV.append(gd.getDataPCR(i,date))
-#     elif 'W' in i:
-#         wet.append(gd.getDataPCR(i,date))
+for i in os.listdir(''.join(['data/',date])):
+    if 'DV' in i:
+        DV.append(gd.getDataPCR(i,date))
+    elif 'W' in i:
+        wet.append(gd.getDataPCR(i,date))
 
-# for i in os.listdir(''.join(['data/',date])):
-#     if i in DV and i in wet:
-#         both.append(gd.getDataPCR(i,date))
+for i in os.listdir(''.join(['data/',date])):
+    if i in DV and i in wet:
+        both.append(gd.getDataPCR(i,date))
 
 date = '12Dec2022'
 
 TC = []
 for i in os.listdir(''.join(['data/',date])):
     TC.append(gd.getData(i,date))
+
+date = '15Dec2022'
+TCRerun = []
+for i in os.listdir(''.join(['data/',date])):
+    TCRerun.append(gd.getData(i,date))
+
