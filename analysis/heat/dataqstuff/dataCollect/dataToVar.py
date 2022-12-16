@@ -519,3 +519,8 @@ date = '16Dec2022'
 TC09 = []
 for i in os.listdir(''.join(['data/',date])):
     TC09.append(gd.getData(i,date))
+
+date = '16Dec2022b'
+PCR09 = []
+for i in os.listdir(''.join(['data/',date])):
+    PCR09.append(gd.getDataPCR(i,date))
