@@ -32,16 +32,16 @@ def timeToTemp(tempC):
         temp.append(temp2)
         indx.append(absDif.index(min(absDif)))
         
-        plt.plot(np.array(time2)-time2[0],temp2,label=i)
+        # plt.plot(np.array(time2)-time2[0],temp2,label=i)
     
     # print('\n',i)
     
     
 
-    plt.ylabel('Temp (c)')
-    plt.xlabel('Time (sec)')
-    plt.grid()
-    plt.legend()
+    # plt.ylabel('Temp (c)')
+    # plt.xlabel('Time (sec)')
+    # plt.grid()
+    # plt.legend()
     # plt.show()
     times = []
     for i in range(len(temp)):
