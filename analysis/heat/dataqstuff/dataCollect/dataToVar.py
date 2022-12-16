@@ -514,3 +514,8 @@ TCRerun = []
 for i in os.listdir(''.join(['data/',date])):
     TCRerun.append(gd.getData(i,date))
 
+
+date = '16Dec2022'
+TC09 = []
+for i in os.listdir(''.join(['data/',date])):
+    TC09.append(gd.getData(i,date))
