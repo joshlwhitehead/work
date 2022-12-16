@@ -55,7 +55,7 @@ for i in temps:
     dF[''.join(['timeTo',str(i),'C'])] = timeToTemp(i)
 
 dF = pd.DataFrame(dF)
-dF.to_csv('test.csv')
+dF.to_csv('timeTo.csv')
 
 
 

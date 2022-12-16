@@ -15,7 +15,9 @@ import os
 
 
 # total = [dat.adv06c]
-total = [dat.TC[0],dat.TC[1],dat.TC[2],dat.TC[6],dat.TC[7],dat.TC[8],dat.TCRerun[0],dat.TCRerun[1],dat.TCRerun[2],dat.TC[21],dat.TC[22],dat.TC[23],dat.TCRerun[3],dat.TCRerun[4],dat.TCRerun[5]]
+total = [dat.TC[0],dat.TC[1],dat.TC[2],dat.TCRerun[0],dat.TCRerun[1],dat.TCRerun[2],
+    dat.TC[6],dat.TC[7],dat.TC[8],dat.TCRerun[3],dat.TCRerun[4],dat.TCRerun[5],
+    dat.TC[21],dat.TC[22],dat.TC[23],dat.TCRerun[6],dat.TCRerun[7],dat.TCRerun[8]]
 
 
 instListShort = [6,6.1,10,10.1,25,25.1]
@@ -125,13 +127,13 @@ def hold(temp):
     formula2 = 'PercentPass ~ Instrument' 
     model2 = ols(formula2, dfAnova).fit()
     aov_table2 = anova_lm(model2, typ=1)
-    # print(aov_table,'\n',aov_table2)
+    print(aov_table,'\n',aov_table2)
 
 
 
     m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
                             alpha=alpha)
-    # print(m_comp)
+    print(m_comp)
     # print(percPass)
     # print(np.array(magMeans)-90)
 
