@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['test.py'],
+    ['JSDCSAM.py'],
     pathex=['C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis','C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis\\lib'],
     binaries=[],
     datas=[],
@@ -21,7 +21,6 @@ a = Analysis(
 )
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
-
 exe = EXE(
     pyz,
     a.scripts,
@@ -29,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='test',
+    name='JSDCSAM',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
