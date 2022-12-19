@@ -61,7 +61,7 @@ for i in range(len(temp)):
 
 temps = np.arange(40,115,10)
 
-dF = {'fileName':os.listdir('data')[0]}
+dF = pd.DataFrame({'fileName':os.listdir('data')[0]})
 
 
 
