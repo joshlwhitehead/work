@@ -48,7 +48,7 @@ def mkCsvPCR(txt,csv):
         i = i.split()
         
         if 'TC:' in i:
-            timeSinceBoot.append(float(i[0][1:-1]))
+            timeSinceBoot.append(float(i[0][1:-1])/1000)
             PCRTemp.append(float(i[4][:-1]))
             PCRModeledTempC.append(float(i[7][:-1]))
             PCRTargetTempC.append(float(i[10][:-1]))

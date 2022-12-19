@@ -14,14 +14,15 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 
 # total = [dat.adv06c]
-total = dat.TC
-instList = [6,7,10,12,13,15,17,25,26,27]*3
+total = dat.TC09
+instListShort = [2,9,18,27]
+instList = instListShort*3
 instList.sort()
-instListShort = [6,7,10,12,13,15,17,25,26,27]
-cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,30,30,30]
-cupListClump = [32,12,30,30,30,30,30,30,30,30]
-date = [1011,1011,1011,1012,1012,1012,1102,1102,1102,1003,1003,1003,1018,1018,1018,1017,1017,1017,1003,1003,1003,1020,1020,1020,1020,1021,1021,1021,1021,1021]
-dateClump = [1011,1012,1102,1003,1018,1017,1003,1020,1021,1021]
+
+cupList = [11,11,11,11,11,11,11,11,11,11,11,11]
+cupListClump = [11,11,11,11]
+date = [1216,1219,1219,1216,1219,1219,1216,1219,1219,1216,1219,1219]
+dateClump = [1219,1219,1219,1219]
 
 colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
 
@@ -75,7 +76,7 @@ def hold(temp):
         modelMagMeans.append(modelMagMean)
         count = 0
         for u in indx:
-            if i[2][u] <= temp+5 and i[2][u] >= temp-5:
+            if i[2][u] <= temp+2.5 and i[2][u] >= temp-2.5:
                 count+=1 
             # else:
             #     print(i[2][u])
@@ -87,7 +88,7 @@ def hold(temp):
         # print(i[0])
         plt.plot(i[0][indx[0]:indx[-1]],i[2][indx[0]:indx[-1]],color=colors[n],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
         plt.plot(i[0][indx[0]:indx[-1]],i[4][indx[0]:indx[-1]],'k')
-        plt.hlines(temp-5,40,160,'k')
+        plt.hlines(temp-2.5,200,500,'k')
         count2+=1
         if count2%3 == 0:
             n += 1
@@ -101,7 +102,7 @@ def hold(temp):
     
     
     
-
+    print(len(instList),len(cupList),len(date),len(magMeans),len(percPass))
 
     dfAnova = pd.DataFrame({'Instrument':instList,'Cup':cupList,'Date':date,'Mean':magMeans,'PercentPass':percPass})
     # dfAnova.hist('PercentPass')
@@ -120,7 +121,7 @@ def hold(temp):
     formula2 = 'PercentPass ~ Instrument' 
     model2 = ols(formula2, dfAnova).fit()
     aov_table2 = anova_lm(model2, typ=1)
-    # print(aov_table,'\n',aov_table2)
+    print(aov_table,'\n',aov_table2)
 
     tCurve = np.linspace(min(dfAnova.Mean),max(dfAnova.Mean))
     
@@ -133,7 +134,7 @@ def hold(temp):
 
     m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
                             alpha=alpha)
-    # print(m_comp)
+    print(m_comp)
     # print(percPass)
     # print(np.array(magMeans)-90)
 
@@ -143,7 +144,7 @@ def hold(temp):
         plt.text(count,85,''.join(['p',str(cupListClump[i])]))
         plt.text(count,84.75,str(dateClump[i]))
         count+=1
-    plt.hlines(temp,1,10,'r')
+    plt.hlines(temp,1,len(instListShort),'r')
     plt.ylabel('Temp (c)')
     dfAnova.boxplot('PercentPass',by='Instrument')
     count = 1
@@ -160,7 +161,7 @@ def hold(temp):
     clumpMeans = [magMeans[i:i+3] for i in range(0,len(magMeans),3)]
     clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
     
-    limit = temp - 5
+    limit = temp - 2.5
     count = 0
     probs = []
     for i in clumpMeans:

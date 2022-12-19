@@ -15,9 +15,10 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 # total = [dat.adv06c]
 total = dat.TC09
-instList = [2,9,18,27]
-instList.sort()
 instListShort = [2,9,18,27]
+instList = instListShort
+instList.sort()
+
 cupList = [11,11,11,11]
 cupListClump = [11,11,11,11]
 date = [1216,1216,1216,1216]
@@ -30,7 +31,6 @@ def hold(temp):
     alpha = 0.05
     rawSamp = []
     magMeans = []
-    temps = []
     modelMagMeans = []
     percPass = []
     count2 = 0
@@ -68,15 +68,15 @@ def hold(temp):
         # percPass.append(round(count/len(i[2]),2))
         # print(indx[0],indx[-1])
         
-        magMean = np.mean(i[2][indx[0]:indx[-1]]) #(max(i[2][indx[0]:indx[-1]])-min(i[2][indx[0]:indx[-1]]))/np.mean(i[2][indx[0]:indx[-1]])
-        modelMagMean = np.mean(i[4][indx[0]:indx[-1]]) #(max(i[4][indx[0]:indx[-1]])-min(i[4][indx[0]:indx[-1]]))/np.mean(i[4][indx[0]:indx[-1]])
+        magMean = i[2][indx[0]:indx[-1]] #(max(i[2][indx[0]:indx[-1]])-min(i[2][indx[0]:indx[-1]]))/np.mean(i[2][indx[0]:indx[-1]])
+        modelMagMean = i[4][indx[0]:indx[-1]] #(max(i[4][indx[0]:indx[-1]])-min(i[4][indx[0]:indx[-1]]))/np.mean(i[4][indx[0]:indx[-1]])
 
         
         magMeans.append(magMean)
         modelMagMeans.append(modelMagMean)
         count = 0
         for u in indx:
-            if i[2][u] <= temp+5 and i[2][u] >= temp-5:
+            if i[2][u] <= temp+2.5 and i[2][u] >= temp-2.5:
                 count+=1 
             # else:
             #     print(i[2][u])
@@ -86,11 +86,9 @@ def hold(temp):
         percPass.append(count/len(indx))
         # print(percPass)
         # print(i[0])
-        plt.plot(i[0][indx[0]:indx[-1]],i[2][indx[0]:indx[-1]],label=''.join(['adv',str(instList[total.index(i)]),' ',str(round(magMeans[total.index(i)],2))]))
+        plt.plot(i[0][indx[0]:indx[-1]],i[2][indx[0]:indx[-1]],label=''.join(['adv',str(instList[total.index(i)])]))
         plt.plot(i[0][indx[0]:indx[-1]],i[4][indx[0]:indx[-1]],'k')
-        plt.hlines(temp-5,200,500,'k')
-        temps.append(i[2][indx[0]:indx[-1]])
-        # plt.show()
+        plt.hlines(temp-2.5,200,500,'k')
         count2+=1
         if count2%3 == 0:
             n += 1
@@ -101,86 +99,38 @@ def hold(temp):
     plt.ylabel('Temp (c)')
     plt.xlabel('Time (sec)')
     plt.grid()
+    plt.show()
     
     
     
 
 
     dfAnova = pd.DataFrame({'Instrument':instList,'Cup':cupList,'Date':date,'Mean':magMeans,'PercentPass':percPass})
-    instListUnpack = []
-    for i in range(len(instList)):
-        instListUnpack.append(np.ones(len(temps[i]))*instList[i])
-    instListUnpack2 = []
-    temps2 = []
-    for i in instListUnpack:
-        for j in i:
-            instListUnpack2.append(j)
-    for i in temps:
-        for j in i:
-            temps2.append(j)
-    dfTemps = pd.DataFrame({'Instrument':instListUnpack2,'Temps':temps2})
     # dfAnova.hist('PercentPass')
     
+    for i in dfAnova.Mean:
+        x = np.linspace(min(i),max(i))
+        if stats.anderson(i,dist='norm')[0] < stats.anderson(i,dist='norm')[1][2]:
+            print('data are normal')
+        else:
+            print('data are not normal')
+        # plt.hist(i,density=True)
+        # plt.plot(x,stats.norm.pdf(x,loc=np.mean(x),scale=np.std(x)))
+        # plt.show()
+        
 
-    if stats.anderson(dfTemps.Temps,dist='norm')[0] < stats.anderson(dfTemps.Temps,dist='norm')[1][2]:
-        print('data are normal')
-    else:
-        print('data are not normal')
-        print(stats.anderson(dfTemps.Temps,dist='norm'))
-
-
-    formula = 'Temps ~ Instrument' 
-    model = ols(formula, dfTemps).fit()
-    aov_table = anova_lm(model, typ=1)
-
-    formula2 = 'PercentPass ~ Instrument' 
-    model2 = ols(formula2, dfAnova).fit()
-    aov_table2 = anova_lm(model2, typ=1)
-    print(aov_table,'\n',aov_table2)
-
-    tCurve = np.linspace(min(dfTemps.Temps),max(dfTemps.Temps))
-    
-    dfTemps.hist('Temps',density=True)
-    # plt.figure()
-    plt.plot(tCurve,stats.t.pdf(tCurve,df=len(dfTemps.Temps)-1,loc=np.mean(tCurve),scale=np.std(tCurve)))
-    plt.figure()
-    stats.probplot(dfTemps.Temps,plot=plt,dist='t',sparams=(len(dfTemps.Temps)-1,))
-    
-
-    m_comp = pairwise_tukeyhsd(endog=dfTemps['Temps'], groups=dfTemps['Instrument'], 
-                            alpha=alpha)
-    print(m_comp)
-
-    # print(percPass)
-    # print(np.array(magMeans)-90)
-
-    dfTemps.boxplot('Temps',by='Instrument')
-    count = 1
-    for i in range(len(cupListClump)):
-        # plt.text(count,85,''.join(['p',str(cupListClump[i])]))
-        # plt.text(count,84.75,str(dateClump[i]))
-        count+=1
-    plt.hlines(temp,1,len(instListShort),'r')
-    plt.ylabel('Temp (c)')
-    dfAnova.boxplot('PercentPass',by='Instrument')
-    count = 1
-    for i in range(len(cupListClump)):
-        # plt.text(count,0.4,''.join(['p',str(cupListClump[i])]))
-        # plt.text(count,.37,str(dateClump[i]))
-        count+=1
-    # plt.hlines(temp,0,10,'k')
-    # fig = interaction_plot(dfAnova.Instrument,dfAnova.Date,dfAnova.Mean,ms=10)
-    plt.show()
-    
-
-    
-    clumpMeans = [magMeans[i:i+1] for i in range(0,len(magMeans),1)]
-    # clumpInst = [instList[i] for i in range(0,len(instList))]
-    print(clumpMeans)
-    limit = temp - 5
+    limitLow = temp - 2.5
+    limitHigh = temp + 2.5
     count = 0
     probs = []
-    for i in temps:
+
+    
+
+    for i in dfAnova.Mean:
+        y = np.linspace(min(i),max(i))
+        # plt.hist(i,density=True)
+        # plt.plot(y,stats.norm.pdf(y,loc=np.mean(y),scale=np.std(y)))
+        # plt.show()
         mean_er = np.mean(i) # sample mean
         std_dev_er = np.std(i, ddof=1) # sample standard devialtion
         se = std_dev_er / np.sqrt(len(i)) # standard error
@@ -189,9 +139,11 @@ def hold(temp):
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
         moe = t_star * se # margin of error
         ci = np.array([mean_er - moe, mean_er + moe])
-        t_limit = (limit - mean_er) / se
-        pr = stats.t.cdf(t_limit, dof)
-        probs.append(pr)
+        t_limitLow = (limitLow - mean_er) / se
+        prLow = stats.t.cdf(t_limitLow, dof)
+        t_limitHigh = (limitHigh - mean_er) / se
+        prHigh = 1 - stats.t.cdf(t_limitHigh,dof)
+        probs.append(prLow+prHigh)
         # print('sample size = {:d}'.format(n))
         # print('sample mean = {:.1f} kg/h'.format(mean_er))
         # print('sample standard deviation = {:.2f} kg/h'.format(std_dev_er))
@@ -208,8 +160,8 @@ def hold(temp):
         plt.hlines(count,ci[0],ci[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
-    print(probs)
-    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+
+    plt.yticks(np.arange(0,len(dfAnova.Mean)),instListShort)
     plt.grid()
     plt.xlabel('Mean Temp (c)')
     plt.ylabel('AdvB')
@@ -220,13 +172,8 @@ def hold(temp):
     plt.grid()
     plt.xlabel('AdvB')
     plt.ylabel('Prob Mean < Model-5c')
-    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.xticks(np.arange(0,len(dfAnova.Mean)),instListShort)
     plt.show()
-
-    
-    
-
-
 hold(90)
 
 
