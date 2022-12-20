@@ -14,15 +14,15 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 
 # total = [dat.adv06c]
-total = dat.TC09
-instListShort = [2,9,18,27]
+total = dat.TC
+instListShort = [6,7,10,12,13,15,17,25,26,27]
 instList = instListShort*3
 instList.sort()
 
-cupList = [11,11,11,11,11,11,11,11,11,11,11,11]
-cupListClump = [11,11,11,11]
-date = [1216,1219,1219,1216,1219,1219,1216,1219,1219,1216,1219,1219]
-dateClump = [1219,1219,1219,1219]
+cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30]
+cupListClump = [11,11,11,11,11,11,11,11,11,11]
+date = [1216,1219,1219,1216,11,11,11,11,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+dateClump = [1219,1219,1219,1219,1,1,1,1,1,1]
 
 colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
 
@@ -70,9 +70,10 @@ def hold(temp):
         
         magMean = np.mean(i[2][indx[0]:indx[-1]]) #(max(i[2][indx[0]:indx[-1]])-min(i[2][indx[0]:indx[-1]]))/np.mean(i[2][indx[0]:indx[-1]])
         modelMagMean = np.mean(i[4][indx[0]:indx[-1]]) #(max(i[4][indx[0]:indx[-1]])-min(i[4][indx[0]:indx[-1]]))/np.mean(i[4][indx[0]:indx[-1]])
-
+        
         
         magMeans.append(magMean)
+    
         modelMagMeans.append(modelMagMean)
         count = 0
         for u in indx:
@@ -93,7 +94,7 @@ def hold(temp):
         if count2%3 == 0:
             n += 1
         
-
+    print(magMeans)
     plt.legend()
     plt.title(''.join(['Compare Sample to Model at ',str(temp)]))
     plt.ylabel('Temp (c)')
@@ -132,8 +133,7 @@ def hold(temp):
     stats.probplot(dfAnova.Mean,plot=plt,dist='t',sparams=(len(dfAnova.Mean)-1,))
     
 
-    m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], 
-                            alpha=alpha)
+    m_comp = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], alpha=alpha)
     print(m_comp)
     # print(percPass)
     # print(np.array(magMeans)-90)

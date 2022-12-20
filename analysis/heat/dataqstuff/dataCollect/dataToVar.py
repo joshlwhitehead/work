@@ -526,7 +526,7 @@ for i in os.listdir(''.join(['data/',date])):
     PCR09.append(gd.getDataPCR(i,date))
 
 
-import matplotlib.pyplot as plt
-plt.plot(TC09[0][0],TC09[0][2])
-plt.grid()
-plt.show()
+# import matplotlib.pyplot as plt
+# plt.plot(TC09[0][0],TC09[0][2])
+# plt.grid()
+# plt.show()
