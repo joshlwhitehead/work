@@ -530,3 +530,8 @@ for i in os.listdir(''.join(['data/',date])):
 # plt.plot(TC09[0][0],TC09[0][2])
 # plt.grid()
 # plt.show()
+
+date = '20Dec2022'
+wet09 = []
+for i in os.listdir(''.join(['data/',date])):
+    wet09.append(gd.getDataPCR(i,date))
