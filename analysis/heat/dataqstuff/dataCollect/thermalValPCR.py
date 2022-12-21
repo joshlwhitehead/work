@@ -312,6 +312,26 @@ def anneal():
     plt.xlabel('Mean Temp (c)')
     plt.ylabel('AdvB')
     plt.show()
+    count=0
+    for i in temp:
+        mean_er = np.mean(i)
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ciMult = np.array([mean_er - moe, mean_er + moe])
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    # print(clumpMeans)
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
 
     plt.title('Probability of Deviation from Model')
     plt.plot(probs,'o')
@@ -323,7 +343,7 @@ def anneal():
     # print(probs)
 
 
-denature()
+anneal()
 
 
     
