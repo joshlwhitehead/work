@@ -17,10 +17,10 @@ total = dat.wet09
 instListShort = [10,18]
 instList = instListShort*3
 instList.sort()
-plt.plot(total[0][4])
-plt.plot(total[0][2])
-plt.grid()
-plt.show()
+# plt.plot(total[0][4])
+# plt.plot(total[0][2])
+# plt.grid()
+# plt.show()
 def denature():
     temp = []
     # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
@@ -54,6 +54,7 @@ def denature():
         temp.append(peakSamp)
         mean = np.mean(peakSamp[:])
         means.append(mean)
+   
     plt.grid()
     plt.legend()
     plt.show()
@@ -95,7 +96,7 @@ def denature():
     clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
     clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
         
-
+    print(clumpMeans)
 
     # for i in dfAnova.Temp:
     #     dist = 'norm'
@@ -138,9 +139,28 @@ def denature():
         plt.hlines(count,ci[0],ci[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
-    print(clumpMeans)
     plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
-
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
+    count=0
+    for i in temp:
+        mean_er = np.mean(i)
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ciMult = np.array([mean_er - moe, mean_er + moe])
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    # print(clumpMeans)
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
     plt.ylabel('AdvB')
@@ -154,6 +174,15 @@ def denature():
     plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
     # print(probs)
+
+
+
+
+
+
+
+
+
 
 
 
