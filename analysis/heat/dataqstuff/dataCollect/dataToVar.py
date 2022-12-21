@@ -531,7 +531,7 @@ for i in os.listdir(''.join(['data/',date])):
 # plt.grid()
 # plt.show()
 
-date = '20Dec2022'
+date = '21Dec2022'
 wet09 = []
 for i in os.listdir(''.join(['data/',date])):
     wet09.append(gd.getDataPCR(i,date))
