@@ -21,7 +21,7 @@ print(stats.anderson(data['numericValue']))
 
 
 
-data.hist('numericValue')
+data.hist('numericValue',density=True)
 
 
 
