@@ -14,15 +14,15 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 
 # total = [dat.adv06c]
-total = dat.TC
-instListShort = [6,7,10,12,13,15,17,25,26,27]
+total = dat.TClarge
+instListShort = [2,9,18,27]
 instList = instListShort*3
 instList.sort()
 
-cupList = [32,32,32,12,12,12,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30]
-cupListClump = [11,11,11,11,11,11,11,11,11,11]
-date = [1216,1219,1219,1216,11,11,11,11,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-dateClump = [1219,1219,1219,1219,1,1,1,1,1,1]
+cupList = [11,11,11,11,11,11,11,11,11,11,11,11]
+cupListClump = [11,11,11,11]
+date = [1216,1219,1219,1216,11,11,11,11,11,1,1,1]
+dateClump = [1219,1219,1219,1219]
 
 colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
 

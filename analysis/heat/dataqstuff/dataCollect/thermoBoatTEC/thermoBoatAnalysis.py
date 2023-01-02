@@ -2,74 +2,164 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import openpyxl as op
+import xlsxwriter
+from scipy import stats
 
-
-
-
-
-time = []
-temp = []
-indx = []
-for i in os.listdir('data'):
-
-
-    fileName = i#'Thermalboat 20221207 Rebuilt Run 3.txt'
+timeTo = []
+fullTemp = []
+fullTime = []
+fullDerivTemp = []
+tempc = np.arange(40,115,10)
+for k in os.listdir('data'):
+    fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
     file = open(''.join(['data/',fileName]),'r')
-    tempC = np.arange(40,115,10)
-    time2 = []
-    temp2 = []
+    # tempC = 90
+    time = []
+    temp = []
     absDif = []
-    for i in tempC:
-        for u in file:
-            if 'TC-' in u:
-                u = u.split()
-                if float(u[5][:-1]) >= 25:
-                    time2.append(float(u[0][1:-1])/1000)
-                    temp2.append(float(u[5][:-1]))
-                    absDif.append(abs(i-float(u[5][:-1])))
-                    
-                    
 
-                    
-        time.append(np.array(time2)-time2[0])
-        temp.append(temp2)
-        indx.append(absDif.index(min(absDif)))
-        timeNorm = np.array(time2)-time2[0]
+    for u in file:
+        if 'TC-' in u:
+            u = u.split()
+            if float(u[5][:-1]) >= 25:
+                time.append(float(u[0][1:-1])/1000)
+                temp.append(float(u[5][:-1]))
+                # absDif.append(abs(tempC-float(u[5][:-1])))
+                
+    
 
-        a,b,c,d = np.polyfit(timeNorm,temp2,3)
+                
 
 
-        # plt.plot(timeNorm,temp2,'o',label=fileName)
-        # plt.plot(timeNorm,a*timeNorm**3+b*timeNorm**2+c*timeNorm+d)
-        # # plt.plot(timeNorm,3*a*timeNorm**2+2*b*timeNorm+c,label=fileName)
-
-        # # print('\n',i)
+    time = np.array(time)-time[0]
 
 
+    
+    for u in tempc:
+        absDif = []
+        indx = []
+        for i in temp:
+            absDif.append(abs(u-i))
 
-        # plt.ylabel('dT/dt (c/s)')
-        # plt.xlabel('Time (sec)')
-        # plt.grid()
-        # plt.legend()
-# plt.show()
+        indx = absDif.index(min(absDif))
+        # print(time[indx])
 
+        timeTo.append(time[indx])
+    fullTemp.append(temp)
+    fullTime.append(time)
 
-times = []
-for i in range(len(temp)):
-    times.append(time[i][indx[i]])
+    timeTemp = np.array([time,temp]).T
+    # wb = op.load_workbook('test.xlsx')
+    a,b,c = np.polyfit(time,temp,2)
+    fullDerivTemp.append(2*a*time+b)
 
-
-
-
-dF = pd.DataFrame({'fileName':os.listdir('data')})
+    
+timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]
+timeTo = np.array(timeTo).T
 
 
 
-dF.to_csv('data.csv')
+lens = []
+for i in range(len(fullTime)):
+    lens.append(len(fullTime[i]))
+
+sameLenTime = []
+sameLenTemp = []
+sameLenDeriv = []
+longest = max(lens)
+for i in range(len(fullTime)):
+    x = list(fullTime[i])
+    y = list(fullTemp[i])
+    z = list(fullDerivTemp[i])
+    while len(x) < longest:
+        
+        x.append(None)
+        y.append(None)
+        z.append(None)
+    sameLenTemp.append(y)
+    sameLenTime.append(x)
+    sameLenDeriv.append(z)
 
 
-temps = np.arange(40,115,10)
+
+
+def toExcel():
+    it = np.arange(0,len(timeTo))
+
+
+
+    fullDict = {}
+    for i in range(len(os.listdir('data'))):
+        x = [os.listdir('data')[i]]
+        while len(x) < longest:
+            x.append(None)
+        fullDict[''.join(['file name ',str(it[i])])] = x
+        fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
+        fullDict[''.join(['temp (c) ',str(it[i])])] = sameLenTemp[i]
+
+
+    dFTot = pd.DataFrame(fullDict)
+    writer = pd.ExcelWriter('test.xlsx',engine='xlsxwriter')
+    dFTot.to_excel(writer,sheet_name='full')
+    wb = writer.book
+    ws = writer.sheets['full']
+    chart = wb.add_chart({'type':'line'})
+
+    count = 2
+    for i in range(len(sameLenTemp)):
+        chart.add_series({
+            'categories':['full',1,count,len(sameLenTemp[0]),count],
+            'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
+            'name':['full',1,count-1]
+            })
+        count += 3
+    chart.set_x_axis({'name':'Time (sec)'})
+    chart.set_y_axis({'name':'Temp (c)'})
+
+    ws.insert_chart('D2',chart)
+    writer.save()
 
 
 
 
+
+
+
+
+
+    wb = op.load_workbook('test.xlsx')
+
+    with pd.ExcelWriter('test.xlsx',engine='openpyxl') as writer:
+        writer.book = wb
+        writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
+        dF = pd.DataFrame(timeTo.T,columns=tempc)
+        dF.to_excel(writer,'time to temp')
+        writer.save()
+
+
+    fullDict = {}
+    for i in range(len(os.listdir('data'))):
+        x = [os.listdir('data')[i]]
+        while len(x) < longest:
+            x.append(None)
+        fullDict[''.join(['file name ',str(it[i])])] = x
+        fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
+        fullDict[''.join(['dTdt ',str(it[i])])] = sameLenDeriv[i]
+
+
+    with pd.ExcelWriter('test.xlsx',engine='openpyxl') as writer:
+        writer.book = wb
+        writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
+        dF = pd.DataFrame(fullDict)
+        dF.to_excel(writer,'deriv')
+        writer.save()
+
+
+# print(timeTo[0])
+x = np.linspace(min(timeTo[-3]),max(timeTo[-3]))
+plt.hist(timeTo[-3],bins=10,density=True)
+plt.plot(x,stats.norm.pdf(x,loc=np.mean(timeTo[-3]),scale=np.std(timeTo[-3])))
+plt.show()
+
+print(stats.anderson(timeTo[-3]))

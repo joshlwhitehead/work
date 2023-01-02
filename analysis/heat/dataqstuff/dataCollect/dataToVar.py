@@ -535,3 +535,8 @@ date = '21Dec2022'
 wet09 = []
 for i in os.listdir(''.join(['data/',date])):
     wet09.append(gd.getDataPCR(i,date))
+
+date = '19Dec2022'
+TClarge = []
+for i in os.listdir(''.join(['data/',date])):
+    TClarge.append(gd.getData(i,date))
