@@ -5,6 +5,7 @@ import pandas as pd
 import openpyxl as op
 import xlsxwriter
 from scipy import stats
+import statsmodels.api as sm
 
 timeTo = []
 fullTemp = []
@@ -53,7 +54,15 @@ for k in os.listdir('data'):
     # wb = op.load_workbook('test.xlsx')
     a,b,c = np.polyfit(time,temp,2)
     fullDerivTemp.append(2*a*time+b)
+# fullTemp = np.array(fullTemp)
+# fullTime = np.array(fullTime)
 
+dFTest = pd.DataFrame({'time':fullTime[0],'temp':fullTemp[0]})
+
+formula = 'temp ~ time'
+model = sm.formula.ols(formula,dFTest)
+model_fitted = model.fit()
+print(model_fitted.summary())
     
 timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]
 timeTo = np.array(timeTo).T
