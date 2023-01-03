@@ -58,8 +58,6 @@ for k in os.listdir('data'):
 timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]
 timeTo = np.array(timeTo).T
 
-
-
 lens = []
 for i in range(len(fullTime)):
     lens.append(len(fullTime[i]))
@@ -81,7 +79,11 @@ for i in range(len(fullTime)):
     sameLenTime.append(x)
     sameLenDeriv.append(z)
 
+timeTo2 = timeTo.tolist()
 
+timeTo2.insert(0,os.listdir('data'))
+# print(timeTo)
+timeTo2 = np.array(timeTo2)
 
 
 def toExcel():
@@ -129,11 +131,13 @@ def toExcel():
 
 
     wb = op.load_workbook('test.xlsx')
-
+    tempc2 = tempc.tolist()
+    tempc2.insert(0,'file name')
+    tempc2 = np.array(tempc2)
     with pd.ExcelWriter('test.xlsx',engine='openpyxl') as writer:
         writer.book = wb
         writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-        dF = pd.DataFrame(timeTo.T,columns=tempc)
+        dF = pd.DataFrame(timeTo2.T,columns=tempc2)
         dF.to_excel(writer,'time to temp')
         writer.save()
 
@@ -155,11 +159,13 @@ def toExcel():
         dF.to_excel(writer,'deriv')
         writer.save()
 
-
+# toExcel()
 # print(timeTo[0])
-x = np.linspace(min(timeTo[-3]),max(timeTo[-3]))
-plt.hist(timeTo[-3],bins=10,density=True)
-plt.plot(x,stats.norm.pdf(x,loc=np.mean(timeTo[-3]),scale=np.std(timeTo[-3])))
-plt.show()
+# x = np.linspace(min(timeTo[-3]),max(timeTo[-3]))
+# plt.hist(timeTo[-3],bins=10,density=True)
+# plt.plot(x,stats.norm.pdf(x,loc=np.mean(timeTo[-3]),scale=np.std(timeTo[-3])))
+# plt.show()
 
-print(stats.anderson(timeTo[-3]))
+# print(stats.anderson(timeTo[-3]))
+
+
