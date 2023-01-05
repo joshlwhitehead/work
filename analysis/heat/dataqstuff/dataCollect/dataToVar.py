@@ -540,3 +540,8 @@ date = '19Dec2022'
 TClarge = []
 for i in os.listdir(''.join(['data/',date])):
     TClarge.append(gd.getData(i,date))
+
+date = '05Jan2023'
+wetPreMod = []
+for i in os.listdir(''.join(['data/',date])):
+    wetPreMod.append(gd.getDataPCR(i,date))

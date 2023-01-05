@@ -184,7 +184,7 @@ def mkCsvTC(txt,csv):
 
 
 for i in os.listdir('fileToUse'):
-    mkCsvTC(i,i[:-4])
+    mkCsvPCR(i,i[:-4])
 
 
 

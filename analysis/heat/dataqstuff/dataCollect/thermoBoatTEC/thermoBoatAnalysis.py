@@ -7,6 +7,7 @@ import xlsxwriter
 from scipy import stats
 import statsmodels.api as sm
 
+newFile = 'PCR.xlsx'
 timeTo = []
 fullTemp = []
 fullTime = []
@@ -19,13 +20,14 @@ for k in os.listdir('data'):
     time = []
     temp = []
     absDif = []
-
+    count =0
+    
     for u in file:
         if 'TC-' in u:
             u = u.split()
-            if float(u[5][:-1]) >= 25:
+            if float(u[4][:-1]) >= 25:
                 time.append(float(u[0][1:-1])/1000)
-                temp.append(float(u[5][:-1]))
+                temp.append(float(u[4][:-1]))
                 # absDif.append(abs(tempC-float(u[5][:-1])))
                 
     
@@ -51,18 +53,18 @@ for k in os.listdir('data'):
     fullTime.append(time)
 
     timeTemp = np.array([time,temp]).T
-    # wb = op.load_workbook('test.xlsx')
+    # wb = op.load_workbook(newFile)
     a,b,c = np.polyfit(time,temp,2)
     fullDerivTemp.append(2*a*time+b)
 # fullTemp = np.array(fullTemp)
 # fullTime = np.array(fullTime)
-
+print(file.read())
 dFTest = pd.DataFrame({'time':fullTime[0],'temp':fullTemp[0]})
 
 formula = 'temp ~ time'
 model = sm.formula.ols(formula,dFTest)
 model_fitted = model.fit()
-print(model_fitted.summary())
+# print(model_fitted.summary())
     
 timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]
 timeTo = np.array(timeTo).T
@@ -111,7 +113,7 @@ def toExcel():
 
 
     dFTot = pd.DataFrame(fullDict)
-    writer = pd.ExcelWriter('test.xlsx',engine='xlsxwriter')
+    writer = pd.ExcelWriter(newFile,engine='xlsxwriter')
     dFTot.to_excel(writer,sheet_name='full')
     wb = writer.book
     ws = writer.sheets['full']
@@ -139,11 +141,11 @@ def toExcel():
 
 
 
-    wb = op.load_workbook('test.xlsx')
+    wb = op.load_workbook(newFile)
     tempc2 = tempc.tolist()
     tempc2.insert(0,'file name')
     tempc2 = np.array(tempc2)
-    with pd.ExcelWriter('test.xlsx',engine='openpyxl') as writer:
+    with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
         writer.book = wb
         writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
         dF = pd.DataFrame(timeTo2.T,columns=tempc2)
@@ -161,14 +163,14 @@ def toExcel():
         fullDict[''.join(['dTdt ',str(it[i])])] = sameLenDeriv[i]
 
 
-    with pd.ExcelWriter('test.xlsx',engine='openpyxl') as writer:
+    with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
         writer.book = wb
         writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
         dF = pd.DataFrame(fullDict)
         dF.to_excel(writer,'deriv')
         writer.save()
 
-# toExcel()
+toExcel()
 # print(timeTo[0])
 # x = np.linspace(min(timeTo[-3]),max(timeTo[-3]))
 # plt.hist(timeTo[-3],bins=10,density=True)
@@ -176,5 +178,6 @@ def toExcel():
 # plt.show()
 
 # print(stats.anderson(timeTo[-3]))
+
 
 

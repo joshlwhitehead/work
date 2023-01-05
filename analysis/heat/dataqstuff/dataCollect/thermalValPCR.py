@@ -13,9 +13,10 @@ from statsmodels.graphics.factorplots import interaction_plot
 # import statsmodels.api as sm
 
 alpha=0.05
-total = dat.wet09
-instListShort = [10,18]
+total = dat.wetPreMod
+instListShort = [13,15,25]
 instList = instListShort*3
+instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2]
 instList.sort()
 # plt.plot(total[0][4])
 # plt.plot(total[0][2])
@@ -62,7 +63,7 @@ def denature():
     tempLong=[]
     instListLong = []
     count = 0
-    instListVar = [10,10.1,10.2,18,18.1,18.2]
+    
     for i in instListVar:
         for u in temp[count]:
             instListLong.append(i)
@@ -86,11 +87,13 @@ def denature():
     dfAnova.boxplot('Mean',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(95,1,len(instListShort),'r')
+    plt.hlines(92,1,len(instListShort),'k')
     plt.show()
 
     dfTemp.boxplot('Temp',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(95,1,len(instList),'r')
+    plt.hlines(92,1,len(instList),'k')
     plt.show()
 
     clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
@@ -228,7 +231,7 @@ def anneal():
     tempLong=[]
     instListLong = []
     count = 0
-    instListVar = [10,10.1,10.2,18,18.1,18.2]
+    # instListVar = [10,10.1,10.2,18,18.1,18.2]
     for i in instListVar:
         for u in temp[count]:
             instListLong.append(i)
@@ -252,11 +255,13 @@ def anneal():
     dfAnova.boxplot('Mean',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(55,1,len(instListShort),'r')
+    plt.hlines(52,1,len(instListShort),'k')
     plt.show()
 
     dfTemp.boxplot('Temp',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(55,1,len(instList),'r')
+    plt.hlines(52,1,len(instList),'k')
     plt.show()
 
     clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
@@ -341,7 +346,6 @@ def anneal():
     plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
     # print(probs)
-
 
 anneal()
 
