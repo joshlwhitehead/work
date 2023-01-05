@@ -16,24 +16,23 @@ tempc = np.arange(40,115,10)
 for k in os.listdir('data'):
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
     file = open(''.join(['data/',fileName]),'r')
+    filex = file.readlines()
     # tempC = 90
     time = []
     temp = []
     absDif = []
-    count =0
-    
-    for u in file:
-        if 'TC-' in u:
-            u = u.split()
-            if float(u[4][:-1]) >= 25:
-                time.append(float(u[0][1:-1])/1000)
-                temp.append(float(u[4][:-1]))
+    count = 0
+  
+    for u in range(len(filex)):
+        if 'TC-' in filex[count]:
+            filex[count] = filex[count].split()
+            if float(filex[count][4][:-1]) >= 25:# and float(goods[count+1][4][:-1])-float(filex[count][4][:-1])>=0.5:
+                # print(filex[count][4][:-1])
+                time.append(float(filex[count][0][1:-1])/1000)
+                temp.append(float(filex[count][4][:-1]))
                 # absDif.append(abs(tempC-float(u[5][:-1])))
-                
-    
-
-                
-
+           
+        count += 1
 
     time = np.array(time)-time[0]
 
@@ -58,7 +57,7 @@ for k in os.listdir('data'):
     fullDerivTemp.append(2*a*time+b)
 # fullTemp = np.array(fullTemp)
 # fullTime = np.array(fullTime)
-print(file.read())
+# print(file.read())
 dFTest = pd.DataFrame({'time':fullTime[0],'temp':fullTemp[0]})
 
 formula = 'temp ~ time'
