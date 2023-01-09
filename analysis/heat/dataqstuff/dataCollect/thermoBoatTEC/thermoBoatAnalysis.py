@@ -7,16 +7,17 @@ import xlsxwriter
 from scipy import stats
 import statsmodels.api as sm
 
-newFile = 'PCR.xlsx'
+newFile = 'TC.xlsx'
+folder = 'dataTC'
 timeTo = []
 fullTemp = []
 fullTime = []
 fullDerivTemp = []
 tempc = np.arange(40,115,10)
-# print(len(os.listdir('data')))
-for k in os.listdir('data'):
+# print(len(os.listdir(folder)))
+for k in os.listdir(folder):
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
-    file = open(''.join(['data/',fileName]),'r')
+    file = open(''.join([''.join([folder,'/']),fileName]),'r')
     filex = file.readlines()
     # tempC = 90
     time = []
@@ -116,19 +117,19 @@ for i in range(len(fullTime)):
 
 timeTo2 = timeTo.tolist()
 
-timeTo2.insert(0,os.listdir('data'))
-
-timeTo2 = np.array(timeTo2)
+timeTo2.insert(0,os.listdir(folder))
+# print(type(timeTo2))
+timeTo2 = np.array(timeTo2,dtype=object)
 
 
 def toExcel():
-    it = np.arange(0,len(os.listdir('data')))
+    it = np.arange(0,len(os.listdir(folder)))
     # print(it)
 
 
     fullDict = {}
-    for i in range(len(os.listdir('data'))):
-        x = [os.listdir('data')[i]]
+    for i in range(len(os.listdir(folder))):
+        x = [os.listdir(folder)[i]]
         # print(x)
         while len(x) < longest:
             x.append(None)
@@ -179,8 +180,8 @@ def toExcel():
 
 
     fullDict = {}
-    for i in range(len(os.listdir('data'))):
-        x = [os.listdir('data')[i]]
+    for i in range(len(os.listdir(folder))):
+        x = [os.listdir(folder)[i]]
         while len(x) < longest:
             x.append(None)
         fullDict[''.join(['file name ',str(it[i])])] = x
@@ -195,7 +196,7 @@ def toExcel():
         dF.to_excel(writer,'deriv')
         writer.save()
 
-# toExcel()
+toExcel()
 
 
 
@@ -206,7 +207,7 @@ for i in timeTo.T:
 count = 0
 for i in timeTo.T:
     # plt.plot(tempc,i)
-    print(np.average(timeToComp[count]))
+    # print(np.average(timeToComp[count]))
     if count == 0:
         plt.plot(tempc,timeToComp[count],'k',lw=5,label='nominal')
     else:
@@ -233,4 +234,20 @@ plt.grid()
 plt.xlabel('Temp (c)')
 plt.ylabel('Time to Reach Temp (sec)')
 plt.title('Time to Temp')
-plt.show()
+# plt.show()
+
+crit = 0.05
+count2 = 0
+for i in timeToComp:
+    count = 0
+    pf = []
+    for u in i:
+        if u < crit*tempc[count]:
+            pf.append(1)
+        else:
+            pf.append(0)
+        count +=1
+    if 0 not in pf:
+        print(timeTo2[0][count2])
+    count2 += 1
+
