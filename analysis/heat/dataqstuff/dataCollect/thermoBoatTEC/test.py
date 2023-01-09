@@ -1,6 +1,6 @@
-data = open('data\PCR #1 202301041.txt','r').readlines()
-count = 0
+import numpy as np
 
-for i in range(len(data)):
-    print(data[count])
-    count += 1
+
+josh = np.array([1,2,3,4])
+tess = np.array([5,1,1,1])
+print(abs(josh-tess))

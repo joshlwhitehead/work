@@ -13,6 +13,7 @@ fullTemp = []
 fullTime = []
 fullDerivTemp = []
 tempc = np.arange(40,115,10)
+# print(len(os.listdir('data')))
 for k in os.listdir('data'):
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
     file = open(''.join(['data/',fileName]),'r')
@@ -21,19 +22,35 @@ for k in os.listdir('data'):
     time = []
     temp = []
     absDif = []
-    count = 0
+
+    goodsTemp = []
+    goodsTime = []
   
     for u in range(len(filex)):
-        if 'TC-' in filex[count]:
-            filex[count] = filex[count].split()
-            if float(filex[count][4][:-1]) >= 25:# and float(goods[count+1][4][:-1])-float(filex[count][4][:-1])>=0.5:
-                # print(filex[count][4][:-1])
-                time.append(float(filex[count][0][1:-1])/1000)
-                temp.append(float(filex[count][4][:-1]))
-                # absDif.append(abs(tempC-float(u[5][:-1])))
-           
-        count += 1
+        if 'TC-' in filex[u]:
+            filex[u] = filex[u].split()
+            goodsTemp.append(float(filex[u][4][:-1]))
+            goodsTime.append(float(filex[u][0][1:-1])/1000)
 
+
+            # if float(goodsTemp[count+1])-float(goodsTemp[count])>=0.5 and float(filex[count][4][:-1]) >= 25:
+                
+            #     time.append(float(filex[count][0][1:-1])/1000)
+            #     temp.append(float(filex[count][4][:-1]))
+            #     # absDif.append(abs(tempC-float(u[5][:-1])))
+    # print(goodsTemp)
+    
+    for j in range(len(goodsTemp)):
+       
+        if j != 0:
+            if goodsTemp[j]-goodsTemp[j-1] >= 0.5 and goodsTemp[j] >=25:
+                
+                time.append(goodsTime[j])
+                temp.append(goodsTemp[j])
+            elif goodsTemp[j] >=50:
+                time.append(goodsTime[j])
+                temp.append(goodsTemp[j])
+    
     time = np.array(time)-time[0]
 
 
@@ -41,13 +58,17 @@ for k in os.listdir('data'):
     for u in tempc:
         absDif = []
         indx = []
-        for i in temp:
-            absDif.append(abs(u-i))
+        if max(temp) >= u:
+            for i in temp:
+                # if abs(u-i) <= 0.5
+                absDif.append(abs(u-i))
 
-        indx = absDif.index(min(absDif))
-        # print(time[indx])
-
-        timeTo.append(time[indx])
+            indx = absDif.index(min(absDif))
+            # print(time[indx])
+            
+            timeTo.append(time[indx])
+        else:
+            timeTo.append(0)
     fullTemp.append(temp)
     fullTime.append(time)
 
@@ -55,6 +76,10 @@ for k in os.listdir('data'):
     # wb = op.load_workbook(newFile)
     a,b,c = np.polyfit(time,temp,2)
     fullDerivTemp.append(2*a*time+b)
+#     plt.plot(time,temp,label=fileName[:7])
+# plt.grid()   
+# plt.legend()
+# plt.show()
 # fullTemp = np.array(fullTemp)
 # fullTime = np.array(fullTime)
 # print(file.read())
@@ -92,18 +117,19 @@ for i in range(len(fullTime)):
 timeTo2 = timeTo.tolist()
 
 timeTo2.insert(0,os.listdir('data'))
-# print(timeTo)
+
 timeTo2 = np.array(timeTo2)
 
 
 def toExcel():
-    it = np.arange(0,len(timeTo))
-
+    it = np.arange(0,len(os.listdir('data')))
+    # print(it)
 
 
     fullDict = {}
     for i in range(len(os.listdir('data'))):
         x = [os.listdir('data')[i]]
+        # print(x)
         while len(x) < longest:
             x.append(None)
         fullDict[''.join(['file name ',str(it[i])])] = x
@@ -169,14 +195,42 @@ def toExcel():
         dF.to_excel(writer,'deriv')
         writer.save()
 
-toExcel()
-# print(timeTo[0])
-# x = np.linspace(min(timeTo[-3]),max(timeTo[-3]))
-# plt.hist(timeTo[-3],bins=10,density=True)
-# plt.plot(x,stats.norm.pdf(x,loc=np.mean(timeTo[-3]),scale=np.std(timeTo[-3])))
-# plt.show()
-
-# print(stats.anderson(timeTo[-3]))
+# toExcel()
 
 
 
+timeToComp = []
+for i in timeTo.T:
+    timeToComp.append(abs(i-timeTo.T[0]))
+
+count = 0
+for i in timeTo.T:
+    # plt.plot(tempc,i)
+    print(np.average(timeToComp[count]))
+    if count == 0:
+        plt.plot(tempc,timeToComp[count],'k',lw=5,label='nominal')
+    else:
+        plt.plot(tempc,timeToComp[count])
+    count += 1
+plt.grid()
+plt.xlabel('Temp (c)')
+plt.ylabel('Time to Reach Temp (sec)')
+plt.title('Time to Temp Compared to Nominal')
+plt.legend()
+
+
+
+plt.figure()
+count = 0
+for i in timeTo.T:
+    if count == 0:
+        plt.plot(tempc,i,'k',lw=5,label='nominal')
+    else:
+        plt.plot(tempc,i)
+    count += 1
+plt.legend()
+plt.grid() 
+plt.xlabel('Temp (c)')
+plt.ylabel('Time to Reach Temp (sec)')
+plt.title('Time to Temp')
+plt.show()
