@@ -7,8 +7,8 @@ import xlsxwriter
 from scipy import stats
 import statsmodels.api as sm
 
-newFile = 'TC.xlsx'
-folder = 'dataTC'
+newFile = 'PCR.xlsx'
+folder = 'data'
 timeTo = []
 fullTemp = []
 fullTime = []
@@ -170,12 +170,30 @@ def toExcel():
     wb = op.load_workbook(newFile)
     tempc2 = tempc.tolist()
     tempc2.insert(0,'file name')
+    tempc2.append('p/f')
     tempc2 = np.array(tempc2)
+  
     with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
         writer.book = wb
         writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
         dF = pd.DataFrame(timeTo2.T,columns=tempc2)
         dF.to_excel(writer,'time to temp')
+        # wb = writer.book
+        # ws = writer.sheets['time to temp']
+        # chart = wb.add_chart({'type':'line'})
+
+        # count = 1
+        # for i in range(len(tempc2)-1):
+        #     chart.add_series({
+        #         'categories':['time to temp',0,2,0,len(tempc2)-1],
+        #         'values':['time to temp',count,2,count,len(tempc2)-1],
+        #         'name':['time to temp',count,1]
+        #         })
+        #     count += 1
+        # chart.set_x_axis({'name':'Temp (c)'})
+        # chart.set_y_axis({'name':'Time (sec)'})
+
+        # ws.insert_chart('J2',chart)
         writer.save()
 
 
@@ -196,14 +214,48 @@ def toExcel():
         dF.to_excel(writer,'deriv')
         writer.save()
 
-toExcel()
+    # with pd.ExcelWriter(newFile,engine='xlsxwriter') as writer:
+    
+        
+
+
 
 
 
 timeToComp = []
 for i in timeTo.T:
-    timeToComp.append(abs(i-timeTo.T[0]))
+    timeToComp.append(i-timeTo.T[0])
 
+
+
+crit = 0.05
+count2 = 0
+pfTot = []
+for i in timeToComp:
+    count = 0
+    pf = []
+    for u in i:
+        if u < crit*tempc[count]:
+            pf.append(1)
+        else:
+            pf.append(0)
+        count +=1
+    if 0 not in pf:
+        print(timeTo2[0][count2])
+        pfTot.append('pass')
+    else:
+        pfTot.append('fail')
+    count2 += 1
+timeTo2 = timeTo2.tolist()
+timeTo2.append(np.array(pfTot))
+timeTo2 = np.array(timeTo2)
+# print(timeTo2)
+
+
+
+
+
+toExcel()
 count = 0
 for i in timeTo.T:
     # plt.plot(tempc,i)
@@ -235,19 +287,3 @@ plt.xlabel('Temp (c)')
 plt.ylabel('Time to Reach Temp (sec)')
 plt.title('Time to Temp')
 # plt.show()
-
-crit = 0.05
-count2 = 0
-for i in timeToComp:
-    count = 0
-    pf = []
-    for u in i:
-        if u < crit*tempc[count]:
-            pf.append(1)
-        else:
-            pf.append(0)
-        count +=1
-    if 0 not in pf:
-        print(timeTo2[0][count2])
-    count2 += 1
-
