@@ -1,48 +1,81 @@
-##############################################################################
-#
-# An example of creating a chart with Pandas and XlsxWriter.
-#
-# Copyright 2013, John McNamara, jmcnamara@cpan.org
-#
+from datetime import date
 
-import pandas as pd
+from openpyxl import Workbook
+from openpyxl.chart import (
+    LineChart,
+    Reference,
+)
+from openpyxl.chart.axis import DateAxis
 
-# Some sample data to plot.
-list_data = [10, 20, 30, 20, 15, 30, 45]
+wb = Workbook()
+ws = wb.active
 
-# Create a Pandas dataframe from the data.
-df = pd.DataFrame(list_data)
+rows = [
+    ['Date', 'Batch 1', 'Batch 2', 'Batch 3'],
+    [date(2015,9, 1), 40, 30, 25],
+    [date(2015,9, 2), 40, 25, 30],
+    [date(2015,9, 3), 50, 30, 45],
+    [date(2015,9, 4), 30, 25, 40],
+    [date(2015,9, 5), 25, 35, 30],
+    [date(2015,9, 6), 20, 40, 35],
+]
 
-# Create a Pandas Excel writer using XlsxWriter as the engine.
-excel_file = 'line.xlsx'
-sheet_name = 'Sheet1'
+for row in rows:
+    ws.append(row)
 
-writer = pd.ExcelWriter(excel_file, engine='xlsxwriter')
-df.to_excel(writer, sheet_name=sheet_name)
+c1 = LineChart()
+c1.title = "Line Chart"
+c1.style = 13
+c1.y_axis.title = 'Size'
+c1.x_axis.title = 'Test Number'
 
-# Access the XlsxWriter workbook and worksheet objects from the dataframe.
-workbook = writer.book
-worksheet = writer.sheets[sheet_name]
+data = Reference(ws, min_col=2, min_row=1, max_col=4, max_row=7)
+c1.add_data(data, titles_from_data=True)
 
-# Create a chart object.
-chart = workbook.add_chart({'type': 'line'})
+# Style the lines
+s1 = c1.series[0]
+s1.marker.symbol = "triangle"
+s1.marker.graphicalProperties.solidFill = "FF0000" # Marker filling
+s1.marker.graphicalProperties.line.solidFill = "FF0000" # Marker outline
 
-# Configure the series of the chart from the dataframe data.
+s1.graphicalProperties.line.noFill = True
 
-chart.add_series({
-    'categories': ['Sheet1', 1, 0, 7, 0],
-    'values':     ['Sheet1', 1, 1, 7, 1],
-})
+s2 = c1.series[1]
+s2.graphicalProperties.line.solidFill = "00AAAA"
+s2.graphicalProperties.line.dashStyle = "sysDot"
+s2.graphicalProperties.line.width = 100050 # width in EMUs
 
-# Configure the chart axes.
-chart.set_x_axis({'name': 'Index', 'position_axis': 'on_tick'})
-chart.set_y_axis({'name': 'Value', 'major_gridlines': {'visible': False}})
+s2 = c1.series[2]
+s2.smooth = True # Make the line smooth
 
-# Turn off chart legend. It is on by default in Excel.
-chart.set_legend({'position': 'none'})
+ws.add_chart(c1, "A10")
 
-# Insert the chart into the worksheet.
-worksheet.insert_chart('D2', chart)
+from copy import deepcopy
+stacked = deepcopy(c1)
+stacked.grouping = "stacked"
+stacked.title = "Stacked Line Chart"
+ws.add_chart(stacked, "A27")
 
-# Close the Pandas Excel writer and output the Excel file.
-writer.save()
+percent_stacked = deepcopy(c1)
+percent_stacked.grouping = "percentStacked"
+percent_stacked.title = "Percent Stacked Line Chart"
+ws.add_chart(percent_stacked, "A44")
+
+# Chart with date axis
+c2 = LineChart()
+c2.title = "Date Axis"
+c2.style = 12
+c2.y_axis.title = "Size"
+c2.y_axis.crossAx = 500
+c2.x_axis = DateAxis(crossAx=100)
+c2.x_axis.number_format = 'd-mmm'
+c2.x_axis.majorTimeUnit = "days"
+c2.x_axis.title = "Date"
+
+c2.add_data(data, titles_from_data=True)
+dates = Reference(ws, min_col=1, min_row=2, max_row=7)
+c2.set_categories(dates)
+
+ws.add_chart(c2, "A61")
+
+wb.save("line.xlsx")

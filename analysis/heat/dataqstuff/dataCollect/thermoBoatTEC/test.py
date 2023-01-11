@@ -6,7 +6,7 @@ import openpyxl as op
 import xlsxwriter
 from scipy import stats
 import statsmodels.api as sm
-
+from openpyxl.chart import LineChart, Reference, Series
 
 newFile = 'PCR.xlsx'
 folder = 'data'
@@ -164,73 +164,68 @@ def toExcel():
 
 
 
-
-
-
-
-    wb = xlsxwriter.Workbook('PCR.xlsx')
-    tempc2 = tempc.tolist()
-    tempc2.insert(0,'file name')
-    tempc2.append('p/f')
-    tempc2 = np.array(tempc2)
-
-
-    ws = wb.add_worksheet()
-
-    # writer = pd.ExcelWriter(newFile,engine='openpyxl')
-    # writer.book = wb
-    # writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-    # # print(writer.sheets)
-    dF = pd.DataFrame(timeTo2.T,columns=tempc2)
-    print(dF)
-    ws.write_column('A1',dF['40'])
-    wb.close()
-    # dF.to_excel(writer,'time to temp')
-    # writer.save()
     
 
-    # with pd.ExcelWriter(newFile,engine='xlsxwriter') as writer:
-    #     wb = op.Workbook()
-        
-    #     print(writer.sheets)
+
+
+    wb = op.load_workbook(newFile)
+    ws = wb.create_sheet('time to temp')
+    
+    tempc2 = tempc.tolist()
+    tempc2.insert(0,"file name")
+    tempc2.append('p/f')
+    tempc2 = np.array(tempc2)
+  
+    timeToDict = {}
+    for i in range(len(tempc2)):
+        timeToDict[tempc2[i]] = list(timeTo2[i])
+    dF = pd.DataFrame(timeTo2.T,columns=tempc2)
+    tempc3 = []
+    tempc2 = tempc2.tolist()
+    for i in tempc2:
+        try:
+            tempc3.append(float(i))
+        except:
+            tempc3.append(i)
+    for i in tempc3:
+        print(type(i))
+    ws.append(tempc3)
+    for i in timeTo2.T:
+        ws.append(list(i))
+        # for u in i:
+        #     print(type(u))
+    
+    
+    # writer = pd.ExcelWriter('PCR.xlsx', engine='openpyxl', engine_kwargs={'options': {'strings_to_numbers': True}})
+    
+    # values = Reference(ws,2,9,1,23)
+    # chart = LineChart()
+    # chart.style = 13
+    # chart.add_data(values)
+    # ws.add_chart(chart,'A5')
+    # wb.save(fileName)
+   
+    wb.save(newFile)
+    # dF.to_excel(fileName,'new')
+
+    # fullDict = {}
+    # for i in range(len(os.listdir(folder))):
+    #     x = [os.listdir(folder)[i]]
+    #     while len(x) < longest:
+    #         x.append(None)
+    #     fullDict[''.join(['file name ',str(it[i])])] = x
+    #     fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
+    #     fullDict[''.join(['dTdt ',str(it[i])])] = sameLenDeriv[i]
+
+
+    # with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
+    #     writer.book = wb
     #     writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-        
-    #     ws = wb.add_worksheet()
-    #     chart = wb.add_chart({'type':'line'})
-
-    #     count = 1
-    #     for i in range(len(tempc2)-1):
-    #         chart.add_series({
-    #             'categories':['time to temp',0,2,0,len(tempc2)-1],
-    #             'values':['time to temp',count,2,count,len(tempc2)-1],
-    #             'name':['time to temp',count,1]
-    #             })
-    #         count += 1
-    #     chart.set_x_axis({'name':'Temp (c)'})
-    #     chart.set_y_axis({'name':'Time (sec)'})
-
-    #     ws.insert_chart('J2',chart)
+    #     dF = pd.DataFrame(fullDict)
+    #     dF.to_excel(writer,'deriv')
     #     writer.save()
 
-    wb = op.load_workbook('PCR.xlsx')
-    fullDict = {}
-    for i in range(len(os.listdir(folder))):
-        x = [os.listdir(folder)[i]]
-        while len(x) < longest:
-            x.append(None)
-        fullDict[''.join(['file name ',str(it[i])])] = x
-        fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
-        fullDict[''.join(['dTdt ',str(it[i])])] = sameLenDeriv[i]
-
-
-    with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
-        writer.book = wb
-        writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-        dF = pd.DataFrame(fullDict)
-        dF.to_excel(writer,'deriv')
-        writer.save()
-
-    # with pd.ExcelWriter(newFile,engine='xlsxwriter') as writer:
+    # # with pd.ExcelWriter(newFile,engine='xlsxwriter') as writer:
     
         
 
@@ -257,7 +252,7 @@ for i in timeToComp:
             pf.append(0)
         count +=1
     if 0 not in pf:
-        print(timeTo2[0][count2])
+        # print(timeTo2[0][count2])
         pfTot.append('pass')
     else:
         pfTot.append('fail')
