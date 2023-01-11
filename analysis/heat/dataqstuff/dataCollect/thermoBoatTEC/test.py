@@ -190,10 +190,15 @@ def toExcel():
     for i in tempc3:
         print(type(i))
     ws.append(tempc3)
-    for i in timeTo2.T:
-        ws.append(list(i))
-        # for u in i:
-        #     print(type(u))
+    timeTo3 = [[]]*len(timeTo2.T)
+    for i in (range(len(timeTo2.T))):
+        for u in timeTo2.T[i]:
+            try:
+                timeTo3[i].append(float(u))
+            except:
+                timeTo3[i].append(u)
+    for i in timeTo3:
+        ws.append(i)
     
     
     # writer = pd.ExcelWriter('PCR.xlsx', engine='openpyxl', engine_kwargs={'options': {'strings_to_numbers': True}})
