@@ -545,3 +545,8 @@ date = '05Jan2023'
 wetPreMod = []
 for i in os.listdir(''.join(['data/',date])):
     wetPreMod.append(gd.getDataPCR(i,date))
+
+DV = []
+date = '11Jan2023'
+for i in os.listdir(''.join(['data/',date])):
+    DV.append(gd.getDataPCR(i,date))
