@@ -98,11 +98,13 @@ timeTo = np.array(timeTo).T
 lens = []
 for i in range(len(fullTime)):
     lens.append(len(fullTime[i]))
-
+longest = max(lens)
+longestTime = fullTime[lens.index(longest)]
+print(lens.index(longest))
 sameLenTime = []
 sameLenTemp = []
 sameLenDeriv = []
-longest = max(lens)
+
 for i in range(len(fullTime)):
     x = list(fullTime[i])
     y = list(fullTemp[i])
@@ -149,13 +151,16 @@ def toExcel():
     count = 2
     for i in range(len(sameLenTemp)):
         chart.add_series({
-            'categories':['full',1,count,len(sameLenTemp[0]),count],
+            'categories':['full',1,count,len(sameLenTemp[0]),count],#['full',1,lens.index(longest)*3+2,len(sameLenTemp[lens.index(longest)]),lens.index(longest)*3+2],
             'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
             'name':['full',1,count-1]
             })
         count += 3
+    
+    # chart.set_x_axis({'interval_tick':2})
     chart.set_x_axis({'name':'Time (sec)'})
     chart.set_y_axis({'name':'Temp (c)'})
+    
 
     ws.insert_chart('D2',chart)
     writer.save()
@@ -187,27 +192,36 @@ def toExcel():
             tempc3.append(float(i))
         except:
             tempc3.append(i)
-    for i in tempc3:
-        print(type(i))
+    # for i in tempc3:
+        # print(type(i))
     ws.append(tempc3)
-    timeTo3 = [[]]*len(timeTo2.T)
+    timeTo3 = [ [] for _ in range(len(timeTo2.T))]
     for i in (range(len(timeTo2.T))):
+        
         for u in timeTo2.T[i]:
+            
             try:
                 timeTo3[i].append(float(u))
             except:
                 timeTo3[i].append(u)
     for i in timeTo3:
+
         ws.append(i)
+    # print(timeTo3[0])
     
     
     # writer = pd.ExcelWriter('PCR.xlsx', engine='openpyxl', engine_kwargs={'options': {'strings_to_numbers': True}})
     
-    # values = Reference(ws,2,9,1,23)
-    # chart = LineChart()
+    values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)
+    labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
+  
+    chart = LineChart()
     # chart.style = 13
-    # chart.add_data(values)
-    # ws.add_chart(chart,'A5')
+    chart.add_data(values,titles_from_data=True,from_rows=True)
+    chart.set_categories(labels=labels)
+   
+    
+    ws.add_chart(chart,'K5')
     # wb.save(fileName)
    
     wb.save(newFile)
