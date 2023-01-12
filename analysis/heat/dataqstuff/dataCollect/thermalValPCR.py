@@ -14,9 +14,9 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 alpha=0.05
 total = dat.wetPreMod
-instListShort = [13,15,25]
+instListShort = [13]
 instList = instListShort*3
-instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2]
+instListVar = [13,13.1,13.2]
 instList.sort()
 # plt.plot(total[0][4])
 # plt.plot(total[0][2])
@@ -47,7 +47,7 @@ def denature():
                 peakModel.append(model[i])
 
         
-        plt.plot(peakSamp[:],label=instList[count])
+        plt.plot(peakSamp[:])#,label=instList[count])
         # plt.plot(peakModel[:len(peakSamp[:-3])],'k')
         
         count += 1
@@ -347,8 +347,7 @@ def anneal():
     plt.show()
     # print(probs)
 
-anneal()
-
+denature()
 
     
             

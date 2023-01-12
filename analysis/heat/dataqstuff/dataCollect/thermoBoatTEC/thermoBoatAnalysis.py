@@ -5,10 +5,14 @@ import pandas as pd
 import openpyxl as op
 import xlsxwriter
 from scipy import stats
-import statsmodels.api as sm
 
-newFile = 'PCR.xlsx'
-folder = 'data'
+from openpyxl.chart import LineChart, Reference, Series
+from statsmodels.stats.anova import anova_lm
+from statsmodels.formula.api import ols
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+newFile = 'TC.xlsx'
+folder = 'dataTC'
 timeTo = []
 fullTemp = []
 fullTime = []
@@ -34,12 +38,6 @@ for k in os.listdir(folder):
             goodsTime.append(float(filex[u][0][1:-1])/1000)
 
 
-            # if float(goodsTemp[count+1])-float(goodsTemp[count])>=0.5 and float(filex[count][4][:-1]) >= 25:
-                
-            #     time.append(float(filex[count][0][1:-1])/1000)
-            #     temp.append(float(filex[count][4][:-1]))
-            #     # absDif.append(abs(tempC-float(u[5][:-1])))
-    # print(goodsTemp)
     
     for j in range(len(goodsTemp)):
        
@@ -61,11 +59,11 @@ for k in os.listdir(folder):
         indx = []
         if max(temp) >= u:
             for i in temp:
-                # if abs(u-i) <= 0.5
+         
                 absDif.append(abs(u-i))
 
             indx = absDif.index(min(absDif))
-            # print(time[indx])
+         
             
             timeTo.append(time[indx])
         else:
@@ -74,34 +72,47 @@ for k in os.listdir(folder):
     fullTime.append(time)
 
     timeTemp = np.array([time,temp]).T
-    # wb = op.load_workbook(newFile)
+
     a,b,c = np.polyfit(time,temp,2)
     fullDerivTemp.append(2*a*time+b)
-#     plt.plot(time,temp,label=fileName[:7])
-# plt.grid()   
-# plt.legend()
-# plt.show()
-# fullTemp = np.array(fullTemp)
-# fullTime = np.array(fullTime)
-# print(file.read())
-dFTest = pd.DataFrame({'time':fullTime[0],'temp':fullTemp[0]})
 
-formula = 'temp ~ time'
-model = sm.formula.ols(formula,dFTest)
-model_fitted = model.fit()
-# print(model_fitted.summary())
-    
+
+short = 9999
+for i in fullTemp:
+    if len(i) < short:
+        short = len(i)
+
+dFTest = pd.DataFrame({'time':fullTime[:short],'temp':fullTemp[:short]})
+
+fileUnpack = []
+tempUnpack = []
+count = 0
+for i in fullTemp[:short]:
+    for u in i:
+        fileUnpack.append(os.listdir(folder)[count])
+        tempUnpack.append(u)
+    count +=1
+
+
+dfTestAvg = pd.DataFrame({'file':fileUnpack,'temp':tempUnpack})
+dfTestAvg.boxplot('temp',by='file')
+plt.show()
+
+
+
 timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]
 timeTo = np.array(timeTo).T
 
 lens = []
 for i in range(len(fullTime)):
     lens.append(len(fullTime[i]))
+longest = max(lens)
+longestTime = fullTime[lens.index(longest)]
 
 sameLenTime = []
 sameLenTemp = []
 sameLenDeriv = []
-longest = max(lens)
+
 for i in range(len(fullTime)):
     x = list(fullTime[i])
     y = list(fullTemp[i])
@@ -118,19 +129,19 @@ for i in range(len(fullTime)):
 timeTo2 = timeTo.tolist()
 
 timeTo2.insert(0,os.listdir(folder))
-# print(type(timeTo2))
+
 timeTo2 = np.array(timeTo2,dtype=object)
 
 
 def toExcel():
     it = np.arange(0,len(os.listdir(folder)))
-    # print(it)
+
 
 
     fullDict = {}
     for i in range(len(os.listdir(folder))):
         x = [os.listdir(folder)[i]]
-        # print(x)
+    
         while len(x) < longest:
             x.append(None)
         fullDict[''.join(['file name ',str(it[i])])] = x
@@ -148,13 +159,16 @@ def toExcel():
     count = 2
     for i in range(len(sameLenTemp)):
         chart.add_series({
-            'categories':['full',1,count,len(sameLenTemp[0]),count],
+            'categories':['full',1,count,len(sameLenTemp[0]),count],#['full',1,lens.index(longest)*3+2,len(sameLenTemp[lens.index(longest)]),lens.index(longest)*3+2],
             'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
             'name':['full',1,count-1]
             })
         count += 3
+    
+ 
     chart.set_x_axis({'name':'Time (sec)'})
     chart.set_y_axis({'name':'Temp (c)'})
+    
 
     ws.insert_chart('D2',chart)
     writer.save()
@@ -163,58 +177,59 @@ def toExcel():
 
 
 
-
+    
 
 
 
     wb = op.load_workbook(newFile)
+    ws = wb.create_sheet('time to temp')
+    
     tempc2 = tempc.tolist()
-    tempc2.insert(0,'file name')
+    tempc2.insert(0,"file name")
     tempc2.append('p/f')
     tempc2 = np.array(tempc2)
   
-    with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
-        writer.book = wb
-        writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-        dF = pd.DataFrame(timeTo2.T,columns=tempc2)
-        dF.to_excel(writer,'time to temp')
-        # wb = writer.book
-        # ws = writer.sheets['time to temp']
-        # chart = wb.add_chart({'type':'line'})
+    timeToDict = {}
+    for i in range(len(tempc2)):
+        timeToDict[tempc2[i]] = list(timeTo2[i])
+    dF = pd.DataFrame(timeTo2.T,columns=tempc2)
+    tempc3 = []
+    tempc2 = tempc2.tolist()
+    for i in tempc2:
+        try:
+            tempc3.append(float(i))
+        except:
+            tempc3.append(i)
 
-        # count = 1
-        # for i in range(len(tempc2)-1):
-        #     chart.add_series({
-        #         'categories':['time to temp',0,2,0,len(tempc2)-1],
-        #         'values':['time to temp',count,2,count,len(tempc2)-1],
-        #         'name':['time to temp',count,1]
-        #         })
-        #     count += 1
-        # chart.set_x_axis({'name':'Temp (c)'})
-        # chart.set_y_axis({'name':'Time (sec)'})
+    ws.append(tempc3)
+    timeTo3 = [ [] for _ in range(len(timeTo2.T))]
+    for i in (range(len(timeTo2.T))):
+        
+        for u in timeTo2.T[i]:
+            
+            try:
+                timeTo3[i].append(float(u))
+            except:
+                timeTo3[i].append(u)
+    for i in timeTo3:
 
-        # ws.insert_chart('J2',chart)
-        writer.save()
+        ws.append(i)
+        
+    
+    values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)
+    labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
+  
+    chart = LineChart()
 
+    chart.add_data(values,titles_from_data=True,from_rows=True)
+    chart.set_categories(labels=labels)
+   
+    
+    ws.add_chart(chart,'K5')
+  
+   
+    wb.save(newFile)
 
-    fullDict = {}
-    for i in range(len(os.listdir(folder))):
-        x = [os.listdir(folder)[i]]
-        while len(x) < longest:
-            x.append(None)
-        fullDict[''.join(['file name ',str(it[i])])] = x
-        fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
-        fullDict[''.join(['dTdt ',str(it[i])])] = sameLenDeriv[i]
-
-
-    with pd.ExcelWriter(newFile,engine='openpyxl') as writer:
-        writer.book = wb
-        writer.sheets = {worksheet.title:worksheet for worksheet in wb.worksheets}
-        dF = pd.DataFrame(fullDict)
-        dF.to_excel(writer,'deriv')
-        writer.save()
-
-    # with pd.ExcelWriter(newFile,engine='xlsxwriter') as writer:
     
         
 
@@ -241,7 +256,7 @@ for i in timeToComp:
             pf.append(0)
         count +=1
     if 0 not in pf:
-        print(timeTo2[0][count2])
+ 
         pfTot.append('pass')
     else:
         pfTot.append('fail')
@@ -249,17 +264,16 @@ for i in timeToComp:
 timeTo2 = timeTo2.tolist()
 timeTo2.append(np.array(pfTot))
 timeTo2 = np.array(timeTo2)
-# print(timeTo2)
 
 
 
 
 
-toExcel()
+
+# toExcel()
 count = 0
 for i in timeTo.T:
-    # plt.plot(tempc,i)
-    # print(np.average(timeToComp[count]))
+
     if count == 0:
         plt.plot(tempc,timeToComp[count],'k',lw=5,label='nominal')
     else:
@@ -286,4 +300,3 @@ plt.grid()
 plt.xlabel('Temp (c)')
 plt.ylabel('Time to Reach Temp (sec)')
 plt.title('Time to Temp')
-# plt.show()
