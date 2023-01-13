@@ -14,10 +14,12 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 alpha=0.05
 total = dat.proposeMod
-instListShort = [13,15,25]
+instListShort = [13,15,25,13,15,25]
 instList = instListShort*3
-instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2]
+instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2,13.3,13.4,13.5,15.3,15.4,15.5,25.3,25.4,25.5]
 instList.sort()
+instListAlph = ['13b','13b','13b','15b','15b','15b','25b','25b','25b','13a','13a','13a','15a','15a','15a','25a','25a','25a']
+
 # plt.plot(total[0][4])
 # plt.plot(total[0][2])
 # plt.grid()
@@ -82,6 +84,7 @@ def denature():
     # print(len(means),len(temp),len(instList))
     dfAnova = pd.DataFrame({'Instrument':instList,'Mean':means,'Temp':temp})
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})
+    dfAnova2 = pd.DataFrame({'Instrument':instListAlph,'Mean':means,'Temp':temp})
 
     
     if stats.anderson(dfAnova.Mean,dist='norm')[0] < stats.anderson(dfAnova.Mean,dist='norm')[1][2]:
@@ -93,7 +96,7 @@ def denature():
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)
     # print(m_compMM)
     print(m_compMult)
-    dfAnova.boxplot('Mean',by='Instrument')
+    dfAnova2.boxplot('Mean',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(95,1,len(instListShort),'r')
     plt.hlines(92,1,len(instListShort),'k')
