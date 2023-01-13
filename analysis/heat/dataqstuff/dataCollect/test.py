@@ -14,9 +14,9 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 alpha=0.05
 total = dat.proposeMod
-instListShort = [13]
+instListShort = [13,15,25]
 instList = instListShort*3
-instListVar = [13,13.1,13.2]
+instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2]
 instList.sort()
 # plt.plot(total[0][4])
 # plt.plot(total[0][2])
@@ -110,7 +110,7 @@ def denature():
     clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
     clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
         
-    print(clumpMeans)
+    # print(clumpMeans)
 
     # for i in dfAnova.Temp:
     #     dist = 'norm'
@@ -187,15 +187,16 @@ def denature():
     plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
     plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
-    # print(probs)
+    
+    print(percPassTot)
 
 
-
+    
 
 
     plt.title('Pass Rate')
-    plt.plot(percPassTot*100,'o')
-    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.plot(np.array(percPassTot)*100,'o')
+    plt.xticks(np.arange(0,len(percPassTot)),instListVar)
     plt.grid()
     plt.ylabel('%')
     plt.xlabel('AdvB')

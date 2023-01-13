@@ -95,8 +95,8 @@ for i in fullTemp[:short]:
 
 
 dfTestAvg = pd.DataFrame({'file':fileUnpack,'temp':tempUnpack})
-dfTestAvg.boxplot('temp',by='file')
-plt.show()
+# dfTestAvg.boxplot('temp',by='file')
+# plt.show()
 
 
 
@@ -242,7 +242,6 @@ for i in timeTo.T:
     timeToComp.append(i-timeTo.T[0])
 
 
-
 crit = 0.05
 count2 = 0
 pfTot = []
@@ -250,6 +249,7 @@ for i in timeToComp:
     count = 0
     pf = []
     for u in i:
+        
         if u < crit*tempc[count]:
             pf.append(1)
         else:
@@ -270,33 +270,53 @@ timeTo2 = np.array(timeTo2)
 
 
 
-# toExcel()
-count = 0
-for i in timeTo.T:
+toExcel()
+# count = 0
+# for i in timeTo.T:
 
-    if count == 0:
-        plt.plot(tempc,timeToComp[count],'k',lw=5,label='nominal')
-    else:
-        plt.plot(tempc,timeToComp[count])
+#     if count == 0:
+#         plt.plot(tempc,timeToComp[count],'k',lw=5,label='nominal')
+#     else:
+#         plt.plot(tempc,timeToComp[count])
+#     count += 1
+# plt.grid()
+# plt.xlabel('Temp (c)')
+# plt.ylabel('Time to Reach Temp (sec)')
+# plt.title('Time to Temp Compared to Nominal')
+# plt.legend()
+
+
+
+# plt.figure()
+# count = 0
+# for i in timeTo.T:
+#     if count == 0:
+#         plt.plot(tempc,i,'k',lw=5,label='nominal')
+#     else:
+#         plt.plot(tempc,i)
+#     count += 1
+# plt.legend()
+# plt.grid() 
+# plt.xlabel('Temp (c)')
+# plt.ylabel('Time to Reach Temp (sec)')
+# plt.title('Time to Temp')
+
+
+
+
+def r2(y,fit):
+    st = sum((y-np.average(y))**2)
+    sr = sum((y-fit)**2)
+    r2 = 1-sr/st
+    return r2
+
+count = 0
+
+for i in fullTemp[:]:
+    plt.plot(fullTime[count][:short],i[:short],label=pfTot[count])
+    # print(r2(np.array(fullTemp[0][:short]),np.array(i[:short])))
     count += 1
+plt.legend()
 plt.grid()
-plt.xlabel('Temp (c)')
-plt.ylabel('Time to Reach Temp (sec)')
-plt.title('Time to Temp Compared to Nominal')
-plt.legend()
+plt.show()
 
-
-
-plt.figure()
-count = 0
-for i in timeTo.T:
-    if count == 0:
-        plt.plot(tempc,i,'k',lw=5,label='nominal')
-    else:
-        plt.plot(tempc,i)
-    count += 1
-plt.legend()
-plt.grid() 
-plt.xlabel('Temp (c)')
-plt.ylabel('Time to Reach Temp (sec)')
-plt.title('Time to Temp')
