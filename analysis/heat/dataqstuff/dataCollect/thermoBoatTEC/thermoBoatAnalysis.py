@@ -5,19 +5,21 @@ import pandas as pd
 import openpyxl as op
 import xlsxwriter
 from scipy import stats
+from scipy import interpolate as interp
 
 from openpyxl.chart import LineChart, Reference, Series
 from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'PCR.xlsx'
-folder = 'data'
+newFile = 'TC.xlsx'
+folder = 'dataTC'
+alpha = 0.05
 timeTo = []
 fullTemp = []
 fullTime = []
 fullDerivTemp = []
-tempc = np.arange(40,115,10)
+tempc = np.arange(40,105,10)
 # print(len(os.listdir(folder)))
 for k in os.listdir(folder):
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
@@ -233,16 +235,44 @@ def toExcel():
     
         
 
+timesInterpNominal = []
+x = interp.interp1d(fullTemp[0],fullTime[0])
+for i in tempc:
+    try:
+        timesInterpNominal.append(x(i))
+    except:
+        timesInterpNominal.append(0)
+pfTot = []
+for j in range(len(fullTemp)):
+    y = interp.interp1d(fullTime[j],fullTemp[j])
+    tempsInterp = []
+    for i in timesInterpNominal:
+        try:
+            tempsInterp.append(y(i))
+        except:
+            tempsInterp.append(0)
+
+    count = 0
+    pf = []
+    for i in tempsInterp:
+        if tempc[count]-i >= tempc[count]*(alpha):
+            pf.append('p')
+        else:
+            pf.append('f')
+        count += 1
+    if 'f' not in pf:
+        pfTot.append('pass')
+    else:
+        pfTot.append('fail')
+# print(pfTot)
+timeTo2 = timeTo2.tolist()
+timeTo2.append(np.array(pfTot))
+timeTo2 = np.array(timeTo2)
 
 
 
+"""
 
-timeToComp = []
-for i in timeTo.T:
-    timeToComp.append(i-timeTo.T[0])
-
-
-crit = 0.05
 count2 = 0
 pfTot = []
 for i in timeToComp:
@@ -250,7 +280,7 @@ for i in timeToComp:
     pf = []
     for u in i:
         
-        if u < crit*tempc[count]:
+        if u < alpha*tempc[count]:
             pf.append(1)
         else:
             pf.append(0)
@@ -261,16 +291,21 @@ for i in timeToComp:
     else:
         pfTot.append('fail')
     count2 += 1
+
 timeTo2 = timeTo2.tolist()
 timeTo2.append(np.array(pfTot))
 timeTo2 = np.array(timeTo2)
 
 
+"""
 
 
 
 
-# toExcel()
+toExcel()
+
+
+
 # count = 0
 # for i in timeTo.T:
 
@@ -304,19 +339,19 @@ timeTo2 = np.array(timeTo2)
 
 
 
-def r2(y,fit):
-    st = sum((y-np.average(y))**2)
-    sr = sum((y-fit)**2)
-    r2 = 1-sr/st
-    return r2
+# def r2(y,fit):
+#     st = sum((y-np.average(y))**2)
+#     sr = sum((y-fit)**2)
+#     r2 = 1-sr/st
+#     return r2
 
-count = 0
+# count = 0
 
-for i in fullTemp[:]:
-    plt.plot(fullTime[count],i,label=pfTot[count])
-    # print(r2(np.array(fullTemp[0][:short]),np.array(i[:short])))
-    count += 1
-plt.legend()
-plt.grid()
-plt.show()
+# for i in fullTemp[:]:
+#     plt.plot(fullTime[count][:short],i[:short],label=pfTot[count])
+#     # print(r2(np.array(fullTemp[0][:short]),np.array(i[:short])))
+#     count += 1
+# plt.legend()
+# plt.grid()
+# plt.show()
 

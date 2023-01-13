@@ -1,16 +1,9 @@
 import os
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import openpyxl as op
-import xlsxwriter
-from scipy import stats
 from scipy import interpolate as interp
-
-from openpyxl.chart import LineChart, Reference, Series
-from statsmodels.stats.anova import anova_lm
-from statsmodels.formula.api import ols
-from statsmodels.stats.multicomp import pairwise_tukeyhsd
+from openpyxl.chart import LineChart, Reference
 
 newFile = 'TC.xlsx'
 folder = 'dataTC'
@@ -20,12 +13,12 @@ fullTemp = []
 fullTime = []
 fullDerivTemp = []
 tempc = np.arange(40,105,10)
-# print(len(os.listdir(folder)))
+
 for k in os.listdir(folder):
-    fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
+    fileName = k
     file = open(''.join([''.join([folder,'/']),fileName]),'r')
     filex = file.readlines()
-    # tempC = 90
+
     time = []
     temp = []
     absDif = []
@@ -78,27 +71,6 @@ for k in os.listdir(folder):
     a,b,c = np.polyfit(time,temp,2)
     fullDerivTemp.append(2*a*time+b)
 
-
-short = 9999
-for i in fullTemp:
-    if len(i) < short:
-        short = len(i)
-
-dFTest = pd.DataFrame({'time':fullTime[:short],'temp':fullTemp[:short]})
-
-fileUnpack = []
-tempUnpack = []
-count = 0
-for i in fullTemp[:short]:
-    for u in i:
-        fileUnpack.append(os.listdir(folder)[count])
-        tempUnpack.append(u)
-    count +=1
-
-
-dfTestAvg = pd.DataFrame({'file':fileUnpack,'temp':tempUnpack})
-# dfTestAvg.boxplot('temp',by='file')
-# plt.show()
 
 
 
@@ -218,7 +190,7 @@ for j in range(len(fullTemp)):
         pfTot.append('pass')
     else:
         pfTot.append('fail')
-# print(pfTot)
+
 timeTo2 = timeTo2.tolist()
 timeTo2.append(np.array(pfTot))
 timeTo2 = np.array(timeTo2)
