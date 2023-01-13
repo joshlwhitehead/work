@@ -5,6 +5,7 @@ import pandas as pd
 import openpyxl as op
 import xlsxwriter
 from scipy import stats
+from scipy import interpolate as interp
 
 from openpyxl.chart import LineChart, Reference, Series
 from statsmodels.stats.anova import anova_lm
@@ -261,16 +262,19 @@ for i in timeToComp:
     else:
         pfTot.append('fail')
     count2 += 1
+
 timeTo2 = timeTo2.tolist()
 timeTo2.append(np.array(pfTot))
 timeTo2 = np.array(timeTo2)
 
+print(timeTo[0])
+print(tempc)
 
 
 
 
 
-toExcel()
+# toExcel()
 # count = 0
 # for i in timeTo.T:
 
