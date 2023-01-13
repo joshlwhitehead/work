@@ -12,13 +12,14 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'TC.xlsx'
-folder = 'dataTC'
+newFile = 'PCR.xlsx'
+folder = 'data'
+alpha = 0.05
 timeTo = []
 fullTemp = []
 fullTime = []
 fullDerivTemp = []
-tempc = np.arange(40,115,10)
+tempc = np.arange(40,105,10)
 # print(len(os.listdir(folder)))
 for k in os.listdir(folder):
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
@@ -234,16 +235,17 @@ def toExcel():
     
         
 
+# print(timeTo.T[0])
+# print(tempc[0])
+
+
+x = interp.interp1d(fullTemp[0],fullTime[0])
+print(x(tempc))
 
 
 
+"""
 
-timeToComp = []
-for i in timeTo.T:
-    timeToComp.append(i-timeTo.T[0])
-
-
-crit = 0.05
 count2 = 0
 pfTot = []
 for i in timeToComp:
@@ -251,7 +253,7 @@ for i in timeToComp:
     pf = []
     for u in i:
         
-        if u < crit*tempc[count]:
+        if u < alpha*tempc[count]:
             pf.append(1)
         else:
             pf.append(0)
@@ -267,14 +269,16 @@ timeTo2 = timeTo2.tolist()
 timeTo2.append(np.array(pfTot))
 timeTo2 = np.array(timeTo2)
 
-print(timeTo[0])
-print(tempc)
 
+"""
 
 
 
 
 # toExcel()
+
+
+
 # count = 0
 # for i in timeTo.T:
 

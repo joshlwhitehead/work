@@ -11,8 +11,8 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'TC.xlsx'
-folder = 'dataTC'
+newFile = 'PCR.xlsx'
+folder = 'data'
 timeTo = []
 fullTemp = []
 fullTime = []
@@ -270,7 +270,7 @@ timeTo2 = np.array(timeTo2)
 
 
 
-toExcel()
+# toExcel()
 # count = 0
 # for i in timeTo.T:
 
@@ -313,7 +313,7 @@ def r2(y,fit):
 count = 0
 
 for i in fullTemp[:]:
-    plt.plot(fullTime[count][:short],i[:short],label=pfTot[count])
+    plt.plot(fullTime[count],i,label=pfTot[count])
     # print(r2(np.array(fullTemp[0][:short]),np.array(i[:short])))
     count += 1
 plt.legend()
