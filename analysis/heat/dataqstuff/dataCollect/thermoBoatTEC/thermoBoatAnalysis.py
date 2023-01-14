@@ -12,8 +12,8 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'TC.xlsx'
-folder = 'dataTC'
+newFile = 'PCR.xlsx'
+folder = 'data'
 alpha = 0.05
 timeTo = []
 fullTemp = []
@@ -237,11 +237,14 @@ def toExcel():
 
 timesInterpNominal = []
 x = interp.interp1d(fullTemp[0],fullTime[0])
+# print(fullTime[0],fullTemp[0])
+# print(x(40))
 for i in tempc:
     try:
         timesInterpNominal.append(x(i))
     except:
         timesInterpNominal.append(0)
+# print(timesInterpNominal)
 pfTot = []
 for j in range(len(fullTemp)):
     y = interp.interp1d(fullTime[j],fullTemp[j])
@@ -251,15 +254,19 @@ for j in range(len(fullTemp)):
             tempsInterp.append(y(i))
         except:
             tempsInterp.append(0)
-
+    # print(tempsInterp)
     count = 0
     pf = []
+    
     for i in tempsInterp:
-        if tempc[count]-i >= tempc[count]*(alpha):
+        if tempc[count]>i and tempc[count]-i <= tempc[count]*(alpha):
+            pf.append('p')
+        elif tempc[count]<=i:
             pf.append('p')
         else:
             pf.append('f')
         count += 1
+
     if 'f' not in pf:
         pfTot.append('pass')
     else:
