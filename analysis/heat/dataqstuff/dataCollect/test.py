@@ -20,10 +20,10 @@ instListVar = ['106pre','108post','108pre']
 instList.sort()
 instListAlph = instListShort
 
-# plt.plot(total[0][4])
-# plt.plot(total[0][2])
-# plt.grid()
-# plt.show()
+plt.plot(total[2][4])
+plt.plot(total[2][2])
+plt.grid()
+plt.show()
 def denature():
     temp = []
     # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
@@ -47,7 +47,7 @@ def denature():
         countPass = 0
         percPass = []
         for i in range(len(samp)):
-            if i > 590 and samp[i] >90 and samp[i]>samp[i-1] and samp[i]>samp[i+1]:
+            if i > 590 and i <930 and samp[i] >95 and samp[i]>samp[i-1] and samp[i]>samp[i+1]:
                 peakSamp.append(samp[i])
             if model[i] >90 and model[i]>model[i-1] and model[i-1]>model[i-2] and model[i]>model[i+1] and model[i+1]>model[i+2]:
                 peakModel.append(model[i])
