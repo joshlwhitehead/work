@@ -555,3 +555,7 @@ proposeMod = []
 date = '12Jan2023'
 for i in os.listdir(''.join(['data/',date])):
     proposeMod.append(gd.getDataPCR(i,date))
+proposeMod = []
+date = '17Jan2023'
+for i in os.listdir(''.join(['data/',date])):
+    proposeMod.append(gd.getDataPCR(i,date))

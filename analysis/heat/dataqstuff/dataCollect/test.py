@@ -14,11 +14,11 @@ from statsmodels.graphics.factorplots import interaction_plot
 
 alpha=0.05
 total = dat.proposeMod
-instListShort = [13,15,25,13,15,25]
-instList = instListShort*3
-instListVar = [13,13.1,13.2,15,15.1,15.2,25,25.1,25.2,13.3,13.4,13.5,15.3,15.4,15.5,25.3,25.4,25.5]
+instListShort = ['106pre','108post','108pre']
+instList = instListShort
+instListVar = ['106pre','108post','108pre']
 instList.sort()
-instListAlph = ['13b','13b','13b','15b','15b','15b','25b','25b','25b','13a','13a','13a','15a','15a','15a','25a','25a','25a']
+instListAlph = instListShort
 
 # plt.plot(total[0][4])
 # plt.plot(total[0][2])
@@ -156,7 +156,7 @@ def denature():
         plt.hlines(count,ci[0],ci[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
-    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    # plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
@@ -188,7 +188,7 @@ def denature():
     plt.grid()
     plt.xlabel('AdvB')
     plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
-    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    # plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
     
     print(percPassTot)
@@ -199,7 +199,7 @@ def denature():
 
     plt.title('Pass Rate')
     plt.plot(np.array(percPassTot)*100,'o')
-    plt.xticks(np.arange(0,len(percPassTot)),instListVar)
+    # plt.xticks(np.arange(0,len(percPassTot)),instListVar)
     plt.grid()
     plt.ylabel('%')
     plt.xlabel('AdvB')
@@ -338,7 +338,7 @@ def anneal():
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
     # print(clumpMeans)
-    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    # plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
@@ -370,7 +370,7 @@ def anneal():
     plt.grid()
     plt.xlabel('AdvB')
     plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
-    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    # plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
     # print(probs)
 
