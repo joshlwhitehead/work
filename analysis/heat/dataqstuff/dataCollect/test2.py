@@ -223,7 +223,6 @@ def anneal():
     count = 0
     n=0
     means=[]
-    percPassTot = []
     for i in total:
         time = i[0]
         model = i[4]
@@ -235,7 +234,6 @@ def anneal():
         # # plt.hlines(94,0,max(time),'k')
         # plt.show()
         peakSamp = []
-        countPass = 0
         peakModel = []
         # print(len(samp))
         for i in range(len(samp)):
@@ -243,12 +241,9 @@ def anneal():
                 peakSamp.append(samp[i])
             # if model[i] <60 and model[i]<model[i-1] and model[i-1]<model[i-2] and model[i]<model[i+1] and model[i+1]<model[i+2]:
             #     peakModel.append(model[i])
-        for i in peakSamp:
-            if i < 58 and i > 52:
-                countPass +=1
-        percPassTot.append(countPass/len(peakSamp))
+    
         
-        # plt.plot(peakSamp[:],label=instList[count])
+        plt.plot(peakSamp[:],label=instList[count])
         # plt.plot(peakModel[:len(peakSamp[:-3])],'k')
         
         count += 1
@@ -256,9 +251,9 @@ def anneal():
         temp.append(peakSamp)
         mean = np.mean(peakSamp[:])
         means.append(mean)
-    # plt.grid()
-    # plt.legend()
-    # plt.show()
+    plt.grid()
+    plt.legend()
+    plt.show()
     # print(means)
     tempLong=[]
     instListLong = []
@@ -280,22 +275,20 @@ def anneal():
     else:
         print('data are not normal')
 
-    # m_compMM = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], alpha=alpha)
+    m_compMM = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], alpha=alpha)
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)
-    # print(m_compMM)
+    print(m_compMM)
     print(m_compMult)
     dfAnova.boxplot('Mean',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(55,1,len(instListShort),'r')
     plt.hlines(52,1,len(instListShort),'k')
-    plt.hlines(58,1,len(instListShort),'k')
     plt.show()
 
     dfTemp.boxplot('Temp',by='Instrument')
     plt.ylabel('Temp (c)')
     plt.hlines(55,1,len(instList),'r')
     plt.hlines(52,1,len(instList),'k')
-    plt.hlines(58,1,len(instList),'k')
     plt.show()
 
     clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
@@ -380,13 +373,6 @@ def anneal():
     # plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
     plt.show()
     # print(probs)
-    plt.title('Pass Rate')
-    plt.plot(np.array(percPassTot)*100,'o')
-    # plt.xticks(np.arange(0,len(percPassTot)),instListVar)
-    plt.grid()
-    plt.ylabel('%')
-    plt.xlabel('AdvB')
-    plt.show()
 
 anneal()
 
