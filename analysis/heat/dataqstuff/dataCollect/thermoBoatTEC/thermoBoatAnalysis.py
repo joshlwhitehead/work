@@ -22,6 +22,7 @@ fullDerivTemp = []
 tempc = np.arange(40,105,10)
 # print(len(os.listdir(folder)))
 for k in os.listdir(folder):
+    # print('a')
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
     file = open(''.join([''.join([folder,'/']),fileName]),'r')
     filex = file.readlines()
@@ -258,7 +259,7 @@ for j in range(len(fullTemp)):
     count = 0
     pf = []
     
-    for i in tempsInterp:
+    for i in tempsInterp[:]:
         if tempc[count]>i and tempc[count]-i <= tempc[count]*(alpha):
             pf.append('p')
         elif tempc[count]<=i:

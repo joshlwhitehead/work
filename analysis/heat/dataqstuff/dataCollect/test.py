@@ -11,17 +11,23 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
 from statsmodels.graphics.factorplots import interaction_plot
 # import statsmodels.api as sm
+import os
 
+for i in os.listdir('data/18Jan2023'):
+    print(i)
 alpha=0.05
-total = dat.proposeMod
-instListShort = ['106pre','108post','108pre']
+total = dat.proposeModb
+instListShort = ['104post_1.31','104post_1.31b','107post_1.31','108post_1.31','108post_1.31b','114post_1.31','13post_1.31','15post_1.31']
 instList = instListShort
-instListVar = ['106pre','108post','108pre']
-instList.sort()
+instListVar = instListShort
+# instList.sort()
 instListAlph = instListShort
 
-plt.plot(total[0][4])
-plt.plot(total[0][2])
+for i in total[:]:
+    plt.plot(i[0],i[2])
+# plt.plot(total[2][4])
+# plt.plot(total[2][2])
+
 plt.grid()
 plt.show()
 def denature():
@@ -47,10 +53,10 @@ def denature():
         countPass = 0
         percPass = []
         for i in range(len(samp)):
-            if i > 590 and i <930 and samp[i] >95 and samp[i]>samp[i-1] and samp[i]>samp[i+1]:
+            if time[i] > 350 and time[i] < 550 and samp[i] >92 and samp[i]>samp[i-1] and samp[i]>samp[i+1]:
                 peakSamp.append(samp[i])
-            if model[i] >90 and model[i]>model[i-1] and model[i-1]>model[i-2] and model[i]>model[i+1] and model[i+1]>model[i+2]:
-                peakModel.append(model[i])
+            # if model[i] >90 and model[i]>model[i-1] and model[i-1]>model[i-2] and model[i]>model[i+1] and model[i+1]>model[i+2]:
+            #     peakModel.append(model[i])
 
         for i in peakSamp:
             if i <98 and i > 92:
@@ -65,7 +71,7 @@ def denature():
         temp.append(peakSamp)
         mean = np.mean(peakSamp[:])
         means.append(mean)
-    
+    # print(temp)
     # plt.grid()
     # plt.legend()
     # plt.show()
@@ -153,15 +159,17 @@ def denature():
         probs.append(prHigh+prLow)
         
 
-        plt.hlines(count,ci[0],ci[1],lw=5)
-        plt.plot(mean_er,count,'o',color='r',ms=7)
-        count+=1
-    # plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
-    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
-    plt.grid()
-    plt.xlabel('Mean Temp (c)')
-    plt.ylabel('AdvB')
-    plt.show()
+    #     plt.hlines(count,ci[0],ci[1],lw=5)
+    #     plt.plot(mean_er,count,'o',color='r',ms=7)
+    #     count+=1
+    # # plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    # plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    # plt.grid()
+    # plt.xlabel('Mean Temp (c)')
+    # plt.ylabel('AdvB')
+    # plt.show()
+
+    probsMult = []
     count=0
     for i in temp:
         mean_er = np.mean(i)
@@ -172,6 +180,11 @@ def denature():
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
         moe = t_star * se # margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])
+        t_limitLow = (limitLow - mean_er) / se
+        t_limitHigh = (limitHigh - mean_er) / se
+        prLow = stats.t.cdf(t_limitLow, dof)
+        prHigh = 1 - stats.t.cdf(t_limitHigh, dof)
+        probsMult.append(prHigh+prLow)
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
@@ -183,12 +196,15 @@ def denature():
     plt.ylabel('AdvB')
     plt.show()
 
+
+
+
     plt.title('Probability of Deviation from Model')
-    plt.plot(probs,'o')
+    plt.plot(probsMult,'o')
     plt.grid()
     plt.xlabel('AdvB')
     plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
-    # plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.xticks(np.arange(0,len(instList)),instListShort)
     plt.show()
     
     print(percPassTot)
@@ -199,7 +215,7 @@ def denature():
 
     plt.title('Pass Rate')
     plt.plot(np.array(percPassTot)*100,'o')
-    # plt.xticks(np.arange(0,len(percPassTot)),instListVar)
+    plt.xticks(np.arange(0,len(percPassTot)),instListVar)
     plt.grid()
     plt.ylabel('%')
     plt.xlabel('AdvB')
@@ -239,7 +255,7 @@ def anneal():
         peakModel = []
         # print(len(samp))
         for i in range(len(samp)):
-            if i > 590 and i< 900 and samp[i] < 60 and samp[i]<samp[i-1] and samp[i]<samp[i+1]:
+            if time[i] > 340 and time[i] < 533 and samp[i] < 60 and samp[i]<samp[i-1] and samp[i]<samp[i+1]:
                 peakSamp.append(samp[i])
             # if model[i] <60 and model[i]<model[i-1] and model[i-1]<model[i-2] and model[i]<model[i+1] and model[i+1]<model[i+2]:
             #     peakModel.append(model[i])
@@ -341,17 +357,18 @@ def anneal():
         probs.append(prHigh+prLow)
         
 
-        plt.hlines(count,ci[0],ci[1],lw=5)
-        plt.plot(mean_er,count,'o',color='r',ms=7)
+        # plt.hlines(count,ci[0],ci[1],lw=5)
+        # plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
     # print(clumpMeans)
     # plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
-    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
-    plt.grid()
-    plt.xlabel('Mean Temp (c)')
-    plt.ylabel('AdvB')
-    plt.show()
+    # plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    # plt.grid()
+    # plt.xlabel('Mean Temp (c)')
+    # plt.ylabel('AdvB')
+    # plt.show()
     count=0
+    probsMult = []
     for i in temp:
         mean_er = np.mean(i)
         std_dev_er = np.std(i, ddof=1) # sample standard devialtion
@@ -361,10 +378,17 @@ def anneal():
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
         moe = t_star * se # margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])
+        t_limitLow = (limitLow - mean_er) / se
+        t_limitHigh = (limitHigh - mean_er) / se
+        prLow = stats.t.cdf(t_limitLow, dof)
+        prHigh = 1 - stats.t.cdf(t_limitHigh, dof)
+        probsMult.append(prHigh+prLow)
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
-    # print(clumpMeans)
+
+
+    print(clumpMeans)
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
     plt.grid()
@@ -372,23 +396,27 @@ def anneal():
     plt.ylabel('AdvB')
     plt.show()
 
-    plt.title('Probability of Deviation from Model')
-    plt.plot(probs,'o')
-    plt.grid()
-    plt.xlabel('AdvB')
-    plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
-    # plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
-    plt.show()
+   
+
     # print(probs)
     plt.title('Pass Rate')
     plt.plot(np.array(percPassTot)*100,'o')
-    # plt.xticks(np.arange(0,len(percPassTot)),instListVar)
+    plt.xticks(np.arange(0,len(percPassTot)),instListVar)
     plt.grid()
     plt.ylabel('%')
     plt.xlabel('AdvB')
     plt.show()
 
-anneal()
+
+    plt.title('Probability of Deviation from Model')
+    plt.plot(probsMult,'o')
+    plt.grid()
+    plt.xlabel('AdvB')
+    plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
+    plt.xticks(np.arange(0,len(instList)),instListShort)
+    plt.show()
+
+denature()
 
     
             
