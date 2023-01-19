@@ -121,20 +121,22 @@ def denature():
         
     # print(clumpMeans)
 
-    # for i in dfAnova.Temp:
-    #     dist = 'norm'
-    #     x = np.linspace(min(i),max(i))
+    for i in dfAnova.Temp:
+        dist = 'norm'
+        x = np.linspace(min(i),max(i))
     
-    #     if stats.anderson(np.array(i),dist=dist)[0] < stats.anderson(np.array(i),dist=dist)[1][2]:
-    #         print('data are',dist)
-    #     else:
-    #         print('data are not',dist)
-    #         print(stats.anderson(np.array(i),dist=dist))
+        if stats.anderson(np.array(i),dist=dist)[0] < stats.anderson(np.array(i),dist=dist)[1][2]:
+            print('data are',dist)
+        else:
+            
+            print('data are not',dist)
+            print(stats.anderson(np.array(i),dist=dist))
 
-    
-    #     plt.hist(np.array(i),density=True)
+            
+            plt.hist(np.array(i),density=True)
+            plt.plot(x,stats.norm.pdf(x,loc=np.mean(i),scale=np.std(i)))
 
-    #     plt.show()
+            plt.show()
 
 
 
