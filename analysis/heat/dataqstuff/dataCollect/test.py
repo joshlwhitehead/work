@@ -49,17 +49,29 @@ def melt(time,model,samp):
     a,b = np.polyfit(meltTime,meltTemp,1)
     c,d = np.polyfit(meltTime,meltModel,1)
     
-    plt.plot(meltTime,meltTemp,'o')
-    plt.plot(meltTime,a*meltTime+b)
-    plt.plot(meltTime,meltModel,'o')
-    plt.plot(meltTime,c*meltTime+d)
-    plt.show()
-
-melt(total[0][0],total[0][4],total[0][2])
-
-
+    # plt.plot(meltTime,meltTemp,'o')
+    # plt.plot(meltTime,a*meltTime+b)
+    # plt.plot(meltTime,meltModel,'o')
+    # plt.plot(meltTime,c*meltTime+d)
+    # plt.grid()
+    # plt.show()
+    return a*meltTime+b, c*meltTime+d
 
 
-        
+for i in total:
+    y = melt(i[0],i[4],i[2])[0]
+    fit = melt(i[0],i[4],i[2])[1]
+
+
+
+
+    def r2(y,fit):
+        st = sum((y-np.average(y))**2)
+        sr = sum((y-fit)**2)
+        r2 = 1-sr/st
+        return r2
+
+
+    print(r2(y,fit))
 
   

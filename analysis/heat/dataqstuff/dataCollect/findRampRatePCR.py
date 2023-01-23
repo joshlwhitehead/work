@@ -10,7 +10,9 @@ import os
 folder = 'data/12Jan2023'
 total = dat.proposeMod
 
-
+plt.plot(total[0][0],total[0][2])
+plt.grid()
+plt.show()
 
 def heatRamp(time,samp):
     count = 0
@@ -26,6 +28,34 @@ def heatRamp(time,samp):
                 tempVal[count2].append(samp[i])
                 timeVal[count2].append(time[i])
             elif samp[i]<tempVal[count2][-1]:
+                count2+=1
+                tempVal.append([])
+                timeVal.append([])
+                tempVal[count2].append(samp[i])
+                timeVal[count2].append(time[i])
+        count +=1
+
+    rr = []
+    for i in range(len(tempVal)):
+        rr.append((tempVal[i][-1]-tempVal[i][0])/(timeVal[i][-1]-timeVal[i][0]))
+    return rr
+
+
+
+def coolRamp(time,samp):
+    count = 0
+    count2 = 0
+    tempVal = []
+    timeVal = []
+    for i in (range(len(samp))):
+        if len(tempVal) == 0:
+            tempVal.append([])
+            timeVal.append([])
+        elif samp[i]>65 and samp[i]<85 and samp[count-1]>samp[i]:
+            if len(tempVal[count2]) == 0 or samp[i]<tempVal[count2][-1]:
+                tempVal[count2].append(samp[i])
+                timeVal[count2].append(time[i])
+            elif samp[i]>tempVal[count2][-1]:
                 count2+=1
                 tempVal.append([])
                 timeVal.append([])
@@ -95,7 +125,8 @@ for i in total:
    
     dist = 'norm'
     
-    testNorm(dist,dfA,'')
+
+    # testNorm(dist,dfA,'')
 
     count += 1
 dFTot = pd.DataFrame({'type':indep,'rr':tot})
@@ -103,6 +134,7 @@ m_compMM = pairwise_tukeyhsd(endog=dFTot.rr, groups=dFTot.type, alpha=alpha)
 print(m_compMM)
 
 dFTot.boxplot('rr',by='type')
+# plt.set_xticks(rotatation=45)
 plt.show()
 
 
