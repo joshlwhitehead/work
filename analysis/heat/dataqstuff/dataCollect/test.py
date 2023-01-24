@@ -32,7 +32,7 @@ instListShort = ['104post_1.31','104post_1.31b','107post_1.31','108post_1.31','1
 # plt.grid()
 # plt.show()'
 
-
+"""         DEFINE WINDOW           """
 def melt(time,model,samp):
     meltTemp = []
     meltTime = []
@@ -49,29 +49,42 @@ def melt(time,model,samp):
     a,b = np.polyfit(meltTime,meltTemp,1)
     c,d = np.polyfit(meltTime,meltModel,1)
     
-    # plt.plot(meltTime,meltTemp,'o')
-    # plt.plot(meltTime,a*meltTime+b)
-    # plt.plot(meltTime,meltModel,'o')
-    # plt.plot(meltTime,c*meltTime+d)
-    # plt.grid()
-    # plt.show()
-    return a*meltTime+b, c*meltTime+d
+    plt.plot(meltTime,meltTemp,'o')
+    plt.plot(meltTime,a*meltTime+b)
+    plt.plot(meltTime,meltModel,'o')
+    plt.plot(meltTime,c*meltTime+d)
+    plt.grid()
+    plt.show()
 
+    cc,dd = np.polyfit(meltModel,meltTime,1)
+    return (a,b),(c,d),(cc,dd)
+
+
+
+def tmShift(expected,time,model,samp):
+    a = melt(time,model,samp)[0][0]
+    b = melt(time,model,samp)[0][1]
+    cc = melt(time,model,samp)[2][0]
+    dd = melt(time,model,samp)[2][1]
+    
+
+    modTime = cc*expected+dd
+    realTemp = a*modTime+b
+    return realTemp
 
 for i in total:
-    y = melt(i[0],i[4],i[2])[0]
-    fit = melt(i[0],i[4],i[2])[1]
+    print(tmShift(82,i[0],i[4],i[2]))
 
 
 
 
-    def r2(y,fit):
-        st = sum((y-np.average(y))**2)
-        sr = sum((y-fit)**2)
-        r2 = 1-sr/st
-        return r2
+    # def r2(y,fit):
+    #     st = sum((y-np.average(y))**2)
+    #     sr = sum((y-fit)**2)
+    #     r2 = 1-sr/st
+    #     return r2
 
 
-    print(r2(y,fit))
+    # print(r2(y,fit))
 
   
