@@ -12,8 +12,8 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'TC.xlsx'
-folder = 'dataTC'
+newFile = 'TCDemo.xlsx'
+folder = 'dataTCDemo'
 alpha = 0.05
 timeTo = []
 fullTemp = []
@@ -264,13 +264,13 @@ for j in range(len(fullTemp)):
                 tempsInterp.append(0)
         count += 1
     # print(tempsInterp)
-    count = 3
+    count = 4
     pf = []
-    print(tempsInterp)
+    # print(tempsInterp)
 
 
 
-    for i in tempsInterp[3:]:
+    for i in tempsInterp[4:]:
         if tempc[count]>i and tempc[count]-i > tempc[count]*(alpha):
             pf.append('f')
         # elif tempc[count]<=i:
