@@ -22,6 +22,7 @@ fullDerivTemp = []
 tempc = np.arange(40,105,10)
 # print(len(os.listdir(folder)))
 for k in os.listdir(folder):
+  
     # print('a')
     fileName = k#'Thermalboat 20221207 Rebuilt Run 3.txt'
     file = open(''.join([''.join([folder,'/']),fileName]),'r')
@@ -37,7 +38,7 @@ for k in os.listdir(folder):
     for u in range(len(filex)):
         if 'TC-' in filex[u]:
             filex[u] = filex[u].split()
-            goodsTemp.append(float(filex[u][4][:-1]))
+            goodsTemp.append(float(filex[u][4].strip(',')))
             goodsTime.append(float(filex[u][0][1:-1])/1000)
 
 
