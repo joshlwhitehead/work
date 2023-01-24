@@ -12,8 +12,8 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-newFile = 'TCDemo.xlsx'
-folder = 'dataTCDemo'
+newFile = 'PCRDemo.xlsx'
+folder = 'dataPCRDemo'
 alpha = 0.05
 timeTo = []
 fullTemp = []

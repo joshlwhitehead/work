@@ -1,0 +1,308 @@
+***PCR ON***
+[13]PCR TEC set to 50°C
+(1554000) _setPcrTecTempC: TEC Set Temp 50.000000
+(1554002) _applyThermalBrakeUpdate: Worst Temp: 98.713829
+(1554004) _updateInertiaCompensation: overshoot: 48.713829, updatedComp: 48.713829, atIndex: 4 atTemp: 50.0
+(1554015) _resetThermalControlState: RESET Peltier 1 control state
+(1554021) thermalControlSetTargetTempC: [1] MAX RAMPING  goto 50.0
+(1554029) _setThermalControlState: thermalControl-1: changing state 3->1
+(1554036) tecCurvePredictorSetHoldPower: hold power: -169386.531250 filtered: -76659.382812 temp: 22.164841
+(1554047) thermalControlSetEnable: Enabling Peltier 1
+(1554059) _findInertiaCompensation: Inertia Compensation is too large: 48.713829
+(1554061) _findInertiaCompensation: Resetting IC to 0...
+(1554067) stashException: Exception Stashed (0x0B1E1)
+(1554073) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(1554081) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.16, output = 50.0, timeout = 0, exptTempC = 50.00, TecRate = 0.002
+(1554096) thermalControlTask: thermal control sleep.
+(1554114) printException: ************
+(1554114) printException: Error Code:  (0x0000B1E1)
+(1554115) printException: Originator:   (0x0B)  System
+(1554119) printException: Error Type:  (0x1E)  Inertia Compenstaion Reset
+(1554127) printException: Priority:       (0x01)  Log Only
+(1554133) printException: Time Since Boot:       (1553393) ms
+(1554140) printException: Time Since Expt:       (0) ms
+(1554146) handleException: ************
+
+(1554151) systemRequestStateChange: System State Transition CRITICAL -> WARNING
+(1554159) blePeriphNotifySubscription: ENTER NOTIFY
+(1554165) systemRequestStateChange: Notify exit state change
+(1554223) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -85.94, output = 100.0, timeout = 150, exptTempC = 50.00, TecRate = 0.001
+(1554371) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.51, output = 100.0, timeout = 300, exptTempC = 50.00, TecRate = 0.000
+(1554521) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.37, output = 100.0, timeout = 450, exptTempC = 50.00, TecRate = -0.003
+(1554676) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.13, output = 100.0, timeout = 600, exptTempC = 50.00, TecRate = -0.002
+(1554827) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.43, output = 100.0, timeout = 750, exptTempC = 50.00, TecRate = -0.001
+(1554974) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.55, output = 100.0, timeout = 900, exptTempC = 50.00, TecRate = 0.000
+(1555123) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.01, output = 100.0, timeout = 1050, exptTempC = 50.00, TecRate = 0.001
+(1555274) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.02, output = 100.0, timeout = 1200, exptTempC = 50.00, TecRate = 0.000
+(1555423) TC: TC-1 = 22.00, modeled = 22.16, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 1350, exptTempC = 50.00, TecRate = 0.001
+(1555577) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.43, output = 100.0, timeout = 1500, exptTempC = 50.00, TecRate = 0.002
+(1555733) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.28, output = 100.0, timeout = 1650, exptTempC = 50.00, TecRate = 0.001
+(1555876) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.13, output = 100.0, timeout = 1800, exptTempC = 50.00, TecRate = 0.002
+(1556027) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -85.71, output = 100.0, timeout = 1950, exptTempC = 50.00, TecRate = 0.002
+(1556176) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -85.84, output = 100.0, timeout = 2100, exptTempC = 50.00, TecRate = 0.003
+(1556327) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -85.87, output = 100.0, timeout = 2250, exptTempC = 50.00, TecRate = 0.002
+(1556482) TC: TC-1 = 22.00, modeled = 22.17, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 2400, exptTempC = 50.00, TecRate = 0.002
+(1556634) TC: TC-1 = 22.01, modeled = 22.17, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 2550, exptTempC = 50.00, TecRate = 0.003
+(1556779) TC: TC-1 = 22.01, modeled = 22.17, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 2700, exptTempC = 50.00, TecRate = 0.007
+(1556929) TC: TC-1 = 22.02, modeled = 22.17, target = 50.00, heatSink = -86.05, output = 100.0, timeout = 2850, exptTempC = 50.00, TecRate = 0.015
+(1557080) TC: TC-1 = 22.05, modeled = 22.17, target = 50.00, heatSink = -86.02, output = 100.0, timeout = 3000, exptTempC = 50.00, TecRate = 0.034
+(1557229) TC: TC-1 = 22.09, modeled = 22.18, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 3150, exptTempC = 50.00, TecRate = 0.059
+(1557383) TC: TC-1 = 22.13, modeled = 22.19, target = 50.00, heatSink = -86.55, output = 100.0, timeout = 3300, exptTempC = 50.00, TecRate = 0.081
+(1557531) TC: TC-1 = 22.16, modeled = 22.20, target = 50.00, heatSink = -86.51, output = 100.0, timeout = 3450, exptTempC = 50.00, TecRate = 0.090
+(1557683) TC: TC-1 = 22.21, modeled = 22.22, target = 50.00, heatSink = -86.12, output = 100.0, timeout = 3600, exptTempC = 50.00, TecRate = 0.115
+(1557832) TC: TC-1 = 22.27, modeled = 22.24, target = 50.00, heatSink = -85.82, output = 100.0, timeout = 3750, exptTempC = 50.00, TecRate = 0.141
+(1557983) TC: TC-1 = 22.35, modeled = 22.27, target = 50.00, heatSink = -86.09, output = 100.0, timeout = 3900, exptTempC = 50.00, TecRate = 0.176
+(1558133) TC: TC-1 = 22.43, modeled = 22.29, target = 50.00, heatSink = -86.47, output = 100.0, timeout = 4050, exptTempC = 50.00, TecRate = 0.206
+(1558291) TC: TC-1 = 22.52, modeled = 22.33, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 4200, exptTempC = 50.00, TecRate = 0.236
+(1558443) TC: TC-1 = 22.57, modeled = 22.36, target = 50.00, heatSink = -86.28, output = 100.0, timeout = 4350, exptTempC = 50.00, TecRate = 0.237
+(1558587) TC: TC-1 = 22.65, modeled = 22.40, target = 50.00, heatSink = -86.23, output = 100.0, timeout = 4500, exptTempC = 50.00, TecRate = 0.254
+(1558738) TC: TC-1 = 22.73, modeled = 22.44, target = 50.00, heatSink = -86.01, output = 100.0, timeout = 4650, exptTempC = 50.00, TecRate = 0.270
+(1558889) TC: TC-1 = 22.81, modeled = 22.48, target = 50.00, heatSink = -86.59, output = 100.0, timeout = 4800, exptTempC = 50.00, TecRate = 0.282
+(1559039) TC: TC-1 = 22.87, modeled = 22.52, target = 50.00, heatSink = -86.19, output = 100.0, timeout = 4950, exptTempC = 50.00, TecRate = 0.281
+(1559193) TC: TC-1 = 22.93, modeled = 22.57, target = 50.00, heatSink = -86.31, output = 100.0, timeout = 5100, exptTempC = 50.00, TecRate = 0.277
+(1559271) systemRequestStateChange: System State Transition WARNING -> CRITICAL
+(1559271) blePeriphNotifySubscription: ENTER NOTIFY
+(1559274) systemRequestStateChange: Notify exit state change
+(1559348) TC: TC-1 = 22.97, modeled = 22.61, target = 50.00, heatSink = -86.24, output = 100.0, timeout = 5250, exptTempC = 50.00, TecRate = 0.251
+(1559494) TC: TC-1 = 23.03, modeled = 22.65, target = 50.00, heatSink = -86.13, output = 100.0, timeout = 5400, exptTempC = 50.00, TecRate = 0.261
+(1559645) TC: TC-1 = 23.09, modeled = 22.68, target = 50.00, heatSink = -85.78, output = 100.0, timeout = 5550, exptTempC = 50.00, TecRate = 0.266
+(1559794) TC: TC-1 = 23.16, modeled = 22.73, target = 50.00, heatSink = -86.04, output = 100.0, timeout = 5700, exptTempC = 50.00, TecRate = 0.274
+(1559945) TC: TC-1 = 23.23, modeled = 22.77, target = 50.00, heatSink = -86.43, output = 100.0, timeout = 5850, exptTempC = 50.00, TecRate = 0.280
+(1560099) TC: TC-1 = 23.30, modeled = 22.81, target = 50.00, heatSink = -86.31, output = 100.0, timeout = 6000, exptTempC = 50.00, TecRate = 0.286
+(1560251) TC: TC-1 = 23.34, modeled = 22.85, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 6150, exptTempC = 50.00, TecRate = 0.274
+(1560397) TC: TC-1 = 23.40, modeled = 22.89, target = 50.00, heatSink = -86.12, output = 100.0, timeout = 6300, exptTempC = 50.00, TecRate = 0.272
+(1560547) TC: TC-1 = 23.45, modeled = 22.93, target = 50.00, heatSink = -85.42, output = 100.0, timeout = 6450, exptTempC = 50.00, TecRate = 0.264
+(1560698) TC: TC-1 = 23.49, modeled = 22.97, target = 50.00, heatSink = -86.02, output = 100.0, timeout = 6600, exptTempC = 50.00, TecRate = 0.256
+(1560847) TC: TC-1 = 23.54, modeled = 23.01, target = 50.00, heatSink = -86.58, output = 100.0, timeout = 6750, exptTempC = 50.00, TecRate = 0.253
+(1561001) TC: TC-1 = 23.58, modeled = 23.05, target = 50.00, heatSink = -86.43, output = 100.0, timeout = 6900, exptTempC = 50.00, TecRate = 0.246
+(1561157) TC: TC-1 = 23.61, modeled = 23.08, target = 50.00, heatSink = -86.35, output = 100.0, timeout = 7050, exptTempC = 50.00, TecRate = 0.224
+(1561300) TC: TC-1 = 23.65, modeled = 23.12, target = 50.00, heatSink = -86.43, output = 100.0, timeout = 7200, exptTempC = 50.00, TecRate = 0.232
+(1561452) TC: TC-1 = 23.71, modeled = 23.15, target = 50.00, heatSink = -85.90, output = 100.0, timeout = 7350, exptTempC = 50.00, TecRate = 0.239
+(1561601) TC: TC-1 = 23.77, modeled = 23.19, target = 50.00, heatSink = -85.97, output = 100.0, timeout = 7500, exptTempC = 50.00, TecRate = 0.249
+(1561752) TC: TC-1 = 23.83, modeled = 23.23, target = 50.00, heatSink = -86.13, output = 100.0, timeout = 7650, exptTempC = 50.00, TecRate = 0.260
+(1561907) TC: TC-1 = 23.90, modeled = 23.27, target = 50.00, heatSink = -86.47, output = 100.0, timeout = 7800, exptTempC = 50.00, TecRate = 0.276
+(1562059) TC: TC-1 = 23.95, modeled = 23.31, target = 50.00, heatSink = -86.51, output = 100.0, timeout = 7950, exptTempC = 50.00, TecRate = 0.274
+(1562204) TC: TC-1 = 24.02, modeled = 23.35, target = 50.00, heatSink = -86.16, output = 100.0, timeout = 8100, exptTempC = 50.00, TecRate = 0.287
+(1562354) TC: TC-1 = 24.09, modeled = 23.40, target = 50.00, heatSink = -86.01, output = 100.0, timeout = 8250, exptTempC = 50.00, TecRate = 0.294
+(1562503) TC: TC-1 = 24.14, modeled = 23.44, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 8400, exptTempC = 50.00, TecRate = 0.290
+(1562654) TC: TC-1 = 24.19, modeled = 23.48, target = 50.00, heatSink = -86.50, output = 100.0, timeout = 8550, exptTempC = 50.00, TecRate = 0.280
+(1562809) TC: TC-1 = 24.23, modeled = 23.52, target = 50.00, heatSink = -86.25, output = 100.0, timeout = 8700, exptTempC = 50.00, TecRate = 0.271
+(1562962) TC: TC-1 = 24.26, modeled = 23.56, target = 50.00, heatSink = -86.14, output = 100.0, timeout = 8850, exptTempC = 50.00, TecRate = 0.255
+(1563106) TC: TC-1 = 24.30, modeled = 23.60, target = 50.00, heatSink = -86.58, output = 100.0, timeout = 9000, exptTempC = 50.00, TecRate = 0.249
+(1563256) TC: TC-1 = 24.35, modeled = 23.64, target = 50.00, heatSink = -85.97, output = 100.0, timeout = 9150, exptTempC = 50.00, TecRate = 0.249
+(1563405) TC: TC-1 = 24.39, modeled = 23.67, target = 50.00, heatSink = -86.16, output = 100.0, timeout = 9300, exptTempC = 50.00, TecRate = 0.250
+(1563556) TC: TC-1 = 24.44, modeled = 23.71, target = 50.00, heatSink = -86.39, output = 100.0, timeout = 9450, exptTempC = 50.00, TecRate = 0.248
+(1563712) TC: TC-1 = 24.48, modeled = 23.75, target = 50.00, heatSink = -86.63, output = 100.0, timeout = 9600, exptTempC = 50.00, TecRate = 0.246
+(1563858) TC: TC-1 = 24.51, modeled = 23.78, target = 50.00, heatSink = -86.36, output = 100.0, timeout = 9750, exptTempC = 50.00, TecRate = 0.240
+(1564007) TC: TC-1 = 24.58, modeled = 23.82, target = 50.00, heatSink = -85.86, output = 100.0, timeout = 9900, exptTempC = 50.00, TecRate = 0.260
+(1564158) TC: TC-1 = 24.85, modeled = 23.88, target = 50.00, heatSink = -86.70, output = 100.0, timeout = 10050, exptTempC = 50.00, TecRate = 0.483
+(1564307) TC: TC-1 = 25.90, modeled = 24.03, target = 50.00, heatSink = -86.32, output = 100.0, timeout = 10200, exptTempC = 50.00, TecRate = 1.313
+(1564461) TC: TC-1 = 27.73, modeled = 24.35, target = 50.00, heatSink = -86.16, output = 100.0, timeout = 10350, exptTempC = 50.00, TecRate = 2.564
+(1564609) TC: TC-1 = 29.30, modeled = 24.79, target = 50.00, heatSink = -86.23, output = 100.0, timeout = 10500, exptTempC = 50.00, TecRate = 3.362
+(1564762) TC: TC-1 = 32.09, modeled = 25.46, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 10650, exptTempC = 50.00, TecRate = 4.931
+(1564911) TC: TC-1 = 35.00, modeled = 26.33, target = 50.00, heatSink = -86.05, output = 100.0, timeout = 10800, exptTempC = 50.00, TecRate = 6.249
+(1565062) TC: TC-1 = 37.86, modeled = 27.38, target = 50.00, heatSink = -86.66, output = 100.0, timeout = 10950, exptTempC = 50.00, TecRate = 7.299
+(1565212) TC: TC-1 = 40.64, modeled = 28.55, target = 50.00, heatSink = -86.23, output = 100.0, timeout = 11100, exptTempC = 50.00, TecRate = 8.091
+(1565370) TC: TC-1 = 43.28, modeled = 29.82, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 11250, exptTempC = 50.00, TecRate = 8.636
+(1565521) TC: TC-1 = 44.99, modeled = 31.08, target = 50.00, heatSink = -86.35, output = 100.0, timeout = 11400, exptTempC = 50.00, TecRate = 8.424
+(1565666) TC: TC-1 = 47.41, modeled = 32.38, target = 50.00, heatSink = -86.28, output = 100.0, timeout = 11550, exptTempC = 50.00, TecRate = 8.771
+(1565816) TC: TC-1 = 49.66, modeled = 33.72, target = 50.00, heatSink = -85.98, output = 100.0, timeout = 11700, exptTempC = 50.00, TecRate = 8.938
+(1565965) TC: TC-1 = 51.67, modeled = 35.06, target = 50.00, heatSink = -86.10, output = 100.0, timeout = 11850, exptTempC = 50.00, TecRate = 8.896
+(1566116) TC: TC-1 = 53.53, modeled = 36.38, target = 50.00, heatSink = -86.02, output = 100.0, timeout = 12000, exptTempC = 50.00, TecRate = 8.781
+(1566272) TC: TC-1 = 55.30, modeled = 37.69, target = 50.00, heatSink = -86.23, output = 100.0, timeout = 12150, exptTempC = 50.00, TecRate = 8.626
+(1566424) TC: TC-1 = 56.44, modeled = 38.91, target = 50.00, heatSink = -86.05, output = 100.0, timeout = 12300, exptTempC = 50.00, TecRate = 8.075
+(1566567) TC: TC-1 = 58.18, modeled = 40.12, target = 50.00, heatSink = -86.29, output = 100.0, timeout = 12450, exptTempC = 50.00, TecRate = 8.076
+(1566718) TC: TC-1 = 59.97, modeled = 41.34, target = 50.00, heatSink = -86.05, output = 100.0, timeout = 12600, exptTempC = 50.00, TecRate = 8.119
+(1566868) TC: TC-1 = 61.70, modeled = 42.56, target = 50.00, heatSink = -86.16, output = 100.0, timeout = 12750, exptTempC = 50.00, TecRate = 8.113
+(1567018) TC: TC-1 = 63.40, modeled = 43.77, target = 50.00, heatSink = -86.27, output = 100.0, timeout = 12900, exptTempC = 50.00, TecRate = 8.098
+(1567173) TC: TC-1 = 65.01, modeled = 44.98, target = 50.00, heatSink = -86.35, output = 100.0, timeout = 13050, exptTempC = 50.00, TecRate = 8.015
+(1567319) TC: TC-1 = 66.03, modeled = 46.12, target = 50.00, heatSink = -86.17, output = 100.0, timeout = 13200, exptTempC = 50.00, TecRate = 7.539
+(1567474) TC: TC-1 = 67.52, modeled = 47.25, target = 50.00, heatSink = -85.79, output = -50.0, timeout = 13300, exptTempC = 50.00, TecRate = 7.490
+(1567626) TC: TC-1 = 68.83, modeled = 48.35, target = 50.00, heatSink = -85.89, output = -100.0, timeout = 13450, exptTempC = 50.00, TecRate = 7.317
+(1567775) TC: TC-1 = 70.11, modeled = 49.44, target = 50.00, heatSink = -86.47, output = -100.0, timeout = 13600, exptTempC = 50.00, TecRate = 7.171
+(1567928) TC: TC-1 = 71.31, modeled = 50.50, target = 50.00, heatSink = -86.23, output = -100.0, timeout = 13750, exptTempC = 50.00, TecRate = 6.999
+(1568084) TC: TC-1 = 72.08, modeled = 51.51, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 13900, exptTempC = 50.00, TecRate = 6.383
+(1568184) _thermalBrakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model: 52.157433, threshold: 50.200001
+(1568216) _setThermalControlState: thermalControl-1: changing state 1->3
+(1568216) _setTempReachedCallback: Set Temp Reached
+(1568227) TC: TC-1 = 73.23, modeled = 52.48, target = 50.00, heatSink = -86.16, output = -50.0, timeout = 14050, exptTempC = 50.00, TecRate = 6.456
+(1568372) TC: TC-1 = 74.30, modeled = 53.44, target = 50.00, heatSink = -86.05, output = -73.2, timeout = 14200, exptTempC = 50.00, TecRate = 6.329
+(1568523) TC: TC-1 = 75.30, modeled = 54.37, target = 50.00, heatSink = -86.28, output = -100.0, timeout = 14350, exptTempC = 50.00, TecRate = 6.185
+(1568673) TC: TC-1 = 76.24, modeled = 55.28, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 14500, exptTempC = 50.00, TecRate = 6.022
+(1568825) TC: TC-1 = 77.15, modeled = 56.17, target = 50.00, heatSink = -86.04, output = -100.0, timeout = 14650, exptTempC = 50.00, TecRate = 5.886
+(1568980) TC: TC-1 = 77.76, modeled = 57.03, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 14800, exptTempC = 50.00, TecRate = 5.408
+(1569125) TC: TC-1 = 78.60, modeled = 57.85, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 14950, exptTempC = 50.00, TecRate = 5.427
+(1569274) TC: TC-1 = 79.41, modeled = 58.65, target = 50.00, heatSink = -85.90, output = -100.0, timeout = 15100, exptTempC = 50.00, TecRate = 5.319
+(1569425) TC: TC-1 = 80.16, modeled = 59.43, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 15250, exptTempC = 50.00, TecRate = 5.194
+(1569574) TC: TC-1 = 80.90, modeled = 60.20, target = 50.00, heatSink = -86.54, output = -100.0, timeout = 15400, exptTempC = 50.00, TecRate = 5.090
+(1569727) TC: TC-1 = 81.59, modeled = 60.95, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 15550, exptTempC = 50.00, TecRate = 4.963
+(1569876) TC: TC-1 = 82.04, modeled = 61.67, target = 50.00, heatSink = -86.46, output = -100.0, timeout = 15700, exptTempC = 50.00, TecRate = 4.582
+(1570025) TC: TC-1 = 82.70, modeled = 62.37, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 15850, exptTempC = 50.00, TecRate = 4.610
+(1570177) TC: TC-1 = 83.33, modeled = 63.05, target = 50.00, heatSink = -86.09, output = -100.0, timeout = 16000, exptTempC = 50.00, TecRate = 4.529
+(1570325) TC: TC-1 = 83.93, modeled = 63.72, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 16150, exptTempC = 50.00, TecRate = 4.436
+(1570476) TC: TC-1 = 84.51, modeled = 64.38, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 16300, exptTempC = 50.00, TecRate = 4.357
+(1570631) TC: TC-1 = 85.05, modeled = 65.02, target = 50.00, heatSink = -86.09, output = -100.0, timeout = 16450, exptTempC = 50.00, TecRate = 4.251
+(1570777) TC: TC-1 = 85.39, modeled = 65.63, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 16600, exptTempC = 50.00, TecRate = 4.030
+(1570926) TC: TC-1 = 85.89, modeled = 66.23, target = 50.00, heatSink = -86.01, output = -100.0, timeout = 16750, exptTempC = 50.00, TecRate = 3.964
+(1571077) TC: TC-1 = 86.38, modeled = 66.82, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 16900, exptTempC = 50.00, TecRate = 3.894
+(1571226) TC: TC-1 = 86.84, modeled = 67.40, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 17050, exptTempC = 50.00, TecRate = 3.818
+(1571379) TC: TC-1 = 87.27, modeled = 67.96, target = 50.00, heatSink = -86.31, output = -100.0, timeout = 17200, exptTempC = 50.00, TecRate = 3.736
+(1571534) TC: TC-1 = 87.56, modeled = 68.50, target = 50.00, heatSink = -86.01, output = -100.0, timeout = 17350, exptTempC = 50.00, TecRate = 3.497
+(1571679) TC: TC-1 = 87.98, modeled = 69.03, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 17500, exptTempC = 50.00, TecRate = 3.510
+(1571828) TC: TC-1 = 88.38, modeled = 69.55, target = 50.00, heatSink = -85.79, output = -100.0, timeout = 17650, exptTempC = 50.00, TecRate = 3.454
+(1571979) TC: TC-1 = 88.76, modeled = 70.07, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 17800, exptTempC = 50.00, TecRate = 3.397
+(1572128) TC: TC-1 = 89.13, modeled = 70.57, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 17950, exptTempC = 50.00, TecRate = 3.336
+(1572281) TC: TC-1 = 89.47, modeled = 71.06, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 18100, exptTempC = 50.00, TecRate = 3.259
+(1572436) TC: TC-1 = 89.70, modeled = 71.54, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 18250, exptTempC = 50.00, TecRate = 3.066
+(1572581) TC: TC-1 = 90.02, modeled = 72.00, target = 50.00, heatSink = -86.23, output = -100.0, timeout = 18400, exptTempC = 50.00, TecRate = 3.065
+(1572730) TC: TC-1 = 90.34, modeled = 72.46, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 18550, exptTempC = 50.00, TecRate = 3.024
+(1572881) TC: TC-1 = 90.64, modeled = 72.91, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 18700, exptTempC = 50.00, TecRate = 2.971
+(1573030) TC: TC-1 = 90.94, modeled = 73.35, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 18850, exptTempC = 50.00, TecRate = 2.928
+(1573183) TC: TC-1 = 91.24, modeled = 73.78, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 19000, exptTempC = 50.00, TecRate = 2.888
+(1573332) TC: TC-1 = 91.43, modeled = 74.20, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 19150, exptTempC = 50.00, TecRate = 2.768
+(1573484) TC: TC-1 = 91.69, modeled = 74.61, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 19300, exptTempC = 50.00, TecRate = 2.730
+(1573634) TC: TC-1 = 91.96, modeled = 75.02, target = 50.00, heatSink = -85.75, output = -100.0, timeout = 19450, exptTempC = 50.00, TecRate = 2.696
+(1573784) TC: TC-1 = 92.21, modeled = 75.42, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 19600, exptTempC = 50.00, TecRate = 2.649
+(1573933) TC: TC-1 = 92.43, modeled = 75.81, target = 50.00, heatSink = -86.59, output = -100.0, timeout = 19750, exptTempC = 50.00, TecRate = 2.588
+(1574089) TC: TC-1 = 92.58, modeled = 76.19, target = 50.00, heatSink = -86.19, output = -100.0, timeout = 19900, exptTempC = 50.00, TecRate = 2.457
+(1574234) TC: TC-1 = 92.80, modeled = 76.56, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 20050, exptTempC = 50.00, TecRate = 2.457
+(1574385) TC: TC-1 = 93.02, modeled = 76.93, target = 50.00, heatSink = -85.80, output = -100.0, timeout = 20200, exptTempC = 50.00, TecRate = 2.426
+(1574534) TC: TC-1 = 93.22, modeled = 77.28, target = 50.00, heatSink = -86.13, output = -100.0, timeout = 20350, exptTempC = 50.00, TecRate = 2.385
+(1574685) TC: TC-1 = 93.43, modeled = 77.64, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 20500, exptTempC = 50.00, TecRate = 2.352
+(1574839) TC: TC-1 = 93.61, modeled = 77.99, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 20650, exptTempC = 50.00, TecRate = 2.306
+(1574991) TC: TC-1 = 93.74, modeled = 78.32, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 20800, exptTempC = 50.00, TecRate = 2.224
+(1575135) TC: TC-1 = 93.94, modeled = 78.66, target = 50.00, heatSink = -86.01, output = -100.0, timeout = 20950, exptTempC = 50.00, TecRate = 2.211
+(1575286) TC: TC-1 = 94.12, modeled = 78.98, target = 50.00, heatSink = -85.82, output = -100.0, timeout = 21100, exptTempC = 50.00, TecRate = 2.173
+(1575436) TC: TC-1 = 94.30, modeled = 79.31, target = 50.00, heatSink = -86.31, output = -100.0, timeout = 21250, exptTempC = 50.00, TecRate = 2.155
+(1575586) TC: TC-1 = 94.47, modeled = 79.63, target = 50.00, heatSink = -86.25, output = -100.0, timeout = 21400, exptTempC = 50.00, TecRate = 2.118
+(1575740) TC: TC-1 = 94.62, modeled = 79.94, target = 50.00, heatSink = -86.21, output = -100.0, timeout = 21550, exptTempC = 50.00, TecRate = 2.072
+(1575886) TC: TC-1 = 94.72, modeled = 80.24, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 21700, exptTempC = 50.00, TecRate = 2.001
+(1576035) TC: TC-1 = 94.87, modeled = 80.54, target = 50.00, heatSink = -86.01, output = -100.0, timeout = 21850, exptTempC = 50.00, TecRate = 1.977
+(1576186) TC: TC-1 = 95.03, modeled = 80.84, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 22000, exptTempC = 50.00, TecRate = 1.959
+(1576335) TC: TC-1 = 95.16, modeled = 81.13, target = 50.00, heatSink = -86.70, output = -100.0, timeout = 22150, exptTempC = 50.00, TecRate = 1.919
+(1576488) TC: TC-1 = 95.29, modeled = 81.41, target = 50.00, heatSink = -86.98, output = -100.0, timeout = 22300, exptTempC = 50.00, TecRate = 1.886
+(1576638) TC: TC-1 = 95.39, modeled = 81.69, target = 50.00, heatSink = -86.86, output = -100.0, timeout = 22450, exptTempC = 50.00, TecRate = 1.808
+(1576788) TC: TC-1 = 95.53, modeled = 81.96, target = 50.00, heatSink = -86.02, output = -100.0, timeout = 22600, exptTempC = 50.00, TecRate = 1.814
+(1576937) TC: TC-1 = 95.66, modeled = 82.23, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 22750, exptTempC = 50.00, TecRate = 1.790
+(1577088) TC: TC-1 = 95.78, modeled = 82.50, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 22900, exptTempC = 50.00, TecRate = 1.758
+(1577237) TC: TC-1 = 95.89, modeled = 82.76, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 23050, exptTempC = 50.00, TecRate = 1.729
+(1577394) TC: TC-1 = 96.00, modeled = 83.01, target = 50.00, heatSink = -86.54, output = -100.0, timeout = 23200, exptTempC = 50.00, TecRate = 1.700
+(1577539) TC: TC-1 = 96.09, modeled = 83.26, target = 50.00, heatSink = -86.86, output = -100.0, timeout = 23350, exptTempC = 50.00, TecRate = 1.660
+(1577689) TC: TC-1 = 96.20, modeled = 83.51, target = 50.00, heatSink = -86.12, output = -100.0, timeout = 23500, exptTempC = 50.00, TecRate = 1.638
+(1577838) TC: TC-1 = 96.31, modeled = 83.75, target = 50.00, heatSink = -85.86, output = -100.0, timeout = 23650, exptTempC = 50.00, TecRate = 1.615
+(1577989) TC: TC-1 = 96.41, modeled = 83.99, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 23800, exptTempC = 50.00, TecRate = 1.593
+(1578139) TC: TC-1 = 96.52, modeled = 84.23, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 23950, exptTempC = 50.00, TecRate = 1.578
+(1578297) TC: TC-1 = 96.62, modeled = 84.47, target = 50.00, heatSink = -86.62, output = -100.0, timeout = 24100, exptTempC = 50.00, TecRate = 1.553
+(1578443) TC: TC-1 = 96.69, modeled = 84.69, target = 50.00, heatSink = -86.24, output = -100.0, timeout = 24250, exptTempC = 50.00, TecRate = 1.505
+(1578592) TC: TC-1 = 96.79, modeled = 84.92, target = 50.00, heatSink = -85.79, output = -100.0, timeout = 24400, exptTempC = 50.00, TecRate = 1.488
+(1578743) TC: TC-1 = 96.87, modeled = 85.14, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 24550, exptTempC = 50.00, TecRate = 1.463
+(1578893) TC: TC-1 = 96.96, modeled = 85.35, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 24700, exptTempC = 50.00, TecRate = 1.444
+(1579045) TC: TC-1 = 97.06, modeled = 85.57, target = 50.00, heatSink = -86.86, output = -100.0, timeout = 24850, exptTempC = 50.00, TecRate = 1.433
+(1579194) TC: TC-1 = 97.12, modeled = 85.78, target = 50.00, heatSink = -86.82, output = -100.0, timeout = 25000, exptTempC = 50.00, TecRate = 1.379
+(1579344) TC: TC-1 = 97.20, modeled = 85.99, target = 50.00, heatSink = -86.12, output = -100.0, timeout = 25150, exptTempC = 50.00, TecRate = 1.372
+(1579493) TC: TC-1 = 97.29, modeled = 86.19, target = 50.00, heatSink = -85.90, output = -100.0, timeout = 25300, exptTempC = 50.00, TecRate = 1.356
+(1579644) TC: TC-1 = 97.37, modeled = 86.39, target = 50.00, heatSink = -86.24, output = -100.0, timeout = 25450, exptTempC = 50.00, TecRate = 1.335
+(1579794) TC: TC-1 = 97.44, modeled = 86.59, target = 50.00, heatSink = -86.54, output = -100.0, timeout = 25600, exptTempC = 50.00, TecRate = 1.315
+(1579950) TC: TC-1 = 97.52, modeled = 86.79, target = 50.00, heatSink = -86.70, output = -100.0, timeout = 25750, exptTempC = 50.00, TecRate = 1.300
+(1580094) TC: TC-1 = 97.57, modeled = 86.98, target = 50.00, heatSink = -86.70, output = -100.0, timeout = 25900, exptTempC = 50.00, TecRate = 1.263
+(1580239) heapMonitor_checkFreeHeapSize: New heap low water mark 114252
+(1580245) TC: TC-1 = 97.65, modeled = 87.17, target = 50.00, heatSink = -85.94, output = -100.0, timeout = 26050, exptTempC = 50.00, TecRate = 1.251
+(1580394) TC: TC-1 = 97.72, modeled = 87.35, target = 50.00, heatSink = -85.79, output = -100.0, timeout = 26200, exptTempC = 50.00, TecRate = 1.230
+(1580545) TC: TC-1 = 97.79, modeled = 87.54, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 26350, exptTempC = 50.00, TecRate = 1.217
+(1580695) TC: TC-1 = 97.86, modeled = 87.72, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 26500, exptTempC = 50.00, TecRate = 1.201
+(1580851) TC: TC-1 = 97.92, modeled = 87.89, target = 50.00, heatSink = -86.70, output = -100.0, timeout = 26650, exptTempC = 50.00, TecRate = 1.179
+(1580996) TC: TC-1 = 97.97, modeled = 88.07, target = 50.00, heatSink = -86.74, output = -100.0, timeout = 26800, exptTempC = 50.00, TecRate = 1.152
+(1581146) TC: TC-1 = 98.04, modeled = 88.24, target = 50.00, heatSink = -85.75, output = -100.0, timeout = 26950, exptTempC = 50.00, TecRate = 1.143
+(1581297) TC: TC-1 = 98.10, modeled = 88.41, target = 50.00, heatSink = -86.05, output = -100.0, timeout = 27100, exptTempC = 50.00, TecRate = 1.134
+(1581446) TC: TC-1 = 98.17, modeled = 88.58, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 27250, exptTempC = 50.00, TecRate = 1.119
+(1581599) TC: TC-1 = 98.23, modeled = 88.74, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 27400, exptTempC = 50.00, TecRate = 1.104
+(1581748) TC: TC-1 = 98.28, modeled = 88.91, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 27550, exptTempC = 50.00, TecRate = 1.067
+(1581899) TC: TC-1 = 98.33, modeled = 89.07, target = 50.00, heatSink = -85.86, output = -100.0, timeout = 27700, exptTempC = 50.00, TecRate = 1.060
+(1582049) TC: TC-1 = 98.39, modeled = 89.22, target = 50.00, heatSink = -85.86, output = -100.0, timeout = 27850, exptTempC = 50.00, TecRate = 1.046
+(1582200) TC: TC-1 = 98.46, modeled = 89.38, target = 50.00, heatSink = -86.13, output = -100.0, timeout = 28000, exptTempC = 50.00, TecRate = 1.044
+(1582349) TC: TC-1 = 98.51, modeled = 89.53, target = 50.00, heatSink = -86.13, output = -100.0, timeout = 28150, exptTempC = 50.00, TecRate = 1.022
+(1582507) TC: TC-1 = 98.56, modeled = 89.69, target = 50.00, heatSink = -86.47, output = -100.0, timeout = 28300, exptTempC = 50.00, TecRate = 1.009
+(1582652) TC: TC-1 = 98.60, modeled = 89.83, target = 50.00, heatSink = -86.63, output = -100.0, timeout = 28450, exptTempC = 50.00, TecRate = 0.982
+(1582802) TC: TC-1 = 98.65, modeled = 89.98, target = 50.00, heatSink = -86.41, output = -100.0, timeout = 28600, exptTempC = 50.00, TecRate = 0.973
+(1582951) TC: TC-1 = 98.72, modeled = 90.13, target = 50.00, heatSink = -85.60, output = -100.0, timeout = 28750, exptTempC = 50.00, TecRate = 0.969
+(1583102) TC: TC-1 = 98.77, modeled = 90.27, target = 50.00, heatSink = -86.31, output = -100.0, timeout = 28900, exptTempC = 50.00, TecRate = 0.953
+(1583252) TC: TC-1 = 98.83, modeled = 90.41, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 29050, exptTempC = 50.00, TecRate = 0.952
+(1583408) TC: TC-1 = 98.87, modeled = 90.55, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 29200, exptTempC = 50.00, TecRate = 0.929
+(1583553) TC: TC-1 = 98.90, modeled = 90.69, target = 50.00, heatSink = -86.74, output = -100.0, timeout = 29350, exptTempC = 50.00, TecRate = 0.903
+(1583703) TC: TC-1 = 98.95, modeled = 90.82, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 29500, exptTempC = 50.00, TecRate = 0.889
+(1583852) TC: TC-1 = 98.99, modeled = 90.95, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 29650, exptTempC = 50.00, TecRate = 0.876
+(1584003) TC: TC-1 = 99.04, modeled = 91.09, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 29800, exptTempC = 50.00, TecRate = 0.874
+(1584156) TC: TC-1 = 99.09, modeled = 91.22, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 29950, exptTempC = 50.00, TecRate = 0.862
+(1584308) TC: TC-1 = 99.12, modeled = 91.34, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 30100, exptTempC = 50.00, TecRate = 0.833
+(1584453) TC: TC-1 = 99.17, modeled = 91.47, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 30250, exptTempC = 50.00, TecRate = 0.834
+(1584603) TC: TC-1 = 99.22, modeled = 91.59, target = 50.00, heatSink = -85.94, output = -100.0, timeout = 30400, exptTempC = 50.00, TecRate = 0.827
+(1584753) TC: TC-1 = 99.27, modeled = 91.71, target = 50.00, heatSink = -85.90, output = -100.0, timeout = 30550, exptTempC = 50.00, TecRate = 0.821
+(1584903) TC: TC-1 = 99.31, modeled = 91.84, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 30700, exptTempC = 50.00, TecRate = 0.802
+(1585058) TC: TC-1 = 99.34, modeled = 91.95, target = 50.00, heatSink = -86.47, output = -100.0, timeout = 30850, exptTempC = 50.00, TecRate = 0.783
+(1585204) TC: TC-1 = 99.37, modeled = 92.07, target = 50.00, heatSink = -86.70, output = -100.0, timeout = 31000, exptTempC = 50.00, TecRate = 0.773
+(1585353) TC: TC-1 = 99.41, modeled = 92.19, target = 50.00, heatSink = -86.28, output = -100.0, timeout = 31150, exptTempC = 50.00, TecRate = 0.761
+(1585504) TC: TC-1 = 99.45, modeled = 92.30, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 31300, exptTempC = 50.00, TecRate = 0.751
+(1585654) TC: TC-1 = 99.48, modeled = 92.41, target = 50.00, heatSink = -86.28, output = -100.0, timeout = 31450, exptTempC = 50.00, TecRate = 0.732
+(1585805) TC: TC-1 = 99.52, modeled = 92.52, target = 50.00, heatSink = -86.50, output = -100.0, timeout = 31600, exptTempC = 50.00, TecRate = 0.730
+(1585960) TC: TC-1 = 99.55, modeled = 92.63, target = 50.00, heatSink = -86.23, output = -100.0, timeout = 31750, exptTempC = 50.00, TecRate = 0.711
+(1586105) TC: TC-1 = 99.59, modeled = 92.73, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 31900, exptTempC = 50.00, TecRate = 0.712
+(1586254) TC: TC-1 = 99.63, modeled = 92.84, target = 50.00, heatSink = -86.21, output = -100.0, timeout = 32050, exptTempC = 50.00, TecRate = 0.704
+(1586405) TC: TC-1 = 99.68, modeled = 92.95, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 32200, exptTempC = 50.00, TecRate = 0.703
+(1586555) TC: TC-1 = 99.69, modeled = 93.05, target = 50.00, heatSink = -86.12, output = -100.0, timeout = 32350, exptTempC = 50.00, TecRate = 0.676
+(1586706) TC: TC-1 = 99.73, modeled = 93.15, target = 50.00, heatSink = -86.24, output = -100.0, timeout = 32500, exptTempC = 50.00, TecRate = 0.674
+(1586861) TC: TC-1 = 99.75, modeled = 93.25, target = 50.00, heatSink = -86.36, output = -100.0, timeout = 32650, exptTempC = 50.00, TecRate = 0.652
+(1587006) TC: TC-1 = 99.78, modeled = 93.35, target = 50.00, heatSink = -86.74, output = -100.0, timeout = 32800, exptTempC = 50.00, TecRate = 0.649
+(1587155) TC: TC-1 = 99.82, modeled = 93.44, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 32950, exptTempC = 50.00, TecRate = 0.639
+(1587306) TC: TC-1 = 99.85, modeled = 93.54, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 33100, exptTempC = 50.00, TecRate = 0.634
+(1587456) TC: TC-1 = 99.87, modeled = 93.63, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 33250, exptTempC = 50.00, TecRate = 0.616
+(1587607) TC: TC-1 = 99.91, modeled = 93.72, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 33400, exptTempC = 50.00, TecRate = 0.621
+(1587762) TC: TC-1 = 99.93, modeled = 93.81, target = 50.00, heatSink = -86.54, output = -100.0, timeout = 33550, exptTempC = 50.00, TecRate = 0.599
+(1587907) TC: TC-1 = 99.98, modeled = 93.91, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 33700, exptTempC = 50.00, TecRate = 0.613
+(1588064) TC: TC-1 = 100.01, modeled = 94.00, target = 50.00, heatSink = -86.02, output = -100.0, timeout = 33850, exptTempC = 50.00, TecRate = 0.599
+(1588216) TC: TC-1 = 100.03, modeled = 94.08, target = 50.00, heatSink = -85.53, output = -100.0, timeout = 34000, exptTempC = 50.00, TecRate = 0.584
+(1588366) TC: TC-1 = 100.06, modeled = 94.17, target = 50.00, heatSink = -85.98, output = -100.0, timeout = 34150, exptTempC = 50.00, TecRate = 0.575
+(1588518) TC: TC-1 = 100.08, modeled = 94.26, target = 50.00, heatSink = -86.08, output = -100.0, timeout = 34300, exptTempC = 50.00, TecRate = 0.565
+(1588673) TC: TC-1 = 100.11, modeled = 94.34, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 34450, exptTempC = 50.00, TecRate = 0.552
+(1588823) TC: TC-1 = 100.13, modeled = 94.42, target = 50.00, heatSink = -86.05, output = -100.0, timeout = 34600, exptTempC = 50.00, TecRate = 0.547
+(1588967) TC: TC-1 = 100.16, modeled = 94.50, target = 50.00, heatSink = -86.24, output = -100.0, timeout = 34750, exptTempC = 50.00, TecRate = 0.538
+(1589117) TC: TC-1 = 100.19, modeled = 94.58, target = 50.00, heatSink = -85.46, output = -100.0, timeout = 34900, exptTempC = 50.00, TecRate = 0.538
+(1589239) heapMonitor_checkFreeHeapSize: New heap low water mark 114188
+(1589267) TC: TC-1 = 100.24, modeled = 94.67, target = 50.00, heatSink = -86.12, output = -100.0, timeout = 35050, exptTempC = 50.00, TecRate = 0.547
+(1589419) TC: TC-1 = 100.27, modeled = 94.75, target = 50.00, heatSink = -86.23, output = -100.0, timeout = 35200, exptTempC = 50.00, TecRate = 0.536
+(1589574) TC: TC-1 = 100.28, modeled = 94.83, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 35350, exptTempC = 50.00, TecRate = 0.516
+(1589724) TC: TC-1 = 100.30, modeled = 94.90, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 35500, exptTempC = 50.00, TecRate = 0.505
+(1589868) TC: TC-1 = 100.33, modeled = 94.98, target = 50.00, heatSink = -86.28, output = -100.0, timeout = 35650, exptTempC = 50.00, TecRate = 0.503
+(1590018) TC: TC-1 = 100.36, modeled = 95.05, target = 50.00, heatSink = -85.64, output = -100.0, timeout = 35800, exptTempC = 50.00, TecRate = 0.502
+(1590168) TC: TC-1 = 100.38, modeled = 95.13, target = 50.00, heatSink = -86.05, output = -100.0, timeout = 35950, exptTempC = 50.00, TecRate = 0.488
+(1590320) TC: TC-1 = 100.40, modeled = 95.20, target = 50.00, heatSink = -86.39, output = -100.0, timeout = 36100, exptTempC = 50.00, TecRate = 0.484
+(1590475) TC: TC-1 = 100.42, modeled = 95.27, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 36250, exptTempC = 50.00, TecRate = 0.467
+(1590625) TC: TC-1 = 100.45, modeled = 95.34, target = 50.00, heatSink = -86.66, output = -100.0, timeout = 36400, exptTempC = 50.00, TecRate = 0.473
+(1590769) TC: TC-1 = 100.48, modeled = 95.41, target = 50.00, heatSink = -86.01, output = -100.0, timeout = 36550, exptTempC = 50.00, TecRate = 0.474
+(1590919) TC: TC-1 = 100.52, modeled = 95.48, target = 50.00, heatSink = -85.72, output = -100.0, timeout = 36700, exptTempC = 50.00, TecRate = 0.474
+(1591069) TC: TC-1 = 100.53, modeled = 95.55, target = 50.00, heatSink = -86.20, output = -100.0, timeout = 36850, exptTempC = 50.00, TecRate = 0.455
+(1591221) TC: TC-1 = 100.55, modeled = 95.62, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 37000, exptTempC = 50.00, TecRate = 0.448
+(1591375) TC: TC-1 = 100.57, modeled = 95.69, target = 50.00, heatSink = -86.31, output = -100.0, timeout = 37150, exptTempC = 50.00, TecRate = 0.437
+(1591520) TC: TC-1 = 100.60, modeled = 95.75, target = 50.00, heatSink = -86.63, output = -100.0, timeout = 37300, exptTempC = 50.00, TecRate = 0.439
+(1591670) TC: TC-1 = 100.63, modeled = 95.82, target = 50.00, heatSink = -85.93, output = -100.0, timeout = 37450, exptTempC = 50.00, TecRate = 0.437
+(1591821) TC: TC-1 = 100.65, modeled = 95.88, target = 50.00, heatSink = -85.71, output = -100.0, timeout = 37600, exptTempC = 50.00, TecRate = 0.433
+(1591970) TC: TC-1 = 100.68, modeled = 95.95, target = 50.00, heatSink = -86.19, output = -100.0, timeout = 37750, exptTempC = 50.00, TecRate = 0.424
+(1592126) TC: TC-1 = 100.70, modeled = 96.01, target = 50.00, heatSink = -86.54, output = -100.0, timeout = 37900, exptTempC = 50.00, TecRate = 0.420
+(1592278) TC: TC-1 = 100.72, modeled = 96.07, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 38050, exptTempC = 50.00, TecRate = 0.412
+(1592422) TC: TC-1 = 100.73, modeled = 96.14, target = 50.00, heatSink = -85.93, output = -100.0, timeout = 38200, exptTempC = 50.00, TecRate = 0.397
+(1592573) TC: TC-1 = 100.74, modeled = 96.19, target = 50.00, heatSink = -85.57, output = -100.0, timeout = 38350, exptTempC = 50.00, TecRate = 0.387
+(1592723) TC: TC-1 = 100.77, modeled = 96.25, target = 50.00, heatSink = -86.05, output = -100.0, timeout = 38500, exptTempC = 50.00, TecRate = 0.394
+(1592875) TC: TC-1 = 100.80, modeled = 96.31, target = 50.00, heatSink = -86.35, output = -100.0, timeout = 38650, exptTempC = 50.00, TecRate = 0.389
+(1593029) TC: TC-1 = 100.81, modeled = 96.37, target = 50.00, heatSink = -86.58, output = -100.0, timeout = 38800, exptTempC = 50.00, TecRate = 0.378
+(1593180) TC: TC-1 = 100.84, modeled = 96.43, target = 50.00, heatSink = -86.47, output = -100.0, timeout = 38950, exptTempC = 50.00, TecRate = 0.379
+(1593323) TC: TC-1 = 100.86, modeled = 96.48, target = 50.00, heatSink = -86.27, output = -100.0, timeout = 39100, exptTempC = 50.00, TecRate = 0.378
+(1593476) TC: TC-1 = 100.88, modeled = 96.54, target = 50.00, heatSink = -85.64, output = -100.0, timeout = 39250, exptTempC = 50.00, TecRate = 0.371
+(1593625) TC: TC-1 = 100.91, modeled = 96.59, target = 50.00, heatSink = -85.72, output = -100.0, timeout = 39400, exptTempC = 50.00, TecRate = 0.374
+(1593777) TC: TC-1 = 100.93, modeled = 96.65, target = 50.00, heatSink = -86.05, output = -100.0, timeout = 39550, exptTempC = 50.00, TecRate = 0.372
+(1593932) TC: TC-1 = 100.96, modeled = 96.71, target = 50.00, heatSink = -86.16, output = -100.0, timeout = 39700, exptTempC = 50.00, TecRate = 0.375
+(1594084) TC: TC-1 = 100.97, modeled = 96.76, target = 50.00, heatSink = -86.43, output = -100.0, timeout = 39850, exptTempC = 50.00, TecRate = 0.357
+(1594228) TC: TC-1 = 100.97, modeled = 96.81, target = 50.00, heatSink = -86.59, output = -100.0, timeout = 40000, exptTempC = 50.00, TecRate = 0.340
+(1594378) TC: TC-1 = 101.00, modeled = 96.86, target = 50.00, heatSink = -85.75, output = -100.0, timeout = 40150, exptTempC = 50.00, TecRate = 0.344
+(1594529) TC: TC-1 = 101.01, modeled = 96.91, target = 50.00, heatSink = -85.75, output = -100.0, timeout = 40300, exptTempC = 50.00, TecRate = 0.333
+***PCR OFF***
+[14]PCR TEC Turned Off
+(1594630) _deviceLogsSetPCR: Adding Time 40549
