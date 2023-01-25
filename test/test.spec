@@ -5,11 +5,11 @@ block_cipher = None
 
 
 a = Analysis(
-    ['JSDCSAM.py'],
-    pathex=['C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis','C:\\Users\\Joshwhitehea_5801ztl\\work\\analysis\\lib'],
+    ['test.py'],
+    pathex=[],
     binaries=[],
     datas=[],
-    hiddenimports=['lib','graphql_queries.py'],
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -26,7 +26,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='JSDCSAM',
+    name='test',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -46,5 +46,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='JSDCSAM',
+    name='test',
 )

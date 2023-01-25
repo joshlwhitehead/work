@@ -7,10 +7,10 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
 import pandas as pd
 import os
-folder = 'data/12Jan2023'
-total = dat.proposeMod
-
-plt.plot(total[0][0],total[0][2])
+folder = 'data/18Jan2023'
+total = dat.proposeModb
+for i in total:
+    plt.plot(i[0],i[2])
 plt.grid()
 plt.show()
 
@@ -23,7 +23,7 @@ def heatRamp(time,samp):
         if len(tempVal) == 0:
             tempVal.append([])
             timeVal.append([])
-        elif samp[i]>65 and samp[i]<85 and samp[count-1]<samp[i]:
+        elif samp[i]>65 and samp[i]<85 and samp[count-1]<samp[i] and time[i]>350 and time[i]<550:
             if len(tempVal[count2]) == 0 or samp[i]>tempVal[count2][-1]:
                 tempVal[count2].append(samp[i])
                 timeVal[count2].append(time[i])
