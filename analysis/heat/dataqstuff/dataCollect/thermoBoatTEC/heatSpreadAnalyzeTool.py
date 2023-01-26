@@ -1,3 +1,7 @@
+"""This program reads temperature data collected from heatspreader tests, analyzes it, and makes a call to 'pass' or 'fail' the heatspreader if the temperature is less than
+5% of the nominal temp. The program looks specifically at 80c, 90c, and 100c. An excel file is created which holds the data, calculations, plots, and pass/fail results
+'tkinter' is used to create a user interface so this code can be turned into a standalone exe"""
+
 from tkinter import *
 import os
 import numpy as np
@@ -9,22 +13,22 @@ from openpyxl.chart import LineChart, Reference
 
 def analyze():
     newFile = 'PCRDemo.xlsx'                                                #name of excel file to upload data
-    folder = 'data'                                                  #name of folder where raw data is held
+    folder = 'data'                                                         #name of folder where raw data is held
 
 
-    alpha = 0.05                                                            #error criteria
+    alpha = 0.05                                                            #error criteria (temperatures cannot be lower that 5% below nominal)
     timeTo = []
     fullTemp = []
     fullTime = []
-    fullDerivTemp = []
+
     tempc = np.arange(40,105,10)
 
-    for fileName in os.listdir(folder):                                            #loop through all files in data folder
+    for fileName in os.listdir(folder):                                            #loop through all files in "data" folder
         file = open(''.join([''.join([folder,'/']),fileName]),'r')                 #open file
-        filex = file.readlines()                                                    #readlines of file
-        time = []
+        filex = file.readlines()                                                   #read file line by line
+        time = []                                                                   #initiate lists to parse out time and temp data
         temp = []
-        absDif = []
+        absDif = []                                                                 
 
         goodsTemp = []
         goodsTime = []
@@ -252,12 +256,14 @@ def analyze():
 
 
 
-    toExcel()         
+    toExcel()                                                                                           #run function to create excel file
 
-root = Tk()
-root.geometry("400x400")
+root = Tk()                                                                                             #initialize user interface window
+root.geometry("400x400")                                                                                #set size of window
 
-run = Button(root,height=2,width=20,text='Analyze',command=lambda:analyze())
+root.title("Josh's Super-Duper Cool Stuff")                                                             #name ui window
+
+run = Button(root,height=2,width=20,text='Analyze',command=lambda:analyze())                            #create button that runs the above code when pushed
 run.pack()
 mainloop()
 
