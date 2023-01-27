@@ -9,10 +9,10 @@ import pandas as pd
 import os
 folder = 'data/18Jan2023'
 total = dat.proposeModb
-for i in total:
-    plt.plot(i[0],i[2])
-plt.grid()
-plt.show()
+# for i in total:
+#     plt.plot(i[0],i[2])
+# plt.grid()
+# plt.show()
 
 def heatRamp(time,samp):
     count = 0
@@ -133,7 +133,7 @@ dFTot = pd.DataFrame({'type':indep,'rr':tot})
 m_compMM = pairwise_tukeyhsd(endog=dFTot.rr, groups=dFTot.type, alpha=alpha)
 print(m_compMM)
 
-dFTot.boxplot('rr',by='type')
+dFTot.boxplot('rr',by='type',rot=10)
 # plt.set_xticks(rotatation=45)
 plt.show()
 
