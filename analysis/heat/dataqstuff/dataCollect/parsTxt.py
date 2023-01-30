@@ -57,14 +57,36 @@ def parsPCRTxt(file):
             
             if heatCollect:
                 heat[countH].append(float(u.split()[4].strip(',')))
-                timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                try:
+                    timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:
                 cool[countC].append(float(u.split()[4].strip(',')))
-                timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                try:
+                    timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
         
         
         countLines += 1
+
+
+    count = 0
+    for j in range(len(heat)):
+        if len(heat[count]) <= 2:
+            heat.remove(heat[count])
+            timeH.remove(timeH[count])
+            count += 1
+    count = 0      
+    for j in range(len(cool)):
+        if len(cool[count]) <= 2:
+            cool.remove(cool[count])
+            timeC.remove(timeC[count])
+            count += 1
+
+            
     return (heat,timeH),(cool,timeC)
 
 

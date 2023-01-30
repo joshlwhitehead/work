@@ -1,54 +1,46 @@
 """analyze """
-
+from parsTxt import parsPCRTxt
 import numpy as np
-import dataToVar as dat
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('TkAgg')
 import pandas as pd
-# from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp
-from statsmodels.formula.api import ols
-from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
-from statsmodels.graphics.factorplots import interaction_plot
-# import statsmodels.api as sm
+import os
+from tkinter import *
 
-alpha=0.05
-total = dat.wetPreMod
-instListShort = [13]
-instList = instListShort*3
-instListVar = [13,13.1,13.2]
-instList.sort()
-# plt.plot(total[0][4])
-# plt.plot(total[0][2])
-# plt.grid()
-# plt.show()
+
+
 def denature():
+    alpha=0.05
+    folder = 'data/27Jan2023/'
+    instListShort = inputtxt.get("1.0","end-1c").split()
+    replicate = int(inputtxt2.get("1.0","end-1c"))
+    instList = instListShort*replicate
+    
+    instListVar = []
+    for i in instListShort:
+        for u in range(replicate):
+            instListVar.append(''.join([str(i),'.',str(u)]))
+    # instListVar = ['15','15.1','15.2','25','25.1','25.2']
+    print(instListVar)
+    instList.sort()
+    
     temp = []
     # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
     count = 0
     n=0
     means=[]
-    for i in total:
-        time = i[0]
-        model = i[4]
-        samp = i[2]
-        # plt.close('all')
-        # plt.plot(samp,'o-')
-        # plt.plot(model)
-        # plt.hlines(90,0,max(time),'k')
-        # # plt.hlines(94,0,max(time),'k')
-        # plt.show()
+    for i in os.listdir(folder):
+        peakSampList = parsPCRTxt(''.join([folder,i]))[0][0]
         peakSamp = []
-        peakModel = []
-        for i in range(len(samp)):
-            if i > 590 and samp[i] >90 and samp[i]>samp[i-1] and samp[i]>samp[i+1]:
-                peakSamp.append(samp[i])
-            if model[i] >90 and model[i]>model[i-1] and model[i-1]>model[i-2] and model[i]>model[i+1] and model[i+1]>model[i+2]:
-                peakModel.append(model[i])
+        for u in peakSampList:
+            peakSamp.append(max(u))
 
         
-        plt.plot(peakSamp[:])#,label=instList[count])
-        # plt.plot(peakModel[:len(peakSamp[:-3])],'k')
+        plt.plot(peakSamp,'o')
+        plt.show()
         
         count += 1
         # print(len(peakSamp[:-1]))
@@ -56,9 +48,7 @@ def denature():
         mean = np.mean(peakSamp[:])
         means.append(mean)
    
-    plt.grid()
-    plt.legend()
-    plt.show()
+    print(len(instList),len(means),len(temp))
     # print(means)
     tempLong=[]
     instListLong = []
@@ -72,6 +62,7 @@ def denature():
     # print(instListLong)
     # print(len(instList),len(means),len(tempLong),len(instListLong))
     dfAnova = pd.DataFrame({'Instrument':instList,'Mean':means,'Temp':temp})
+    
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})
 
 
@@ -96,25 +87,10 @@ def denature():
     plt.hlines(92,1,len(instList),'k')
     plt.show()
 
-    clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
-    clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
+    clumpMeans = [means[i:i+replicate] for i in range(0,len(means),replicate)]
+    clumpInst = [instList[i:i+replicate] for i in range(0,len(instList),replicate)]
         
     print(clumpMeans)
-
-    # for i in dfAnova.Temp:
-    #     dist = 'norm'
-    #     x = np.linspace(min(i),max(i))
-    
-    #     if stats.anderson(np.array(i),dist=dist)[0] < stats.anderson(np.array(i),dist=dist)[1][2]:
-    #         print('data are',dist)
-    #     else:
-    #         print('data are not',dist)
-    #         print(stats.anderson(np.array(i),dist=dist))
-
-    
-    #     plt.hist(np.array(i),density=True)
-
-    #     plt.show()
 
 
 
@@ -191,47 +167,49 @@ def denature():
 
 
 def anneal():
+    alpha=0.05
+    folder = 'data/27Jan2023/'
+    instListShort = inputtxt.get("1.0","end-1c").split()
+    replicate = int(inputtxt2.get("1.0","end-1c"))
+    instList = instListShort*replicate
+    
+
+    instListVar = []
+    for i in instListShort:
+        for u in range(replicate):
+            instListVar.append(''.join([str(i),'.',str(u)]))
+    # instListVar = ['15','15.1','15.2','25','25.1','25.2']
+    print(instListVar)
+    instList.sort()
+
+
     temp = []
     # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
     count = 0
     n=0
     means=[]
-    for i in total:
-        time = i[0]
-        model = i[4]
-        samp = i[2]
-        # plt.close('all')
-        # plt.plot(samp,'o-')
-        # plt.plot(model)
-        # plt.hlines(90,0,max(time),'k')
-        # # plt.hlines(94,0,max(time),'k')
-        # plt.show()
+    for i in os.listdir(folder):
+        peakSampList = parsPCRTxt(''.join([folder,i]))[1][0]
         peakSamp = []
-        peakModel = []
-        # print(len(samp))
-        for i in range(len(samp)):
-            if i > 590 and i< 1865 and samp[i] < 60 and samp[i]<samp[i-1] and samp[i]<samp[i+1]:
-                peakSamp.append(samp[i])
-            # if model[i] <60 and model[i]<model[i-1] and model[i-1]<model[i-2] and model[i]<model[i+1] and model[i+1]<model[i+2]:
-            #     peakModel.append(model[i])
-    
+        for u in peakSampList:
+            peakSamp.append(min(u))
+
         
-        plt.plot(peakSamp[:],label=instList[count])
-        # plt.plot(peakModel[:len(peakSamp[:-3])],'k')
+        plt.plot(peakSamp,'o')
+        plt.show()
         
         count += 1
         # print(len(peakSamp[:-1]))
         temp.append(peakSamp)
         mean = np.mean(peakSamp[:])
         means.append(mean)
-    plt.grid()
-    plt.legend()
-    plt.show()
+   
+    
     # print(means)
     tempLong=[]
     instListLong = []
     count = 0
-    # instListVar = [10,10.1,10.2,18,18.1,18.2]
+    
     for i in instListVar:
         for u in temp[count]:
             instListLong.append(i)
@@ -264,8 +242,8 @@ def anneal():
     plt.hlines(52,1,len(instList),'k')
     plt.show()
 
-    clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
-    clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
+    clumpMeans = [means[i:i+replicate] for i in range(0,len(means),replicate)]
+    clumpInst = [instList[i:i+replicate] for i in range(0,len(instList),replicate)]
         
 
 
@@ -347,7 +325,32 @@ def anneal():
     plt.show()
     # print(probs)
 
-denature()
+
+root = Tk()                                                                                             #initialize user interface window
+root.geometry("400x400")                                                                                #set size of window
+
+root.title("Josh's Super-Duper Cool Stuff")                                                             #name ui window
+inputtxt = Text(root, height = 8,width = 25)
+inputtxt2 = Text(root,height=2,width=25)
+inputtxt3 = Text(root,height=2,width=25)
+
+
+
+
+
+
+
+run = Button(root,height=2,width=20,text='denature',command=lambda:denature())                            #create button that runs the above code when pushed
+run2 = Button(root,height=2,width=20,text='anneal',command=lambda:anneal())#create button that runs the above code when pushed
+
+inputtxt.pack()
+inputtxt2.pack()
+inputtxt3.pack()
+
+run.pack()
+run2.pack()
+mainloop()
+
 
     
             

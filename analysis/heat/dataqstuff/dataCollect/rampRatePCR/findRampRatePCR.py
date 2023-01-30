@@ -94,15 +94,18 @@ for i in os.listdir(folder):
         
         countLines += 1
 
-
+    count = 0
     for j in range(len(heat)):
-        if len(heat[j]) <= 1:
-            heat.remove(heat[j])
-            timeH.remove(timeH[j])
+        if len(heat[count]) <= 2:
+            heat.remove(heat[count])
+            timeH.remove(timeH[count])
+            count += 1
+    count = 0      
     for j in range(len(cool)):
-        if len(cool[j]) <= 1:
-            cool.remove(cool[j])
-            timeC.remove(timeC[j])
+        if len(cool[count]) <= 2:
+            cool.remove(cool[count])
+            timeC.remove(timeC[count])
+            count += 1
 
 
     for k in rr(heat,timeH):
