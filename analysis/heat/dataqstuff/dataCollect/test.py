@@ -1,124 +1,320 @@
+"""analyze """
+from parsTxt import parsPCRTxt
 import numpy as np
-import matplotlib.pyplot as plt
 import dataToVar as dat
+import matplotlib.pyplot as plt
+import pandas as pd
+# from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
-import pandas as pd
+from statsmodels.graphics.factorplots import interaction_plot
+# import statsmodels.api as sm
 import os
-raw = 'test.txt'
 
-with open(raw,'r') as readFile:
-    file = readFile.readlines()
+alpha=0.05
+folder = 'data/27Jan2023/'
+instListShort = [15,25]
+instList = instListShort*3
+instListVar = [15,15.1,15.2,25,25.1,25.2]
+instList.sort()
 
+def denature():
+    temp = []
+    # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
+    count = 0
+    n=0
+    means=[]
+    for i in os.listdir(folder):
+        peakSampList = parsPCRTxt(''.join([folder,i]))[0][0]
+        peakSamp = []
+        for u in peakSampList:
+            peakSamp.append(max(u))
 
-heat = [[]]
-timeH = [[]]
-cool = [[]]
-timeC = [[]]
-heatCollect = False
-coolCollect = False
-start = False
-countLines = 0
-countH = 0
-countC = 0
-
-
-# print(file.readlines())
-
-
-for i in file:
-    if 'Start PCR' in i:
-        start = True
-    if 'goto' in i and 'Controlled' not in i and float(i.split()[-1]) == 95:
-        heatCollect = True
-        coolCollect = False
-        # heat.append([])
-    elif 'goto' in i and 'Controlled' not in i and float(i.split()[-1]) == 55:
-        heatCollect = False
-        coolCollect = True
-    elif 'MELT' in i:
-        start = False
-    try:
-        if heatCollect and start and len(heat[countH]) != 0 and heat[countH][-1]-float(i.split()[4].strip(',')) > 10:
-            heat.append([])
-            timeH.append([])
-            countH+=1
-    except:
-        pass
-    # if coolCollect and start and len(cool[countC]) != 0 and float(i.split()[4].strip(','))-cool[countC][-1] > 10:
-    #     cool.append([])
-    #     countC+=1
+        
+        plt.plot(peakSamp,'o')
+        plt.show()
+        
+        count += 1
+        # print(len(peakSamp[:-1]))
+        temp.append(peakSamp)
+        mean = np.mean(peakSamp[:])
+        means.append(mean)
+   
     
-    if heatCollect and start and 'DATAQ:' in i:
-        heat[countH].append(float(i.split()[4].strip(',')))
-        timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
-
-    elif coolCollect and start and 'DATAQ:' in i:
-        cool[countC].append(float(i.split()[4].strip(',')))
-        timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+    # print(means)
+    tempLong=[]
+    instListLong = []
+    count = 0
     
+    for i in instListVar:
+        for u in temp[count]:
+            instListLong.append(i)
+            tempLong.append(u)
+        count+= 1
+    # print(instListLong)
+    # print(len(instList),len(means),len(tempLong),len(instListLong))
+    dfAnova = pd.DataFrame({'Instrument':instList,'Mean':means,'Temp':temp})
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})
+
+
+    if stats.anderson(dfAnova.Mean,dist='norm')[0] < stats.anderson(dfAnova.Mean,dist='norm')[1][2]:
+        print('data are normal')
+    else:
+        print('data are not normal')
+
+    m_compMM = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], alpha=alpha)
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)
+    print(m_compMM)
+    print(m_compMult)
+    dfAnova.boxplot('Mean',by='Instrument')
+    plt.ylabel('Temp (c)')
+    plt.hlines(95,1,len(instListShort),'r')
+    plt.hlines(92,1,len(instListShort),'k')
+    plt.show()
+
+    dfTemp.boxplot('Temp',by='Instrument')
+    plt.ylabel('Temp (c)')
+    plt.hlines(95,1,len(instList),'r')
+    plt.hlines(92,1,len(instList),'k')
+    plt.show()
+
+    clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
+    clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
+        
+    print(clumpMeans)
+
+    # for i in dfAnova.Temp:
+    #     dist = 'norm'
+    #     x = np.linspace(min(i),max(i))
     
-    countLines += 1
+    #     if stats.anderson(np.array(i),dist=dist)[0] < stats.anderson(np.array(i),dist=dist)[1][2]:
+    #         print('data are',dist)
+    #     else:
+    #         print('data are not',dist)
+    #         print(stats.anderson(np.array(i),dist=dist))
+
+    
+    #     plt.hist(np.array(i),density=True)
+
+    #     plt.show()
 
 
 
-# plt.plot(cool[0],'o-')
-# plt.show()
+
+    limitLow = 95 - 3
+    limitHigh = 95 + 3
+    count = 0
+    probs = []
+    for i in clumpMeans:
+        mean_er = np.mean(i) # sample mean
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ci = np.array([mean_er - moe, mean_er + moe])
+        t_limitLow = (limitLow - mean_er) / se
+        t_limitHigh = (limitHigh - mean_er) / se
+        prLow = stats.t.cdf(t_limitLow, dof)
+        prHigh = 1 - stats.t.cdf(t_limitHigh, dof)
+        probs.append(prHigh+prLow)
         
 
-def rr():
-    derivs = []
-    ramp = []
-    for i in range(len(heat)):
-        a,b = np.polyfit(timeH[i],heat[i],1)
-        derivs.append(a)
-        ramp.append((heat[i][-1]-heat[i][0])/(timeH[i][-1]-timeH[i][0]))
-    #     plt.plot(timeH[i],heat[i],'o')
-    #     plt.plot(timeH[i],a*np.array(timeH[i])+b)
-    # plt.show()
-    return derivs,ramp
+        plt.hlines(count,ci[0],ci[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
+    count=0
+    for i in temp:
+        mean_er = np.mean(i)
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ciMult = np.array([mean_er - moe, mean_er + moe])
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    # print(clumpMeans)
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
 
-# print(heat[0])
-# rr = []
-# for i in range(len(heat)):
-#     rr.append((heat[i][-1]-heat[i][0])/(timeH[i][-1]-timeH[i][0]))
-
-# plt.boxplot(rr())
-# plt.show()
-derivTot = []
-derivTotName = []
-for i in rr()[0]:
-    derivTot.append(i)
-    derivTotName.append('a')
-for i in rr()[1]:
-    derivTot.append(i)
-    derivTotName.append('b')
-
-dF = pd.DataFrame({'type':derivTotName,'rr':derivTot})
-dFA = pd.DataFrame({'type':['a']*len(rr()[0]),'rr':rr()[0]})
-dFB = pd.DataFrame({'type':['b']*len(rr()[1]),'rr':rr()[1]})
+    plt.title('Probability of Deviation from Model')
+    plt.plot(probs,'o')
+    plt.grid()
+    plt.xlabel('AdvB')
+    plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
+    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.show()
+    # print(probs)
 
 
 
-def testNorm(dist,dF,label):                            #data must be dataframe
-    if stats.anderson(dF.rr,dist=dist)[0] < stats.anderson(dF.rr,dist=dist)[1][2]:
-        print(''.join([label,' data ',dist]))
+
+
+
+
+
+
+
+
+
+
+def anneal():
+    temp = []
+    # colors = ['blue','crimson','green','orange','purple','cyan','deeppink','gray','brown','olive']
+    count = 0
+    n=0
+    means=[]
+    for i in os.listdir(folder):
+        peakSampList = parsPCRTxt(''.join([folder,i]))[1][0]
+        peakSamp = []
+        for u in peakSampList:
+            peakSamp.append(min(u))
+        
+        count += 1
+        # print(len(peakSamp[:-1]))
+        temp.append(peakSamp)
+        mean = np.mean(peakSamp[:])
+        means.append(mean)
+    plt.grid()
+    plt.legend()
+    plt.show()
+    # print(means)
+    tempLong=[]
+    instListLong = []
+    count = 0
+    # instListVar = [10,10.1,10.2,18,18.1,18.2]
+    for i in instListVar:
+        for u in temp[count]:
+            instListLong.append(i)
+            tempLong.append(u)
+        count+= 1
+    # print(instListLong)
+    # print(len(instList),len(means),len(tempLong),len(instListLong))
+    dfAnova = pd.DataFrame({'Instrument':instList,'Mean':means,'Temp':temp})
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})
+
+
+    if stats.anderson(dfAnova.Mean,dist='norm')[0] < stats.anderson(dfAnova.Mean,dist='norm')[1][2]:
+        print('data are normal')
     else:
-        print(''.join([label,' data not ',dist]))
-        print(stats.anderson(dF.rr,dist=dist))
-        x = np.linspace(min(dF.rr),max(dF.rr))
-        dF.hist('rr',density=True)
-        plt.plot(x,stats.norm.pdf(x,loc=np.mean(dF.rr),scale=np.std(dF.rr)))
-        plt.show()
+        print('data are not normal')
 
-# testNorm('norm',dFB,'')
+    m_compMM = pairwise_tukeyhsd(endog=dfAnova['Mean'], groups=dfAnova['Instrument'], alpha=alpha)
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)
+    print(m_compMM)
+    print(m_compMult)
+    dfAnova.boxplot('Mean',by='Instrument')
+    plt.ylabel('Temp (c)')
+    plt.hlines(55,1,len(instListShort),'r')
+    plt.hlines(52,1,len(instListShort),'k')
+    plt.show()
 
-# m_compMM = pairwise_tukeyhsd(endog=dF.rr, groups=dF.type, alpha=.05)
-# print(m_compMM)
+    dfTemp.boxplot('Temp',by='Instrument')
+    plt.ylabel('Temp (c)')
+    plt.hlines(55,1,len(instList),'r')
+    plt.hlines(52,1,len(instList),'k')
+    plt.show()
 
-formula = 'rr ~ type' 
-model = ols(formula, dF).fit()
-aov_table = anova_lm(model, typ=2)
-print(aov_table)
+    clumpMeans = [means[i:i+3] for i in range(0,len(means),3)]
+    clumpInst = [instList[i:i+3] for i in range(0,len(instList),3)]
+        
+
+
+    # for i in dfAnova.Temp:
+    #     dist = 'norm'
+    #     x = np.linspace(min(i),max(i))
+    
+    #     if stats.anderson(np.array(i),dist=dist)[0] < stats.anderson(np.array(i),dist=dist)[1][2]:
+    #         print('data are',dist)
+    #     else:
+    #         print('data are not',dist)
+    #         print(stats.anderson(np.array(i),dist=dist))
+
+    
+    #     plt.hist(np.array(i),density=True)
+
+    #     plt.show()
+
+
+
+
+    limitLow = 55 - 3
+    limitHigh = 55 + 3
+    count = 0
+    probs = []
+    for i in clumpMeans:
+        mean_er = np.mean(i) # sample mean
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ci = np.array([mean_er - moe, mean_er + moe])
+        t_limitLow = (limitLow - mean_er) / se
+        t_limitHigh = (limitHigh - mean_er) / se
+        prLow = stats.t.cdf(t_limitLow, dof)
+        prHigh = 1 - stats.t.cdf(t_limitHigh, dof)
+        probs.append(prHigh+prLow)
+        
+
+        plt.hlines(count,ci[0],ci[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    # print(clumpMeans)
+    plt.yticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
+    count=0
+    for i in temp:
+        mean_er = np.mean(i)
+        std_dev_er = np.std(i, ddof=1) # sample standard devialtion
+        se = std_dev_er / np.sqrt(len(i)) # standard error
+        n = len(i) # sample size, n
+        dof = n - 1 # degrees of freedom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
+        moe = t_star * se # margin of error
+        ciMult = np.array([mean_er - moe, mean_er + moe])
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+    # print(clumpMeans)
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('AdvB')
+    plt.show()
+
+    plt.title('Probability of Deviation from Model')
+    plt.plot(probs,'o')
+    plt.grid()
+    plt.xlabel('AdvB')
+    plt.ylabel('Prob Mean < Model - 3c OR Mean > Model + 3c')
+    plt.xticks(np.arange(0,len(clumpMeans)),instListShort)
+    plt.show()
+    # print(probs)
+
+denature()
+
+    
+            
