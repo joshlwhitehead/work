@@ -10,14 +10,15 @@ from scipy import stats
 import os
 from tkinter import *
 
+alpha = 0.5
+folder = 'data/27Jan2023/'
 
-
-def denature():
-    alpha=0.05
-    folder = 'data/27Jan2023/'
-    instListShort = inputtxt.get("1.0","end-1c").split()
-    replicate = int(inputtxt2.get("1.0","end-1c"))
-    instList = instListShort*replicate
+def denature():                                                                                     #create function to analyze denature temp
+                                                                                #
+    
+    instListShort = inputtxt.get("1.0","end-1c").split()                                            #list of instruments in folder
+    replicate = int(inputtxt2.get("1.0","end-1c"))                                                  #how many runs with each instrument
+    instList = instListShort*replicate                                                              #list of total runs
     
     instListVar = []
     for i in instListShort:
@@ -39,8 +40,8 @@ def denature():
             peakSamp.append(max(u))
 
         
-        plt.plot(peakSamp,'o')
-        plt.show()
+        # plt.plot(peakSamp,'o')
+        # plt.show()
         
         count += 1
         # print(len(peakSamp[:-1]))
@@ -157,18 +158,9 @@ def denature():
 
 
 
-
-
-
-
-
-
-
-
-
 def anneal():
-    alpha=0.05
-    folder = 'data/27Jan2023/'
+
+
     instListShort = inputtxt.get("1.0","end-1c").split()
     replicate = int(inputtxt2.get("1.0","end-1c"))
     instList = instListShort*replicate
@@ -330,8 +322,11 @@ root = Tk()                                                                     
 root.geometry("400x400")                                                                                #set size of window
 
 root.title("Josh's Super-Duper Cool Stuff")                                                             #name ui window
+
 inputtxt = Text(root, height = 8,width = 25)
+lInst = Label(text='Instruments')
 inputtxt2 = Text(root,height=2,width=25)
+lRep = Label(text='Number of replicates for instruments')
 inputtxt3 = Text(root,height=2,width=25)
 
 
@@ -343,7 +338,9 @@ inputtxt3 = Text(root,height=2,width=25)
 run = Button(root,height=2,width=20,text='denature',command=lambda:denature())                            #create button that runs the above code when pushed
 run2 = Button(root,height=2,width=20,text='anneal',command=lambda:anneal())#create button that runs the above code when pushed
 
+lInst.pack()
 inputtxt.pack()
+lRep.pack()
 inputtxt2.pack()
 inputtxt3.pack()
 

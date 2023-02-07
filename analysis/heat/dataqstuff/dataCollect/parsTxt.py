@@ -1,10 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-import os
-
-
-
 def parsPCRTxt(file):
 
     
@@ -31,10 +24,12 @@ def parsPCRTxt(file):
         if 'Start PCR' in u:
             start = True
         if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:
+            denatTemp = float(u.split()[-1])
             heatCollect = True
             coolCollect = False
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65:
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >= 45:
+            annealTemp = float(u.split()[-1])
             heatCollect = False
             coolCollect = True
         elif 'MELT' in u:
@@ -87,7 +82,7 @@ def parsPCRTxt(file):
             count += 1
 
             
-    return (heat,timeH),(cool,timeC)
+    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp)
 
 
 
