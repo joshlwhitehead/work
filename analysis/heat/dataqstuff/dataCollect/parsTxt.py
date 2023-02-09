@@ -82,7 +82,7 @@ def parsPCRTxt(file):
             count += 1
 
             
-    return (heat,timeH),(cool[1:],timeC[1:]),(denatTemp,annealTemp)
+    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp)
 
 
 
