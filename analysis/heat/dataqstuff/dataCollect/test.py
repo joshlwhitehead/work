@@ -204,6 +204,8 @@ def anneal():                                                                   
         mean = np.mean(peakSamp)                                                            #mean anneal temp for each run
         means.append(mean)                                                                  #list of means
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
+        print(np.std(peakSamp))
+        print(np.mean(peakSamp))
         plt.plot(peakSamp,'o-')
     plt.show()
     
