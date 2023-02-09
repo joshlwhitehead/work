@@ -57,7 +57,7 @@ def parsPCRTxt(file):
                 except:
                     timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
-            elif coolCollect:
+            # elif coolCollect:
                 cool[countC].append(float(u.split()[4].strip(',')))
                 try:
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
@@ -82,12 +82,23 @@ def parsPCRTxt(file):
             count += 1
 
             
-    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp)
+    return (heat,timeH),(cool[1:],timeC[1:]),(denatTemp,annealTemp)
 
 
 
+x = parsPCRTxt('data/27Jan2023/proposedModel_Adv15_wxx_120123_Run1.txt')
 
 
+heat = x[0][0][1:]
+timeH = x[0][1][1:]
+cool = x[1][0]
+timeC = x[1][1]
+import matplotlib.pyplot as plt
+
+for i in range(len(heat)):
+    plt.plot(timeH[i],heat[i],color='b')
+    plt.plot(timeC[i],cool[i],color='r')
+plt.show()
 
 
 
