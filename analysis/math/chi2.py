@@ -9,28 +9,36 @@ c = 1.2018
 d = 6.772
 z = 1.96
 s = .1
-yL = 93.5
-yU = 96.5
+# yL = 93.5
+# yU = 96.5
 
 
-def findNwS(a,b,c,d,z,s,yu,yl,n):
-    top = (yu-yl)**2*(a*c*n**2+n*(a*d+b*c)+b*d)
-    bottom = z**2*s**2*(n*(a+c)+b+d+np.sqrt(a*c*n**2+n*(a*d+b*c)+b*d))
 
-    return -top/bottom+(n**2-1)/n
+def TIlow(ybar,s,z,x2,n):
+    # x2 = a*(n-1)+b
+    k = z*np.sqrt((n-1)*(1+1/n)/x2)
+    return ybar-k*s
+def TIHigh(ybar,s,z,x2,n):
+    # x2 = c*(n-1)+d
+    k = z*np.sqrt((n-1)*(1+1/n)/x2)
+    return ybar+k*s
 
+def TIlowForN(ybar,yL,s,z):
+    alpha = ((ybar-yL)/z/s)**2
+    return n*(1-alpha*a)-1/n-alpha*(b-a)
 
-n = np.arange(1,100)
+def TIhighForN(ybar,yU,s,z):
+    alpha = ((yU-ybar)/z/s)**2
+    return n*(1-alpha*c)-1/n-alpha*(d-c)
 
-def findNwM(a,b,c,d,ybar,yl,yu):
-    k = (ybar-yl)/(yu-ybar)
+n = np.linspace(-20,20)
 
-    N = (d-k*b)/(k*a-c)
-    return N+1
-
-ybar = np.linspace(90,100)
-
-plt.plot(ybar,findNwM(a,b,c,d,ybar,yL,yU))
-# plt.plot(n,findNwS(a,b,c,d,z,s,yU,yL,n))
+# plt.plot(n,TIhighForN(3.55e-149,.5,1e-148,z))
+plt.plot(n,TIhighForN(3.55e-149,.03,1e-148,z))
+# plt.plot(n,TIlowForN(3.55e-149,.001,1e-148,z))
+plt.hlines(0,1,20)
 plt.grid()
+plt.legend()
 plt.show()
+
+print(TIHigh(3.55e-149,1e-148,z,2.733,9))

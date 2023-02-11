@@ -102,6 +102,91 @@ def parsPCRTxt(file):
 
 
 
+def parsTCTxt(file):
+
+    
+
+    with open(file,'r') as readFile:
+        file = readFile.readlines()
+
+
+    kill = []
+    timeK = []
+    act = []
+    timeA = []
+    killCollect = False
+    actCollect = False
+    start = True
+    start2 = False
+    countLines = 0
+
+
+
+
+
+    for u in file:
+        if 'Switching to steady' in u:
+            start2 = True
+        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:
+            killTemp = float(u.split()[-1])
+            killCollect = True
+            actCollect = False
+            start2 = False
+            # heat.append([])
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 55:
+            actTemp = float(u.split()[-1])
+            killCollect = False
+            actCollect = True
+        elif 'Using Cooling Equations' in u:
+            start = False
+
+        if start and start2 and 'DATAQ:' in u:
+            # try:
+            #     if killCollect and kill[-1]-float(u.split()[4].strip(',')) > 10:
+            #         countH+=1
+            #     elif actCollect and float(u.split()[4].strip(','))-act[countC][-1] > 10:
+            #         timeA.append([])
+            #         countC+=1
+            # except:
+            #     pass
+            
+            
+            if killCollect:
+                kill.append(float(u.split()[4].strip(',')))
+                try:
+                    timeK.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    print(file[countLines+1].split())
+                    timeK.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+
+            elif actCollect:
+                act.append(float(u.split()[4].strip(',')))
+                try:
+                    timeA.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeA.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+        
+        
+        countLines += 1
+        
+            
+    return (kill,timeK),(act,timeA),(killTemp,actTemp)
+
+
+
+# x = parsTCTxt('data/10Feb2023_f09TC/Adv02_P11_221215_Run2.txt')
+
+
+# import matplotlib.pyplot as plt
+
+
+# plt.plot(x[0][1],x[0][0])
+# plt.show()
+
+
+
+
+
 
 
 
