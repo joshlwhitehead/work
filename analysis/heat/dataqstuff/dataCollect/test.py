@@ -96,7 +96,8 @@ def kill():
     probs = []
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
-        std_dev_er = np.std(data)                                                   #stdev of each run
+        std_dev_er = np.std(data)  
+        print(std_dev_er)                                                 #stdev of each run
         n = len(data)                                                               
         se = std_dev_er / np.sqrt(n)                                                #standard error for t-test stat
         dof = n - 1                                                                 #degree of fredom
