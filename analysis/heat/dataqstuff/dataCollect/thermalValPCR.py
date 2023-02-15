@@ -8,9 +8,11 @@ import pandas as pd
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from scipy import stats
 import os
+import toleranceinterval as ti
 from tkinter import *
 
 alpha = 0.05
+p = 0.9
 folder = 'data/27Jan2023/'
 deviationCrit = 1.5
 
@@ -31,6 +33,8 @@ def denature():                                                                 
                
     temp = []    
     means = []
+    tis = []
+    count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         peakSamp = []
@@ -40,9 +44,26 @@ def denature():                                                                 
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
-    #     plt.plot(peakSamp,'o-')
-    # plt.show()
-    # print(temp)
+        bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
+        tis.append(bound[0])                                                                        #list of TIs
+
+        plt.hlines(count,bound[0][0],bound[0][1],lw=5)
+        count += 1
+        if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
+            print(instListVar[0],bound,'FAIL')
+        else:
+            print(instListVar[0],bound,'PASS')
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.title('95% Tolerance Intervals (p=0.90)')
+    plt.ylabel('Instrument')
+    plt.xlabel('Temperature (c)')
+    plt.grid()
+    plt.show()
+
+
+
     instListLong = []
     tempLong=[]
     count = 0
@@ -194,6 +215,8 @@ def anneal():                                                                   
 
     temp = []
     means=[]
+    tis = []
+    count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                             #get data from anneal portion of file
         peakSamp = []
@@ -204,9 +227,23 @@ def anneal():                                                                   
         mean = np.mean(peakSamp)                                                            #mean anneal temp for each run
         means.append(mean)                                                                  #list of means
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
-        print(np.std(peakSamp))
-        print(np.mean(peakSamp))
-        plt.plot(peakSamp,'o-')
+        bound = ti.twoside.normal(peakSamp,p,1-alpha)
+        tis.append(bound[0])
+
+        plt.hlines(count,bound[0][0],bound[0][1],lw=5)
+        if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
+            print(instListVar[0],bound,'FAIL')
+        else:
+            print(instListVar[0],bound,'PASS')
+        count += 1
+        
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.title('95% Tolerance Intervals (p=0.90)')
+    plt.ylabel('Instrument')
+    plt.xlabel('Temperature (c)')
+    plt.grid()
     plt.show()
     
     tempLong=[]
