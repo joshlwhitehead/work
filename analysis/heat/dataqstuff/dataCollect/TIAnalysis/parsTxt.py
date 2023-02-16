@@ -150,3 +150,59 @@ def parsTCTxt(file):                                                            
         
             
     return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
+
+def TCramp(file):
+    with open(file,'r') as readFile:                                                    #read file into a list
+        file = readFile.readlines()
+    heatRR1 = []
+    timeH1 = []
+    heatRR2 = []
+    timeH2 = []
+    coolRR = []
+    timeC = []
+
+    masterStop = False
+    startHeat1 = False
+    startHeat2 = False
+    startCool = False
+    countLines = 0
+
+    for u in file:
+        if 'goto' in u and float(u.split()[-1]) > 85:
+            startHeat2 = True
+        elif 'goto' in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 55:
+            startHeat1 = True
+        elif 'goto' in u and float(u.split()[-1]) <55:
+            startCool = True
+        if 'Set Temp Reached' in u:
+            startCool = False
+            startHeat1 = False
+            startHeat2 = False
+        if 'Start Heating PCR' in u:
+            masterStop = True
+        
+        if 'DATAQ:' in u and not masterStop:
+            if startHeat1:
+                heatRR1.append(float(u.split()[4].strip(',')))
+                try:
+                    timeH1.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeH1.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+            elif startHeat2:
+                heatRR2.append(float(u.split()[4].strip(',')))
+                try:
+                    timeH2.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeH2.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+            elif startCool:
+                coolRR.append(float(u.split()[4].strip(',')))
+                try:
+                    timeC.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeC.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+
+
+        countLines += 1
+
+    return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
+# print(TCramp('dataTC/Adv02_P11_221215_Run2.txt')[0][0])

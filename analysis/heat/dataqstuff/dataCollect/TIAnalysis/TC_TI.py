@@ -1,14 +1,16 @@
-"""analyze """
+"""This script analyzes TC thermal data parsed using parsTCTxt. The data is then analyzed to determine it's tolerance interval
+and its tolerance interval of the mean"""
 from parsTxt import parsTCTxt
 import numpy as np
 import matplotlib.pyplot as plt
 import toleranceinterval as ti
 import os
+from scipy import stats
 
 
 folder = 'dataTC/'
 #############               CHANGE THESE                    ######################
-instListShort = [2,6,9,10,13,15,18,25,27]
+instListShort = [2,6]
 replicate = 1
 
 
@@ -58,6 +60,30 @@ def kill():
     plt.grid()
     plt.show()
 
+
+
+
+    count=0
+    for data in temp:
+        mean_er = np.mean(data)                                                     #mean denature temp of run
+        std_dev_er = np.std(data)                                                   #stdev of each run
+        n = len(data)                                                               
+        se = std_dev_er / np.sqrt(n)                                                #standard error for t-test stat
+        dof = n - 1                                                                 #degree of fredom
+        t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof)                                #t* get from t-dist ppf
+        moe = t_star * se                                                           #margin of error
+        ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
+        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
+        plt.plot(mean_er,count,'o',color='r',ms=7)
+        count+=1
+
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('Instrument')
+    plt.show()
 
 
 kill()

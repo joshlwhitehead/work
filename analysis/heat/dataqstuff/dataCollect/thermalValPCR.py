@@ -13,7 +13,7 @@ from tkinter import *
 
 alpha = 0.05
 p = 0.9
-folder = 'data/27Jan2023/'
+folder = 'data/16Feb2023_thermalPad/'
 deviationCrit = 1.5
 
 
@@ -50,9 +50,9 @@ def denature():                                                                 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         count += 1
         if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
-            print(instListVar[0],bound,'FAIL')
+            print(instListVar[count-1],bound,'FAIL')
         else:
-            print(instListVar[0],bound,'PASS')
+            print(instListVar[count-1],bound,'PASS')
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
@@ -314,7 +314,7 @@ def anneal():                                                                   
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)
         plt.plot(mean_er,count,'o',color='r',ms=7)                                                          #plot confidence intervals
         count += 1
-    print(probs)  
+    # print(probs)  
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))                                        
     plt.grid()
@@ -365,7 +365,7 @@ def anneal():                                                                   
             prHigh = 1 - stats.t.cdf(t_limitHigh, dof)                                                          #use cumulative distribution function of t-dist to find
                                                                                                                 #probability of temperature being too low
             probs.append(prHigh+prLow)                                                                          #total probability of temp being outside defined window
-            print(probs)
+            # print(probs)
 
             plt.hlines(count,ci[0],ci[1],lw=5)
             plt.plot(mean_er,count,'o',color='r',ms=7)                                                          #plot confidence interval for each instrument
