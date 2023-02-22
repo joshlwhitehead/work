@@ -10,8 +10,8 @@ from scipy import stats
 
 folder = 'dataTC/'
 #############               CHANGE THESE                    ######################
-instListShort = [2,6]
-replicate = 1
+instListShort = [6]
+replicate = 2
 
 
 ########                PROBABLY DONT CHANGE                ##################
@@ -148,4 +148,4 @@ def act():
     plt.show()
 
 
-act()
+kill()
