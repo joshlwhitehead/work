@@ -206,3 +206,88 @@ def TCramp(file):
 
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
 # print(TCramp('dataTC/Adv02_P11_221215_Run2.txt')[0][0])
+
+def meltRamp(file):
+    with open(file,'r') as readFile:                                                                                        #convert lines in file to list
+        file = readFile.readlines()
+
+
+    melt = []                      #temp (c) while PCR is heating
+    timeM = []                     #time (sec) while PCR is heating
+    meltCollect = False                                                                                                 #key to start collecting temps while heating                                                                                                 #key to start collecting temps while cooling
+    start = False                                                                                                       #key to know when to start collecting temps
+    countLines = 0
+    countM = 0
+
+    for u in file:
+        if 'Start Melt Acquisition' in u:
+            start = True                                                                                                #start looking for temps
+            meltCollect = True
+        elif 'MELT -> FINISH' in u:
+            start = False
+        # if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:                                         #only look for temps under these conditions for heating
+        #     denatTemp = float(u.split()[-1])
+        #     heatCollect = True
+        #     coolCollect = False
+        #     # heat.append([])
+        # elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >= 45:        #look for temps under these conditions for cooling
+        #     annealTemp = float(u.split()[-1])
+        #     heatCollect = False
+        #     coolCollect = True
+        # elif 'MELT' in u:                                                                                               #start looking for temps
+        #     start = False
+
+        if start and 'DATAQ:' in u:                                                                                     #only collect temps in these lines
+
+            # try:
+            #     if meltCollect and len(melt) != 0 and melt[-1]-float(u.split()[4].strip(',')) > 10:     #if criteria met make a new index in heating lists
+            #         # melt.append([])
+            #         # timeM.append([])
+            #         countH+=1
+            #     # elif coolCollect and len(cool[countC]) != 0 and float(u.split()[4].strip(','))-cool[countC][-1] > 10:   #if criteria met make a new index in cooling lists
+            #     #     cool.append([])
+            #     #     timeC.append([])
+            #     #     countC+=1
+            # except:
+            #     pass
+            
+            
+            if meltCollect:                                                                                             #start collecting heating temps
+                melt.append(float(u.split()[4].strip(',')))
+                try:
+                    timeM.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeM.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+
+            # elif coolCollect:                                                                                          #start collecting cooling temps
+            #     cool[countC].append(float(u.split()[4].strip(',')))
+            #     try:
+            #         timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+            #     except:
+            #         timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+        
+        
+        countLines += 1
+
+
+    # count = 0
+    # for j in range(len(heat)):                                         #remove heating arrays with too few values
+    #     if len(heat[count]) <= 2:
+    #         heat.remove(heat[count])
+    #         timeH.remove(timeH[count])
+    #         count += 1
+    # count = 0      
+    # for j in range(len(cool)):                                          #remove cooling arrays with too few values
+    #     if len(cool[count]) <= 2:
+    #         cool.remove(cool[count])
+    #         timeC.remove(timeC[count])
+    #         count += 1
+
+            
+    return (melt,timeM)
+
+
+
+
+
+# print(meltRamp('dataPCR/Adv13_w85_230223_Run1.txt')[0][1])

@@ -11,7 +11,7 @@ from scipy import stats
 
 
 
-instListShort = [15,25]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = [15,15.1,25]                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                  #how many runs of each instrument
 alpha = 0.05                                                                                    #significance level (1-confidence level)
 p = 0.9                                                                                         #reliability
@@ -181,4 +181,4 @@ def cooling():                                                  #function to ana
 
 
 
-cooling()
+heating()

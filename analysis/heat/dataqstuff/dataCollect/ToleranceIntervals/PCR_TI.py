@@ -11,7 +11,7 @@ from scipy import stats
 folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
 
 ############                CHANGE THIS                                     ###################
-instListShort = [25]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = [13,15,15.1,25]                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                   #how many runs of each instrument
 
 
