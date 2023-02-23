@@ -1,8 +1,56 @@
-"""This script analyzes TC thermal data parsed using parsTCTxt. It captures the ramp rates for heating and cooling the TC chamber."""
+"""This script analyzes MELT thermal data parsed using parsTCTxt. It captures the ramp rates for the MELT stage in PCR."""
 import numpy as np
 import os
-from parsTxt import meltRamp
-import matplotlib.pyplot as plt
+
+
+def meltRamp(file):
+    with open(file,'r') as readFile:                                                                                        #convert lines in file to list
+        file = readFile.readlines()
+
+
+    melt = []                      #temp (c) while PCR is heating
+    timeM = []                     #time (sec) while PCR is heating
+    meltCollect = False                                                                                                 #key to start collecting temps while heating                                                                                                 #key to start collecting temps while cooling
+    start = False                                                                                                       #key to know when to start collecting temps
+    countLines = 0
+    countM = 0
+
+    for u in file:
+        if 'Start Melt Acquisition' in u:
+            start = True                                                                                                #start looking for temps
+            meltCollect = True
+        elif 'MELT -> FINISH' in u:
+            start = False
+
+
+        if start and 'DATAQ:' in u:                                                                                     #only collect temps in these lines            
+            
+            if meltCollect:                                                                                             #start collecting heating temps
+                melt.append(float(u.split()[4].strip(',')))
+                try:
+                    timeM.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                except:
+                    timeM.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+
+ 
+        countLines += 1
+
+
+    return (melt,timeM)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -11,6 +59,11 @@ instListShort = [13,15,15.1,25]                                                 
 replicate = 1                                                                                  #how many runs of each instrument
 alpha = 0.05                                                                                    #significance level (1-confidence level)
 p = 0.9                                                                                         #reliability
+
+
+
+
+
 meltLimitHigh = 1
 meltLimitLow = 0.1
 instList = instListShort*replicate                                                              #list of total runs

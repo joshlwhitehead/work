@@ -6,12 +6,16 @@ import matplotlib.pyplot as plt
 import toleranceinterval as ti
 import os
 from scipy import stats
+import pandas as pd
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+from statsmodels.stats.anova import anova_lm
+from statsmodels.formula.api import ols
 
 
 folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
 
 ############                CHANGE THIS                                     ###################
-instListShort = [13,15,15.1,25]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = [13,15,25]                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                   #how many runs of each instrument
 
 
@@ -68,8 +72,28 @@ def denature():                                                                 
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
+    # print(temp)
+    instListLong = []
+    tempLong=[]
+    count = 0
+    for inst in instListVar:
+        for T in temp[count]:
+            instListLong.append(inst)                                                                  #make long list of instruments
+            tempLong.append(T)                                                                      #make total list of temps that correspond 
+                                                                                                    #to long list of instruments
+        count+= 1
 
 
+    
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
+
+    
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
+    print(m_compMult)
+    formula = 'Temp ~ Instrument'
+    model = ols(formula, dfTemp).fit()
+    aov_table = anova_lm(model, typ=1)
+    print(aov_table)
     count=0
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
@@ -145,7 +169,27 @@ def anneal():                                                                   
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
+    instListLong = []
+    tempLong=[]
+    count = 0
+    for inst in instListVar:
+        for T in temp[count]:
+            instListLong.append(inst)                                                                  #make long list of instruments
+            tempLong.append(T)                                                                      #make total list of temps that correspond 
+                                                                                                    #to long list of instruments
+        count+= 1
 
+
+    
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
+
+    
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
+    print(m_compMult)
+    formula = 'Temp ~ Instrument'
+    model = ols(formula, dfTemp).fit()
+    aov_table = anova_lm(model, typ=2)
+    print(aov_table)
     count=0
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
@@ -171,4 +215,4 @@ def anneal():                                                                   
 
 
 
-anneal()
+denature()
