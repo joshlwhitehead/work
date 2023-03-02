@@ -15,7 +15,7 @@ from statsmodels.formula.api import ols
 folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
 
 ############                CHANGE THIS                                     ###################
-instListShort = [13,15,25]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                   #how many runs of each instrument
 
 
@@ -32,7 +32,8 @@ p = 0.9                                                                         
 ########                DONT CHANGE             ##################
 def denature():                                                                                     #create function to analyze denature temp
     instList = instListShort*replicate                                                              #list of total runs
-    instList.sort()                                                                                 #sort instrument list to match with order in directory
+    if replicate > 1:
+        instList.sort()                                                                                 #sort instrument list to match with order in directory
 
     instListVar = []
     for inst in instListShort:                                                                         
@@ -59,11 +60,12 @@ def denature():                                                                 
         tis.append(bound[0])                                                                        #list of TIs
 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
-        count += 1
+        
         if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
-            print(instListVar[0],bound,'FAIL')
+            print(instListVar[count],bound,'FAIL')
         else:
-            print(instListVar[0],bound,'PASS')
+            print(instListVar[count],bound,'PASS')
+        count += 1
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
@@ -86,7 +88,8 @@ def denature():                                                                 
 
     
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-
+    dfTemp.boxplot('Temp',by='Instrument')
+    plt.show()
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     print(m_compMult)
@@ -216,3 +219,5 @@ def anneal():                                                                   
 
 
 denature()
+# anneal()
+# 

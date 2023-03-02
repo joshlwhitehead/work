@@ -14,6 +14,8 @@ def parsPCRTxt(file):                                                           
     timeH = [[]]                     #time (sec) while PCR is heating
     cool = [[]]                      #temp (c) while PCR is cooling
     timeC = [[]]                     #time (sec) while PCR is cooling
+    totalTemp = []
+    totalTime = []
     heatCollect = False                                                                                                 #key to start collecting temps while heating
     coolCollect = False                                                                                                 #key to start collecting temps while cooling
     start = False                                                                                                       #key to know when to start collecting temps
@@ -53,17 +55,23 @@ def parsPCRTxt(file):                                                           
             
             if heatCollect:                                                                                             #start collecting heating temps
                 heat[countH].append(float(u.split()[4].strip(',')))
+                totalTemp.append(float(u.split()[4].strip(',')))
                 try:
                     timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                    totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:                                                                                          #start collecting cooling temps
                 cool[countC].append(float(u.split()[4].strip(',')))
+                totalTemp.append(float(u.split()[4].strip(',')))
                 try:
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                    totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         
         
         countLines += 1
@@ -83,7 +91,18 @@ def parsPCRTxt(file):                                                           
             count += 1
 
             
-    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+
+
+
+
+
+
+
+
+
+
+
 
 
 

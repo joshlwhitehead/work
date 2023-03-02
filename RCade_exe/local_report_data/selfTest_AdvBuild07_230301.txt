@@ -1,0 +1,104 @@
+Test Report 
+
+
+Serial Number: 7
+Build Config: F-Wildcat
+ESP Firmware Version: 0.10.4-d
+STM Firmware Version: A.00.07
+Technician ID: Josh W
+Mac Address: e0:e2:e6:30:6d:c4
+Hardware ID: abd6769a-60b6-5307-9ff5-ba96087486d8
+
+
+Functional Test: 
+Starting Button and Solenoid Test...
+Checking for Door Closed...
+Door Closed
+Waiting for Front Button Press...
+Front Button: PASS
+Solenoid: PASS
+Waiting for Door Close...
+Door Closed
+Waiting for Bluetooth Button Press...
+Bluetooth Button: TIME OUT
+
+Starting Indicator LED Test...
+Setting LED to Green
+Green LED: PASS
+Setting LED to Red
+Red LED: PASS
+Setting LED to Yellow/Orange
+Yellow/Orange LED: PASS
+Turning Paring LED On
+Blue Paring LED: PASS
+
+Starting Thumper Test...
+Thumper: PASS
+
+Starting Fan Test...
+Turning Fan On
+Fan RPS: 105
+Fan Test: PASS
+
+Starting Lifter Test...
+Lifter Down: PASS
+Lifter Up: PASS
+
+Starting Plunger Test...
+Plunger Down: PASS
+Plunger Up: PASS
+
+Starting PTC Test...
+PTC Max Read:  735
+PTC Average Read:  637
+PTC Test: PASS
+
+Starting Excitation LED and Fluorimeter Test...
+Colors Power 0:
+CH 415: 0, CH 445: 0, CH 480: 0, CH 515: 0, CH 555: 0, CH 590: 0, CH 630: 0, CH 680: 0, CH CLR: 0
+Colors Power 25:
+CH 415: 101, CH 445: 5199, CH 480: 874, CH 515: 56, CH 555: 75, CH 590: 92, CH 630: 147, CH 680: 226, CH CLR: 10
+Colors Power 50:
+CH 415: 247, CH 445: 11275, CH 480: 1770, CH 515: 126, CH 555: 173, CH 590: 202, CH 630: 327, CH 680: 487, CH CLR: 23
+Colors Power 75:
+CH 415: 267, CH 445: 12048, CH 480: 1910, CH 515: 136, CH 555: 187, CH 590: 218, CH 630: 350, CH 680: 523, CH CLR: 24
+LED/Fluorimiter Test: PASS
+
+Starting TEC tests...
+Stage 1 heating Start Temp: 28.1 C
+Stage 1 heating time to temp (90):8.7 sec
+Stage 1 heating Average rate: 7.115 C/sec
+Stage 1 heating Max Rate: 10.0 C/sec
+Stage 1 heating Min (After Max) Rate: 4.4 C/sec
+Stage 1 heating Tec Test Passed!
+
+PCR heating Start Temp: 31.3 C
+PCR heating time to temp (90):9.3 sec
+PCR heating Average rate: 7.43 C/sec
+PCR heating Max Rate: 10.2 C/sec
+PCR heating Min (After Max) Rate: 4.7 C/sec
+PCR heating Tec Test Passed!
+
+Stage 1 cooling Start Temp: 65.3 C
+Stage 1 cooling time to temp (40):9.3 sec
+Stage 1 cooling Average rate: -4.685 C/sec
+Stage 1 cooling Max Rate: -6.2 C/sec
+Stage 1 cooling Min (After Max) Rate: -3.3 C/sec
+Stage 1 cooling Tec Test Passed!
+
+PCR cooling Start Temp: 66.8 C
+PCR cooling time to temp (40):9.3 sec
+PCR cooling Average rate: -5.956 C/sec
+PCR cooling Max Rate: -7.2 C/sec
+PCR cooling Min (After Max) Rate: -4.0 C/sec
+PCR cooling Tec Test Passed!
+
+
+Test Results:
+Bluetooth Button Test: FAILED
+
+
+Response ID:d9b75681-3389-436f-b56a-5285359a7e5d
+
+Comments:
+
