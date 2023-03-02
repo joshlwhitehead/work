@@ -18,12 +18,23 @@ def parsPCRTxt(file):                                                           
     totalTime = []
     heatCollect = False                                                                                                 #key to start collecting temps while heating
     coolCollect = False                                                                                                 #key to start collecting temps while cooling
-    start = False                                                                                                       #key to know when to start collecting temps
+    start = False  
+    stopTotal = False                                                                                                     #key to know when to start collecting temps
     countLines = 0
     countH = 0
     countC = 0
 
     for u in file:
+        if 'FINISH -> IDLE' in u:
+            break
+        if 'DATAQ:' in u:
+            # if stopTotal == False:
+            totalTemp.append(float(u.split()[4].strip(',')))
+            try:
+                totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+            except:
+                # print(u)
+                totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         if 'Start PCR' in u:
             start = True                                                                                                #start looking for temps
         if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:                                         #only look for temps under these conditions for heating
@@ -55,23 +66,23 @@ def parsPCRTxt(file):                                                           
             
             if heatCollect:                                                                                             #start collecting heating temps
                 heat[countH].append(float(u.split()[4].strip(',')))
-                totalTemp.append(float(u.split()[4].strip(',')))
+                # totalTemp.append(float(u.split()[4].strip(',')))
                 try:
                     timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
-                    totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                    # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
-                    totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:                                                                                          #start collecting cooling temps
                 cool[countC].append(float(u.split()[4].strip(',')))
-                totalTemp.append(float(u.split()[4].strip(',')))
+                # totalTemp.append(float(u.split()[4].strip(',')))
                 try:
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
-                    totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+                    # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
-                    totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         
         
         countLines += 1
@@ -100,8 +111,19 @@ def parsPCRTxt(file):                                                           
 
 
 
+# print(parsPCRTxt('cupA\PThermo_AdvBuild07_w86_230301_run1.txt')[3][0])
+# import matplotlib.pyplot as plt
+# import numpy as np
+# y1 = parsPCRTxt('0217-DV0004-20230227-Run01.txt')[3][0]
+# x1 = np.array(parsPCRTxt('0217-DV0004-20230227-Run01.txt')[3][1])
+# y2 = parsPCRTxt('0217-DV0004-20230301-run-04.txt')[3][0]
+# x2 = np.array(parsPCRTxt('0217-DV0004-20230301-run-04.txt')[3][1])
+# plt.plot(x1-x1[0],y1,label='run1')
+# plt.plot(x2-x2[0],y2,label='run4')
+# plt.grid()
+# plt.legend()
 
-
+# plt.show()
 
 
 

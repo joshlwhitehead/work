@@ -13,7 +13,7 @@ from tkinter import *
 
 alpha = 0.05
 p = 0.9
-folder = 'data/23Feb2023_13_15_25_comp/'
+folder = 'ben/'
 deviationCrit = 1.5
 
 
