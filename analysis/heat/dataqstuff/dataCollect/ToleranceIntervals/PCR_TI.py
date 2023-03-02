@@ -12,13 +12,13 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'cupB/'                                                                      #folder where dave .txt files are kept
+folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
 
 ############                CHANGE THIS                                     ###################
-# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
-instListShort = ['pb7','pb9','pb13','pb15','gb23','gb28']
+instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+# instListShort = ['pb7','pb9','pb13','pb15','gb23','gb28']
 replicate = 1                                                                                   #how many runs of each instrument
-
+totalInd = ['p','p','p','p','p','p','p','p','g','g','g','g','g','g']
 
 
 ##############              PROBABLY DONT CHANGE            #####################
@@ -45,6 +45,7 @@ def denature():                                                                 
     temp = []    
     means = []
     tis = []
+    total = []
     count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
@@ -55,6 +56,7 @@ def denature():                                                                 
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
+        total.append(mean)
 
 
         bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
@@ -90,12 +92,14 @@ def denature():                                                                 
     
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
     dfTemp.boxplot('Temp',by='Instrument')
-    plt.show()
+    # plt.show()
+    dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
+    m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
     print(m_compMult)
-    formula = 'Temp ~ Instrument'
-    model = ols(formula, dfTemp).fit()
+    formula = 'Mean ~ type'
+    model = ols(formula, dfTot).fit()
     aov_table = anova_lm(model, typ=1)
     print(aov_table)
     count=0
@@ -219,6 +223,6 @@ def anneal():                                                                   
 
 
 
-# denature()
-anneal()
+denature()
+# anneal()
 # 
