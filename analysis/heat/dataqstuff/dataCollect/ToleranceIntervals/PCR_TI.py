@@ -12,10 +12,11 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
+folder = 'cupB/'                                                                      #folder where dave .txt files are kept
 
 ############                CHANGE THIS                                     ###################
-instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = ['pb7','pb9','pb13','pb15','gb23','gb28']
 replicate = 1                                                                                   #how many runs of each instrument
 
 
@@ -218,6 +219,6 @@ def anneal():                                                                   
 
 
 
-denature()
-# anneal()
+# denature()
+anneal()
 # 

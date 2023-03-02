@@ -25,16 +25,16 @@ def parsPCRTxt(file):                                                           
     countC = 0
 
     for u in file:
-        if 'FINISH -> IDLE' in u:
-            break
-        if 'DATAQ:' in u:
-            # if stopTotal == False:
-            totalTemp.append(float(u.split()[4].strip(',')))
-            try:
-                totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
-            except:
-                # print(u)
-                totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+        # if 'FINISH -> IDLE' in u:
+        #     break
+        # if 'DATAQ:' in u:
+        #     # if stopTotal == False:
+        #     totalTemp.append(float(u.split()[4].strip(',')))
+        #     try:
+        #         totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
+        #     except:
+        #         # print(u)
+        #         totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         if 'Start PCR' in u:
             start = True                                                                                                #start looking for temps
         if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:                                         #only look for temps under these conditions for heating
