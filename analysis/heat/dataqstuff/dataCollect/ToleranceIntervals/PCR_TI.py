@@ -12,13 +12,16 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
-
+# folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
+# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
 ############                CHANGE THIS                                     ###################
-instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_13','p_a_15','p_b_15','g_a_5','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
-# instListShort = ['pb7','pb9','pb13','pb15','gb23','gb28']
+folder = 'cupA/'
+instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
+
+
+
 replicate = 1                                                                                   #how many runs of each instrument
-totalInd = ['p','p','p','p','p','p','p','p','g','g','g','g','g','g']
+totalInd = ['p','p','p','p','p','g','g','g','g','g']
 
 
 ##############              PROBABLY DONT CHANGE            #####################
@@ -91,12 +94,12 @@ def denature():                                                                 
 
     
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-    dfTemp.boxplot('Temp',by='Instrument')
+    # dfTemp.boxplot('Temp',by='Instrument')
     # plt.show()
     dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
-    m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
+    # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
     print(m_compMult)
     formula = 'Mean ~ type'
     model = ols(formula, dfTot).fit()
@@ -223,6 +226,6 @@ def anneal():                                                                   
 
 
 
-denature()
-# anneal()
+# denature()
+anneal()
 # 
