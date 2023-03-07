@@ -12,16 +12,23 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-# folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
-# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
+instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_b_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+totalInd = ['p','g']*10
+totalInd.sort(reverse=True)
+# print(totalInd)
 ############                CHANGE THIS                                     ###################
-folder = 'cupA/'
-instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
+# folder = 'cupA/'
+# instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
+# totalInd = ['p','p','p','p','p','g','g','g','g','g']
 
+# folder = 'cupB/'
+# instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
+# totalInd = ['p','p','p','p','p','g','g','g','g','g']
 
 
 replicate = 1                                                                                   #how many runs of each instrument
-totalInd = ['p','p','p','p','p','g','g','g','g','g']
+
 
 
 ##############              PROBABLY DONT CHANGE            #####################
@@ -226,6 +233,6 @@ def anneal():                                                                   
 
 
 
-# denature()
-anneal()
+denature()
+# anneal()
 # 
