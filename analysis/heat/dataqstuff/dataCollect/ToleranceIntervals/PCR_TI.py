@@ -12,10 +12,10 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
-instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_b_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
-totalInd = ['p','g']*10
-totalInd.sort(reverse=True)
+# folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
+# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_b_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+# totalInd = ['p','g']*10
+# totalInd.sort(reverse=True)
 # print(totalInd)
 ############                CHANGE THIS                                     ###################
 # folder = 'cupA/'
@@ -25,6 +25,10 @@ totalInd.sort(reverse=True)
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
+folder = 'accept/'
+instListShort = np.arange(200,226,1)
+instListShort = instListShort.tolist()
+instListShort.remove(218)
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -59,8 +63,10 @@ def denature():                                                                 
     count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
+        
         peakSamp = []
         for peak in peakSampList:
+            # print(max(peak))
             peakSamp.append(max(peak))                                                              #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
@@ -79,7 +85,11 @@ def denature():                                                                 
         else:
             print(instListVar[count],bound,'PASS')
         count += 1
+    
+    for i in range(len(means)):
+        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.plot(means,instListVar,'o',color='r')
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
@@ -103,15 +113,15 @@ def denature():                                                                 
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
     # dfTemp.boxplot('Temp',by='Instrument')
     # plt.show()
-    dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
+    # dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    print(m_compMult)
-    formula = 'Mean ~ type'
-    model = ols(formula, dfTot).fit()
-    aov_table = anova_lm(model, typ=1)
-    print(aov_table)
+    # print(m_compMult)
+    # formula = 'Mean ~ type'
+    # # model = ols(formula, dfTot).fit()
+    # aov_table = anova_lm(model, typ=1)
+    # print(aov_table)
     count=0
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
@@ -178,6 +188,8 @@ def anneal():                                                                   
         else:
             print(instListVar[count],'TI:',bound,'PASS')
         count += 1
+    for i in range(len(means)):
+        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
         
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
@@ -233,6 +245,6 @@ def anneal():                                                                   
 
 
 
-denature()
-# anneal()
+# denature()
+anneal()
 # 

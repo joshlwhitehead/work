@@ -13,7 +13,7 @@ from tkinter import *
 
 alpha = 0.05
 p = 0.9
-folder = 'ben/'
+folder = 'data/08Mar2023_Tape/'
 deviationCrit = 1.5
 
 
@@ -119,6 +119,7 @@ def denature():                                                                 
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
         plt.plot(mean_er,count,'o',color='r',ms=7)
+        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
         count+=1
 
     plt.yticks(np.arange(0,len(temp)),instListVar)
@@ -312,7 +313,8 @@ def anneal():                                                                   
         probs.append(prHigh+prLow)                                                                          #total probability of temp being outside defined window
                                                         
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)
-        plt.plot(mean_er,count,'o',color='r',ms=7)                                                          #plot confidence intervals
+        plt.plot(mean_er,count,'o',color='r',ms=7)  
+        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))                                                        #plot confidence intervals
         count += 1
     # print(probs)  
     plt.yticks(np.arange(0,len(temp)),instListVar)
