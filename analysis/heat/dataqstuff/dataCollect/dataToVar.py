@@ -327,8 +327,12 @@ f06FlatFillSealc = gd.getData('25Aug2022_V06_425567_p16_sealed.csv',date)
 ###############                 MODEL RETRAIN F.06              ############
 date = '29Aug2022'
 h50 = gd.getData('h50.csv',date)
+"""
+date = '29Aug2022'
 h100 = gd.getData('h100.csv',date)
+
 h90 = gd.getData('h90.csv',date)
+"""
 h70 = gd.getData('h70.csv',date)
 
 

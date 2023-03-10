@@ -28,7 +28,10 @@ def denature():                                                                 
     instListVar = []
     for inst in instListShort:                                                                         
         for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
+            if replicate > 1:
+                instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
+            else:
+                instListVar.append(str(inst))
 
                
     temp = []    
@@ -210,7 +213,10 @@ def anneal():                                                                   
     instListVar = []
     for inst in instListShort:
         for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))                           #create list that distinguishes each run on an instrument
+            if replicate > 1:
+                instListVar.append(''.join([str(inst),'.',str(rep)]))                           #create list that distinguishes each run on an instrument
+            else:
+                instListVar.append(str(inst))
     instList.sort()
 
 
