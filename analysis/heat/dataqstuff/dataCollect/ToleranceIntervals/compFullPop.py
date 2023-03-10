@@ -88,13 +88,13 @@ def denature():                                                                 
 
 
     dfVar = pd.DataFrame({'Var':variance,'Type':totalInd})
-    # m_compMult = pairwise_tukeyhsd(endog=dfVar['Var'], groups=dfVar['Type'], alpha=alpha)      #use tukey method to compare runs
-    # # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    # print(m_compMult)
-    # formula = 'Var ~ Type'
-    # model = ols(formula, dfVar).fit()
-    # aov_table = anova_lm(model, typ=1)
-    # print(aov_table)
+    m_compMult = pairwise_tukeyhsd(endog=dfVar['Var'], groups=dfVar['Type'], alpha=alpha)      #use tukey method to compare runs
+    # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
+    print(m_compMult)
+    formula = 'Var ~ Type'
+    model = ols(formula, dfVar).fit()
+    aov_table = anova_lm(model, typ=1)
+    print(aov_table)
     # if stats.anderson(dfTemp['Temp'],dist='norm')[0] < stats.anderson(dfTemp['Temp'],dist='norm')[1][2]:
     #     print('data normal')
     # else:
@@ -116,7 +116,7 @@ def denature():                                                                 
         x = np.linspace(min(dfVar['Var']),max(dfVar['Var']))
         plt.plot(x,stats.norm.pdf(x,loc=np.mean(dfVar['Var']),scale=np.std(dfVar['Var'])))
         plt.show()
-denature()
+# denature()
 
 
 
@@ -170,14 +170,14 @@ def anneal():                                                                   
 
 
 
-    # dfVar = pd.DataFrame({'Var':variance,'Type':totalInd})
-    # m_compMult = pairwise_tukeyhsd(endog=dfVar['Var'], groups=dfVar['Type'], alpha=alpha)      #use tukey method to compare runs
-    # # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    # print(m_compMult)
-    # formula = 'Var ~ Type'
-    # model = ols(formula, dfVar).fit()
-    # aov_table = anova_lm(model, typ=1)
-    # print(aov_table)
+    dfVar = pd.DataFrame({'Var':variance,'Type':totalInd})
+    m_compMult = pairwise_tukeyhsd(endog=dfVar['Var'], groups=dfVar['Type'], alpha=alpha)      #use tukey method to compare runs
+    # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
+    print(m_compMult)
+    formula = 'Var ~ Type'
+    model = ols(formula, dfVar).fit()
+    aov_table = anova_lm(model, typ=1)
+    print(aov_table)
 
     if stats.anderson(dfTemp['Temp'],dist='norm')[0] < stats.anderson(dfTemp['Temp'],dist='norm')[1][2]:
         print('data normal')
@@ -189,4 +189,4 @@ def anneal():                                                                   
         x = np.linspace(min(dfTemp['Temp']),max(dfTemp['Temp']))
         plt.plot(x,stats.norm.pdf(x,loc=np.mean(dfTemp['Temp']),scale=np.std(dfTemp['Temp'])))
         plt.show()
-# anneal()
+anneal()
