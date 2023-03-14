@@ -26,7 +26,7 @@ from statsmodels.formula.api import ols
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 folder = 'accept/'
-instListShort = [102]
+instListShort = [226,227,228,229,230]
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -243,6 +243,6 @@ def anneal():                                                                   
 
 
 
-# denature()
-anneal()
+denature()
+# anneal()
 # 
