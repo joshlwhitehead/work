@@ -25,8 +25,8 @@ from statsmodels.formula.api import ols
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
-folder = 'accept/'
-instListShort = [226,227,228,229,230]
+folder = 'tape/'
+instListShort = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -35,7 +35,7 @@ replicate = 1                                                                   
 
 ##############              PROBABLY DONT CHANGE            #####################
 deviationCrit = 1.5                                                                             #acceptance crit
-alpha = 0.05                                                                                    #1-confidence level
+alpha = 0.1                                                                                    #1-confidence level
 p = 0.9                                                                                         #reliability
 
 
@@ -115,9 +115,9 @@ def denature():                                                                 
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    # print(m_compMult)
+    print(m_compMult)
     # formula = 'Mean ~ type'
-    # # model = ols(formula, dfTot).fit()
+    # model = ols(formula, dfTot).fit()
     # aov_table = anova_lm(model, typ=1)
     # print(aov_table)
     count=0
@@ -188,10 +188,11 @@ def anneal():                                                                   
         count += 1
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
-        
+    plt.plot(means,instListVar,'o',color='r')
     plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.xlim(49)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
@@ -243,6 +244,6 @@ def anneal():                                                                   
 
 
 
-denature()
-# anneal()
+# denature()
+anneal()
 # 
