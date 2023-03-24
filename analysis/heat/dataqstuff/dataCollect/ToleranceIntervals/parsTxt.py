@@ -49,7 +49,7 @@ def parsPCRTxt(file):                                                           
         elif 'MELT' in u:                                                                                               #start looking for temps
             start = False
 
-        if start and 'DATAQ:' in u:                                                                                     #only collect temps in these lines
+        if start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
 
             try:
                 if heatCollect and len(heat[countH]) != 0 and heat[countH][-1]-float(u.split()[4].strip(',')) > 10:     #if criteria met make a new index in heating lists

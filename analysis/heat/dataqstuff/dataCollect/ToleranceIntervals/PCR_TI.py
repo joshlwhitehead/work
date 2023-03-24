@@ -26,7 +26,12 @@ from statsmodels.formula.api import ols
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 folder = 'tape/'
-instListShort = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+instListShort = np.arange(1,31)
+instListShort = instListShort.tolist()
+a = ['1s','2s','3s','4s','5s','6s','7s','8s','9s','10s']
+for i in a:
+
+    instListShort.append(i)
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -87,9 +92,10 @@ def denature():                                                                 
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.xlim(88.3,97)
     plt.plot(means,instListVar,'o',color='r')
-    plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
@@ -156,10 +162,15 @@ def anneal():                                                                   
                                                                                             #as replicates
     
     instListVar = []
-    for inst in instListShort:
+    instList = instListShort*replicate                                                              #list of total runs
+    if replicate > 1:
+        instList.sort()                                                                                 #sort instrument list to match with order in directory
+
+    instListVar = []
+    for inst in instListShort:                                                                         
         for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))                           #create list that distinguishes each run on an instrument
-    instList.sort()
+            instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
+  
 
 
     temp = []    
@@ -190,9 +201,9 @@ def anneal():                                                                   
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,instListVar,'o',color='r')
     plt.yticks(np.arange(0,len(temp)),instListVar)
-    plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
-    plt.xlim(49)
+    # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.xlim(45,54)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
