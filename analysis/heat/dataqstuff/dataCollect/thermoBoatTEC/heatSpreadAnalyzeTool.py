@@ -22,7 +22,7 @@ def analyze():
     fullTime = []
 
     tempc = np.arange(40,105,10)
-
+    print('File being used as baseline:',os.listdir(folder)[0])
     for fileName in os.listdir(folder):                                            #loop through all files in "data" folder
         file = open(''.join([''.join([folder,'/']),fileName]),'r')                 #open file
         filex = file.readlines()                                                   #read file line by line
@@ -257,7 +257,7 @@ def analyze():
 
 
     toExcel()                                                                                           #run function to create excel file
-
+    print('Done :)')
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
