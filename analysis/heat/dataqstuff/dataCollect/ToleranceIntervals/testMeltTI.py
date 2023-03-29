@@ -1,14 +1,14 @@
-"""This script analyzes TC thermal data parsed using parsTCTxt. It captures the ramp rates for heating and cooling the TC chamber."""
+"""This script analyzes PCR Melt data parsed using parsTCTxt. It captures the melting ramp rate and tolerance interval."""
 import numpy as np
 import os
 from parsTxt import meltRamp
-import matplotlib.pyplot as plt
 import toleranceinterval as ti
 
 
 
 folder = 'data/'                                                                       #folder to draw data from
-instListShort = [1,2,3,4,5]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = [1]                                                                         #list of instruments. must be in order that they appear in folder
+
 replicate = 1                                                                                  #how many runs of each instrument
 instList = instListShort*replicate                                                              #list of total runs
 instList.sort()                                                                                 #sort instrument list to match with order in directory
@@ -43,7 +43,7 @@ def melting(alpha,p):                                                           
 
         bound = ti.twoside.normal(rrChunks,p,1-alpha)                                           #find tolerance interval for each melt
         
-        print(bound)
+        print(i,'Melt TI:',bound)
 
 
 melting(.05,.9)
