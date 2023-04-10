@@ -34,8 +34,8 @@ def melting(alpha,p):
     count = 0  
     means = []                                                                  #funtion to analyze melting data
     for i in os.listdir(folder):
-        melt = meltRamp(''.join([folder,i]))[0]                                                 #raw melt data
-        timeM = meltRamp(''.join([folder,i]))[1]
+        melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
+        timeM = meltRamp(''.join([folder,i]))[0][1]
 
         n = int(len(melt)/11)                                                                   #split melt into 11 chunks
 
@@ -70,8 +70,8 @@ def meltCI(alpha):
     cis2 = []
     for i in os.listdir(folder):
         
-        melt = meltRamp(''.join([folder,i]))[0]                                                 #raw melt data
-        timeM = meltRamp(''.join([folder,i]))[1]
+        melt = meltRamp(''.join([folder,i]))[1][0]                                                 #raw melt data
+        timeM = meltRamp(''.join([folder,i]))[1][1]
 
         dfMelt = pd.DataFrame({'melt':melt,'time':timeM})
         model = ols('melt ~ time', dfMelt).fit()

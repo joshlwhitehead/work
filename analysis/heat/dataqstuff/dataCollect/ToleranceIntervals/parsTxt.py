@@ -248,6 +248,14 @@ def TCramp(file):
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
 # print(TCramp('dataTC/Adv02_P11_221215_Run2.txt')[0][0])
 
+
+
+
+
+
+
+
+
 def meltRamp(file):
     with open(file,'r') as readFile:                                                                                        #convert lines in file to list
         file = readFile.readlines()
@@ -259,6 +267,10 @@ def meltRamp(file):
     start = False                                                                                                       #key to know when to start collecting temps
     countLines = 0
     countM = 0
+
+    model = []
+    timeMod = []
+    
 
     for u in file:
         if 'Start Melt Acquisition' in u:
@@ -278,7 +290,7 @@ def meltRamp(file):
         # elif 'MELT' in u:                                                                                               #start looking for temps
         #     start = False
 
-        if start and 'DATAQ:' in u:                                                                                     #only collect temps in these lines
+        if start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
 
             # try:
             #     if meltCollect and len(melt) != 0 and melt[-1]-float(u.split()[4].strip(',')) > 10:     #if criteria met make a new index in heating lists
@@ -307,7 +319,10 @@ def meltRamp(file):
             #     except:
             #         timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
         
-        
+        elif start and 'modeled' in u:
+            if meltCollect:
+                model.append(float(u.split()[7].strip(',')))
+                timeMod.append(float(u.split()[0].strip('()'))/1000)
         countLines += 1
 
 
@@ -325,7 +340,7 @@ def meltRamp(file):
     #         count += 1
 
             
-    return (melt,timeM)
+    return (melt,timeM), (model,timeMod)
 
 
 
