@@ -11,8 +11,8 @@ alpha = .1
 p = .9
 
 
-folder = 'rampStuff/'                                                                       #folder to draw data from
-instListShort = [5,7,9,11,13,15,20,23,25,28]                                                                         #list of instruments. must be in order that they appear in folder
+folder = 'tape/'                                                                       #folder to draw data from
+instListShort = [5,5,8,9,9,13,13,5,5]                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                  #how many runs of each instrument
 instList = instListShort*replicate                                                              #list of total runs
 instList.sort()                                                                                 #sort instrument list to match with order in directory

@@ -3,7 +3,8 @@ from parsTxt import meltRamp
 import os
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
-from scipy.stats import norm, t
+from scipy.stats import norm, t,beta
+from scipy.optimize import fsolve
 
 
 def r2(y,fit):
@@ -14,7 +15,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-folder = 'tape/'
+folder = 'rampStuff/'
 rr = []
 for i in os.listdir(folder):
     mod = meltRamp(''.join([folder,i]))[1][0]
@@ -29,7 +30,24 @@ for i in os.listdir(folder):
     rr.append(r)
 
 
-plt.plot(rr,t.pdf(rr,df=len(rr)-1))
+
+mean = np.mean(rr)
+var = np.var(rr)
+
+print(mean)
+print(var)
+def solve(x):
+
+    return [x[0]/(x[0]+x[1])-mean,x[0]*x[1]/(x[0]+x[1])**2/(x[0]+x[1]+1)-var]
+
+root = fsolve(solve,[480,5])
+
+
+
+plt.hist(rr,density=True)
+x = np.linspace(min(rr),max(rr))
+
+plt.plot(x,beta.pdf(x,root[0],root[1]))
 plt.show()
 
 
