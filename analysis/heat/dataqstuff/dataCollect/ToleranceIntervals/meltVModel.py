@@ -15,7 +15,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-folder = 'rampStuff/'
+folder = 'tape/'
 rr = []
 for i in os.listdir(folder):
     mod = meltRamp(''.join([folder,i]))[1][0]
@@ -48,6 +48,8 @@ plt.hist(rr,density=True)
 x = np.linspace(min(rr),max(rr))
 
 plt.plot(x,beta.pdf(x,root[0],root[1]))
+plt.plot(x,norm.pdf(x,loc=np.mean(rr),scale=np.std(rr)))
+plt.plot(x,t.pdf(x,df=len(rr)-1,loc=np.mean(rr),scale=np.std(rr)))
 plt.show()
 
 

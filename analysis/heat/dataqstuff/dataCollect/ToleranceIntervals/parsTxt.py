@@ -49,7 +49,7 @@ def parsPCRTxt(file):                                                           
         elif 'MELT' in u:                                                                                               #start looking for temps
             start = False
 
-        if start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
+        if start and 'DATAQ:' in u or start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
 
             try:
                 if heatCollect and len(heat[countH]) != 0 and heat[countH][-1]-float(u.split()[4].strip(',')) > 10:     #if criteria met make a new index in heating lists
@@ -168,7 +168,7 @@ def parsTCTxt(file):                                                            
         elif 'Using Cooling Equations' in u:
             start = False
 
-        if start and start2 and 'DATAQ:' in u:                                                  #start collecting data
+        if start and start2 and 'DATAQ:' in u or start and start2 and 'CHUBE:' in u:                                                  #start collecting data
 
             
             if killCollect:
@@ -222,7 +222,7 @@ def TCramp(file):
         if 'Start Heating PCR' in u:
             masterStop = True
         
-        if 'DATAQ:' in u and not masterStop:
+        if 'DATAQ:' in u and not masterStop or 'CHUBE:' in u and not masterStop:
             if startHeat1:
                 heatRR1.append(float(u.split()[4].strip(',')))
                 try:
@@ -290,7 +290,7 @@ def meltRamp(file):
         # elif 'MELT' in u:                                                                                               #start looking for temps
         #     start = False
 
-        if start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
+        if start and 'DATAQ:' in u or start and 'CHUBE:' in u:                                                                                     #only collect temps in these lines
 
             # try:
             #     if meltCollect and len(melt) != 0 and melt[-1]-float(u.split()[4].strip(',')) > 10:     #if criteria met make a new index in heating lists

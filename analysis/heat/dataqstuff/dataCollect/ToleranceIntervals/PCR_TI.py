@@ -25,8 +25,8 @@ from statsmodels.formula.api import ols
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
-folder = 'tape/'
-instListShort = [5,5,5,8,8,8,9,9,9,13,13,13,13]
+folder = 'data/'
+instListShort = [7,9]
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -176,7 +176,8 @@ def anneal():                                                                   
         peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
         peakSamp = []
         for peak in peakSampList:
-            peakSamp.append(min(peak))                                                              #collect maximum (denature) temps for each cycle
+            peakSamp.append(min(peak))  
+                                                                   #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
@@ -250,6 +251,6 @@ def anneal():                                                                   
 
 
 anneal()
-denature()
+# denature()
 
 # 
