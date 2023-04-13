@@ -26,7 +26,7 @@ from statsmodels.formula.api import ols
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 folder = 'data/'
-instListShort = [7,9]
+# instListShort = [7,9]
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -43,7 +43,7 @@ p = 0.9                                                                         
 
 
 ########                DONT CHANGE             ##################
-def denature():                                                                                     #create function to analyze denature temp
+def denature(folder,instListShort):                                                                                     #create function to analyze denature temp
     instList = instListShort*replicate                                                              #list of total runs
     if replicate > 1:
         instList.sort()                                                                                 #sort instrument list to match with order in directory
@@ -78,14 +78,14 @@ def denature():                                                                 
 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         
-        if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
-            print(instListVar[count],bound,'FAIL')
-        else:
-            print(instListVar[count],bound,'PASS')
+        # if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
+        #     print(instListVar[count],bound,'FAIL')
+        # else:
+        #     print(instListVar[count],bound,'PASS')
         count += 1
     
-    for i in range(len(means)):
-        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
+    # for i in range(len(means)):
+    #     print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.yticks(np.arange(0,len(temp)),instListVar)
     # plt.xlim(88.3,97)
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
@@ -95,7 +95,7 @@ def denature():                                                                 
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
     plt.grid()
-    plt.show()
+    # plt.show()
     # print(temp)
     instListLong = []
     tempLong=[]
@@ -116,12 +116,13 @@ def denature():                                                                 
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    print(m_compMult)
+    # print(m_compMult)
     # formula = 'Mean ~ type'
     # model = ols(formula, dfTot).fit()
     # aov_table = anova_lm(model, typ=1)
     # print(aov_table)
     count=0
+    cis = []
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
         std_dev_er = np.std(data)                                                   #stdev of each run
@@ -131,7 +132,8 @@ def denature():                                                                 
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof)                                #t* get from t-dist ppf
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
-        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
+        cis.append(ciMult)
+        # print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
@@ -141,8 +143,9 @@ def denature():                                                                 
     plt.grid()
     plt.xlabel('Mean Temp (c)')
     plt.ylabel('Instrument')
-    plt.show()
+    # plt.show()
 
+    return cis
     
 
     
@@ -150,7 +153,7 @@ def denature():                                                                 
 
 
 
-def anneal():                                                                               #function to analyze anneal temps
+def anneal(folder,instListShort):                                                                               #function to analyze anneal temps
     # instListShort = inputtxt.get("1.0","end-1c").split()                                    #which instruments is the data from
     # replicate = int(inputtxt2.get("1.0","end-1c"))                                          #how many runs from each instrument
     instList = instListShort*replicate                                                      #list that has each instrument repeated as many times
@@ -188,13 +191,13 @@ def anneal():                                                                   
         tis.append(bound[0])
 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
-        if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
-            print(instListVar[count],'TI:',bound,'FAIL')
-        else:
-            print(instListVar[count],'TI:',bound,'PASS')
+        # if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
+        #     print(instListVar[count],'TI:',bound,'FAIL')
+        # else:
+        #     print(instListVar[count],'TI:',bound,'PASS')
         count += 1
-    for i in range(len(means)):
-        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
+    # for i in range(len(means)):
+    #     print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.yticks(np.arange(0,len(temp)),instListVar)
     # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
@@ -204,7 +207,7 @@ def anneal():                                                                   
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
     plt.grid()
-    plt.show()
+    # plt.show()
     instListLong = []
     tempLong=[]
     count = 0
@@ -221,12 +224,13 @@ def anneal():                                                                   
 
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
-    print(m_compMult)
+    # print(m_compMult)
     formula = 'Temp ~ Instrument'
     model = ols(formula, dfTemp).fit()
     aov_table = anova_lm(model, typ=2)
-    print(aov_table)
+    # print(aov_table)
     count=0
+    cis = []
     for data in temp:
         mean_er = np.mean(data)                                                     #mean denature temp of run
         std_dev_er = np.std(data)                                                   #stdev of each run
@@ -236,7 +240,8 @@ def anneal():                                                                   
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof)                                #t* get from t-dist ppf
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
-        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
+        cis.append(ciMult)
+        # print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
         plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
         plt.plot(mean_er,count,'o',color='r',ms=7)
         
@@ -247,10 +252,10 @@ def anneal():                                                                   
     plt.grid()
     plt.xlabel('Mean Temp (c)')
     plt.ylabel('Instrument')
-    plt.show()
+    # plt.show()
+    return cis
 
-
-anneal()
+# anneal()
 # denature()
 
 # 
