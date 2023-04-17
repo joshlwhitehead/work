@@ -73,8 +73,19 @@ for i in cis2:
 # CI(meanMeans2,.05)
 # CI(cis2Right,.05)
 
+alpha = .05
 
-plt.plot(0,np.mean(meanMeans),'o',color='r')
-plt.hlines(np.mean(meanMeans),np.mean(cisLeft),np.mean(cisRight))
+plt.hlines(0,np.mean(cisLeft),np.mean(cisRight),lw=5)
+plt.plot(np.mean(meanMeans),0,'o',color='r')
+plt.hlines(0,CI(cisLeft,alpha)[0],CI(cisLeft,alpha)[1],color='r')
+plt.hlines(0,CI(cisRight,alpha)[0],CI(cisRight,alpha)[1],color='r')
+
+plt.hlines(1,np.mean(cis2Left),np.mean(cis2Right),lw=5)
+plt.plot(np.mean(meanMeans2),1,'o',color='r')
+plt.hlines(1,CI(cis2Left,alpha)[0],CI(cis2Left,alpha)[1],color='r')
+plt.hlines(1,CI(cis2Right,alpha)[0],CI(cis2Right,alpha)[1],color='r')
+
+plt.grid()
+
 plt.show()
 
