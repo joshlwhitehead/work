@@ -1,6 +1,6 @@
-josh = [1,2,3]
-tess = [1,3,4]
+import numpy as np
 
 
-if 1 in josh and 2 in tess or 0 in josh and 2 in tess:
-    print('ok')
+josh = np.array([1,2,3])
+tess = np.array([1,2,3])
+print(josh-tess)
