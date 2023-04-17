@@ -37,4 +37,4 @@ for i in cis2:
 
 
 
-print(overlap/totalCi )
+print(overlap/totalCi)
