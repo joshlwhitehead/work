@@ -12,8 +12,21 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
+# folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
+# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_b_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
+# totalInd = ['p','g']*10
+# totalInd.sort(reverse=True)
+# print(totalInd)
+############                CHANGE THIS                                     ###################
+# folder = 'cupA/'
+# instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
+# totalInd = ['p','p','p','p','p','g','g','g','g','g']
 
+# folder = 'cupB/'
+# instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
+# totalInd = ['p','p','p','p','p','g','g','g','g','g']
 folder = 'data/'
+# instListShort = [7,9]
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -60,54 +73,54 @@ def denature(folder,instListShort):                                             
         total.append(mean)
 
 
-    #     bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
-    #     tis.append(bound[0])                                                                        #list of TIs
+        bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
+        tis.append(bound[0])                                                                        #list of TIs
 
-    #     # plt.hlines(count,bound[0][0],bound[0][1],lw=5)
+        plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         
-    #     # if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
-    #     #     print(instListVar[count],bound,'FAIL')
-    #     # else:
-    #     #     print(instListVar[count],bound,'PASS')
-    #     count += 1
+        if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
+            print(instListVar[count],bound,'FAIL')
+        else:
+            print(instListVar[count],bound,'PASS')
+        count += 1
     
-    # # for i in range(len(means)):
-    # #     print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
-    # # plt.yticks(np.arange(0,len(temp)),instListVar)
-    # # plt.xlim(88.3,97)
-    # # plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    # # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
-    # # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
-    # # plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
-    # # plt.ylabel('Instrument')
-    # # plt.xlabel('Temperature (c)')
-    # # plt.grid()
-    # # plt.show()
-    # # print(temp)
-    # instListLong = []
-    # tempLong=[]
-    # count = 0
-    # for inst in instListVar:
-    #     for T in temp[count]:
-    #         instListLong.append(inst)                                                                  #make long list of instruments
-    #         tempLong.append(T)                                                                      #make total list of temps that correspond 
-    #                                                                                                 #to long list of instruments
-    #     count+= 1
+    for i in range(len(means)):
+        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    # plt.xlim(88.3,97)
+    plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
+    # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
+    plt.ylabel('Instrument')
+    plt.xlabel('Temperature (c)')
+    plt.grid()
+    plt.show()
+    # print(temp)
+    instListLong = []
+    tempLong=[]
+    count = 0
+    for inst in instListVar:
+        for T in temp[count]:
+            instListLong.append(inst)                                                                  #make long list of instruments
+            tempLong.append(T)                                                                      #make total list of temps that correspond 
+                                                                                                    #to long list of instruments
+        count+= 1
 
 
     
-    # dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-    # # dfTemp.boxplot('Temp',by='Instrument')
-    # # plt.show()
-    # # dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
+    # dfTemp.boxplot('Temp',by='Instrument')
+    # plt.show()
+    # dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
     
     # m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
-    # # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    # # print(m_compMult)
-    # # formula = 'Mean ~ type'
-    # # model = ols(formula, dfTot).fit()
-    # # aov_table = anova_lm(model, typ=1)
-    # # print(aov_table)
+    # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
+    # print(m_compMult)
+    # formula = 'Mean ~ type'
+    # model = ols(formula, dfTot).fit()
+    # aov_table = anova_lm(model, typ=1)
+    # print(aov_table)
     count=0
     cis = []
     for data in temp:
@@ -120,19 +133,19 @@ def denature(folder,instListShort):                                             
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
         cis.append(ciMult)
-        # print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
-        # plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
-        # plt.plot(mean_er,count,'o',color='r',ms=7)
+        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
+        plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
 
-    # plt.yticks(np.arange(0,len(temp)),instListVar)
-    # plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
-    # plt.grid()
-    # plt.xlabel('Mean Temp (c)')
-    # plt.ylabel('Instrument')
-    # plt.show()
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('Instrument')
+    plt.show()
 
-    return cis
+    # return cis
     
 
     
@@ -177,45 +190,45 @@ def anneal(folder,instListShort):                                               
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
         tis.append(bound[0])
 
-        # plt.hlines(count,bound[0][0],bound[0][1],lw=5)
-        # if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
-        #     print(instListVar[count],'TI:',bound,'FAIL')
-        # else:
-        #     print(instListVar[count],'TI:',bound,'PASS')
+        plt.hlines(count,bound[0][0],bound[0][1],lw=5)
+        if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
+            print(instListVar[count],'TI:',bound,'FAIL')
+        else:
+            print(instListVar[count],'TI:',bound,'PASS')
         count += 1
-    # for i in range(len(means)):
-    #     print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
-    # plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    # plt.yticks(np.arange(0,len(temp)),instListVar)
-    # # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
-    # # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
-    # # plt.xlim(45,54)
-    # plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
-    # plt.ylabel('Instrument')
-    # plt.xlabel('Temperature (c)')
-    # plt.grid()
-    # # plt.show()
-    # instListLong = []
-    # tempLong=[]
-    # count = 0
-    # for inst in instListVar:
-    #     for T in temp[count]:
-    #         instListLong.append(inst)                                                                  #make long list of instruments
-    #         tempLong.append(T)                                                                      #make total list of temps that correspond 
-    #                                                                                                 #to long list of instruments
-    #     count+= 1
+    for i in range(len(means)):
+        print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
+    plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    # plt.xlim(45,54)
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
+    plt.ylabel('Instrument')
+    plt.xlabel('Temperature (c)')
+    plt.grid()
+    plt.show()
+    instListLong = []
+    tempLong=[]
+    count = 0
+    for inst in instListVar:
+        for T in temp[count]:
+            instListLong.append(inst)                                                                  #make long list of instruments
+            tempLong.append(T)                                                                      #make total list of temps that correspond 
+                                                                                                    #to long list of instruments
+        count+= 1
 
 
     
-    # dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
+    dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
 
     
-    # m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
-    # # print(m_compMult)
-    # formula = 'Temp ~ Instrument'
-    # model = ols(formula, dfTemp).fit()
-    # aov_table = anova_lm(model, typ=2)
-    # # print(aov_table)
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
+    print(m_compMult)
+    formula = 'Temp ~ Instrument'
+    model = ols(formula, dfTemp).fit()
+    aov_table = anova_lm(model, typ=2)
+    print(aov_table)
     count=0
     cis = []
     for data in temp:
@@ -228,21 +241,21 @@ def anneal(folder,instListShort):                                               
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
         cis.append(ciMult)
-        # print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
-        # plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
-        # plt.plot(mean_er,count,'o',color='r',ms=7)
+        print(instListVar[count],'CI:',round(mean_er,3),'+/-',round(moe,4))
+        plt.hlines(count,ciMult[0],ciMult[1],lw=5)                                  #plot confidence interval
+        plt.plot(mean_er,count,'o',color='r',ms=7)
         
         count+=1
 
-    # plt.yticks(np.arange(0,len(temp)),instListVar)
-    # plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
-    # plt.grid()
-    # plt.xlabel('Mean Temp (c)')
-    # plt.ylabel('Instrument')
-    # plt.show()
-    return cis
-
-# anneal()
+    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    plt.grid()
+    plt.xlabel('Mean Temp (c)')
+    plt.ylabel('Instrument')
+    plt.show()
+    
+folder = 'tape/'
+anneal(folder,np.arange(0,len(os.listdir(folder))))
 # denature()
 
 # 
