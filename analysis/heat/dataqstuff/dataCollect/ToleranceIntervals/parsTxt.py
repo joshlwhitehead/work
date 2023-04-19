@@ -348,4 +348,4 @@ def meltRamp(file):
 
 # print(meltRamp('dataPCR/Adv13_w85_230223_Run1.txt')[0][1])
 
-# print(parsPCRTxt('justin/V3_no-recess_102_Run7.txt')[0][0])
+# print(parsPCRTxt('V3_no-recess_102_Run7.txt')[0][0])
