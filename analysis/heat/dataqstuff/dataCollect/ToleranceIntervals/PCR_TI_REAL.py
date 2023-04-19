@@ -25,7 +25,7 @@ from statsmodels.formula.api import ols
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
-folder = 'data/'
+folder = 'justin/'
 # instListShort = [7,9]
 
 
@@ -89,8 +89,8 @@ def denature(folder,instListShort):                                             
     plt.yticks(np.arange(0,len(temp)),instListVar)
     # plt.xlim(88.3,97)
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
-    # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
     plt.ylabel('Instrument')
     plt.xlabel('Temperature (c)')
@@ -128,7 +128,7 @@ def denature(folder,instListShort):                                             
         std_dev_er = np.std(data)                                                   #stdev of each run
         n = len(data)                                                               
         se = std_dev_er / np.sqrt(n)                                                #standard error for t-test stat
-        dof = n - 1                                                                 #degree of fredom
+        dof = n - 1                                                              #degree of fredom
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof)                                #t* get from t-dist ppf
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
@@ -176,20 +176,22 @@ def anneal(folder,instListShort):                                               
     tis = []
     count = 0
     for file in os.listdir(folder):
+        
         peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
         peakSamp = []
         for peak in peakSampList:
-            peakSamp.append(min(peak))  
+            peakSamp.append(min(peak)) 
+            # print(peakSamp) 
                                                                    #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
 
-
+        
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
         tis.append(bound[0])
-
+        
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
             print(instListVar[count],'TI:',bound,'FAIL')
@@ -200,8 +202,8 @@ def anneal(folder,instListShort):                                               
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.yticks(np.arange(0,len(temp)),instListVar)
-    # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
-    # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
     # plt.xlim(45,54)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
     plt.ylabel('Instrument')
@@ -236,7 +238,7 @@ def anneal(folder,instListShort):                                               
         std_dev_er = np.std(data)                                                   #stdev of each run
         n = len(data)                                                               
         se = std_dev_er / np.sqrt(n)                                                #standard error for t-test stat
-        dof = n - 1                                                                 #degree of fredom
+        dof = n - 1                                                               #degree of fredom
         t_star = stats.t.ppf(1.0 - 0.5 * alpha, dof)                                #t* get from t-dist ppf
         moe = t_star * se                                                           #margin of error
         ciMult = np.array([mean_er - moe, mean_er + moe])                           #1-alpha confidence interval
@@ -254,8 +256,10 @@ def anneal(folder,instListShort):                                               
     plt.ylabel('Instrument')
     plt.show()
     
-folder = 'tape/'
-anneal(folder,np.arange(0,len(os.listdir(folder))))
+# folder = 'tape/'
+instlistshort = ['v1_102','v1_109','v1_118','v2_102','v2_109','v2_118']#,'v3_102_a','v3_102_b','v3_109','v3_118']
+# instlistshort = [1.02,1.09,1.18,2.02,2.09,2.18,3.021,3.022,3.09,3.18]
+anneal(folder,instlistshort)
 # denature()
 
 # 
