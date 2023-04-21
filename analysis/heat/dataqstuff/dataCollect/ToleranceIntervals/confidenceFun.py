@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.stats import t
+import toleranceinterval as ti
 def CI(sample, alpha):
     mean_er = np.mean(sample) # sample mean
     std_dev_er = np.std(sample, ddof=1) # sample standard devialtion
@@ -11,3 +12,9 @@ def CI(sample, alpha):
     ci = np.array([mean_er - moe, mean_er + moe])
     
     return ci
+
+
+
+def TI(sample,alpha,p):
+    bound = ti.twoside.normal(sample,p,1-alpha)
+    return bound[0]

@@ -46,6 +46,7 @@ def denature(folder,instListShort):                                             
     tis = []
     total = []
     count = 0
+    variances = []
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         
@@ -58,6 +59,7 @@ def denature(folder,instListShort):                                             
         means.append(mean)                                                                          #list of mean denature temp
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
+        variances.append(np.var(peakSamp))
 
 
     #     bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
@@ -132,7 +134,7 @@ def denature(folder,instListShort):                                             
     # plt.ylabel('Instrument')
     # plt.show()
 
-    return means,cis
+    return means,cis,variances
     
 
     
@@ -161,6 +163,7 @@ def anneal(folder,instListShort):                                               
     temp = []    
     means = []
     tis = []
+    variances = []
     count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
@@ -172,6 +175,7 @@ def anneal(folder,instListShort):                                               
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
+        variances.append(np.var(peakSamp))
 
 
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
@@ -240,7 +244,7 @@ def anneal(folder,instListShort):                                               
     # plt.xlabel('Mean Temp (c)')
     # plt.ylabel('Instrument')
     # plt.show()
-    return means,cis
+    return means,cis,variances
 
 # anneal()
 # denature()
