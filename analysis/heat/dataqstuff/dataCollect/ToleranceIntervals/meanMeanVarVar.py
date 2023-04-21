@@ -6,7 +6,7 @@ from confidenceFun import CI,TI
 import os
 
 
-folder = 'tape/'
+folder = 'justin/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
@@ -98,24 +98,24 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 import pandas as pd
-totalMean = []
+totalVar = []
 types = []
 for i in var:
-    totalMean.append(i)
+    totalVar.append(i)
     types.append('tape')
 for i in var2:
-    totalMean.append(i)
+    totalVar.append(i)
     types.append('wet fill')
 
-dF = pd.DataFrame({'type':types,'mean':totalMean})
+dF = pd.DataFrame({'type':types,'var':totalVar})
 
-formula = 'mean ~ type'
+formula = 'var ~ type'
 model = ols(formula, dF).fit()
 aov_table = anova_lm(model, typ=1)
 print(aov_table)
 
 
-m_compMult = pairwise_tukeyhsd(endog=dF['mean'],groups=dF['type'],alpha=alpha)
+m_compMult = pairwise_tukeyhsd(endog=dF['var'],groups=dF['type'],alpha=alpha)
 print(m_compMult)
 
 # plt.show()
