@@ -13,7 +13,7 @@ from statsmodels.formula.api import ols
 
 
 
-folder = 'data/'
+folder = 'justin2/'
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -48,6 +48,7 @@ def denature(folder,instListShort):                                             
     count = 0
     variances = []
     for file in os.listdir(folder):
+        print(file)
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         
         peakSamp = []

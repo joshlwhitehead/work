@@ -6,18 +6,18 @@ from confidenceFun import CI,TI
 import os
 
 
-folder = 'justin/'
+folder = 'wet/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'padVpaste/'
-instList2 = ['w86_7','w87_7','w86_9','w87_9','w86_11','w87_11','w86_13','w87_13','w86_15','w87_15','w86_5','w87_5','w86_20','w87_20','w86_23','w87_23','w86_25','w87_25','w86_28','w87_28']
+folder2 = 'tape/'
+instList2 = np.arange(0,len(os.listdir(folder2)))
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
-    means = anneal(folder,instlistshort)[0]
-    cis = np.array(anneal(folder,instlistshort)[1]).T
-    variances = anneal(folder,instlistshort)[2]
+    means = denature(folder,instlistshort)[0]
+    cis = np.array(denature(folder,instlistshort)[1]).T
+    variances = denature(folder,instlistshort)[2]
 
     ciL = cis[0]
     ciR = cis[1]
@@ -77,11 +77,11 @@ print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
 # plt.plot(np.ones(len(var))*53,var,'o',color='k')
-plt.plot(means2,var2,'o',color='k',label='wet fill')
+plt.plot(means2,var2,'o',color='k',label='tape')
 plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=5)
 plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=5)
 plt.plot(meanMeans2,meanVar2,'o',color='r')
-plt.plot(means,var,'o',color='green',label='tape')
+plt.plot(means,var,'o',color='green',label='wet fill')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
 plt.plot(meanMeans,meanVar,'o',color='r')

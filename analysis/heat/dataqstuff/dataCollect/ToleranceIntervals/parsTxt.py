@@ -81,6 +81,7 @@ def parsPCRTxt(file):                                                           
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
+                    print(u,countLines)
                     timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         

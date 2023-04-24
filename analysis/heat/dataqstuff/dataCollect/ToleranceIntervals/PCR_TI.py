@@ -25,9 +25,8 @@ from statsmodels.formula.api import ols
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
-folder = 'padVpaste/'
-instListShort = ['w86_7','w87_7','w86_9','w87_9','w86_11','w87_11','w86_13','w87_13','w86_15','w87_15','w86_5','w87_5','w86_20','w87_20',
-                 'w86_23','w87_23','w86_25','w87_25','w86_28','w87_28']
+folder = 'justinTot/'
+instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
 
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -93,7 +92,7 @@ def denature(folder,instListShort):                                             
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' denature']))
-    plt.ylabel('Cup_Instrument')
+    plt.ylabel('Instrument_Cup')
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
@@ -143,7 +142,7 @@ def denature(folder,instListShort):                                             
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' denature']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
-    plt.ylabel('Cup_Instrument')
+    plt.ylabel('Instrument_Cup')
     plt.show()
 
     # return cis
@@ -207,7 +206,7 @@ def anneal(folder,instListShort):                                               
     plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
     # plt.xlim(45,54)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' anneal']))
-    plt.ylabel('Cup_Instrument')
+    plt.ylabel('Instrument_Cup')
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
@@ -254,14 +253,14 @@ def anneal(folder,instListShort):                                               
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' anneal']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
-    plt.ylabel('Cup_Instrument')
+    plt.ylabel('Instrument_Cup')
     plt.show()
     
 # folder = 'tape/'
 # instlistshort = ['v1_102','v1_109','v1_118','v2_102','v2_109','v2_118']#,'v3_102_a','v3_102_b','v3_109','v3_118']
 # instlistshort = [1.02,1.09,1.18,2.02,2.09,2.18,3.021,3.022,3.09,3.18]
 # denature(folder,instListShort)
-anneal(folder,instListShort)
+denature(folder,instListShort)
 # denature()
 
 # 
