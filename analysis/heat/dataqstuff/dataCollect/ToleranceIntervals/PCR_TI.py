@@ -25,9 +25,10 @@ from statsmodels.formula.api import ols
 # folder = 'cupB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
-folder = 'justinTot/'
-instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-
+# folder = 'justinTot/'
+# instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
+folder = 'wet/'
+instListShort = np.arange(0,len(os.listdir(folder)))
 
 replicate = 1                                                                                   #how many runs of each instrument
 

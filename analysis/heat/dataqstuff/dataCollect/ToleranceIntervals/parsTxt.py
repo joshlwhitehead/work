@@ -108,7 +108,16 @@ def parsPCRTxt(file):                                                           
 
 
 
-
+# y = parsPCRTxt('wet/20230419 WetFill Repeatability13.txt')[0][0]
+# x = parsPCRTxt('wet/20230419 WetFill Repeatability13.txt')[0][1]
+# z = []
+# for i in y:
+#     z.append(max(i))
+# import matplotlib.pyplot as plt
+# for i in range(len(x)):
+#     plt.plot(x[i],y[i],'o')
+# plt.grid()
+# plt.show()
 
 
 
