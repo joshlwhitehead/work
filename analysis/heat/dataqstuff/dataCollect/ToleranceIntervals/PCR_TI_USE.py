@@ -47,8 +47,9 @@ def denature(folder,instListShort):                                             
     total = []
     count = 0
     variances = []
+    stdevs = []
     for file in os.listdir(folder):
-        print(file)
+        # print(file)
         peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         
         peakSamp = []
@@ -61,6 +62,7 @@ def denature(folder,instListShort):                                             
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
         variances.append(np.var(peakSamp))
+        stdevs .append(np.std(peakSamp))
 
 
     #     bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
@@ -135,7 +137,7 @@ def denature(folder,instListShort):                                             
     # plt.ylabel('Instrument')
     # plt.show()
 
-    return means,cis,variances
+    return means,cis,variances,stdevs
     
 
     
@@ -165,6 +167,7 @@ def anneal(folder,instListShort):                                               
     means = []
     tis = []
     variances = []
+    stdevs = []
     count = 0
     for file in os.listdir(folder):
         peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
@@ -177,6 +180,7 @@ def anneal(folder,instListShort):                                               
         means.append(mean)                                                                          #list of mean denature temp
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
         variances.append(np.var(peakSamp))
+        stdevs.append(np.std(peakSamp))
 
 
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
@@ -245,7 +249,7 @@ def anneal(folder,instListShort):                                               
     # plt.xlabel('Mean Temp (c)')
     # plt.ylabel('Instrument')
     # plt.show()
-    return means,cis,variances
+    return means,cis,variances,stdevs
 
 # anneal()
 # denature()

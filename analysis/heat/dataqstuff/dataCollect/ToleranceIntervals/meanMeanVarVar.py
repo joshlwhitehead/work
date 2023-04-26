@@ -10,7 +10,7 @@ folder = 'wet/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'tape/'
+folder2 = 'tape2/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
 alpha = 0.1
@@ -85,7 +85,7 @@ plt.plot(means,var,'o',color='green',label='wet fill')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
 plt.plot(meanMeans,meanVar,'o',color='r')
-plt.title('Tolerance Area for Population of Populations')
+plt.title('Tolerance Area for Complex Populations')
 plt.xlabel('Possible Mean Temp (c)')
 plt.ylabel('Possible Variance')
 plt.legend()

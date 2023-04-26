@@ -103,13 +103,13 @@ def parsPCRTxt(file):                                                           
             count += 1
 
             
-    return (heat,timeH),(cool,timeC),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat[:-1],timeH[:-1]),(cool[:-1],timeC[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 
 
-# y = parsPCRTxt('wet/20230419 WetFill Repeatability13.txt')[0][0]
-# x = parsPCRTxt('wet/20230419 WetFill Repeatability13.txt')[0][1]
+# y = parsPCRTxt('wet/20230419 WetFill Repeatability_18.txt')[0][0]
+# x = parsPCRTxt('wet/20230419 WetFill Repeatability_18.txt')[0][1]
 # z = []
 # for i in y:
 #     z.append(max(i))
@@ -119,6 +119,13 @@ def parsPCRTxt(file):                                                           
 # plt.grid()
 # plt.show()
 
+
+# yy = []
+# for i in y:
+#     yy.append(max(i))
+# plt.plot(yy,'o')
+# plt.grid()
+# plt.show()
 
 
 # print(parsPCRTxt('cupA\PThermo_AdvBuild07_w86_230301_run1.txt')[3][0])
