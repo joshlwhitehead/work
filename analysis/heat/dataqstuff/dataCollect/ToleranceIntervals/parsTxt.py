@@ -366,3 +366,49 @@ def meltRamp(file):
 # print(meltRamp('dataPCR/Adv13_w85_230223_Run1.txt')[0][1])
 
 # print(parsPCRTxt('V3_no-recess_102_Run7.txt')[0][0])
+import pandas as pd
+def saveDataUsingPCR():
+    file = 'accept200_/0202-DV0001-20230210-Run-01.txt'
+   
+
+    fullDenat = parsPCRTxt(file)[0][0]
+    fullAnneal = parsPCRTxt(file)[1][0]
+    fullMelt = meltRamp(file)[0][0]
+
+    Denat = []
+    anneal = []
+    for i in fullDenat:
+        Denat.append(max(i))
+
+    for i in fullAnneal:
+        anneal.append(min(i))
+
+    while len(anneal) < len(fullMelt):
+        anneal.append(None)
+    while len(Denat) < len(fullMelt):
+        Denat.append(None)
+
+    dF = pd.DataFrame({'Denature':Denat,'Anneal':anneal,'Melt':fullMelt})
+
+    dF.to_csv('crToVerify/0202-DV0001-20230210-Run-01.csv')
+
+
+
+def saveDataUsingTC():
+    file = 'TCRando/Adv10_p12_bae517_221010_Run2.txt'
+    
+
+    fullActive = parsTCTxt(file)[1][0]
+    fullKill = parsTCTxt(file)[0][0]
+    fullRamp = TCramp(file)[1][0]
+
+    while len(fullActive) <len(fullKill):
+        fullActive.append(None)
+    while len(fullRamp) < len(fullKill):
+        fullRamp.append(None)
+
+    dF = pd.DataFrame({'Activation':fullActive,'Heat Kill':fullKill,'Ramp Rate':fullRamp})
+
+    dF.to_csv('crToVerify/Adv10_p12_bae517_221010_Run2.csv')
+
+# saveDataUsingTC()
