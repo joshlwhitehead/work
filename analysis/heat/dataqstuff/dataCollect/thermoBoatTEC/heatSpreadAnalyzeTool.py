@@ -12,7 +12,7 @@ from openpyxl.chart import LineChart, Reference
 
 
 def analyze():
-    newFile = 'PCRDemo.xlsx'                                                #name of excel file to upload data
+    newFile = 'heatSpreaderResults.xlsx'                                                #name of excel file to upload data
     folder = 'data'                                                         #name of folder where raw data is held
 
 
@@ -261,9 +261,9 @@ def analyze():
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
-root.title("Josh's Super-Duper Cool Stuff")                                                             #name ui window
+root.title("Heat Spreader Analysis Tool")                                                             #name ui window
 
-run = Button(root,height=2,width=20,text='Analyze',command=lambda:analyze())                            #create button that runs the above code when pushed
+run = Button(root,height=2,width=20,text='Analyze Data',command=lambda:analyze())                            #create button that runs the above code when pushed
 run.pack()
 mainloop()
 
