@@ -2,8 +2,33 @@ import toleranceinterval as ti
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
+import pandas as pd
 
 
-test = [1.278,1.294,1.3,1.304,1.309,1.312,1.317,1.353]
+data = pd.read_csv('dataForTI.csv')
+part = data['Parts']
+measure = data['Measurement'].tolist()
 
-print(ti.twoside.normal(test,.9,.95))
+
+sort = []
+count1 = 0
+count2 = 18
+for i in range(10):
+    sort.append(measure[count1:count2])
+    count1 += 18
+    count2 += 18
+
+count = 0
+count3 = 0
+y = np.arange(0,10)
+for i in sort:
+    x = ti.twoside.normal(i,.9,.9)
+    print(part[count],x[0])
+    plt.hlines(y[count3],x[0][0],x[0][1],lw=5)
+    count += 18
+    count3 += 1
+plt.grid()
+plt.title('90-90 TI')
+plt.xlabel('PCR Thickness (mm)')
+plt.ylabel('Cup')
+plt.show()
