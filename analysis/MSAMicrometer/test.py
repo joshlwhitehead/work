@@ -19,11 +19,12 @@ for i in range(10):
 
 count = 0
 count3 = 0
-y = np.arange(0,10)
+y = np.arange(1,11)
 for i in sort:
     x = ti.twoside.normal(i,.9,.9)
     xx = np.mean(i)
     print(part[count],x[0])
+    print(part[count],round(xx,3),'+/-',round(xx-x[0][0],3))
     plt.hlines(y[count3],x[0][0],x[0][1],lw=5)
     count += 18
     count3 += 1
