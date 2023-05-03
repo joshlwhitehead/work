@@ -1,7 +1,6 @@
 import toleranceinterval as ti
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import stats
 import pandas as pd
 
 
