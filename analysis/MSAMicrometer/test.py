@@ -22,6 +22,7 @@ count3 = 0
 y = np.arange(0,10)
 for i in sort:
     x = ti.twoside.normal(i,.9,.9)
+    xx = np.mean(i)
     print(part[count],x[0])
     plt.hlines(y[count3],x[0][0],x[0][1],lw=5)
     count += 18
