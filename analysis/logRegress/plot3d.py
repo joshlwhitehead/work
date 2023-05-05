@@ -18,7 +18,7 @@ y = data['Parts']
 ax.scatter(x, y, z, c = 'r')
 ax.set_xlabel('Operator')
 ax.set_ylabel('Part')
-ax.set_zlabel('Measurement')
+ax.set_zlabel('Measurementc')
 
 # syntax for plotting
 ax.set_title('3d Scatter plot geeks for geeks')
