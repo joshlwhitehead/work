@@ -42,7 +42,6 @@ def analyzeTC():
                 goodsTemp.append(float(filex[lineIndx][4].strip(',')))                     #add thermistor temp (c) to list
                 goodsTime.append(float(filex[lineIndx][0][1:-1])/1000)                     #add time (sec) to list
 
-
         for TempIndx in range(len(goodsTemp)):                                             #loop through temp data 
             if TempIndx != 0:                                                              #skip the first data point (can be weird)
                 if goodsTemp[TempIndx]-goodsTemp[TempIndx-1] >= 0.5 and goodsTemp[TempIndx] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
@@ -61,7 +60,7 @@ def analyzeTC():
                 for i in temp:                             
                     absDif.append(abs(Temp-i))
                 indx = absDif.index(min(absDif))
-                timeTo.append(time[indx])                                           #add time it takes to reach each desired temp
+                timeTo.append(time[indx])                                           #append time it takes to reach each desired temp
             else:
                 timeTo.append(0)                                                    #if desired temp is not reached, add 0
         fullTemp.append(temp)
