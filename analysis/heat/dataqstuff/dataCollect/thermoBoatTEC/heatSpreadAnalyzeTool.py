@@ -13,7 +13,7 @@ from scipy.interpolate import interp1d
 from openpyxl.chart import LineChart, Reference
 
 def analyzeTC():
-    newFile = 'TCResults.xlsx'                         #name of excel file to save data
+    newFile = 'TC_Results.xlsx'                         #name of excel file to save data
     folder = 'TC Data'                                 #name of folder where TC raw data is held
     err = 0.2                                          #error criteria (temperatures cannot be lower that 20% below nominal for TC)
     
@@ -36,21 +36,21 @@ def analyzeTC():
         goodsTime = []
 
     ##########  parse data out of file ################
-        for line in range(len(filex)):                                                 #loop through each line in the file
-            if 'TC-' in filex[line]:                                                   #check if line contains desired data
-                filex[line] = filex[line].split()                                         #split line into individual values
-                goodsTemp.append(float(filex[line][4].strip(',')))                     #add thermistor temp (c) to list
-                goodsTime.append(float(filex[line][0][1:-1])/1000)                     #add time (sec) to list
+        for lineIndx in range(len(filex)):                                                 #loop through each line in the file
+            if 'TC-' in filex[lineIndx]:                                                   #check if line contains desired data
+                filex[lineIndx] = filex[lineIndx].split()                                         #split line into individual values
+                goodsTemp.append(float(filex[lineIndx][4].strip(',')))                     #add thermistor temp (c) to list
+                goodsTime.append(float(filex[lineIndx][0][1:-1])/1000)                     #add time (sec) to list
 
 
-        for Temp in range(len(goodsTemp)):                                             #loop through temp data 
-            if Temp != 0:                                                              #skip the first data point (can be weird)
-                if goodsTemp[Temp]-goodsTemp[Temp-1] >= 0.5 and goodsTemp[Temp] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
-                    time.append(goodsTime[Temp])
-                    temp.append(goodsTemp[Temp])
+        for TempIndx in range(len(goodsTemp)):                                             #loop through temp data 
+            if TempIndx != 0:                                                              #skip the first data point (can be weird)
+                if goodsTemp[TempIndx]-goodsTemp[TempIndx-1] >= 0.5 and goodsTemp[TempIndx] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
+                    time.append(goodsTime[TempIndx])
+                    temp.append(goodsTemp[TempIndx])
                 elif goodsTemp[Temp] >=50:                                             #ramp rate not a criteria after 50c
-                    time.append(goodsTime[Temp])
-                    temp.append(goodsTemp[Temp])
+                    time.append(goodsTime[TempIndx])
+                    temp.append(goodsTemp[TempIndx])
 
         time = np.array(time)-time[0]                                               #normalize time            
 
@@ -67,28 +67,25 @@ def analyzeTC():
         fullTemp.append(temp)
         fullTime.append(time)
 
-        # timeTemp = np.array([time,temp]).T                                          #transpose time, temp arrays
-
-
 
 
     timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]      #format data
     timeTo = np.array(timeTo).T
 
     lens = []
-    for i in range(len(fullTime)):                                                  #find file with longest runtime
-        lens.append(len(fullTime[i]))
+    for timeIndx in range(len(fullTime)):                                                  #find file with longest runtime
+        lens.append(len(fullTime[timeIndx]))
     longest = max(lens)
-    longestTime = fullTime[lens.index(longest)]
+    # longestTime = fullTime[lens.index(longest)]
 
 
     sameLenTime = []
     sameLenTemp = []
     # sameLenDeriv = []
 
-    for i in range(len(fullTime)):                                                  #make everything the same length
-        x = list(fullTime[i])
-        y = list(fullTemp[i])
+    for timeIndx in range(len(fullTime)):                                                  #make everything the same length
+        x = list(fullTime[timeIndx])
+        y = list(fullTemp[timeIndx])
         # z = list(fullDerivTemp[i])
         while len(x) < longest:
             
@@ -262,7 +259,7 @@ def analyzeTC():
     print('Analysis Complete')
 
 def analyzePCR():
-    newFile = 'PCRResults.xlsx'                                                #name of excel file to upload data
+    newFile = 'PCR_Results.xlsx'                                                #name of excel file to upload data
     folder = 'PCR Data'                                                         #name of folder where raw data is held
 
 
