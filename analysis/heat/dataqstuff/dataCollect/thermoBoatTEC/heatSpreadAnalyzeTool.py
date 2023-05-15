@@ -1,5 +1,7 @@
-"""This program reads temperature data collected from heatspreader tests, analyzes it, and makes a call to 'pass' or 'fail' the heatspreader if the temperature is less than
-5% of the nominal temp. The program looks specifically at 80c, 90c, and 100c. An excel file is created which holds the data, calculations, plots, and pass/fail results
+"""This program reads temperature data collected from heatspreader tests, analyzes it, and makes a call to 'pass' or 'fail' the heatspreader.
+PCR heat spreaders fail if the temperatures are less than 95% of the nominal temps.
+TC heat spreaders fail if the temperatures are less than 80% of the nominal temps.
+The program looks specifically at 80c, 90c, and 100c. An excel file is created which holds the data, calculations, plots, and pass/fail results.
 'tkinter' is used to create a user interface so this code can be turned into a standalone exe"""
 
 from tkinter import *
@@ -7,7 +9,7 @@ import os
 import numpy as np
 import pandas as pd
 import openpyxl as op
-from scipy import interpolate as interp
+from scipy.interpolate import interp1d
 from openpyxl.chart import LineChart, Reference
 def analyzeTC():
     newFile = 'TCResults.xlsx'                                                #name of excel file to upload data
