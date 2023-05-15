@@ -4,60 +4,62 @@ TC heat spreaders fail if the temperatures are less than 80% of the nominal temp
 The program looks specifically at 80c, 90c, and 100c. An excel file is created which holds the data, calculations, plots, and pass/fail results.
 'tkinter' is used to create a user interface so this code can be turned into a standalone exe"""
 
-from tkinter import *
+from tkinter import *                                                       
 import os
 import numpy as np
 import pandas as pd
 import openpyxl as op
 from scipy.interpolate import interp1d
 from openpyxl.chart import LineChart, Reference
+
 def analyzeTC():
-    newFile = 'TCResults.xlsx'                                                #name of excel file to upload data
-    folder = 'TC Data'                                                         #name of folder where raw data is held
-
-
-    alpha = 0.2                                                            #error criteria (temperatures cannot be lower that 20% below nominal)
-    timeTo = []
+    newFile = 'TCResults.xlsx'                         #name of excel file to save data
+    folder = 'TC Data'                                 #name of folder where TC raw data is held
+    err = 0.2                                          #error criteria (temperatures cannot be lower that 20% below nominal for TC)
+    
+    timeTo = []                                         #initialize lists to hold data 
     fullTemp = []
     fullTime = []
 
-    tempc = np.arange(40,105,10)
-    print('File being used as baseline:',os.listdir(folder)[0])
-    for fileName in os.listdir(folder):                                            #loop through all files in "data" folder
+    tempc = np.arange(40,105,10)                        #temps to evaluate 
+
+    print('File being used as "nominal":',os.listdir(folder)[0])
+
+    for fileName in os.listdir(folder):                                            #loop through all files in folder
         file = open(''.join([''.join([folder,'/']),fileName]),'r')                 #open file
         filex = file.readlines()                                                   #read file line by line
+        
         time = []                                                                   #initiate lists to parse out time and temp data
         temp = []
         absDif = []                                                                 
-
         goodsTemp = []
         goodsTime = []
-    ##########  parse .txt file ################
-        for u in range(len(filex)):                                                 #loop through each line in the file
-            if 'TC-' in filex[u]:                                                   #check if line contains desired data
-                filex[u] = filex[u].split()                                         #split line into individual values
-                goodsTemp.append(float(filex[u][4].strip(',')))                     #add thermistor temp (c) to list
-                goodsTime.append(float(filex[u][0][1:-1])/1000)                     #add time (sec) to list
+
+    ##########  parse data out of file ################
+        for line in range(len(filex)):                                                 #loop through each line in the file
+            if 'TC-' in filex[line]:                                                   #check if line contains desired data
+                filex[line] = filex[line].split()                                         #split line into individual values
+                goodsTemp.append(float(filex[line][4].strip(',')))                     #add thermistor temp (c) to list
+                goodsTime.append(float(filex[line][0][1:-1])/1000)                     #add time (sec) to list
 
 
-        for j in range(len(goodsTemp)):                                             #loop through temps
-            if j != 0:                                                              
-                if goodsTemp[j]-goodsTemp[j-1] >= 0.5 and goodsTemp[j] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
-                    time.append(goodsTime[j])
-                    temp.append(goodsTemp[j])
-                elif goodsTemp[j] >=50:                                             #ramp rate not a criteria after 50c
-                    time.append(goodsTime[j])
-                    temp.append(goodsTemp[j])
+        for Temp in range(len(goodsTemp)):                                             #loop through temp data 
+            if Temp != 0:                                                              #skip the first data point (can be weird)
+                if goodsTemp[Temp]-goodsTemp[Temp-1] >= 0.5 and goodsTemp[Temp] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
+                    time.append(goodsTime[Temp])
+                    temp.append(goodsTemp[Temp])
+                elif goodsTemp[Temp] >=50:                                             #ramp rate not a criteria after 50c
+                    time.append(goodsTime[Temp])
+                    temp.append(goodsTemp[Temp])
 
         time = np.array(time)-time[0]                                               #normalize time            
 
-        
-        for u in tempc:                                                             #loop through set of temps to analyze
+        for Temp in tempc:                                                             #loop through set of temps to analyze
             absDif = []                                                             
             indx = []
-            if max(temp) >= u:                                                      #find temps that are closest to desired temps                                               
+            if max(temp) >= Temp:                                                      #find temps that are closest to desired temps                                               
                 for i in temp:                             
-                    absDif.append(abs(u-i))
+                    absDif.append(abs(Temp-i))
                 indx = absDif.index(min(absDif))
                 timeTo.append(time[indx])                                           #add time it takes to reach each desired temp
             else:
@@ -65,7 +67,7 @@ def analyzeTC():
         fullTemp.append(temp)
         fullTime.append(time)
 
-        timeTemp = np.array([time,temp]).T                                          #transpose time, temp arrays
+        # timeTemp = np.array([time,temp]).T                                          #transpose time, temp arrays
 
 
 
@@ -198,7 +200,7 @@ def analyzeTC():
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
-        timesInterpTot.append(interp.interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
+        timesInterpTot.append(interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
 
     nominal = timesInterpTot[0]
     timesInterpNominal = []
@@ -212,7 +214,7 @@ def analyzeTC():
 
     pfTot = []
     for j in range(len(fullTemp)):
-        temps = interp.interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
+        temps = interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
         tempsInterp = []
         count = 0
         for i in timesInterpNominal:    
@@ -232,7 +234,7 @@ def analyzeTC():
         pf = []
 
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(alpha):                                    #check if temp at specified time is within 5% of nominal temp
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
                 pf.append('f')                                                                              #if outside of 5% fail
             # elif tempc[count]<=i:
             #     pf.append('p')
@@ -257,20 +259,20 @@ def analyzeTC():
 
 
     toExcel()                                                                                           #run function to create excel file
-    print('Done :)')
+    print('Analysis Complete')
 
 def analyzePCR():
     newFile = 'PCRResults.xlsx'                                                #name of excel file to upload data
     folder = 'PCR Data'                                                         #name of folder where raw data is held
 
 
-    alpha = 0.05                                                            #error criteria (temperatures cannot be lower that 5% below nominal)
+    err = 0.05                                                            #error criteria (temperatures cannot be lower that 5% below nominal)
     timeTo = []
     fullTemp = []
     fullTime = []
 
     tempc = np.arange(40,105,10)
-    print('File being used as baseline:',os.listdir(folder)[0])
+    print('File being used as "nominal":',os.listdir(folder)[0])
     for fileName in os.listdir(folder):                                            #loop through all files in "data" folder
         file = open(''.join([''.join([folder,'/']),fileName]),'r')                 #open file
         filex = file.readlines()                                                   #read file line by line
@@ -446,7 +448,7 @@ def analyzePCR():
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
-        timesInterpTot.append(interp.interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
+        timesInterpTot.append(interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
 
     nominal = timesInterpTot[0]
     timesInterpNominal = []
@@ -460,7 +462,7 @@ def analyzePCR():
 
     pfTot = []
     for j in range(len(fullTemp)):
-        temps = interp.interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
+        temps = interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
         tempsInterp = []
         count = 0
         for i in timesInterpNominal:    
@@ -480,7 +482,7 @@ def analyzePCR():
         pf = []
 
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(alpha):                                    #check if temp at specified time is within 5% of nominal temp
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
                 pf.append('f')                                                                              #if outside of 5% fail
             # elif tempc[count]<=i:
             #     pf.append('p')
@@ -505,7 +507,7 @@ def analyzePCR():
 
 
     toExcel()                                                                                           #run function to create excel file
-    print('Done :)')
+    print('Analysis Complete')
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
