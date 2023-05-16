@@ -99,7 +99,7 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
 ##########################              ANALYZE DATA FROM TC HEATSPREADER               ###################################
 def analyzeTC():
     newFile = 'TC_Results.xlsx'                         #name of excel file to save data
-    folder = 'TC Data'                                 #name of folder where TC raw data is held
+    folder = 'dataTC'                                 #name of folder where TC raw data is held
     err = 0.2                                          #error criteria (temperatures must be at least 80% nominal)
     
     timeTo = []                                         #initialize lists to hold data 
@@ -240,7 +240,7 @@ def analyzeTC():
 ##########################              ANALYZE DATA FROM PCR HEATSPREADER               ###################################
 def analyzePCR():
     newFile = 'PCR_Results.xlsx'                                                #name of excel file to upload data
-    folder = 'PCR Data'                                                         #name of folder where raw data is held
+    folder = 'DataPCR'                                                         #name of folder where raw data is held
 
 
     err = 0.05                                                            #error criteria (temperatures must be at least 95% nominal)

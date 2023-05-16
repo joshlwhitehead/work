@@ -126,7 +126,7 @@ def parsPCRTxt(file):                                                           
 # #     print(i)
 # import matplotlib.pyplot as plt
 # for i in range(len(x)):
-#     plt.plot(x[i],y[i])
+#     plt.plot(x[i],y[i],'o')
 # plt.grid()
 # plt.show()
 

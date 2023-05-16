@@ -50,7 +50,7 @@ def denature(folder,instListShort):                                             
     stdevs = []
     for file in os.listdir(folder):
         # print(file)
-        peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
         
         peakSamp = []
         for peak in peakSampList:
@@ -185,7 +185,7 @@ def anneal(folder,instListShort):                                               
 
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
         tis.append(bound[0])
-
+        # print(bound)
         # plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         # if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
         #     print(instListVar[count],'TI:',bound,'FAIL')
