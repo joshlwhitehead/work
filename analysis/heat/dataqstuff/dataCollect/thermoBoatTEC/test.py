@@ -160,25 +160,20 @@ def analyzeTC():
     for timeIndx in range(len(fullTime)):                                                  #find file with longest runtime
         lens.append(len(fullTime[timeIndx]))
     longest = max(lens)
-    # longestTime = fullTime[lens.index(longest)]
 
 
     sameLenTime = []
     sameLenTemp = []
-    # sameLenDeriv = []
 
     for timeIndx in range(len(fullTime)):                                                  #make everything the same length
         x = list(fullTime[timeIndx])
         y = list(fullTemp[timeIndx])
-        # z = list(fullDerivTemp[i])
         while len(x) < longest:
             
             x.append(None)
             y.append(None)
-            # z.append(None)
         sameLenTemp.append(y)
         sameLenTime.append(x)
-        # sameLenDeriv.append(z)
 
     timeTo2 = timeTo.tolist()
     timeTo2.insert(0,os.listdir(folder))                                             #insert file name to beginning of list
@@ -220,8 +215,6 @@ def analyzeTC():
         for i in tempsInterp[4:]:                                                           
             if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 80% of nominal temp
                 pf.append('f')                                                                              #looks at 80,90, and 100c
-            # elif tempc[count]<=i:
-            #     pf.append('p')
             else:
                 pf.append('p')                                                                              #if at least 80% pass
             count += 1
@@ -239,10 +232,6 @@ def analyzeTC():
 
     toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                                                                           #run function to create excel file
     print('Analysis Complete')
-
-
-
-
 
 
 
@@ -270,6 +259,7 @@ def analyzePCR():
 
         goodsTemp = []
         goodsTime = []
+
     ##########  parse .txt file ################
         for u in range(len(filex)):                                                 #loop through each line in the file
             if 'TC-' in filex[u]:                                                   #check if line contains desired data
@@ -303,10 +293,6 @@ def analyzePCR():
         fullTemp.append(temp)
         fullTime.append(time)
 
-        timeTemp = np.array([time,temp]).T                                          #transpose time, temp arrays
-
-
-
 
     timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]      #format data
     timeTo = np.array(timeTo).T
@@ -315,35 +301,26 @@ def analyzePCR():
     for i in range(len(fullTime)):                                                  #find file with longest runtime
         lens.append(len(fullTime[i]))
     longest = max(lens)
-    longestTime = fullTime[lens.index(longest)]
 
 
     sameLenTime = []
     sameLenTemp = []
-    # sameLenDeriv = []
 
     for i in range(len(fullTime)):                                                  #make everything the same length
         x = list(fullTime[i])
         y = list(fullTemp[i])
-        # z = list(fullDerivTemp[i])
         while len(x) < longest:
             
             x.append(None)
             y.append(None)
-            # z.append(None)
         sameLenTemp.append(y)
         sameLenTime.append(x)
-        # sameLenDeriv.append(z)
 
     timeTo2 = timeTo.tolist()
     timeTo2.insert(0,os.listdir(folder))                                             #insert file name to beginning of list
     timeTo2 = np.array(timeTo2,dtype=object)
 
 
-    
-
-        
-            
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
@@ -383,8 +360,6 @@ def analyzePCR():
         for i in tempsInterp[4:]:                                                           
             if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 95% nominal
                 pf.append('f')                                                                              
-            # elif tempc[count]<=i:
-            #     pf.append('p')
             else:
                 pf.append('p')                                                                              #if at least 95% pass
             count += 1
@@ -401,10 +376,6 @@ def analyzePCR():
 
 
 
-
-
-
-
     toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                   #run function to create excel file
     print('Analysis Complete')
 
@@ -415,7 +386,7 @@ def analyzePCR():
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
-root.title("Heat Spreader Analysis Tool")                                                             #name ui window
+root.title("Heat Spreader Characterization Analysis Tool")                                                             #name ui window
 
 run = Button(root,height=2,width=20,text='Analyze PCR',command=lambda:analyzePCR())                            #create button that runs the above code when pushed
 run2 = Button(root,height=2,width=20,text='Analyze TC',command=lambda:analyzeTC())                            #create button that runs the above code when pushed

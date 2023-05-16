@@ -12,10 +12,95 @@ import openpyxl as op
 from scipy.interpolate import interp1d
 from openpyxl.chart import LineChart, Reference
 
+
+##########################              SAVE DATA IN EXCEL              ########################
+def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):                          # add formatted data to excel spreadsheet and graph it
+
+    listIndx = np.arange(0,len(os.listdir(folder)))                                                 # list of numbers                   
+
+    fullDict = {}                                                                                   #create dictionary to hold all data
+    for fileIndx in range(len(os.listdir(folder))):                                                 #loop through files in data folder
+        x = [os.listdir(folder)[fileIndx]]
+    
+        while len(x) < longest:                                                                     #make sure all data have same shape
+            x.append(None)
+
+        fullDict[''.join(['file name ',str(listIndx[fileIndx])])] = x                                   #add file name to dict
+        fullDict[''.join(['normalized time (sec) ',str(listIndx[fileIndx])])] = sameLenTime[fileIndx]   #add time to dict
+        fullDict[''.join(['temp (c) ',str(listIndx[fileIndx])])] = sameLenTemp[fileIndx]                #add temp to dict
+
+
+    dFTot = pd.DataFrame(fullDict)                                              #create dataframe from dictionary
+    writer = pd.ExcelWriter(newFile,engine='xlsxwriter')                        #use xlsxwriter to write data to excel
+    dFTot.to_excel(writer,sheet_name='full')
+    wb = writer.book
+    ws = writer.sheets['full']
+    chart = wb.add_chart({'type':'line'})                                       #add line chart to "full" sheet
+
+    count = 2
+    for tempIndx in range(len(sameLenTemp)):                                           #add data from "full" sheet to create line chart
+        chart.add_series({
+            'categories':['full',1,count,len(sameLenTemp[0]),count],
+            'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
+            'name':['full',1,count-1]
+            })
+        count += 3
+    
+    chart.set_x_axis({'name':'Time (sec)'})                                 #label axes
+    chart.set_y_axis({'name':'Temp (c)'})
+    
+    ws.insert_chart('D2',chart)
+    writer.save()                                                           #save
+
+    wb = op.load_workbook(newFile)                                          #load
+    ws = wb.create_sheet('time to temp')
+    
+    tempc2 = tempc.tolist()
+    tempc2.insert(0,"file name")
+    tempc2.append('p/f')                                                        #add pass fail column
+    tempc2 = np.array(tempc2)
+
+
+    tempc3 = []                                                                 
+    tempc2 = tempc2.tolist()                                                    
+    for i in tempc2:                                            
+        try:    
+            tempc3.append(float(i))                                             
+        except:     
+            tempc3.append(i)                                                    #format list of temps         
+
+    ws.append(tempc3)                                                           #add time-to data to excel
+    timeTo3 = [ [] for _ in range(len(timeTo2.T))]
+    for timeIndx in (range(len(timeTo2.T))):
+        for u in timeTo2.T[timeIndx]:
+            try:
+                timeTo3[timeIndx].append(float(u))
+            except:
+                timeTo3[timeIndx].append(u)
+    for time in timeTo3:
+        ws.append(time)
+        
+    
+    values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)  #grab data to put on chart         
+    labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
+
+    chart = LineChart()
+
+    chart.add_data(values,titles_from_data=True,from_rows=True)                                 #add data to line chart
+    chart.set_categories(labels=labels)
+
+    
+    ws.add_chart(chart,'K5')
+
+    wb.save(newFile)            
+
+
+
+##########################              ANALYZE DATA FROM TC HEATSPREADER               ###################################
 def analyzeTC():
     newFile = 'TC_Results.xlsx'                         #name of excel file to save data
     folder = 'TC Data'                                 #name of folder where TC raw data is held
-    err = 0.2                                          #error criteria (temperatures cannot be lower that 20% below nominal for TC)
+    err = 0.2                                          #error criteria (temperatures must be at least 80% nominal)
     
     timeTo = []                                         #initialize lists to hold data 
     fullTemp = []
@@ -75,167 +160,63 @@ def analyzeTC():
     for timeIndx in range(len(fullTime)):                                                  #find file with longest runtime
         lens.append(len(fullTime[timeIndx]))
     longest = max(lens)
-    # longestTime = fullTime[lens.index(longest)]
 
 
     sameLenTime = []
     sameLenTemp = []
-    # sameLenDeriv = []
 
     for timeIndx in range(len(fullTime)):                                                  #make everything the same length
         x = list(fullTime[timeIndx])
         y = list(fullTemp[timeIndx])
-        # z = list(fullDerivTemp[i])
         while len(x) < longest:
             
             x.append(None)
             y.append(None)
-            # z.append(None)
         sameLenTemp.append(y)
         sameLenTime.append(x)
-        # sameLenDeriv.append(z)
 
     timeTo2 = timeTo.tolist()
     timeTo2.insert(0,os.listdir(folder))                                             #insert file name to beginning of list
     timeTo2 = np.array(timeTo2,dtype=object)
-
-
-    def toExcel():                                                                   # add formatted data to excel spreadsheet and graph it
-
-        it = np.arange(0,len(os.listdir(folder)))                                    
-
-        fullDict = {}                                                               #create dictionary to hold all data
-        for fileIndx in range(len(os.listdir(folder))):
-            x = [os.listdir(folder)[fileIndx]]
-        
-            while len(x) < longest:
-                x.append(None)
-
-            fullDict[''.join(['file name ',str(it[fileIndx])])] = x
-            fullDict[''.join(['normalized time (sec) ',str(it[fileIndx])])] = sameLenTime[fileIndx]
-            fullDict[''.join(['temp (c) ',str(it[fileIndx])])] = sameLenTemp[fileIndx]
-
-
-        dFTot = pd.DataFrame(fullDict)                                              #create dataframe from dictionary
-        writer = pd.ExcelWriter(newFile,engine='xlsxwriter')                        #use xlsxwriter to write data to excel
-        dFTot.to_excel(writer,sheet_name='full')
-        wb = writer.book
-        ws = writer.sheets['full']
-        chart = wb.add_chart({'type':'line'})                                       #add line chart to "full" sheet
-
-        count = 2
-        for i in range(len(sameLenTemp)):                                           #add data from "full" sheet to create line chart
-            chart.add_series({
-                'categories':['full',1,count,len(sameLenTemp[0]),count],
-                'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
-                'name':['full',1,count-1]
-                })
-            count += 3
-        
-    
-        chart.set_x_axis({'name':'Time (sec)'})
-        chart.set_y_axis({'name':'Temp (c)'})
-        
-
-        ws.insert_chart('D2',chart)
-        writer.save()
-
-
-
-
-
-        
-
-
-
-        wb = op.load_workbook(newFile)
-        ws = wb.create_sheet('time to temp')
-        
-        tempc2 = tempc.tolist()
-        tempc2.insert(0,"file name")
-        tempc2.append('p/f')                                                        #add pass fail column
-        tempc2 = np.array(tempc2)
-    
-
-        tempc3 = []                                                                 
-        tempc2 = tempc2.tolist()                                                    
-        for i in tempc2:                                            
-            try:    
-                tempc3.append(float(i))                                             
-            except:     
-                tempc3.append(i)
-
-        ws.append(tempc3)                                                           #add time to data to excel
-        timeTo3 = [ [] for _ in range(len(timeTo2.T))]
-        for i in (range(len(timeTo2.T))):
-            for u in timeTo2.T[i]:
-                try:
-                    timeTo3[i].append(float(u))
-                except:
-                    timeTo3[i].append(u)
-        for i in timeTo3:
-
-            ws.append(i)
-            
-        
-        values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)           
-        labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
-    
-        chart = LineChart()
-
-        chart.add_data(values,titles_from_data=True,from_rows=True)                                 #add data to line chart
-        chart.set_categories(labels=labels)
-    
-        
-        ws.add_chart(chart,'K5')
-    
-        wb.save(newFile)
-
-        
-            
+  
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
         timesInterpTot.append(interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
 
     nominal = timesInterpTot[0]
-    timesInterpNominal = []
 
-    for i in tempc:
+    timesInterpNominal = []
+    for TEMP in tempc:
         try:
-            timesInterpNominal.append(nominal(i))                                                           #list of times it takes to get to desired temps
+            timesInterpNominal.append(nominal(TEMP))                                                           #list of times it takes to get to desired temps
         except:
             timesInterpNominal.append(0)                                                                    #if temp isn't reached, add 0
                                                                                                             #nominal list used as a baseline to compare all others
 
     pfTot = []
-    for j in range(len(fullTemp)):
-        temps = interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
+    for tempIndx in range(len(fullTemp)):
+        temps = interp1d(fullTime[tempIndx],fullTemp[tempIndx])                                                   #interpolate temperature as function of time
         tempsInterp = []
         count = 0
-        for i in timesInterpNominal:    
+        for times in timesInterpNominal:    
             try:
-                tempsInterp.append(temps(i))                                                                #list temperature at teh time it takes nominal to reach desired temp
+                tempsInterp.append(temps(times))                                                                #list temperature at teh time it takes nominal to reach desired temp
             except:
                 try:
-                    tempsInterp.append(temps(timesInterpTot[j](tempc[count])))                              
+                    tempsInterp.append(temps(timesInterpTot[tempIndx](tempc[count])))                              
                 except:
                     tempsInterp.append(0)                                                                   #if temp isn't reached, add 0
             count += 1
 
 
-
-
         count = 4
         pf = []
-
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
-                pf.append('f')                                                                              #if outside of 5% fail
-            # elif tempc[count]<=i:
-            #     pf.append('p')
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 80% of nominal temp
+                pf.append('f')                                                                              #looks at 80,90, and 100c
             else:
-                pf.append('p')                                                                              #if inside of 5% pass
+                pf.append('p')                                                                              #if at least 80% pass
             count += 1
 
         if 'f' not in pf:                                                                                   #if any temp fails in each run, the whole thing fails
@@ -249,20 +230,20 @@ def analyzeTC():
     timeTo2 = np.array(timeTo2)
 
 
-
-
-
-
-
-    toExcel()                                                                                           #run function to create excel file
+    toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                                                                           #run function to create excel file
     print('Analysis Complete')
 
+
+
+
+
+##########################              ANALYZE DATA FROM PCR HEATSPREADER               ###################################
 def analyzePCR():
     newFile = 'PCR_Results.xlsx'                                                #name of excel file to upload data
     folder = 'PCR Data'                                                         #name of folder where raw data is held
 
 
-    err = 0.05                                                            #error criteria (temperatures cannot be lower that 5% below nominal)
+    err = 0.05                                                            #error criteria (temperatures must be at least 95% nominal)
     timeTo = []
     fullTemp = []
     fullTime = []
@@ -278,6 +259,7 @@ def analyzePCR():
 
         goodsTemp = []
         goodsTime = []
+
     ##########  parse .txt file ################
         for u in range(len(filex)):                                                 #loop through each line in the file
             if 'TC-' in filex[u]:                                                   #check if line contains desired data
@@ -311,10 +293,6 @@ def analyzePCR():
         fullTemp.append(temp)
         fullTime.append(time)
 
-        timeTemp = np.array([time,temp]).T                                          #transpose time, temp arrays
-
-
-
 
     timeTo = [timeTo[i:i+len(tempc)] for i in range(0,len(timeTo),len(tempc))]      #format data
     timeTo = np.array(timeTo).T
@@ -323,124 +301,26 @@ def analyzePCR():
     for i in range(len(fullTime)):                                                  #find file with longest runtime
         lens.append(len(fullTime[i]))
     longest = max(lens)
-    longestTime = fullTime[lens.index(longest)]
 
 
     sameLenTime = []
     sameLenTemp = []
-    # sameLenDeriv = []
 
     for i in range(len(fullTime)):                                                  #make everything the same length
         x = list(fullTime[i])
         y = list(fullTemp[i])
-        # z = list(fullDerivTemp[i])
         while len(x) < longest:
             
             x.append(None)
             y.append(None)
-            # z.append(None)
         sameLenTemp.append(y)
         sameLenTime.append(x)
-        # sameLenDeriv.append(z)
 
     timeTo2 = timeTo.tolist()
     timeTo2.insert(0,os.listdir(folder))                                             #insert file name to beginning of list
     timeTo2 = np.array(timeTo2,dtype=object)
 
 
-    def toExcel():                                                                   # add formatted data to excel spreadsheet and graph it
-
-        it = np.arange(0,len(os.listdir(folder)))                                    
-
-        fullDict = {}                                                               #create dictionary to hold all data
-        for i in range(len(os.listdir(folder))):
-            x = [os.listdir(folder)[i]]
-        
-            while len(x) < longest:
-                x.append(None)
-
-            fullDict[''.join(['file name ',str(it[i])])] = x
-            fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
-            fullDict[''.join(['temp (c) ',str(it[i])])] = sameLenTemp[i]
-
-
-        dFTot = pd.DataFrame(fullDict)                                              #create dataframe from dictionary
-        writer = pd.ExcelWriter(newFile,engine='xlsxwriter')                        #use xlsxwriter to write data to excel
-        dFTot.to_excel(writer,sheet_name='full')
-        wb = writer.book
-        ws = writer.sheets['full']
-        chart = wb.add_chart({'type':'line'})                                       #add line chart to "full" sheet
-
-        count = 2
-        for i in range(len(sameLenTemp)):                                           #add data from "full" sheet to create line chart
-            chart.add_series({
-                'categories':['full',1,count,len(sameLenTemp[0]),count],
-                'values':['full',1,count+1,len(sameLenTemp[0]),count+1],
-                'name':['full',1,count-1]
-                })
-            count += 3
-        
-    
-        chart.set_x_axis({'name':'Time (sec)'})
-        chart.set_y_axis({'name':'Temp (c)'})
-        
-
-        ws.insert_chart('D2',chart)
-        writer.save()
-
-
-
-
-
-        
-
-
-
-        wb = op.load_workbook(newFile)
-        ws = wb.create_sheet('time to temp')
-        
-        tempc2 = tempc.tolist()
-        tempc2.insert(0,"file name")
-        tempc2.append('p/f')                                                        #add pass fail column
-        tempc2 = np.array(tempc2)
-    
-
-        tempc3 = []                                                                 
-        tempc2 = tempc2.tolist()                                                    
-        for i in tempc2:                                            
-            try:    
-                tempc3.append(float(i))                                             
-            except:     
-                tempc3.append(i)
-
-        ws.append(tempc3)                                                           #add time to data to excel
-        timeTo3 = [ [] for _ in range(len(timeTo2.T))]
-        for i in (range(len(timeTo2.T))):
-            for u in timeTo2.T[i]:
-                try:
-                    timeTo3[i].append(float(u))
-                except:
-                    timeTo3[i].append(u)
-        for i in timeTo3:
-
-            ws.append(i)
-            
-        
-        values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)           
-        labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
-    
-        chart = LineChart()
-
-        chart.add_data(values,titles_from_data=True,from_rows=True)                                 #add data to line chart
-        chart.set_categories(labels=labels)
-    
-        
-        ws.add_chart(chart,'K5')
-    
-        wb.save(newFile)
-
-        
-            
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
@@ -478,12 +358,10 @@ def analyzePCR():
         pf = []
 
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
-                pf.append('f')                                                                              #if outside of 5% fail
-            # elif tempc[count]<=i:
-            #     pf.append('p')
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 95% nominal
+                pf.append('f')                                                                              
             else:
-                pf.append('p')                                                                              #if inside of 5% pass
+                pf.append('p')                                                                              #if at least 95% pass
             count += 1
 
         if 'f' not in pf:                                                                                   #if any temp fails in each run, the whole thing fails
@@ -498,16 +376,17 @@ def analyzePCR():
 
 
 
-
-
-
-
-    toExcel()                                                                                           #run function to create excel file
+    toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                   #run function to create excel file
     print('Analysis Complete')
+
+
+
+
+#############################               STANDALONE EXE                          #########################
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
-root.title("Heat Spreader Analysis Tool")                                                             #name ui window
+root.title("Heat Spreader Characterization Analysis Tool")                                                             #name ui window
 
 run = Button(root,height=2,width=20,text='Analyze PCR',command=lambda:analyzePCR())                            #create button that runs the above code when pushed
 run2 = Button(root,height=2,width=20,text='Analyze TC',command=lambda:analyzeTC())                            #create button that runs the above code when pushed
