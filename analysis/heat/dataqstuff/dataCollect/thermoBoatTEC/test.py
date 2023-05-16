@@ -12,6 +12,8 @@ import openpyxl as op
 from scipy.interpolate import interp1d
 from openpyxl.chart import LineChart, Reference
 
+
+##########################              SAVE DATA IN EXCEL              ########################
 def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):                          # add formatted data to excel spreadsheet and graph it
 
     listIndx = np.arange(0,len(os.listdir(folder)))                                                 # list of numbers                   
@@ -65,22 +67,21 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
         try:    
             tempc3.append(float(i))                                             
         except:     
-            tempc3.append(i)
+            tempc3.append(i)                                                    #format list of temps         
 
-    ws.append(tempc3)                                                           #add time to data to excel
+    ws.append(tempc3)                                                           #add time-to data to excel
     timeTo3 = [ [] for _ in range(len(timeTo2.T))]
-    for i in (range(len(timeTo2.T))):
-        for u in timeTo2.T[i]:
+    for timeIndx in (range(len(timeTo2.T))):
+        for u in timeTo2.T[timeIndx]:
             try:
-                timeTo3[i].append(float(u))
+                timeTo3[timeIndx].append(float(u))
             except:
-                timeTo3[i].append(u)
-    for i in timeTo3:
-
-        ws.append(i)
+                timeTo3[timeIndx].append(u)
+    for time in timeTo3:
+        ws.append(time)
         
     
-    values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)           
+    values = Reference(ws,min_col=1, min_row=2, max_col=len(tempc)+1, max_row=len(timeTo3)+1)  #grab data to put on chart         
     labels = Reference(ws,min_col=2, min_row=1, max_col=len(tempc)+1, max_row=1)
 
     chart = LineChart()
@@ -91,14 +92,15 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
     
     ws.add_chart(chart,'K5')
 
-    wb.save(newFile)
+    wb.save(newFile)            
 
 
 
+##########################              ANALYZE DATA FROM TC HEATSPREADER               ###################################
 def analyzeTC():
     newFile = 'TC_Results.xlsx'                         #name of excel file to save data
     folder = 'TC Data'                                 #name of folder where TC raw data is held
-    err = 0.2                                          #error criteria (temperatures cannot be lower that 20% below nominal for TC)
+    err = 0.2                                          #error criteria (temperatures must be at least 80% nominal)
     
     timeTo = []                                         #initialize lists to hold data 
     fullTemp = []
@@ -181,55 +183,47 @@ def analyzeTC():
     timeTo2 = timeTo.tolist()
     timeTo2.insert(0,os.listdir(folder))                                             #insert file name to beginning of list
     timeTo2 = np.array(timeTo2,dtype=object)
-
-
-    
-
-        
-            
+  
 
     timesInterpTot = []                                                                         
     for i in range(len(fullTemp)):
         timesInterpTot.append(interp1d(fullTemp[i],fullTime[i]))                                     #interpolate time as function of temperature
 
     nominal = timesInterpTot[0]
-    timesInterpNominal = []
 
-    for i in tempc:
+    timesInterpNominal = []
+    for TEMP in tempc:
         try:
-            timesInterpNominal.append(nominal(i))                                                           #list of times it takes to get to desired temps
+            timesInterpNominal.append(nominal(TEMP))                                                           #list of times it takes to get to desired temps
         except:
             timesInterpNominal.append(0)                                                                    #if temp isn't reached, add 0
                                                                                                             #nominal list used as a baseline to compare all others
 
     pfTot = []
-    for j in range(len(fullTemp)):
-        temps = interp1d(fullTime[j],fullTemp[j])                                                   #interpolate temperature as function of time
+    for tempIndx in range(len(fullTemp)):
+        temps = interp1d(fullTime[tempIndx],fullTemp[tempIndx])                                                   #interpolate temperature as function of time
         tempsInterp = []
         count = 0
-        for i in timesInterpNominal:    
+        for times in timesInterpNominal:    
             try:
-                tempsInterp.append(temps(i))                                                                #list temperature at teh time it takes nominal to reach desired temp
+                tempsInterp.append(temps(times))                                                                #list temperature at teh time it takes nominal to reach desired temp
             except:
                 try:
-                    tempsInterp.append(temps(timesInterpTot[j](tempc[count])))                              
+                    tempsInterp.append(temps(timesInterpTot[tempIndx](tempc[count])))                              
                 except:
                     tempsInterp.append(0)                                                                   #if temp isn't reached, add 0
             count += 1
 
 
-
-
         count = 4
         pf = []
-
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
-                pf.append('f')                                                                              #if outside of 5% fail
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 80% of nominal temp
+                pf.append('f')                                                                              #looks at 80,90, and 100c
             # elif tempc[count]<=i:
             #     pf.append('p')
             else:
-                pf.append('p')                                                                              #if inside of 5% pass
+                pf.append('p')                                                                              #if at least 80% pass
             count += 1
 
         if 'f' not in pf:                                                                                   #if any temp fails in each run, the whole thing fails
@@ -243,20 +237,24 @@ def analyzeTC():
     timeTo2 = np.array(timeTo2)
 
 
-
-
-
-
-
     toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                                                                           #run function to create excel file
     print('Analysis Complete')
 
+
+
+
+
+
+
+
+
+##########################              ANALYZE DATA FROM PCR HEATSPREADER               ###################################
 def analyzePCR():
     newFile = 'PCR_Results.xlsx'                                                #name of excel file to upload data
     folder = 'PCR Data'                                                         #name of folder where raw data is held
 
 
-    err = 0.05                                                            #error criteria (temperatures cannot be lower that 5% below nominal)
+    err = 0.05                                                            #error criteria (temperatures must be at least 95% nominal)
     timeTo = []
     fullTemp = []
     fullTime = []
@@ -383,12 +381,12 @@ def analyzePCR():
         pf = []
 
         for i in tempsInterp[4:]:                                                           
-            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is within 5% of nominal temp
-                pf.append('f')                                                                              #if outside of 5% fail
+            if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 95% nominal
+                pf.append('f')                                                                              
             # elif tempc[count]<=i:
             #     pf.append('p')
             else:
-                pf.append('p')                                                                              #if inside of 5% pass
+                pf.append('p')                                                                              #if at least 95% pass
             count += 1
 
         if 'f' not in pf:                                                                                   #if any temp fails in each run, the whole thing fails
@@ -407,8 +405,13 @@ def analyzePCR():
 
 
 
-    toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                                                                           #run function to create excel file
+    toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2)                                   #run function to create excel file
     print('Analysis Complete')
+
+
+
+
+#############################               STANDALONE EXE                          #########################
 root = Tk()                                                                                             #initialize user interface window
 root.geometry("400x400")                                                                                #set size of window
 
