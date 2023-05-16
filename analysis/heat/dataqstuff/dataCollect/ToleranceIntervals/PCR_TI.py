@@ -18,19 +18,19 @@ from statsmodels.formula.api import ols
 # totalInd.sort(reverse=True)
 # print(totalInd)
 ############                CHANGE THIS                                     ###################
-# folder = 'cupA/'
+# folder = 'RunA/'
 # instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 
-# folder = 'cupB/'
+# folder = 'RunB/'
 # instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'tape2/'
+folder = 'data/'
 instListShort = []
-for i in os.listdir(folder):
-    instListShort.append(i[-6:-4])
+for i in range(1,4):
+    instListShort.append(i)
 # instListShort = np.arange(0,len(os.listdir(folder)))
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -64,7 +64,7 @@ def denature(folder,instListShort):                                             
     total = []
     count = 0
     for file in os.listdir(folder):
-        peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
         
         peakSamp = []
         for peak in peakSampList:
@@ -265,6 +265,6 @@ def anneal(folder,instListShort):                                               
 # instlistshort = [1.02,1.09,1.18,2.02,2.09,2.18,3.021,3.022,3.09,3.18]
 # denature(folder,instListShort)
 anneal(folder,instListShort)
-# denature()
+denature(folder,instListShort)
 
 # 

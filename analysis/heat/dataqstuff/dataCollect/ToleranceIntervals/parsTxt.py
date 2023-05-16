@@ -88,36 +88,48 @@ def parsPCRTxt(file):                                                           
         
         countLines += 1
 
-
-    count = 0
-    for j in range(len(heat)):                                         #remove heating arrays with too few values
-        if len(heat[count]) <= 2:
-            heat.remove(heat[count])
-            timeH.remove(timeH[count])
-            count += 1
-    count = 0      
-    for j in range(len(cool)):                                          #remove cooling arrays with too few values
-        if len(cool[count]) <= 2:
-            cool.remove(cool[count])
-            timeC.remove(timeC[count])
-            count += 1
-
+    
+    heat2 = []
+    timeH2 = []
+    for j in range(len(heat)):
+        if len(heat[j]) > 2:
+            heat2.append(heat[j])
+            timeH2.append(timeH[j])
+         
+    # for i in heat2:
+    #     print(i)
+    cool2 = []
+    timeC2 = []
+    for j in range(len(cool)):
+        if len(cool[j]) > 2:
+            cool2.append(cool[j])
+            timeC2.append(timeC[j])
             
-    return (heat[:-1],timeH[:-1]),(cool[:-1],timeC[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    
+            
+    return (heat2[:-1],timeH2[:-1]),(cool2[:-1],timeC2[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 
 
-# y = parsPCRTxt('wet/20230419 WetFill Repeatability_18.txt')[0][0]
-# x = parsPCRTxt('wet/20230419 WetFill Repeatability_18.txt')[0][1]
+
+
+# y = parsPCRTxt('data/20230515 Tape Cup BETA08 PCR Run #1.txt')[1][0]
+# x = parsPCRTxt('data/20230515 Tape Cup BETA08 PCR Run #1.txt')[1][1]
+# # print(y)
 # z = []
 # for i in y:
 #     z.append(max(i))
+# # print(z)
+# # print(len(z))
+# # for i in y:
+# #     print(i)
 # import matplotlib.pyplot as plt
 # for i in range(len(x)):
-#     plt.plot(x[i],y[i],'o')
+#     plt.plot(x[i],y[i])
 # plt.grid()
 # plt.show()
+
 
 
 # yy = []
