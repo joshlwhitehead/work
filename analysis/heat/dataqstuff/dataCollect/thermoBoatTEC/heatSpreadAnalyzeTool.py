@@ -47,7 +47,7 @@ def analyzeTC():
                 if goodsTemp[TempIndx]-goodsTemp[TempIndx-1] >= 0.5 and goodsTemp[TempIndx] >=25:        #dont use data until ramp rate >.5 c/s and temp at least 25c 
                     time.append(goodsTime[TempIndx])
                     temp.append(goodsTemp[TempIndx])
-                elif goodsTemp[Temp] >=50:                                             #ramp rate not a criteria after 50c
+                elif goodsTemp[TempIndx] >=50:                                             #ramp rate not a criteria after 50c
                     time.append(goodsTime[TempIndx])
                     temp.append(goodsTemp[TempIndx])
 
@@ -105,15 +105,15 @@ def analyzeTC():
         it = np.arange(0,len(os.listdir(folder)))                                    
 
         fullDict = {}                                                               #create dictionary to hold all data
-        for i in range(len(os.listdir(folder))):
-            x = [os.listdir(folder)[i]]
+        for fileIndx in range(len(os.listdir(folder))):
+            x = [os.listdir(folder)[fileIndx]]
         
             while len(x) < longest:
                 x.append(None)
 
-            fullDict[''.join(['file name ',str(it[i])])] = x
-            fullDict[''.join(['normalized time (sec) ',str(it[i])])] = sameLenTime[i]
-            fullDict[''.join(['temp (c) ',str(it[i])])] = sameLenTemp[i]
+            fullDict[''.join(['file name ',str(it[fileIndx])])] = x
+            fullDict[''.join(['normalized time (sec) ',str(it[fileIndx])])] = sameLenTime[fileIndx]
+            fullDict[''.join(['temp (c) ',str(it[fileIndx])])] = sameLenTemp[fileIndx]
 
 
         dFTot = pd.DataFrame(fullDict)                                              #create dataframe from dictionary
