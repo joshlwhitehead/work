@@ -6,10 +6,10 @@ import dataToVar as dat
 
 tset = [50,80,100]
 ###################### normalize therm by set and fit that by sample #########################
-nin = dat.newCup90
-fif = dat.newCup50
-sev = dat.newCup70
-one = dat.newCup100
+nin = dat.h90
+fif = dat.h50
+sev = dat.h70
+one = dat.h100
 
 fifSamp = np.array(fif[0][100:])-np.min(fif[0])
 sevSamp = np.array(sev[0][100:])-np.min(sev[0])
