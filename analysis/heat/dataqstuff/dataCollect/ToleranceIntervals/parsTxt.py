@@ -42,7 +42,7 @@ def parsPCRTxt(file):                                                           
             heatCollect = True
             coolCollect = False
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >= 45:        #look for temps under these conditions for cooling
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >= 40:        #look for temps under these conditions for cooling
             annealTemp = float(u.split()[-1])
             heatCollect = False
             coolCollect = True
@@ -114,21 +114,22 @@ def parsPCRTxt(file):                                                           
 
 
 
-# y = parsPCRTxt('data/20230515 Tape Cup BETA08 PCR Run #1.txt')[1][0]
-# x = parsPCRTxt('data/20230515 Tape Cup BETA08 PCR Run #1.txt')[1][1]
-# # print(y)
-# z = []
+y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]
+x = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][1]
+# print(y)
+# print(y)
+z = []
+for i in y:
+    z.append(max(i))
+# print(z)
+# print(len(z))
 # for i in y:
-#     z.append(max(i))
-# # print(z)
-# # print(len(z))
-# # for i in y:
-# #     print(i)
-# import matplotlib.pyplot as plt
-# for i in range(len(x)):
-#     plt.plot(x[i],y[i],'o')
-# plt.grid()
-# plt.show()
+#     print(i)
+import matplotlib.pyplot as plt
+for i in range(len(x)):
+    plt.plot(x[i],y[i],'o')
+plt.grid()
+plt.show()
 
 
 
