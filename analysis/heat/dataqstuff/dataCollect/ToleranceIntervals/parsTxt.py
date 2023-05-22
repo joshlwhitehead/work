@@ -114,22 +114,22 @@ def parsPCRTxt(file):                                                           
 
 
 
-y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]
-x = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][1]
-# print(y)
-# print(y)
-z = []
-for i in y:
-    z.append(max(i))
-# print(z)
-# print(len(z))
+# y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]
+# x = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][1]
+# # print(y)
+# # print(y)
+# z = []
 # for i in y:
-#     print(i)
-import matplotlib.pyplot as plt
-for i in range(len(x)):
-    plt.plot(x[i],y[i],'o')
-plt.grid()
-plt.show()
+#     z.append(max(i))
+# # print(z)
+# # print(len(z))
+# # for i in y:
+# #     print(i)
+# import matplotlib.pyplot as plt
+# for i in range(len(x)):
+#     plt.plot(x[i],y[i],'o')
+# plt.grid()
+# plt.show()
 
 
 
@@ -183,7 +183,7 @@ def parsTCTxt(file):                                                            
 
 
     for u in file:
-        if 'Switching to steady' in u:                                                     #this criteria indicates start of data
+        if 'SWITCH to STEADY' in u:                                                     #this criteria indicates start of data
             start2 = True
         if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:             #this criteria indicates start of kill temp collection
             killTemp = float(u.split()[-1])
@@ -191,10 +191,11 @@ def parsTCTxt(file):                                                            
             actCollect = False
             start2 = False
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 55:        #this criteria indicates start of activation temp collect
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 35:        #this criteria indicates start of activation temp collect
             actTemp = float(u.split()[-1])
             killCollect = False
             actCollect = True
+            start2 = False
         elif 'Using Cooling Equations' in u:
             start = False
 
@@ -222,6 +223,9 @@ def parsTCTxt(file):                                                            
             
     return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
 
+# print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
+
+
 def TCramp(file):
     with open(file,'r') as readFile:                                                    #read file into a list
         file = readFile.readlines()
@@ -236,14 +240,16 @@ def TCramp(file):
     startHeat1 = False
     startHeat2 = False
     startCool = False
+    startCool2 = False
     countLines = 0
 
     for u in file:
         if 'goto' in u and float(u.split()[-1]) > 85:
             startHeat2 = True
-        elif 'goto' in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 55:
+        elif 'goto' in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 35:
             startHeat1 = True
-        elif 'goto' in u and float(u.split()[-1]) <55:
+        elif 'Using Cooling Equations' in u:#'goto' in u and float(u.split()[-1]) < 55:
+            startHeat1 = False
             startCool = True
         if 'Set Temp Reached' in u:
             startCool = False
@@ -276,9 +282,9 @@ def TCramp(file):
         countLines += 1
 
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
-# print(TCramp('dataTC/Adv02_P11_221215_Run2.txt')[0][0])
 
 
+print(TCramp('dataC/adv22_tc_tp002_230519_run05.txt')[2][0])
 
 
 

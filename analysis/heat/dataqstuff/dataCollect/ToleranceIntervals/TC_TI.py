@@ -8,10 +8,10 @@ import os
 from scipy import stats
 
 
-folder = 'dataTC/'
+folder = 'dataC/'
 #############               CHANGE THESE                    ######################
 instListShort = [6]
-replicate = 2
+replicate = 1
 
 
 ########                PROBABLY DONT CHANGE                ##################
@@ -51,7 +51,7 @@ def kill():
         else:
             print(instListVar[count],'TI:',bound,'PASS')
         count += 1
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    # plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
     plt.title('95% Tolerance Intervals (p=0.90)')
@@ -78,7 +78,7 @@ def kill():
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
 
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    # plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
