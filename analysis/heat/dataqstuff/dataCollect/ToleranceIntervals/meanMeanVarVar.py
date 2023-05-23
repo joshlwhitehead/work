@@ -15,9 +15,9 @@ instList2 = np.arange(0,len(os.listdir(folder2)))
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
-    means = anneal(folder,instlistshort)[0]
-    cis = np.array(anneal(folder,instlistshort)[1]).T
-    variances = anneal(folder,instlistshort)[2]
+    means = denature(folder,instlistshort)[0]
+    cis = np.array(denature(folder,instlistshort)[1]).T
+    variances = denature(folder,instlistshort)[2]
 
     ciL = cis[0]
     ciR = cis[1]
@@ -77,11 +77,11 @@ print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
 # plt.plot(np.ones(len(var))*53,var,'o',color='k')
-plt.plot(means2,var2,'o',color='k',label='9')
+plt.plot(means2,var2,'o',color='k',label='40c')
 plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=5)
 plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=5)
 plt.plot(meanMeans2,meanVar2,'o',color='r')
-plt.plot(means,var,'o',color='green',label='8')
+plt.plot(means,var,'o',color='green',label='5c')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
 plt.plot(meanMeans,meanVar,'o',color='r')

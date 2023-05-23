@@ -27,11 +27,11 @@ from statsmodels.formula.api import ols
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'dataC/'
+folder = 'data/'
 instListShort = []
-for i in range(1,2):
-    instListShort.append(i)
-# instListShort = np.arange(0,len(os.listdir(folder)))
+# for i in range(1,7):
+#     instListShort.append(i)
+instListShort = np.arange(0,len(os.listdir(folder)))
 
 replicate = 1                                                                                   #how many runs of each instrument
 
@@ -201,6 +201,7 @@ def anneal(folder,instListShort):                                               
             print(instListVar[count],'TI:',bound,'FAIL')
         else:
             print(instListVar[count],'TI:',bound,'PASS')
+      
         count += 1
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
@@ -264,7 +265,7 @@ def anneal(folder,instListShort):                                               
 # instlistshort = ['v1_102','v1_109','v1_118','v2_102','v2_109','v2_118']#,'v3_102_a','v3_102_b','v3_109','v3_118']
 # instlistshort = [1.02,1.09,1.18,2.02,2.09,2.18,3.021,3.022,3.09,3.18]
 # denature(folder,instListShort)
-# anneal(folder,instListShort)
+anneal(folder,instListShort)
 denature(folder,instListShort)
 
 # 

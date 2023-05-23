@@ -71,7 +71,16 @@ def parsPCRTxt(file):                                                           
                     timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
-                    timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    if file[countLines+1].split()[0] != 'CHUBE:':
+                        timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    else:
+                        try:
+                            timeH[countH].append(float(file[countLines-2].split()[0].strip('()'))/1000)
+                        except:
+                            try:
+                                timeH[countH].append(float(file[countLines+2].split()[0].strip('()'))/1000)
+                            except:
+                                timeH[countH].append(float(file[countLines-3].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:                                                                                          #start collecting cooling temps
@@ -81,9 +90,17 @@ def parsPCRTxt(file):                                                           
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
-                    print(u,countLines)
-                    timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
-                    # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    if file[countLines+1].split()[0] != 'CHUBE:':
+                        # print(u,countLines)
+                        timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    else:
+                        try:
+                            timeC[countC].append(float(file[countLines-2].split()[0].strip('()'))/1000)
+                        except:
+                            try:
+                                timeC[countC].append(float(file[countLines+2].split()[0].strip('()'))/1000)
+                            except:
+                                timeC[countC].append(float(file[countLines-3].split()[0].strip('()'))/1000)
         
         
         countLines += 1
@@ -284,7 +301,7 @@ def TCramp(file):
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
 
 
-print(TCramp('dataC/adv22_tc_tp002_230519_run05.txt')[2][0])
+# print(TCramp('dataC/adv22_tc_tp002_230519_run05.txt')[2][0])
 
 
 
