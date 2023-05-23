@@ -28,10 +28,10 @@ from statsmodels.formula.api import ols
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
 folder = 'data/'
-instListShort = []
+instListShort = ['40c_1','40c_2','40c_3','5c_1','5c_2','5c_3','RoomTemp']
 # for i in range(1,7):
 #     instListShort.append(i)
-instListShort = np.arange(0,len(os.listdir(folder)))
+# instListShort = np.arange(0,len(os.listdir(folder)))
 
 replicate = 1                                                                                   #how many runs of each instrument
 
@@ -48,16 +48,20 @@ p = 0.9                                                                         
 
 ########                DONT CHANGE             ##################
 def denature(folder,instListShort):                                                                                     #create function to analyze denature temp
+    # instListShort = inputtxt.get("1.0","end-1c").split()                                    #which instruments is the data from
+    # replicate = int(inputtxt2.get("1.0","end-1c"))                                          #how many runs from each instrument
+    instList = instListShort*replicate                                                      #list that has each instrument repeated as many times
+                                                                                            #as replicates
+    
+    instListVar = []
     instList = instListShort*replicate                                                              #list of total runs
     if replicate > 1:
         instList.sort()                                                                                 #sort instrument list to match with order in directory
 
-    instListVar = []
-    for inst in instListShort:                                                                         
-        for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
-
-               
+    instListVar = instListShort
+    # for inst in instListShort:                                                                         
+    #     for rep in range(replicate):
+    #         instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates 
     temp = []    
     means = []
     tis = []

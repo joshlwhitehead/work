@@ -29,6 +29,10 @@ def parsPCRTxt(file):                                                           
     countC = 0
     countHTherm = 0
     countCTherm = 0
+    heatSink = []
+    timeHeatSink = []
+    
+
 
     for u in file:
         # if 'FINISH -> IDLE' in u:
@@ -107,9 +111,13 @@ def parsPCRTxt(file):                                                           
                 if heatCollect:
                     heatTherm[countHTherm].append(float(u.split()[4].strip(',')))
                     timeHeatTherm[countHTherm].append(float(u.split()[0].strip('()'))/1000)
+                    heatSink.append(float(u.split()[13].strip(',')))
+                    timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
                 elif coolCollect:
                     coolTherm[countCTherm].append(float(u.split()[4].strip(',')))
                     timeCoolTherm[countCTherm].append(float(u.split()[0].strip('()'))/1000)
+                    heatSink.append(float(u.split()[13].strip(',')))
+                    timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
             
         countLines += 1
 
@@ -141,24 +149,29 @@ def parsPCRTxt(file):                                                           
    
 
             
-    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[1:-1],timeHeatTherm2[1:-1]),(coolTherm2[1:-1],timeCoolTherm2[1:-1])             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[1:-1],timeHeatTherm2[1:-1]),(coolTherm2[1:-1],timeCoolTherm2[1:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 
 
-
-x = parsPCRTxt('data/PThermo_AdvBuild13_w86_230306_run1.txt')[5]
-y = parsPCRTxt('data/PThermo_AdvBuild13_w86_230306_run1.txt')[1]
+import numpy as np
+y = np.array(parsPCRTxt('data/PThermo_AdvBuild13_w86_230306_run1.txt')[6])
 
 
 
 
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 
-for i in range(len(x[1])):
-    plt.plot(x[1][i],x[0][i],'o')
+x = y[1]
 
-for i in range(len(y[0])):
-    plt.plot(y[1][i],y[0][i],'o')
+def test(x,a,b,c):
+    return a*np.log(x+b)+c
+
+popt, pcov = curve_fit(test, x,y[0])
+
+a,b,c,d,e,f = np.polyfit(y[1],y[0],5)
+plt.plot(y[1],y[0],'o')
+plt.plot(x,test(x,*popt))
 plt.show()
 

@@ -23,6 +23,14 @@ def parsPCRTxt(file):                                                           
     countLines = 0
     countH = 0
     countC = 0
+    heatTherm = [[]]
+    timeHeatTherm = [[]]
+    coolTherm = [[]]
+    timeCoolTherm = [[]]
+    countHTherm = 0
+    countCTherm = 0
+    heatSink = []
+    timeHeatSink = []
 
     for u in file:
         # if 'FINISH -> IDLE' in u:
@@ -102,7 +110,30 @@ def parsPCRTxt(file):                                                           
                             except:
                                 timeC[countC].append(float(file[countLines-3].split()[0].strip('()'))/1000)
         
-        
+        if start:
+            try:
+                if 'goto' in u and float(u.split()[-1]) > 85 and len(heatTherm[countHTherm]) != 0:
+                    heatTherm.append([])
+                    timeHeatTherm.append([])
+                    countHTherm += 1
+                elif 'goto' in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >45 and len(coolTherm[countCTherm]) != 0:
+                    coolTherm.append([])
+                    timeCoolTherm.append([])
+                    countCTherm += 1
+            except:
+                pass
+            if 'modeled' in u:
+                if heatCollect:
+                    heatTherm[countHTherm].append(float(u.split()[4].strip(',')))
+                    timeHeatTherm[countHTherm].append(float(u.split()[0].strip('()'))/1000)
+                    heatSink.append(float(u.split()[13].strip(',')))
+                    timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
+                elif coolCollect:
+                    coolTherm[countCTherm].append(float(u.split()[4].strip(',')))
+                    timeCoolTherm[countCTherm].append(float(u.split()[0].strip('()'))/1000)
+                    heatSink.append(float(u.split()[13].strip(',')))
+                    timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
+
         countLines += 1
 
     
@@ -121,10 +152,22 @@ def parsPCRTxt(file):                                                           
         if len(cool[j]) > 2:
             cool2.append(cool[j])
             timeC2.append(timeC[j])
+    heatTherm2 = []
+    timeHeatTherm2 = []
+    for j in range(len(heatTherm)):
+        if len(heatTherm[j]) > 2:
+            heatTherm2.append(heatTherm[j])
+            timeHeatTherm2.append(timeHeatTherm[j])
+    coolTherm2 = []
+    timeCoolTherm2 = []
+    for j in range(len(coolTherm)):
+        if len(coolTherm[j]) > 2:
+            coolTherm2.append(coolTherm[j])
+            timeCoolTherm2.append(timeCoolTherm[j])
             
     
             
-    return (heat2[:-1],timeH2[:-1]),(cool2[:-1],timeC2[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat2[:-1],timeH2[:-1]),(cool2[:-1],timeC2[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[:-1],timeHeatTherm2[:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 

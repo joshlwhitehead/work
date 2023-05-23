@@ -15,9 +15,9 @@ instList2 = np.arange(0,len(os.listdir(folder2)))
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
-    means = denature(folder,instlistshort)[0]
-    cis = np.array(denature(folder,instlistshort)[1]).T
-    variances = denature(folder,instlistshort)[2]
+    means = anneal(folder,instlistshort)[0]
+    cis = np.array(anneal(folder,instlistshort)[1]).T
+    variances = anneal(folder,instlistshort)[2]
 
     ciL = cis[0]
     ciR = cis[1]
