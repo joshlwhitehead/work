@@ -13,6 +13,8 @@ instlist = np.arange(0,len(os.listdir(folder)))
 folder2 = 'dataB/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
+folder3 = 'dataC/'
+
 alpha = 0.1
 def fullCI(folder,instlistshort):
     means = anneal(folder,instlistshort)[0]
@@ -49,7 +51,9 @@ def fullCI(folder,instlistshort):
 
     return mean,ciLCI[0],ciRCI[1],means,cis,variances
 
-
+meanAnneal3 = anneal(folder3,[1])[0]
+varAnneal3 = anneal(folder3,[1])[2]
+print(meanAnneal3)
 means2 = fullCI(folder2,instList2)[3]
 var2 = fullCI(folder2,instList2)[5]
 
@@ -73,6 +77,7 @@ meanVar = np.mean(var)
 ciMean = TI(means,.1,.90)
 ciVar = TI(var,.1,.90)
 
+
 print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
@@ -85,6 +90,7 @@ plt.plot(means,var,'o',color='green',label='5c')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
 plt.plot(meanMeans,meanVar,'o',color='r')
+plt.plot(meanAnneal3,varAnneal3,'o',color='purple',label='roomTemp')
 plt.title('Tolerance Area for Complex Populations')
 plt.xlabel('Possible Mean Temp (c)')
 plt.ylabel('Possible Variance')
