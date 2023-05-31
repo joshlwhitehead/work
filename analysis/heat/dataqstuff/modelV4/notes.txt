@@ -6,3 +6,12 @@ system is defined from thermistor to top of sample (plus air above sample)
 QUESTIONS
 can I use lumped cap with two sections?
 probably model sample as lumped cap but maybe slug with heat EQ?
+
+
+TRY
+energy balance
+    matrix of all possible values
+    general assumptions
+ignore spatial effects
+    solve heat EQ
+lumped cap derivation
