@@ -1,0 +1,8 @@
+two sections: transient, ss
+lumped cap cannot be used for whole system, but maybe used for PCR chamber
+system is defined from thermistor to top of sample (plus air above sample)
+
+
+QUESTIONS
+can I use lumped cap with two sections?
+probably model sample as lumped cap but maybe slug with heat EQ?
