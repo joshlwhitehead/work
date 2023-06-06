@@ -149,3 +149,4 @@ ax.plot_wireframe(time,dist,z,label='data')
 # ax.plot_wireframe(time,dist,d3fun([time,dist],*pop3),color='orange',label='fit')
 ax.legend()
 plt.show()
+
