@@ -88,12 +88,14 @@ def parsPCRTxt(file):                                                           
                             try:
                                 timeH[countH].append(float(file[countLines+2].split()[0].strip('()'))/1000)
                             except:
+                                print(timeH[-1])
                                 timeH[countH].append(float(file[countLines-3].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:                                                                                          #start collecting cooling temps
                 cool[countC].append(float(u.split()[4].strip(',')))
                 # totalTemp.append(float(u.split()[4].strip(',')))
+
                 try:
                     timeC[countC].append(float(file[countLines-1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
@@ -106,8 +108,10 @@ def parsPCRTxt(file):                                                           
                             timeC[countC].append(float(file[countLines-2].split()[0].strip('()'))/1000)
                         except:
                             try:
+                                
                                 timeC[countC].append(float(file[countLines+2].split()[0].strip('()'))/1000)
                             except:
+                                
                                 timeC[countC].append(float(file[countLines-3].split()[0].strip('()'))/1000)
         
         if start:
@@ -166,12 +170,21 @@ def parsPCRTxt(file):                                                           
             timeCoolTherm2.append(timeCoolTherm[j])
             
     
-            
+    
     return (heat2[:-1],timeH2[:-1]),(cool2[:-1],timeC2[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[:-1],timeHeatTherm2[:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 
+x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[0]
+x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[1]
 
+# print(x)
+import matplotlib.pyplot as plt
+for i in range(len(x[0])):
+    plt.plot(x[1][i],x[0][i])
+    print(max(x[0][i]))
+plt.grid()
+plt.show()
 
 
 # y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]

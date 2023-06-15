@@ -28,7 +28,7 @@ from statsmodels.formula.api import ols
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
 folder = 'data/'
-instListShort = ['40c_1','40c_2','40c_3','5c_1','5c_2','5c_3','RoomTemp']
+instListShort = [1]
 # for i in range(1,7):
 #     instListShort.append(i)
 # instListShort = np.arange(0,len(os.listdir(folder)))
@@ -269,7 +269,7 @@ def anneal(folder,instListShort):                                               
 # instlistshort = ['v1_102','v1_109','v1_118','v2_102','v2_109','v2_118']#,'v3_102_a','v3_102_b','v3_109','v3_118']
 # instlistshort = [1.02,1.09,1.18,2.02,2.09,2.18,3.021,3.022,3.09,3.18]
 # denature(folder,instListShort)
-anneal(folder,instListShort)
+# anneal(folder,instListShort)
 denature(folder,instListShort)
 
 # 
