@@ -1,1 +1,0 @@
-print('\n\nhello\n\n\n\n\ngoodbye\n\n')
