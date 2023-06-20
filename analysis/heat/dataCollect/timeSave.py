@@ -1,4 +1,3 @@
-from re import I
 import dataToVar as dat
 from scipy.interpolate import interp1d as interp
 from thermalCompareQuant import listAvg
