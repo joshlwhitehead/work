@@ -1,14 +1,17 @@
-import dataToVar as dat
+"""Analyze different heat spreaders using ANOVA and tukeyhsd"""
+
+
+# import obsoleteDataProcessing.dataToVar as dat            # dataToVar is no longer used to format data.
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
-from thermalCompareQuant import listAvg,listStd
+from obsoleteDataProcessing.thermalCompareQuant import listAvg,listStd
 import pandas as pd
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-s1 = dat.backSmallA
+s1 = dat.backSmallA         #dataToVar no longer used. use alternate approach to parse/format data
 s2 = dat.backSmallB
 l1 = dat.backLargeA
 l2 = dat.backLargeB

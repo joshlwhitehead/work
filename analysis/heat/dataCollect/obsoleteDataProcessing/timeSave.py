@@ -1,6 +1,8 @@
-import dataToVar as dat
+"""Calculate difference in time it takes to finish for different configs
+DO NOT USE! Uses an old way to process/format data."""
+import obsoleteDataProcessing.dataToVar as dat
 from scipy.interpolate import interp1d as interp
-from thermalCompareQuant import listAvg
+from obsoleteDataProcessing.thermalCompareQuant import listAvg
 import numpy as np
 import matplotlib.pyplot as plt
 

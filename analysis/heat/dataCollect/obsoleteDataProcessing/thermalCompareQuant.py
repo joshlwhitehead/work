@@ -1,8 +1,10 @@
+"""These functions are used to condense multiple populations (curves) into an average population with corresponding statistics like std and rms.
+The inputs should be array-like and nested with individual arrays for each curve"""
 import numpy as np
 from scipy import interpolate as interp
 
 
-
+"""interpolate x,y"""
 def interppp(dataInd,dataDep):
     dataInterpAll = []
     timeLen = []
@@ -22,6 +24,7 @@ def interppp(dataInd,dataDep):
     # print(dataInterpAll)
     return dataInterpAll
 
+"""Find average curve given multiple curves"""
 def listAvg(dataInd,dataDep):                              #all data should be same size
     avgData = []
    
@@ -31,7 +34,7 @@ def listAvg(dataInd,dataDep):                              #all data should be s
     return np.array(avgData)
 
 
-
+"""find std for the average curve for multiple curves"""
 def listStd(dataInd,dataDep):                    
     stdev = []
     
@@ -39,6 +42,9 @@ def listStd(dataInd,dataDep):
         stdev.append(np.std(i))
     return np.array(stdev)
 
+
+
+"""root mean square"""
 def listRms(dataInd,dataDep):
     interpData = np.array(interppp(dataInd,dataDep)).transpose()
 
@@ -46,6 +52,9 @@ def listRms(dataInd,dataDep):
     # print(interpData)
     return rmsData
 
+
+
+"""gradient"""
 def listGrad(dataInd,dataDep1,dataDep2):
     interp1 = np.array(interppp(dataInd,dataDep1))
     interp2 = np.array(interppp(dataInd,dataDep2))

@@ -1,5 +1,7 @@
+"""analyze thermal data. calculate confidence/tolerance interval
+DO NOT USE! script uses inefficient way to process/format data"""
 import numpy as np
-import dataToVar as dat
+import obsoleteDataProcessing.dataToVar as dat
 import matplotlib.pyplot as plt
 import pandas as pd
 # from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp

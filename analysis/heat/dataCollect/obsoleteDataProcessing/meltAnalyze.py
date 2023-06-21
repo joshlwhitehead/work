@@ -1,7 +1,8 @@
-"""analyze """
+"""attempt to analyze pcr melts. dataToVar no longer used.
+DO NOT USE! this script uses data based on a semi-arbitrary window rather than using raw data to find when melt starts/stops"""
 
 import numpy as np
-import dataToVar as dat
+import obsoleteDataProcessing.dataToVar as dat
 import matplotlib.pyplot as plt
 import pandas as pd
 # from thermalCompareQuant import listAvg, listStd, listRms, listGrad, interppp

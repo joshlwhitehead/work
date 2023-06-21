@@ -1,6 +1,8 @@
+"""attempt to plot combinations of recessed/non recessed decks with various insert heights
+plots are recorded in oneNote so this script is no longer needed"""
 import matplotlib.pyplot as plt
-import dataToVar as dat
-from thermalCompareQuant import listStd,listAvg
+import obsoleteDataProcessing.dataToVar as dat
+from obsoleteDataProcessing.thermalCompareQuant import listStd,listAvg
 
 
 plt.figure()

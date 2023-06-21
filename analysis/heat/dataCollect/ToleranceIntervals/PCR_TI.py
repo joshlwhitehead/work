@@ -28,7 +28,7 @@ from statsmodels.formula.api import ols
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
 folder = 'data/'
-instListShort = [1]
+instListShort = [1,2,3]
 # for i in range(1,7):
 #     instListShort.append(i)
 # instListShort = np.arange(0,len(os.listdir(folder)))

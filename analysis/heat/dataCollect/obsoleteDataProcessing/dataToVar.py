@@ -1,7 +1,7 @@
 """This is a space to organize data. getData function parses out csv produced by dave"""
 
 
-import getData as gd
+from obsoleteDataProcessing import getData as gd
 import os
 """
 # lid0Cons0_90 = gd.getData('lid0Cons0_90b.csv','31Mar2022')
@@ -430,7 +430,7 @@ date = '13Sep2022'
 
 
 
-# date = '10Nov2022'
+date = '10Nov2022'
 
 # smallA = gd.getData('Adv02_P26_DualNormal_221109_Run1.csv',date)
 # smallB = gd.getData('Adv02_P26_DualNormal_221109_Run2.csv',date)
@@ -440,12 +440,12 @@ date = '13Sep2022'
 # obroundB = gd.getData('Adv11_P26_DualNormal_221108_Run3.csv',date)
 
 
-# backSmallA = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run1.csv',date)
-# backSmallB = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run2.csv',date)
-# backLargeA = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run1.csv',date)
-# backLargeB = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run2.csv',date)
-# backObroundA = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run1.csv',date)
-# backObroundB = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run2.csv',date)
+backSmallA = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run1.csv',date)
+backSmallB = gd.getData('backwards/Adv02_P_Dual_OldModel_221110_Run2.csv',date)
+backLargeA = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run1.csv',date)
+backLargeB = gd.getData('backwards/Adv11_P_Dual_NewModel_221110_Run2.csv',date)
+backObroundA = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run1.csv',date)
+backObroundB = gd.getData('backwards/Adv08_P_Dual_NewModel_221110_Run2.csv',date)
 
 
 """csv generated using dave"""

@@ -1,8 +1,11 @@
+"""attempt to analyze gradient in treatment chamber with different insert orientations.
+have since found better way to process and analyze data"""
+
 import numpy as np
-import dataToVar as dat
+import obsoleteDataProcessing.dataToVar as dat
 import matplotlib.pyplot as plt
 import pandas as pd
-from thermalCompareQuant import listAvg, listStd, listRms, listGrad
+from obsoleteDataProcessing.thermalCompareQuant import listAvg, listStd, listRms, listGrad
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd

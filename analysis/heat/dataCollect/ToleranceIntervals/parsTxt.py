@@ -74,6 +74,7 @@ def parsPCRTxt(file):                                                           
             
             if heatCollect:                                                                                             #start collecting heating temps
                 heat[countH].append(float(u.split()[4].strip(',')))
+                # print(heat)
                 # totalTemp.append(float(u.split()[4].strip(',')))
                 try:
                     timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
@@ -139,7 +140,7 @@ def parsPCRTxt(file):                                                           
                     timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
 
         countLines += 1
-
+    print(heat)
     
     heat2 = []
     timeH2 = []
@@ -175,16 +176,16 @@ def parsPCRTxt(file):                                                           
 
 
 
-x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[0]
-x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[1]
-
+x = parsPCRTxt('data/Beta05-DV91-20230615-Run1.txt')
+# # x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[1]
 # print(x)
-import matplotlib.pyplot as plt
-for i in range(len(x[0])):
-    plt.plot(x[1][i],x[0][i])
-    print(max(x[0][i]))
-plt.grid()
-plt.show()
+# # print(x)
+# import matplotlib.pyplot as plt
+# for i in range(len(x[0])):
+#     plt.plot(x[1][i],x[0][i])
+#     print(max(x[0][i]))
+# plt.grid()
+# plt.show()
 
 
 # y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]

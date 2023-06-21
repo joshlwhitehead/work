@@ -1,6 +1,10 @@
+"""NON FUNCTIONAL!
+script to analyze ramp rates for PCR
+this method looks for certain coordinates rather than detecting when the ramping starts/ends"""
+
 import numpy as np
 import matplotlib.pyplot as plt
-import dataToVar as dat
+# import obsoleteDataProcessing.dataToVar as dat
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
@@ -8,7 +12,7 @@ from scipy import stats
 import pandas as pd
 import os
 folder = 'data/18Jan2023'
-total = dat.proposeModb
+total = dat.proposeModb         #dataToVar no longer in use. use alternate approach to parse/format data
 # for i in total:
 #     plt.plot(i[0],i[2])
 # plt.grid()

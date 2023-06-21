@@ -1,4 +1,5 @@
-"""analyze """
+"""analyze thermal data. calculate confidence/tolerance interval
+DO NOT USE! script uses inefficient way to process/format data"""
 from parsTxt import parsPCRTxt
 import numpy as np
 import matplotlib.pyplot as plt
