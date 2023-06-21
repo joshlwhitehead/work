@@ -57,7 +57,7 @@ def denature(folder,instListShort):                                             
             # print(max(peak))
             peakSamp.append(max(peak))                                                              #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
-        mean = np.mean(peakSamp)                                                                    #mean denature temp
+        mean = np.mean(peakSamp[1:-1])                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
@@ -176,7 +176,7 @@ def anneal(folder,instListShort):                                               
             peakSamp.append(min(peak))  
                                                                    #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
-        mean = np.mean(peakSamp)                                                                    #mean denature temp
+        mean = np.mean(peakSamp[1:-1])                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
         variances.append(np.var(peakSamp))

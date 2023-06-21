@@ -1,3 +1,4 @@
+"""fit curve to heat sink data and plot"""
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit

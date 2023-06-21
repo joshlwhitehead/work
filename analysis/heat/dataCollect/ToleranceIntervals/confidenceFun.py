@@ -1,3 +1,4 @@
+"""general functions for confidence/tolerance interval"""
 import numpy as np
 from scipy.stats import t
 import toleranceinterval as ti

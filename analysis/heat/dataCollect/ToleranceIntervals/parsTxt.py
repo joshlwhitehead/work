@@ -80,7 +80,9 @@ def parsPCRTxt(file):                                                           
                     timeH[countH].append(float(file[countLines-1].split()[0].strip('()'))/1000)
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
+                    
                     if file[countLines+1].split()[0] != 'CHUBE:':
+                        # print(countLines)
                         timeH[countH].append(float(file[countLines+1].split()[0].strip('()'))/1000)
                     else:
                         try:
@@ -102,7 +104,7 @@ def parsPCRTxt(file):                                                           
                     # totalTime.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     if file[countLines+1].split()[0] != 'CHUBE:':
-                        # print(u,countLines)
+                        # print(countLines)
                         timeC[countC].append(float(file[countLines+1].split()[0].strip('()'))/1000)
                     else:
                         try:
@@ -140,7 +142,7 @@ def parsPCRTxt(file):                                                           
                     timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
 
         countLines += 1
-    print(heat)
+    # print(heat)
     
     heat2 = []
     timeH2 = []
@@ -172,7 +174,7 @@ def parsPCRTxt(file):                                                           
             
     
     
-    return (heat2[:-1],timeH2[:-1]),(cool2[:-1],timeC2[:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[:-1],timeHeatTherm2[:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[:-1],timeHeatTherm2[:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 

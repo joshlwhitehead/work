@@ -27,10 +27,11 @@ from statsmodels.formula.api import ols
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'data/'
-instListShort = [1,2,3]
-# for i in range(1,7):
-#     instListShort.append(i)
+folder = 'beta_verif/'
+instListShort = []
+for i in os.listdir(folder):
+    instListShort.append(i[3:-4])
+print(instListShort)
 # instListShort = np.arange(0,len(os.listdir(folder)))
 
 replicate = 1                                                                                   #how many runs of each instrument
@@ -95,7 +96,7 @@ def denature(folder,instListShort):                                             
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.yticks(np.arange(0,len(temp)),instListVar)
-    # plt.xlim(88.3,97)
+    # plt.xlim(88.3,97)|
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
