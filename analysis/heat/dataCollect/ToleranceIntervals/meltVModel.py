@@ -19,8 +19,8 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-folder = 'padVpaste/'
-folder2 = 'tape/'
+folder = 'beta/'
+folder2 = 'verif/'
 def rVal(folder):
     rr = []
     for i in os.listdir(folder):
@@ -71,10 +71,10 @@ full = []
 fullName = []
 for i in rVal(folder2):
     full.append(i)
-    fullName.append('tape')
+    fullName.append('verification')
 for i in rVal(folder):
     full.append(i)
-    fullName.append('wet')
+    fullName.append('beta')
 
 
 dF = pd.DataFrame({'type':fullName,'r2':full})
@@ -96,7 +96,7 @@ print(m_comp)
 plt.hlines(1,CI(rVal(folder),.05)[0],CI(rVal(folder),.05)[1],lw=5)
 plt.hlines(2,CI(rVal(folder2),.05)[0],CI(rVal(folder2),.05)[1],lw=5)
 plt.plot([np.mean(rVal(folder)),np.mean(rVal(folder2))],[1,2],'o',color='r')
-plt.yticks([1,2],['Wet Fill','Tape'])
+plt.yticks([1,2],['beta','verification'])
 plt.grid()
 plt.xlabel(''.join([r'$r^2$',' Value of the Melt']))
 plt.ylabel('Tool Used to Acquire Data')

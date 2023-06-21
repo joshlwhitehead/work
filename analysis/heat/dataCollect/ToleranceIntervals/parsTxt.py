@@ -422,7 +422,13 @@ def meltRamp(file):
                 try:
                     timeM.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
-                    timeM.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    try:
+                        timeM.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    except:
+                        try:
+                            timeM.append(float(file[countLines+2].split()[0].strip('()'))/1000)
+                        except:
+                            timeM.append(timeM[-1])
 
             # elif coolCollect:                                                                                          #start collecting cooling temps
             #     cool[countC].append(float(u.split()[4].strip(',')))
