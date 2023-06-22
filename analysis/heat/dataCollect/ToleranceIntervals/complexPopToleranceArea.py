@@ -7,6 +7,8 @@ from PCR_TI_USE import anneal,denature
 from confidenceFun import CI,TI
 import os
 
+temp = 0
+
 
 folder = 'beta/'
 
@@ -15,13 +17,18 @@ instlist = np.arange(0,len(os.listdir(folder)))
 folder2 = 'verif/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
-folder3 = 'dataC/'
+folder3 = 'data/'
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
-    means = denature(folder,instlistshort)[0]
-    cis = np.array(denature(folder,instlistshort)[1]).T
-    variances = denature(folder,instlistshort)[3]
+    if temp == 0:
+        means = denature(folder,instlistshort)[0]
+        cis = np.array(denature(folder,instlistshort)[1]).T
+        variances = denature(folder,instlistshort)[3]
+    else:
+        means = anneal(folder,instlistshort)[0]
+        cis = np.array(anneal(folder,instlistshort)[1]).T
+        variances = anneal(folder,instlistshort)[3]
 
     ciL = cis[0]
     ciR = cis[1]
