@@ -7,7 +7,7 @@ from PCR_TI_USE import anneal,denature
 from confidenceFun import CI,TI
 import os
 
-temp = 0
+temp = 1
 
 
 folder = 'beta/'
@@ -17,7 +17,7 @@ instlist = np.arange(0,len(os.listdir(folder)))
 folder2 = 'verif/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
-folder3 = 'data/'
+# folder3 = 'data/'
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
@@ -60,8 +60,8 @@ def fullCI(folder,instlistshort):
 
     return mean,ciLCI[0],ciRCI[1],means,cis,variances
 
-meanAnneal3 = anneal(folder3,[1])[0]
-varAnneal3 = anneal(folder3,[1])[2]
+# meanAnneal3 = anneal(folder3,[1])[0]
+# varAnneal3 = anneal(folder3,[1])[2]
 # print(meanAnneal3)
 means2 = fullCI(folder2,instList2)[3]
 var2 = fullCI(folder2,instList2)[5]
@@ -99,7 +99,8 @@ s2 = np.mean(distFromMean2)
 
 meanDiff = np.sqrt((meanMeans-meanMeans2)**2+(meanVar-meanVar2)**2)
 
-print((s1**2+s2**2)/meanDiff**2)
+SE = np.sqrt(s1**2/len(means)+s2**2/len(means2))
+print(''.join([str(meanDiff),'+/-',str(6*SE)]))
 
 print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 
-instListShort = [2,6]                                                                         #list of instruments. must be in order that they appear in folder
+instListShort = [1,2,3,4]                                                                         #list of instruments. must be in order that they appear in folder
 replicate = 1                                                                                  #how many runs of each instrument
 alpha = 0.05                                                                                    #significance level (1-confidence level)
 p = 0.9                                                                                         #reliability
@@ -25,7 +25,7 @@ for inst in instListShort:
 
 
 
-folder = 'dataTC/'                                                                       #folder to draw data from
+folder = 'TCRando/'                                                                       #folder to draw data from
 def rr(temps,times):                                                                    #calculates derivative of 1 degree polynomial
                                                                     
     

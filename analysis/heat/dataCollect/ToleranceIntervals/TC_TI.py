@@ -8,9 +8,9 @@ import os
 from scipy import stats
 
 
-folder = 'dataC/'
+folder = 'TCRando/'
 #############               CHANGE THESE                    ######################
-instListShort = [6]
+instListShort = [1,2,3,4]
 replicate = 1
 
 
@@ -148,4 +148,4 @@ def act():
     plt.show()
 
 
-kill()
+act()
