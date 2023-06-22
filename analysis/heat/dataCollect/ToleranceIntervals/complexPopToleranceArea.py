@@ -80,6 +80,20 @@ ciMean = TI(means,.1,.90)
 ciVar = TI(var,.1,.90)
 
 
+distFromMean = []
+distFromMean2 = []
+for i in range(len(means)):
+    distFromMean.append(np.sqrt((means[i]-meanMeans)**2+(var[i]-meanVar)**2))
+for i in range(len(means2)):
+    distFromMean2.append(np.sqrt((means2[i]-meanMeans2)**2+(var2[i]-meanVar2)**2))
+
+s1 = np.mean(distFromMean)
+s2 = np.mean(distFromMean2)
+
+meanDiff = np.sqrt((meanMeans-meanMeans2)**2+(meanVar-meanVar2)**2)
+
+print((s1**2+s2**2)/meanDiff**2)
+
 print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
