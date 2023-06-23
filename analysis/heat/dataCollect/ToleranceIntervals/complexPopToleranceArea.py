@@ -7,17 +7,17 @@ from PCR_TI_USE import anneal,denature
 from confidenceFun import CI,TI
 import os
 
-temp = 0
+temp = 1
 
 
-folder = 'beta/'
+folder = 'beta2/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'verif/'
+folder2 = 'verif2/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
-folder3 = 'data/'
+# folder3 = 'data/'
 
 alpha = 0.1
 def fullCI(folder,instlistshort):
@@ -60,8 +60,8 @@ def fullCI(folder,instlistshort):
 
     return mean,ciLCI[0],ciRCI[1],means,cis,variances
 
-meanAnneal3 = anneal(folder3,[1])[0]
-varAnneal3 = anneal(folder3,[1])[2]
+# meanAnneal3 = anneal(folder3,[1])[0]
+# varAnneal3 = anneal(folder3,[1])[2]
 # print(meanAnneal3)
 means2 = fullCI(folder2,instList2)[3]
 var2 = fullCI(folder2,instList2)[5]
@@ -115,12 +115,12 @@ from statsmodels.formula.api import ols
 import pandas as pd
 totalVar = []
 types = []
-for i in var:
+for i in means:
     totalVar.append(i)
-    types.append('tape')
-for i in var2:
+    types.append('beta')
+for i in means2:
     totalVar.append(i)
-    types.append('wet fill')
+    types.append('verification')
 
 dF = pd.DataFrame({'type':types,'var':totalVar})
 
