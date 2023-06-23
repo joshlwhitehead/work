@@ -253,29 +253,33 @@ def parsTCTxt(file):                                                            
     start = True
     start2 = False
     countLines = 0
+    start3 = True
 
 
 
 
-
+    goto = []
     for u in file:
         if 'SWITCH to STEADY' in u:                                                     #this criteria indicates start of data
             start2 = True
-        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:             #this criteria indicates start of kill temp collection
+        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) >= 85:             #this criteria indicates start of kill temp collection
             killTemp = float(u.split()[-1])
+            goto.append(float(u.split()[-1]))
             killCollect = True
             actCollect = False
             start2 = False
+            start3 = False
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 35:        #this criteria indicates start of activation temp collect
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 35 and start3:        #this criteria indicates start of activation temp collect
+            goto.append(float(u.split()[-1]))
             actTemp = float(u.split()[-1])
             killCollect = False
             actCollect = True
             start2 = False
-        elif 'Using Cooling Equations' in u:
-            start = False
+        # elif 'Using Cooling Equations' in u:
+        #     start = False
 
-        if start and start2 and 'DATAQ:' in u or start and start2 and 'CHUBE:' in u:                                                  #start collecting data
+        if start2 and 'DATAQ:' in u or start2 and 'CHUBE:' in u:                                                  #start collecting data
 
             
             if killCollect:
@@ -283,15 +287,21 @@ def parsTCTxt(file):                                                            
                 try:
                     timeK.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
-                    print(file[countLines+1].split())
-                    timeK.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    try:
+                        print(file[countLines+1].split())
+                        timeK.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    except:
+                        timeK.append(timeK[-1])
 
-            elif actCollect:                                                                            #collect activation data
+            elif actCollect:# and start3:                                                                            #collect activation data
                 act.append(float(u.split()[4].strip(',')))
                 try:
                     timeA.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
-                    timeA.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    try:
+                        timeA.append(float(file[countLines+1].split()[0].strip('()'))/1000)
+                    except:
+                        timeA.append(timeA[-1])
         
         
         countLines += 1
@@ -300,7 +310,7 @@ def parsTCTxt(file):                                                            
     return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
 
 # print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
-
+# print(parsTCTxt('TCRando/Beta13-TC91-20230622-run1 (1).txt'))
 
 def TCramp(file):
     with open(file,'r') as readFile:                                                    #read file into a list
