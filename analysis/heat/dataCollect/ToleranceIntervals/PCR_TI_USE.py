@@ -62,7 +62,7 @@ def denature(folder,instListShort):                                             
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
         variances.append(np.var(peakSamp))
-        stdevs .append(np.std(peakSamp))
+        stdevs.append(np.std(peakSamp))
 
 
     #     bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run

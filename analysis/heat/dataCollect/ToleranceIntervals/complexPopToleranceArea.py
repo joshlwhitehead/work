@@ -7,7 +7,7 @@ from PCR_TI_USE import anneal,denature
 from confidenceFun import CI,TI
 import os
 
-temp = 1
+temp = 0
 
 
 folder = 'beta2/'
@@ -130,10 +130,10 @@ from statsmodels.formula.api import ols
 import pandas as pd
 totalVar = []
 types = []
-for i in means:
+for i in var:
     totalVar.append(i)
     types.append('beta')
-for i in means2:
+for i in var2:
     totalVar.append(i)
     types.append('verification')
 
