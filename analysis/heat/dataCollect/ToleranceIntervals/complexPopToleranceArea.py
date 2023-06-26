@@ -7,7 +7,7 @@ from PCR_TI_USE import anneal,denature
 from confidenceFun import CI,TI
 import os
 
-temp = 1
+temp = 0
 
 
 folder = 'beta2/'
