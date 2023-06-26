@@ -91,8 +91,10 @@ def parsPCRTxt(file):                                                           
                             try:
                                 timeH[countH].append(float(file[countLines+2].split()[0].strip('()'))/1000)
                             except:
-                                print(timeH[-1])
-                                timeH[countH].append(float(file[countLines-3].split()[0].strip('()'))/1000)
+                                try:
+                                    timeH[countH].append(float(file[countLines-3].split()[0].strip('()'))/1000)
+                                except:
+                                    timeH[countH].append(timeH[countH][-1])
                     # totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
 
             elif coolCollect:                                                                                          #start collecting cooling temps
@@ -114,8 +116,10 @@ def parsPCRTxt(file):                                                           
                                 
                                 timeC[countC].append(float(file[countLines+2].split()[0].strip('()'))/1000)
                             except:
-                                
-                                timeC[countC].append(float(file[countLines-3].split()[0].strip('()'))/1000)
+                                try:
+                                    timeC[countC].append(float(file[countLines-3].split()[0].strip('()'))/1000)
+                                except:
+                                    timeC[countC].append(timeC[countC][-1])
         
         if start:
             try:
