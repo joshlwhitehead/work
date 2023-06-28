@@ -3,7 +3,7 @@ The first function returns lists of temps while heating and lists of temps while
 another list, clumped by cycle number (ie. each cycle has a seperate list of heating/cooling temps).
 The second function returns a single list of heat kill temperatures and a single list of activation temperatures during the Treatment stage.
 Both functions also return the set temps used."""
-
+import numpy as np
 def parsPCRTxt(file):                                                                                                       #read PCR data
 
     with open(file,'r') as readFile:                                                                                        #convert lines in file to list
@@ -527,3 +527,57 @@ def saveDataUsingTC():
     dF.to_csv('crToVerify/Adv10_p12_bae517_221010_Run2.csv')
 
 # saveDataUsingTC()
+
+
+
+
+
+def simpleHold(file):
+    with open(file,'r') as readFile:                                                                                        #convert lines in file to list
+        file = readFile.readlines()
+    
+    samp = []
+    sampTime = []
+    therm = []
+    thermTime = []
+    lineCount = 0
+    for i in file:
+        if ('DATAQ:' or 'CHUBE:') in i:
+            samp.append(float(i.split()[4]))
+            try:
+                # print(file[lineCount-1].split()[0].strip('()')/1000)
+                sampTime.append(float(file[lineCount-1].split()[0].strip('()'))/1000)
+            except:
+                try:
+                    sampTime.append(float(file[lineCount+1].split()[0].strip('()'))/1000)
+                except:
+                    try:
+                       sampTime.append(float(file[lineCount+2].split()[0].strip('()'))/1000) 
+                    except:
+                        # print(lineCount)
+                        sampTime.append(sampTime[-1])
+        elif 'modeled' in i:
+            therm.append(float(i.split()[4].strip(',')))
+            thermTime.append(float(i.split()[0].strip('()'))/1000)
+
+        lineCount += 1
+    sampTime = np.array(sampTime)-sampTime[0]
+    thermTime = np.array(thermTime)-thermTime[0]
+    samp = np.array(samp)
+    therm = np.array(therm)
+    return (samp,sampTime),(therm,thermTime)
+
+# x = simpleHold('TCModelTune50_3.txt')
+# print(type(x[0][0]))
+# # y = simpleHold('TCModelTune90_2.txt')
+# import matplotlib.pyplot as plt
+# plt.plot(x[0][1],x[0][0])
+# plt.plot(x[1][1],x[1][0])
+# # plt.plot(y[0][1],y[0][0])
+# # plt.plot(y[1][1],y[1][0])
+# plt.grid()
+# plt.show()
+    
+
+
+
