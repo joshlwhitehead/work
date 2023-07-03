@@ -21,15 +21,19 @@ def bandPass():
     x1 = np.array(x1)
     y1 = np.array(y1)
 
-    
+    start = min(abs(400-x1))
+    try:
+        startIndx = list(x1).index(400-start)
+    except:
+        startIndx = list(x1).index(400+start)
     end = min(abs(500-x1))              # find closest value to 500
     try:
         cutIndx = list(x1).index(500-end)   
     except:
         cutIndx = list(x1).index(500+end)
 
-    x1 = x1[:cutIndx]           # cutoff data at 500 nm
-    y1 = y1[:cutIndx]
+    x1 = x1[startIndx:cutIndx]           # cutoff data at 500 nm
+    y1 = y1[startIndx:cutIndx]
 
     max90 = 0.9*max(y1)                     
     maxList = [i for i in y1 if i >= max90]
@@ -164,6 +168,13 @@ run2 = Button(root,height=2,width=20,text='Longpass',command=lambda:longPass()) 
 label = Label(text='Filter ID')
 label2 = Label(text='Notes')
 label3 = Label(text='Raw Data')
+
+def clear():
+    inputtxt.delete('1.0','end')
+    inputtxt2.delete('1.0','end')
+    inputtxt3.delete('1.0','end')
+clearButton = Button(root,text='Clear All',command=clear)
+clearButton.place(x=5,y=5)
 run.pack()
 run2.pack()
 label.pack()
@@ -172,6 +183,7 @@ label2.pack()
 inputtxt2.pack()
 label3.pack()
 inputtxt3.pack()
+clearButton.pack()
 mainloop()
 
 
