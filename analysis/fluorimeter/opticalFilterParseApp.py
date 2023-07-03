@@ -111,14 +111,19 @@ def longPass():
         count += 1
     x1 = np.array(x1)
     y1 = np.array(y1)
+    start = min(abs(400-x1))
+    try:
+        startIndx = list(x1).index(400-start)
+    except:
+        startIndx = list(x1).index(400+start)
     end = min(abs(500-x1))
     try:
         cutIndx = list(x1).index(500-end)
     except:
         cutIndx = list(x1).index(500+end)
 
-    x1 = x1[:cutIndx]                                           #end x,y at 500nm
-    y1 = y1[:cutIndx]
+    x1 = x1[startIndx:cutIndx]                                           #end x,y at 500nm
+    y1 = y1[startIndx:cutIndx]
 
     max90 = 0.9*max(y1)
     maxList = [i for i in y1 if i >= max90]
@@ -127,6 +132,7 @@ def longPass():
     halfMax = maxim*0.5                                         #half of max
 
     halfMaxDif = min(abs(halfMax-y1))
+    # print(halfMaxDif)
     try:
         halfMaxIndx = list(y1).index(halfMax-halfMaxDif)
     except:

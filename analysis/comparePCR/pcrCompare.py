@@ -4,10 +4,10 @@ import pandas as pd
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
-import toleranceinterval as ti
-from confidenceFun import CI
+from confidenceFun import CI,TI
 
-
+alpha = .9
+p = .9
 data = pd.read_csv('BetaVAlpha.csv')
 inst = data['inst']
 cq = data['cq']
@@ -15,7 +15,7 @@ tm = data['tm']
 fmax = data['fmax']
 pcrNoise = data['pcr noise']
 meltNoise = data['melt noise']
-memo = data['memo']
+
 dataOrg = {}
 for indx,val in enumerate(inst):
     if val not in dataOrg.keys():
@@ -33,6 +33,7 @@ for indx,val in enumerate(inst):
         dataOrg[val]['pcr noise'].append(pcrNoise[indx])
         dataOrg[val]['melt noise'].append(meltNoise[indx])
 
+
 def sortByInstType(dataType):
     beta = []
     verif = []
@@ -40,15 +41,19 @@ def sortByInstType(dataType):
     betaStd = []
     verifMean = []
     verifStd = []
+    betaInst = []
+    verifInst = []
     for i in dataOrg:
         if 'Beta' in i:
             beta.append(dataOrg[i][dataType])
             betaMean.append(np.mean(dataOrg[i][dataType]))
             betaStd.append(np.std(dataOrg[i][dataType]))
+            betaInst.append(i)
         else:
             verif.append(dataOrg[i][dataType])
             verifMean.append(np.mean(dataOrg[i][dataType]))
             verifStd.append(np.std(dataOrg[i][dataType]))
+            verifInst.append(i)
     
     meanTot = []
     instTot = []
@@ -64,12 +69,10 @@ def sortByInstType(dataType):
     
     dF = {'instType':instTot,'mean':meanTot,'std':stdTot}
 
-    return dF,(beta,verif),(betaMean,betaStd),(verifMean,verifStd)
+    return dF,(beta,verif),(betaMean,betaStd),(verifMean,verifStd),(betaInst,verifInst)
 
 
-def TI(sample):
-    bound = ti.twoside.normal(sample,.9,.9)
-    return bound[0]
+
 
 def deliver(dataType):
     dF = sortByInstType(dataType)[0]
@@ -96,10 +99,10 @@ def deliver(dataType):
 
 
 
-    betaMeanTI = TI(betaX)
-    betaStdTI = TI(betaY)
-    verifMeanTI = TI(verifX)
-    verifStdTI = TI(verifY)
+    betaMeanTI = TI(betaX,alpha,p)
+    betaStdTI = TI(betaY,alpha,p)
+    verifMeanTI = TI(verifX,alpha,p)
+    verifStdTI = TI(verifY,alpha,p)
 
     plt.plot(betaX,betaY,'o',color='k',label='Beta')
     plt.plot(verifX,verifY,'o',color='g',label='Verification')
@@ -114,10 +117,35 @@ def deliver(dataType):
     plt.legend()
     plt.show()
 
-deliver('fmax')
+# deliver('fmax')
+metric = 'cq'
 
 
-# metric = 'cq'
-# sortedData = sortByInstType(metric)[1][0]
-# verifData = sortByInstType(metric)[1][1]
-# for i in verifData:
+sortedData = sortByInstType(metric)[1][0]
+verifData = sortByInstType(metric)[1][1]
+for i in verifData:
+    sortedData.append(i)
+sortedInst = sortByInstType(metric)[4][0]
+verifInst = sortByInstType(metric)[4][1]
+
+for i in verifInst:
+    sortedInst.append(i)
+
+
+
+means = []
+tiL = []
+tiR = []
+for i in sortedData:
+    means.append(np.mean(i))
+    tiL.append(TI(i,alpha,p)[0])
+    tiR.append(TI(i,alpha,p)[1])
+
+
+
+plt.figure()
+for indx,val in enumerate(tiL):
+    plt.hlines(indx,val,tiR[indx],lw=5)
+plt.plot(means,sortedInst,'o',color='r')
+plt.grid()
+plt.show()
