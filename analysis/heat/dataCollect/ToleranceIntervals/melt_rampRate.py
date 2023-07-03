@@ -11,9 +11,9 @@ alpha = .1
 p = .9
 
 
-folder = 'beta/'                                                                       #folder to draw data from
+folder = 'beta_verif2/'                                                                       #folder to draw data from
 instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
-for i in range(len(os.listdir(folder))):
+for i in os.listdir(folder):
     instListShort.append(i)
 replicate = 1                                                                                  #how many runs of each instrument
 instList = instListShort*replicate                                                              #list of total runs
@@ -22,7 +22,7 @@ instList.sort()                                                                 
 instListVar = []
 for inst in instListShort:                                                                         
     for rep in range(replicate):
-        instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
+        instListVar.append(''.join([str(inst)]))#,'.',str(rep)]))                                        #make list of replicates
 
 
 
