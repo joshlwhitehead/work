@@ -5,6 +5,7 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 import toleranceinterval as ti
+from confidenceFun import CI
 
 
 data = pd.read_csv('BetaVAlpha.csv')
@@ -14,7 +15,7 @@ tm = data['tm']
 fmax = data['fmax']
 pcrNoise = data['pcr noise']
 meltNoise = data['melt noise']
-print(*set(inst))
+memo = data['memo']
 dataOrg = {}
 for indx,val in enumerate(inst):
     if val not in dataOrg.keys():
@@ -113,6 +114,10 @@ def deliver(dataType):
     plt.legend()
     plt.show()
 
+deliver('fmax')
 
 
-deliver('cq')
+# metric = 'cq'
+# sortedData = sortByInstType(metric)[1][0]
+# verifData = sortByInstType(metric)[1][1]
+# for i in verifData:
