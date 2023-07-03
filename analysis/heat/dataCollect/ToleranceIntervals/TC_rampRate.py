@@ -74,6 +74,7 @@ def cooling():                                                  #function to ana
         derivTotNameC.append(i)
 
     count = 0
+    # print(cool)
     for i in derivTotC:
         count += 1
         if i > coolRRlimit:                                                         #fail 3 is included in ramp rate

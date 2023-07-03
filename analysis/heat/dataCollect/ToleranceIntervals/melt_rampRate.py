@@ -11,8 +11,10 @@ alpha = .1
 p = .9
 
 
-folder = 'tape/'                                                                       #folder to draw data from
-instListShort = [5,5,8,9,9,13,13,5,5]                                                                         #list of instruments. must be in order that they appear in folder
+folder = 'beta/'                                                                       #folder to draw data from
+instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
+for i in range(len(os.listdir(folder))):
+    instListShort.append(i)
 replicate = 1                                                                                  #how many runs of each instrument
 instList = instListShort*replicate                                                              #list of total runs
 instList.sort()                                                                                 #sort instrument list to match with order in directory

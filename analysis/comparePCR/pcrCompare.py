@@ -14,7 +14,7 @@ tm = data['tm']
 fmax = data['fmax']
 pcrNoise = data['pcr noise']
 meltNoise = data['melt noise']
-
+print(*set(inst))
 dataOrg = {}
 for indx,val in enumerate(inst):
     if val not in dataOrg.keys():

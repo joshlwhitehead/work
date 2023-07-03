@@ -8,9 +8,9 @@ import os
 from scipy import stats
 
 
-folder = 'TCRando/'
+folder = 'dataMorgan/'
 #############               CHANGE THESE                    ######################
-instListShort = [1,2,3,4]
+instListShort = [1]
 replicate = 1
 
 

@@ -282,7 +282,7 @@ def parsTCTxt(file):                                                            
             start2 = False
         # elif 'Using Cooling Equations' in u:
         #     start = False
-
+        
         if start2 and 'DATAQ:' in u or start2 and 'CHUBE:' in u:                                                  #start collecting data
 
             
@@ -292,7 +292,7 @@ def parsTCTxt(file):                                                            
                     timeK.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
                     try:
-                        print(file[countLines+1].split())
+                        # print(file[countLines+1].split())
                         timeK.append(float(file[countLines+1].split()[0].strip('()'))/1000)
                     except:
                         timeK.append(timeK[-1])
@@ -310,7 +310,7 @@ def parsTCTxt(file):                                                            
         
         countLines += 1
         
-            
+    # actTemp, killTemp = goto    
     return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
 
 # print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
