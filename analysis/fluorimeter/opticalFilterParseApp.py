@@ -39,26 +39,35 @@ def bandPass():
     maxList = [i for i in y1 if i >= max90]
     maxim = np.mean(maxList)            # take average of all points above 0.9*max
 
+    up = []
+    down = []
+    for indx,val in enumerate(y1[:-1]):
+        if y1[indx+1] > val:
+            up.append(val)
+        else:
+            down.append(val)
+    up = np.array(up)
+    down = np.array(down)
+
     halfMax = maxim*0.5         # half of max
-    difs = abs(halfMax-y1)      
-    onOff1 = min(difs)          # find value closest to halfmax
+    difsUp = abs(halfMax-up)      
+    on = min(difsUp)          # find value closest to halfmax
 
-    difs = list(difs)           #find value second closest to halfmax
-    difs.remove(onOff1)
-    onOff2 = min(difs)
+    difsDown = abs(halfMax-down)
+    off = min(difsDown)
 
     try:
-        onOffIndx1 = list(y1).index(halfMax-onOff1)
+        onIndx = list(y1).index(halfMax-on)
     except:
-        onOffIndx1 = list(y1).index(halfMax+onOff1)
+        onIndx = list(y1).index(halfMax+on)
     try:
-        onOffIndx2 = list(y1).index(halfMax-onOff2)
+        OffIndx = list(y1).index(halfMax-off)
     except:
-        onOffIndx2 = list(y1).index(halfMax+onOff2)
+        OffIndx = list(y1).index(halfMax+off)
 
 
-    cutOn50 = min(x1[onOffIndx1],x1[onOffIndx2])        #halfway up to max
-    cutOff50 = max(x1[onOffIndx1],x1[onOffIndx2])       #halfway down to min
+    cutOn50 = x1[onIndx]        #halfway up to max
+    cutOff50 = x1[OffIndx]       #halfway down to min
 
     fwhm = cutOff50 - cutOn50           #full width half max
     center = fwhm*0.5 + cutOn50         #center wavelength

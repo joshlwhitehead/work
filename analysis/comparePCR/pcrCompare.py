@@ -15,23 +15,27 @@ tm = data['tm']
 fmax = data['fmax']
 pcrNoise = data['pcr noise']
 meltNoise = data['melt noise']
-
+unitDict = {'Cq':'(Cycles)',
+            'Tm':'(c)',
+            'Fmax':'',
+            'Pcr Noise':'',
+            'Melt Noise':''}
 dataOrg = {}
 for indx,val in enumerate(inst):
     if val not in dataOrg.keys():
         dataOrg[val] = {
-            'cq':[cq[indx]],
-            'tm':[tm[indx]],
-            'fmax':[fmax[indx]],
-            'pcr noise':[pcrNoise[indx]],
-            'melt noise':[meltNoise[indx]]
+            'Cq':[cq[indx]],
+            'Tm':[tm[indx]],
+            'Fmax':[fmax[indx]],
+            'Pcr Noise':[pcrNoise[indx]],
+            'Melt Noise':[meltNoise[indx]]
                         }     
     else:
-        dataOrg[val]['cq'].append(cq[indx])
-        dataOrg[val]['tm'].append(tm[indx])
-        dataOrg[val]['fmax'].append(fmax[indx])
-        dataOrg[val]['pcr noise'].append(pcrNoise[indx])
-        dataOrg[val]['melt noise'].append(meltNoise[indx])
+        dataOrg[val]['Cq'].append(cq[indx])
+        dataOrg[val]['Tm'].append(tm[indx])
+        dataOrg[val]['Fmax'].append(fmax[indx])
+        dataOrg[val]['Pcr Noise'].append(pcrNoise[indx])
+        dataOrg[val]['Melt Noise'].append(meltNoise[indx])
 
 
 def sortByInstType(dataType):
@@ -115,10 +119,14 @@ def deliver(dataType):
     
     plt.grid()
     plt.legend()
+    plt.xlabel(''.join(['Mean ',metric,' ',unitDict[metric]]))
+    plt.ylabel(''.join(['Standard Deviation ',unitDict[metric]]))
+    plt.title(''.join(['90-90 Tolerance Area for ',metric]))
     plt.show()
 
-# deliver('fmax')
-metric = 'cq'
+
+metric = 'Melt Noise'
+
 
 
 sortedData = sortByInstType(metric)[1][0]
@@ -147,5 +155,13 @@ plt.figure()
 for indx,val in enumerate(tiL):
     plt.hlines(indx,val,tiR[indx],lw=5)
 plt.plot(means,sortedInst,'o',color='r')
+plt.xlim(min(tiL)-0.05*min(tiL),max(tiR)+0.05*max(tiR))
+plt.hlines(6.5,min(tiL)-0.05*min(tiL),max(tiR)+0.05*max(tiR),color='r',lw=3)
 plt.grid()
+plt.xlabel(''.join(['Mean ',metric,' ',unitDict[metric]]))
+plt.ylabel('Instrument')
+plt.title(''.join(['90-90 TI for ',metric]))
 plt.show()
+
+
+deliver(metric)

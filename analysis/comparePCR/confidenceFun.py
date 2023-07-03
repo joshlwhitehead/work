@@ -12,13 +12,16 @@ def CI(sample, alpha):
     t_star = t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
     moe = t_star * se # margin of error
     ci = np.array([mean_er - moe, mean_er + moe])
-    
+    if ci[0] < 0:
+        ci[0] = 0
     return ci
 
 
 
 def TI(sample,alpha,p):
     bound = ti.twoside.normal(sample,p,1-alpha)
+    if bound[0][0] < 0:
+        bound[0][0] = 0
     return bound[0]
 
 
