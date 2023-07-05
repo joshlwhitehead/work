@@ -27,15 +27,17 @@ start = 33
 test = calculation(24,off(thermData),thermData,.1056,thermDataTime-52.136)
 # print(test)
 
-plt.plot(thermData[:])
-plt.plot(sampData)
-plt.plot(modelData)
-plt.plot(test)
+plt.plot(thermDataTime,thermData[:],label='thermistor')
+plt.plot(sampDataTime,sampData,label='sample')
+plt.plot(modelDataTime,modelData,label='old model')
+plt.plot(thermDataTime,test,label='new model')
 plt.grid()
+plt.legend()
 plt.show()
 # plt.savefig('test.png')
 
 
-samp1 = sampData[33:69]
+
 therm1 = thermData[33:69]
-samp2 = sampData
+
+
