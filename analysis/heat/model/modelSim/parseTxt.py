@@ -626,3 +626,213 @@ def TCTotal(file):
 
 
 #try appending None when it can't and fix it later...
+
+def modelTune(file):
+    heatAct = 0
+    heatKill = 0
+    cool = 0
+    holdAct = 0
+    holdKill = 0
+    holdEnd = 0
+
+
+    with open(file,'r') as readFile:                                                                                        #convert lines in file to list
+        file = readFile.readlines()
+
+    heatActTherm = []
+    heatActTime = []
+    heatActMod = []
+    heatActSamp = []
+    heatActSampTime = []
+    heatKillTherm = []
+    heatKillTime = []
+    heatKillMod = []
+    heatKillSamp = []
+    heatKillSampTime = []
+    coolEndTherm = []
+    coolEndTime = []
+    coolEndMod = []
+    coolEndSamp = []
+    coolEndSampTime = []
+    holdActTherm = []
+    holdActTime = []
+    holdActMod = []
+    holdActSamp = []
+    holdActSampTime = []
+    holdKillTherm = []
+    holdKillTime = []
+    holdKillMod = []
+    holdKillSamp = []
+    holdKillSampTime = []
+    holdEndTherm = []
+    holdEndTime = []
+    holdEndMod = []
+    holdEndSamp = []
+    holdEndSampTime = []
+
+
+    for indx,val in enumerate(file):
+        if 'goto' in val:
+            if 35 < float(val.split()[-1]) < 75:
+                if len(heatActTherm) == 0:
+                    heatAct = 1
+                    heatKill = 0
+                    cool = 0
+                    holdAct = 0
+                    holdKill = 0
+                    holdEnd = 0
+                elif len(coolEndTherm) == 0:
+                    cool = 1
+                    heatAct = 0
+                    heatKill = 0                    
+                    holdAct = 0
+                    holdKill = 0
+                    holdEnd = 0
+            elif float(val.split()[-1]) > 85:
+                heatKill = 1
+                heatAct = 0
+                cool = 0
+                holdAct = 0
+                holdKill = 0
+                holdEnd = 0
+        elif 'SWITCH to STEADY' in val:
+            heatAct = 0
+            heatKill = 0
+            cool = 0
+            holdAct = 0
+            holdKill = 0
+            holdEnd = 0
+            if len(holdActTherm) == 0:
+                holdAct = 1
+                heatAct = 0
+                heatKill = 0
+                cool = 0
+                holdKill = 0
+                holdEnd = 0
+            elif len(holdKillTherm) == 0:
+                holdKill = 1
+                heatAct = 0
+                heatKill = 0
+                cool = 0
+                holdAct = 0
+                holdEnd = 0
+            elif len(holdEndTherm) == 0:
+                holdEnd = 1
+                heatAct = 0
+                heatKill = 0
+                cool = 0
+                holdAct = 0
+                holdKill = 0
+        
+
+
+        if heatAct:
+            if 'modeled' in val:
+                heatActTherm.append(float(val.split()[4].strip(',')))
+                heatActMod.append(float(val.split()[7].strip(',')))
+                heatActTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                heatActSamp.append(float(val.split()[4]))
+                try:
+                    heatActSampTime.append(heatActTime[-1])
+                except:
+                    heatActSampTime.append(0)
+        elif holdAct:
+            if 'modeled' in val:
+                holdActTherm.append(float(val.split()[4].strip(',')))
+                holdActMod.append(float(val.split()[7].strip(',')))
+                holdActTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                holdActSamp.append(float(val.split()[4]))
+                try:
+                    holdActSampTime.append(holdActTime[-1])
+                except:
+                    holdActSampTime.append(0)
+        elif heatKill:
+            if 'modeled' in val:
+                heatKillTherm.append(float(val.split()[4].strip(',')))
+                heatKillMod.append(float(val.split()[7].strip(',')))
+                heatKillTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                heatKillSamp.append(float(val.split()[4]))
+                try:
+                    heatKillSampTime.append(heatKillTime[-1])
+                except:
+                    heatKillSampTime.append(0)
+        elif holdKill:
+            if 'modeled' in val:
+                holdKillTherm.append(float(val.split()[4].strip(',')))
+                holdKillMod.append(float(val.split()[7].strip(',')))
+                holdKillTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                holdKillSamp.append(float(val.split()[4]))
+                try:
+                    holdKillSampTime.append(holdKillTime[-1])
+                except:
+                    holdKillSampTime.append(0)
+        elif cool:
+            if 'modeled' in val:
+                coolEndTherm.append(float(val.split()[4].strip(',')))
+                coolEndMod.append(float(val.split()[7].strip(',')))
+                coolEndTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                coolEndSamp.append(float(val.split()[4]))
+                try:
+                    coolEndSampTime.append(coolEndTime[-1])
+                except:
+                    coolEndSampTime.append(0)
+        elif holdEnd:
+            if 'modeled' in val:
+                holdEndTherm.append(float(val.split()[4].strip(',')))
+                holdEndMod.append(float(val.split()[7].strip(',')))
+                holdEndTime.append(float(val.split()[0].strip('()'))/1000)
+            elif ('DATAQ:' or 'CHUBE:') in val:
+                holdEndSamp.append(float(val.split()[4]))
+                try:
+                    holdEndSampTime.append(holdEndTime[-1])
+                except:
+                    holdEndSampTime.append(0)
+
+    return (
+        ((heatActSamp,heatActSampTime),(heatActTherm,heatActMod,heatActTime)),
+        ((holdActSamp,holdActSampTime),(holdActTherm,holdActMod,holdActTime)),
+        ((heatKillSamp,heatKillSampTime),(heatKillTherm,heatKillMod,heatKillTime)),
+        ((holdKillSamp,holdKillSampTime),(holdKillTherm,holdKillMod,holdKillTime)),
+        ((coolEndSamp,coolEndSampTime),(coolEndTherm,coolEndMod,coolEndTime)),
+        ((holdEndSamp,holdEndSampTime),(holdEndTherm,holdEndMod,holdEndTime))
+    )
+
+# import matplotlib.pyplot as plt
+# file = 'revertModel1.txt'
+# x1 = modelTune(file)[0][0][1]
+# y1 = modelTune(file)[0][0][0]
+# x2 = modelTune(file)[1][0][1]
+# y2 = modelTune(file)[1][0][0]
+# x3 = modelTune(file)[2][0][1]
+# y3 = modelTune(file)[2][0][0]
+# x4 = modelTune(file)[3][0][1]
+# y4 = modelTune(file)[3][0][0]
+# x5 = modelTune(file)[4][0][1]
+# y5 = modelTune(file)[4][0][0]
+# x6 = modelTune(file)[5][0][1]
+# y6 = modelTune(file)[5][0][0]
+
+
+
+# plt.plot(x1,y1)
+# plt.plot(x2,y2)
+# plt.plot(x3,y3)
+# plt.plot(x4,y4)
+# plt.plot(x5,y5)
+# plt.plot(x6,y6)
+# plt.grid()
+# plt.show()
+
+                
+        
+            
+
+
+
+
+        
