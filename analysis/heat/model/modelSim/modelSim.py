@@ -121,9 +121,9 @@ def heatLambda():
 
 
 
-popSize = 1000
+popSize = 100
 monteHeat = np.random.uniform(0,1,popSize)
-monteCool = np.random.uniform(0,.007,popSize)
+monteCool = np.random.uniform(0.006,.007,popSize)
 monteOff1 = np.random.uniform(0,10,popSize)
 monteOff2 = np.random.uniform(0,10,popSize)
 monteOff3 = np.random.uniform(0,10,popSize)
