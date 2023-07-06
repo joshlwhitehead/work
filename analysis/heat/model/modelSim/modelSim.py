@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from parseTxt import modelTune
 from scipy.interpolate import interp1d
-import random
+from timeit import default_timer as timer
 
+start = timer()
 
 def calculation(T0,offset,someTemp,lam,time):                               #someTemp is either thermistor temp or set temp
 
@@ -120,7 +121,7 @@ def heatLambda():
 
 
 
-popSize = 500
+popSize = 1000
 monteHeat = np.random.uniform(0,1,popSize)
 monteCool = np.random.uniform(0,.007,popSize)
 monteOff1 = np.random.uniform(0,10,popSize)
@@ -169,14 +170,19 @@ for lamHeat in monteHeat:
     totInterp = np.array(totInterp)
     rr[r2(fullSamp,totInterp)] = [lamHeat,lamCool,totInterp]
 print(max(rr.keys()))
+print(rr[max(rr.keys())][:-1])
 # print(rr[max(rr.keys())])
 section = 4
 testCool = calculation(mod[section-1][-1],off(therm[section]),therm[section],0.00525,time[section]-time[section][0]-5)
 testCoolInterp = interp1d(time[section],testCool)(sampTime[section])
 
+end= timer()
+
+print(end-start)
 plt.plot(fullSamp)
 plt.plot(rr[max(rr.keys())][2])
-plt.plot(testCoolInterp)
+plt.plot(np.arange(138,138+len(testCoolInterp)),testCoolInterp)
 plt.grid()
 plt.show()
 
+heatLambda()
