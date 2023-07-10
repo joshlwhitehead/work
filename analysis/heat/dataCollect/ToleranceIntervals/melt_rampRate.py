@@ -11,7 +11,7 @@ alpha = .1
 p = .9
 
 
-folder = 'betaAlpha/'                                                                       #folder to draw data from
+folder = 'test/'                                                                       #folder to draw data from
 instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
 for i in os.listdir(folder):
     instListShort.append(i)
