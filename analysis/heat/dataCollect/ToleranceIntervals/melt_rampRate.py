@@ -11,7 +11,7 @@ alpha = .1
 p = .9
 
 
-folder = 'beta_verif2/'                                                                       #folder to draw data from
+folder = 'beta2/'                                                                       #folder to draw data from
 instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
 for i in os.listdir(folder):
     instListShort.append(i)
@@ -29,6 +29,7 @@ for inst in instListShort:
 
 def rr(temps,times):                                                                    #calculates derivative of 1 degree polynomial
     a,b = np.polyfit(times,temps,1)
+    # print(a)
     return a
 
 
@@ -38,14 +39,16 @@ def melting(alpha,p):
     for i in os.listdir(folder):
         melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
         timeM = meltRamp(''.join([folder,i]))[0][1]
-
-        n = int(len(melt)/11)                                                                   #split melt into 11 chunks
-
+        # print(len(melt))
+        n = int(round(len(melt)/7)) 
+        # plt.plot(timeM,melt,'o-')
+        # plt.show()
         count0 = 0
         count1 = n
         rrChunks = []
-        for u in range(11):
+        for u in range(7):
             rrChunks.append(rr(melt[count0:count1],timeM[count0:count1]))                       #find slope of each chunk in melt
+            # print(melt[count0:count1])
             count0 += n
             count1 += n
 
