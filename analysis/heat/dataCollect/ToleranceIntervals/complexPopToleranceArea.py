@@ -4,17 +4,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import t
 from PCR_TI_USE import anneal,denature
+from melt_rampRate_USE import melting
 from confidenceFun import CI,TI
+from PCR_rampRate_USE import heating,cooling
 import os
 
-temp = 0
+temp = 4
 
 
-folder = 'beta2/'
+folder = 'betaAlpha/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'verif2/'
+folder2 = 'betaBeta/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
 # folder3 = 'data/'
@@ -25,13 +27,25 @@ def fullCI(folder,instlistshort):
         means = denature(folder,instlistshort)[0]
         cis = np.array(denature(folder,instlistshort)[1]).T
         variances = denature(folder,instlistshort)[3]
-    else:
+    elif temp == 1:
         means = anneal(folder,instlistshort)[0]
         cis = np.array(anneal(folder,instlistshort)[1]).T
         variances = anneal(folder,instlistshort)[3]
+    elif temp == 2:
+        means = melting(folder,alpha,.9)[0]
+        variances = melting(folder,alpha,.9)[1]
+        cis = 0
+    elif temp == 3:
+        means = heating(folder,alpha,.9)[0]
+        variances = heating(folder,alpha,.9)[1]
+        cis = 0
+    elif temp == 4:
+        means = cooling(folder,alpha,.9)[0]
+        variances = cooling(folder,alpha,.9)[1]
+        cis = 0
 
-    ciL = cis[0]
-    ciR = cis[1]
+    # ciL = cis[0]
+    # ciR = cis[1]
 
 
 
@@ -47,8 +61,8 @@ def fullCI(folder,instlistshort):
 
     mean = np.mean(means)
     meanCI = CI(means,alpha)
-    ciLCI = CI(ciL,alpha)
-    ciRCI = CI(ciR,alpha)
+    ciLCI = [0,0]#CI(ciL,alpha)
+    ciRCI = [0,0]#CI(ciR,alpha)
     
 
     # plt.scatter(mean,0)
@@ -71,8 +85,8 @@ meanVar2 = np.mean(var2)
 
 # ciMean = CI(means,.01)
 # ciVar = CI(var,.05)
-ciMean2 = TI(means2,.1,.90)
-ciVar2 = TI(var2,.1,.90)
+ciMean2 = TI(means2,alpha,.90)
+ciVar2 = TI(var2,alpha,.90)
 
 
 means = fullCI(folder,instlist)[3]
@@ -83,8 +97,8 @@ meanVar = np.mean(var)
 
 # ciMean = CI(means,.01)
 # ciVar = CI(var,.05)
-ciMean = TI(means,.1,.90)
-ciVar = TI(var,.1,.90)
+ciMean = TI(means,alpha,.90)
+ciVar = TI(var,alpha,.90)
 
 
 distFromMean = []
@@ -106,11 +120,11 @@ print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
 # plt.plot(np.ones(len(var))*53,var,'o',color='k')
-plt.plot(means2,var2,'o',color='k',label='verification')
+plt.plot(means2,var2,'o',color='k',label='beta model')
 plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=5)
 plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=5)
 plt.plot(meanMeans2,meanVar2,'o',color='r')
-plt.plot(means,var,'o',color='green',label='beta')
+plt.plot(means,var,'o',color='green',label='alpha model')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
 plt.plot(meanMeans,meanVar,'o',color='r')

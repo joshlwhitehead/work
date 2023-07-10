@@ -11,18 +11,18 @@ alpha = .1
 p = .9
 
 
-folder = 'betaAlpha/'                                                                       #folder to draw data from
-instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
-for i in os.listdir(folder):
-    instListShort.append(i)
-replicate = 1                                                                                  #how many runs of each instrument
-instList = instListShort*replicate                                                              #list of total runs
-instList.sort()                                                                                 #sort instrument list to match with order in directory
+# folder = 'beta2/'                                                                       #folder to draw data from
+# instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
+# for i in os.listdir(folder):
+#     instListShort.append(i)
+# replicate = 1                                                                                  #how many runs of each instrument
+# instList = instListShort*replicate                                                              #list of total runs
+# instList.sort()                                                                                 #sort instrument list to match with order in directory
 
-instListVar = []
-for inst in instListShort:                                                                         
-    for rep in range(replicate):
-        instListVar.append(''.join([str(inst)]))#,'.',str(rep)]))                                        #make list of replicates
+# instListVar = []
+# for inst in instListShort:                                                                         
+#     for rep in range(replicate):
+#         instListVar.append(''.join([str(inst)]))#,'.',str(rep)]))                                        #make list of replicates
 
 
 
@@ -33,9 +33,10 @@ def rr(temps,times):                                                            
     return a
 
 
-def melting(alpha,p):      
+def melting(folder,alpha,p):      
     count = 0  
     means = []                                                                  #funtion to analyze melting data
+    stdev = []
     for i in os.listdir(folder):
         melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
         timeM = meltRamp(''.join([folder,i]))[0][1]
@@ -56,20 +57,23 @@ def melting(alpha,p):
         
         print(bound)
 
-        plt.hlines(count,bound[0][0],bound[0][1],lw=5)
+        # plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         means.append(np.mean(rrChunks))
+        stdev.append(np.std(rrChunks))
         count += 1
-    plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
-    plt.ylabel('Instrument')
-    plt.xlabel('Ramp Rate (C/sec)')
-    plt.grid()
-    plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
-    plt.show()
-melting(alpha,p)
+    # plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
+    # plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)']))
+    # plt.ylabel('Instrument')
+    # plt.xlabel('Ramp Rate (C/sec)')
+    # plt.grid()
+    # plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
+    # plt.show()
+    return means,stdev
+# melting(alpha,p)
 
 
-def meltCI(alpha):
+def meltCI(folder,alpha):
+    
     slopes = []
     cis = []
     cis2 = []
@@ -96,15 +100,15 @@ def meltCI(alpha):
     
     count = 0
     for i in range(len(cis)):
-        plt.hlines(count,slopes[count]-cis[count],slopes[count]+cis[count],lw=5)
+        # plt.hlines(count,slopes[count]-cis[count],slopes[count]+cis[count],lw=5)
         count+= 1
-    plt.plot(slopes,np.arange(0,len(instListVar)),'o',color='r')
-    plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
-    plt.ylabel('Instrument')
-    plt.xlabel('Ramp Rate (C/sec)')
-    plt.grid()
-    plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
-    plt.show()
+    # plt.plot(slopes,np.arange(0,len(instListVar)),'o',color='r')
+    # plt.title(''.join([str((1-alpha)*100),'% Confidence Interval']))
+    # plt.ylabel('Instrument')
+    # plt.xlabel('Ramp Rate (C/sec)')
+    # plt.grid()
+    # plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
+    # plt.show()
 
-meltCI(alpha)
+# meltCI(alpha)
 

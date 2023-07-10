@@ -95,7 +95,7 @@ def denature(folder,instListShort):                                             
     
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     # plt.xlim(88.3,97)|
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
@@ -147,7 +147,7 @@ def denature(folder,instListShort):                                             
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
 
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' denature']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
@@ -211,7 +211,7 @@ def anneal(folder,instListShort):                                               
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
     plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
     # plt.xlim(45,54)
@@ -259,7 +259,7 @@ def anneal(folder,instListShort):                                               
         
         count+=1
 
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' anneal']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
