@@ -7,11 +7,12 @@ import toleranceinterval as ti
 from scipy.stats import t
 from statsmodels.formula.api import ols
 import pandas as pd
+from more_itertools import batched
 alpha = .1
 p = .9
 
 
-folder = 'test/'                                                                       #folder to draw data from
+folder = 'beta/'                                                                       #folder to draw data from
 instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
 for i in os.listdir(folder):
     instListShort.append(i)
@@ -39,18 +40,17 @@ def melting(alpha,p):
     for i in os.listdir(folder):
         melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
         timeM = meltRamp(''.join([folder,i]))[0][1]
-        # print(len(melt))
-        n = int(round(len(melt)/7)) 
-        # plt.plot(timeM,melt,'o-')
-        # plt.show()
-        count0 = 0
-        count1 = n
+
+        lenSection = 11
+        meltChunk = list(batched(melt,lenSection))
+        timeMChunk = list(batched(timeM,lenSection))
+        if len(meltChunk[-1]) < lenSection/2:
+            meltChunk.pop()
+            timeMChunk.pop()
         rrChunks = []
-        for u in range(7):
-            rrChunks.append(rr(melt[count0:count1],timeM[count0:count1]))                       #find slope of each chunk in melt
-            # print(melt[count0:count1])
-            count0 += n
-            count1 += n
+        for indx,val in enumerate(meltChunk):
+            # print(val)
+            rrChunks.append(rr(val,timeMChunk[indx]))
 
         bound = ti.twoside.normal(rrChunks,p,1-alpha)                                           #find tolerance interval for each melt
         

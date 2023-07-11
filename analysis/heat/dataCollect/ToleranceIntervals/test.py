@@ -40,22 +40,11 @@ def melting(alpha,p):
     for i in os.listdir(folder):
         melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
         timeM = meltRamp(''.join([folder,i]))[0][1]
-        # print(len(melt))
-        # n = int(round(len(melt)/7)) 
-        # # plt.plot(timeM,melt,'o-')
-        # # plt.show()
-        # count0 = 0
-        # count1 = n
-        # rrChunks = []
-        # for u in range(7):
-        #     rrChunks.append(rr(melt[count0:count1],timeM[count0:count1]))                       #find slope of each chunk in melt
-        #     # print(melt[count0:count1])
-        #     count0 += n
-        #     count1 += n
-        lenSection = 7
+
+        lenSection = 11
         meltChunk = list(batched(melt,lenSection))
         timeMChunk = list(batched(timeM,lenSection))
-        if len(meltChunk[-1]) < lenSection:
+        if len(meltChunk[-1]) < lenSection/2:
             meltChunk.pop()
             timeMChunk.pop()
         rrChunks = []

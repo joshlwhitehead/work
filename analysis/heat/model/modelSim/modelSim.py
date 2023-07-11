@@ -3,19 +3,26 @@ import numpy as np
 from parseTxt import modelTune
 from scipy.interpolate import interp1d
 from timeit import default_timer as timer
-
+T0 = 24
 start = timer()
 
 def calculation(T0,offset,someTemp,lam,time):                               #someTemp is either thermistor temp or set temp
 
     return (-someTemp+offset+T0)*np.exp(-lam*(time))+someTemp-offset
 
-def off(someTemp):
-    
-    a = -0.0013693467336683212
-    b = 0.2659547738693443
-    c = -3.881909547738627
+def off(someTemp,a,b,c):
     return a*someTemp**2+b*someTemp+c
+a = -0.0013693467336683212
+b = 0.2659547738693443
+c = -3.881909547738627
+def kalman(someTemp,old,kal,a,b,c):
+    kalFull = [old]
+    for i in someTemp:
+        old = old*kal+(i-off(someTemp,a,b,c))*(1-kal)
+        kalFull.append(old)
+    return np.array(old)
+def listToListList(li):
+    return list(map(lambda item:[item],li))
 
 def r2(y,fit):
     st = sum((y-np.average(y))**2)
@@ -31,11 +38,21 @@ mod = [np.array(fullData[i][1][1]) for i in range(len(fullData))]
 sampTime = [np.array(fullData[i][0][1]) for i in range(len(fullData))]
 time = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
 
-mod.append([24])
+mod.append([T0])
 section = 0
-test = calculation(mod[section-1][-1],off(therm[section]),therm[section],0.0259,time[section]-time[section][0]-5)
+test = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],0.0259,time[section]-time[section][0]-5)
 testInterp = interp1d(time[section],test)(sampTime[section])
 
+
+
+
+
+
+# plt.plot(time[section],test)
+# plt.plot(sampTime[section],samp[section])
+# plt.plot(time[section],mod[section])
+# plt.plot(time[section],therm[section])
+# plt.show()
 
 
 # print(testInterp(sampTime[section]))
@@ -46,11 +63,11 @@ monteCarlo = np.random.uniform(0,1,10000)
 # print(r2(samp[section],testInterp))
 rr = {}
 for i in monteCarlo:
-    test3 = calculation(mod[section-1][-1],off(therm[section]),therm[section],i,time[section]-time[section][0]-5)
+    test3 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],i,time[section]-time[section][0]-5)
     testInterp = interp1d(time[section],test3)(sampTime[section])
     rr[r2(samp[section],testInterp)] = i
 
-test2 = calculation(mod[section-1][-1],off(therm[section]),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
+test2 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
 # print(max(rr.keys()))
 # print(rr[max(rr.keys())])
 
@@ -68,13 +85,13 @@ test2 = calculation(mod[section-1][-1],off(therm[section]),therm[section],rr[max
 def heatLambda():
     section = 0
     fullHeat = [i for i in samp[section]]
-    fullTest1 = calculation(mod[section-1][-1],off(therm[section]),therm[section],0.0259,time[section]-time[section][0]-5)
+    fullTest1 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],0.0259,time[section]-time[section][0]-5)
     fullTestInterp1 = interp1d(time[section],fullTest1)(sampTime[section])
     fullTestInterp = [i for i in fullTestInterp1]
     section = 2
     for i in samp[section]:
         fullHeat.append(i)
-    fullTest2 = calculation(mod[section-1][-1],off(therm[section]),therm[section],0.0259,time[section]-time[section][0]-5)
+    fullTest2 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],0.0259,time[section]-time[section][0]-5)
     fullTestInterp2 = interp1d(time[section],fullTest2)(sampTime[section])
     for i in fullTestInterp2:
         fullTestInterp.append(i)
@@ -87,10 +104,10 @@ def heatLambda():
     rr = {}
     for i in monteCarlo:
         section = 0
-        test3 = calculation(mod[section-1][-1],off(therm[section]),therm[section],i,time[section]-time[section][0]-5)
+        test3 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],i,time[section]-time[section][0]-5)
         testInterp3 = interp1d(time[section],test3)(sampTime[section])
         section = 2
-        test4 = calculation(mod[section-1][-1],off(therm[section]),therm[section],i,time[section]-time[section][0]-5)
+        test4 = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],i,time[section]-time[section][0]-5)
         testInterp4 = interp1d(time[section],test4)(sampTime[section])
 
         fullTest = [u for u in testInterp3]
@@ -100,10 +117,10 @@ def heatLambda():
         rr[r2(fullHeat,fullTest)] = i
     print(max(rr.keys()))
     section = 0
-    a = calculation(mod[section-1][-1],off(therm[section]),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
+    a = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
     aInterp = interp1d(time[section],a)(sampTime[section])
     section = 2
-    b = calculation(mod[section-1][-1],off(therm[section]),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
+    b = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],rr[max(rr.keys())],time[section]-time[section][0]-5)
     bInterp = interp1d(time[section],b)(sampTime[section])
 
     oldInterp = [i for i in aInterp]
@@ -121,12 +138,13 @@ def heatLambda():
 
 
 
-popSize = 100
-monteHeat = np.random.uniform(0,1,popSize)
+popSize = 5
+monteHeat = np.random.uniform(0,.1,popSize)
 monteCool = np.random.uniform(0.006,.007,popSize)
-monteOff1 = np.random.uniform(0,10,popSize)
-monteOff2 = np.random.uniform(0,10,popSize)
-monteOff3 = np.random.uniform(0,10,popSize)
+monteOff1 = np.random.uniform(-1,1,popSize)
+monteOff2 = np.random.uniform(-1,1,popSize)
+monteOff3 = np.random.uniform(-5,5,popSize)
+kalHeat = np.random.uniform(.8,1,popSize)
 
 
 section = [0,1,2,4]
@@ -143,45 +161,50 @@ fullTime = np.array(fullTime)
 #     totInterp = []
 for lamHeat in monteHeat:
     for lamCool in monteCool:
-        totInterp = []
-        for sec in section:
-            if sec == 0 or sec == 2:
-                test = calculation(mod[sec-1][-1],off(therm[sec]),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-                testInterp = interp1d(time[sec],test)(sampTime[sec])
-                totInterp += list(testInterp)
-            elif sec == 1:
-                test = calculation(mod[sec-1][-1],off(therm[sec]),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-                testInterp = interp1d(time[sec],test)(sampTime[sec])
-                totInterp += list(testInterp)
-            # elif sec == 3:
-            #     test = calculation(mod[sec-1][-1],off2,therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-            #     testInterp = interp1d(time[sec],test)(sampTime[sec])
-            #     totInterp += list(testInterp)
-            elif sec == 4:
-                test = calculation(mod[sec-1][-1],off(therm[sec]),therm[sec],lamCool,time[sec]-time[sec][0]-5)
-                testInterp = interp1d(time[sec],test)(sampTime[sec])
-                totInterp += list(testInterp)
-            # else:
-            #     test = calculation(mod[sec-1][-1],off3,therm[sec],lamCool,time[sec]-time[sec][0]-5)
-            #     testInterp = interp1d(time[sec],test)(sampTime[sec])
-            #     totInterp += list(testInterp)
+        for a in monteOff1:
+            for b in monteOff2:
+                for c in monteOff3:
+                    for kal in kalHeat:
+                        totInterp = []
+                        for sec in section:
+                            if sec == 0 or sec == 2:
+                                test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+                                testInterp = interp1d(time[sec],test)(sampTime[sec])
+                                totInterp += list(testInterp)
+                            elif sec == 1:
+                                test = kalman(therm[sec],mod[sec-1][-1],kal,a,b,c)
+                                # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+                                testInterp = interp1d(time[sec],test)(sampTime[sec])
+                                totInterp += list(testInterp)
+                            # elif sec == 3:
+                            #     test = calculation(mod[sec-1][-1],off2,therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+                            #     testInterp = interp1d(time[sec],test)(sampTime[sec])
+                            #     totInterp += list(testInterp)
+                            elif sec == 4:
+                                test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamCool,time[sec]-time[sec][0]-5)
+                                testInterp = interp1d(time[sec],test)(sampTime[sec])
+                                totInterp += list(testInterp)
+                            # else:
+                            #     test = calculation(mod[sec-1][-1],off3,therm[sec],lamCool,time[sec]-time[sec][0]-5)
+                            #     testInterp = interp1d(time[sec],test)(sampTime[sec])
+                            #     totInterp += list(testInterp)
 
 
     totInterp = np.array(totInterp)
-    rr[r2(fullSamp,totInterp)] = [lamHeat,lamCool,totInterp]
+    rr[r2(fullSamp,totInterp)] = [lamHeat,lamCool,a,b,c,totInterp]
 print(max(rr.keys()))
 print(rr[max(rr.keys())][:-1])
 # print(rr[max(rr.keys())])
 section = 4
-testCool = calculation(mod[section-1][-1],off(therm[section]),therm[section],0.00525,time[section]-time[section][0]-5)
+testCool = calculation(mod[section-1][-1],off(therm[section],a,b,c),therm[section],0.00525,time[section]-time[section][0]-5)
 testCoolInterp = interp1d(time[section],testCool)(sampTime[section])
 
-end= timer()
+end = timer()
 
 print(end-start)
 plt.plot(fullSamp)
-plt.plot(rr[max(rr.keys())][2])
-plt.plot(np.arange(138,138+len(testCoolInterp)),testCoolInterp)
+plt.plot(rr[max(rr.keys())][-1])
+# plt.plot(np.arange(138,138+len(testCoolInterp)),testCoolInterp)
 plt.grid()
 plt.show()
 
