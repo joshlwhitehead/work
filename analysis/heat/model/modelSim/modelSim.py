@@ -129,7 +129,7 @@ monteOff2 = np.random.uniform(0,10,popSize)
 monteOff3 = np.random.uniform(0,10,popSize)
 
 
-section = [0,2,4]
+section = [0,1,2,4]
 rr = {}
 fullSamp = []
 fullTime = []
@@ -149,10 +149,10 @@ for lamHeat in monteHeat:
                 test = calculation(mod[sec-1][-1],off(therm[sec]),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
                 testInterp = interp1d(time[sec],test)(sampTime[sec])
                 totInterp += list(testInterp)
-            # elif sec == 1:
-            #     test = calculation(mod[sec-1][-1],off1,therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-            #     testInterp = interp1d(time[sec],test)(sampTime[sec])
-            #     totInterp += list(testInterp)
+            elif sec == 1:
+                test = calculation(mod[sec-1][-1],off(therm[sec]),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+                testInterp = interp1d(time[sec],test)(sampTime[sec])
+                totInterp += list(testInterp)
             # elif sec == 3:
             #     test = calculation(mod[sec-1][-1],off2,therm[sec],lamHeat,time[sec]-time[sec][0]-5)
             #     testInterp = interp1d(time[sec],test)(sampTime[sec])
@@ -185,4 +185,4 @@ plt.plot(np.arange(138,138+len(testCoolInterp)),testCoolInterp)
 plt.grid()
 plt.show()
 
-heatLambda()
+# heatLambda()
