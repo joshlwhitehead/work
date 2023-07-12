@@ -9,14 +9,14 @@ from confidenceFun import CI,TI
 from PCR_rampRate_USE import heating,cooling
 import os
 
-temp = 4
+temp = 1
 
 
 folder = 'betaAlpha/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'betaBeta/'
+folder2 = 'alphaAlpha/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
 # folder3 = 'data/'
@@ -87,7 +87,8 @@ meanVar2 = np.mean(var2)
 # ciVar = CI(var,.05)
 ciMean2 = TI(means2,alpha,.90)
 ciVar2 = TI(var2,alpha,.90)
-
+if ciVar2[0] < 0:
+    ciVar2[0] = 0
 
 means = fullCI(folder,instlist)[3]
 var = fullCI(folder,instlist)[5]
@@ -99,6 +100,8 @@ meanVar = np.mean(var)
 # ciVar = CI(var,.05)
 ciMean = TI(means,alpha,.90)
 ciVar = TI(var,alpha,.90)
+if ciVar[0] < 0:
+    ciVar[0] = 0
 
 
 distFromMean = []
@@ -120,18 +123,18 @@ print(meanMeans,ciMean[1]-meanMeans)
 print(meanVar,ciVar[1]-meanVar)
 # plt.plot(means,np.ones(len(means))*.7,'o',color='k')
 # plt.plot(np.ones(len(var))*53,var,'o',color='k')
-plt.plot(means2,var2,'o',color='k',label='beta model')
-plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=5)
-plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=5)
+plt.plot(means2,var2,'o',color='k',label='V units - alpha model')
+plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=4,color='k')
+plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=4,color='k')
 plt.plot(meanMeans2,meanVar2,'o',color='r')
-plt.plot(means,var,'o',color='green',label='alpha model')
-plt.hlines(meanVar,ciMean[0],ciMean[1],lw=5)
-plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=5)
+plt.plot(means,var,'o',color='green',label='Beta units - alpha model')
+plt.hlines(meanVar,ciMean[0],ciMean[1],lw=4,color='green')
+plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=4,color='green')
 plt.plot(meanMeans,meanVar,'o',color='r')
 # plt.plot(meanAnneal3,varAnneal3,'o',color='purple',label='roomTemp')
 plt.title('Tolerance Area for Complex Populations')
-plt.xlabel('Mean Ramp Rate (c/sec)')
-plt.ylabel('Standard Deviation (c/sec)')
+plt.xlabel('Mean Temp (c)')
+plt.ylabel('Standard Deviation (c)')
 plt.legend()
 plt.grid()
 plt.show()

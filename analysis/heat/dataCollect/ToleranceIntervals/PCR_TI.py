@@ -27,7 +27,7 @@ from statsmodels.formula.api import ols
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'betaValphaModel/'
+folder = 'highLowWetFill/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
