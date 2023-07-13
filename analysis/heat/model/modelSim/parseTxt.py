@@ -744,10 +744,16 @@ def modelTune(file):
                 holdActTime.append(float(val.split()[0].strip('()'))/1000)
             elif ('DATAQ:' or 'CHUBE:') in val:
                 holdActSamp.append(float(val.split()[4]))
-                try:
-                    holdActSampTime.append(holdActTime[-1])
-                except:
-                    holdActSampTime.append(0)
+                if len(holdActSampTime) == 0:
+                    try:
+                        holdActSampTime.append(holdActTime[-1])
+                    except:
+                        holdActSampTime.append(heatActSampTime[-1]+1)
+                else:
+                    try:
+                        holdActSampTime.append(holdActTime[-1])
+                    except:
+                        holdActSampTime.append(0)
         elif heatKill:
             if 'modeled' in val:
                 heatKillTherm.append(float(val.split()[4].strip(',')))
@@ -755,10 +761,16 @@ def modelTune(file):
                 heatKillTime.append(float(val.split()[0].strip('()'))/1000)
             elif ('DATAQ:' or 'CHUBE:') in val:
                 heatKillSamp.append(float(val.split()[4]))
-                try:
-                    heatKillSampTime.append(heatKillTime[-1])
-                except:
-                    heatKillSampTime.append(0)
+                if len(heatKillSampTime) == 0:
+                    try:
+                        heatKillSampTime.append(heatKillTime[-1])
+                    except:
+                        heatKillSampTime.append(holdActSampTime[-1]+1)
+                else:
+                    try:
+                        heatKillSampTime.append(heatKillTime[-1])
+                    except:
+                        heatKillSampTime.append(0) 
         elif holdKill:
             if 'modeled' in val:
                 holdKillTherm.append(float(val.split()[4].strip(',')))
@@ -766,10 +778,16 @@ def modelTune(file):
                 holdKillTime.append(float(val.split()[0].strip('()'))/1000)
             elif ('DATAQ:' or 'CHUBE:') in val:
                 holdKillSamp.append(float(val.split()[4]))
-                try:
-                    holdKillSampTime.append(holdKillTime[-1])
-                except:
-                    holdKillSampTime.append(0)
+                if len(holdKillSampTime) == 0:
+                    try:
+                        holdKillSampTime.append(holdKillTime[-1])
+                    except:
+                        holdKillSampTime.append(heatKillSampTime[-1]+1)
+                else:
+                    try:
+                        holdKillSampTime.append(holdKillTime[-1])
+                    except:
+                        holdKillSampTime.append(0)
         elif cool:
             if 'modeled' in val:
                 coolEndTherm.append(float(val.split()[4].strip(',')))
