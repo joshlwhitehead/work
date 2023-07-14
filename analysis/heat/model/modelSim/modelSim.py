@@ -85,7 +85,7 @@ kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
 
 rrrr = 0
 
-while round(rrrr,2) < 0.98:
+while round(rrrr,2) < 0.95:
     
     # monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
     # monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
