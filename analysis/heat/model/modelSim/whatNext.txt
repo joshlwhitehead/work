@@ -1,9 +1,2 @@
-you now can optimize lambda. Next, optimize offset: it will be a similar start
 
-maybe run again with tighter range if r2 is too low/lower than original
-
-plot against current model
-
-
-ARRAY MATH NOT LOOPS
 
