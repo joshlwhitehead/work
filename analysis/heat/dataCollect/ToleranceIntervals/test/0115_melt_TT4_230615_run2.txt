@@ -1,0 +1,1261 @@
+CHUBE: | PcrThermoTempC = 25.22  |
+CHUBE: | PcrThermoTempC = 25.19  |
+CHUBE: | PcrThermoTempC = 25.17  |
+CHUBE: | PcrThermoTempC = 25.2  |
+CHUBE: | PcrThermoTempC = 25.32  |
+(62617) Door_Status: Closed
+(62662) colorSensorInterface_setGain: Setting color sensor gain to 5
+(62795) systemTasks_monitorStack: Stack Watermark(Fluorimeter Con): 2144
+(62927) _isCupPresent: Cup Detected!
+(62928) _isCupPresent: Color sum must be > 4000. Measured color sum is 43418.
+(62929) colorSensorInterface_setGain: Setting color sensor gain to 6
+(62950) systemRequestStateChange: System State Transition IDLE -> READY
+(62950) blePeriphNotifySubscription: ENTER NOTIFY
+(62953) BLE_PERIPH: Notifying
+(62956) comm_getNotifyId: Attempting to get notify id
+(62962) BLE_PERIPH: Notify Command Id = 34
+(62969) systemTasks_monitorStack: Stack Watermark(Fluorimeter Con): 1888
+(62975) systemRequestStateChange: Notify exit state change
+(63049) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+CHUBE: | PcrThermoTempC = 25.41  |
+(63227) BLE_PERIPH: App to Instrument Data
+(63230) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+CHUBE: | PcrThermoTempC = 25.46  |
+CHUBE: | PcrThermoTempC = 25.52  |
+(64848) BLE_PERIPH: App to Instrument Transaction Notify 0/119
+(64938) BLE_PERIPH: App to Instrument Data
+(64941) BLE_PERIPH: App to Instrument Transaction Notify 119/119
+(64993) encryption_keyExchange: Key Exchange took 7 ms
+[1750]Recieved Instrument Pub Key As: yL7flCCRqNLmI53gv3S8RcddnmMOUaPa+4lwCQMjJMj6bNUFW/pyM2rAopa9zn6Sr9TvtHFzcypv3ocXLh2ZdR0OqECerP8D
+(65049) systemTasks_monitorStack: Stack Watermark(Comm): 2048
+CHUBE: | PcrThermoTempC = 25.59  |
+(65748) BLE_PERIPH: App to Instrument Transaction Notify 0/1163
+(65842) BLE_PERIPH: App to Instrument Data
+(65844) BLE_PERIPH: App to Instrument Transaction Notify 508/1163
+(65932) BLE_PERIPH: App to Instrument Data
+(65934) BLE_PERIPH: App to Instrument Transaction Notify 1016/1163
+(66018) BLE_PERIPH: App to Instrument Data
+(66022) BLE_PERIPH: App to Instrument Transaction Notify 1163/1163
+(66124) encryption_decryptProtocol: Number of decrypt chunks is 3
+(66125) encryption_decryptProtocol: Decrypting 3 255 Byte Chunks
+(66128) encryption_decryptProtocol: Decrypting Chunk: 0/3
+(66135) encryption_decryptProtocol: Decrypting Chunk: 1/3
+(66141) encryption_decryptProtocol: Decrypting Chunk: 2/3
+(66149) encryption_decryptProtocol: Decrypting Remaining 74 bytes
+(66154) experimentParametersManuallyCopyBuffer: Copying Protocol....
+(66169) experimentParseJsonParameters: Cannot print message. Args too large
+(66172) ExperimentParam: Found parameter doContinuousAcquisition: 1
+(66175) ExperimentParam: Found parameter continuousAcquisitionSampleDelayMs: 1000
+(66184) ExperimentParam: Could not find parameter isMocked, using default value: 0
+(66192) ExperimentParam: Found parameter colorSensorGain: 6
+(66198) ExperimentParam: Found parameter colorSensorIntegrationTimeMs: 25
+(66206) ExperimentParam: Found parameter excitationOnDelayTimeMs: 6
+(66213) ExperimentParam: Found parameter excitationOutputPercentage: 100
+(66221) ExperimentParam: Found parameter temperatureCaptureDelayMs: 3000
+(66228) ExperimentParam: Could not find parameter continualRun, using default value: 0
+(66237) ExperimentParam: Found parameter doSamplePrep: 0
+(66245) ExperimentParam: Found parameter doCupVibration: 0
+(66249) ExperimentParam: Found parameter doRtSteps: 0
+(66256) ExperimentParam: Found parameter doPcr: 0
+(66262) ExperimentParam: Found parameter doMelt: 1
+(66267) ExperimentParam: Found parameter meltStartHoldTimeSeconds: 15
+(66274) ExperimentParam: Found parameter meltStartTemp: 45.00
+(66282) ExperimentParam: Found parameter meltStartCapturetemp: 77.00
+(66288) ExperimentParam: Found parameter meltFinishTemp: 95.00
+(66295) ExperimentParam: Found parameter meltRampRateDegCPerSecond: 1.00
+(66302) ExperimentParam: Found parameter meltAcquisitionsPerC: 5
+CHUBE: | PcrThermoTempC = 25.62  |
+(66309) ExperimentParam: Could not find parameter meltAcquisitionDelayMs, using default value: 200
+(66320) _setEncryptedProtocol: Finished Parsing Protocol
+[1751]Set Enc Protocol
+(66379) systemTasks_monitorStack: Stack Watermark(Comm): 976
+(66648) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(66737) BLE_PERIPH: App to Instrument Data
+(66740) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+[33, true, 1752, [{
+"doContinuousAcquisition":	true,
+"continuousAcquisitionSampleDelayMs":	1000,
+"isMocked":	false,
+"colorSensorGain":	6,
+"colorSensorIntegrationTimeMs":	25,
+"excitationOnDelayTimeMs":	6,
+"excitationOutputPercentage":	100,
+"doSamplePrep":	false,
+"samplePrepTempSteps":	[{
+"tempC":	90.0,
+"holdSeconds":	60.0,
+"rampRate":	1000.000,
+"performCapture":	0
+}, {
+"tempC":	75.0,
+"holdSeconds":	120.0,
+"rampRate":	1000.000,
+"performCapture":	0
+}, {
+"tempC":	115.0,
+"holdSeconds":	30.0,
+"rampRate":	1000.000,
+"performCapture":	0
+}, {
+"tempC":	105.0,
+"holdSeconds":	120.0,
+"rampRate":	1000.000,
+"performCapture":	0
+}],
+"samplePrepPcrChamberPreheatTempC":	45.00,
+"samplePrepDoPlunge":	true,
+"samplePrepDoPtcSeal":	true,
+"samplePreDoImmediateSeal":	false,
+"samplePrepPtcSealTimeMs":	30000,
+"doCupVibration":	false,
+"thumperCycleCount":	0,
+"thumperCyclingSteps":	[],
+"doRtSteps":	false,
+"pcrPreheatTempSteps":	[{
+"tempC":	45.0,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	95.0,
+"holdSeconds":	30.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}],
+"doPcr":	false,
+"pcrCycleCount":	45,
+"pcrCyclingTempSteps":	[{
+"tempC":	95.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	0
+}, {
+"tempC":	60.00,
+"holdSeconds":	10.00,
+"rampRate":	1000.00,
+"performCapture":	1
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}, {
+"tempC":	0.00,
+"holdSeconds":	0.00,
+"rampRate":	0.00,
+"performCapture":	0
+}],
+"doMelt":	true,
+"meltStartHoldTimeSeconds":	15.00,
+"meltStartTemp":	45.0,
+"meltStartCaptureTemp":	77.0,
+"meltFinishTemp":	95.0,
+"meltAcquisitionDelayMs":	200,
+"meltAcquisitionsPerC":	5,
+"meltRampRateDegCPerSecond":	1.000
+}], 0]
+CHUBE: | PcrThermoTempC = 25.68  |
+(67401) heapMonitor_checkFreeHeapSize: New heap low Watermark 54196
+CHUBE: | PcrThermoTempC = 25.73  |
+(68223) BLE_PERIPH: App to Instrument Transaction Notify 0/85
+(68313) BLE_PERIPH: App to Instrument Data
+(68316) BLE_PERIPH: App to Instrument Transaction Notify 85/85
+(68337) _processRequestedState: Experiment State Transition IDLE -> START
+(68337) DEVICE USAGE: Printing device usage logs
+(68339) DEVICE USAGE: Lifter Up Times:                              189
+(68347) DEVICE USAGE: Lifter Down Times:                            193
+(68354) DEVICE USAGE: Thumper Vibrated Times:                       258
+(68362) DEVICE USAGE: Thumper Stalled Times:                        456
+(68369) DEVICE USAGE: Solenoid Times:                               492
+(68377) DEVICE USAGE: Plunge Times:                                 123
+(68384) DEVICE USAGE: Laser Activation Times:                       214951
+(68392) DEVICE USAGE: Fluorimeter Reads:                            644842
+(68400) DEVICE USAGE: Front Button Presses:                         65
+(68407) DEVICE USAGE: Back Button Presses:                          63
+(68414) DEVICE USAGE: Total Completed Runs:                         148
+(68422) systemRequestStateChange: System State Transition READY -> RUNNING
+(68429) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(68437) DEVICE USAGE: PTC On Time (Seconds):                        3690
+(68445) blePeriphNotifySubscription: ENTER NOTIFY
+(68451) DEVICE USAGE: Treatment Chamber TEC On Time (Seconds):      49376
+(68458) BLE_PERIPH: Notifying
+(68462) taskMonitor_task: Task LED Task hasn't checked in for 200 ms
+(68469) comm_getNotifyId: Attempting to get notify id
+(68475) BLE_PERIPH: Notify Command Id = 34
+(68480) DEVICE USAGE: PCR Chamber TEC On Time (Seconds):            208441
+(68487) colorSensorInterface_setGain: Setting color sensor gain to 7
+(68495) systemRequestStateChange: Notify exit state change
+(68501) DEVICE USAGE: Fan On Time (Seconds):                        489903
+(68509) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(68517) DEVICE USAGE: Total Time On (Seconds):                      582322
+(68525) DEVICE USAGE: Startup Times:                                474
+(68532) _airboatStateEnter: Lifter Down
+(68538) experimentStateStartEnter: Experiment starting
+(68544) thermalQueue_sendClearInertiaCompensation: Clearing Inert Comp
+(68551) colorSensorInterface_setGain: Setting color sensor gain to 6
+(68567) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(68572) experimentStateStartEnter: Enabling Debug Characteristic!
+(68573) i2cTask_changeI2cSpeed: I2C task already set to FAST mode
+(68580) experimentTask: Experiment State Transition START -> SAMPLE_PREP
+(68587) blePeriphNotifySubscription: ENTER NOTIFY
+(68593) thermalQueue_processDirective: Processing Clear Inertia Comp
+(68602) tecCurvePredictor_clearInertiaCompensation: Clearing Inertia Compensation!
+(68608) _deleteFile: Failed to delete file because error num 2
+(68614) BLE_PERIPH: Notifying
+(68618) _initInertiaCompensation: Setting Inertia Compensation to defaults
+(68626) comm_getNotifyId: Attempting to get notify id
+(68632) ptcInterface_setEnable: PTC CHANGE STATE
+(68637) BLE_PERIPH: Notify Command Id = 34
+(68644) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(68651) fileWriterProcessDirective: Starting Nonvol Copy...
+(68657) thermalControlTask_thermalTask: Therm Cont time: 59 ms. Sleep.
+(68674) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(68676) taskMonitor_task: Task Experiment Task hasn't checked in for 400 ms...
+(68765) systemTasks_monitorStack: Stack Watermark(Experiment): 2000
+(68765) experimentTask: Experiment State Transition SAMPLE_PREP -> RT STEPS
+(68769) eventMarker: 231, Start RT
+(68773) blePeriphNotifySubscription: ENTER NOTIFY
+(68779) colorSensorInterface_setGain: Setting color sensor gain to 6
+(68786) BLE_PERIPH: Notifying
+(68790) comm_getNotifyId: Attempting to get notify id
+(68796) BLE_PERIPH: Notify Command Id = 34
+(68807) BLE_PERIPH: App to Instrument Data
+CHUBE: | PcrThermoTempC = 25.76  |
+(68808) systemTasks_monitorStack: Stack Watermark(File Writer): 2144
+(68813) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(68820) ramResults_writeToNonVol: Starting Ram Write to non-vol. Writing 0 bytes
+(68828) ramResults_writeToNonVol: Total Non-vol bytes: 0 write time: 8 ms
+(68835) colorSensorInterface_setGain: Setting color sensor gain to 7
+(68843) systemTasks_monitorStack: Stack Watermark(File Writer): 2000
+(68865) experimentTask: Experiment State Transition RT STEPS -> PCR
+(68868) eventMarker: 330, Start PCR
+(68872) blePeriphNotifySubscription: ENTER NOTIFY
+(68878) BLE_PERIPH: Notifying
+(68882) comm_getNotifyId: Attempting to get notify id
+(68888) BLE_PERIPH: Notify Command Id = 34
+(68965) experimentTask: Experiment State Transition PCR -> MELT
+(68965) thermalQueue_sendSetTargetTempC: Setting New Queue Temp!
+(68968) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(68976) blePeriphNotifySubscription: ENTER NOTIFY
+(68982) BLE_PERIPH: Notifying
+(68985) comm_getNotifyId: Attempting to get notify id
+(68991) BLE_PERIPH: Notify Command Id = 34
+(68996) thermalQueue_processDirective: Processing New Target Temp
+(69003) _resetThermalControlState: RESET Peltier 1 control state
+(69010) thermalControl_setTargetTempC: [1] MAX RAMPING  goto 45.0
+(69017) _setThermalControlState: thermalControl-1: changing state 3->1
+(69024) tecCurvePredictorSetHoldPower: hold power: 0.00, filtered: 17.50, temp: 28.78
+(69033) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(69043) thermalQueue_processDirective: Processing new Set enable
+(69048) thermalControl_setEnable: Enabling Peltier 1
+(69127) colorSensorInterface_setGain: Setting color sensor gain to 6
+(69151) TC: TC-1 = 28.69, modeled = 28.77, target = 45.00, heatSink = 28.60, output = 100.0, timeout = 100, ModelRate = -0.01, TecRate = -0.07, HsRate = -0.07
+(69221) _getColorReadFromQueue: LED Detected!  LED On Ch480nm: 36000, LED Off Ch480nm: 0, Difference = 36000 was greater than 500
+(69259) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(69301) TC: TC-1 = 28.71, modeled = 28.77, target = 45.00, heatSink = 28.60, output = 100.0, timeout = 250, ModelRate = 0.01, TecRate = 0.58, HsRate = -0.07
+(69347) BLE_PERIPH: App to Instrument Data
+(69350) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(69451) TC: TC-1 = 28.93, modeled = 28.79, target = 45.00, heatSink = 28.59, output = 100.0, timeout = 400, ModelRate = 0.22, TecRate = 2.65, HsRate = -0.27
+(69481) _readLifterSwitches: New Lifter Up Value: 0
+(69601) TC: TC-1 = 29.43, modeled = 28.86, target = 45.00, heatSink = 28.57, output = 100.0, timeout = 550, ModelRate = 0.57, TecRate = 4.80, HsRate = -0.60
+(69751) TC: TC-1 = 30.41, modeled = 29.02, target = 45.00, heatSink = 28.52, output = 100.0, timeout = 700, ModelRate = 1.24, TecRate = 8.06, HsRate = -0.52
+(69798) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+CHUBE: | PcrThermoTempC = 25.83  |
+(69887) BLE_PERIPH: App to Instrument Data
+(69890) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(69901) TC: TC-1 = 31.69, modeled = 29.28, target = 45.00, heatSink = 28.44, output = 100.0, timeout = 850, ModelRate = 2.07, TecRate = 9.61, HsRate = -0.51
+(70051) TC: TC-1 = 33.19, modeled = 29.67, target = 45.00, heatSink = 28.37, output = 100.0, timeout = 1000, ModelRate = 2.87, TecRate = 11.23, HsRate = -0.42
+(70201) TC: TC-1 = 34.57, modeled = 30.14, target = 45.00, heatSink = 28.30, output = 100.0, timeout = 1150, ModelRate = 3.31, TecRate = 9.98, HsRate = -0.51
+(70248) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(70337) BLE_PERIPH: App to Instrument Data
+(70340) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(70351) TC: TC-1 = 36.29, modeled = 30.73, target = 45.00, heatSink = 28.21, output = 100.0, timeout = 1300, ModelRate = 4.01, TecRate = 10.49, HsRate = -0.60
+(70501) TC: TC-1 = 38.01, modeled = 31.40, target = 45.00, heatSink = 28.14, output = 100.0, timeout = 1450, ModelRate = 4.67, TecRate = 10.73, HsRate = -0.68
+CHUBE: | PcrThermoTempC = 25.99  |
+(70651) TC: TC-1 = 39.77, modeled = 32.15, target = 45.00, heatSink = 28.06, output = 100.0, timeout = 1600, ModelRate = 5.19, TecRate = 12.42, HsRate = -0.47
+(70743) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(70801) TC: TC-1 = 41.52, modeled = 32.96, target = 45.00, heatSink = 27.97, output = 100.0, timeout = 1750, ModelRate = 5.58, TecRate = 12.30, HsRate = -0.56
+(70832) BLE_PERIPH: App to Instrument Data
+(70835) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(70951) TC: TC-1 = 43.04, modeled = 33.81, target = 45.00, heatSink = 27.89, output = 100.0, timeout = 1900, ModelRate = 5.68, TecRate = 12.52, HsRate = -0.61
+(71101) TC: TC-1 = 44.74, modeled = 34.71, target = 45.00, heatSink = 27.81, output = 100.0, timeout = 2050, ModelRate = 5.94, TecRate = 10.97, HsRate = -0.56
+(71251) TC: TC-1 = 46.49, modeled = 35.64, target = 45.00, heatSink = 27.74, output = 100.0, timeout = 2200, ModelRate = 6.22, TecRate = 10.67, HsRate = -0.55
+(71401) TC: TC-1 = 48.23, modeled = 36.61, target = 45.00, heatSink = 27.66, output = 100.0, timeout = 2350, ModelRate = 6.55, TecRate = 10.45, HsRate = -0.59
+CHUBE: | PcrThermoTempC = 26.14  |
+(71551) TC: TC-1 = 49.95, modeled = 37.60, target = 45.00, heatSink = 27.59, output = 100.0, timeout = 2500, ModelRate = 6.74, TecRate = 12.39, HsRate = -0.43
+(71701) TC: TC-1 = 51.59, modeled = 38.62, target = 45.00, heatSink = 27.52, output = 100.0, timeout = 2650, ModelRate = 6.82, TecRate = 10.51, HsRate = -0.47
+(71851) TC: TC-1 = 53.23, modeled = 39.64, target = 45.00, heatSink = 27.46, output = 100.0, timeout = 2800, ModelRate = 6.91, TecRate = 10.27, HsRate = -0.43
+(71996) _maxHeatingStateTransitions: HEAT NORM fast->slow down
+(72008) TC: TC-1 = 54.84, modeled = 40.68, target = 45.00, heatSink = 27.40, output = 50.0, timeout = 2950, ModelRate = 6.98, TecRate = 10.22, HsRate = -0.28
+(72157) TC: TC-1 = 56.43, modeled = 41.73, target = 45.00, heatSink = 27.35, output = -100.0, timeout = 3050, ModelRate = 7.02, TecRate = 9.89, HsRate = -0.38
+CHUBE: | PcrThermoTempC = 26.59  |
+(72307) TC: TC-1 = 57.95, modeled = 42.78, target = 45.00, heatSink = 27.29, output = -100.0, timeout = 3200, ModelRate = 6.98, TecRate = 9.24, HsRate = -0.26
+(72457) TC: TC-1 = 59.13, modeled = 43.80, target = 45.00, heatSink = 27.26, output = -100.0, timeout = 3350, ModelRate = 6.66, TecRate = 5.88, HsRate = -0.12
+(72607) TC: TC-1 = 59.74, modeled = 44.73, target = 45.00, heatSink = 27.27, output = -100.0, timeout = 3500, ModelRate = 5.98, TecRate = 2.47, HsRate = 0.28
+(72757) TC: TC-1 = 59.79, modeled = 45.53, target = 45.00, heatSink = 27.35, output = -100.0, timeout = 3650, ModelRate = 4.99, TecRate = -0.85, HsRate = 0.75
+(72908) TC: TC-1 = 59.44, modeled = 46.17, target = 45.00, heatSink = 27.49, output = -100.0, timeout = 3800, ModelRate = 3.92, TecRate = -3.68, HsRate = 0.78
+(72959) thermalSafety_brakeCheck: HEATING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model:46.35, threshold:45.20
+(72994) _setThermalControlState: thermalControl-1: changing state 1->3
+(72995) _setTempReachedCallback: Set Temp Reached
+(73050) TC: TC-1 = 58.81, modeled = 46.66, target = 45.00, heatSink = 27.67, output = -54.8, timeout = 3950, ModelRate = 2.86, TecRate = -4.42, HsRate = 1.17
+CHUBE: | PcrThermoTempC = 27.17  |
+(73201) TC: TC-1 = 57.97, modeled = 46.99, target = 45.00, heatSink = 27.88, output = -39.9, timeout = 4100, ModelRate = 1.84, TecRate = -6.44, HsRate = 1.52
+(73350) TC: TC-1 = 57.07, modeled = 47.18, target = 45.00, heatSink = 28.12, output = -37.2, timeout = 4250, ModelRate = 0.98, TecRate = -5.86, HsRate = 1.45
+(73501) TC: TC-1 = 56.16, modeled = 47.26, target = 45.00, heatSink = 28.34, output = -31.0, timeout = 4400, ModelRate = 0.27, TecRate = -5.75, HsRate = 1.44
+(73651) TC: TC-1 = 55.29, modeled = 47.25, target = 45.00, heatSink = 28.56, output = -22.0, timeout = 4550, ModelRate = -0.27, TecRate = -6.01, HsRate = 1.47
+(73801) TC: TC-1 = 54.48, modeled = 47.18, target = 45.00, heatSink = 28.73, output = -20.6, timeout = 4700, ModelRate = -0.67, TecRate = -5.09, HsRate = 1.06
+CHUBE: | PcrThermoTempC = 27.42  |
+(73950) TC: TC-1 = 53.79, modeled = 47.05, target = 45.00, heatSink = 28.87, output = -11.4, timeout = 4850, ModelRate = -0.87, TecRate = -4.99, HsRate = 0.79
+(73993) systemTasks_monitorStack: Stack Watermark(Thermal Control): 1984
+(74100) TC: TC-1 = 53.08, modeled = 46.89, target = 45.00, heatSink = 29.01, output = -4.1, timeout = 5000, ModelRate = -1.07, TecRate = -4.18, HsRate = 0.91
+(74250) TC: TC-1 = 52.45, modeled = 46.71, target = 45.00, heatSink = 29.11, output = 5.1, timeout = 5150, ModelRate = -1.19, TecRate = -3.67, HsRate = 0.63
+(74400) TC: TC-1 = 51.90, modeled = 46.52, target = 45.00, heatSink = 29.20, output = 8.2, timeout = 5300, ModelRate = -1.23, TecRate = -3.22, HsRate = 0.63
+(74551) TC: TC-1 = 51.41, modeled = 46.33, target = 45.00, heatSink = 29.27, output = 12.2, timeout = 5450, ModelRate = -1.24, TecRate = -3.31, HsRate = 0.45
+(74701) TC: TC-1 = 51.01, modeled = 46.15, target = 45.00, heatSink = 29.32, output = 12.6, timeout = 5600, ModelRate = -1.18, TecRate = -2.65, HsRate = 0.38
+(74749) _performCapture: [6209,0,46.09,8668,9000,9000,5073,6736,5898,9000,9000,2861,9000,0,50.85]
+CHUBE: | PcrThermoTempC = 27.91  |
+(74851) TC: TC-1 = 50.63, modeled = 45.98, target = 45.00, heatSink = 29.36, output = 13.2, timeout = 5750, ModelRate = -1.13, TecRate = -2.06, HsRate = 0.34
+(75001) TC: TC-1 = 50.28, modeled = 45.82, target = 45.00, heatSink = 29.39, output = 17.2, timeout = 0, ModelRate = -1.08, TecRate = -2.56, HsRate = 0.11
+(75151) TC: TC-1 = 49.98, modeled = 45.66, target = 45.00, heatSink = 29.42, output = 16.6, timeout = 0, ModelRate = -0.99, TecRate = -1.74, HsRate = 0.17
+(75300) TC: TC-1 = 49.69, modeled = 45.52, target = 45.00, heatSink = 29.44, output = 18.1, timeout = 0, ModelRate = -0.92, TecRate = -1.66, HsRate = 0.07
+(75450) TC: TC-1 = 49.43, modeled = 45.40, target = 45.00, heatSink = 29.45, output = 19.7, timeout = 0, ModelRate = -0.83, TecRate = -1.55, HsRate = 0.08
+(75601) TC: TC-1 = 49.19, modeled = 45.28, target = 45.00, heatSink = 29.45, output = 21.1, timeout = 0, ModelRate = -0.78, TecRate = -1.76, HsRate = 0.09
+CHUBE: | PcrThermoTempC = 28.74  |
+(75750) TC: TC-1 = 48.98, modeled = 45.17, target = 45.00, heatSink = 29.45, output = 20.8, timeout = 0, ModelRate = -0.68, TecRate = -1.36, HsRate = -0.03
+(75888) _performCapture: [7348,0,45.11,8250,9000,9000,4847,6390,5659,9000,9000,2585,9000,0,48.86]
+(75900) TC: TC-1 = 48.80, modeled = 45.08, target = 45.00, heatSink = 29.45, output = 20.7, timeout = 0, ModelRate = -0.60, TecRate = -1.03, HsRate = -0.10
+(76050) TC: TC-1 = 48.61, modeled = 44.99, target = 45.00, heatSink = 29.44, output = 21.6, timeout = 0, ModelRate = -0.55, TecRate = -1.28, HsRate = -0.20
+(76200) TC: TC-1 = 48.45, modeled = 44.91, target = 45.00, heatSink = 29.43, output = 21.6, timeout = 0, ModelRate = -0.49, TecRate = -0.89, HsRate = -0.11
+(76350) TC: TC-1 = 48.29, modeled = 44.85, target = 45.00, heatSink = 29.42, output = 22.1, timeout = 0, ModelRate = -0.44, TecRate = -0.94, HsRate = -0.11
+CHUBE: | PcrThermoTempC = 29.51  |
+(76501) TC: TC-1 = 48.13, modeled = 44.79, target = 45.00, heatSink = 29.40, output = 23.5, timeout = 0, ModelRate = -0.41, TecRate = -1.33, HsRate = -0.07
+(76650) TC: TC-1 = 47.99, modeled = 44.73, target = 45.00, heatSink = 29.39, output = 22.9, timeout = 0, ModelRate = -0.37, TecRate = -0.80, HsRate = -0.11
+(76800) TC: TC-1 = 47.87, modeled = 44.68, target = 45.00, heatSink = 29.37, output = 23.6, timeout = 0, ModelRate = -0.31, TecRate = -0.75, HsRate = 0.15
+(76950) TC: TC-1 = 47.73, modeled = 44.63, target = 45.00, heatSink = 29.36, output = 23.9, timeout = 0, ModelRate = -0.29, TecRate = -0.97, HsRate = -0.17
+(77030) _performCapture: [8491,0,44.62,7920,9000,9000,4669,6103,5446,9000,9000,2285,9000,0,47.69]
+(77100) TC: TC-1 = 47.60, modeled = 44.59, target = 45.00, heatSink = 29.34, output = 24.2, timeout = 0, ModelRate = -0.28, TecRate = -0.96, HsRate = -0.22
+(77251) TC: TC-1 = 47.48, modeled = 44.55, target = 45.00, heatSink = 29.33, output = 24.9, timeout = 0, ModelRate = -0.26, TecRate = -0.94, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 32.79  |
+(77382) _readLifterSwitches: New Lifter Down Value: 1
+(77383) _airboatStateEnter: Reached Bottom
+(77400) TC: TC-1 = 47.36, modeled = 44.52, target = 45.00, heatSink = 29.31, output = 24.7, timeout = 0, ModelRate = -0.23, TecRate = -0.65, HsRate = -0.10
+(77483) _airboatStateEnter: ALL STOP
+(77550) TC: TC-1 = 47.26, modeled = 44.48, target = 45.00, heatSink = 29.29, output = 25.2, timeout = 0, ModelRate = -0.22, TecRate = -0.73, HsRate = -0.13
+(77700) TC: TC-1 = 47.17, modeled = 44.45, target = 45.00, heatSink = 29.28, output = 25.4, timeout = 0, ModelRate = -0.19, TecRate = -0.62, HsRate = -0.08
+(77850) TC: TC-1 = 47.09, modeled = 44.43, target = 45.00, heatSink = 29.26, output = 25.2, timeout = 0, ModelRate = -0.16, TecRate = -0.45, HsRate = -0.15
+(78000) TC: TC-1 = 46.99, modeled = 44.41, target = 45.00, heatSink = 29.25, output = 26.2, timeout = 0, ModelRate = -0.16, TecRate = -0.71, HsRate = -0.11
+CHUBE: | PcrThermoTempC = 37.04  |
+(78150) TC: TC-1 = 46.90, modeled = 44.38, target = 45.00, heatSink = 29.24, output = 26.1, timeout = 0, ModelRate = -0.14, TecRate = -0.47, HsRate = -0.12
+(78165) _performCapture: [9627,0,44.38,7752,9000,9000,4570,5976,5339,9000,9000,2190,9000,0,46.90]
+(78300) TC: TC-1 = 46.84, modeled = 44.37, target = 45.00, heatSink = 29.22, output = 26.1, timeout = 0, ModelRate = -0.11, TecRate = -0.36, HsRate = -0.09
+(78450) TC: TC-1 = 46.78, modeled = 44.35, target = 45.00, heatSink = 29.20, output = 26.0, timeout = 0, ModelRate = -0.09, TecRate = -0.25, HsRate = -0.16
+(78600) TC: TC-1 = 46.73, modeled = 44.34, target = 45.00, heatSink = 29.19, output = 26.3, timeout = 0, ModelRate = -0.06, TecRate = -0.33, HsRate = -0.19
+(78662) BLE_PERIPH_INTERFACE: Finding Characteristic
+(78750) TC: TC-1 = 46.69, modeled = 44.34, target = 45.00, heatSink = 29.17, output = 26.6, timeout = 0, ModelRate = -0.04, TecRate = -0.44, HsRate = -0.19
+(78900) TC: TC-1 = 46.65, modeled = 44.33, target = 45.00, heatSink = 29.15, output = 26.3, timeout = 0, ModelRate = -0.01, TecRate = -0.14, HsRate = -0.13
+CHUBE: | PcrThermoTempC = 38.52  |
+(79050) TC: TC-1 = 46.62, modeled = 44.33, target = 45.00, heatSink = 29.14, output = 26.6, timeout = 0, ModelRate = 0.00, TecRate = -0.25, HsRate = -0.09
+(79200) TC: TC-1 = 46.58, modeled = 44.33, target = 45.00, heatSink = 29.13, output = 26.6, timeout = 0, ModelRate = 0.01, TecRate = -0.16, HsRate = -0.08
+(79308) _performCapture: [10769,0,44.34,7731,9000,9000,4546,5957,5323,9000,9000,2178,9000,0,46.55]
+(79350) TC: TC-1 = 46.54, modeled = 44.34, target = 45.00, heatSink = 29.12, output = 27.0, timeout = 0, ModelRate = 0.02, TecRate = -0.31, HsRate = -0.10
+(79500) TC: TC-1 = 46.50, modeled = 44.34, target = 45.00, heatSink = 29.10, output = 26.7, timeout = 0, ModelRate = 0.03, TecRate = -0.14, HsRate = -0.17
+(79650) TC: TC-1 = 46.47, modeled = 44.35, target = 45.00, heatSink = 29.09, output = 26.7, timeout = 0, ModelRate = 0.04, TecRate = -0.11, HsRate = -0.17
+CHUBE: | PcrThermoTempC = 40.63  |
+(79800) TC: TC-1 = 46.46, modeled = 44.35, target = 45.00, heatSink = 29.07, output = 26.9, timeout = 0, ModelRate = 0.05, TecRate = -0.11, HsRate = -0.05
+(79950) TC: TC-1 = 46.44, modeled = 44.36, target = 45.00, heatSink = 29.07, output = 26.9, timeout = 0, ModelRate = 0.07, TecRate = -0.08, HsRate = -0.06
+(80100) TC: TC-1 = 46.43, modeled = 44.37, target = 45.00, heatSink = 29.06, output = 26.9, timeout = 0, ModelRate = 0.08, TecRate = -0.07, HsRate = -0.04
+(80250) TC: TC-1 = 46.41, modeled = 44.39, target = 45.00, heatSink = 29.04, output = 26.9, timeout = 0, ModelRate = 0.09, TecRate = -0.09, HsRate = -0.08
+(80400) TC: TC-1 = 46.40, modeled = 44.40, target = 45.00, heatSink = 29.03, output = 26.8, timeout = 0, ModelRate = 0.09, TecRate = -0.08, HsRate = -0.09
+(80448) _performCapture: [11909,0,44.41,7724,9000,9000,4534,5945,5313,9000,9000,2171,9000,0,46.40]
+(80550) TC: TC-1 = 46.39, modeled = 44.42, target = 45.00, heatSink = 29.02, output = 26.8, timeout = 0, ModelRate = 0.10, TecRate = -0.06, HsRate = -0.07
+CHUBE: | PcrThermoTempC = 41.98  |
+(80700) TC: TC-1 = 46.37, modeled = 44.43, target = 45.00, heatSink = 29.00, output = 26.6, timeout = 0, ModelRate = 0.10, TecRate = -0.17, HsRate = -0.23
+(80850) TC: TC-1 = 46.37, modeled = 44.45, target = 45.00, heatSink = 28.99, output = 26.7, timeout = 0, ModelRate = 0.11, TecRate = -0.05, HsRate = -0.06
+(81000) TC: TC-1 = 46.35, modeled = 44.46, target = 45.00, heatSink = 28.98, output = 26.9, timeout = 0, ModelRate = 0.10, TecRate = -0.11, HsRate = -0.05
+(81150) TC: TC-1 = 46.34, modeled = 44.48, target = 45.00, heatSink = 28.97, output = 27.0, timeout = 0, ModelRate = 0.11, TecRate = -0.16, HsRate = -0.05
+(81300) TC: TC-1 = 46.33, modeled = 44.50, target = 45.00, heatSink = 28.96, output = 26.5, timeout = 0, ModelRate = 0.11, TecRate = -0.05, HsRate = -0.13
+CHUBE: | PcrThermoTempC = 42.5  |
+(81450) TC: TC-1 = 46.32, modeled = 44.51, target = 45.00, heatSink = 28.95, output = 26.6, timeout = 0, ModelRate = 0.11, TecRate = -0.10, HsRate = -0.11
+(81590) _performCapture: [13051,0,44.52,7715,9000,9000,4524,5934,5305,9000,9000,2166,9000,0,46.31]
+(81600) TC: TC-1 = 46.31, modeled = 44.53, target = 45.00, heatSink = 28.94, output = 26.5, timeout = 0, ModelRate = 0.11, TecRate = -0.07, HsRate = -0.11
+(81750) TC: TC-1 = 46.30, modeled = 44.54, target = 45.00, heatSink = 28.93, output = 26.6, timeout = 0, ModelRate = 0.11, TecRate = -0.11, HsRate = -0.11
+(81900) TC: TC-1 = 46.29, modeled = 44.56, target = 45.00, heatSink = 28.92, output = 26.5, timeout = 0, ModelRate = 0.11, TecRate = -0.07, HsRate = -0.07
+(82050) TC: TC-1 = 46.28, modeled = 44.58, target = 45.00, heatSink = 28.91, output = 26.4, timeout = 0, ModelRate = 0.11, TecRate = -0.04, HsRate = -0.06
+(82200) TC: TC-1 = 46.27, modeled = 44.59, target = 45.00, heatSink = 28.90, output = 26.3, timeout = 0, ModelRate = 0.11, TecRate = -0.07, HsRate = -0.10
+CHUBE: | PcrThermoTempC = 43.24  |
+(82350) TC: TC-1 = 46.27, modeled = 44.61, target = 45.00, heatSink = 28.90, output = 26.2, timeout = 0, ModelRate = 0.11, TecRate = -0.08, HsRate = -0.15
+(82500) TC: TC-1 = 46.25, modeled = 44.62, target = 45.00, heatSink = 28.88, output = 26.4, timeout = 0, ModelRate = 0.10, TecRate = -0.13, HsRate = -0.10
+(82650) TC: TC-1 = 46.24, modeled = 44.64, target = 45.00, heatSink = 28.88, output = 26.4, timeout = 0, ModelRate = 0.10, TecRate = -0.09, HsRate = -0.04
+(82734) _performCapture: [14195,0,44.64,7705,9000,9000,4512,5926,5298,9000,9000,2162,9000,0,46.23]
+(82800) TC: TC-1 = 46.23, modeled = 44.65, target = 45.00, heatSink = 28.87, output = 26.3, timeout = 0, ModelRate = 0.09, TecRate = -0.07, HsRate = -0.07
+(82950) TC: TC-1 = 46.21, modeled = 44.67, target = 45.00, heatSink = 28.87, output = 26.4, timeout = 0, ModelRate = 0.09, TecRate = -0.09, HsRate = -0.04
+(83100) TC: TC-1 = 46.19, modeled = 44.68, target = 45.00, heatSink = 28.85, output = 26.5, timeout = 0, ModelRate = 0.07, TecRate = -0.18, HsRate = -0.10
+CHUBE: | PcrThermoTempC = 43.72  |
+(83250) TC: TC-1 = 46.18, modeled = 44.69, target = 45.00, heatSink = 28.85, output = 26.3, timeout = 0, ModelRate = 0.07, TecRate = -0.11, HsRate = -0.11
+(83400) TC: TC-1 = 46.17, modeled = 44.70, target = 45.00, heatSink = 28.85, output = 26.2, timeout = 0, ModelRate = 0.08, TecRate = -0.05, HsRate = -0.03
+(83550) TC: TC-1 = 46.15, modeled = 44.71, target = 45.00, heatSink = 28.84, output = 26.4, timeout = 0, ModelRate = 0.07, TecRate = -0.16, HsRate = -0.06
+(83700) TC: TC-1 = 46.14, modeled = 44.72, target = 45.00, heatSink = 28.84, output = 26.2, timeout = 0, ModelRate = 0.07, TecRate = -0.08, HsRate = -0.08
+(83850) TC: TC-1 = 46.13, modeled = 44.73, target = 45.00, heatSink = 28.83, output = 26.3, timeout = 0, ModelRate = 0.07, TecRate = -0.11, HsRate = -0.05
+(83877) _performCapture: [15338,0,44.73,7691,9000,9000,4507,5920,5293,9000,9000,2158,9000,0,46.13]
+CHUBE: | PcrThermoTempC = 43.87  |
+(84000) TC: TC-1 = 46.11, modeled = 44.74, target = 45.00, heatSink = 28.82, output = 26.3, timeout = 0, ModelRate = 0.06, TecRate = -0.14, HsRate = -0.10
+(84150) TC: TC-1 = 46.09, modeled = 44.75, target = 45.00, heatSink = 28.81, output = 26.4, timeout = 0, ModelRate = 0.05, TecRate = -0.16, HsRate = -0.09
+(84300) TC: TC-1 = 46.08, modeled = 44.76, target = 45.00, heatSink = 28.81, output = 26.3, timeout = 0, ModelRate = 0.05, TecRate = -0.08, HsRate = -0.04
+(84450) TC: TC-1 = 46.07, modeled = 44.77, target = 45.00, heatSink = 28.80, output = 26.4, timeout = 0, ModelRate = 0.06, TecRate = -0.11, HsRate = -0.03
+(84600) TC: TC-1 = 46.06, modeled = 44.78, target = 45.00, heatSink = 28.79, output = 26.3, timeout = 0, ModelRate = 0.05, TecRate = -0.14, HsRate = -0.08
+(84750) TC: TC-1 = 46.05, modeled = 44.78, target = 45.00, heatSink = 28.79, output = 26.2, timeout = 0, ModelRate = 0.05, TecRate = -0.09, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 44.11  |
+(84901) TC: TC-1 = 46.03, modeled = 44.79, target = 45.00, heatSink = 28.78, output = 26.3, timeout = 0, ModelRate = 0.05, TecRate = -0.14, HsRate = -0.07
+(85021) _performCapture: [16482,0,44.80,7688,9000,9000,4504,5914,5287,9000,9000,2155,9000,0,46.02]
+(85050) TC: TC-1 = 46.01, modeled = 44.80, target = 45.00, heatSink = 28.78, output = 26.5, timeout = 0, ModelRate = 0.05, TecRate = -0.07, HsRate = 0.05
+(85200) TC: TC-1 = 46.00, modeled = 44.81, target = 45.00, heatSink = 28.77, output = 26.4, timeout = 0, ModelRate = 0.04, TecRate = -0.19, HsRate = -0.13
+(85350) TC: TC-1 = 45.99, modeled = 44.81, target = 45.00, heatSink = 28.76, output = 26.4, timeout = 0, ModelRate = 0.04, TecRate = -0.10, HsRate = -0.04
+(85500) TC: TC-1 = 45.97, modeled = 44.82, target = 45.00, heatSink = 28.76, output = 26.5, timeout = 0, ModelRate = 0.04, TecRate = -0.19, HsRate = -0.07
+CHUBE: | PcrThermoTempC = 44.27  |
+(85650) TC: TC-1 = 45.96, modeled = 44.82, target = 45.00, heatSink = 28.75, output = 26.3, timeout = 0, ModelRate = 0.04, TecRate = -0.11, HsRate = -0.07
+(85800) TC: TC-1 = 45.95, modeled = 44.83, target = 45.00, heatSink = 28.75, output = 26.2, timeout = 0, ModelRate = 0.04, TecRate = -0.05, HsRate = -0.06
+(85950) TC: TC-1 = 45.94, modeled = 44.84, target = 45.00, heatSink = 28.74, output = 26.4, timeout = 0, ModelRate = 0.04, TecRate = -0.16, HsRate = -0.10
+(86100) TC: TC-1 = 45.92, modeled = 44.84, target = 45.00, heatSink = 28.73, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.10, HsRate = -0.07
+(86161) _performCapture: [17622,0,44.84,7695,9000,9000,4501,5911,5286,9000,9000,2153,9000,0,45.93]
+(86250) TC: TC-1 = 45.92, modeled = 44.85, target = 45.00, heatSink = 28.73, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.11, HsRate = -0.07
+(86400) TC: TC-1 = 45.90, modeled = 44.85, target = 45.00, heatSink = 28.72, output = 26.2, timeout = 0, ModelRate = 0.03, TecRate = -0.08, HsRate = -0.09
+CHUBE: | PcrThermoTempC = 44.3  |
+(86550) TC: TC-1 = 45.89, modeled = 44.86, target = 45.00, heatSink = 28.72, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.05, HsRate = -0.03
+(86700) TC: TC-1 = 45.89, modeled = 44.86, target = 45.00, heatSink = 28.71, output = 26.0, timeout = 0, ModelRate = 0.04, TecRate = -0.06, HsRate = -0.12
+(86850) TC: TC-1 = 45.87, modeled = 44.87, target = 45.00, heatSink = 28.71, output = 26.2, timeout = 0, ModelRate = 0.03, TecRate = -0.07, HsRate = -0.07
+(87000) TC: TC-1 = 45.87, modeled = 44.87, target = 45.00, heatSink = 28.71, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.08, HsRate = -0.03
+(87150) TC: TC-1 = 45.85, modeled = 44.88, target = 45.00, heatSink = 28.70, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.11, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 44.37  |
+(87300) TC: TC-1 = 45.84, modeled = 44.88, target = 45.00, heatSink = 28.70, output = 26.5, timeout = 0, ModelRate = 0.03, TecRate = -0.13, HsRate = -0.04
+(87306) _performCapture: [18764,0,44.88,7693,9000,9000,4500,5908,5284,9000,9000,2151,9000,0,45.84]
+(87450) TC: TC-1 = 45.83, modeled = 44.88, target = 45.00, heatSink = 28.69, output = 26.4, timeout = 0, ModelRate = 0.03, TecRate = -0.13, HsRate = -0.06
+(87601) TC: TC-1 = 45.83, modeled = 44.89, target = 45.00, heatSink = 28.69, output = 26.2, timeout = 0, ModelRate = 0.03, TecRate = -0.04, HsRate = -0.02
+(87750) TC: TC-1 = 45.82, modeled = 44.89, target = 45.00, heatSink = 28.68, output = 26.1, timeout = 0, ModelRate = 0.03, TecRate = -0.07, HsRate = -0.10
+(87900) TC: TC-1 = 45.81, modeled = 44.90, target = 45.00, heatSink = 28.67, output = 26.1, timeout = 0, ModelRate = 0.03, TecRate = -0.08, HsRate = -0.11
+(88050) TC: TC-1 = 45.80, modeled = 44.90, target = 45.00, heatSink = 28.67, output = 26.3, timeout = 0, ModelRate = 0.02, TecRate = -0.09, HsRate = -0.03
+CHUBE: | PcrThermoTempC = 44.42  |
+(88200) TC: TC-1 = 45.79, modeled = 44.90, target = 45.00, heatSink = 28.67, output = 26.3, timeout = 0, ModelRate = 0.03, TecRate = -0.09, HsRate = -0.05
+(88350) TC: TC-1 = 45.78, modeled = 44.91, target = 45.00, heatSink = 28.66, output = 26.4, timeout = 0, ModelRate = 0.02, TecRate = -0.16, HsRate = -0.09
+(88456) _performCapture: [19916,0,44.91,7674,9000,9000,4496,5904,5280,9000,9000,2149,9000,0,45.77]
+(88500) TC: TC-1 = 45.77, modeled = 44.91, target = 45.00, heatSink = 28.66, output = 26.4, timeout = 0, ModelRate = 0.02, TecRate = -0.10, HsRate = -0.04
+(88650) TC: TC-1 = 45.77, modeled = 44.91, target = 45.00, heatSink = 28.66, output = 25.8, timeout = 0, ModelRate = 0.02, TecRate = 0.08, HsRate = -0.03
+(88800) TC: TC-1 = 45.75, modeled = 44.92, target = 45.00, heatSink = 28.65, output = 26.4, timeout = 0, ModelRate = 0.02, TecRate = -0.13, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 44.42  |
+(88950) TC: TC-1 = 45.75, modeled = 44.92, target = 45.00, heatSink = 28.65, output = 26.2, timeout = 0, ModelRate = 0.02, TecRate = -0.05, HsRate = -0.02
+(89065) eventMarker: 20527, Start Melt Ramping
+(89065) thermalQueue_sendSetTargetTempC: Setting New Queue Temp!
+(89093) thermalQueue_processDirective: Processing New Target Temp
+(89093) _applyThermalBrakeUpdate: Worst Temp:47.27
+(89095) _updateInertiaCompensation: Ignoring low temp update at 45.00
+(89102) _updateInertiaCompensation: overshoot:2.27, oldComp:0.00, atIndex: 3 atTemp: 45.0
+(89111) thermalControl_setTargetTempC: [1] Controlled RAMPING  goto 95.0 @ 1.0
+(89119) _setThermalControlState: thermalControl-1: changing state 3->2
+(89136) TC: TC-1 = 45.74, modeled = 44.92, target = 95.00, heatSink = 28.64, output = 24.7, timeout = 0, ModelRate = 0.02, TecRate = -0.10, HsRate = -0.03
+(89141) taskMonitor_task: Task Thermal Control Task hasn't checked in for 100 ms
+(89149) thermalControlTask_thermalTask: Therm Cont time: 56 ms. Sleep.
+(89250) TC: TC-1 = 45.73, modeled = 44.93, target = 95.00, heatSink = 28.64, output = 26.7, timeout = 0, ModelRate = 0.02, TecRate = -0.04, HsRate = -0.04
+(89400) TC: TC-1 = 45.73, modeled = 44.93, target = 95.00, heatSink = 28.64, output = 29.3, timeout = 0, ModelRate = 0.02, TecRate = -0.11, HsRate = -0.03
+(89552) TC: TC-1 = 45.72, modeled = 44.93, target = 95.00, heatSink = 28.64, output = 31.6, timeout = 0, ModelRate = 0.02, TecRate = -0.14, HsRate = -0.01
+(89597) _performCapture: [21058,0,44.93,7684,9000,9000,4499,5899,5276,9000,9000,2147,9000,0,45.72]
+(89702) TC: TC-1 = 45.71, modeled = 44.94, target = 95.00, heatSink = 28.63, output = 33.2, timeout = 0, ModelRate = 0.02, TecRate = -0.04, HsRate = -0.05
+CHUBE: | PcrThermoTempC = 44.43  |
+(89851) TC: TC-1 = 45.73, modeled = 44.94, target = 95.00, heatSink = 28.63, output = 34.8, timeout = 0, ModelRate = 0.04, TecRate = 0.11, HsRate = -0.04
+(90000) TC: TC-1 = 45.77, modeled = 44.95, target = 95.00, heatSink = 28.62, output = 35.7, timeout = 0, ModelRate = 0.07, TecRate = 0.36, HsRate = -0.11
+(90150) TC: TC-1 = 45.83, modeled = 44.96, target = 95.00, heatSink = 28.61, output = 37.0, timeout = 50, ModelRate = 0.12, TecRate = 0.46, HsRate = -0.06
+(90300) TC: TC-1 = 45.92, modeled = 44.99, target = 95.00, heatSink = 28.60, output = 37.6, timeout = 200, ModelRate = 0.18, TecRate = 0.76, HsRate = -0.08
+(90450) TC: TC-1 = 46.06, modeled = 45.02, target = 95.00, heatSink = 28.58, output = 37.5, timeout = 350, ModelRate = 0.26, TecRate = 1.12, HsRate = -0.19
+CHUBE: | PcrThermoTempC = 44.51  |
+(90600) TC: TC-1 = 46.21, modeled = 45.07, target = 95.00, heatSink = 28.56, output = 38.6, timeout = 500, ModelRate = 0.34, TecRate = 1.01, HsRate = -0.19
+(90741) _performCapture: [22202,0,45.10,7678,9000,9000,4500,5894,5272,9000,9000,2144,9000,0,46.31]
+(90750) TC: TC-1 = 46.36, modeled = 45.12, target = 95.00, heatSink = 28.54, output = 39.1, timeout = 650, ModelRate = 0.40, TecRate = 1.18, HsRate = -0.18
+(90900) TC: TC-1 = 46.55, modeled = 45.19, target = 95.00, heatSink = 28.52, output = 39.4, timeout = 800, ModelRate = 0.48, TecRate = 1.33, HsRate = -0.15
+(91051) TC: TC-1 = 46.74, modeled = 45.27, target = 95.00, heatSink = 28.49, output = 40.2, timeout = 950, ModelRate = 0.55, TecRate = 1.08, HsRate = -0.28
+(91200) TC: TC-1 = 46.94, modeled = 45.36, target = 95.00, heatSink = 28.46, output = 40.6, timeout = 1100, ModelRate = 0.61, TecRate = 1.19, HsRate = -0.13
+(91350) TC: TC-1 = 47.19, modeled = 45.46, target = 95.00, heatSink = 28.44, output = 39.7, timeout = 1250, ModelRate = 0.70, TecRate = 1.65, HsRate = -0.13
+CHUBE: | PcrThermoTempC = 44.71  |
+(91502) TC: TC-1 = 47.42, modeled = 45.57, target = 95.00, heatSink = 28.42, output = 40.8, timeout = 1400, ModelRate = 0.76, TecRate = 1.34, HsRate = -0.08
+(91650) TC: TC-1 = 47.66, modeled = 45.69, target = 95.00, heatSink = 28.40, output = 39.9, timeout = 1550, ModelRate = 0.82, TecRate = 1.60, HsRate = -0.19
+(91801) TC: TC-1 = 47.89, modeled = 45.81, target = 95.00, heatSink = 28.38, output = 39.9, timeout = 1700, ModelRate = 0.86, TecRate = 1.64, HsRate = -0.19
+(91881) _performCapture: [23342,0,45.85,7678,9000,9000,4499,5888,5268,9000,9000,2141,9000,0,47.95]
+(91950) TC: TC-1 = 48.11, modeled = 45.94, target = 95.00, heatSink = 28.36, output = 40.3, timeout = 1850, ModelRate = 0.87, TecRate = 1.54, HsRate = -0.17
+(92101) TC: TC-1 = 48.36, modeled = 46.08, target = 95.00, heatSink = 28.34, output = 39.5, timeout = 2000, ModelRate = 0.92, TecRate = 1.68, HsRate = -0.34
+(92250) TC: TC-1 = 48.59, modeled = 46.22, target = 95.00, heatSink = 28.32, output = 40.2, timeout = 2150, ModelRate = 0.95, TecRate = 1.55, HsRate = -0.23
+CHUBE: | PcrThermoTempC = 45.38  |
+(92400) TC: TC-1 = 48.83, modeled = 46.36, target = 95.00, heatSink = 28.30, output = 40.3, timeout = 2300, ModelRate = 0.97, TecRate = 1.58, HsRate = -0.11
+(92551) TC: TC-1 = 49.06, modeled = 46.51, target = 95.00, heatSink = 28.27, output = 39.9, timeout = 2450, ModelRate = 0.99, TecRate = 1.77, HsRate = -0.09
+(92701) TC: TC-1 = 49.31, modeled = 46.66, target = 95.00, heatSink = 28.26, output = 39.7, timeout = 2600, ModelRate = 1.02, TecRate = 1.80, HsRate = -0.11
+(92850) TC: TC-1 = 49.53, modeled = 46.81, target = 95.00, heatSink = 28.24, output = 40.7, timeout = 2750, ModelRate = 1.01, TecRate = 1.42, HsRate = -0.07
+(93000) TC: TC-1 = 49.76, modeled = 46.97, target = 95.00, heatSink = 28.22, output = 40.1, timeout = 2900, ModelRate = 1.03, TecRate = 1.60, HsRate = -0.13
+(93021) _performCapture: [24482,0,46.97,7675,9000,9000,4497,5883,5262,9000,9000,2137,9000,0,49.76]
+CHUBE: | PcrThermoTempC = 46.3  |
+(93151) TC: TC-1 = 49.96, modeled = 47.12, target = 95.00, heatSink = 28.21, output = 40.8, timeout = 3050, ModelRate = 1.01, TecRate = 1.30, HsRate = -0.19
+(93301) TC: TC-1 = 50.17, modeled = 47.27, target = 95.00, heatSink = 28.19, output = 40.0, timeout = 3200, ModelRate = 1.01, TecRate = 1.63, HsRate = -0.21
+(93451) TC: TC-1 = 50.39, modeled = 47.42, target = 95.00, heatSink = 28.18, output = 41.2, timeout = 3350, ModelRate = 1.01, TecRate = 1.46, HsRate = 0.13
+(93600) TC: TC-1 = 50.61, modeled = 47.58, target = 95.00, heatSink = 28.16, output = 40.9, timeout = 3500, ModelRate = 1.01, TecRate = 1.31, HsRate = -0.11
+(93751) TC: TC-1 = 50.82, modeled = 47.73, target = 95.00, heatSink = 28.14, output = 40.5, timeout = 3650, ModelRate = 1.02, TecRate = 1.38, HsRate = -0.26
+CHUBE: | PcrThermoTempC = 46.84  |
+(93901) TC: TC-1 = 51.03, modeled = 47.88, target = 95.00, heatSink = 28.12, output = 40.6, timeout = 3800, ModelRate = 1.03, TecRate = 1.48, HsRate = -0.12
+(94050) TC: TC-1 = 51.22, modeled = 48.04, target = 95.00, heatSink = 28.11, output = 41.2, timeout = 3950, ModelRate = 1.01, TecRate = 1.33, HsRate = -0.06
+(94161) _performCapture: [25622,0,48.14,7669,9000,9000,4491,5878,5257,9000,9000,2134,9000,0,51.34]
+(94200) TC: TC-1 = 51.42, modeled = 48.19, target = 95.00, heatSink = 28.10, output = 41.0, timeout = 4100, ModelRate = 1.01, TecRate = 1.40, HsRate = -0.14
+(94350) TC: TC-1 = 51.65, modeled = 48.34, target = 95.00, heatSink = 28.08, output = 40.6, timeout = 4250, ModelRate = 1.04, TecRate = 1.46, HsRate = -0.15
+(94500) TC: TC-1 = 51.81, modeled = 48.49, target = 95.00, heatSink = 28.07, output = 41.0, timeout = 4400, ModelRate = 1.00, TecRate = 1.49, HsRate = -0.09
+(94651) TC: TC-1 = 52.01, modeled = 48.64, target = 95.00, heatSink = 28.05, output = 41.0, timeout = 4550, ModelRate = 0.99, TecRate = 1.38, HsRate = -0.17
+CHUBE: | PcrThermoTempC = 47.92  |
+(94801) TC: TC-1 = 52.21, modeled = 48.79, target = 95.00, heatSink = 28.04, output = 41.1, timeout = 4700, ModelRate = 1.00, TecRate = 1.48, HsRate = -0.08
+(94950) TC: TC-1 = 52.40, modeled = 48.94, target = 95.00, heatSink = 28.03, output = 41.5, timeout = 4850, ModelRate = 0.99, TecRate = 1.33, HsRate = -0.08
+(95103) TC: TC-1 = 52.59, modeled = 49.09, target = 95.00, heatSink = 28.02, output = 42.1, timeout = 5000, ModelRate = 1.00, TecRate = 1.09, HsRate = -0.10
+(95253) TC: TC-1 = 52.78, modeled = 49.24, target = 95.00, heatSink = 28.00, output = 41.3, timeout = 5150, ModelRate = 1.00, TecRate = 1.40, HsRate = -0.23
+(95300) _performCapture: [26761,0,49.29,7647,9000,9000,4466,5868,5250,9000,9000,2130,9000,0,52.85]
+(95400) TC: TC-1 = 52.98, modeled = 49.39, target = 95.00, heatSink = 27.99, output = 41.8, timeout = 5300, ModelRate = 1.01, TecRate = 1.34, HsRate = -0.11
+(95550) TC: TC-1 = 53.17, modeled = 49.54, target = 95.00, heatSink = 27.97, output = 41.8, timeout = 5450, ModelRate = 1.01, TecRate = 1.23, HsRate = -0.19
+CHUBE: | PcrThermoTempC = 49.02  |
+(95701) TC: TC-1 = 53.32, modeled = 49.69, target = 95.00, heatSink = 27.96, output = 42.6, timeout = 5600, ModelRate = 0.97, TecRate = 1.17, HsRate = -0.07
+(95851) TC: TC-1 = 53.52, modeled = 49.84, target = 95.00, heatSink = 27.94, output = 42.3, timeout = 5750, ModelRate = 0.98, TecRate = 1.32, HsRate = -0.07
+(96000) TC: TC-1 = 53.69, modeled = 49.99, target = 95.00, heatSink = 27.93, output = 42.7, timeout = 5900, ModelRate = 0.97, TecRate = 1.11, HsRate = -0.12
+(96151) TC: TC-1 = 53.88, modeled = 50.13, target = 95.00, heatSink = 27.92, output = 42.6, timeout = 6050, ModelRate = 0.97, TecRate = 1.18, HsRate = -0.17
+(96300) TC: TC-1 = 54.08, modeled = 50.28, target = 95.00, heatSink = 27.91, output = 42.4, timeout = 6200, ModelRate = 0.99, TecRate = 1.32, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 49.55  |
+(96441) _performCapture: [27903,0,50.38,7658,9000,9000,4473,5862,5244,9000,9000,2127,9000,0,54.20]
+(96450) TC: TC-1 = 54.27, modeled = 50.43, target = 95.00, heatSink = 27.89, output = 42.5, timeout = 6350, ModelRate = 1.00, TecRate = 1.24, HsRate = -0.18
+(96601) TC: TC-1 = 54.45, modeled = 50.58, target = 95.00, heatSink = 27.88, output = 42.9, timeout = 6500, ModelRate = 1.00, TecRate = 1.20, HsRate = -0.08
+(96751) TC: TC-1 = 54.64, modeled = 50.73, target = 95.00, heatSink = 27.87, output = 42.5, timeout = 6650, ModelRate = 1.00, TecRate = 1.36, HsRate = -0.07
+(96901) TC: TC-1 = 54.82, modeled = 50.88, target = 95.00, heatSink = 27.86, output = 42.7, timeout = 6800, ModelRate = 1.01, TecRate = 1.31, HsRate = -0.09
+(97050) TC: TC-1 = 55.00, modeled = 51.03, target = 95.00, heatSink = 27.85, output = 43.0, timeout = 6950, ModelRate = 1.01, TecRate = 1.24, HsRate = -0.06
+(97200) TC: TC-1 = 55.15, modeled = 51.18, target = 95.00, heatSink = 27.84, output = 43.3, timeout = 7100, ModelRate = 0.97, TecRate = 1.18, HsRate = -0.17
+CHUBE: | PcrThermoTempC = 50.65  |
+(97353) TC: TC-1 = 55.34, modeled = 51.33, target = 95.00, heatSink = 27.82, output = 43.7, timeout = 7250, ModelRate = 0.99, TecRate = 1.05, HsRate = -0.07
+(97500) TC: TC-1 = 55.51, modeled = 51.48, target = 95.00, heatSink = 27.82, output = 43.9, timeout = 7400, ModelRate = 0.99, TecRate = 0.97, HsRate = -0.12
+(97584) _performCapture: [29045,0,51.53,7647,9000,9000,4463,5854,5238,9000,9000,2122,9000,0,55.58]
+(97650) TC: TC-1 = 55.69, modeled = 51.63, target = 95.00, heatSink = 27.81, output = 43.6, timeout = 7550, ModelRate = 1.00, TecRate = 1.18, HsRate = -0.07
+(97800) TC: TC-1 = 55.87, modeled = 51.77, target = 95.00, heatSink = 27.80, output = 43.3, timeout = 7700, ModelRate = 1.00, TecRate = 1.40, HsRate = -0.05
+(97951) TC: TC-1 = 56.04, modeled = 51.92, target = 95.00, heatSink = 27.79, output = 44.7, timeout = 7850, ModelRate = 0.99, TecRate = 0.87, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 51.73  |
+(98101) TC: TC-1 = 56.20, modeled = 52.07, target = 95.00, heatSink = 27.78, output = 43.3, timeout = 8000, ModelRate = 0.98, TecRate = 1.52, HsRate = -0.04
+(98250) TC: TC-1 = 56.37, modeled = 52.22, target = 95.00, heatSink = 27.77, output = 44.3, timeout = 8150, ModelRate = 0.97, TecRate = 1.12, HsRate = -0.08
+(98400) TC: TC-1 = 56.58, modeled = 52.37, target = 95.00, heatSink = 27.76, output = 44.2, timeout = 8300, ModelRate = 1.00, TecRate = 1.13, HsRate = -0.07
+(98551) TC: TC-1 = 56.75, modeled = 52.52, target = 95.00, heatSink = 27.74, output = 43.9, timeout = 8450, ModelRate = 0.99, TecRate = 1.16, HsRate = -0.21
+(98702) TC: TC-1 = 56.93, modeled = 52.67, target = 95.00, heatSink = 27.73, output = 44.6, timeout = 8600, ModelRate = 0.99, TecRate = 1.01, HsRate = -0.08
+(98725) _performCapture: [30186,0,52.67,7644,9000,9000,4458,5846,5230,9000,9000,2118,9000,0,56.93]
+(98851) TC: TC-1 = 57.11, modeled = 52.82, target = 95.00, heatSink = 27.72, output = 44.4, timeout = 8750, ModelRate = 1.01, TecRate = 1.11, HsRate = -0.09
+CHUBE: | PcrThermoTempC = 52.26  |
+(99001) TC: TC-1 = 57.30, modeled = 52.97, target = 95.00, heatSink = 27.71, output = 44.3, timeout = 8900, ModelRate = 1.02, TecRate = 1.16, HsRate = -0.06
+(99151) TC: TC-1 = 57.47, modeled = 53.13, target = 95.00, heatSink = 27.70, output = 43.8, timeout = 9050, ModelRate = 1.02, TecRate = 1.28, HsRate = -0.19
+(99301) TC: TC-1 = 57.64, modeled = 53.28, target = 95.00, heatSink = 27.69, output = 44.5, timeout = 9200, ModelRate = 1.01, TecRate = 1.13, HsRate = -0.11
+(99450) TC: TC-1 = 57.80, modeled = 53.43, target = 95.00, heatSink = 27.68, output = 44.6, timeout = 9350, ModelRate = 1.01, TecRate = 1.19, HsRate = -0.06
+(99600) TC: TC-1 = 57.99, modeled = 53.58, target = 95.00, heatSink = 27.67, output = 44.4, timeout = 9500, ModelRate = 1.02, TecRate = 1.20, HsRate = -0.08
+(99750) TC: TC-1 = 58.16, modeled = 53.73, target = 95.00, heatSink = 27.67, output = 45.0, timeout = 9650, ModelRate = 1.02, TecRate = 1.02, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 53.34  |
+(99867) _performCapture: [31328,0,53.84,7637,9000,9000,4450,5836,5222,9000,9000,2113,9000,0,58.27]
+(99900) TC: TC-1 = 58.34, modeled = 53.89, target = 95.00, heatSink = 27.66, output = 45.1, timeout = 9800, ModelRate = 1.02, TecRate = 0.97, HsRate = -0.07
+(100050) TC: TC-1 = 58.51, modeled = 54.04, target = 95.00, heatSink = 27.65, output = 44.8, timeout = 9950, ModelRate = 1.02, TecRate = 1.20, HsRate = -0.08
+(100201) TC: TC-1 = 58.66, modeled = 54.19, target = 95.00, heatSink = 27.65, output = 45.3, timeout = 10100, ModelRate = 0.99, TecRate = 0.91, HsRate = -0.22
+(100350) TC: TC-1 = 58.83, modeled = 54.34, target = 95.00, heatSink = 27.63, output = 45.2, timeout = 10250, ModelRate = 0.99, TecRate = 1.14, HsRate = -0.08
+(100501) TC: TC-1 = 58.99, modeled = 54.49, target = 95.00, heatSink = 27.63, output = 45.4, timeout = 10400, ModelRate = 1.00, TecRate = 1.11, HsRate = -0.07
+CHUBE: | PcrThermoTempC = 54.39  |
+(100651) TC: TC-1 = 59.16, modeled = 54.64, target = 95.00, heatSink = 27.62, output = 44.7, timeout = 10550, ModelRate = 1.00, TecRate = 1.30, HsRate = -0.19
+(100801) TC: TC-1 = 59.35, modeled = 54.79, target = 95.00, heatSink = 27.61, output = 44.9, timeout = 10700, ModelRate = 1.02, TecRate = 1.33, HsRate = -0.05
+(100950) TC: TC-1 = 59.51, modeled = 54.94, target = 95.00, heatSink = 27.60, output = 45.8, timeout = 10850, ModelRate = 1.01, TecRate = 0.98, HsRate = -0.07
+(101006) _performCapture: [32467,0,54.99,7635,9000,9000,4445,5830,5217,9000,9000,2110,9000,0,59.56]
+(101101) TC: TC-1 = 59.68, modeled = 55.09, target = 95.00, heatSink = 27.60, output = 46.1, timeout = 11000, ModelRate = 1.02, TecRate = 0.91, HsRate = -0.06
+(101251) TC: TC-1 = 59.83, modeled = 55.24, target = 95.00, heatSink = 27.59, output = 46.4, timeout = 11150, ModelRate = 0.98, TecRate = 0.88, HsRate = -0.04
+CHUBE: | PcrThermoTempC = 54.9  |
+(101401) TC: TC-1 = 60.00, modeled = 55.39, target = 95.00, heatSink = 27.59, output = 46.1, timeout = 11300, ModelRate = 0.99, TecRate = 0.99, HsRate = -0.11
+(101551) TC: TC-1 = 60.16, modeled = 55.54, target = 95.00, heatSink = 27.58, output = 46.3, timeout = 11450, ModelRate = 0.99, TecRate = 0.99, HsRate = -0.06
+(101701) TC: TC-1 = 60.32, modeled = 55.69, target = 95.00, heatSink = 27.58, output = 46.6, timeout = 11600, ModelRate = 0.99, TecRate = 0.92, HsRate = -0.06
+(101850) TC: TC-1 = 60.49, modeled = 55.84, target = 95.00, heatSink = 27.57, output = 46.1, timeout = 11750, ModelRate = 1.00, TecRate = 1.07, HsRate = -0.15
+(102003) TC: TC-1 = 60.65, modeled = 55.99, target = 95.00, heatSink = 27.56, output = 45.6, timeout = 11900, ModelRate = 1.01, TecRate = 1.45, HsRate = -0.05
+(102146) _performCapture: [33607,0,56.14,7631,9000,9000,4440,5824,5210,9000,9000,2107,9000,0,60.83]
+(102150) TC: TC-1 = 60.83, modeled = 56.14, target = 95.00, heatSink = 27.55, output = 46.1, timeout = 12050, ModelRate = 1.01, TecRate = 1.12, HsRate = -0.11
+CHUBE: | PcrThermoTempC = 55.92  |
+(102300) TC: TC-1 = 60.99, modeled = 56.29, target = 95.00, heatSink = 27.55, output = 46.6, timeout = 12200, ModelRate = 1.01, TecRate = 1.04, HsRate = -0.06
+(102450) TC: TC-1 = 61.15, modeled = 56.44, target = 95.00, heatSink = 27.54, output = 46.7, timeout = 12350, ModelRate = 1.00, TecRate = 1.01, HsRate = -0.11
+(102600) TC: TC-1 = 61.29, modeled = 56.59, target = 95.00, heatSink = 27.53, output = 46.9, timeout = 12500, ModelRate = 0.98, TecRate = 1.06, HsRate = -0.06
+(102753) TC: TC-1 = 61.47, modeled = 56.74, target = 95.00, heatSink = 27.53, output = 47.1, timeout = 12650, ModelRate = 0.99, TecRate = 0.98, HsRate = -0.05
+(102900) TC: TC-1 = 61.63, modeled = 56.89, target = 95.00, heatSink = 27.52, output = 46.9, timeout = 12800, ModelRate = 0.99, TecRate = 1.10, HsRate = -0.07
+(103050) TC: TC-1 = 61.78, modeled = 57.04, target = 95.00, heatSink = 27.51, output = 46.9, timeout = 12950, ModelRate = 0.99, TecRate = 1.11, HsRate = -0.15
+CHUBE: | PcrThermoTempC = 56.93  |
+(103200) TC: TC-1 = 61.93, modeled = 57.18, target = 95.00, heatSink = 27.51, output = 47.7, timeout = 13100, ModelRate = 0.98, TecRate = 0.88, HsRate = -0.11
+(103287) _performCapture: [34749,0,57.23,7621,9000,9000,4431,5815,5203,9000,9000,2103,9000,0,61.99]
+(103350) TC: TC-1 = 62.11, modeled = 57.33, target = 95.00, heatSink = 27.50, output = 47.1, timeout = 13250, ModelRate = 1.00, TecRate = 1.15, HsRate = -0.08
+(103502) TC: TC-1 = 62.27, modeled = 57.48, target = 95.00, heatSink = 27.50, output = 47.7, timeout = 13400, ModelRate = 1.00, TecRate = 1.00, HsRate = -0.05
+(103651) TC: TC-1 = 62.43, modeled = 57.63, target = 95.00, heatSink = 27.49, output = 47.9, timeout = 13550, ModelRate = 1.00, TecRate = 0.89, HsRate = -0.11
+(103800) TC: TC-1 = 62.59, modeled = 57.78, target = 95.00, heatSink = 27.49, output = 47.9, timeout = 13700, ModelRate = 1.00, TecRate = 0.93, HsRate = -0.11
+CHUBE: | PcrThermoTempC = 57.45  |
+(103950) TC: TC-1 = 62.73, modeled = 57.93, target = 95.00, heatSink = 27.48, output = 47.8, timeout = 13850, ModelRate = 0.98, TecRate = 1.01, HsRate = -0.13
+(104100) TC: TC-1 = 62.90, modeled = 58.08, target = 95.00, heatSink = 27.48, output = 47.7, timeout = 14000, ModelRate = 0.99, TecRate = 1.29, HsRate = 0.08
+(104250) TC: TC-1 = 63.06, modeled = 58.23, target = 95.00, heatSink = 27.47, output = 48.0, timeout = 14150, ModelRate = 0.99, TecRate = 1.02, HsRate = -0.13
+(104400) TC: TC-1 = 63.22, modeled = 58.37, target = 95.00, heatSink = 27.46, output = 48.3, timeout = 14300, ModelRate = 0.99, TecRate = 0.93, HsRate = -0.14
+(104430) _performCapture: [35891,0,58.37,7613,9000,9000,4425,5807,5196,9000,9000,2098,9000,0,63.22]
+(104551) TC: TC-1 = 63.38, modeled = 58.52, target = 95.00, heatSink = 27.46, output = 48.1, timeout = 14450, ModelRate = 1.00, TecRate = 1.11, HsRate = -0.07
+(104700) TC: TC-1 = 63.54, modeled = 58.67, target = 95.00, heatSink = 27.45, output = 47.9, timeout = 14600, ModelRate = 1.00, TecRate = 1.27, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 58.42  |
+(104851) TC: TC-1 = 63.72, modeled = 58.82, target = 95.00, heatSink = 27.44, output = 48.5, timeout = 14750, ModelRate = 1.02, TecRate = 1.04, HsRate = -0.05
+(105000) TC: TC-1 = 63.88, modeled = 58.97, target = 95.00, heatSink = 27.44, output = 48.3, timeout = 14900, ModelRate = 1.01, TecRate = 1.12, HsRate = -0.13
+(105150) TC: TC-1 = 64.04, modeled = 59.12, target = 95.00, heatSink = 27.44, output = 48.5, timeout = 15050, ModelRate = 1.01, TecRate = 1.13, HsRate = -0.02
+(105300) TC: TC-1 = 64.18, modeled = 59.27, target = 95.00, heatSink = 27.43, output = 48.8, timeout = 15200, ModelRate = 0.99, TecRate = 1.09, HsRate = -0.03
+(105451) TC: TC-1 = 64.35, modeled = 59.43, target = 95.00, heatSink = 27.43, output = 49.0, timeout = 15350, ModelRate = 1.00, TecRate = 0.93, HsRate = -0.11
+(105572) _performCapture: [37033,0,59.52,7595,9000,9000,4409,5799,5188,9000,9000,2094,9000,0,64.45]
+CHUBE: | PcrThermoTempC = 59.39  |
+(105601) TC: TC-1 = 64.51, modeled = 59.58, target = 95.00, heatSink = 27.42, output = 48.8, timeout = 15500, ModelRate = 1.01, TecRate = 1.08, HsRate = -0.03
+(105751) TC: TC-1 = 64.68, modeled = 59.73, target = 95.00, heatSink = 27.42, output = 48.9, timeout = 15650, ModelRate = 1.01, TecRate = 1.07, HsRate = -0.04
+(105900) TC: TC-1 = 64.84, modeled = 59.88, target = 95.00, heatSink = 27.41, output = 48.8, timeout = 15800, ModelRate = 1.02, TecRate = 1.19, HsRate = -0.05
+(106050) TC: TC-1 = 65.00, modeled = 60.03, target = 95.00, heatSink = 27.41, output = 49.2, timeout = 15950, ModelRate = 1.02, TecRate = 1.00, HsRate = -0.03
+(106201) TC: TC-1 = 65.17, modeled = 60.18, target = 95.00, heatSink = 27.40, output = 48.3, timeout = 16100, ModelRate = 1.03, TecRate = 1.38, HsRate = -0.07
+(106351) TC: TC-1 = 65.34, modeled = 60.34, target = 95.00, heatSink = 27.40, output = 49.8, timeout = 16250, ModelRate = 1.02, TecRate = 0.93, HsRate = 0.06
+CHUBE: | PcrThermoTempC = 59.9  |
+(106500) TC: TC-1 = 65.50, modeled = 60.49, target = 95.00, heatSink = 27.39, output = 49.5, timeout = 16400, ModelRate = 1.03, TecRate = 0.91, HsRate = -0.07
+(106652) TC: TC-1 = 65.67, modeled = 60.64, target = 95.00, heatSink = 27.39, output = 49.1, timeout = 16550, ModelRate = 1.03, TecRate = 1.13, HsRate = -0.03
+(106713) _performCapture: [38174,0,60.69,7589,9000,9000,4403,5793,5183,9000,9000,2090,9000,0,65.70]
+(106802) TC: TC-1 = 65.81, modeled = 60.79, target = 95.00, heatSink = 27.39, output = 49.8, timeout = 16700, ModelRate = 1.00, TecRate = 0.97, HsRate = -0.02
+(106953) TC: TC-1 = 65.97, modeled = 60.94, target = 95.00, heatSink = 27.39, output = 49.8, timeout = 16850, ModelRate = 1.00, TecRate = 0.93, HsRate = -0.06
+(107100) TC: TC-1 = 66.13, modeled = 61.09, target = 95.00, heatSink = 27.38, output = 49.7, timeout = 17000, ModelRate = 1.01, TecRate = 0.97, HsRate = -0.07
+(107250) TC: TC-1 = 66.28, modeled = 61.25, target = 95.00, heatSink = 27.37, output = 49.9, timeout = 17150, ModelRate = 1.01, TecRate = 0.98, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 60.88  |
+(107400) TC: TC-1 = 66.44, modeled = 61.40, target = 95.00, heatSink = 27.37, output = 50.0, timeout = 17300, ModelRate = 1.01, TecRate = 1.04, HsRate = -0.03
+(107550) TC: TC-1 = 66.60, modeled = 61.55, target = 95.00, heatSink = 27.37, output = 50.2, timeout = 17450, ModelRate = 1.01, TecRate = 1.07, HsRate = 0.07
+(107701) TC: TC-1 = 66.76, modeled = 61.70, target = 95.00, heatSink = 27.37, output = 50.4, timeout = 17600, ModelRate = 1.00, TecRate = 0.77, HsRate = -0.19
+(107853) TC: TC-1 = 66.91, modeled = 61.85, target = 95.00, heatSink = 27.36, output = 50.3, timeout = 17750, ModelRate = 1.00, TecRate = 0.99, HsRate = -0.06
+(107858) _performCapture: [39316,0,61.85,7594,9000,9000,4405,5784,5174,9000,9000,2086,9000,0,66.91]
+(108000) TC: TC-1 = 67.07, modeled = 62.00, target = 95.00, heatSink = 27.36, output = 50.3, timeout = 17900, ModelRate = 1.01, TecRate = 1.13, HsRate = 0.03
+CHUBE: | PcrThermoTempC = 61.84  |
+(108150) TC: TC-1 = 67.22, modeled = 62.15, target = 95.00, heatSink = 27.35, output = 50.6, timeout = 18050, ModelRate = 1.00, TecRate = 0.91, HsRate = -0.06
+(108300) TC: TC-1 = 67.38, modeled = 62.30, target = 95.00, heatSink = 27.35, output = 50.7, timeout = 18200, ModelRate = 1.00, TecRate = 0.90, HsRate = -0.07
+(108450) TC: TC-1 = 67.53, modeled = 62.45, target = 95.00, heatSink = 27.35, output = 50.9, timeout = 18350, ModelRate = 1.00, TecRate = 0.92, HsRate = -0.03
+(108601) TC: TC-1 = 67.69, modeled = 62.59, target = 95.00, heatSink = 27.34, output = 50.2, timeout = 18500, ModelRate = 1.00, TecRate = 1.23, HsRate = -0.09
+(108750) TC: TC-1 = 67.83, modeled = 62.74, target = 95.00, heatSink = 27.34, output = 50.8, timeout = 18650, ModelRate = 0.98, TecRate = 1.10, HsRate = -0.07
+CHUBE: | PcrThermoTempC = 62.3  |
+(108900) TC: TC-1 = 67.98, modeled = 62.89, target = 95.00, heatSink = 27.33, output = 51.0, timeout = 18800, ModelRate = 0.99, TecRate = 1.15, HsRate = 0.03
+(109010) _performCapture: [40471,0,62.99,7588,9000,9000,4399,5779,5169,9000,9000,2082,9000,0,68.10]
+(109050) TC: TC-1 = 68.13, modeled = 63.04, target = 95.00, heatSink = 27.33, output = 51.6, timeout = 18950, ModelRate = 0.97, TecRate = 0.83, HsRate = -0.06
+(109200) TC: TC-1 = 68.28, modeled = 63.19, target = 95.00, heatSink = 27.33, output = 51.9, timeout = 19100, ModelRate = 0.98, TecRate = 0.82, HsRate = -0.04
+(109350) TC: TC-1 = 68.46, modeled = 63.34, target = 95.00, heatSink = 27.33, output = 50.9, timeout = 19250, ModelRate = 1.01, TecRate = 1.39, HsRate = 0.08
+(109500) TC: TC-1 = 68.60, modeled = 63.49, target = 95.00, heatSink = 27.32, output = 51.8, timeout = 19400, ModelRate = 0.99, TecRate = 0.89, HsRate = -0.07
+(109650) TC: TC-1 = 68.76, modeled = 63.63, target = 95.00, heatSink = 27.32, output = 52.0, timeout = 19550, ModelRate = 0.99, TecRate = 0.86, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 63.25  |
+(109801) TC: TC-1 = 68.92, modeled = 63.78, target = 95.00, heatSink = 27.31, output = 51.3, timeout = 19700, ModelRate = 1.00, TecRate = 1.22, HsRate = -0.04
+(109952) TC: TC-1 = 69.08, modeled = 63.93, target = 95.00, heatSink = 27.31, output = 52.0, timeout = 19850, ModelRate = 1.01, TecRate = 0.97, HsRate = -0.03
+(110101) TC: TC-1 = 69.25, modeled = 64.08, target = 95.00, heatSink = 27.31, output = 51.5, timeout = 20000, ModelRate = 1.02, TecRate = 1.21, HsRate = -0.03
+(110149) _performCapture: [41610,0,64.13,7584,9000,9000,4395,5771,5161,9000,9000,2079,9000,0,69.29]
+(110251) TC: TC-1 = 69.38, modeled = 64.23, target = 95.00, heatSink = 27.31, output = 51.8, timeout = 20150, ModelRate = 0.99, TecRate = 1.05, HsRate = -0.12
+(110402) TC: TC-1 = 69.55, modeled = 64.39, target = 95.00, heatSink = 27.30, output = 52.1, timeout = 20300, ModelRate = 1.00, TecRate = 1.01, HsRate = -0.06
+(110550) TC: TC-1 = 69.71, modeled = 64.54, target = 95.00, heatSink = 27.30, output = 52.0, timeout = 20450, ModelRate = 1.00, TecRate = 1.11, HsRate = -0.06
+CHUBE: | PcrThermoTempC = 64.2  |
+(110701) TC: TC-1 = 69.88, modeled = 64.69, target = 95.00, heatSink = 27.30, output = 52.0, timeout = 20600, ModelRate = 1.01, TecRate = 1.09, HsRate = -0.02
+(110852) TC: TC-1 = 70.03, modeled = 64.84, target = 95.00, heatSink = 27.29, output = 52.6, timeout = 20750, ModelRate = 1.01, TecRate = 0.93, HsRate = -0.04
+(111000) TC: TC-1 = 70.20, modeled = 64.99, target = 95.00, heatSink = 27.29, output = 52.1, timeout = 20900, ModelRate = 1.02, TecRate = 1.04, HsRate = -0.13
+(111150) TC: TC-1 = 70.36, modeled = 65.14, target = 95.00, heatSink = 27.29, output = 52.4, timeout = 21050, ModelRate = 1.02, TecRate = 1.05, HsRate = -0.05
+(111291) _performCapture: [42752,0,65.25,7572,9000,9000,4387,5763,5154,9000,9000,2074,9000,0,70.46]
+(111300) TC: TC-1 = 70.52, modeled = 65.30, target = 95.00, heatSink = 27.28, output = 52.4, timeout = 21200, ModelRate = 1.02, TecRate = 1.18, HsRate = 0.03
+CHUBE: | PcrThermoTempC = 64.66  |
+(111450) TC: TC-1 = 70.68, modeled = 65.45, target = 95.00, heatSink = 27.28, output = 52.3, timeout = 21350, ModelRate = 1.03, TecRate = 1.13, HsRate = -0.03
+(111600) TC: TC-1 = 70.82, modeled = 65.60, target = 95.00, heatSink = 27.28, output = 52.7, timeout = 21500, ModelRate = 1.00, TecRate = 1.04, HsRate = -0.05
+(111750) TC: TC-1 = 70.97, modeled = 65.75, target = 95.00, heatSink = 27.28, output = 52.8, timeout = 21650, ModelRate = 0.99, TecRate = 1.09, HsRate = -0.03
+(111901) TC: TC-1 = 71.13, modeled = 65.90, target = 95.00, heatSink = 27.27, output = 53.3, timeout = 21800, ModelRate = 0.99, TecRate = 0.86, HsRate = -0.08
+(112050) TC: TC-1 = 71.29, modeled = 66.05, target = 95.00, heatSink = 27.28, output = 52.8, timeout = 21950, ModelRate = 1.00, TecRate = 1.25, HsRate = 0.04
+(112202) TC: TC-1 = 71.45, modeled = 66.20, target = 95.00, heatSink = 27.27, output = 52.7, timeout = 22100, ModelRate = 1.01, TecRate = 1.20, HsRate = -0.02
+CHUBE: | PcrThermoTempC = 65.61  |
+(112350) TC: TC-1 = 71.61, modeled = 66.35, target = 95.00, heatSink = 27.27, output = 53.3, timeout = 22250, ModelRate = 1.01, TecRate = 0.98, HsRate = -0.06
+(112434) _performCapture: [43895,0,66.41,7564,9000,9000,4379,5755,5146,9000,9000,2070,9000,0,71.66]
+(112500) TC: TC-1 = 71.76, modeled = 66.51, target = 95.00, heatSink = 27.27, output = 53.0, timeout = 22400, ModelRate = 1.01, TecRate = 1.14, HsRate = -0.08
+(112652) TC: TC-1 = 71.92, modeled = 66.66, target = 95.00, heatSink = 27.27, output = 53.2, timeout = 22550, ModelRate = 1.01, TecRate = 1.17, HsRate = 0.04
+(112800) TC: TC-1 = 72.08, modeled = 66.81, target = 95.00, heatSink = 27.27, output = 53.3, timeout = 22700, ModelRate = 1.01, TecRate = 1.03, HsRate = -0.09
+(112950) TC: TC-1 = 72.25, modeled = 66.96, target = 95.00, heatSink = 27.26, output = 53.4, timeout = 22850, ModelRate = 1.02, TecRate = 1.03, HsRate = -0.05
+CHUBE: | PcrThermoTempC = 66.55  |
+(113100) TC: TC-1 = 72.38, modeled = 67.11, target = 95.00, heatSink = 27.26, output = 53.7, timeout = 23000, ModelRate = 0.99, TecRate = 1.03, HsRate = -0.03
+(113250) TC: TC-1 = 72.54, modeled = 67.26, target = 95.00, heatSink = 27.26, output = 53.2, timeout = 23150, ModelRate = 1.00, TecRate = 1.26, HsRate = -0.06
+(113402) TC: TC-1 = 72.70, modeled = 67.41, target = 95.00, heatSink = 27.26, output = 53.8, timeout = 23300, ModelRate = 1.00, TecRate = 1.09, HsRate = -0.02
+(113550) TC: TC-1 = 72.84, modeled = 67.56, target = 95.00, heatSink = 27.26, output = 54.5, timeout = 23450, ModelRate = 0.99, TecRate = 0.93, HsRate = 0.06
+(113577) _performCapture: [45038,0,67.56,7559,9000,9000,4374,5746,5138,9000,9000,2066,9000,0,72.84]
+(113700) TC: TC-1 = 73.00, modeled = 67.71, target = 95.00, heatSink = 27.26, output = 54.0, timeout = 23600, ModelRate = 1.00, TecRate = 1.21, HsRate = 0.13
+(113852) TC: TC-1 = 73.16, modeled = 67.86, target = 95.00, heatSink = 27.26, output = 54.4, timeout = 23750, ModelRate = 1.00, TecRate = 0.92, HsRate = -0.04
+CHUBE: | PcrThermoTempC = 67.0  |
+(114000) TC: TC-1 = 73.30, modeled = 68.01, target = 95.00, heatSink = 27.26, output = 54.4, timeout = 23900, ModelRate = 1.00, TecRate = 0.96, HsRate = -0.03
+(114150) TC: TC-1 = 73.46, modeled = 68.16, target = 95.00, heatSink = 27.26, output = 54.4, timeout = 24050, ModelRate = 1.00, TecRate = 1.09, HsRate = 0.02
+(114300) TC: TC-1 = 73.62, modeled = 68.31, target = 95.00, heatSink = 27.26, output = 54.3, timeout = 24200, ModelRate = 1.01, TecRate = 1.07, HsRate = -0.06
+(114451) TC: TC-1 = 73.78, modeled = 68.46, target = 95.00, heatSink = 27.26, output = 54.8, timeout = 24350, ModelRate = 1.01, TecRate = 0.97, HsRate = 0.01
+(114600) TC: TC-1 = 73.93, modeled = 68.61, target = 95.00, heatSink = 27.25, output = 54.9, timeout = 24500, ModelRate = 1.00, TecRate = 0.92, HsRate = -0.05
+(114718) _performCapture: [46180,0,68.71,7539,9000,9000,4359,5737,5131,9000,9000,2061,9000,0,74.03]
+(114750) TC: TC-1 = 74.07, modeled = 68.76, target = 95.00, heatSink = 27.25, output = 54.7, timeout = 24650, ModelRate = 0.99, TecRate = 1.17, HsRate = 0.04
+CHUBE: | PcrThermoTempC = 67.92  |
+(114900) TC: TC-1 = 74.25, modeled = 68.91, target = 95.00, heatSink = 27.25, output = 54.5, timeout = 24800, ModelRate = 1.00, TecRate = 1.29, HsRate = 0.10
+(115051) TC: TC-1 = 74.41, modeled = 69.06, target = 95.00, heatSink = 27.25, output = 54.9, timeout = 24950, ModelRate = 1.02, TecRate = 1.09, HsRate = 0.04
+(115202) TC: TC-1 = 74.56, modeled = 69.22, target = 95.00, heatSink = 27.25, output = 55.3, timeout = 25100, ModelRate = 1.02, TecRate = 0.99, HsRate = 0.06
+(115351) TC: TC-1 = 74.71, modeled = 69.37, target = 95.00, heatSink = 27.25, output = 54.8, timeout = 25250, ModelRate = 1.01, TecRate = 1.10, HsRate = -0.06
+(115501) TC: TC-1 = 74.86, modeled = 69.52, target = 95.00, heatSink = 27.25, output = 55.8, timeout = 25400, ModelRate = 1.00, TecRate = 0.91, HsRate = 0.06
+CHUBE: | PcrThermoTempC = 68.85  |
+(115652) TC: TC-1 = 75.01, modeled = 69.67, target = 95.00, heatSink = 27.25, output = 55.0, timeout = 25550, ModelRate = 1.00, TecRate = 1.17, HsRate = -0.05
+(115800) TC: TC-1 = 75.17, modeled = 69.82, target = 95.00, heatSink = 27.24, output = 54.9, timeout = 25700, ModelRate = 1.01, TecRate = 1.17, HsRate = -0.11
+(115856) _performCapture: [47317,0,69.87,7547,9000,9000,4363,5733,5125,9000,9000,2058,9000,0,75.21]
+(115950) TC: TC-1 = 75.33, modeled = 69.97, target = 95.00, heatSink = 27.25, output = 55.3, timeout = 25850, ModelRate = 1.01, TecRate = 1.05, HsRate = -0.10
+(116100) TC: TC-1 = 75.47, modeled = 70.12, target = 95.00, heatSink = 27.25, output = 55.8, timeout = 26000, ModelRate = 0.99, TecRate = 1.05, HsRate = 0.04
+(116250) TC: TC-1 = 75.63, modeled = 70.27, target = 95.00, heatSink = 27.25, output = 55.9, timeout = 26150, ModelRate = 0.99, TecRate = 1.02, HsRate = 0.06
+CHUBE: | PcrThermoTempC = 69.32  |
+(116400) TC: TC-1 = 75.78, modeled = 70.42, target = 95.00, heatSink = 27.25, output = 55.8, timeout = 26300, ModelRate = 0.99, TecRate = 1.13, HsRate = 0.02
+(116550) TC: TC-1 = 75.93, modeled = 70.57, target = 95.00, heatSink = 27.25, output = 56.1, timeout = 26450, ModelRate = 1.00, TecRate = 1.02, HsRate = -0.01
+(116703) TC: TC-1 = 76.09, modeled = 70.72, target = 95.00, heatSink = 27.25, output = 56.3, timeout = 26600, ModelRate = 1.00, TecRate = 0.92, HsRate = -0.03
+(116851) TC: TC-1 = 76.23, modeled = 70.86, target = 95.00, heatSink = 27.25, output = 56.7, timeout = 26750, ModelRate = 0.99, TecRate = 0.87, HsRate = -0.01
+(116996) _performCapture: [48457,0,71.01,7538,9000,9000,4356,5725,5117,9000,9000,2054,9000,0,76.39]
+(117000) TC: TC-1 = 76.39, modeled = 71.01, target = 95.00, heatSink = 27.25, output = 56.4, timeout = 26900, ModelRate = 0.99, TecRate = 0.99, HsRate = -0.06
+(117150) TC: TC-1 = 76.55, modeled = 71.16, target = 95.00, heatSink = 27.24, output = 56.2, timeout = 27050, ModelRate = 1.01, TecRate = 1.05, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 70.22  |
+(117300) TC: TC-1 = 76.69, modeled = 71.31, target = 95.00, heatSink = 27.25, output = 56.6, timeout = 27200, ModelRate = 0.99, TecRate = 1.10, HsRate = 0.06
+(117451) TC: TC-1 = 76.84, modeled = 71.46, target = 95.00, heatSink = 27.25, output = 56.7, timeout = 27350, ModelRate = 0.99, TecRate = 1.10, HsRate = 0.08
+(117600) TC: TC-1 = 76.99, modeled = 71.61, target = 95.00, heatSink = 27.25, output = 57.1, timeout = 27500, ModelRate = 0.99, TecRate = 1.00, HsRate = 0.10
+(117751) TC: TC-1 = 77.15, modeled = 71.76, target = 95.00, heatSink = 27.25, output = 56.8, timeout = 27650, ModelRate = 0.98, TecRate = 1.06, HsRate = -0.04
+(117901) TC: TC-1 = 77.32, modeled = 71.91, target = 95.00, heatSink = 27.25, output = 57.2, timeout = 27800, ModelRate = 1.00, TecRate = 0.98, HsRate = 0.05
+(118050) TC: TC-1 = 77.47, modeled = 72.06, target = 95.00, heatSink = 27.25, output = 57.0, timeout = 27950, ModelRate = 1.01, TecRate = 1.01, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 71.14  |
+(118139) _performCapture: [49600,0,72.11,7531,9000,9000,4350,5716,5110,9000,9000,2049,9000,0,77.53]
+(118201) TC: TC-1 = 77.64, modeled = 72.21, target = 95.00, heatSink = 27.25, output = 57.6, timeout = 28100, ModelRate = 1.01, TecRate = 0.94, HsRate = 0.08
+(118352) TC: TC-1 = 77.80, modeled = 72.36, target = 95.00, heatSink = 27.25, output = 56.3, timeout = 28250, ModelRate = 1.02, TecRate = 1.41, HsRate = 0.03
+(118501) TC: TC-1 = 77.94, modeled = 72.51, target = 95.00, heatSink = 27.24, output = 57.7, timeout = 28400, ModelRate = 1.00, TecRate = 0.85, HsRate = -0.05
+(118650) TC: TC-1 = 78.10, modeled = 72.67, target = 95.00, heatSink = 27.25, output = 57.6, timeout = 28550, ModelRate = 1.01, TecRate = 1.02, HsRate = 0.07
+(118801) TC: TC-1 = 78.25, modeled = 72.82, target = 95.00, heatSink = 27.25, output = 57.4, timeout = 28700, ModelRate = 1.00, TecRate = 0.97, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 71.62  |
+(118951) TC: TC-1 = 78.41, modeled = 72.97, target = 95.00, heatSink = 27.25, output = 57.5, timeout = 28850, ModelRate = 1.00, TecRate = 1.15, HsRate = 0.07
+(119101) TC: TC-1 = 78.56, modeled = 73.12, target = 95.00, heatSink = 27.25, output = 57.3, timeout = 29000, ModelRate = 1.00, TecRate = 1.09, HsRate = -0.08
+(119252) TC: TC-1 = 78.71, modeled = 73.27, target = 95.00, heatSink = 27.25, output = 58.2, timeout = 29150, ModelRate = 1.00, TecRate = 0.93, HsRate = 0.05
+(119281) _performCapture: [50742,0,73.27,7522,9000,9000,4343,5709,5102,9000,9000,2045,9000,0,78.71]
+(119400) TC: TC-1 = 78.87, modeled = 73.42, target = 95.00, heatSink = 27.25, output = 58.2, timeout = 29300, ModelRate = 1.01, TecRate = 0.87, HsRate = 0.03
+(119551) TC: TC-1 = 79.03, modeled = 73.57, target = 95.00, heatSink = 27.25, output = 57.3, timeout = 29450, ModelRate = 1.01, TecRate = 1.38, HsRate = 0.10
+(119700) TC: TC-1 = 79.19, modeled = 73.72, target = 95.00, heatSink = 27.25, output = 57.8, timeout = 29600, ModelRate = 1.01, TecRate = 1.17, HsRate = 0.03
+CHUBE: | PcrThermoTempC = 72.54  |
+(119852) TC: TC-1 = 79.35, modeled = 73.87, target = 95.00, heatSink = 27.26, output = 58.5, timeout = 29750, ModelRate = 1.01, TecRate = 0.88, HsRate = 0.02
+(120001) TC: TC-1 = 79.49, modeled = 74.02, target = 95.00, heatSink = 27.26, output = 57.6, timeout = 29900, ModelRate = 1.00, TecRate = 1.39, HsRate = 0.08
+(120151) TC: TC-1 = 79.64, modeled = 74.17, target = 95.00, heatSink = 27.26, output = 58.4, timeout = 30050, ModelRate = 0.99, TecRate = 1.07, HsRate = 0.02
+(120303) TC: TC-1 = 79.79, modeled = 74.32, target = 95.00, heatSink = 27.26, output = 59.2, timeout = 30200, ModelRate = 0.99, TecRate = 0.71, HsRate = 0.02
+(120424) _performCapture: [51885,0,74.42,7516,9000,9000,4338,5703,5095,9000,9000,2041,9000,0,79.90]
+(120451) TC: TC-1 = 79.94, modeled = 74.47, target = 95.00, heatSink = 27.26, output = 59.1, timeout = 30350, ModelRate = 0.99, TecRate = 0.94, HsRate = 0.09
+CHUBE: | PcrThermoTempC = 73.43  |
+(120602) TC: TC-1 = 80.09, modeled = 74.62, target = 95.00, heatSink = 27.26, output = 58.1, timeout = 30500, ModelRate = 1.00, TecRate = 1.32, HsRate = 0.02
+(120750) TC: TC-1 = 80.25, modeled = 74.77, target = 95.00, heatSink = 27.27, output = 59.1, timeout = 30650, ModelRate = 1.00, TecRate = 0.90, HsRate = 0.04
+(120900) TC: TC-1 = 80.42, modeled = 74.92, target = 95.00, heatSink = 27.27, output = 58.7, timeout = 30800, ModelRate = 1.02, TecRate = 1.15, HsRate = 0.03
+(121050) TC: TC-1 = 80.60, modeled = 75.08, target = 95.00, heatSink = 27.27, output = 58.6, timeout = 30950, ModelRate = 1.04, TecRate = 1.21, HsRate = 0.11
+(121200) TC: TC-1 = 80.75, modeled = 75.23, target = 95.00, heatSink = 27.27, output = 58.8, timeout = 31100, ModelRate = 1.02, TecRate = 1.04, HsRate = -0.06
+(121350) TC: TC-1 = 80.88, modeled = 75.38, target = 95.00, heatSink = 27.27, output = 59.9, timeout = 31250, ModelRate = 0.99, TecRate = 0.61, HsRate = -0.03
+CHUBE: | PcrThermoTempC = 73.89  |
+(121501) TC: TC-1 = 81.05, modeled = 75.53, target = 95.00, heatSink = 27.27, output = 58.2, timeout = 31400, ModelRate = 1.00, TecRate = 1.37, HsRate = -0.06
+(121566) _performCapture: [53027,0,75.58,7507,9000,9000,4332,5694,5087,9000,9000,2037,9000,0,81.11]
+(121653) TC: TC-1 = 81.20, modeled = 75.68, target = 95.00, heatSink = 27.28, output = 59.7, timeout = 31550, ModelRate = 1.01, TecRate = 0.86, HsRate = 0.06
+(121802) TC: TC-1 = 81.35, modeled = 75.83, target = 95.00, heatSink = 27.28, output = 59.3, timeout = 31700, ModelRate = 1.00, TecRate = 1.01, HsRate = -0.04
+(121951) TC: TC-1 = 81.51, modeled = 75.99, target = 95.00, heatSink = 27.28, output = 59.6, timeout = 31850, ModelRate = 1.01, TecRate = 0.80, HsRate = -0.14
+(122100) TC: TC-1 = 81.66, modeled = 76.14, target = 95.00, heatSink = 27.28, output = 59.7, timeout = 32000, ModelRate = 1.01, TecRate = 0.98, HsRate = 0.05
+(122253) TC: TC-1 = 81.82, modeled = 76.29, target = 95.00, heatSink = 27.28, output = 60.2, timeout = 32150, ModelRate = 1.01, TecRate = 0.74, HsRate = 0.02
+CHUBE: | PcrThermoTempC = 74.8  |
+(122402) TC: TC-1 = 81.98, modeled = 76.44, target = 95.00, heatSink = 27.29, output = 60.3, timeout = 32300, ModelRate = 1.01, TecRate = 0.88, HsRate = 0.12
+(122551) TC: TC-1 = 82.10, modeled = 76.58, target = 95.00, heatSink = 27.29, output = 59.8, timeout = 32450, ModelRate = 0.98, TecRate = 1.01, HsRate = -0.06
+(122700) TC: TC-1 = 82.26, modeled = 76.73, target = 95.00, heatSink = 27.29, output = 60.0, timeout = 32600, ModelRate = 0.99, TecRate = 1.08, HsRate = 0.07
+(122708) _performCapture: [54167,0,76.73,7502,9000,9000,4326,5689,5081,9000,9000,2033,9000,0,82.26]
+(122850) TC: TC-1 = 82.43, modeled = 76.89, target = 95.00, heatSink = 27.29, output = 60.0, timeout = 32750, ModelRate = 1.01, TecRate = 1.03, HsRate = 0.04
+(122865) eventMarker: 54327, Start Melt Acquisition
+(123001) TC: TC-1 = 82.58, modeled = 77.04, target = 95.00, heatSink = 27.30, output = 60.1, timeout = 32900, ModelRate = 1.00, TecRate = 1.09, HsRate = 0.05
+CHUBE: | PcrThermoTempC = 75.7  |
+(123153) TC: TC-1 = 82.75, modeled = 77.19, target = 95.00, heatSink = 27.30, output = 60.5, timeout = 33050, ModelRate = 1.02, TecRate = 0.93, HsRate = 0.09
+(123179) _performCapture: [54640,0,77.19,7473,9000,9000,4312,5668,5066,9000,9000,2025,9000,0,82.75]
+(123300) TC: TC-1 = 82.89, modeled = 77.34, target = 95.00, heatSink = 27.30, output = 60.2, timeout = 33200, ModelRate = 1.00, TecRate = 1.11, HsRate = 0.07
+(123396) _performCapture: [54857,0,77.44,7422,9000,9000,4289,5636,5047,9000,9000,2014,9000,0,83.03]
+(123453) TC: TC-1 = 83.07, modeled = 77.49, target = 95.00, heatSink = 27.30, output = 60.3, timeout = 33350, ModelRate = 1.02, TecRate = 1.02, HsRate = 0.05
+(123587) _performCapture: [55048,0,77.59,7381,9000,9000,4270,5613,5032,9000,9000,2006,9000,0,83.19]
+(123602) TC: TC-1 = 83.23, modeled = 77.64, target = 95.00, heatSink = 27.31, output = 60.1, timeout = 33500, ModelRate = 1.02, TecRate = 1.12, HsRate = 0.04
+(123750) TC: TC-1 = 83.39, modeled = 77.80, target = 95.00, heatSink = 27.31, output = 60.4, timeout = 33650, ModelRate = 1.02, TecRate = 1.00, HsRate = 0.03
+(123802) _performCapture: [55263,0,77.85,7361,9000,9000,4261,5597,5021,9000,9000,1999,9000,0,83.44]
+CHUBE: | PcrThermoTempC = 76.19  |
+(123902) TC: TC-1 = 83.53, modeled = 77.95, target = 95.00, heatSink = 27.31, output = 60.1, timeout = 33800, ModelRate = 1.01, TecRate = 1.21, HsRate = 0.03
+(123992) _performCapture: [55453,0,78.00,7337,9000,9000,4250,5583,5012,9000,9000,1994,9000,0,83.59]
+(124050) TC: TC-1 = 83.70, modeled = 78.10, target = 95.00, heatSink = 27.31, output = 60.5, timeout = 33950, ModelRate = 1.02, TecRate = 1.08, HsRate = 0.06
+(124182) _performCapture: [55644,0,78.20,7305,9000,9000,4233,5569,5003,9000,9000,1989,9000,0,83.80]
+(124201) TC: TC-1 = 83.85, modeled = 78.25, target = 95.00, heatSink = 27.32, output = 61.0, timeout = 34100, ModelRate = 1.01, TecRate = 0.90, HsRate = 0.03
+(124350) TC: TC-1 = 83.99, modeled = 78.40, target = 95.00, heatSink = 27.32, output = 61.2, timeout = 34250, ModelRate = 1.00, TecRate = 0.74, HsRate = -0.09
+(124399) _performCapture: [55860,0,78.45,7310,9000,9000,4237,5563,4999,9000,9000,1986,9000,0,84.03]
+(124500) TC: TC-1 = 84.14, modeled = 78.55, target = 95.00, heatSink = 27.33, output = 61.5, timeout = 34400, ModelRate = 0.99, TecRate = 0.91, HsRate = 0.15
+(124588) _performCapture: [56049,0,78.60,7297,9000,9000,4232,5554,4993,9000,9000,1983,9000,0,84.19]
+(124650) TC: TC-1 = 84.29, modeled = 78.70, target = 95.00, heatSink = 27.32, output = 60.9, timeout = 34550, ModelRate = 0.99, TecRate = 1.11, HsRate = 0.05
+(124777) _performCapture: [56238,0,78.80,7284,9000,9000,4226,5544,4987,9000,9000,1980,9000,0,84.39]
+CHUBE: | PcrThermoTempC = 77.2  |
+(124801) TC: TC-1 = 84.45, modeled = 78.85, target = 95.00, heatSink = 27.33, output = 61.3, timeout = 34700, ModelRate = 1.01, TecRate = 1.06, HsRate = 0.10
+(124950) TC: TC-1 = 84.61, modeled = 79.00, target = 95.00, heatSink = 27.33, output = 60.9, timeout = 34850, ModelRate = 1.01, TecRate = 1.04, HsRate = -0.07
+(124994) _performCapture: [56455,0,79.00,7282,9000,9000,4225,5542,4985,9000,9000,1979,9000,0,84.61]
+(125100) TC: TC-1 = 84.75, modeled = 79.15, target = 95.00, heatSink = 27.34, output = 61.9, timeout = 35000, ModelRate = 1.00, TecRate = 0.90, HsRate = 0.11
+(125183) _performCapture: [56644,0,79.20,7264,9000,9000,4214,5533,4980,9000,9000,1975,9000,0,84.81]
+(125250) TC: TC-1 = 84.91, modeled = 79.30, target = 95.00, heatSink = 27.34, output = 61.4, timeout = 35150, ModelRate = 1.00, TecRate = 1.09, HsRate = 0.11
+(125396) _performCapture: [56856,0,79.40,7265,9000,9000,4216,5531,4978,9000,9000,1973,9000,0,85.00]
+(125400) TC: TC-1 = 85.05, modeled = 79.45, target = 95.00, heatSink = 27.34, output = 62.2, timeout = 35300, ModelRate = 0.99, TecRate = 0.80, HsRate = 0.04
+(125550) TC: TC-1 = 85.19, modeled = 79.60, target = 95.00, heatSink = 27.34, output = 61.7, timeout = 35450, ModelRate = 0.99, TecRate = 1.06, HsRate = 0.04
+(125586) _performCapture: [57047,0,79.60,7250,9000,9000,4208,5522,4971,9000,9000,1969,9000,0,85.19]
+CHUBE: | PcrThermoTempC = 78.17  |
+(125703) TC: TC-1 = 85.36, modeled = 79.75, target = 95.00, heatSink = 27.35, output = 61.1, timeout = 35600, ModelRate = 1.01, TecRate = 1.42, HsRate = 0.04
+(125797) _performCapture: [57258,0,79.85,7252,9000,9000,4208,5521,4971,9000,9000,1970,9000,0,85.48]
+(125851) TC: TC-1 = 85.52, modeled = 79.90, target = 95.00, heatSink = 27.35, output = 60.9, timeout = 35750, ModelRate = 1.01, TecRate = 1.47, HsRate = 0.08
+(125987) _performCapture: [57448,0,80.00,7229,9000,9000,4195,5513,4966,9000,9000,1967,9000,0,85.65]
+(126000) TC: TC-1 = 85.69, modeled = 80.05, target = 95.00, heatSink = 27.35, output = 61.6, timeout = 35900, ModelRate = 1.01, TecRate = 1.09, HsRate = -0.05
+(126150) TC: TC-1 = 85.85, modeled = 80.21, target = 95.00, heatSink = 27.36, output = 61.9, timeout = 36050, ModelRate = 1.01, TecRate = 0.98, HsRate = -0.05
+(126200) _performCapture: [57660,0,80.26,7241,9000,9000,4203,5511,4964,9000,9000,1966,9000,0,85.91]
+(126300) TC: TC-1 = 86.00, modeled = 80.36, target = 95.00, heatSink = 27.36, output = 62.2, timeout = 36200, ModelRate = 1.01, TecRate = 0.87, HsRate = -0.06
+(126388) _performCapture: [57849,0,80.41,7227,9000,9000,4197,5504,4959,9000,9000,1963,9000,0,86.06]
+CHUBE: | PcrThermoTempC = 78.64  |
+(126450) TC: TC-1 = 86.17, modeled = 80.51, target = 95.00, heatSink = 27.37, output = 62.2, timeout = 36350, ModelRate = 1.03, TecRate = 0.97, HsRate = 0.08
+(126578) _performCapture: [58039,0,80.61,7218,9000,9000,4192,5498,4954,9000,9000,1960,9000,0,86.27]
+(126600) TC: TC-1 = 86.32, modeled = 80.66, target = 95.00, heatSink = 27.37, output = 62.3, timeout = 36500, ModelRate = 1.02, TecRate = 0.98, HsRate = 0.02
+(126751) TC: TC-1 = 86.47, modeled = 80.81, target = 95.00, heatSink = 27.38, output = 63.2, timeout = 36650, ModelRate = 1.01, TecRate = 0.82, HsRate = 0.24
+(126792) _performCapture: [58253,0,80.81,7219,9000,9000,4192,5497,4954,9000,9000,1959,9000,0,86.47]
+(126901) TC: TC-1 = 86.62, modeled = 80.96, target = 95.00, heatSink = 27.38, output = 62.0, timeout = 36800, ModelRate = 1.00, TecRate = 1.22, HsRate = 0.06
+(126981) _performCapture: [58442,0,81.02,7207,9000,9000,4187,5491,4950,9000,9000,1957,9000,0,86.68]
+(127053) TC: TC-1 = 86.77, modeled = 81.11, target = 95.00, heatSink = 27.38, output = 62.4, timeout = 36950, ModelRate = 1.00, TecRate = 1.15, HsRate = 0.07
+(127194) _performCapture: [58655,0,81.22,7210,9000,9000,4187,5489,4948,9000,9000,1956,9000,0,86.87]
+(127202) TC: TC-1 = 86.94, modeled = 81.27, target = 95.00, heatSink = 27.38, output = 62.8, timeout = 37100, ModelRate = 1.02, TecRate = 0.93, HsRate = 0.03
+CHUBE: | PcrThermoTempC = 79.58  |
+(127351) TC: TC-1 = 87.08, modeled = 81.42, target = 95.00, heatSink = 27.39, output = 63.3, timeout = 37250, ModelRate = 1.01, TecRate = 0.65, HsRate = -0.07
+(127382) _performCapture: [58844,0,81.42,7201,9000,9000,4182,5483,4943,9000,9000,1954,9000,0,87.08]
+(127501) TC: TC-1 = 87.24, modeled = 81.57, target = 95.00, heatSink = 27.39, output = 62.5, timeout = 37400, ModelRate = 1.01, TecRate = 1.20, HsRate = 0.13
+(127598) _performCapture: [59059,0,81.67,7202,9000,9000,4183,5482,4944,9000,9000,1953,9000,0,87.33]
+(127650) TC: TC-1 = 87.38, modeled = 81.72, target = 95.00, heatSink = 27.39, output = 63.6, timeout = 37550, ModelRate = 1.00, TecRate = 0.68, HsRate = 0.04
+(127793) _performCapture: [59254,0,81.82,7192,9000,9000,4177,5476,4938,9000,9000,1950,9000,0,87.49]
+(127801) TC: TC-1 = 87.54, modeled = 81.87, target = 95.00, heatSink = 27.40, output = 63.3, timeout = 37700, ModelRate = 1.00, TecRate = 0.90, HsRate = 0.07
+(127950) TC: TC-1 = 87.70, modeled = 82.02, target = 95.00, heatSink = 27.40, output = 63.3, timeout = 37850, ModelRate = 1.01, TecRate = 0.87, HsRate = 0.05
+(127986) _performCapture: [59447,0,82.02,7180,9000,9000,4173,5469,4933,9000,9000,1947,9000,0,87.70]
+CHUBE: | PcrThermoTempC = 80.5  |
+(128102) TC: TC-1 = 87.86, modeled = 82.17, target = 95.00, heatSink = 27.40, output = 62.5, timeout = 38000, ModelRate = 1.02, TecRate = 1.28, HsRate = 0.06
+(128196) _performCapture: [59657,0,82.27,7187,9000,9000,4174,5470,4934,9000,9000,1948,9000,0,87.96]
+(128252) TC: TC-1 = 87.99, modeled = 82.32, target = 95.00, heatSink = 27.41, output = 64.0, timeout = 38150, ModelRate = 0.99, TecRate = 0.71, HsRate = 0.06
+(128387) _performCapture: [59848,0,82.42,7175,9000,9000,4168,5464,4930,9000,9000,1945,9000,0,88.11]
+(128403) TC: TC-1 = 88.15, modeled = 82.47, target = 95.00, heatSink = 27.41, output = 63.6, timeout = 38300, ModelRate = 1.00, TecRate = 0.89, HsRate = 0.02
+(128551) TC: TC-1 = 88.32, modeled = 82.62, target = 95.00, heatSink = 27.42, output = 63.2, timeout = 38450, ModelRate = 1.01, TecRate = 1.16, HsRate = 0.06
+(128606) _performCapture: [60066,0,82.67,7179,9000,9000,4170,5465,4931,9000,9000,1945,9000,0,88.37]
+(128703) TC: TC-1 = 88.47, modeled = 82.77, target = 95.00, heatSink = 27.42, output = 64.2, timeout = 38600, ModelRate = 1.00, TecRate = 0.68, HsRate = 0.03
+(128797) _performCapture: [60259,0,82.87,7165,9000,9000,4163,5457,4924,9000,9000,1942,9000,0,88.58]
+(128851) TC: TC-1 = 88.62, modeled = 82.92, target = 95.00, heatSink = 27.43, output = 63.4, timeout = 38750, ModelRate = 0.99, TecRate = 1.14, HsRate = 0.05
+CHUBE: | PcrThermoTempC = 80.96  |
+(128989) _performCapture: [60450,0,83.02,7158,9000,9000,4159,5452,4921,9000,9000,1940,9000,0,88.73]
+(129000) TC: TC-1 = 88.77, modeled = 83.07, target = 95.00, heatSink = 27.43, output = 63.4, timeout = 38900, ModelRate = 1.00, TecRate = 1.14, HsRate = 0.03
+(129151) TC: TC-1 = 88.93, modeled = 83.22, target = 95.00, heatSink = 27.44, output = 64.3, timeout = 39050, ModelRate = 1.01, TecRate = 0.92, HsRate = 0.11
+(129177) _performCapture: [60638,0,83.22,7152,9000,9000,4157,5447,4917,9000,9000,1937,9000,0,88.93]
+(129301) TC: TC-1 = 89.08, modeled = 83.37, target = 95.00, heatSink = 27.44, output = 63.1, timeout = 39200, ModelRate = 1.01, TecRate = 1.38, HsRate = 0.09
+(129391) _performCapture: [60852,0,83.42,7159,9000,9000,4159,5449,4918,9000,9000,1938,9000,0,89.13]
+(129453) TC: TC-1 = 89.24, modeled = 83.52, target = 95.00, heatSink = 27.44, output = 64.4, timeout = 39350, ModelRate = 1.01, TecRate = 0.81, HsRate = 0.04
+(129580) _performCapture: [61042,0,83.62,7136,9000,9000,4147,5444,4914,9000,9000,1936,9000,0,89.33]
+(129603) TC: TC-1 = 89.36, modeled = 83.67, target = 95.00, heatSink = 27.45, output = 64.6, timeout = 39500, ModelRate = 0.98, TecRate = 0.69, HsRate = -0.10
+(129750) TC: TC-1 = 89.51, modeled = 83.82, target = 95.00, heatSink = 27.45, output = 64.1, timeout = 39650, ModelRate = 0.97, TecRate = 1.10, HsRate = 0.05
+CHUBE: | PcrThermoTempC = 81.86  |
+(129794) _performCapture: [61255,0,83.82,7151,9000,9000,4155,5444,4914,9000,9000,1936,9000,0,89.51]
+(129900) TC: TC-1 = 89.66, modeled = 83.97, target = 95.00, heatSink = 27.46, output = 63.9, timeout = 39800, ModelRate = 0.98, TecRate = 1.17, HsRate = -0.06
+(129984) _performCapture: [61446,0,84.02,7142,9000,9000,4150,5439,4910,9000,9000,1933,9000,0,89.71]
+(130051) TC: TC-1 = 89.81, modeled = 84.12, target = 95.00, heatSink = 27.46, output = 65.0, timeout = 39950, ModelRate = 0.99, TecRate = 0.94, HsRate = 0.11
+(130197) _performCapture: [61658,0,84.26,7147,9000,9000,4152,5441,4911,9000,9000,1934,9000,0,89.97]
+(130200) TC: TC-1 = 89.97, modeled = 84.26, target = 95.00, heatSink = 27.47, output = 65.2, timeout = 40100, ModelRate = 0.99, TecRate = 0.75, HsRate = 0.03
+(130350) TC: TC-1 = 90.13, modeled = 84.41, target = 95.00, heatSink = 27.48, output = 65.1, timeout = 40250, ModelRate = 1.00, TecRate = 0.93, HsRate = 0.10
+(130387) _performCapture: [61848,0,84.41,7137,9000,9000,4147,5434,4906,9000,9000,1931,9000,0,90.13]
+(130500) TC: TC-1 = 90.28, modeled = 84.56, target = 95.00, heatSink = 27.48, output = 65.1, timeout = 40400, ModelRate = 1.00, TecRate = 0.96, HsRate = 0.07
+CHUBE: | PcrThermoTempC = 82.74  |
+(130600) _performCapture: [62060,0,84.66,7141,9000,9000,4149,5434,4906,9000,9000,1931,9000,0,90.38]
+(130653) TC: TC-1 = 90.43, modeled = 84.71, target = 95.00, heatSink = 27.49, output = 63.8, timeout = 40550, ModelRate = 0.99, TecRate = 1.47, HsRate = -0.06
+(130788) _performCapture: [62250,0,84.81,7129,9000,9000,4143,5428,4902,9000,9000,1928,9000,0,90.56]
+(130802) TC: TC-1 = 90.59, modeled = 84.86, target = 95.00, heatSink = 27.49, output = 65.8, timeout = 40700, ModelRate = 0.99, TecRate = 0.76, HsRate = 0.08
+(130950) TC: TC-1 = 90.75, modeled = 85.01, target = 95.00, heatSink = 27.49, output = 65.0, timeout = 40850, ModelRate = 1.00, TecRate = 0.96, HsRate = -0.07
+(130979) _performCapture: [62440,0,85.01,7120,9000,9000,4139,5422,4898,9000,9000,1926,9000,0,90.75]
+(131101) TC: TC-1 = 90.93, modeled = 85.17, target = 95.00, heatSink = 27.50, output = 64.5, timeout = 41000, ModelRate = 1.02, TecRate = 1.07, HsRate = -0.11
+(131194) _performCapture: [62655,0,85.22,7126,9000,9000,4140,5424,4899,9000,9000,1926,9000,0,90.99]
+(131251) TC: TC-1 = 91.09, modeled = 85.32, target = 95.00, heatSink = 27.51, output = 65.2, timeout = 41150, ModelRate = 1.03, TecRate = 0.85, HsRate = -0.08
+CHUBE: | PcrThermoTempC = 83.19  |
+(131387) _performCapture: [62848,0,85.42,7118,9000,9000,4137,5418,4895,9000,9000,1924,9000,0,91.19]
+(131402) TC: TC-1 = 91.25, modeled = 85.47, target = 95.00, heatSink = 27.51, output = 65.1, timeout = 41300, ModelRate = 1.03, TecRate = 1.05, HsRate = 0.07
+(131552) TC: TC-1 = 91.43, modeled = 85.63, target = 95.00, heatSink = 27.52, output = 64.4, timeout = 41450, ModelRate = 1.04, TecRate = 1.30, HsRate = 0.05
+(131602) _performCapture: [63063,0,85.68,7118,9000,9000,4137,5418,4895,9000,9000,1924,9000,0,91.48]
+(131700) TC: TC-1 = 91.58, modeled = 85.78, target = 95.00, heatSink = 27.52, output = 64.7, timeout = 41600, ModelRate = 1.03, TecRate = 1.16, HsRate = -0.07
+(131793) _performCapture: [63254,0,85.83,7098,9000,9000,4125,5412,4891,9000,9000,1921,9000,0,91.63]
+(131851) TC: TC-1 = 91.72, modeled = 85.93, target = 95.00, heatSink = 27.53, output = 66.1, timeout = 41750, ModelRate = 1.02, TecRate = 0.71, HsRate = 0.05
+(131983) _performCapture: [63444,0,86.03,7103,9000,9000,4129,5408,4887,9000,9000,1919,9000,0,91.81]
+(132002) TC: TC-1 = 91.87, modeled = 86.09, target = 95.00, heatSink = 27.53, output = 65.5, timeout = 41900, ModelRate = 1.02, TecRate = 0.95, HsRate = 0.05
+(132153) TC: TC-1 = 92.02, modeled = 86.24, target = 95.00, heatSink = 27.54, output = 65.3, timeout = 42050, ModelRate = 1.01, TecRate = 1.33, HsRate = 0.20
+(132198) _performCapture: [63659,0,86.29,7112,9000,9000,4133,5411,4889,9000,9000,1920,9000,0,92.06]
+CHUBE: | PcrThermoTempC = 84.09  |
+(132301) TC: TC-1 = 92.15, modeled = 86.39, target = 95.00, heatSink = 27.55, output = 66.1, timeout = 42200, ModelRate = 0.98, TecRate = 0.92, HsRate = 0.04
+(132386) _performCapture: [63847,0,86.44,7091,9000,9000,4121,5406,4885,9000,9000,1918,9000,0,92.20]
+(132450) TC: TC-1 = 92.30, modeled = 86.54, target = 95.00, heatSink = 27.55, output = 66.0, timeout = 42350, ModelRate = 0.99, TecRate = 0.98, HsRate = 0.07
+(132601) _performCapture: [64061,0,86.68,7106,9000,9000,4130,5407,4886,9000,9000,1919,9000,0,92.45]
+(132602) TC: TC-1 = 92.45, modeled = 86.68, target = 95.00, heatSink = 27.55, output = 66.6, timeout = 42500, ModelRate = 0.98, TecRate = 0.75, HsRate = 0.06
+(132750) TC: TC-1 = 92.62, modeled = 86.84, target = 95.00, heatSink = 27.57, output = 65.4, timeout = 42650, ModelRate = 0.99, TecRate = 1.44, HsRate = 0.17
+(132792) _performCapture: [64253,0,86.84,7095,9000,9000,4124,5401,4881,9000,9000,1916,9000,0,92.62]
+(132900) TC: TC-1 = 92.77, modeled = 86.98, target = 95.00, heatSink = 27.57, output = 66.3, timeout = 42800, ModelRate = 1.00, TecRate = 0.91, HsRate = 0.06
+(132983) _performCapture: [64444,0,87.04,7088,9000,9000,4120,5399,4878,9000,9000,1914,9000,0,92.83]
+(133052) TC: TC-1 = 92.93, modeled = 87.13, target = 95.00, heatSink = 27.57, output = 65.7, timeout = 42950, ModelRate = 1.01, TecRate = 1.28, HsRate = 0.07
+CHUBE: | PcrThermoTempC = 84.97  |
+(133196) _performCapture: [64657,0,87.28,7095,9000,9000,4123,5399,4879,9000,9000,1914,9000,0,93.07]
+(133201) TC: TC-1 = 93.07, modeled = 87.28, target = 95.00, heatSink = 27.58, output = 66.6, timeout = 43100, ModelRate = 0.99, TecRate = 0.89, HsRate = 0.07
+(133351) TC: TC-1 = 93.22, modeled = 87.43, target = 95.00, heatSink = 27.58, output = 66.8, timeout = 43250, ModelRate = 1.00, TecRate = 0.77, HsRate = -0.07
+(133386) _performCapture: [64847,0,87.43,7083,9000,9000,4118,5394,4875,9000,9000,1912,9000,0,93.22]
+(133501) TC: TC-1 = 93.37, modeled = 87.58, target = 95.00, heatSink = 27.59, output = 67.2, timeout = 43400, ModelRate = 1.00, TecRate = 0.87, HsRate = 0.16
+(133597) _performCapture: [65058,0,87.68,7091,9000,9000,4121,5396,4876,9000,9000,1912,9000,0,93.47]
+(133650) TC: TC-1 = 93.53, modeled = 87.73, target = 95.00, heatSink = 27.60, output = 66.7, timeout = 43550, ModelRate = 1.01, TecRate = 0.96, HsRate = -0.03
+(133789) _performCapture: [65250,0,87.83,7082,9000,9000,4116,5391,4873,9000,9000,1910,9000,0,93.62]
+(133803) TC: TC-1 = 93.67, modeled = 87.88, target = 95.00, heatSink = 27.60, output = 66.8, timeout = 43700, ModelRate = 0.99, TecRate = 1.03, HsRate = 0.06
+CHUBE: | PcrThermoTempC = 85.4  |
+(133950) TC: TC-1 = 93.83, modeled = 88.03, target = 95.00, heatSink = 27.61, output = 66.3, timeout = 43850, ModelRate = 0.99, TecRate = 1.32, HsRate = 0.09
+(133979) _performCapture: [65440,0,88.03,7062,9000,9000,4105,5386,4868,9000,9000,1908,9000,0,93.83]
+(134100) TC: TC-1 = 93.99, modeled = 88.18, target = 95.00, heatSink = 27.62, output = 66.4, timeout = 44000, ModelRate = 1.01, TecRate = 1.31, HsRate = 0.08
+(134195) _performCapture: [65656,0,88.23,7081,9000,9000,4115,5388,4869,9000,9000,1908,9000,0,94.05]
+(134250) TC: TC-1 = 94.15, modeled = 88.33, target = 95.00, heatSink = 27.62, output = 67.3, timeout = 44150, ModelRate = 1.00, TecRate = 0.85, HsRate = 0.05
+(134385) _performCapture: [65846,0,88.43,7071,9000,9000,4110,5382,4866,9000,9000,1906,9000,0,94.24]
+(134402) TC: TC-1 = 94.31, modeled = 88.48, target = 95.00, heatSink = 27.63, output = 67.2, timeout = 44300, ModelRate = 1.02, TecRate = 0.93, HsRate = 0.03
+(134550) TC: TC-1 = 94.48, modeled = 88.63, target = 95.00, heatSink = 27.63, output = 66.3, timeout = 44450, ModelRate = 1.03, TecRate = 1.48, HsRate = 0.14
+(134603) _performCapture: [66064,0,88.68,7074,9000,9000,4111,5384,4866,9000,9000,1907,9000,0,94.52]
+(134701) TC: TC-1 = 94.62, modeled = 88.78, target = 95.00, heatSink = 27.64, output = 67.8, timeout = 44600, ModelRate = 1.00, TecRate = 0.84, HsRate = 0.07
+CHUBE: | PcrThermoTempC = 86.28  |
+(134795) _performCapture: [66256,0,88.83,7065,9000,9000,4107,5378,4862,9000,9000,1904,9000,0,94.67]
+(134853) TC: TC-1 = 94.78, modeled = 88.94, target = 95.00, heatSink = 27.65, output = 67.8, timeout = 44750, ModelRate = 1.00, TecRate = 0.79, HsRate = 0.06
+(134986) _performCapture: [66447,0,89.04,7058,9000,9000,4103,5373,4858,9000,9000,1902,9000,0,94.90]
+(135000) TC: TC-1 = 94.95, modeled = 89.09, target = 95.00, heatSink = 27.65, output = 66.7, timeout = 44900, ModelRate = 1.01, TecRate = 1.15, HsRate = -0.06
+(135151) TC: TC-1 = 95.09, modeled = 89.24, target = 95.00, heatSink = 27.66, output = 67.2, timeout = 45050, ModelRate = 1.00, TecRate = 1.19, HsRate = 0.07
+(135200) _performCapture: [66661,0,89.29,7063,9000,9000,4106,5375,4859,9000,9000,1903,9000,0,95.15]
+(135301) TC: TC-1 = 95.25, modeled = 89.39, target = 95.00, heatSink = 27.67, output = 68.1, timeout = 45200, ModelRate = 1.01, TecRate = 0.83, HsRate = 0.06
+(135388) _performCapture: [66850,0,89.44,7055,9000,9000,4101,5371,4856,9000,9000,1901,9000,0,95.31]
+(135451) TC: TC-1 = 95.41, modeled = 89.54, target = 95.00, heatSink = 27.68, output = 67.2, timeout = 45350, ModelRate = 1.01, TecRate = 1.15, HsRate = 0.04
+(135579) _performCapture: [67040,0,89.64,7051,9000,9000,4099,5367,4854,9000,9000,1899,9000,0,95.50]
+CHUBE: | PcrThermoTempC = 87.16  |
+(135600) TC: TC-1 = 95.56, modeled = 89.70, target = 95.00, heatSink = 27.68, output = 67.6, timeout = 45500, ModelRate = 1.02, TecRate = 1.06, HsRate = 0.06
+(135750) TC: TC-1 = 95.70, modeled = 89.85, target = 95.00, heatSink = 27.69, output = 68.6, timeout = 45650, ModelRate = 0.99, TecRate = 0.81, HsRate = 0.13
+(135794) _performCapture: [67255,0,89.85,7057,9000,9000,4102,5369,4855,9000,9000,1899,9000,0,95.70]
+(135903) TC: TC-1 = 95.85, modeled = 89.99, target = 95.00, heatSink = 27.70, output = 68.0, timeout = 45800, ModelRate = 1.01, TecRate = 1.03, HsRate = 0.05
+(135989) _performCapture: [67450,0,90.04,7038,9000,9000,4091,5365,4852,9000,9000,1897,9000,0,95.89]
+(136050) TC: TC-1 = 96.02, modeled = 90.14, target = 95.00, heatSink = 27.71, output = 67.8, timeout = 45950, ModelRate = 1.02, TecRate = 1.26, HsRate = 0.19
+(136181) _performCapture: [67642,0,90.24,7039,9000,9000,4093,5359,4847,9000,9000,1895,9000,0,96.10]
+(136200) TC: TC-1 = 96.15, modeled = 90.29, target = 95.00, heatSink = 27.71, output = 68.0, timeout = 46100, ModelRate = 0.99, TecRate = 1.10, HsRate = 0.07
+(136351) TC: TC-1 = 96.33, modeled = 90.45, target = 95.00, heatSink = 27.72, output = 68.1, timeout = 46250, ModelRate = 1.01, TecRate = 1.12, HsRate = 0.16
+CHUBE: | PcrThermoTempC = 87.6  |
+(136396) _performCapture: [67857,0,90.50,7045,9000,9000,4095,5360,4848,9000,9000,1896,9000,0,96.39]
+(136500) TC: TC-1 = 96.50, modeled = 90.60, target = 95.00, heatSink = 27.73, output = 67.2, timeout = 46400, ModelRate = 1.02, TecRate = 1.52, HsRate = 0.15
+(136586) _performCapture: [68048,0,90.65,7038,9000,9000,4091,5357,4845,9000,9000,1894,9000,0,96.55]
+(136650) TC: TC-1 = 96.65, modeled = 90.75, target = 95.00, heatSink = 27.74, output = 68.0, timeout = 46550, ModelRate = 1.02, TecRate = 1.30, HsRate = 0.26
+(136801) _performCapture: [68262,0,90.90,7044,9000,9000,4094,5358,4846,9000,9000,1894,9000,0,96.80]
+(136803) TC: TC-1 = 96.80, modeled = 90.90, target = 95.00, heatSink = 27.74, output = 69.3, timeout = 46700, ModelRate = 1.01, TecRate = 0.63, HsRate = 0.13
+(136952) TC: TC-1 = 96.95, modeled = 91.06, target = 95.00, heatSink = 27.75, output = 69.2, timeout = 46850, ModelRate = 1.01, TecRate = 0.67, HsRate = 0.09
+(136995) _performCapture: [68455,0,91.06,7035,9000,9000,4089,5352,4841,9000,9000,1892,9000,0,96.95]
+(137100) TC: TC-1 = 97.12, modeled = 91.21, target = 95.00, heatSink = 27.76, output = 68.0, timeout = 47000, ModelRate = 1.02, TecRate = 1.21, HsRate = 0.05
+(137183) _performCapture: [68644,0,91.26,7018,9000,9000,4079,5349,4839,9000,9000,1890,9000,0,97.16]
+(137253) TC: TC-1 = 97.28, modeled = 91.36, target = 95.00, heatSink = 27.77, output = 68.7, timeout = 47150, ModelRate = 1.02, TecRate = 0.92, HsRate = 0.10
+CHUBE: | PcrThermoTempC = 88.49  |
+(137400) _performCapture: [68860,0,91.51,7033,9000,9000,4088,5351,4840,9000,9000,1891,9000,0,97.39]
+(137401) TC: TC-1 = 97.39, modeled = 91.51, target = 95.00, heatSink = 27.78, output = 69.2, timeout = 47300, ModelRate = 0.98, TecRate = 0.96, HsRate = 0.13
+(137550) TC: TC-1 = 97.55, modeled = 91.66, target = 95.00, heatSink = 27.79, output = 68.9, timeout = 47450, ModelRate = 0.99, TecRate = 1.06, HsRate = 0.12
+(137589) _performCapture: [69050,0,91.66,7014,9000,9000,4077,5347,4837,9000,9000,1889,9000,0,97.55]
+(137700) TC: TC-1 = 97.70, modeled = 91.81, target = 95.00, heatSink = 27.80, output = 68.9, timeout = 47600, ModelRate = 0.99, TecRate = 1.12, HsRate = 0.09
+(137781) _performCapture: [69242,0,91.86,7019,9000,9000,4081,5342,4833,9000,9000,1887,9000,0,97.75]
+(137850) TC: TC-1 = 97.86, modeled = 91.96, target = 95.00, heatSink = 27.80, output = 68.7, timeout = 47750, ModelRate = 1.00, TecRate = 1.22, HsRate = 0.08
+(137994) _performCapture: [69455,0,92.06,7015,9000,9000,4077,5344,4834,9000,9000,1887,9000,0,97.97]
+(138000) TC: TC-1 = 98.00, modeled = 92.11, target = 95.00, heatSink = 27.81, output = 70.0, timeout = 47900, ModelRate = 0.98, TecRate = 0.73, HsRate = 0.07
+CHUBE: | PcrThermoTempC = 89.36  |
+(138151) TC: TC-1 = 98.16, modeled = 92.25, target = 95.00, heatSink = 27.82, output = 69.3, timeout = 48050, ModelRate = 1.00, TecRate = 0.99, HsRate = 0.07
+(138183) _performCapture: [69644,0,92.25,7018,9000,9000,4081,5340,4831,9000,9000,1886,9000,0,98.16]
+(138303) TC: TC-1 = 98.32, modeled = 92.40, target = 95.00, heatSink = 27.82, output = 68.7, timeout = 48200, ModelRate = 1.01, TecRate = 1.37, HsRate = 0.05
+(138399) _performCapture: [69860,0,92.50,7024,9000,9000,4083,5343,4832,9000,9000,1886,9000,0,98.40]
+(138450) TC: TC-1 = 98.46, modeled = 92.55, target = 95.00, heatSink = 27.83, output = 69.2, timeout = 48350, ModelRate = 1.00, TecRate = 1.03, HsRate = -0.07
+(138593) _performCapture: [70054,0,92.65,7006,9000,9000,4072,5337,4828,9000,9000,1884,9000,0,98.55]
+(138600) TC: TC-1 = 98.62, modeled = 92.70, target = 95.00, heatSink = 27.83, output = 69.6, timeout = 48500, ModelRate = 1.00, TecRate = 1.09, HsRate = 0.11
+(138752) TC: TC-1 = 98.77, modeled = 92.85, target = 95.00, heatSink = 27.84, output = 68.8, timeout = 48650, ModelRate = 1.01, TecRate = 1.37, HsRate = 0.06
+(138784) _performCapture: [70245,0,92.85,7007,9000,9000,4075,5333,4825,9000,9000,1882,9000,0,98.77]
+CHUBE: | PcrThermoTempC = 89.79  |
+(138900) TC: TC-1 = 98.95, modeled = 93.00, target = 95.00, heatSink = 27.85, output = 69.0, timeout = 48800, ModelRate = 1.03, TecRate = 1.37, HsRate = 0.09
+(138996) _performCapture: [70457,0,93.10,7015,9000,9000,4078,5336,4827,9000,9000,1883,9000,0,99.05]
+(139050) TC: TC-1 = 99.10, modeled = 93.15, target = 95.00, heatSink = 27.86, output = 69.8, timeout = 48950, ModelRate = 1.02, TecRate = 0.98, HsRate = 0.08
+(139144) _thermalControlStateMachine: CONTROLLED RAMP: SWITCH to STEADY STATE - Target Within range
+(139189) _performCapture: [70650,0,93.25,6996,9000,9000,4067,5328,4820,9000,9000,1881,9000,0,99.20]
+(139195) _setThermalControlState: thermalControl-1: changing state 2->3
+(139205) TC: TC-1 = 99.25, modeled = 93.30, target = 95.00, heatSink = 27.87, output = 73.2, timeout = 49100, ModelRate = 1.01, TecRate = 1.62, HsRate = 0.07
+(139351) TC: TC-1 = 99.40, modeled = 93.46, target = 95.00, heatSink = 27.87, output = 76.6, timeout = 49250, ModelRate = 1.00, TecRate = 0.61, HsRate = 0.07
+(139380) _performCapture: [70841,0,93.46,7000,9000,9000,4070,5327,4820,9000,9000,1879,9000,0,99.40]
+(139502) TC: TC-1 = 99.57, modeled = 93.61, target = 95.00, heatSink = 27.88, output = 76.2, timeout = 49400, ModelRate = 1.02, TecRate = 0.79, HsRate = 0.07
+(139594) _performCapture: [71055,0,93.66,7008,9000,9000,4074,5330,4821,9000,9000,1879,9000,0,99.63]
+(139651) TC: TC-1 = 99.74, modeled = 93.76, target = 95.00, heatSink = 27.89, output = 73.9, timeout = 49550, ModelRate = 1.04, TecRate = 1.49, HsRate = 0.08
+CHUBE: | PcrThermoTempC = 90.67  |
+(139782) _performCapture: [71244,0,93.87,7000,9000,9000,4070,5325,4817,9000,9000,1877,9000,0,99.87]
+(139800) TC: TC-1 = 99.95, modeled = 93.92, target = 95.00, heatSink = 27.89, output = 73.6, timeout = 49700, ModelRate = 1.07, TecRate = 1.35, HsRate = 0.07
+(139956) TC: TC-1 = 100.15, modeled = 94.08, target = 95.00, heatSink = 27.90, output = 70.7, timeout = 0, ModelRate = 1.09, TecRate = 1.88, HsRate = 0.05
+(139996) _performCapture: [71457,0,94.08,7006,9000,9000,4072,5327,4819,9000,9000,1878,9000,0,100.15]
+(140094) _setTempReachedCallback: Set Temp Reached
+(140108) TC: TC-1 = 100.38, modeled = 94.25, target = 95.00, heatSink = 27.91, output = 69.7, timeout = 0, ModelRate = 1.13, TecRate = 1.53, HsRate = -0.05
+(140165) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(140167) experimentTask: Experiment State Transition MELT -> FINISH
+(140169) experimentStateFinishEnter: Disabling Debug Characteristic!
+(140177) blePeriphNotifySubscription: ENTER NOTIFY
+(140182) experimentStateFinishAction: Experiment Complete. Cooling PCR to safe temperature
+(140191) BLE_PERIPH: Notifying
+(140195) thermalQueue_processDirective: Processing new Set enable
+(140202) comm_getNotifyId: Attempting to get notify id
+(140208) _deviceLogsSetPCR: Adding Time 71139
+(140213) BLE_PERIPH: Notify Command Id = 34
+(140220) _performCapture: [71648,0,94.31,6996,9000,9000,4068,5322,4815,9000,9000,1876,9000,0,100.47]
+(140228) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(140237) thermalQueue_sendSetTargetTempC: Setting New Queue Temp!
+(140243) thermalQueue_processDirective: Processing new Set enable
+(140250) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(140258) _resetThermalControlState: RESET Peltier 1 control state
+(140265) thermalControl_setEnable: Enabling Peltier 1
+(140293) thermalQueue_processDirective: Processing New Target Temp
+(140293) thermalControl_setTargetTempC: [1] MAX RAMPING  goto 35.0
+(140296) _setThermalControlState: thermalControl-1: changing state 3->1
+(140304) tecCurvePredictorSetHoldPower: hold power: 72.71, filtered: 65.39, temp: 94.37
+(140316) TC: TC-1 = 100.74, modeled = 94.49, target = 35.00, heatSink = 27.91, output = 0.0, timeout = 0, ModelRate = 1.22, TecRate = 1.40, HsRate = 0.11
+(140403) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(140445) TC: TC-1 = 100.88, modeled = 94.67, target = 35.00, heatSink = 27.92, output = -100.0, timeout = 100, ModelRate = 1.16, TecRate = 1.36, HsRate = 0.14
+(140481) fileWriterProcessDirective: Didn't write Melt Capture
+(140537) BLE_PERIPH: App to Instrument Data
+(140539) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+CHUBE: | PcrThermoTempC = 91.61  |
+(140596) TC: TC-1 = 100.97, modeled = 94.83, target = 35.00, heatSink = 27.94, output = -100.0, timeout = 250, ModelRate = 1.07, TecRate = 0.33, HsRate = 0.24
+(140746) TC: TC-1 = 100.74, modeled = 94.96, target = 35.00, heatSink = 27.97, output = -100.0, timeout = 400, ModelRate = 0.72, TecRate = -3.47, HsRate = 0.36
+(140896) TC: TC-1 = 100.13, modeled = 95.01, target = 35.00, heatSink = 28.06, output = -100.0, timeout = 550, ModelRate = 0.17, TecRate = -5.05, HsRate = 0.70
+(141046) TC: TC-1 = 99.22, modeled = 94.97, target = 35.00, heatSink = 28.20, output = -100.0, timeout = 700, ModelRate = -0.55, TecRate = -6.07, HsRate = 1.25
+(141122) BLE_PERIPH_INTERFACE: Finding Characteristic
+(141196) TC: TC-1 = 97.96, modeled = 94.80, target = 35.00, heatSink = 28.39, output = -100.0, timeout = 850, ModelRate = -1.37, TecRate = -7.54, HsRate = 1.45
+(141346) TC: TC-1 = 96.61, modeled = 94.53, target = 35.00, heatSink = 28.63, output = -100.0, timeout = 1000, ModelRate = -2.11, TecRate = -10.13, HsRate = 1.47
+CHUBE: | PcrThermoTempC = 91.87  |
+(141496) TC: TC-1 = 95.13, modeled = 94.15, target = 35.00, heatSink = 28.89, output = -100.0, timeout = 1150, ModelRate = -2.80, TecRate = -9.05, HsRate = 1.56
+(141646) TC: TC-1 = 93.63, modeled = 93.68, target = 35.00, heatSink = 29.16, output = -100.0, timeout = 1300, ModelRate = -3.38, TecRate = -9.52, HsRate = 1.88
+(141796) TC: TC-1 = 92.26, modeled = 93.14, target = 35.00, heatSink = 29.42, output = -100.0, timeout = 1450, ModelRate = -3.70, TecRate = -9.67, HsRate = 1.91
+(141946) TC: TC-1 = 90.68, modeled = 92.53, target = 35.00, heatSink = 29.73, output = -100.0, timeout = 1600, ModelRate = -4.16, TecRate = -11.83, HsRate = 2.28
+(142096) TC: TC-1 = 89.14, modeled = 91.85, target = 35.00, heatSink = 30.00, output = -100.0, timeout = 1750, ModelRate = -4.50, TecRate = -9.93, HsRate = 1.79
+(142246) TC: TC-1 = 87.62, modeled = 91.13, target = 35.00, heatSink = 30.32, output = -100.0, timeout = 1900, ModelRate = -4.77, TecRate = -9.53, HsRate = 2.21
+CHUBE: | PcrThermoTempC = 89.72  |
+(142396) TC: TC-1 = 86.09, modeled = 90.38, target = 35.00, heatSink = 30.61, output = -100.0, timeout = 2050, ModelRate = -5.11, TecRate = -10.76, HsRate = 1.75
+(142546) TC: TC-1 = 84.60, modeled = 89.60, target = 35.00, heatSink = 30.90, output = -100.0, timeout = 2200, ModelRate = -5.29, TecRate = -9.00, HsRate = 1.85
+(142696) TC: TC-1 = 83.15, modeled = 88.80, target = 35.00, heatSink = 31.20, output = -100.0, timeout = 2350, ModelRate = -5.43, TecRate = -10.80, HsRate = 1.81
+(142846) TC: TC-1 = 81.72, modeled = 87.98, target = 35.00, heatSink = 31.49, output = -100.0, timeout = 2500, ModelRate = -5.53, TecRate = -8.75, HsRate = 1.77
+(142996) TC: TC-1 = 80.28, modeled = 87.14, target = 35.00, heatSink = 31.76, output = -100.0, timeout = 2650, ModelRate = -5.64, TecRate = -9.24, HsRate = 2.22
+CHUBE: | PcrThermoTempC = 85.46  |
+(143146) TC: TC-1 = 78.86, modeled = 86.29, target = 35.00, heatSink = 32.04, output = -100.0, timeout = 2800, ModelRate = -5.72, TecRate = -9.83, HsRate = 1.70
+(143296) TC: TC-1 = 77.51, modeled = 85.44, target = 35.00, heatSink = 32.31, output = -100.0, timeout = 2950, ModelRate = -5.73, TecRate = -8.20, HsRate = 1.57
+(143446) TC: TC-1 = 76.19, modeled = 84.59, target = 35.00, heatSink = 32.59, output = -100.0, timeout = 3100, ModelRate = -5.72, TecRate = -8.38, HsRate = 2.04
+(143596) TC: TC-1 = 74.85, modeled = 83.74, target = 35.00, heatSink = 32.85, output = -100.0, timeout = 3250, ModelRate = -5.78, TecRate = -9.27, HsRate = 1.87
+(143746) TC: TC-1 = 73.73, modeled = 82.89, target = 35.00, heatSink = 33.08, output = -100.0, timeout = 3400, ModelRate = -5.56, TecRate = -8.12, HsRate = 1.94
+CHUBE: | PcrThermoTempC = 82.92  |
+(143896) TC: TC-1 = 72.49, modeled = 82.05, target = 35.00, heatSink = 33.32, output = -100.0, timeout = 3550, ModelRate = -5.54, TecRate = -8.01, HsRate = 1.50
+(144045) TC: TC-1 = 71.22, modeled = 81.20, target = 35.00, heatSink = 33.57, output = -100.0, timeout = 3700, ModelRate = -5.56, TecRate = -7.68, HsRate = 1.68
+(144196) TC: TC-1 = 69.98, modeled = 80.35, target = 35.00, heatSink = 33.81, output = -100.0, timeout = 3850, ModelRate = -5.55, TecRate = -8.75, HsRate = 1.67
+(144346) TC: TC-1 = 68.81, modeled = 79.52, target = 35.00, heatSink = 34.04, output = -100.0, timeout = 4000, ModelRate = -5.51, TecRate = -7.28, HsRate = 1.51
+(144496) TC: TC-1 = 67.67, modeled = 78.68, target = 35.00, heatSink = 34.26, output = -100.0, timeout = 4150, ModelRate = -5.45, TecRate = -7.25, HsRate = 1.63
+(144646) TC: TC-1 = 66.53, modeled = 77.86, target = 35.00, heatSink = 34.49, output = -100.0, timeout = 4300, ModelRate = -5.41, TecRate = -7.52, HsRate = 1.60
+CHUBE: | PcrThermoTempC = 77.38  |
+(144796) TC: TC-1 = 65.43, modeled = 77.04, target = 35.00, heatSink = 34.70, output = -100.0, timeout = 4450, ModelRate = -5.35, TecRate = -6.83, HsRate = 1.65
+(144946) TC: TC-1 = 64.30, modeled = 76.22, target = 35.00, heatSink = 34.92, output = -100.0, timeout = 4600, ModelRate = -5.35, TecRate = -7.86, HsRate = 1.23
+(145096) TC: TC-1 = 63.24, modeled = 75.42, target = 35.00, heatSink = 35.11, output = -100.0, timeout = 4750, ModelRate = -5.28, TecRate = -6.58, HsRate = 1.39
+(145246) TC: TC-1 = 62.18, modeled = 74.61, target = 35.00, heatSink = 35.31, output = -100.0, timeout = 4900, ModelRate = -5.25, TecRate = -7.71, HsRate = 1.31
+(145396) TC: TC-1 = 61.16, modeled = 73.82, target = 35.00, heatSink = 35.51, output = -100.0, timeout = 5050, ModelRate = -5.20, TecRate = -6.36, HsRate = 1.38
+(145546) TC: TC-1 = 60.13, modeled = 73.04, target = 35.00, heatSink = 35.71, output = -100.0, timeout = 5200, ModelRate = -5.23, TecRate = -7.21, HsRate = 1.27
+CHUBE: | PcrThermoTempC = 71.57  |
+(145696) TC: TC-1 = 59.13, modeled = 72.26, target = 35.00, heatSink = 35.90, output = -100.0, timeout = 5350, ModelRate = -5.18, TecRate = -6.31, HsRate = 1.16
+(145846) TC: TC-1 = 58.14, modeled = 71.49, target = 35.00, heatSink = 36.07, output = -100.0, timeout = 5500, ModelRate = -5.14, TecRate = -6.04, HsRate = 1.32
+(145996) TC: TC-1 = 57.16, modeled = 70.73, target = 35.00, heatSink = 36.26, output = -100.0, timeout = 5650, ModelRate = -5.13, TecRate = -7.02, HsRate = 1.46
+(146145) TC: TC-1 = 56.20, modeled = 69.97, target = 35.00, heatSink = 36.44, output = -100.0, timeout = 5800, ModelRate = -5.10, TecRate = -6.33, HsRate = 0.96
+(146296) TC: TC-1 = 55.28, modeled = 69.22, target = 35.00, heatSink = 36.62, output = -100.0, timeout = 5950, ModelRate = -5.04, TecRate = -5.88, HsRate = 1.10
+CHUBE: | PcrThermoTempC = 68.67  |
+(146446) TC: TC-1 = 54.35, modeled = 68.47, target = 35.00, heatSink = 36.80, output = -100.0, timeout = 6100, ModelRate = -5.01, TecRate = -5.65, HsRate = 1.29
+(146596) TC: TC-1 = 53.56, modeled = 67.73, target = 35.00, heatSink = 36.93, output = -100.0, timeout = 6250, ModelRate = -4.83, TecRate = -5.63, HsRate = 1.08
+(146746) TC: TC-1 = 52.65, modeled = 67.00, target = 35.00, heatSink = 37.10, output = -100.0, timeout = 6400, ModelRate = -4.82, TecRate = -6.56, HsRate = 0.96
+(146896) TC: TC-1 = 51.78, modeled = 66.27, target = 35.00, heatSink = 37.28, output = -100.0, timeout = 6550, ModelRate = -4.77, TecRate = -5.27, HsRate = 0.99
+(147046) TC: TC-1 = 50.95, modeled = 65.56, target = 35.00, heatSink = 37.43, output = -100.0, timeout = 6700, ModelRate = -4.71, TecRate = -5.29, HsRate = 1.06
+(147195) TC: TC-1 = 50.11, modeled = 64.84, target = 35.00, heatSink = 37.59, output = -100.0, timeout = 6850, ModelRate = -4.68, TecRate = -5.32, HsRate = 0.90
+CHUBE: | PcrThermoTempC = 62.97  |
+(147346) TC: TC-1 = 49.29, modeled = 64.14, target = 35.00, heatSink = 37.74, output = -100.0, timeout = 7000, ModelRate = -4.64, TecRate = -5.17, HsRate = 1.07
+(147496) TC: TC-1 = 48.48, modeled = 63.44, target = 35.00, heatSink = 37.89, output = -100.0, timeout = 7150, ModelRate = -4.59, TecRate = -5.07, HsRate = 0.86
+(147647) TC: TC-1 = 47.70, modeled = 62.75, target = 35.00, heatSink = 38.04, output = -100.0, timeout = 7300, ModelRate = -4.59, TecRate = -5.00, HsRate = 1.08
+(147796) TC: TC-1 = 46.88, modeled = 62.06, target = 35.00, heatSink = 38.19, output = -100.0, timeout = 7450, ModelRate = -4.60, TecRate = -5.95, HsRate = 1.07
+(147946) TC: TC-1 = 46.14, modeled = 61.38, target = 35.00, heatSink = 38.32, output = -100.0, timeout = 7600, ModelRate = -4.52, TecRate = -4.73, HsRate = 0.84
+CHUBE: | PcrThermoTempC = 57.53  |
+(148096) TC: TC-1 = 45.38, modeled = 60.71, target = 35.00, heatSink = 38.47, output = -100.0, timeout = 7750, ModelRate = -4.50, TecRate = -4.84, HsRate = 1.04
+(148246) TC: TC-1 = 44.62, modeled = 60.03, target = 35.00, heatSink = 38.62, output = -100.0, timeout = 7900, ModelRate = -4.47, TecRate = -5.33, HsRate = 0.99
+(148396) TC: TC-1 = 43.89, modeled = 59.37, target = 35.00, heatSink = 38.74, output = -100.0, timeout = 8050, ModelRate = -4.43, TecRate = -4.57, HsRate = 0.58
+(148546) TC: TC-1 = 43.16, modeled = 58.72, target = 35.00, heatSink = 38.87, output = -100.0, timeout = 8200, ModelRate = -4.40, TecRate = -5.24, HsRate = 0.94
+(148696) TC: TC-1 = 42.47, modeled = 58.07, target = 35.00, heatSink = 39.03, output = -100.0, timeout = 8350, ModelRate = -4.34, TecRate = -4.10, HsRate = 0.70
+(148846) TC: TC-1 = 41.77, modeled = 57.42, target = 35.00, heatSink = 39.15, output = -100.0, timeout = 8500, ModelRate = -4.32, TecRate = -4.36, HsRate = 0.78
+CHUBE: | PcrThermoTempC = 54.93  |
+(148996) TC: TC-1 = 41.08, modeled = 56.78, target = 35.00, heatSink = 39.28, output = -100.0, timeout = 8650, ModelRate = -4.29, TecRate = -5.09, HsRate = 0.97
+(149146) TC: TC-1 = 40.49, modeled = 56.15, target = 35.00, heatSink = 39.39, output = -100.0, timeout = 8800, ModelRate = -4.15, TecRate = -4.22, HsRate = 0.88
+(149296) TC: TC-1 = 39.81, modeled = 55.52, target = 35.00, heatSink = 39.52, output = -100.0, timeout = 8950, ModelRate = -4.13, TecRate = -4.79, HsRate = 0.80
+(149446) TC: TC-1 = 39.17, modeled = 54.90, target = 35.00, heatSink = 39.64, output = -100.0, timeout = 9100, ModelRate = -4.09, TecRate = -4.03, HsRate = 0.78
+(149596) TC: TC-1 = 38.52, modeled = 54.29, target = 35.00, heatSink = 39.76, output = -100.0, timeout = 9250, ModelRate = -4.06, TecRate = -3.99, HsRate = 0.94
+(149746) TC: TC-1 = 37.89, modeled = 53.68, target = 35.00, heatSink = 39.89, output = -100.0, timeout = 9400, ModelRate = -4.05, TecRate = -4.03, HsRate = 0.74
+CHUBE: | PcrThermoTempC = 50.0  |
+(149896) TC: TC-1 = 37.28, modeled = 53.07, target = 35.00, heatSink = 40.02, output = -100.0, timeout = 9550, ModelRate = -4.01, TecRate = -4.06, HsRate = 0.99
+(150046) TC: TC-1 = 36.64, modeled = 52.47, target = 35.00, heatSink = 40.13, output = -100.0, timeout = 9700, ModelRate = -4.01, TecRate = -4.60, HsRate = 0.73
+(150197) TC: TC-1 = 36.04, modeled = 51.88, target = 35.00, heatSink = 40.25, output = -100.0, timeout = 9850, ModelRate = -3.97, TecRate = -3.64, HsRate = 0.77
+(150346) TC: TC-1 = 35.46, modeled = 51.29, target = 35.00, heatSink = 40.37, output = -100.0, timeout = 10000, ModelRate = -3.92, TecRate = -3.84, HsRate = 0.89
+(150496) TC: TC-1 = 34.86, modeled = 50.71, target = 35.00, heatSink = 40.48, output = -100.0, timeout = 10150, ModelRate = -3.90, TecRate = -4.15, HsRate = 0.74
+CHUBE: | PcrThermoTempC = 45.45  |
+(150646) TC: TC-1 = 34.29, modeled = 50.13, target = 35.00, heatSink = 40.59, output = -100.0, timeout = 10300, ModelRate = -3.87, TecRate = -3.57, HsRate = 0.67
+(150796) TC: TC-1 = 33.72, modeled = 49.56, target = 35.00, heatSink = 40.70, output = -100.0, timeout = 10450, ModelRate = -3.84, TecRate = -3.64, HsRate = 0.67
+(150946) TC: TC-1 = 33.24, modeled = 48.99, target = 35.00, heatSink = 40.80, output = -100.0, timeout = 10600, ModelRate = -3.72, TecRate = -3.39, HsRate = 0.65
+(151096) TC: TC-1 = 32.68, modeled = 48.43, target = 35.00, heatSink = 40.92, output = -100.0, timeout = 10750, ModelRate = -3.69, TecRate = -3.30, HsRate = 1.06
+(151246) TC: TC-1 = 32.14, modeled = 47.87, target = 35.00, heatSink = 41.04, output = -100.0, timeout = 10900, ModelRate = -3.67, TecRate = -3.91, HsRate = 0.65
+CHUBE: | PcrThermoTempC = 43.31  |
+(151396) TC: TC-1 = 31.61, modeled = 47.32, target = 35.00, heatSink = 41.14, output = -100.0, timeout = 11050, ModelRate = -3.63, TecRate = -3.22, HsRate = 0.53
+(151546) TC: TC-1 = 31.09, modeled = 46.78, target = 35.00, heatSink = 41.24, output = -100.0, timeout = 11200, ModelRate = -3.63, TecRate = -3.80, HsRate = 0.78
+(151696) TC: TC-1 = 30.58, modeled = 46.24, target = 35.00, heatSink = 41.35, output = -100.0, timeout = 11350, ModelRate = -3.59, TecRate = -3.32, HsRate = 0.76
+(151846) TC: TC-1 = 30.07, modeled = 45.70, target = 35.00, heatSink = 41.46, output = -100.0, timeout = 11500, ModelRate = -3.57, TecRate = -3.27, HsRate = 0.83
+(151996) TC: TC-1 = 29.57, modeled = 45.17, target = 35.00, heatSink = 41.56, output = -100.0, timeout = 11650, ModelRate = -3.55, TecRate = -3.76, HsRate = 0.63
+(152146) TC: TC-1 = 29.07, modeled = 44.65, target = 35.00, heatSink = 41.66, output = -100.0, timeout = 11800, ModelRate = -3.51, TecRate = -2.97, HsRate = 0.61
+CHUBE: | PcrThermoTempC = 39.31  |
+(152296) TC: TC-1 = 28.59, modeled = 44.13, target = 35.00, heatSink = 41.76, output = -100.0, timeout = 11950, ModelRate = -3.48, TecRate = -3.15, HsRate = 0.63
+(152446) TC: TC-1 = 28.12, modeled = 43.61, target = 35.00, heatSink = 41.86, output = -100.0, timeout = 12100, ModelRate = -3.45, TecRate = -3.40, HsRate = 0.76
+(152596) TC: TC-1 = 27.65, modeled = 43.10, target = 35.00, heatSink = 41.97, output = -100.0, timeout = 12250, ModelRate = -3.42, TecRate = -2.97, HsRate = 0.66
+(152746) TC: TC-1 = 27.25, modeled = 42.60, target = 35.00, heatSink = 42.05, output = -100.0, timeout = 12400, ModelRate = -3.32, TecRate = -3.26, HsRate = 0.63
+(152896) TC: TC-1 = 26.78, modeled = 42.10, target = 35.00, heatSink = 42.15, output = -100.0, timeout = 12550, ModelRate = -3.30, TecRate = -2.70, HsRate = 0.60
+(153046) TC: TC-1 = 26.34, modeled = 41.60, target = 35.00, heatSink = 42.24, output = -100.0, timeout = 12700, ModelRate = -3.26, TecRate = -2.84, HsRate = 0.59
+CHUBE: | PcrThermoTempC = 35.66  |
+(153196) TC: TC-1 = 25.89, modeled = 41.11, target = 35.00, heatSink = 42.34, output = -100.0, timeout = 12850, ModelRate = -3.24, TecRate = -3.14, HsRate = 0.59
+(153346) TC: TC-1 = 25.49, modeled = 40.62, target = 35.00, heatSink = 42.45, output = -100.0, timeout = 13000, ModelRate = -3.19, TecRate = -2.60, HsRate = 0.67
+(153496) TC: TC-1 = 25.05, modeled = 40.14, target = 35.00, heatSink = 42.54, output = -100.0, timeout = 13150, ModelRate = -3.20, TecRate = -3.04, HsRate = 0.62
+(153646) TC: TC-1 = 24.62, modeled = 39.67, target = 35.00, heatSink = 42.62, output = -100.0, timeout = 13300, ModelRate = -3.18, TecRate = -2.91, HsRate = 0.47
+(153796) TC: TC-1 = 24.21, modeled = 39.20, target = 35.00, heatSink = 42.71, output = -100.0, timeout = 13450, ModelRate = -3.15, TecRate = -2.41, HsRate = 0.69
+CHUBE: | PcrThermoTempC = 33.96  |
+(153946) TC: TC-1 = 23.79, modeled = 38.73, target = 35.00, heatSink = 42.80, output = -100.0, timeout = 13600, ModelRate = -3.13, TecRate = -3.16, HsRate = 0.67
+(154095) TC: TC-1 = 23.39, modeled = 38.26, target = 35.00, heatSink = 42.91, output = -100.0, timeout = 13750, ModelRate = -3.09, TecRate = -2.33, HsRate = 0.54
+(154246) TC: TC-1 = 23.00, modeled = 37.81, target = 35.00, heatSink = 42.99, output = -100.0, timeout = 13900, ModelRate = -3.07, TecRate = -2.66, HsRate = 0.57
+(154396) TC: TC-1 = 22.61, modeled = 37.35, target = 35.00, heatSink = 43.09, output = -100.0, timeout = 14050, ModelRate = -3.04, TecRate = -2.67, HsRate = 0.52
+(154546) TC: TC-1 = 22.28, modeled = 36.91, target = 35.00, heatSink = 43.16, output = -100.0, timeout = 14200, ModelRate = -2.95, TecRate = -2.51, HsRate = 0.62
+(154696) TC: TC-1 = 21.89, modeled = 36.46, target = 35.00, heatSink = 43.25, output = -100.0, timeout = 14350, ModelRate = -2.93, TecRate = -2.60, HsRate = 0.60
+CHUBE: | PcrThermoTempC = 30.78  |
+(154796) _maxCoolingStateTransitions: COOL NORM fast->slow down
+(154857) TC: TC-1 = 21.54, modeled = 36.02, target = 35.00, heatSink = 43.34, output = 0.0, timeout = 14500, ModelRate = -2.89, TecRate = -2.35, HsRate = 0.44
+(155006) TC: TC-1 = 21.17, modeled = 35.59, target = 35.00, heatSink = 43.43, output = 28.3, timeout = 14600, ModelRate = -2.87, TecRate = -2.55, HsRate = 0.75
+(155157) TC: TC-1 = 20.90, modeled = 35.16, target = 35.00, heatSink = 43.51, output = 28.3, timeout = 14750, ModelRate = -2.75, TecRate = -1.14, HsRate = 0.45
+(155308) thermalSafety_brakeCheck: COOLING MAX RAMP: SWITCH to STEADY STATE - THERMAL BRAKE! model:34.78, threshold:34.80
+(155310) TC: TC-1 = 20.88, modeled = 34.78, target = 35.00, heatSink = 43.56, output = 28.3, timeout = 14900, ModelRate = -2.47, TecRate = 0.63, HsRate = 0.18
+(155345) _setThermalControlState: thermalControl-1: changing state 1->3
+(155345) _setTempReachedCallback: Set Temp Reached
+(155387) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(155387) i2cTask_changeI2cSpeed: Setting I2C task to SLOW mode!
+(155391) fileWriterProcessDirective: Starting Nonvol Copy...
+(155397) thermalQueue_processDirective: Processing new Set enable
+(155404) _switchI2cSpeed: I2C Slow Mode Set!
+(155409) _deviceLogsSetPCR: Adding Time 15117
+(155548) ramResults_writeToNonVol: Starting Ram Write to non-vol. Writing 6633 bytes
+CHUBE: | PcrThermoTempC = 28.02  |
+(155652) fileInterface_writeLength: Time: 104 status: 0
+(155664) fileInterface_writeLength: Time: 10 status: 0
+(155676) fileInterface_writeLength: Time: 10 status: 0
+(155776) fileInterface_writeLength: Time: 98 status: 0
+(155788) fileInterface_writeLength: Time: 10 status: 0
+(155802) fileInterface_writeLength: Time: 12 status: 0
+(155816) fileInterface_writeLength: Time: 12 status: 0
+(155910) fileInterface_writeLength: Time: 92 status: 0
+(155923) fileInterface_writeLength: Time: 11 status: 0
+(155935) fileInterface_writeLength: Time: 11 status: 0
+(155951) fileInterface_writeLength: Time: 15 status: 0
+(156054) fileInterface_writeLength: Time: 102 status: 0
+(156066) fileInterface_writeLength: Time: 10 status: 0
+(156079) fileInterface_writeLength: Time: 11 status: 0
+(156183) fileInterface_writeLength: Time: 103 status: 0
+(156196) fileInterface_writeLength: Time: 11 status: 0
+(156210) fileInterface_writeLength: Time: 12 status: 0
+(156221) fileInterface_writeLength: Time: 10 status: 0
+(156350) fileInterface_writeLength: Time: 127 status: 0
+CHUBE: | PcrThermoTempC = 27.48  |
+(156363) fileInterface_writeLength: Time: 11 status: 0
+(156365) systemTasks_monitorStack: Stack Watermark(File Writer): 1968
+(156379) fileInterface_writeLength: Time: 13 status: 0
+(156392) fileInterface_writeLength: Time: 11 status: 0
+(156492) fileInterface_writeLength: Time: 98 status: 0
+(156506) fileInterface_writeLength: Time: 11 status: 0
+(156518) fileInterface_writeLength: Time: 11 status: 0
+(156526) _writeLength: Found null value when writing line
+(156533) fileInterface_writeLength: Time: 14 status: 0
+(156629) fileInterface_writeLength: Time: 95 status: 0
+(156630) ramResults_writeToNonVol: Total Non-vol bytes: 6633 write time: 1082 ms
+(156729) i2cTask_changeI2cSpeed: I2C task already set to SLOW mode
+(156729) deviceLogsWriteLogs: Writing device logs
+(156731) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(156739) _writeNewLogData: Writing new log data string 189,194,258,456,493,123,3690,49376,208527,215086,645247,489991,149,65,63,582410,474 into file
+(156753) thermalQueue_processDirective: Processing new Set enable
+(156761) fileInterface_writeLength: Time: 8 status: 0
+(156766) thermalQueue_sendThermalControlSetEnable: Enabling new thermal control
+(156774) _overwriteLogFile: file written
+(156779) ptcInterface_setEnable: PTC CHANGE STATE
+(156793) thermalQueue_processDirective: Processing new Set enable
+(156825) taskMonitor_task: Task Experiment Task hasn't checked in for 200 ms
+(156884) experimentTask: Experiment State Transition FINISH -> IDLE
+(156884) blePeriphNotifySubscription: ENTER NOTIFY
+(156886) BLE_PERIPH: Notifying
+(156889) comm_getNotifyId: Attempting to get notify id
+(156895) BLE_PERIPH: Notify Command Id = 34
+(156929) systemTasks_monitorStack: Stack Watermark(File Writer): 1616
+(156945) systemRequestStateChange: System State Transition RUNNING -> PENDING UPLOAD
+(156945) blePeriphNotifySubscription: ENTER NOTIFY
+(156949) BLE_PERIPH: Notifying
+(156952) comm_getNotifyId: Attempting to get notify id
+(156958) BLE_PERIPH: Notify Command Id = 34
+(156965) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(156971) systemRequestStateChange: Notify exit state change
+(157052) BLE_PERIPH: App to Instrument Data
+(157054) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+CHUBE: | PcrThermoTempC = 27.37  |
+(157457) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(157547) BLE_PERIPH: App to Instrument Data
+(157549) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(157997) BLE_PERIPH: App to Instrument Transaction Notify 0/119
+CHUBE: | PcrThermoTempC = 27.78  |
+(158088) BLE_PERIPH: App to Instrument Data
+(158090) BLE_PERIPH: App to Instrument Transaction Notify 119/119
+(158115) encryption_keyExchange: Key Exchange took 6 ms
+[1770]Recieved Instrument Pub Key As: yL7flCCRqNLmI53gv3S8RcddnmMOUaPa+4lwCQMjJMj6bNUFW/pyM2rAopa9zn6Sr9TvtHFzcypv3ocXLh2ZdR0OqECerP8D
+(158379) customUtil_monitorTemperature: Fan turned off due to low thermistor temperatures.
+(158493) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(158626) BLE_PERIPH: App to Instrument Data
+(158629) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+(158761) fileWriter_setBluetoothResultOffload: Setting File Writer to results offload mode
+(158762) instrumentToAppDataCharAccessCb: Writing all pre params
+(158811) instrumentToAppDataCharAccessCb: Writing 494 bytes of file
+CHUBE: | PcrThermoTempC = 28.1  |
+(159043) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(159268) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(159504) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(159673) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+CHUBE: | PcrThermoTempC = 28.85  |
+(159909) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(160078) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(160314) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(160483) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+CHUBE: | PcrThermoTempC = 29.67  |
+(160719) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(160888) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(161124) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(161338) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+CHUBE: | PcrThermoTempC = 30.07  |
+(161574) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(161788) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(162069) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(162279) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+CHUBE: | PcrThermoTempC = 30.85  |
+(162496) instrumentToAppDataCharAccessCb: Writing 510 bytes of file
+(162721) instrumentToAppDataCharAccessCb: Writing 40 bytes of file
+(162722) instrumentToAppDataCharAccessCb: Writing 5 bytes of post params
+(162726) fileWriter_setBluetoothResultOffload: Un-setting File Writer to results offload mode
+CHUBE: | PcrThermoTempC = 31.58  |
+(163622) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(163711) BLE_PERIPH: App to Instrument Data
+(163714) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(163769) fileWriterProcessDirective: Starting Nonvol Copy...
+(163841) systemRequestStateChange: System State Transition PENDING UPLOAD -> IDLE
+(163842) blePeriphNotifySubscription: ENTER NOTIFY
+(163846) BLE_PERIPH: Notifying
+(163848) comm_getNotifyId: Attempting to get notify id
+(163854) BLE_PERIPH: Notify Command Id = 34
+(163861) systemRequestStateChange: Notify exit state change
+CHUBE: | PcrThermoTempC = 31.92  |
+(163919) ramResults_writeToNonVol: Total Non-vol bytes: 6633 write time: 8371 ms
+(164118) BLE_PERIPH: App to Instrument Transaction Notify 0/20
+(164207) BLE_PERIPH: App to Instrument Data
+(164209) BLE_PERIPH: App to Instrument Transaction Notify 20/20
+(164658) BLE_PERIPH: App to Instrument Transaction Notify 0/21
+(164746) BLE_PERIPH: App to Instrument Data
+(164749) BLE_PERIPH: App to Instrument Transaction Notify 21/21
+[1775]Latch Opening!
+CHUBE: | PcrThermoTempC = 32.56  |
+(164860) _airboatStateEnter: Lifter Up
+(164862) _openDoorIfSafe: OPENING DOOR
+CHUBE: | PcrThermoTempC = 33.13  |
+(165745) _readLifterSwitches: New Lifter Down Value: 0
+CHUBE: | PcrThermoTempC = 33.4  |
+CHUBE: | PcrThermoTempC = 33.88  |
+CHUBE: | PcrThermoTempC = 34.14  |
+CHUBE: | PcrThermoTempC = 34.22  |
+CHUBE: | PcrThermoTempC = 34.37  |

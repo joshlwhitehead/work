@@ -12,7 +12,7 @@ alpha = .1
 p = .9
 
 
-folder = 'beta/'                                                                       #folder to draw data from
+folder = 'test/'                                                                       #folder to draw data from
 instListShort = []                                                                         #list of instruments. must be in order that they appear in folder
 for i in os.listdir(folder):
     instListShort.append(i)
@@ -66,7 +66,7 @@ def melting(alpha,p):
     plt.grid()
     plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
     plt.show()
-melting(alpha,p)
+# melting(alpha,p)
 
 
 def meltCI(alpha):
@@ -75,12 +75,12 @@ def meltCI(alpha):
     cis2 = []
     for i in os.listdir(folder):
         
-        melt = meltRamp(''.join([folder,i]))[1][0]                                                 #raw melt data
-        timeM = meltRamp(''.join([folder,i]))[1][1]
+        melt = meltRamp(''.join([folder,i]))[0][0]                                                 #raw melt data
+        timeM = meltRamp(''.join([folder,i]))[0][1]
 
         dfMelt = pd.DataFrame({'melt':melt,'time':timeM})
         model = ols('melt ~ time', dfMelt).fit()
-        dof = len(melt)-1
+        dof = len(melt)-2
         t_star = t.ppf(1.0 - 0.5 * alpha, dof) # using t-distribution
         se = np.sqrt(model.mse_resid)
         n = len(melt)
@@ -92,7 +92,7 @@ def meltCI(alpha):
         slopes.append(slope)
         cis.append([ci])
         # cis2.append([slope+ci])
-    
+    print(cis)
     
     count = 0
     for i in range(len(cis)):
@@ -103,7 +103,7 @@ def meltCI(alpha):
     plt.ylabel('Instrument')
     plt.xlabel('Ramp Rate (C/sec)')
     plt.grid()
-    plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar)
+    plt.yticks(np.arange(0,len(os.listdir(folder))),instListVar,rotation=45)
     plt.show()
 
 meltCI(alpha)

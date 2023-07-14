@@ -404,6 +404,7 @@ def meltRamp(file):
             meltCollect = True
         elif 'MELT -> FINISH' in u:
             start = False
+            break
         # if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:                                         #only look for temps under these conditions for heating
         #     denatTemp = float(u.split()[-1])
         #     heatCollect = True

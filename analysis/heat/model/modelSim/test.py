@@ -56,7 +56,7 @@ mod.append([T0])
 
 
 
-popSize = 10         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+popSize = 10000         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 lamHeatL = 0
 lamHeatH = .1
 lamCoolL = 0
@@ -85,6 +85,7 @@ kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
 
 rrrr = 0
 
+g1
 # while round(rrrr,2) < 0.95:
     
 # monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
@@ -184,17 +185,17 @@ print(rrrr)
 
 
 
-left = []
-right = []
-for i in rr.keys():
-    x = list(chain.from_iterable(rr[i][:-1]))
-    best = list(chain.from_iterable(rr[i][:-1]))
-    if x[0] < best[0] and x[1] < best[1] and x[2] < best[2] and x[3] < best[3] and x[4] < best[4] and x[5] < best[5]:
-        left.append(i)
-    elif x[0] > best[0] and x[1] > best[1] and x[2] > best[2] and x[3] > best[3] and x[4] > best[4] and x[5] > best[5]:
-        right.append(i)
+# left = []
+# right = []
+# for i in rr.keys():
+#     x = list(chain.from_iterable(rr[i][:-1]))
+#     best = list(chain.from_iterable(rr[i][:-1]))
+#     if x[0] < best[0] and x[1] < best[1] and x[2] < best[2] and x[3] < best[3] and x[4] < best[4] and x[5] < best[5]:
+#         left.append(i)
+#     elif x[0] > best[0] and x[1] > best[1] and x[2] > best[2] and x[3] > best[3] and x[4] > best[4] and x[5] > best[5]:
+#         right.append(i)
 
-print(left,right)
+# print(left,right)
 
 
 
