@@ -170,7 +170,7 @@ def buildModel(monteHeat,monteCool,kalHeat,kalCool,monteOff1,monteOff2):
     return rr
 
 rrReal = 0
-while rrReal < 0.9:
+while rrReal < 0.98:
     for i in range(numCoeffs):
         if i == 0:
             lamHeat = buildModel(monteHeat,guessLamCool,guessKalHeat,guessKalCool,guessOff1,guessOff2)
