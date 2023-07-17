@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import random
-josh = 45
+josh = 5
 
 
 newguess = 0

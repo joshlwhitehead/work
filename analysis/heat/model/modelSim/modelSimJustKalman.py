@@ -29,12 +29,14 @@ def off(someTemp,a,b):
 # b = 0.2659547738693443
 # c = -3.881909547738627
 def kalman(someTemp,old,kal,a,b):
+    # print(len(old),len(kal),len(off(someTemp,a,b)))
     # old=24
     kalFull = [old]
     for i in someTemp:
         old = old*kal+(i-off(someTemp,a,b))*(1-kal)
         
         kalFull.append(old)
+    
     return np.array(old)
 
 def r2(y,fit):
@@ -43,7 +45,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-file = 'revertModelBeta02_1.txt'
+file = 'justKalman_4.txt'
 fullData = modelTune(file)
 therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -56,36 +58,50 @@ mod.append([T0])
 
 
 
-popSize = 100         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-lamHeatL = 0
-lamHeatH = .1
-lamCoolL = 0
-lamCoolH = .01
-off1L = -1
-off1H = 1
-off2L = -1
-off2H = 1
-kalHeatL = .9
-kalHeatH = 1
-kalCoolL = .9
-kalCoolH = 1
-lamHeatEx = []
-lamCoolEx = []
-kalHeatEx = []
-kalCoolEx = []
-off1Ex = []
-off2Ex = []
-monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
-monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
-monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
-monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
-# monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
-kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
-
+popSize = 10         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# lamHeatL = 0
+# lamHeatH = .1
+# lamCoolL = 0
+# lamCoolH = .01
+# off1L = -5
+# off1H = 5
+# off2L = -5
+# off2H = 5
+# kalHeatL = .99
+# kalHeatH = 1
+# kalCoolL = .999
+# kalCoolH = 1
+# lamHeatEx = []
+# lamCoolEx = []
+# kalHeatEx = []
+# kalCoolEx = []
+# off1Ex = []
+# off2Ex = []
+# monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
+# monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
+# monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
+# monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
+# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+# kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
+# kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
+monteHeat = listToListList(np.zeros(popSize))
+monteCool = monteHeat
+kalHeat = listToListList(np.ones(popSize)*0.9988)
+kalCool = listToListList(np.ones(popSize)*.9995)
+monteOff1 = listToListList(np.ones(popSize)*.4613)
+monteOff2 = listToListList(np.ones(popSize)*-12.603)
+# arangeDx = .0001
+# monteOff1 = listToListList(np.linspace(off1L,off1H,popSize))
+# monteOff2 = listToListList(np.linspace(off2L,off2H,popSize))
+# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+# kalHeat = listToListList(np.linspace(kalHeatL,kalHeatH,popSize))
+# kalCool = listToListList(np.linspace(kalCoolL,kalCoolH,popSize))
 rrrr = 0
+# popSize = len(kalHeat)
+# print(len(kalHeat))
+# print(len(monteOff1))
 
-while round(rrrr,2) < 0.5:
+while round(rrrr,2) < 0.1:
     
     # monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
     # monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
@@ -121,19 +137,22 @@ while round(rrrr,2) < 0.5:
     totInterp = []
     for sec in section:
         if sec == 0:
-            test = calculation(24,off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
+            T0New = listToListList(np.ones(popSize)*24)
+            # print(popSize)
+            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp)
         elif sec == 1:
             totInterpTranspose = np.array(totInterp).T
             T0New = listToListList(totInterpTranspose[-1])
+            
             test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp) 
         elif sec == 2:
             totInterpTranspose = np.array(totInterp[-popSize:]).T
             T0New = listToListList(totInterpTranspose[-1])
-            test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
+            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp)
         elif sec == 3:
@@ -146,7 +165,7 @@ while round(rrrr,2) < 0.5:
         elif sec == 4:
             totInterpTranspose = np.array(totInterp[-popSize:]).T
             T0New = listToListList(totInterpTranspose[-1])
-            test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteCool,time[sec]-time[sec][0]-5)
+            test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp)
         elif sec == 5:
