@@ -36,13 +36,13 @@ def off(someTemp,a,b,c):
 
 def kalman(someTemp,old,kal,a,b,c):
     # print(len(old),len(kal),len(off(someTemp,a,b)),len(someTemp))
-    kalFull = [old]
-
+    kalFull = []
     for i in someTemp:
         offset = off(i,a,b,c)
         old = old*kal+(i-offset)*(1-kal)
         kalFull.append(old)
-    return np.array(old)
+    # print(len(kalFull),len(someTemp))
+    return np.array(kalFull)
 
 
 def r2(y,fit):
@@ -50,6 +50,35 @@ def r2(y,fit):
     sr = sum((y-fit)**2)
     r2 = 1-sr/st
     return r2
+def interpolate(x,x1,x2,y1,y2):
+    return y1 + (x-x1)*(y2-y1)/(x2-x1)
+
+
+def doubleData(data,dataTime):
+    print(len(data[0]))
+    print(len(dataTime[0]))
+    newData = []
+    newDataTime = []
+    for i in range(len(data)):
+        newDataSec = []
+        newDataTimeSec = []
+        
+        for indx,val in enumerate(data[i]):
+            if val != (data[i][0] and data[i][-1]):
+                x1 = dataTime[i][indx]
+                x2 = dataTime[i][indx+1]
+                x = (x1+x2)*0.5
+                y1 = val
+                y2 = data[i][indx+1]
+
+                newDataSec.append(y1)
+                newDataSec.append(interpolate(x,x1,x2,y1,y2))
+                newDataTimeSec.append(x1)
+                newDataTimeSec.append(x)
+        newData.append(newDataSec)
+        newDataTime.append(newDataTimeSec)
+
+    return newData,newDataTime
 
 file = 'justKalman_4.txt'
 fullData = modelTune(file)
@@ -62,6 +91,9 @@ time = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
 T0 = samp[0][0]
 mod.append([T0])
 
+therm1 = doubleData(therm,time)[0]
+time1 = doubleData(therm,time)[1]
+print(len(therm[0]))
 
 
 popSize = 100         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -95,6 +127,7 @@ monteOff3 = -12.603
 kalHeat = .9988
 kalCool = .9995
 
+
 rrrr = -4
 
         
@@ -118,6 +151,7 @@ fullTime = np.array(fullTime)
 fullTherm = np.array(fullTherm)
 fullThermTime = np.array(fullThermTime)
 fullMod = np.array(fullMod)
+print(len(fullTherm))
 
 
 # print(listToListList(monteHeat))
@@ -125,8 +159,9 @@ totInterp = []
 for sec in section:
     if sec == 0:
         T0New = 24
+        
         test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2,monteOff3)
-        print(test)
+        # print(test)
         testInterp = interp1d(time[sec],test)(sampTime[sec])
         totInterp += list(testInterp)
     elif sec == 1:
@@ -173,7 +208,7 @@ totInterpNew = []
 # totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
 # 
 # for indx,val in enumerate(totInterpNew):
-rr[r2(fullSamp,totInterp)] = [kalHeat,kalCool,monteOff1,monteOff2,totInterp]
+rr[r2(fullSamp,totInterp)] = [kalHeat,kalCool,monteOff1,monteOff2,monteOff3,totInterp]
     # totIn
 
 rrrr = max(rr.keys())
@@ -211,6 +246,6 @@ plt.plot(fullThermTime,fullTherm,label='thermistor')
 plt.plot(fullThermTime,fullMod,label='old model')
 plt.legend()
 plt.grid()
-plt.show()
+plt.savefig('test.png')
 
 # heatLambda()

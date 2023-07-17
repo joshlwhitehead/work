@@ -32,10 +32,11 @@ def kalman(someTemp,old,kal,a,b):
     # old=24
     kalFull = [old]
     for i in someTemp:
+        # offset = off(i,a,b)
         old = old*kal+(i-off(someTemp,a,b))*(1-kal)
         
         kalFull.append(old)
-    return np.array(old)
+    return np.array(kalFull)
 
 def r2(y,fit):
     st = sum((y-np.average(y))**2)
