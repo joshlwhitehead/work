@@ -29,14 +29,12 @@ def off(someTemp,a,b):
 # b = 0.2659547738693443
 # c = -3.881909547738627
 def kalman(someTemp,old,kal,a,b):
-    # print(len(old),len(kal),len(off(someTemp,a,b)))
-    # old=24
+    # print(len(old),len(kal),len(off(someTemp,a,b)),len(someTemp))
     kalFull = [old]
     for i in someTemp:
         old = old*kal+(i-off(someTemp,a,b))*(1-kal)
         
         kalFull.append(old)
-    
     return np.array(old)
 
 def r2(y,fit):
@@ -45,7 +43,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-file = 'justKalman_4.txt'
+file = 'revertModelBeta02_1.txt'
 fullData = modelTune(file)
 therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -58,59 +56,40 @@ mod.append([T0])
 
 
 
-popSize = 10         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# lamHeatL = 0
-# lamHeatH = .1
-# lamCoolL = 0
-# lamCoolH = .01
-# off1L = -5
-# off1H = 5
-# off2L = -5
-# off2H = 5
-# kalHeatL = .99
-# kalHeatH = 1
-# kalCoolL = .999
-# kalCoolH = 1
-# lamHeatEx = []
-# lamCoolEx = []
-# kalHeatEx = []
-# kalCoolEx = []
-# off1Ex = []
-# off2Ex = []
-# monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
-# monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
-# monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
-# monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
-# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-# kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
-# kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
-monteHeat = listToListList(np.zeros(popSize))
-monteCool = monteHeat
-kalHeat = listToListList(np.ones(popSize)*0.9988)
-kalCool = listToListList(np.ones(popSize)*.9995)
-monteOff1 = listToListList(np.ones(popSize)*.4613)
-monteOff2 = listToListList(np.ones(popSize)*-12.603)
-# arangeDx = .0001
-# monteOff1 = listToListList(np.linspace(off1L,off1H,popSize))
-# monteOff2 = listToListList(np.linspace(off2L,off2H,popSize))
-# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-# kalHeat = listToListList(np.linspace(kalHeatL,kalHeatH,popSize))
-# kalCool = listToListList(np.linspace(kalCoolL,kalCoolH,popSize))
-rrrr = 0
-# popSize = len(kalHeat)
-# print(len(kalHeat))
-# print(len(monteOff1))
+popSize = 100         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-while round(rrrr,2) < 0.1:
-    
-    # monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
-    # monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
-    # monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
-    # monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
-    # # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-    # kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
-    # kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
-    
+off1L = -1
+off1H = 1
+off2L = -1
+off2H = 1
+kalHeatL = .9
+kalHeatH = 1
+kalCoolL = .9
+kalCoolH = 1
+lamHeatEx = []
+lamCoolEx = []
+kalHeatEx = []
+kalCoolEx = []
+off1Ex = []
+off2Ex = []
+
+monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
+monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
+# monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
+kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
+
+emptyOnes = np.ones(popSize)
+
+monteOff1 = listToListList(emptyOnes*.4613)
+monteOff2 = listToListList(emptyOnes*-12.603)
+kalHeat = listToListList(emptyOnes*.9988)
+kalCool = listToListList(emptyOnes*.9995)
+
+rrrr = 0
+
+while round(rrrr,2) < 0.9:
+        
 
     # print(type(monteHeat))
     section = [0,1,2,3,4,5]
@@ -138,14 +117,13 @@ while round(rrrr,2) < 0.1:
     for sec in section:
         if sec == 0:
             T0New = listToListList(np.ones(popSize)*24)
-            # print(popSize)
             test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp)
         elif sec == 1:
             totInterpTranspose = np.array(totInterp).T
             T0New = listToListList(totInterpTranspose[-1])
-            
+            # print(T0New)
             test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp) 
@@ -184,28 +162,25 @@ while round(rrrr,2) < 0.1:
         totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
     # 
     for indx,val in enumerate(totInterpNew):
-        rr[r2(fullSamp,val)] = [monteHeat[indx],monteCool[indx],kalHeat[indx],kalCool[indx],monteOff1[indx],monteOff2[indx],val]
+        rr[r2(fullSamp,val)] = [kalHeat[indx],kalCool[indx],monteOff1[indx],monteOff2[indx],val]
         # totIn
 
     rrrr = max(rr.keys())
     print(rrrr)
 
-    lamHeatEx.append(list(chain.from_iterable(monteHeat)))
-   
-    lamCoolEx.append(list(chain.from_iterable(monteCool)))
+
     kalHeatEx.append(list(chain.from_iterable(kalHeat)))
     kalCoolEx.append(list(chain.from_iterable(kalCool)))
     off1Ex.append(list(chain.from_iterable(monteOff1)))
     off2Ex.append(list(chain.from_iterable(monteOff2)))
 
 
-    monteHeat = listToListList(randomGenExclude(lamHeatEx,lamHeatL,lamHeatH,popSize))
-    monteCool = listToListList(randomGenExclude(lamCoolEx,lamCoolL,lamCoolH,popSize))
-    monteOff1 = listToListList(randomGenExclude(off1Ex,off1L,off1H,popSize))
-    monteOff2 = listToListList(randomGenExclude(off2Ex,off2L,off2H,popSize))
-    # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-    kalHeat = listToListList(randomGenExclude(kalHeatEx,kalHeatL,kalHeatH,popSize))
-    kalCool = listToListList(randomGenExclude(kalCoolEx,kalCoolL,kalCoolH,popSize))
+
+    # monteOff1 = listToListList(randomGenExclude(off1Ex,off1L,off1H,popSize))
+    # monteOff2 = listToListList(randomGenExclude(off2Ex,off2L,off2H,popSize))
+    # # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+    # kalHeat = listToListList(randomGenExclude(kalHeatEx,kalHeatL,kalHeatH,popSize))
+    # kalCool = listToListList(randomGenExclude(kalCoolEx,kalCoolL,kalCoolH,popSize))
  
 
 # print(list(chain.from_iterable(lamHeatEx)))
