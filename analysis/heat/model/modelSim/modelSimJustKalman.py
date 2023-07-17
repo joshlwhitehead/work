@@ -11,9 +11,12 @@ from itertools import chain
 start = timer()
 def listToListList(li):
     return np.array(list(map(lambda item:[item],li)))
-def calculation(T0,offset,someTemp,lam,time):                               #someTemp is either thermistor temp or set temp
 
+
+def calculation(T0,offset,someTemp,lam,time):                               #someTemp is either thermistor temp or set temp
     return (-someTemp+offset+T0)*np.exp(-lam*(time))+someTemp-offset
+
+
 def randomGenExclude(toExclude,minim,maxim,popSize):
     toExclude = list(chain.from_iterable(toExclude))
     randList = []
@@ -23,19 +26,24 @@ def randomGenExclude(toExclude,minim,maxim,popSize):
             randList.append(randNum)
     return randList
     
-def off(someTemp,a,b):
-    return a*someTemp+b
+
+def off(someTemp,a,b,c):
+    return a*someTemp**2+b*someTemp+c
 # a = -0.0013693467336683212
 # b = 0.2659547738693443
 # c = -3.881909547738627
-def kalman(someTemp,old,kal,a,b):
+
+
+def kalman(someTemp,old,kal,a,b,c):
     # print(len(old),len(kal),len(off(someTemp,a,b)),len(someTemp))
     kalFull = [old]
+
     for i in someTemp:
-        old = old*kal+(i-off(someTemp,a,b))*(1-kal)
-        
+        offset = off(i,a,b,c)
+        old = old*kal+(i-offset)*(1-kal)
         kalFull.append(old)
     return np.array(old)
+
 
 def r2(y,fit):
     st = sum((y-np.average(y))**2)
@@ -43,7 +51,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-file = 'revertModelBeta02_1.txt'
+file = 'justKalman_4.txt'
 fullData = modelTune(file)
 therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -73,114 +81,117 @@ kalCoolEx = []
 off1Ex = []
 off2Ex = []
 
-monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
-monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
-# monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
-kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
+# monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
+# monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
+# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+# kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
+# kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
 
 emptyOnes = np.ones(popSize)
 
-monteOff1 = listToListList(emptyOnes*.4613)
-monteOff2 = listToListList(emptyOnes*-12.603)
-kalHeat = listToListList(emptyOnes*.9988)
-kalCool = listToListList(emptyOnes*.9995)
+monteOff1 = -0.0027263
+monteOff2 = .4613
+monteOff3 = -12.603
+kalHeat = .9988
+kalCool = .9995
 
-rrrr = 0
+rrrr = -4
 
-while round(rrrr,2) < 0.9:
         
 
-    # print(type(monteHeat))
-    section = [0,1,2,3,4,5]
-    rr = {}
-    fullSamp = []
-    fullTime = []
-    fullTherm = []
-    fullThermTime = []
-    fullMod = []
-    for sec in section:
-        fullSamp += list(samp[sec])
-        fullTime += list(sampTime[sec])
-        fullTherm += list(therm[sec])
-        fullThermTime += list(time[sec])
-        fullMod += list(mod[sec])
-    fullSamp = np.array(fullSamp)
-    fullTime = np.array(fullTime)
-    fullTherm = np.array(fullTherm)
-    fullThermTime = np.array(fullThermTime)
-    fullMod = np.array(fullMod)
+# print(type(monteHeat))
+section = [0,1,2,3,4,5]
+rr = {}
+fullSamp = []
+fullTime = []
+fullTherm = []
+fullThermTime = []
+fullMod = []
+for sec in section:
+    fullSamp += list(samp[sec])
+    fullTime += list(sampTime[sec])
+    fullTherm += list(therm[sec])
+    fullThermTime += list(time[sec])
+    fullMod += list(mod[sec])
+fullSamp = np.array(fullSamp)
+fullTime = np.array(fullTime)
+fullTherm = np.array(fullTherm)
+fullThermTime = np.array(fullThermTime)
+fullMod = np.array(fullMod)
 
 
-    # print(listToListList(monteHeat))
-    totInterp = []
-    for sec in section:
-        if sec == 0:
-            T0New = listToListList(np.ones(popSize)*24)
-            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp)
-        elif sec == 1:
-            totInterpTranspose = np.array(totInterp).T
-            T0New = listToListList(totInterpTranspose[-1])
-            # print(T0New)
-            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp) 
-        elif sec == 2:
-            totInterpTranspose = np.array(totInterp[-popSize:]).T
-            T0New = listToListList(totInterpTranspose[-1])
-            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp)
-        elif sec == 3:
-            totInterpTranspose = np.array(totInterp[-popSize:]).T
-            T0New = listToListList(totInterpTranspose[-1])
-            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-            # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp) 
-        elif sec == 4:
-            totInterpTranspose = np.array(totInterp[-popSize:]).T
-            T0New = listToListList(totInterpTranspose[-1])
-            test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp)
-        elif sec == 5:
-            totInterpTranspose = np.array(totInterp[-popSize:]).T
-            T0New = listToListList(totInterpTranspose[-1])
-            test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2)
-            # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-            testInterp = interp1d(time[sec],test)(sampTime[sec])
-            totInterp += list(testInterp) 
+# print(listToListList(monteHeat))
+totInterp = []
+for sec in section:
+    if sec == 0:
+        T0New = 24
+        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2,monteOff3)
+        print(test)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp)
+    elif sec == 1:
+        totInterpTranspose = np.array(totInterp).T
+        T0New = totInterpTranspose[-1]
+        # print(T0New)
+        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2,monteOff3)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp) 
+    elif sec == 2:
+        totInterpTranspose = np.array(totInterp[-popSize:]).T
+        T0New = totInterpTranspose[-1]
+        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2,monteOff3)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp)
+    elif sec == 3:
+        totInterpTranspose = np.array(totInterp[-popSize:]).T
+        T0New = totInterpTranspose[-1]
+        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2,monteOff3)
+        # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp) 
+    elif sec == 4:
+        totInterpTranspose = np.array(totInterp[-popSize:]).T
+        T0New = totInterpTranspose[-1]
+        test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2,monteOff3)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp)
+    elif sec == 5:
+        totInterpTranspose = np.array(totInterp[-popSize:]).T
+        T0New = totInterpTranspose[-1]
+        test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2,monteOff3)
+        # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+        testInterp = interp1d(time[sec],test)(sampTime[sec])
+        totInterp += list(testInterp) 
 
-    totInterpNew = []
-    for indx,val in enumerate(totInterp[:popSize]):
-        # totInterpNew.append(list(val))
-        # for i in range(1,6):
-        #     totInterpNew += list(totInterp[indx+popSize*i])
-        totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
-    # 
-    for indx,val in enumerate(totInterpNew):
-        rr[r2(fullSamp,val)] = [kalHeat[indx],kalCool[indx],monteOff1[indx],monteOff2[indx],val]
-        # totIn
+totInterpNew = []
+# for indx,val in enumerate(totInterp[:popSize]):
+    # totInterpNew.append(list(val))
+    # for i in range(1,6):
+    #     totInterpNew += list(totInterp[indx+popSize*i])
+    # print(val)
 
-    rrrr = max(rr.keys())
-    print(rrrr)
+# totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
+# 
+# for indx,val in enumerate(totInterpNew):
+rr[r2(fullSamp,totInterp)] = [kalHeat,kalCool,monteOff1,monteOff2,totInterp]
+    # totIn
 
-
-    kalHeatEx.append(list(chain.from_iterable(kalHeat)))
-    kalCoolEx.append(list(chain.from_iterable(kalCool)))
-    off1Ex.append(list(chain.from_iterable(monteOff1)))
-    off2Ex.append(list(chain.from_iterable(monteOff2)))
+rrrr = max(rr.keys())
+print(rrrr)
 
 
+# kalHeatEx.append(list(chain.from_iterable(kalHeat)))
+# kalCoolEx.append(list(chain.from_iterable(kalCool)))
+# off1Ex.append(list(chain.from_iterable(monteOff1)))
+# off2Ex.append(list(chain.from_iterable(monteOff2)))
 
-    # monteOff1 = listToListList(randomGenExclude(off1Ex,off1L,off1H,popSize))
-    # monteOff2 = listToListList(randomGenExclude(off2Ex,off2L,off2H,popSize))
-    # # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-    # kalHeat = listToListList(randomGenExclude(kalHeatEx,kalHeatL,kalHeatH,popSize))
-    # kalCool = listToListList(randomGenExclude(kalCoolEx,kalCoolL,kalCoolH,popSize))
+
+
+# monteOff1 = listToListList(randomGenExclude(off1Ex,off1L,off1H,popSize))
+# monteOff2 = listToListList(randomGenExclude(off2Ex,off2L,off2H,popSize))
+# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
+# kalHeat = listToListList(randomGenExclude(kalHeatEx,kalHeatL,kalHeatH,popSize))
+# kalCool = listToListList(randomGenExclude(kalCoolEx,kalCoolL,kalCoolH,popSize))
  
 
 # print(list(chain.from_iterable(lamHeatEx)))
