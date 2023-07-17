@@ -56,7 +56,7 @@ mod.append([T0])
 
 
 
-popSize = 10000         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+popSize = 1000         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 lamHeatL = 0
 lamHeatH = .1
 lamCoolL = 0
@@ -84,22 +84,20 @@ kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
 kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
 
 rrrr = 0
+emptyOnes = np.ones(popSize)
+guessLamHeat = listToListList(emptyOnes*0.1)
+guessLamCool = listToListList(emptyOnes*0.02)
+guessKalHeat = listToListList(emptyOnes*-0.1)
+guessKalCool = listToListList(emptyOnes*0.3)
+guessOff1 = listToListList(emptyOnes*1)
+guessOff2 = listToListList(emptyOnes*-78)
 
-g1
-# while round(rrrr,2) < 0.95:
-    
-# monteHeat = listToListList(np.random.uniform(lamHeatL,lamHeatH,popSize))
-# monteCool = listToListList(np.random.uniform(lamCoolL,lamCoolH,popSize))
-# monteOff1 = listToListList(np.random.uniform(off1L,off1H,popSize))
-# monteOff2 = listToListList(np.random.uniform(off2L,off2H,popSize))
-# # monteOff3 = listToListList(np.random.uniform(-5,5,popSize))
-# kalHeat = listToListList(np.random.uniform(kalHeatL,kalHeatH,popSize))
-# kalCool = listToListList(np.random.uniform(kalCoolL,kalCoolH,popSize))
+numCoeffs = 6
 
 
 # print(type(monteHeat))
 section = [0,1,2,3,4,5]
-rr = {}
+
 fullSamp = []
 fullTime = []
 fullTherm = []
@@ -118,72 +116,113 @@ fullThermTime = np.array(fullThermTime)
 fullMod = np.array(fullMod)
 
 
-# print(listToListList(monteHeat))
-totInterp = []
-for sec in section:
-    if sec == 0:
-        test = calculation(mod[sec-1][-1],off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp)
-    elif sec == 1:
-        totInterpTranspose = np.array(totInterp).T
-        T0New = listToListList(totInterpTranspose[-1])
-        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp) 
-    elif sec == 2:
-        totInterpTranspose = np.array(totInterp[-popSize:]).T
-        T0New = listToListList(totInterpTranspose[-1])
-        test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp)
-    elif sec == 3:
-        totInterpTranspose = np.array(totInterp[-popSize:]).T
-        T0New = listToListList(totInterpTranspose[-1])
-        test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
-        # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp) 
-    elif sec == 4:
-        totInterpTranspose = np.array(totInterp[-popSize:]).T
-        T0New = listToListList(totInterpTranspose[-1])
-        test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteCool,time[sec]-time[sec][0]-5)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp)
-    elif sec == 5:
-        totInterpTranspose = np.array(totInterp[-popSize:]).T
-        T0New = listToListList(totInterpTranspose[-1])
-        test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2)
-        # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
-        testInterp = interp1d(time[sec],test)(sampTime[sec])
-        totInterp += list(testInterp) 
+def buildModel(monteHeat,monteCool,kalHeat,kalCool,monteOff1,monteOff2):
+    rr = {}
+    totInterp = []
+    for sec in section:
+        if sec == 0:
+            test = calculation(mod[sec-1][-1],off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp)
+        elif sec == 1:
+            totInterpTranspose = np.array(totInterp).T
+            T0New = listToListList(totInterpTranspose[-1])
+            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp) 
+        elif sec == 2:
+            totInterpTranspose = np.array(totInterp[-popSize:]).T
+            T0New = listToListList(totInterpTranspose[-1])
+            test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteHeat,time[sec]-time[sec][0]-5)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp)
+        elif sec == 3:
+            totInterpTranspose = np.array(totInterp[-popSize:]).T
+            T0New = listToListList(totInterpTranspose[-1])
+            test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
+            # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp) 
+        elif sec == 4:
+            totInterpTranspose = np.array(totInterp[-popSize:]).T
+            T0New = listToListList(totInterpTranspose[-1])
+            test = calculation(T0New,off(therm[sec],monteOff1,monteOff2),therm[sec],monteCool,time[sec]-time[sec][0]-5)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp)
+        elif sec == 5:
+            totInterpTranspose = np.array(totInterp[-popSize:]).T
+            T0New = listToListList(totInterpTranspose[-1])
+            test = kalman(therm[sec],T0New,kalCool,monteOff1,monteOff2)
+            # test = calculation(mod[sec-1][-1],off(therm[sec],a,b,c),therm[sec],lamHeat,time[sec]-time[sec][0]-5)
+            testInterp = interp1d(time[sec],test)(sampTime[sec])
+            totInterp += list(testInterp) 
 
-totInterpNew = []
-for indx,val in enumerate(totInterp[:popSize]):
-    # totInterpNew.append(list(val))
-    # for i in range(1,6):
-    #     totInterpNew += list(totInterp[indx+popSize*i])
-    totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
-# 
-for indx,val in enumerate(totInterpNew):
-    rr[r2(fullSamp,val)] = [monteHeat[indx],monteCool[indx],kalHeat[indx],kalCool[indx],monteOff1[indx],monteOff2[indx],val]
-    # totIn
+    totInterpNew = []
+    for indx,val in enumerate(totInterp[:popSize]):
+        # totInterpNew.append(list(val))
+        # for i in range(1,6):
+        #     totInterpNew += list(totInterp[indx+popSize*i])
+        totInterpNew.append(list(val)+list(totInterp[indx+popSize])+list(totInterp[indx+popSize*2])+list(totInterp[indx+popSize*3])+list(totInterp[indx+popSize*4])+list(totInterp[indx+popSize*5]))
+    # 
+    for indx,val in enumerate(totInterpNew):
+        rr[r2(fullSamp,val)] = [monteHeat[indx],monteCool[indx],kalHeat[indx],kalCool[indx],monteOff1[indx],monteOff2[indx],val]
+    
+    return rr
+
+rrReal = 0
+while rrReal < 0.9:
+    for i in range(numCoeffs):
+        if i == 0:
+            lamHeat = buildModel(monteHeat,guessLamCool,guessKalHeat,guessKalCool,guessOff1,guessOff2)
+            
+            guessLamHeat = listToListList(emptyOnes*(lamHeat[max(lamHeat.keys())][i]))
+            
+        elif i == 1:
+            lamCool = buildModel(guessLamHeat,monteCool,guessKalHeat,guessKalCool,guessOff1,guessOff2)
+            guessLamCool = listToListList(emptyOnes*(lamCool[max(lamCool.keys())][i]))
+            
+        elif i == 2:
+            akalHeat = buildModel(guessLamHeat,guessLamCool,kalHeat,guessKalCool,guessOff1,guessOff2)
+            guessKalHeat = listToListList(emptyOnes*(akalHeat[max(akalHeat.keys())][i]))
+        elif i == 3:
+            akalCool = buildModel(guessLamHeat,guessLamCool,guessKalHeat,kalCool,guessOff1,guessOff2)
+            guessKalCool = listToListList(emptyOnes*(akalCool[max(akalCool.keys())][i]))
+        elif i == 4:
+            aoff1 = buildModel(guessLamHeat,guessLamCool,guessKalHeat,guessKalCool,monteOff1,guessOff2)
+            guessOff1 = listToListList(emptyOnes*(aoff1[max(aoff1.keys())][i]))
+        elif i == 5:
+            aoff2 = buildModel(guessLamHeat,guessLamCool,guessKalHeat,guessKalCool,guessOff1,monteOff2)
+            guessOff2 = listToListList(emptyOnes*(aoff2[max(aoff2.keys())][i]))
+    rrReal = max(buildModel(guessLamHeat,guessLamCool,guessKalHeat,guessKalCool,guessOff1,guessOff2).keys())
+    print(rrReal)
+
+
+
+
+rr = buildModel(guessLamHeat,guessLamCool,guessKalHeat,guessKalCool,guessOff1,guessOff2)
 
 rrrr = max(rr.keys())
+print(rrrr)
 x = list(rr.keys())
 x.sort()
 
-test = []
-rstuff = []
-for i in range(1,popSize):
-    test.append(list(chain.from_iterable(rr[x[-i]][:-1])))
-    rstuff.append(x[-i])
-test = np.array(test).T
+# test = []
+# rstuff = []
+# for i in range(1,popSize):
+#     test.append(list(chain.from_iterable(rr[x[-i]][:-1])))
+#     rstuff.append(x[-i])
+# test = np.array(test).T
 print(rrrr)
 # print(rstuff)
+print(rr[rrrr][:-1])
 
-
-
+plt.plot(fullTime,fullSamp,label='sample')
+plt.plot(fullTime,rr[max(rr.keys())][-1],label='new model')
+plt.plot(fullThermTime,fullTherm,label='thermistor')
+plt.plot(fullThermTime,fullMod,label='old model')
+plt.legend()
+plt.grid()
+plt.show()
 
 # left = []
 # right = []
