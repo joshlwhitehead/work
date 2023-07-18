@@ -30,7 +30,7 @@ def off(someTemp,a,b):
 # c = -3.881909547738627
 def kalman(someTemp,old,kal,a,b):
     # old=24
-    kalFull = [old]
+    kalFull = []
     for i in someTemp:
         # offset = off(i,a,b)
         old = old*kal+(i-off(someTemp,a,b))*(1-kal)
@@ -44,7 +44,7 @@ def r2(y,fit):
     r2 = 1-sr/st
     return r2
 
-file = 'revertModelBeta02_1.txt'
+file = 'revertModel1.txt'
 fullData = modelTune(file)
 therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -128,6 +128,7 @@ while round(rrrr,2) < 0.5:
         elif sec == 1:
             totInterpTranspose = np.array(totInterp).T
             T0New = listToListList(totInterpTranspose[-1])
+            # print(len(T0New))
             test = kalman(therm[sec],T0New,kalHeat,monteOff1,monteOff2)
             testInterp = interp1d(time[sec],test)(sampTime[sec])
             totInterp += list(testInterp) 
