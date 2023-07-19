@@ -82,12 +82,12 @@ mod.append([T0])
 
 popSize = 10         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-off1L = -.1
-off1H = .1
-off2L = -1
-off2H = 1
-off3L = -100
-off3H = 100
+off1L = -1
+off1H = 1
+off2L = -5
+off2H = 5
+off3L = -20
+off3H = 20
 kalHeatL = 0
 kalHeatH = 1
 kalCoolL = 0
@@ -201,13 +201,14 @@ numCoeffs = 5
 increasing = 0
 
 r2Current = 0#list(buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3).keys())[0]
+r2Orig = list(buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3).keys())[0]
 print(r2Current)
-while round(r2Current,2) < 0.96:
+while round(r2Current,2) < 0.99:
     for i in range(numCoeffs):
         if i == 0:
             r2New = .1
             r2Old = 0
-            while r2New - r2Old > .0001:
+            while r2New - r2Old > .000001:
                 r2Old = r2New
 
                 if gkalHeat > (kalHeatH+kalHeatL)*0.5:
@@ -235,7 +236,7 @@ while round(r2Current,2) < 0.96:
         elif i == 1:
             r2New = .1
             r2Old = 0
-            while r2New - r2Old > .0001:
+            while r2New - r2Old > .000001:
                 r2Old = r2New
 
                 if gkalCool > (kalCoolH+kalCoolL)*0.5:
@@ -261,7 +262,7 @@ while round(r2Current,2) < 0.96:
         elif i == 2:
             r2New = .1
             r2Old = 0
-            while r2New - r2Old > .0001:
+            while r2New - r2Old > .000001:
                 r2Old = r2New
 
                 if gOff1 > (off1H+off1L)*0.5:
@@ -287,7 +288,7 @@ while round(r2Current,2) < 0.96:
         elif i == 3:
             r2New = .1
             r2Old = 0
-            while r2New - r2Old > .0001:
+            while r2New - r2Old > .000001:
                 r2Old = r2New
 
                 if gOff2 > (off2H+off2L)*0.5:
@@ -313,7 +314,7 @@ while round(r2Current,2) < 0.96:
         elif i == 4:
             r2New = .1
             r2Old = 0
-            while r2New - r2Old > .0001:
+            while r2New - r2Old > .000001:
                 r2Old = r2New
 
                 if gOff3 > (off3H+off3L)*0.5:
@@ -339,19 +340,20 @@ while round(r2Current,2) < 0.96:
     r2Current = r2New        
     result = buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3)
     rrrr = list(result.keys())[0]
-    plt.clf()
-    # plt.figure(1)
-    plt.plot(fullTime,fullSamp,label='sample')
-    plt.plot(fullThermTime,fullTherm,label='thermistor')
-    plt.plot(fullThermTime1,fullMod,label='old model')
-    plt.plot(fullTime,result[rrrr][-1],label='new model')
-    plt.title(''.join([str(rrrr)]))
-    plt.legend()
-    plt.grid()
-    plt.savefig('test.png')
-    plt.pause(.000001)
-    with open('josh.txt','a') as file:
-        file.write(''.join([str(rrrr),' ',str(result[rrrr]),'\n']))
+    # plt.clf()
+    # # plt.figure(1)
+    # plt.plot(fullTime,fullSamp,label='sample')
+    # plt.plot(fullThermTime,fullTherm,label='thermistor')
+    # plt.plot(fullThermTime1,fullMod,label='old model')
+    # plt.plot(fullTime,result[rrrr][-1],label='new model')
+    # plt.title(''.join([str(rrrr)]))
+    # plt.legend()
+    # plt.grid()
+    # plt.savefig('test.png')
+    # plt.pause(.000001)
+    with open('possible3Results.txt','a') as file:
+        if rrrr >= r2Orig:
+            file.write(''.join([str(rrrr),' ',str(result[rrrr][:-1]),'\n']))
 print(rrrr)
 print(result[rrrr][:-1])
 # print(monteOff1)
