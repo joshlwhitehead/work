@@ -4,7 +4,7 @@ from parseTxt import modelTune
 from scipy.interpolate import interp1d
 from timeit import default_timer as timer
 import random
-from itertools import chain
+from sklearn.metrics import r2_score
 
 
 
@@ -47,9 +47,12 @@ def kalman(someTemp,old,kal,a,b,c):
 
 
 def r2(y,fit):
+    fit = np.array(fit)
     st = sum((y-np.average(y))**2)
     sr = sum((y-fit)**2)
+    
     r2 = 1-sr/st
+    
     return r2
 
 
@@ -64,7 +67,7 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'kalmanOnlyMorePrints1.txt'
+file = 'newCoeffs1.txt'
 fullData = modelTune(file)
 therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -202,6 +205,7 @@ increasing = 0
 
 r2Current = 0#list(buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3).keys())[0]
 r2Orig = list(buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3).keys())[0]
+print(r2Orig)
 print(r2Current)
 while round(r2Current,2) < 0.99:
     for i in range(numCoeffs):
@@ -340,17 +344,17 @@ while round(r2Current,2) < 0.99:
     r2Current = r2New        
     result = buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3)
     rrrr = list(result.keys())[0]
-    # plt.clf()
-    # # plt.figure(1)
-    # plt.plot(fullTime,fullSamp,label='sample')
-    # plt.plot(fullThermTime,fullTherm,label='thermistor')
-    # plt.plot(fullThermTime1,fullMod,label='old model')
-    # plt.plot(fullTime,result[rrrr][-1],label='new model')
-    # plt.title(''.join([str(rrrr)]))
-    # plt.legend()
-    # plt.grid()
-    # plt.savefig('test.png')
-    # plt.pause(.000001)
+    plt.clf()
+    # plt.figure(1)
+    plt.plot(fullTime,fullSamp,label='sample')
+    plt.plot(fullThermTime,fullTherm,label='thermistor')
+    plt.plot(fullThermTime1,fullMod,label='old model')
+    plt.plot(fullTime,result[rrrr][-1],label='new model')
+    plt.title(''.join([str(rrrr)]))
+    plt.legend()
+    plt.grid()
+    plt.savefig('test.png')
+    plt.pause(.000001)
     with open('possible3Results.txt','a') as file:
         if rrrr >= r2Orig:
             file.write(''.join([str(rrrr),' ',str(result[rrrr][:-1]),'\n']))

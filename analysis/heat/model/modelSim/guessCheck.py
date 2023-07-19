@@ -64,19 +64,19 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'kalmanOnlyMorePrints1.txt'
+file = 'newCoeffs2.txt'
 fullData = modelTune(file)
-therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
+therm1 = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
 mod = [np.array(fullData[i][1][1]) for i in range(len(fullData))]
 sampTime = [np.array(fullData[i][0][1]) for i in range(len(fullData))]
-time = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
+time1 = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
 # print(sampTime[4])
 T0 = samp[0][0]
 mod.append([T0])
 
-# therm1 = doubleData(therm,time)[0]
-# time1 = doubleData(therm,time)[1]
+therm = doubleData(therm1,time1)[0]
+time = doubleData(therm1,time1)[1]
 # print(len(therm1[0]))
 
 
@@ -116,10 +116,10 @@ gkalHeat = .9984
 gkalCool = .9996
 
 gOff1 = 0
-gOff2 = -4.006835899048015e-14
-gOff3 = 6.5316881644389095
-gkalHeat = 0.9984199262731229
-gkalCool = 0.9997104153556947
+gOff2 = 0
+gOff3 = 0
+gkalHeat = 0.9988491920790005
+gkalCool = 0.9995464207586666
 
         
 
@@ -137,7 +137,7 @@ for sec in section:
     fullTime += list(sampTime[sec])
     fullTherm += list(therm[sec])
     fullThermTime += list(time[sec])
-    fullThermTime1 += list(time[sec])
+    fullThermTime1 += list(time1[sec])
     fullMod += list(mod[sec])
 fullSamp = np.array(fullSamp)
 fullTime = np.array(fullTime)
