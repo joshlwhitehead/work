@@ -64,19 +64,19 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'kalmanOnlyMorePrints1.txt'
+file = 'newCoeffsNew5.txt'
 fullData = modelTune(file)
-therm = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
+therm1 = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
 mod = [np.array(fullData[i][1][1]) for i in range(len(fullData))]
 sampTime = [np.array(fullData[i][0][1]) for i in range(len(fullData))]
-time = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
+time1 = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
 # print(sampTime[4])
 T0 = samp[0][0]
 mod.append([T0])
 
-# therm1 = doubleData(therm,time)[0]
-# time1 = doubleData(therm,time)[1]
+therm = doubleData(therm1,time1)[0]
+time = doubleData(therm1,time1)[1]
 # print(len(therm1[0]))
 
 
@@ -108,11 +108,11 @@ off3Ex = []
 # print(randomGenExclude(monteOff1,off1L,off1H,popSize))
 emptyOnes = np.ones(popSize)
 
-gOff1 = -0.0027263
-gOff2 = .4613
+gOff1 = 0
+gOff2 = 0
 
-gkalHeat = .9988
-gkalCool = .9995
+gkalHeat = 0.9988491920790005
+gkalCool = 0.9995464207586666
 
 
         
@@ -131,7 +131,7 @@ for sec in section:
     fullTime += list(sampTime[sec])
     fullTherm += list(therm[sec])
     fullThermTime += list(time[sec])
-    fullThermTime1 += list(time[sec])
+    fullThermTime1 += list(time1[sec])
     fullMod += list(mod[sec])
 fullSamp = np.array(fullSamp)
 fullTime = np.array(fullTime)
@@ -201,6 +201,7 @@ increasing = 0
 
 r2Current = 0
 r2Orig = list(buildModel(gkalHeat,gkalCool,gOff1,gOff2).keys())[0]
+print(r2Orig)
 print(r2Current)
 conditionToMove = .0000000001
 while round(r2Current,2) < 0.99:
@@ -315,19 +316,19 @@ while round(r2Current,2) < 0.99:
     r2Current = r2New        
     result = buildModel(gkalHeat,gkalCool,gOff1,gOff2)
     rrrr = list(result.keys())[0]
-    # plt.clf()
-    # # plt.figure(1)
-    # plt.plot(fullTime,fullSamp,label='sample')
-    # plt.plot(fullThermTime,fullTherm,label='thermistor')
-    # plt.plot(fullThermTime1,fullMod,label='old model')
-    # plt.plot(fullTime,result[rrrr][-1],label='new model')
-    # plt.title(''.join([str(rrrr)]))
-    # plt.legend()
-    # plt.grid()
-    # plt.savefig('test.png')
-    # plt.pause(.000001)
+    plt.clf()
+    # plt.figure(1)
+    plt.plot(fullTime,fullSamp,label='sample')
+    plt.plot(fullThermTime,fullTherm,label='thermistor')
+    plt.plot(fullThermTime1,fullMod,label='old model')
+    plt.plot(fullTime,result[rrrr][-1],label='new model')
+    plt.title(''.join([str(rrrr)]))
+    plt.legend()
+    plt.grid()
+    plt.savefig('test.png')
+    plt.pause(.000001)
     with open('josh.txt','a') as file:
-        if rrrr >= r2Orig:
+        if round(rrrr,2) >= r2Orig:
             file.write(''.join([str(rrrr),' ',str(result[rrrr][:-1]),'\n']))
 print(rrrr)
 print(result[rrrr][:-1])
