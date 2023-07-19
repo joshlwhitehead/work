@@ -64,13 +64,15 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'newCoeffs2.txt'
+file = 'newCoeffsgoodish15.txt'
+
 fullData = modelTune(file)
 therm1 = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
 mod = [np.array(fullData[i][1][1]) for i in range(len(fullData))]
 sampTime = [np.array(fullData[i][0][1]) for i in range(len(fullData))]
 time1 = [np.array(fullData[i][1][2]) for i in range(len(fullData))]
+# print(sampTime)
 # print(sampTime[4])
 T0 = samp[0][0]
 mod.append([T0])
@@ -115,11 +117,11 @@ gOff3 = -10.603
 gkalHeat = .9984
 gkalCool = .9996
 
-gOff1 = 0
-gOff2 = 0
-gOff3 = 0
-gkalHeat = 0.9988491920790005
-gkalCool = 0.9995464207586666
+gOff1 = -0.0027263
+gOff2 = .4653
+gOff3 = -10.603
+gkalHeat = 0.9979631748438952
+gkalCool = 0.9995925772488442
 
         
 

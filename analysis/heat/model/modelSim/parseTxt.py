@@ -736,7 +736,7 @@ def modelTune(file):
                 try:
                     heatActSampTime.append(heatActTime[-1])
                 except:
-                    heatActSampTime.append(0)
+                    heatActSampTime.append(882.449)
         elif holdAct:
             if 'modeled' in val:
                 holdActTherm.append(float(val.split()[4].strip(',')))
@@ -809,7 +809,7 @@ def modelTune(file):
                 try:
                     holdEndSampTime.append(holdEndTime[-1])
                 except:
-                    holdEndSampTime.append(0)
+                    holdEndSampTime.append(882.449)
 
     return (
         ((heatActSamp,heatActSampTime),(heatActTherm,heatActMod,heatActTime)),

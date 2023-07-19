@@ -28,7 +28,10 @@ def randomGenExclude(toExclude,minim,maxim,popSize):
     
 
 def off(someTemp,a,b):
-    return a*someTemp+b
+    a = -0.0027263
+    b = .4653
+    c = -10.603
+    return a*someTemp**2+b*someTemp+c
 # a = -0.0013693467336683212
 # b = 0.2659547738693443
 # c = -3.881909547738627
@@ -64,7 +67,7 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'newCoeffsNew5.txt'
+file = 'newCoeffsNew6.txt'
 fullData = modelTune(file)
 therm1 = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -328,7 +331,7 @@ while round(r2Current,2) < 0.99:
     plt.savefig('test.png')
     plt.pause(.000001)
     with open('josh.txt','a') as file:
-        if round(rrrr,2) >= r2Orig:
+        if rrrr >= 0.96:
             file.write(''.join([str(rrrr),' ',str(result[rrrr][:-1]),'\n']))
 print(rrrr)
 print(result[rrrr][:-1])
