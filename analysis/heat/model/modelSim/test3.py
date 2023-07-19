@@ -82,12 +82,11 @@ mod.append([T0])
 
 popSize = 10         #DONT GO UP TO 100000!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-off1L = -.1
-off1H = .1
-off2L = -1
-off2H = 1
-off3L = -100
-off3H = 100
+off1L = -5
+off1H = 5
+off2L = -20
+off2H = 20
+
 kalHeatL = 0
 kalHeatH = 1
 kalCoolL = 0
@@ -200,10 +199,11 @@ def buildModel(kalHeat1,kalCool1,monteOff11,monteOff21):
 numCoeffs = 4
 increasing = 0
 
-r2Current = 0#list(buildModel(gkalHeat,gkalCool,gOff1,gOff2,gOff3).keys())[0]
+r2Current = 0
+r2Orig = list(buildModel(gkalHeat,gkalCool,gOff1,gOff2).keys())[0]
 print(r2Current)
 conditionToMove = .0000000001
-while round(r2Current,2) < 0.96:
+while round(r2Current,2) < 0.99:
     for i in range(numCoeffs):
         if i == 0:
             r2New = .1
@@ -315,19 +315,20 @@ while round(r2Current,2) < 0.96:
     r2Current = r2New        
     result = buildModel(gkalHeat,gkalCool,gOff1,gOff2)
     rrrr = list(result.keys())[0]
-    plt.clf()
-    # plt.figure(1)
-    plt.plot(fullTime,fullSamp,label='sample')
-    plt.plot(fullThermTime,fullTherm,label='thermistor')
-    plt.plot(fullThermTime1,fullMod,label='old model')
-    plt.plot(fullTime,result[rrrr][-1],label='new model')
-    plt.title(''.join([str(rrrr)]))
-    plt.legend()
-    plt.grid()
-    plt.savefig('test.png')
-    plt.pause(.000001)
+    # plt.clf()
+    # # plt.figure(1)
+    # plt.plot(fullTime,fullSamp,label='sample')
+    # plt.plot(fullThermTime,fullTherm,label='thermistor')
+    # plt.plot(fullThermTime1,fullMod,label='old model')
+    # plt.plot(fullTime,result[rrrr][-1],label='new model')
+    # plt.title(''.join([str(rrrr)]))
+    # plt.legend()
+    # plt.grid()
+    # plt.savefig('test.png')
+    # plt.pause(.000001)
     with open('josh.txt','a') as file:
-        file.write(''.join([str(rrrr),' ',str(result[rrrr]),'\n']))
+        if rrrr >= r2Orig:
+            file.write(''.join([str(rrrr),' ',str(result[rrrr][:-1]),'\n']))
 print(rrrr)
 print(result[rrrr][:-1])
 # print(monteOff1)
