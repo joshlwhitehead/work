@@ -111,15 +111,15 @@ off3Ex = []
 # print(randomGenExclude(monteOff1,off1L,off1H,popSize))
 emptyOnes = np.ones(popSize)
 
-gOff1 = -0.0027263
-gOff2 = .4653
-gOff3 = -10.603
-gkalHeat = .9984
-gkalCool = .9996
+
 
 gOff1 = -0.0027263
 gOff2 = .4653
 gOff3 = -10.603
+
+# gOff1 = 0
+# gOff2 = 0.0283923303834812
+# gOff3 = 5.62455383480823
 gkalHeat = 0.9979631748438952
 gkalCool = 0.9995925772488442
 
