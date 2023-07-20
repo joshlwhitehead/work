@@ -4,7 +4,6 @@ from parseTxt import modelTune
 from scipy.interpolate import interp1d
 from timeit import default_timer as timer
 import random
-from itertools import chain
 
 
 
@@ -28,10 +27,10 @@ def randomGenExclude(toExclude,minim,maxim,popSize):
     
 
 def off(someTemp,a,b):
-    a = -0.0027263
-    b = .4653
-    c = -10.603
-    return a*someTemp**2+b*someTemp+c
+    # a = -0.0027263
+    # b = .4653
+    # c = -10.603
+    return a*someTemp+b
 # a = -0.0013693467336683212
 # b = 0.2659547738693443
 # c = -3.881909547738627
@@ -67,7 +66,7 @@ def doubleData(data,dataTime):
         newDataTime.append(newT)
     return newData,newDataTime
 
-file = 'newCoeffsgoodish15.txt'
+file = 'newCoeffsgoodish12.txt'
 fullData = modelTune(file)
 therm1 = [np.array(fullData[i][1][0]) for i in range(len(fullData))]
 samp = [np.array(fullData[i][0][0]) for i in range(len(fullData))]
@@ -216,11 +215,16 @@ print(r2Orig)
 print(r2Current)
 conditionToMove = .0000000001
 # while round(r2Current,2) < 0.99:
+spec = 0.99
+maxTry = 99
 for i in range(numCoeffs):
     if i == 0:
         r2New = .1
         r2Old = 0
-        while round(r2New,2)< 0.99:
+        count = 0
+        while round(r2New,2) < spec:
+            if count > maxTry:
+                spec -= 0.01
             r2Old = r2New
 
             if gkalHeat > (kalHeatH+kalHeatL)*0.5:
@@ -265,24 +269,17 @@ for i in range(numCoeffs):
                 plt.savefig('test.png')
                 plt.pause(.000001)
                 print(r2New)
-            # plt.clf()
-            # # plt.figure(1)
-            
-            # plt.plot(fullTime,fullSamp,label='sample')
-            # plt.plot(fullThermTime,fullTherm,label='thermistor')
-            # plt.plot(fullThermTime1,fullMod,label='old model')
-            # plt.plot(fullTime,result[rrrr][-1],label='new model')
-            # plt.title(''.join([str(rrrr)]))
-            # plt.legend()
-            # plt.grid()
-            # plt.savefig('test.png')
-            # plt.pause(.000001)
+
+            count += 1
 
             
     elif i == 1:
         r2New = .1
         r2Old = 0
-        while round(r2New,2) < 0.99:
+        count = 0
+        while round(r2New,2) < spec:
+            if count > maxTry:
+                spec -= 0.01
             r2Old = r2New
 
             if gkalCool > (kalCoolH+kalCoolL)*0.5:
@@ -326,7 +323,7 @@ for i in range(numCoeffs):
                 plt.savefig('test.png')
                 plt.pause(.000001)
                 print(r2New)
-
+            count += 1
        
     r2Current = r2New        
     result = buildModel(gkalHeat,gkalCool,gOff1,gOff2,2)
