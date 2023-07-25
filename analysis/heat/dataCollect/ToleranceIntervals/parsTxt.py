@@ -258,7 +258,8 @@ def parsTCTxt(file):                                                            
     start2 = False
     countLines = 0
     start3 = True
-
+    kill_temp = 0
+    act_temp = 0
 
 
 
@@ -266,24 +267,24 @@ def parsTCTxt(file):                                                            
     for u in file:
         if 'SWITCH to STEADY' in u:                                                     #this criteria indicates start of data
             start2 = True
-        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) >= 85:             #this criteria indicates start of kill temp collection
+        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:             #this criteria indicates start of kill temp collection
             killTemp = float(u.split()[-1])
             goto.append(float(u.split()[-1]))
             killCollect = True
             actCollect = False
             start2 = False
-            start3 = False
+            
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) >= 35 and start3:        #this criteria indicates start of activation temp collect
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 35:        #this criteria indicates start of activation temp collect
             goto.append(float(u.split()[-1]))
             actTemp = float(u.split()[-1])
             killCollect = False
             actCollect = True
-            start2 = False
+            
         # elif 'Using Cooling Equations' in u:
         #     start = False
         
-        if start2 and 'DATAQ:' in u or start2 and 'CHUBE:' in u:                                                  #start collecting data
+        if start and start2 and ('DATAQ:' in u or 'CHUBE:' in u):                                                  #start collecting data
 
             
             if killCollect:

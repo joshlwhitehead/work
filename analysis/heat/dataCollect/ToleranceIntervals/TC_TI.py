@@ -8,15 +8,17 @@ import os
 from scipy import stats
 
 
-folder = 'dataMorgan/'
+folder = 'sydneyTreatmentChamberOverTime/'
 #############               CHANGE THESE                    ######################
-instListShort = [1]
+instListShort = []
+for i in os.listdir(folder):
+    instListShort.append(i[:-4])
 replicate = 1
 
 
 ########                PROBABLY DONT CHANGE                ##################
-alpha = 0.05
-p = 0.9
+alpha = 0.10
+p = 0.90
 deviationCrit = 2.5
 
        
@@ -25,10 +27,10 @@ instList = instListShort*replicate
 instList.sort()
 
 def kill():
-    instListVar = []
-    for inst in instListShort:
-        for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))
+    instListVar = instListShort
+    # for inst in instListShort:
+    #     for rep in range(replicate):
+    #         instListVar.append(''.join([str(inst),'.',str(rep)]))
     
 
     temp = []
@@ -52,10 +54,12 @@ def kill():
             print(instListVar[count],'TI:',bound,'PASS')
         count += 1
     # plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
+    plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
-    plt.title('95% Tolerance Intervals (p=0.90)')
-    plt.ylabel('Instrument')
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),')']))
+    plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
@@ -87,10 +91,10 @@ def kill():
 
 
 def act():
-    instListVar = []
-    for inst in instListShort:
-        for rep in range(replicate):
-            instListVar.append(''.join([str(inst),'.',str(rep)]))
+    instListVar = instListShort
+    # for inst in instListShort:
+    #     for rep in range(replicate):
+    #         instListVar.append(''.join([str(inst),'.',str(rep)]))
     
 
     temp = []
@@ -113,11 +117,12 @@ def act():
         else:
             print(instListVar[count],'TI:',bound,'PASS')
         count += 1
-    plt.yticks(np.arange(0,len(temp)),instListVar)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
+    plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.vlines(actTemp+deviationCrit,0,count,'k',lw=5)
     plt.vlines(actTemp-deviationCrit,0,count,'k',lw=5)
-    plt.title('95% Tolerance Intervals (p=0.90)')
-    plt.ylabel('Instrument')
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),')']))
+    plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
     plt.grid()
     plt.show()
@@ -149,3 +154,4 @@ def act():
 
 
 act()
+kill()
