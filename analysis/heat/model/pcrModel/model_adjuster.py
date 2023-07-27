@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     input_file_path = sys.argv[1]
     output_file_path = "./model_adjuster_output.txt"  # Change this if you want a specific output file path
-    offset = 46.5
-    scale = 98/95
+    offset = 51.7
+    scale = 1.1
 
     process_file(input_file_path, output_file_path, offset, scale)

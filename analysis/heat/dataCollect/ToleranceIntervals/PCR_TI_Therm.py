@@ -164,7 +164,7 @@ def anneal(folder,instListShort):                                               
     count = 0
     for file in os.listdir(folder):
         
-        peakSampList = parsPCRTxt(''.join([folder,file]))[6][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
         peakSamp = []
         for peak in peakSampList:
             peakSamp.append(min(peak)) 
