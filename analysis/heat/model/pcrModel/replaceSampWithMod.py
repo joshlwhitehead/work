@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-with open('NEWBeta07_TT5_Run_1.txt','r') as f:
+with open('model_adjuster_output.txt','r') as f:
     file = f.readlines()
 
 
