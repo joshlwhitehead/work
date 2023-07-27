@@ -12,34 +12,19 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-# folder = 'dataPCR/'                                                                      #folder where dave .txt files are kept
-# instListShort = ['p_a_7','p_b_7','p_a_9','p_b_9','p_a_11','p_b_11','p_a_13','p_b_13','p_a_15','p_b_15','g_a_5','g_b_5','g_a_20','g_b_20','g_a_23','g_b_23','g_a_25','g_b_25','g_a_28','g_b_28']                                                                         #list of instruments. must be in order that they appear in folder
-# totalInd = ['p','g']*10
-# totalInd.sort(reverse=True)
-# print(totalInd)
-############                CHANGE THIS                                     ###################
-# folder = 'RunA/'
-# instListShort = ['pa7','pa9','pa11','pa13','pa15','ga5','ga20','ga23','ga25','ga28']
-# totalInd = ['p','p','p','p','p','g','g','g','g','g']
-
-# folder = 'RunB/'
-# instListShort = ['pb7','pb9','pb11','pb13','pb15','gb5','gb20','gb23','gb25','gb28']
-# totalInd = ['p','p','p','p','p','g','g','g','g','g']
-# folder = 'justinTot/'
-# instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
 folder = 'test/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
 print(instListShort)
-# instListShort = np.arange(0,len(os.listdir(folder)))
+
 
 replicate = 1                                                                                   #how many runs of each instrument
 
 
 
 ##############              PROBABLY DONT CHANGE            #####################
-deviationCrit = 1.5                                                                             #acceptance crit
+# deviationCrit = 1.5                                                                             #acceptance crit
 alpha = 0.1                                                                                    #1-confidence level
 p = 0.9                                                                                         #reliability
 
@@ -69,7 +54,7 @@ def denature(folder,instListShort):                                             
     total = []
     count = 0
     for file in os.listdir(folder):
-        peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
         
         peakSamp = []
         for peak in peakSampList:
@@ -78,7 +63,7 @@ def denature(folder,instListShort):                                             
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
-        denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
+        # denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
 
 
@@ -87,10 +72,9 @@ def denature(folder,instListShort):                                             
 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         
-        if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
-            print(instListVar[count],bound,'FAIL')
-        else:
-            print(instListVar[count],bound,'PASS')
+        # if bound[0][0] < denatTemp-deviationCrit or bound[0][1] > denatTemp+deviationCrit:          #pass if TI within acceptance criteria
+        print(instListVar[count],bound)
+        
         count += 1
     
     for i in range(len(means)):
@@ -98,8 +82,8 @@ def denature(folder,instListShort):                                             
     plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     # plt.xlim(88.3,97)|
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' denature']))
     plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
@@ -118,18 +102,12 @@ def denature(folder,instListShort):                                             
 
 
     
+   
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-    # dfTemp.boxplot('Temp',by='Instrument')
-    # plt.show()
-    # dfTot = pd.DataFrame({'Mean':total,'type':totalInd})
+
     
-    # m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
-    # m_compMult = pairwise_tukeyhsd(endog=dfTot['Mean'],groups=dfTot['type'],alpha=alpha)
-    # print(m_compMult)
-    # formula = 'Mean ~ type'
-    # model = ols(formula, dfTot).fit()
-    # aov_table = anova_lm(model, typ=1)
-    # print(aov_table)
+    m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
+    print(m_compMult)
     count=0
     cis = []
     for data in temp:
@@ -186,7 +164,7 @@ def anneal(folder,instListShort):                                               
     count = 0
     for file in os.listdir(folder):
         
-        peakSampList = parsPCRTxt(''.join([folder,file]))[1][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[6][0]                                     #collect temperatures while heating
         peakSamp = []
         for peak in peakSampList:
             peakSamp.append(min(peak)) 
@@ -202,18 +180,16 @@ def anneal(folder,instListShort):                                               
         tis.append(bound[0])
         
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
-        if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
-            print(instListVar[count],'TI:',bound,'FAIL')
-        else:
-            print(instListVar[count],'TI:',bound,'PASS')
+        # if bound[0][0] < annealTemp-deviationCrit or bound[0][1] > annealTemp+deviationCrit:
+        print(instListVar[count],'TI:',bound)
       
         count += 1
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
     plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
-    plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
     # plt.xlim(45,54)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' anneal']))
     plt.ylabel('Run')

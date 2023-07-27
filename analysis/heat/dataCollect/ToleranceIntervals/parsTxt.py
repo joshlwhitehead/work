@@ -178,7 +178,7 @@ def parsPCRTxt(file):                                                           
             
     
     
-    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[:-1],timeHeatTherm2[:-1]),(heatSink,timeHeatSink)             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[1:-1],timeHeatTherm2[1:-1]),(heatSink,timeHeatSink),(coolTherm2[1:-1],timeCoolTherm2[1:-1])             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
 
