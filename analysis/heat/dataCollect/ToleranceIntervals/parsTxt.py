@@ -181,19 +181,19 @@ def parsPCRTxt(file):                                                           
     return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[1:-1],timeHeatTherm2[1:-1]),(heatSink,timeHeatSink),(coolTherm2[1:-1],timeCoolTherm2[1:-1])             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 
-x = parsPCRTxt('test/modelTuneTest1.txt')[4][0]
-xt = parsPCRTxt('test/modelTuneTest1.txt')[4][1]
-y = parsPCRTxt('test/model_adjuster_output.txt')[4][0]
-yt = parsPCRTxt('test/model_adjuster_output.txt')[4][1]
+# x = parsPCRTxt('test/modelTuneTest1.txt')[4][0]
+# xt = parsPCRTxt('test/modelTuneTest1.txt')[4][1]
+# y = parsPCRTxt('test/model_adjuster_output.txt')[4][0]
+# yt = parsPCRTxt('test/model_adjuster_output.txt')[4][1]
 
 
-import matplotlib.pyplot as plt
-for indx,var in enumerate(x):
-    plt.plot(xt[indx],var,color='r')
-for indx,var in enumerate(y):
-    plt.plot(yt[indx],var,'b')
-plt.grid()
-plt.show()
+# import matplotlib.pyplot as plt
+# for indx,var in enumerate(x):
+#     plt.plot(xt[indx],var,color='r')
+# for indx,var in enumerate(y):
+#     plt.plot(yt[indx],var,'b')
+# plt.grid()
+# plt.show()
 
 
 
