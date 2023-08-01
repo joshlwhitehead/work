@@ -9,7 +9,7 @@ from confidenceFun import CI,TI
 from PCR_rampRate_USE import heating,cooling
 import os
 
-temp = 2
+temp = 4
 
 
 folder = 'betaAlpha/'
