@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'sydney2/'
+folder = 'syd3/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
