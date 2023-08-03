@@ -27,6 +27,8 @@ def parsPCRTxt(file):                                                           
     timeHeatTherm = [[]]
     coolTherm = [[]]
     timeCoolTherm = [[]]
+    heatMod = [[]]
+    coolMod = [[]]
     countHTherm = 0
     countCTherm = 0
     heatSink = []
@@ -45,12 +47,12 @@ def parsPCRTxt(file):                                                           
         #         totalTime.append(float(file[countLines+1].split()[0].strip('()'))/1000)
         if 'Start PCR' in u:
             start = True                                                                                                #start looking for temps
-        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:                                         #only look for temps under these conditions for heating
+        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) >= 85:                                         #only look for temps under these conditions for heating
             denatTemp = float(u.split()[-1])
             heatCollect = True
             coolCollect = False
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >= 40:        #look for temps under these conditions for cooling
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) <= 70 and float(u.split()[-1]) >= 40:        #look for temps under these conditions for cooling
             annealTemp = float(u.split()[-1])
             heatCollect = False
             coolCollect = True
@@ -123,13 +125,15 @@ def parsPCRTxt(file):                                                           
         
         if start:
             try:
-                if 'goto' in u and float(u.split()[-1]) > 85 and len(heatTherm[countHTherm]) != 0:
+                if 'goto' in u and float(u.split()[-1]) >= 85 and len(heatTherm[countHTherm]) != 0:
                     heatTherm.append([])
                     timeHeatTherm.append([])
+                    heatMod.append([])
                     countHTherm += 1
-                elif 'goto' in u and float(u.split()[-1]) < 65 and float(u.split()[-1]) >45 and len(coolTherm[countCTherm]) != 0:
+                elif 'goto' in u and float(u.split()[-1]) <= 70 and float(u.split()[-1]) >= 40 and len(coolTherm[countCTherm]) != 0:
                     coolTherm.append([])
                     timeCoolTherm.append([])
+                    coolMod.append([])
                     countCTherm += 1
             except:
                 pass
@@ -137,17 +141,19 @@ def parsPCRTxt(file):                                                           
                 if heatCollect:
                     heatTherm[countHTherm].append(float(u.split()[4].strip(',')))
                     timeHeatTherm[countHTherm].append(float(u.split()[0].strip('()'))/1000)
+                    heatMod[countHTherm].append(float(u.split()[7].strip(',')))
                     heatSink.append(float(u.split()[13].strip(',')))
                     timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
                 elif coolCollect:
                     coolTherm[countCTherm].append(float(u.split()[4].strip(',')))
                     timeCoolTherm[countCTherm].append(float(u.split()[0].strip('()'))/1000)
+                    coolMod[countCTherm].append(float(u.split()[7].strip(',')))
                     heatSink.append(float(u.split()[13].strip(',')))
                     timeHeatSink.append(float(u.split()[0].strip('()'))/1000)
 
         countLines += 1
     # print(heat)
-    
+    # print(heatMod)
     heat2 = []
     timeH2 = []
     for j in range(len(heat)):
@@ -175,12 +181,23 @@ def parsPCRTxt(file):                                                           
         if len(coolTherm[j]) > 2:
             coolTherm2.append(coolTherm[j])
             timeCoolTherm2.append(timeCoolTherm[j])
+    heatMod2 = []
+    for j in range(len(heatMod)):
+        if len(heatMod[j]) > 2:
+            heatMod2.append(heatMod[j])
+    coolMod2 = []
+    for j in range(len(coolMod)):
+        if len(coolMod[j]) > 2:
+            coolMod2.append(coolMod[j])
             
     
     
-    return (heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),(heatTherm2[1:-1],timeHeatTherm2[1:-1]),(heatSink,timeHeatSink),(coolTherm2[1:-1],timeCoolTherm2[1:-1])             #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
+    return ((heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),
+            (heatTherm2[1:-1],timeHeatTherm2[1:-1]),(heatSink,timeHeatSink),(coolTherm2[1:-1],timeCoolTherm2[1:-1]),
+            (heatMod2[1:-1],timeHeatTherm2[1:-1]),(coolMod2[1:-1],timeCoolTherm2[1:-1])
+            )                                                                                                                       #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
-
+# x = parsPCRTxt('tapeAdjust/tapeTest085denature50anneal27.txt')
 # x = parsPCRTxt('test/modelTuneTest1.txt')[4][0]
 # xt = parsPCRTxt('test/modelTuneTest1.txt')[4][1]
 # y = parsPCRTxt('test/model_adjuster_output.txt')[4][0]

@@ -80,7 +80,7 @@ def denature(folder,instListShort):                                             
         means.append(mean)                                                                          #list of mean denature temp
         denatTemp = parsPCRTxt(''.join([folder,file]))[2][0]
         total.append(mean)
-
+        # print(temp)
 
         bound = ti.twoside.normal(peakSamp,p,1-alpha)                                               #tolerance interval for each run
         tis.append(bound[0])                                                                        #list of TIs
@@ -233,7 +233,7 @@ def anneal(folder,instListShort):                                               
 
     
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-
+    print(dfTemp)
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     print(m_compMult)
