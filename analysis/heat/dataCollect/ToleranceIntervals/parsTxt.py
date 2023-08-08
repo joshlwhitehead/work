@@ -198,6 +198,13 @@ def parsPCRTxt(file):                                                           
             )                                                                                                                       #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
 # x = parsPCRTxt('tapeAdjust/tapeTest085denature50anneal27.txt')
+# import matplotlib.pyplot as plt
+# for indx,val in enumerate(x[0][0]):
+#     plt.plot(x[0][1][indx],val,'b')
+# for indx,val in enumerate(x[1][0]):
+#     plt.plot(x[1][1][indx],val,'b')
+# plt.grid()
+# plt.show()
 # x = parsPCRTxt('test/modelTuneTest1.txt')[4][0]
 # xt = parsPCRTxt('test/modelTuneTest1.txt')[4][1]
 # y = parsPCRTxt('test/model_adjuster_output.txt')[4][0]
@@ -342,7 +349,7 @@ def parsTCTxt(file):                                                            
         
         
         countLines += 1
-        
+    print(goto)   
     # actTemp, killTemp = goto    
     return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
 
@@ -406,7 +413,8 @@ def TCramp(file):
 
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
 
-
+file = 'oldButUseful/dataTC/Adv06_P11_2383ea_221220_Run1.txt'
+tc = parsTCTxt(file)[0][1]
 # print(TCramp('dataC/adv22_tc_tp002_230519_run05.txt')[2][0])
 
 

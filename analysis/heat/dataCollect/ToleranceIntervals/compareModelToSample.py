@@ -46,7 +46,16 @@ p = 0.9                                                                         
 
 
 
-
+def findAvgValMax(data):
+    peakSamp = []
+    for peak in data:
+        peakSamp.append(max(peak))
+    return peakSamp
+def findAvgValMin(data):
+    peakSamp = []
+    for peak in data:
+        peakSamp.append(min(peak))
+    return peakSamp
 
 ########                DONT CHANGE             ##################
 def denature(folder,instListShort):                                                                                     #create function to analyze denature temp
@@ -73,21 +82,25 @@ def denature(folder,instListShort):                                             
     denat = []
     ann = []
     for file in os.listdir(folder):
+        peakSampListHeat = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
+        peakSampListCool = parsPCRTxt(''.join([folder,file]))[1][0]
+        if np.mean(findAvgValMax(peakSampListCool)) > np.mean(findAvgValMax(peakSampListHeat)):
+            peakSamp = findAvgValMax(peakSampListCool)
+        else:
+            peakSamp = findAvgValMax(peakSampListHeat)
+        peakModListHeat = parsPCRTxt(''.join([folder,file]))[7][0]                                     #collect temperatures while heating
+        peakModListCool = parsPCRTxt(''.join([folder,file]))[8][0]
+        if np.mean(findAvgValMax(peakModListCool)) > np.mean(findAvgValMax(peakModListHeat)):
+            peakMod = findAvgValMax(peakModListCool)
+        else:
+            peakMod = findAvgValMax(peakModListHeat)
         
-        retVal = parsPCRTxt(''.join([folder,file]))
-        peakSampList = retVal[0][0]                                     #collect temperatures while heating
-        peakModList = retVal[7][0]
-        peakSamp = []
-        peakMod = []
         fullIndx = []
         temp = []    
         mod = []
-        for peak in peakSampList:
-            # print(max(peak))
-            peakSamp.append(max(peak))
+        for peak in peakSamp:
             fullIndx.append('sample')                                                              #collect maximum (denature) temps for each cycle
-        for peak in peakModList:
-            peakMod.append(max(peak))
+        for peak in peakMod:
             fullIndx.append('model')
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mod.append(peakMod)
@@ -174,7 +187,7 @@ def anneal(folder,instListShort):                                               
        
         m_compMult = pairwise_tukeyhsd(endog=dF['temp'], groups=dF['type'], alpha=alpha)      #use tukey method to compare runs
         
-        # print(m_compMult.meandiffs)
+        # print(m_compMult)
         meanDiffs.append(m_compMult.meandiffs[0])
         denat.append(int(file[8:11]))
         ann.append(int(file[19:21]))
