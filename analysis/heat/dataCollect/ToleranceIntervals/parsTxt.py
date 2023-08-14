@@ -197,84 +197,17 @@ def parsPCRTxt(file):                                                           
             (heatMod2[1:-1],timeHeatTherm2[1:-1]),(coolMod2[1:-1],timeCoolTherm2[1:-1])
             )                                                                                                                       #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
-# x = parsPCRTxt('tapeAdjust/tapeTest085denature50anneal27.txt')
+file = 'beta_verif2/B12_tapeCup_Run1.txt'
+# fun = parsPCRTxt(file)
+# heat,th = fun[0]
+# cool,tc = fun[1]
 # import matplotlib.pyplot as plt
-# for indx,val in enumerate(x[0][0]):
-#     plt.plot(x[0][1][indx],val,'b')
-# for indx,val in enumerate(x[1][0]):
-#     plt.plot(x[1][1][indx],val,'b')
+# for indx,val in enumerate(heat):
+#     plt.plot(th[indx],val,'b')
+# for indx,val in enumerate(cool):
+#     plt.plot(tc[indx],val,'r')
 # plt.grid()
 # plt.show()
-# x = parsPCRTxt('test/modelTuneTest1.txt')[4][0]
-# xt = parsPCRTxt('test/modelTuneTest1.txt')[4][1]
-# y = parsPCRTxt('test/model_adjuster_output.txt')[4][0]
-# yt = parsPCRTxt('test/model_adjuster_output.txt')[4][1]
-
-
-# import matplotlib.pyplot as plt
-# for indx,var in enumerate(x):
-#     plt.plot(xt[indx],var,color='r')
-# for indx,var in enumerate(y):
-#     plt.plot(yt[indx],var,'b')
-# plt.grid()
-# plt.show()
-
-
-
-# x = parsPCRTxt('data/Beta05-DV91-20230615-Run1.txt')
-# # x = parsPCRTxt('data/PThermo_AdvBuild13_w87_230301_run1.txt')[1]
-# print(x)
-# # print(x)
-# import matplotlib.pyplot as plt
-# for i in range(len(x[0])):
-#     plt.plot(x[1][i],x[0][i])
-#     print(max(x[0][i]))
-# plt.grid()
-# plt.show()
-
-
-# y = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][0]
-# x = parsPCRTxt('dataC/adv22_pcr_w71_230519_run06.txt')[0][1]
-# # print(y)
-# # print(y)
-# z = []
-# for i in y:
-#     z.append(max(i))
-# # print(z)
-# # print(len(z))
-# # for i in y:
-# #     print(i)
-# import matplotlib.pyplot as plt
-# for i in range(len(x)):
-#     plt.plot(x[i],y[i],'o')
-# plt.grid()
-# plt.show()
-
-
-
-# yy = []
-# for i in y:
-#     yy.append(max(i))
-# plt.plot(yy,'o')
-# plt.grid()
-# plt.show()
-
-
-# print(parsPCRTxt('cupA\PThermo_AdvBuild07_w86_230301_run1.txt')[3][0])
-# import matplotlib.pyplot as plt
-# import numpy as np
-# y1 = parsPCRTxt('0217-DV0004-20230227-Run01.txt')[3][0]
-# x1 = np.array(parsPCRTxt('0217-DV0004-20230227-Run01.txt')[3][1])
-# y2 = parsPCRTxt('0217-DV0004-20230301-run-04.txt')[3][0]
-# x2 = np.array(parsPCRTxt('0217-DV0004-20230301-run-04.txt')[3][1])
-# plt.plot(x1-x1[0],y1,label='run1')
-# plt.plot(x2-x2[0],y2,label='run4')
-# plt.grid()
-# plt.legend()
-
-# plt.show()
-
-
 
 
 
@@ -355,6 +288,15 @@ def parsTCTxt(file):                                                            
 
 # print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
 # print(parsTCTxt('TCRando/Beta13-TC91-20230622-run1 (1).txt'))
+# file = 'oldButUseful/dataTC/Adv06_P11_2383ea_221220_Run1.txt'
+# tc = parsTCTxt(file)[0][1]
+# tc2 = parsTCTxt(file)[0][0]
+
+# import matplotlib.pyplot as plt
+# plt.plot(tc,tc2)
+# plt.grid()
+# plt.show()
+
 
 def TCramp(file):
     with open(file,'r') as readFile:                                                    #read file into a list
@@ -413,8 +355,7 @@ def TCramp(file):
 
     return (heatRR1,timeH1),(heatRR2,timeH2),(coolRR,timeC)
 
-file = 'oldButUseful/dataTC/Adv06_P11_2383ea_221220_Run1.txt'
-tc = parsTCTxt(file)[0][1]
+
 # print(TCramp('dataC/adv22_tc_tp002_230519_run05.txt')[2][0])
 
 
