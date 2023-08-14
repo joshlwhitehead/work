@@ -7,7 +7,7 @@ from confidenceFun import CI
 
 
 
-folder = 'betaAlphaBetaBeta/'
+folder = 'betaBeta/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -36,7 +36,7 @@ def findAvgValMin(data):
 
 
 
-def anneal(folder,instListShort):                                                                               #function to analyze anneal temps
+def cycleTimeFun(folder,instListShort):                                                                               #function to analyze anneal temps
     # instListShort = inputtxt.get("1.0","end-1c").split()                                    #which instruments is the data from
     # replicate = int(inputtxt2.get("1.0","end-1c"))                                          #how many runs from each instrument
     instList = instListShort*replicate                                                      #list that has each instrument repeated as many times
@@ -56,6 +56,7 @@ def anneal(folder,instListShort):                                               
 
     temp = []    
     means = []
+    stdevs = []
     tis = []
     count = 0
     for file in os.listdir(folder):
@@ -77,12 +78,14 @@ def anneal(folder,instListShort):                                               
             cycleTimes.append(times[indx+1]-val)
         # print(cycleTimes)
         meanCycleTime = round(np.mean(cycleTimes),2)
+        stdev = round(np.std(cycleTimes),2)
         ci = CI(cycleTimes,alpha)
-        print(file)
-        print(''.join([str(meanCycleTime),' +/- ',str(round(ci[1]-meanCycleTime,2))]))
-
-      
-anneal(folder,instListShort)
+        # print(file)
+        # print(''.join([str(meanCycleTime),' +/- ',str(round(ci[1]-meanCycleTime,2))]))
+        means.append(meanCycleTime)
+        stdevs.append(stdev)
+    return means,stdevs
+cycleTimeFun(folder,instListShort)
 
 
 # 
