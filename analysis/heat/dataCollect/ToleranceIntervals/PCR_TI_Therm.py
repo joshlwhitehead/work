@@ -12,7 +12,7 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'test/'
+folder = 'betaBeta/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])

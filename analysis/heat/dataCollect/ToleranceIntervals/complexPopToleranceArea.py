@@ -9,7 +9,7 @@ from confidenceFun import CI,TI
 from PCR_rampRate_USE import heating,cooling
 import os
 
-temp = 4
+temp = 1
 
 
 folder = 'betaAlpha/'
@@ -128,14 +128,15 @@ plt.plot(means2,var2,'o',color='g',label='V units - alpha model')
 plt.hlines(meanVar2,ciMean2[0],ciMean2[1],lw=4,color='g')
 plt.vlines(meanMeans2,ciVar2[0],ciVar2[1],lw=4,color='g')
 plt.plot(meanMeans2,meanVar2,'o',color='r')
+
 plt.plot(means,var,'o',color='tab:blue',label='Beta units - alpha model')
 plt.hlines(meanVar,ciMean[0],ciMean[1],lw=4,color='tab:blue')
 plt.vlines(meanMeans,ciVar[0],ciVar[1],lw=4,color='tab:blue')
 plt.plot(meanMeans,meanVar,'o',color='r')
 # plt.plot(meanAnneal3,varAnneal3,'o',color='purple',label='roomTemp')
 plt.title('Tolerance Area for Complex Populations')
-plt.xlabel('Mean Ramp Rate (c/sec)')
-plt.ylabel('Standard Deviation (c/sec)')
+plt.xlabel('Mean Temp (c)')
+plt.ylabel('Standard Deviation (c)')
 plt.legend()
 plt.grid()
 plt.show()
