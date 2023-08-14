@@ -14,7 +14,7 @@ import os
 
 
 
-folder = 'betaAlpha/'
+folder = 'betaAlpha2Maybe/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
@@ -22,7 +22,7 @@ folder2 = 'betaBeta/'
 # folder2 = 'oldButUseful/tape/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
-folder3 = 'alphaAlpha/'
+folder3 = 'alphaAlpha2Maybe/'
 instList3 = np.arange(0,len(os.listdir(folder3)))
 
 alpha = 0.1

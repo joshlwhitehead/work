@@ -61,8 +61,8 @@ def cycleTimeFun(folder,instListShort):                                         
     count = 0
     for file in os.listdir(folder):
         peakSampOption = parsPCRTxt(''.join([folder,file]))
-        heat,timeHeat = peakSampOption[0]
-        cool,timeCool = peakSampOption[1]
+        heat,timeHeat = peakSampOption[7]
+        cool,timeCool = peakSampOption[8]
         times = []
         if np.mean(findAvgValMin(cool)) > np.mean(findAvgValMin(heat)):
             peakSamp = findAvgValMin(cool)
