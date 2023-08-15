@@ -247,7 +247,7 @@ def parsTCTxt(file):                                                            
             start2 = False
             
             # heat.append([])
-        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 35:        #this criteria indicates start of activation temp collect
+        elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 35 and len(goto) < 2:        #this criteria indicates start of activation temp collect
             goto.append(float(u.split()[-1]))
             actTemp = float(u.split()[-1])
             killCollect = False
@@ -289,8 +289,8 @@ def parsTCTxt(file):                                                            
 # print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
 # print(parsTCTxt('TCRando/Beta13-TC91-20230622-run1 (1).txt'))
 # file = 'oldButUseful/dataTC/Adv06_P11_2383ea_221220_Run1.txt'
-# tc = parsTCTxt(file)[0][1]
-# tc2 = parsTCTxt(file)[0][0]
+# tc = parsTCTxt(file)[1][1]
+# tc2 = parsTCTxt(file)[1][0]
 
 # import matplotlib.pyplot as plt
 # plt.plot(tc,tc2)

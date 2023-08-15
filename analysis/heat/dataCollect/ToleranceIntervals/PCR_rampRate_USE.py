@@ -47,8 +47,8 @@ def heating(folder,alpha,p):                                                    
     means = []
     stdev = []
     for i in os.listdir(folder):
-        heat = parsPCRTxt(''.join([folder,i]))[0][0]                                #call parsPCRTxt to parse txt file and return temp data
-        timeH = parsPCRTxt(''.join([folder,i]))[0][1]                               #call parsPCRTxt to parse txt file and return time data
+        heat = parsPCRTxt(''.join([folder,i]))[7][0]                                #call parsPCRTxt to parse txt file and return temp data
+        timeH = parsPCRTxt(''.join([folder,i]))[7][1]                               #call parsPCRTxt to parse txt file and return time data
         for k in rr(heat,timeH):                                                    #add data to above lists
             derivTotH.append(k)
             derivTotNameH.append(i)
@@ -116,8 +116,8 @@ def cooling(folder,alpha,p):                                                  #f
     stdev = []
     for i in os.listdir(folder):
         
-        cool = parsPCRTxt(''.join([folder,i]))[1][0]            #call parsPCRTxt to parse txt file and return temp data
-        timeC = parsPCRTxt(''.join([folder,i]))[1][1]           #call parsPCRTxt to parse txt file and return time data
+        cool = parsPCRTxt(''.join([folder,i]))[8][0]            #call parsPCRTxt to parse txt file and return temp data
+        timeC = parsPCRTxt(''.join([folder,i]))[8][1]           #call parsPCRTxt to parse txt file and return time data
         
 
         

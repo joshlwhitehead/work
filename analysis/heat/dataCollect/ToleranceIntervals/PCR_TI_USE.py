@@ -50,7 +50,7 @@ def denature(folder,instListShort):                                             
     stdevs = []
     for file in os.listdir(folder):
         # print(file)
-        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         
         peakSamp = []
         for peak in peakSampList:
@@ -170,7 +170,7 @@ def anneal(folder,instListShort):                                               
     stdevs = []
     count = 0
     for file in os.listdir(folder):
-        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
+        peakSampList = parsPCRTxt(''.join([folder,file]))[0][0]                                     #collect temperatures while heating
         peakSamp = []
         for peak in peakSampList:
             peakSamp.append(min(peak))  
