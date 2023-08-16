@@ -223,7 +223,11 @@ def parsTCTxt(file):                                                            
     kill = []                              #temp (c) during heat kill step
     timeK = []                              #time (sec) for heat kill step
     act = []                                #temp (c) for activation step
-    timeA = []                              #time (sec) for activation step
+    timeA = []  
+    killTherm = []                            #time (sec) for activation step
+    timeKTherm = []
+    actTherm = []
+    timeATherm = []
     killCollect = False                                                                 #keys to determine when to start/stop looking for the desired data
     actCollect = False
     start = True
@@ -239,7 +243,7 @@ def parsTCTxt(file):                                                            
     for u in file:
         if 'SWITCH to STEADY' in u:                                                     #this criteria indicates start of data
             start2 = True
-        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85:             #this criteria indicates start of kill temp collection
+        if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) > 85 and len(goto) < 2:             #this criteria indicates start of kill temp collection
             killTemp = float(u.split()[-1])
             goto.append(float(u.split()[-1]))
             killCollect = True
@@ -253,8 +257,8 @@ def parsTCTxt(file):                                                            
             killCollect = False
             actCollect = True
             
-        # elif 'Using Cooling Equations' in u:
-        #     start = False
+        elif 'Using Cooling Equations' in u:
+            start = False
         
         if start and start2 and ('DATAQ:' in u or 'CHUBE:' in u):                                                  #start collecting data
 
@@ -272,6 +276,7 @@ def parsTCTxt(file):                                                            
 
             elif actCollect:# and start3:                                                                            #collect activation data
                 act.append(float(u.split()[4].strip(',')))
+                
                 try:
                     timeA.append(float(file[countLines-1].split()[0].strip('()'))/1000)
                 except:
@@ -279,21 +284,30 @@ def parsTCTxt(file):                                                            
                         timeA.append(float(file[countLines+1].split()[0].strip('()'))/1000)
                     except:
                         timeA.append(timeA[-1])
-        
+        elif start and start2 and 'modeled' in u:
+            if killCollect:
+                killTherm.append(float(u.split()[4].strip(',')))
+                timeKTherm.append(float(u.split()[0].strip('()'))/1000)
+            elif actCollect:
+                actTherm.append(float(u.split()[4].strip(',')))
+                timeATherm.append(float(u.split()[0].strip('()'))/1000)
         
         countLines += 1
-    print(goto)   
+    # print(goto)   
     # actTemp, killTemp = goto    
-    return (kill,timeK),(act,timeA),(killTemp,actTemp)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
+    return (kill,timeK),(act,timeA),(killTemp,actTemp),(killTherm,timeKTherm),(actTherm,timeATherm)                          #return kill temps and times, activation temps and times, and set temps for heat kill and activation step
 
 # print(parsTCTxt('dataC/adv22_tc_tp002_230519_run05.txt')[0][0])
 # print(parsTCTxt('TCRando/Beta13-TC91-20230622-run1 (1).txt'))
-# file = 'oldButUseful/dataTC/Adv06_P11_2383ea_221220_Run1.txt'
+# file = 'syd5/20230816_BetaTCThermistorThermals_01.txt'
 # tc = parsTCTxt(file)[1][1]
 # tc2 = parsTCTxt(file)[1][0]
+# tctherm = parsTCTxt(file)[4][1]
+# tctherm2 = parsTCTxt(file)[4][0]
 
 # import matplotlib.pyplot as plt
 # plt.plot(tc,tc2)
+# plt.plot(tctherm,tctherm2)
 # plt.grid()
 # plt.show()
 

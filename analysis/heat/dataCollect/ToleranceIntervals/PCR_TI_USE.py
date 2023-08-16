@@ -13,8 +13,6 @@ from statsmodels.formula.api import ols
 
 
 
-folder = 'justin2/'
-
 
 replicate = 1                                                                                   #how many runs of each instrument
 

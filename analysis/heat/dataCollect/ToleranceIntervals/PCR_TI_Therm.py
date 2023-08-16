@@ -12,7 +12,7 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'betaBeta/'
+folder = 'syd5/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -28,7 +28,16 @@ replicate = 1                                                                   
 alpha = 0.1                                                                                    #1-confidence level
 p = 0.9                                                                                         #reliability
 
-
+def findAvgValMax(data):
+    peakSamp = []
+    for peak in data:
+        peakSamp.append(max(peak))
+    return peakSamp
+def findAvgValMin(data):
+    peakSamp = []
+    for peak in data:
+        peakSamp.append(min(peak))
+    return peakSamp
 
 
 
@@ -54,12 +63,14 @@ def denature(folder,instListShort):                                             
     total = []
     count = 0
     for file in os.listdir(folder):
-        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
         
-        peakSamp = []
-        for peak in peakSampList:
-            # print(max(peak))
-            peakSamp.append(max(peak))                                                              #collect maximum (denature) temps for each cycle
+        peakSampListHeat = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
+        peakSampListCool = parsPCRTxt(''.join([folder,file]))[6][0]
+        if np.mean(findAvgValMax(peakSampListCool)) > np.mean(findAvgValMax(peakSampListHeat)):
+            peakSamp = findAvgValMax(peakSampListCool)
+        else:
+            peakSamp = findAvgValMax(peakSampListHeat)
+                                                                      #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
@@ -164,11 +175,12 @@ def anneal(folder,instListShort):                                               
     count = 0
     for file in os.listdir(folder):
         
-        peakSampList = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
-        peakSamp = []
-        for peak in peakSampList:
-            peakSamp.append(min(peak)) 
-            # print(peakSamp) 
+        peakSampListHeat = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
+        peakSampListCool = parsPCRTxt(''.join([folder,file]))[6][0]
+        if np.mean(findAvgValMax(peakSampListCool)) > np.mean(findAvgValMax(peakSampListHeat)):
+            peakSamp = findAvgValMax(peakSampListCool)
+        else:
+            peakSamp = findAvgValMax(peakSampListHeat)
                                                                    #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
