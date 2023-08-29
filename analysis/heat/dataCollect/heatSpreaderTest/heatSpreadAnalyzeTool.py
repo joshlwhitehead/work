@@ -50,7 +50,7 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
     chart.set_y_axis({'name':'Temp (c)'})
     
     ws.insert_chart('D2',chart)
-    writer.save()                                                           #save
+    writer.close()                                                           #save
 
     wb = op.load_workbook(newFile)                                          #load
     ws = wb.create_sheet('time to temp')
@@ -99,14 +99,14 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
 ##########################              ANALYZE DATA FROM TC HEATSPREADER               ###################################
 def analyzeTC():
     newFile = 'TC_Results.xlsx'                         #name of excel file to save data
-    folder = 'dataTC'                                 #name of folder where TC raw data is held
+    folder = 'TC Data'                                 #name of folder where TC raw data is held
     err = 0.2                                          #error criteria (temperatures must be at least 80% nominal)
     
     timeTo = []                                         #initialize lists to hold data 
     fullTemp = []
     fullTime = []
 
-    tempc = np.arange(40,105,10)                        #temps to evaluate 
+    tempc = np.arange(50,91,10)                        #temps to evaluate 
 
     print('File being used as "nominal":',os.listdir(folder)[0])
 
@@ -210,9 +210,9 @@ def analyzeTC():
             count += 1
 
 
-        count = 4
+        count = 0
         pf = []
-        for i in tempsInterp[4:]:                                                           
+        for i in tempsInterp[:]:                                                           
             if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 80% of nominal temp
                 pf.append('f')                                                                              #looks at 80,90, and 100c
             else:
@@ -240,7 +240,7 @@ def analyzeTC():
 ##########################              ANALYZE DATA FROM PCR HEATSPREADER               ###################################
 def analyzePCR():
     newFile = 'PCR_Results.xlsx'                                                #name of excel file to upload data
-    folder = 'DataPCR'                                                         #name of folder where raw data is held
+    folder = 'PCR Data'                                                         #name of folder where raw data is held
 
 
     err = 0.05                                                            #error criteria (temperatures must be at least 95% nominal)
@@ -248,7 +248,7 @@ def analyzePCR():
     fullTemp = []
     fullTime = []
 
-    tempc = np.arange(40,105,10)
+    tempc = np.arange(50,91,10)
     print('File being used as "nominal":',os.listdir(folder)[0])
     for fileName in os.listdir(folder):                                            #loop through all files in "data" folder
         file = open(''.join([''.join([folder,'/']),fileName]),'r')                 #open file
@@ -354,10 +354,10 @@ def analyzePCR():
 
 
 
-        count = 4
+        count = 0
         pf = []
-
-        for i in tempsInterp[4:]:                                                           
+        
+        for i in tempsInterp[:]:                                                           
             if tempc[count]>i and tempc[count]-i > tempc[count]*(err):                                    #check if temp at specified time is at least 95% nominal
                 pf.append('f')                                                                              
             else:

@@ -12,7 +12,7 @@ from statsmodels.stats.anova import anova_lm
 from statsmodels.formula.api import ols
 
 
-folder = 'syd5/'
+folder = 'test/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -177,10 +177,10 @@ def anneal(folder,instListShort):                                               
         
         peakSampListHeat = parsPCRTxt(''.join([folder,file]))[4][0]                                     #collect temperatures while heating
         peakSampListCool = parsPCRTxt(''.join([folder,file]))[6][0]
-        if np.mean(findAvgValMax(peakSampListCool)) > np.mean(findAvgValMax(peakSampListHeat)):
-            peakSamp = findAvgValMax(peakSampListCool)
+        if np.mean(findAvgValMin(peakSampListCool)) < np.mean(findAvgValMin(peakSampListHeat)):
+            peakSamp = findAvgValMin(peakSampListCool)
         else:
-            peakSamp = findAvgValMax(peakSampListHeat)
+            peakSamp = findAvgValMin(peakSampListHeat)
                                                                    #collect maximum (denature) temps for each cycle
         temp.append(peakSamp)                                                                       #matrix of denature temps for each run
         mean = np.mean(peakSamp)                                                                    #mean denature temp
