@@ -89,10 +89,12 @@ def toExcel(folder,longest,sameLenTime,sameLenTemp,newFile,tempc,timeTo2):      
     chart.add_data(values,titles_from_data=True,from_rows=True)                                 #add data to line chart
     chart.set_categories(labels=labels)
 
+    chart.x_axis.title = 'Temperature (c)'
+    chart.y_axis.title = 'Time to Reach Temperature (sec)'
     
     ws.add_chart(chart,'K5')
 
-    wb.save(newFile)            
+    wb.save(newFile)             
 
 
 
