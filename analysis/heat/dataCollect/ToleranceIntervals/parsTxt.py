@@ -33,6 +33,8 @@ def parsPCRTxt(file):                                                           
     countCTherm = 0
     heatSink = []
     timeHeatSink = []
+    annealTemp = []
+    denatTemp = []
 
     for u in file:
         # if 'FINISH -> IDLE' in u:
@@ -48,14 +50,16 @@ def parsPCRTxt(file):                                                           
         if 'Start PCR' in u:
             start = True                                                                                                #start looking for temps
         if 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) >= 85:                                         #only look for temps under these conditions for heating
-            denatTemp = float(u.split()[-1])
+            
             heatCollect = True
             coolCollect = False
+            denatTemp.append(float(u.split()[-1]))
             # heat.append([])
         elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) <= 70 and float(u.split()[-1]) >= 40:        #look for temps under these conditions for cooling
-            annealTemp = float(u.split()[-1])
+            
             heatCollect = False
             coolCollect = True
+            annealTemp.append(float(u.split()[-1]))
         elif 'MELT' in u:                                                                                               #start looking for temps
             start = False
 
@@ -190,7 +194,8 @@ def parsPCRTxt(file):                                                           
         if len(coolMod[j]) > 2:
             coolMod2.append(coolMod[j])
             
-    
+    denatTemp = denatTemp[len(denatTemp)//2]
+    annealTemp = annealTemp[len(annealTemp)//2]
     
     return ((heat2[1:-1],timeH2[1:-1]),(cool2[1:-1],timeC2[1:-1]),(denatTemp,annealTemp),(totalTemp,totalTime),
             (heatTherm2[1:-1],timeHeatTherm2[1:-1]),(heatSink,timeHeatSink),(coolTherm2[1:-1],timeCoolTherm2[1:-1]),

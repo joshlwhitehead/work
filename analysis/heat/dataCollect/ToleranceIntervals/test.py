@@ -1,2 +1,2 @@
-k = [1,2,4,5,6]
-print(k.index(4))
+josh = [1,2,3,2,3]
+print(josh[len(josh)//2])

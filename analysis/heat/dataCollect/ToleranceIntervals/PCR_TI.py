@@ -27,7 +27,7 @@ from statsmodels.formula.api import ols
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'test/'
+folder = 'test2/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -206,7 +206,7 @@ def anneal(folder,instListShort):                                               
         mean = np.mean(peakSamp)                                                                    #mean denature temp
         means.append(mean)                                                                          #list of mean denature temp
         annealTemp = parsPCRTxt(''.join([folder,file]))[2][1]
-
+        print(annealTemp)
         
         bound = ti.twoside.normal(peakSamp,p,1-alpha)
         tis.append(bound[0])
@@ -243,7 +243,7 @@ def anneal(folder,instListShort):                                               
 
     
     dfTemp = pd.DataFrame({'Temp':tempLong,'Instrument':instListLong})                              #make dataframe with list of instruemnts with denature temps
-    print(dfTemp)
+    # print(dfTemp)
     
     m_compMult = pairwise_tukeyhsd(endog=dfTemp['Temp'], groups=dfTemp['Instrument'], alpha=alpha)      #use tukey method to compare runs
     print(m_compMult)
