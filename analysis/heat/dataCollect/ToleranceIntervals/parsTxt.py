@@ -257,6 +257,7 @@ def parsTCTxt(file):                                                            
             
             # heat.append([])
         elif 'goto' in u and 'Controlled' not in u and float(u.split()[-1]) < 75 and float(u.split()[-1]) > 35 and len(goto) < 2:        #this criteria indicates start of activation temp collect
+            # print(goto)
             goto.append(float(u.split()[-1]))
             actTemp = float(u.split()[-1])
             killCollect = False

@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'syd5/'
+folder = 'sydInf/UsedPlungerTesting_30/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
@@ -55,20 +55,20 @@ def kill():
         #     print(instListVar[count],'TI:',bound,'FAIL')
         # else:
         #     print(instListVar[count],'TI:',bound,'PASS')
-        killTherm = parsTCTxt(''.join([folder,file]))[3][0]
-        therm.append(killTherm)
-        mean = np.mean(killTherm)
-        meanTherm.append(mean)
-        bound = ti.twoside.normal(killTherm,p,1-alpha)
-        plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
+        # killTherm = parsTCTxt(''.join([folder,file]))[3][0]
+        # therm.append(killTherm)
+        # mean = np.mean(killTherm)
+        # meanTherm.append(mean)
+        # bound = ti.twoside.normal(killTherm,p,1-alpha)
+        # plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
         count += 1
     # plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.yticks(np.arange(0,len(temp)*2),instListVar*2,rotation=45)
     plt.plot(means,np.arange(0,len(means)),'o',color='r')
     # plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     # plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
-    plt.plot(meanTherm,np.arange(len(means),len(instListVar)*2),'o',color='r')
-    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),')']))
+    # plt.plot(meanTherm,np.arange(len(means),len(instListVar)*2),'o',color='r')
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),') (Heat Kill)']))
     plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
     plt.grid()
@@ -113,7 +113,9 @@ def act():
     meanTherm = []
     count = 0
     for file in os.listdir(folder):
+        print(file)
         actTemps = parsTCTxt(''.join([folder,file]))[1][0]
+        
         temp.append(actTemps)
         mean = np.mean(actTemps)
         means.append(mean)
@@ -124,20 +126,20 @@ def act():
 
         plt.hlines(count,bound[0][0],bound[0][1],lw=5)
         
-        actTherm = parsTCTxt(''.join([folder,file]))[3][0]
-        therm.append(actTherm)
-        mean = np.mean(actTherm)
-        meanTherm.append(mean)
-        bound = ti.twoside.normal(actTherm,p,1-alpha)
-        plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
+        # actTherm = parsTCTxt(''.join([folder,file]))[3][0]
+        # therm.append(actTherm)
+        # mean = np.mean(actTherm)
+        # meanTherm.append(mean)
+        # bound = ti.twoside.normal(actTherm,p,1-alpha)
+        # plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
         count += 1
     # plt.yticks(np.arange(0,len(temp)),instListVar)
     plt.yticks(np.arange(0,len(temp)*2),instListVar*2,rotation=45)
     plt.plot(means,np.arange(0,len(means)),'o',color='r')
     # plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     # plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
-    plt.plot(meanTherm,np.arange(len(means),len(instListVar)*2),'o',color='r')
-    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),')']))
+    # plt.plot(meanTherm,np.arange(len(means),len(instListVar)*2),'o',color='r')
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),') Activation']))
     plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
     plt.grid()

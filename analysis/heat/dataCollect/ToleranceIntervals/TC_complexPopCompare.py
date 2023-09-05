@@ -13,11 +13,12 @@ import os
 temp = 1
 
 
-folder = 'syd5/'
+folder = 'sydInf/20230725_REFILL_UsedPlungerTesting/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'syd5/'
+folder2 = 'sydInf/20230726_NewTC1_noBubble,noPCRfill/'
+
 # folder2 = 'oldButUseful/tape/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
@@ -48,8 +49,8 @@ def fullCITherm(folder,instlistshort):
     return mean,means,stdevs
 
 
-means2 = fullCITherm(folder2,instList2)[1]
-var2 = fullCITherm(folder2,instList2)[2]
+means2 = fullCI(folder2,instList2)[1]
+var2 = fullCI(folder2,instList2)[2]
 
 meanMeans2 = np.mean(means2)
 meanVar2 = np.mean(var2)
