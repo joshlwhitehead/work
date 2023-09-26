@@ -1,4 +1,2 @@
-import numpy as np
-josh = np.ones(5)
-print(josh)
-
+josh = [1,2,3,4,5]
+print(josh[len(josh)//3+1:])

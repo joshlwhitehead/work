@@ -13,7 +13,7 @@ colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e3
 temp = 1
 folders = []
 instListList = []
-bigFolder = 'sydInf'
+bigFolder = 'sydInf2'
 for i in os.listdir(bigFolder):
     
     folders.append(''.join([bigFolder,'/',i,'/']))

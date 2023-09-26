@@ -40,6 +40,7 @@ def kill(folder,instListShort):
     stdevsTherm = []
     count = 0
     for file in os.listdir(folder):
+        print(file)
         killTemps = parsTCTxt(''.join([folder,file]))[0][0]
         temp.append(killTemps)
         mean = np.mean(killTemps)
