@@ -80,6 +80,7 @@ def act(folder,instListShort):
     stdevsTherm = []
     count = 0
     for file in os.listdir(folder):
+        print(file)
         actTemps = parsTCTxt(''.join([folder,file]))[1][0]
         temp.append(actTemps)
         mean = np.mean(actTemps)
