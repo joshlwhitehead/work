@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'sydInf/UsedPlungerTesting_30/'
+folder = 'sydInf2/20230919_30_OnTC_Thermistor/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
@@ -63,7 +63,7 @@ def kill():
         # plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
         count += 1
     # plt.yticks(np.arange(0,len(temp)),instListVar)
-    plt.yticks(np.arange(0,len(temp)*2),instListVar*2,rotation=45)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     plt.plot(means,np.arange(0,len(means)),'o',color='r')
     # plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     # plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
@@ -134,12 +134,12 @@ def act():
         # plt.hlines(count+10,bound[0][0],bound[0][1],lw=5)
         count += 1
     # plt.yticks(np.arange(0,len(temp)),instListVar)
-    plt.yticks(np.arange(0,len(temp)*2),instListVar*2,rotation=45)
+    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
     plt.plot(means,np.arange(0,len(means)),'o',color='r')
     # plt.vlines(killTemp+deviationCrit,0,count,'k',lw=5)
     # plt.vlines(killTemp-deviationCrit,0,count,'k',lw=5)
     # plt.plot(meanTherm,np.arange(len(means),len(instListVar)*2),'o',color='r')
-    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),') Activation']))
+    plt.title(''.join([str((1-alpha)*100),'% Tolerance Intervals (p=',str(p),') (Activation)']))
     plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
     plt.grid()
