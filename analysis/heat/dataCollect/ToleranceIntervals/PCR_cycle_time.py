@@ -7,7 +7,7 @@ from confidenceFun import CI
 
 
 
-folder = 'betaBeta/'
+folder = 'test/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -57,6 +57,7 @@ def cycleTimeFun(folder,instListShort):                                         
     temp = []    
     means = []
     stdevs = []
+    cycleTime = []
     tis = []
     count = 0
     for file in os.listdir(folder):
@@ -79,13 +80,14 @@ def cycleTimeFun(folder,instListShort):                                         
         # print(cycleTimes)
         meanCycleTime = round(np.mean(cycleTimes),2)
         stdev = round(np.std(cycleTimes),2)
-        ci = CI(cycleTimes,alpha)
+        ci = CI(cycleTimes,0.05)
         # print(file)
         # print(''.join([str(meanCycleTime),' +/- ',str(round(ci[1]-meanCycleTime,2))]))
         means.append(meanCycleTime)
         stdevs.append(stdev)
-    return means,stdevs
-cycleTimeFun(folder,instListShort)
+        print(ci)
+    return means,stdevs,
+print(cycleTimeFun(folder,instListShort))
 
 
 # 
