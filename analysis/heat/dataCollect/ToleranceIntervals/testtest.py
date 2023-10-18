@@ -1,2 +1,3 @@
 josh = [1,2,3,4,5]
-print(josh[len(josh)//3+1:])
+josh.insert(0,0)
+print(josh)

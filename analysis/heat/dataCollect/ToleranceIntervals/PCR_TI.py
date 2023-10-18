@@ -27,7 +27,8 @@ from statsmodels.formula.api import ols
 # totalInd = ['p','p','p','p','p','g','g','g','g','g']
 # folder = 'justinTot/'
 # instListShort = ['v102_c1','v102_c2','v102_c3','v109_c1','v109_c2','v109_c2','v118_c1','v118_c2','v118_c3','v102_1','v109_1','v118_1','v102_2','v109_2','v118_2']
-folder = 'test2/'
+folder = 'capstoneGenThermals/'
+altLabel = [1,2,3]
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -68,7 +69,8 @@ def denature(folder,instListShort):                                             
     if replicate > 1:
         instList.sort()                                                                                 #sort instrument list to match with order in directory
 
-    instListVar = instListShort
+    instListVar = altLabel
+
     # for inst in instListShort:                                                                         
     #     for rep in range(replicate):
     #         instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates 
@@ -106,11 +108,11 @@ def denature(folder,instListShort):                                             
     
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
-    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
+    plt.yticks(np.arange(0,len(temp)),instListVar)#rotation=45)
     # plt.xlim(88.3,97)|
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(denatTemp-deviationCrit,0,count-1,'k',lw=5)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' denature']))
     plt.ylabel('Run')
     plt.xlabel('Temperature (c)')
@@ -158,7 +160,7 @@ def denature(folder,instListShort):                                             
         plt.plot(mean_er,count,'o',color='r',ms=7)
         count+=1
 
-    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
+    plt.yticks(np.arange(0,len(temp)),instListVar)#rotation=45)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' denature']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')
@@ -184,7 +186,8 @@ def anneal(folder,instListShort):                                               
     if replicate > 1:
         instList.sort()                                                                                 #sort instrument list to match with order in directory
 
-    instListVar = instListShort
+    instListVar = altLabel
+
     # for inst in instListShort:                                                                         
     #     for rep in range(replicate):
     #         instListVar.append(''.join([str(inst),'.',str(rep)]))                                        #make list of replicates
@@ -221,9 +224,9 @@ def anneal(folder,instListShort):                                               
     for i in range(len(means)):
         print(instListVar[i],'TI:',round(means[i],3),'+/-',round(means[i]-tis[i][0],4))
     plt.plot(means,np.arange(0,len(instListVar)),'o',color='r')
-    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
-    plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
-    plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
+    plt.yticks(np.arange(0,len(temp)),instListVar)#rotation=45)
+    # plt.vlines(annealTemp+deviationCrit,0,count-1,'k',lw=5)
+    # plt.vlines(annealTemp-deviationCrit,0,count-1,'k',lw=5)
     # plt.xlim(45,54)
     plt.title(''.join([str((1-alpha)*100),'% Tolerance Interval (p=0.90)',' anneal']))
     plt.ylabel('Run')
@@ -269,7 +272,7 @@ def anneal(folder,instListShort):                                               
         
         count+=1
 
-    plt.yticks(np.arange(0,len(temp)),instListVar,rotation=45)
+    plt.yticks(np.arange(0,len(temp)),instListVar)#rotation=45)
     plt.title(''.join([str((1-alpha)*100),'% Confidence Interval',' anneal']))
     plt.grid()
     plt.xlabel('Mean Temp (c)')

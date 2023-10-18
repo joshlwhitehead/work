@@ -202,17 +202,6 @@ def parsPCRTxt(file):                                                           
             (heatMod2[1:-1],timeHeatTherm2[1:-1]),(coolMod2[1:-1],timeCoolTherm2[1:-1])
             )                                                                                                                       #return heating temps and times, cooling temps and times, and the set temps for denature and anneal
 
-# file = 'lay4WaterBathIce_7.txt'
-# fun = parsPCRTxt(file)
-# heat,th = fun[0]
-# cool,tc = fun[1]
-# import matplotlib.pyplot as plt
-# for indx,val in enumerate(heat):
-#     plt.plot(th[indx],val,'b')
-# for indx,val in enumerate(cool):
-#     plt.plot(tc[indx],val,'r')
-# plt.grid()
-# plt.show()
 
 
 

@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from confidenceFun import CI,TI
 from PCR_cycle_time import cycleTimeFun
+from PCR_TI_USE import anneal,denature
 import os
 
 
@@ -14,16 +15,16 @@ import os
 
 
 
-folder = 'betaAlpha/'
+folder = 'capstoneGenThermals/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'betaBeta/'
+folder2 = 'capstoneGradThermals/'
 # folder2 = 'oldButUseful/tape/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
-folder3 = 'alphaAlpha/'
-instList3 = np.arange(0,len(os.listdir(folder3)))
+# folder3 = 'alphaAlpha/'
+# instList3 = np.arange(0,len(os.listdir(folder3)))
 
 alpha = 0.1
 p = 0.9
@@ -45,8 +46,8 @@ def toleranceArea(means,stdevs):
     return {'meanMeans':meanMeans,'meanStd':meanStd,
             'tiMean':tiMean,'tiStd':tiStd}
     
-means2 = cycleTimeFun(folder2,instList2)[0]
-std2 = cycleTimeFun(folder2,instList2)[1]
+means2 = anneal(folder2,instList2)[0]
+std2 = anneal(folder2,instList2)[3]
 
 meanMeans2 = toleranceArea(means2,std2)['meanMeans']
 meanStd2 = toleranceArea(means2,std2)['meanStd']
@@ -55,9 +56,10 @@ ciMean2 = toleranceArea(means2,std2)['tiMean']
 ciStd2 = toleranceArea(means2,std2)['tiStd']
 
 
-means = cycleTimeFun(folder,instlist)[0]
-std = cycleTimeFun(folder,instlist)[1]
-
+means = anneal(folder,instlist)[0]
+std = anneal(folder,instlist)[3]
+print(std)
+print(means)
 meanMeans = toleranceArea(means,std)['meanMeans']
 meanStd = toleranceArea(means,std)['meanStd']
 
@@ -65,38 +67,39 @@ ciMean = toleranceArea(means,std)['tiMean']
 ciStd = toleranceArea(means,std)['tiStd']
 
 
-means3 = cycleTimeFun(folder3,instList3)[0]
-std3 = cycleTimeFun(folder3,instList3)[1]
+# means3 = cycleTimeFun(folder3,instList3)[0]
+# std3 = cycleTimeFun(folder3,instList3)[1]
 
-meanMeans3 = toleranceArea(means3,std3)['meanMeans']
-meanStd3 = toleranceArea(means3,std3)['meanStd']
+# meanMeans3 = toleranceArea(means3,std3)['meanMeans']
+# meanStd3 = toleranceArea(means3,std3)['meanStd']
 
-ciMean3 = toleranceArea(means3,std3)['tiMean']
-ciStd3 = toleranceArea(means3,std3)['tiStd']
-
-
+# ciMean3 = toleranceArea(means3,std3)['tiMean']
+# ciStd3 = toleranceArea(means3,std3)['tiStd']
 
 
+sizes = np.ones(len(means))*80
 
-plt.plot(means2,std2,'o',color='g',label='Beta units - beta model')
-plt.hlines(meanStd2,ciMean2[0],ciMean2[1],lw=4,color='g')
-plt.vlines(meanMeans2,ciStd2[0],ciStd2[1],lw=4,color='g')
+
+plt.scatter(means2,std2,sizes,color='g',edgecolors='k',label='Top of Sample')
+plt.hlines(meanStd2,ciMean2[0],ciMean2[1],lw=3,color='g')
+plt.vlines(meanMeans2,ciStd2[0],ciStd2[1],lw=3,color='g')
 plt.plot(meanMeans2,meanStd2,'o',color='r')
-plt.plot(means,std,'o',color='tab:blue',label='Beta units - alpha model')
-plt.hlines(meanStd,ciMean[0],ciMean[1],lw=4,color='tab:blue')
-plt.vlines(meanMeans,ciStd[0],ciStd[1],lw=4,color='tab:blue')
+plt.scatter(means,std,sizes,color='tab:blue',edgecolors='k',label='Middle of Sample')
+plt.hlines(meanStd,ciMean[0],ciMean[1],lw=3,color='tab:blue')
+plt.vlines(meanMeans,ciStd[0],ciStd[1],lw=3,color='tab:blue')
 plt.plot(meanMeans,meanStd,'o',color='r')
 
-plt.plot(means3,std3,'o',color='purple',label='Alpha units - alpha model')
-plt.hlines(meanStd3,ciMean3[0],ciMean3[1],lw=4,color='purple')
-plt.vlines(meanMeans3,ciStd3[0],ciStd3[1],lw=4,color='purple')
-plt.plot(meanMeans3,meanStd3,'o',color='r')
+# plt.plot(means3,std3,'o',color='purple',label='Alpha units - alpha model')
+# plt.hlines(meanStd3,ciMean3[0],ciMean3[1],lw=4,color='purple')
+# plt.vlines(meanMeans3,ciStd3[0],ciStd3[1],lw=4,color='purple')
+# plt.plot(meanMeans3,meanStd3,'o',color='r')
 plt.title('90-90 Tolerance Area for PCR Cycle Times')
-plt.xlabel('Mean Cycle Time (sec)')
-plt.ylabel('Standard Deviation (sec)')
+plt.xlabel('Mean Temperature (c)')
+plt.ylabel('Standard Deviation (c)')
 plt.legend()
 plt.grid()
 plt.show()
+# plt.savefig('test.png')
 
 
 

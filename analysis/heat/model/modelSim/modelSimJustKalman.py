@@ -4,7 +4,7 @@ from parseTxt import modelTune
 from scipy.interpolate import interp1d
 from timeit import default_timer as timer
 import random
-from sklearn.metrics import r2_score
+# from sklearn.metrics import r2_score
 
 
 
