@@ -33,7 +33,7 @@ for indx,val in enumerate(thermC):
     ttc[indx].insert(0,tth[indx][-1])
 for indx,val in enumerate(thermH):
     if indx == 0:
-        plt.plot(tth[indx],val,'tab:blue',label='Bottom of Sample')
+        plt.plot(tth[indx],val,'tab:blue',label='Heat Spreader')
     else:
         plt.plot(tth[indx],val,'tab:blue')
 for indx,val in enumerate(thermC):
@@ -41,4 +41,6 @@ for indx,val in enumerate(thermC):
 # plt.plot(fun[3][1],fun[3][0])
 plt.legend()
 plt.grid()
+plt.xlabel('Time (sec)')
+plt.ylabel('Temperature (c)')
 plt.show()

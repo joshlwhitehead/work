@@ -46,8 +46,8 @@ def toleranceArea(means,stdevs):
     return {'meanMeans':meanMeans,'meanStd':meanStd,
             'tiMean':tiMean,'tiStd':tiStd}
     
-means2 = anneal(folder2,instList2)[0]
-std2 = anneal(folder2,instList2)[3]
+means2 = cycleTimeFun(folder2,instList2)[0]
+std2 = cycleTimeFun(folder2,instList2)[3]
 
 meanMeans2 = toleranceArea(means2,std2)['meanMeans']
 meanStd2 = toleranceArea(means2,std2)['meanStd']
@@ -56,8 +56,8 @@ ciMean2 = toleranceArea(means2,std2)['tiMean']
 ciStd2 = toleranceArea(means2,std2)['tiStd']
 
 
-means = anneal(folder,instlist)[0]
-std = anneal(folder,instlist)[3]
+means = cycleTimeFun(folder,instlist)[0]
+std = cycleTimeFun(folder,instlist)[3]
 print(std)
 print(means)
 meanMeans = toleranceArea(means,std)['meanMeans']

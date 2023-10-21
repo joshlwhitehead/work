@@ -7,7 +7,7 @@ from confidenceFun import CI
 
 
 
-folder = 'test/'
+folder = 'capstoneGenThermals/'
 instListShort = []
 for i in os.listdir(folder):
     instListShort.append(i[:-4])
@@ -85,9 +85,10 @@ def cycleTimeFun(folder,instListShort):                                         
         # print(''.join([str(meanCycleTime),' +/- ',str(round(ci[1]-meanCycleTime,2))]))
         means.append(meanCycleTime)
         stdevs.append(stdev)
-        print(ci)
-    return means,stdevs,
-print(cycleTimeFun(folder,instListShort))
-
+        # print(ci)
+    return means,stdevs
+# print(cycleTimeFun(folder,instListShort))
+# print(cycleTimeFun(folder,instListShort)[0])
+print(CI(cycleTimeFun(folder,instListShort)[0],.05)[1]-np.mean(cycleTimeFun(folder,instListShort)[0]))
 
 # 
