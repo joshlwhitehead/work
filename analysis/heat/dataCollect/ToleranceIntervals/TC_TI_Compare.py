@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'sydInf2/20230919_30_OnTC_Thermistor/'
+folder = 'sydInf3/20231018_B33_Plunger_2degIncrease_01/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
