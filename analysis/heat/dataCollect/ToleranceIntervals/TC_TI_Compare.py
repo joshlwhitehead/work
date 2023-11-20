@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'sydInf3/20231018_B33_Plunger_2degIncrease_01/'
+folder = 'sydInf4/9TOB Runs/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
@@ -25,9 +25,11 @@ deviationCrit = 2.5
 ###############                  DONT CHANGE                    ##############
 instList = instListShort*replicate
 instList.sort()
-
+instListVar = []
+for i in instListShort:
+    instListVar.append(i[:6])
 def kill():
-    instListVar = instListShort
+    
     # for inst in instListShort:
     #     for rep in range(replicate):
     #         instListVar.append(''.join([str(inst),'.',str(rep)]))
@@ -101,7 +103,6 @@ def kill():
 
 
 def act():
-    instListVar = instListShort
     # for inst in instListShort:
     #     for rep in range(replicate):
     #         instListVar.append(''.join([str(inst),'.',str(rep)]))
