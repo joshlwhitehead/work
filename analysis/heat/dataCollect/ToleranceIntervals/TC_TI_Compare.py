@@ -17,8 +17,8 @@ replicate = 1
 
 
 ########                PROBABLY DONT CHANGE                ##################
-alpha = 0.10
-p = 0.90
+alpha = 0.05
+p = 0.95
 deviationCrit = 2.5
 
        
