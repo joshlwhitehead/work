@@ -8,7 +8,7 @@ import os
 from scipy import stats
 
 
-folder = 'sydInf4/9TOB Runs/'
+folder = 'sydInf5/TOB Temp Discrepancy/'
 #############               CHANGE THESE                    ######################
 instListShort = []
 for i in os.listdir(folder):
@@ -27,7 +27,7 @@ instList = instListShort*replicate
 instList.sort()
 instListVar = []
 for i in instListShort:
-    instListVar.append(i[:6])
+    instListVar.append(i[9:])
 def kill():
     
     # for inst in instListShort:
