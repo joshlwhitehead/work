@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import toleranceinterval as ti
 import os
-from scipy import stats
+# from scipy import stats
 
 
 folder = 'sydInf5/TOB Temp Discrepancy/'
@@ -17,8 +17,8 @@ replicate = 1
 
 
 ########                PROBABLY DONT CHANGE                ##################
-alpha = 0.05
-p = 0.95
+alpha = 0.1
+p = 0.9
 deviationCrit = 2.5
 
        
