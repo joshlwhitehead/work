@@ -9,14 +9,14 @@ from confidenceFun import CI,TI
 from PCR_rampRate_USE import heating,cooling
 import os
 
-temp = 4
+temp = 1
 
 
-folder = 'betaAlpha/'
+folder = 'verif/'
 
 instlist = np.arange(0,len(os.listdir(folder)))
 
-folder2 = 'alphaAlpha/'
+folder2 = 'verif2/'
 # folder2 = 'oldButUseful/tape/'
 instList2 = np.arange(0,len(os.listdir(folder2)))
 
