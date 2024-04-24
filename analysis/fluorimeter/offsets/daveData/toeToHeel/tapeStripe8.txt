@@ -1,0 +1,252 @@
+(182169) TC: TC-1 = 51.48, modeled = 50.07, target = 50.00, heatSink = 29.49, output = 25.3, timeout = 0, ModelRate = 0.03, TecRate = -0.25, HsRate = -0.07
+(182319) TC: TC-1 = 51.47, modeled = 50.07, target = 50.00, heatSink = 29.49, output = 24.6, timeout = 0, ModelRate = 0.04, TecRate = -0.10, HsRate = -0.04
+(182469) TC: TC-1 = 51.44, modeled = 50.08, target = 50.00, heatSink = 29.48, output = 25.1, timeout = 0, ModelRate = 0.03, TecRate = -0.21, HsRate = -0.06
+(182620) TC: TC-1 = 51.40, modeled = 50.08, target = 50.00, heatSink = 29.47, output = 25.5, timeout = 0, ModelRate = 0.01, TecRate = -0.25, HsRate = -0.05
+(182768) TC: TC-1 = 51.37, modeled = 50.08, target = 50.00, heatSink = 29.46, output = 25.8, timeout = 0, ModelRate = -0.01, TecRate = -0.35, HsRate = -0.13
+(182918) TC: TC-1 = 51.34, modeled = 50.08, target = 50.00, heatSink = 29.45, output = 25.4, timeout = 0, ModelRate = -0.01, TecRate = -0.14, HsRate = -0.04
+(183069) TC: TC-1 = 51.32, modeled = 50.08, target = 50.00, heatSink = 29.46, output = 25.5, timeout = 0, ModelRate = -0.00, TecRate = -0.14, HsRate = -0.02
+(183219) TC: TC-1 = 51.29, modeled = 50.08, target = 50.00, heatSink = 29.45, output = 25.5, timeout = 0, ModelRate = -0.01, TecRate = -0.11, HsRate = -0.02
+(183368) TC: TC-1 = 51.24, modeled = 50.07, target = 50.00, heatSink = 29.45, output = 26.6, timeout = 0, ModelRate = -0.03, TecRate = -0.39, HsRate = -0.11
+(183519) TC: TC-1 = 51.21, modeled = 50.07, target = 50.00, heatSink = 29.44, output = 26.0, timeout = 0, ModelRate = -0.03, TecRate = -0.14, HsRate = -0.05
+(183669) TC: TC-1 = 51.19, modeled = 50.06, target = 50.00, heatSink = 29.44, output = 26.5, timeout = 0, ModelRate = -0.03, TecRate = -0.21, HsRate = -0.06
+(183819) TC: TC-1 = 51.18, modeled = 50.06, target = 50.00, heatSink = 29.44, output = 26.0, timeout = 0, ModelRate = -0.01, TecRate = -0.09, HsRate = -0.01
+(183968) TC: TC-1 = 51.15, modeled = 50.06, target = 50.00, heatSink = 29.43, output = 26.3, timeout = 0, ModelRate = -0.03, TecRate = -0.17, HsRate = -0.09
+(184119) TC: TC-1 = 51.12, modeled = 50.05, target = 50.00, heatSink = 29.42, output = 26.4, timeout = 0, ModelRate = -0.03, TecRate = -0.14, HsRate = -0.06
+[74]Excitation LED: ON
+(184197) systemRequestStateChange: System State Transition WARNING -> IDLE
+(184197) blePeriphNotifySubscription: ENTER NOTIFY
+(184200) systemRequestStateChange: Notify exit state change
+(184269) TC: TC-1 = 51.10, modeled = 50.05, target = 50.00, heatSink = 29.40, output = 26.3, timeout = 0, ModelRate = -0.02, TecRate = -0.14, HsRate = -0.11
+(184419) TC: TC-1 = 51.10, modeled = 50.05, target = 50.00, heatSink = 29.40, output = 26.1, timeout = 0, ModelRate = -0.01, TecRate = -0.05, HsRate = -0.05
+(184569) TC: TC-1 = 51.09, modeled = 50.05, target = 50.00, heatSink = 29.41, output = 26.1, timeout = 0, ModelRate = -0.00, TecRate = -0.04, HsRate = -0.02
+(184718) TC: TC-1 = 51.08, modeled = 50.05, target = 50.00, heatSink = 29.40, output = 26.2, timeout = 0, ModelRate = 0.00, TecRate = -0.11, HsRate = -0.06
+(184868) TC: TC-1 = 51.07, modeled = 50.05, target = 50.00, heatSink = 29.40, output = 26.3, timeout = 0, ModelRate = 0.00, TecRate = -0.14, HsRate = -0.06
+(185018) TC: TC-1 = 51.07, modeled = 50.05, target = 50.00, heatSink = 29.39, output = 25.8, timeout = 0, ModelRate = 0.02, TecRate = -0.05, HsRate = -0.05
+(185168) TC: TC-1 = 51.06, modeled = 50.05, target = 50.00, heatSink = 29.39, output = 26.1, timeout = 0, ModelRate = 0.02, TecRate = -0.14, HsRate = -0.06
+(185318) TC: TC-1 = 51.04, modeled = 50.06, target = 50.00, heatSink = 29.38, output = 26.0, timeout = 0, ModelRate = 0.01, TecRate = -0.09, HsRate = -0.05
+(185468) TC: TC-1 = 51.04, modeled = 50.06, target = 50.00, heatSink = 29.38, output = 26.5, timeout = 0, ModelRate = 0.01, TecRate = -0.24, HsRate = -0.06
+[75]Found Colors:
+[75]CH 415:19
+[75]CH 445:219
+[75]CH 480:211
+[75]CH 515:26
+[75]CH 555:19
+[75]CH 590:16
+[75]CH 630:34
+[75]CH 680:19
+[75]CH NIR:11
+[75]CH CLR:422
+[75]CH DRK:0
+
+
+
+(185618) TC: TC-1 = 51.03, modeled = 50.06, target = 50.00, heatSink = 29.37, output = 25.8, timeout = 0, ModelRate = 0.02, TecRate = -0.07, HsRate = -0.04
+(185769) TC: TC-1 = 51.02, modeled = 50.06, target = 50.00, heatSink = 29.38, output = 26.0, timeout = 0, ModelRate = 0.01, TecRate = -0.12, HsRate = -0.03
+(185918) TC: TC-1 = 51.00, modeled = 50.06, target = 50.00, heatSink = 29.36, output = 26.1, timeout = 0, ModelRate = 0.00, TecRate = -0.14, HsRate = -0.06
+[76]Found Colors:
+[76]CH 415:19
+[76]CH 445:218
+[76]CH 480:212
+[76]CH 515:25
+[76]CH 555:19
+[76]CH 590:16
+[76]CH 630:33
+[76]CH 680:19
+[76]CH NIR:11
+[76]CH CLR:420
+[76]CH DRK:0
+
+
+
+(186069) TC: TC-1 = 50.99, modeled = 50.06, target = 50.00, heatSink = 29.37, output = 25.8, timeout = 0, ModelRate = 0.01, TecRate = -0.07, HsRate = -0.04
+(186219) TC: TC-1 = 50.97, modeled = 50.06, target = 50.00, heatSink = 29.36, output = 26.2, timeout = 0, ModelRate = 0.00, TecRate = -0.17, HsRate = -0.07
+(186368) TC: TC-1 = 50.96, modeled = 50.06, target = 50.00, heatSink = 29.35, output = 25.2, timeout = 0, ModelRate = 0.01, TecRate = 0.10, HsRate = -0.03
+[77]Found Colors:
+[77]CH 415:19
+[77]CH 445:218
+[77]CH 480:211
+[77]CH 515:25
+[77]CH 555:19
+[77]CH 590:16
+[77]CH 630:33
+[77]CH 680:18
+[77]CH NIR:11
+[77]CH CLR:418
+[77]CH DRK:0
+
+
+
+(186518) TC: TC-1 = 50.95, modeled = 50.07, target = 50.00, heatSink = 29.36, output = 26.6, timeout = 0, ModelRate = 0.00, TecRate = -0.35, HsRate = -0.15
+(186669) TC: TC-1 = 50.94, modeled = 50.07, target = 50.00, heatSink = 29.35, output = 26.0, timeout = 0, ModelRate = 0.00, TecRate = -0.10, HsRate = -0.05
+(186819) TC: TC-1 = 50.92, modeled = 50.07, target = 50.00, heatSink = 29.34, output = 26.3, timeout = 0, ModelRate = -0.00, TecRate = -0.14, HsRate = -0.04
+(186968) TC: TC-1 = 50.92, modeled = 50.07, target = 50.00, heatSink = 29.35, output = 26.2, timeout = 0, ModelRate = 0.01, TecRate = -0.05, HsRate = 0.05
+(187118) TC: TC-1 = 50.91, modeled = 50.07, target = 50.00, heatSink = 29.34, output = 26.3, timeout = 0, ModelRate = 0.00, TecRate = -0.17, HsRate = -0.07
+(187179) fluorimeterControlTask: Laser has been on too long, turning it off!
+(187179) stashException: Exception Stashed (0x04042)
+(187206) printException: ************
+(187206) printException: Error Code:  (0x00004042)
+(187207) printException: Originator:   (0x04)  Excitation
+(187212) printException: Error Type:  (0x04)  Excitation LED On Timeout
+(187219) printException: Priority:       (0x02)  Warning
+(187225) printException: Time Since Boot:       (185422) ms
+(187232) printException: Time Since Expt:       (0) ms
+(187238) stashException: Exception Stashed (0x0B173)
+(187244) handleException: ************
+
+(187248) printException: ************
+(187253) printException: Error Code:  (0x0000B173)
+(187258) printException: Originator:   (0x0B)  System
+(187264) printException: Error Type:  (0x17)  Too Many Warnings
+(187271) TC: TC-1 = 50.89, modeled = 50.07, target = 50.00, heatSink = 29.34, output = 26.2, timeout = 0, ModelRate = -0.00, TecRate = -0.09, HsRate = -0.03
+(187286) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(187294) printException: Priority:       (0x03)  Reset Recoverable
+(187301) printException: Time Since Boot:       (185483) ms
+(187308) printException: Time Since Expt:       (0) ms
+(187314) _disablePeltiers: Peltiers Disabled
+(187319) _disablePtc: PTC Disabled
+(187323) _disableExcitation: Excitation Disabled
+(187328) handleException: ************
+
+(187333) systemRequestStateChange: System State Transition IDLE -> ERROR
+(187341) blePeriphNotifySubscription: ENTER NOTIFY
+(187347) systemRequestStateChange: Notify exit state change
+(187422) TC: TC-1 = 50.88, modeled = 50.07, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.01, TecRate = -0.24, HsRate = -0.07
+(187466) _readLifterSwitches: New Lifter Down Value: 0
+(187572) TC: TC-1 = 50.87, modeled = 50.06, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.01, TecRate = -0.10, HsRate = -0.11
+(187717) Motor Lifter ADC Counts: 2006
+(187723) TC: TC-1 = 50.85, modeled = 50.06, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.01, TecRate = -0.14, HsRate = -0.04
+(187872) TC: TC-1 = 50.82, modeled = 50.06, target = 50.00, heatSink = 29.32, output = 0.0, timeout = 0, ModelRate = -0.03, TecRate = -0.38, HsRate = -0.03
+(188023) TC: TC-1 = 50.76, modeled = 50.05, target = 50.00, heatSink = 29.32, output = 0.0, timeout = 0, ModelRate = -0.06, TecRate = -0.48, HsRate = -0.02
+(188068) Motor Lifter ADC Counts: 1807
+(188172) TC: TC-1 = 50.65, modeled = 50.03, target = 50.00, heatSink = 29.32, output = 0.0, timeout = 0, ModelRate = -0.13, TecRate = -0.62, HsRate = 0.06
+(188319) TC: TC-1 = 50.56, modeled = 50.01, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.17, TecRate = -0.72, HsRate = 0.05
+(188419) Motor Lifter ADC Counts: 1670
+(188472) TC: TC-1 = 50.44, modeled = 49.98, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.22, TecRate = -0.89, HsRate = 0.02
+(188623) TC: TC-1 = 50.31, modeled = 49.94, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.27, TecRate = -0.78, HsRate = 0.02
+(188770) Motor Lifter ADC Counts: 1592
+(188773) TC: TC-1 = 50.17, modeled = 49.89, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.32, TecRate = -0.95, HsRate = 0.02
+(188923) TC: TC-1 = 50.01, modeled = 49.83, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.38, TecRate = -1.05, HsRate = 0.01
+(189072) TC: TC-1 = 49.85, modeled = 49.77, target = 50.00, heatSink = 29.33, output = 0.0, timeout = 0, ModelRate = -0.42, TecRate = -1.14, HsRate = 0.04
+(189121) Motor Lifter ADC Counts: 1557
+(189221) TC: TC-1 = 49.68, modeled = 49.70, target = 50.00, heatSink = 29.35, output = 0.0, timeout = 0, ModelRate = -0.48, TecRate = -1.44, HsRate = 0.05
+(189371) TC: TC-1 = 49.52, modeled = 49.62, target = 50.00, heatSink = 29.36, output = 0.0, timeout = 0, ModelRate = -0.50, TecRate = -1.06, HsRate = 0.13
+(189472) Motor Lifter ADC Counts: 1539
+(189522) TC: TC-1 = 49.35, modeled = 49.54, target = 50.00, heatSink = 29.36, output = 0.0, timeout = 0, ModelRate = -0.53, TecRate = -1.16, HsRate = 0.04
+(189672) TC: TC-1 = 49.19, modeled = 49.45, target = 50.00, heatSink = 29.37, output = 0.0, timeout = 0, ModelRate = -0.55, TecRate = -0.82, HsRate = 0.09
+(189821) TC: TC-1 = 49.02, modeled = 49.37, target = 50.00, heatSink = 29.37, output = 0.0, timeout = 0, ModelRate = -0.58, TecRate = -1.21, HsRate = -0.09
+(189826) Motor Lifter ADC Counts: 1533
+(189972) TC: TC-1 = 48.87, modeled = 49.27, target = 50.00, heatSink = 29.37, output = 0.0, timeout = 0, ModelRate = -0.59, TecRate = -0.94, HsRate = 0.09
+(190122) TC: TC-1 = 48.70, modeled = 49.18, target = 50.00, heatSink = 29.39, output = 0.0, timeout = 0, ModelRate = -0.61, TecRate = -1.24, HsRate = 0.06
+(190181) Motor Lifter ADC Counts: 1544
+(190272) TC: TC-1 = 48.53, modeled = 49.09, target = 50.00, heatSink = 29.39, output = 0.0, timeout = 0, ModelRate = -0.63, TecRate = -1.06, HsRate = 0.07
+(190422) TC: TC-1 = 48.37, modeled = 48.99, target = 50.00, heatSink = 29.39, output = 0.0, timeout = 0, ModelRate = -0.63, TecRate = -1.03, HsRate = 0.09
+(190532) Motor Lifter ADC Counts: 1550
+(190573) TC: TC-1 = 48.21, modeled = 48.89, target = 50.00, heatSink = 29.40, output = 0.0, timeout = 0, ModelRate = -0.64, TecRate = -1.11, HsRate = 0.05
+(190722) TC: TC-1 = 48.05, modeled = 48.79, target = 50.00, heatSink = 29.41, output = 0.0, timeout = 0, ModelRate = -0.66, TecRate = -0.92, HsRate = 0.04
+(190872) TC: TC-1 = 47.89, modeled = 48.69, target = 50.00, heatSink = 29.41, output = 0.0, timeout = 0, ModelRate = -0.67, TecRate = -1.20, HsRate = 0.07
+(190883) Motor Lifter ADC Counts: 1566
+(191020) TC: TC-1 = 47.72, modeled = 48.59, target = 50.00, heatSink = 29.42, output = 0.0, timeout = 0, ModelRate = -0.70, TecRate = -1.51, HsRate = 0.05
+(191170) TC: TC-1 = 47.53, modeled = 48.48, target = 50.00, heatSink = 29.42, output = 0.0, timeout = 0, ModelRate = -0.71, TecRate = -0.97, HsRate = 0.04
+(191234) Motor Lifter ADC Counts: 1575
+(191320) TC: TC-1 = 47.39, modeled = 48.38, target = 50.00, heatSink = 29.44, output = 0.0, timeout = 0, ModelRate = -0.70, TecRate = -0.99, HsRate = 0.06
+(191471) TC: TC-1 = 47.24, modeled = 48.28, target = 50.00, heatSink = 29.45, output = 0.0, timeout = 0, ModelRate = -0.70, TecRate = -1.12, HsRate = 0.04
+(191585) Motor Lifter ADC Counts: 1579
+(191620) TC: TC-1 = 47.09, modeled = 48.17, target = 50.00, heatSink = 29.45, output = 0.0, timeout = 0, ModelRate = -0.70, TecRate = -0.93, HsRate = 0.11
+(191770) TC: TC-1 = 46.95, modeled = 48.07, target = 50.00, heatSink = 29.45, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -0.80, HsRate = 0.03
+(191919) TC: TC-1 = 46.81, modeled = 47.96, target = 50.00, heatSink = 29.46, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -0.86, HsRate = 0.09
+(191936) _readLifterSwitches: New Lifter Up Value: 1
+(192070) TC: TC-1 = 46.66, modeled = 47.86, target = 50.00, heatSink = 29.46, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -1.07, HsRate = -0.07
+(192220) TC: TC-1 = 46.51, modeled = 47.76, target = 50.00, heatSink = 29.47, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -0.94, HsRate = 0.09
+(192370) TC: TC-1 = 46.38, modeled = 47.65, target = 50.00, heatSink = 29.47, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -0.82, HsRate = 0.06
+(192519) TC: TC-1 = 46.24, modeled = 47.55, target = 50.00, heatSink = 29.48, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -0.78, HsRate = 0.14
+(192670) TC: TC-1 = 46.10, modeled = 47.45, target = 50.00, heatSink = 29.49, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -0.84, HsRate = 0.07
+(192820) TC: TC-1 = 45.98, modeled = 47.35, target = 50.00, heatSink = 29.50, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -1.01, HsRate = 0.04
+(192968) TC: TC-1 = 45.82, modeled = 47.25, target = 50.00, heatSink = 29.51, output = 0.0, timeout = 0, ModelRate = -0.69, TecRate = -1.10, HsRate = 0.04
+(193118) TC: TC-1 = 45.69, modeled = 47.15, target = 50.00, heatSink = 29.51, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -0.89, HsRate = 0.05
+(193269) TC: TC-1 = 45.56, modeled = 47.04, target = 50.00, heatSink = 29.52, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -0.85, HsRate = 0.03
+(193418) TC: TC-1 = 45.43, modeled = 46.94, target = 50.00, heatSink = 29.52, output = 0.0, timeout = 0, ModelRate = -0.67, TecRate = -0.70, HsRate = 0.07
+(193569) TC: TC-1 = 45.29, modeled = 46.84, target = 50.00, heatSink = 29.52, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -0.96, HsRate = 0.04
+(193718) TC: TC-1 = 45.17, modeled = 46.74, target = 50.00, heatSink = 29.52, output = 0.0, timeout = 0, ModelRate = -0.67, TecRate = -0.79, HsRate = 0.04
+(193868) TC: TC-1 = 45.06, modeled = 46.64, target = 50.00, heatSink = 29.54, output = 0.0, timeout = 0, ModelRate = -0.66, TecRate = -0.78, HsRate = 0.06
+(194019) TC: TC-1 = 44.94, modeled = 46.54, target = 50.00, heatSink = 29.54, output = 0.0, timeout = 0, ModelRate = -0.65, TecRate = -0.72, HsRate = 0.04
+(194168) TC: TC-1 = 44.81, modeled = 46.45, target = 50.00, heatSink = 29.55, output = 0.0, timeout = 0, ModelRate = -0.66, TecRate = -0.84, HsRate = 0.09
+[78]Resetting Device
+(194303) _resetDevice: RESETTING!
+(194318) TC: TC-1 = 44.69, modeled = 46.35, target = 50.00, heatSink = 29.57, output = 0.0, timeout = 0, ModelRate = -0.66, TecRate = -0.95, HsRate = 0.05
+(194468) TC: TC-1 = 44.57, modeled = 46.25, target = 50.00, heatSink = 29.57, output = 0.0, timeout = 0, ModelRate = -0.65, TecRate = -0.77, HsRate = 0.09
+(194540) heapMonitor_checkFreeHeapSize: New heap low Watermark 63224
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x16 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:2, clock div:2
+secure boot v2 enabled
+secure boot verification succeeded
+load:0x3fff00b0 len:0x3498
+load:0x40078000 len:0x59a0
+load:0x40080400 len:0xe80
+entry 0x40080680
+(54) boot: ESP-IDF v4.3.6-dirty 2nd stage bootloader
+(54) boot: compile time 12:31:27
+(54) boot: chip revision: v3.0
+(58) boot.esp32: SPI Speed      : 40MHz
+(63) boot.esp32: SPI Mode       : DIO
+(67) boot.esp32: SPI Flash Size : 16MB
+(72) boot: Enabling RNG early entropy source...
+(77) boot: Partition Table:
+(81) boot: ## Label            Usage          Type ST Offset   Length
+(88) boot:  0 flashVer         Unknown data     01 06 00011000 00001000
+(96) boot:  1 nvs              WiFi data        01 02 00019000 00004000
+(103) boot:  2 otadata          OTA data         01 00 0001d000 00002000
+(111) boot:  3 phy_init         RF data          01 01 0001f000 00001000
+(118) boot:  4 factory          factory app      00 00 00020000 00200000
+(126) boot:  5 ota_0            OTA app          00 10 00220000 00400000
+(133) boot:  6 ota_1            OTA app          00 11 00620000 00400000
+(141) boot:  7 efuse_em         efuse            01 05 00a20000 00002000
+(148) boot:  8 nvs_key          NVS keys         01 04 00a30000 00001000
+(156) boot:  9 littlefs         Unknown data     01 82 00a40000 005c0000
+(163) boot: End of partition table
+(168) boot: Defaulting to factory image
+(172) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=1f7c0h (128960) map
+(229) esp_image: segment 1: paddr=0003f7e8 vaddr=3ffbdb60 size=00830h (  2096) load
+(230) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=8a3bch (566204) map
+(447) esp_image: segment 3: paddr=000ca3e4 vaddr=3ffbe390 size=04440h ( 17472) load
+(454) esp_image: segment 4: paddr=000ce82c vaddr=40080000 size=19384h (103300) load
+(498) esp_image: segment 5: paddr=000e7bb8 vaddr=00000000 size=08418h ( 33816)
+(511) esp_image: Verifying image signature...
+(511) secure_boot_v2: Verifying with RSA-PSS...
+(515) secure_boot_v2: Signature verified successfully!
+(529) boot: Loaded app from partition at offset 0x20000
+(529) secure_boot_v2: enabling secure boot v2...
+(530) secure_boot_v2: secure boot v2 is already enabled. Continuing..
+(537) boot: Checking flash encryption...
+(542) flash_encrypt: flash encryption is enabled (3 plaintext flashes left)
+(550) boot: Disabling RNG early entropy source...
+(567) cpu_start: Pro cpu up.
+(567) cpu_start: Starting app cpu, entry point is 0x40081380
+(540) cpu_start: App cpu up.
+(583) cpu_start: Pro cpu start user code
+(583) cpu_start: cpu freq: 240000000
+(583) cpu_start: Application information:
+(588) cpu_start: Project name:     pcr-firmware
+(593) cpu_start: App version:      plzBuildStage-2-g5bb81430-dirty
+(600) cpu_start: Compile time:     Oct 10 2023 17:25:11
+(606) cpu_start: ELF file SHA256:  134133af65701c65...
+(612) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND
+(618) cpu_start: Min chip rev:     v3.0
+(623) cpu_start: Max chip rev:     v3.99
+(628) cpu_start: Chip rev:         v3.0
+(633) heap_init: Initializing. RAM available for dynamic allocation:
+(640) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+(646) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+(652) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+(658) heap_init: At 3FFD7AF0 len 00008510 (33 KiB): DRAM
+(664) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+(670) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+(677) heap_init: At 40099384 len 00006C7C (27 KiB): IRAM
+(684) spi_flash: detected chip: generic
+(688) spi_flash: flash io: dio
+I (2815) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0
+(2815) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0
+wn: 1| I (3323) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0

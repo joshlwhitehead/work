@@ -1,0 +1,161 @@
+(424670) TC: TC-1 = 50.56, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.9, timeout = 0, ModelRate = 0.00, TecRate = -0.02, HsRate = -0.01
+(424820) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 30.3, timeout = 0, ModelRate = -0.01, TecRate = -0.08, HsRate = -0.01
+(424969) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 30.5, timeout = 0, ModelRate = -0.01, TecRate = -0.02, HsRate = 0.10
+(425118) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.7, timeout = 0, ModelRate = -0.00, TecRate = 0.11, HsRate = 0.04
+(425269) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.6, timeout = 0, ModelRate = 0.00, TecRate = 0.05, HsRate = -0.02
+(425419) TC: TC-1 = 50.56, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.7, timeout = 0, ModelRate = 0.01, TecRate = 0.04, HsRate = -0.01
+(425570) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.8, timeout = 0, ModelRate = -0.00, TecRate = 0.03, HsRate = -0.01
+(425718) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 30.3, timeout = 0, ModelRate = -0.01, TecRate = -0.11, HsRate = -0.03
+(425869) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.27, output = 30.3, timeout = 0, ModelRate = -0.01, TecRate = -0.08, HsRate = -0.02
+(426019) TC: TC-1 = 50.53, modeled = 50.06, target = 50.00, heatSink = 25.27, output = 30.3, timeout = 0, ModelRate = -0.01, TecRate = -0.06, HsRate = -0.02
+(426151) _deviceLogsSetPCR: Adding Time u
+(426170) TC: TC-1 = 50.53, modeled = 50.06, target = 50.00, heatSink = 25.28, output = 29.8, timeout = 0, ModelRate = -0.01, TecRate = 0.10, HsRate = -0.01
+(426319) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.27, output = 30.5, timeout = 0, ModelRate = -0.01, TecRate = -0.14, HsRate = -0.05
+(426470) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.27, output = 30.3, timeout = 0, ModelRate = -0.01, TecRate = -0.05, HsRate = -0.04
+(426620) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.27, output = 29.6, timeout = 0, ModelRate = 0.00, TecRate = 0.14, HsRate = -0.01
+(426770) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.27, output = 30.5, timeout = 0, ModelRate = -0.01, TecRate = -0.10, HsRate = -0.01
+(426918) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.26, output = 29.7, timeout = 0, ModelRate = 0.00, TecRate = 0.08, HsRate = -0.04
+(427070) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.26, output = 30.0, timeout = 0, ModelRate = 0.01, TecRate = 0.08, HsRate = 0.05
+(427218) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.26, output = 30.2, timeout = 0, ModelRate = 0.00, TecRate = -0.10, HsRate = -0.05
+(427369) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.26, output = 30.3, timeout = 0, ModelRate = -0.00, TecRate = -0.08, HsRate = -0.03
+(427520) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.27, output = 29.3, timeout = 0, ModelRate = 0.01, TecRate = 0.17, HsRate = -0.01
+(427670) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.26, output = 29.6, timeout = 0, ModelRate = 0.01, TecRate = 0.09, HsRate = -0.01
+(427819) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.26, output = 29.6, timeout = 0, ModelRate = 0.01, TecRate = 0.07, HsRate = -0.02
+(427968) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 30.2, timeout = 0, ModelRate = -0.00, TecRate = -0.17, HsRate = -0.12
+(428118) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 30.5, timeout = 0, ModelRate = 0.00, TecRate = -0.07, HsRate = 0.05
+(428269) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 29.9, timeout = 0, ModelRate = 0.00, TecRate = 0.06, HsRate = 0.02
+(428419) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 30.4, timeout = 0, ModelRate = -0.01, TecRate = -0.11, HsRate = -0.03
+[121]Excitation LED: OFF
+(428569) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.25, output = 30.2, timeout = 0, ModelRate = -0.01, TecRate = -0.03, HsRate = -0.03
+(428719) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.24, output = 30.2, timeout = 0, ModelRate = -0.01, TecRate = -0.04, HsRate = -0.04
+(428869) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.24, output = 30.5, timeout = 0, ModelRate = -0.01, TecRate = -0.03, HsRate = 0.04
+(429020) TC: TC-1 = 50.53, modeled = 50.05, target = 50.00, heatSink = 25.24, output = 30.4, timeout = 0, ModelRate = -0.01, TecRate = -0.02, HsRate = 0.02
+(429171) TC: TC-1 = 50.54, modeled = 50.05, target = 50.00, heatSink = 25.25, output = 30.4, timeout = 0, ModelRate = 0.00, TecRate = -0.01, HsRate = 0.04
+(429318) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.25, output = 29.7, timeout = 0, ModelRate = 0.01, TecRate = 0.03, HsRate = -0.08
+[122]Excitation LED: ON
+(429469) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.24, output = 29.5, timeout = 0, ModelRate = 0.01, TecRate = 0.14, HsRate = -0.02
+(429619) TC: TC-1 = 50.55, modeled = 50.05, target = 50.00, heatSink = 25.24, output = 29.6, timeout = 0, ModelRate = 0.01, TecRate = 0.09, HsRate = -0.02
+(429770) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 29.8, timeout = 0, ModelRate = 0.01, TecRate = 0.03, HsRate = -0.01
+(429918) TC: TC-1 = 50.56, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 30.4, timeout = 0, ModelRate = 0.01, TecRate = -0.14, HsRate = -0.02
+(430070) TC: TC-1 = 50.58, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 28.8, timeout = 0, ModelRate = 0.02, TecRate = 0.25, HsRate = 0.04
+(430220) TC: TC-1 = 50.59, modeled = 50.06, target = 50.00, heatSink = 25.25, output = 29.1, timeout = 0, ModelRate = 0.03, TecRate = 0.12, HsRate = 0.02
+(430369) TC: TC-1 = 50.59, modeled = 50.07, target = 50.00, heatSink = 25.24, output = 29.1, timeout = 0, ModelRate = 0.02, TecRate = 0.05, HsRate = -0.05
+(430519) TC: TC-1 = 50.58, modeled = 50.07, target = 50.00, heatSink = 25.23, output = 29.1, timeout = 0, ModelRate = 0.01, TecRate = 0.05, HsRate = -0.06
+(430668) TC: TC-1 = 50.60, modeled = 50.07, target = 50.00, heatSink = 25.24, output = 29.1, timeout = 0, ModelRate = 0.03, TecRate = 0.10, HsRate = 0.05
+(430818) TC: TC-1 = 50.58, modeled = 50.07, target = 50.00, heatSink = 25.23, output = 30.0, timeout = 0, ModelRate = 0.00, TecRate = -0.14, HsRate = -0.05
+[123]Found Colors:
+[123]CH 415:23
+[123]CH 445:270
+[123]CH 480:245
+[123]CH 515:30
+[123]CH 555:23
+[123]CH 590:19
+[123]CH 630:42
+[123]CH 680:22
+[123]CH NIR:11
+[123]CH CLR:471
+[123]CH DRK:0
+
+
+
+(430969) TC: TC-1 = 50.58, modeled = 50.07, target = 50.00, heatSink = 25.23, output = 29.0, timeout = 0, ModelRate = 0.01, TecRate = 0.10, HsRate = -0.03
+(431120) TC: TC-1 = 50.58, modeled = 50.08, target = 50.00, heatSink = 25.24, output = 29.7, timeout = 0, ModelRate = 0.00, TecRate = -0.05, HsRate = -0.02
+(431270) TC: TC-1 = 50.57, modeled = 50.07, target = 50.00, heatSink = 25.24, output = 30.0, timeout = 0, ModelRate = -0.00, TecRate = -0.04, HsRate = 0.03
+(431421) TC: TC-1 = 50.57, modeled = 50.07, target = 50.00, heatSink = 25.24, output = 29.9, timeout = 0, ModelRate = -0.01, TecRate = -0.05, HsRate = -0.01
+[124]Found Colors:
+[124]CH 415:23
+[124]CH 445:269
+[124]CH 480:244
+[124]CH 515:29
+[124]CH 555:23
+[124]CH 590:19
+[124]CH 630:42
+[124]CH 680:21
+[124]CH NIR:11
+[124]CH CLR:469
+[124]CH DRK:0
+
+
+
+(431570) TC: TC-1 = 50.57, modeled = 50.07, target = 50.00, heatSink = 25.23, output = 29.7, timeout = 0, ModelRate = -0.01, TecRate = -0.03, HsRate = -0.04
+(431718) TC: TC-1 = 50.55, modeled = 50.07, target = 50.00, heatSink = 25.24, output = 30.3, timeout = 0, ModelRate = -0.02, TecRate = -0.14, HsRate = -0.02
+(431870) TC: TC-1 = 50.54, modeled = 50.07, target = 50.00, heatSink = 25.23, output = 30.3, timeout = 0, ModelRate = -0.02, TecRate = -0.06, HsRate = -0.01
+[125]Found Colors:
+[125]CH 415:23
+[125]CH 445:268
+[125]CH 480:244
+[125]CH 515:29
+[125]CH 555:23
+[125]CH 590:19
+[125]CH 630:41
+[125]CH 680:21
+[125]CH NIR:11
+[125]CH CLR:467
+[125]CH DRK:0
+
+
+
+(432019) TC: TC-1 = 50.52, modeled = 50.06, target = 50.00, heatSink = 25.23, output = 30.6, timeout = 0, ModelRate = -0.03, TecRate = -0.11, HsRate = -0.01
+(432169) TC: TC-1 = 50.53, modeled = 50.06, target = 50.00, heatSink = 25.23, output = 30.3, timeout = 0, ModelRate = -0.02, TecRate = -0.04, HsRate = -0.01
+(432318) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 29.6, timeout = 0, ModelRate = -0.00, TecRate = 0.14, HsRate = 0.02
+(432356) fluorimeterControlTask: Laser has been on too long, turning it off!
+(432357) stashException: Exception Stashed (0x04042)
+(432452) printException: ************
+(432452) printException: Error Code:  (0x00004042)
+(432453) printException: Originator:   (0x04)  Excitation
+(432458) printException: Error Type:  (0x04)  Excitation LED On Timeout
+(432470) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 29.9, timeout = 0, ModelRate = -0.00, TecRate = 0.07, HsRate = 0.02
+(432480) printException: Priority:       (0x02)  Warning
+(432486) printException: Time Since Boot:       (430599) ms
+(432492) printException: Time Since Expt:       (0) ms
+(432498) stashException: Exception Stashed (0x0B173)
+(432504) handleException: ************
+
+(432509) printException: ************
+(432520) printException: Error Code:  (0x0000B173)
+(432521) printException: Originator:   (0x0B)  System
+(432525) printException: Error Type:  (0x17)  Too Many Warnings
+(432532) printException: Priority:       (0x03)  Reset Recoverable
+(432539) taskMonitor_task: Task System Control Task hasn't checked in for 200 ms
+(432547) printException: Time Since Boot:       (430744) ms
+(432553) printException: Time Since Expt:       (0) ms
+(432559) _disablePeltiers: Peltiers Disabled
+(432570) _disablePtc: PTC Disabled
+(432570) _disableExcitation: Excitation Disabled
+(432574) handleException: ************
+
+(432579) systemRequestStateChange: System State Transition IDLE -> ERROR
+(432587) blePeriphNotifySubscription: ENTER NOTIFY
+(432592) systemRequestStateChange: Notify exit state change
+(432624) TC: TC-1 = 50.54, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 0.0, timeout = 0, ModelRate = -0.01, TecRate = 0.03, HsRate = 0.01
+(432747) _readLifterSwitches: New Lifter Down Value: 0
+(432773) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 0.0, timeout = 0, ModelRate = 0.00, TecRate = 0.03, HsRate = 0.07
+(432898) Motor Lifter ADC Counts: 2009
+(432922) TC: TC-1 = 50.55, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 0.0, timeout = 0, ModelRate = -0.00, TecRate = -0.14, HsRate = 0.02
+(432963) BT STATE: NON IDLE State, switching to pairing
+(432963) bluetoothRequestStateChange: Bluetooth State Transition IDLE -> PAIRING
+(432967) BLE_PERIPH_INTERFACE: Open Advertising
+(433072) TC: TC-1 = 50.52, modeled = 50.06, target = 50.00, heatSink = 25.24, output = 0.0, timeout = 0, ModelRate = -0.02, TecRate = -0.21, HsRate = -0.03
+(433218) TC: TC-1 = 50.49, modeled = 50.05, target = 50.00, heatSink = 25.25, output = 0.0, timeout = 0, ModelRate = -0.04, TecRate = -0.21, HsRate = 0.07
+(433249) Motor Lifter ADC Counts: 1795
+(433372) TC: TC-1 = 50.40, modeled = 50.04, target = 50.00, heatSink = 25.26, output = 0.0, timeout = 0, ModelRate = -0.10, TecRate = -0.72, HsRate = 0.04
+(433522) TC: TC-1 = 50.31, modeled = 50.02, target = 50.00, heatSink = 25.27, output = 0.0, timeout = 0, ModelRate = -0.15, TecRate = -0.75, HsRate = 0.05
+(433600) Motor Lifter ADC Counts: 1681
+(433671) TC: TC-1 = 50.16, modeled = 49.98, target = 50.00, heatSink = 25.27, output = 0.0, timeout = 0, ModelRate = -0.24, TecRate = -1.05, HsRate = 0.07
+(433821) TC: TC-1 = 50.01, modeled = 49.94, target = 50.00, heatSink = 25.29, output = 0.0, timeout = 0, ModelRate = -0.30, TecRate = -0.88, HsRate = 0.07
+(433951) Motor Lifter ADC Counts: 1587
+(433972) TC: TC-1 = 49.85, modeled = 49.88, target = 50.00, heatSink = 25.30, output = 0.0, timeout = 0, ModelRate = -0.37, TecRate = -1.14, HsRate = 0.08
+(434122) TC: TC-1 = 49.64, modeled = 49.81, target = 50.00, heatSink = 25.31, output = 0.0, timeout = 0, ModelRate = -0.46, TecRate = -1.47, HsRate = 0.04
+(434272) TC: TC-1 = 49.46, modeled = 49.74, target = 50.00, heatSink = 25.32, output = 0.0, timeout = 0, ModelRate = -0.51, TecRate = -1.36, HsRate = 0.07
+(434302) Motor Lifter ADC Counts: 1544
+(434423) TC: TC-1 = 49.28, modeled = 49.65, target = 50.00, heatSink = 25.33, output = 0.0, timeout = 0, ModelRate = -0.55, TecRate = -1.09, HsRate = 0.12
+(434572) TC: TC-1 = 49.07, modeled = 49.56, target = 50.00, heatSink = 25.34, output = 0.0, timeout = 0, ModelRate = -0.61, TecRate = -1.38, HsRate = 0.15
+(434653) Motor Lifter ADC Counts: 1515
+(434721) TC: TC-1 = 48.88, modeled = 49.46, target = 50.00, heatSink = 25.36, output = 0.0, timeout = 0, ModelRate = -0.64, TecRate = -1.24, HsRate = 0.13
+(434872) TC: TC-1 = 48.69, modeled = 49.36, target = 50.00, heatSink = 25.37, output = 0.0, timeout = 0, ModelRate = -0.68, TecRate = -1.43, HsRate = 0.08
+(435004) Motor Lifter ADC Counts: 1511
+(435022) TC: TC-1 = 48.47, modeled = 49.25, target = 50.00, heatSink = 25.40, output = 0.0, timeout = 0, ModelRate = -0.72, TecRate = -1.42, HsRate = 0.12
+(435172) TC: TC-1 = 48.29, modeled = 49.14, target = 50.00, heatSink = 25.41, output = 0.0, timeout = 0, ModelRate = -0.73, TecRate = -1.44, HsRate = 0.06
+(435321) TC: TC-1 = 48.08, modeled = 49.02, target = 50.00, heatSink = 25.43, output = 0.0, timeout = 0, ModelRate = -0.76, TecRate = -1.30, HsRate = 0.27
+(435355) Motor Lifter ADC Counts: 1523
+(435472) TC: TC-1 = 47.89, modeled = 48.91, target = 50.00, heatSink = 25.44, output = 0.0, timeout = 0, ModelRate = -0.79, TecRate = -1.04, HsRate = 0.13
