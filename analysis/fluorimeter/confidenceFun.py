@@ -26,7 +26,6 @@ def TI(sample,alpha,p):
 
 
 
-def tukey(dclean):
-    # perform multiple pairwise comparison (Tukey HSD)
-    m_comp = pairwise_tukeyhsd(endog=dclean['Score'], groups=dclean['Class'],alpha=0.05)
+def tukey(df,ind,dep,alpha):
+    m_comp = pairwise_tukeyhsd(endog=df[dep], groups=df[ind],alpha=alpha)
     return m_comp

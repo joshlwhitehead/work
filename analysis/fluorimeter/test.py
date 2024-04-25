@@ -1,1 +1,3 @@
-print(round(1.23))
+josh = [1,2,3,4]
+
+print(x)
