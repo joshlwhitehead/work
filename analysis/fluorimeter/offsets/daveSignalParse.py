@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-folder = 'daveData/toeToHeel'
+folder = 'daveData/rightToLeft'
 channelUsed = '515'
 def parse(file):
     chan = {
@@ -26,4 +26,4 @@ for i in os.listdir(folder):
     plt.plot(i[:-4],np.mean(x),'o')
     plt.xticks(rotation=45)
 plt.grid()
-plt.savefig(''.join([channelUsed,'.png']))
+plt.savefig(''.join([folder,'_',channelUsed,'.png']))

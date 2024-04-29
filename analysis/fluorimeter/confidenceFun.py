@@ -29,3 +29,19 @@ def TI(sample,alpha,p):
 def tukey(df,ind,dep,alpha):
     m_comp = pairwise_tukeyhsd(endog=df[dep], groups=df[ind],alpha=alpha)
     return m_comp
+
+def tolArea(complexPop,alpha,p):
+    means = []
+    stdevs = []
+    for i in complexPop:
+        means.append(np.mean(i))
+        stdevs.append(np.std(i))
+    meanTI = TI(means,alpha,p)
+    stdTI = TI(stdevs,alpha,p)
+    if stdTI[0] < 0:
+        stdTI[0] = 0
+    if meanTI[0] < 0:
+        meanTI[0] = 0
+    meanMeans = np.mean(means)
+    meanStdevs = np.mean(stdevs)
+    return (means,stdevs),(meanMeans,meanStdevs),(meanTI,stdTI)

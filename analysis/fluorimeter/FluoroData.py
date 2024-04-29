@@ -106,4 +106,14 @@ def compare(chan,sortBy,compWhat,alpha):
     plt.savefig(''.join([compWhat,'_boxplot.png']))
 
 
-compare(445,'instrument','cq',0.1)
+def makeCompound(chan,sortBy,compWhat):
+    df = makeDF(chan)
+    smallDF = {}
+    for indx,val in enumerate(df[sortBy]):
+        if val not in smallDF:
+            smallDF[val] = [df[compWhat][indx]]
+        else:
+            smallDF[val].append(df[compWhat][indx])
+    print(smallDF)
+
+makeCompound(515,'instrument','fmax')
