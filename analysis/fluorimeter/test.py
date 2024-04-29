@@ -16,3 +16,9 @@ def taPlot(compoundPop,alpha,p,col,name):                #compoundPop should be 
     plt.vlines(mid[0],tiB,tiT,lw=5,colors=col)
     plt.plot(mid[0],mid[1],'o',color='r')
     # plt.show()
+
+
+
+josh = {'a':[1],'b':[3,4]}
+tess = list(josh.values())
+print(tess)

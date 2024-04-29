@@ -45,3 +45,20 @@ def tolArea(complexPop,alpha,p):
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanTI,stdTI)
+
+
+def confArea(complesPop,alpha):
+    means = []
+    stdevs = []
+    for i in complesPop:
+        means.append(np.mean(i))
+        stdevs.append(np.std(i))
+    meanCI = CI(means,alpha)
+    stdCI = CI(stdevs,alpha)
+    if stdCI[0] < 0:
+        stdCI[0] = 0
+    if meanCI[0] < 0:
+        meanCI[0] = 0
+    meanMeans = np.mean(means)
+    meanStdevs = np.mean(stdevs)
+    return (means,stdevs),(meanMeans,meanStdevs),(meanCI,stdCI)

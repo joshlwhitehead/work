@@ -2,8 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-folder = 'daveData/rightToLeft'
+folder = 'daveData/heelToToe'
 channelUsed = '515'
+
 def parse(file):
     chan = {
         '415':[],'445':[],'480':[],'515':[],
@@ -20,10 +21,14 @@ def parse(file):
                     chan[u].append(x)
 
     return chan
-
+count = 0
 for i in os.listdir(folder):
     x = parse('/'.join([folder,i]))[channelUsed]
-    plt.plot(i[:-4],np.mean(x),'o')
-    plt.xticks(rotation=45)
+    plt.plot(count,np.mean(x),'o')
+    # plt.xticks(rotation=45)
+    count += 1
 plt.grid()
+plt.ylabel('Signal (RFU)')
+plt.xlabel('Number of Lines Drawn')
+plt.title('515 nm')
 plt.savefig(''.join([folder,'_',channelUsed,'.png']))

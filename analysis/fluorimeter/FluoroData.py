@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-from confidenceFun import CI,tukey
+from confidenceFun import CI,tukey,tolArea
 from pcr_fit import findLeastSquaresCq
 
 
@@ -114,6 +114,27 @@ def makeCompound(chan,sortBy,compWhat):
             smallDF[val] = [df[compWhat][indx]]
         else:
             smallDF[val].append(df[compWhat][indx])
-    print(smallDF)
+    return list(smallDF.values())
 
-makeCompound(515,'instrument','fmax')
+def taPlot(compoundPop,alpha,p,col,name):                #compoundPop should be of format[[pop1],[pop2],...]
+    dat = tolArea(compoundPop,alpha,p)
+    mid = dat[1]
+    points = dat[0]
+    tis = dat[2]
+    tiL,tiR = tis[0]
+    tiB,tiT = tis[1]
+
+    # print(mid[0])
+    print(points[0])
+    plt.plot(points[0],points[1],'o',color=col,label=name)
+    plt.hlines(mid[1],tiL,tiR,lw=5,colors=col)
+    plt.vlines(mid[0],tiB,tiT,lw=5,colors=col)
+    plt.plot(mid[0],mid[1],'o',color='r')
+    plt.xlabel('Mean Melt Range (RFU)')
+    plt.ylabel('Standard Deviation (RFU)')
+    plt.title('90% Tolerance Area (p=90)')
+    plt.grid()
+    plt.show()
+
+
+taPlot(makeCompound(515,'instrument','melt range'),0.1,0.9,'blue','test')
