@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 folder = 'daveData/heelToToe'
+folder2 = 'plots'
 channelUsed = '515'
 
 def parse(file):
