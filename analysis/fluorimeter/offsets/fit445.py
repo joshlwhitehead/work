@@ -49,32 +49,41 @@ def makeDf(data,popName):
             dict['r2 val'].append(u)
     df = pd.DataFrame(dict)
     return df
-thumpRR = fitCurves('thump/')
-noThumpRR = fitCurves('noThump/')
 
 
-df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
-
-# print(df)
-
-print(tukey(df,'pop','r2 val',0.05))
-
-pThump = 1/9
-pNoThump = 7/8
-
-k = 1
-n = 100
-probThump = stats.binom.pmf(k,n,pThump)
-probNoThump = stats.binom.pmf(k,n,pNoThump)
+# thumpRR = fitCurves('official thump/')
+# noThumpRR = fitCurves('official no thump/')
+# # thumpBackRR = fitCurves('thumpBack/')
 
 
-print(probThump,probNoThump)
+# df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
+# # df.boxplot(by='pop')
+# # plt.show()
+# # print(df)
+# print(np.mean(thumpRR))
+# print(np.mean(noThumpRR))
+# # print(np.mean(thumpBackRR))
+# print(tukey(df,'pop','r2 val',0.1))
 
-x = np.arange(0,n)
-plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
-plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
-plt.legend()
-plt.ylabel('Probability')
-plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
-plt.grid()
-plt.show()
+# pThump = 3/13
+# pNoThump = 14/18
+# pBack = 1/10
+
+# k = 1
+# n = 100
+# probThump = stats.binom.pmf(k,n,pThump)
+# probNoThump = stats.binom.pmf(k,n,pNoThump)
+# probBack = stats.binom.pmf(k,n,pBack)
+
+
+# # print(probThump,probNoThump)
+
+# x = np.arange(0,n)
+# # plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
+# # plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
+# # # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
+# # plt.legend()
+# # plt.ylabel('Probability')
+# # plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
+# # plt.grid()
+# # plt.show()

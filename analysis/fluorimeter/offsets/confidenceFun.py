@@ -2,6 +2,7 @@ import numpy as np
 from scipy.stats import t
 import toleranceinterval as ti
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
+import matplotlib.pyplot as plt
 
 def r2(y,fit):
     st = sum((y-np.average(y))**2)
@@ -46,6 +47,8 @@ def tolArea(complexPop,alpha,p):
         stdTI[0] = 0
     if meanTI[0] < 0:
         meanTI[0] = 0
+    if meanTI[1] > 1:
+        meanTI[1] = 1
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanTI,stdTI)
@@ -63,6 +66,27 @@ def confArea(complesPop,alpha):
         stdCI[0] = 0
     if meanCI[0] < 0:
         meanCI[0] = 0
+    
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanCI,stdCI)
+
+def taPlot(compoundPop,alpha,p,col,name):                #compoundPop should be of format[[pop1],[pop2],...]
+    dat = tolArea(compoundPop,alpha,p)
+    mid = dat[1]
+    points = dat[0]
+    tis = dat[2]
+    tiL,tiR = tis[0]
+    tiB,tiT = tis[1]
+
+    # print(mid[0])
+    print(points[0])
+    plt.plot(points[0],points[1],'o',color=col,label=name)
+    plt.hlines(mid[1],tiL,tiR,lw=5,colors=col)
+    plt.vlines(mid[0],tiB,tiT,lw=5,colors=col)
+    plt.plot(mid[0],mid[1],'o',color='r')
+    plt.xlabel('Mean R2')
+    plt.ylabel('Standard Deviation')
+    plt.title('90% Tolerance Area (p=90)')
+    plt.grid()
+    
