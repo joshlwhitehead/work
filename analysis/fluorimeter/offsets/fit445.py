@@ -65,25 +65,25 @@ def makeDf(data,popName):
 # # print(np.mean(thumpBackRR))
 # print(tukey(df,'pop','r2 val',0.1))
 
-# pThump = 3/13
-# pNoThump = 14/18
-# pBack = 1/10
+# pThump = 7/21
+# pNoThump = 19/21
+# # pBack = 1/10
 
 # k = 1
 # n = 100
 # probThump = stats.binom.pmf(k,n,pThump)
 # probNoThump = stats.binom.pmf(k,n,pNoThump)
-# probBack = stats.binom.pmf(k,n,pBack)
+# # probBack = stats.binom.pmf(k,n,pBack)
 
 
 # # print(probThump,probNoThump)
 
 # x = np.arange(0,n)
-# # plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
-# # plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
-# # # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
-# # plt.legend()
-# # plt.ylabel('Probability')
-# # plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
-# # plt.grid()
-# # plt.show()
+# plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
+# plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
+# # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
+# plt.legend()
+# plt.ylabel('Probability of x Runs with Data Offsets')
+# plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
+# plt.grid()
+# plt.show()

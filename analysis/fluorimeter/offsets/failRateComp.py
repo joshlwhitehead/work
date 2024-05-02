@@ -4,8 +4,8 @@ from confidenceFun import tukey
 
 
 df = {
-    'thump':['off','off','off','on','on','on'],
-    'fail':[5/6,4/5,5/7,2/5,2/5,1/3]
+    'thump':['no thump','no thump','no thump','thump','thump','thump'],
+    'fail':[6/7,7/7,6/7,3/7,3/7,1/7]
     }
 
 print(tukey(df,'thump','fail',.1))

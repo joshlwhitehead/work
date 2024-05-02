@@ -66,7 +66,8 @@ def confArea(complesPop,alpha):
         stdCI[0] = 0
     if meanCI[0] < 0:
         meanCI[0] = 0
-    
+    if meanCI[1] > 1:
+        meanCI[1] = 1
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanCI,stdCI)
@@ -88,5 +89,25 @@ def taPlot(compoundPop,alpha,p,col,name):                #compoundPop should be 
     plt.xlabel('Mean R2')
     plt.ylabel('Standard Deviation')
     plt.title('90% Tolerance Area (p=90)')
+    plt.grid()
+
+
+def caPlot(compoundPop,alpha,col,name):                #compoundPop should be of format[[pop1],[pop2],...]
+    dat = confArea(compoundPop,alpha)
+    mid = dat[1]
+    points = dat[0]
+    cis = dat[2]
+    ciL,ciR = cis[0]
+    ciB,ciT = cis[1]
+
+    # print(mid[0])
+    print(points[0])
+    plt.plot(points[0],points[1],'o',color=col,label=name)
+    plt.hlines(mid[1],ciL,ciR,lw=5,colors=col)
+    plt.vlines(mid[0],ciB,ciT,lw=5,colors=col)
+    plt.plot(mid[0],mid[1],'o',color='r')
+    plt.xlabel('Mean R2')
+    plt.ylabel('Standard Deviation')
+    plt.title('90% Confidence Area')
     plt.grid()
     
