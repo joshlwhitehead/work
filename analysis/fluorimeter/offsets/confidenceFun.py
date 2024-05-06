@@ -3,6 +3,8 @@ from scipy.stats import t
 import toleranceinterval as ti
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import matplotlib.pyplot as plt
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
 
 def r2(y,fit):
     st = sum((y-np.average(y))**2)
@@ -34,6 +36,16 @@ def TI(sample,alpha,p):
 def tukey(df,ind,dep,alpha):
     m_comp = pairwise_tukeyhsd(endog=df[dep], groups=df[ind],alpha=alpha)
     return m_comp
+
+
+
+def anova(df,ind,dep):
+    formula = ' ~ '.join([dep,ind])
+    model = ols(formula, df).fit()
+    aov_table = anova_lm(model, typ=1)
+    return aov_table
+
+
 
 def tolArea(complexPop,alpha,p):
     means = []

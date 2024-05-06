@@ -1,5 +1,9 @@
 import pandas as pd
 from confidenceFun import tukey
+import numpy as np
+
+# j = [3/7,1/7,3/7]
+# print(np.std(j))
 
 
 

@@ -51,39 +51,39 @@ def makeDf(data,popName):
     return df
 
 
-# thumpRR = fitCurves('official thump/')
-# noThumpRR = fitCurves('official no thump/')
-# # thumpBackRR = fitCurves('thumpBack/')
+thumpRR = fitCurves('official thump tilt/')
+noThumpRR = fitCurves('official no thump tilt/')
+# thumpBackRR = fitCurves('thumpBack/')
 
 
-# df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
-# # df.boxplot(by='pop')
-# # plt.show()
-# # print(df)
-# print(np.mean(thumpRR))
-# print(np.mean(noThumpRR))
-# # print(np.mean(thumpBackRR))
-# print(tukey(df,'pop','r2 val',0.1))
-
-# pThump = 7/21
-# pNoThump = 19/21
-# # pBack = 1/10
-
-# k = 1
-# n = 100
-# probThump = stats.binom.pmf(k,n,pThump)
-# probNoThump = stats.binom.pmf(k,n,pNoThump)
-# # probBack = stats.binom.pmf(k,n,pBack)
-
-
-# # print(probThump,probNoThump)
-
-# x = np.arange(0,n)
-# plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
-# plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
-# # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
-# plt.legend()
-# plt.ylabel('Probability of x Runs with Data Offsets')
-# plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
-# plt.grid()
+df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
+# df.boxplot(by='pop')
 # plt.show()
+# print(df)
+print(np.mean(thumpRR))
+print(np.mean(noThumpRR))
+# print(np.mean(thumpBackRR))
+print(tukey(df,'pop','r2 val',0.1))
+
+pThump = 2/21
+pNoThump = 20/21
+# pBack = 1/10
+
+k = 1
+n = 100
+probThump = stats.binom.pmf(k,n,pThump)
+probNoThump = stats.binom.pmf(k,n,pNoThump)
+# probBack = stats.binom.pmf(k,n,pBack)
+
+
+# print(probThump,probNoThump)
+
+x = np.arange(0,n)
+plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
+plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
+# plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
+plt.legend()
+plt.ylabel('Probability of x Runs with Data Offsets')
+plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
+plt.grid()
+plt.show()

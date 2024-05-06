@@ -2,7 +2,7 @@ from fit445 import makeDf,fitCurves
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-from confidenceFun import tolArea,taPlot,tukey,confArea,caPlot
+from confidenceFun import tolArea,taPlot,tukey,confArea,caPlot,anova
 
 def makeDf(folder):
     dict = {}
@@ -32,7 +32,13 @@ def makeDf(folder):
     plt.suptitle('')
     plt.show()
     return df
-makeDf('byInst')
+
+
+
+# makeDf('byInst')
+
+print(tukey(makeDf('byInst'),'inst','r2',0.1))
+print(anova(makeDf('byInst'),'inst','r2'))
 def makeCompound(df,sortBy,compWhat):
     
     smallDF = {}
