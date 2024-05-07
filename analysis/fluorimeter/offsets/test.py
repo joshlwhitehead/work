@@ -36,9 +36,9 @@ def makeDf(folder):
 
 
 # makeDf('byInst')
-
-print(tukey(makeDf('byInst'),'inst','r2',0.1))
-print(anova(makeDf('byInst'),'inst','r2'))
+print('THIS COMPARES ALL INSTRUMENT, PROTOCOL COMBOS')
+print(tukey(makeDf('byInstTilt'),'inst','r2',0.1))
+print(anova(makeDf('byInstTilt'),'inst','r2'))
 def makeCompound(df,sortBy,compWhat):
     
     smallDF = {}
@@ -50,23 +50,23 @@ def makeCompound(df,sortBy,compWhat):
     return list(smallDF.values())
 
 
-# no = makeCompound(makeDf('byInstNoThump'),'inst','r2')
-# yes = makeCompound(makeDf('byInstThump'),'inst','r2')
+no = makeCompound(makeDf('byInstNoThumpTilt'),'inst','r2')
+yes = makeCompound(makeDf('byInstThumpTilt'),'inst','r2')
 
-# dfNew = pd.DataFrame({'thump':confArea(yes,0.1)[0][1],
-#                       'no thump':confArea(no,.1)[0][1]})
-# dictClean = {'pop':[],'r2':[]}
-# for i in dfNew:
-#     for u in dfNew[i]:
-#         dictClean['pop'].append(i)
-#         dictClean['r2'].append(u)
-# dfClean = pd.DataFrame(dictClean)
+dfNew = pd.DataFrame({'thump':confArea(yes,0.1)[0][1],
+                      'no thump':confArea(no,.1)[0][1]})
+dictClean = {'pop':[],'r2':[]}
+for i in dfNew:
+    for u in dfNew[i]:
+        dictClean['pop'].append(i)
+        dictClean['r2'].append(u)
+dfClean = pd.DataFrame(dictClean)
+print('THIS COMPARES MEAN MEANS OR MEAN STDEVS')
+print(tukey(dfClean,'pop','r2',.1))
 
-# print(tukey(dfClean,'pop','r2',.1))
 
-
-# caPlot(no,0.1,'C0','no thump')
-# caPlot(yes,0.1,'g','thump')
-# plt.grid()
-# plt.legend()
-# plt.show()
+caPlot(no,0.1,'C0','no thump')
+caPlot(yes,0.1,'g','thump')
+plt.grid()
+plt.legend()
+plt.show()

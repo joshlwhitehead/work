@@ -63,10 +63,11 @@ df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
 print(np.mean(thumpRR))
 print(np.mean(noThumpRR))
 # print(np.mean(thumpBackRR))
+print('THIS COMPARES ALL THUMPER TO ALL NO THUMPER R2 VALUES')
 print(tukey(df,'pop','r2 val',0.1))
 
-pThump = 2/21
-pNoThump = 20/21
+pThump = 1/21
+pNoThump = 18/21
 # pBack = 1/10
 
 k = 1
