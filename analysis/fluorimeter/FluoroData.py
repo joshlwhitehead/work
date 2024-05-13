@@ -2,12 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-from confidenceFun import CI,tukey,tolArea
+from confidenceFun import CI,tukey,tolArea,taPlot,caPlot
 from pcr_fit import findLeastSquaresCq
+import time
 
-
-folderMelt = 'raw/baselineMelt'
-folderPCR = 'raw/baselinePCR'
+contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
+# folderMelt = 'raw/baselineMelt'
+# folderPCR = 'raw/baselinePCR'
 
 nameConvention = {
     'melt start':['Initial Melt Value','RFU'],
@@ -20,7 +21,8 @@ nameConvention = {
     'cq':['Cq','Cycle'],
     'reverse cq':['Reverse Cq','Cycle'],
     'pcr min':['Minimum PCR Value','RFU'],
-    'instrument':'Instrument'
+    'instrument':'Instrument',
+    'config':'Configuration'
 }
 
 channels = [415,445,480,515,555,590,630,680,'NIR','CLR','DARK']
@@ -40,13 +42,18 @@ def reverseCq(pcr):
     return realCqReverse
 
 
-def makeDF(chan):
+def makeDF(chan,folderInst,folderPCR,folderMelt):
+    
     dataByInst = {}
-    runInfo = pd.read_csv('raw/baseline.csv')
+    if 'baseline' in folderInst:
+        config = 0
+    else:
+        config = 1
+    runInfo = pd.read_csv('/'.join([folderInst,'inst.csv']))
     cupInfo = list(runInfo['cons'])
     instInfo = list(runInfo['inst'])
-    fmaxInfo = pd.read_csv('raw/fmax.csv')
-    cqInfo = pd.read_csv('raw/cq.csv')
+    fmaxInfo = pd.read_csv('/'.join([folderInst,'fmax.csv']))
+    cqInfo = pd.read_csv('/'.join([folderInst,'cq.csv']))
     dataByInst['cup id'] = cupInfo
     dataByInst['instrument'] = instInfo
     dataByInst['fmax'] = fmaxInfo[str(chan)]
@@ -62,15 +69,16 @@ def makeDF(chan):
     dataByInst['reverse cq'] = []
     dataByInst['mean pcr'] = []
     dataByInst['mean pcr 90% ci'] = []
+    dataByInst['config'] = []
 
 
-    for i in os.listdir(folderMelt):
-        meltData = readCsv(folderMelt,i,chan)
+    for i in os.listdir('/'.join([folderInst,folderMelt])):
+        meltData = readCsv('/'.join([folderInst,folderMelt]),i,chan)
         dataByInst['melt start'].append(meltData[0])
         dataByInst['melt stop'].append(meltData[-1])
         dataByInst['melt range'].append(meltData[0] - meltData[-1])
-    for i in os.listdir(folderPCR):
-        pcrData = readCsv(folderPCR,i,chan)
+    for i in os.listdir('/'.join([folderInst,folderPCR])):
+        pcrData = readCsv('/'.join([folderInst,folderPCR]),i,chan)
         dataByInst['pcr start'].append(pcrData[0])
         dataByInst['pcr stop'].append(pcrData[-1])
         dataByInst['pcr min'].append(min(pcrData)) 
@@ -78,6 +86,7 @@ def makeDF(chan):
         dataByInst['mean pcr'].append(np.mean(pcrData))
         ci90 = CI(pcrData,0.1)
         dataByInst['mean pcr 90% ci'].append((ci90[1]-ci90[0])/2)
+        dataByInst['config'].append(config)
 
 
     df = pd.DataFrame(dataByInst)
@@ -89,8 +98,8 @@ def makeCsv(chan):
     df.to_csv(''.join(['parsedData/',str(chan),'.csv']))
 
 
-def compare(chan,sortBy,compWhat,alpha):
-    df = makeDF(chan)
+def compare(chan,sortBy,compWhat,alpha,folderInst,folderPCR,folderMelt):
+    df = makeDF(chan,folderInst,folderPCR,folderMelt)
     
     try:
         df = df.dropna()
@@ -103,38 +112,46 @@ def compare(chan,sortBy,compWhat,alpha):
     plt.suptitle('')
     plt.xlabel(nameConvention[sortBy])
     plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join([compWhat,'_boxplot.png']))
+    plt.savefig(''.join(['plots/',compWhat,'_',str(chan),'_boxplot.png']))
 
 
-def makeCompound(chan,sortBy,compWhat):
-    df = makeDF(chan)
+def makeCompound(chan,sortBy,compWhat,folderInst,folderPCR,folderMelt):
+    df = makeDF(chan,folderInst,folderPCR,folderMelt)
     smallDF = {}
     for indx,val in enumerate(df[sortBy]):
         if val not in smallDF:
             smallDF[val] = [df[compWhat][indx]]
         else:
             smallDF[val].append(df[compWhat][indx])
-    return list(smallDF.values())
-
-def taPlot(compoundPop,alpha,p,col,name):                #compoundPop should be of format[[pop1],[pop2],...]
-    dat = tolArea(compoundPop,alpha,p)
-    mid = dat[1]
-    points = dat[0]
-    tis = dat[2]
-    tiL,tiR = tis[0]
-    tiB,tiT = tis[1]
-
-    # print(mid[0])
-    print(points[0])
-    plt.plot(points[0],points[1],'o',color=col,label=name)
-    plt.hlines(mid[1],tiL,tiR,lw=5,colors=col)
-    plt.vlines(mid[0],tiB,tiT,lw=5,colors=col)
-    plt.plot(mid[0],mid[1],'o',color='r')
-    plt.xlabel('Mean Melt Range (RFU)')
-    plt.ylabel('Standard Deviation (RFU)')
-    plt.title('90% Tolerance Area (p=90)')
-    plt.grid()
-    plt.show()
+    # print(df)
+    # print(smallDF)
+    compound = list(smallDF.values())
+    for indx,val in enumerate(compound):
+        new = [i for i in val if 0/i == 0]
+        compound[indx] = new
+    return compound
 
 
-taPlot(makeCompound(515,'instrument','melt range'),0.1,0.9,'blue','test')
+# makeCompound(415,'instrument','cq','baselineRaw','baselinePCR','baselineMelt')
+start = time.time()
+
+for i in channels:
+    for u in contents:
+        try:
+            compoundPop = makeCompound(i,'instrument',u,'baselineRaw','baselinePCR','baselineMelt')
+            # comp2 = makeCompound(515,'instrument','cq','baselineRaw','baselinePCR','baselineMelt')
+            plt.figure()
+            compare(i,'instrument',u,0.1,'baselineRaw','baselinePCR','baselineMelt')
+            # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
+            plt.figure()
+            plt.grid()
+            # caPlot(compoundPop,0.1,'g','cq',515,0)
+            caPlot(compoundPop,.1,'b',u,i,0)
+            
+        except:
+            print('cannot make',i,'-',u,'plots')
+        print(i,u)
+        # time.sleep(10)
+
+end = time.time()
+print(end-start)
