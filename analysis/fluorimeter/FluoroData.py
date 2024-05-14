@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-from confidenceFun import CI,tukey,tolArea,taPlot,caPlot
+from confidenceFun import CI,tukey,tolArea,taPlot,caPlot,anovaPrep,anova,confArea
 from pcr_fit import findLeastSquaresCq
 import time
 
@@ -52,6 +52,9 @@ def makeDF(chan,folderInst,folderPCR,folderMelt):
     runInfo = pd.read_csv('/'.join([folderInst,'inst.csv']))
     cupInfo = list(runInfo['cons'])
     instInfo = list(runInfo['inst'])
+    # print(instInfo)
+    instInfo = [' - '.join([str(i),str(config)]) for i in instInfo]
+    # print(instInfo)
     fmaxInfo = pd.read_csv('/'.join([folderInst,'fmax.csv']))
     cqInfo = pd.read_csv('/'.join([folderInst,'cq.csv']))
     dataByInst['cup id'] = cupInfo
@@ -98,8 +101,7 @@ def makeCsv(chan):
     df.to_csv(''.join(['parsedData/',str(chan),'.csv']))
 
 
-def compare(chan,sortBy,compWhat,alpha,folderInst,folderPCR,folderMelt):
-    df = makeDF(chan,folderInst,folderPCR,folderMelt)
+def compare(df,chan,sortBy,compWhat,alpha):
     
     try:
         df = df.dropna()
@@ -110,13 +112,14 @@ def compare(chan,sortBy,compWhat,alpha,folderInst,folderPCR,folderMelt):
     df.boxplot(compWhat,by=sortBy)
     plt.ylabel(nameConvention[compWhat][1])
     plt.suptitle('')
+    plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
     plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join(['plots/',compWhat,'_',str(chan),'_boxplot.png']))
+    plt.savefig(''.join(['plots2/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
-def makeCompound(chan,sortBy,compWhat,folderInst,folderPCR,folderMelt):
-    df = makeDF(chan,folderInst,folderPCR,folderMelt)
+def makeCompound(df,sortBy,compWhat):
+    
     smallDF = {}
     for indx,val in enumerate(df[sortBy]):
         if val not in smallDF:
@@ -133,25 +136,61 @@ def makeCompound(chan,sortBy,compWhat,folderInst,folderPCR,folderMelt):
 
 
 # makeCompound(415,'instrument','cq','baselineRaw','baselinePCR','baselineMelt')
-start = time.time()
+def makeAllPlots():
+    start = time.time()
 
-for i in channels:
-    for u in contents:
-        try:
-            compoundPop = makeCompound(i,'instrument',u,'baselineRaw','baselinePCR','baselineMelt')
-            # comp2 = makeCompound(515,'instrument','cq','baselineRaw','baselinePCR','baselineMelt')
-            plt.figure()
-            compare(i,'instrument',u,0.1,'baselineRaw','baselinePCR','baselineMelt')
-            # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
-            plt.figure()
-            plt.grid()
-            # caPlot(compoundPop,0.1,'g','cq',515,0)
-            caPlot(compoundPop,.1,'b',u,i,0)
-            
-        except:
-            print('cannot make',i,'-',u,'plots')
-        print(i,u)
-        # time.sleep(10)
+    for i in channels:
+        for u in contents:
+            try:
+                df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt')
+                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt')
+                dfComb = pd.concat([df,df2],ignore_index=1)
+                compoundPop = makeCompound(df,'instrument',u)
+                compoundPop2 = makeCompound(df2,'instrument',u)
+              
+                compare(dfComb,i,'instrument',u,0.1)
+                # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
+                plt.figure()
+                plt.grid()
+                caPlot(compoundPop,0.1,'b',u,i,0)
+                caPlot(compoundPop2,.1,'g',u,i,1)
+                
+            except:
+                print('cannot make',i,'-',u,'plots2')
+            print(i,u)
+            # time.sleep(10)
 
-end = time.time()
-print(end-start)
+    end = time.time()
+    print(end-start)
+
+# makeAllPlots()
+def compareAll():
+    differences = []
+    for i in channels:
+        for u in contents:
+            try:
+                df1 = makeDF(i,'baselineRaw','baselinePCR','baselineMelt')
+                com1 = makeCompound(df1,'instrument',u)
+                ca1 = confArea(com1,0.1)[0][1]
+
+                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt')
+                com2 = makeCompound(df2,'instrument',u)
+                ca2 = confArea(com2,0.1)[0][1]
+
+                prep = anovaPrep([ca1,ca2],[0,1],u,'config')
+                tuk = tukey(prep,'config',u,0.1)
+                if tuk.reject[0] == True:
+                    if tuk.meandiffs[0] < 0:
+                        differences.append([i,u,'new config is smaller'])
+                    else:
+                        differences.append([i,u,'new config is larger'])
+                else:
+                    print(i,u,'not different')
+            except:
+                print('could not do',i,u)
+                print(ca1,ca2)
+    for i in differences:
+        print(i)
+    
+compareAll()
+               

@@ -4,6 +4,10 @@ from scipy.stats import t
 import toleranceinterval as ti
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import matplotlib.pyplot as plt
+import pandas as pd
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+
 nameConvention = {
     'melt start':['Initial Melt Value','RFU'],
     'melt stop':['Final Melt Value','RFU'],
@@ -122,10 +126,31 @@ def caPlot(compoundPop,alpha,col,compWhat,chan,config):                #compound
     plt.hlines(mid[1],ciL,ciR,lw=5,colors=col)
     plt.vlines(mid[0],ciB,ciT,lw=5,colors=col)
     plt.plot(mid[0],mid[1],'o',color='r')
-    plt.xlabel(' '.join(['Mean',nameConvention[compWhat][0],nameConvention[compWhat][1]]))
-    plt.ylabel(''.join(['Standard Deviation ','(',nameConvention[compWhat][1],')']))
+    plt.xlabel(''.join(['Mean ',nameConvention[compWhat][0],' (',nameConvention[compWhat][1],')']))
+    plt.ylabel(''.join(['Standard Deviation (',nameConvention[compWhat][1],')']))
     plt.title('90% Confidence Area')
     # plt.grid()
     plt.legend()
-    plt.savefig(''.join(['plots/',compWhat,'_',str(chan),'_CA.png']))
+    plt.savefig(''.join(['plots2/',str(chan),'_',compWhat,'_CA.png']))
+
+
+
+def anova(dataDict,csvFile,dep,ind):
+    dF = pd.DataFrame(dataDict)
+    dF.to_csv(csvFile)
+    csvData = pd.read_csv(csvFile)
+    formula = ' ~ '.join([dep,ind])
+    model = ols(formula, csvData).fit()
+    aov_table = anova_lm(model, typ=1)
+    return aov_table
+
+def anovaPrep(listOfPopsDep,listOfPopsInd,dep,ind):
+
+    dict = {ind:[],dep:[]}
+    for indx,val in enumerate(listOfPopsDep):
+        for i in val:
+            dict[ind].append(listOfPopsInd[indx])
+            dict[dep].append(i)
     
+    return dict
+
