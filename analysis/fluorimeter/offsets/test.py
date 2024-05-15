@@ -37,8 +37,8 @@ def makeDf(folder):
 
 # makeDf('byInst')
 print('THIS COMPARES ALL INSTRUMENT, PROTOCOL COMBOS')
-print(tukey(makeDf('expandedNominal/byInst'),'inst','r2',0.1))
-print(anova(makeDf('expandedNominal/byInst'),'inst','r2'))
+print(tukey(makeDf('expandedTilt/byInst'),'inst','r2',0.1))
+print(anova(makeDf('expandedTilt/byInst'),'inst','r2'))
 def makeCompound(df,sortBy,compWhat):
     
     smallDF = {}
@@ -50,8 +50,8 @@ def makeCompound(df,sortBy,compWhat):
     return list(smallDF.values())
 
 
-no = makeCompound(makeDf('expandedNominal/byInstNoThump'),'inst','r2')
-yes = makeCompound(makeDf('expandedNominal/byInstThump'),'inst','r2')
+no = makeCompound(makeDf('expandedTilt/byInstNoThump'),'inst','r2')
+yes = makeCompound(makeDf('expandedTilt/byInstThump'),'inst','r2')
 
 dfNew = pd.DataFrame({'thump':confArea(yes,0.1)[0][1],
                       'no thump':confArea(no,.1)[0][1]})
@@ -63,7 +63,7 @@ for i in dfNew:
 dfClean = pd.DataFrame(dictClean)
 print('THIS COMPARES MEAN MEANS OR MEAN STDEVS')
 print(tukey(dfClean,'pop','r2',.1))
-
+print(anova(dfClean,'pop','r2'))
 
 caPlot(no,0.1,'C0','no thump')
 caPlot(yes,0.1,'g','thump')

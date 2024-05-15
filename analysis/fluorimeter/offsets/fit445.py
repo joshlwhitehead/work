@@ -66,42 +66,42 @@ def byInst(folder,inst):
     print(tukey(df,'pop','r2 val',0.1))
 for i in instList:
     
-    byInst('expandedNominal/byInst',i)
+    byInst('expandedTilt/byInst',i)
     # time.sleep(10)
-# thumpRR = fitCurves('expandedNominal/official thump/')
-# noThumpRR = fitCurves('expandedNominal/official no thump/')
-# # thumpBackRR = fitCurves('thumpBack/')
+thumpRR = fitCurves('expandedTilt/official thump/')
+noThumpRR = fitCurves('expandedTilt/official no thump/')
+# thumpBackRR = fitCurves('thumpBack/')
 
 
-# df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
-# # df.boxplot(by='pop')
-# # plt.show()
-# # print(df)
-# print(np.mean(thumpRR))
-# print(np.mean(noThumpRR))
-# # print(np.mean(thumpBackRR))
-# print('THIS COMPARES ALL THUMPER TO ALL NO THUMPER R2 VALUES')
-# print(tukey(df,'pop','r2 val',0.1))
-
-# pThump = 32.5/69
-# pNoThump = 67/70
-# # pBack = 1/10
-
-# k = 1
-# n = 100
-# probThump = stats.binom.pmf(k,n,pThump)
-# probNoThump = stats.binom.pmf(k,n,pNoThump)
-# # probBack = stats.binom.pmf(k,n,pBack)
-
-
-# # print(probThump,probNoThump)
-
-# x = np.arange(0,n)
-# plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
-# plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
-# # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
-# plt.legend()
-# plt.ylabel('Probability of x Runs with Data Offsets')
-# plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
-# plt.grid()
+df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
+# df.boxplot(by='pop')
 # plt.show()
+# print(df)
+print(np.mean(thumpRR))
+print(np.mean(noThumpRR))
+# print(np.mean(thumpBackRR))
+print('THIS COMPARES ALL THUMPER TO ALL NO THUMPER R2 VALUES')
+print(tukey(df,'pop','r2 val',0.1))
+
+pThump = 11.5/70
+pNoThump = 62/70
+# pBack = 1/10
+
+k = 1
+n = 100
+probThump = stats.binom.pmf(k,n,pThump)
+probNoThump = stats.binom.pmf(k,n,pNoThump)
+# probBack = stats.binom.pmf(k,n,pBack)
+
+
+# print(probThump,probNoThump)
+
+x = np.arange(0,n)
+plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
+plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
+# plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
+plt.legend()
+plt.ylabel('Probability of x Runs with Data Offsets')
+plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
+plt.grid()
+plt.show()
