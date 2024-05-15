@@ -137,7 +137,7 @@ def makeCompound(df,sortBy,compWhat):
 
 # makeCompound(415,'instrument','cq','baselineRaw','baselinePCR','baselineMelt')
 def makeAllPlots():
-    start = time.time()
+    
 
     for i in channels:
         for u in contents:
@@ -160,37 +160,117 @@ def makeAllPlots():
             print(i,u)
             # time.sleep(10)
 
-    end = time.time()
-    print(end-start)
+
+
 
 # makeAllPlots()
+
+
+
+
 def compareAll():
+
+    final = {'channel':[],'metric':[],'mean diff':[],'sig diff mean':[],'std diff':[],'sig diff std':[],
+             'config 0 mean CI len':[],'config 0 std CI len':[],'config 1 mean CI len':[],'config 1 std CI len':[]}
     differences = []
     for i in channels:
         for u in contents:
             try:
                 df1 = makeDF(i,'baselineRaw','baselinePCR','baselineMelt')
                 com1 = makeCompound(df1,'instrument',u)
-                ca1 = confArea(com1,0.1)[0][1]
+                ca1 = confArea(com1,0.1)
+                mean1 = ca1[0][0]
+                std1 = ca1[0][1]
+                meanCi1 = ca1[2][0][1] - ca1[2][0][0]
+                stdCi1 = ca1[2][1][1] - ca1[2][1][0]
 
                 df2 = makeDF(i,'swapRaw','swapPCR','swapMelt')
                 com2 = makeCompound(df2,'instrument',u)
-                ca2 = confArea(com2,0.1)[0][1]
+                ca2 = confArea(com2,0.1)
+                mean2 = ca2[0][0]
+                std2 = ca2[0][1]
+                meanCi2 = ca2[2][0][1] - ca2[2][0][0]
+                stdCi2 = ca2[2][1][1] - ca2[2][1][0]
 
-                prep = anovaPrep([ca1,ca2],[0,1],u,'config')
-                tuk = tukey(prep,'config',u,0.1)
-                if tuk.reject[0] == True:
-                    if tuk.meandiffs[0] < 0:
-                        differences.append([i,u,'new config is smaller'])
-                    else:
-                        differences.append([i,u,'new config is larger'])
-                else:
-                    print(i,u,'not different')
+                prepMean = anovaPrep([mean1,mean2],[0,1],u,'config')
+                tukMean = tukey(prepMean,'config',u,0.1)
+                prepStd = anovaPrep([std1,std2],[0,1],u,'config')
+                tukStd = tukey(prepStd,'config',u,0.1)
+
+                sigDiffMean = tukMean.reject[0]
+                sigDiffStd = tukStd.reject[0]
+                meanDiff = tukMean.meandiffs[0]
+                stdDiff = tukStd.meandiffs[0]
+
+
+                final['channel'].append(i)
+                final['metric'].append(u)
+                final['sig diff mean'].append(sigDiffMean)
+                final['mean diff'].append(meanDiff)
+                final['sig diff std'].append(sigDiffStd)
+                final['std diff'].append(stdDiff)
+                final['config 0 mean CI len'].append(meanCi1)
+                final['config 0 std CI len'].append(stdCi1)
+                final['config 1 mean CI len'].append(meanCi2)
+                final['config 1 std CI len'].append(stdCi2)
             except:
                 print('could not do',i,u)
                 print(ca1,ca2)
-    for i in differences:
-        print(i)
+    dfFull = pd.DataFrame(final)
+    dfFull.to_csv('allData.csv')
     
-compareAll()
+# compareAll()
+def instInstVar(mean):
+    data = pd.read_csv('allData.csv')
+    if mean == 1:
+        comp = 'mean'
+    else:
+        comp = 'std'
+    config0Mean = list(data[''.join(['config 0 ',comp,' CI len'])])
+    config1Mean = list(data[''.join(['config 1 ',comp,' CI len'])])
+    config0 = [0]*len(config0Mean)
+    config1 = [1]*len(config1Mean)
+
+    means = config0Mean + config1Mean
+    configs = config0 + config1
+
+    dict = {comp:means,'config':configs}
+    df = pd.DataFrame(dict)
+    print(tukey(df,'config',comp,0.1))
+
+instInstVar(0)
+
+
+def runRunVar(mean):
+    
+    data = pd.read_csv('allData.csv')
+    chan = data['channel']
+    res = {}
+    if mean == 1:
+        diffData = data['mean diff']
+        col = 'sig diff mean'
+    else:
+        diffData = data['std diff']
+        col = 'sig diff std'
+    for i in channels:
+        pf = []
+        diff = []
+        for indx,val in enumerate(data[col]):
+            if chan[indx] == str(i):
+                diff.append(diffData[indx])
+                if val == 1:
+                    pf.append(1)
+                else:
+                    pf.append(0)
+        res[i] = [np.mean(pf),np.mean(diff),np.std(diff)]
+    return res
+
+# test = runRunVar(0)
+# for i in test:
+#     if test[i][0] > 0.5:
+#         print(i,round(test[i][1],1),'+/-',round(test[i][2],1),test[i][0])
+
+
+
+# print(runRunVar(1)['CLR'])
                

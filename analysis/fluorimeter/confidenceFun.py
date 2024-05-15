@@ -154,3 +154,13 @@ def anovaPrep(listOfPopsDep,listOfPopsInd,dep,ind):
     
     return dict
 
+def compBinom(m,n,x,y):                  #m=total A; n=total B; x=fail in A; y=fail in B
+    p1 = x/m
+    p2 = y/n
+    pq = (x+y)/(m+n)
+    z = (p1-p2)/np.sqrt(pq*(1-pq)*(1/m+1/n))
+    if z >= 1.645 or z <= -1.645:
+        print('different')
+    else:
+        print('not different')
+    return z

@@ -9,7 +9,7 @@ instList = [619,608,623,622,617,620,609,604,610,625]
 noThump = noTiltLarge[:10]
 thump = noTiltLarge[10:]
 
-def testStat(m,n,x,y):                  #m=total A; n=total B; x=fail in A; y=fail in B
+def compBinom(m,n,x,y):                  #m=total A; n=total B; x=fail in A; y=fail in B
     p1 = x/m
     p2 = y/n
     pq = (x+y)/(m+n)
@@ -25,4 +25,4 @@ def testStat(m,n,x,y):                  #m=total A; n=total B; x=fail in A; y=fa
 #     print(testStat(7,7,noThump[indx]*7,thump[indx]*7))
 #     print()
 
-print(testStat(70,69,67,32.5))
+print(compBinom(70,69,67,32.5))
