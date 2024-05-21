@@ -5,7 +5,7 @@ import os
 from confidenceFun import CI,tukey,tolArea,taPlot,caPlot,anovaPrep,anova,confArea
 from pcr_fit import findLeastSquaresCq
 import time
-
+study = 'covidData'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -42,7 +42,9 @@ def reverseCq(pcr):
     return realCqReverse
 
 
-def makeDF(chan,folderInst,folderPCR,folderMelt):
+def makeDF(chan,folderInst,folderPCR,folderMelt,study):
+    folderInst = '/'.join([study,folderInst])
+
     
     dataByInst = {}
     if 'baseline' in folderInst:
@@ -115,7 +117,7 @@ def compare(df,chan,sortBy,compWhat,alpha):
     plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
     plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join(['plots2/',str(chan),'_',compWhat,'_boxplot.png']))
+    plt.savefig(''.join(['plots3/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
 def makeCompound(df,sortBy,compWhat):
@@ -142,12 +144,12 @@ def makeAllPlots():
     for i in channels:
         for u in contents:
             try:
-                df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt')
-                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt')
+                df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
+                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
                 dfComb = pd.concat([df,df2],ignore_index=1)
                 compoundPop = makeCompound(df,'instrument',u)
                 compoundPop2 = makeCompound(df2,'instrument',u)
-              
+                
                 compare(dfComb,i,'instrument',u,0.1)
                 # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
                 plt.figure()
@@ -156,14 +158,14 @@ def makeAllPlots():
                 caPlot(compoundPop2,.1,'g',u,i,1)
                 
             except:
-                print('cannot make',i,'-',u,'plots2')
+                print('cannot make',i,'-',u,'plots3')
             print(i,u)
             # time.sleep(10)
 
 
 
 
-# makeAllPlots()
+makeAllPlots()
 
 
 
@@ -176,7 +178,7 @@ def compareAll():
     for i in channels:
         for u in contents:
             try:
-                df1 = makeDF(i,'baselineRaw','baselinePCR','baselineMelt')
+                df1 = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
                 com1 = makeCompound(df1,'instrument',u)
                 ca1 = confArea(com1,0.1)
                 mean1 = ca1[0][0]
@@ -184,7 +186,7 @@ def compareAll():
                 meanCi1 = ca1[2][0][1] - ca1[2][0][0]
                 stdCi1 = ca1[2][1][1] - ca1[2][1][0]
 
-                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt')
+                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
                 com2 = makeCompound(df2,'instrument',u)
                 ca2 = confArea(com2,0.1)
                 mean2 = ca2[0][0]
@@ -238,7 +240,7 @@ def instInstVar(mean):
     df = pd.DataFrame(dict)
     print(tukey(df,'config',comp,0.1))
 
-instInstVar(0)
+# instInstVar(0)
 
 
 def runRunVar(mean):
