@@ -5,7 +5,7 @@ import os
 from confidenceFun import CI,tukey,tolArea,taPlot,caPlot,anovaPrep,anova,confArea
 from pcr_fit import findLeastSquaresCq
 import time
-study = 'covidData'
+study = 'duplexData'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -167,7 +167,7 @@ def makeAllPlots():
 
 
 
-makeAllPlots()
+# makeAllPlots()
 
 
 
@@ -175,8 +175,8 @@ makeAllPlots()
 def compareAll():
 
     final = {'channel':[],'metric':[],'mean diff':[],'sig diff mean':[],'std diff':[],'sig diff std':[],
-             'config 0 mean CI len':[],'config 0 std CI len':[],'config 1 mean CI len':[],'config 1 std CI len':[]}
-    differences = []
+             'config 0 std of means':[],'config 0 std of stds':[],'config 1 std of means':[],'config 1 std of stds':[]}
+
     for i in channels:
         for u in contents:
             try:
@@ -185,16 +185,21 @@ def compareAll():
                 ca1 = confArea(com1,0.1)
                 mean1 = ca1[0][0]
                 std1 = ca1[0][1]
-                meanCi1 = ca1[2][0][1] - ca1[2][0][0]
-                stdCi1 = ca1[2][1][1] - ca1[2][1][0]
+                # meanCi1 = ca1[2][0][1] - ca1[2][0][0]
+                # stdCi1 = ca1[2][1][1] - ca1[2][1][0]
+                # print(mean1)
+                stdMean1 = np.std(mean1)
+                stdStd1 = np.std(std1)
 
                 df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
                 com2 = makeCompound(df2,'instrument',u)
                 ca2 = confArea(com2,0.1)
                 mean2 = ca2[0][0]
                 std2 = ca2[0][1]
-                meanCi2 = ca2[2][0][1] - ca2[2][0][0]
-                stdCi2 = ca2[2][1][1] - ca2[2][1][0]
+                # meanCi2 = ca2[2][0][1] - ca2[2][0][0]
+                # stdCi2 = ca2[2][1][1] - ca2[2][1][0]
+                stdMean2 = np.std(mean2)
+                stdStd2 = np.std(std2)
 
                 prepMean = anovaPrep([mean1,mean2],[0,1],u,'config')
                 tukMean = tukey(prepMean,'config',u,0.1)
@@ -213,25 +218,49 @@ def compareAll():
                 final['mean diff'].append(meanDiff)
                 final['sig diff std'].append(sigDiffStd)
                 final['std diff'].append(stdDiff)
-                final['config 0 mean CI len'].append(meanCi1)
-                final['config 0 std CI len'].append(stdCi1)
-                final['config 1 mean CI len'].append(meanCi2)
-                final['config 1 std CI len'].append(stdCi2)
+                final['config 0 std of means'].append(stdMean1)
+                final['config 0 std of stds'].append(stdStd1)
+                final['config 1 std of means'].append(stdMean2)
+                final['config 1 std of stds'].append(stdStd2)
             except:
                 print('could not do',i,u)
                 print(ca1,ca2)
     dfFull = pd.DataFrame(final)
-    dfFull.to_csv('allData.csv')
+    dfFull.to_csv('allData2.csv')
     
 # compareAll()
-def instInstVar(mean):
-    data = pd.read_csv('allData.csv')
+
+
+
+
+
+def instInstVar(mean,chan,metric):
+    data = pd.read_csv('allData2.csv')
     if mean == 1:
-        comp = 'mean'
+        comp = 'means'
     else:
-        comp = 'std'
-    config0Mean = list(data[''.join(['config 0 ',comp,' CI len'])])
-    config1Mean = list(data[''.join(['config 1 ',comp,' CI len'])])
+        comp = 'stds'
+    config0Tot = list(data[''.join(['config 0 std of ',comp])])
+    config1Tot = list(data[''.join(['config 1 std of ',comp])])
+    if chan == 0 and metric == 0:
+        config0Mean = config0Tot
+        config1Mean = config1Tot
+    elif chan != 0 and metric == 0:
+        config0Mean = []
+        config1Mean = []
+        channelCol = list(data['channel'])
+        for indx,val in enumerate(channelCol):
+            if val == str(chan):
+                config0Mean.append(config0Tot[indx])
+                config1Mean.append(config1Tot[indx])
+    elif chan == 0 and metric != 0:
+        config0Mean = []
+        config1Mean = []
+        metricCol = list(data['metric'])
+        for indx,val in enumerate(metricCol):
+            if val == metric:
+                config0Mean.append(config0Tot[indx])
+                config1Mean.append(config1Tot[indx])
     config0 = [0]*len(config0Mean)
     config1 = [1]*len(config1Mean)
 
@@ -240,9 +269,29 @@ def instInstVar(mean):
 
     dict = {comp:means,'config':configs}
     df = pd.DataFrame(dict)
-    print(tukey(df,'config',comp,0.1))
+    return tukey(df,'config',comp,0.1)
 
-# instInstVar(0)
+
+me = [0,1]
+for i in me:
+    for u in contents:
+        try:
+            res = instInstVar(i,0,u)
+            rej = res.reject[0]
+            dif = res.meandiffs[0]
+            if rej == 1:
+                if i == 1:
+                    print('means of',u,'are different')
+                else:
+                    print('stds of',u,'are different')
+                if dif < 0:
+                    print('config 0 is more variable')
+                else:
+                    print('config 1 is more variable')
+                print()
+        except:
+            pass
+        
 
 
 def runRunVar(mean):
