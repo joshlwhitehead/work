@@ -79,6 +79,8 @@ def makeDF(chan,folderInst,folderPCR,folderMelt,study):
 
     for i in os.listdir('/'.join([folderInst,folderMelt])):
         meltData = readCsv('/'.join([folderInst,folderMelt]),i,chan)
+        # print(folderInst,folderMelt,i,chan)
+        # print(meltData)
         dataByInst['melt start'].append(meltData[0])
         dataByInst['melt stop'].append(meltData[-1])
         dataByInst['melt range'].append(meltData[0] - meltData[-1])
@@ -143,22 +145,22 @@ def makeAllPlots():
 
     for i in channels:
         for u in contents:
-            try:
-                df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
-                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
-                dfComb = pd.concat([df,df2],ignore_index=1)
-                compoundPop = makeCompound(df,'instrument',u)
-                compoundPop2 = makeCompound(df2,'instrument',u)
+            # try:
+            df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
+            df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
+            dfComb = pd.concat([df,df2],ignore_index=1)
+            compoundPop = makeCompound(df,'instrument',u)
+            compoundPop2 = makeCompound(df2,'instrument',u)
+            
+            compare(dfComb,i,'instrument',u,0.1)
+            # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
+            plt.figure()
+            plt.grid()
+            caPlot(compoundPop,0.1,'b',u,i,0)
+            caPlot(compoundPop2,.1,'g',u,i,1)
                 
-                compare(dfComb,i,'instrument',u,0.1)
-                # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
-                plt.figure()
-                plt.grid()
-                caPlot(compoundPop,0.1,'b',u,i,0)
-                caPlot(compoundPop2,.1,'g',u,i,1)
-                
-            except:
-                print('cannot make',i,'-',u,'plots3')
+            # except:
+            #     print('cannot make',i,'-',u,'plots3')
             print(i,u)
             # time.sleep(10)
 
