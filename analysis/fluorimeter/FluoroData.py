@@ -2,15 +2,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-from confidenceFun import CI,tukey,tolArea,taPlot,caPlot,anovaPrep,anova,confArea
+from confidenceFun import CI,tukey,caPlot,anovaPrep,confArea
 from pcr_fit import findLeastSquaresCq
-import time
+
+
 study = 'duplexData'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
 
-nameConvention = {
+nameConvention = {                                      #keys are shorthand labels, values contain the actual label and the unit of measurement
     'melt start':['Initial Melt Value','RFU'],
     'melt stop':['Final Melt Value','RFU'],
     'melt range':['Melt Range','RFU'],
@@ -26,14 +27,18 @@ nameConvention = {
 }
 
 channels = [415,445,480,515,555,590,630,680,'NIR','CLR','DARK']
-def readCsv(folder,file,chan):
+
+
+
+
+def readCsv(folder,file,chan):                      # reads a .csv of fluorescence data and returns the data from a specific channel
     sheet = pd.read_csv('/'.join([folder,file]))
     return list(sheet[str(chan)])
 
 
-def reverseCq(pcr):    
-    cq = 25
-    reversePCR = list(reversed(pcr[:cq]))
+def reverseCq(pcr):                                     #estimates the cycle where the PCR curve drops down to baseline aka the reverse cq
+    cq = 25             #need to eliminate PCR rise/plateau                                           
+    reversePCR = list(reversed(pcr[:cq]))               # uses the cq algorithm on the PCR curve ordered from last to first cycle
 
     cyclesReverse = np.arange(0,len(reversePCR))
     
@@ -42,7 +47,9 @@ def reverseCq(pcr):
     return realCqReverse
 
 
-def makeDF(chan,folderInst,folderPCR,folderMelt,study):
+
+
+def makeDF(chan,folderInst,folderPCR,folderMelt,study):             #takes melt, pcr, cq, fmax data and organizes it by instrument in a dataframe 
     folderInst = '/'.join([study,folderInst])
 
     
