@@ -1,3 +1,6 @@
+"""fit an exponential decay to 445 PCR curve"""
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -5,45 +8,36 @@ import os
 from scipy.optimize import curve_fit
 from confidenceFun import r2,tukey
 from scipy import stats
-import time
 
 
-colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']
-instList = [604,608,609,610,617,619,620,622,623,625]
+colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']            #default list of matplotlib plot colors
+instList = [604,608,609,610,617,619,620,622,623,625]                    #list of inst
 
-def expon(x,a,b,c,d):
+def expon(x,a,b,c,d):                               #base exponential decay function
     return a*np.exp(-b*x+d)+c
 
 
 
-def fitCurves(folder):
-    
+def fitCurves(folder):                                      #loops through data in folder and fits expon decay to each 445 curve
+                                                            #calculates r2 value and returns list of all r2
     rr = []
     for indx,val in enumerate(os.listdir(folder)):
         
-        data = pd.read_csv(''.join([folder,val]))
+        data = pd.read_csv(''.join([folder,val]))           #get data from file
         pcr445 = np.array(data['445'])
         cycle = np.arange(0,len(pcr445))
         try:
-            popt,pcov = curve_fit(expon,cycle,pcr445)
-            # plt.plot(cycle,expon(cycle,*popt),color=colors[indx])
-            rr.append(r2(pcr445,expon(cycle,*popt)))
+            popt,pcov = curve_fit(expon,cycle,pcr445)       #fit exponential
+            rr.append(r2(pcr445,expon(cycle,*popt)))        #r2
         except:
             rr.append(0)
             pass
-    #     plt.plot(cycle,pcr445,'o',color=colors[indx])
-        
-    #     plt.grid()
-    #     plt.ylabel('RFU')
-    #     plt.xlabel('Cycle')
-
-    # plt.savefig('test.png')
         
     return rr
 
 
 
-def makeDf(data,popName):
+def makeDf(data,popName):                       # 
     dict = {'pop':[],'r2 val':[]}
     for indx,val in enumerate(data):
         for u in val:
