@@ -113,7 +113,8 @@ def caPlot(compoundPop,alpha,col,name):                #compoundPop should be of
     ciB,ciT = cis[1]
 
     # print(mid[0])
-    print(points[0])
+    print(name,points[0])
+    print(name,points[1])
     plt.plot(points[0],points[1],'o',color=col,label=name)
     plt.hlines(mid[1],ciL,ciR,lw=5,colors=col)
     plt.vlines(mid[0],ciB,ciT,lw=5,colors=col)
