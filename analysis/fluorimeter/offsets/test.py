@@ -24,13 +24,13 @@ def makeDf(folder):
 
 
     df = pd.DataFrame(newDict)
-    df.boxplot(by='inst')
-    plt.xticks(rotation=20)
-    plt.ylabel('R2 value')
-    plt.xlabel('Instrument')
-    plt.title('')
-    plt.suptitle('')
-    plt.show()
+    # df.boxplot(by='inst')
+    # plt.xticks(rotation=20)
+    # plt.ylabel('R2 value')
+    # plt.xlabel('Instrument')
+    # plt.title('')
+    # plt.suptitle('')
+    # plt.show()
     return df
 
 
@@ -50,11 +50,18 @@ def makeCompound(df,sortBy,compWhat):
     return list(smallDF.values())
 
 
-no = makeCompound(makeDf('expandedTilt/byInstNoThump'),'inst','r2')
-yes = makeCompound(makeDf('expandedTilt/byInstThump'),'inst','r2')
+noThumpTilt = makeCompound(makeDf('expandedTilt/byInstNoThump'),'inst','r2')
+thumpTilt = makeCompound(makeDf('expandedTilt/byInstThump'),'inst','r2')
+noThumpNoTilt = makeCompound(makeDf('expandedNominal/byInstNoThump'),'inst','r2')
+thumpNoTilt = makeCompound(makeDf('expandedNominal/byInstThump'),'inst','r2')
 
-dfNew = pd.DataFrame({'thump':confArea(yes,0.1)[0][1],
-                      'no thump':confArea(no,.1)[0][1]})
+dfNew = pd.DataFrame({
+    'thump tilt':confArea(thumpTilt,0.1)[0][1],
+    'no thump tilt':confArea(noThumpTilt,.1)[0][1],
+    'thump no tilt':confArea(thumpNoTilt,0.1)[0][1],
+    'no thump no tilt':confArea(noThumpNoTilt,0.1)[0][1]
+    })
+
 dictClean = {'pop':[],'r2':[]}
 for i in dfNew:
     for u in dfNew[i]:
@@ -65,8 +72,10 @@ print('THIS COMPARES MEAN MEANS OR MEAN STDEVS')
 print(tukey(dfClean,'pop','r2',.1))
 print(anova(dfClean,'pop','r2'))
 
-caPlot(no,0.1,'C0','no thump')
-caPlot(yes,0.1,'g','thump')
+caPlot(thumpTilt,0.1,'C0','thump tilt')
+caPlot(noThumpTilt,0.1,'C1','no thump tilt')
+caPlot(thumpNoTilt,0.1,'C2','thump no tilt')
+caPlot(noThumpNoTilt,0.1,'C3','no thump no tilt')
 plt.grid()
 plt.legend()
 plt.show()

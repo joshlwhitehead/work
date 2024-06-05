@@ -8,6 +8,7 @@ import os
 from scipy.optimize import curve_fit
 from confidenceFun import r2,tukey
 from scipy import stats
+from findP import findP
 
 
 colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']            #default list of matplotlib plot colors
@@ -58,44 +59,53 @@ def byInst(folder,inst):
     # plt.show()
     print(inst)
     print(tukey(df,'pop','r2 val',0.1))
-for i in instList:
+
+# for i in instList:
     
-    byInst('expandedTilt/byInst',i)
+#     byInst('expandedTilt/byInst',i)
     # time.sleep(10)
-thumpRR = fitCurves('expandedTilt/official thump/')
-noThumpRR = fitCurves('expandedTilt/official no thump/')
-# thumpBackRR = fitCurves('thumpBack/')
+def compR2():
+    thumpTiltRR = fitCurves('expandedTilt/official thump/')
+    noThumpTiltRR = fitCurves('expandedTilt/official no thump/')
+    thumpRR = fitCurves('expandedNominal/official thump/')
+    noThumpRR = fitCurves('expandedNominal/official no thump/')
 
 
-df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
-# df.boxplot(by='pop')
-# plt.show()
-# print(df)
-print(np.mean(thumpRR))
-print(np.mean(noThumpRR))
-# print(np.mean(thumpBackRR))
-print('THIS COMPARES ALL THUMPER TO ALL NO THUMPER R2 VALUES')
-print(tukey(df,'pop','r2 val',0.1))
-
-pThump = 11.5/70
-pNoThump = 62/70
+    df = makeDf([thumpRR,noThumpRR],['thump','no thump'])
+    # df.boxplot(by='pop')
+    # plt.show()
+    # print(df)
+    print(np.mean(thumpRR))
+    print(np.mean(noThumpRR))
+    # print(np.mean(thumpBackRR))
+    print('THIS COMPARES ALL THUMPER TO ALL NO THUMPER R2 VALUES')
+    print(tukey(df,'pop','r2 val',0.1))
+tilt = findP('expandedTiltData.xlsx')
+noTilt = findP('expandedData.xlsx')
+pThumpTilt = tilt[0][0]/tilt[0][1]
+pNoThumpTilt = tilt[1][0]/tilt[1][1]
+pThumpNoTilt = noTilt[0][0]/noTilt[0][1]
+pNoThumpNoTilt = noTilt[1][0]/noTilt[1][1]
 # pBack = 1/10
 
 k = 1
 n = 100
-probThump = stats.binom.pmf(k,n,pThump)
-probNoThump = stats.binom.pmf(k,n,pNoThump)
-# probBack = stats.binom.pmf(k,n,pBack)
+probThumpTilt = stats.binom.pmf(k,n,pThumpTilt)
+probNoThumpTilt = stats.binom.pmf(k,n,pNoThumpTilt)
+probThumpNoTilt = stats.binom.pmf(k,n,pThumpNoTilt)
+probNoThumpNoTilt = stats.binom.pmf(k,n,pNoThumpNoTilt)
 
 
 # print(probThump,probNoThump)
 
 x = np.arange(0,n)
-plt.bar(x,stats.binom.pmf(x,n,pThump),label='thumper')
-plt.bar(x,stats.binom.pmf(x,n,pNoThump),label='no thumper')
+plt.bar(x,stats.binom.pmf(x,n,pThumpNoTilt),label='thumper no tilt')
+plt.bar(x,stats.binom.pmf(x,n,pNoThumpNoTilt),label='no thumper no tilt')
+plt.bar(x,stats.binom.pmf(x,n,pThumpTilt),label='thumper tilt')
+plt.bar(x,stats.binom.pmf(x,n,pNoThumpTilt),label='no thumper tilt')
 # plt.bar(x,stats.binom.pmf(x,n,pBack),label='thump tilt back')
 plt.legend()
 plt.ylabel('Probability of x Runs with Data Offsets')
-plt.xlabel(''.join(['Number of Runs with Data Offsets (Out of ',str(n),')']))
+plt.xlabel(''.join(['Number of Runs with Data Offsets']))
 plt.grid()
 plt.show()
