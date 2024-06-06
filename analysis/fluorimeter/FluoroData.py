@@ -6,7 +6,7 @@ from confidenceFun import CI,tukey,caPlot,anovaPrep,confArea
 from pcr_fit import findLeastSquaresCq
 
 
-study = 'duplexData'
+study = 'covidInjMold'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -102,8 +102,9 @@ def makeDF(chan,folderInst,folderPCR,folderMelt,study):             #takes melt,
         dataByInst['mean pcr 90% ci'].append((ci90[1]-ci90[0])/2)
         dataByInst['config'].append(config)
 
-
+    # print(dataByInst.keys())
     df = pd.DataFrame(dataByInst)
+    # print(df)
     return df
 
 
@@ -126,7 +127,7 @@ def compare(df,chan,sortBy,compWhat,alpha):
     plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
     plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join(['plots3/',str(chan),'_',compWhat,'_boxplot.png']))
+    plt.savefig(''.join(['plotsCovidInjMold/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
 def makeCompound(df,sortBy,compWhat):
@@ -152,22 +153,22 @@ def makeAllPlots():
 
     for i in channels:
         for u in contents:
-            # try:
-            df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
-            df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
-            dfComb = pd.concat([df,df2],ignore_index=1)
-            compoundPop = makeCompound(df,'instrument',u)
-            compoundPop2 = makeCompound(df2,'instrument',u)
-            
-            compare(dfComb,i,'instrument',u,0.1)
-            # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
-            plt.figure()
-            plt.grid()
-            caPlot(compoundPop,0.1,'b',u,i,0)
-            caPlot(compoundPop2,.1,'g',u,i,1)
+            try:
+                df = makeDF(i,'baselineRaw','baselinePCR','baselineMelt',study)
+                df2 = makeDF(i,'swapRaw','swapPCR','swapMelt',study)
+                dfComb = pd.concat([df,df2],ignore_index=1)
+                compoundPop = makeCompound(df,'instrument',u)
+                compoundPop2 = makeCompound(df2,'instrument',u)
                 
-            # except:
-            #     print('cannot make',i,'-',u,'plots3')
+                compare(dfComb,i,'instrument',u,0.1)
+                # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
+                plt.figure()
+                plt.grid()
+                caPlot(compoundPop,0.1,'b',u,i,0)
+                caPlot(compoundPop2,.1,'g',u,i,1)
+                
+            except:
+                print('cannot make',i,'-',u,'plotsCovidInjMold')
             print(i,u)
             # time.sleep(10)
 
@@ -233,7 +234,7 @@ def compareAll():
                 print('could not do',i,u)
                 print(ca1,ca2)
     dfFull = pd.DataFrame(final)
-    dfFull.to_csv('allData2.csv')
+    dfFull.to_csv('allDataCovidInjMold.csv')
     
 # compareAll()
 
@@ -242,7 +243,7 @@ def compareAll():
 
 
 def instInstVar(mean,chan,metric):
-    data = pd.read_csv('allData2.csv')
+    data = pd.read_csv('allDataCovidInjMold.csv')
     if mean == 1:
         comp = 'means'
     else:
@@ -281,9 +282,9 @@ def instInstVar(mean,chan,metric):
 
 me = [0,1]
 for i in me:
-    for u in contents:
+    for u in channels:
         try:
-            res = instInstVar(i,0,u)
+            res = instInstVar(i,u,0)
             rej = res.reject[0]
             dif = res.meandiffs[0]
             if rej == 1:
@@ -303,7 +304,7 @@ for i in me:
 
 def runRunVar(mean):
     
-    data = pd.read_csv('allData.csv')
+    data = pd.read_csv('allDataCovidInjMold.csv')
     chan = data['channel']
     res = {}
     if mean == 1:

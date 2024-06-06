@@ -131,7 +131,7 @@ def caPlot(compoundPop,alpha,col,compWhat,chan,config):                #compound
     plt.title('90% Confidence Area')
     # plt.grid()
     plt.legend()
-    plt.savefig(''.join(['plots3/',str(chan),'_',compWhat,'_CA.png']))
+    plt.savefig(''.join(['plotsCovidG04/',str(chan),'_',compWhat,'_CA.png']))
 
 
 
