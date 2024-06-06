@@ -6,7 +6,7 @@ from confidenceFun import CI,tukey,caPlot,anovaPrep,confArea
 from pcr_fit import findLeastSquaresCq
 
 
-study = 'covidInjMold'
+study = 'covidG04'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -127,7 +127,7 @@ def compare(df,chan,sortBy,compWhat,alpha):
     plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
     plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join(['plotsCovidInjMold/',str(chan),'_',compWhat,'_boxplot.png']))
+    plt.savefig(''.join(['plotsCovidG04/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
 def makeCompound(df,sortBy,compWhat):
@@ -168,14 +168,14 @@ def makeAllPlots():
                 caPlot(compoundPop2,.1,'g',u,i,1)
                 
             except:
-                print('cannot make',i,'-',u,'plotsCovidInjMold')
+                print('cannot make',i,'-',u,'plotsCovidG04')
             print(i,u)
             # time.sleep(10)
 
 
 
 
-# makeAllPlots()
+makeAllPlots()
 
 
 
@@ -234,7 +234,7 @@ def compareAll():
                 print('could not do',i,u)
                 print(ca1,ca2)
     dfFull = pd.DataFrame(final)
-    dfFull.to_csv('allDataCovidInjMold.csv')
+    dfFull.to_csv('allDataCovidG04.csv')
     
 # compareAll()
 
@@ -243,7 +243,7 @@ def compareAll():
 
 
 def instInstVar(mean,chan,metric):
-    data = pd.read_csv('allDataCovidInjMold.csv')
+    data = pd.read_csv('allDataCovidG04.csv')
     if mean == 1:
         comp = 'means'
     else:
@@ -304,7 +304,7 @@ for i in me:
 
 def runRunVar(mean):
     
-    data = pd.read_csv('allDataCovidInjMold.csv')
+    data = pd.read_csv('allDataCovidG04.csv')
     chan = data['channel']
     res = {}
     if mean == 1:
