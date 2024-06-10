@@ -11,7 +11,7 @@ def findPlot(type,content,channel):
     image.show()
 
 
-findPlot('CA','mean pcr','445')
+findPlot('boxplot','reverse cq','515')
 # for i in contents:
 #     # findPlot('boxplot',i,480)
 #     findPlot('CA','melt stop','515')
