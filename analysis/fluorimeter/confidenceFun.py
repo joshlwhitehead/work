@@ -119,19 +119,23 @@ def caPlot(compoundPop,alpha,col,compWhat,chan,config):                #compound
 
     # print(mid[0])
     print(points[0])
+    print(points[1])
     if config == 0:
-        plt.plot(points[0],points[1],'o',color=col,label='baseline')
+        plt.plot(points[0][:],points[1][:],'o',color=col,label='baseline')
     else:
         plt.plot(points[0],points[1],'o',color=col,label='new config')
     plt.hlines(mid[1],ciL,ciR,lw=5,colors=col)
     plt.vlines(mid[0],ciB,ciT,lw=5,colors=col)
     plt.plot(mid[0],mid[1],'o',color='r')
+    # plt.xlim(620,950)
+    # plt.ylim(100,410)
     plt.xlabel(''.join(['Mean ',nameConvention[compWhat][0],' (',nameConvention[compWhat][1],')']))
     plt.ylabel(''.join(['Standard Deviation (',nameConvention[compWhat][1],')']))
-    plt.title('90% Confidence Area')
+    plt.title(' '.join([str(chan),compWhat,'(90% CA)']))
     # plt.grid()
     plt.legend()
-    plt.savefig(''.join(['plotsCovidG04/',str(chan),'_',compWhat,'_CA.png']))
+    
+    plt.savefig(''.join(['plotsCovid/',str(chan),'_',compWhat,'_CA.png']))
 
 
 

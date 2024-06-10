@@ -1,21 +1,19 @@
-import pandas as pd
+from scipy import stats
+import numpy as np
+import matplotlib.pyplot as plt
 
+z = np.linspace(-4,4,999)
 
-x = {'a':[1],'b':[2],'c':[3]}
-y = {'a':[4],'c':[55]}
-# x.update(y)
-dfx = pd.DataFrame(x)
-dfy = pd.DataFrame(y)
+pdf = stats.norm.pdf(z,scale=.5)
+pdf2 = stats.norm.pdf(z)
+pdf3 = stats.norm.pdf(z,scale=2)
 
-
-
-# dfx.update(dfy)
-# print(dfx)
-
-
-z = pd.concat([dfx,dfy],ignore_index=1)
-print(z)
-
-# z = dfx.append(dfy)
-# print(z)
-z.to_csv('test.csv')
+plt.plot(z,pdf2,lw=3,label='std = 1')
+plt.plot(z,pdf,lw=3,label='std = 0.5')
+plt.plot(z,pdf3,lw=3,label='std = 2')
+plt.vlines(0,0,0.8,linestyles='--',lw=3,color='k',label='mean = 0')
+plt.xlabel('Value')
+plt.ylabel('Probability')
+plt.grid()
+plt.legend()
+plt.savefig('test.png')

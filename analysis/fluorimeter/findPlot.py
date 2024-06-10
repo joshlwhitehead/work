@@ -6,12 +6,12 @@ channels = [415,445,480,515,555,590,630,680,'NIR','CLR','DARK']
 
 
 def findPlot(type,content,channel):
-    im = ''.join(['plots2/',content,'_',str(channel),'_',type,'.png'])
+    im = ''.join(['plotsCovid/',str(channel),'_',content,'_',type,'.png'])
     image = Image.open(im)
     image.show()
 
 
-
-for i in contents:
-    # findPlot('boxplot',i,480)
-    findPlot('CA','melt stop','515')
+findPlot('CA','mean pcr','445')
+# for i in contents:
+#     # findPlot('boxplot',i,480)
+#     findPlot('CA','melt stop','515')

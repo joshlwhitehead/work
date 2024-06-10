@@ -6,7 +6,7 @@ from confidenceFun import CI,tukey,caPlot,anovaPrep,confArea
 from pcr_fit import findLeastSquaresCq
 
 
-study = 'covidG04'
+study = 'covidData'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -16,7 +16,7 @@ nameConvention = {                                      #keys are shorthand labe
     'melt stop':['Final Melt Value','RFU'],
     'melt range':['Melt Range','RFU'],
     'fmax':['Fmax','RFU'],
-    'mean pcr':['445 Baseline','RFU'],
+    'mean pcr':['Baseline','RFU'],
     'pcr start':['Initial PCR Value','RFU'],
     'pcr stop':['Final PCR Value','RFU'],
     'cq':['Cq','Cycle'],
@@ -126,8 +126,8 @@ def compare(df,chan,sortBy,compWhat,alpha):
     plt.suptitle('')
     plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
-    plt.title(nameConvention[compWhat][0])
-    plt.savefig(''.join(['plotsCovidG04/',str(chan),'_',compWhat,'_boxplot.png']))
+    plt.title(' '.join([str(chan),nameConvention[compWhat][0]]))
+    plt.savefig(''.join(['plotsCovid/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
 def makeCompound(df,sortBy,compWhat):
@@ -164,21 +164,26 @@ def makeAllPlots():
                 # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
                 plt.figure()
                 plt.grid()
-                caPlot(compoundPop,0.1,'b',u,i,0)
-                caPlot(compoundPop2,.1,'g',u,i,1)
+                caPlot(compoundPop,0.1,'C0',u,i,0)
+                caPlot(compoundPop2,.1,'C1',u,i,1)
                 
             except:
-                print('cannot make',i,'-',u,'plotsCovidG04')
+                print('cannot make',i,'-',u,'plotsCovid')
             print(i,u)
             # time.sleep(10)
 
+# makeAllPlots()
 
 
-
-makeAllPlots()
-
-
-
+def makeOnePlot():
+    chan = '515'
+    metric = 'fmax'
+    df = makeDF(chan,'baselineRaw','baselinePCR','baselineMelt',study)
+    compoundPop = makeCompound(df,'instrument',metric)
+    plt.grid()
+    caPlot(compoundPop,.1,'C0',metric,chan,0)
+    
+# makeOnePlot()
 
 def compareAll():
 
@@ -234,7 +239,7 @@ def compareAll():
                 print('could not do',i,u)
                 print(ca1,ca2)
     dfFull = pd.DataFrame(final)
-    dfFull.to_csv('allDataCovidG04.csv')
+    dfFull.to_csv('allDataCovid.csv')
     
 # compareAll()
 
@@ -243,7 +248,7 @@ def compareAll():
 
 
 def instInstVar(mean,chan,metric):
-    data = pd.read_csv('allDataCovidG04.csv')
+    data = pd.read_csv('allDataCovid.csv')
     if mean == 1:
         comp = 'means'
     else:
@@ -280,31 +285,31 @@ def instInstVar(mean,chan,metric):
     return tukey(df,'config',comp,0.1)
 
 
-me = [0,1]
-for i in me:
-    for u in channels:
-        try:
-            res = instInstVar(i,u,0)
-            rej = res.reject[0]
-            dif = res.meandiffs[0]
-            if rej == 1:
-                if i == 1:
-                    print('means of',u,'are different')
-                else:
-                    print('stds of',u,'are different')
-                if dif < 0:
-                    print('config 0 is more variable')
-                else:
-                    print('config 1 is more variable')
-                print()
-        except:
-            pass
+# me = [0,1]
+# for i in me:
+#     for u in channels:
+#         try:
+#             res = instInstVar(i,u,0)
+#             rej = res.reject[0]
+#             dif = res.meandiffs[0]
+#             if rej == 1:
+#                 if i == 1:
+#                     print('means of',u,'are different')
+#                 else:
+#                     print('stds of',u,'are different')
+#                 if dif < 0:
+#                     print('config 0 is more variable')
+#                 else:
+#                     print('config 1 is more variable')
+#                 print()
+#         except:
+#             pass
         
 
 
 def runRunVar(mean):
     
-    data = pd.read_csv('allDataCovidG04.csv')
+    data = pd.read_csv('allDataCovid.csv')
     chan = data['channel']
     res = {}
     if mean == 1:
