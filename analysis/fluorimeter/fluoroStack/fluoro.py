@@ -8,6 +8,19 @@ import pandas as pd
 def fwhmToStd(fwhm):
     return fwhm/2/np.sqrt(2*np.log(2))
 
+
+peaks = {
+    415:55,
+    445:110,
+    480:210,
+    515:390,
+    555:590,
+    590:840,
+    630:1350,
+    680:1070
+    }
+
+
 colors = {
     415:'purple',
     445:'b',
@@ -36,27 +49,28 @@ def plotSensor(wave):
         STD[i] = fwhmToStd(FWHM[i])
 
     if wave == 'all':
+
         for i in STD:
             tail = 2*FWHM[i]
             x = np.linspace(i-tail,i+tail,999)
             z = stats.norm.pdf(x,loc=i,scale=STD[i])
-            z /= max(z)
-            plt.plot(x,z,color=colors[i])
+            z *= peaks[i]/max(z)/max(peaks.values())
+            plt.plot(x,z,color=colors[i],label=i)
     else:
         for i in wave:
             x = np.linspace(i-2*FWHM[i],i+2*FWHM[i],999)
             z = stats.norm.pdf(x,loc=i,scale=STD[i])
             zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
             zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
-            z /= max(z)
-            zz /= max(zz)
-            zzz /= max(zzz)
+            z *= peaks[i]/max(z)/max(peaks.values())
+            zz *= peaks[i]/max(zz)/max(peaks.values())
+            zzz *= peaks[i]/max(zzz)/max(peaks.values())
             plt.plot(x,z,color=colors[i],lw=3,label=' '.join(['nominal',str(i)]))
             plt.plot(x,zz,linestyle=':',color=colors[i],lw=3,label=' '.join([str(i),'+10 nm']))
             plt.plot(x,zzz,linestyle='--',color=colors[i],lw=3,label=' '.join([str(i),'-10 nm']))
-    plt.vlines(479,0,1,'k',ls='--',lw=3)
-    plt.vlines(476,0,1,'k',lw=3)
-    plt.vlines(473,0,1,'k',ls=':',lw=3)
+    plt.vlines(479,0,.2,'k',ls='--',lw=3)
+    plt.vlines(476,0,.2,'k',lw=3)
+    plt.vlines(473,0,.2,'k',ls=':',lw=3)
     plt.legend()
     plt.grid()
     plt.show()
