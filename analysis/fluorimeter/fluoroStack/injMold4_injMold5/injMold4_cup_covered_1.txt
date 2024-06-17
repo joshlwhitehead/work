@@ -1,0 +1,68 @@
+Test Report 
+
+
+Serial Number: A-AB2
+Build Config: G.02
+ESP Firmware Version: 1.3.0-d
+STM Firmware Version: B0.2.4s
+Technician ID: JW
+Mac Address: 78:21:84:43:e4:8c
+Hardware ID: 265b56b2-48cf-5e81-8c34-dd8ceaba982f
+Board Version: 5.5
+
+
+System Fluorimeter Test:
+
+Lowering lifter...
+Heating PCR to 30°C...
+Blue LED Stabilized
+
+Ch415,Ch445,Ch480,Ch515,Ch555,Ch590,Ch630,Ch680
+28,798,382,23,36,46,84,44
+Failed. Difference = 5
+28,803,385,23,36,46,84,44
+Failed. Difference = 9
+27,794,380,23,36,46,83,44
+Failed. Difference = 5
+28,799,382,23,36,46,84,44
+Failed. Difference = 11
+27,788,378,23,36,46,83,44
+27,787,377,23,36,46,83,44
+27,786,377,23,36,46,83,44
+Failed. Difference = 8
+27,794,380,23,36,46,83,44
+Failed. Difference = 10
+27,784,375,23,36,46,83,44
+27,784,375,23,36,46,83,43
+27,784,375,23,36,46,83,43
+27,785,376,23,36,46,83,43
+27,783,375,23,36,46,83,43
+27,781,375,23,36,46,83,43
+Failed. Difference = 10
+27,791,378,23,36,46,83,44
+Failed. Difference = 9
+27,782,374,23,36,46,83,43
+27,780,373,23,36,46,83,43
+27,780,373,23,36,46,83,43
+27,779,373,23,36,46,82,43
+27,780,373,23,36,46,83,43
+Failed. Difference = 9
+27,789,377,23,36,46,83,44
+Failed. Difference = 9
+27,780,373,23,36,46,83,43
+Failed. Difference = 8
+27,788,377,23,36,46,83,44
+Failed. Difference = 8
+27,780,374,23,36,46,83,43
+27,779,373,23,36,46,83,43
+27,778,374,23,36,46,82,43
+27,778,374,23,36,46,82,43
+27,778,372,23,36,46,82,43
+Failed. Difference = 8
+27,786,376,23,36,46,83,44
+Failed. Difference = 7
+27,779,373,23,36,46,83,43
+
+Failed test
+
+Comments:
