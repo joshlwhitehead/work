@@ -6,7 +6,7 @@ import pandas as pd
 
 p = "C:/Users/JoshWhitehea_5801ztl/work/functionsToKeep"
 sys.path.append(p)
-from confidenceFun import tukey
+from confidenceFun import tukey,caPlot
 
 
 
@@ -34,9 +34,37 @@ def parse(file,folder):
                     nm480.append(int(x[2]))
             except:
                 pass
-    return np.mean(nm445),np.mean(nm480)
+    return np.mean(nm445),np.mean(nm480),nm445,nm480
+
+x = {}
+for i in os.listdir(folderNom):
+    z = i.split('_')
+    z.remove(z[-1])
+    z = '_'.join(z)
+    if z in x.keys():
+        x[z].append(parse(i,folderNom)[2])
+    else:
+        x[z] = [parse(i,folderNom)[2]]
+for i in os.listdir(folderSwap):
+    z = i.split('_')
+    z.remove(z[-1])
+    z = '_'.join(z)
+    if z in x.keys():
+        x[z].append(parse(i,folderSwap)[2])
+    else:
+        x[z] = [parse(i,folderSwap)[2]]
 
 
+colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']
+count = 0
+for i in x:
+    if 'noCup' in i and 'covered' not in i:
+        caPlot(x[i],0.1,colors[count],i)
+        count += 1
+plt.grid()
+plt.legend()
+plt.xlabel('Mean RFU')
+plt.show()
 
 def combineByWave(wave,folder):
     if wave == 445:
@@ -76,11 +104,11 @@ for i in im5Swap:
 
 # print(newDict)
 
-df = pd.DataFrame(newDict)
+
+        
 
 
-
-print(tukey(df,'config','RFU',0.1))
+# print(tukey(df,'config','RFU',0.1))
 
 
 

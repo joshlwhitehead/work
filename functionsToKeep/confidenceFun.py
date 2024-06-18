@@ -76,10 +76,10 @@ def confArea(complexPop,alpha):
     stdCI = CI(stdevs,alpha)
     if stdCI[0] < 0:
         stdCI[0] = 0
-    if meanCI[0] < 0:
-        meanCI[0] = 0
-    if meanCI[1] > 1:
-        meanCI[1] = 1
+    # if meanCI[0] < 0:
+    #     meanCI[0] = 0
+    # if meanCI[1] > 1:
+    #     meanCI[1] = 1
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanCI,stdCI)
@@ -119,8 +119,10 @@ def caPlot(compoundPop,alpha,col,name):                #compoundPop should be of
     plt.hlines(mid[1],ciL,ciR,lw=5,colors=col)
     plt.vlines(mid[0],ciB,ciT,lw=5,colors=col)
     plt.plot(mid[0],mid[1],'o',color='k')
-    plt.xlabel('Mean R2')
+    plt.xlabel('Mean')
     plt.ylabel('Standard Deviation')
     plt.title('90% Confidence Area')
     plt.grid()
     
+def makeCompound(df):
+    return
