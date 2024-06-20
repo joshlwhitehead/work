@@ -12,6 +12,7 @@ from confidenceFun import tukey,caPlot
 
 folderNom = 'injMold4_injMold5'
 folderSwap = 'injMold4_injMold5_swap'
+folderFluorSwap = 'im4_im5_fluorSwap'
 
 
 def fileList(folder):
