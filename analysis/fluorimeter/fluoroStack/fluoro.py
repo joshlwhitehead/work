@@ -48,10 +48,6 @@ for i in FWHM:
     STD[i] = fwhmToStd(FWHM[i])
 def plotSensor(wave):
     
-    
-
-    
-
     if wave == 'all':
 
         for i in STD:
@@ -90,30 +86,58 @@ def plotSensor(wave):
     plt.show()
 
 
-data = pd.read_csv('sampleStack.csv')
 
-x = data['LED wave']
-LEDy = data['440 trans']
+
+data = pd.read_csv('sampleStack.csv')
+cutOff = 400
+x = data['LED wave'][:cutOff]
+LEDy = data['440 trans'][:cutOff]
 LEDFilty = data['LED filt']
 sensFilty = data['sens filt']
 
-sytoxx = data['sytox wave']
-excite = data['excite']
-emit = data['emit']
+cutOff2 = 220
+start2 = 70
+sytoxx = data['sytox wave'][start2:cutOff2]
+excite = data['excite'][start2:cutOff2]
+emit = data['emit'][start2:cutOff2]
 
-# plt.plot(x,LEDy,lw=3,label='440nm LED')
-# plt.plot(x,LEDFilty,lw=3,label='LED filter')
-# plt.plot(x,sensFilty,lw=3,label='sensor filter')
-# plt.plot(sytoxx,excite,lw=3,label='sytox excitation')
-# plt.plot(sytoxx,emit,lw=3,label='sytox emission')
-# plt.xlabel('Wavelength (nm)')
-# plt.ylabel('Transmission (%)')
-# plt.ylabel
-# plt.grid()
-# plt.legend()
-# plt.show()
+LEDyList = list(LEDy)
+LEDmax = x[LEDyList.index(max(LEDyList))]
+LEDnom = x - LEDmax + 442.5
+LEDshiftR = LEDnom + 2.5
+LEDshiftL = LEDnom - 2.5
+def plotLED():
+    
+    
 
-# plotSensor([445])
+    # plt.plot(LEDnom,LEDy,lw=3,color='b',label='LED nominal')
+    # plt.plot(LEDshiftR,LEDy,lw=3,ls='--',color='b',label='LED +2.5nm')
+    plt.plot(LEDshiftL,LEDy,lw=3,ls=':',color='b',label='LED -2.5nm')
+
+    # plt.vlines(460,0,100,lw=3,color='k',label='LED filter nominal')
+    plt.vlines(463,0,100,lw=3,ls='--',color='k',label='LED filter +3nm')
+    # plt.vlines(457,0,100,lw=3,ls=':',color='k',label='LED filter -3nm')
+    plt.fill_between(LEDshiftL,LEDy,where=(LEDshiftL>=463),color='grey')
+
+
+    # plt.plot(x,LEDy,lw=3,label='440nm LED')
+    # plt.plot(x,LEDFilty,lw=3,label='LED filter')
+    # plt.plot(x,sensFilty,lw=3,label='sensor filter')
+    plt.plot(sytoxx,excite,color='r',lw=2,label='sytox excitation')
+    # plt.plot(sytoxx,emit,lw=3,label='sytox emission')
+    plt.xlabel('Wavelength (nm)')
+    plt.ylabel('Transmission (%)')
+    plt.ylabel
+    plt.grid()
+    plt.legend()
+    # plt.show()
+    plt.savefig('test.png')
+    
+    
+
+plotLED()
+
+
 def pdf(x,wave,sensorShift):
     y = stats.norm.pdf(x,loc=wave+sensorShift,scale=STD[wave])
 
@@ -124,9 +148,22 @@ def detected(wave,lowLim,sensorShift):
     xx = np.linspace(lowLim,x[-1],len(y))
     area = integrate.trapz(y,xx)
     return area
-nom = detected(445,476,0)
-worst = detected(445,473,10)
-best = detected(445,479,-10)
+# nom = detected(445,476,0)
+# worst = detected(445,473,10)
+# best = detected(445,479,-10)
+
+
+def emitted(lowLim,LEDshift):
+    x = LEDnom + LEDshift
+    x = list(x)
+    y = LEDy
+    xx = np.linspace(lowLim,x[-1],len(y))
+    area = integrate.trapz(y,xx)
+    return area
+
+nom = emitted(460,0)
+worst = emitted(457,2.5)
+best = emitted(463,-2.5)
 
 print('nom',nom)
 print('worst',worst)
