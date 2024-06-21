@@ -56,18 +56,18 @@ for i in os.listdir(folderrr):
 #         x[z].append(parse(i,folderSwap)[2])
 #     else:
 #         x[z] = [parse(i,folderSwap)[2]]
-print(x.keys())
+# print(x[list(x.keys())[0]])
 
-colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']
+colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9','b','g','r','k','']
 count = 0
 for i in x:
-    if 'noCup' in i and 'covered' not in i:
-        caPlot(x[i],0.1,colors[count],i)
-        count += 1
+    # if 'im5_led7_sensB' in i or 'im5_led6_sensB' in i or 'im4_led7_sensA' in i or 'im4_led6_sensA' in i:
+    caPlot(x[i],0.1,colors[count],i)
+    count += 1
 plt.grid()
 plt.legend()
 plt.xlabel('Mean RFU')
-# plt.show()
+plt.show()
 
 def combineByWave(wave,folder):
     if wave == 445:
