@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 import sys
 import pandas as pd
 
-p = "C:/Users/JoshWhitehea_5801ztl/work/functionsToKeep"
+p = "../../../functionsToKeep"
 sys.path.append(p)
+# print(sys.path)
 from confidenceFun import tukey,caPlot
 
 
@@ -13,6 +14,7 @@ from confidenceFun import tukey,caPlot
 folderNom = 'injMold4_injMold5'
 folderSwap = 'injMold4_injMold5_swap'
 folderFluorSwap = 'im4_im5_fluorSwap'
+folderrr = 'im4_im5_lastTry'
 
 
 def fileList(folder):
@@ -38,23 +40,23 @@ def parse(file,folder):
     return np.mean(nm445),np.mean(nm480),nm445,nm480
 
 x = {}
-for i in os.listdir(folderNom):
+for i in os.listdir(folderrr):
     z = i.split('_')
     z.remove(z[-1])
     z = '_'.join(z)
     if z in x.keys():
-        x[z].append(parse(i,folderNom)[2])
+        x[z].append(parse(i,folderrr)[2])
     else:
-        x[z] = [parse(i,folderNom)[2]]
-for i in os.listdir(folderSwap):
-    z = i.split('_')
-    z.remove(z[-1])
-    z = '_'.join(z)
-    if z in x.keys():
-        x[z].append(parse(i,folderSwap)[2])
-    else:
-        x[z] = [parse(i,folderSwap)[2]]
-
+        x[z] = [parse(i,folderrr)[2]]
+# for i in os.listdir(folderSwap):
+#     z = i.split('_')
+#     z.remove(z[-1])
+#     z = '_'.join(z)
+#     if z in x.keys():
+#         x[z].append(parse(i,folderSwap)[2])
+#     else:
+#         x[z] = [parse(i,folderSwap)[2]]
+print(x.keys())
 
 colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9']
 count = 0
@@ -65,7 +67,7 @@ for i in x:
 plt.grid()
 plt.legend()
 plt.xlabel('Mean RFU')
-plt.show()
+# plt.show()
 
 def combineByWave(wave,folder):
     if wave == 445:
@@ -85,8 +87,8 @@ def combineByWave(wave,folder):
 im4 = combineByWave(445,folderNom)[0]
 im5 = combineByWave(445,folderNom)[1]
 
-im4Swap = combineByWave(445,folderSwap)[0]
-im5Swap = combineByWave(445,folderSwap)[1]
+# im4Swap = combineByWave(445,folderSwap)[0]
+# im5Swap = combineByWave(445,folderSwap)[1]
 
 newDict = {'config':[],'RFU':[]}
 for i in im4:
@@ -96,12 +98,12 @@ for i in im5:
     newDict['config'].append('im5')
     newDict['RFU'].append(i)
 
-for i in im4Swap:
-    newDict['config'].append('im4Swap')
-    newDict['RFU'].append(i)
-for i in im5Swap:
-    newDict['config'].append('im5Swap')
-    newDict['RFU'].append(i)
+# for i in im4Swap:
+#     newDict['config'].append('im4Swap')
+#     newDict['RFU'].append(i)
+# for i in im5Swap:
+#     newDict['config'].append('im5Swap')
+#     newDict['RFU'].append(i)
 
 # print(newDict)
 
