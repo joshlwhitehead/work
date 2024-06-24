@@ -43,9 +43,14 @@ FWHM = {
         680:52
         }
 
+
+
+
 STD = {}
 for i in FWHM:
     STD[i] = fwhmToStd(FWHM[i])
+
+print(STD)
 def plotSensor(wave):
     
     if wave == 'all':

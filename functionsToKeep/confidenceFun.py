@@ -57,10 +57,10 @@ def tolArea(complexPop,alpha,p):
     stdTI = TI(stdevs,alpha,p)
     if stdTI[0] < 0:
         stdTI[0] = 0
-    if meanTI[0] < 0:
-        meanTI[0] = 0
-    if meanTI[1] > 1:
-        meanTI[1] = 1
+    # if meanTI[0] < 0:
+    #     meanTI[0] = 0
+    # if meanTI[1] > 1:
+    #     meanTI[1] = 1
     meanMeans = np.mean(means)
     meanStdevs = np.mean(stdevs)
     return (means,stdevs),(meanMeans,meanStdevs),(meanTI,stdTI)
@@ -124,5 +124,3 @@ def caPlot(compoundPop,alpha,col,name):                #compoundPop should be of
     plt.title('90% Confidence Area')
     plt.grid()
     
-def makeCompound(df):
-    return
