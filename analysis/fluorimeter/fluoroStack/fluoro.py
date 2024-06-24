@@ -169,6 +169,6 @@ print('nom',nom)
 print('worst',worst)
 print('best',best)
 
-print(best/worst)
+print((worst-best)/best)
 
 
