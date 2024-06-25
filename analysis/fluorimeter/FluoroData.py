@@ -6,7 +6,7 @@ from confidenceFun import CI,tukey,caPlot,anovaPrep,confArea
 from pcr_fit import findLeastSquaresCq
 
 
-study = 'covidData'
+study = 'covidContData'
 contents = ['cq','fmax','mean pcr','melt range','melt start','melt stop','pcr min','pcr start','pcr stop','reverse cq']
 # folderMelt = 'raw/baselineMelt'
 # folderPCR = 'raw/baselinePCR'
@@ -127,7 +127,7 @@ def compare(df,chan,sortBy,compWhat,alpha):
     plt.xticks(rotation=30)
     plt.xlabel(nameConvention[sortBy])
     plt.title(' '.join([str(chan),nameConvention[compWhat][0]]))
-    plt.savefig(''.join(['plotsCovid/',str(chan),'_',compWhat,'_boxplot.png']))
+    plt.savefig(''.join(['plotsCovidCont/',str(chan),'_',compWhat,'_boxplot.png']))
 
 
 def makeCompound(df,sortBy,compWhat):
@@ -168,7 +168,7 @@ def makeAllPlots():
                 caPlot(compoundPop2,.1,'C1',u,i,1)
                 
             except:
-                print('cannot make',i,'-',u,'plotsCovid')
+                print('cannot make',i,'-',u,'plotsCovidCont')
             print(i,u)
             # time.sleep(10)
 
@@ -239,7 +239,7 @@ def compareAll():
                 print('could not do',i,u)
                 print(ca1,ca2)
     dfFull = pd.DataFrame(final)
-    dfFull.to_csv('allDataCovid.csv')
+    dfFull.to_csv('allDataCovidCont.csv')
     
 # compareAll()
 
@@ -248,7 +248,7 @@ def compareAll():
 
 
 def instInstVar(mean,chan,metric):
-    data = pd.read_csv('allDataCovid.csv')
+    data = pd.read_csv('allDataCovidCont.csv')
     if mean == 1:
         comp = 'means'
     else:
@@ -284,32 +284,33 @@ def instInstVar(mean,chan,metric):
     df = pd.DataFrame(dict)
     return tukey(df,'config',comp,0.1)
 
+def instToInstVar():
+    me = [0,1]
+    for i in me:
+        for u in channels:
+            try:
+                res = instInstVar(i,u,0)
+                rej = res.reject[0]
+                dif = res.meandiffs[0]
+                if rej == 1:
+                    if i == 1:
+                        print('means of',u,'are different')
+                    else:
+                        print('stds of',u,'are different')
+                    if dif < 0:
+                        print('config 0 is more variable')
+                    else:
+                        print('config 1 is more variable')
+                    print()
+            except:
+                pass
 
-# me = [0,1]
-# for i in me:
-#     for u in channels:
-#         try:
-#             res = instInstVar(i,u,0)
-#             rej = res.reject[0]
-#             dif = res.meandiffs[0]
-#             if rej == 1:
-#                 if i == 1:
-#                     print('means of',u,'are different')
-#                 else:
-#                     print('stds of',u,'are different')
-#                 if dif < 0:
-#                     print('config 0 is more variable')
-#                 else:
-#                     print('config 1 is more variable')
-#                 print()
-#         except:
-#             pass
         
 
 
 def runRunVar(mean):
     
-    data = pd.read_csv('allDataCovid.csv')
+    data = pd.read_csv('allDataCovidCont.csv')
     chan = data['channel']
     res = {}
     if mean == 1:
@@ -331,10 +332,10 @@ def runRunVar(mean):
         res[i] = [np.mean(pf),np.mean(diff),np.std(diff)]
     return res
 
-# test = runRunVar(0)
-# for i in test:
-#     if test[i][0] > 0.5:
-#         print(i,round(test[i][1],1),'+/-',round(test[i][2],1),test[i][0])
+test = runRunVar(0)
+for i in test:
+    if test[i][0] > 0.5:
+        print(i,round(test[i][1],1),'+/-',round(test[i][2],1),test[i][0])
 
 
 
