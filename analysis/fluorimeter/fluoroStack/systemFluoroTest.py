@@ -11,7 +11,7 @@ from confidenceFun import tukey,caPlot
 folderNom = 'injMold4_injMold5'
 folderSwap = 'injMold4_injMold5_swap'
 folderFluorSwap = 'im4_im5_fluorSwap'
-folderrr = 'im4_im5_lastTry'
+folderrr = 'im4_im5_lastTry_cup'
 
 
 def fileList(folder):
@@ -55,11 +55,15 @@ for i in os.listdir(folderrr):
 #         x[z] = [parse(i,folderSwap)[2]]
 # print(x[list(x.keys())[0]])
 
-colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9','b','g','r','k']
+colors = ['C0','C1','C2','C3','C4','C5','C6','C7','C8','C9','blue','green','red','black','purple','cyan','brown','orange','yellow']
 count = 0
 for i in x:
     # if 'im5_led7_sensB' in i or 'im5_led6_sensB' in i or 'im4_led7_sensA' in i or 'im4_led6_sensA' in i:
-    caPlot(x[i],0.1,colors[count],i)
+    if 'im4' in i:
+        caPlot(x[i],0.1,colors[count],i)
+    elif 'im5' in i:
+        caPlot(x[i],0.1,colors[count],i)
+
     count += 1
 plt.grid()
 plt.legend()

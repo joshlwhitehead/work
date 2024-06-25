@@ -1,0 +1,73 @@
+Test Report 
+
+
+Serial Number: A-AB2
+Build Config: G.02
+ESP Firmware Version: 1.3.0-d
+STM Firmware Version: B0.2.4s
+Technician ID: jw
+Mac Address: 78:21:84:43:e4:8c
+Hardware ID: 265b56b2-48cf-5e81-8c34-dd8ceaba982f
+Board Version: 5.5
+
+
+System Fluorimeter Test:
+
+Lowering lifter...
+Heating PCR to 30°C...
+Blue LED Stabilized
+
+Ch415,Ch445,Ch480,Ch515,Ch555,Ch590,Ch630,Ch680
+42,1170,364,25,41,49,76,50
+Failed. Difference = 6
+42,1164,363,25,41,49,75,49
+42,1160,362,25,41,49,75,49
+42,1156,360,25,41,49,75,49
+Failed. Difference = 11
+42,1167,363,25,41,49,75,49
+Failed. Difference = 13
+42,1154,360,25,41,49,75,49
+Failed. Difference = 10
+42,1164,362,25,41,49,75,49
+Failed. Difference = 14
+42,1150,358,25,41,49,75,49
+Failed. Difference = 9
+42,1159,361,25,41,49,75,49
+Failed. Difference = 11
+42,1148,358,25,41,49,75,49
+42,1147,357,25,41,49,75,49
+Failed. Difference = 11
+42,1158,360,25,41,49,75,49
+Failed. Difference = 13
+42,1145,357,25,41,49,74,49
+42,1144,356,25,41,49,74,49
+42,1144,356,25,41,49,74,49
+Failed. Difference = 9
+42,1153,359,25,41,49,75,49
+Failed. Difference = 12
+42,1141,356,25,41,49,74,49
+42,1141,356,25,41,49,74,49
+42,1141,355,25,41,49,74,49
+42,1139,355,25,41,49,74,49
+Failed. Difference = 13
+42,1152,359,25,41,49,75,49
+Failed. Difference = 12
+42,1140,355,25,41,49,74,49
+Failed. Difference = 10
+42,1150,358,25,41,49,75,49
+Failed. Difference = 12
+42,1138,355,25,41,49,74,49
+Failed. Difference = 12
+42,1150,358,25,41,49,75,49
+Failed. Difference = 11
+42,1139,355,25,41,49,74,49
+42,1139,355,25,41,49,74,49
+42,1136,354,25,41,49,74,49
+Failed. Difference = 13
+42,1149,358,25,41,49,74,49
+Failed. Difference = 11
+42,1138,355,25,41,49,74,49
+
+Failed test
+
+Comments:
