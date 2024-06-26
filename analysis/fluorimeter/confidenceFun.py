@@ -135,7 +135,7 @@ def caPlot(compoundPop,alpha,col,compWhat,chan,config):                #compound
     # plt.grid()
     plt.legend()
     
-    plt.savefig(''.join(['plotsCovidCont/',str(chan),'_',compWhat,'_CA.png']))
+    plt.savefig(''.join(['plotsCovidContNeg_CA/',str(chan),'_',compWhat,'_CA.png']))
 
 
 

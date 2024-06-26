@@ -1,5 +1,5 @@
 import numpy as np
-from scipy import stats,integrate
+from scipy import stats,integrate,interpolate
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -51,7 +51,7 @@ for i in FWHM:
     STD[i] = fwhmToStd(FWHM[i])
 
 print(STD)
-def plotSensor(wave):
+def plotSensor(wave,normalPeak):
     
     if wave == 'all':
 
@@ -61,9 +61,11 @@ def plotSensor(wave):
             z = stats.norm.pdf(x,loc=i,scale=STD[i])
             zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
             zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
+
             z *= peaks[i]/max(z)/max(peaks.values())
             zz *= peaks[i]/max(zz)/max(peaks.values())
             zzz *= peaks[i]/max(zzz)/max(peaks.values())
+            
             plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
             plt.plot(x,zz,color=colors[i],ls=':',lw=3)#,label=' '.join([str(i),'-10 nm']))
             plt.plot(x,zzz,color=colors[i],ls='--',lw=3)#,label=' '.join([str(i),'+10 nm']))
@@ -74,24 +76,25 @@ def plotSensor(wave):
             z = stats.norm.pdf(x,loc=i,scale=STD[i])
             zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
             zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
-            z *= peaks[i]/max(z)/max(peaks.values())
-            zz *= peaks[i]/max(zz)/max(peaks.values())
-            zzz *= peaks[i]/max(zzz)/max(peaks.values())
-            plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
-            # plt.plot(x,zz,linestyle=':',color=colors[i],lw=3)#,label=' '.join([str(i),'-10 nm']))
-            # plt.plot(x,zzz,linestyle='--',color=colors[i],lw=3,label='445 +10nm')#,label=' '.join([str(i),'+10 nm']))
-    # plt.vlines(479,0,.1,'k',ls='--',lw=3,label='sensor filter +3nm')
-    plt.vlines(476,0,.1,'k',lw=3,label='sensor filter')#,label='sensor filter')
-    # plt.vlines(473,0,.1,'k',ls=':',lw=3,label='sensor filter -3nm')
-    plt.fill_between(x,z,where=(x>=476),color='grey')
+            z *= peaks[i]/max(z)/peaks[normalPeak]#max(peaks.values())
+            zz *= peaks[i]/max(zz)/peaks[normalPeak]#max(peaks.values())
+            zzz *= peaks[i]/max(zzz)/peaks[normalPeak]#max(peaks.values())
+            # plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
+            # plt.plot(x,zz,linestyle=':',color=colors[i],lw=3,label=' '.join([str(i),'-10 nm']))
+            plt.plot(x,zzz,linestyle='--',color=colors[i],lw=3,label='445 +10nm')#,label=' '.join([str(i),'+10 nm']))
+    # plt.vlines(479,0,1,'k',ls='--',lw=3,label='sensor filter +3nm')
+    # plt.vlines(476,0,1,'k',lw=3,label='sensor filter')#,label='sensor filter')
+    plt.vlines(473,0,1,'k',ls=':',lw=3,label='sensor filter -3nm')
+    plt.fill_between(x,zzz,where=(x>=473),color='grey',label='detected')
     plt.xlabel('Wavelength (nm)')
     plt.ylabel('Relative Sensitivity')
     plt.legend()
     plt.grid()
     plt.show()
+    # plt.savefig('test.png')
 
 
-
+# plotSensor([445],445)
 
 data = pd.read_csv('sampleStack.csv')
 cutOff = 400
@@ -100,10 +103,11 @@ LEDy = data['440 trans'][:cutOff]
 LEDFilty = data['LED filt']
 sensFilty = data['sens filt']
 
-cutOff2 = 220
+cutOff2 = 230
 start2 = 70
 sytoxx = data['sytox wave'][start2:cutOff2]
 excite = data['excite'][start2:cutOff2]
+
 emit = data['emit'][start2:cutOff2]
 
 LEDyList = list(LEDy)
@@ -111,9 +115,14 @@ LEDmax = x[LEDyList.index(max(LEDyList))]
 LEDnom = x - LEDmax + 442.5
 LEDshiftR = LEDnom + 2.5
 LEDshiftL = LEDnom - 2.5
+exciteInterp = interpolate.interp1d(sytoxx,excite)(LEDshiftL)
+minCurve = []
+for indx,val in enumerate(exciteInterp):
+    minVal = min([val,LEDy[indx]])
+    minCurve.append(minVal)
 def plotLED():
     
-    
+    plt.plot(sytoxx,excite,color='r',lw=2,label='sytox excitation')
 
     # plt.plot(LEDnom,LEDy,lw=3,color='b',label='LED nominal')
     # plt.plot(LEDshiftR,LEDy,lw=3,ls='--',color='b',label='LED +2.5nm')
@@ -122,25 +131,25 @@ def plotLED():
     # plt.vlines(460,0,100,lw=3,color='k',label='LED filter nominal')
     plt.vlines(463,0,100,lw=3,ls='--',color='k',label='LED filter +3nm')
     # plt.vlines(457,0,100,lw=3,ls=':',color='k',label='LED filter -3nm')
-    plt.fill_between(LEDshiftL,LEDy,where=(LEDshiftL>=463),color='grey')
+    plt.fill_between(LEDshiftL,minCurve,where=(LEDshiftL<=463),color='grey',label='absorbed')
 
 
     # plt.plot(x,LEDy,lw=3,label='440nm LED')
     # plt.plot(x,LEDFilty,lw=3,label='LED filter')
     # plt.plot(x,sensFilty,lw=3,label='sensor filter')
-    plt.plot(sytoxx,excite,color='r',lw=2,label='sytox excitation')
+    
     # plt.plot(sytoxx,emit,lw=3,label='sytox emission')
     plt.xlabel('Wavelength (nm)')
     plt.ylabel('Transmission (%)')
     plt.ylabel
     plt.grid()
     plt.legend()
-    # plt.show()
-    plt.savefig('test.png')
+    plt.show()
+    # plt.savefig('test.png')
     
     
 
-plotLED()
+# plotLED()
 
 
 def pdf(x,wave,sensorShift):
@@ -150,25 +159,36 @@ def pdf(x,wave,sensorShift):
 def detected(wave,lowLim,sensorShift):
     x = np.linspace(wave-2*FWHM[wave],wave+2*FWHM[wave],999)
     y = stats.norm.pdf(x,loc=wave+sensorShift,scale=STD[wave])
+    y *= peaks[wave]/max(y)/peaks[wave]
     xx = np.linspace(lowLim,x[-1],len(y))
-    area = integrate.trapz(y,xx)
+    
+    mask = x >= lowLim
+    x_s = x[mask]
+    y_s = y[mask]
+    area = integrate.trapezoid(y_s,x_s)
     return area
 # nom = detected(445,476,0)
 # worst = detected(445,473,10)
 # best = detected(445,479,-10)
 
 
-def emitted(lowLim,LEDshift):
+def emitted(UpLim,LEDshift,LowLim):
+
     x = LEDnom + LEDshift
     x = list(x)
     y = LEDy
-    xx = np.linspace(lowLim,x[-1],len(y))
-    area = integrate.trapz(y,xx)
+    xx = np.linspace(LowLim,x[-1],len(y))
+    # xx = np.linspace(lowLim,x[-1],len(y))
+    mask = xx <= UpLim
+    x_s = xx[mask]
+    y_s = y[mask]
+    
+    area = integrate.trapz(y_s,x_s)
     return area
 
-nom = emitted(460,0)
-worst = emitted(457,2.5)
-best = emitted(463,-2.5)
+nom = emitted(460,0,380)
+worst = emitted(457,2.5,380)
+best = emitted(463,-2.5,380)
 
 print('nom',nom)
 print('worst',worst)

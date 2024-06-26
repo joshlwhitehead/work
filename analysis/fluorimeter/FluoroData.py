@@ -160,7 +160,7 @@ def makeAllPlots():
                 compoundPop = makeCompound(df,'instrument',u)
                 compoundPop2 = makeCompound(df2,'instrument',u)
                 
-                compare(dfComb,i,'instrument',u,0.1)
+                # compare(dfComb,i,'instrument',u,0.1)
                 plt.figure()
                 plt.grid()
                 caPlot(compoundPop,0.1,'C0',u,i,0)
@@ -171,7 +171,7 @@ def makeAllPlots():
             print(i,u)
             # time.sleep(10)
 
-# makeAllPlots()
+
 
 
 def makeOnePlot():
@@ -240,7 +240,7 @@ def compareAll():
     dfFull = pd.DataFrame(final)
     dfFull.to_csv('allDataCovidCont.csv')
     
-# compareAll()
+
 
 
 
@@ -305,7 +305,7 @@ def instToInstVar():
             except:
                 pass
 
-# instToInstVar()
+
 
 
 def runRunVar(mean):
@@ -331,6 +331,11 @@ def runRunVar(mean):
                     pf.append(0)
         res[i] = [np.mean(pf),np.mean(diff),np.std(diff)]
     return res
+
+# makeAllPlots()
+# compareAll()
+instToInstVar()
+
 
 test = runRunVar(0)
 for i in test:
