@@ -3,7 +3,7 @@ import pandas as pd
 
 base = list(pd.read_csv('covidContData/swapRaw/inst.csv')['cons'])
 
-toChange = pd.read_csv('covidContData/swapRaw/fmax.csv')
+toChange = pd.read_csv('covidContData/swapRaw/cq.csv')
 changed = {}
 for i in toChange.columns:
     changed[i] = []
@@ -18,4 +18,4 @@ for indx,val in enumerate(toChange['consumableId']):
 
 
 df = pd.DataFrame(changed)
-df.to_csv('covidContData/swapRaw/fmax.csv')
+df.to_csv('covidContData/swapRaw/cq.csv')

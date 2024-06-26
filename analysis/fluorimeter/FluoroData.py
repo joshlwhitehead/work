@@ -161,7 +161,6 @@ def makeAllPlots():
                 compoundPop2 = makeCompound(df2,'instrument',u)
                 
                 compare(dfComb,i,'instrument',u,0.1)
-                # compare(515,'instrument','cq',0.1,'baselineRaw','baselinePCR','baselineMelt')
                 plt.figure()
                 plt.grid()
                 caPlot(compoundPop,0.1,'C0',u,i,0)
@@ -284,6 +283,7 @@ def instInstVar(mean,chan,metric):
     df = pd.DataFrame(dict)
     return tukey(df,'config',comp,0.1)
 
+
 def instToInstVar():
     me = [0,1]
     for i in me:
@@ -305,7 +305,7 @@ def instToInstVar():
             except:
                 pass
 
-        
+# instToInstVar()
 
 
 def runRunVar(mean):
