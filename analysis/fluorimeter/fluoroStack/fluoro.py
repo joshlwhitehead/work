@@ -51,50 +51,11 @@ for i in FWHM:
     STD[i] = fwhmToStd(FWHM[i])
 
 print(STD)
-def plotSensor(wave,normalPeak):
-    
-    if wave == 'all':
-
-        for i in STD:
-            tail = 2*FWHM[i]
-            x = np.linspace(i-tail,i+tail,999)
-            z = stats.norm.pdf(x,loc=i,scale=STD[i])
-            zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
-            zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
-
-            z *= peaks[i]/max(z)/max(peaks.values())
-            zz *= peaks[i]/max(zz)/max(peaks.values())
-            zzz *= peaks[i]/max(zzz)/max(peaks.values())
-            
-            plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
-            plt.plot(x,zz,color=colors[i],ls=':',lw=3)#,label=' '.join([str(i),'-10 nm']))
-            plt.plot(x,zzz,color=colors[i],ls='--',lw=3)#,label=' '.join([str(i),'+10 nm']))
-            
-    else:
-        for i in wave:
-            x = np.linspace(i-2*FWHM[i],i+2*FWHM[i],999)
-            z = stats.norm.pdf(x,loc=i,scale=STD[i])
-            zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
-            zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
-            z *= peaks[i]/max(z)/peaks[normalPeak]#max(peaks.values())
-            zz *= peaks[i]/max(zz)/peaks[normalPeak]#max(peaks.values())
-            zzz *= peaks[i]/max(zzz)/peaks[normalPeak]#max(peaks.values())
-            # plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
-            # plt.plot(x,zz,linestyle=':',color=colors[i],lw=3,label=' '.join([str(i),'-10 nm']))
-            plt.plot(x,zzz,linestyle='--',color=colors[i],lw=3,label='445 +10nm')#,label=' '.join([str(i),'+10 nm']))
-    # plt.vlines(479,0,1,'k',ls='--',lw=3,label='sensor filter +3nm')
-    # plt.vlines(476,0,1,'k',lw=3,label='sensor filter')#,label='sensor filter')
-    plt.vlines(473,0,1,'k',ls=':',lw=3,label='sensor filter -3nm')
-    plt.fill_between(x,zzz,where=(x>=473),color='grey',label='detected')
-    plt.xlabel('Wavelength (nm)')
-    plt.ylabel('Relative Sensitivity')
-    plt.legend()
-    plt.grid()
-    plt.show()
-    # plt.savefig('test.png')
 
 
-# plotSensor([445],445)
+
+
+
 
 data = pd.read_csv('sampleStack.csv')
 cutOff = 400
@@ -120,6 +81,59 @@ minCurve = []
 for indx,val in enumerate(exciteInterp):
     minVal = min([val,LEDy[indx]])
     minCurve.append(minVal)
+
+
+
+def plotSensor(wave):
+    if 630 in wave:
+        normalPeak = 630
+    else:
+        normalPeak = max(wave)
+    if wave == 'all':
+
+        for i in STD:
+            tail = 2*FWHM[i]
+            x = np.linspace(i-tail,i+tail,999)
+            z = stats.norm.pdf(x,loc=i,scale=STD[i])
+            zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
+            zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
+
+            z *= peaks[i]/max(z)/max(peaks.values())
+            zz *= peaks[i]/max(zz)/max(peaks.values())
+            zzz *= peaks[i]/max(zzz)/max(peaks.values())
+            
+            plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
+            plt.plot(x,zz,color=colors[i],ls=':',lw=3)#,label=' '.join([str(i),'-10 nm']))
+            plt.plot(x,zzz,color=colors[i],ls='--',lw=3)#,label=' '.join([str(i),'+10 nm']))
+            
+    else:
+        for i in wave:
+            x = np.linspace(i-2*FWHM[i],i+2*FWHM[i],999)
+            z = stats.norm.pdf(x,loc=i,scale=STD[i])
+            zz = stats.norm.pdf(x,loc=i-10,scale=STD[i])
+            zzz = stats.norm.pdf(x,loc=i+10,scale=STD[i])
+            z *= peaks[i]/max(z)/peaks[normalPeak]#max(peaks.values())
+            # zz *= peaks[i]/max(zz)/peaks[normalPeak]#max(peaks.values())
+            # zzz *= peaks[i]/max(zzz)/peaks[normalPeak]#max(peaks.values())
+            plt.plot(x,z,color=colors[i],lw=3,label=' '.join([str(i)]))
+            # plt.plot(x,zz,linestyle=':',color=colors[i],lw=3,label=' '.join([str(i),'-10 nm']))
+            # plt.plot(x,zzz,linestyle='--',color=colors[i],lw=3,label='445 +10nm')#,label=' '.join([str(i),'+10 nm']))
+    # plt.vlines(479,0,1,'k',ls='--',lw=3,label='sensor filter +3nm')
+    plt.vlines(476,0,1,'k',lw=3,label='sensor filter')#,label='sensor filter')
+    # plt.vlines(473,0,1,'k',ls=':',lw=3,label='sensor filter -3nm')
+    plt.fill_between(x,z,where=(x>=476),color='grey',label='detected')
+    # plt.plot(data['sytox wave'][start2:320],data['emit'][start2:320]/100,lw=3,color='grey',label='sytox emission')
+    plt.xlabel('Wavelength (nm)')
+    plt.ylabel('Relative Sensitivity')
+    plt.legend()
+    plt.grid()
+    # plt.show()
+    plt.savefig('test.png')
+
+
+plotSensor([515])
+
+
 def plotLED():
     
     plt.plot(sytoxx,excite,color='r',lw=2,label='sytox excitation')
@@ -166,10 +180,11 @@ def detected(wave,lowLim,sensorShift):
     x_s = x[mask]
     y_s = y[mask]
     area = integrate.trapezoid(y_s,x_s)
+    area = 1 - stats.norm.cdf(lowLim,loc=wave+sensorShift,scale=STD[wave])
     return area
-# nom = detected(445,476,0)
-# worst = detected(445,473,10)
-# best = detected(445,479,-10)
+nom = detected(515,476,0)
+worst = detected(515,473,10)
+best = detected(515,479,-10)
 
 
 def emitted(UpLim,LEDshift,LowLim):
@@ -186,9 +201,9 @@ def emitted(UpLim,LEDshift,LowLim):
     area = integrate.trapz(y_s,x_s)
     return area
 
-nom = emitted(460,0,380)
-worst = emitted(457,2.5,380)
-best = emitted(463,-2.5,380)
+# nom = emitted(460,0,380)
+# worst = emitted(457,2.5,380)
+# best = emitted(463,-2.5,380)
 
 print('nom',nom)
 print('worst',worst)

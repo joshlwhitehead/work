@@ -42,9 +42,9 @@ for i in os.listdir(folderrr):
     z.remove(z[-1])
     z = '_'.join(z)
     if z in x.keys():
-        x[z].append(parse(i,folderrr)[2])
+        x[z].append(parse(i,folderrr)[3])
     else:
-        x[z] = [parse(i,folderrr)[2]]
+        x[z] = [parse(i,folderrr)[3]]
 # for i in os.listdir(folderSwap):
 #     z = i.split('_')
 #     z.remove(z[-1])
