@@ -29,7 +29,7 @@ end = 2
 xx = np.linspace(start,end,len(yy))
 yyy = stats.norm.pdf(xx)
 z,dddd = integrate.quad(pdf,start,end)
-zz = integrate.trapz(yyy,xx)
+zz = integrate.trapz(yyym,xx)
 zzz = stats.norm.cdf(end) - stats.norm.cdf(start)
 print('quad',z)
 print('trapz',zz)
